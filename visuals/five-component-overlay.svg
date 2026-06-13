@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" role="img" aria-labelledby="title desc">
+  <title id="title">Five-component overlay — which open-source governance harnesses cover which Harmless Harnesses components</title>
+  <desc id="desc">A 5-row by 6-column matrix. Rows are the five Harmless Harnesses components: policy router, source authority, prompt composer, output contract, audit-log FSM. Columns are representative open-source governance projects from the atlas: guardrails-ai, nemo-guardrails, presidio, granite-guardian, rebuff, harmless-harnesses. Each cell shows whether the project implements that component as native, aligned, partial, or none, encoded by colour and a short label.</desc>
+
+  <style>
+    .body { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+    .title { font-size: 20px; font-weight: 700; fill: #1f3a5f; }
+    .subtitle { font-size: 12px; font-weight: 400; fill: #4a5d75; }
+    .row-label { font-size: 13px; font-weight: 600; fill: #1f3a5f; text-anchor: end; }
+    .col-label { font-size: 12px; font-weight: 600; fill: #1f3a5f; text-anchor: middle; }
+    .cell-label { font-size: 11px; font-weight: 600; fill: #ffffff; text-anchor: middle; }
+    .legend-label { font-size: 11px; font-weight: 500; fill: #1f3a5f; }
+    .footer { font-size: 10px; fill: #6b7a8c; text-anchor: middle; }
+  </style>
+
+  <rect width="920" height="560" fill="#ffffff"/>
+
+  <!-- Title block -->
+  <g class="body">
+    <text x="30" y="36" class="title">Five-component overlay</text>
+    <text x="30" y="58" class="subtitle">Which OSS governance harnesses cover which Harmless Harnesses components.</text>
+    <text x="30" y="74" class="subtitle">Capability axis only — not a ranking. Full definitions in docs/five-component-overlay.md.</text>
+  </g>
+
+  <!-- Column headers: 6 governance entries -->
+  <g class="body">
+    <text x="280" y="115" class="col-label">guardrails-ai</text>
+    <text x="380" y="115" class="col-label">nemo-guardrails</text>
+    <text x="480" y="115" class="col-label">presidio</text>
+    <text x="580" y="115" class="col-label">granite-guardian</text>
+    <text x="680" y="115" class="col-label">rebuff</text>
+    <text x="800" y="115" class="col-label" font-weight="700">harmless-harnesses</text>
+    <text x="800" y="129" class="subtitle" text-anchor="middle">(reference impl — COI noted)</text>
+  </g>
+
+  <!-- Row 1: policy_router -->
+  <g class="body">
+    <text x="230" y="170" class="row-label">policy router</text>
+    <!-- guardrails-ai: partial -->
+    <rect x="240" y="148" width="80" height="36" rx="6" fill="#d68910"/>
+    <text x="280" y="170" class="cell-label">partial</text>
+    <!-- nemo-guardrails: native (its core abstraction) -->
+    <rect x="340" y="148" width="80" height="36" rx="6" fill="#28a745"/>
+    <text x="380" y="170" class="cell-label">native</text>
+    <!-- presidio: none -->
+    <rect x="440" y="148" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="480" y="170" class="cell-label">none</text>
+    <!-- granite-guardian: aligned -->
+    <rect x="540" y="148" width="80" height="36" rx="6" fill="#1f3a5f"/>
+    <text x="580" y="170" class="cell-label">aligned</text>
+    <!-- rebuff: partial -->
+    <rect x="640" y="148" width="80" height="36" rx="6" fill="#d68910"/>
+    <text x="680" y="170" class="cell-label">partial</text>
+    <!-- harmless-harnesses: native -->
+    <rect x="760" y="148" width="80" height="36" rx="6" fill="#28a745"/>
+    <text x="800" y="170" class="cell-label">native</text>
+  </g>
+
+  <!-- Row 2: source_authority -->
+  <g class="body">
+    <text x="230" y="220" class="row-label">source authority</text>
+    <rect x="240" y="198" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="280" y="220" class="cell-label">none</text>
+    <rect x="340" y="198" width="80" height="36" rx="6" fill="#d68910"/>
+    <text x="380" y="220" class="cell-label">partial</text>
+    <rect x="440" y="198" width="80" height="36" rx="6" fill="#1f3a5f"/>
+    <text x="480" y="220" class="cell-label">aligned</text>
+    <rect x="540" y="198" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="580" y="220" class="cell-label">none</text>
+    <rect x="640" y="198" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="680" y="220" class="cell-label">none</text>
+    <rect x="760" y="198" width="80" height="36" rx="6" fill="#28a745"/>
+    <text x="800" y="220" class="cell-label">native</text>
+  </g>
+
+  <!-- Row 3: prompt_composer -->
+  <g class="body">
+    <text x="230" y="270" class="row-label">prompt composer</text>
+    <rect x="240" y="248" width="80" height="36" rx="6" fill="#d68910"/>
+    <text x="280" y="270" class="cell-label">partial</text>
+    <rect x="340" y="248" width="80" height="36" rx="6" fill="#1f3a5f"/>
+    <text x="380" y="270" class="cell-label">aligned</text>
+    <rect x="440" y="248" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="480" y="270" class="cell-label">none</text>
+    <rect x="540" y="248" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="580" y="270" class="cell-label">none</text>
+    <rect x="640" y="248" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="680" y="270" class="cell-label">none</text>
+    <rect x="760" y="248" width="80" height="36" rx="6" fill="#28a745"/>
+    <text x="800" y="270" class="cell-label">native</text>
+  </g>
+
+  <!-- Row 4: output_contract -->
+  <g class="body">
+    <text x="230" y="320" class="row-label">output contract</text>
+    <rect x="240" y="298" width="80" height="36" rx="6" fill="#28a745"/>
+    <text x="280" y="320" class="cell-label">native</text>
+    <rect x="340" y="298" width="80" height="36" rx="6" fill="#1f3a5f"/>
+    <text x="380" y="320" class="cell-label">aligned</text>
+    <rect x="440" y="298" width="80" height="36" rx="6" fill="#d68910"/>
+    <text x="480" y="320" class="cell-label">partial</text>
+    <rect x="540" y="298" width="80" height="36" rx="6" fill="#28a745"/>
+    <text x="580" y="320" class="cell-label">native</text>
+    <rect x="640" y="298" width="80" height="36" rx="6" fill="#d68910"/>
+    <text x="680" y="320" class="cell-label">partial</text>
+    <rect x="760" y="298" width="80" height="36" rx="6" fill="#28a745"/>
+    <text x="800" y="320" class="cell-label">native</text>
+  </g>
+
+  <!-- Row 5: audit_log_fsm -->
+  <g class="body">
+    <text x="230" y="370" class="row-label">audit-log FSM</text>
+    <rect x="240" y="348" width="80" height="36" rx="6" fill="#d68910"/>
+    <text x="280" y="370" class="cell-label">partial</text>
+    <rect x="340" y="348" width="80" height="36" rx="6" fill="#d68910"/>
+    <text x="380" y="370" class="cell-label">partial</text>
+    <rect x="440" y="348" width="80" height="36" rx="6" fill="#1f3a5f"/>
+    <text x="480" y="370" class="cell-label">aligned</text>
+    <rect x="540" y="348" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="580" y="370" class="cell-label">none</text>
+    <rect x="640" y="348" width="80" height="36" rx="6" fill="#b2b8c0"/>
+    <text x="680" y="370" class="cell-label">none</text>
+    <rect x="760" y="348" width="80" height="36" rx="6" fill="#28a745"/>
+    <text x="800" y="370" class="cell-label">native</text>
+  </g>
+
+  <!-- Legend -->
+  <g class="body" transform="translate(30, 430)">
+    <text x="0" y="0" class="row-label" text-anchor="start" font-size="12">Coverage:</text>
+    <rect x="80" y="-12" width="60" height="20" rx="4" fill="#28a745"/>
+    <text x="110" y="2" class="cell-label">native</text>
+    <text x="150" y="2" class="legend-label">component is the project's core abstraction</text>
+
+    <rect x="80" y="14" width="60" height="20" rx="4" fill="#1f3a5f"/>
+    <text x="110" y="28" class="cell-label">aligned</text>
+    <text x="150" y="28" class="legend-label">project implements the component substantively</text>
+
+    <rect x="80" y="40" width="60" height="20" rx="4" fill="#d68910"/>
+    <text x="110" y="54" class="cell-label">partial</text>
+    <text x="150" y="54" class="legend-label">project covers the component for a narrow case only</text>
+
+    <rect x="80" y="66" width="60" height="20" rx="4" fill="#b2b8c0"/>
+    <text x="110" y="80" class="cell-label">none</text>
+    <text x="150" y="80" class="legend-label">component is out of scope for this project</text>
+  </g>
+
+  <text class="footer body" x="460" y="546">CC BY-SA 4.0 — open-harness-atlas. Values mirror registry/governance/*.yaml five_component_coverage fields.</text>
+</svg>

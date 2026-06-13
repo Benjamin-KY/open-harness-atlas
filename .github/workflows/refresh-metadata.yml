@@ -1,0 +1,48 @@
+name: refresh-metadata
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install package
+        run: pip install -e ".[dev]"
+
+      - name: Refresh metadata sidecars
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/refresh_metadata.py
+
+      - name: Validate registry after refresh
+        run: python scripts/validate_registry.py
+
+      - name: Open PR on drift
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/refresh-metadata
+          commit-message: "chore(metadata): weekly sidecar refresh"
+          title: "chore(metadata): weekly sidecar refresh"
+          labels: bot,metadata-refresh
+          body: |
+            Automated weekly refresh of `registry/_metadata/*.json`.
+
+            This PR only updates the auto-managed sidecar files. Hand-curated
+            YAML under `registry/<category>/<id>.yaml` is never modified by
+            this job. Review for unexpected `archived: true` flags or SPDX
+            mismatches against the entry's declared `license`.

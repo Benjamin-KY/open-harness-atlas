@@ -10,11 +10,17 @@ routing — and free education resources.*
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-d68910?style=flat-square)](LICENSE-DOCS)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue?style=flat-square)](pyproject.toml)
 
-> ⚠ **Pre-release (v0.1.0-dev).** Registry seeding in progress.
-> The schema, governance policy, and charter are stable; entry counts
-> below reflect the launch target, not the current commit. The first
-> tagged release will be **v0.1.0** with ~46 curated entries across six
-> categories.
+> ⚠ **Pre-release (v0.1.0-dev).** Registry seeded with **44 entries**
+> across six categories. Schema, governance policy, charter, and the
+> two front-door visuals are stable. The first tagged release
+> (**v0.1.0**) is the current state; v0.2.0+ adds the data-driven
+> spectrum / radial visuals and adjacencies page (see `CHANGELOG.md`).
+>
+> **Deferred from v0.1.0** (deliberate, with reasons recorded):
+> Llama Guard 3 and ShieldGemma (non-OSI licenses fail
+> `GOVERNANCE.md` §1.1); `sa-sovereign-llm-harness` (upstream has no
+> `LICENSE` file yet — entry lands once that ships); DeepLearning.AI
+> shorts (no underlying OSS repo).
 
 ---
 
@@ -36,6 +42,8 @@ why "jurisdiction-neutral" is a design commitment, not a slogan).
 
 ## How harnesses are the foundation for model-agnostic workloads
 
+![Six-category taxonomy](visuals/taxonomy.svg)
+
 A **harness** is the structural scaffolding *around* the model that
 makes the model itself swappable. In the [Harmless Harnesses][hh] spec,
 a harness has five components, each enforcing one invariant:
@@ -49,10 +57,15 @@ a harness has five components, each enforcing one invariant:
 | 5 | **Audit Log + FSM Escalation** | Refusal and escalation are deterministic, not stochastic. |
 
 When these five hold, **the model is one input among many** — and you
-can swap it. The atlas exists to make the *open* components of this
-pattern (governance harnesses, agent frameworks, eval harnesses,
-red-team harnesses, routing infrastructure, free education) findable
-and comparable.
+can swap it. The atlas catalogues which OSS projects implement which
+components, side by side:
+
+![Which OSS governance harnesses cover which Harmless Harnesses components](visuals/five-component-overlay.svg)
+
+The atlas exists to make the *open* components of this pattern
+(governance harnesses, agent frameworks, eval harnesses, red-team
+harnesses, routing infrastructure, free education) findable and
+comparable.
 
 [hh]: https://github.com/Benjamin-KY/Harmless-Harnesses
 
@@ -60,14 +73,15 @@ and comparable.
 
 ## The six categories (launch scope)
 
-| Category | What's catalogued | Launch entry count (target) |
+| Category | What's catalogued | Launch entries |
 |---|---|---|
-| 🛡  **Governance harnesses** | Output-contract / citation / refusal / audit frameworks | ~6 |
-| 🤖 **Agent frameworks** | Tool-using multi-turn agent runtimes | ~10 |
-| 📏 **Eval harnesses** | Behaviour measurement runners | ~8 |
-| 🎯 **Red-team / safety harnesses** | Adversarial probes & attack-class coverage | ~6 |
-| 🔀 **Routing / model-agnostic infra** | Provider gateways & swappable backends | ~6 |
-| 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | ~10 |
+| 🛡  **Governance harnesses** | Output-contract / citation / refusal / audit frameworks | 6 |
+| 🤖 **Agent frameworks** | Tool-using multi-turn agent runtimes | 10 |
+| 📏 **Eval harnesses** | Behaviour measurement runners | 8 |
+| 🎯 **Red-team / safety harnesses** | Adversarial probes & attack-class coverage | 6 |
+| 🔀 **Routing / model-agnostic infra** | Provider gateways & swappable backends | 6 |
+| 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | 8 |
+| | **Total** | **44** |
 
 **Out-of-scope by design** (linked as adjacencies, not catalog entries):
 pure RAG cores · observability stacks · vector databases as

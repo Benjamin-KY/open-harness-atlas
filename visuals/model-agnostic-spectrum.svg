@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 932" role="img" aria-labelledby="title desc">
+<title id="title">Model-agnostic spectrum across the open-harness-atlas registry</title>
+<desc id="desc">A horizontal bar chart where each open-source harness in the registry is plotted at its model-agnostic score from 0 (provider-locked) to 5 (fully portable). Colour encodes category.</desc>
+<style>.body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}.title{font-size:18px;font-weight:700;fill:#1f3a5f;}.sub{font-size:11px;font-weight:400;fill:#4a5d75;}.axis{font-size:11px;font-weight:600;fill:#1f3a5f;text-anchor:middle;}.row-label{font-size:11px;fill:#1f3a5f;text-anchor:end;}.footer{font-size:10px;fill:#6b7a8c;text-anchor:middle;}</style>
+<rect width="670" height="932" fill="#ffffff"/>
+<text x="30" y="36" class="body title">Model-agnostic spectrum</text>
+<text x="30" y="54" class="body sub">Per-entry score 0 (provider-locked) → 5 (fully portable). Auto-generated from registry/*/*.yaml — do not hand-edit.</text>
+<line x1="270" y1="72" x2="630" y2="72" stroke="#1f3a5f" stroke-width="1" opacity="0.4"/>
+<line x1="270.0" y1="68" x2="270.0" y2="76" stroke="#1f3a5f" stroke-width="1"/>
+<text x="270.0" y="64" class="body axis">0</text>
+<line x1="342.0" y1="68" x2="342.0" y2="76" stroke="#1f3a5f" stroke-width="1"/>
+<text x="342.0" y="64" class="body axis">1</text>
+<line x1="414.0" y1="68" x2="414.0" y2="76" stroke="#1f3a5f" stroke-width="1"/>
+<text x="414.0" y="64" class="body axis">2</text>
+<line x1="486.0" y1="68" x2="486.0" y2="76" stroke="#1f3a5f" stroke-width="1"/>
+<text x="486.0" y="64" class="body axis">3</text>
+<line x1="558.0" y1="68" x2="558.0" y2="76" stroke="#1f3a5f" stroke-width="1"/>
+<text x="558.0" y="64" class="body axis">4</text>
+<line x1="630.0" y1="68" x2="630.0" y2="76" stroke="#1f3a5f" stroke-width="1"/>
+<text x="630.0" y="64" class="body axis">5</text>
+<text x="262" y="96.6" class="body row-label">Hugging Face Agents Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="86" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="114.6" class="body row-label">Learn Prompting <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="104" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="132.6" class="body row-label">Neural Networks — Zero to Hero (Karpathy) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="122" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="150.6" class="body row-label">Stanford CS336 — Language Models from Scratch <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="140" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="168.6" class="body row-label">fast.ai — Practical Deep Learning for Coders (Part 2 / course22p2) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="158" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="186.6" class="body row-label">Inspect AI <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="176" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="204.6" class="body row-label">lm-evaluation-harness <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="194" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="222.6" class="body row-label">promptfoo <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="212" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="240.6" class="body row-label">IBM Granite Guardian <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="230" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="258.6" class="body row-label">Microsoft Presidio <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="248" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="276.6" class="body row-label">AgentDojo <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="266" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="294.6" class="body row-label">PyRIT (Python Risk Identification Tool) <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="284" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="312.6" class="body row-label">garak <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="302" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="330.6" class="body row-label">LiteLLM <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="320" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="348.6" class="body row-label">Portkey AI Gateway <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="338" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="366.6" class="body row-label">RouteLLM <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="356" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="384.6" class="body row-label">AutoGen <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="374" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="402.6" class="body row-label">LangGraph <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="392" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="420.6" class="body row-label">LlamaIndex Agents <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="410" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="438.6" class="body row-label">PydanticAI <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="428" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="456.6" class="body row-label">smolagents <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="446" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="474.6" class="body row-label">AI Agents for Beginners (Microsoft) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="464" width="288.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="492.6" class="body row-label">DeepEval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="482" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="510.6" class="body row-label">HELM (Holistic Evaluation of Language Models) <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="500" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="528.6" class="body row-label">Lighteval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="518" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="546.6" class="body row-label">Ragas <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="536" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="564.6" class="body row-label">Guardrails AI <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="554" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="582.6" class="body row-label">Harmless Harnesses <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="572" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="600.6" class="body row-label">NeMo Guardrails <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="590" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="618.6" class="body row-label">Giskard <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="608" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="636.6" class="body row-label">ToolEmu <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="626" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="654.6" class="body row-label">promptmap <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="644" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="672.6" class="body row-label">Envoy AI Gateway <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="662" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="690.6" class="body row-label">Helicone <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="680" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="708.6" class="body row-label">aisuite <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="698" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="726.6" class="body row-label">CrewAI <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="716" width="216.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="744.6" class="body row-label">OpenAI Agents SDK <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="734" width="216.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="762.6" class="body row-label">Strands Agents <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="752" width="216.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="780.6" class="body row-label">Anthropic Prompt Engineering Interactive Tutorial <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="770" width="216.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="798.6" class="body row-label">OpenAI Cookbook <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="788" width="216.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="816.6" class="body row-label">OpenAI Evals <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="806" width="216.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="834.6" class="body row-label">Rebuff <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="824" width="216.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="852.6" class="body row-label">Google Agent Development Kit (ADK) <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="842" width="144.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="870.6" class="body row-label">Claude Agent SDK <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="860" width="72.0" height="12" rx="3" fill="#d68910"/>
+<rect x="30" y="890" width="14" height="14" rx="3" fill="#1f3a5f"/>
+<text x="50" y="900" class="body sub">governance</text>
+<rect x="140" y="890" width="14" height="14" rx="3" fill="#d68910"/>
+<text x="160" y="900" class="body sub">agent</text>
+<rect x="250" y="890" width="14" height="14" rx="3" fill="#28a745"/>
+<text x="270" y="900" class="body sub">eval</text>
+<rect x="360" y="890" width="14" height="14" rx="3" fill="#c0392b"/>
+<text x="380" y="900" class="body sub">redteam</text>
+<rect x="470" y="890" width="14" height="14" rx="3" fill="#1f3a5f"/>
+<text x="490" y="900" class="body sub">routing</text>
+<rect x="580" y="890" width="14" height="14" rx="3" fill="#7d3c98"/>
+<text x="600" y="900" class="body sub">education</text>
+<text x="335" y="922" class="body footer">CC BY-SA 4.0 — open-harness-atlas. Generated by scripts/build_visuals.py.</text>
+</svg>

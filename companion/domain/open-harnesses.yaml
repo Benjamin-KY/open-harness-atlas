@@ -1,0 +1,84 @@
+# Open-Harness-Atlas custom domain for `create-context-graph`.
+#
+# STATUS: v0.1.0 placeholder. The v0.3.0 release will auto-generate the
+# node and relationship inventories from `registry/*/*.yaml`. The schema
+# below is the **intended shape**; tooling that consumes this file in
+# v0.1.0 should treat the inventories as illustrative, not exhaustive.
+#
+# updated_at: 2026-06-13T00:00:00Z
+
+domain:
+  id: open-harnesses
+  name: Open Harness Atlas
+  description: |
+    Knowledge graph of free, open-source LLM harnesses and free
+    education resources. Generated from the open-harness-atlas
+    registry as fixtures; not LLM-fabricated.
+
+node_types:
+  - id: Harness
+    label: Harness
+    description: A registry entry — a single OSS harness or education resource.
+    properties:
+      - id: { type: string, required: true }
+      - name: { type: string, required: true }
+      - category: { type: string, required: true, enum: [governance, agent, eval, redteam, routing, education] }
+      - license: { type: string, required: true }
+      - primary_language: { type: string }
+      - maturity: { type: string }
+      - model_agnostic_score: { type: integer }
+      - origin_country: { type: string }
+      - repo_url: { type: string }
+      - homepage: { type: string }
+
+  - id: Component
+    label: HarnessComponent
+    description: One of the five Harmless Harnesses components.
+    properties:
+      - id: { type: string, required: true, enum: [policy_router, source_authority, prompt_composer, output_contract, audit_log_fsm] }
+      - name: { type: string, required: true }
+      - invariant: { type: string }
+
+  - id: Maintainer
+    label: Maintainer
+    properties:
+      - name: { type: string, required: true }
+      - type: { type: string, enum: [individual, community, company, institution] }
+      - origin_country: { type: string }
+
+  - id: EducationResource
+    label: EducationResource
+    description: One free learning resource attached to a Harness entry.
+    properties:
+      - title: { type: string, required: true }
+      - url: { type: string, required: true }
+      - type: { type: string, enum: [docs, tutorial, course, video, paper] }
+      - free: { type: boolean }
+
+relationship_types:
+  - id: COVERS_COMPONENT
+    from: Harness
+    to: Component
+    properties:
+      - coverage: { type: string, enum: [native, aligned, partial, none] }
+  - id: MAINTAINED_BY
+    from: Harness
+    to: Maintainer
+  - id: ADJACENT_TO
+    from: Harness
+    to: Harness
+    description: Hand-curated cross-link between related entries.
+  - id: TEACHES
+    from: EducationResource
+    to: Component
+    description: Education resource teaches a specific component (optional).
+  - id: HAS_RESOURCE
+    from: Harness
+    to: EducationResource
+
+# Sample Cypher queries the v0.3.0 companion app will ship with:
+#   1. Five-component overlay: governance harness × component matrix.
+#   2. Model-agnostic top-N: harnesses ordered by model_agnostic_score.
+#   3. Sovereignty radial: entries grouped by origin_country × license × score.
+#   4. Pattern-fire dependency walk: starting from one entry, traverse
+#      ADJACENT_TO + COVERS_COMPONENT edges to suggest a substitution path.

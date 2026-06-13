@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" role="img" aria-labelledby="title desc">
+  <title id="title">open-harness-atlas — six categories of free, open-source harnesses</title>
+  <desc id="desc">A radial diagram with a central hub labeled open-harness-atlas, surrounded by six labelled category nodes: Governance, Agent frameworks, Evaluation, Red-team and safety, Routing and model-agnostic infrastructure, and Free education. Each node names two or three representative open-source projects.</desc>
+
+  <style>
+    .label { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; fill: #1f3a5f; }
+    .title { font-size: 18px; font-weight: 700; }
+    .sub { font-size: 12px; font-weight: 400; fill: #4a5d75; }
+    .hub-label { font-size: 18px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .hub-sub { font-size: 11px; font-weight: 400; fill: #d8e1eb; text-anchor: middle; }
+    .spoke { stroke: #1f3a5f; stroke-width: 1.4; fill: none; opacity: 0.55; }
+    .footer { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; font-size: 10px; fill: #6b7a8c; text-anchor: middle; }
+  </style>
+
+  <!-- background -->
+  <rect width="880" height="560" fill="#ffffff"/>
+
+  <!-- spokes (drawn before nodes so they tuck behind) -->
+  <line class="spoke" x1="440" y1="280" x2="180" y2="120"/>
+  <line class="spoke" x1="440" y1="280" x2="700" y2="120"/>
+  <line class="spoke" x1="440" y1="280" x2="120" y2="280"/>
+  <line class="spoke" x1="440" y1="280" x2="760" y2="280"/>
+  <line class="spoke" x1="440" y1="280" x2="180" y2="440"/>
+  <line class="spoke" x1="440" y1="280" x2="700" y2="440"/>
+
+  <!-- central hub -->
+  <circle cx="440" cy="280" r="68" fill="#1f3a5f"/>
+  <text class="hub-label" x="440" y="272">open-harness</text>
+  <text class="hub-label" x="440" y="293">atlas</text>
+  <text class="hub-sub" x="440" y="312">six categories • all OSS</text>
+
+  <!-- Governance (top-left, deep blue) -->
+  <g>
+    <circle cx="180" cy="120" r="56" fill="#1f3a5f"/>
+    <text x="180" y="115" text-anchor="middle" class="hub-label">Governance</text>
+    <text x="180" y="133" text-anchor="middle" class="hub-sub">guardrails-ai • presidio</text>
+    <text x="180" y="146" text-anchor="middle" class="hub-sub">nemo-guardrails</text>
+  </g>
+
+  <!-- Agent frameworks (top-right, orange — stochastic LLM-driven) -->
+  <g>
+    <circle cx="700" cy="120" r="56" fill="#d68910"/>
+    <text x="700" y="115" text-anchor="middle" class="hub-label">Agent</text>
+    <text x="700" y="133" text-anchor="middle" class="hub-sub">pydanticai • langgraph</text>
+    <text x="700" y="146" text-anchor="middle" class="hub-sub">crewai • autogen</text>
+  </g>
+
+  <!-- Evaluation (middle-left, green — deterministic measurement) -->
+  <g>
+    <circle cx="120" cy="280" r="56" fill="#28a745"/>
+    <text x="120" y="275" text-anchor="middle" class="hub-label">Evaluation</text>
+    <text x="120" y="293" text-anchor="middle" class="hub-sub">lm-eval-harness • helm</text>
+    <text x="120" y="306" text-anchor="middle" class="hub-sub">deepeval • inspect-ai</text>
+  </g>
+
+  <!-- Routing (middle-right, deep blue — structural infra) -->
+  <g>
+    <circle cx="760" cy="280" r="56" fill="#1f3a5f"/>
+    <text x="760" y="275" text-anchor="middle" class="hub-label">Routing</text>
+    <text x="760" y="293" text-anchor="middle" class="hub-sub">litellm • routellm</text>
+    <text x="760" y="306" text-anchor="middle" class="hub-sub">portkey • envoy-ai-gw</text>
+  </g>
+
+  <!-- Red-team (bottom-left, red — adversarial) -->
+  <g>
+    <circle cx="180" cy="440" r="56" fill="#c0392b"/>
+    <text x="180" y="435" text-anchor="middle" class="hub-label">Red-team</text>
+    <text x="180" y="453" text-anchor="middle" class="hub-sub">pyrit • garak • giskard</text>
+    <text x="180" y="466" text-anchor="middle" class="hub-sub">agentdojo • toolemu</text>
+  </g>
+
+  <!-- Education (bottom-right, purple — knowledge) -->
+  <g>
+    <circle cx="700" cy="440" r="56" fill="#7d3c98"/>
+    <text x="700" y="435" text-anchor="middle" class="hub-label">Education</text>
+    <text x="700" y="453" text-anchor="middle" class="hub-sub">karpathy • cs336</text>
+    <text x="700" y="466" text-anchor="middle" class="hub-sub">hf-agents • learn-prompting</text>
+  </g>
+
+  <!-- side labels under nodes (kept off-circle so they don't clip) -->
+  <g class="label">
+    <text x="180" y="195" text-anchor="middle" class="sub">policy / safety scaffolding</text>
+    <text x="700" y="195" text-anchor="middle" class="sub">tool-using LLM agents</text>
+    <text x="120" y="355" text-anchor="middle" class="sub">benchmark + app-level scoring</text>
+    <text x="760" y="355" text-anchor="middle" class="sub">provider gateways + routers</text>
+    <text x="180" y="515" text-anchor="middle" class="sub">automated AI red-team</text>
+    <text x="700" y="515" text-anchor="middle" class="sub">free, OSS-licensed curricula</text>
+  </g>
+
+  <text class="footer" x="440" y="546">CC BY-SA 4.0 — open-harness-atlas. Generated by hand; see visuals/README.md.</text>
+</svg>
