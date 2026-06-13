@@ -1,0 +1,49 @@
+id: pyrit
+name: PyRIT (Python Risk Identification Tool)
+category: redteam
+subcategory: ai-red-team-framework
+repo_url: https://github.com/Azure/PyRIT
+homepage: https://azure.github.io/PyRIT/
+license: MIT
+primary_language: Python
+tagline: Microsoft AI Red Team's framework for automated risk identification across generative AI systems.
+description: |
+  PyRIT (Python Risk Identification Tool) is the Microsoft AI Red
+  Team's MIT-licensed framework for automating risk identification
+  across generative AI systems. It defines a composable abstraction
+  of `Orchestrators`, `Converters`, `Scorers`, `Datasets`, and
+  `Targets`, allowing red-teamers to chain prompts through
+  transformation pipelines, send them to arbitrary targets, and
+  score the responses against safety / robustness criteria.
+  Multi-turn attack orchestrators (Crescendo, PAIR, TAP, Skeleton
+  Key) ship out of the box.
+
+  In the atlas: PyRIT is the canonical **AI red-team automation
+  harness** from a major vendor's red team. It composes cleanly above
+  a routing layer (probe any target the routing layer can reach) and
+  feeds naturally into governance-layer regression suites.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft (AI Red Team)
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: PyRIT — Documentation
+    url: https://azure.github.io/PyRIT/
+    type: docs
+    free: true
+  - title: PyRIT — Paper
+    url: https://arxiv.org/abs/2410.02828
+    type: paper
+    free: true
+sovereignty_notes: |
+  Microsoft (US-incorporated company); MIT-licensed; runs entirely
+  locally; supports any HTTP-reachable target, including local
+  OpenAI-compatible endpoints (vLLM, Ollama, llama.cpp) and arbitrary
+  custom-prompt callbacks. Model-agnostic 5 — `PromptTarget`
+  abstracts the backend uniformly across providers.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - garak
+  - promptfoo

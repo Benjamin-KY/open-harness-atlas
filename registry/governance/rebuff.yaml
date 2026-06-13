@@ -1,0 +1,54 @@
+id: rebuff
+name: Rebuff
+category: governance
+subcategory: prompt-injection-detection
+repo_url: https://github.com/protectai/rebuff
+homepage: https://github.com/protectai/rebuff
+license: Apache-2.0
+primary_language: Python
+tagline: Layered prompt-injection detector — heuristic, embedding, LLM-as-judge, and canary tripwire.
+description: |
+  Rebuff is a focused OSS prompt-injection detector that runs four
+  layers against every user input: (1) **heuristics** — known attack
+  patterns and obfuscation signatures; (2) **vector store** — cosine
+  similarity against a curated corpus of known injections; (3) **LLM as
+  judge** — a small classifier prompt; (4) **canary tokens** — output
+  tripwires that detect when the model has followed an injected
+  instruction. Each layer can be enabled or disabled independently.
+
+  In the atlas: Rebuff is the cleanest example of a **single-purpose
+  governance rail**. It does one thing (prompt-injection detection)
+  with explicit defence-in-depth, and exposes a stable API for
+  embedding inside any larger harness. Pair with Guardrails AI for
+  output contracts and a routing layer for full five-component
+  coverage.
+maturity: beta
+maintainer:
+  type: company
+  name: Protect AI
+origin_country: US
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: partial
+education_resources:
+  - title: Rebuff — README and architecture overview
+    url: https://github.com/protectai/rebuff#readme
+    type: docs
+    free: true
+sovereignty_notes: |
+  Protect AI is a US-incorporated company; Rebuff itself is Apache-2.0
+  and self-hostable. The detection layers can run locally; the LLM-as-judge
+  layer uses whichever OpenAI-compatible endpoint is configured (so any
+  local backend works). The vector store layer supports local Pinecone
+  replacements; conservative model-agnostic 3 because the default
+  configuration assumes OpenAI for the judge layer and switching to a
+  local model requires minor config and re-tuning of the judge prompt.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - nemo-guardrails
+  - guardrails-ai
+  - granite-guardian

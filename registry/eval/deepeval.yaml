@@ -1,0 +1,47 @@
+id: deepeval
+name: DeepEval
+category: eval
+subcategory: application-level-eval
+repo_url: https://github.com/confident-ai/deepeval
+homepage: https://www.deepeval.com/
+license: Apache-2.0
+primary_language: Python
+tagline: Pytest-style LLM evaluation framework with 30+ metrics for RAG, agents, and chatbots.
+description: |
+  DeepEval is an Apache-2.0 LLM evaluation framework that exposes
+  evaluation as a pytest-style API: each test case asserts against
+  one or more metrics (faithfulness, answer-relevancy, contextual
+  precision / recall, hallucination, bias, toxicity, summarisation,
+  and ~30 others). It includes G-Eval (general LLM-as-judge),
+  DAG-based custom-metric authoring, dataset management, and
+  CI-integration helpers.
+
+  In the atlas: DeepEval is the canonical **application-level eval
+  harness** — the one you reach for when the question is "is *my*
+  LLM-using application correct?" rather than "what does *this model*
+  score on a benchmark?". It composes cleanly under a Harmless
+  Harnesses output-contract invariant: an eval suite over the
+  contract surface is a regression gate.
+maturity: ga
+maintainer:
+  type: company
+  name: Confident AI
+origin_country: US
+model_agnostic_score: 4
+education_resources:
+  - title: DeepEval — Documentation
+    url: https://www.deepeval.com/docs/getting-started
+    type: docs
+    free: true
+sovereignty_notes: |
+  US-incorporated company; OSS core is Apache-2.0 and runs entirely
+  locally; cloud dashboard is a separate optional paid product.
+  Multi-backend for both the system-under-test and the LLM-judge
+  (OpenAI, Anthropic, Google, Ollama, Azure, local OpenAI-compatible).
+  Model-agnostic 4 — LLM-judge metrics are sensitive to judge-model
+  choice; using a smaller / local judge changes scores even when the
+  metric definition is unchanged.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - ragas
+  - promptfoo

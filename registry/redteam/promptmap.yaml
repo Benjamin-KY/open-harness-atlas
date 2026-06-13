@@ -1,0 +1,44 @@
+id: promptmap
+name: promptmap
+category: redteam
+subcategory: prompt-injection-scanner
+repo_url: https://github.com/utkusen/promptmap
+homepage: https://github.com/utkusen/promptmap
+license: GPL-3.0
+primary_language: Python
+tagline: Vulnerability scanner for custom LLM applications — targeted prompt-injection probing.
+description: |
+  promptmap (promptmap2) is a GPL-3.0-licensed vulnerability scanner
+  focused specifically on **prompt-injection testing of custom LLM
+  applications**. It takes the application's system prompt as input,
+  generates application-specific injection probes, and reports which
+  succeed. Designed to be lightweight and pointed at any
+  OpenAI-compatible endpoint or custom HTTP target.
+
+  In the atlas: promptmap is the **single-issue scanner** counterpart
+  to garak's broad battery — useful when the question is narrowly
+  "is this application's system prompt resilient to injection?"
+  rather than "what is the general risk surface of this model?".
+maturity: beta
+maintainer:
+  type: individual
+  name: Utku Sen
+origin_country: TR
+model_agnostic_score: 4
+education_resources:
+  - title: promptmap — README and usage examples
+    url: https://github.com/utkusen/promptmap#readme
+    type: docs
+    free: true
+sovereignty_notes: |
+  Solo-maintained; GPL-3.0 (strong copyleft — note that integrating
+  promptmap into a closed-source pipeline requires legal review,
+  whereas treating it as a stand-alone CLI scanner is unambiguously
+  fine). Runs entirely locally; supports any OpenAI-compatible
+  endpoint as the target. Conservative model-agnostic 4 — the
+  probe-generation step itself currently assumes an OpenAI-format
+  model.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - garak
+  - pyrit

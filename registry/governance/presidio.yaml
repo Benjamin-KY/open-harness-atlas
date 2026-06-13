@@ -1,0 +1,54 @@
+id: presidio
+name: Microsoft Presidio
+category: governance
+subcategory: pii-detection-and-redaction
+repo_url: https://github.com/microsoft/presidio
+homepage: https://microsoft.github.io/presidio/
+license: MIT
+primary_language: Python
+tagline: Pluggable PII detection and redaction for text and structured data, usable as an LLM rail.
+description: |
+  Presidio is a Microsoft-maintained framework for detecting,
+  classifying, and redacting personally identifiable information (PII)
+  in text and structured data. It ships analyzer components (spaCy NER,
+  pattern recognizers, custom recognizers), an anonymizer that supports
+  redact / mask / replace / hash / encrypt strategies, and dedicated
+  modules for image and structured-data PII.
+
+  In the atlas: Presidio is the most production-mature OSS PII rail and
+  is widely deployed as the **PII enforcement layer** of larger
+  governance harnesses (e.g., as an output-rail step in NeMo Guardrails
+  or as a custom validator in Guardrails AI). MIT-licensed and fully
+  self-hostable; its recognizer registry is extensible without forking.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft
+origin_country: US
+model_agnostic_score: 5
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: native
+  audit_log_fsm: none
+education_resources:
+  - title: Presidio — Documentation
+    url: https://microsoft.github.io/presidio/
+    type: docs
+    free: true
+  - title: Presidio — Tutorials
+    url: https://microsoft.github.io/presidio/tutorial/
+    type: tutorial
+    free: true
+sovereignty_notes: |
+  Microsoft-maintained, MIT-licensed, fully self-hostable as Python
+  packages (`presidio-analyzer`, `presidio-anonymizer`, plus the image
+  and structured modules). No telemetry; runs offline by default.
+  Model-agnostic 5 because Presidio is not LLM-dependent — recognizers
+  are pattern + NER + optional custom logic — so it sits cleanly in
+  front of or behind any model backend without coupling.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - nemo-guardrails
+  - guardrails-ai

@@ -1,0 +1,44 @@
+id: anthropic-prompt-eng-tutorial
+name: Anthropic Prompt Engineering Interactive Tutorial
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/anthropics/prompt-eng-interactive-tutorial
+homepage: https://github.com/anthropics/prompt-eng-interactive-tutorial
+license: MIT
+primary_language: Jupyter Notebook
+tagline: Anthropic's free hands-on prompt-engineering course as runnable Jupyter notebooks.
+description: |
+  Anthropic's MIT-licensed interactive prompt-engineering tutorial
+  is a self-paced course delivered as Jupyter notebooks. It covers
+  prompt structure, role-prompting, separating data from instructions,
+  output-format control, multi-shot prompting, chain-of-thought,
+  function-calling, and tool-use, with exercises and worked
+  solutions at the end of each chapter.
+
+  In the atlas: this is included as a **vendor-grade prompt-engineering
+  curriculum from an LLM lab**. The mechanics transfer to non-Claude
+  models with only minor edits (Anthropic's `system` / message-array
+  format is itself a near-superset of OpenAI's). It is a healthy
+  counterweight to the OpenAI Cookbook's vendor-specific examples.
+maturity: ga
+maintainer:
+  type: company
+  name: Anthropic
+origin_country: US
+model_agnostic_score: 3
+education_resources:
+  - title: Anthropic Prompt Engineering Interactive Tutorial — notebooks
+    url: https://github.com/anthropics/prompt-eng-interactive-tutorial
+    type: course
+    free: true
+sovereignty_notes: |
+  US-incorporated company; notebooks MIT-licensed; principles are
+  portable across LLM providers. The notebooks call the Anthropic
+  API directly, so running them as-is requires Anthropic API access —
+  which since 2026-06-13 is geopolitically constrained for foreign
+  nationals (see Fable / Mythos worked example). Concepts transfer
+  to a local Claude-format-compatible backend (e.g., LiteLLM
+  fronting any provider) with minor adapter work. Model-agnostic 3.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - openai-cookbook

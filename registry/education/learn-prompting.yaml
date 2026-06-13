@@ -1,0 +1,47 @@
+id: learn-prompting
+name: Learn Prompting
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/trigaten/Learn_Prompting
+homepage: https://learnprompting.org/
+license: MIT
+primary_language: MDX
+tagline: Free, open-source, comprehensive guide to prompt engineering and prompt-injection defence.
+description: |
+  Learn Prompting is an MIT-licensed open-source guide to prompt
+  engineering, organised as a multi-chapter free course covering
+  basics, intermediate techniques (zero-shot, few-shot, chain-of-
+  thought, self-consistency, tree-of-thoughts, retrieval-augmentation),
+  advanced topics, and a substantial **prompt-injection / prompt-
+  hacking** module. Content is community-authored, peer-reviewed,
+  and rendered as a public website.
+
+  In the atlas: this is the **community-authored, vendor-neutral
+  prompt-engineering course**. It complements Anthropic's interactive
+  tutorial (vendor-grade, narrow) and the broader agent courses
+  (framework-focused) by foregrounding prompting itself as the
+  primary surface — useful before any framework is layered on.
+maturity: ga
+maintainer:
+  type: community
+  name: Learn Prompting Project (community-led, primary editor Sander Schulhoff)
+origin_country: null
+model_agnostic_score: 5
+education_resources:
+  - title: Learn Prompting (rendered site)
+    url: https://learnprompting.org/
+    type: course
+    free: true
+  - title: Learn Prompting — source repository
+    url: https://github.com/trigaten/Learn_Prompting
+    type: course
+    free: true
+sovereignty_notes: |
+  Community-led, multi-jurisdiction contributor base; MIT-licensed.
+  Vendor-neutral throughout — examples are framed conceptually and
+  tested across providers. Model-agnostic 5 — prompt techniques are
+  themselves provider-independent and the course presents them as
+  such.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - anthropic-prompt-eng-tutorial

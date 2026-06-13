@@ -1,0 +1,46 @@
+id: strands
+name: Strands Agents
+category: agent
+subcategory: aws-native
+repo_url: https://github.com/strands-agents/sdk-python
+homepage: https://strandsagents.com/
+license: Apache-2.0
+primary_language: Python
+tagline: AWS's openly-licensed agent SDK — model-native tool use with Anthropic, OpenAI, and Bedrock backends.
+description: |
+  Strands is AWS's Apache-2.0-licensed agent SDK that uses the
+  **model-native** tool-use loop: the model decides when to call tools,
+  the SDK executes them, and the loop continues until the model
+  emits a final response. It supports Anthropic (Bedrock or direct),
+  OpenAI, and any AWS Bedrock model, and emphasises a small, stable
+  API surface (Agent, tools, model).
+
+  In the atlas: Strands is included as an example of an **AWS-native**
+  agent framework that is fully OSS-licensed. The model-native tool-use
+  pattern is the same one Anthropic's Claude Agent SDK and OpenAI's
+  Agents SDK use, so Strands is a clean way to write portable code
+  that runs against multiple providers without rewriting the orchestration
+  loop.
+maturity: beta
+maintainer:
+  type: company
+  name: Amazon Web Services
+origin_country: US
+model_agnostic_score: 3
+education_resources:
+  - title: Strands Agents — Documentation
+    url: https://strandsagents.com/
+    type: docs
+    free: true
+sovereignty_notes: |
+  AWS-maintained, Apache-2.0, self-hostable as a Python package. Backends
+  include Anthropic (direct or via Bedrock), OpenAI, and AWS Bedrock
+  catalogue models. Self-hosted local model support is via the OpenAI-
+  compatible endpoint adapter. Conservative model-agnostic 3 — production
+  documentation centres on AWS Bedrock; non-AWS deployments work but
+  require explicit configuration.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - claude-agent-sdk
+  - openai-agents-sdk
+  - pydanticai

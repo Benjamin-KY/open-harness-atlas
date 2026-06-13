@@ -171,7 +171,8 @@ def main(argv: list[str] | None = None) -> int:
     console.print(f"[bold red]registry validation failed ({len(errors)} error(s)):[/bold red]")
     for path, msg in errors:
         loc = str(path) if path != Path("") else "<registry-wide>"
-        console.print(f"  [red]✗[/red] {loc}: {msg}")
+        # ASCII-only marker for Windows cp1252 safety; Rich's colour tags still render.
+        console.print(f"  [red]FAIL[/red] {loc}: {msg}")
     return 1
 
 

@@ -1,0 +1,47 @@
+id: openai-agents-sdk
+name: OpenAI Agents SDK
+category: agent
+subcategory: provider-native
+repo_url: https://github.com/openai/openai-agents-python
+homepage: https://openai.github.io/openai-agents-python/
+license: Apache-2.0
+primary_language: Python
+tagline: OpenAI's lightweight agent SDK with tool decorators, handoffs, guardrails, and tracing.
+description: |
+  The OpenAI Agents SDK is an Apache-2.0-licensed Python SDK from OpenAI
+  for building tool-using agents. Tools are decorated with
+  `@function_tool`, agents declare their tools and instructions, and the
+  `Runner.run()` / `Runner.run_streamed()` loop handles the model-native
+  tool-use cycle. The SDK includes built-in agent **handoffs** (one
+  agent delegating to another) and **guardrail** primitives for input /
+  output checks.
+
+  In the atlas: OpenAI Agents SDK is included as the **provider-native**
+  reference. Despite the name, the SDK supports any
+  OpenAI-compatible endpoint via `base_url` and `api_key` overrides, so
+  the same code runs against vLLM, Ollama, and self-hosted endpoints —
+  making it a useful neutral target for code that needs to remain
+  portable.
+maturity: ga
+maintainer:
+  type: company
+  name: OpenAI
+origin_country: US
+model_agnostic_score: 3
+education_resources:
+  - title: OpenAI Agents SDK — Documentation
+    url: https://openai.github.io/openai-agents-python/
+    type: docs
+    free: true
+sovereignty_notes: |
+  OpenAI-maintained, Apache-2.0, fully self-hostable as a Python package.
+  Multi-provider via OpenAI-compatible endpoint override (any vLLM /
+  Ollama / TGI server works). No telemetry without explicit tracing
+  configuration. Conservative model-agnostic 3 because the SDK's
+  built-in tool-call protocol assumes OpenAI's specific function-calling
+  format — non-OpenAI backends work but must implement that format.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - claude-agent-sdk
+  - pydanticai
+  - strands

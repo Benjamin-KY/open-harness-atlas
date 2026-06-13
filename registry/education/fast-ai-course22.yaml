@@ -1,0 +1,46 @@
+id: fast-ai-course22
+name: fast.ai — Practical Deep Learning for Coders (Part 2 / course22p2)
+category: education
+subcategory: foundations
+repo_url: https://github.com/fastai/course22p2
+homepage: https://course.fast.ai/Lessons/part2.html
+license: Apache-2.0
+primary_language: Jupyter Notebook
+tagline: fast.ai's free Part-2 course building diffusion and language models from foundations, hands-on.
+description: |
+  fast.ai's Practical Deep Learning for Coders, Part 2 (course22p2)
+  is fast.ai's Apache-2.0 hands-on course building deep-learning
+  models — including diffusion models and the start of an LLM — from
+  foundations. The course pairs free video lectures with notebooks
+  in the public repository, emphasising practitioner intuition and
+  iterative experimentation. Jeremy Howard's "code first, theory
+  second" pedagogy is the explicit counterweight to the formal
+  university-course approach.
+
+  In the atlas: fast.ai Part 2 is the **practitioner foundations**
+  entry — accessible, build-first, and pedagogically distinct from
+  Karpathy (from-scratch minimalism) and CS336 (formal university).
+maturity: ga
+maintainer:
+  type: institution
+  name: fast.ai
+origin_country: AU
+model_agnostic_score: 5
+education_resources:
+  - title: fast.ai — Part 2 course site (free videos)
+    url: https://course.fast.ai/Lessons/part2.html
+    type: course
+    free: true
+  - title: course22p2 — Source notebooks
+    url: https://github.com/fastai/course22p2
+    type: course
+    free: true
+sovereignty_notes: |
+  fast.ai (Australian-founded non-profit, multi-jurisdiction
+  operation); notebooks Apache-2.0; free videos. Course teaches model
+  construction rather than consumption. Model-agnostic 5 — provider-
+  independent by construction.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - karpathy-nn-zero-to-hero
+  - stanford-cs336

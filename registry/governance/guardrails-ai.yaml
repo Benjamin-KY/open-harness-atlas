@@ -1,0 +1,56 @@
+id: guardrails-ai
+name: Guardrails AI
+category: governance
+subcategory: validator-first
+repo_url: https://github.com/guardrails-ai/guardrails
+homepage: https://www.guardrailsai.com/
+license: Apache-2.0
+primary_language: Python
+tagline: Pydantic-style validator chains that wrap LLM outputs in enforceable contracts.
+description: |
+  Guardrails is a Python framework for defining and running structured
+  validators over LLM outputs. A `Guard` object wraps any LLM call; the
+  declared validator chain runs on the model's response and either
+  passes the value through, repairs it, or raises (with optional reask
+  loop). Validators are composable — schema validation, regex, toxicity
+  classifiers, hallucination detectors, custom code — and the catalogue
+  lives in the **Guardrails Hub** as a public, pip-installable registry.
+
+  In the atlas: Guardrails AI is the cleanest **validator-first**
+  expression of the output-contract invariant. It does not attempt to
+  route, compose system prompts, or manage escalation FSMs — those are
+  intentionally out of scope. Pair with a separate router and prompt
+  composer for a full five-component spine.
+maturity: ga
+maintainer:
+  type: company
+  name: Guardrails AI Inc.
+origin_country: US
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: partial
+  prompt_composer: none
+  output_contract: native
+  audit_log_fsm: partial
+education_resources:
+  - title: Guardrails AI — Documentation
+    url: https://www.guardrailsai.com/docs
+    type: docs
+    free: true
+  - title: Guardrails Hub — Validator catalogue
+    url: https://hub.guardrailsai.com/
+    type: docs
+    free: true
+sovereignty_notes: |
+  US-incorporated company; OSS core is Apache-2.0 and fully self-hostable.
+  Provider-agnostic via the LiteLLM integration and direct adapters for
+  OpenAI / Anthropic / Cohere / Hugging Face / Ollama / local
+  OpenAI-compatible endpoints. Validators run locally; no telemetry
+  by default. Validator hub is a separate optional service —
+  validators themselves are installable as pip packages, so the runtime
+  is self-contained.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - nemo-guardrails
+  - rebuff

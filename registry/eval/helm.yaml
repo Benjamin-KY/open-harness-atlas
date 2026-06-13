@@ -1,0 +1,52 @@
+id: helm
+name: HELM (Holistic Evaluation of Language Models)
+category: eval
+subcategory: academic-benchmark-runner
+repo_url: https://github.com/stanford-crfm/helm
+homepage: https://crfm.stanford.edu/helm/
+license: Apache-2.0
+primary_language: Python
+tagline: Stanford CRFM's holistic, multi-metric LLM evaluation across accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency.
+description: |
+  HELM is the Stanford Center for Research on Foundation Models'
+  Apache-2.0 evaluation framework, distinguished by its **holistic**
+  multi-metric design: every scenario is scored on accuracy,
+  calibration, robustness, fairness, bias, toxicity, and efficiency
+  (where applicable), not on accuracy alone. HELM ships several
+  benchmark suites (HELM Lite, HELM MMLU, HELM Classic, HELM Safety,
+  HELM Capabilities) and publishes leaderboards as a public good.
+
+  In the atlas: HELM is the canonical **holistic, multi-metric eval
+  harness**. Where lm-evaluation-harness optimises for breadth of
+  tasks, HELM optimises for breadth of metrics on the same task —
+  useful when the question is "what trade-offs does this model
+  make?" rather than "what score does it post?".
+maturity: ga
+maintainer:
+  type: institution
+  name: Stanford CRFM
+origin_country: US
+model_agnostic_score: 4
+education_resources:
+  - title: HELM — Documentation
+    url: https://crfm-helm.readthedocs.io/
+    type: docs
+    free: true
+  - title: HELM — Public leaderboards
+    url: https://crfm.stanford.edu/helm/
+    type: docs
+    free: true
+  - title: Holistic Evaluation of Language Models (paper)
+    url: https://arxiv.org/abs/2211.09110
+    type: paper
+    free: true
+sovereignty_notes: |
+  Stanford academic project; Apache-2.0; runs entirely locally.
+  Multi-backend (Hugging Face, OpenAI-compatible endpoints, Anthropic,
+  Google, Mistral, vLLM, local models). Conservative model-agnostic 4
+  because some HELM scenarios assume specific API-side capabilities
+  (e.g., logprob access) that not every backend exposes uniformly.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - lm-evaluation-harness
+  - inspect-ai

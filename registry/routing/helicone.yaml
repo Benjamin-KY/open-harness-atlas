@@ -1,0 +1,44 @@
+id: helicone
+name: Helicone
+category: routing
+subcategory: proxy-with-observability
+repo_url: https://github.com/Helicone/helicone
+homepage: https://www.helicone.ai/
+license: Apache-2.0
+primary_language: TypeScript
+tagline: OSS proxy that adds observability, caching, prompt management, and routing across LLM providers.
+description: |
+  Helicone is an Apache-2.0 LLM gateway / proxy with built-in
+  observability (cost, latency, error tracking), prompt management,
+  caching, and rate limiting. Applications point at the Helicone
+  proxy URL and Helicone forwards to the underlying provider while
+  recording the trace. It supports OpenAI, Anthropic, Google, Cohere,
+  TogetherAI, Anyscale, and any OpenAI-compatible endpoint.
+
+  In the atlas: Helicone is the **observability-first** routing
+  alternative. Where LiteLLM emphasises provider breadth and Portkey
+  emphasises production routing, Helicone emphasises the audit-trail
+  side — useful as the substrate under a Harmless Harnesses
+  audit-log invariant.
+maturity: ga
+maintainer:
+  type: company
+  name: Helicone Inc.
+origin_country: US
+model_agnostic_score: 4
+education_resources:
+  - title: Helicone — Documentation
+    url: https://docs.helicone.ai/
+    type: docs
+    free: true
+sovereignty_notes: |
+  US-incorporated company; OSS proxy + dashboard are Apache-2.0 and
+  fully self-hostable (Docker + docker-compose); the hosted
+  helicone.ai product is a separate paid offering. Multi-provider
+  via the proxy URL pattern. Conservative model-agnostic 4 because
+  some advanced features (prompt management, experiments) integrate
+  more deeply with OpenAI-format calls than with other providers.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - litellm
+  - portkey-gateway

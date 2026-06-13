@@ -1,0 +1,49 @@
+id: autogen
+name: AutoGen
+category: agent
+subcategory: multi-agent-conversation
+repo_url: https://github.com/microsoft/autogen
+homepage: https://microsoft.github.io/autogen/
+license: MIT
+primary_language: Python
+tagline: Microsoft Research's multi-agent conversation framework — agents talk to each other to solve tasks.
+description: |
+  AutoGen is Microsoft Research's MIT-licensed framework for building
+  multi-agent systems where agents converse with each other to solve
+  tasks. The v0.4+ rewrite is async-first, with explicit agent
+  classes (`AssistantAgent`, `UserProxyAgent`, custom), group chat
+  managers, and a clean separation between **AgentChat** (high-level
+  conversation patterns) and **Core** (low-level agent runtime).
+
+  In the atlas: AutoGen is the canonical example of an
+  **multi-agent-conversation** framework. The conversation idiom is
+  useful for problems that benefit from explicit critic / writer /
+  reviewer roles. As with all agent frameworks, pair with a governance
+  harness for output contracts.
+maturity: ga
+maintainer:
+  type: institution
+  name: Microsoft Research
+origin_country: US
+model_agnostic_score: 4
+education_resources:
+  - title: AutoGen — Official documentation
+    url: https://microsoft.github.io/autogen/
+    type: docs
+    free: true
+  - title: AutoGen — User guide
+    url: https://microsoft.github.io/autogen/stable//user-guide/
+    type: tutorial
+    free: true
+sovereignty_notes: |
+  Microsoft Research, MIT-licensed, fully self-hostable. Multi-provider
+  via the v0.4 `ChatCompletionClient` abstraction — OpenAI / Anthropic /
+  Azure / OpenAI-compatible local backends all supported through
+  configuration. Conservative model-agnostic 4 because conversation
+  patterns sometimes need per-provider prompt tuning for reliable
+  termination behaviour.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - crewai
+  - langgraph
+  - smolagents

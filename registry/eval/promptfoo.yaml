@@ -1,0 +1,45 @@
+id: promptfoo
+name: promptfoo
+category: eval
+subcategory: application-level-eval
+repo_url: https://github.com/promptfoo/promptfoo
+homepage: https://www.promptfoo.dev/
+license: MIT
+primary_language: TypeScript
+tagline: Declarative test-driven evaluation of LLM applications with side-by-side prompt and model comparisons.
+description: |
+  promptfoo is an MIT-licensed CLI and library for declarative,
+  test-driven LLM evaluation. A YAML config defines prompts, providers
+  (any of 50+ supported), and test cases with assertions (exact
+  match, regex, JSON schema, LLM-as-judge, latency, cost, custom
+  Python / JavaScript). The CLI runs the matrix and produces a
+  shareable HTML / web report with side-by-side prompt-vs-prompt or
+  model-vs-model diffs. It also includes red-team / scan modes for
+  jailbreak, prompt-injection, and harmful-content probes.
+
+  In the atlas: promptfoo is the canonical **application-level
+  test-driven eval harness**. Where DeepEval mirrors pytest, promptfoo
+  mirrors a declarative test matrix — useful when the comparison axis
+  is the prompt or the provider rather than the application logic.
+maturity: ga
+maintainer:
+  type: company
+  name: promptfoo Inc.
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: promptfoo — Documentation
+    url: https://www.promptfoo.dev/docs/intro/
+    type: docs
+    free: true
+sovereignty_notes: |
+  US-incorporated company; OSS CLI + viewer are MIT-licensed and run
+  entirely locally; no telemetry by default. Provider config is a
+  string, so swapping among OpenAI / Anthropic / local Ollama / vLLM
+  is a one-line change. Model-agnostic 5 — the YAML config is the
+  same file regardless of which providers are listed under it.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - deepeval
+  - ragas
+  - garak

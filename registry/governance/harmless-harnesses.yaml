@@ -1,0 +1,79 @@
+id: harmless-harnesses
+name: Harmless Harnesses
+category: governance
+subcategory: five-component-spine
+repo_url: https://github.com/Benjamin-KY/Harmless-Harnesses
+homepage: https://github.com/Benjamin-KY/Harmless-Harnesses
+license: Apache-2.0
+primary_language: Python
+tagline: A two-track code course teaching the five-component governance harness spine.
+description: |
+  Harmless Harnesses is a two-track code course (Concept + Practitioner,
+  with a shared Foundation and a Tensions track) on governance harnesses
+  for LLMs in regulated and high-stakes settings. It ships a reference
+  Python package (`harmless_harness`), four worked domains (SA
+  governance, IT helpdesk, compliance Q&A, financial services), 22
+  red-team probes, and an L1–L4 conformance ladder.
+
+  In the atlas: Harmless Harnesses is included as a governance entry
+  because the `src/harmless_harness/` package is itself a functioning,
+  reference-quality implementation of the five-component spine the
+  atlas scores other entries against. It is also the **pedagogical
+  sibling of this atlas** — `open-harness-atlas` catalogues OSS
+  components; Harmless Harnesses teaches how to compose them. See
+  [`CHARTER.md`](../../CHARTER.md) for the relationship.
+
+  **Conflict of interest disclosure.** The author of this atlas is the
+  author of Harmless Harnesses. Per [`GOVERNANCE.md`](../../GOVERNANCE.md)
+  §5, this entry is scored conservatively; a non-author reviewer should
+  be requested on any PR labelled `coi-self-curation` that modifies it.
+maturity: ga
+maintainer:
+  type: individual
+  name: Ben Kereopa-Yorke
+origin_country: AU
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: native
+  source_authority: native
+  prompt_composer: native
+  output_contract: native
+  audit_log_fsm: native
+education_resources:
+  - title: Harmless Harnesses — Foundation track (free)
+    url: https://github.com/Benjamin-KY/Harmless-Harnesses/tree/main/course/00_foundation
+    type: course
+    free: true
+  - title: Harmless Harnesses — Concept track (free)
+    url: https://github.com/Benjamin-KY/Harmless-Harnesses/tree/main/course/01_concept_track
+    type: course
+    free: true
+  - title: Harmless Harnesses — Practitioner track (free)
+    url: https://github.com/Benjamin-KY/Harmless-Harnesses/tree/main/course/02_practitioner_track
+    type: course
+    free: true
+  - title: Harmless Harnesses — Tensions track (free)
+    url: https://github.com/Benjamin-KY/Harmless-Harnesses/tree/main/course/03_tensions_track
+    type: course
+    free: true
+sovereignty_notes: |
+  Maintained by an independent Indigenous Australian author; affiliation
+  with Jeff Bleich Centre for Democracy and Disruptive Technologies,
+  Flinders University. Code dual-licensed Apache-2.0 (code) and
+  CC BY-SA 4.0 (content). Fully self-hostable; default mock adapter
+  runs the entire course offline. Live-model adapter supports any
+  OpenAI-compatible endpoint including local Ollama / vLLM / llama.cpp.
+  Model-agnostic 4 (not 5) because some Practitioner-track exercises
+  depend on provider-specific tool-call formats that require small
+  per-provider adjustments.
+harness_paradigm_alignment: native
+adjacent_to:
+  - nemo-guardrails
+  - guardrails-ai
+  - granite-guardian
+notes_for_maintainers: |
+  Self-curated by the atlas author — see GOVERNANCE.md §5 (conflict of
+  interest). Score `native` on all five components reflects that the
+  reference package is the canonical implementation the rubric was
+  written against; this is *not* a quality boast — it is a structural
+  fact about which project defined the rubric.

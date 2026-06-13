@@ -1,0 +1,45 @@
+id: envoy-ai-gateway
+name: Envoy AI Gateway
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/envoyproxy/ai-gateway
+homepage: https://aigateway.envoyproxy.io/
+license: Apache-2.0
+primary_language: Go
+tagline: CNCF-grade AI gateway built on Envoy — k8s-native traffic management for LLM workloads.
+description: |
+  Envoy AI Gateway is a CNCF-Sandbox project that extends Envoy Proxy
+  (the cloud-native edge proxy) with LLM-aware features: provider
+  authentication, token-based rate limiting, request /response
+  translation across OpenAI / Anthropic / AWS Bedrock / Google
+  Vertex schemas, request retries on upstream errors, and integration
+  with the Envoy Gateway Kubernetes operator.
+
+  In the atlas: Envoy AI Gateway is the **CNCF / Kubernetes-native**
+  routing harness. It is the right choice when the deployment already
+  runs Envoy / Istio / Gateway API and wants the LLM-routing layer to
+  inherit the same operability primitives (mTLS, observability,
+  rate-limit infrastructure) rather than introducing a separate proxy.
+maturity: beta
+maintainer:
+  type: community
+  name: Envoy Project (CNCF Sandbox)
+origin_country: null
+model_agnostic_score: 4
+education_resources:
+  - title: Envoy AI Gateway — Documentation
+    url: https://aigateway.envoyproxy.io/docs/
+    type: docs
+    free: true
+sovereignty_notes: |
+  CNCF Sandbox project; Apache-2.0; vendor-neutral governance under
+  the Envoy Project. Self-hostable on any Kubernetes cluster.
+  Multi-provider via schema translation (OpenAI / Anthropic / AWS
+  Bedrock / Google Vertex); local-backend support depends on the
+  backend exposing an OpenAI-compatible endpoint inside the cluster.
+  Conservative model-agnostic 4 — production posture is k8s-only,
+  outside that footprint other gateways are simpler.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - portkey-gateway
+  - litellm

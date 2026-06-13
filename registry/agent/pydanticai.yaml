@@ -1,0 +1,45 @@
+id: pydanticai
+name: PydanticAI
+category: agent
+subcategory: typed-tools
+repo_url: https://github.com/pydantic/pydantic-ai
+homepage: https://ai.pydantic.dev/
+license: MIT
+primary_language: Python
+tagline: Type-safe agent framework from the Pydantic team — tools as decorated functions, structured outputs as Pydantic models.
+description: |
+  PydanticAI is an agent framework built by the Pydantic team that
+  brings Pydantic's type-safety discipline to LLM agent construction.
+  Agents are typed Python objects (`Agent[Deps, Output]`), tools are
+  decorated functions with `RunContext[Deps]` injection, structured
+  outputs are Pydantic models, and streaming, multi-turn, and
+  function-calling are first-class. It deliberately avoids the
+  inheritance-heavy patterns of older agent frameworks.
+
+  In the atlas: PydanticAI is the canonical example of a **typed-tools**
+  agent framework. It pairs cleanly with governance harnesses because
+  its strict output typing is enforceable at the type-check layer
+  (mypy / pyright) — closing one common drift surface.
+maturity: ga
+maintainer:
+  type: company
+  name: Pydantic Services Inc.
+origin_country: GB
+model_agnostic_score: 4
+education_resources:
+  - title: PydanticAI — Official documentation
+    url: https://ai.pydantic.dev/
+    type: docs
+    free: true
+sovereignty_notes: |
+  Maintained by the UK-incorporated Pydantic Services. MIT-licensed and
+  fully self-hostable. First-class adapters for OpenAI, Anthropic,
+  Google, Groq, Mistral, Ollama, and arbitrary OpenAI-compatible
+  endpoints. Conservative model-agnostic 4 because some structured-output
+  features depend on provider-specific tool-call formats; switching
+  backends sometimes requires minor schema adjustments.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - langgraph
+  - openai-agents-sdk
+  - claude-agent-sdk

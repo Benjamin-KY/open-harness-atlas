@@ -1,0 +1,45 @@
+id: ragas
+name: Ragas
+category: eval
+subcategory: rag-eval
+repo_url: https://github.com/explodinggradients/ragas
+homepage: https://docs.ragas.io/
+license: Apache-2.0
+primary_language: Python
+tagline: Reference-free and reference-based evaluation framework for retrieval-augmented generation pipelines.
+description: |
+  Ragas is an Apache-2.0 evaluation framework focused on retrieval-
+  augmented generation. It provides faithfulness, answer-relevancy,
+  context-precision, context-recall, context-entity-recall, answer-
+  similarity, and answer-correctness metrics — most computable
+  reference-free using an LLM-judge — plus synthetic test-set
+  generation, multi-turn-conversation evaluation, and integrations
+  with LangChain, LlamaIndex, Haystack, and Hugging Face datasets.
+
+  In the atlas: Ragas is the canonical **RAG-specific eval harness**.
+  RAG itself is an adjacency in this atlas (per CHARTER), but the
+  eval layer over RAG belongs in the atlas because it is the
+  regression gate that keeps a retrieval-augmented system honest as
+  the underlying model / index / chunker is swapped.
+maturity: ga
+maintainer:
+  type: company
+  name: Exploding Gradients
+origin_country: IN
+model_agnostic_score: 4
+education_resources:
+  - title: Ragas — Documentation
+    url: https://docs.ragas.io/en/stable/
+    type: docs
+    free: true
+sovereignty_notes: |
+  India-incorporated company; OSS core is Apache-2.0 and runs entirely
+  locally; both the system-under-test and the LLM-judge accept any
+  LangChain-compatible backend (including local Ollama / vLLM).
+  Conservative model-agnostic 4 because LLM-judge metric scores
+  shift with judge-model choice — a known property of this entire
+  metric family, not a Ragas-specific concern.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - deepeval
+  - promptfoo

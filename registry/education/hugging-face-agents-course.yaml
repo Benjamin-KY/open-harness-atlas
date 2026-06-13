@@ -1,0 +1,50 @@
+id: hugging-face-agents-course
+name: Hugging Face Agents Course
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/huggingface/agents-course
+homepage: https://huggingface.co/learn/agents-course/
+license: Apache-2.0
+primary_language: Jupyter Notebook
+tagline: Hugging Face's free course on building agents — from foundations through smolagents, LangGraph, and LlamaIndex.
+description: |
+  Hugging Face Agents Course is the Hugging Face team's Apache-2.0
+  free course on building LLM agents. It progresses from agent
+  foundations (planning, tool-calling, multi-step reasoning) through
+  three concrete frameworks (Hugging Face smolagents, LangGraph,
+  LlamaIndex agents) and concludes with deployment and evaluation
+  patterns. Course content is published as Markdown / notebooks in
+  the open repository; an optional certificate flow exists on the
+  HF platform but is not required to learn from the material.
+
+  In the atlas: this is the **multi-framework agent curriculum**
+  entry. Where Microsoft AI Agents for Beginners centres on a single
+  vendor stack, the HF course deliberately rotates across frameworks
+  — useful for forming a framework-agnostic mental model.
+maturity: ga
+maintainer:
+  type: company
+  name: Hugging Face
+origin_country: FR
+model_agnostic_score: 5
+education_resources:
+  - title: Hugging Face Agents Course (rendered)
+    url: https://huggingface.co/learn/agents-course/
+    type: course
+    free: true
+  - title: Hugging Face Agents Course — source repository
+    url: https://github.com/huggingface/agents-course
+    type: course
+    free: true
+sovereignty_notes: |
+  Hugging Face (French-incorporated company); course content
+  Apache-2.0; framework examples run against any provider supported
+  by the underlying framework (smolagents, LangGraph, and
+  LlamaIndex are themselves multi-provider). Model-agnostic 5 —
+  rotating across three frameworks is itself the lesson.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - microsoft-ai-agents-for-beginners
+  - smolagents
+  - langgraph
+  - llama-index-agents

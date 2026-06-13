@@ -1,0 +1,48 @@
+id: agentdojo
+name: AgentDojo
+category: redteam
+subcategory: agent-security-benchmark
+repo_url: https://github.com/ethz-spylab/agentdojo
+homepage: https://agentdojo.spylab.ai/
+license: MIT
+primary_language: Python
+tagline: Dynamic environment to evaluate prompt-injection attacks and defences against tool-using LLM agents.
+description: |
+  AgentDojo is ETH Zürich SPY Lab's MIT-licensed dynamic environment
+  for evaluating attacks and defences against tool-using LLM agents.
+  It defines a benchmark of agent tasks across realistic domains
+  (banking, travel-booking, Slack, Workspace, etc.), a set of
+  prompt-injection attacks (direct, indirect via tool outputs, and
+  combined), and metrics for both **utility under attack** and
+  **attack success rate** — separating "did the agent still do its
+  job?" from "did the attack land?".
+
+  In the atlas: AgentDojo is the canonical **agent-security benchmark**.
+  Where garak / PyRIT probe model-tier behaviour, AgentDojo probes
+  the agentic surface (tool-calling under adversarial input) — a
+  necessary complement when the harness exposes tools.
+maturity: ga
+maintainer:
+  type: institution
+  name: ETH Zürich SPY Lab
+origin_country: CH
+model_agnostic_score: 5
+education_resources:
+  - title: AgentDojo — Documentation
+    url: https://agentdojo.spylab.ai/
+    type: docs
+    free: true
+  - title: AgentDojo — Paper (NeurIPS 2024 Datasets & Benchmarks)
+    url: https://arxiv.org/abs/2406.13352
+    type: paper
+    free: true
+sovereignty_notes: |
+  ETH Zürich (Swiss public university); MIT-licensed; runs entirely
+  locally. The benchmark pipeline is provider-agnostic; the agent
+  under test can be any OpenAI / Anthropic / Google / local backend.
+  Model-agnostic 5 — provider is a config string and the same
+  benchmark task runs against any supported backend.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - toolemu
+  - pyrit

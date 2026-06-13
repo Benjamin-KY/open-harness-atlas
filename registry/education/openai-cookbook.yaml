@@ -1,0 +1,45 @@
+id: openai-cookbook
+name: OpenAI Cookbook
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/openai/openai-cookbook
+homepage: https://cookbook.openai.com/
+license: MIT
+primary_language: Jupyter Notebook
+tagline: Practical recipes and example notebooks for building with the OpenAI API.
+description: |
+  OpenAI Cookbook is OpenAI's MIT-licensed collection of practical
+  Jupyter-notebook recipes for building with the OpenAI API:
+  embeddings, fine-tuning, function-calling, RAG, evaluations,
+  agentic patterns, vision / audio, and more. The notebooks are
+  pedagogically clear and frequently used as templates by
+  practitioners getting started with OpenAI-format LLMs.
+
+  In the atlas: this is included as **practitioner-grade
+  documentation for OpenAI-format APIs** — most of the patterns
+  apply directly to any OpenAI-compatible backend (local Ollama,
+  vLLM, llama.cpp; routed via LiteLLM), so the value is not
+  vendor-locked even though the source is OpenAI.
+maturity: ga
+maintainer:
+  type: company
+  name: OpenAI
+origin_country: US
+model_agnostic_score: 3
+education_resources:
+  - title: OpenAI Cookbook (renders as a website)
+    url: https://cookbook.openai.com/
+    type: tutorial
+    free: true
+  - title: openai-cookbook — Source notebooks on GitHub
+    url: https://github.com/openai/openai-cookbook
+    type: tutorial
+    free: true
+sovereignty_notes: |
+  US-incorporated company; notebooks MIT-licensed; concepts
+  generally transfer to any OpenAI-compatible backend, but most
+  examples assume the hosted OpenAI API. Model-agnostic 3 — the
+  *concepts* are portable, the *examples* require minor adaptation
+  to point at a different backend.
+harness_paradigm_alignment: partial
+adjacent_to: []

@@ -1,0 +1,53 @@
+id: inspect-ai
+name: Inspect AI
+category: eval
+subcategory: safety-eval-framework
+repo_url: https://github.com/UKGovernmentBEIS/inspect_ai
+homepage: https://inspect.aisi.org.uk/
+license: MIT
+primary_language: Python
+tagline: UK AI Safety Institute's framework for large-language-model safety and capability evaluations.
+description: |
+  Inspect AI is the UK AI Safety Institute's (UK AISI) open-source
+  framework for large-language-model evaluations, with a particular
+  emphasis on safety and capability assessments. It provides a
+  task-and-solver abstraction (a `Task` is a dataset + a `Solver`
+  pipeline + a `Scorer`), pluggable model providers (OpenAI,
+  Anthropic, Google, Hugging Face, Mistral, Together, vLLM, Ollama,
+  Bedrock, Vertex), an interactive log viewer, and well-instrumented
+  primitives for tool-use, multi-turn conversation, and
+  human-in-the-loop scoring.
+
+  In the atlas: Inspect AI is the canonical **government-grade
+  safety-eval harness**. It is the framework used by UK AISI for
+  pre-deployment safety evaluations of frontier models and a number
+  of open replications of those evaluations. Including it in the
+  atlas signals that government-quality eval infrastructure is OSS,
+  jurisdiction-portable, and not gated to UK use.
+maturity: ga
+maintainer:
+  type: institution
+  name: UK AI Safety Institute (UK AISI)
+origin_country: GB
+model_agnostic_score: 5
+education_resources:
+  - title: Inspect AI — Documentation
+    url: https://inspect.aisi.org.uk/
+    type: docs
+    free: true
+  - title: Inspect AI — Evals (companion repo of reusable eval implementations)
+    url: https://github.com/UKGovernmentBEIS/inspect_evals
+    type: docs
+    free: true
+sovereignty_notes: |
+  UK government institute; MIT-licensed; runs entirely locally;
+  any OpenAI-compatible local backend is a first-class model option.
+  Notable for being a government-grade safety-eval framework that is
+  unambiguously OSS and unambiguously portable across jurisdictions —
+  one of the cleanest counter-examples to the closed-garden
+  trend named in CHARTER. Model-agnostic 5 — provider is a config
+  string and the same task runs against any supported backend.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - lm-evaluation-harness
+  - helm

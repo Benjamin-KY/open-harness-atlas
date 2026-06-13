@@ -1,0 +1,47 @@
+id: karpathy-nn-zero-to-hero
+name: Neural Networks — Zero to Hero (Karpathy)
+category: education
+subcategory: foundations
+repo_url: https://github.com/karpathy/nn-zero-to-hero
+homepage: https://karpathy.ai/zero-to-hero.html
+license: MIT
+primary_language: Python
+tagline: Andrej Karpathy's video-lecture series and accompanying notebooks building neural networks and transformers from scratch.
+description: |
+  Neural Networks — Zero to Hero is Andrej Karpathy's free video-
+  lecture series (released on YouTube) with accompanying MIT-licensed
+  Jupyter notebooks that build neural networks — and eventually a
+  GPT-style transformer — from scratch in plain Python, then PyTorch.
+  The series is widely considered one of the strongest introductions
+  to the internals of modern LLMs without prerequisites beyond basic
+  Python and calculus.
+
+  In the atlas: this is the **foundations-from-scratch** education
+  entry. It establishes what a model *is* before the rest of the
+  catalog discusses what to put *around* a model.
+maturity: ga
+maintainer:
+  type: individual
+  name: Andrej Karpathy
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: Neural Networks — Zero to Hero (YouTube playlist)
+    url: https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ
+    type: video
+    free: true
+  - title: nn-zero-to-hero — Jupyter notebooks
+    url: https://github.com/karpathy/nn-zero-to-hero
+    type: tutorial
+    free: true
+  - title: micrograd — Companion repo (autograd in 100 LOC)
+    url: https://github.com/karpathy/micrograd
+    type: tutorial
+    free: true
+sovereignty_notes: |
+  Solo-authored by Andrej Karpathy; notebooks MIT; videos free on
+  YouTube. Content is foundational and model-agnostic by construction
+  (you are building the model itself). Model-agnostic 5 — the lesson
+  *is* the model.
+harness_paradigm_alignment: partial
+adjacent_to: []

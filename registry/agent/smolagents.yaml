@@ -1,0 +1,50 @@
+id: smolagents
+name: smolagents
+category: agent
+subcategory: code-action
+repo_url: https://github.com/huggingface/smolagents
+homepage: https://huggingface.co/docs/smolagents
+license: Apache-2.0
+primary_language: Python
+tagline: Hugging Face's minimal agent framework — agents that write Python code to take actions.
+description: |
+  smolagents is Hugging Face's small, Apache-2.0 agent framework where
+  agents **act by writing Python code** rather than emitting tool-call
+  JSON. The agent's reasoning step produces a code snippet, the
+  framework executes it in a sandbox (`E2BCodeExecutor`,
+  `LocalPythonExecutor`, or `DockerCodeExecutor`), and the result feeds
+  back into the next reasoning step. It supports both `CodeAgent`
+  (code-action) and `ToolCallingAgent` (traditional tool-call) styles.
+
+  In the atlas: smolagents is the canonical example of a **code-action**
+  agent framework — empirically, code-action agents often outperform
+  tool-call agents on tasks that need data manipulation, math, or
+  composition of multiple tool results.
+maturity: beta
+maintainer:
+  type: company
+  name: Hugging Face
+origin_country: US
+model_agnostic_score: 4
+education_resources:
+  - title: smolagents — Documentation
+    url: https://huggingface.co/docs/smolagents
+    type: docs
+    free: true
+  - title: Hugging Face — Agents course (free)
+    url: https://huggingface.co/learn/agents-course
+    type: course
+    free: true
+sovereignty_notes: |
+  Hugging Face-maintained, Apache-2.0, fully self-hostable as a Python
+  package. Multi-provider via `HfApiModel`, `LiteLLMModel`,
+  `TransformersModel` (local), and `OpenAIServerModel` (any
+  OpenAI-compatible endpoint). The `TransformersModel` runs fully
+  local; conservative model-agnostic 4 because code-action quality
+  varies meaningfully across models — small local models produce
+  lower-quality code than frontier models.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - pydanticai
+  - llama-index-agents
+  - crewai
