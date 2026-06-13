@@ -1,0 +1,5354 @@
+{
+  "meta": {
+    "n_nodes": 236,
+    "n_edges": 738,
+    "categories": [
+      {
+        "key": "governance",
+        "color": "#1f3a5f",
+        "count": 28
+      },
+      {
+        "key": "agent",
+        "color": "#d68910",
+        "count": 62
+      },
+      {
+        "key": "eval",
+        "color": "#28a745",
+        "count": 45
+      },
+      {
+        "key": "redteam",
+        "color": "#c0392b",
+        "count": 33
+      },
+      {
+        "key": "routing",
+        "color": "#3498db",
+        "count": 32
+      },
+      {
+        "key": "education",
+        "color": "#7d3c98",
+        "count": 36
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "ag2",
+      "name": "AG2",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/ag2ai/ag2",
+      "tagline": "AutoGen community fork actively evolving toward AgentOS with production multi-agent workflows",
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "agency-swarm",
+      "name": "Agency Swarm",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/VRSEN/agency-swarm",
+      "tagline": "Role-based multi-agent system extending OpenAI Agents SDK with org-chart communication protocols",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "agentflow-grpo",
+      "name": "AgentFlow",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/lupantech/agentflow",
+      "tagline": "Trainable multi-agent framework with GRPO-based RL optimization across 4-stage agent pipeline",
+      "degree": 1,
+      "mas": 4
+    },
+    {
+      "id": "agentforge",
+      "name": "AgentForge",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/DataBassGit/AgentForge",
+      "tagline": "YAML-driven cognitive architecture builder with hot-reloadable agent configs and memory management",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "agentgpt",
+      "name": "AgentGPT",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/reworkd/AgentGPT",
+      "tagline": "Browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "agentlab",
+      "name": "AgentLab",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/ServiceNow/AgentLab",
+      "tagline": "Research harness for developing and comparing web agents on BrowserGym standardized benchmarks",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "agentscope",
+      "name": "AgentScope",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/agentscope-ai/agentscope",
+      "tagline": "Production multi-agent platform v2.0 with event-driven messaging, multi-tenant, actor model",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "agentverse-openbmb",
+      "name": "AgentVerse",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/OpenBMB/AgentVerse",
+      "tagline": "Multi-agent simulation and task-solving framework with task-oriented and simulation operating modes",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "agixt",
+      "name": "AGiXT",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/Josh-XT/AGiXT",
+      "tagline": "Multi-provider chain-of-thought agent with plugin system, memory backends, REST API server",
+      "degree": 4,
+      "mas": 5
+    },
+    {
+      "id": "agno",
+      "name": "Agno",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/agno-agi/agno",
+      "tagline": "Production agent SDK (ex-phidata) with built-in memory, knowledge bases, 100+ toolkits, team API",
+      "degree": 7,
+      "mas": 5
+    },
+    {
+      "id": "aiwaves-agents",
+      "name": "Agents (AIWaves)",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/aiwaves-cn/agents",
+      "tagline": "SOP-based multi-agent framework with symbolic learning v2.0 for self-evolving agent behaviors",
+      "degree": 1,
+      "mas": 4
+    },
+    {
+      "id": "atomic-agents",
+      "name": "Atomic Agents",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/Eigenwise/atomic-agents",
+      "tagline": "Minimal modular agent building kit (LEGO-block) on Instructor + Pydantic",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "autogen",
+      "name": "AutoGen",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/microsoft/autogen",
+      "tagline": "Microsoft Research's multi-agent conversation framework \u2014 agents talk to each other to solve tasks.",
+      "degree": 15,
+      "mas": 4
+    },
+    {
+      "id": "babyagi",
+      "name": "BabyAGI",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/yoheinakajima/babyagi",
+      "tagline": "Self-building autonomous agent that stores function definitions and iteratively invents new tools",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "beeai-framework",
+      "name": "BeeAI Framework",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/i-am-bee/beeai-framework",
+      "tagline": "Dual-language (Python + TypeScript) agent framework from IBM with A2A, MCP, workflow primitives",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "browser-use",
+      "name": "Browser Use",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/browser-use/browser-use",
+      "tagline": "LLM-driven browser automation with Playwright; SOTA on WebVoyager",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "camel",
+      "name": "CAMEL",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/camel-ai/camel",
+      "tagline": "Communicative role-playing multi-agent framework for scaling law research and agent interaction",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "chatdev",
+      "name": "ChatDev",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/OpenBMB/ChatDev",
+      "tagline": "Multi-agent virtual software company v2.0 for end-to-end zero-code application development",
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "claude-agent-sdk",
+      "name": "Claude Agent SDK",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/anthropics/claude-agent-sdk-python",
+      "tagline": "Anthropic's MIT-licensed agent SDK with declarative tool definitions and bounded agentic loops.",
+      "degree": 8,
+      "mas": 1
+    },
+    {
+      "id": "copilotkit",
+      "name": "CopilotKit",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "tagline": "React/fullstack framework for in-app agents with AG-UI protocol, generative UI, shared state",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "crewai",
+      "name": "CrewAI",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "tagline": "Role-based multi-agent orchestration \u2014 Agents with goals and roles execute Tasks within a Crew.",
+      "degree": 12,
+      "mas": 3
+    },
+    {
+      "id": "db-gpt",
+      "name": "DB-GPT",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/eosphoros-ai/DB-GPT",
+      "tagline": "Data-native agent platform for SQL generation, code execution, charting, multi-source data access",
+      "degree": 1,
+      "mas": 4
+    },
+    {
+      "id": "deer-flow",
+      "name": "DeerFlow",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/bytedance/deer-flow",
+      "tagline": "Super-agent harness with specialized sub-agents, scratchpad memory, code sandbox, report generation",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "dspy",
+      "name": "DSPy",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/stanfordnlp/dspy",
+      "tagline": "Declarative programming model for LLM pipelines and self-optimizing agent loops via compiler",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "eidolon",
+      "name": "Eidolon",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/eidolon-ai/eidolon",
+      "tagline": "Service-oriented agent SDK where each agent is a deployable HTTP service with OpenAPI schema",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "fastagency",
+      "name": "FastAgency",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/ag2ai/fastagency",
+      "tagline": "Production deployment wrapper for AG2 with REST API scaffold, web UI, CI test harness",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "flowise",
+      "name": "Flowise",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "tagline": "Low-code drag-drop UI for building LLM agents and RAG pipelines; REST API and Docker deployable",
+      "degree": 4,
+      "mas": 5
+    },
+    {
+      "id": "google-adk",
+      "name": "Google Agent Development Kit (ADK)",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/google/adk-python",
+      "tagline": "Google's Apache-2.0 agent SDK with FunctionTool, Gemini-native tool use, and async runners.",
+      "degree": 8,
+      "mas": 2
+    },
+    {
+      "id": "gpt-researcher",
+      "name": "GPT Researcher",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/assafelovic/gpt-researcher",
+      "tagline": "Autonomous research agent producing long-form reports from 20+ web sources with planner/executor pattern",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "haystack",
+      "name": "Haystack",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/deepset-ai/haystack",
+      "tagline": "Modular pipeline orchestration for LLM apps with RAG, agent tools, and streaming support",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "julep",
+      "name": "Julep",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/julep-ai/julep",
+      "tagline": "YAML-defined multi-step agent workflows with persistent memory, tool calls, serverless scaling",
+      "degree": 1,
+      "mas": 4
+    },
+    {
+      "id": "langflow",
+      "name": "Langflow",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/langflow-ai/langflow",
+      "tagline": "Drag-and-drop visual builder for LLM flows and agent pipelines; exports as MCP server",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "tagline": "Stateful, controllable agents as explicit graphs of nodes and edges \u2014 checkpointing and time-travel built in.",
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "letta",
+      "name": "Letta",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/letta-ai/letta",
+      "tagline": "Stateful long-running agents with self-editing memory blocks, message queues, REST API",
+      "degree": 1,
+      "mas": 4
+    },
+    {
+      "id": "llama-index-agents",
+      "name": "LlamaIndex Agents",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/run-llama/llama_index",
+      "tagline": "LlamaIndex's agent layer \u2014 ReAct / OpenAIAgent / FunctionCallingAgent over a RAG-native data substrate.",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "mastra",
+      "name": "Mastra",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/mastra-ai/mastra",
+      "tagline": "TypeScript-first multi-agent framework with workflows, RAG pipelines, observability, MCP support",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "metagpt",
+      "name": "MetaGPT",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/FoundationAgents/MetaGPT",
+      "tagline": "Simulates a software company with role-playing LLM agents (PM, Dev, QA) for code generation",
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "microsoft-agent-framework",
+      "name": "Microsoft Agent Framework",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/microsoft/agent-framework",
+      "tagline": "Enterprise-grade multi-language successor to Semantic Kernel for multi-agent orchestration",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "mini-swe-agent",
+      "name": "mini-SWE-agent",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/SWE-agent/mini-swe-agent",
+      "tagline": "Minimal bash-only SWE agent, 100x simpler than SWE-agent; SOTA on DeepSWE-verified leaderboard",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "mirascope",
+      "name": "Mirascope",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/Mirascope/mirascope",
+      "tagline": "Decorator-based unified LLM call interface that composes tools, agents, and evaluations idiomatically",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "open-interpreter",
+      "name": "Open Interpreter",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/openinterpreter/openinterpreter",
+      "tagline": "Terminal-native coding agent that executes code locally; rebuilt in Rust with pluggable harnesses",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "openagents-org",
+      "name": "OpenAgents (openagents-org)",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/openagents-org/openagents",
+      "tagline": "Multi-protocol agent networking platform supporting A2A, MCP, WebSocket-based agent communication",
+      "degree": 1,
+      "mas": 4
+    },
+    {
+      "id": "openagents-xlang",
+      "name": "OpenAgents (xlang)",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/xlang-ai/OpenAgents",
+      "tagline": "Open platform with three production-ready agents: data analyst, plugin orchestrator, web browser",
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "openai-agents-sdk",
+      "name": "OpenAI Agents SDK",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/openai/openai-agents-python",
+      "tagline": "OpenAI's lightweight agent SDK with tool decorators, handoffs, guardrails, and tracing.",
+      "degree": 7,
+      "mas": 3
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "tagline": "Full-stack SWE agent (GUI + CLI + SDK) that uses sandboxed runtime to read/write entire repos",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "openmanus",
+      "name": "OpenManus",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/FoundationAgents/OpenManus",
+      "tagline": "General-purpose agent with MCP, browser control, and multi-agent sub-flows; no invite required",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "praisonai",
+      "name": "PraisonAI",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/MervinPraison/PraisonAI",
+      "tagline": "Low-code multi-agent framework with 100+ LLMs via LiteLLM, MCP, self-reflection, visual dashboard",
+      "degree": 11,
+      "mas": 5
+    },
+    {
+      "id": "pydanticai",
+      "name": "PydanticAI",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "tagline": "Type-safe agent framework from the Pydantic team \u2014 tools as decorated functions, structured outputs as Pydantic models.",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "rivet",
+      "name": "Rivet",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/Ironclad/rivet",
+      "tagline": "Visual graph-based IDE for building, testing, and deploying agent/prompt chains as code",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "semantic-kernel",
+      "name": "Semantic Kernel",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/microsoft/semantic-kernel",
+      "tagline": "Multi-language enterprise SDK for building LLM agents with plugins, memory, planner subsystems",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "smolagents",
+      "name": "smolagents",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/huggingface/smolagents",
+      "tagline": "Hugging Face's minimal agent framework \u2014 agents that write Python code to take actions.",
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "storm",
+      "name": "STORM",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/stanford-oval/storm",
+      "tagline": "Multi-agent research pipeline that writes Wikipedia-quality articles via iterative web search + synthesis",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "strands",
+      "name": "Strands Agents",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/strands-agents/sdk-python",
+      "tagline": "AWS's openly-licensed agent SDK \u2014 model-native tool use with Anthropic, OpenAI, and Bedrock backends.",
+      "degree": 7,
+      "mas": 3
+    },
+    {
+      "id": "superagi",
+      "name": "SuperAGI",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/TransformerOptimus/SuperAGI",
+      "tagline": "Dev-first autonomous agent framework with web console, agent marketplace, and performance telemetry",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "swarm-openai",
+      "name": "Swarm (OpenAI)",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/openai/swarm",
+      "tagline": "Educational reference implementation of lightweight multi-agent handoff and orchestration patterns",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "swe-agent",
+      "name": "SWE-agent",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "tagline": "GitHub-issue->PR agent with configurable Agent-Computer Interface (ACI) and tool filtering",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "tambo",
+      "name": "Tambo",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/tambo-ai/tambo",
+      "tagline": "React generative-UI library where LLMs stream rendered components; AG-UI and MCP compliant",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "taskweaver",
+      "name": "TaskWeaver",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/microsoft/TaskWeaver",
+      "tagline": "Code-first data analytics agent that maintains dual history (chat + code) and generates reusable plugins",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "ufo",
+      "name": "UFO/UFO3 Galaxy",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/microsoft/UFO",
+      "tagline": "Windows GUI computer-use agent with DAG multi-device orchestration and action history reasoning",
+      "degree": 1,
+      "mas": 4
+    },
+    {
+      "id": "upsonic",
+      "name": "Upsonic",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/upsonic/upsonic",
+      "tagline": "Reliability-layer agent framework with MCP-native tooling, workspace sandboxing, OCR integration",
+      "degree": 1,
+      "mas": 4
+    },
+    {
+      "id": "voyager",
+      "name": "Voyager",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/MineDojo/Voyager",
+      "tagline": "First lifelong LLM-powered embodied agent in Minecraft with auto-curriculum and self-growing skill library",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "xagent",
+      "name": "XAgent",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/OpenBMB/XAgent",
+      "tagline": "Autonomous task decomposition agent with PlanTree + ToolServer + inner/outer dual-loop architecture",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "anthropic-prompt-eng-tutorial",
+      "name": "Anthropic Prompt Engineering Interactive Tutorial",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "tagline": "Anthropic's free hands-on prompt-engineering course as runnable Jupyter notebooks.",
+      "degree": 7,
+      "mas": 3
+    },
+    {
+      "id": "aws-bedrock-workshop",
+      "name": "Amazon Bedrock Workshop",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/aws-samples/amazon-bedrock-workshop",
+      "tagline": "Self-paced hands-on workshop: Bedrock text gen, Knowledge Bases RAG, agents, fine-tuning",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "dair-prompt-engineering-guide",
+      "name": "Prompt Engineering Guide",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "tagline": "Comprehensive reference + notebooks covering CoT, ToT, RAG, agents, and advanced prompting",
+      "degree": 2,
+      "mas": 5
+    },
+    {
+      "id": "deepmind-educational",
+      "name": "DeepMind Educational Resources",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/google-deepmind/educational",
+      "tagline": "Colab notebooks teaching RL, language models, generative models, protein folding from scratch",
+      "degree": 2,
+      "mas": 5
+    },
+    {
+      "id": "fast-ai-course22",
+      "name": "fast.ai \u2014 Practical Deep Learning for Coders (Part 2 / course22p2)",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/fastai/course22p2",
+      "tagline": "fast.ai's free Part-2 course building diffusion and language models from foundations, hands-on.",
+      "degree": 4,
+      "mas": 5
+    },
+    {
+      "id": "gcp-generative-ai",
+      "name": "Google Cloud Generative AI",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/GoogleCloudPlatform/generative-ai",
+      "tagline": "Sample notebooks for Gemini on Vertex AI: RAG, agents, embeddings, multimodal, fine-tuning",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "hands-on-llms",
+      "name": "Hands-On Large Language Models",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/HandsOnLLM/Hands-On-Large-Language-Models",
+      "tagline": "O Reilly book companion with visual deep-dives on transformers, generation, and fine-tuning",
+      "degree": 3,
+      "mas": 5
+    },
+    {
+      "id": "handson-ml3",
+      "name": "Hands-On Machine Learning 3rd Ed.",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/ageron/handson-ml3",
+      "tagline": "O Reilly companion building from sklearn basics through neural networks and transformers",
+      "degree": 3,
+      "mas": 5
+    },
+    {
+      "id": "harvard-annotated-transformer",
+      "name": "The Annotated Transformer",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/harvardnlp/annotated-transformer",
+      "tagline": "Line-by-line PyTorch annotation of Attention Is All You Need rendered as Jupyter notebook",
+      "degree": 6,
+      "mas": 5
+    },
+    {
+      "id": "hf-audio-transformers-course",
+      "name": "HuggingFace Audio Transformers Course",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/huggingface/audio-transformers-course",
+      "tagline": "Transformer-based audio processing: ASR, audio classification, TTS, music generation",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "hf-deep-rl-class",
+      "name": "HuggingFace Deep RL Course",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/huggingface/deep-rl-class",
+      "tagline": "8-unit RL course from Q-learning to PPO with hands-on Gym and Unity ML-Agents environments",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "hf-diffusion-models-class",
+      "name": "HuggingFace Diffusion Models Course",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/huggingface/diffusion-models-class",
+      "tagline": "Hands-on DDPM-to-Stable-Diffusion course; builds and fine-tunes diffusion models step by step",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "hf-nlp-course",
+      "name": "HuggingFace NLP/Transformers Course",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/huggingface/course",
+      "tagline": "Full NLP + transformers course: tokenization, BERT, GPT, fine-tuning, sharing to HF Hub",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "hf-smol-course",
+      "name": "Hugging Face Smol Course",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/huggingface/smol-course",
+      "tagline": "Practical alignment course (SFT, DPO, evals, RL, synthetic data) using SmolLM on local hardware",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "hugging-face-agents-course",
+      "name": "Hugging Face Agents Course",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/huggingface/agents-course",
+      "tagline": "Hugging Face's free course on building agents \u2014 from foundations through smolagents, LangGraph, and LlamaIndex.",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "karpathy-mingpt",
+      "name": "minGPT",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/karpathy/minGPT",
+      "tagline": "300-line educational GPT library with BPE tokenizer; pre-nanoGPT reference impl",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "karpathy-nanogpt",
+      "name": "nanoGPT",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/karpathy/nanoGPT",
+      "tagline": "~300-line GPT-2 training/inference loop reproducing GPT-2 124M on OpenWebText",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "karpathy-nn-zero-to-hero",
+      "name": "Neural Networks \u2014 Zero to Hero (Karpathy)",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/karpathy/nn-zero-to-hero",
+      "tagline": "Andrej Karpathy's video-lecture series and accompanying notebooks building neural networks and transformers from scratch.",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "labmlai-annotated-dl",
+      "name": "Annotated Deep Learning Paper Implementations",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
+      "tagline": "60+ annotated DL paper implementations with rendered side-by-side code/explanation notes",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "learn-prompting",
+      "name": "Learn Prompting",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/trigaten/Learn_Prompting",
+      "tagline": "Free, open-source, comprehensive guide to prompt engineering and prompt-injection defence.",
+      "degree": 2,
+      "mas": 5
+    },
+    {
+      "id": "llm-notebooks-course",
+      "name": "Large-Language-Model-Notebooks-Course",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/peremartra/Large-Language-Model-Notebooks-Course",
+      "tagline": "Practical notebook-driven LLM course covering RAG, PEFT/LoRA/QLoRA, distillation, LLMOps",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "microsoft-ai-agents-for-beginners",
+      "name": "AI Agents for Beginners (Microsoft)",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "tagline": "Microsoft's 11-lesson free curriculum on building AI agents \u2014 covers Autogen, Semantic Kernel, and agent design patterns.",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "mistral-cookbook",
+      "name": "Mistral Cookbook",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/mistralai/cookbook",
+      "tagline": "Recipes for Mistral models: function-calling, RAG, vision, fine-tuning, agentic pipelines",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "mlabonne-llm-course",
+      "name": "LLM Course",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/mlabonne/llm-course",
+      "tagline": "Three-part roadmap (fundamentals -> LLM Scientist -> LLM Engineer) with curated Colab notebooks",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "ms-ai-for-beginners",
+      "name": "Microsoft AI for Beginners",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/microsoft/AI-For-Beginners",
+      "tagline": "12-week, 24-lesson AI survey: symbolic AI, neural nets, NLP, CV, ethics, Azure AI",
+      "degree": 4,
+      "mas": 5
+    },
+    {
+      "id": "ms-data-science-for-beginners",
+      "name": "Microsoft Data Science for Beginners",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/microsoft/Data-Science-For-Beginners",
+      "tagline": "10-week, 20-lesson data science curriculum: stats, wrangling, visualization, ML basics",
+      "degree": 4,
+      "mas": 5
+    },
+    {
+      "id": "ms-generative-ai-for-beginners",
+      "name": "Generative AI for Beginners",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "tagline": "21-lesson structured curriculum on building GenAI apps with Python + Azure OpenAI",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "ms-ml-for-beginners",
+      "name": "Microsoft ML for Beginners",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/microsoft/ML-For-Beginners",
+      "tagline": "12-week, 26-lesson classical ML curriculum: regression, classification, NLP, time-series",
+      "degree": 4,
+      "mas": 5
+    },
+    {
+      "id": "ms-phi-cookbook",
+      "name": "Phi Cookbook",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/microsoft/PhiCookBook",
+      "tagline": "Hands-on examples for the Phi-3/4 small language model family across cloud and edge",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "nlp-with-transformers-notebooks",
+      "name": "NLP with Transformers (notebooks)",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/nlp-with-transformers/notebooks",
+      "tagline": "O Reilly book companion: NLP pipeline tasks, QA, summarization, generation, multilingual",
+      "degree": 3,
+      "mas": 5
+    },
+    {
+      "id": "norvig-pytudes",
+      "name": "Pytudes (Peter Norvig)",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/norvig/pytudes",
+      "tagline": "Python programming etudes covering NLP, algorithms, word models, Advent of Code",
+      "degree": 2,
+      "mas": 5
+    },
+    {
+      "id": "openai-cookbook",
+      "name": "OpenAI Cookbook",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/openai/openai-cookbook",
+      "tagline": "Practical recipes and example notebooks for building with the OpenAI API.",
+      "degree": 5,
+      "mas": 3
+    },
+    {
+      "id": "pytorch-tutorials",
+      "name": "PyTorch Official Tutorials",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/pytorch/tutorials",
+      "tagline": "Official PyTorch tutorials: tensors, autograd, NLP, transformers, ViT, LLM fine-tuning",
+      "degree": 2,
+      "mas": 5
+    },
+    {
+      "id": "rasbt-llms-from-scratch",
+      "name": "Build a Large Language Model (From Scratch)",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "tagline": "Step-by-step PyTorch GPT book companion covering pretraining, SFT, and RLHF from scratch",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "stanford-cs336",
+      "name": "Stanford CS336 \u2014 Language Models from Scratch",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/stanford-cs336/spring2025-lectures",
+      "tagline": "Stanford's open course on building large language models from scratch \u2014 architecture, training, inference, evaluation.",
+      "degree": 7,
+      "mas": 5
+    },
+    {
+      "id": "wandb-edu",
+      "name": "Weights & Biases AI Academy",
+      "category": "education",
+      "color": "#7d3c98",
+      "url": "https://github.com/wandb/edu",
+      "tagline": "LLM engineering notebooks: structured outputs, RAG++, prompt engineering, evals with W&B logging",
+      "degree": 3,
+      "mas": 5
+    },
+    {
+      "id": "agentbench",
+      "name": "AgentBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/THUDM/AgentBench",
+      "tagline": "Multi-environment agent eval across 8 distinct real-world task domains",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "alpaca-eval",
+      "name": "AlpacaEval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/tatsu-lab/alpaca_eval",
+      "tagline": "Automated win-rate eval for instruction-following using LLM-as-judge with length-control",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "arena-hard-auto",
+      "name": "Arena-Hard-Auto",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/lmarena/arena-hard-auto",
+      "tagline": "Automated LLM benchmark with highest correlation to LMArena human preferences",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "ares",
+      "name": "ARES",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/stanford-futuredata/ARES",
+      "tagline": "RAG pipeline evaluator using Prediction-Powered Inference for statistically-confident quality scores",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "big-bench",
+      "name": "BIG-bench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/google/BIG-bench",
+      "tagline": "Collaborative 200+ task benchmark for evaluating language models beyond conventional NLP tests",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "bigcode-evaluation-harness",
+      "name": "BigCode Evaluation Harness",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/bigcode-project/bigcode-evaluation-harness",
+      "tagline": "Evaluates code-generation LLMs on HumanEval, MBPP, DS-1000, MultiPL-E, and 30+ other coding tasks",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "browsergym",
+      "name": "BrowserGym",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/ServiceNow/BrowserGym",
+      "tagline": "Gymnasium-compatible web interaction environment unifying 8+ web-agent benchmarks",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "chateval",
+      "name": "ChatEval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/thunlp/ChatEval",
+      "tagline": "Multi-agent debate framework where LLM referees with distinct personas collaboratively judge responses",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "continuous-eval",
+      "name": "Continuous Eval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/relari-ai/continuous-eval",
+      "tagline": "Modular RAG / LLM pipeline evaluator with 40+ deterministic and LLM-based metrics",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "deepeval",
+      "name": "DeepEval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/confident-ai/deepeval",
+      "tagline": "Pytest-style LLM evaluation framework with 30+ metrics for RAG, agents, and chatbots.",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "evalplus",
+      "name": "EvalPlus",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/evalplus/evalplus",
+      "tagline": "Rigorous code-generation eval with 80x more tests than HumanEval via LLM + mutation-based test synthesis",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "factscore",
+      "name": "FActScore",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/shmsw25/FActScore",
+      "tagline": "Measures factual precision in long-form LLM generations by decomposing text into atomic facts",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "flask",
+      "name": "FLASK",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/kaistAI/FLASK",
+      "tagline": "Fine-grained LLM evaluation across 12 alignment skill sets x 5 difficulty levels via GPT-4 judge",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "flow-judge",
+      "name": "Flow-Judge",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/flowaicom/flow-judge",
+      "tagline": "Fine-tuned 3.8B judge model + Python eval library for cost-efficient LLM-as-judge at scale",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "helm",
+      "name": "HELM (Holistic Evaluation of Language Models)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/stanford-crfm/helm",
+      "tagline": "Stanford CRFM's holistic, multi-metric LLM evaluation across accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency.",
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "hf-evaluate",
+      "name": "Hugging Face Evaluate",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/huggingface/evaluate",
+      "tagline": "Metric library + lightweight evaluation pipeline for NLP tasks (BLEU, ROUGE, BERTScore)",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "inspect-ai",
+      "name": "Inspect AI",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+      "tagline": "UK AI Safety Institute's framework for large-language-model safety and capability evaluations.",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "legalbench",
+      "name": "LegalBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/HazyResearch/legalbench",
+      "tagline": "162-task collaborative benchmark for legal reasoning: statutory interpretation, contract NLI, issue-spotting",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "lighteval",
+      "name": "Lighteval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/huggingface/lighteval",
+      "tagline": "Hugging Face's lightweight, fast LLM evaluation suite with multiple backends and Open-LLM-Leaderboard compatibility.",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "llmbar",
+      "name": "LLMBar",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/princeton-nlp/LLMBar",
+      "tagline": "Meta-evaluation benchmark testing whether LLM-based evaluators correctly prefer objectively better outputs",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "lm-evaluation-harness",
+      "name": "lm-evaluation-harness",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+      "tagline": "De facto academic standard for few-shot LLM benchmark evaluation across 200+ tasks.",
+      "degree": 11,
+      "mas": 5
+    },
+    {
+      "id": "lmms-eval",
+      "name": "LMMs-Eval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval",
+      "tagline": "Single harness for evaluating large multimodal models across 50+ vision-language benchmarks",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "mmlu-pro",
+      "name": "MMLU-Pro",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
+      "tagline": "Harder variant of MMLU with 10-choice questions and reasoning-required problems across 14 disciplines",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "mt-bench",
+      "name": "MT-Bench (FastChat)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/lm-sys/FastChat",
+      "tagline": "Multi-turn conversation judge benchmark using GPT-4 as evaluator across 8 skill categories",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "mteb",
+      "name": "MTEB",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/embeddings-benchmark/mteb",
+      "tagline": "Massive text embedding benchmark: 8 task types, 56+ datasets, retrieval, STS, clustering, classification",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "needle-in-haystack",
+      "name": "Needle in a Haystack",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/gkamradt/needle-in-a-haystack",
+      "tagline": "Measures LLM long-context recall by finding a planted fact in a progressively larger context window",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "olmes",
+      "name": "OLMES",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/allenai/olmes",
+      "tagline": "Standardised eval system used for AI2 OLMo model releases with reproducible benchmark configs",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "openai-evals",
+      "name": "OpenAI Evals",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/openai/evals",
+      "tagline": "OpenAI's framework and registry of evaluations for LLMs and LLM-using systems.",
+      "degree": 3,
+      "mas": 3
+    },
+    {
+      "id": "opencompass",
+      "name": "OpenCompass",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/open-compass/opencompass",
+      "tagline": "Unified eval platform supporting 100+ benchmarks across 50+ model backends",
+      "degree": 10,
+      "mas": 5
+    },
+    {
+      "id": "osworld",
+      "name": "OSWorld",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/xlang-ai/OSWorld",
+      "tagline": "Desktop GUI agent benchmark across Ubuntu, macOS, Windows with 369 diverse real computer tasks",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "promptbench",
+      "name": "PromptBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/microsoftarchive/promptbench",
+      "tagline": "LLM eval toolkit with adversarial prompt robustness testing, dynamic DyVal eval, prompt-engineering comparison",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "promptfoo",
+      "name": "promptfoo",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "tagline": "Declarative test-driven evaluation of LLM applications with side-by-side prompt and model comparisons.",
+      "degree": 6,
+      "mas": 5
+    },
+    {
+      "id": "ragas",
+      "name": "Ragas",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/explodinggradients/ragas",
+      "tagline": "Reference-free and reference-based evaluation framework for retrieval-augmented generation pipelines.",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "rewardbench",
+      "name": "RewardBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/allenai/reward-bench",
+      "tagline": "Benchmark for evaluating reward models and DPO models across chat, safety, reasoning tasks",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "simple-evals",
+      "name": "SimpleEvals",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/openai/simple-evals",
+      "tagline": "Lightweight Python library for running MMLU, HumanEval, GPQA, MATH, MGSM, SimpleQA head-to-head",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "swe-bench",
+      "name": "SWE-bench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/SWE-bench/SWE-bench",
+      "tagline": "Measures LLM ability to resolve real GitHub issues from popular open-source Python repositories",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "theagentcompany",
+      "name": "TheAgentCompany",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/TheAgentCompany/TheAgentCompany",
+      "tagline": "Professional-task agent benchmark: coding, PM, HR, finance on self-hosted intranet (GitLab, Plane, RocketChat)",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "tonic-validate",
+      "name": "Tonic Validate",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/TonicAI/tonic_validate",
+      "tagline": "RAG evaluation SDK with reference-free metrics and CI/CD pipeline integrations",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "toolbench",
+      "name": "ToolBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/OpenBMB/ToolBench",
+      "tagline": "Benchmarks LLM ability to call APIs and use external tools across 16000 real-world REST APIs",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "trulens",
+      "name": "TruLens",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/truera/trulens",
+      "tagline": "LLM app + RAG evaluation via the RAG Triad (context relevance, groundedness, answer relevance)",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "truthfulqa",
+      "name": "TruthfulQA",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/sylinrl/TruthfulQA",
+      "tagline": "817-question benchmark measuring whether LLMs generate truthful, non-imitative answers",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "ultraeval",
+      "name": "UltraEval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/OpenBMB/UltraEval",
+      "tagline": "Lightweight universal LLM evaluation framework with 30-min local-setup target",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "unitxt",
+      "name": "Unitxt",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/IBM/unitxt",
+      "tagline": "Flexible NLP evaluation library with composable building blocks: datasets, templates, metrics, formats",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "webarena",
+      "name": "WebArena",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/web-arena-x/webarena",
+      "tagline": "Realistic web-browsing agent benchmark with self-hosted live environments (Reddit, GitLab, shopping)",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "zeroeval",
+      "name": "ZeroEval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/WildEval/ZeroEval",
+      "tagline": "Unified zero-shot evaluation harness for reasoning, knowledge, instruction-following, math",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "arize-phoenix",
+      "name": "Arize Phoenix",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/Arize-AI/phoenix",
+      "tagline": "LLM observability and evaluation platform with OTEL-based trace capture, safety/hallucination evals",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "art-toolkit",
+      "name": "Adversarial Robustness Toolbox",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/Trusted-AI/adversarial-robustness-toolbox",
+      "tagline": "Comprehensive adversarial-defense library for evasion, poisoning, extraction, inference attacks across ML frameworks",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "autodefense",
+      "name": "AutoDefense",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/XHMY/AutoDefense",
+      "tagline": "Multi-agent defense framework where a downstream filter agent re-evaluates LLM responses to intercept jailbreak completions",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "circuit-breakers",
+      "name": "Circuit Breakers",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/GraySwanAI/circuit-breakers",
+      "tagline": "Representation Rerouting (RR) technique that hard-blocks harmful-behavior token generation at the activation layer",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "detoxify",
+      "name": "Detoxify",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/unitaryai/detoxify",
+      "tagline": "Multilingual toxicity text classifier (BERT/RoBERTa; 3 model flavours) deployable as LLM output gating filter",
+      "degree": 3,
+      "mas": 5
+    },
+    {
+      "id": "do-not-answer",
+      "name": "Do-Not-Answer",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/Libr-AI/do-not-answer",
+      "tagline": "Curated dataset + LLM-as-judge evaluator assessing whether an LLM correctly refuses 939 sensitive question categories",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "granite-guardian",
+      "name": "IBM Granite Guardian",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/ibm-granite/granite-guardian",
+      "tagline": "IBM's openly-licensed risk-and-harm classifier family for upstream input / output filtering.",
+      "degree": 7,
+      "mas": 5
+    },
+    {
+      "id": "guardrails-ai",
+      "name": "Guardrails AI",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/guardrails-ai/guardrails",
+      "tagline": "Pydantic-style validator chains that wrap LLM outputs in enforceable contracts.",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "guidance",
+      "name": "Guidance",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/guidance-ai/guidance",
+      "tagline": "Constrained generation framework that enforces output contracts via regex, JSON schema, Pydantic, CFG at token level",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "harmless-harnesses",
+      "name": "Harmless Harnesses",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/Benjamin-KY/Harmless-Harnesses",
+      "tagline": "A two-track code course teaching the five-component governance harness spine.",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "instructor",
+      "name": "Instructor",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/567-labs/instructor",
+      "tagline": "Pydantic-based structured-output validator for LLM API calls with automatic retry and streaming partial-object support",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "langfuse",
+      "name": "Langfuse",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/langfuse/langfuse",
+      "tagline": "Self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "langkit",
+      "name": "LangKit",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/whylabs/langkit",
+      "tagline": "LLM text-metrics toolkit extracting security signals (jailbreak similarity, PI, refusals, hallucinations, PII, toxicity) for whylogs",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "llm-guard",
+      "name": "LLM Guard",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/protectai/llm-guard",
+      "tagline": "Production-grade input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets",
+      "degree": 13,
+      "mas": 4
+    },
+    {
+      "id": "lmql",
+      "name": "LMQL",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/eth-sri/lmql",
+      "tagline": "Python-superset query language for LLMs with where constraint clauses enforcing output rules at decode time",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "modelbench",
+      "name": "ModelBench",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/mlcommons/modelbench",
+      "tagline": "AI safety benchmark runner (MLCommons AILuminate) measuring hazard response rates using LlamaGuard as safety judge",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "nemo-guardrails",
+      "name": "NeMo Guardrails",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/NVIDIA/NeMo-Guardrails",
+      "tagline": "Programmable rails between user input, model, and external systems via the Colang DSL.",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "outlines",
+      "name": "Outlines",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/dottxt-ai/outlines",
+      "tagline": "Guaranteed structured generation via FSM-guided token masking; enforces regex, JSON Schema, Pydantic, CFG output contracts",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "presidio",
+      "name": "Microsoft Presidio",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/microsoft/presidio",
+      "tagline": "Pluggable PII detection and redaction for text and structured data, usable as an LLM rail.",
+      "degree": 4,
+      "mas": 5
+    },
+    {
+      "id": "promptinject",
+      "name": "PromptInject",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/agencyenterprise/PromptInject",
+      "tagline": "Original 2022 prompt injection research framework for goal hijacking and prompt leaking experiments",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "rebuff",
+      "name": "Rebuff",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/protectai/rebuff",
+      "tagline": "Layered prompt-injection detector \u2014 heuristic, embedding, LLM-as-judge, and canary tripwire.",
+      "degree": 16,
+      "mas": 3
+    },
+    {
+      "id": "safedecoding",
+      "name": "SafeDecoding",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/uw-nsl/SafeDecoding",
+      "tagline": "Safety-aware decoding strategy that amplifies safety-disclaimer token probabilities to defend against adversarial jailbreaks",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "shieldlm",
+      "name": "ShieldLM",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/thu-coai/ShieldLM",
+      "tagline": "Bilingual (CN/EN) customisable safety detector for LLM outputs; supports fine-grained user-defined detection rules",
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "smooth-llm",
+      "name": "SmoothLLM",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/arobey1/smooth-llm",
+      "tagline": "Randomized text-perturbation defense (swap/patch/insert) against GCG and transfer adversarial jailbreak suffixes",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "trustllm",
+      "name": "TrustLLM",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/HowieHwong/TrustLLM",
+      "tagline": "ICML 2024 eval toolkit for LLM trustworthiness across 8 dimensions: truthfulness, safety, fairness, robustness, privacy, ethics",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "typechat",
+      "name": "TypeChat",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/microsoft/TypeChat",
+      "tagline": "Output-contract harness using TypeScript type definitions as schema; LLM output validated against TS type system",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "vigil-llm",
+      "name": "Vigil",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/deadbits/vigil-llm",
+      "tagline": "REST API + Python library for LLM prompt security scanning: YARA/heuristics, vector-DB similarity, transformer classifier, canary tokens",
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "wildguard",
+      "name": "WildGuard",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/allenai/wildguard",
+      "tagline": "Instruction-tuned LM safety classifier that jointly detects prompt harm, response harm, and LLM refusal behaviour",
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "agent-attack",
+      "name": "Agent-Attack (Multimodal)",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/ChenWu98/agent-attack",
+      "tagline": "Adversarial attack evaluation framework for multimodal LM agents operating in VisualWebArena; captioner + CLIP attacks",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "agentdojo",
+      "name": "AgentDojo",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/ethz-spylab/agentdojo",
+      "tagline": "Dynamic environment to evaluate prompt-injection attacks and defences against tool-using LLM agents.",
+      "degree": 11,
+      "mas": 5
+    },
+    {
+      "id": "agentic-radar",
+      "name": "Agentic Radar",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/splx-ai/agentic-radar",
+      "tagline": "Static + runtime security scanner for agentic workflows (LangGraph, CrewAI, n8n, OpenAI Agents, AutoGen); generates HTML report",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "autodan-turbo",
+      "name": "AutoDAN-Turbo",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/SaFo-Lab/AutoDAN-Turbo",
+      "tagline": "Lifelong black-box jailbreak agent that autonomously discovers and accumulates jailbreak strategies from scratch",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "autodan",
+      "name": "AutoDAN",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/SheltonLiu-N/AutoDAN",
+      "tagline": "Stealthy jailbreak via hierarchical genetic algorithm; produces semantically meaningful adversarial prompts",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "bipia",
+      "name": "BIPIA",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/microsoft/BIPIA",
+      "tagline": "First benchmark for indirect prompt injection attacks across 5 NLP tasks",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "cipherchat",
+      "name": "CipherChat",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/RobustNLP/CipherChat",
+      "tagline": "Systematically probes LLM safety alignment gaps using ciphers (Caesar, Morse, Base64) to bypass natural-language safety filters",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "easyjailbreak",
+      "name": "EasyJailbreak",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/EasyJailbreak/EasyJailbreak",
+      "tagline": "Modular Python framework assembling jailbreaks from pluggable Selector->Mutator->Constraint->Evaluator components",
+      "degree": 11,
+      "mas": 5
+    },
+    {
+      "id": "garak",
+      "name": "garak",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/NVIDIA/garak",
+      "tagline": "LLM vulnerability scanner \u2014 nmap for language models.",
+      "degree": 11,
+      "mas": 5
+    },
+    {
+      "id": "giskard",
+      "name": "Giskard",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/Giskard-AI/giskard-oss",
+      "tagline": "Open-source evaluation and testing for ML and LLM models \u2014 automated scan for 40+ vulnerability classes.",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "gptfuzz",
+      "name": "GPTFuzz",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/sherdencooper/GPTFuzz",
+      "tagline": "Fuzzing-based red-teaming using LLM mutation operators with MCTS/UCB seed selection to auto-generate jailbreak templates",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "harmbench",
+      "name": "HarmBench",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/centerforaisafety/HarmBench",
+      "tagline": "Standardized evaluation framework benchmarking 18 automated red-teaming methods against 33 target LLMs/defenses",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "jailbreak-evaluation",
+      "name": "jailbreak-evaluation",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/controllability/jailbreak-evaluation",
+      "tagline": "pip-installable package evaluating jailbreak attempts on two metrics: Safeguard Violation and Relative Truthfulness",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "jailbreakbench",
+      "name": "JailbreakBench",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/JailbreakBench/jailbreakbench",
+      "tagline": "Standardised jailbreak benchmark: JBB-Behaviors dataset, attack/defense leaderboard, and red-team pipeline",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "llm-adaptive-attacks",
+      "name": "LLM Adaptive Attacks",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/tml-epfl/llm-adaptive-attacks",
+      "tagline": "Adaptive logprob-based random-search attacks achieving ~100% ASR on GPT-3.5/4, Llama-2, Gemma, Claude",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "llm-attacks-gcg",
+      "name": "LLM Attacks (GCG)",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/llm-attacks/llm-attacks",
+      "tagline": "Greedy Coordinate Gradient white-box adversarial suffix optimisation for universal transferable jailbreaks",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "mimir",
+      "name": "MIMIR",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/iamgroot42/mimir",
+      "tagline": "Comprehensive membership inference attack library for LLMs: 9 attack methods including Min-K%, ReCaLL, GradNorm",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "modelscan",
+      "name": "ModelScan",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/protectai/modelscan",
+      "tagline": "Scans serialised ML model files (Pickle, PyTorch, H5, SavedModel) for malicious code injected during supply-chain attacks",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "nanogcg",
+      "name": "nanoGCG",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/GraySwanAI/nanoGCG",
+      "tagline": "Lightweight pip-installable GCG implementation with multi-position swap, history buffer, mellowmax, probe sampling",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "open-prompt-injection",
+      "name": "Open-Prompt-Injection",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/liu00222/Open-Prompt-Injection",
+      "tagline": "Toolkit to evaluate prompt injection attack success + defenses; includes DataSentinel detection and PromptLocate localisation",
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "pair-jailbreak",
+      "name": "PAIR / JailbreakingLLMs",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/patrickrchao/JailbreakingLLMs",
+      "tagline": "Black-box LLM jailbreaking in <=20 queries via an attacker LLM that iteratively refines adversarial prompts",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "pint-benchmark",
+      "name": "PINT Benchmark",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/lakeraai/pint-benchmark",
+      "tagline": "Neutral evaluation harness for prompt injection detection systems: 4314-sample dataset, multilingual",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "plexiglass",
+      "name": "Plexiglass",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/safellama/plexiglass",
+      "tagline": "CLI/Python toolkit for LLM vulnerability scanning: jailbreak, prompt-injection, toxicity benchmarks from live sources",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "promptmap",
+      "name": "promptmap",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/utkusen/promptmap",
+      "tagline": "Vulnerability scanner for custom LLM applications \u2014 targeted prompt-injection probing.",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "ps-fuzz",
+      "name": "Prompt Fuzzer (ps-fuzz)",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/prompt-security/ps-fuzz",
+      "tagline": "Interactive CLI tool fuzzing a target system prompt against 16 LLM-based adversarial attacks including RAG-poisoning tests",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "purple-llama",
+      "name": "PurpleLlama / CyberSecEval",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/meta-llama/PurpleLlama",
+      "tagline": "Umbrella eval suite: CyberSecEval v1-v3 (insecure code, cyberattack uplift, visual PI, spear-phishing), LlamaGuard, PromptGuard",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "pyrit",
+      "name": "PyRIT (Python Risk Identification Tool)",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/Azure/PyRIT",
+      "tagline": "Microsoft AI Red Team's framework for automated risk identification across generative AI systems.",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "r-judge",
+      "name": "R-Judge",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/Lordog/R-Judge",
+      "tagline": "Benchmark for LLM agent safety risk awareness: 569 multi-turn agent interaction records across 27 risk scenarios",
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "renellm",
+      "name": "ReNeLLM",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/NJUNLP/ReNeLLM",
+      "tagline": "Generalised jailbreak framework: rewrites + scenario-nesting to shift prompt execution priority and evade defences",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "safetybench",
+      "name": "SafetyBench",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/thu-coai/SafetyBench",
+      "tagline": "11435 bilingual (CN+EN) safety MCQ benchmark spanning 7 safety categories with automated evaluation scripts",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "tap-jailbreak",
+      "name": "TAP - Tree of Attacks with Pruning",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/RICommunity/TAP",
+      "tagline": "Query-efficient black-box jailbreak using tree-of-thoughts + automatic prompt pruning to cut wasted queries",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "toolemu",
+      "name": "ToolEmu",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/ryoungj/ToolEmu",
+      "tagline": "LM-emulated sandbox for identifying tool-use risks in LLM agents at scale.",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "wmdp",
+      "name": "WMDP - Weapons of Mass Destruction Proxy",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/centerforaisafety/wmdp",
+      "tagline": "3668-question MCQ benchmark for hazardous knowledge (bio/chem/cyber) + RMU unlearning method",
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "aisuite",
+      "name": "aisuite",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/andrewyng/aisuite",
+      "tagline": "Simple unified interface to multiple LLM providers \u2014 Andrew Ng's minimal alternative to LiteLLM.",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "apache-apisix",
+      "name": "Apache APISIX",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/apache/apisix",
+      "tagline": "Cloud-native API gateway with AI plugin suite for multi-provider LLM proxying and semantic caching",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "apfel",
+      "name": "apfel",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/Arthur-Ficial/apfel",
+      "tagline": "OpenAI-compat server fronting Apple on-device Foundation Models; no cloud/API keys/download needed",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "deepspeed-mii",
+      "name": "DeepSpeed-MII",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/deepspeedai/DeepSpeed-MII",
+      "tagline": "High-throughput inference service: auto-picks optimizations (blocked KV-cache, continuous batching, SplitFuse)",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "envoy-ai-gateway",
+      "name": "Envoy AI Gateway",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/envoyproxy/ai-gateway",
+      "tagline": "CNCF-grade AI gateway built on Envoy \u2014 k8s-native traffic management for LLM workloads.",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "exo",
+      "name": "exo",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/exo-explore/exo",
+      "tagline": "Run frontier AI by clustering consumer devices into a P2P inference pool with OpenAI-compat API",
+      "degree": 3,
+      "mas": 5
+    },
+    {
+      "id": "fastchat",
+      "name": "FastChat",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/lm-sys/FastChat",
+      "tagline": "Open platform to train, serve, evaluate LLMs; fschat-api-server is OpenAI-compat multi-model gateway",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "helicone",
+      "name": "Helicone",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/Helicone/helicone",
+      "tagline": "OSS proxy that adds observability, caching, prompt management, and routing across LLM providers.",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "jan",
+      "name": "Jan",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/janhq/jan",
+      "tagline": "Offline-first AI desktop app with built-in OpenAI-compat local server and multi-provider support",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "kgateway",
+      "name": "kgateway",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/kgateway-dev/kgateway",
+      "tagline": "K8s-native Envoy control plane (formerly Gloo) implementing Gateway API; routes to AI backends with policy enforcement",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "kong",
+      "name": "Kong",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/Kong/kong",
+      "tagline": "API and AI Gateway built on Nginx/OpenResty; AI plugins do LLM proxying, prompt decoration, cost tracking",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "litellm",
+      "name": "LiteLLM",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/BerriAI/litellm",
+      "tagline": "Unified SDK and proxy that normalises 100+ LLM APIs into the OpenAI format.",
+      "degree": 17,
+      "mas": 5
+    },
+    {
+      "id": "llama-cpp",
+      "name": "llama.cpp",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "tagline": "Pure C/C++ LLM inference with llama-server OpenAI-compat HTTP endpoint; runs on any hardware",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "lmdeploy",
+      "name": "LMDeploy",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/InternLM/lmdeploy",
+      "tagline": "LLM compression + deployment toolkit with TurboMind engine and OpenAI-compat serving API",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "localai",
+      "name": "LocalAI",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/mudler/LocalAI",
+      "tagline": "Self-hosted OpenAI API drop-in for LLMs, vision, audio, image-gen - no GPU required",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "mlc-llm",
+      "name": "MLC-LLM",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/mlc-ai/mlc-llm",
+      "tagline": "ML-compilation-based universal LLM deployment engine across GPU/CPU/mobile/browser/edge",
+      "degree": 3,
+      "mas": 4
+    },
+    {
+      "id": "mlflow-ai-gateway",
+      "name": "MLflow AI Gateway",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/mlflow/mlflow",
+      "tagline": "MLflow Deployments Server routes prompt requests across OpenAI, Anthropic, Cohere, Bedrock",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "new-api",
+      "name": "New API",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/QuantumNous/new-api",
+      "tagline": "Extended One API fork: unified hub with billing, multi-format conversion (OpenAI<->Claude<->Gemini)",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/ollama/ollama",
+      "tagline": "One-command local server running any GGUF/safetensor model with native OpenAI-compat API",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "one-api",
+      "name": "One API",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/songquanpeng/one-api",
+      "tagline": "LLM API key management and redistribution gateway unifying 20+ providers under one OpenAI-compat endpoint",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "openllm",
+      "name": "OpenLLM",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/bentoml/OpenLLM",
+      "tagline": "Run any open-source LLM as an OpenAI-compatible API endpoint in cloud or on-prem",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "plano",
+      "name": "Plano",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/katanemo/plano",
+      "tagline": "AI-native Envoy-based proxy + data plane for agentic apps: smart LLM routing, safety, observability",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "portkey-gateway",
+      "name": "Portkey AI Gateway",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/Portkey-AI/gateway",
+      "tagline": "Production-grade AI gateway \u2014 load balancing, fallbacks, retries, caching, and observability across 250+ models.",
+      "degree": 10,
+      "mas": 5
+    },
+    {
+      "id": "ramalama",
+      "name": "RamaLama",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/containers/ramalama",
+      "tagline": "Container-native CLI for serving AI models from OCI registries, HF, or Ollama via llama.cpp/vLLM",
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "routellm",
+      "name": "RouteLLM",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/lm-sys/RouteLLM",
+      "tagline": "Open framework for serving and evaluating LLM routers that direct queries to strong or weak models based on predicted quality.",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "sglang",
+      "name": "SGLang",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/sgl-project/sglang",
+      "tagline": "High-performance inference+serving framework with RadixAttention, OpenAI-compat server, structured output",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "shimmy",
+      "name": "Shimmy",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/Michael-A-Kuykendall/shimmy",
+      "tagline": "Pure-Rust WebGPU inference server: OpenAI-API compatible, GGUF native, hot model swap, no Python",
+      "degree": 3,
+      "mas": 5
+    },
+    {
+      "id": "simonw-llm",
+      "name": "LLM (CLI)",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/simonw/llm",
+      "tagline": "CLI tool + Python library to run prompts against any LLM; 50+ provider plugins",
+      "degree": 9,
+      "mas": 5
+    },
+    {
+      "id": "text-generation-webui",
+      "name": "text-generation-webui",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/oobabooga/textgen",
+      "tagline": "Desktop-app + API server for local LLMs; swappable backends (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM)",
+      "degree": 5,
+      "mas": 5
+    },
+    {
+      "id": "vllm",
+      "name": "vLLM",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/vllm-project/vllm",
+      "tagline": "High-throughput memory-efficient LLM inference engine with PagedAttention and OpenAI-compat server",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "web-llm",
+      "name": "WebLLM",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/mlc-ai/web-llm",
+      "tagline": "In-browser LLM inference via WebGPU/WASM; fully OpenAI-API-compatible; zero server-side processing",
+      "degree": 3,
+      "mas": 5
+    },
+    {
+      "id": "xinference",
+      "name": "Xinference",
+      "category": "routing",
+      "color": "#3498db",
+      "url": "https://github.com/xorbitsai/inference",
+      "tagline": "Distributed inference service for LLMs, embeddings, image-gen, speech - swap model with one API call",
+      "degree": 5,
+      "mas": 5
+    }
+  ],
+  "links": [
+    {
+      "source": "ag2",
+      "target": "agency-swarm"
+    },
+    {
+      "source": "ag2",
+      "target": "agentverse-openbmb"
+    },
+    {
+      "source": "ag2",
+      "target": "autogen"
+    },
+    {
+      "source": "ag2",
+      "target": "camel"
+    },
+    {
+      "source": "ag2",
+      "target": "chatdev"
+    },
+    {
+      "source": "ag2",
+      "target": "crewai"
+    },
+    {
+      "source": "ag2",
+      "target": "metagpt"
+    },
+    {
+      "source": "ag2",
+      "target": "openagents-xlang"
+    },
+    {
+      "source": "ag2",
+      "target": "openmanus"
+    },
+    {
+      "source": "ag2",
+      "target": "praisonai"
+    },
+    {
+      "source": "ag2",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "agency-swarm",
+      "target": "autogen"
+    },
+    {
+      "source": "agentflow-grpo",
+      "target": "aiwaves-agents"
+    },
+    {
+      "source": "agentforge",
+      "target": "agentgpt"
+    },
+    {
+      "source": "agentforge",
+      "target": "agixt"
+    },
+    {
+      "source": "agentforge",
+      "target": "babyagi"
+    },
+    {
+      "source": "agentforge",
+      "target": "eidolon"
+    },
+    {
+      "source": "agentforge",
+      "target": "fastagency"
+    },
+    {
+      "source": "agentforge",
+      "target": "superagi"
+    },
+    {
+      "source": "agentgpt",
+      "target": "agixt"
+    },
+    {
+      "source": "agentgpt",
+      "target": "babyagi"
+    },
+    {
+      "source": "agentgpt",
+      "target": "superagi"
+    },
+    {
+      "source": "agentlab",
+      "target": "browser-use"
+    },
+    {
+      "source": "agentlab",
+      "target": "browsergym"
+    },
+    {
+      "source": "agentlab",
+      "target": "osworld"
+    },
+    {
+      "source": "agentlab",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "agentlab",
+      "target": "webarena"
+    },
+    {
+      "source": "agentscope",
+      "target": "beeai-framework"
+    },
+    {
+      "source": "agentscope",
+      "target": "haystack"
+    },
+    {
+      "source": "agentscope",
+      "target": "langgraph"
+    },
+    {
+      "source": "agentscope",
+      "target": "llama-index-agents"
+    },
+    {
+      "source": "agentscope",
+      "target": "microsoft-agent-framework"
+    },
+    {
+      "source": "agentscope",
+      "target": "semantic-kernel"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "autogen"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "camel"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "chatdev"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "crewai"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "metagpt"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "openagents-xlang"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "openmanus"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "praisonai"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "agixt",
+      "target": "babyagi"
+    },
+    {
+      "source": "agixt",
+      "target": "superagi"
+    },
+    {
+      "source": "agno",
+      "target": "atomic-agents"
+    },
+    {
+      "source": "agno",
+      "target": "claude-agent-sdk"
+    },
+    {
+      "source": "agno",
+      "target": "google-adk"
+    },
+    {
+      "source": "agno",
+      "target": "openai-agents-sdk"
+    },
+    {
+      "source": "agno",
+      "target": "pydanticai"
+    },
+    {
+      "source": "agno",
+      "target": "smolagents"
+    },
+    {
+      "source": "agno",
+      "target": "strands"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "beeai-framework"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "claude-agent-sdk"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "google-adk"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "langgraph"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "mastra"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "openai-agents-sdk"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "pydanticai"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "smolagents"
+    },
+    {
+      "source": "atomic-agents",
+      "target": "strands"
+    },
+    {
+      "source": "autogen",
+      "target": "agentbench"
+    },
+    {
+      "source": "autogen",
+      "target": "camel"
+    },
+    {
+      "source": "autogen",
+      "target": "chatdev"
+    },
+    {
+      "source": "autogen",
+      "target": "crewai"
+    },
+    {
+      "source": "autogen",
+      "target": "langgraph"
+    },
+    {
+      "source": "autogen",
+      "target": "metagpt"
+    },
+    {
+      "source": "autogen",
+      "target": "openagents-xlang"
+    },
+    {
+      "source": "autogen",
+      "target": "openhands"
+    },
+    {
+      "source": "autogen",
+      "target": "openmanus"
+    },
+    {
+      "source": "autogen",
+      "target": "praisonai"
+    },
+    {
+      "source": "autogen",
+      "target": "smolagents"
+    },
+    {
+      "source": "autogen",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "babyagi",
+      "target": "superagi"
+    },
+    {
+      "source": "beeai-framework",
+      "target": "haystack"
+    },
+    {
+      "source": "beeai-framework",
+      "target": "langgraph"
+    },
+    {
+      "source": "beeai-framework",
+      "target": "llama-index-agents"
+    },
+    {
+      "source": "beeai-framework",
+      "target": "mastra"
+    },
+    {
+      "source": "beeai-framework",
+      "target": "microsoft-agent-framework"
+    },
+    {
+      "source": "beeai-framework",
+      "target": "semantic-kernel"
+    },
+    {
+      "source": "browser-use",
+      "target": "browsergym"
+    },
+    {
+      "source": "browser-use",
+      "target": "openhands"
+    },
+    {
+      "source": "browser-use",
+      "target": "osworld"
+    },
+    {
+      "source": "browser-use",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "browser-use",
+      "target": "ufo"
+    },
+    {
+      "source": "browser-use",
+      "target": "webarena"
+    },
+    {
+      "source": "camel",
+      "target": "chatdev"
+    },
+    {
+      "source": "camel",
+      "target": "crewai"
+    },
+    {
+      "source": "camel",
+      "target": "metagpt"
+    },
+    {
+      "source": "camel",
+      "target": "openagents-xlang"
+    },
+    {
+      "source": "camel",
+      "target": "openmanus"
+    },
+    {
+      "source": "camel",
+      "target": "praisonai"
+    },
+    {
+      "source": "camel",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "chatdev",
+      "target": "crewai"
+    },
+    {
+      "source": "chatdev",
+      "target": "metagpt"
+    },
+    {
+      "source": "chatdev",
+      "target": "openagents-xlang"
+    },
+    {
+      "source": "chatdev",
+      "target": "openmanus"
+    },
+    {
+      "source": "chatdev",
+      "target": "praisonai"
+    },
+    {
+      "source": "chatdev",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "chatdev",
+      "target": "voyager"
+    },
+    {
+      "source": "chatdev",
+      "target": "xagent"
+    },
+    {
+      "source": "claude-agent-sdk",
+      "target": "google-adk"
+    },
+    {
+      "source": "claude-agent-sdk",
+      "target": "litellm"
+    },
+    {
+      "source": "claude-agent-sdk",
+      "target": "openai-agents-sdk"
+    },
+    {
+      "source": "claude-agent-sdk",
+      "target": "pydanticai"
+    },
+    {
+      "source": "claude-agent-sdk",
+      "target": "smolagents"
+    },
+    {
+      "source": "claude-agent-sdk",
+      "target": "strands"
+    },
+    {
+      "source": "copilotkit",
+      "target": "flowise"
+    },
+    {
+      "source": "copilotkit",
+      "target": "langflow"
+    },
+    {
+      "source": "copilotkit",
+      "target": "rivet"
+    },
+    {
+      "source": "copilotkit",
+      "target": "tambo"
+    },
+    {
+      "source": "crewai",
+      "target": "langgraph"
+    },
+    {
+      "source": "crewai",
+      "target": "metagpt"
+    },
+    {
+      "source": "crewai",
+      "target": "openagents-xlang"
+    },
+    {
+      "source": "crewai",
+      "target": "openmanus"
+    },
+    {
+      "source": "crewai",
+      "target": "praisonai"
+    },
+    {
+      "source": "crewai",
+      "target": "smolagents"
+    },
+    {
+      "source": "crewai",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "db-gpt",
+      "target": "haystack"
+    },
+    {
+      "source": "deer-flow",
+      "target": "gpt-researcher"
+    },
+    {
+      "source": "deer-flow",
+      "target": "storm"
+    },
+    {
+      "source": "dspy",
+      "target": "guidance"
+    },
+    {
+      "source": "dspy",
+      "target": "mirascope"
+    },
+    {
+      "source": "dspy",
+      "target": "outlines"
+    },
+    {
+      "source": "dspy",
+      "target": "taskweaver"
+    },
+    {
+      "source": "eidolon",
+      "target": "fastagency"
+    },
+    {
+      "source": "flowise",
+      "target": "langflow"
+    },
+    {
+      "source": "flowise",
+      "target": "rivet"
+    },
+    {
+      "source": "flowise",
+      "target": "tambo"
+    },
+    {
+      "source": "google-adk",
+      "target": "litellm"
+    },
+    {
+      "source": "google-adk",
+      "target": "openai-agents-sdk"
+    },
+    {
+      "source": "google-adk",
+      "target": "pydanticai"
+    },
+    {
+      "source": "google-adk",
+      "target": "smolagents"
+    },
+    {
+      "source": "google-adk",
+      "target": "strands"
+    },
+    {
+      "source": "gpt-researcher",
+      "target": "storm"
+    },
+    {
+      "source": "haystack",
+      "target": "langgraph"
+    },
+    {
+      "source": "haystack",
+      "target": "llama-index-agents"
+    },
+    {
+      "source": "haystack",
+      "target": "microsoft-agent-framework"
+    },
+    {
+      "source": "haystack",
+      "target": "semantic-kernel"
+    },
+    {
+      "source": "julep",
+      "target": "letta"
+    },
+    {
+      "source": "langflow",
+      "target": "rivet"
+    },
+    {
+      "source": "langflow",
+      "target": "tambo"
+    },
+    {
+      "source": "langgraph",
+      "target": "llama-index-agents"
+    },
+    {
+      "source": "langgraph",
+      "target": "mastra"
+    },
+    {
+      "source": "langgraph",
+      "target": "microsoft-agent-framework"
+    },
+    {
+      "source": "langgraph",
+      "target": "pydanticai"
+    },
+    {
+      "source": "langgraph",
+      "target": "semantic-kernel"
+    },
+    {
+      "source": "langgraph",
+      "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "llama-index-agents",
+      "target": "microsoft-agent-framework"
+    },
+    {
+      "source": "llama-index-agents",
+      "target": "pydanticai"
+    },
+    {
+      "source": "llama-index-agents",
+      "target": "semantic-kernel"
+    },
+    {
+      "source": "llama-index-agents",
+      "target": "smolagents"
+    },
+    {
+      "source": "llama-index-agents",
+      "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "metagpt",
+      "target": "openagents-xlang"
+    },
+    {
+      "source": "metagpt",
+      "target": "openmanus"
+    },
+    {
+      "source": "metagpt",
+      "target": "praisonai"
+    },
+    {
+      "source": "metagpt",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "metagpt",
+      "target": "voyager"
+    },
+    {
+      "source": "metagpt",
+      "target": "xagent"
+    },
+    {
+      "source": "microsoft-agent-framework",
+      "target": "semantic-kernel"
+    },
+    {
+      "source": "mini-swe-agent",
+      "target": "bigcode-evaluation-harness"
+    },
+    {
+      "source": "mini-swe-agent",
+      "target": "evalplus"
+    },
+    {
+      "source": "mini-swe-agent",
+      "target": "open-interpreter"
+    },
+    {
+      "source": "mini-swe-agent",
+      "target": "openhands"
+    },
+    {
+      "source": "mini-swe-agent",
+      "target": "swe-agent"
+    },
+    {
+      "source": "mini-swe-agent",
+      "target": "swe-bench"
+    },
+    {
+      "source": "mirascope",
+      "target": "guidance"
+    },
+    {
+      "source": "mirascope",
+      "target": "outlines"
+    },
+    {
+      "source": "mirascope",
+      "target": "taskweaver"
+    },
+    {
+      "source": "open-interpreter",
+      "target": "openhands"
+    },
+    {
+      "source": "open-interpreter",
+      "target": "swe-agent"
+    },
+    {
+      "source": "openagents-org",
+      "target": "openagents-xlang"
+    },
+    {
+      "source": "openagents-xlang",
+      "target": "openmanus"
+    },
+    {
+      "source": "openagents-xlang",
+      "target": "praisonai"
+    },
+    {
+      "source": "openagents-xlang",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "openai-agents-sdk",
+      "target": "pydanticai"
+    },
+    {
+      "source": "openai-agents-sdk",
+      "target": "smolagents"
+    },
+    {
+      "source": "openai-agents-sdk",
+      "target": "strands"
+    },
+    {
+      "source": "openhands",
+      "target": "agentbench"
+    },
+    {
+      "source": "openhands",
+      "target": "bigcode-evaluation-harness"
+    },
+    {
+      "source": "openhands",
+      "target": "evalplus"
+    },
+    {
+      "source": "openhands",
+      "target": "swe-agent"
+    },
+    {
+      "source": "openhands",
+      "target": "swe-bench"
+    },
+    {
+      "source": "openhands",
+      "target": "webarena"
+    },
+    {
+      "source": "openmanus",
+      "target": "praisonai"
+    },
+    {
+      "source": "openmanus",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "praisonai",
+      "target": "swarm-openai"
+    },
+    {
+      "source": "praisonai",
+      "target": "upsonic"
+    },
+    {
+      "source": "pydanticai",
+      "target": "smolagents"
+    },
+    {
+      "source": "pydanticai",
+      "target": "strands"
+    },
+    {
+      "source": "rivet",
+      "target": "tambo"
+    },
+    {
+      "source": "smolagents",
+      "target": "strands"
+    },
+    {
+      "source": "smolagents",
+      "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "swe-agent",
+      "target": "bigcode-evaluation-harness"
+    },
+    {
+      "source": "swe-agent",
+      "target": "evalplus"
+    },
+    {
+      "source": "swe-agent",
+      "target": "swe-bench"
+    },
+    {
+      "source": "taskweaver",
+      "target": "guidance"
+    },
+    {
+      "source": "taskweaver",
+      "target": "outlines"
+    },
+    {
+      "source": "voyager",
+      "target": "xagent"
+    },
+    {
+      "source": "anthropic-prompt-eng-tutorial",
+      "target": "aws-bedrock-workshop"
+    },
+    {
+      "source": "anthropic-prompt-eng-tutorial",
+      "target": "dair-prompt-engineering-guide"
+    },
+    {
+      "source": "anthropic-prompt-eng-tutorial",
+      "target": "gcp-generative-ai"
+    },
+    {
+      "source": "anthropic-prompt-eng-tutorial",
+      "target": "learn-prompting"
+    },
+    {
+      "source": "anthropic-prompt-eng-tutorial",
+      "target": "mistral-cookbook"
+    },
+    {
+      "source": "anthropic-prompt-eng-tutorial",
+      "target": "ms-phi-cookbook"
+    },
+    {
+      "source": "anthropic-prompt-eng-tutorial",
+      "target": "openai-cookbook"
+    },
+    {
+      "source": "aws-bedrock-workshop",
+      "target": "gcp-generative-ai"
+    },
+    {
+      "source": "aws-bedrock-workshop",
+      "target": "mistral-cookbook"
+    },
+    {
+      "source": "aws-bedrock-workshop",
+      "target": "ms-phi-cookbook"
+    },
+    {
+      "source": "aws-bedrock-workshop",
+      "target": "openai-cookbook"
+    },
+    {
+      "source": "dair-prompt-engineering-guide",
+      "target": "learn-prompting"
+    },
+    {
+      "source": "deepmind-educational",
+      "target": "fast-ai-course22"
+    },
+    {
+      "source": "deepmind-educational",
+      "target": "pytorch-tutorials"
+    },
+    {
+      "source": "fast-ai-course22",
+      "target": "karpathy-nn-zero-to-hero"
+    },
+    {
+      "source": "fast-ai-course22",
+      "target": "pytorch-tutorials"
+    },
+    {
+      "source": "fast-ai-course22",
+      "target": "stanford-cs336"
+    },
+    {
+      "source": "gcp-generative-ai",
+      "target": "mistral-cookbook"
+    },
+    {
+      "source": "gcp-generative-ai",
+      "target": "ms-phi-cookbook"
+    },
+    {
+      "source": "gcp-generative-ai",
+      "target": "openai-cookbook"
+    },
+    {
+      "source": "hands-on-llms",
+      "target": "handson-ml3"
+    },
+    {
+      "source": "hands-on-llms",
+      "target": "nlp-with-transformers-notebooks"
+    },
+    {
+      "source": "hands-on-llms",
+      "target": "wandb-edu"
+    },
+    {
+      "source": "handson-ml3",
+      "target": "nlp-with-transformers-notebooks"
+    },
+    {
+      "source": "handson-ml3",
+      "target": "wandb-edu"
+    },
+    {
+      "source": "harvard-annotated-transformer",
+      "target": "karpathy-mingpt"
+    },
+    {
+      "source": "harvard-annotated-transformer",
+      "target": "karpathy-nanogpt"
+    },
+    {
+      "source": "harvard-annotated-transformer",
+      "target": "karpathy-nn-zero-to-hero"
+    },
+    {
+      "source": "harvard-annotated-transformer",
+      "target": "labmlai-annotated-dl"
+    },
+    {
+      "source": "harvard-annotated-transformer",
+      "target": "norvig-pytudes"
+    },
+    {
+      "source": "harvard-annotated-transformer",
+      "target": "rasbt-llms-from-scratch"
+    },
+    {
+      "source": "hf-audio-transformers-course",
+      "target": "hf-deep-rl-class"
+    },
+    {
+      "source": "hf-audio-transformers-course",
+      "target": "hf-diffusion-models-class"
+    },
+    {
+      "source": "hf-audio-transformers-course",
+      "target": "hf-nlp-course"
+    },
+    {
+      "source": "hf-audio-transformers-course",
+      "target": "hf-smol-course"
+    },
+    {
+      "source": "hf-audio-transformers-course",
+      "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "hf-deep-rl-class",
+      "target": "hf-diffusion-models-class"
+    },
+    {
+      "source": "hf-deep-rl-class",
+      "target": "hf-nlp-course"
+    },
+    {
+      "source": "hf-deep-rl-class",
+      "target": "hf-smol-course"
+    },
+    {
+      "source": "hf-deep-rl-class",
+      "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "hf-diffusion-models-class",
+      "target": "hf-nlp-course"
+    },
+    {
+      "source": "hf-diffusion-models-class",
+      "target": "hf-smol-course"
+    },
+    {
+      "source": "hf-diffusion-models-class",
+      "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "hf-nlp-course",
+      "target": "hf-smol-course"
+    },
+    {
+      "source": "hf-nlp-course",
+      "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "hf-nlp-course",
+      "target": "llm-notebooks-course"
+    },
+    {
+      "source": "hf-nlp-course",
+      "target": "mlabonne-llm-course"
+    },
+    {
+      "source": "hf-nlp-course",
+      "target": "ms-generative-ai-for-beginners"
+    },
+    {
+      "source": "hf-nlp-course",
+      "target": "stanford-cs336"
+    },
+    {
+      "source": "hf-smol-course",
+      "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "hf-smol-course",
+      "target": "llm-notebooks-course"
+    },
+    {
+      "source": "hf-smol-course",
+      "target": "mlabonne-llm-course"
+    },
+    {
+      "source": "hf-smol-course",
+      "target": "ms-generative-ai-for-beginners"
+    },
+    {
+      "source": "hf-smol-course",
+      "target": "stanford-cs336"
+    },
+    {
+      "source": "hugging-face-agents-course",
+      "target": "microsoft-ai-agents-for-beginners"
+    },
+    {
+      "source": "karpathy-mingpt",
+      "target": "karpathy-nanogpt"
+    },
+    {
+      "source": "karpathy-mingpt",
+      "target": "karpathy-nn-zero-to-hero"
+    },
+    {
+      "source": "karpathy-mingpt",
+      "target": "labmlai-annotated-dl"
+    },
+    {
+      "source": "karpathy-mingpt",
+      "target": "rasbt-llms-from-scratch"
+    },
+    {
+      "source": "karpathy-nanogpt",
+      "target": "karpathy-nn-zero-to-hero"
+    },
+    {
+      "source": "karpathy-nanogpt",
+      "target": "labmlai-annotated-dl"
+    },
+    {
+      "source": "karpathy-nanogpt",
+      "target": "rasbt-llms-from-scratch"
+    },
+    {
+      "source": "karpathy-nn-zero-to-hero",
+      "target": "labmlai-annotated-dl"
+    },
+    {
+      "source": "karpathy-nn-zero-to-hero",
+      "target": "norvig-pytudes"
+    },
+    {
+      "source": "karpathy-nn-zero-to-hero",
+      "target": "rasbt-llms-from-scratch"
+    },
+    {
+      "source": "karpathy-nn-zero-to-hero",
+      "target": "stanford-cs336"
+    },
+    {
+      "source": "labmlai-annotated-dl",
+      "target": "rasbt-llms-from-scratch"
+    },
+    {
+      "source": "llm-notebooks-course",
+      "target": "mlabonne-llm-course"
+    },
+    {
+      "source": "llm-notebooks-course",
+      "target": "ms-generative-ai-for-beginners"
+    },
+    {
+      "source": "llm-notebooks-course",
+      "target": "stanford-cs336"
+    },
+    {
+      "source": "microsoft-ai-agents-for-beginners",
+      "target": "ms-ai-for-beginners"
+    },
+    {
+      "source": "microsoft-ai-agents-for-beginners",
+      "target": "ms-data-science-for-beginners"
+    },
+    {
+      "source": "microsoft-ai-agents-for-beginners",
+      "target": "ms-generative-ai-for-beginners"
+    },
+    {
+      "source": "microsoft-ai-agents-for-beginners",
+      "target": "ms-ml-for-beginners"
+    },
+    {
+      "source": "mistral-cookbook",
+      "target": "ms-phi-cookbook"
+    },
+    {
+      "source": "mistral-cookbook",
+      "target": "openai-cookbook"
+    },
+    {
+      "source": "mlabonne-llm-course",
+      "target": "ms-generative-ai-for-beginners"
+    },
+    {
+      "source": "mlabonne-llm-course",
+      "target": "stanford-cs336"
+    },
+    {
+      "source": "ms-ai-for-beginners",
+      "target": "ms-data-science-for-beginners"
+    },
+    {
+      "source": "ms-ai-for-beginners",
+      "target": "ms-generative-ai-for-beginners"
+    },
+    {
+      "source": "ms-ai-for-beginners",
+      "target": "ms-ml-for-beginners"
+    },
+    {
+      "source": "ms-data-science-for-beginners",
+      "target": "ms-generative-ai-for-beginners"
+    },
+    {
+      "source": "ms-data-science-for-beginners",
+      "target": "ms-ml-for-beginners"
+    },
+    {
+      "source": "ms-generative-ai-for-beginners",
+      "target": "ms-ml-for-beginners"
+    },
+    {
+      "source": "ms-generative-ai-for-beginners",
+      "target": "stanford-cs336"
+    },
+    {
+      "source": "ms-phi-cookbook",
+      "target": "openai-cookbook"
+    },
+    {
+      "source": "nlp-with-transformers-notebooks",
+      "target": "wandb-edu"
+    },
+    {
+      "source": "alpaca-eval",
+      "target": "arena-hard-auto"
+    },
+    {
+      "source": "alpaca-eval",
+      "target": "chateval"
+    },
+    {
+      "source": "alpaca-eval",
+      "target": "flow-judge"
+    },
+    {
+      "source": "alpaca-eval",
+      "target": "llmbar"
+    },
+    {
+      "source": "alpaca-eval",
+      "target": "mt-bench"
+    },
+    {
+      "source": "alpaca-eval",
+      "target": "rewardbench"
+    },
+    {
+      "source": "arena-hard-auto",
+      "target": "chateval"
+    },
+    {
+      "source": "arena-hard-auto",
+      "target": "flow-judge"
+    },
+    {
+      "source": "arena-hard-auto",
+      "target": "llmbar"
+    },
+    {
+      "source": "arena-hard-auto",
+      "target": "mt-bench"
+    },
+    {
+      "source": "arena-hard-auto",
+      "target": "rewardbench"
+    },
+    {
+      "source": "ares",
+      "target": "continuous-eval"
+    },
+    {
+      "source": "ares",
+      "target": "factscore"
+    },
+    {
+      "source": "ares",
+      "target": "ragas"
+    },
+    {
+      "source": "ares",
+      "target": "tonic-validate"
+    },
+    {
+      "source": "ares",
+      "target": "trulens"
+    },
+    {
+      "source": "big-bench",
+      "target": "flask"
+    },
+    {
+      "source": "big-bench",
+      "target": "legalbench"
+    },
+    {
+      "source": "big-bench",
+      "target": "mmlu-pro"
+    },
+    {
+      "source": "big-bench",
+      "target": "mteb"
+    },
+    {
+      "source": "big-bench",
+      "target": "truthfulqa"
+    },
+    {
+      "source": "bigcode-evaluation-harness",
+      "target": "evalplus"
+    },
+    {
+      "source": "bigcode-evaluation-harness",
+      "target": "swe-bench"
+    },
+    {
+      "source": "browsergym",
+      "target": "osworld"
+    },
+    {
+      "source": "browsergym",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "browsergym",
+      "target": "webarena"
+    },
+    {
+      "source": "chateval",
+      "target": "flow-judge"
+    },
+    {
+      "source": "chateval",
+      "target": "llmbar"
+    },
+    {
+      "source": "chateval",
+      "target": "mt-bench"
+    },
+    {
+      "source": "chateval",
+      "target": "rewardbench"
+    },
+    {
+      "source": "continuous-eval",
+      "target": "factscore"
+    },
+    {
+      "source": "continuous-eval",
+      "target": "ragas"
+    },
+    {
+      "source": "continuous-eval",
+      "target": "tonic-validate"
+    },
+    {
+      "source": "continuous-eval",
+      "target": "trulens"
+    },
+    {
+      "source": "deepeval",
+      "target": "arize-phoenix"
+    },
+    {
+      "source": "deepeval",
+      "target": "inspect-ai"
+    },
+    {
+      "source": "deepeval",
+      "target": "openai-evals"
+    },
+    {
+      "source": "deepeval",
+      "target": "promptfoo"
+    },
+    {
+      "source": "deepeval",
+      "target": "ragas"
+    },
+    {
+      "source": "deepeval",
+      "target": "giskard"
+    },
+    {
+      "source": "evalplus",
+      "target": "swe-bench"
+    },
+    {
+      "source": "factscore",
+      "target": "ragas"
+    },
+    {
+      "source": "factscore",
+      "target": "tonic-validate"
+    },
+    {
+      "source": "factscore",
+      "target": "trulens"
+    },
+    {
+      "source": "flask",
+      "target": "legalbench"
+    },
+    {
+      "source": "flask",
+      "target": "mmlu-pro"
+    },
+    {
+      "source": "flask",
+      "target": "mteb"
+    },
+    {
+      "source": "flask",
+      "target": "truthfulqa"
+    },
+    {
+      "source": "flow-judge",
+      "target": "llmbar"
+    },
+    {
+      "source": "flow-judge",
+      "target": "mt-bench"
+    },
+    {
+      "source": "flow-judge",
+      "target": "rewardbench"
+    },
+    {
+      "source": "helm",
+      "target": "hf-evaluate"
+    },
+    {
+      "source": "helm",
+      "target": "inspect-ai"
+    },
+    {
+      "source": "helm",
+      "target": "lighteval"
+    },
+    {
+      "source": "helm",
+      "target": "lm-evaluation-harness"
+    },
+    {
+      "source": "helm",
+      "target": "lmms-eval"
+    },
+    {
+      "source": "helm",
+      "target": "modelbench"
+    },
+    {
+      "source": "helm",
+      "target": "olmes"
+    },
+    {
+      "source": "helm",
+      "target": "opencompass"
+    },
+    {
+      "source": "helm",
+      "target": "simple-evals"
+    },
+    {
+      "source": "helm",
+      "target": "ultraeval"
+    },
+    {
+      "source": "helm",
+      "target": "unitxt"
+    },
+    {
+      "source": "hf-evaluate",
+      "target": "lighteval"
+    },
+    {
+      "source": "hf-evaluate",
+      "target": "lm-evaluation-harness"
+    },
+    {
+      "source": "hf-evaluate",
+      "target": "lmms-eval"
+    },
+    {
+      "source": "hf-evaluate",
+      "target": "olmes"
+    },
+    {
+      "source": "hf-evaluate",
+      "target": "opencompass"
+    },
+    {
+      "source": "hf-evaluate",
+      "target": "simple-evals"
+    },
+    {
+      "source": "hf-evaluate",
+      "target": "ultraeval"
+    },
+    {
+      "source": "hf-evaluate",
+      "target": "unitxt"
+    },
+    {
+      "source": "inspect-ai",
+      "target": "lm-evaluation-harness"
+    },
+    {
+      "source": "inspect-ai",
+      "target": "openai-evals"
+    },
+    {
+      "source": "inspect-ai",
+      "target": "promptfoo"
+    },
+    {
+      "source": "legalbench",
+      "target": "mmlu-pro"
+    },
+    {
+      "source": "legalbench",
+      "target": "mteb"
+    },
+    {
+      "source": "legalbench",
+      "target": "truthfulqa"
+    },
+    {
+      "source": "lighteval",
+      "target": "lm-evaluation-harness"
+    },
+    {
+      "source": "lighteval",
+      "target": "lmms-eval"
+    },
+    {
+      "source": "lighteval",
+      "target": "olmes"
+    },
+    {
+      "source": "lighteval",
+      "target": "opencompass"
+    },
+    {
+      "source": "lighteval",
+      "target": "simple-evals"
+    },
+    {
+      "source": "lighteval",
+      "target": "ultraeval"
+    },
+    {
+      "source": "lighteval",
+      "target": "unitxt"
+    },
+    {
+      "source": "llmbar",
+      "target": "mt-bench"
+    },
+    {
+      "source": "llmbar",
+      "target": "rewardbench"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "lmms-eval"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "modelbench"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "olmes"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "opencompass"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "simple-evals"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "ultraeval"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "unitxt"
+    },
+    {
+      "source": "lmms-eval",
+      "target": "olmes"
+    },
+    {
+      "source": "lmms-eval",
+      "target": "opencompass"
+    },
+    {
+      "source": "lmms-eval",
+      "target": "simple-evals"
+    },
+    {
+      "source": "lmms-eval",
+      "target": "ultraeval"
+    },
+    {
+      "source": "lmms-eval",
+      "target": "unitxt"
+    },
+    {
+      "source": "mmlu-pro",
+      "target": "mteb"
+    },
+    {
+      "source": "mmlu-pro",
+      "target": "truthfulqa"
+    },
+    {
+      "source": "mt-bench",
+      "target": "rewardbench"
+    },
+    {
+      "source": "mteb",
+      "target": "truthfulqa"
+    },
+    {
+      "source": "needle-in-haystack",
+      "target": "promptbench"
+    },
+    {
+      "source": "needle-in-haystack",
+      "target": "toolbench"
+    },
+    {
+      "source": "needle-in-haystack",
+      "target": "zeroeval"
+    },
+    {
+      "source": "olmes",
+      "target": "opencompass"
+    },
+    {
+      "source": "olmes",
+      "target": "simple-evals"
+    },
+    {
+      "source": "olmes",
+      "target": "ultraeval"
+    },
+    {
+      "source": "olmes",
+      "target": "unitxt"
+    },
+    {
+      "source": "openai-evals",
+      "target": "promptfoo"
+    },
+    {
+      "source": "opencompass",
+      "target": "modelbench"
+    },
+    {
+      "source": "opencompass",
+      "target": "simple-evals"
+    },
+    {
+      "source": "opencompass",
+      "target": "ultraeval"
+    },
+    {
+      "source": "opencompass",
+      "target": "unitxt"
+    },
+    {
+      "source": "osworld",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "osworld",
+      "target": "webarena"
+    },
+    {
+      "source": "promptbench",
+      "target": "toolbench"
+    },
+    {
+      "source": "promptbench",
+      "target": "zeroeval"
+    },
+    {
+      "source": "promptfoo",
+      "target": "garak"
+    },
+    {
+      "source": "promptfoo",
+      "target": "ragas"
+    },
+    {
+      "source": "promptfoo",
+      "target": "pyrit"
+    },
+    {
+      "source": "ragas",
+      "target": "arize-phoenix"
+    },
+    {
+      "source": "ragas",
+      "target": "langfuse"
+    },
+    {
+      "source": "ragas",
+      "target": "tonic-validate"
+    },
+    {
+      "source": "ragas",
+      "target": "trulens"
+    },
+    {
+      "source": "simple-evals",
+      "target": "ultraeval"
+    },
+    {
+      "source": "simple-evals",
+      "target": "unitxt"
+    },
+    {
+      "source": "theagentcompany",
+      "target": "webarena"
+    },
+    {
+      "source": "tonic-validate",
+      "target": "trulens"
+    },
+    {
+      "source": "toolbench",
+      "target": "zeroeval"
+    },
+    {
+      "source": "trulens",
+      "target": "arize-phoenix"
+    },
+    {
+      "source": "trulens",
+      "target": "langfuse"
+    },
+    {
+      "source": "trulens",
+      "target": "langkit"
+    },
+    {
+      "source": "ultraeval",
+      "target": "unitxt"
+    },
+    {
+      "source": "arize-phoenix",
+      "target": "langfuse"
+    },
+    {
+      "source": "arize-phoenix",
+      "target": "langkit"
+    },
+    {
+      "source": "art-toolkit",
+      "target": "easyjailbreak"
+    },
+    {
+      "source": "art-toolkit",
+      "target": "garak"
+    },
+    {
+      "source": "art-toolkit",
+      "target": "pyrit"
+    },
+    {
+      "source": "autodefense",
+      "target": "circuit-breakers"
+    },
+    {
+      "source": "autodefense",
+      "target": "llm-guard"
+    },
+    {
+      "source": "autodefense",
+      "target": "rebuff"
+    },
+    {
+      "source": "autodefense",
+      "target": "safedecoding"
+    },
+    {
+      "source": "autodefense",
+      "target": "shieldlm"
+    },
+    {
+      "source": "autodefense",
+      "target": "smooth-llm"
+    },
+    {
+      "source": "autodefense",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "autodefense",
+      "target": "wildguard"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "llm-guard"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "rebuff"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "safedecoding"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "shieldlm"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "smooth-llm"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "wildguard"
+    },
+    {
+      "source": "detoxify",
+      "target": "granite-guardian"
+    },
+    {
+      "source": "detoxify",
+      "target": "shieldlm"
+    },
+    {
+      "source": "detoxify",
+      "target": "wildguard"
+    },
+    {
+      "source": "do-not-answer",
+      "target": "easyjailbreak"
+    },
+    {
+      "source": "do-not-answer",
+      "target": "harmbench"
+    },
+    {
+      "source": "do-not-answer",
+      "target": "jailbreak-evaluation"
+    },
+    {
+      "source": "do-not-answer",
+      "target": "jailbreakbench"
+    },
+    {
+      "source": "do-not-answer",
+      "target": "safetybench"
+    },
+    {
+      "source": "do-not-answer",
+      "target": "trustllm"
+    },
+    {
+      "source": "do-not-answer",
+      "target": "wmdp"
+    },
+    {
+      "source": "granite-guardian",
+      "target": "guardrails-ai"
+    },
+    {
+      "source": "granite-guardian",
+      "target": "nemo-guardrails"
+    },
+    {
+      "source": "granite-guardian",
+      "target": "rebuff"
+    },
+    {
+      "source": "granite-guardian",
+      "target": "shieldlm"
+    },
+    {
+      "source": "granite-guardian",
+      "target": "wildguard"
+    },
+    {
+      "source": "granite-guardian",
+      "target": "harmless-harnesses"
+    },
+    {
+      "source": "guardrails-ai",
+      "target": "llm-guard"
+    },
+    {
+      "source": "guardrails-ai",
+      "target": "nemo-guardrails"
+    },
+    {
+      "source": "guardrails-ai",
+      "target": "presidio"
+    },
+    {
+      "source": "guardrails-ai",
+      "target": "rebuff"
+    },
+    {
+      "source": "guardrails-ai",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "guardrails-ai",
+      "target": "harmless-harnesses"
+    },
+    {
+      "source": "guidance",
+      "target": "instructor"
+    },
+    {
+      "source": "guidance",
+      "target": "lmql"
+    },
+    {
+      "source": "guidance",
+      "target": "outlines"
+    },
+    {
+      "source": "guidance",
+      "target": "typechat"
+    },
+    {
+      "source": "harmless-harnesses",
+      "target": "nemo-guardrails"
+    },
+    {
+      "source": "instructor",
+      "target": "lmql"
+    },
+    {
+      "source": "instructor",
+      "target": "outlines"
+    },
+    {
+      "source": "instructor",
+      "target": "typechat"
+    },
+    {
+      "source": "langfuse",
+      "target": "langkit"
+    },
+    {
+      "source": "llm-guard",
+      "target": "garak"
+    },
+    {
+      "source": "llm-guard",
+      "target": "nemo-guardrails"
+    },
+    {
+      "source": "llm-guard",
+      "target": "presidio"
+    },
+    {
+      "source": "llm-guard",
+      "target": "promptmap"
+    },
+    {
+      "source": "llm-guard",
+      "target": "rebuff"
+    },
+    {
+      "source": "llm-guard",
+      "target": "safedecoding"
+    },
+    {
+      "source": "llm-guard",
+      "target": "shieldlm"
+    },
+    {
+      "source": "llm-guard",
+      "target": "smooth-llm"
+    },
+    {
+      "source": "llm-guard",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "llm-guard",
+      "target": "wildguard"
+    },
+    {
+      "source": "lmql",
+      "target": "outlines"
+    },
+    {
+      "source": "lmql",
+      "target": "typechat"
+    },
+    {
+      "source": "nemo-guardrails",
+      "target": "presidio"
+    },
+    {
+      "source": "nemo-guardrails",
+      "target": "rebuff"
+    },
+    {
+      "source": "nemo-guardrails",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "outlines",
+      "target": "typechat"
+    },
+    {
+      "source": "presidio",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "promptinject",
+      "target": "bipia"
+    },
+    {
+      "source": "promptinject",
+      "target": "open-prompt-injection"
+    },
+    {
+      "source": "promptinject",
+      "target": "rebuff"
+    },
+    {
+      "source": "rebuff",
+      "target": "bipia"
+    },
+    {
+      "source": "rebuff",
+      "target": "garak"
+    },
+    {
+      "source": "rebuff",
+      "target": "open-prompt-injection"
+    },
+    {
+      "source": "rebuff",
+      "target": "promptmap"
+    },
+    {
+      "source": "rebuff",
+      "target": "safedecoding"
+    },
+    {
+      "source": "rebuff",
+      "target": "shieldlm"
+    },
+    {
+      "source": "rebuff",
+      "target": "smooth-llm"
+    },
+    {
+      "source": "rebuff",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "rebuff",
+      "target": "wildguard"
+    },
+    {
+      "source": "safedecoding",
+      "target": "shieldlm"
+    },
+    {
+      "source": "safedecoding",
+      "target": "smooth-llm"
+    },
+    {
+      "source": "safedecoding",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "safedecoding",
+      "target": "wildguard"
+    },
+    {
+      "source": "shieldlm",
+      "target": "jailbreakbench"
+    },
+    {
+      "source": "shieldlm",
+      "target": "smooth-llm"
+    },
+    {
+      "source": "shieldlm",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "shieldlm",
+      "target": "wildguard"
+    },
+    {
+      "source": "smooth-llm",
+      "target": "vigil-llm"
+    },
+    {
+      "source": "smooth-llm",
+      "target": "wildguard"
+    },
+    {
+      "source": "trustllm",
+      "target": "harmbench"
+    },
+    {
+      "source": "trustllm",
+      "target": "safetybench"
+    },
+    {
+      "source": "vigil-llm",
+      "target": "wildguard"
+    },
+    {
+      "source": "wildguard",
+      "target": "harmbench"
+    },
+    {
+      "source": "agent-attack",
+      "target": "agentdojo"
+    },
+    {
+      "source": "agent-attack",
+      "target": "agentic-radar"
+    },
+    {
+      "source": "agent-attack",
+      "target": "bipia"
+    },
+    {
+      "source": "agent-attack",
+      "target": "mimir"
+    },
+    {
+      "source": "agent-attack",
+      "target": "open-prompt-injection"
+    },
+    {
+      "source": "agent-attack",
+      "target": "ps-fuzz"
+    },
+    {
+      "source": "agent-attack",
+      "target": "r-judge"
+    },
+    {
+      "source": "agent-attack",
+      "target": "toolemu"
+    },
+    {
+      "source": "agentdojo",
+      "target": "agentic-radar"
+    },
+    {
+      "source": "agentdojo",
+      "target": "bipia"
+    },
+    {
+      "source": "agentdojo",
+      "target": "mimir"
+    },
+    {
+      "source": "agentdojo",
+      "target": "open-prompt-injection"
+    },
+    {
+      "source": "agentdojo",
+      "target": "pint-benchmark"
+    },
+    {
+      "source": "agentdojo",
+      "target": "promptmap"
+    },
+    {
+      "source": "agentdojo",
+      "target": "ps-fuzz"
+    },
+    {
+      "source": "agentdojo",
+      "target": "pyrit"
+    },
+    {
+      "source": "agentdojo",
+      "target": "r-judge"
+    },
+    {
+      "source": "agentdojo",
+      "target": "toolemu"
+    },
+    {
+      "source": "agentic-radar",
+      "target": "bipia"
+    },
+    {
+      "source": "agentic-radar",
+      "target": "mimir"
+    },
+    {
+      "source": "agentic-radar",
+      "target": "open-prompt-injection"
+    },
+    {
+      "source": "agentic-radar",
+      "target": "ps-fuzz"
+    },
+    {
+      "source": "agentic-radar",
+      "target": "r-judge"
+    },
+    {
+      "source": "agentic-radar",
+      "target": "toolemu"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "autodan"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "cipherchat"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "gptfuzz"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "llm-adaptive-attacks"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "llm-attacks-gcg"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "nanogcg"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "renellm"
+    },
+    {
+      "source": "autodan-turbo",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "autodan",
+      "target": "cipherchat"
+    },
+    {
+      "source": "autodan",
+      "target": "gptfuzz"
+    },
+    {
+      "source": "autodan",
+      "target": "llm-adaptive-attacks"
+    },
+    {
+      "source": "autodan",
+      "target": "llm-attacks-gcg"
+    },
+    {
+      "source": "autodan",
+      "target": "nanogcg"
+    },
+    {
+      "source": "autodan",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "autodan",
+      "target": "renellm"
+    },
+    {
+      "source": "autodan",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "bipia",
+      "target": "mimir"
+    },
+    {
+      "source": "bipia",
+      "target": "open-prompt-injection"
+    },
+    {
+      "source": "bipia",
+      "target": "ps-fuzz"
+    },
+    {
+      "source": "bipia",
+      "target": "r-judge"
+    },
+    {
+      "source": "bipia",
+      "target": "toolemu"
+    },
+    {
+      "source": "cipherchat",
+      "target": "gptfuzz"
+    },
+    {
+      "source": "cipherchat",
+      "target": "llm-adaptive-attacks"
+    },
+    {
+      "source": "cipherchat",
+      "target": "llm-attacks-gcg"
+    },
+    {
+      "source": "cipherchat",
+      "target": "nanogcg"
+    },
+    {
+      "source": "cipherchat",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "cipherchat",
+      "target": "renellm"
+    },
+    {
+      "source": "cipherchat",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "garak"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "harmbench"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "jailbreak-evaluation"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "jailbreakbench"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "plexiglass"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "promptmap"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "pyrit"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "safetybench"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "wmdp"
+    },
+    {
+      "source": "garak",
+      "target": "modelscan"
+    },
+    {
+      "source": "garak",
+      "target": "plexiglass"
+    },
+    {
+      "source": "garak",
+      "target": "promptmap"
+    },
+    {
+      "source": "garak",
+      "target": "purple-llama"
+    },
+    {
+      "source": "garak",
+      "target": "pyrit"
+    },
+    {
+      "source": "garak",
+      "target": "giskard"
+    },
+    {
+      "source": "gptfuzz",
+      "target": "llm-adaptive-attacks"
+    },
+    {
+      "source": "gptfuzz",
+      "target": "llm-attacks-gcg"
+    },
+    {
+      "source": "gptfuzz",
+      "target": "nanogcg"
+    },
+    {
+      "source": "gptfuzz",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "gptfuzz",
+      "target": "renellm"
+    },
+    {
+      "source": "gptfuzz",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "harmbench",
+      "target": "jailbreak-evaluation"
+    },
+    {
+      "source": "harmbench",
+      "target": "jailbreakbench"
+    },
+    {
+      "source": "harmbench",
+      "target": "safetybench"
+    },
+    {
+      "source": "harmbench",
+      "target": "wmdp"
+    },
+    {
+      "source": "jailbreak-evaluation",
+      "target": "jailbreakbench"
+    },
+    {
+      "source": "jailbreak-evaluation",
+      "target": "safetybench"
+    },
+    {
+      "source": "jailbreak-evaluation",
+      "target": "wmdp"
+    },
+    {
+      "source": "jailbreakbench",
+      "target": "safetybench"
+    },
+    {
+      "source": "jailbreakbench",
+      "target": "wmdp"
+    },
+    {
+      "source": "llm-adaptive-attacks",
+      "target": "llm-attacks-gcg"
+    },
+    {
+      "source": "llm-adaptive-attacks",
+      "target": "nanogcg"
+    },
+    {
+      "source": "llm-adaptive-attacks",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "llm-adaptive-attacks",
+      "target": "renellm"
+    },
+    {
+      "source": "llm-adaptive-attacks",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "llm-attacks-gcg",
+      "target": "nanogcg"
+    },
+    {
+      "source": "llm-attacks-gcg",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "llm-attacks-gcg",
+      "target": "renellm"
+    },
+    {
+      "source": "llm-attacks-gcg",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "mimir",
+      "target": "open-prompt-injection"
+    },
+    {
+      "source": "mimir",
+      "target": "ps-fuzz"
+    },
+    {
+      "source": "mimir",
+      "target": "r-judge"
+    },
+    {
+      "source": "mimir",
+      "target": "toolemu"
+    },
+    {
+      "source": "modelscan",
+      "target": "purple-llama"
+    },
+    {
+      "source": "nanogcg",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "nanogcg",
+      "target": "renellm"
+    },
+    {
+      "source": "nanogcg",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "open-prompt-injection",
+      "target": "pint-benchmark"
+    },
+    {
+      "source": "open-prompt-injection",
+      "target": "promptmap"
+    },
+    {
+      "source": "open-prompt-injection",
+      "target": "ps-fuzz"
+    },
+    {
+      "source": "open-prompt-injection",
+      "target": "r-judge"
+    },
+    {
+      "source": "open-prompt-injection",
+      "target": "toolemu"
+    },
+    {
+      "source": "pair-jailbreak",
+      "target": "renellm"
+    },
+    {
+      "source": "pair-jailbreak",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "pint-benchmark",
+      "target": "promptmap"
+    },
+    {
+      "source": "plexiglass",
+      "target": "promptmap"
+    },
+    {
+      "source": "plexiglass",
+      "target": "pyrit"
+    },
+    {
+      "source": "promptmap",
+      "target": "pyrit"
+    },
+    {
+      "source": "ps-fuzz",
+      "target": "r-judge"
+    },
+    {
+      "source": "ps-fuzz",
+      "target": "toolemu"
+    },
+    {
+      "source": "pyrit",
+      "target": "toolemu"
+    },
+    {
+      "source": "r-judge",
+      "target": "toolemu"
+    },
+    {
+      "source": "renellm",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "safetybench",
+      "target": "wmdp"
+    },
+    {
+      "source": "aisuite",
+      "target": "fastchat"
+    },
+    {
+      "source": "aisuite",
+      "target": "helicone"
+    },
+    {
+      "source": "aisuite",
+      "target": "litellm"
+    },
+    {
+      "source": "aisuite",
+      "target": "mlflow-ai-gateway"
+    },
+    {
+      "source": "aisuite",
+      "target": "new-api"
+    },
+    {
+      "source": "aisuite",
+      "target": "one-api"
+    },
+    {
+      "source": "aisuite",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "aisuite",
+      "target": "routellm"
+    },
+    {
+      "source": "aisuite",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "apache-apisix",
+      "target": "apfel"
+    },
+    {
+      "source": "apache-apisix",
+      "target": "envoy-ai-gateway"
+    },
+    {
+      "source": "apache-apisix",
+      "target": "kgateway"
+    },
+    {
+      "source": "apache-apisix",
+      "target": "kong"
+    },
+    {
+      "source": "apache-apisix",
+      "target": "plano"
+    },
+    {
+      "source": "apfel",
+      "target": "envoy-ai-gateway"
+    },
+    {
+      "source": "apfel",
+      "target": "kgateway"
+    },
+    {
+      "source": "apfel",
+      "target": "kong"
+    },
+    {
+      "source": "apfel",
+      "target": "plano"
+    },
+    {
+      "source": "deepspeed-mii",
+      "target": "lmdeploy"
+    },
+    {
+      "source": "deepspeed-mii",
+      "target": "openllm"
+    },
+    {
+      "source": "deepspeed-mii",
+      "target": "sglang"
+    },
+    {
+      "source": "deepspeed-mii",
+      "target": "vllm"
+    },
+    {
+      "source": "deepspeed-mii",
+      "target": "xinference"
+    },
+    {
+      "source": "envoy-ai-gateway",
+      "target": "kgateway"
+    },
+    {
+      "source": "envoy-ai-gateway",
+      "target": "kong"
+    },
+    {
+      "source": "envoy-ai-gateway",
+      "target": "litellm"
+    },
+    {
+      "source": "envoy-ai-gateway",
+      "target": "plano"
+    },
+    {
+      "source": "envoy-ai-gateway",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "exo",
+      "target": "mlc-llm"
+    },
+    {
+      "source": "exo",
+      "target": "shimmy"
+    },
+    {
+      "source": "exo",
+      "target": "web-llm"
+    },
+    {
+      "source": "fastchat",
+      "target": "helicone"
+    },
+    {
+      "source": "fastchat",
+      "target": "litellm"
+    },
+    {
+      "source": "fastchat",
+      "target": "mlflow-ai-gateway"
+    },
+    {
+      "source": "fastchat",
+      "target": "new-api"
+    },
+    {
+      "source": "fastchat",
+      "target": "one-api"
+    },
+    {
+      "source": "fastchat",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "fastchat",
+      "target": "routellm"
+    },
+    {
+      "source": "fastchat",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "helicone",
+      "target": "litellm"
+    },
+    {
+      "source": "helicone",
+      "target": "mlflow-ai-gateway"
+    },
+    {
+      "source": "helicone",
+      "target": "new-api"
+    },
+    {
+      "source": "helicone",
+      "target": "one-api"
+    },
+    {
+      "source": "helicone",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "helicone",
+      "target": "routellm"
+    },
+    {
+      "source": "helicone",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "jan",
+      "target": "llama-cpp"
+    },
+    {
+      "source": "jan",
+      "target": "localai"
+    },
+    {
+      "source": "jan",
+      "target": "ollama"
+    },
+    {
+      "source": "jan",
+      "target": "ramalama"
+    },
+    {
+      "source": "jan",
+      "target": "text-generation-webui"
+    },
+    {
+      "source": "kgateway",
+      "target": "kong"
+    },
+    {
+      "source": "kgateway",
+      "target": "plano"
+    },
+    {
+      "source": "kong",
+      "target": "plano"
+    },
+    {
+      "source": "litellm",
+      "target": "llama-cpp"
+    },
+    {
+      "source": "litellm",
+      "target": "lmdeploy"
+    },
+    {
+      "source": "litellm",
+      "target": "mlflow-ai-gateway"
+    },
+    {
+      "source": "litellm",
+      "target": "new-api"
+    },
+    {
+      "source": "litellm",
+      "target": "ollama"
+    },
+    {
+      "source": "litellm",
+      "target": "one-api"
+    },
+    {
+      "source": "litellm",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "litellm",
+      "target": "routellm"
+    },
+    {
+      "source": "litellm",
+      "target": "sglang"
+    },
+    {
+      "source": "litellm",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "litellm",
+      "target": "vllm"
+    },
+    {
+      "source": "llama-cpp",
+      "target": "lmdeploy"
+    },
+    {
+      "source": "llama-cpp",
+      "target": "localai"
+    },
+    {
+      "source": "llama-cpp",
+      "target": "ollama"
+    },
+    {
+      "source": "llama-cpp",
+      "target": "ramalama"
+    },
+    {
+      "source": "llama-cpp",
+      "target": "sglang"
+    },
+    {
+      "source": "llama-cpp",
+      "target": "text-generation-webui"
+    },
+    {
+      "source": "llama-cpp",
+      "target": "vllm"
+    },
+    {
+      "source": "lmdeploy",
+      "target": "ollama"
+    },
+    {
+      "source": "lmdeploy",
+      "target": "openllm"
+    },
+    {
+      "source": "lmdeploy",
+      "target": "sglang"
+    },
+    {
+      "source": "lmdeploy",
+      "target": "vllm"
+    },
+    {
+      "source": "lmdeploy",
+      "target": "xinference"
+    },
+    {
+      "source": "localai",
+      "target": "ollama"
+    },
+    {
+      "source": "localai",
+      "target": "ramalama"
+    },
+    {
+      "source": "localai",
+      "target": "text-generation-webui"
+    },
+    {
+      "source": "mlc-llm",
+      "target": "shimmy"
+    },
+    {
+      "source": "mlc-llm",
+      "target": "web-llm"
+    },
+    {
+      "source": "mlflow-ai-gateway",
+      "target": "new-api"
+    },
+    {
+      "source": "mlflow-ai-gateway",
+      "target": "one-api"
+    },
+    {
+      "source": "mlflow-ai-gateway",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "mlflow-ai-gateway",
+      "target": "routellm"
+    },
+    {
+      "source": "mlflow-ai-gateway",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "new-api",
+      "target": "one-api"
+    },
+    {
+      "source": "new-api",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "new-api",
+      "target": "routellm"
+    },
+    {
+      "source": "new-api",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "ollama",
+      "target": "ramalama"
+    },
+    {
+      "source": "ollama",
+      "target": "sglang"
+    },
+    {
+      "source": "ollama",
+      "target": "text-generation-webui"
+    },
+    {
+      "source": "ollama",
+      "target": "vllm"
+    },
+    {
+      "source": "one-api",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "one-api",
+      "target": "routellm"
+    },
+    {
+      "source": "one-api",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "openllm",
+      "target": "sglang"
+    },
+    {
+      "source": "openllm",
+      "target": "vllm"
+    },
+    {
+      "source": "openllm",
+      "target": "xinference"
+    },
+    {
+      "source": "portkey-gateway",
+      "target": "routellm"
+    },
+    {
+      "source": "portkey-gateway",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "ramalama",
+      "target": "text-generation-webui"
+    },
+    {
+      "source": "routellm",
+      "target": "simonw-llm"
+    },
+    {
+      "source": "sglang",
+      "target": "vllm"
+    },
+    {
+      "source": "sglang",
+      "target": "xinference"
+    },
+    {
+      "source": "shimmy",
+      "target": "web-llm"
+    },
+    {
+      "source": "vllm",
+      "target": "xinference"
+    }
+  ]
+}

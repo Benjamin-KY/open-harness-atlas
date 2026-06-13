@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>open-harness-atlas — interactive knowledge graph</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Interactive force-directed graph of 236 OSS LLM/agent harnesses + free education resources. All OSI-licensed.">
+<style>
+  :root {
+    --brand-deep: #1f3a5f;
+    --brand-ink: #0d1f33;
+    --brand-mute: #4a5d75;
+    --brand-line: #d8e1eb;
+    --brand-bg: #fbfcfe;
+    --brand-panel: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--brand-bg); color: var(--brand-ink); }
+  header { padding: 18px 24px 12px; border-bottom: 1px solid var(--brand-line); background: var(--brand-panel); }
+  h1 { font-size: 18px; font-weight: 700; color: var(--brand-deep); margin: 0 0 4px; }
+  .sub { font-size: 12.5px; color: var(--brand-mute); margin: 0; }
+  .sub a { color: var(--brand-deep); }
+  #app { display: grid; grid-template-columns: 1fr 320px; height: calc(100vh - 64px); }
+  @media (max-width: 760px) { #app { grid-template-columns: 1fr; grid-template-rows: 1fr 200px; } }
+  #graph-wrap { position: relative; overflow: hidden; background: var(--brand-panel); border-right: 1px solid var(--brand-line); }
+  svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  svg:active { cursor: grabbing; }
+  #side { padding: 16px 18px; overflow-y: auto; background: var(--brand-bg); }
+  .panel { background: var(--brand-panel); border: 1px solid var(--brand-line); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+  .panel h3 { margin: 0 0 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-mute); font-weight: 700; }
+  input[type=text] { width: 100%; padding: 8px 10px; border: 1px solid var(--brand-line); border-radius: 6px; font: inherit; font-size: 13px; background: #fff; }
+  .legend-item { display: flex; align-items: center; gap: 8px; padding: 4px 0; cursor: pointer; user-select: none; font-size: 13px; }
+  .legend-item .swatch { width: 12px; height: 12px; border-radius: 50%; flex: 0 0 12px; }
+  .legend-item.off { opacity: 0.32; }
+  .legend-item .count { color: var(--brand-mute); font-variant-numeric: tabular-nums; }
+  .legend-item .label { flex: 1; }
+  .stats { font-size: 12px; color: var(--brand-mute); line-height: 1.5; }
+  .stats strong { color: var(--brand-ink); font-weight: 600; }
+  .node-detail-title { font-size: 15px; font-weight: 700; color: var(--brand-deep); margin: 0 0 4px; }
+  .node-detail-cat { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #fff; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; }
+  .node-detail-tag { font-size: 12.5px; color: var(--brand-ink); margin: 6px 0; }
+  .node-detail-meta { font-size: 12px; color: var(--brand-mute); margin: 4px 0; }
+  .node-detail-meta strong { color: var(--brand-ink); }
+  .node-detail-link { display: inline-block; margin-top: 8px; padding: 5px 10px; background: var(--brand-deep); color: #fff; text-decoration: none; border-radius: 5px; font-size: 12px; font-weight: 600; }
+  .node-detail-neighbors { margin-top: 10px; }
+  .node-detail-neighbors h4 { margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--brand-mute); font-weight: 700; }
+  .node-detail-neighbors ul { margin: 0; padding-left: 18px; font-size: 12px; }
+  .node-detail-neighbors a { color: var(--brand-deep); text-decoration: none; }
+  .node-detail-neighbors a:hover { text-decoration: underline; }
+  .footer { font-size: 11px; color: var(--brand-mute); text-align: center; padding: 8px; }
+  .footer a { color: var(--brand-deep); }
+  .node circle { transition: r 0.12s ease; }
+  .node.hover circle { stroke: var(--brand-ink); stroke-width: 2px; }
+  .node.dim circle { opacity: 0.18; }
+  .node text { pointer-events: none; font-size: 9px; font-weight: 600; fill: var(--brand-ink); text-shadow: 0 0 3px #fff, 0 0 2px #fff; }
+  .link { stroke: var(--brand-deep); stroke-opacity: 0.15; }
+  .link.highlight { stroke-opacity: 0.85; stroke-width: 1.6px; stroke: var(--brand-ink); }
+  .link.dim { stroke-opacity: 0.03; }
+  .controls { display: flex; gap: 6px; margin-top: 6px; }
+  .controls button { flex: 1; padding: 6px 8px; font: inherit; font-size: 11.5px; font-weight: 600; border: 1px solid var(--brand-line); background: #fff; color: var(--brand-deep); border-radius: 5px; cursor: pointer; }
+  .controls button:hover { background: var(--brand-bg); }
+</style>
+</head>
+<body>
+<header>
+  <h1>open-harness-atlas — interactive knowledge graph</h1>
+  <p class="sub">236 OSI-licensed open-source harnesses + free education resources, connected by adjacency. <a href="https://github.com/Benjamin-KY/open-harness-atlas">Repo</a> · <a href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/CHARTER.md">Why</a></p>
+</header>
+<div id="app">
+  <div id="graph-wrap">
+    <svg id="graph"></svg>
+  </div>
+  <aside id="side">
+    <div class="panel">
+      <h3>Search</h3>
+      <input id="search" type="text" placeholder="e.g. autogen, langfuse, mlc-llm…" autocomplete="off">
+      <div class="controls">
+        <button id="reset">Reset view</button>
+        <button id="recenter">Re-center</button>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Categories (click to filter)</h3>
+      <div id="legend"></div>
+    </div>
+    <div class="panel" id="detail-panel">
+      <h3>Selection</h3>
+      <div id="detail">
+        <p class="stats">Click a node to see its details and neighbours.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>About</h3>
+      <p class="stats">
+        Each node is a project in the registry. Edges are explicit
+        <code>adjacent_to</code> declarations (competitors, complements,
+        members of the same paradigm). Node size = degree.
+        <br><br>
+        OSI-license filter is strict — no source-available, no
+        non-commercial. See
+        <a href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/GOVERNANCE.md">GOVERNANCE.md</a>.
+      </p>
+    </div>
+    <p class="footer">CC BY-SA 4.0 · <span id="stat-line"></span></p>
+  </aside>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(async () => {
+  const data = await (await fetch('graph-data.json')).json();
+  const svg = d3.select('#graph');
+  const wrap = document.getElementById('graph-wrap');
+  let width = wrap.clientWidth, height = wrap.clientHeight;
+  svg.attr('viewBox', [-width/2, -height/2, width, height]);
+
+  const root = svg.append('g');
+  const zoom = d3.zoom()
+    .scaleExtent([0.25, 6])
+    .on('zoom', (e) => root.attr('transform', e.transform));
+  svg.call(zoom);
+
+  const linkSel = root.append('g').attr('class', 'links')
+    .selectAll('line').data(data.links).enter().append('line').attr('class', 'link');
+
+  const nodeSel = root.append('g').attr('class', 'nodes')
+    .selectAll('g.node').data(data.nodes).enter().append('g').attr('class', 'node');
+
+  const maxDeg = d3.max(data.nodes, d => d.degree) || 1;
+  const radius = d => 4 + Math.sqrt(d.degree / maxDeg) * 12;
+
+  nodeSel.append('circle')
+    .attr('r', d => radius(d))
+    .attr('fill', d => d.color)
+    .attr('stroke', '#fff').attr('stroke-width', 1.2);
+
+  // Inline label only for high-degree nodes.
+  const degPctile = d3.quantile(data.nodes.map(d => d.degree).sort(d3.ascending), 0.92);
+  nodeSel.filter(d => d.degree >= degPctile)
+    .append('text').attr('dx', d => radius(d) + 3).attr('dy', '0.32em').text(d => d.name);
+
+  nodeSel.append('title').text(d => `${d.name} (${d.category})\n${d.tagline}`);
+
+  // Forces.
+  const sim = d3.forceSimulation(data.nodes)
+    .force('charge', d3.forceManyBody().strength(-120))
+    .force('link', d3.forceLink(data.links).id(d => d.id).distance(38).strength(0.6))
+    .force('center', d3.forceCenter(0, 0))
+    .force('collide', d3.forceCollide().radius(d => radius(d) + 2))
+    .on('tick', () => {
+      linkSel
+        .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+        .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+      nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+    });
+
+  // Drag.
+  nodeSel.call(d3.drag()
+    .on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on('end',  (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+  // Neighbour index.
+  const neighbours = new Map();
+  data.nodes.forEach(n => neighbours.set(n.id, new Set()));
+  data.links.forEach(l => {
+    const s = (l.source.id || l.source), t = (l.target.id || l.target);
+    neighbours.get(s).add(t); neighbours.get(t).add(s);
+  });
+
+  function focus(node) {
+    const keep = new Set([node.id, ...neighbours.get(node.id)]);
+    nodeSel.classed('dim', d => !keep.has(d.id)).classed('hover', d => d.id === node.id);
+    linkSel.classed('highlight', l => {
+      const s = (l.source.id || l.source), t = (l.target.id || l.target);
+      return s === node.id || t === node.id;
+    }).classed('dim', l => {
+      const s = (l.source.id || l.source), t = (l.target.id || l.target);
+      return s !== node.id && t !== node.id;
+    });
+    renderDetail(node);
+  }
+  function unfocus() {
+    nodeSel.classed('dim', false).classed('hover', false);
+    linkSel.classed('highlight', false).classed('dim', false);
+    document.getElementById('detail').innerHTML = '<p class="stats">Click a node to see its details and neighbours.</p>';
+  }
+
+  nodeSel.on('click', (e, d) => { e.stopPropagation(); focus(d); });
+  svg.on('click', unfocus);
+
+  // Detail panel.
+  const detail = document.getElementById('detail');
+  function escapeHtml(s) { return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function renderDetail(node) {
+    const nbrIds = [...neighbours.get(node.id)].sort();
+    const byCat = {};
+    nbrIds.forEach(id => {
+      const nb = data.nodes.find(n => n.id === id); if (!nb) return;
+      (byCat[nb.category] = byCat[nb.category] || []).push(nb);
+    });
+    let nbrHtml = '';
+    for (const cat of Object.keys(byCat).sort()) {
+      nbrHtml += `<h4 style="margin-top:10px">${cat} (${byCat[cat].length})</h4><ul>`;
+      byCat[cat].forEach(nb => {
+        nbrHtml += `<li><a href="#" data-id="${escapeHtml(nb.id)}">${escapeHtml(nb.name)}</a></li>`;
+      });
+      nbrHtml += '</ul>';
+    }
+    detail.innerHTML = `
+      <div class="node-detail-title">${escapeHtml(node.name)}</div>
+      <span class="node-detail-cat" style="background:${node.color}">${escapeHtml(node.category)}</span>
+      <p class="node-detail-tag">${escapeHtml(node.tagline)}</p>
+      <div class="node-detail-meta"><strong>Degree:</strong> ${node.degree} neighbour${node.degree===1?'':'s'}</div>
+      <div class="node-detail-meta"><strong>Model-agnostic score:</strong> ${node.mas}/5</div>
+      ${node.url ? `<a class="node-detail-link" href="${escapeHtml(node.url)}" target="_blank" rel="noopener">Open repo ↗</a>` : ''}
+      <div class="node-detail-neighbors">${nbrHtml}</div>
+    `;
+    detail.querySelectorAll('a[data-id]').forEach(a => {
+      a.addEventListener('click', ev => {
+        ev.preventDefault();
+        const nb = data.nodes.find(n => n.id === a.dataset.id);
+        if (nb) focus(nb);
+      });
+    });
+  }
+
+  // Search.
+  document.getElementById('search').addEventListener('input', e => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) { unfocus(); return; }
+    const hits = data.nodes.filter(n =>
+      n.id.toLowerCase().includes(q) ||
+      n.name.toLowerCase().includes(q) ||
+      (n.tagline||'').toLowerCase().includes(q));
+    const hitSet = new Set(hits.map(n => n.id));
+    nodeSel.classed('dim', d => !hitSet.has(d.id));
+    linkSel.classed('dim', l => {
+      const s = (l.source.id || l.source), t = (l.target.id || l.target);
+      return !hitSet.has(s) && !hitSet.has(t);
+    }).classed('highlight', false);
+    if (hits.length === 1) focus(hits[0]);
+  });
+
+  document.getElementById('reset').onclick = () => {
+    document.getElementById('search').value = '';
+    unfocus();
+    svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+  };
+  document.getElementById('recenter').onclick = () => {
+    sim.alpha(0.6).restart();
+  };
+
+  // Legend.
+  const legend = document.getElementById('legend');
+  const offCats = new Set();
+  data.meta.categories.forEach(c => {
+    const row = document.createElement('div');
+    row.className = 'legend-item';
+    row.innerHTML = `<span class="swatch" style="background:${c.color}"></span><span class="label">${c.key}</span><span class="count">${c.count}</span>`;
+    row.onclick = () => {
+      if (offCats.has(c.key)) offCats.delete(c.key); else offCats.add(c.key);
+      row.classList.toggle('off');
+      nodeSel.style('display', d => offCats.has(d.category) ? 'none' : null);
+      linkSel.style('display', l => {
+        const s = data.nodes.find(n => n.id === (l.source.id || l.source));
+        const t = data.nodes.find(n => n.id === (l.target.id || l.target));
+        return (s && offCats.has(s.category)) || (t && offCats.has(t.category)) ? 'none' : null;
+      });
+    };
+    legend.appendChild(row);
+  });
+
+  document.getElementById('stat-line').textContent = `${data.meta.n_nodes} nodes · ${data.meta.n_edges} edges`;
+
+  // Handle resize.
+  window.addEventListener('resize', () => {
+    width = wrap.clientWidth; height = wrap.clientHeight;
+    svg.attr('viewBox', [-width/2, -height/2, width, height]);
+    sim.force('center', d3.forceCenter(0, 0)).alpha(0.3).restart();
+  });
+})();
+</script>
+</body>
+</html>
