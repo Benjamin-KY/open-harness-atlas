@@ -1,0 +1,232 @@
+# JSON Schema for `open-harness-atlas` registry entries
+# ----------------------------------------------------------------------------
+# This file is the single source of truth for the per-entry YAML schema.
+# It is consumed by `scripts/validate_registry.py` (and the pytest harness
+# under `tests/`) using the `jsonschema` Python library.
+#
+# Schema dialect: draft-2020-12 (the modern default).
+#
+# Notes on category-conditional requirements:
+#   - All categories require: id, name, category, repo_url, license,
+#     primary_language, tagline, description, maturity, maintainer,
+#     model_agnostic_score, sovereignty_notes, harness_paradigm_alignment.
+#   - Governance-category entries additionally require
+#     `five_component_coverage` (full 5-key object).
+#   - Education-category entries do NOT require five_component_coverage
+#     (a course is not a harness) but DO require non-empty
+#     `education_resources`.
+# ----------------------------------------------------------------------------
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://github.com/Benjamin-KY/open-harness-atlas/registry/_schema.yaml"
+title: open-harness-atlas registry entry
+type: object
+additionalProperties: false
+
+required:
+  - id
+  - name
+  - category
+  - repo_url
+  - license
+  - primary_language
+  - tagline
+  - description
+  - maturity
+  - maintainer
+  - model_agnostic_score
+  - sovereignty_notes
+  - harness_paradigm_alignment
+
+properties:
+
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+    minLength: 2
+    maxLength: 60
+    description: >-
+      Stable kebab-case identifier. Must match the YAML filename
+      (without `.yaml`). Used as the cross-reference key in
+      `adjacent_to`, in `registry/_metadata/<id>.json`, and in the
+      generated companion graph.
+
+  name:
+    type: string
+    minLength: 1
+    maxLength: 80
+    description: Human-readable project name (display form).
+
+  category:
+    type: string
+    enum: [governance, agent, eval, redteam, routing, education]
+    description: One of the six in-scope categories.
+
+  subcategory:
+    type: string
+    minLength: 1
+    maxLength: 60
+    description: >-
+      Free-text refinement (e.g., `validator-first`, `react-agent`,
+      `provider-gateway`). Not enforced; used for taxonomy SVG grouping.
+
+  repo_url:
+    type: string
+    format: uri
+    pattern: "^https?://"
+    description: Canonical source-code URL (GitHub / GitLab / Codeberg).
+
+  homepage:
+    type: string
+    format: uri
+    pattern: "^https?://"
+    description: Optional project homepage if separate from `repo_url`.
+
+  license:
+    type: string
+    minLength: 2
+    maxLength: 40
+    description: >-
+      SPDX licence identifier (e.g., `Apache-2.0`, `MIT`, `BSD-3-Clause`,
+      `MPL-2.0`, `GPL-3.0-only`). Must be OSI-approved per GOVERNANCE.md §1.
+      For education entries, may also be a content licence
+      (`CC-BY-4.0`, `CC-BY-SA-4.0`, `CC0-1.0`).
+
+  primary_language:
+    type: string
+    minLength: 1
+    maxLength: 40
+
+  tagline:
+    type: string
+    minLength: 1
+    maxLength: 200
+    description: One-sentence neutral summary. No marketing copy.
+
+  description:
+    type: string
+    minLength: 50
+    description: >-
+      Multi-paragraph Markdown description. Field-guide voice
+      (see BRAND.md §"Cross-repo brand contract").
+
+  maturity:
+    type: string
+    enum: [alpha, beta, ga, production]
+    description: >-
+      `alpha` = experimental; `beta` = API in flux; `ga` = general
+      availability; `production` = used in named production systems.
+
+  maintainer:
+    type: object
+    additionalProperties: false
+    required: [type, name]
+    properties:
+      type:
+        type: string
+        enum: [individual, community, company, institution]
+      name:
+        type: string
+        minLength: 1
+        maxLength: 120
+
+  origin_country:
+    type: ["string", "null"]
+    pattern: "^[A-Z]{2}$"
+    description: >-
+      ISO 3166-1 alpha-2 country code (or null if multi-country / unknown).
+      Informational only — NOT a quality signal. See
+      `docs/sovereignty-rubric.md`.
+
+  model_agnostic_score:
+    type: integer
+    minimum: 0
+    maximum: 5
+    description: >-
+      0–5 score per the rubric in `docs/sovereignty-rubric.md`. Must be
+      justified (1–3 sentences) in `sovereignty_notes`.
+
+  five_component_coverage:
+    type: object
+    additionalProperties: false
+    required:
+      - policy_router
+      - source_authority
+      - prompt_composer
+      - output_contract
+      - audit_log_fsm
+    properties:
+      policy_router:    { type: string, enum: [none, partial, native] }
+      source_authority: { type: string, enum: [none, partial, native] }
+      prompt_composer:  { type: string, enum: [none, partial, native] }
+      output_contract:  { type: string, enum: [none, partial, native] }
+      audit_log_fsm:    { type: string, enum: [none, partial, native] }
+
+  education_resources:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [title, url, type, free]
+      properties:
+        title: { type: string, minLength: 1 }
+        url:   { type: string, format: uri, pattern: "^https?://" }
+        type:
+          type: string
+          enum: [docs, tutorial, course, video, paper, cookbook, notebook]
+        free: { type: boolean }
+
+  sovereignty_notes:
+    type: string
+    minLength: 30
+    description: >-
+      1–5 sentences describing the project's sovereignty posture:
+      jurisdiction of incorporation, self-hostability, telemetry default,
+      OpenAI-compatible-endpoint pluggability, and what the
+      `model_agnostic_score` reflects.
+
+  harness_paradigm_alignment:
+    type: string
+    enum: [none, partial, aligned, native]
+    description: >-
+      Holistic curator call per GOVERNANCE.md §2.3.
+
+  adjacent_to:
+    type: array
+    items:
+      type: string
+      pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+    description: List of registry ids this entry relates to.
+    uniqueItems: true
+
+  notes_for_maintainers:
+    type: string
+    description: Optional curator notes (active fork, recent license change, etc.).
+
+# ----------------------------------------------------------------------------
+# Category-conditional rules
+# ----------------------------------------------------------------------------
+
+allOf:
+
+  # Governance entries must score five_component_coverage explicitly.
+  - if:
+      properties:
+        category: { const: governance }
+    then:
+      required: [five_component_coverage]
+
+  # Education entries must list at least one free education resource and
+  # have free=true on every listed resource.
+  - if:
+      properties:
+        category: { const: education }
+    then:
+      required: [education_resources]
+      properties:
+        education_resources:
+          type: array
+          minItems: 1
+          items:
+            properties:
+              free: { const: true }

@@ -1,0 +1,61 @@
+# Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+Copyright (c) 2026 Ben Kereopa-Yorke
+
+Course content in this repository — including but not limited to all files
+under `course/`, `visuals/`, the lesson Markdown bodies, slide deck sources,
+exercise prompts, capstone rubrics, and the top-level documentation files
+(`README.md`, `COURSE_OUTLINE.md`, `BRAND.md`, `PREREQUISITES.md`,
+`SETUP.md`, `INSTRUCTOR_GUIDE.md`, `REFERENCES.md`) — is licensed under the
+**Creative Commons Attribution-ShareAlike 4.0 International License**.
+
+Code in this repository (anything under `src/`, `tests/`, `solutions/`, and
+any Python source cells in notebooks) is licensed separately under the
+**Apache License 2.0**; see `LICENSE`.
+
+---
+
+## Summary of the CC BY-SA 4.0 license (informal — full text below)
+
+You are free to:
+
+- **Share** — copy and redistribute the course content in any medium or format.
+- **Adapt** — remix, transform, and build upon the material for any purpose,
+  even commercially.
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your use.
+  Suggested attribution string:
+
+  > Based on *Harmless Harnesses* by Ben Kereopa-Yorke, licensed under
+  > CC BY-SA 4.0. https://github.com/Benjamin-KY/Harmless-Harnesses
+
+- **ShareAlike** — If you remix, transform, or build upon the material, you
+  must distribute your contributions under the same license as the original.
+
+- **No additional restrictions** — You may not apply legal terms or
+  technological measures that legally restrict others from doing anything
+  the license permits.
+
+---
+
+## Full license text
+
+The full legal text is available at:
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+A human-readable summary (not a substitute for the license) is at:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+---
+
+## Attribution to upstream research
+
+The course content is derived in part from prose and diagrams in the research
+repository [`sa-sovereign-llm-harness`](../sa-sovereign-llm-harness), by the
+same author. Re-use of that derived content under CC BY-SA 4.0 carries the
+same attribution chain — please cite both the course and, where appropriate,
+the research repository (see `REFERENCES.md`).

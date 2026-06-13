@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-harness-atlas"
+version = "0.1.0-dev"
+description = "A curated, jurisdiction-neutral atlas of free, open-source harnesses (governance, agent, eval, red-team, routing) and free education resources — the foundation for model-agnostic AI workloads."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Ben Kereopa-Yorke" }
+]
+keywords = [
+  "llm",
+  "harness",
+  "governance-harness",
+  "agent-framework",
+  "evaluation",
+  "red-teaming",
+  "ai-safety",
+  "model-agnostic",
+  "sovereign-ai",
+  "indigenous-data-governance",
+  "open-source",
+  "knowledge-graph",
+  "awesome-list",
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Documentation",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: System :: Systems Administration",
+]
+dependencies = [
+  "PyYAML>=6.0",
+  "jsonschema>=4.21",
+  "rich>=13.7",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+visuals = [
+  "matplotlib>=3.8",
+  "svgwrite>=1.4",
+]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "ruff>=0.5",
+]
+network = [
+  "httpx>=0.27",
+]
+
+[project.scripts]
+oha-validate = "open_harness_atlas.cli:validate"
+oha-refresh = "open_harness_atlas.cli:refresh"
+oha-build = "open_harness_atlas.cli:build"
+
+[project.urls]
+Homepage = "https://github.com/Benjamin-KY/open-harness-atlas"
+Source = "https://github.com/Benjamin-KY/open-harness-atlas"
+"Sibling course" = "https://github.com/Benjamin-KY/Harmless-Harnesses"
+"Sibling research repo" = "https://github.com/Benjamin-KY/sa-sovereign-llm-harness"
+
+[tool.setuptools.packages.find]
+where = ["scripts"]
+include = ["open_harness_atlas*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra --strict-markers"
+markers = [
+  "network: requires outbound network (skipped by default)",
+]

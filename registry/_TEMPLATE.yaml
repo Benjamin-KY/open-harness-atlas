@@ -1,0 +1,89 @@
+# Registry entry template — copy this to add a new entry.
+#
+#   Copy-Item registry/_TEMPLATE.yaml registry/<category>/<my-entry>.yaml
+#
+# All required fields are present; comment-only fields are optional.
+# See `registry/_schema.yaml` for the full schema and field descriptions,
+# and `GOVERNANCE.md` for the inclusion / scoring rubric.
+
+id: example-harness
+name: Example Harness
+
+# One of: governance | agent | eval | redteam | routing | education
+category: governance
+
+# Free-text refinement (e.g., validator-first | react-agent | provider-gateway).
+# Optional. Not enforced; used for taxonomy grouping.
+subcategory: validator-first
+
+repo_url: https://github.com/example-org/example-harness
+homepage: https://example.org/
+
+# SPDX identifier — must be OSI-approved (or a content licence for
+# education entries: CC-BY-4.0, CC-BY-SA-4.0, CC0-1.0).
+license: Apache-2.0
+
+primary_language: Python
+
+# Max 200 chars. Neutral, field-guide voice.
+tagline: One-sentence neutral summary of what this project does.
+
+# Multi-paragraph Markdown. Min 50 chars. No marketing copy.
+description: |
+  First paragraph: what the project does, in field-guide voice.
+
+  Second paragraph: how it fits the catalog — which of the five
+  Harmless Harnesses components it implements, what it complements,
+  what it intentionally does not do.
+
+# alpha | beta | ga | production
+maturity: ga
+
+maintainer:
+  # individual | community | company | institution
+  type: company
+  name: Example Org Inc.
+
+# ISO 3166-1 alpha-2 (or null if multi-country / unknown). Informational only.
+origin_country: US
+
+# 0–5 per docs/sovereignty-rubric.md. Must be justified in sovereignty_notes.
+model_agnostic_score: 3
+
+# REQUIRED for category=governance. Optional / omit for others.
+# Values: none | partial | native. Conservative scoring preferred.
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: partial
+  output_contract: native
+  audit_log_fsm: partial
+
+# Optional for most categories. REQUIRED (min 1, all free:true) for category=education.
+education_resources:
+  - title: Project docs
+    url: https://example.org/docs
+    type: docs           # docs | tutorial | course | video | paper | cookbook | notebook
+    free: true
+
+# 1–5 sentences. Jurisdiction of incorporation, self-hostability,
+# telemetry default, OpenAI-compatible-endpoint pluggability, and what
+# the model_agnostic_score reflects.
+sovereignty_notes: |
+  Brief, factual sovereignty posture description. State the incorporation
+  jurisdiction. State whether the project is self-hostable. State whether
+  it phones home by default. State whether it works against local
+  backends (Ollama / vLLM / llama.cpp).
+
+# none | partial | aligned | native — holistic curator call per
+# GOVERNANCE.md §2.3.
+harness_paradigm_alignment: partial
+
+# Other registry ids that relate to this entry (replaces / complements /
+# depends-on). Used to render adjacency edges in the taxonomy and companion.
+adjacent_to:
+  - related-entry-id
+
+# Optional. Curator notes (active fork, recent licence change, etc.).
+# notes_for_maintainers: |
+#   Optional free-text curator notes.

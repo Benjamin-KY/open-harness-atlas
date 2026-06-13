@@ -1,0 +1,79 @@
+# Citation File Format v1.2.0
+# https://citation-file-format.github.io/
+cff-version: 1.2.0
+title: >-
+  open-harness-atlas: a jurisdiction-neutral catalog and knowledge graph
+  of free, open-source harnesses for model-agnostic AI workloads
+message: >-
+  If you use this atlas (in research, in procurement decisions, in
+  curriculum design, or as a primary source for citation policy), please
+  cite it using the metadata below.
+type: dataset
+authors:
+  - family-names: Kereopa-Yorke
+    given-names: Benjamin
+    affiliation: >-
+      Jeff Bleich Centre for Democracy and Disruptive Technologies,
+      Flinders University
+repository-code: "https://github.com/Benjamin-KY/open-harness-atlas"
+url: "https://github.com/Benjamin-KY/open-harness-atlas"
+abstract: >-
+  open-harness-atlas is a publicly-visible, jurisdiction-neutral
+  catalog and knowledge graph of free, open-source harnesses
+  (governance, agent, evaluation, red-team, routing) and free
+  education resources. It is the technical answer to the
+  closed-garden trend in closed-weights model provision — most
+  recently the 2026-06-13 Fable / Mythos export-control recall,
+  which removed two frontier Anthropic models from worldwide
+  access under a US national-security directive within hours.
+  Harnesses are the structural scaffolding *around* the model
+  that lets operators swap providers, jurisdictions, and weights
+  classes without re-architecting the system. This atlas curates
+  the open-source layer that makes that swap practical.
+keywords:
+  - LLM safety
+  - AI governance
+  - governance harnesses
+  - agent frameworks
+  - LLM evaluation
+  - AI red-teaming
+  - model-agnostic AI
+  - sovereign AI
+  - data sovereignty
+  - Indigenous data governance
+  - export-control AI
+  - open-source AI
+  - knowledge graph
+  - curated catalog
+license:
+  - Apache-2.0
+  - CC-BY-SA-4.0
+version: 0.1.0-dev
+date-released: 2026-06-13
+references:
+  - type: software
+    title: "Harmless Harnesses"
+    authors:
+      - family-names: Kereopa-Yorke
+        given-names: Benjamin
+    repository-code: "https://github.com/Benjamin-KY/Harmless-Harnesses"
+    abstract: >-
+      The pedagogical sibling — a code course teaching the five-component
+      / five-invariant decomposition that this atlas catalogues against.
+  - type: software
+    title: "sa-sovereign-llm-harness"
+    authors:
+      - family-names: Kereopa-Yorke
+        given-names: Benjamin
+      - family-names: Praino
+        given-names: Rodrigo
+    repository-code: "https://github.com/Benjamin-KY/sa-sovereign-llm-harness"
+    abstract: >-
+      The research-grade governance-harness prototype + evaluation
+      methodology that grounds the harness paradigm in primary evidence.
+  - type: article
+    title: "The Harness Paradigm"
+    authors:
+      - family-names: Kereopa-Yorke
+        given-names: Benjamin
+    year: 2026
