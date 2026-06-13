@@ -1,0 +1,21 @@
+id: mirascope
+name: Mirascope
+category: agent
+subcategory: single-agent
+repo_url: https://github.com/Mirascope/mirascope
+license: MIT
+primary_language: Python
+tagline: 'Decorator-based unified LLM call interface that composes tools, agents, and evaluations idiomatically'
+description: |
+  Mirascope is Mirascope Inc.'s decorator-based unified LLM call interface that composes tools, agents, and evaluations idiomatically. No custom abstractions: uses plain Python functions as tools; cross-provider prompt signatures.
+
+  In the atlas: Mirascope is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: Mirascope Inc.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Mirascope Inc. (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

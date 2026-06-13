@@ -1,0 +1,21 @@
+id: opencompass
+name: OpenCompass
+category: eval
+subcategory: academic-benchmark-runner
+repo_url: https://github.com/open-compass/opencompass
+license: Apache-2.0
+primary_language: Python
+tagline: 'Unified eval platform supporting 100+ benchmarks across 50+ model backends'
+description: |
+  OpenCompass is Shanghai AI Lab's unified eval platform supporting 100+ benchmarks across 50+ model backends. First-class support for Chinese-language models + instruction tuning tasks.
+
+  In the atlas: OpenCompass is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: Shanghai AI Lab
+origin_country: CN
+model_agnostic_score: 5
+sovereignty_notes: |
+  Shanghai AI Lab (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned

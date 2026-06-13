@@ -1,0 +1,26 @@
+id: hf-nlp-course
+name: HuggingFace NLP/Transformers Course
+category: education
+subcategory: foundations
+repo_url: https://github.com/huggingface/course
+license: Apache-2.0
+primary_language: MDX
+tagline: 'Full NLP + transformers course: tokenization, BERT, GPT, fine-tuning, sharing to HF Hub'
+description: |
+  HuggingFace NLP/Transformers Course is HuggingFace's full NLP + transformers course: tokenization, BERT, GPT, fine-tuning, sharing to HF Hub. Canonical HF course adopted by universities; deepest coverage of Transformers library.
+
+  In the atlas: HuggingFace NLP/Transformers Course is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: company
+  name: HuggingFace
+origin_country: FR
+model_agnostic_score: 5
+education_resources:
+  - title: HuggingFace NLP/Transformers Course — source repository
+    url: https://github.com/huggingface/course
+    type: course
+    free: true
+sovereignty_notes: |
+  HuggingFace (FR-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

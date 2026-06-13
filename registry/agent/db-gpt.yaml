@@ -1,0 +1,21 @@
+id: db-gpt
+name: DB-GPT
+category: agent
+subcategory: planning
+repo_url: https://github.com/eosphoros-ai/DB-GPT
+license: MIT
+primary_language: Python
+tagline: 'Data-native agent platform for SQL generation, code execution, charting, multi-source data access'
+description: |
+  DB-GPT is Eosphoros AI's data-native agent platform for SQL generation, code execution, charting, multi-source data access. AWEL (Agentic Workflow Expression Language) for data-intensive pipelines.
+
+  In the atlas: DB-GPT is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: Eosphoros AI
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Eosphoros AI (CN-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: one-api
+name: One API
+category: routing
+subcategory: provider-gateway
+repo_url: https://github.com/songquanpeng/one-api
+license: MIT
+primary_language: Go
+tagline: 'LLM API key management and redistribution gateway unifying 20+ providers under one OpenAI-compat endpoint'
+description: |
+  One API is Song Jinlang's lLM API key management and redistribution gateway unifying 20+ providers under one OpenAI-compat endpoint. Single Go binary + Web UI; quota/billing management; load balancing.
+
+  In the atlas: One API is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: beta
+maintainer:
+  type: individual
+  name: Song Jinlang
+origin_country: CN
+model_agnostic_score: 5
+sovereignty_notes: |
+  Song Jinlang (independent maintainer, CN); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

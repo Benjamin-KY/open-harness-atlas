@@ -7,11 +7,37 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | Entry | License | Lang | Maturity | Origin | Model-agnostic | Stars | Maintainer |
 |---|---|---|---|---|---|---|---|
 | [aisuite](https://github.com/andrewyng/aisuite) | MIT | Python | beta | US | 4/5 | — | Andrew Ng (and contributors) |
+| [Apache APISIX](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 5/5 | — | Apache Software Foundation |
+| [apfel](https://github.com/Arthur-Ficial/apfel) | MIT | Swift | alpha | US | 5/5 | — | Arthur-Ficial |
+| [DeepSpeed-MII](https://github.com/deepspeedai/DeepSpeed-MII) | Apache-2.0 | Python | beta | US | 4/5 | — | Microsoft DeepSpeed team |
 | [Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway) | Apache-2.0 | Go | beta | — | 4/5 | — | Envoy Project (CNCF Sandbox) |
+| [exo](https://github.com/exo-explore/exo) | Apache-2.0 | Python | beta | US | 5/5 | — | exo-explore |
+| [FastChat](https://github.com/lm-sys/FastChat) | Apache-2.0 | Python | beta | US | 5/5 | — | lm-sys (LMSYS / UC Berkeley) |
 | [Helicone](https://github.com/Helicone/helicone) | Apache-2.0 | TypeScript | ga | US | 4/5 | — | Helicone Inc. |
+| [Jan](https://github.com/janhq/jan) | Apache-2.0 | TypeScript | beta | VN | 5/5 | — | Menlo Research (janhq) |
+| [kgateway](https://github.com/kgateway-dev/kgateway) | Apache-2.0 | Go | ga | US | 4/5 | — | kgateway-dev (ex-Solo.io) |
+| [Kong](https://github.com/Kong/kong) | Apache-2.0 | Lua | ga | US | 4/5 | — | Kong Inc. |
 | [LiteLLM](https://github.com/BerriAI/litellm) | MIT | Python | ga | US | 5/5 | — | BerriAI |
+| [llama.cpp](https://github.com/ggml-org/llama.cpp) | MIT | C++ | ga | BG | 5/5 | — | ggml-org (Georgi Gerganov) |
+| [LMDeploy](https://github.com/InternLM/lmdeploy) | Apache-2.0 | Python | ga | CN | 5/5 | — | Shanghai AI Lab (InternLM) |
+| [LocalAI](https://github.com/mudler/LocalAI) | MIT | Go | ga | IT | 5/5 | — | mudler (Ettore Di Giacinto) |
+| [MLC-LLM](https://github.com/mlc-ai/mlc-llm) | Apache-2.0 | Python | beta | US | 4/5 | — | MLC-AI (Tianqi Chen) |
+| [MLflow AI Gateway](https://github.com/mlflow/mlflow) | Apache-2.0 | Python | ga | US | 5/5 | — | Databricks / Linux Foundation |
+| [New API](https://github.com/QuantumNous/new-api) | AGPL-3.0 | Go | beta | CN | 5/5 | — | QuantumNous / Calcium-Ion |
+| [Ollama](https://github.com/ollama/ollama) | MIT | Go | ga | US | 5/5 | — | ollama |
+| [One API](https://github.com/songquanpeng/one-api) | MIT | Go | beta | CN | 5/5 | — | Song Jinlang |
+| [OpenLLM](https://github.com/bentoml/OpenLLM) | Apache-2.0 | Python | ga | US | 5/5 | — | BentoML |
+| [Plano](https://github.com/katanemo/plano) | Apache-2.0 | Rust | beta | US | 4/5 | — | katanemo |
 | [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) | MIT | TypeScript | ga | US | 5/5 | — | Portkey AI |
+| [RamaLama](https://github.com/containers/ramalama) | MIT | Python | beta | US | 4/5 | — | Red Hat / containers org |
 | [RouteLLM](https://github.com/lm-sys/RouteLLM) | Apache-2.0 | Python | beta | US | 5/5 | — | LMSYS Org |
+| [SGLang](https://github.com/sgl-project/sglang) | Apache-2.0 | Python | ga | US | 5/5 | — | sgl-project |
+| [Shimmy](https://github.com/Michael-A-Kuykendall/shimmy) | Apache-2.0 | Rust | alpha | US | 5/5 | — | Michael Kuykendall |
+| [LLM (CLI)](https://github.com/simonw/llm) | Apache-2.0 | Python | ga | GB | 5/5 | — | Simon Willison |
+| [text-generation-webui](https://github.com/oobabooga/textgen) | AGPL-3.0 | Python | ga | US | 5/5 | — | oobabooga |
+| [vLLM](https://github.com/vllm-project/vllm) | Apache-2.0 | Python | ga | US | 5/5 | — | vllm-project (Berkeley) |
+| [WebLLM](https://github.com/mlc-ai/web-llm) | Apache-2.0 | TypeScript | beta | US | 5/5 | — | MLC-AI |
+| [Xinference](https://github.com/xorbitsai/inference) | Apache-2.0 | Python | ga | CN | 5/5 | — | Xorbits AI |
 
 _Generated from `registry/routing/*.yaml` (+ `registry/_metadata/*.json` if present). Run `python scripts/build_matrices.py` to refresh._
 

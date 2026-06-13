@@ -1,0 +1,27 @@
+id: trustllm
+name: TrustLLM
+category: governance
+subcategory: trustworthiness-eval
+repo_url: https://github.com/HowieHwong/TrustLLM
+license: Apache-2.0
+primary_language: Python
+tagline: 'ICML 2024 eval toolkit for LLM trustworthiness across 8 dimensions: truthfulness, safety, fairness, robustness, privacy, ethics'
+description: |
+  TrustLLM is Academic (CN/US universities)'s iCML 2024 eval toolkit for LLM trustworthiness across 8 dimensions: truthfulness, safety, fairness, robustness, privacy, ethics. Broadest multidimensional governance measurement toolkit; 30+ datasets.
+
+  In the atlas: TrustLLM is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: institution
+  name: Academic (CN/US universities)
+origin_country: CN
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: partial
+sovereignty_notes: |
+  Academic (CN/US universities) (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

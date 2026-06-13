@@ -1,0 +1,21 @@
+id: pint-benchmark
+name: PINT Benchmark
+category: redteam
+subcategory: prompt-injection-scanner
+repo_url: https://github.com/lakeraai/pint-benchmark
+license: MIT
+primary_language: Python
+tagline: 'Neutral evaluation harness for prompt injection detection systems: 4314-sample dataset, multilingual'
+description: |
+  PINT Benchmark is Lakera AI's neutral evaluation harness for prompt injection detection systems: 4314-sample dataset, multilingual. 23 evaluated solutions scored; multilingual (28 languages); anti-training-leak design.
+
+  In the atlas: PINT Benchmark is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: company
+  name: Lakera AI
+origin_country: CH
+model_agnostic_score: 4
+sovereignty_notes: |
+  Lakera AI (CH-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

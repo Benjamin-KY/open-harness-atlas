@@ -1,0 +1,21 @@
+id: big-bench
+name: BIG-bench
+category: eval
+subcategory: academic-benchmark-runner
+repo_url: https://github.com/google/BIG-bench
+license: Apache-2.0
+primary_language: Python
+tagline: 'Collaborative 200+ task benchmark for evaluating language models beyond conventional NLP tests'
+description: |
+  BIG-bench is Google Research's collaborative 200+ task benchmark for evaluating language models beyond conventional NLP tests. 450-author crowdsourced; BIG-bench Hard subset remains standard reasoning eval.
+
+  In the atlas: BIG-bench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: company
+  name: Google Research
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Google Research (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

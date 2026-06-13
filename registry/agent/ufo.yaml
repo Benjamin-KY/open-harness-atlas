@@ -1,0 +1,21 @@
+id: ufo
+name: UFO/UFO3 Galaxy
+category: agent
+subcategory: computer-use
+repo_url: https://github.com/microsoft/UFO
+license: MIT
+primary_language: Python
+tagline: 'Windows GUI computer-use agent with DAG multi-device orchestration and action history reasoning'
+description: |
+  UFO/UFO3 Galaxy is Microsoft Research's windows GUI computer-use agent with DAG multi-device orchestration and action history reasoning. Only framework with deep Win32/UIA API + multi-display DAG; UFO3 Galaxy multi-device routing.
+
+  In the atlas: UFO/UFO3 Galaxy is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft Research
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

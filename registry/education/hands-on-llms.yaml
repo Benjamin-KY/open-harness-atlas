@@ -1,0 +1,26 @@
+id: hands-on-llms
+name: Hands-On Large Language Models
+category: education
+subcategory: book-as-repo
+repo_url: https://github.com/HandsOnLLM/Hands-On-Large-Language-Models
+license: Apache-2.0
+primary_language: Jupyter Notebook
+tagline: 'O Reilly book companion with visual deep-dives on transformers, generation, and fine-tuning'
+description: |
+  Hands-On Large Language Models is Jay Alammar + Maarten Grootendorst's o Reilly book companion with visual deep-dives on transformers, generation, and fine-tuning. Best-in-class visual diagrams + notebook per chapter; semantic search, multimodal, RLHF.
+
+  In the atlas: Hands-On Large Language Models is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: community
+  name: Jay Alammar + Maarten Grootendorst
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: Hands-On Large Language Models — source repository
+    url: https://github.com/HandsOnLLM/Hands-On-Large-Language-Models
+    type: course
+    free: true
+sovereignty_notes: |
+  Jay Alammar + Maarten Grootendorst (community-maintained, US); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

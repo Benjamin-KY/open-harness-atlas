@@ -6,12 +6,39 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Lang | Maturity | Origin | Model-agnostic | Stars | Maintainer |
 |---|---|---|---|---|---|---|---|
+| [Agent-Attack (Multimodal)](https://github.com/ChenWu98/agent-attack) | MIT | Python | beta | US | 5/5 | — | Chen Henry Wu et al. (CMU) |
 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | MIT | Python | ga | CH | 5/5 | — | ETH Zürich SPY Lab |
+| [Agentic Radar](https://github.com/splx-ai/agentic-radar) | Apache-2.0 | Python | beta | SI | 5/5 | — | SPLX AI |
+| [AutoDAN-Turbo](https://github.com/SaFo-Lab/AutoDAN-Turbo) | MIT | Python | beta | US | 4/5 | — | SaFo-Lab / Chaowei Xiao (UW-Madison) |
+| [AutoDAN](https://github.com/SheltonLiu-N/AutoDAN) | MIT | Python | ga | US | 4/5 | — | Xiaogeng Liu et al. (UW-Madison) |
+| [BIPIA](https://github.com/microsoft/BIPIA) | MIT | Python | beta | US | 4/5 | — | Microsoft Research |
+| [CipherChat](https://github.com/RobustNLP/CipherChat) | MIT | Python | beta | CN | 4/5 | — | Youliang Yuan et al. (CUHK/Tencent AI Lab) |
+| [EasyJailbreak](https://github.com/EasyJailbreak/EasyJailbreak) | GPL-3.0 | Python | beta | CN | 5/5 | — | DAMO Academy / Alibaba |
 | [garak](https://github.com/NVIDIA/garak) | Apache-2.0 | Python | ga | US | 5/5 | — | NVIDIA |
 | [Giskard](https://github.com/Giskard-AI/giskard-oss) | Apache-2.0 | Python | ga | FR | 4/5 | — | Giskard AI |
+| [GPTFuzz](https://github.com/sherdencooper/GPTFuzz) | MIT | Python | ga | US | 4/5 | — | Jiahao Yu et al. (Northwestern) |
+| [HarmBench](https://github.com/centerforaisafety/HarmBench) | MIT | Python | ga | US | 5/5 | — | Center for AI Safety |
+| [jailbreak-evaluation](https://github.com/controllability/jailbreak-evaluation) | Apache-2.0 | Python | beta | US | 4/5 | — | PurSec Lab, Purdue University |
+| [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) | MIT | Python | ga | US | 4/5 | — | Academic consortium (ETH, CMU, UPenn) |
+| [LLM Adaptive Attacks](https://github.com/tml-epfl/llm-adaptive-attacks) | MIT | Python | beta | CH | 4/5 | — | Andriushchenko, Croce, Flammarion (EPFL) |
+| [LLM Attacks (GCG)](https://github.com/llm-attacks/llm-attacks) | MIT | Python | ga | US | 4/5 | — | Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google) |
+| [MIMIR](https://github.com/iamgroot42/mimir) | MIT | Python | beta | US | 4/5 | — | Anshuman Suri et al. (UVA/UW) |
+| [ModelScan](https://github.com/protectai/modelscan) | Apache-2.0 | Python | ga | US | 4/5 | — | Protect AI |
+| [nanoGCG](https://github.com/GraySwanAI/nanoGCG) | MIT | Python | ga | US | 4/5 | — | GraySwanAI |
+| [Open-Prompt-Injection](https://github.com/liu00222/Open-Prompt-Injection) | MIT | Python | ga | US | 4/5 | — | Yupei Liu et al. (Duke/Neil Gong Lab) |
+| [PAIR / JailbreakingLLMs](https://github.com/patrickrchao/JailbreakingLLMs) | MIT | Python | ga | US | 4/5 | — | Chao et al. (UPenn/CMU) |
+| [PINT Benchmark](https://github.com/lakeraai/pint-benchmark) | MIT | Python | beta | CH | 4/5 | — | Lakera AI |
+| [Plexiglass](https://github.com/safellama/plexiglass) | MIT | Python | alpha | US | 4/5 | — | SafeLLama |
 | [promptmap](https://github.com/utkusen/promptmap) | GPL-3.0 | Python | beta | TR | 4/5 | — | Utku Sen |
+| [Prompt Fuzzer (ps-fuzz)](https://github.com/prompt-security/ps-fuzz) | MIT | Python | beta | IL | 4/5 | — | Prompt Security |
+| [PurpleLlama / CyberSecEval](https://github.com/meta-llama/PurpleLlama) | MIT | Python | ga | US | 4/5 | — | Meta AI |
 | [PyRIT (Python Risk Identification Tool)](https://github.com/Azure/PyRIT) | MIT | Python | ga | US | 5/5 | — | Microsoft (AI Red Team) |
+| [R-Judge](https://github.com/Lordog/R-Judge) | MIT | Python | beta | CN | 4/5 | — | SJTU / Tongxin Yuan et al. |
+| [ReNeLLM](https://github.com/NJUNLP/ReNeLLM) | MIT | Python | beta | CN | 5/5 | — | NLP Lab, Nanjing University |
+| [SafetyBench](https://github.com/thu-coai/SafetyBench) | MIT | Python | ga | CN | 4/5 | — | COAI Lab, Tsinghua University |
+| [TAP - Tree of Attacks with Pruning](https://github.com/RICommunity/TAP) | MIT | Python | beta | US | 4/5 | — | Robust Intelligence Community |
 | [ToolEmu](https://github.com/ryoungj/ToolEmu) | Apache-2.0 | Python | beta | US | 4/5 | — | NYU / Independent research (ICLR 2024) |
+| [WMDP - Weapons of Mass Destruction Proxy](https://github.com/centerforaisafety/wmdp) | MIT | Python | ga | US | 4/5 | — | Center for AI Safety |
 
 _Generated from `registry/redteam/*.yaml` (+ `registry/_metadata/*.json` if present). Run `python scripts/build_matrices.py` to refresh._
 

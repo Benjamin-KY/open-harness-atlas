@@ -1,0 +1,21 @@
+id: hf-evaluate
+name: Hugging Face Evaluate
+category: eval
+subcategory: academic-benchmark-runner
+repo_url: https://github.com/huggingface/evaluate
+license: Apache-2.0
+primary_language: Python
+tagline: 'Metric library + lightweight evaluation pipeline for NLP tasks (BLEU, ROUGE, BERTScore)'
+description: |
+  Hugging Face Evaluate is Hugging Face's metric library + lightweight evaluation pipeline for NLP tasks (BLEU, ROUGE, BERTScore). Hub-hosted metric registry; unified API for 100+ metrics from single import.
+
+  In the atlas: Hugging Face Evaluate is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: company
+  name: Hugging Face
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: |
+  Hugging Face (multi-country-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned

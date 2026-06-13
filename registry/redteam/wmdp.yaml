@@ -1,0 +1,21 @@
+id: wmdp
+name: WMDP - Weapons of Mass Destruction Proxy
+category: redteam
+subcategory: adversarial-attack-toolkit
+repo_url: https://github.com/centerforaisafety/wmdp
+license: MIT
+primary_language: Python
+tagline: '3668-question MCQ benchmark for hazardous knowledge (bio/chem/cyber) + RMU unlearning method'
+description: |
+  WMDP - Weapons of Mass Destruction Proxy is Center for AI Safety's 3668-question mcq benchmark for hazardous knowledge (bio/chem/cyber) + rmu unlearning method. Dual-use: measures hazardous uplift & RMU removes it; ICML 2024.
+
+  In the atlas: WMDP - Weapons of Mass Destruction Proxy is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: ga
+maintainer:
+  type: institution
+  name: Center for AI Safety
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Center for AI Safety (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

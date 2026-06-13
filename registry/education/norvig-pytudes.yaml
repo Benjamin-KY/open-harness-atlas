@@ -1,0 +1,26 @@
+id: norvig-pytudes
+name: Pytudes (Peter Norvig)
+category: education
+subcategory: foundations
+repo_url: https://github.com/norvig/pytudes
+license: MIT
+primary_language: Jupyter Notebook
+tagline: 'Python programming etudes covering NLP, algorithms, word models, Advent of Code'
+description: |
+  Pytudes (Peter Norvig) is Peter Norvig's python programming etudes covering NLP, algorithms, word models, Advent of Code. Includes language model, spell-checker, word-frequency notebooks by Peter Norvig.
+
+  In the atlas: Pytudes (Peter Norvig) is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: community
+  name: Peter Norvig
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: Pytudes (Peter Norvig) — source repository
+    url: https://github.com/norvig/pytudes
+    type: course
+    free: true
+sovereignty_notes: |
+  Peter Norvig (community-maintained, US); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

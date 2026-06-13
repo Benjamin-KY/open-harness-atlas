@@ -1,0 +1,21 @@
+id: mini-swe-agent
+name: mini-SWE-agent
+category: agent
+subcategory: single-agent
+repo_url: https://github.com/SWE-agent/mini-swe-agent
+license: MIT
+primary_language: Python
+tagline: 'Minimal bash-only SWE agent, 100x simpler than SWE-agent; SOTA on DeepSWE-verified leaderboard'
+description: |
+  mini-SWE-agent is Princeton + Stanford's minimal bash-only SWE agent, 100x simpler than SWE-agent; SOTA on DeepSWE-verified leaderboard. ~400 lines of core; beats Claude Code on DeepSWE-Verified; designed for forking.
+
+  In the atlas: mini-SWE-agent is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: institution
+  name: Princeton + Stanford
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Princeton + Stanford (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: mlc-llm
+name: MLC-LLM
+category: routing
+subcategory: local-inference-server
+repo_url: https://github.com/mlc-ai/mlc-llm
+license: Apache-2.0
+primary_language: Python
+tagline: 'ML-compilation-based universal LLM deployment engine across GPU/CPU/mobile/browser/edge'
+description: |
+  MLC-LLM is MLC-AI (Tianqi Chen)'s mL-compilation-based universal LLM deployment engine across GPU/CPU/mobile/browser/edge. Apache TVM compilation; Metal/CUDA/Vulkan/WebGPU/ROCm/edge targets.
+
+  In the atlas: MLC-LLM is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: beta
+maintainer:
+  type: institution
+  name: MLC-AI (Tianqi Chen)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  MLC-AI (Tianqi Chen) (US-based academic/research institution); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: partial

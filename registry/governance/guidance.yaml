@@ -1,0 +1,27 @@
+id: guidance
+name: Guidance
+category: governance
+subcategory: output-contract
+repo_url: https://github.com/guidance-ai/guidance
+license: MIT
+primary_language: Python
+tagline: 'Constrained generation framework that enforces output contracts via regex, JSON schema, Pydantic, CFG at token level'
+description: |
+  Guidance is Microsoft / guidance-ai's constrained generation framework that enforces output contracts via regex, JSON schema, Pydantic, CFG at token level. Enforces contracts during generation via FSM token-masking; zero retry overhead.
+
+  In the atlas: Guidance is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: community
+  name: Microsoft / guidance-ai
+origin_country: US
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: partial
+  output_contract: native
+  audit_log_fsm: none
+sovereignty_notes: |
+  Microsoft / guidance-ai (community-maintained, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

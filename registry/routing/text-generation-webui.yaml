@@ -1,0 +1,21 @@
+id: text-generation-webui
+name: text-generation-webui
+category: routing
+subcategory: local-inference-server
+repo_url: https://github.com/oobabooga/textgen
+license: AGPL-3.0
+primary_language: Python
+tagline: 'Desktop-app + API server for local LLMs; swappable backends (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM)'
+description: |
+  text-generation-webui is oobabooga's desktop-app + API server for local LLMs; swappable backends (llama.cpp, Transformers, ExLlamaV3, TensorRT-LLM). Pluggable backend architecture; OpenAI + Anthropic compat API.
+
+  In the atlas: text-generation-webui is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: ga
+maintainer:
+  type: community
+  name: oobabooga
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  oobabooga (community-maintained, US); OSS core is AGPL-3.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

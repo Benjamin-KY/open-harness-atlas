@@ -1,0 +1,21 @@
+id: mlflow-ai-gateway
+name: MLflow AI Gateway
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/mlflow/mlflow
+license: Apache-2.0
+primary_language: Python
+tagline: 'MLflow Deployments Server routes prompt requests across OpenAI, Anthropic, Cohere, Bedrock'
+description: |
+  MLflow AI Gateway is Databricks / Linux Foundation's mLflow Deployments Server routes prompt requests across OpenAI, Anthropic, Cohere, Bedrock. Centrally-managed routes config; MLflow experiment tracking integration.
+
+  In the atlas: MLflow AI Gateway is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: ga
+maintainer:
+  type: company
+  name: Databricks / Linux Foundation
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Databricks / Linux Foundation (US-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

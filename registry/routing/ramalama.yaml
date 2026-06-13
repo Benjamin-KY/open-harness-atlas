@@ -1,0 +1,21 @@
+id: ramalama
+name: RamaLama
+category: routing
+subcategory: local-inference-server
+repo_url: https://github.com/containers/ramalama
+license: MIT
+primary_language: Python
+tagline: 'Container-native CLI for serving AI models from OCI registries, HF, or Ollama via llama.cpp/vLLM'
+description: |
+  RamaLama is Red Hat / containers org's container-native CLI for serving AI models from OCI registries, HF, or Ollama via llama.cpp/vLLM. OCI-model transport standard; podman/docker-native; pluggable runtime.
+
+  In the atlas: RamaLama is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: beta
+maintainer:
+  type: institution
+  name: Red Hat / containers org
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Red Hat / containers org (US-based academic/research institution); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: partial

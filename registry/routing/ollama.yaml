@@ -1,0 +1,21 @@
+id: ollama
+name: Ollama
+category: routing
+subcategory: local-inference-server
+repo_url: https://github.com/ollama/ollama
+license: MIT
+primary_language: Go
+tagline: 'One-command local server running any GGUF/safetensor model with native OpenAI-compat API'
+description: |
+  Ollama is ollama's one-command local server running any GGUF/safetensor model with native OpenAI-compat API. Hot-swappable Modelfile-driven model loading; 100+ model library; macOS Metal + GPU support.
+
+  In the atlas: Ollama is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: ga
+maintainer:
+  type: community
+  name: ollama
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  ollama (community-maintained, US); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

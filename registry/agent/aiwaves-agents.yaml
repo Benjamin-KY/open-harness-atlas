@@ -1,0 +1,21 @@
+id: aiwaves-agents
+name: Agents (AIWaves)
+category: agent
+subcategory: multi-agent
+repo_url: https://github.com/aiwaves-cn/agents
+license: Apache-2.0
+primary_language: Python
+tagline: 'SOP-based multi-agent framework with symbolic learning v2.0 for self-evolving agent behaviors'
+description: |
+  Agents (AIWaves) is AIWaves / Zhejiang Univ's sOP-based multi-agent framework with symbolic learning v2.0 for self-evolving agent behaviors. Agents learn from feedback and update SOP templates symbolically.
+
+  In the atlas: Agents (AIWaves) is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: institution
+  name: AIWaves / Zhejiang Univ
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  AIWaves / Zhejiang Univ (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: plano
+name: Plano
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/katanemo/plano
+license: Apache-2.0
+primary_language: Rust
+tagline: 'AI-native Envoy-based proxy + data plane for agentic apps: smart LLM routing, safety, observability'
+description: |
+  Plano is katanemo's aI-native Envoy-based proxy + data plane for agentic apps: smart LLM routing, safety, observability. Rust + Envoy core; semantic fallback; built-in PII scrubbing + guardrails.
+
+  In the atlas: Plano is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: beta
+maintainer:
+  type: company
+  name: katanemo
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  katanemo (US-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: partial

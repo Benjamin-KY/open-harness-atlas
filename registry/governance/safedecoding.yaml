@@ -1,0 +1,27 @@
+id: safedecoding
+name: SafeDecoding
+category: governance
+subcategory: refusal-escalation
+repo_url: https://github.com/uw-nsl/SafeDecoding
+license: MIT
+primary_language: Python
+tagline: 'Safety-aware decoding strategy that amplifies safety-disclaimer token probabilities to defend against adversarial jailbreaks'
+description: |
+  SafeDecoding is University of Washington's safety-aware decoding strategy that amplifies safety-disclaimer token probabilities to defend against adversarial jailbreaks. Token-probability intervention; no fine-tuning or post-generation filter; ACL 2024.
+
+  In the atlas: SafeDecoding is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: alpha
+maintainer:
+  type: institution
+  name: University of Washington
+origin_country: US
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: partial
+sovereignty_notes: |
+  University of Washington (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

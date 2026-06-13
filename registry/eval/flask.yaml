@@ -1,0 +1,21 @@
+id: flask
+name: FLASK
+category: eval
+subcategory: llm-judge-framework
+repo_url: https://github.com/kaistAI/FLASK
+license: MIT
+primary_language: Python
+tagline: 'Fine-grained LLM evaluation across 12 alignment skill sets x 5 difficulty levels via GPT-4 judge'
+description: |
+  FLASK is KAIST AI's fine-grained LLM evaluation across 12 alignment skill sets x 5 difficulty levels via GPT-4 judge. Instance-level skill-set scoring (logical correctness, background knowledge, creativity).
+
+  In the atlas: FLASK is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: KAIST AI
+origin_country: KR
+model_agnostic_score: 4
+sovereignty_notes: |
+  KAIST AI (KR-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

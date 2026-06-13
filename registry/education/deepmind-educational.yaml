@@ -1,0 +1,26 @@
+id: deepmind-educational
+name: DeepMind Educational Resources
+category: education
+subcategory: foundations
+repo_url: https://github.com/google-deepmind/educational
+license: Apache-2.0
+primary_language: Jupyter Notebook
+tagline: 'Colab notebooks teaching RL, language models, generative models, protein folding from scratch'
+description: |
+  DeepMind Educational Resources is Google DeepMind's colab notebooks teaching RL, language models, generative models, protein folding from scratch. Written for zero ML background; LM notebook builds n-gram -> neural LM.
+
+  In the atlas: DeepMind Educational Resources is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: company
+  name: Google DeepMind
+origin_country: GB
+model_agnostic_score: 5
+education_resources:
+  - title: DeepMind Educational Resources — source repository
+    url: https://github.com/google-deepmind/educational
+    type: course
+    free: true
+sovereignty_notes: |
+  Google DeepMind (GB-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

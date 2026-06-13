@@ -1,0 +1,26 @@
+id: hf-deep-rl-class
+name: HuggingFace Deep RL Course
+category: education
+subcategory: foundations
+repo_url: https://github.com/huggingface/deep-rl-class
+license: Apache-2.0
+primary_language: MDX
+tagline: '8-unit RL course from Q-learning to PPO with hands-on Gym and Unity ML-Agents environments'
+description: |
+  HuggingFace Deep RL Course is HuggingFace (Thomas Simonini)'s 8-unit rl course from q-learning to ppo with hands-on gym and unity ml-agents environments. Students push trained models to HF Hub leaderboard.
+
+  In the atlas: HuggingFace Deep RL Course is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: company
+  name: HuggingFace (Thomas Simonini)
+origin_country: FR
+model_agnostic_score: 5
+education_resources:
+  - title: HuggingFace Deep RL Course — source repository
+    url: https://github.com/huggingface/deep-rl-class
+    type: course
+    free: true
+sovereignty_notes: |
+  HuggingFace (Thomas Simonini) (FR-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

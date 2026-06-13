@@ -1,0 +1,21 @@
+id: openmanus
+name: OpenManus
+category: agent
+subcategory: single-agent
+repo_url: https://github.com/FoundationAgents/OpenManus
+license: MIT
+primary_language: Python
+tagline: 'General-purpose agent with MCP, browser control, and multi-agent sub-flows; no invite required'
+description: |
+  OpenManus is FoundationAgents community's general-purpose agent with MCP, browser control, and multi-agent sub-flows; no invite required. Open Manus alternative released 24h after closed beta; 56k stars in weeks.
+
+  In the atlas: OpenManus is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: community
+  name: FoundationAgents community
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  FoundationAgents community (community-maintained, CN); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

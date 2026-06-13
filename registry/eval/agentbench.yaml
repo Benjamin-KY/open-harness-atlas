@@ -1,0 +1,21 @@
+id: agentbench
+name: AgentBench
+category: eval
+subcategory: agent-eval
+repo_url: https://github.com/THUDM/AgentBench
+license: Apache-2.0
+primary_language: Python
+tagline: 'Multi-environment agent eval across 8 distinct real-world task domains'
+description: |
+  AgentBench is Tsinghua THUDM's multi-environment agent eval across 8 distinct real-world task domains. Evaluates agents across OS, DB, knowledge graph, web shopping, game, code tasks.
+
+  In the atlas: AgentBench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: institution
+  name: Tsinghua THUDM
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Tsinghua THUDM (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

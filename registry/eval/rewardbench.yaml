@@ -1,0 +1,21 @@
+id: rewardbench
+name: RewardBench
+category: eval
+subcategory: calibration-eval
+repo_url: https://github.com/allenai/reward-bench
+license: Apache-2.0
+primary_language: Python
+tagline: 'Benchmark for evaluating reward models and DPO models across chat, safety, reasoning tasks'
+description: |
+  RewardBench is Allen AI (AI2)'s benchmark for evaluating reward models and DPO models across chat, safety, reasoning tasks. RewardBench 2 supports best-of-4 ranking eval; LLM-as-generative-RM mode.
+
+  In the atlas: RewardBench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: Allen AI (AI2)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Allen AI (AI2) (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

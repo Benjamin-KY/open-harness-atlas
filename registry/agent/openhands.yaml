@@ -1,0 +1,21 @@
+id: openhands
+name: OpenHands
+category: agent
+subcategory: single-agent
+repo_url: https://github.com/OpenHands/OpenHands
+license: MIT
+primary_language: Python
+tagline: 'Full-stack SWE agent (GUI + CLI + SDK) that uses sandboxed runtime to read/write entire repos'
+description: |
+  OpenHands is All Hands AI's full-stack SWE agent (GUI + CLI + SDK) that uses sandboxed runtime to read/write entire repos. 20+ agent strategies selectable at runtime; separable openhands-core SDK; SOTA SWE-bench.
+
+  In the atlas: OpenHands is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: All Hands AI
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  All Hands AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

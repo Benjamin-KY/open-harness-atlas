@@ -1,0 +1,27 @@
+id: lmql
+name: LMQL
+category: governance
+subcategory: output-contract
+repo_url: https://github.com/eth-sri/lmql
+license: Apache-2.0
+primary_language: Python
+tagline: 'Python-superset query language for LLMs with where constraint clauses enforcing output rules at decode time'
+description: |
+  LMQL is ETH Zurich's python-superset query language for LLMs with where constraint clauses enforcing output rules at decode time. Declarative constraint programming; constraints expressed as Python predicates compile to token masks.
+
+  In the atlas: LMQL is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: institution
+  name: ETH Zurich
+origin_country: CH
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: partial
+  output_contract: native
+  audit_log_fsm: none
+sovereignty_notes: |
+  ETH Zurich (CH-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

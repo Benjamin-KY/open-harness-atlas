@@ -1,0 +1,21 @@
+id: deepspeed-mii
+name: DeepSpeed-MII
+category: routing
+subcategory: local-inference-server
+repo_url: https://github.com/deepspeedai/DeepSpeed-MII
+license: Apache-2.0
+primary_language: Python
+tagline: 'High-throughput inference service: auto-picks optimizations (blocked KV-cache, continuous batching, SplitFuse)'
+description: |
+  DeepSpeed-MII is Microsoft DeepSpeed team's high-throughput inference service: auto-picks optimizations (blocked KV-cache, continuous batching, SplitFuse). Dynamic SplitFuse; 2.5x vLLM throughput claims; 37k+ HF models.
+
+  In the atlas: DeepSpeed-MII is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: beta
+maintainer:
+  type: company
+  name: Microsoft DeepSpeed team
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Microsoft DeepSpeed team (US-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: partial

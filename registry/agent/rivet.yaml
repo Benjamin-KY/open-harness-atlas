@@ -1,0 +1,21 @@
+id: rivet
+name: Rivet
+category: agent
+subcategory: workflow-graph
+repo_url: https://github.com/Ironclad/rivet
+license: MIT
+primary_language: TypeScript
+tagline: 'Visual graph-based IDE for building, testing, and deploying agent/prompt chains as code'
+description: |
+  Rivet is Ironclad Inc.'s visual graph-based IDE for building, testing, and deploying agent/prompt chains as code. WYSIWYG graph editor + embedded TypeScript runner; real-time execution visualization.
+
+  In the atlas: Rivet is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: Ironclad Inc.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Ironclad Inc. (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: bigcode-evaluation-harness
+name: BigCode Evaluation Harness
+category: eval
+subcategory: academic-benchmark-runner
+repo_url: https://github.com/bigcode-project/bigcode-evaluation-harness
+license: Apache-2.0
+primary_language: Python
+tagline: 'Evaluates code-generation LLMs on HumanEval, MBPP, DS-1000, MultiPL-E, and 30+ other coding tasks'
+description: |
+  BigCode Evaluation Harness is BigCode / HuggingFace's evaluates code-generation LLMs on HumanEval, MBPP, DS-1000, MultiPL-E, and 30+ other coding tasks. Supports multi-language code eval (20+ PLs via MultiPL-E); sandboxed Docker execution.
+
+  In the atlas: BigCode Evaluation Harness is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: community
+  name: BigCode / HuggingFace
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: |
+  BigCode / HuggingFace (community-maintained, multi-country); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

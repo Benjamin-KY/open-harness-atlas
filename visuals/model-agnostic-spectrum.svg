@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 932" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 4388" role="img" aria-labelledby="title desc">
 <title id="title">Model-agnostic spectrum across the open-harness-atlas registry</title>
 <desc id="desc">A horizontal bar chart where each open-source harness in the registry is plotted at its model-agnostic score from 0 (provider-locked) to 5 (fully portable). Colour encodes category.</desc>
 <style>.body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}.title{font-size:18px;font-weight:700;fill:#1f3a5f;}.sub{font-size:11px;font-weight:400;fill:#4a5d75;}.axis{font-size:11px;font-weight:600;fill:#1f3a5f;text-anchor:middle;}.row-label{font-size:11px;fill:#1f3a5f;text-anchor:end;}.footer{font-size:10px;fill:#6b7a8c;text-anchor:middle;}</style>
-<rect width="670" height="932" fill="#ffffff"/>
+<rect width="670" height="4388" fill="#ffffff"/>
 <text x="30" y="36" class="body title">Model-agnostic spectrum</text>
 <text x="30" y="54" class="body sub">Per-entry score 0 (provider-locked) → 5 (fully portable). Auto-generated from registry/*/*.yaml — do not hand-edit.</text>
 <line x1="270" y1="72" x2="630" y2="72" stroke="#1f3a5f" stroke-width="1" opacity="0.4"/>
@@ -19,105 +19,489 @@
 <text x="558.0" y="64" class="body axis">4</text>
 <line x1="630.0" y1="68" x2="630.0" y2="76" stroke="#1f3a5f" stroke-width="1"/>
 <text x="630.0" y="64" class="body axis">5</text>
-<text x="262" y="96.6" class="body row-label">Hugging Face Agents Course <tspan class="sub">[education]</tspan></text>
-<rect x="270.0" y="86" width="360.0" height="12" rx="3" fill="#7d3c98"/>
-<text x="262" y="114.6" class="body row-label">Learn Prompting <tspan class="sub">[education]</tspan></text>
-<rect x="270.0" y="104" width="360.0" height="12" rx="3" fill="#7d3c98"/>
-<text x="262" y="132.6" class="body row-label">Neural Networks — Zero to Hero (Karpathy) <tspan class="sub">[education]</tspan></text>
-<rect x="270.0" y="122" width="360.0" height="12" rx="3" fill="#7d3c98"/>
-<text x="262" y="150.6" class="body row-label">Stanford CS336 — Language Models from Scratch <tspan class="sub">[education]</tspan></text>
-<rect x="270.0" y="140" width="360.0" height="12" rx="3" fill="#7d3c98"/>
-<text x="262" y="168.6" class="body row-label">fast.ai — Practical Deep Learning for Coders (Part 2 / course22p2) <tspan class="sub">[education]</tspan></text>
+<text x="262" y="96.6" class="body row-label">AGiXT <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="86" width="360.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="114.6" class="body row-label">Agno <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="104" width="360.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="132.6" class="body row-label">Flowise <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="122" width="360.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="150.6" class="body row-label">PraisonAI <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="140" width="360.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="168.6" class="body row-label">Amazon Bedrock Workshop <tspan class="sub">[education]</tspan></text>
 <rect x="270.0" y="158" width="360.0" height="12" rx="3" fill="#7d3c98"/>
-<text x="262" y="186.6" class="body row-label">Inspect AI <tspan class="sub">[eval]</tspan></text>
-<rect x="270.0" y="176" width="360.0" height="12" rx="3" fill="#28a745"/>
-<text x="262" y="204.6" class="body row-label">lm-evaluation-harness <tspan class="sub">[eval]</tspan></text>
-<rect x="270.0" y="194" width="360.0" height="12" rx="3" fill="#28a745"/>
-<text x="262" y="222.6" class="body row-label">promptfoo <tspan class="sub">[eval]</tspan></text>
-<rect x="270.0" y="212" width="360.0" height="12" rx="3" fill="#28a745"/>
-<text x="262" y="240.6" class="body row-label">IBM Granite Guardian <tspan class="sub">[governance]</tspan></text>
-<rect x="270.0" y="230" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="258.6" class="body row-label">Microsoft Presidio <tspan class="sub">[governance]</tspan></text>
-<rect x="270.0" y="248" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="276.6" class="body row-label">AgentDojo <tspan class="sub">[redteam]</tspan></text>
-<rect x="270.0" y="266" width="360.0" height="12" rx="3" fill="#c0392b"/>
-<text x="262" y="294.6" class="body row-label">PyRIT (Python Risk Identification Tool) <tspan class="sub">[redteam]</tspan></text>
-<rect x="270.0" y="284" width="360.0" height="12" rx="3" fill="#c0392b"/>
-<text x="262" y="312.6" class="body row-label">garak <tspan class="sub">[redteam]</tspan></text>
-<rect x="270.0" y="302" width="360.0" height="12" rx="3" fill="#c0392b"/>
-<text x="262" y="330.6" class="body row-label">LiteLLM <tspan class="sub">[routing]</tspan></text>
-<rect x="270.0" y="320" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="348.6" class="body row-label">Portkey AI Gateway <tspan class="sub">[routing]</tspan></text>
-<rect x="270.0" y="338" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="366.6" class="body row-label">RouteLLM <tspan class="sub">[routing]</tspan></text>
-<rect x="270.0" y="356" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="384.6" class="body row-label">AutoGen <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="374" width="288.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="402.6" class="body row-label">LangGraph <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="392" width="288.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="420.6" class="body row-label">LlamaIndex Agents <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="410" width="288.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="438.6" class="body row-label">PydanticAI <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="428" width="288.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="456.6" class="body row-label">smolagents <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="446" width="288.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="474.6" class="body row-label">AI Agents for Beginners (Microsoft) <tspan class="sub">[education]</tspan></text>
-<rect x="270.0" y="464" width="288.0" height="12" rx="3" fill="#7d3c98"/>
-<text x="262" y="492.6" class="body row-label">DeepEval <tspan class="sub">[eval]</tspan></text>
-<rect x="270.0" y="482" width="288.0" height="12" rx="3" fill="#28a745"/>
-<text x="262" y="510.6" class="body row-label">HELM (Holistic Evaluation of Language Models) <tspan class="sub">[eval]</tspan></text>
-<rect x="270.0" y="500" width="288.0" height="12" rx="3" fill="#28a745"/>
-<text x="262" y="528.6" class="body row-label">Lighteval <tspan class="sub">[eval]</tspan></text>
-<rect x="270.0" y="518" width="288.0" height="12" rx="3" fill="#28a745"/>
-<text x="262" y="546.6" class="body row-label">Ragas <tspan class="sub">[eval]</tspan></text>
-<rect x="270.0" y="536" width="288.0" height="12" rx="3" fill="#28a745"/>
-<text x="262" y="564.6" class="body row-label">Guardrails AI <tspan class="sub">[governance]</tspan></text>
-<rect x="270.0" y="554" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="582.6" class="body row-label">Harmless Harnesses <tspan class="sub">[governance]</tspan></text>
-<rect x="270.0" y="572" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="600.6" class="body row-label">NeMo Guardrails <tspan class="sub">[governance]</tspan></text>
-<rect x="270.0" y="590" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="618.6" class="body row-label">Giskard <tspan class="sub">[redteam]</tspan></text>
-<rect x="270.0" y="608" width="288.0" height="12" rx="3" fill="#c0392b"/>
-<text x="262" y="636.6" class="body row-label">ToolEmu <tspan class="sub">[redteam]</tspan></text>
-<rect x="270.0" y="626" width="288.0" height="12" rx="3" fill="#c0392b"/>
-<text x="262" y="654.6" class="body row-label">promptmap <tspan class="sub">[redteam]</tspan></text>
-<rect x="270.0" y="644" width="288.0" height="12" rx="3" fill="#c0392b"/>
-<text x="262" y="672.6" class="body row-label">Envoy AI Gateway <tspan class="sub">[routing]</tspan></text>
-<rect x="270.0" y="662" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="690.6" class="body row-label">Helicone <tspan class="sub">[routing]</tspan></text>
-<rect x="270.0" y="680" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="708.6" class="body row-label">aisuite <tspan class="sub">[routing]</tspan></text>
-<rect x="270.0" y="698" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="726.6" class="body row-label">CrewAI <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="716" width="216.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="744.6" class="body row-label">OpenAI Agents SDK <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="734" width="216.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="762.6" class="body row-label">Strands Agents <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="752" width="216.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="780.6" class="body row-label">Anthropic Prompt Engineering Interactive Tutorial <tspan class="sub">[education]</tspan></text>
-<rect x="270.0" y="770" width="216.0" height="12" rx="3" fill="#7d3c98"/>
-<text x="262" y="798.6" class="body row-label">OpenAI Cookbook <tspan class="sub">[education]</tspan></text>
-<rect x="270.0" y="788" width="216.0" height="12" rx="3" fill="#7d3c98"/>
-<text x="262" y="816.6" class="body row-label">OpenAI Evals <tspan class="sub">[eval]</tspan></text>
-<rect x="270.0" y="806" width="216.0" height="12" rx="3" fill="#28a745"/>
-<text x="262" y="834.6" class="body row-label">Rebuff <tspan class="sub">[governance]</tspan></text>
-<rect x="270.0" y="824" width="216.0" height="12" rx="3" fill="#1f3a5f"/>
-<text x="262" y="852.6" class="body row-label">Google Agent Development Kit (ADK) <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="842" width="144.0" height="12" rx="3" fill="#d68910"/>
-<text x="262" y="870.6" class="body row-label">Claude Agent SDK <tspan class="sub">[agent]</tspan></text>
-<rect x="270.0" y="860" width="72.0" height="12" rx="3" fill="#d68910"/>
-<rect x="30" y="890" width="14" height="14" rx="3" fill="#1f3a5f"/>
-<text x="50" y="900" class="body sub">governance</text>
-<rect x="140" y="890" width="14" height="14" rx="3" fill="#d68910"/>
-<text x="160" y="900" class="body sub">agent</text>
-<rect x="250" y="890" width="14" height="14" rx="3" fill="#28a745"/>
-<text x="270" y="900" class="body sub">eval</text>
-<rect x="360" y="890" width="14" height="14" rx="3" fill="#c0392b"/>
-<text x="380" y="900" class="body sub">redteam</text>
-<rect x="470" y="890" width="14" height="14" rx="3" fill="#1f3a5f"/>
-<text x="490" y="900" class="body sub">routing</text>
-<rect x="580" y="890" width="14" height="14" rx="3" fill="#7d3c98"/>
-<text x="600" y="900" class="body sub">education</text>
-<text x="335" y="922" class="body footer">CC BY-SA 4.0 — open-harness-atlas. Generated by scripts/build_visuals.py.</text>
+<text x="262" y="186.6" class="body row-label">Annotated Deep Learning Paper Implementations <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="176" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="204.6" class="body row-label">Build a Large Language Model (From Scratch) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="194" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="222.6" class="body row-label">DeepMind Educational Resources <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="212" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="240.6" class="body row-label">Generative AI for Beginners <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="230" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="258.6" class="body row-label">Google Cloud Generative AI <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="248" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="276.6" class="body row-label">Hands-On Large Language Models <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="266" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="294.6" class="body row-label">Hands-On Machine Learning 3rd Ed. <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="284" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="312.6" class="body row-label">Hugging Face Agents Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="302" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="330.6" class="body row-label">Hugging Face Smol Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="320" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="348.6" class="body row-label">HuggingFace Audio Transformers Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="338" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="366.6" class="body row-label">HuggingFace Deep RL Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="356" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="384.6" class="body row-label">HuggingFace Diffusion Models Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="374" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="402.6" class="body row-label">HuggingFace NLP/Transformers Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="392" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="420.6" class="body row-label">LLM Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="410" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="438.6" class="body row-label">Large-Language-Model-Notebooks-Course <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="428" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="456.6" class="body row-label">Learn Prompting <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="446" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="474.6" class="body row-label">Microsoft AI for Beginners <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="464" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="492.6" class="body row-label">Microsoft Data Science for Beginners <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="482" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="510.6" class="body row-label">Microsoft ML for Beginners <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="500" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="528.6" class="body row-label">Mistral Cookbook <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="518" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="546.6" class="body row-label">NLP with Transformers (notebooks) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="536" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="564.6" class="body row-label">Neural Networks — Zero to Hero (Karpathy) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="554" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="582.6" class="body row-label">Phi Cookbook <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="572" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="600.6" class="body row-label">Prompt Engineering Guide <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="590" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="618.6" class="body row-label">PyTorch Official Tutorials <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="608" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="636.6" class="body row-label">Pytudes (Peter Norvig) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="626" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="654.6" class="body row-label">Stanford CS336 — Language Models from Scratch <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="644" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="672.6" class="body row-label">The Annotated Transformer <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="662" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="690.6" class="body row-label">Weights &amp; Biases AI Academy <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="680" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="708.6" class="body row-label">fast.ai — Practical Deep Learning for Coders (Part 2 / course22p2) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="698" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="726.6" class="body row-label">minGPT <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="716" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="744.6" class="body row-label">nanoGPT <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="734" width="360.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="762.6" class="body row-label">Hugging Face Evaluate <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="752" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="780.6" class="body row-label">Inspect AI <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="770" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="798.6" class="body row-label">OpenCompass <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="788" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="816.6" class="body row-label">SimpleEvals <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="806" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="834.6" class="body row-label">TheAgentCompany <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="824" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="852.6" class="body row-label">lm-evaluation-harness <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="842" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="870.6" class="body row-label">promptfoo <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="860" width="360.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="888.6" class="body row-label">Detoxify <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="878" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="906.6" class="body row-label">IBM Granite Guardian <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="896" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="924.6" class="body row-label">Microsoft Presidio <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="914" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="942.6" class="body row-label">Agent-Attack (Multimodal) <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="932" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="960.6" class="body row-label">AgentDojo <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="950" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="978.6" class="body row-label">Agentic Radar <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="968" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="996.6" class="body row-label">EasyJailbreak <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="986" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="1014.6" class="body row-label">HarmBench <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="1004" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="1032.6" class="body row-label">PyRIT (Python Risk Identification Tool) <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="1022" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="1050.6" class="body row-label">ReNeLLM <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="1040" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="1068.6" class="body row-label">garak <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="1058" width="360.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="1086.6" class="body row-label">Apache APISIX <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1076" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1104.6" class="body row-label">FastChat <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1094" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1122.6" class="body row-label">Jan <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1112" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1140.6" class="body row-label">LLM (CLI) <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1130" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1158.6" class="body row-label">LMDeploy <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1148" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1176.6" class="body row-label">LiteLLM <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1166" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1194.6" class="body row-label">LocalAI <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1184" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1212.6" class="body row-label">MLflow AI Gateway <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1202" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1230.6" class="body row-label">New API <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1220" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1248.6" class="body row-label">Ollama <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1238" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1266.6" class="body row-label">One API <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1256" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1284.6" class="body row-label">OpenLLM <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1274" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1302.6" class="body row-label">Portkey AI Gateway <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1292" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1320.6" class="body row-label">RouteLLM <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1310" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1338.6" class="body row-label">SGLang <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1328" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1356.6" class="body row-label">Shimmy <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1346" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1374.6" class="body row-label">WebLLM <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1364" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1392.6" class="body row-label">Xinference <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1382" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1410.6" class="body row-label">apfel <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1400" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1428.6" class="body row-label">exo <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1418" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1446.6" class="body row-label">llama.cpp <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1436" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1464.6" class="body row-label">text-generation-webui <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1454" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1482.6" class="body row-label">vLLM <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="1472" width="360.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="1500.6" class="body row-label">AG2 <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1490" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1518.6" class="body row-label">Agency Swarm <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1508" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1536.6" class="body row-label">AgentFlow <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1526" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1554.6" class="body row-label">AgentForge <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1544" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1572.6" class="body row-label">AgentGPT <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1562" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1590.6" class="body row-label">AgentLab <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1580" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1608.6" class="body row-label">AgentScope <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1598" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1626.6" class="body row-label">AgentVerse <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1616" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1644.6" class="body row-label">Agents (AIWaves) <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1634" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1662.6" class="body row-label">Atomic Agents <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1652" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1680.6" class="body row-label">AutoGen <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1670" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1698.6" class="body row-label">BabyAGI <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1688" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1716.6" class="body row-label">BeeAI Framework <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1706" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1734.6" class="body row-label">Browser Use <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1724" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1752.6" class="body row-label">CAMEL <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1742" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1770.6" class="body row-label">ChatDev <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1760" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1788.6" class="body row-label">CopilotKit <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1778" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1806.6" class="body row-label">DB-GPT <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1796" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1824.6" class="body row-label">DSPy <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1814" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1842.6" class="body row-label">DeerFlow <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1832" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1860.6" class="body row-label">Eidolon <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1850" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1878.6" class="body row-label">FastAgency <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1868" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1896.6" class="body row-label">GPT Researcher <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1886" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1914.6" class="body row-label">Haystack <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1904" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1932.6" class="body row-label">Julep <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1922" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1950.6" class="body row-label">LangGraph <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1940" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1968.6" class="body row-label">Langflow <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1958" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="1986.6" class="body row-label">Letta <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1976" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2004.6" class="body row-label">LlamaIndex Agents <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="1994" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2022.6" class="body row-label">Mastra <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2012" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2040.6" class="body row-label">MetaGPT <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2030" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2058.6" class="body row-label">Microsoft Agent Framework <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2048" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2076.6" class="body row-label">Mirascope <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2066" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2094.6" class="body row-label">Open Interpreter <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2084" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2112.6" class="body row-label">OpenAgents (openagents-org) <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2102" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2130.6" class="body row-label">OpenAgents (xlang) <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2120" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2148.6" class="body row-label">OpenHands <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2138" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2166.6" class="body row-label">OpenManus <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2156" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2184.6" class="body row-label">PydanticAI <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2174" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2202.6" class="body row-label">Rivet <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2192" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2220.6" class="body row-label">STORM <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2210" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2238.6" class="body row-label">SWE-agent <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2228" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2256.6" class="body row-label">Semantic Kernel <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2246" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2274.6" class="body row-label">SuperAGI <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2264" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2292.6" class="body row-label">Swarm (OpenAI) <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2282" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2310.6" class="body row-label">Tambo <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2300" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2328.6" class="body row-label">TaskWeaver <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2318" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2346.6" class="body row-label">UFO/UFO3 Galaxy <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2336" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2364.6" class="body row-label">Upsonic <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2354" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2382.6" class="body row-label">Voyager <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2372" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2400.6" class="body row-label">XAgent <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2390" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2418.6" class="body row-label">mini-SWE-agent <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2408" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2436.6" class="body row-label">smolagents <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="2426" width="288.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="2454.6" class="body row-label">AI Agents for Beginners (Microsoft) <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="2444" width="288.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="2472.6" class="body row-label">ARES <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2462" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2490.6" class="body row-label">AgentBench <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2480" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2508.6" class="body row-label">AlpacaEval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2498" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2526.6" class="body row-label">Arena-Hard-Auto <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2516" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2544.6" class="body row-label">BIG-bench <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2534" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2562.6" class="body row-label">BigCode Evaluation Harness <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2552" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2580.6" class="body row-label">BrowserGym <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2570" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2598.6" class="body row-label">ChatEval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2588" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2616.6" class="body row-label">Continuous Eval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2606" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2634.6" class="body row-label">DeepEval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2624" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2652.6" class="body row-label">EvalPlus <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2642" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2670.6" class="body row-label">FActScore <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2660" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2688.6" class="body row-label">FLASK <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2678" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2706.6" class="body row-label">Flow-Judge <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2696" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2724.6" class="body row-label">HELM (Holistic Evaluation of Language Models) <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2714" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2742.6" class="body row-label">LLMBar <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2732" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2760.6" class="body row-label">LMMs-Eval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2750" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2778.6" class="body row-label">LegalBench <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2768" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2796.6" class="body row-label">Lighteval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2786" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2814.6" class="body row-label">MMLU-Pro <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2804" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2832.6" class="body row-label">MT-Bench (FastChat) <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2822" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2850.6" class="body row-label">MTEB <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2840" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2868.6" class="body row-label">Needle in a Haystack <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2858" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2886.6" class="body row-label">OLMES <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2876" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2904.6" class="body row-label">OSWorld <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2894" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2922.6" class="body row-label">PromptBench <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2912" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2940.6" class="body row-label">Ragas <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2930" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2958.6" class="body row-label">RewardBench <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2948" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2976.6" class="body row-label">SWE-bench <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2966" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="2994.6" class="body row-label">Tonic Validate <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="2984" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="3012.6" class="body row-label">ToolBench <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="3002" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="3030.6" class="body row-label">TruLens <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="3020" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="3048.6" class="body row-label">TruthfulQA <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="3038" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="3066.6" class="body row-label">UltraEval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="3056" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="3084.6" class="body row-label">Unitxt <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="3074" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="3102.6" class="body row-label">WebArena <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="3092" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="3120.6" class="body row-label">ZeroEval <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="3110" width="288.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="3138.6" class="body row-label">Adversarial Robustness Toolbox <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3128" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3156.6" class="body row-label">Arize Phoenix <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3146" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3174.6" class="body row-label">AutoDefense <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3164" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3192.6" class="body row-label">Circuit Breakers <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3182" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3210.6" class="body row-label">Do-Not-Answer <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3200" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3228.6" class="body row-label">Guardrails AI <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3218" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3246.6" class="body row-label">Guidance <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3236" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3264.6" class="body row-label">Harmless Harnesses <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3254" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3282.6" class="body row-label">Instructor <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3272" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3300.6" class="body row-label">LLM Guard <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3290" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3318.6" class="body row-label">LMQL <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3308" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3336.6" class="body row-label">LangKit <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3326" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3354.6" class="body row-label">Langfuse <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3344" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3372.6" class="body row-label">ModelBench <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3362" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3390.6" class="body row-label">NeMo Guardrails <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3380" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3408.6" class="body row-label">Outlines <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3398" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3426.6" class="body row-label">PromptInject <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3416" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3444.6" class="body row-label">SafeDecoding <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3434" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3462.6" class="body row-label">ShieldLM <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3452" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3480.6" class="body row-label">SmoothLLM <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3470" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3498.6" class="body row-label">TrustLLM <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3488" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3516.6" class="body row-label">TypeChat <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3506" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3534.6" class="body row-label">Vigil <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3524" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3552.6" class="body row-label">WildGuard <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="3542" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="3570.6" class="body row-label">AutoDAN <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3560" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3588.6" class="body row-label">AutoDAN-Turbo <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3578" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3606.6" class="body row-label">BIPIA <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3596" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3624.6" class="body row-label">CipherChat <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3614" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3642.6" class="body row-label">GPTFuzz <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3632" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3660.6" class="body row-label">Giskard <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3650" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3678.6" class="body row-label">JailbreakBench <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3668" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3696.6" class="body row-label">LLM Adaptive Attacks <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3686" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3714.6" class="body row-label">LLM Attacks (GCG) <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3704" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3732.6" class="body row-label">MIMIR <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3722" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3750.6" class="body row-label">ModelScan <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3740" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3768.6" class="body row-label">Open-Prompt-Injection <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3758" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3786.6" class="body row-label">PAIR / JailbreakingLLMs <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3776" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3804.6" class="body row-label">PINT Benchmark <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3794" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3822.6" class="body row-label">Plexiglass <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3812" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3840.6" class="body row-label">Prompt Fuzzer (ps-fuzz) <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3830" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3858.6" class="body row-label">PurpleLlama / CyberSecEval <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3848" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3876.6" class="body row-label">R-Judge <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3866" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3894.6" class="body row-label">SafetyBench <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3884" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3912.6" class="body row-label">TAP - Tree of Attacks with Pruning <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3902" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3930.6" class="body row-label">ToolEmu <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3920" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3948.6" class="body row-label">WMDP - Weapons of Mass Destruction Proxy <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3938" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3966.6" class="body row-label">jailbreak-evaluation <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3956" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="3984.6" class="body row-label">nanoGCG <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3974" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="4002.6" class="body row-label">promptmap <tspan class="sub">[redteam]</tspan></text>
+<rect x="270.0" y="3992" width="288.0" height="12" rx="3" fill="#c0392b"/>
+<text x="262" y="4020.6" class="body row-label">DeepSpeed-MII <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4010" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4038.6" class="body row-label">Envoy AI Gateway <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4028" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4056.6" class="body row-label">Helicone <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4046" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4074.6" class="body row-label">Kong <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4064" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4092.6" class="body row-label">MLC-LLM <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4082" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4110.6" class="body row-label">Plano <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4100" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4128.6" class="body row-label">RamaLama <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4118" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4146.6" class="body row-label">aisuite <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4136" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4164.6" class="body row-label">kgateway <tspan class="sub">[routing]</tspan></text>
+<rect x="270.0" y="4154" width="288.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4182.6" class="body row-label">CrewAI <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="4172" width="216.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="4200.6" class="body row-label">OpenAI Agents SDK <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="4190" width="216.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="4218.6" class="body row-label">Strands Agents <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="4208" width="216.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="4236.6" class="body row-label">Anthropic Prompt Engineering Interactive Tutorial <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="4226" width="216.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="4254.6" class="body row-label">OpenAI Cookbook <tspan class="sub">[education]</tspan></text>
+<rect x="270.0" y="4244" width="216.0" height="12" rx="3" fill="#7d3c98"/>
+<text x="262" y="4272.6" class="body row-label">OpenAI Evals <tspan class="sub">[eval]</tspan></text>
+<rect x="270.0" y="4262" width="216.0" height="12" rx="3" fill="#28a745"/>
+<text x="262" y="4290.6" class="body row-label">Rebuff <tspan class="sub">[governance]</tspan></text>
+<rect x="270.0" y="4280" width="216.0" height="12" rx="3" fill="#1f3a5f"/>
+<text x="262" y="4308.6" class="body row-label">Google Agent Development Kit (ADK) <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="4298" width="144.0" height="12" rx="3" fill="#d68910"/>
+<text x="262" y="4326.6" class="body row-label">Claude Agent SDK <tspan class="sub">[agent]</tspan></text>
+<rect x="270.0" y="4316" width="72.0" height="12" rx="3" fill="#d68910"/>
+<rect x="30" y="4346" width="14" height="14" rx="3" fill="#1f3a5f"/>
+<text x="50" y="4356" class="body sub">governance</text>
+<rect x="140" y="4346" width="14" height="14" rx="3" fill="#d68910"/>
+<text x="160" y="4356" class="body sub">agent</text>
+<rect x="250" y="4346" width="14" height="14" rx="3" fill="#28a745"/>
+<text x="270" y="4356" class="body sub">eval</text>
+<rect x="360" y="4346" width="14" height="14" rx="3" fill="#c0392b"/>
+<text x="380" y="4356" class="body sub">redteam</text>
+<rect x="470" y="4346" width="14" height="14" rx="3" fill="#1f3a5f"/>
+<text x="490" y="4356" class="body sub">routing</text>
+<rect x="580" y="4346" width="14" height="14" rx="3" fill="#7d3c98"/>
+<text x="600" y="4356" class="body sub">education</text>
+<text x="335" y="4378" class="body footer">CC BY-SA 4.0 — open-harness-atlas. Generated by scripts/build_visuals.py.</text>
 </svg>

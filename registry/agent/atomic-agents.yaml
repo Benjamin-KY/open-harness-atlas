@@ -1,0 +1,21 @@
+id: atomic-agents
+name: Atomic Agents
+category: agent
+subcategory: single-agent
+repo_url: https://github.com/Eigenwise/atomic-agents
+license: MIT
+primary_language: Python
+tagline: 'Minimal modular agent building kit (LEGO-block) on Instructor + Pydantic'
+description: |
+  Atomic Agents is Eigenwise's minimal modular agent building kit (LEGO-block) on Instructor + Pydantic. Deliberate minimalism: no magic, pure Python, each component independently testable.
+
+  In the atlas: Atomic Agents is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: community
+  name: Eigenwise
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Eigenwise (community-maintained, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

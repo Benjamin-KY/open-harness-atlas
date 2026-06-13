@@ -1,0 +1,27 @@
+id: shieldlm
+name: ShieldLM
+category: governance
+subcategory: safety-classifier
+repo_url: https://github.com/thu-coai/ShieldLM
+license: MIT
+primary_language: Python
+tagline: 'Bilingual (CN/EN) customisable safety detector for LLM outputs; supports fine-grained user-defined detection rules'
+description: |
+  ShieldLM is Tsinghua CoAI Lab's bilingual (CN/EN) customisable safety detector for LLM outputs; supports fine-grained user-defined detection rules. Only safety detector explicitly supporting custom rule injection without retraining; EMNLP 2024.
+
+  In the atlas: ShieldLM is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: institution
+  name: Tsinghua CoAI Lab
+origin_country: CN
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: none
+sovereignty_notes: |
+  Tsinghua CoAI Lab (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

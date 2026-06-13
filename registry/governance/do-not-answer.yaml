@@ -1,0 +1,27 @@
+id: do-not-answer
+name: Do-Not-Answer
+category: governance
+subcategory: refusal-eval
+repo_url: https://github.com/Libr-AI/do-not-answer
+license: Apache-2.0
+primary_language: Python
+tagline: 'Curated dataset + LLM-as-judge evaluator assessing whether an LLM correctly refuses 939 sensitive question categories'
+description: |
+  Do-Not-Answer is LibrAI / Academic CN's curated dataset + LLM-as-judge evaluator assessing whether an LLM correctly refuses 939 sensitive question categories. Both ground-truth refusal dataset and automated scoring - measure over-refusal vs under-refusal.
+
+  In the atlas: Do-Not-Answer is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: institution
+  name: LibrAI / Academic CN
+origin_country: CN
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: none
+sovereignty_notes: |
+  LibrAI / Academic CN (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

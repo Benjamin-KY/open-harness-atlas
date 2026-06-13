@@ -1,0 +1,21 @@
+id: purple-llama
+name: PurpleLlama / CyberSecEval
+category: redteam
+subcategory: ai-red-team-framework
+repo_url: https://github.com/meta-llama/PurpleLlama
+license: MIT
+primary_language: Python
+tagline: 'Umbrella eval suite: CyberSecEval v1-v3 (insecure code, cyberattack uplift, visual PI, spear-phishing), LlamaGuard, PromptGuard'
+description: |
+  PurpleLlama / CyberSecEval is Meta AI's umbrella eval suite: CyberSecEval v1-v3 (insecure code, cyberattack uplift, visual PI, spear-phishing), LlamaGuard, PromptGuard. CyberSecEval v3 adds visual prompt injection + autonomous offensive cyber eval; MITRE ATT&CK/CWE.
+
+  In the atlas: PurpleLlama / CyberSecEval is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: ga
+maintainer:
+  type: company
+  name: Meta AI
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Meta AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

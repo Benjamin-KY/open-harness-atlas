@@ -1,0 +1,21 @@
+id: fastchat
+name: FastChat
+category: routing
+subcategory: local-inference-server
+repo_url: https://github.com/lm-sys/FastChat
+license: Apache-2.0
+primary_language: Python
+tagline: 'Open platform to train, serve, evaluate LLMs; fschat-api-server is OpenAI-compat multi-model gateway'
+description: |
+  FastChat is lm-sys (LMSYS / UC Berkeley)'s open platform to train, serve, evaluate LLMs; fschat-api-server is OpenAI-compat multi-model gateway. Powers Chatbot Arena; supports 50+ open models.
+
+  In the atlas: FastChat is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: beta
+maintainer:
+  type: institution
+  name: lm-sys (LMSYS / UC Berkeley)
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  lm-sys (LMSYS / UC Berkeley) (US-based academic/research institution); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

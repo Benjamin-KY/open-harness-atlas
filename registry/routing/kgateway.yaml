@@ -1,0 +1,21 @@
+id: kgateway
+name: kgateway
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/kgateway-dev/kgateway
+license: Apache-2.0
+primary_language: Go
+tagline: 'K8s-native Envoy control plane (formerly Gloo) implementing Gateway API; routes to AI backends with policy enforcement'
+description: |
+  kgateway is kgateway-dev (ex-Solo.io)'s k8s-native Envoy control plane (formerly Gloo) implementing Gateway API; routes to AI backends with policy enforcement. Envoy-powered; K8s Gateway API standard; production-hardened since 2019.
+
+  In the atlas: kgateway is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: ga
+maintainer:
+  type: community
+  name: kgateway-dev (ex-Solo.io)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  kgateway-dev (ex-Solo.io) (community-maintained, US); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: partial

@@ -1,0 +1,21 @@
+id: mmlu-pro
+name: MMLU-Pro
+category: eval
+subcategory: academic-benchmark-runner
+repo_url: https://github.com/TIGER-AI-Lab/MMLU-Pro
+license: MIT
+primary_language: Python
+tagline: 'Harder variant of MMLU with 10-choice questions and reasoning-required problems across 14 disciplines'
+description: |
+  MMLU-Pro is TIGER AI Lab's harder variant of MMLU with 10-choice questions and reasoning-required problems across 14 disciplines. Reduces random-choice bias by expanding from 4 to 10 options; CoT prompting eval.
+
+  In the atlas: MMLU-Pro is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: TIGER AI Lab
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  TIGER AI Lab (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

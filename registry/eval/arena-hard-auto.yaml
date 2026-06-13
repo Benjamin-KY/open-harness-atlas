@@ -1,0 +1,21 @@
+id: arena-hard-auto
+name: Arena-Hard-Auto
+category: eval
+subcategory: llm-judge-framework
+repo_url: https://github.com/lmarena/arena-hard-auto
+license: Apache-2.0
+primary_language: Python
+tagline: 'Automated LLM benchmark with highest correlation to LMArena human preferences'
+description: |
+  Arena-Hard-Auto is LM Arena / UC Berkeley's automated LLM benchmark with highest correlation to LMArena human preferences. v2.0 uses 500 hard real-world prompts + 250 creative writing; style-control removes length bias.
+
+  In the atlas: Arena-Hard-Auto is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: LM Arena / UC Berkeley
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  LM Arena / UC Berkeley (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: shimmy
+name: Shimmy
+category: routing
+subcategory: local-inference-server
+repo_url: https://github.com/Michael-A-Kuykendall/shimmy
+license: Apache-2.0
+primary_language: Rust
+tagline: 'Pure-Rust WebGPU inference server: OpenAI-API compatible, GGUF native, hot model swap, no Python'
+description: |
+  Shimmy is Michael Kuykendall's pure-Rust WebGPU inference server: OpenAI-API compatible, GGUF native, hot model swap, no Python. Zero Python/llama.cpp; single binary; WebGPU backend.
+
+  In the atlas: Shimmy is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+maturity: alpha
+maintainer:
+  type: individual
+  name: Michael Kuykendall
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Michael Kuykendall (independent maintainer, US); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

@@ -1,0 +1,21 @@
+id: mteb
+name: MTEB
+category: eval
+subcategory: calibration-eval
+repo_url: https://github.com/embeddings-benchmark/mteb
+license: Apache-2.0
+primary_language: Python
+tagline: 'Massive text embedding benchmark: 8 task types, 56+ datasets, retrieval, STS, clustering, classification'
+description: |
+  MTEB is HuggingFace / community's massive text embedding benchmark: 8 task types, 56+ datasets, retrieval, STS, clustering, classification. Definitive embedding model leaderboard; multilingual across 112 languages.
+
+  In the atlas: MTEB is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: community
+  name: HuggingFace / community
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: |
+  HuggingFace / community (community-maintained, multi-country); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

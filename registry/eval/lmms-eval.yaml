@@ -1,0 +1,21 @@
+id: lmms-eval
+name: LMMs-Eval
+category: eval
+subcategory: academic-benchmark-runner
+repo_url: https://github.com/EvolvingLMMs-Lab/lmms-eval
+license: Apache-2.0
+primary_language: Python
+tagline: 'Single harness for evaluating large multimodal models across 50+ vision-language benchmarks'
+description: |
+  LMMs-Eval is NTU / UCSB's single harness for evaluating large multimodal models across 50+ vision-language benchmarks. Covers image, video, document understanding in one framework; interleaved image-text.
+
+  In the atlas: LMMs-Eval is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: NTU / UCSB
+origin_country: SG
+model_agnostic_score: 4
+sovereignty_notes: |
+  NTU / UCSB (SG-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

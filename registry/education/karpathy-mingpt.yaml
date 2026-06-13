@@ -1,0 +1,26 @@
+id: karpathy-mingpt
+name: minGPT
+category: education
+subcategory: foundations
+repo_url: https://github.com/karpathy/minGPT
+license: MIT
+primary_language: Python
+tagline: '300-line educational GPT library with BPE tokenizer; pre-nanoGPT reference impl'
+description: |
+  minGPT is Andrej Karpathy's 300-line educational gpt library with bpe tokenizer; pre-nanogpt reference impl. Companion to foundational GPT-2 paper; cited in hundreds of courses.
+
+  In the atlas: minGPT is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: beta
+maintainer:
+  type: community
+  name: Andrej Karpathy
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: minGPT — source repository
+    url: https://github.com/karpathy/minGPT
+    type: course
+    free: true
+sovereignty_notes: |
+  Andrej Karpathy (community-maintained, US); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

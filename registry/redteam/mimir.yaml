@@ -1,0 +1,21 @@
+id: mimir
+name: MIMIR
+category: redteam
+subcategory: membership-inference
+repo_url: https://github.com/iamgroot42/mimir
+license: MIT
+primary_language: Python
+tagline: 'Comprehensive membership inference attack library for LLMs: 9 attack methods including Min-K%, ReCaLL, GradNorm'
+description: |
+  MIMIR is Anshuman Suri et al. (UVA/UW)'s comprehensive membership inference attack library for LLMs: 9 attack methods including Min-K%, ReCaLL, GradNorm. Only purpose-built MIA library for LLMs; COLM 2024.
+
+  In the atlas: MIMIR is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: Anshuman Suri et al. (UVA/UW)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Anshuman Suri et al. (UVA/UW) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: semantic-kernel
+name: Semantic Kernel
+category: agent
+subcategory: multi-agent
+repo_url: https://github.com/microsoft/semantic-kernel
+license: MIT
+primary_language: Python
+tagline: 'Multi-language enterprise SDK for building LLM agents with plugins, memory, planner subsystems'
+description: |
+  Semantic Kernel is Microsoft's multi-language enterprise SDK for building LLM agents with plugins, memory, planner subsystems. C#/Java SDKs alongside Python; Azure AI integration; multiple planner types.
+
+  In the atlas: Semantic Kernel is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Microsoft (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

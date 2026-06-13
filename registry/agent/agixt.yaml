@@ -1,0 +1,21 @@
+id: agixt
+name: AGiXT
+category: agent
+subcategory: multi-agent
+repo_url: https://github.com/Josh-XT/AGiXT
+license: MIT
+primary_language: Python
+tagline: 'Multi-provider chain-of-thought agent with plugin system, memory backends, REST API server'
+description: |
+  AGiXT is Josh-XT's multi-provider chain-of-thought agent with plugin system, memory backends, REST API server. Self-hosted API server pattern; 15+ memory backends; plugin discovery without code changes.
+
+  In the atlas: AGiXT is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: individual
+  name: Josh-XT
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Josh-XT (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned

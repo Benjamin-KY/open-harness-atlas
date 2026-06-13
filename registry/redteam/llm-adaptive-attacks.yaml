@@ -1,0 +1,21 @@
+id: llm-adaptive-attacks
+name: LLM Adaptive Attacks
+category: redteam
+subcategory: adversarial-attack-toolkit
+repo_url: https://github.com/tml-epfl/llm-adaptive-attacks
+license: MIT
+primary_language: Python
+tagline: 'Adaptive logprob-based random-search attacks achieving ~100% ASR on GPT-3.5/4, Llama-2, Gemma, Claude'
+description: |
+  LLM Adaptive Attacks is Andriushchenko, Croce, Flammarion (EPFL)'s adaptive logprob-based random-search attacks achieving ~100% ASR on GPT-3.5/4, Llama-2, Gemma, Claude. 100% ASR on every tested safety-aligned model; ICLR 2025.
+
+  In the atlas: LLM Adaptive Attacks is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: Andriushchenko, Croce, Flammarion (EPFL)
+origin_country: CH
+model_agnostic_score: 4
+sovereignty_notes: |
+  Andriushchenko, Croce, Flammarion (EPFL) (CH-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

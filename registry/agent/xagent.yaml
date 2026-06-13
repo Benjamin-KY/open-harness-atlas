@@ -1,0 +1,21 @@
+id: xagent
+name: XAgent
+category: agent
+subcategory: planning
+repo_url: https://github.com/OpenBMB/XAgent
+license: Apache-2.0
+primary_language: Python
+tagline: 'Autonomous task decomposition agent with PlanTree + ToolServer + inner/outer dual-loop architecture'
+description: |
+  XAgent is Tsinghua / OpenBMB's autonomous task decomposition agent with PlanTree + ToolServer + inner/outer dual-loop architecture. Dual-loop: outer planning loop + inner execution loop; function call library auto-growing.
+
+  In the atlas: XAgent is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: institution
+  name: Tsinghua / OpenBMB
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Tsinghua / OpenBMB (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

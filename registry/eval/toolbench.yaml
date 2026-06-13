@@ -1,0 +1,21 @@
+id: toolbench
+name: ToolBench
+category: eval
+subcategory: agent-eval
+repo_url: https://github.com/OpenBMB/ToolBench
+license: Apache-2.0
+primary_language: Python
+tagline: 'Benchmarks LLM ability to call APIs and use external tools across 16000 real-world REST APIs'
+description: |
+  ToolBench is OpenBMB / Tsinghua's benchmarks LLM ability to call APIs and use external tools across 16000 real-world REST APIs. 16464 real-world APIs from RapidAPI Hub; multi-step API chaining and error recovery.
+
+  In the atlas: ToolBench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: institution
+  name: OpenBMB / Tsinghua
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  OpenBMB / Tsinghua (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: agno
+name: Agno
+category: agent
+subcategory: single-agent
+repo_url: https://github.com/agno-agi/agno
+license: Apache-2.0
+primary_language: Python
+tagline: 'Production agent SDK (ex-phidata) with built-in memory, knowledge bases, 100+ toolkits, team API'
+description: |
+  Agno is Agno AGI (ex-phidata)'s production agent SDK (ex-phidata) with built-in memory, knowledge bases, 100+ toolkits, team API. Benchmarked as fastest agent instantiation (~3 µs); native multi-agent Teams pattern.
+
+  In the atlas: Agno is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: Agno AGI (ex-phidata)
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Agno AGI (ex-phidata) (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned

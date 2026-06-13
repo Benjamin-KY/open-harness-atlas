@@ -1,0 +1,27 @@
+id: instructor
+name: Instructor
+category: governance
+subcategory: output-contract
+repo_url: https://github.com/567-labs/instructor
+license: MIT
+primary_language: Python
+tagline: 'Pydantic-based structured-output validator for LLM API calls with automatic retry and streaming partial-object support'
+description: |
+  Instructor is 567 Labs's pydantic-based structured-output validator for LLM API calls with automatic retry and streaming partial-object support. Most widely adopted output-contract library; drop-in for OpenAI, Anthropic, Gemini, Ollama.
+
+  In the atlas: Instructor is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: community
+  name: 567 Labs
+origin_country: CA
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: partial
+  output_contract: native
+  audit_log_fsm: none
+sovereignty_notes: |
+  567 Labs (community-maintained, CA); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

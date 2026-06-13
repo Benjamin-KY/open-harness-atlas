@@ -1,0 +1,21 @@
+id: factscore
+name: FActScore
+category: eval
+subcategory: factuality-eval
+repo_url: https://github.com/shmsw25/FActScore
+license: MIT
+primary_language: Python
+tagline: 'Measures factual precision in long-form LLM generations by decomposing text into atomic facts'
+description: |
+  FActScore is UW / Meta AI's measures factual precision in long-form LLM generations by decomposing text into atomic facts. Atomic-fact decomposition + per-claim Wikipedia retrieval; fine-grained factuality scores.
+
+  In the atlas: FActScore is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: UW / Meta AI
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  UW / Meta AI (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: chatdev
+name: ChatDev
+category: agent
+subcategory: multi-agent
+repo_url: https://github.com/OpenBMB/ChatDev
+license: Apache-2.0
+primary_language: Python
+tagline: 'Multi-agent virtual software company v2.0 for end-to-end zero-code application development'
+description: |
+  ChatDev is Tsinghua / OpenBMB's multi-agent virtual software company v2.0 for end-to-end zero-code application development. v2.0 adds no-code visual editor; reproducible chain-of-thought design with role-play phases.
+
+  In the atlas: ChatDev is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: institution
+  name: Tsinghua / OpenBMB
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Tsinghua / OpenBMB (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

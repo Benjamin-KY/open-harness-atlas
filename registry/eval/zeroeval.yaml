@@ -1,0 +1,21 @@
+id: zeroeval
+name: ZeroEval
+category: eval
+subcategory: academic-benchmark-runner
+repo_url: https://github.com/WildEval/ZeroEval
+license: Apache-2.0
+primary_language: Python
+tagline: 'Unified zero-shot evaluation harness for reasoning, knowledge, instruction-following, math'
+description: |
+  ZeroEval is Allen AI / WildEval's unified zero-shot evaluation harness for reasoning, knowledge, instruction-following, math. Minimal-template zero-shot across MMLU, GSM8K, ZebraLogic, CRUX.
+
+  In the atlas: ZeroEval is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: institution
+  name: Allen AI / WildEval
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Allen AI / WildEval (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

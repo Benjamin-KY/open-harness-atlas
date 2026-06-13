@@ -1,0 +1,21 @@
+id: r-judge
+name: R-Judge
+category: redteam
+subcategory: agent-security-benchmark
+repo_url: https://github.com/Lordog/R-Judge
+license: MIT
+primary_language: Python
+tagline: 'Benchmark for LLM agent safety risk awareness: 569 multi-turn agent interaction records across 27 risk scenarios'
+description: |
+  R-Judge is SJTU / Tongxin Yuan et al.'s benchmark for LLM agent safety risk awareness: 569 multi-turn agent interaction records across 27 risk scenarios. Dual-eval (binary safety + open-ended risk identification); EMNLP 2024 Findings.
+
+  In the atlas: R-Judge is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: SJTU / Tongxin Yuan et al.
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  SJTU / Tongxin Yuan et al. (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

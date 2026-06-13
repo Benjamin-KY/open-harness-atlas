@@ -1,0 +1,21 @@
+id: copilotkit
+name: CopilotKit
+category: agent
+subcategory: conversational
+repo_url: https://github.com/CopilotKit/CopilotKit
+license: MIT
+primary_language: TypeScript
+tagline: 'React/fullstack framework for in-app agents with AG-UI protocol, generative UI, shared state'
+description: |
+  CopilotKit is CopilotKit Inc.'s react/fullstack framework for in-app agents with AG-UI protocol, generative UI, shared state. Standardizes AG-UI streaming protocol; CoAgents for human-in-the-loop agentic React apps.
+
+  In the atlas: CopilotKit is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: CopilotKit Inc.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  CopilotKit Inc. (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

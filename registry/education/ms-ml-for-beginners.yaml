@@ -1,0 +1,26 @@
+id: ms-ml-for-beginners
+name: Microsoft ML for Beginners
+category: education
+subcategory: foundations
+repo_url: https://github.com/microsoft/ML-For-Beginners
+license: MIT
+primary_language: Jupyter Notebook
+tagline: '12-week, 26-lesson classical ML curriculum: regression, classification, NLP, time-series'
+description: |
+  Microsoft ML for Beginners is Microsoft's 12-week, 26-lesson classical ml curriculum: regression, classification, nlp, time-series. 52 quizzes + quiz web app; 13+ language translations; scikit-learn only.
+
+  In the atlas: Microsoft ML for Beginners is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: Microsoft ML for Beginners — source repository
+    url: https://github.com/microsoft/ML-For-Beginners
+    type: course
+    free: true
+sovereignty_notes: |
+  Microsoft (US-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

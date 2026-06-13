@@ -1,0 +1,21 @@
+id: autodan
+name: AutoDAN
+category: redteam
+subcategory: jailbreak-orchestrator
+repo_url: https://github.com/SheltonLiu-N/AutoDAN
+license: MIT
+primary_language: Python
+tagline: 'Stealthy jailbreak via hierarchical genetic algorithm; produces semantically meaningful adversarial prompts'
+description: |
+  AutoDAN is Xiaogeng Liu et al. (UW-Madison)'s stealthy jailbreak via hierarchical genetic algorithm; produces semantically meaningful adversarial prompts. Bypasses perplexity-based defenses; ICLR 2024; USENIX Distinguished Paper 2024.
+
+  In the atlas: AutoDAN is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: ga
+maintainer:
+  type: institution
+  name: Xiaogeng Liu et al. (UW-Madison)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Xiaogeng Liu et al. (UW-Madison) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,26 @@
+id: gcp-generative-ai
+name: Google Cloud Generative AI
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/GoogleCloudPlatform/generative-ai
+license: Apache-2.0
+primary_language: Jupyter Notebook
+tagline: 'Sample notebooks for Gemini on Vertex AI: RAG, agents, embeddings, multimodal, fine-tuning'
+description: |
+  Google Cloud Generative AI is Google Cloud's sample notebooks for Gemini on Vertex AI: RAG, agents, embeddings, multimodal, fine-tuning. Only OSS Gemini API curriculum; Vertex AI Pipelines, Grounding, Agent Builder.
+
+  In the atlas: Google Cloud Generative AI is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: company
+  name: Google Cloud
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: Google Cloud Generative AI — source repository
+    url: https://github.com/GoogleCloudPlatform/generative-ai
+    type: course
+    free: true
+sovereignty_notes: |
+  Google Cloud (US-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

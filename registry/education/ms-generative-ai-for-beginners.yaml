@@ -1,0 +1,26 @@
+id: ms-generative-ai-for-beginners
+name: Generative AI for Beginners
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/microsoft/generative-ai-for-beginners
+license: MIT
+primary_language: Jupyter Notebook
+tagline: '21-lesson structured curriculum on building GenAI apps with Python + Azure OpenAI'
+description: |
+  Generative AI for Beginners is Microsoft's 21-lesson structured curriculum on building genai apps with python + azure openai. 60k+ forks; 18 language translations; lesson quizzes; separate video/colab per lesson.
+
+  In the atlas: Generative AI for Beginners is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: Generative AI for Beginners — source repository
+    url: https://github.com/microsoft/generative-ai-for-beginners
+    type: course
+    free: true
+sovereignty_notes: |
+  Microsoft (US-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

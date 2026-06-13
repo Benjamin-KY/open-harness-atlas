@@ -1,0 +1,26 @@
+id: llm-notebooks-course
+name: Large-Language-Model-Notebooks-Course
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/peremartra/Large-Language-Model-Notebooks-Course
+license: MIT
+primary_language: Jupyter Notebook
+tagline: 'Practical notebook-driven LLM course covering RAG, PEFT/LoRA/QLoRA, distillation, LLMOps'
+description: |
+  Large-Language-Model-Notebooks-Course is Pere Martra's practical notebook-driven LLM course covering RAG, PEFT/LoRA/QLoRA, distillation, LLMOps. Each lesson paired with Medium article; strong PEFT and knowledge-distillation coverage.
+
+  In the atlas: Large-Language-Model-Notebooks-Course is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: community
+  name: Pere Martra
+origin_country: ES
+model_agnostic_score: 5
+education_resources:
+  - title: Large-Language-Model-Notebooks-Course — source repository
+    url: https://github.com/peremartra/Large-Language-Model-Notebooks-Course
+    type: course
+    free: true
+sovereignty_notes: |
+  Pere Martra (community-maintained, ES); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

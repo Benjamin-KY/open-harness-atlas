@@ -1,0 +1,21 @@
+id: swe-agent
+name: SWE-agent
+category: agent
+subcategory: single-agent
+repo_url: https://github.com/SWE-agent/SWE-agent
+license: MIT
+primary_language: Python
+tagline: 'GitHub-issue->PR agent with configurable Agent-Computer Interface (ACI) and tool filtering'
+description: |
+  SWE-agent is Princeton + Stanford's gitHub-issue->PR agent with configurable Agent-Computer Interface (ACI) and tool filtering. ACI abstraction makes tool set fully configurable; SOTA open source on SWE-bench Full.
+
+  In the atlas: SWE-agent is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: institution
+  name: Princeton + Stanford
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Princeton + Stanford (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

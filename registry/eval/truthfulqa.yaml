@@ -1,0 +1,21 @@
+id: truthfulqa
+name: TruthfulQA
+category: eval
+subcategory: factuality-eval
+repo_url: https://github.com/sylinrl/TruthfulQA
+license: Apache-2.0
+primary_language: Python
+tagline: '817-question benchmark measuring whether LLMs generate truthful, non-imitative answers'
+description: |
+  TruthfulQA is Oxford / OpenAI's 817-question benchmark measuring whether llms generate truthful, non-imitative answers. Questions designed to tempt human misconceptions; scores truthfulness and informativeness.
+
+  In the atlas: TruthfulQA is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: Oxford / OpenAI
+origin_country: GB
+model_agnostic_score: 4
+sovereignty_notes: |
+  Oxford / OpenAI (GB-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

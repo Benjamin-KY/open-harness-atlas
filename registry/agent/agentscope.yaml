@@ -1,0 +1,21 @@
+id: agentscope
+name: AgentScope
+category: agent
+subcategory: multi-agent
+repo_url: https://github.com/agentscope-ai/agentscope
+license: Apache-2.0
+primary_language: Python
+tagline: 'Production multi-agent platform v2.0 with event-driven messaging, multi-tenant, actor model'
+description: |
+  AgentScope is Alibaba DAMO's production multi-agent platform v2.0 with event-driven messaging, multi-tenant, actor model. Actor-model event stream; Alibaba production-tested; real-time + batch orchestration.
+
+  In the atlas: AgentScope is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: Alibaba DAMO
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Alibaba DAMO (CN-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

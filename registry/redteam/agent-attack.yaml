@@ -1,0 +1,21 @@
+id: agent-attack
+name: Agent-Attack (Multimodal)
+category: redteam
+subcategory: agent-security-benchmark
+repo_url: https://github.com/ChenWu98/agent-attack
+license: MIT
+primary_language: Python
+tagline: 'Adversarial attack evaluation framework for multimodal LM agents operating in VisualWebArena; captioner + CLIP attacks'
+description: |
+  Agent-Attack (Multimodal) is Chen Henry Wu et al. (CMU)'s adversarial attack evaluation framework for multimodal LM agents operating in VisualWebArena; captioner + CLIP attacks. ICLR 2025; tests visual-channel adversarial perturbations in web-browsing agent tasks.
+
+  In the atlas: Agent-Attack (Multimodal) is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: Chen Henry Wu et al. (CMU)
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Chen Henry Wu et al. (CMU) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned

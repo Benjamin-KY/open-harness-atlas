@@ -1,0 +1,26 @@
+id: handson-ml3
+name: Hands-On Machine Learning 3rd Ed.
+category: education
+subcategory: book-as-repo
+repo_url: https://github.com/ageron/handson-ml3
+license: Apache-2.0
+primary_language: Jupyter Notebook
+tagline: 'O Reilly companion building from sklearn basics through neural networks and transformers'
+description: |
+  Hands-On Machine Learning 3rd Ed. is Aurelien Geron's o Reilly companion building from sklearn basics through neural networks and transformers. Ch.16 covers attention and transformer architectures directly.
+
+  In the atlas: Hands-On Machine Learning 3rd Ed. is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: community
+  name: Aurelien Geron
+origin_country: FR
+model_agnostic_score: 5
+education_resources:
+  - title: Hands-On Machine Learning 3rd Ed. — source repository
+    url: https://github.com/ageron/handson-ml3
+    type: course
+    free: true
+sovereignty_notes: |
+  Aurelien Geron (community-maintained, FR); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

@@ -1,0 +1,21 @@
+id: fastagency
+name: FastAgency
+category: agent
+subcategory: multi-agent
+repo_url: https://github.com/ag2ai/fastagency
+license: Apache-2.0
+primary_language: Python
+tagline: 'Production deployment wrapper for AG2 with REST API scaffold, web UI, CI test harness'
+description: |
+  FastAgency is ag2ai community's production deployment wrapper for AG2 with REST API scaffold, web UI, CI test harness. Closes gap between AutoGen prototype and production deploy; generates FastAPI app.
+
+  In the atlas: FastAgency is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: community
+  name: ag2ai community
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  ag2ai community (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: jailbreak-evaluation
+name: jailbreak-evaluation
+category: redteam
+subcategory: ai-red-team-framework
+repo_url: https://github.com/controllability/jailbreak-evaluation
+license: Apache-2.0
+primary_language: Python
+tagline: 'pip-installable package evaluating jailbreak attempts on two metrics: Safeguard Violation and Relative Truthfulness'
+description: |
+  jailbreak-evaluation is PurSec Lab, Purdue University's pip-installable package evaluating jailbreak attempts on two metrics: safeguard violation and relative truthfulness. Multifaceted evaluation beyond binary pass/fail; ACM CCS 2024.
+
+  In the atlas: jailbreak-evaluation is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: PurSec Lab, Purdue University
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  PurSec Lab, Purdue University (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

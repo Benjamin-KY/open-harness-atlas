@@ -1,0 +1,26 @@
+id: ms-data-science-for-beginners
+name: Microsoft Data Science for Beginners
+category: education
+subcategory: foundations
+repo_url: https://github.com/microsoft/Data-Science-For-Beginners
+license: MIT
+primary_language: Jupyter Notebook
+tagline: '10-week, 20-lesson data science curriculum: stats, wrangling, visualization, ML basics'
+description: |
+  Microsoft Data Science for Beginners is Microsoft's 10-week, 20-lesson data science curriculum: stats, wrangling, visualization, ml basics. Microsoft foundational DS curriculum; companion to ML and AI beginner courses.
+
+  In the atlas: Microsoft Data Science for Beginners is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft
+origin_country: US
+model_agnostic_score: 5
+education_resources:
+  - title: Microsoft Data Science for Beginners — source repository
+    url: https://github.com/microsoft/Data-Science-For-Beginners
+    type: course
+    free: true
+sovereignty_notes: |
+  Microsoft (US-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: partial

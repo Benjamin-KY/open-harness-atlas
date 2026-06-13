@@ -1,0 +1,21 @@
+id: needle-in-haystack
+name: Needle in a Haystack
+category: eval
+subcategory: long-context-eval
+repo_url: https://github.com/gkamradt/needle-in-a-haystack
+license: MIT
+primary_language: Python
+tagline: 'Measures LLM long-context recall by finding a planted fact in a progressively larger context window'
+description: |
+  Needle in a Haystack is Greg Kamradt's measures LLM long-context recall by finding a planted fact in a progressively larger context window. Canonical stress-test for context windows; heat-map visualisations.
+
+  In the atlas: Needle in a Haystack is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: community
+  name: Greg Kamradt
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Greg Kamradt (community-maintained, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

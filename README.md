@@ -10,11 +10,15 @@ routing — and free education resources.*
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-d68910?style=flat-square)](LICENSE-DOCS)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue?style=flat-square)](pyproject.toml)
 
-> ⚠ **Pre-release (v0.1.0-dev).** Registry seeded with **44 entries**
-> across six categories. Schema, governance policy, charter, and the
-> two front-door visuals are stable. The first tagged release
-> (**v0.1.0**) is the current state; v0.2.0+ adds the data-driven
-> spectrum / radial visuals and adjacencies page (see `CHANGELOG.md`).
+> ⚠ **Pre-release (v0.1.0-dev).** Registry holds **236 entries** across
+> six categories — the catalog has been expanded by systematic
+> discovery across awesome-lists (`corca-ai/awesome-llm-security`,
+> `tensorchord/awesome-llmops`, `e2b-dev/awesome-ai-agents`,
+> `yueliu1999/Awesome-Jailbreak-on-LLMs`, `onejune2018/awesome-llm-eval`,
+> and others), GitHub topic searches (`llm-evaluation`, `ai-gateway`,
+> `llm-judge`, `agent-eval`, `llm-benchmark`, …), and recent surveys
+> (NeurIPS / ICML / ACL / USENIX 2024–2026). All entries are
+> OSI-licensed per `GOVERNANCE.md` §1.1.
 >
 > **Out of scope for the registry by design**: closed-source projects;
 > non-OSI licenses (so Llama Guard 3 and ShieldGemma are excluded
@@ -78,14 +82,14 @@ comparable.
 
 ## The six categories (launch scope)
 
-| Category | What's catalogued | Launch entries |
+| Category | What's catalogued | Entries |
 |---|---|---|
-| 🛡  **Governance harnesses** | Output-contract / citation / refusal / audit frameworks | 6 |
-| 🤖 **Agent frameworks** | Tool-using multi-turn agent runtimes | 10 |
-| 📏 **Eval harnesses** | Behaviour measurement runners | 8 |
-| 🎯 **Red-team / safety harnesses** | Adversarial probes & attack-class coverage | 6 |
-| 🔀 **Routing / model-agnostic infra** | Provider gateways & swappable backends | 6 |
-| 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | 8 |
+| 🛡  **Governance harnesses** | Output-contract / citation / refusal / audit frameworks | 28 |
+| 🤖 **Agent frameworks** | Tool-using multi-turn agent runtimes | 62 |
+| 📏 **Eval harnesses** | Behaviour measurement runners | 45 |
+| 🎯 **Red-team / safety harnesses** | Adversarial probes & attack-class coverage | 33 |
+| 🔀 **Routing / model-agnostic infra** | Provider gateways & swappable backends | 32 |
+| 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | 36 |
 | | **Total** | **44** |
 
 **Out-of-scope by design** (linked as adjacencies, not catalog entries):

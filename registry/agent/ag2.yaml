@@ -1,0 +1,21 @@
+id: ag2
+name: AG2
+category: agent
+subcategory: multi-agent
+repo_url: https://github.com/ag2ai/ag2
+license: Apache-2.0
+primary_language: Python
+tagline: 'AutoGen community fork actively evolving toward AgentOS with production multi-agent workflows'
+description: |
+  AG2 is ag2ai community's autoGen community fork actively evolving toward AgentOS with production multi-agent workflows. Faster roadmap than upstream AutoGen; maintained by AutoGen original contributors.
+
+  In the atlas: AG2 is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: community
+  name: ag2ai community
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  ag2ai community (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: julep
+name: Julep
+category: agent
+subcategory: workflow-graph
+repo_url: https://github.com/julep-ai/julep
+license: Apache-2.0
+primary_language: Python
+tagline: 'YAML-defined multi-step agent workflows with persistent memory, tool calls, serverless scaling'
+description: |
+  Julep is Julep AI's yAML-defined multi-step agent workflows with persistent memory, tool calls, serverless scaling. Declarative YAML workflow engine; Firebase-for-AI-agents; self-hostable core.
+
+  In the atlas: Julep is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: company
+  name: Julep AI
+origin_country: IN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Julep AI (IN-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

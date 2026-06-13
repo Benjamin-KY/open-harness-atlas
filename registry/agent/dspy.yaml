@@ -1,0 +1,21 @@
+id: dspy
+name: DSPy
+category: agent
+subcategory: planning
+repo_url: https://github.com/stanfordnlp/dspy
+license: MIT
+primary_language: Python
+tagline: 'Declarative programming model for LLM pipelines and self-optimizing agent loops via compiler'
+description: |
+  DSPy is Stanford NLP's declarative programming model for LLM pipelines and self-optimizing agent loops via compiler. Program synthesis paradigm: prompts are optimized not hand-crafted; MIPROv2 compiler.
+
+  In the atlas: DSPy is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: institution
+  name: Stanford NLP
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Stanford NLP (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned

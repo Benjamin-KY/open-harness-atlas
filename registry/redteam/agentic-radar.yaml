@@ -1,0 +1,21 @@
+id: agentic-radar
+name: Agentic Radar
+category: redteam
+subcategory: agent-security-benchmark
+repo_url: https://github.com/splx-ai/agentic-radar
+license: Apache-2.0
+primary_language: Python
+tagline: 'Static + runtime security scanner for agentic workflows (LangGraph, CrewAI, n8n, OpenAI Agents, AutoGen); generates HTML report'
+description: |
+  Agentic Radar is SPLX AI's static + runtime security scanner for agentic workflows (LangGraph, CrewAI, n8n, OpenAI Agents, AutoGen); generates HTML report. Supports live runtime adversarial injection testing; MCP server detection; OWASP LLM Top 10.
+
+  In the atlas: Agentic Radar is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: company
+  name: SPLX AI
+origin_country: SI
+model_agnostic_score: 5
+sovereignty_notes: |
+  SPLX AI (SI-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned

@@ -1,0 +1,21 @@
+id: theagentcompany
+name: TheAgentCompany
+category: eval
+subcategory: agent-eval
+repo_url: https://github.com/TheAgentCompany/TheAgentCompany
+license: MIT
+primary_language: Python
+tagline: 'Professional-task agent benchmark: coding, PM, HR, finance on self-hosted intranet (GitLab, Plane, RocketChat)'
+description: |
+  TheAgentCompany is CMU LTI's professional-task agent benchmark: coding, PM, HR, finance on self-hosted intranet (GitLab, Plane, RocketChat). Real work tasks in simulated company environment with functional rewards.
+
+  In the atlas: TheAgentCompany is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: institution
+  name: CMU LTI
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  CMU LTI (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned
