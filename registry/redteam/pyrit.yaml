@@ -45,5 +45,9 @@ sovereignty_notes: |
   abstracts the backend uniformly across providers.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - art-toolkit
+  - easyjailbreak
   - garak
+  - plexiglass
   - promptfoo
+  - promptmap

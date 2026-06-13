@@ -40,5 +40,12 @@ sovereignty_notes: |
   more deeply with OpenAI-format calls than with other providers.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - aisuite
+  - fastchat
   - litellm
+  - mlflow-ai-gateway
+  - new-api
+  - one-api
   - portkey-gateway
+  - routellm
+  - simonw-llm

@@ -24,3 +24,6 @@ education_resources:
 sovereignty_notes: |
   PyTorch / Meta (US-incorporated company); OSS core is BSD-3-Clause and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - deepmind-educational
+  - fast-ai-course22

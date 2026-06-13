@@ -45,3 +45,10 @@ sovereignty_notes: |
   *is* the model.
 harness_paradigm_alignment: partial
 adjacent_to: []
+adjacent_to:
+  - harvard-annotated-transformer
+  - karpathy-mingpt
+  - karpathy-nanogpt
+  - labmlai-annotated-dl
+  - norvig-pytudes
+  - rasbt-llms-from-scratch

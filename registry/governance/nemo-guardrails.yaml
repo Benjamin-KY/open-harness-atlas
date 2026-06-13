@@ -55,5 +55,7 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - guardrails-ai
-  - rebuff
+  - llm-guard
   - presidio
+  - rebuff
+  - vigil-llm

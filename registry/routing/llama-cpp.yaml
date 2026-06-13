@@ -19,3 +19,13 @@ model_agnostic_score: 5
 sovereignty_notes: |
   ggml-org (Georgi Gerganov) (community-maintained, BG); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - jan
+  - litellm
+  - lmdeploy
+  - localai
+  - ollama
+  - ramalama
+  - sglang
+  - text-generation-webui
+  - vllm

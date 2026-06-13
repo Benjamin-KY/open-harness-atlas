@@ -41,6 +41,11 @@ sovereignty_notes: |
   generic FunctionCallingAgent works against any compatible backend.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - agentscope
+  - beeai-framework
+  - haystack
   - langgraph
+  - microsoft-agent-framework
   - pydanticai
+  - semantic-kernel
   - smolagents

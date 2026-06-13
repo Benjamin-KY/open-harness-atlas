@@ -19,3 +19,15 @@ model_agnostic_score: 5
 sovereignty_notes: |
   DAMO Academy / Alibaba (CN-based academic/research institution); OSS core is GPL-3.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: aligned
+adjacent_to:
+  - art-toolkit
+  - do-not-answer
+  - garak
+  - harmbench
+  - jailbreak-evaluation
+  - jailbreakbench
+  - plexiglass
+  - promptmap
+  - pyrit
+  - safetybench
+  - wmdp

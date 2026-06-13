@@ -19,3 +19,13 @@ model_agnostic_score: 4
 sovereignty_notes: |
   IBM Research (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
+adjacent_to:
+  - helm
+  - hf-evaluate
+  - lighteval
+  - lm-evaluation-harness
+  - lmms-eval
+  - olmes
+  - opencompass
+  - simple-evals
+  - ultraeval

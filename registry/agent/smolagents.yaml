@@ -45,6 +45,12 @@ sovereignty_notes: |
   lower-quality code than frontier models.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - pydanticai
-  - llama-index-agents
+  - agno
+  - atomic-agents
+  - claude-agent-sdk
   - crewai
+  - google-adk
+  - llama-index-agents
+  - openai-agents-sdk
+  - pydanticai
+  - strands

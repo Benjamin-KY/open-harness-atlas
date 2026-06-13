@@ -40,5 +40,12 @@ sovereignty_notes: |
   examples and documentation assume the HF transformers path.
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - lm-evaluation-harness
   - helm
+  - hf-evaluate
+  - lm-evaluation-harness
+  - lmms-eval
+  - olmes
+  - opencompass
+  - simple-evals
+  - ultraeval
+  - unitxt

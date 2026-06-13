@@ -41,6 +41,15 @@ sovereignty_notes: |
   requires explicit LLM-class wiring per agent.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - langgraph
+  - ag2
+  - agentverse-openbmb
   - autogen
+  - camel
+  - chatdev
+  - langgraph
+  - metagpt
+  - openagents-xlang
+  - openmanus
+  - praisonai
   - smolagents
+  - swarm-openai

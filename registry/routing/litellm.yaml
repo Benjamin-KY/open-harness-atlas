@@ -48,6 +48,17 @@ sovereignty_notes: |
   code path runs against every supported backend.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - routellm
   - aisuite
+  - fastchat
+  - helicone
+  - llama-cpp
+  - lmdeploy
+  - mlflow-ai-gateway
+  - new-api
+  - ollama
+  - one-api
   - portkey-gateway
+  - routellm
+  - sglang
+  - simonw-llm
+  - vllm

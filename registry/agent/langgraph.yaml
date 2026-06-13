@@ -47,6 +47,13 @@ sovereignty_notes: |
   specific provider tool-call dialects.
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - pydanticai
+  - agentscope
+  - atomic-agents
   - autogen
+  - beeai-framework
+  - haystack
   - llama-index-agents
+  - mastra
+  - microsoft-agent-framework
+  - pydanticai
+  - semantic-kernel

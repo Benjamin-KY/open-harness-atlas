@@ -40,6 +40,11 @@ sovereignty_notes: |
   backends sometimes requires minor schema adjustments.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - agno
+  - atomic-agents
+  - claude-agent-sdk
+  - google-adk
   - langgraph
   - openai-agents-sdk
-  - claude-agent-sdk
+  - smolagents
+  - strands

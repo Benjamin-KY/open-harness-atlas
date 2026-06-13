@@ -24,3 +24,13 @@ education_resources:
 sovereignty_notes: |
   HuggingFace (FR-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - hf-audio-transformers-course
+  - hf-deep-rl-class
+  - hf-diffusion-models-class
+  - hf-nlp-course
+  - hugging-face-agents-course
+  - llm-notebooks-course
+  - mlabonne-llm-course
+  - ms-generative-ai-for-beginners
+  - stanford-cs336

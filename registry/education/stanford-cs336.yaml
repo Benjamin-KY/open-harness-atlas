@@ -45,4 +45,9 @@ sovereignty_notes: |
   building the model.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - hf-nlp-course
+  - hf-smol-course
   - karpathy-nn-zero-to-hero
+  - llm-notebooks-course
+  - mlabonne-llm-course
+  - ms-generative-ai-for-beginners

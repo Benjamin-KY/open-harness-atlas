@@ -24,3 +24,9 @@ education_resources:
 sovereignty_notes: |
   Maxime Labonne (community-maintained, FR); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - hf-nlp-course
+  - hf-smol-course
+  - llm-notebooks-course
+  - ms-generative-ai-for-beginners
+  - stanford-cs336

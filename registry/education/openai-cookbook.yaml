@@ -43,3 +43,9 @@ sovereignty_notes: |
   to point at a different backend.
 harness_paradigm_alignment: partial
 adjacent_to: []
+adjacent_to:
+  - anthropic-prompt-eng-tutorial
+  - aws-bedrock-workshop
+  - gcp-generative-ai
+  - mistral-cookbook
+  - ms-phi-cookbook

@@ -37,6 +37,11 @@ sovereignty_notes: |
   practice despite formally supporting alternatives.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - openai-agents-sdk
+  - agno
+  - atomic-agents
   - claude-agent-sdk
   - litellm
+  - openai-agents-sdk
+  - pydanticai
+  - smolagents
+  - strands

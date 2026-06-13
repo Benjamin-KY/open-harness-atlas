@@ -19,3 +19,14 @@ model_agnostic_score: 5
 sovereignty_notes: |
   Shanghai AI Lab (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: aligned
+adjacent_to:
+  - helm
+  - hf-evaluate
+  - lighteval
+  - lm-evaluation-harness
+  - lmms-eval
+  - modelbench
+  - olmes
+  - simple-evals
+  - ultraeval
+  - unitxt

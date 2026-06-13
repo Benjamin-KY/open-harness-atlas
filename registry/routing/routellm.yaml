@@ -44,5 +44,12 @@ sovereignty_notes: |
   pair. Model-agnostic 5 — provider on both tiers is a config string.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - litellm
   - aisuite
+  - fastchat
+  - helicone
+  - litellm
+  - mlflow-ai-gateway
+  - new-api
+  - one-api
+  - portkey-gateway
+  - simonw-llm

@@ -19,3 +19,7 @@ model_agnostic_score: 4
 sovereignty_notes: |
   MLC-AI (Tianqi Chen) (US-based academic/research institution); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - exo
+  - shimmy
+  - web-llm

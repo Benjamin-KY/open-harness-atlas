@@ -40,5 +40,12 @@ sovereignty_notes: |
   model.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - agentdojo
+  - easyjailbreak
   - garak
+  - llm-guard
+  - open-prompt-injection
+  - pint-benchmark
+  - plexiglass
   - pyrit
+  - rebuff

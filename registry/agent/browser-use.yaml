@@ -19,3 +19,11 @@ model_agnostic_score: 4
 sovereignty_notes: |
   Browser Use AG (CH-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentlab
+  - browsergym
+  - openhands
+  - osworld
+  - theagentcompany
+  - ufo
+  - webarena

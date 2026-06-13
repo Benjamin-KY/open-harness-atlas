@@ -19,3 +19,13 @@ model_agnostic_score: 4
 sovereignty_notes: |
   Chao et al. (UPenn/CMU) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
+adjacent_to:
+  - autodan
+  - autodan-turbo
+  - cipherchat
+  - gptfuzz
+  - llm-adaptive-attacks
+  - llm-attacks-gcg
+  - nanogcg
+  - renellm
+  - tap-jailbreak

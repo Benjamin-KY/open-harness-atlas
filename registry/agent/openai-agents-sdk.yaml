@@ -42,6 +42,10 @@ sovereignty_notes: |
   format — non-OpenAI backends work but must implement that format.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - agno
+  - atomic-agents
   - claude-agent-sdk
+  - google-adk
   - pydanticai
+  - smolagents
   - strands

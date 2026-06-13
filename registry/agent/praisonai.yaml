@@ -19,3 +19,15 @@ model_agnostic_score: 5
 sovereignty_notes: |
   MervinPraison (independent maintainer, MY); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: aligned
+adjacent_to:
+  - ag2
+  - agentverse-openbmb
+  - autogen
+  - camel
+  - chatdev
+  - crewai
+  - metagpt
+  - openagents-xlang
+  - openmanus
+  - swarm-openai
+  - upsonic

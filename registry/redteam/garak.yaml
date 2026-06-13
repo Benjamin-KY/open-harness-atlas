@@ -45,5 +45,13 @@ sovereignty_notes: |
   against any target.
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - pyrit
+  - art-toolkit
+  - easyjailbreak
+  - llm-guard
+  - modelscan
+  - plexiglass
   - promptfoo
+  - promptmap
+  - purple-llama
+  - pyrit
+  - rebuff

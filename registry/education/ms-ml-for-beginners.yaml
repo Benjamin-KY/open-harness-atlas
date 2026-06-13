@@ -24,3 +24,8 @@ education_resources:
 sovereignty_notes: |
   Microsoft (US-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - microsoft-ai-agents-for-beginners
+  - ms-ai-for-beginners
+  - ms-data-science-for-beginners
+  - ms-generative-ai-for-beginners

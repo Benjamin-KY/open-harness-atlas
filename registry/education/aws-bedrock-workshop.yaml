@@ -24,3 +24,9 @@ education_resources:
 sovereignty_notes: |
   AWS Samples (US-incorporated company); OSS core is MIT-0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - anthropic-prompt-eng-tutorial
+  - gcp-generative-ai
+  - mistral-cookbook
+  - ms-phi-cookbook
+  - openai-cookbook

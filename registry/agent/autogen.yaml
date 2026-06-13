@@ -44,6 +44,18 @@ sovereignty_notes: |
   termination behaviour.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - ag2
+  - agency-swarm
+  - agentbench
+  - agentverse-openbmb
+  - camel
+  - chatdev
   - crewai
   - langgraph
+  - metagpt
+  - openagents-xlang
+  - openhands
+  - openmanus
+  - praisonai
   - smolagents
+  - swarm-openai

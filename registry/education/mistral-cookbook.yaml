@@ -24,3 +24,9 @@ education_resources:
 sovereignty_notes: |
   Mistral AI (FR-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - anthropic-prompt-eng-tutorial
+  - aws-bedrock-workshop
+  - gcp-generative-ai
+  - ms-phi-cookbook
+  - openai-cookbook

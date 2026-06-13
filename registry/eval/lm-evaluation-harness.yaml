@@ -46,4 +46,12 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - helm
+  - hf-evaluate
   - lighteval
+  - lmms-eval
+  - modelbench
+  - olmes
+  - opencompass
+  - simple-evals
+  - ultraeval
+  - unitxt

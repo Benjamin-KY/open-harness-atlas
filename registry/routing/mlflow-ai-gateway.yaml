@@ -19,3 +19,13 @@ model_agnostic_score: 5
 sovereignty_notes: |
   Databricks / Linux Foundation (US-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - aisuite
+  - fastchat
+  - helicone
+  - litellm
+  - new-api
+  - one-api
+  - portkey-gateway
+  - routellm
+  - simonw-llm

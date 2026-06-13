@@ -41,5 +41,7 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - deepeval
-  - ragas
   - garak
+  - inspect-ai
+  - openai-evals
+  - ragas

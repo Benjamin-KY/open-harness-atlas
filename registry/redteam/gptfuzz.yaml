@@ -19,3 +19,13 @@ model_agnostic_score: 4
 sovereignty_notes: |
   Jiahao Yu et al. (Northwestern) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
+adjacent_to:
+  - autodan
+  - autodan-turbo
+  - cipherchat
+  - llm-adaptive-attacks
+  - llm-attacks-gcg
+  - nanogcg
+  - pair-jailbreak
+  - renellm
+  - tap-jailbreak

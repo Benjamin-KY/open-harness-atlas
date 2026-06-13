@@ -44,5 +44,14 @@ sovereignty_notes: |
   benchmark task runs against any supported backend.
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - toolemu
+  - agent-attack
+  - agentic-radar
+  - bipia
+  - mimir
+  - open-prompt-injection
+  - pint-benchmark
+  - promptmap
+  - ps-fuzz
   - pyrit
+  - r-judge
+  - toolemu

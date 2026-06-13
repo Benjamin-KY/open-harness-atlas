@@ -42,5 +42,7 @@ sovereignty_notes: |
   independent by construction.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - deepmind-educational
   - karpathy-nn-zero-to-hero
+  - pytorch-tutorials
   - stanford-cs336

@@ -49,6 +49,19 @@ sovereignty_notes: |
   local model requires minor config and re-tuning of the judge prompt.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - nemo-guardrails
-  - guardrails-ai
+  - autodefense
+  - bipia
+  - circuit-breakers
+  - garak
   - granite-guardian
+  - guardrails-ai
+  - llm-guard
+  - nemo-guardrails
+  - open-prompt-injection
+  - promptinject
+  - promptmap
+  - safedecoding
+  - shieldlm
+  - smooth-llm
+  - vigil-llm
+  - wildguard

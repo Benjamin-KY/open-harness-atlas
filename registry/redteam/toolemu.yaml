@@ -47,5 +47,12 @@ sovereignty_notes: |
   to model capability.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - agent-attack
   - agentdojo
+  - agentic-radar
+  - bipia
+  - mimir
+  - open-prompt-injection
+  - ps-fuzz
   - pyrit
+  - r-judge

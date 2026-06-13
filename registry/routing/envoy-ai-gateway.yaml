@@ -41,5 +41,10 @@ sovereignty_notes: |
   outside that footprint other gateways are simpler.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - portkey-gateway
+  - apache-apisix
+  - apfel
+  - kgateway
+  - kong
   - litellm
+  - plano
+  - portkey-gateway

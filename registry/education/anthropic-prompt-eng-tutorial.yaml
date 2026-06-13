@@ -41,4 +41,10 @@ sovereignty_notes: |
   fronting any provider) with minor adapter work. Model-agnostic 3.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - aws-bedrock-workshop
+  - dair-prompt-engineering-guide
+  - gcp-generative-ai
+  - learn-prompting
+  - mistral-cookbook
+  - ms-phi-cookbook
   - openai-cookbook

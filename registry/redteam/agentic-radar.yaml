@@ -19,3 +19,12 @@ model_agnostic_score: 5
 sovereignty_notes: |
   SPLX AI (SI-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: aligned
+adjacent_to:
+  - agent-attack
+  - agentdojo
+  - bipia
+  - mimir
+  - open-prompt-injection
+  - ps-fuzz
+  - r-judge
+  - toolemu

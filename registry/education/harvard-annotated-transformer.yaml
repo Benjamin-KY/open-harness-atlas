@@ -24,3 +24,10 @@ education_resources:
 sovereignty_notes: |
   Harvard NLP (Sasha Rush) (US-based academic/research institution); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
 harness_paradigm_alignment: partial
+adjacent_to:
+  - karpathy-mingpt
+  - karpathy-nanogpt
+  - karpathy-nn-zero-to-hero
+  - labmlai-annotated-dl
+  - norvig-pytudes
+  - rasbt-llms-from-scratch

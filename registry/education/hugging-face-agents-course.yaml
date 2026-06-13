@@ -44,7 +44,12 @@ sovereignty_notes: |
   rotating across three frameworks is itself the lesson.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - microsoft-ai-agents-for-beginners
-  - smolagents
+  - hf-audio-transformers-course
+  - hf-deep-rl-class
+  - hf-diffusion-models-class
+  - hf-nlp-course
+  - hf-smol-course
   - langgraph
   - llama-index-agents
+  - microsoft-ai-agents-for-beginners
+  - smolagents

@@ -40,5 +40,12 @@ sovereignty_notes: |
   backend) is not yet guaranteed.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - fastchat
+  - helicone
   - litellm
+  - mlflow-ai-gateway
+  - new-api
+  - one-api
+  - portkey-gateway
   - routellm
+  - simonw-llm

@@ -41,5 +41,12 @@ sovereignty_notes: |
   metric family, not a Ragas-specific concern.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - ares
+  - arize-phoenix
+  - continuous-eval
   - deepeval
+  - factscore
+  - langfuse
   - promptfoo
+  - tonic-validate
+  - trulens

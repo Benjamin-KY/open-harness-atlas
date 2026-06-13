@@ -52,5 +52,8 @@ sovereignty_notes: |
   is self-contained.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - llm-guard
   - nemo-guardrails
+  - presidio
   - rebuff
+  - vigil-llm

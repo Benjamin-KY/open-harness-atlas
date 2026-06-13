@@ -43,5 +43,8 @@ sovereignty_notes: |
   metric definition is unchanged.
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ragas
+  - arize-phoenix
+  - inspect-ai
+  - openai-evals
   - promptfoo
+  - ragas

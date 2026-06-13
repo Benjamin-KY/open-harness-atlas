@@ -50,5 +50,7 @@ sovereignty_notes: |
   front of or behind any model backend without coupling.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - nemo-guardrails
   - guardrails-ai
+  - llm-guard
+  - nemo-guardrails
+  - vigil-llm

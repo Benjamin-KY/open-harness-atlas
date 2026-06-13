@@ -41,6 +41,10 @@ sovereignty_notes: |
   require explicit configuration.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - agno
+  - atomic-agents
   - claude-agent-sdk
+  - google-adk
   - openai-agents-sdk
   - pydanticai
+  - smolagents

@@ -49,5 +49,8 @@ sovereignty_notes: |
   string and the same task runs against any supported backend.
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - lm-evaluation-harness
+  - deepeval
   - helm
+  - lm-evaluation-harness
+  - openai-evals
+  - promptfoo

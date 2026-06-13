@@ -43,6 +43,11 @@ sovereignty_notes: |
   of why pinning to a single provider is a sovereignty risk.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - openai-agents-sdk
-  - strands
+  - agno
+  - atomic-agents
+  - google-adk
   - litellm
+  - openai-agents-sdk
+  - pydanticai
+  - smolagents
+  - strands

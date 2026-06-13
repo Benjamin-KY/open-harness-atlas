@@ -53,6 +53,9 @@ sovereignty_notes: |
   whichever inference backend the operator chooses.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - nemo-guardrails
+  - detoxify
   - guardrails-ai
+  - nemo-guardrails
   - rebuff
+  - shieldlm
+  - wildguard

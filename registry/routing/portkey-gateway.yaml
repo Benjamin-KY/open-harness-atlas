@@ -40,5 +40,13 @@ sovereignty_notes: |
   local backends transparently to the calling application.
 harness_paradigm_alignment: partial
 adjacent_to:
-  - litellm
+  - aisuite
   - envoy-ai-gateway
+  - fastchat
+  - helicone
+  - litellm
+  - mlflow-ai-gateway
+  - new-api
+  - one-api
+  - routellm
+  - simonw-llm
