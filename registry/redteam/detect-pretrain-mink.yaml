@@ -1,0 +1,26 @@
+id: detect-pretrain-mink
+name: Detecting Pretraining Data / Min-K% Prob
+category: redteam
+subcategory: privacy-membership-inference
+repo_url: https://github.com/swj0419/detect-pretrain-code
+license: Apache-2.0
+primary_language: Python
+tagline: 'Min-K% Prob membership inference attack on LLMs; determines if text was in pretraining data; WikiMIA/BookMIA benchmarks included'
+description: |
+  Detecting Pretraining Data / Min-K% Prob is Weijia Shi et al. (UW / Princeton / Google)'s min-K% Prob membership inference attack on LLMs; determines if text was in pretraining data; WikiMIA/BookMIA benchmarks included. Black-box MIA without reference model; works against GPT-4 via API; dynamic WikiMIA benchmark; complements mimir (already in list) with simpler API interface..
+
+  In the atlas: Detecting Pretraining Data / Min-K% Prob is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: Weijia Shi et al. (UW / Princeton / Google)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Weijia Shi et al. (UW / Princeton / Google) (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - backdoor-llm
+  - easyedit-knowledge-attacks
+  - modelscan
+  - purple-llama

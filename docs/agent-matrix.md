@@ -6,13 +6,17 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Lang | Maturity | Origin | Model-agnostic | Stars | Maintainer |
 |---|---|---|---|---|---|---|---|
+| [Adala — Autonomous Data (Labeling) Agents](https://github.com/HumanSignal/Adala) | Apache-2.0 | Python | beta | US | 4/5 | — | HumanSignal (Label Studio makers) |
 | [AG2](https://github.com/ag2ai/ag2) | Apache-2.0 | Python | beta | US | 4/5 | — | ag2ai community |
 | [Agency Swarm](https://github.com/VRSEN/agency-swarm) | MIT | Python | ga | UA | 4/5 | — | VRSEN |
+| [AgentBench](https://github.com/THUDM/AgentBench) | Apache-2.0 | Python | beta | CN | 4/5 | — | THUDM (Tsinghua KEG Group) |
 | [AgentFlow](https://github.com/lupantech/agentflow) | MIT | Python | alpha | US | 4/5 | — | Stanford research |
 | [AgentForge](https://github.com/DataBassGit/AgentForge) | GPL-3.0 | Python | alpha | US | 4/5 | — | DataBassGit |
 | [AgentGPT](https://github.com/reworkd/AgentGPT) | MIT | TypeScript | beta | US | 4/5 | — | Reworkd |
 | [AgentLab](https://github.com/ServiceNow/AgentLab) | Apache-2.0 | Python | beta | US | 4/5 | — | ServiceNow Research |
+| [AgentLite](https://github.com/SalesforceAIResearch/AgentLite) | Apache-2.0 | Python | beta | US | 4/5 | — | Salesforce AI Research |
 | [AgentScope](https://github.com/agentscope-ai/agentscope) | Apache-2.0 | Python | ga | CN | 4/5 | — | Alibaba DAMO |
+| [AgentSims](https://github.com/py499372727/AgentSims) | MIT | Python | beta | CN | 4/5 | — | Haoran et al. (arXiv 2308.04026) |
 | [AgentVerse](https://github.com/OpenBMB/AgentVerse) | Apache-2.0 | Python | beta | CN | 4/5 | — | Tsinghua / OpenBMB |
 | [AGiXT](https://github.com/Josh-XT/AGiXT) | MIT | Python | beta | US | 5/5 | — | Josh-XT |
 | [Agno](https://github.com/agno-agi/agno) | Apache-2.0 | Python | ga | US | 5/5 | — | Agno AGI (ex-phidata) |
@@ -21,9 +25,11 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AutoGen](https://github.com/microsoft/autogen) | MIT | Python | ga | US | 4/5 | — | Microsoft Research |
 | [BabyAGI](https://github.com/yoheinakajima/babyagi) | MIT | Python | alpha | US | 4/5 | — | yoheinakajima |
 | [BeeAI Framework](https://github.com/i-am-bee/beeai-framework) | Apache-2.0 | Python | ga | US | 4/5 | — | IBM / Linux Foundation |
+| [BMTools](https://github.com/OpenBMB/BMTools) | Apache-2.0 | Python | beta | CN | 4/5 | — | OpenBMB (Tsinghua / THUNLP) |
 | [Browser Use](https://github.com/browser-use/browser-use) | MIT | Python | beta | CH | 4/5 | — | Browser Use AG |
 | [CAMEL](https://github.com/camel-ai/camel) | Apache-2.0 | Python | ga | US | 4/5 | — | CAMEL-AI community |
 | [ChatDev](https://github.com/OpenBMB/ChatDev) | Apache-2.0 | Python | ga | CN | 4/5 | — | Tsinghua / OpenBMB |
+| [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) | MIT | Python | beta | CH | 4/5 | — | Andres M. Bran et al. (White Lab / EPFL) |
 | [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) | MIT | Python | ga | US | 1/5 | — | Anthropic |
 | [CopilotKit](https://github.com/CopilotKit/CopilotKit) | MIT | TypeScript | ga | US | 4/5 | — | CopilotKit Inc. |
 | [CrewAI](https://github.com/crewAIInc/crewAI) | MIT | Python | ga | US | 3/5 | — | CrewAI Inc. |
@@ -33,15 +39,22 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Eidolon](https://github.com/eidolon-ai/eidolon) | Apache-2.0 | Python | beta | US | 4/5 | — | Eidolon AI |
 | [FastAgency](https://github.com/ag2ai/fastagency) | Apache-2.0 | Python | beta | US | 4/5 | — | ag2ai community |
 | [Flowise](https://github.com/FlowiseAI/Flowise) | Apache-2.0 | TypeScript | ga | US | 5/5 | — | FlowiseAI |
+| [Generative Agents (Stanford)](https://github.com/joonspk-research/generative_agents) | Apache-2.0 | Python | beta | US | 4/5 | — | Joon Sung Park et al. (Stanford) |
 | [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) | Apache-2.0 | Python | beta | US | 2/5 | — | Google |
+| [Gorilla LLM](https://github.com/gorilla-llm/gorilla) | Apache-2.0 | Python | ga | US | 4/5 | — | Shishir G. Patil et al. (UC Berkeley Sky Computing) |
 | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | MIT | Python | ga | IL | 4/5 | — | assafelovic |
+| [Griptape](https://github.com/griptape-ai/griptape) | Apache-2.0 | Python | ga | US | 4/5 | — | Griptape AI (Foundry) |
 | [Haystack](https://github.com/deepset-ai/haystack) | Apache-2.0 | Python | ga | DE | 4/5 | — | deepset |
+| [HuggingGPT / JARVIS](https://github.com/microsoft/JARVIS) | MIT | Python | beta | CN | 5/5 | — | Microsoft Research Asia |
+| [iX — Autonomous GPT-4 Agent Platform](https://github.com/kreneskyp/ix) | MIT | Python | beta | US | 4/5 | — | Peter Krenesky |
 | [Julep](https://github.com/julep-ai/julep) | Apache-2.0 | Python | beta | IN | 4/5 | — | Julep AI |
 | [Langflow](https://github.com/langflow-ai/langflow) | MIT | Python | ga | US | 4/5 | — | DataStax |
 | [LangGraph](https://github.com/langchain-ai/langgraph) | MIT | Python | ga | US | 4/5 | — | LangChain Inc. |
 | [Letta](https://github.com/letta-ai/letta) | Apache-2.0 | Python | ga | US | 4/5 | — | Letta AI |
 | [LlamaIndex Agents](https://github.com/run-llama/llama_index) | MIT | Python | ga | US | 4/5 | — | LlamaIndex (Run-LLaMA Inc.) |
+| [LLMCompiler](https://github.com/SqueezeAILab/LLMCompiler) | MIT | Python | beta | US | 4/5 | — | Sehoon Kim et al. (UC Berkeley SqueezeAI Lab) |
 | [Mastra](https://github.com/mastra-ai/mastra) | Apache-2.0 | TypeScript | beta | US | 4/5 | — | Mastra AI |
+| [Mem0 (formerly Embedchain)](https://github.com/mem0ai/mem0) | Apache-2.0 | Python | ga | US | 4/5 | — | Mem0 AI (YC S24) |
 | [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | MIT | Python | ga | CN | 4/5 | — | FoundationAgents (ex-DeepWisdom) |
 | [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | MIT | C# | beta | US | 4/5 | — | Microsoft |
 | [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | MIT | Python | ga | US | 4/5 | — | Princeton + Stanford |
@@ -54,6 +67,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [OpenManus](https://github.com/FoundationAgents/OpenManus) | MIT | Python | beta | CN | 4/5 | — | FoundationAgents community |
 | [PraisonAI](https://github.com/MervinPraison/PraisonAI) | MIT | Python | ga | MY | 5/5 | — | MervinPraison |
 | [PydanticAI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | GB | 4/5 | — | Pydantic Services Inc. |
+| [RD-Agent (Research & Development Agent)](https://github.com/microsoft/RD-Agent) | MIT | Python | beta | US | 4/5 | — | Microsoft Research |
 | [Rivet](https://github.com/Ironclad/rivet) | MIT | TypeScript | ga | US | 4/5 | — | Ironclad Inc. |
 | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | MIT | Python | ga | US | 4/5 | — | Microsoft |
 | [smolagents](https://github.com/huggingface/smolagents) | Apache-2.0 | Python | beta | US | 4/5 | — | Hugging Face |
@@ -63,10 +77,13 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Swarm (OpenAI)](https://github.com/openai/swarm) | MIT | Python | beta | US | 4/5 | — | OpenAI |
 | [SWE-agent](https://github.com/SWE-agent/SWE-agent) | MIT | Python | ga | US | 4/5 | — | Princeton + Stanford |
 | [Tambo](https://github.com/tambo-ai/tambo) | MIT | TypeScript | beta | US | 4/5 | — | Tambo AI |
+| [Tarsier](https://github.com/reworkd/tarsier) | MIT | Python | beta | US | 4/5 | — | Reworkd AI |
 | [TaskWeaver](https://github.com/microsoft/TaskWeaver) | MIT | Python | beta | US | 4/5 | — | Microsoft Research |
+| [ToolBench / ToolLLM](https://github.com/OpenBMB/ToolBench) | Apache-2.0 | Python | beta | CN | 4/5 | — | OpenBMB / Tsinghua KEG |
 | [UFO/UFO3 Galaxy](https://github.com/microsoft/UFO) | MIT | Python | ga | US | 4/5 | — | Microsoft Research |
 | [Upsonic](https://github.com/upsonic/upsonic) | MIT | Python | beta | TR | 4/5 | — | Upsonic community |
 | [Voyager](https://github.com/MineDojo/Voyager) | MIT | Python | beta | US | 4/5 | — | CMU + NVIDIA research |
+| [WebVoyager](https://github.com/MinorJerry/WebVoyager) | Apache-2.0 | Python | beta | CN | 4/5 | — | Hongliang He et al. (Zhejiang University / Tencent) |
 | [XAgent](https://github.com/OpenBMB/XAgent) | Apache-2.0 | Python | beta | CN | 4/5 | — | Tsinghua / OpenBMB |
 
 _Generated from `registry/agent/*.yaml` (+ `registry/_metadata/*.json` if present). Run `python scripts/build_matrices.py` to refresh._

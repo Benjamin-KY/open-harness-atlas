@@ -40,12 +40,23 @@ sovereignty_notes: |
   more deeply with OpenAI-format calls than with other providers.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - agentops
   - aisuite
+  - arize-phoenix
   - fastchat
+  - langfuse
+  - langkit
+  - langtrace
+  - langwatch
   - litellm
   - mlflow-ai-gateway
   - new-api
   - one-api
+  - openlit
+  - openllmetry
+  - opik
   - portkey-gateway
   - routellm
   - simonw-llm
+  - tokencost
+  - trulens

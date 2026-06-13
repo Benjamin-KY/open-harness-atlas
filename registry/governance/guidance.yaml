@@ -26,10 +26,17 @@ sovereignty_notes: |
   Microsoft / guidance-ai (community-maintained, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - baml
   - dspy
+  - funcchain
   - instructor
+  - jsonformer
+  - lm-format-enforcer
   - lmql
+  - magentic
+  - marvin
   - mirascope
   - outlines
   - taskweaver
   - typechat
+  - xgrammar

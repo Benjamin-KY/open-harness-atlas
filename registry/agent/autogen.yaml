@@ -47,15 +47,26 @@ adjacent_to:
   - ag2
   - agency-swarm
   - agentbench
+  - agentbench-thudm
+  - agentlite-salesforce
   - agentverse-openbmb
+  - babyagi
+  - bfcl
   - camel
   - chatdev
   - crewai
+  - gorilla-api-llm
+  - griptape-framework
+  - ix-autonomous-agent
   - langgraph
+  - llmcompiler-parallel
   - metagpt
   - openagents-xlang
   - openhands
   - openmanus
   - praisonai
+  - rd-agent-microsoft
   - smolagents
+  - superagi
   - swarm-openai
+  - toolbench-tool-learning

@@ -1,0 +1,26 @@
+id: finben
+name: FinBen / PIXIU
+category: eval
+subcategory: domain-finance
+repo_url: https://github.com/The-FinAI/PIXIU
+license: MIT
+primary_language: Python
+tagline: 'Financial LLM evaluation framework (FinBen) covering 35+ NLP tasks: sentiment, NER, relation extraction, QA, stock prediction, and credit scoring'
+description: |
+  FinBen / PIXIU is The FinAI Consortium (multi-institution)'s financial LLM evaluation framework (FinBen) covering 35+ NLP tasks: sentiment, NER, relation extraction, QA, stock prediction, and credit scoring. Most comprehensive open finance benchmark suite; 35 tasks across 23 datasets with automated evaluation; no other registry entry covers financial NLP..
+
+  In the atlas: FinBen / PIXIU is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: institution
+  name: The FinAI Consortium (multi-institution)
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  The FinAI Consortium (multi-institution) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - cmb
+  - helm
+  - legalbench
+  - medqa

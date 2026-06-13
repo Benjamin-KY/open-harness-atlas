@@ -1,0 +1,31 @@
+id: toolbench-tool-learning
+name: ToolBench / ToolLLM
+category: agent
+subcategory: tool-calling-training
+repo_url: https://github.com/OpenBMB/ToolBench
+license: Apache-2.0
+primary_language: Python
+tagline: '16,464 real-world REST API dataset with DFSDT annotation pipeline; trains ToolLLaMA to match ChatGPT-level tool-use on 100k+ instruction-tuning samples'
+description: |
+  ToolBench / ToolLLM is OpenBMB / Tsinghua KEG's 16,464 real-world rest api dataset with dfsdt annotation pipeline; trains toolllama to match chatgpt-level tool-use on 100k+ instruction-tuning samples. ACL 2024; depth-first search decision tree annotation; RapidAPI live server; ToolEval harness; ToolLLaMA-2-7b-v2 models released; StableToolBench fork maintained..
+
+  In the atlas: ToolBench / ToolLLM is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: institution
+  name: OpenBMB / Tsinghua KEG
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  OpenBMB / Tsinghua KEG (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentbench
+  - agentbench-thudm
+  - autogen
+  - bfcl
+  - bmtools-tool-platform
+  - gorilla-api-llm
+  - hugginggpt-jarvis
+  - openhands
+  - toolbench

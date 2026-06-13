@@ -1,0 +1,39 @@
+id: marvin
+name: Marvin
+category: governance
+subcategory: structured-output
+repo_url: https://github.com/PrefectHQ/marvin
+license: Apache-2.0
+primary_language: Python
+tagline: 'Python framework for structured LLM outputs (extract, cast, classify, generate) with task-centric agentic orchestration'
+description: |
+  Marvin is Prefect Technologies's python framework for structured LLM outputs (extract, cast, classify, generate) with task-centric agentic orchestration. Unique cast/extract/classify/generate function family abstracts LLM calls into typed Python operations; v3 adds Tasks + Agents + Thread orchestration from ControlFlow; broader than instructor (extraction only) or outlines (generation only)..
+
+  In the atlas: Marvin is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: company
+  name: Prefect Technologies
+origin_country: US
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: partial
+  output_contract: native
+  audit_log_fsm: none
+sovereignty_notes: |
+  Prefect Technologies (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - baml
+  - funcchain
+  - guidance
+  - instructor
+  - jsonformer
+  - lm-format-enforcer
+  - lmql
+  - magentic
+  - outlines
+  - typechat
+  - xgrammar

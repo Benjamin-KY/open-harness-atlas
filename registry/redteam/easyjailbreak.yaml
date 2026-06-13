@@ -21,13 +21,18 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - art-toolkit
+  - circuit-breakers
   - do-not-answer
   - garak
   - harmbench
   - jailbreak-evaluation
+  - jailbreak-hub
   - jailbreakbench
+  - llm-jailbreaking-defense
   - plexiglass
   - promptmap
   - pyrit
+  - safedecoding
   - safetybench
+  - smooth-llm
   - wmdp

@@ -26,7 +26,14 @@ sovereignty_notes: |
   ETH Zurich (CH-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - baml
+  - funcchain
   - guidance
   - instructor
+  - jsonformer
+  - lm-format-enforcer
+  - magentic
+  - marvin
   - outlines
   - typechat
+  - xgrammar

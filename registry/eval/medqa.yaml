@@ -1,0 +1,26 @@
+id: medqa
+name: MedQA (USMLE)
+category: eval
+subcategory: domain-medical
+repo_url: https://github.com/jind11/MedQA
+license: MIT
+primary_language: Python
+tagline: 'Open-domain medical QA from real-world USMLE, Chinese, and Taiwan medical licensing exams; 12K+ English questions with free-text and multiple-choice formats'
+description: |
+  MedQA (USMLE) is Di Jin (MIT)'s open-domain medical QA from real-world USMLE, Chinese, and Taiwan medical licensing exams; 12K+ English questions with free-text and multiple-choice formats. Multi-national medical exam source (US + China + Taiwan); includes textbook retrieval baselines; the primary clinical QA benchmark in the field..
+
+  In the atlas: MedQA (USMLE) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: individual
+  name: Di Jin (MIT)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Di Jin (MIT) (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - cmb
+  - finben
+  - helm
+  - legalbench

@@ -1,0 +1,29 @@
+id: long-form-factuality
+name: Long-Form Factuality / SAFE
+category: eval
+subcategory: llm-judge
+repo_url: https://github.com/google-deepmind/long-form-factuality
+license: Apache-2.0
+primary_language: Python
+tagline: 'SAFE (Search-Augmented Factuality Evaluator) automatically decomposes long-form responses into atomic claims verified via Google Search'
+description: |
+  Long-Form Factuality / SAFE is Google DeepMind's sAFE (Search-Augmented Factuality Evaluator) automatically decomposes long-form responses into atomic claims verified via Google Search. Search-grounded factuality evaluation at sentence-claim granularity; introduces F1@K metric extending precision/recall to long-form outputs; distinct from FActScore..
+
+  In the atlas: Long-Form Factuality / SAFE is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: company
+  name: Google DeepMind
+origin_country: GB
+model_agnostic_score: 4
+sovereignty_notes: |
+  Google DeepMind (GB-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - arena-hard-auto
+  - flow-judge
+  - judgelm
+  - mt-bench
+  - pandalm
+  - prometheus-eval
+  - rewardbench

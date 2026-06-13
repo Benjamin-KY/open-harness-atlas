@@ -47,13 +47,22 @@ sovereignty_notes: |
   specific provider tool-call dialects.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - agentlite-salesforce
   - agentscope
   - atomic-agents
   - autogen
+  - babyagi
   - beeai-framework
+  - crewai
+  - griptape-framework
   - haystack
+  - ix-autonomous-agent
   - llama-index-agents
+  - llmcompiler-parallel
   - mastra
+  - metagpt
   - microsoft-agent-framework
   - pydanticai
+  - rd-agent-microsoft
   - semantic-kernel
+  - superagi

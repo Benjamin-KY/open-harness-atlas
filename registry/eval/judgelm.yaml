@@ -1,0 +1,29 @@
+id: judgelm
+name: JudgeLM
+category: eval
+subcategory: llm-judge
+repo_url: https://github.com/baaivision/JudgeLM
+license: Apache-2.0
+primary_language: Python
+tagline: 'Fine-tuned 7B/13B/33B LLM judges trained on 100K question-answer pairs with reference answers; supports both single and pairwise evaluation modes'
+description: |
+  JudgeLM is BAAI (Beijing Academy of AI)'s fine-tuned 7B/13B/33B LLM judges trained on 100K question-answer pairs with reference answers; supports both single and pairwise evaluation modes. Scales judge capacity via larger 33B model; includes bias analysis (position, knowledge, format) and reference-answer conditioning absent in PandaLM..
+
+  In the atlas: JudgeLM is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: institution
+  name: BAAI (Beijing Academy of AI)
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  BAAI (Beijing Academy of AI) (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - arena-hard-auto
+  - flow-judge
+  - long-form-factuality
+  - mt-bench
+  - pandalm
+  - prometheus-eval
+  - rewardbench

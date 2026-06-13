@@ -1,0 +1,28 @@
+id: agentbench-thudm
+name: AgentBench
+category: agent
+subcategory: llm-agent-benchmark
+repo_url: https://github.com/THUDM/AgentBench
+license: Apache-2.0
+primary_language: Python
+tagline: 'Multi-environment LLM-as-agent benchmark: OS, DB, knowledge graph, card games, WebShop, AlfWorld; Docker-based deployment; FC (function-calling) version available'
+description: |
+  AgentBench is THUDM (Tsinghua KEG Group)'s multi-environment LLM-as-agent benchmark: OS, DB, knowledge graph, card games, WebShop, AlfWorld; Docker-based deployment; FC (function-calling) version available. ICLR 2024; first systematic multi-environment agent eval; Docker Compose setup; 17 LMMs evaluated in VisualAgentBench extension; public leaderboard maintained..
+
+  In the atlas: AgentBench is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: institution
+  name: THUDM (Tsinghua KEG Group)
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  THUDM (Tsinghua KEG Group) (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentbench
+  - autogen
+  - bfcl
+  - gorilla-api-llm
+  - openhands
+  - toolbench-tool-learning

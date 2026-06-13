@@ -24,8 +24,11 @@ adjacent_to:
   - hf-evaluate
   - lighteval
   - lm-evaluation-harness
+  - mmmu
   - olmes
   - opencompass
+  - scienceqa
   - simple-evals
   - ultraeval
   - unitxt
+  - vlmeval-kit

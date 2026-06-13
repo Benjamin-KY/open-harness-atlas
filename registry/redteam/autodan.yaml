@@ -21,11 +21,14 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - autodan-turbo
+  - autoprompt-calibration
   - cipherchat
+  - deep-inception
   - gptfuzz
   - llm-adaptive-attacks
   - llm-attacks-gcg
   - nanogcg
   - pair-jailbreak
+  - rain-self-alignment
   - renellm
   - tap-jailbreak

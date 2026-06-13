@@ -20,8 +20,11 @@ sovereignty_notes: |
   Stanford FutureData (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - beir
   - continuous-eval
   - factscore
+  - mteb
   - ragas
+  - ragchecker
   - tonic-validate
   - trulens

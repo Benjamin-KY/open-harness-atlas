@@ -48,11 +48,15 @@ sovereignty_notes: |
   (e.g., logprob access) that not every backend exposes uniformly.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - cmb
+  - finben
   - hf-evaluate
   - inspect-ai
+  - legalbench
   - lighteval
   - lm-evaluation-harness
   - lmms-eval
+  - medqa
   - modelbench
   - olmes
   - opencompass

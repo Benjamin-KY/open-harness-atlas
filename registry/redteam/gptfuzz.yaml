@@ -22,10 +22,13 @@ harness_paradigm_alignment: aligned
 adjacent_to:
   - autodan
   - autodan-turbo
+  - autoprompt-calibration
   - cipherchat
+  - deep-inception
   - llm-adaptive-attacks
   - llm-attacks-gcg
   - nanogcg
   - pair-jailbreak
+  - rain-self-alignment
   - renellm
   - tap-jailbreak

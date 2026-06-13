@@ -21,7 +21,13 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - flask
+  - gpqa
   - legalbench
+  - lm-evaluation-harness
+  - math
+  - mathbench
   - mmlu-pro
   - mteb
+  - musr
+  - opencompass
   - truthfulqa

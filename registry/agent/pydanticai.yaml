@@ -42,8 +42,10 @@ harness_paradigm_alignment: partial
 adjacent_to:
   - agno
   - atomic-agents
+  - baml
   - claude-agent-sdk
   - google-adk
+  - instructor
   - langgraph
   - openai-agents-sdk
   - smolagents

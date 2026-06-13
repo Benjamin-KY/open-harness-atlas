@@ -1,0 +1,32 @@
+id: deep-inception
+name: DeepInception
+category: redteam
+subcategory: jailbreak-nested
+repo_url: https://github.com/tmlr-group/DeepInception
+license: MIT
+primary_language: Python
+tagline: 'Lightweight jailbreak via recursive nested-scene "hypnosis" requiring no gradient access; works on GPT-3.5/4, LLaMA-2, Falcon'
+description: |
+  DeepInception is TMLR Group (multiple authors, PKU/Tsinghua)'s lightweight jailbreak via recursive nested-scene "hypnosis" requiring no gradient access; works on GPT-3.5/4, LLaMA-2, Falcon. Single-prompt attack using personification + nested dream layers; no optimization loop; continuous multi-turn jailbreak capability demonstrated across 5 closed/open models..
+
+  In the atlas: DeepInception is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: TMLR Group (multiple authors, PKU/Tsinghua)
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  TMLR Group (multiple authors, PKU/Tsinghua) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - autodan
+  - autoprompt-calibration
+  - gptfuzz
+  - llm-attacks-gcg
+  - llm-guard
+  - pair-jailbreak
+  - rain-self-alignment
+  - rebuff
+  - renellm
+  - tap-jailbreak

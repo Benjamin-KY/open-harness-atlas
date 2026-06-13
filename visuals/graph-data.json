@@ -1,27 +1,27 @@
 {
   "meta": {
-    "n_nodes": 236,
-    "n_edges": 738,
+    "n_nodes": 313,
+    "n_edges": 1224,
     "categories": [
       {
         "key": "governance",
         "color": "#1f3a5f",
-        "count": 28
+        "count": 46
       },
       {
         "key": "agent",
         "color": "#d68910",
-        "count": 62
+        "count": 79
       },
       {
         "key": "eval",
         "color": "#28a745",
-        "count": 45
+        "count": 76
       },
       {
         "key": "redteam",
         "color": "#c0392b",
-        "count": 33
+        "count": 44
       },
       {
         "key": "routing",
@@ -36,6 +36,16 @@
     ]
   },
   "nodes": [
+    {
+      "id": "adala-data-agents",
+      "name": "Adala \u2014 Autonomous Data (Labeling) Agents",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/HumanSignal/Adala",
+      "tagline": "Agents that autonomously learn data-labeling skills from ground truth, iterate via reflection, and apply learned skills across runtime LLMs",
+      "degree": 2,
+      "mas": 4
+    },
     {
       "id": "ag2",
       "name": "AG2",
@@ -54,6 +64,16 @@
       "url": "https://github.com/VRSEN/agency-swarm",
       "tagline": "Role-based multi-agent system extending OpenAI Agents SDK with org-chart communication protocols",
       "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "agentbench-thudm",
+      "name": "AgentBench",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/THUDM/AgentBench",
+      "tagline": "Multi-environment LLM-as-agent benchmark: OS, DB, knowledge graph, card games, WebShop, AlfWorld; Docker-based deployment; FC (function-calling) version available",
+      "degree": 6,
       "mas": 4
     },
     {
@@ -97,6 +117,16 @@
       "mas": 4
     },
     {
+      "id": "agentlite-salesforce",
+      "name": "AgentLite",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/SalesforceAIResearch/AgentLite",
+      "tagline": "Lightweight research library for task-oriented LLM agents with manager-based multi-agent orchestration and minimal abstraction layers",
+      "degree": 10,
+      "mas": 4
+    },
+    {
       "id": "agentscope",
       "name": "AgentScope",
       "category": "agent",
@@ -107,13 +137,23 @@
       "mas": 4
     },
     {
+      "id": "agentsims-sandbox",
+      "name": "AgentSims",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/py499372727/AgentSims",
+      "tagline": "Open-source task-based evaluation sandbox for LLMs with GUI builder; agents interact in an environment with buildings and custom evaluation tasks",
+      "degree": 4,
+      "mas": 4
+    },
+    {
       "id": "agentverse-openbmb",
       "name": "AgentVerse",
       "category": "agent",
       "color": "#d68910",
       "url": "https://github.com/OpenBMB/AgentVerse",
       "tagline": "Multi-agent simulation and task-solving framework with task-oriented and simulation operating modes",
-      "degree": 10,
+      "degree": 12,
       "mas": 4
     },
     {
@@ -163,7 +203,7 @@
       "color": "#d68910",
       "url": "https://github.com/microsoft/autogen",
       "tagline": "Microsoft Research's multi-agent conversation framework \u2014 agents talk to each other to solve tasks.",
-      "degree": 15,
+      "degree": 26,
       "mas": 4
     },
     {
@@ -173,7 +213,7 @@
       "color": "#d68910",
       "url": "https://github.com/yoheinakajima/babyagi",
       "tagline": "Self-building autonomous agent that stores function definitions and iteratively invents new tools",
-      "degree": 4,
+      "degree": 13,
       "mas": 4
     },
     {
@@ -187,13 +227,23 @@
       "mas": 4
     },
     {
+      "id": "bmtools-tool-platform",
+      "name": "BMTools",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/OpenBMB/BMTools",
+      "tagline": "Community platform for extending LLMs with tools via Python functions or ChatGPT plugin format; precursor to XAgent and ToolBench",
+      "degree": 4,
+      "mas": 4
+    },
+    {
       "id": "browser-use",
       "name": "Browser Use",
       "category": "agent",
       "color": "#d68910",
       "url": "https://github.com/browser-use/browser-use",
       "tagline": "LLM-driven browser automation with Playwright; SOTA on WebVoyager",
-      "degree": 7,
+      "degree": 10,
       "mas": 4
     },
     {
@@ -203,7 +253,7 @@
       "color": "#d68910",
       "url": "https://github.com/camel-ai/camel",
       "tagline": "Communicative role-playing multi-agent framework for scaling law research and agent interaction",
-      "degree": 10,
+      "degree": 12,
       "mas": 4
     },
     {
@@ -213,7 +263,17 @@
       "color": "#d68910",
       "url": "https://github.com/OpenBMB/ChatDev",
       "tagline": "Multi-agent virtual software company v2.0 for end-to-end zero-code application development",
-      "degree": 12,
+      "degree": 14,
+      "mas": 4
+    },
+    {
+      "id": "chemcrow-science-agent",
+      "name": "ChemCrow",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/ur-whitelab/chemcrow-public",
+      "tagline": "Chemistry-specialized LLM agent with RDKit, PubChem, Chemspace, paper-qa tools; solves complex organic synthesis and chemical reasoning tasks",
+      "degree": 3,
       "mas": 4
     },
     {
@@ -243,7 +303,7 @@
       "color": "#d68910",
       "url": "https://github.com/crewAIInc/crewAI",
       "tagline": "Role-based multi-agent orchestration \u2014 Agents with goals and roles execute Tasks within a Crew.",
-      "degree": 12,
+      "degree": 19,
       "mas": 3
     },
     {
@@ -307,6 +367,16 @@
       "mas": 5
     },
     {
+      "id": "generative-agents-stanford",
+      "name": "Generative Agents (Stanford)",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/joonspk-research/generative_agents",
+      "tagline": "Reference implementation of interactive human-behavior simulacra (\"Smallville\"); 25 agents with memory, reflection, planning in a town environment",
+      "degree": 4,
+      "mas": 4
+    },
+    {
       "id": "google-adk",
       "name": "Google Agent Development Kit (ADK)",
       "category": "agent",
@@ -317,13 +387,33 @@
       "mas": 2
     },
     {
+      "id": "gorilla-api-llm",
+      "name": "Gorilla LLM",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/gorilla-llm/gorilla",
+      "tagline": "LLM fine-tuned on 1,600+ HuggingFace/Torch/TF APIs; Berkeley Function Calling Leaderboard; GoEx runtime for undo/damage-containment of LLM-generated actions",
+      "degree": 9,
+      "mas": 4
+    },
+    {
       "id": "gpt-researcher",
       "name": "GPT Researcher",
       "category": "agent",
       "color": "#d68910",
       "url": "https://github.com/assafelovic/gpt-researcher",
       "tagline": "Autonomous research agent producing long-form reports from 20+ web sources with planner/executor pattern",
-      "degree": 2,
+      "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "griptape-framework",
+      "name": "Griptape",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/griptape-ai/griptape",
+      "tagline": "Modular Python framework for genAI apps: Agents, Pipelines, Workflows; rich driver ecosystem for LLMs, vector stores, web scraping, observability",
+      "degree": 10,
       "mas": 4
     },
     {
@@ -334,6 +424,26 @@
       "url": "https://github.com/deepset-ai/haystack",
       "tagline": "Modular pipeline orchestration for LLM apps with RAG, agent tools, and streaming support",
       "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "hugginggpt-jarvis",
+      "name": "HuggingGPT / JARVIS",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/microsoft/JARVIS",
+      "tagline": "LLM orchestrates 100+ HuggingFace expert models for AI tasks; task planning \u2192 model selection \u2192 execution \u2192 response generation pipeline",
+      "degree": 4,
+      "mas": 5
+    },
+    {
+      "id": "ix-autonomous-agent",
+      "name": "iX \u2014 Autonomous GPT-4 Agent Platform",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/kreneskyp/ix",
+      "tagline": "No-code visual graph editor for designing and deploying autonomous LLM agents with Celery-based parallel workers; supports multi-agent chat rooms",
+      "degree": 10,
       "mas": 4
     },
     {
@@ -363,7 +473,7 @@
       "color": "#d68910",
       "url": "https://github.com/langchain-ai/langgraph",
       "tagline": "Stateful, controllable agents as explicit graphs of nodes and edges \u2014 checkpointing and time-travel built in.",
-      "degree": 12,
+      "degree": 20,
       "mas": 4
     },
     {
@@ -373,7 +483,7 @@
       "color": "#d68910",
       "url": "https://github.com/letta-ai/letta",
       "tagline": "Stateful long-running agents with self-editing memory blocks, message queues, REST API",
-      "degree": 1,
+      "degree": 3,
       "mas": 4
     },
     {
@@ -387,6 +497,16 @@
       "mas": 4
     },
     {
+      "id": "llmcompiler-parallel",
+      "name": "LLMCompiler",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/SqueezeAILab/LLMCompiler",
+      "tagline": "Orchestrates parallel LLM function calls via a task-graph planner; reduces latency and cost vs. sequential ReAct; integrated with LangGraph/LlamaIndex",
+      "degree": 10,
+      "mas": 4
+    },
+    {
       "id": "mastra",
       "name": "Mastra",
       "category": "agent",
@@ -397,13 +517,23 @@
       "mas": 4
     },
     {
+      "id": "mem0-memory-layer",
+      "name": "Mem0 (formerly Embedchain)",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/mem0ai/mem0",
+      "tagline": "Intelligent memory layer for AI agents; multi-level user/session/agent state with semantic + BM25 + entity retrieval; 91.6 on LoCoMo benchmark (Apr 2026)",
+      "degree": 2,
+      "mas": 4
+    },
+    {
       "id": "metagpt",
       "name": "MetaGPT",
       "category": "agent",
       "color": "#d68910",
       "url": "https://github.com/FoundationAgents/MetaGPT",
       "tagline": "Simulates a software company with role-playing LLM agents (PM, Dev, QA) for code generation",
-      "degree": 12,
+      "degree": 20,
       "mas": 4
     },
     {
@@ -423,7 +553,7 @@
       "color": "#d68910",
       "url": "https://github.com/SWE-agent/mini-swe-agent",
       "tagline": "Minimal bash-only SWE agent, 100x simpler than SWE-agent; SOTA on DeepSWE-verified leaderboard",
-      "degree": 6,
+      "degree": 9,
       "mas": 4
     },
     {
@@ -483,7 +613,7 @@
       "color": "#d68910",
       "url": "https://github.com/OpenHands/OpenHands",
       "tagline": "Full-stack SWE agent (GUI + CLI + SDK) that uses sandboxed runtime to read/write entire repos",
-      "degree": 10,
+      "degree": 17,
       "mas": 4
     },
     {
@@ -513,7 +643,17 @@
       "color": "#d68910",
       "url": "https://github.com/pydantic/pydantic-ai",
       "tagline": "Type-safe agent framework from the Pydantic team \u2014 tools as decorated functions, structured outputs as Pydantic models.",
-      "degree": 9,
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "rd-agent-microsoft",
+      "name": "RD-Agent (Research & Development Agent)",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/microsoft/RD-Agent",
+      "tagline": "#1 on MLE-bench: autonomous R&D agent for ML engineering tasks including data analysis, model training, and Kaggle competition automation",
+      "degree": 14,
       "mas": 4
     },
     {
@@ -573,7 +713,7 @@
       "color": "#d68910",
       "url": "https://github.com/TransformerOptimus/SuperAGI",
       "tagline": "Dev-first autonomous agent framework with web console, agent marketplace, and performance telemetry",
-      "degree": 4,
+      "degree": 13,
       "mas": 4
     },
     {
@@ -607,6 +747,16 @@
       "mas": 4
     },
     {
+      "id": "tarsier-web-perception",
+      "name": "Tarsier",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/reworkd/tarsier",
+      "tagline": "Vision utility for web agents: tags interactable elements with bracket IDs, converts pages to OCR-structured ASCII text for text-only LLM agents",
+      "degree": 5,
+      "mas": 4
+    },
+    {
       "id": "taskweaver",
       "name": "TaskWeaver",
       "category": "agent",
@@ -617,13 +767,23 @@
       "mas": 4
     },
     {
+      "id": "toolbench-tool-learning",
+      "name": "ToolBench / ToolLLM",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/OpenBMB/ToolBench",
+      "tagline": "16,464 real-world REST API dataset with DFSDT annotation pipeline; trains ToolLLaMA to match ChatGPT-level tool-use on 100k+ instruction-tuning samples",
+      "degree": 9,
+      "mas": 4
+    },
+    {
       "id": "ufo",
       "name": "UFO/UFO3 Galaxy",
       "category": "agent",
       "color": "#d68910",
       "url": "https://github.com/microsoft/UFO",
       "tagline": "Windows GUI computer-use agent with DAG multi-device orchestration and action history reasoning",
-      "degree": 1,
+      "degree": 5,
       "mas": 4
     },
     {
@@ -643,7 +803,17 @@
       "color": "#d68910",
       "url": "https://github.com/MineDojo/Voyager",
       "tagline": "First lifelong LLM-powered embodied agent in Minecraft with auto-curriculum and self-growing skill library",
-      "degree": 3,
+      "degree": 6,
+      "mas": 4
+    },
+    {
+      "id": "webvoyager-multimodal",
+      "name": "WebVoyager",
+      "category": "agent",
+      "color": "#d68910",
+      "url": "https://github.com/MinorJerry/WebVoyager",
+      "tagline": "LMM-powered web agent combining visual + textual input for end-to-end real-website task completion; Selenium-based; GPT-4V evaluation protocol",
+      "degree": 6,
       "mas": 4
     },
     {
@@ -1023,7 +1193,7 @@
       "color": "#28a745",
       "url": "https://github.com/THUDM/AgentBench",
       "tagline": "Multi-environment agent eval across 8 distinct real-world task domains",
-      "degree": 2,
+      "degree": 17,
       "mas": 4
     },
     {
@@ -1037,13 +1207,33 @@
       "mas": 4
     },
     {
+      "id": "apps",
+      "name": "APPS (Automated Programming Progress Standard)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/hendrycks/apps",
+      "tagline": "10,000 Python coding problems from competitive programming sites across intro, interview, and competition difficulty levels with execution grading",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "appworld",
+      "name": "AppWorld",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/stonybrooknlp/appworld",
+      "tagline": "High-fidelity execution environment of 9 day-to-day apps with 457 APIs and 750 diverse coding-agent tasks requiring interactive multi-step API calls",
+      "degree": 12,
+      "mas": 4
+    },
+    {
       "id": "arena-hard-auto",
       "name": "Arena-Hard-Auto",
       "category": "eval",
       "color": "#28a745",
       "url": "https://github.com/lmarena/arena-hard-auto",
       "tagline": "Automated LLM benchmark with highest correlation to LMArena human preferences",
-      "degree": 6,
+      "degree": 10,
       "mas": 4
     },
     {
@@ -1053,7 +1243,27 @@
       "color": "#28a745",
       "url": "https://github.com/stanford-futuredata/ARES",
       "tagline": "RAG pipeline evaluator using Prediction-Powered Inference for statistically-confident quality scores",
-      "degree": 5,
+      "degree": 8,
+      "mas": 4
+    },
+    {
+      "id": "beir",
+      "name": "BEIR (Benchmarking-IR)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/beir-cellar/beir",
+      "tagline": "Heterogeneous zero-shot IR benchmark with 18 diverse datasets (BioASQ, NFCorpus, TREC-NEWS, etc.) and unified evaluation under NDCG@10",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "bfcl",
+      "name": "BFCL (Berkeley Function-Calling Leaderboard)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/ShishirPatil/gorilla",
+      "tagline": "Rigorous function-calling and tool-use evaluation covering simple, parallel, multiple, nested, and agentic (V4) scenarios across 200+ models",
+      "degree": 17,
       "mas": 4
     },
     {
@@ -1063,7 +1273,7 @@
       "color": "#28a745",
       "url": "https://github.com/google/BIG-bench",
       "tagline": "Collaborative 200+ task benchmark for evaluating language models beyond conventional NLP tests",
-      "degree": 5,
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1073,7 +1283,17 @@
       "color": "#28a745",
       "url": "https://github.com/bigcode-project/bigcode-evaluation-harness",
       "tagline": "Evaluates code-generation LLMs on HumanEval, MBPP, DS-1000, MultiPL-E, and 30+ other coding tasks",
-      "degree": 5,
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "bigcodebench",
+      "name": "BigCodeBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/bigcode-project/bigcodebench",
+      "tagline": "Evaluates LLMs on 1140 complex function-level coding tasks requiring diverse library calls; harder and less gameable than HumanEval",
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1083,7 +1303,7 @@
       "color": "#28a745",
       "url": "https://github.com/ServiceNow/BrowserGym",
       "tagline": "Gymnasium-compatible web interaction environment unifying 8+ web-agent benchmarks",
-      "degree": 5,
+      "degree": 17,
       "mas": 4
     },
     {
@@ -1097,6 +1317,26 @@
       "mas": 4
     },
     {
+      "id": "classeval",
+      "name": "ClassEval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/FudanSELab/ClassEval",
+      "tagline": "First class-level Python code generation benchmark with 100 manually crafted classes and 410 methods spanning diverse field and method dependencies",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "cmb",
+      "name": "CMB (Chinese Medical Benchmark)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/FreedomIntelligence/CMB",
+      "tagline": "Comprehensive Chinese medical LLM benchmark covering exam QA (CMB-Exam) and complex clinical case consultation (CMB-Clin) across 28 departments",
+      "degree": 4,
+      "mas": 4
+    },
+    {
       "id": "continuous-eval",
       "name": "Continuous Eval",
       "category": "eval",
@@ -1107,13 +1347,23 @@
       "mas": 4
     },
     {
+      "id": "cruxeval",
+      "name": "CRUXEval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/facebookresearch/cruxeval",
+      "tagline": "800 Python function benchmarks testing code reasoning via input/output prediction (CRUXEval-I and CRUXEval-O) rather than generation",
+      "degree": 9,
+      "mas": 4
+    },
+    {
       "id": "deepeval",
       "name": "DeepEval",
       "category": "eval",
       "color": "#28a745",
       "url": "https://github.com/confident-ai/deepeval",
       "tagline": "Pytest-style LLM evaluation framework with 30+ metrics for RAG, agents, and chatbots.",
-      "degree": 6,
+      "degree": 7,
       "mas": 4
     },
     {
@@ -1123,7 +1373,7 @@
       "color": "#28a745",
       "url": "https://github.com/evalplus/evalplus",
       "tagline": "Rigorous code-generation eval with 80x more tests than HumanEval via LLM + mutation-based test synthesis",
-      "degree": 5,
+      "degree": 12,
       "mas": 4
     },
     {
@@ -1134,6 +1384,16 @@
       "url": "https://github.com/shmsw25/FActScore",
       "tagline": "Measures factual precision in long-form LLM generations by decomposing text into atomic facts",
       "degree": 5,
+      "mas": 4
+    },
+    {
+      "id": "finben",
+      "name": "FinBen / PIXIU",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/The-FinAI/PIXIU",
+      "tagline": "Financial LLM evaluation framework (FinBen) covering 35+ NLP tasks: sentiment, NER, relation extraction, QA, stock prediction, and credit scoring",
+      "degree": 4,
       "mas": 4
     },
     {
@@ -1153,7 +1413,17 @@
       "color": "#28a745",
       "url": "https://github.com/flowaicom/flow-judge",
       "tagline": "Fine-tuned 3.8B judge model + Python eval library for cost-efficient LLM-as-judge at scale",
-      "degree": 6,
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "gpqa",
+      "name": "GPQA (Graduate-Level Google-Proof QA)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/idavidrein/gpqa",
+      "tagline": "448 expert-written, Google-proof graduate-level multiple-choice questions in biology, chemistry, and physics; humans achieve only ~34% without search",
+      "degree": 7,
       "mas": 4
     },
     {
@@ -1163,7 +1433,7 @@
       "color": "#28a745",
       "url": "https://github.com/stanford-crfm/helm",
       "tagline": "Stanford CRFM's holistic, multi-metric LLM evaluation across accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency.",
-      "degree": 11,
+      "degree": 15,
       "mas": 4
     },
     {
@@ -1177,6 +1447,16 @@
       "mas": 5
     },
     {
+      "id": "humaneval",
+      "name": "HumanEval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/openai/human-eval",
+      "tagline": "Canonical 164-problem Python coding benchmark measuring pass@k via execution-based correctness; introduced the HumanEval dataset",
+      "degree": 11,
+      "mas": 4
+    },
+    {
       "id": "inspect-ai",
       "name": "Inspect AI",
       "category": "eval",
@@ -1187,13 +1467,23 @@
       "mas": 5
     },
     {
+      "id": "judgelm",
+      "name": "JudgeLM",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/baaivision/JudgeLM",
+      "tagline": "Fine-tuned 7B/13B/33B LLM judges trained on 100K question-answer pairs with reference answers; supports both single and pairwise evaluation modes",
+      "degree": 7,
+      "mas": 4
+    },
+    {
       "id": "legalbench",
       "name": "LegalBench",
       "category": "eval",
       "color": "#28a745",
       "url": "https://github.com/HazyResearch/legalbench",
       "tagline": "162-task collaborative benchmark for legal reasoning: statutory interpretation, contract NLI, issue-spotting",
-      "degree": 5,
+      "degree": 9,
       "mas": 4
     },
     {
@@ -1204,6 +1494,16 @@
       "url": "https://github.com/huggingface/lighteval",
       "tagline": "Hugging Face's lightweight, fast LLM evaluation suite with multiple backends and Open-LLM-Leaderboard compatibility.",
       "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "livecodebench",
+      "name": "LiveCodeBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/LiveCodeBench/LiveCodeBench",
+      "tagline": "Contamination-free coding benchmark continuously collecting new competitive programming problems from LeetCode, AtCoder, and Codeforces post-May 2023",
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1223,7 +1523,7 @@
       "color": "#28a745",
       "url": "https://github.com/EleutherAI/lm-evaluation-harness",
       "tagline": "De facto academic standard for few-shot LLM benchmark evaluation across 200+ tasks.",
-      "degree": 11,
+      "degree": 19,
       "mas": 5
     },
     {
@@ -1233,8 +1533,78 @@
       "color": "#28a745",
       "url": "https://github.com/EvolvingLMMs-Lab/lmms-eval",
       "tagline": "Single harness for evaluating large multimodal models across 50+ vision-language benchmarks",
-      "degree": 9,
+      "degree": 12,
       "mas": 4
+    },
+    {
+      "id": "long-form-factuality",
+      "name": "Long-Form Factuality / SAFE",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/google-deepmind/long-form-factuality",
+      "tagline": "SAFE (Search-Augmented Factuality Evaluator) automatically decomposes long-form responses into atomic claims verified via Google Search",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "longbench",
+      "name": "LongBench (v1 + v2)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/THUDM/LongBench",
+      "tagline": "Bilingual long-context benchmark with 21 tasks (4.5K\u2013200K tokens) covering single/multi-doc QA, summarization, few-shot, and code; v2 adds 8K\u20132M range",
+      "degree": 2,
+      "mas": 4
+    },
+    {
+      "id": "math",
+      "name": "MATH (Hendrycks Competition Math)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/hendrycks/math",
+      "tagline": "12,500 competition mathematics problems across 7 categories with LaTeX solution chains; the de-facto standard math reasoning benchmark",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "mathbench",
+      "name": "MathBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/open-compass/MathBench",
+      "tagline": "3709 bilingual (Chinese + English) math questions spanning five school stages from arithmetic to college-level; uses Circular Evaluation for robustness",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "medqa",
+      "name": "MedQA (USMLE)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/jind11/MedQA",
+      "tagline": "Open-domain medical QA from real-world USMLE, Chinese, and Taiwan medical licensing exams; 12K+ English questions with free-text and multiple-choice formats",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "mind2web",
+      "name": "Mind2Web",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/OSU-NLP-Group/Mind2Web",
+      "tagline": "2,000 generalist web agent tasks across 137 real websites in 31 domains; evaluates element grounding and action prediction with HTML context",
+      "degree": 14,
+      "mas": 4
+    },
+    {
+      "id": "mle-bench",
+      "name": "MLE-Bench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/openai/mle-bench",
+      "tagline": "75 real Kaggle ML competitions used to evaluate ML engineering agents on end-to-end data science and model-building tasks with automated grading",
+      "degree": 13,
+      "mas": 5
     },
     {
       "id": "mmlu-pro",
@@ -1243,7 +1613,17 @@
       "color": "#28a745",
       "url": "https://github.com/TIGER-AI-Lab/MMLU-Pro",
       "tagline": "Harder variant of MMLU with 10-choice questions and reasoning-required problems across 14 disciplines",
-      "degree": 5,
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "mmmu",
+      "name": "MMMU (Massive Multi-discipline Multimodal Understanding)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/MMMU-Benchmark/MMMU",
+      "tagline": "11,500 college-level multimodal questions spanning 30 subjects and 183 subfields with 32 heterogeneous image types requiring expert-level reasoning",
+      "degree": 3,
       "mas": 4
     },
     {
@@ -1253,7 +1633,7 @@
       "color": "#28a745",
       "url": "https://github.com/lm-sys/FastChat",
       "tagline": "Multi-turn conversation judge benchmark using GPT-4 as evaluator across 8 skill categories",
-      "degree": 6,
+      "degree": 10,
       "mas": 4
     },
     {
@@ -1263,7 +1643,17 @@
       "color": "#28a745",
       "url": "https://github.com/embeddings-benchmark/mteb",
       "tagline": "Massive text embedding benchmark: 8 task types, 56+ datasets, retrieval, STS, clustering, classification",
-      "degree": 5,
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "musr",
+      "name": "MuSR (Multistep Soft Reasoning)",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/Zayne-sprague/MuSR",
+      "tagline": "Tests chain-of-thought limits with procedurally generated multi-step reasoning tasks (murder mysteries, team allocation, object placement)",
+      "degree": 7,
       "mas": 4
     },
     {
@@ -1273,7 +1663,7 @@
       "color": "#28a745",
       "url": "https://github.com/gkamradt/needle-in-a-haystack",
       "tagline": "Measures LLM long-context recall by finding a planted fact in a progressively larger context window",
-      "degree": 3,
+      "degree": 5,
       "mas": 4
     },
     {
@@ -1303,7 +1693,7 @@
       "color": "#28a745",
       "url": "https://github.com/open-compass/opencompass",
       "tagline": "Unified eval platform supporting 100+ benchmarks across 50+ model backends",
-      "degree": 10,
+      "degree": 16,
       "mas": 5
     },
     {
@@ -1313,7 +1703,27 @@
       "color": "#28a745",
       "url": "https://github.com/xlang-ai/OSWorld",
       "tagline": "Desktop GUI agent benchmark across Ubuntu, macOS, Windows with 369 diverse real computer tasks",
-      "degree": 5,
+      "degree": 14,
+      "mas": 4
+    },
+    {
+      "id": "pandalm",
+      "name": "PandaLM",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/WeOpenML/PandaLM",
+      "tagline": "Reproducible automated LLM judge (7B) for instruction-tuning comparison with a 1000-sample human-annotated test set; achieves 93.75% of GPT-3.5 F1",
+      "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "prometheus-eval",
+      "name": "Prometheus-Eval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/prometheus-eval/prometheus-eval",
+      "tagline": "Open-source LLM judge family (3B\u201314B) trained on feedback data with rubric-based absolute/relative scoring; M-Prometheus supports multilingual evaluation",
+      "degree": 7,
       "mas": 4
     },
     {
@@ -1323,7 +1733,7 @@
       "color": "#28a745",
       "url": "https://github.com/microsoftarchive/promptbench",
       "tagline": "LLM eval toolkit with adversarial prompt robustness testing, dynamic DyVal eval, prompt-engineering comparison",
-      "degree": 3,
+      "degree": 7,
       "mas": 4
     },
     {
@@ -1333,7 +1743,7 @@
       "color": "#28a745",
       "url": "https://github.com/promptfoo/promptfoo",
       "tagline": "Declarative test-driven evaluation of LLM applications with side-by-side prompt and model comparisons.",
-      "degree": 6,
+      "degree": 11,
       "mas": 5
     },
     {
@@ -1343,7 +1753,17 @@
       "color": "#28a745",
       "url": "https://github.com/explodinggradients/ragas",
       "tagline": "Reference-free and reference-based evaluation framework for retrieval-augmented generation pipelines.",
-      "degree": 9,
+      "degree": 13,
+      "mas": 4
+    },
+    {
+      "id": "ragchecker",
+      "name": "RAGChecker",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/amazon-science/RAGChecker",
+      "tagline": "Fine-grained RAG diagnostic framework using claim-level entailment to decompose retrieval and generation errors into 10 targeted diagnostic metrics",
+      "degree": 4,
       "mas": 4
     },
     {
@@ -1353,7 +1773,27 @@
       "color": "#28a745",
       "url": "https://github.com/allenai/reward-bench",
       "tagline": "Benchmark for evaluating reward models and DPO models across chat, safety, reasoning tasks",
-      "degree": 6,
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "scicode",
+      "name": "SciCode",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/SciCode-Bench/SciCode",
+      "tagline": "338 scientific research coding subproblems across 5 domains (physics, math, chemistry, biology, materials science), curated by domain scientists",
+      "degree": 9,
+      "mas": 4
+    },
+    {
+      "id": "scienceqa",
+      "name": "ScienceQA",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/lupantech/ScienceQA",
+      "tagline": "21,208 multimodal science questions from elementary and high school curricula with lecture/explanation annotations across natural science, social science, language",
+      "degree": 3,
       "mas": 4
     },
     {
@@ -1373,7 +1813,17 @@
       "color": "#28a745",
       "url": "https://github.com/SWE-bench/SWE-bench",
       "tagline": "Measures LLM ability to resolve real GitHub issues from popular open-source Python repositories",
-      "degree": 5,
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "t-eval",
+      "name": "T-Eval",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/open-compass/T-Eval",
+      "tagline": "Decomposes tool-use evaluation into 6 capability dimensions (planning, reasoning, retrieval, understanding, review, instruction-following)",
+      "degree": 12,
       "mas": 4
     },
     {
@@ -1383,7 +1833,7 @@
       "color": "#28a745",
       "url": "https://github.com/TheAgentCompany/TheAgentCompany",
       "tagline": "Professional-task agent benchmark: coding, PM, HR, finance on self-hosted intranet (GitLab, Plane, RocketChat)",
-      "degree": 5,
+      "degree": 14,
       "mas": 5
     },
     {
@@ -1403,7 +1853,7 @@
       "color": "#28a745",
       "url": "https://github.com/OpenBMB/ToolBench",
       "tagline": "Benchmarks LLM ability to call APIs and use external tools across 16000 real-world REST APIs",
-      "degree": 3,
+      "degree": 19,
       "mas": 4
     },
     {
@@ -1413,7 +1863,7 @@
       "color": "#28a745",
       "url": "https://github.com/truera/trulens",
       "tagline": "LLM app + RAG evaluation via the RAG Triad (context relevance, groundedness, answer relevance)",
-      "degree": 8,
+      "degree": 15,
       "mas": 4
     },
     {
@@ -1447,13 +1897,43 @@
       "mas": 4
     },
     {
+      "id": "vlmeval-kit",
+      "name": "VLMEvalKit",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/open-compass/VLMEvalKit",
+      "tagline": "All-in-one evaluation toolkit for large vision-language models supporting 70+ VLMs and 50+ benchmarks including MMBench, MME, SEED, and MMMU",
+      "degree": 3,
+      "mas": 4
+    },
+    {
       "id": "webarena",
       "name": "WebArena",
       "category": "eval",
       "color": "#28a745",
       "url": "https://github.com/web-arena-x/webarena",
       "tagline": "Realistic web-browsing agent benchmark with self-hosted live environments (Reddit, GitLab, shopping)",
-      "degree": 6,
+      "degree": 18,
+      "mas": 4
+    },
+    {
+      "id": "wildbench",
+      "name": "WildBench",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/allenai/WildBench",
+      "tagline": "1024 challenging real-user tasks from the wild with GPT-4-based checklist and pairwise LLM-as-judge evaluation; WB-Score correlates 0.98 with Chatbot Arena",
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "workarena",
+      "name": "WorkArena",
+      "category": "eval",
+      "color": "#28a745",
+      "url": "https://github.com/ServiceNow/WorkArena",
+      "tagline": "33 browser-based knowledge-work tasks on ServiceNow platform covering forms, lists, knowledge retrieval, and multi-step compositional tasks",
+      "degree": 12,
       "mas": 4
     },
     {
@@ -1467,13 +1947,33 @@
       "mas": 4
     },
     {
+      "id": "agenta",
+      "name": "Agenta",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/Agenta-AI/agenta",
+      "tagline": "Open-source LLMOps platform with prompt playground, version control, human+automated evaluation, and production observability",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "agentops",
+      "name": "AgentOps",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/AgentOps-AI/agentops",
+      "tagline": "Agent-native observability with session replay, multi-framework support, and cost tracking for AI agents",
+      "degree": 12,
+      "mas": 4
+    },
+    {
       "id": "arize-phoenix",
       "name": "Arize Phoenix",
       "category": "governance",
       "color": "#1f3a5f",
       "url": "https://github.com/Arize-AI/phoenix",
       "tagline": "LLM observability and evaluation platform with OTEL-based trace capture, safety/hallucination evals",
-      "degree": 5,
+      "degree": 12,
       "mas": 4
     },
     {
@@ -1497,13 +1997,33 @@
       "mas": 4
     },
     {
+      "id": "baml",
+      "name": "BAML",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/BoundaryML/baml",
+      "tagline": "DSL and Rust compiler for type-safe LLM prompt functions with multi-language client generation and streaming",
+      "degree": 12,
+      "mas": 4
+    },
+    {
       "id": "circuit-breakers",
       "name": "Circuit Breakers",
       "category": "governance",
       "color": "#1f3a5f",
       "url": "https://github.com/GraySwanAI/circuit-breakers",
       "tagline": "Representation Rerouting (RR) technique that hard-blocks harmful-behavior token generation at the activation layer",
-      "degree": 8,
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "datafog",
+      "name": "DataFog",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/DataFog/datafog-python",
+      "tagline": "Lightweight PII detection and redaction library with regex, spaCy NER, and GLiNER engines plus LLM guardrail decorators",
+      "degree": 0,
       "mas": 4
     },
     {
@@ -1524,6 +2044,16 @@
       "url": "https://github.com/Libr-AI/do-not-answer",
       "tagline": "Curated dataset + LLM-as-judge evaluator assessing whether an LLM correctly refuses 939 sensitive question categories",
       "degree": 7,
+      "mas": 4
+    },
+    {
+      "id": "funcchain",
+      "name": "funcchain",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/shroominic/funcchain",
+      "tagline": "Pythonic LangChain-backed library that turns annotated Python functions into LLM chains with Pydantic output parsing",
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1553,7 +2083,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/guidance-ai/guidance",
       "tagline": "Constrained generation framework that enforces output contracts via regex, JSON schema, Pydantic, CFG at token level",
-      "degree": 7,
+      "degree": 14,
       "mas": 4
     },
     {
@@ -1573,7 +2103,17 @@
       "color": "#1f3a5f",
       "url": "https://github.com/567-labs/instructor",
       "tagline": "Pydantic-based structured-output validator for LLM API calls with automatic retry and streaming partial-object support",
-      "degree": 4,
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "jsonformer",
+      "name": "Jsonformer",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/1rgs/jsonformer",
+      "tagline": "JSON Schema enforcer for HuggingFace models that fills fixed tokens and delegates only content tokens to the model",
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1583,7 +2123,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/langfuse/langfuse",
       "tagline": "Self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards",
-      "degree": 4,
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1593,7 +2133,27 @@
       "color": "#1f3a5f",
       "url": "https://github.com/whylabs/langkit",
       "tagline": "LLM text-metrics toolkit extracting security signals (jailbreak similarity, PI, refusals, hallucinations, PII, toxicity) for whylogs",
-      "degree": 3,
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "langtrace",
+      "name": "Langtrace",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/Scale3-Labs/langtrace",
+      "tagline": "OTEL-compliant LLM observability for Python and TypeScript supporting 25+ providers and frameworks",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "langwatch",
+      "name": "LangWatch",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/langwatch/langwatch",
+      "tagline": "LLM evaluation and AI agent testing platform with regression testing, simulations, and production monitoring",
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1603,7 +2163,17 @@
       "color": "#1f3a5f",
       "url": "https://github.com/protectai/llm-guard",
       "tagline": "Production-grade input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets",
-      "degree": 13,
+      "degree": 14,
+      "mas": 4
+    },
+    {
+      "id": "lm-format-enforcer",
+      "name": "LM Format Enforcer",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/noamgat/lm-format-enforcer",
+      "tagline": "Token-level JSON Schema and regex format enforcement for transformers, vLLM, llama.cpp, and TensorRT-LLM",
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1613,7 +2183,27 @@
       "color": "#1f3a5f",
       "url": "https://github.com/eth-sri/lmql",
       "tagline": "Python-superset query language for LLMs with where constraint clauses enforcing output rules at decode time",
-      "degree": 4,
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "magentic",
+      "name": "magentic",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/jackmpcollins/magentic",
+      "tagline": "Decorator-based Python library for defining LLM-powered functions with Pydantic-typed return values and tool calling",
+      "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "marvin",
+      "name": "Marvin",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/PrefectHQ/marvin",
+      "tagline": "Python framework for structured LLM outputs (extract, cast, classify, generate) with task-centric agentic orchestration",
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1637,13 +2227,43 @@
       "mas": 4
     },
     {
+      "id": "openlit",
+      "name": "OpenLIT",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/openlit/openlit",
+      "tagline": "One-line OTel-native LLM observability with GPU monitoring, prompt management, and API key vault",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "openllmetry",
+      "name": "OpenLLMetry",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/traceloop/openllmetry",
+      "tagline": "OpenTelemetry-native SDK instrumenting every LLM provider call with standardized traces and spans",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "opik",
+      "name": "Opik (by Comet)",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/comet-ml/opik",
+      "tagline": "End-to-end LLM observability with tracing, online evaluation rules, guardrails, and agent optimizer",
+      "degree": 12,
+      "mas": 4
+    },
+    {
       "id": "outlines",
       "name": "Outlines",
       "category": "governance",
       "color": "#1f3a5f",
       "url": "https://github.com/dottxt-ai/outlines",
       "tagline": "Guaranteed structured generation via FSM-guided token masking; enforces regex, JSON Schema, Pydantic, CFG output contracts",
-      "degree": 7,
+      "degree": 14,
       "mas": 4
     },
     {
@@ -1657,6 +2277,16 @@
       "mas": 5
     },
     {
+      "id": "promptimize",
+      "name": "Promptimize",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/preset-io/promptimize",
+      "tagline": "TDD-inspired CLI toolkit defining prompt test cases as code with scoring functions and regression reporting",
+      "degree": 4,
+      "mas": 4
+    },
+    {
       "id": "promptinject",
       "name": "PromptInject",
       "category": "governance",
@@ -1667,13 +2297,23 @@
       "mas": 4
     },
     {
+      "id": "prompttools",
+      "name": "PromptTools",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/hegelai/prompttools",
+      "tagline": "Jupyter/notebook-native framework for cross-model prompt experiments, evaluation, and vector DB testing",
+      "degree": 4,
+      "mas": 4
+    },
+    {
       "id": "rebuff",
       "name": "Rebuff",
       "category": "governance",
       "color": "#1f3a5f",
       "url": "https://github.com/protectai/rebuff",
       "tagline": "Layered prompt-injection detector \u2014 heuristic, embedding, LLM-as-judge, and canary tripwire.",
-      "degree": 16,
+      "degree": 17,
       "mas": 3
     },
     {
@@ -1683,7 +2323,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/uw-nsl/SafeDecoding",
       "tagline": "Safety-aware decoding strategy that amplifies safety-disclaimer token probabilities to defend against adversarial jailbreaks",
-      "degree": 8,
+      "degree": 12,
       "mas": 4
     },
     {
@@ -1703,7 +2343,17 @@
       "color": "#1f3a5f",
       "url": "https://github.com/arobey1/smooth-llm",
       "tagline": "Randomized text-perturbation defense (swap/patch/insert) against GCG and transfer adversarial jailbreak suffixes",
-      "degree": 8,
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "tokencost",
+      "name": "TokenCost",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/AgentOps-AI/tokencost",
+      "tagline": "Client-side token counting and USD cost estimation for 400+ LLM models with live pricing table",
+      "degree": 3,
       "mas": 4
     },
     {
@@ -1723,7 +2373,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/microsoft/TypeChat",
       "tagline": "Output-contract harness using TypeScript type definitions as schema; LLM output validated against TS type system",
-      "degree": 4,
+      "degree": 11,
       "mas": 4
     },
     {
@@ -1744,6 +2394,16 @@
       "url": "https://github.com/allenai/wildguard",
       "tagline": "Instruction-tuned LM safety classifier that jointly detects prompt harm, response harm, and LLM refusal behaviour",
       "degree": 11,
+      "mas": 4
+    },
+    {
+      "id": "xgrammar",
+      "name": "XGrammar",
+      "category": "governance",
+      "color": "#1f3a5f",
+      "url": "https://github.com/mlc-ai/xgrammar",
+      "tagline": "Near-zero-overhead context-free grammar engine for 100% structurally correct LLM outputs; default backend in vLLM and SGLang",
+      "degree": 13,
       "mas": 4
     },
     {
@@ -1793,7 +2453,27 @@
       "color": "#c0392b",
       "url": "https://github.com/SheltonLiu-N/AutoDAN",
       "tagline": "Stealthy jailbreak via hierarchical genetic algorithm; produces semantically meaningful adversarial prompts",
-      "degree": 9,
+      "degree": 12,
+      "mas": 4
+    },
+    {
+      "id": "autoprompt-calibration",
+      "name": "AutoPrompt (Intent-based Prompt Calibration)",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/Eladlev/AutoPrompt",
+      "tagline": "Automated prompt calibration framework that iteratively generates edge-case adversarial samples and optimizes prompts for safety/moderation tasks",
+      "degree": 8,
+      "mas": 5
+    },
+    {
+      "id": "backdoor-llm",
+      "name": "BackdoorLLM",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/bboylyg/BackdoorLLM",
+      "tagline": "First comprehensive benchmark for backdoor attacks on LLMs: data poisoning, weight poisoning, hidden-state steering, CoT attacks, and 7 defenses",
+      "degree": 4,
       "mas": 4
     },
     {
@@ -1817,13 +2497,53 @@
       "mas": 4
     },
     {
+      "id": "cleverhans",
+      "name": "CleverHans",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/cleverhans-lab/cleverhans",
+      "tagline": "Seminal adversarial-example benchmark library supporting JAX, PyTorch, TF2; FGSM, PGD, C&W, and more for vision + NLP robustness testing",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "deep-inception",
+      "name": "DeepInception",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/tmlr-group/DeepInception",
+      "tagline": "Lightweight jailbreak via recursive nested-scene \"hypnosis\" requiring no gradient access; works on GPT-3.5/4, LLaMA-2, Falcon",
+      "degree": 10,
+      "mas": 4
+    },
+    {
+      "id": "detect-pretrain-mink",
+      "name": "Detecting Pretraining Data / Min-K% Prob",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/swj0419/detect-pretrain-code",
+      "tagline": "Min-K% Prob membership inference attack on LLMs; determines if text was in pretraining data; WikiMIA/BookMIA benchmarks included",
+      "degree": 4,
+      "mas": 4
+    },
+    {
+      "id": "easyedit-knowledge-attacks",
+      "name": "EasyEdit (Knowledge Editing / Poisoning Framework)",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/zjunlp/EasyEdit",
+      "tagline": "Unified framework for editing/poisoning LLM knowledge using ROME, MEMIT, MEND, GRACE and 20+ methods; also supports representation steering",
+      "degree": 4,
+      "mas": 5
+    },
+    {
       "id": "easyjailbreak",
       "name": "EasyJailbreak",
       "category": "redteam",
       "color": "#c0392b",
       "url": "https://github.com/EasyJailbreak/EasyJailbreak",
       "tagline": "Modular Python framework assembling jailbreaks from pluggable Selector->Mutator->Constraint->Evaluator components",
-      "degree": 11,
+      "degree": 16,
       "mas": 5
     },
     {
@@ -1853,7 +2573,7 @@
       "color": "#c0392b",
       "url": "https://github.com/sherdencooper/GPTFuzz",
       "tagline": "Fuzzing-based red-teaming using LLM mutation operators with MCTS/UCB seed selection to auto-generate jailbreak templates",
-      "degree": 9,
+      "degree": 12,
       "mas": 4
     },
     {
@@ -1863,7 +2583,7 @@
       "color": "#c0392b",
       "url": "https://github.com/centerforaisafety/HarmBench",
       "tagline": "Standardized evaluation framework benchmarking 18 automated red-teaming methods against 33 target LLMs/defenses",
-      "degree": 8,
+      "degree": 12,
       "mas": 5
     },
     {
@@ -1877,13 +2597,23 @@
       "mas": 4
     },
     {
+      "id": "jailbreak-hub",
+      "name": "JailbreakHub (In-The-Wild Jailbreaks)",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/verazuo/jailbreak_llms",
+      "tagline": "Largest in-the-wild jailbreak dataset (15,140 prompts, 1,405 jailbreaks) with JailbreakHub measurement framework for red-teaming LLMs",
+      "degree": 6,
+      "mas": 5
+    },
+    {
       "id": "jailbreakbench",
       "name": "JailbreakBench",
       "category": "redteam",
       "color": "#c0392b",
       "url": "https://github.com/JailbreakBench/jailbreakbench",
       "tagline": "Standardised jailbreak benchmark: JBB-Behaviors dataset, attack/defense leaderboard, and red-team pipeline",
-      "degree": 7,
+      "degree": 12,
       "mas": 4
     },
     {
@@ -1903,8 +2633,18 @@
       "color": "#c0392b",
       "url": "https://github.com/llm-attacks/llm-attacks",
       "tagline": "Greedy Coordinate Gradient white-box adversarial suffix optimisation for universal transferable jailbreaks",
-      "degree": 9,
+      "degree": 12,
       "mas": 4
+    },
+    {
+      "id": "llm-jailbreaking-defense",
+      "name": "LLM Jailbreaking Defense Library",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/YihanWang617/llm-jailbreaking-defense",
+      "tagline": "Defense library against jailbreaking with backtranslation, SmoothLLM, RPO, and 4 built-in judges (PAIR, GCG, OpenAI policy, quality)",
+      "degree": 6,
+      "mas": 5
     },
     {
       "id": "mimir",
@@ -1923,7 +2663,7 @@
       "color": "#c0392b",
       "url": "https://github.com/protectai/modelscan",
       "tagline": "Scans serialised ML model files (Pickle, PyTorch, H5, SavedModel) for malicious code injected during supply-chain attacks",
-      "degree": 2,
+      "degree": 5,
       "mas": 4
     },
     {
@@ -1947,13 +2687,23 @@
       "mas": 4
     },
     {
+      "id": "openattack",
+      "name": "OpenAttack",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/thunlp/OpenAttack",
+      "tagline": "Open-source Python toolkit for textual adversarial attacks: sentence/word/character perturbations, multilingual (EN+ZH), Hugging Face compatible",
+      "degree": 4,
+      "mas": 5
+    },
+    {
       "id": "pair-jailbreak",
       "name": "PAIR / JailbreakingLLMs",
       "category": "redteam",
       "color": "#c0392b",
       "url": "https://github.com/patrickrchao/JailbreakingLLMs",
       "tagline": "Black-box LLM jailbreaking in <=20 queries via an attacker LLM that iteratively refines adversarial prompts",
-      "degree": 9,
+      "degree": 12,
       "mas": 4
     },
     {
@@ -2003,7 +2753,7 @@
       "color": "#c0392b",
       "url": "https://github.com/meta-llama/PurpleLlama",
       "tagline": "Umbrella eval suite: CyberSecEval v1-v3 (insecure code, cyberattack uplift, visual PI, spear-phishing), LlamaGuard, PromptGuard",
-      "degree": 2,
+      "degree": 5,
       "mas": 4
     },
     {
@@ -2027,13 +2777,23 @@
       "mas": 4
     },
     {
+      "id": "rain-self-alignment",
+      "name": "RAIN",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/SafeAILab/RAIN",
+      "tagline": "Inference-time self-alignment via rewind mechanism; tests LLM safety against GCG adversarial suffixes without any fine-tuning",
+      "degree": 8,
+      "mas": 5
+    },
+    {
       "id": "renellm",
       "name": "ReNeLLM",
       "category": "redteam",
       "color": "#c0392b",
       "url": "https://github.com/NJUNLP/ReNeLLM",
       "tagline": "Generalised jailbreak framework: rewrites + scenario-nesting to shift prompt execution priority and evade defences",
-      "degree": 9,
+      "degree": 12,
       "mas": 5
     },
     {
@@ -2053,8 +2813,18 @@
       "color": "#c0392b",
       "url": "https://github.com/RICommunity/TAP",
       "tagline": "Query-efficient black-box jailbreak using tree-of-thoughts + automatic prompt pruning to cut wasted queries",
-      "degree": 9,
+      "degree": 12,
       "mas": 4
+    },
+    {
+      "id": "textattack",
+      "name": "TextAttack",
+      "category": "redteam",
+      "color": "#c0392b",
+      "url": "https://github.com/QData/TextAttack",
+      "tagline": "Python framework for NLP adversarial attacks, data augmentation, and model training; pip-installable with 20+ attack recipes",
+      "degree": 4,
+      "mas": 5
     },
     {
       "id": "toolemu",
@@ -2153,7 +2923,7 @@
       "color": "#3498db",
       "url": "https://github.com/Helicone/helicone",
       "tagline": "OSS proxy that adds observability, caching, prompt management, and routing across LLM providers.",
-      "degree": 9,
+      "degree": 20,
       "mas": 4
     },
     {
@@ -2193,7 +2963,7 @@
       "color": "#3498db",
       "url": "https://github.com/BerriAI/litellm",
       "tagline": "Unified SDK and proxy that normalises 100+ LLM APIs into the OpenAI format.",
-      "degree": 17,
+      "degree": 19,
       "mas": 5
     },
     {
@@ -2243,7 +3013,7 @@
       "color": "#3498db",
       "url": "https://github.com/mlflow/mlflow",
       "tagline": "MLflow Deployments Server routes prompt requests across OpenAI, Anthropic, Cohere, Bedrock",
-      "degree": 9,
+      "degree": 13,
       "mas": 5
     },
     {
@@ -2333,7 +3103,7 @@
       "color": "#3498db",
       "url": "https://github.com/sgl-project/sglang",
       "tagline": "High-performance inference+serving framework with RadixAttention, OpenAI-compat server, structured output",
-      "degree": 8,
+      "degree": 9,
       "mas": 5
     },
     {
@@ -2373,7 +3143,7 @@
       "color": "#3498db",
       "url": "https://github.com/vllm-project/vllm",
       "tagline": "High-throughput memory-efficient LLM inference engine with PagedAttention and OpenAI-compat server",
-      "degree": 8,
+      "degree": 9,
       "mas": 5
     },
     {
@@ -2398,6 +3168,14 @@
     }
   ],
   "links": [
+    {
+      "source": "adala-data-agents",
+      "target": "letta"
+    },
+    {
+      "source": "adala-data-agents",
+      "target": "mem0-memory-layer"
+    },
     {
       "source": "ag2",
       "target": "agency-swarm"
@@ -2445,6 +3223,30 @@
     {
       "source": "agency-swarm",
       "target": "autogen"
+    },
+    {
+      "source": "agentbench-thudm",
+      "target": "agentbench"
+    },
+    {
+      "source": "agentbench-thudm",
+      "target": "autogen"
+    },
+    {
+      "source": "agentbench-thudm",
+      "target": "bfcl"
+    },
+    {
+      "source": "agentbench-thudm",
+      "target": "gorilla-api-llm"
+    },
+    {
+      "source": "agentbench-thudm",
+      "target": "openhands"
+    },
+    {
+      "source": "agentbench-thudm",
+      "target": "toolbench-tool-learning"
     },
     {
       "source": "agentflow-grpo",
@@ -2507,6 +3309,46 @@
       "target": "webarena"
     },
     {
+      "source": "agentlite-salesforce",
+      "target": "autogen"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "babyagi"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "crewai"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "griptape-framework"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "ix-autonomous-agent"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "langgraph"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "llmcompiler-parallel"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "metagpt"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "agentlite-salesforce",
+      "target": "superagi"
+    },
+    {
       "source": "agentscope",
       "target": "beeai-framework"
     },
@@ -2531,6 +3373,22 @@
       "target": "semantic-kernel"
     },
     {
+      "source": "agentsims-sandbox",
+      "target": "agentverse-openbmb"
+    },
+    {
+      "source": "agentsims-sandbox",
+      "target": "camel"
+    },
+    {
+      "source": "agentsims-sandbox",
+      "target": "chatdev"
+    },
+    {
+      "source": "agentsims-sandbox",
+      "target": "generative-agents-stanford"
+    },
+    {
       "source": "agentverse-openbmb",
       "target": "autogen"
     },
@@ -2545,6 +3403,10 @@
     {
       "source": "agentverse-openbmb",
       "target": "crewai"
+    },
+    {
+      "source": "agentverse-openbmb",
+      "target": "generative-agents-stanford"
     },
     {
       "source": "agentverse-openbmb",
@@ -2644,6 +3506,14 @@
     },
     {
       "source": "autogen",
+      "target": "babyagi"
+    },
+    {
+      "source": "autogen",
+      "target": "bfcl"
+    },
+    {
+      "source": "autogen",
       "target": "camel"
     },
     {
@@ -2656,7 +3526,23 @@
     },
     {
       "source": "autogen",
+      "target": "gorilla-api-llm"
+    },
+    {
+      "source": "autogen",
+      "target": "griptape-framework"
+    },
+    {
+      "source": "autogen",
+      "target": "ix-autonomous-agent"
+    },
+    {
+      "source": "autogen",
       "target": "langgraph"
+    },
+    {
+      "source": "autogen",
+      "target": "llmcompiler-parallel"
     },
     {
       "source": "autogen",
@@ -2680,11 +3566,51 @@
     },
     {
       "source": "autogen",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "autogen",
       "target": "smolagents"
     },
     {
       "source": "autogen",
+      "target": "superagi"
+    },
+    {
+      "source": "autogen",
       "target": "swarm-openai"
+    },
+    {
+      "source": "autogen",
+      "target": "toolbench-tool-learning"
+    },
+    {
+      "source": "babyagi",
+      "target": "crewai"
+    },
+    {
+      "source": "babyagi",
+      "target": "griptape-framework"
+    },
+    {
+      "source": "babyagi",
+      "target": "ix-autonomous-agent"
+    },
+    {
+      "source": "babyagi",
+      "target": "langgraph"
+    },
+    {
+      "source": "babyagi",
+      "target": "llmcompiler-parallel"
+    },
+    {
+      "source": "babyagi",
+      "target": "metagpt"
+    },
+    {
+      "source": "babyagi",
+      "target": "rd-agent-microsoft"
     },
     {
       "source": "babyagi",
@@ -2715,8 +3641,28 @@
       "target": "semantic-kernel"
     },
     {
+      "source": "bmtools-tool-platform",
+      "target": "gorilla-api-llm"
+    },
+    {
+      "source": "bmtools-tool-platform",
+      "target": "hugginggpt-jarvis"
+    },
+    {
+      "source": "bmtools-tool-platform",
+      "target": "toolbench"
+    },
+    {
+      "source": "bmtools-tool-platform",
+      "target": "toolbench-tool-learning"
+    },
+    {
       "source": "browser-use",
       "target": "browsergym"
+    },
+    {
+      "source": "browser-use",
+      "target": "mind2web"
     },
     {
       "source": "browser-use",
@@ -2725,6 +3671,10 @@
     {
       "source": "browser-use",
       "target": "osworld"
+    },
+    {
+      "source": "browser-use",
+      "target": "tarsier-web-perception"
     },
     {
       "source": "browser-use",
@@ -2739,12 +3689,20 @@
       "target": "webarena"
     },
     {
+      "source": "browser-use",
+      "target": "webvoyager-multimodal"
+    },
+    {
       "source": "camel",
       "target": "chatdev"
     },
     {
       "source": "camel",
       "target": "crewai"
+    },
+    {
+      "source": "camel",
+      "target": "generative-agents-stanford"
     },
     {
       "source": "camel",
@@ -2769,6 +3727,10 @@
     {
       "source": "chatdev",
       "target": "crewai"
+    },
+    {
+      "source": "chatdev",
+      "target": "generative-agents-stanford"
     },
     {
       "source": "chatdev",
@@ -2797,6 +3759,18 @@
     {
       "source": "chatdev",
       "target": "xagent"
+    },
+    {
+      "source": "chemcrow-science-agent",
+      "target": "gpt-researcher"
+    },
+    {
+      "source": "chemcrow-science-agent",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "chemcrow-science-agent",
+      "target": "voyager"
     },
     {
       "source": "claude-agent-sdk",
@@ -2840,7 +3814,19 @@
     },
     {
       "source": "crewai",
+      "target": "griptape-framework"
+    },
+    {
+      "source": "crewai",
+      "target": "ix-autonomous-agent"
+    },
+    {
+      "source": "crewai",
       "target": "langgraph"
+    },
+    {
+      "source": "crewai",
+      "target": "llmcompiler-parallel"
     },
     {
       "source": "crewai",
@@ -2860,7 +3846,15 @@
     },
     {
       "source": "crewai",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "crewai",
       "target": "smolagents"
+    },
+    {
+      "source": "crewai",
+      "target": "superagi"
     },
     {
       "source": "crewai",
@@ -2931,8 +3925,64 @@
       "target": "strands"
     },
     {
+      "source": "gorilla-api-llm",
+      "target": "agentbench"
+    },
+    {
+      "source": "gorilla-api-llm",
+      "target": "bfcl"
+    },
+    {
+      "source": "gorilla-api-llm",
+      "target": "hugginggpt-jarvis"
+    },
+    {
+      "source": "gorilla-api-llm",
+      "target": "openhands"
+    },
+    {
+      "source": "gorilla-api-llm",
+      "target": "toolbench"
+    },
+    {
+      "source": "gorilla-api-llm",
+      "target": "toolbench-tool-learning"
+    },
+    {
+      "source": "gpt-researcher",
+      "target": "rd-agent-microsoft"
+    },
+    {
       "source": "gpt-researcher",
       "target": "storm"
+    },
+    {
+      "source": "gpt-researcher",
+      "target": "voyager"
+    },
+    {
+      "source": "griptape-framework",
+      "target": "ix-autonomous-agent"
+    },
+    {
+      "source": "griptape-framework",
+      "target": "langgraph"
+    },
+    {
+      "source": "griptape-framework",
+      "target": "llmcompiler-parallel"
+    },
+    {
+      "source": "griptape-framework",
+      "target": "metagpt"
+    },
+    {
+      "source": "griptape-framework",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "griptape-framework",
+      "target": "superagi"
     },
     {
       "source": "haystack",
@@ -2949,6 +3999,34 @@
     {
       "source": "haystack",
       "target": "semantic-kernel"
+    },
+    {
+      "source": "hugginggpt-jarvis",
+      "target": "toolbench"
+    },
+    {
+      "source": "hugginggpt-jarvis",
+      "target": "toolbench-tool-learning"
+    },
+    {
+      "source": "ix-autonomous-agent",
+      "target": "langgraph"
+    },
+    {
+      "source": "ix-autonomous-agent",
+      "target": "llmcompiler-parallel"
+    },
+    {
+      "source": "ix-autonomous-agent",
+      "target": "metagpt"
+    },
+    {
+      "source": "ix-autonomous-agent",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "ix-autonomous-agent",
+      "target": "superagi"
     },
     {
       "source": "julep",
@@ -2968,7 +4046,15 @@
     },
     {
       "source": "langgraph",
+      "target": "llmcompiler-parallel"
+    },
+    {
+      "source": "langgraph",
       "target": "mastra"
+    },
+    {
+      "source": "langgraph",
+      "target": "metagpt"
     },
     {
       "source": "langgraph",
@@ -2980,11 +4066,23 @@
     },
     {
       "source": "langgraph",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "langgraph",
       "target": "semantic-kernel"
     },
     {
       "source": "langgraph",
+      "target": "superagi"
+    },
+    {
+      "source": "langgraph",
       "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "letta",
+      "target": "mem0-memory-layer"
     },
     {
       "source": "llama-index-agents",
@@ -3007,6 +4105,18 @@
       "target": "hugging-face-agents-course"
     },
     {
+      "source": "llmcompiler-parallel",
+      "target": "metagpt"
+    },
+    {
+      "source": "llmcompiler-parallel",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "llmcompiler-parallel",
+      "target": "superagi"
+    },
+    {
       "source": "metagpt",
       "target": "openagents-xlang"
     },
@@ -3017,6 +4127,14 @@
     {
       "source": "metagpt",
       "target": "praisonai"
+    },
+    {
+      "source": "metagpt",
+      "target": "rd-agent-microsoft"
+    },
+    {
+      "source": "metagpt",
+      "target": "superagi"
     },
     {
       "source": "metagpt",
@@ -3040,7 +4158,19 @@
     },
     {
       "source": "mini-swe-agent",
+      "target": "bigcodebench"
+    },
+    {
+      "source": "mini-swe-agent",
       "target": "evalplus"
+    },
+    {
+      "source": "mini-swe-agent",
+      "target": "humaneval"
+    },
+    {
+      "source": "mini-swe-agent",
+      "target": "livecodebench"
     },
     {
       "source": "mini-swe-agent",
@@ -3112,11 +4242,27 @@
     },
     {
       "source": "openhands",
+      "target": "bfcl"
+    },
+    {
+      "source": "openhands",
       "target": "bigcode-evaluation-harness"
     },
     {
       "source": "openhands",
+      "target": "bigcodebench"
+    },
+    {
+      "source": "openhands",
       "target": "evalplus"
+    },
+    {
+      "source": "openhands",
+      "target": "humaneval"
+    },
+    {
+      "source": "openhands",
+      "target": "livecodebench"
     },
     {
       "source": "openhands",
@@ -3125,6 +4271,10 @@
     {
       "source": "openhands",
       "target": "swe-bench"
+    },
+    {
+      "source": "openhands",
+      "target": "toolbench-tool-learning"
     },
     {
       "source": "openhands",
@@ -3148,11 +4298,31 @@
     },
     {
       "source": "pydanticai",
+      "target": "baml"
+    },
+    {
+      "source": "pydanticai",
+      "target": "instructor"
+    },
+    {
+      "source": "pydanticai",
       "target": "smolagents"
     },
     {
       "source": "pydanticai",
       "target": "strands"
+    },
+    {
+      "source": "rd-agent-microsoft",
+      "target": "mle-bench"
+    },
+    {
+      "source": "rd-agent-microsoft",
+      "target": "superagi"
+    },
+    {
+      "source": "rd-agent-microsoft",
+      "target": "voyager"
     },
     {
       "source": "rivet",
@@ -3179,6 +4349,22 @@
       "target": "swe-bench"
     },
     {
+      "source": "tarsier-web-perception",
+      "target": "browsergym"
+    },
+    {
+      "source": "tarsier-web-perception",
+      "target": "ufo"
+    },
+    {
+      "source": "tarsier-web-perception",
+      "target": "webarena"
+    },
+    {
+      "source": "tarsier-web-perception",
+      "target": "webvoyager-multimodal"
+    },
+    {
       "source": "taskweaver",
       "target": "guidance"
     },
@@ -3187,8 +4373,44 @@
       "target": "outlines"
     },
     {
+      "source": "toolbench-tool-learning",
+      "target": "agentbench"
+    },
+    {
+      "source": "toolbench-tool-learning",
+      "target": "bfcl"
+    },
+    {
+      "source": "toolbench-tool-learning",
+      "target": "toolbench"
+    },
+    {
+      "source": "ufo",
+      "target": "browsergym"
+    },
+    {
+      "source": "ufo",
+      "target": "webarena"
+    },
+    {
+      "source": "ufo",
+      "target": "webvoyager-multimodal"
+    },
+    {
       "source": "voyager",
       "target": "xagent"
+    },
+    {
+      "source": "webvoyager-multimodal",
+      "target": "browsergym"
+    },
+    {
+      "source": "webvoyager-multimodal",
+      "target": "mind2web"
+    },
+    {
+      "source": "webvoyager-multimodal",
+      "target": "webarena"
     },
     {
       "source": "anthropic-prompt-eng-tutorial",
@@ -3539,6 +4761,54 @@
       "target": "wandb-edu"
     },
     {
+      "source": "agentbench",
+      "target": "appworld"
+    },
+    {
+      "source": "agentbench",
+      "target": "bfcl"
+    },
+    {
+      "source": "agentbench",
+      "target": "browsergym"
+    },
+    {
+      "source": "agentbench",
+      "target": "mind2web"
+    },
+    {
+      "source": "agentbench",
+      "target": "mle-bench"
+    },
+    {
+      "source": "agentbench",
+      "target": "osworld"
+    },
+    {
+      "source": "agentbench",
+      "target": "t-eval"
+    },
+    {
+      "source": "agentbench",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "agentbench",
+      "target": "toolbench"
+    },
+    {
+      "source": "agentbench",
+      "target": "webarena"
+    },
+    {
+      "source": "agentbench",
+      "target": "wildbench"
+    },
+    {
+      "source": "agentbench",
+      "target": "workarena"
+    },
+    {
       "source": "alpaca-eval",
       "target": "arena-hard-auto"
     },
@@ -3563,6 +4833,86 @@
       "target": "rewardbench"
     },
     {
+      "source": "apps",
+      "target": "bigcode-evaluation-harness"
+    },
+    {
+      "source": "apps",
+      "target": "bigcodebench"
+    },
+    {
+      "source": "apps",
+      "target": "classeval"
+    },
+    {
+      "source": "apps",
+      "target": "cruxeval"
+    },
+    {
+      "source": "apps",
+      "target": "evalplus"
+    },
+    {
+      "source": "apps",
+      "target": "humaneval"
+    },
+    {
+      "source": "apps",
+      "target": "livecodebench"
+    },
+    {
+      "source": "apps",
+      "target": "scicode"
+    },
+    {
+      "source": "apps",
+      "target": "swe-bench"
+    },
+    {
+      "source": "appworld",
+      "target": "bfcl"
+    },
+    {
+      "source": "appworld",
+      "target": "browsergym"
+    },
+    {
+      "source": "appworld",
+      "target": "mind2web"
+    },
+    {
+      "source": "appworld",
+      "target": "mle-bench"
+    },
+    {
+      "source": "appworld",
+      "target": "osworld"
+    },
+    {
+      "source": "appworld",
+      "target": "t-eval"
+    },
+    {
+      "source": "appworld",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "appworld",
+      "target": "toolbench"
+    },
+    {
+      "source": "appworld",
+      "target": "webarena"
+    },
+    {
+      "source": "appworld",
+      "target": "wildbench"
+    },
+    {
+      "source": "appworld",
+      "target": "workarena"
+    },
+    {
       "source": "arena-hard-auto",
       "target": "chateval"
     },
@@ -3572,7 +4922,15 @@
     },
     {
       "source": "arena-hard-auto",
+      "target": "judgelm"
+    },
+    {
+      "source": "arena-hard-auto",
       "target": "llmbar"
+    },
+    {
+      "source": "arena-hard-auto",
+      "target": "long-form-factuality"
     },
     {
       "source": "arena-hard-auto",
@@ -3580,7 +4938,19 @@
     },
     {
       "source": "arena-hard-auto",
+      "target": "pandalm"
+    },
+    {
+      "source": "arena-hard-auto",
+      "target": "prometheus-eval"
+    },
+    {
+      "source": "arena-hard-auto",
       "target": "rewardbench"
+    },
+    {
+      "source": "ares",
+      "target": "beir"
     },
     {
       "source": "ares",
@@ -3592,7 +4962,15 @@
     },
     {
       "source": "ares",
+      "target": "mteb"
+    },
+    {
+      "source": "ares",
       "target": "ragas"
+    },
+    {
+      "source": "ares",
+      "target": "ragchecker"
     },
     {
       "source": "ares",
@@ -3603,12 +4981,80 @@
       "target": "trulens"
     },
     {
+      "source": "beir",
+      "target": "mteb"
+    },
+    {
+      "source": "beir",
+      "target": "ragas"
+    },
+    {
+      "source": "beir",
+      "target": "ragchecker"
+    },
+    {
+      "source": "bfcl",
+      "target": "browsergym"
+    },
+    {
+      "source": "bfcl",
+      "target": "mind2web"
+    },
+    {
+      "source": "bfcl",
+      "target": "mle-bench"
+    },
+    {
+      "source": "bfcl",
+      "target": "osworld"
+    },
+    {
+      "source": "bfcl",
+      "target": "t-eval"
+    },
+    {
+      "source": "bfcl",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "bfcl",
+      "target": "toolbench"
+    },
+    {
+      "source": "bfcl",
+      "target": "webarena"
+    },
+    {
+      "source": "bfcl",
+      "target": "wildbench"
+    },
+    {
+      "source": "bfcl",
+      "target": "workarena"
+    },
+    {
       "source": "big-bench",
       "target": "flask"
     },
     {
       "source": "big-bench",
+      "target": "gpqa"
+    },
+    {
+      "source": "big-bench",
       "target": "legalbench"
+    },
+    {
+      "source": "big-bench",
+      "target": "lm-evaluation-harness"
+    },
+    {
+      "source": "big-bench",
+      "target": "math"
+    },
+    {
+      "source": "big-bench",
+      "target": "mathbench"
     },
     {
       "source": "big-bench",
@@ -3620,7 +5066,27 @@
     },
     {
       "source": "big-bench",
+      "target": "musr"
+    },
+    {
+      "source": "big-bench",
+      "target": "opencompass"
+    },
+    {
+      "source": "big-bench",
       "target": "truthfulqa"
+    },
+    {
+      "source": "bigcode-evaluation-harness",
+      "target": "bigcodebench"
+    },
+    {
+      "source": "bigcode-evaluation-harness",
+      "target": "classeval"
+    },
+    {
+      "source": "bigcode-evaluation-harness",
+      "target": "cruxeval"
     },
     {
       "source": "bigcode-evaluation-harness",
@@ -3628,7 +5094,55 @@
     },
     {
       "source": "bigcode-evaluation-harness",
+      "target": "humaneval"
+    },
+    {
+      "source": "bigcode-evaluation-harness",
+      "target": "livecodebench"
+    },
+    {
+      "source": "bigcode-evaluation-harness",
+      "target": "scicode"
+    },
+    {
+      "source": "bigcode-evaluation-harness",
       "target": "swe-bench"
+    },
+    {
+      "source": "bigcodebench",
+      "target": "classeval"
+    },
+    {
+      "source": "bigcodebench",
+      "target": "cruxeval"
+    },
+    {
+      "source": "bigcodebench",
+      "target": "evalplus"
+    },
+    {
+      "source": "bigcodebench",
+      "target": "humaneval"
+    },
+    {
+      "source": "bigcodebench",
+      "target": "livecodebench"
+    },
+    {
+      "source": "bigcodebench",
+      "target": "scicode"
+    },
+    {
+      "source": "bigcodebench",
+      "target": "swe-bench"
+    },
+    {
+      "source": "browsergym",
+      "target": "mind2web"
+    },
+    {
+      "source": "browsergym",
+      "target": "mle-bench"
     },
     {
       "source": "browsergym",
@@ -3636,11 +5150,27 @@
     },
     {
       "source": "browsergym",
+      "target": "t-eval"
+    },
+    {
+      "source": "browsergym",
       "target": "theagentcompany"
     },
     {
       "source": "browsergym",
+      "target": "toolbench"
+    },
+    {
+      "source": "browsergym",
       "target": "webarena"
+    },
+    {
+      "source": "browsergym",
+      "target": "wildbench"
+    },
+    {
+      "source": "browsergym",
+      "target": "workarena"
     },
     {
       "source": "chateval",
@@ -3659,6 +5189,46 @@
       "target": "rewardbench"
     },
     {
+      "source": "classeval",
+      "target": "cruxeval"
+    },
+    {
+      "source": "classeval",
+      "target": "evalplus"
+    },
+    {
+      "source": "classeval",
+      "target": "humaneval"
+    },
+    {
+      "source": "classeval",
+      "target": "livecodebench"
+    },
+    {
+      "source": "classeval",
+      "target": "scicode"
+    },
+    {
+      "source": "classeval",
+      "target": "swe-bench"
+    },
+    {
+      "source": "cmb",
+      "target": "finben"
+    },
+    {
+      "source": "cmb",
+      "target": "helm"
+    },
+    {
+      "source": "cmb",
+      "target": "legalbench"
+    },
+    {
+      "source": "cmb",
+      "target": "medqa"
+    },
+    {
       "source": "continuous-eval",
       "target": "factscore"
     },
@@ -3673,6 +5243,26 @@
     {
       "source": "continuous-eval",
       "target": "trulens"
+    },
+    {
+      "source": "cruxeval",
+      "target": "evalplus"
+    },
+    {
+      "source": "cruxeval",
+      "target": "humaneval"
+    },
+    {
+      "source": "cruxeval",
+      "target": "livecodebench"
+    },
+    {
+      "source": "cruxeval",
+      "target": "scicode"
+    },
+    {
+      "source": "cruxeval",
+      "target": "swe-bench"
     },
     {
       "source": "deepeval",
@@ -3688,6 +5278,10 @@
     },
     {
       "source": "deepeval",
+      "target": "opik"
+    },
+    {
+      "source": "deepeval",
       "target": "promptfoo"
     },
     {
@@ -3697,6 +5291,18 @@
     {
       "source": "deepeval",
       "target": "giskard"
+    },
+    {
+      "source": "evalplus",
+      "target": "humaneval"
+    },
+    {
+      "source": "evalplus",
+      "target": "livecodebench"
+    },
+    {
+      "source": "evalplus",
+      "target": "scicode"
     },
     {
       "source": "evalplus",
@@ -3715,6 +5321,18 @@
       "target": "trulens"
     },
     {
+      "source": "finben",
+      "target": "helm"
+    },
+    {
+      "source": "finben",
+      "target": "legalbench"
+    },
+    {
+      "source": "finben",
+      "target": "medqa"
+    },
+    {
       "source": "flask",
       "target": "legalbench"
     },
@@ -3732,7 +5350,15 @@
     },
     {
       "source": "flow-judge",
+      "target": "judgelm"
+    },
+    {
+      "source": "flow-judge",
       "target": "llmbar"
+    },
+    {
+      "source": "flow-judge",
+      "target": "long-form-factuality"
     },
     {
       "source": "flow-judge",
@@ -3740,7 +5366,39 @@
     },
     {
       "source": "flow-judge",
+      "target": "pandalm"
+    },
+    {
+      "source": "flow-judge",
+      "target": "prometheus-eval"
+    },
+    {
+      "source": "flow-judge",
       "target": "rewardbench"
+    },
+    {
+      "source": "gpqa",
+      "target": "lm-evaluation-harness"
+    },
+    {
+      "source": "gpqa",
+      "target": "math"
+    },
+    {
+      "source": "gpqa",
+      "target": "mathbench"
+    },
+    {
+      "source": "gpqa",
+      "target": "mmlu-pro"
+    },
+    {
+      "source": "gpqa",
+      "target": "musr"
+    },
+    {
+      "source": "gpqa",
+      "target": "opencompass"
     },
     {
       "source": "helm",
@@ -3749,6 +5407,10 @@
     {
       "source": "helm",
       "target": "inspect-ai"
+    },
+    {
+      "source": "helm",
+      "target": "legalbench"
     },
     {
       "source": "helm",
@@ -3761,6 +5423,10 @@
     {
       "source": "helm",
       "target": "lmms-eval"
+    },
+    {
+      "source": "helm",
+      "target": "medqa"
     },
     {
       "source": "helm",
@@ -3819,6 +5485,18 @@
       "target": "unitxt"
     },
     {
+      "source": "humaneval",
+      "target": "livecodebench"
+    },
+    {
+      "source": "humaneval",
+      "target": "scicode"
+    },
+    {
+      "source": "humaneval",
+      "target": "swe-bench"
+    },
+    {
       "source": "inspect-ai",
       "target": "lm-evaluation-harness"
     },
@@ -3829,6 +5507,30 @@
     {
       "source": "inspect-ai",
       "target": "promptfoo"
+    },
+    {
+      "source": "judgelm",
+      "target": "long-form-factuality"
+    },
+    {
+      "source": "judgelm",
+      "target": "mt-bench"
+    },
+    {
+      "source": "judgelm",
+      "target": "pandalm"
+    },
+    {
+      "source": "judgelm",
+      "target": "prometheus-eval"
+    },
+    {
+      "source": "judgelm",
+      "target": "rewardbench"
+    },
+    {
+      "source": "legalbench",
+      "target": "medqa"
     },
     {
       "source": "legalbench",
@@ -3871,6 +5573,14 @@
       "target": "unitxt"
     },
     {
+      "source": "livecodebench",
+      "target": "scicode"
+    },
+    {
+      "source": "livecodebench",
+      "target": "swe-bench"
+    },
+    {
       "source": "llmbar",
       "target": "mt-bench"
     },
@@ -3884,10 +5594,34 @@
     },
     {
       "source": "lm-evaluation-harness",
+      "target": "longbench"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "math"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "mathbench"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "mmlu-pro"
+    },
+    {
+      "source": "lm-evaluation-harness",
       "target": "modelbench"
     },
     {
       "source": "lm-evaluation-harness",
+      "target": "musr"
+    },
+    {
+      "source": "lm-evaluation-harness",
+      "target": "needle-in-haystack"
+    },
+    {
+      "source": "lm-evaluation-harness",
       "target": "olmes"
     },
     {
@@ -3908,11 +5642,19 @@
     },
     {
       "source": "lmms-eval",
+      "target": "mmmu"
+    },
+    {
+      "source": "lmms-eval",
       "target": "olmes"
     },
     {
       "source": "lmms-eval",
       "target": "opencompass"
+    },
+    {
+      "source": "lmms-eval",
+      "target": "scienceqa"
     },
     {
       "source": "lmms-eval",
@@ -3925,6 +5667,118 @@
     {
       "source": "lmms-eval",
       "target": "unitxt"
+    },
+    {
+      "source": "lmms-eval",
+      "target": "vlmeval-kit"
+    },
+    {
+      "source": "long-form-factuality",
+      "target": "mt-bench"
+    },
+    {
+      "source": "long-form-factuality",
+      "target": "pandalm"
+    },
+    {
+      "source": "long-form-factuality",
+      "target": "prometheus-eval"
+    },
+    {
+      "source": "long-form-factuality",
+      "target": "rewardbench"
+    },
+    {
+      "source": "longbench",
+      "target": "needle-in-haystack"
+    },
+    {
+      "source": "math",
+      "target": "mathbench"
+    },
+    {
+      "source": "math",
+      "target": "mmlu-pro"
+    },
+    {
+      "source": "math",
+      "target": "musr"
+    },
+    {
+      "source": "math",
+      "target": "opencompass"
+    },
+    {
+      "source": "mathbench",
+      "target": "mmlu-pro"
+    },
+    {
+      "source": "mathbench",
+      "target": "musr"
+    },
+    {
+      "source": "mathbench",
+      "target": "opencompass"
+    },
+    {
+      "source": "mind2web",
+      "target": "mle-bench"
+    },
+    {
+      "source": "mind2web",
+      "target": "osworld"
+    },
+    {
+      "source": "mind2web",
+      "target": "t-eval"
+    },
+    {
+      "source": "mind2web",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "mind2web",
+      "target": "toolbench"
+    },
+    {
+      "source": "mind2web",
+      "target": "webarena"
+    },
+    {
+      "source": "mind2web",
+      "target": "wildbench"
+    },
+    {
+      "source": "mind2web",
+      "target": "workarena"
+    },
+    {
+      "source": "mle-bench",
+      "target": "osworld"
+    },
+    {
+      "source": "mle-bench",
+      "target": "t-eval"
+    },
+    {
+      "source": "mle-bench",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "mle-bench",
+      "target": "toolbench"
+    },
+    {
+      "source": "mle-bench",
+      "target": "webarena"
+    },
+    {
+      "source": "mle-bench",
+      "target": "wildbench"
+    },
+    {
+      "source": "mle-bench",
+      "target": "workarena"
     },
     {
       "source": "mmlu-pro",
@@ -3932,7 +5786,31 @@
     },
     {
       "source": "mmlu-pro",
+      "target": "musr"
+    },
+    {
+      "source": "mmlu-pro",
+      "target": "opencompass"
+    },
+    {
+      "source": "mmlu-pro",
       "target": "truthfulqa"
+    },
+    {
+      "source": "mmmu",
+      "target": "scienceqa"
+    },
+    {
+      "source": "mmmu",
+      "target": "vlmeval-kit"
+    },
+    {
+      "source": "mt-bench",
+      "target": "pandalm"
+    },
+    {
+      "source": "mt-bench",
+      "target": "prometheus-eval"
     },
     {
       "source": "mt-bench",
@@ -3940,7 +5818,19 @@
     },
     {
       "source": "mteb",
+      "target": "ragas"
+    },
+    {
+      "source": "mteb",
+      "target": "ragchecker"
+    },
+    {
+      "source": "mteb",
       "target": "truthfulqa"
+    },
+    {
+      "source": "musr",
+      "target": "opencompass"
     },
     {
       "source": "needle-in-haystack",
@@ -3992,11 +5882,55 @@
     },
     {
       "source": "osworld",
+      "target": "t-eval"
+    },
+    {
+      "source": "osworld",
       "target": "theagentcompany"
     },
     {
       "source": "osworld",
+      "target": "toolbench"
+    },
+    {
+      "source": "osworld",
       "target": "webarena"
+    },
+    {
+      "source": "osworld",
+      "target": "wildbench"
+    },
+    {
+      "source": "osworld",
+      "target": "workarena"
+    },
+    {
+      "source": "pandalm",
+      "target": "prometheus-eval"
+    },
+    {
+      "source": "pandalm",
+      "target": "rewardbench"
+    },
+    {
+      "source": "prometheus-eval",
+      "target": "rewardbench"
+    },
+    {
+      "source": "promptbench",
+      "target": "cleverhans"
+    },
+    {
+      "source": "promptbench",
+      "target": "harmbench"
+    },
+    {
+      "source": "promptbench",
+      "target": "openattack"
+    },
+    {
+      "source": "promptbench",
+      "target": "textattack"
     },
     {
       "source": "promptbench",
@@ -4008,7 +5942,27 @@
     },
     {
       "source": "promptfoo",
+      "target": "agenta"
+    },
+    {
+      "source": "promptfoo",
       "target": "garak"
+    },
+    {
+      "source": "promptfoo",
+      "target": "langwatch"
+    },
+    {
+      "source": "promptfoo",
+      "target": "mlflow-ai-gateway"
+    },
+    {
+      "source": "promptfoo",
+      "target": "promptimize"
+    },
+    {
+      "source": "promptfoo",
+      "target": "prompttools"
     },
     {
       "source": "promptfoo",
@@ -4028,11 +5982,27 @@
     },
     {
       "source": "ragas",
+      "target": "opik"
+    },
+    {
+      "source": "ragas",
+      "target": "ragchecker"
+    },
+    {
+      "source": "ragas",
       "target": "tonic-validate"
     },
     {
       "source": "ragas",
       "target": "trulens"
+    },
+    {
+      "source": "scicode",
+      "target": "swe-bench"
+    },
+    {
+      "source": "scienceqa",
+      "target": "vlmeval-kit"
     },
     {
       "source": "simple-evals",
@@ -4043,8 +6013,40 @@
       "target": "unitxt"
     },
     {
+      "source": "t-eval",
+      "target": "theagentcompany"
+    },
+    {
+      "source": "t-eval",
+      "target": "toolbench"
+    },
+    {
+      "source": "t-eval",
+      "target": "webarena"
+    },
+    {
+      "source": "t-eval",
+      "target": "wildbench"
+    },
+    {
+      "source": "t-eval",
+      "target": "workarena"
+    },
+    {
+      "source": "theagentcompany",
+      "target": "toolbench"
+    },
+    {
       "source": "theagentcompany",
       "target": "webarena"
+    },
+    {
+      "source": "theagentcompany",
+      "target": "wildbench"
+    },
+    {
+      "source": "theagentcompany",
+      "target": "workarena"
     },
     {
       "source": "tonic-validate",
@@ -4052,7 +6054,23 @@
     },
     {
       "source": "toolbench",
+      "target": "webarena"
+    },
+    {
+      "source": "toolbench",
+      "target": "wildbench"
+    },
+    {
+      "source": "toolbench",
+      "target": "workarena"
+    },
+    {
+      "source": "toolbench",
       "target": "zeroeval"
+    },
+    {
+      "source": "trulens",
+      "target": "agentops"
     },
     {
       "source": "trulens",
@@ -4060,6 +6078,10 @@
     },
     {
       "source": "trulens",
+      "target": "helicone"
+    },
+    {
+      "source": "trulens",
       "target": "langfuse"
     },
     {
@@ -4067,8 +6089,100 @@
       "target": "langkit"
     },
     {
+      "source": "trulens",
+      "target": "langtrace"
+    },
+    {
+      "source": "trulens",
+      "target": "langwatch"
+    },
+    {
+      "source": "trulens",
+      "target": "openlit"
+    },
+    {
+      "source": "trulens",
+      "target": "openllmetry"
+    },
+    {
+      "source": "trulens",
+      "target": "opik"
+    },
+    {
       "source": "ultraeval",
       "target": "unitxt"
+    },
+    {
+      "source": "webarena",
+      "target": "wildbench"
+    },
+    {
+      "source": "webarena",
+      "target": "workarena"
+    },
+    {
+      "source": "wildbench",
+      "target": "workarena"
+    },
+    {
+      "source": "agenta",
+      "target": "mlflow-ai-gateway"
+    },
+    {
+      "source": "agenta",
+      "target": "promptimize"
+    },
+    {
+      "source": "agenta",
+      "target": "prompttools"
+    },
+    {
+      "source": "agentops",
+      "target": "arize-phoenix"
+    },
+    {
+      "source": "agentops",
+      "target": "helicone"
+    },
+    {
+      "source": "agentops",
+      "target": "langfuse"
+    },
+    {
+      "source": "agentops",
+      "target": "langkit"
+    },
+    {
+      "source": "agentops",
+      "target": "langtrace"
+    },
+    {
+      "source": "agentops",
+      "target": "langwatch"
+    },
+    {
+      "source": "agentops",
+      "target": "litellm"
+    },
+    {
+      "source": "agentops",
+      "target": "openlit"
+    },
+    {
+      "source": "agentops",
+      "target": "openllmetry"
+    },
+    {
+      "source": "agentops",
+      "target": "opik"
+    },
+    {
+      "source": "agentops",
+      "target": "tokencost"
+    },
+    {
+      "source": "arize-phoenix",
+      "target": "helicone"
     },
     {
       "source": "arize-phoenix",
@@ -4077,6 +6191,26 @@
     {
       "source": "arize-phoenix",
       "target": "langkit"
+    },
+    {
+      "source": "arize-phoenix",
+      "target": "langtrace"
+    },
+    {
+      "source": "arize-phoenix",
+      "target": "langwatch"
+    },
+    {
+      "source": "arize-phoenix",
+      "target": "openlit"
+    },
+    {
+      "source": "arize-phoenix",
+      "target": "openllmetry"
+    },
+    {
+      "source": "arize-phoenix",
+      "target": "opik"
     },
     {
       "source": "art-toolkit",
@@ -4123,8 +6257,68 @@
       "target": "wildguard"
     },
     {
+      "source": "baml",
+      "target": "funcchain"
+    },
+    {
+      "source": "baml",
+      "target": "guidance"
+    },
+    {
+      "source": "baml",
+      "target": "instructor"
+    },
+    {
+      "source": "baml",
+      "target": "jsonformer"
+    },
+    {
+      "source": "baml",
+      "target": "lm-format-enforcer"
+    },
+    {
+      "source": "baml",
+      "target": "lmql"
+    },
+    {
+      "source": "baml",
+      "target": "magentic"
+    },
+    {
+      "source": "baml",
+      "target": "marvin"
+    },
+    {
+      "source": "baml",
+      "target": "outlines"
+    },
+    {
+      "source": "baml",
+      "target": "typechat"
+    },
+    {
+      "source": "baml",
+      "target": "xgrammar"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "easyjailbreak"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "jailbreak-hub"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "jailbreakbench"
+    },
+    {
       "source": "circuit-breakers",
       "target": "llm-guard"
+    },
+    {
+      "source": "circuit-breakers",
+      "target": "llm-jailbreaking-defense"
     },
     {
       "source": "circuit-breakers",
@@ -4191,6 +6385,46 @@
       "target": "wmdp"
     },
     {
+      "source": "funcchain",
+      "target": "guidance"
+    },
+    {
+      "source": "funcchain",
+      "target": "instructor"
+    },
+    {
+      "source": "funcchain",
+      "target": "jsonformer"
+    },
+    {
+      "source": "funcchain",
+      "target": "lm-format-enforcer"
+    },
+    {
+      "source": "funcchain",
+      "target": "lmql"
+    },
+    {
+      "source": "funcchain",
+      "target": "magentic"
+    },
+    {
+      "source": "funcchain",
+      "target": "marvin"
+    },
+    {
+      "source": "funcchain",
+      "target": "outlines"
+    },
+    {
+      "source": "funcchain",
+      "target": "typechat"
+    },
+    {
+      "source": "funcchain",
+      "target": "xgrammar"
+    },
+    {
       "source": "granite-guardian",
       "target": "guardrails-ai"
     },
@@ -4244,7 +6478,23 @@
     },
     {
       "source": "guidance",
+      "target": "jsonformer"
+    },
+    {
+      "source": "guidance",
+      "target": "lm-format-enforcer"
+    },
+    {
+      "source": "guidance",
       "target": "lmql"
+    },
+    {
+      "source": "guidance",
+      "target": "magentic"
+    },
+    {
+      "source": "guidance",
+      "target": "marvin"
     },
     {
       "source": "guidance",
@@ -4253,6 +6503,10 @@
     {
       "source": "guidance",
       "target": "typechat"
+    },
+    {
+      "source": "guidance",
+      "target": "xgrammar"
     },
     {
       "source": "harmless-harnesses",
@@ -4260,7 +6514,23 @@
     },
     {
       "source": "instructor",
+      "target": "jsonformer"
+    },
+    {
+      "source": "instructor",
+      "target": "lm-format-enforcer"
+    },
+    {
+      "source": "instructor",
       "target": "lmql"
+    },
+    {
+      "source": "instructor",
+      "target": "magentic"
+    },
+    {
+      "source": "instructor",
+      "target": "marvin"
     },
     {
       "source": "instructor",
@@ -4271,8 +6541,128 @@
       "target": "typechat"
     },
     {
+      "source": "instructor",
+      "target": "xgrammar"
+    },
+    {
+      "source": "jsonformer",
+      "target": "lm-format-enforcer"
+    },
+    {
+      "source": "jsonformer",
+      "target": "lmql"
+    },
+    {
+      "source": "jsonformer",
+      "target": "magentic"
+    },
+    {
+      "source": "jsonformer",
+      "target": "marvin"
+    },
+    {
+      "source": "jsonformer",
+      "target": "outlines"
+    },
+    {
+      "source": "jsonformer",
+      "target": "typechat"
+    },
+    {
+      "source": "jsonformer",
+      "target": "xgrammar"
+    },
+    {
+      "source": "langfuse",
+      "target": "helicone"
+    },
+    {
       "source": "langfuse",
       "target": "langkit"
+    },
+    {
+      "source": "langfuse",
+      "target": "langtrace"
+    },
+    {
+      "source": "langfuse",
+      "target": "langwatch"
+    },
+    {
+      "source": "langfuse",
+      "target": "openlit"
+    },
+    {
+      "source": "langfuse",
+      "target": "openllmetry"
+    },
+    {
+      "source": "langfuse",
+      "target": "opik"
+    },
+    {
+      "source": "langkit",
+      "target": "helicone"
+    },
+    {
+      "source": "langkit",
+      "target": "langtrace"
+    },
+    {
+      "source": "langkit",
+      "target": "langwatch"
+    },
+    {
+      "source": "langkit",
+      "target": "openlit"
+    },
+    {
+      "source": "langkit",
+      "target": "openllmetry"
+    },
+    {
+      "source": "langkit",
+      "target": "opik"
+    },
+    {
+      "source": "langtrace",
+      "target": "helicone"
+    },
+    {
+      "source": "langtrace",
+      "target": "langwatch"
+    },
+    {
+      "source": "langtrace",
+      "target": "openlit"
+    },
+    {
+      "source": "langtrace",
+      "target": "openllmetry"
+    },
+    {
+      "source": "langtrace",
+      "target": "opik"
+    },
+    {
+      "source": "langwatch",
+      "target": "helicone"
+    },
+    {
+      "source": "langwatch",
+      "target": "openlit"
+    },
+    {
+      "source": "langwatch",
+      "target": "openllmetry"
+    },
+    {
+      "source": "langwatch",
+      "target": "opik"
+    },
+    {
+      "source": "llm-guard",
+      "target": "deep-inception"
     },
     {
       "source": "llm-guard",
@@ -4315,12 +6705,76 @@
       "target": "wildguard"
     },
     {
+      "source": "lm-format-enforcer",
+      "target": "lmql"
+    },
+    {
+      "source": "lm-format-enforcer",
+      "target": "magentic"
+    },
+    {
+      "source": "lm-format-enforcer",
+      "target": "marvin"
+    },
+    {
+      "source": "lm-format-enforcer",
+      "target": "outlines"
+    },
+    {
+      "source": "lm-format-enforcer",
+      "target": "typechat"
+    },
+    {
+      "source": "lm-format-enforcer",
+      "target": "xgrammar"
+    },
+    {
+      "source": "lmql",
+      "target": "magentic"
+    },
+    {
+      "source": "lmql",
+      "target": "marvin"
+    },
+    {
       "source": "lmql",
       "target": "outlines"
     },
     {
       "source": "lmql",
       "target": "typechat"
+    },
+    {
+      "source": "lmql",
+      "target": "xgrammar"
+    },
+    {
+      "source": "magentic",
+      "target": "marvin"
+    },
+    {
+      "source": "magentic",
+      "target": "outlines"
+    },
+    {
+      "source": "magentic",
+      "target": "typechat"
+    },
+    {
+      "source": "magentic",
+      "target": "xgrammar"
+    },
+    {
+      "source": "marvin",
+      "target": "outlines"
+    },
+    {
+      "source": "marvin",
+      "target": "typechat"
+    },
+    {
+      "source": "marvin",
+      "target": "xgrammar"
     },
     {
       "source": "nemo-guardrails",
@@ -4335,12 +6789,48 @@
       "target": "vigil-llm"
     },
     {
+      "source": "openlit",
+      "target": "helicone"
+    },
+    {
+      "source": "openlit",
+      "target": "openllmetry"
+    },
+    {
+      "source": "openlit",
+      "target": "opik"
+    },
+    {
+      "source": "openllmetry",
+      "target": "helicone"
+    },
+    {
+      "source": "openllmetry",
+      "target": "opik"
+    },
+    {
+      "source": "opik",
+      "target": "helicone"
+    },
+    {
       "source": "outlines",
       "target": "typechat"
     },
     {
+      "source": "outlines",
+      "target": "xgrammar"
+    },
+    {
       "source": "presidio",
       "target": "vigil-llm"
+    },
+    {
+      "source": "promptimize",
+      "target": "mlflow-ai-gateway"
+    },
+    {
+      "source": "promptimize",
+      "target": "prompttools"
     },
     {
       "source": "promptinject",
@@ -4355,8 +6845,16 @@
       "target": "rebuff"
     },
     {
+      "source": "prompttools",
+      "target": "mlflow-ai-gateway"
+    },
+    {
       "source": "rebuff",
       "target": "bipia"
+    },
+    {
+      "source": "rebuff",
+      "target": "deep-inception"
     },
     {
       "source": "rebuff",
@@ -4389,6 +6887,22 @@
     {
       "source": "rebuff",
       "target": "wildguard"
+    },
+    {
+      "source": "safedecoding",
+      "target": "easyjailbreak"
+    },
+    {
+      "source": "safedecoding",
+      "target": "jailbreak-hub"
+    },
+    {
+      "source": "safedecoding",
+      "target": "jailbreakbench"
+    },
+    {
+      "source": "safedecoding",
+      "target": "llm-jailbreaking-defense"
     },
     {
       "source": "safedecoding",
@@ -4424,11 +6938,35 @@
     },
     {
       "source": "smooth-llm",
+      "target": "easyjailbreak"
+    },
+    {
+      "source": "smooth-llm",
+      "target": "jailbreak-hub"
+    },
+    {
+      "source": "smooth-llm",
+      "target": "jailbreakbench"
+    },
+    {
+      "source": "smooth-llm",
+      "target": "llm-jailbreaking-defense"
+    },
+    {
+      "source": "smooth-llm",
       "target": "vigil-llm"
     },
     {
       "source": "smooth-llm",
       "target": "wildguard"
+    },
+    {
+      "source": "tokencost",
+      "target": "helicone"
+    },
+    {
+      "source": "tokencost",
+      "target": "litellm"
     },
     {
       "source": "trustllm",
@@ -4439,12 +6977,24 @@
       "target": "safetybench"
     },
     {
+      "source": "typechat",
+      "target": "xgrammar"
+    },
+    {
       "source": "vigil-llm",
       "target": "wildguard"
     },
     {
       "source": "wildguard",
       "target": "harmbench"
+    },
+    {
+      "source": "xgrammar",
+      "target": "sglang"
+    },
+    {
+      "source": "xgrammar",
+      "target": "vllm"
     },
     {
       "source": "agent-attack",
@@ -4580,7 +7130,15 @@
     },
     {
       "source": "autodan",
+      "target": "autoprompt-calibration"
+    },
+    {
+      "source": "autodan",
       "target": "cipherchat"
+    },
+    {
+      "source": "autodan",
+      "target": "deep-inception"
     },
     {
       "source": "autodan",
@@ -4604,11 +7162,59 @@
     },
     {
       "source": "autodan",
+      "target": "rain-self-alignment"
+    },
+    {
+      "source": "autodan",
       "target": "renellm"
     },
     {
       "source": "autodan",
       "target": "tap-jailbreak"
+    },
+    {
+      "source": "autoprompt-calibration",
+      "target": "deep-inception"
+    },
+    {
+      "source": "autoprompt-calibration",
+      "target": "gptfuzz"
+    },
+    {
+      "source": "autoprompt-calibration",
+      "target": "llm-attacks-gcg"
+    },
+    {
+      "source": "autoprompt-calibration",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "autoprompt-calibration",
+      "target": "rain-self-alignment"
+    },
+    {
+      "source": "autoprompt-calibration",
+      "target": "renellm"
+    },
+    {
+      "source": "autoprompt-calibration",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "backdoor-llm",
+      "target": "detect-pretrain-mink"
+    },
+    {
+      "source": "backdoor-llm",
+      "target": "easyedit-knowledge-attacks"
+    },
+    {
+      "source": "backdoor-llm",
+      "target": "modelscan"
+    },
+    {
+      "source": "backdoor-llm",
+      "target": "purple-llama"
     },
     {
       "source": "bipia",
@@ -4659,6 +7265,62 @@
       "target": "tap-jailbreak"
     },
     {
+      "source": "cleverhans",
+      "target": "harmbench"
+    },
+    {
+      "source": "cleverhans",
+      "target": "openattack"
+    },
+    {
+      "source": "cleverhans",
+      "target": "textattack"
+    },
+    {
+      "source": "deep-inception",
+      "target": "gptfuzz"
+    },
+    {
+      "source": "deep-inception",
+      "target": "llm-attacks-gcg"
+    },
+    {
+      "source": "deep-inception",
+      "target": "pair-jailbreak"
+    },
+    {
+      "source": "deep-inception",
+      "target": "rain-self-alignment"
+    },
+    {
+      "source": "deep-inception",
+      "target": "renellm"
+    },
+    {
+      "source": "deep-inception",
+      "target": "tap-jailbreak"
+    },
+    {
+      "source": "detect-pretrain-mink",
+      "target": "easyedit-knowledge-attacks"
+    },
+    {
+      "source": "detect-pretrain-mink",
+      "target": "modelscan"
+    },
+    {
+      "source": "detect-pretrain-mink",
+      "target": "purple-llama"
+    },
+    {
+      "source": "easyedit-knowledge-attacks",
+      "target": "modelscan"
+    },
+    {
+      "source": "easyedit-knowledge-attacks",
+      "target": "purple-llama"
+    },
+    {
       "source": "easyjailbreak",
       "target": "garak"
     },
@@ -4672,7 +7334,15 @@
     },
     {
       "source": "easyjailbreak",
+      "target": "jailbreak-hub"
+    },
+    {
+      "source": "easyjailbreak",
       "target": "jailbreakbench"
+    },
+    {
+      "source": "easyjailbreak",
+      "target": "llm-jailbreaking-defense"
     },
     {
       "source": "easyjailbreak",
@@ -4736,6 +7406,10 @@
     },
     {
       "source": "gptfuzz",
+      "target": "rain-self-alignment"
+    },
+    {
+      "source": "gptfuzz",
       "target": "renellm"
     },
     {
@@ -4752,7 +7426,15 @@
     },
     {
       "source": "harmbench",
+      "target": "openattack"
+    },
+    {
+      "source": "harmbench",
       "target": "safetybench"
+    },
+    {
+      "source": "harmbench",
+      "target": "textattack"
     },
     {
       "source": "harmbench",
@@ -4769,6 +7451,18 @@
     {
       "source": "jailbreak-evaluation",
       "target": "wmdp"
+    },
+    {
+      "source": "jailbreak-hub",
+      "target": "jailbreakbench"
+    },
+    {
+      "source": "jailbreak-hub",
+      "target": "llm-jailbreaking-defense"
+    },
+    {
+      "source": "jailbreakbench",
+      "target": "llm-jailbreaking-defense"
     },
     {
       "source": "jailbreakbench",
@@ -4805,6 +7499,10 @@
     {
       "source": "llm-attacks-gcg",
       "target": "pair-jailbreak"
+    },
+    {
+      "source": "llm-attacks-gcg",
+      "target": "rain-self-alignment"
     },
     {
       "source": "llm-attacks-gcg",
@@ -4867,6 +7565,14 @@
       "target": "toolemu"
     },
     {
+      "source": "openattack",
+      "target": "textattack"
+    },
+    {
+      "source": "pair-jailbreak",
+      "target": "rain-self-alignment"
+    },
+    {
       "source": "pair-jailbreak",
       "target": "renellm"
     },
@@ -4905,6 +7611,14 @@
     {
       "source": "r-judge",
       "target": "toolemu"
+    },
+    {
+      "source": "rain-self-alignment",
+      "target": "renellm"
+    },
+    {
+      "source": "rain-self-alignment",
+      "target": "tap-jailbreak"
     },
     {
       "source": "renellm",

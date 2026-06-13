@@ -40,8 +40,13 @@ sovereignty_notes: |
   same file regardless of which providers are listed under it.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - agenta
   - deepeval
   - garak
   - inspect-ai
+  - langwatch
+  - mlflow-ai-gateway
   - openai-evals
+  - promptimize
+  - prompttools
   - ragas

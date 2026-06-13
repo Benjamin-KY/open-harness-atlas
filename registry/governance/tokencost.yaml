@@ -1,0 +1,31 @@
+id: tokencost
+name: TokenCost
+category: governance
+subcategory: cost-tracking
+repo_url: https://github.com/AgentOps-AI/tokencost
+license: MIT
+primary_language: Python
+tagline: 'Client-side token counting and USD cost estimation for 400+ LLM models with live pricing table'
+description: |
+  TokenCost is AgentOps AI's client-side token counting and USD cost estimation for 400+ LLM models with live pricing table. Tracks 400+ model prices in a maintained pricing_table.md; uses Tiktoken for OpenAI and Anthropic beta token-counting API for Claude 3+; pure client-side (no proxy needed) unlike helicone; separate from agentops observability stack — usable standalone in any cost-budget guardrail..
+
+  In the atlas: TokenCost is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: company
+  name: AgentOps AI
+origin_country: US
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: |
+  AgentOps AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentops
+  - helicone
+  - litellm

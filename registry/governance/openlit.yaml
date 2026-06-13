@@ -1,0 +1,38 @@
+id: openlit
+name: OpenLIT
+category: governance
+subcategory: observability
+repo_url: https://github.com/openlit/openlit
+license: Apache-2.0
+primary_language: Python
+tagline: 'One-line OTel-native LLM observability with GPU monitoring, prompt management, and API key vault'
+description: |
+  OpenLIT is OpenLIT's one-line OTel-native LLM observability with GPU monitoring, prompt management, and API key vault. Uniquely adds GPU utilisation metrics alongside LLM traces; bundles prompt versioning (Prompt Hub), secrets management, and OpenGround multi-model playground in a single self-hosted stack unavailable in agentops or langfuse..
+
+  In the atlas: OpenLIT is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: company
+  name: OpenLIT
+origin_country: US
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: native
+sovereignty_notes: |
+  OpenLIT (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentops
+  - arize-phoenix
+  - helicone
+  - langfuse
+  - langkit
+  - langtrace
+  - langwatch
+  - openllmetry
+  - opik
+  - trulens

@@ -1,0 +1,31 @@
+id: classeval
+name: ClassEval
+category: eval
+subcategory: code-eval
+repo_url: https://github.com/FudanSELab/ClassEval
+license: MIT
+primary_language: Python
+tagline: 'First class-level Python code generation benchmark with 100 manually crafted classes and 410 methods spanning diverse field and method dependencies'
+description: |
+  ClassEval is NLP Group, Nanyang Technological University / Fudan University's first class-level Python code generation benchmark with 100 manually crafted classes and 410 methods spanning diverse field and method dependencies. Tests holistic OOP code generation with intra-class dependencies (method deps, field deps); no other registry entry specifically benchmarks class-level..
+
+  In the atlas: ClassEval is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: institution
+  name: NLP Group, Nanyang Technological University / Fudan University
+origin_country: SG
+model_agnostic_score: 4
+sovereignty_notes: |
+  NLP Group, Nanyang Technological University / Fudan University (SG-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - apps
+  - bigcode-evaluation-harness
+  - bigcodebench
+  - cruxeval
+  - evalplus
+  - humaneval
+  - livecodebench
+  - scicode
+  - swe-bench

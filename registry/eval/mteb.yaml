@@ -20,8 +20,12 @@ sovereignty_notes: |
   HuggingFace / community (community-maintained, multi-country); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - ares
+  - beir
   - big-bench
   - flask
   - legalbench
   - mmlu-pro
+  - ragas
+  - ragchecker
   - truthfulqa

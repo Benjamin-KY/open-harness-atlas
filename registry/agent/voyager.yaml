@@ -21,5 +21,8 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - chatdev
+  - chemcrow-science-agent
+  - gpt-researcher
   - metagpt
+  - rd-agent-microsoft
   - xagent

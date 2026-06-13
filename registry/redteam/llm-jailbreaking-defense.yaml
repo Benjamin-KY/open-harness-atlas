@@ -1,0 +1,28 @@
+id: llm-jailbreaking-defense
+name: LLM Jailbreaking Defense Library
+category: redteam
+subcategory: defense-plus-attack-eval
+repo_url: https://github.com/YihanWang617/llm-jailbreaking-defense
+license: MIT
+primary_language: Python
+tagline: 'Defense library against jailbreaking with backtranslation, SmoothLLM, RPO, and 4 built-in judges (PAIR, GCG, OpenAI policy, quality)'
+description: |
+  LLM Jailbreaking Defense Library is Yihan Wang, Zhouxing Shi, Andrew Bai (UCLA / UCSD)'s defense library against jailbreaking with backtranslation, SmoothLLM, RPO, and 4 built-in judges (PAIR, GCG, OpenAI policy, quality). Wraps HuggingFace + OpenAI models uniformly; modular defense interface; reusable judges for measuring attack success rate across multiple attack/defense combos..
+
+  In the atlas: LLM Jailbreaking Defense Library is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: Yihan Wang, Zhouxing Shi, Andrew Bai (UCLA / UCSD)
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Yihan Wang, Zhouxing Shi, Andrew Bai (UCLA / UCSD) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - circuit-breakers
+  - easyjailbreak
+  - jailbreak-hub
+  - jailbreakbench
+  - safedecoding
+  - smooth-llm

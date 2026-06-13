@@ -1,0 +1,26 @@
+id: textattack
+name: TextAttack
+category: redteam
+subcategory: nlp-adversarial-toolkit
+repo_url: https://github.com/QData/TextAttack
+license: MIT
+primary_language: Python
+tagline: 'Python framework for NLP adversarial attacks, data augmentation, and model training; pip-installable with 20+ attack recipes'
+description: |
+  TextAttack is QData Lab (University of Virginia)'s python framework for NLP adversarial attacks, data augmentation, and model training; pip-installable with 20+ attack recipes. Distinct from OpenAttack: tighter PyTorch/HuggingFace integration, command-line interface, augmentation pipeline, model zoo with pre-trained targets; widely cited..
+
+  In the atlas: TextAttack is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: ga
+maintainer:
+  type: institution
+  name: QData Lab (University of Virginia)
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  QData Lab (University of Virginia) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - cleverhans
+  - harmbench
+  - openattack
+  - promptbench

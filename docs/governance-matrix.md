@@ -6,34 +6,52 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Lang | Policy router | Source authority | Prompt composer | Output contract | Audit-log FSM | Agnostic |
 |---|---|---|---|---|---|---|---|---|
+| [Agenta](https://github.com/Agenta-AI/agenta) | MIT | Python | none | none | none | none | none | 4/5 |
+| [AgentOps](https://github.com/AgentOps-AI/agentops) | MIT | Python | none | none | none | partial | native | 4/5 |
 | [Arize Phoenix](https://github.com/Arize-AI/phoenix) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
 | [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) | MIT | Python | partial | none | none | partial | partial | 4/5 |
 | [AutoDefense](https://github.com/XHMY/AutoDefense) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [BAML](https://github.com/BoundaryML/baml) | Apache-2.0 | Rust | none | none | partial | native | none | 4/5 |
 | [Circuit Breakers](https://github.com/GraySwanAI/circuit-breakers) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [DataFog](https://github.com/DataFog/datafog-python) | MIT | Python | none | none | none | none | none | 4/5 |
 | [Detoxify](https://github.com/unitaryai/detoxify) | Apache-2.0 | Python | partial | none | none | partial | none | 5/5 |
 | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer) | Apache-2.0 | Python | partial | none | none | partial | none | 4/5 |
+| [funcchain](https://github.com/shroominic/funcchain) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [IBM Granite Guardian](https://github.com/ibm-granite/granite-guardian) | Apache-2.0 | Python | partial | partial | none | native | none | 5/5 |
 | [Guardrails AI](https://github.com/guardrails-ai/guardrails) | Apache-2.0 | Python | none | partial | none | native | partial | 4/5 |
 | [Guidance](https://github.com/guidance-ai/guidance) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [Harmless Harnesses](https://github.com/Benjamin-KY/Harmless-Harnesses) | Apache-2.0 | Python | native | native | native | native | native | 4/5 |
 | [Instructor](https://github.com/567-labs/instructor) | MIT | Python | none | none | partial | native | none | 4/5 |
+| [Jsonformer](https://github.com/1rgs/jsonformer) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [Langfuse](https://github.com/langfuse/langfuse) | MIT | TypeScript | none | none | none | partial | native | 4/5 |
 | [LangKit](https://github.com/whylabs/langkit) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
+| [Langtrace](https://github.com/Scale3-Labs/langtrace) | AGPL-3.0 | TypeScript | none | none | none | none | none | 4/5 |
+| [LangWatch](https://github.com/langwatch/langwatch) | Apache-2.0 | TypeScript | none | none | none | partial | native | 4/5 |
 | [LLM Guard](https://github.com/protectai/llm-guard) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [LM Format Enforcer](https://github.com/noamgat/lm-format-enforcer) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [LMQL](https://github.com/eth-sri/lmql) | Apache-2.0 | Python | none | none | partial | native | none | 4/5 |
+| [magentic](https://github.com/jackmpcollins/magentic) | MIT | Python | none | none | partial | native | none | 4/5 |
+| [Marvin](https://github.com/PrefectHQ/marvin) | Apache-2.0 | Python | none | none | partial | native | none | 4/5 |
 | [ModelBench](https://github.com/mlcommons/modelbench) | Apache-2.0 | Python | none | none | none | none | partial | 4/5 |
 | [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) | Apache-2.0 | Python | native | partial | native | native | partial | 4/5 |
+| [OpenLIT](https://github.com/openlit/openlit) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
+| [OpenLLMetry](https://github.com/traceloop/openllmetry) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
+| [Opik (by Comet)](https://github.com/comet-ml/opik) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
 | [Outlines](https://github.com/dottxt-ai/outlines) | Apache-2.0 | Python | none | none | partial | native | none | 4/5 |
 | [Microsoft Presidio](https://github.com/microsoft/presidio) | MIT | Python | none | none | none | native | none | 5/5 |
+| [Promptimize](https://github.com/preset-io/promptimize) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
 | [PromptInject](https://github.com/agencyenterprise/PromptInject) | MIT | Python | partial | none | none | none | none | 4/5 |
+| [PromptTools](https://github.com/hegelai/prompttools) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
 | [Rebuff](https://github.com/protectai/rebuff) | Apache-2.0 | Python | partial | none | none | partial | partial | 3/5 |
 | [SafeDecoding](https://github.com/uw-nsl/SafeDecoding) | MIT | Python | partial | none | none | partial | partial | 4/5 |
 | [ShieldLM](https://github.com/thu-coai/ShieldLM) | MIT | Python | partial | none | none | partial | none | 4/5 |
 | [SmoothLLM](https://github.com/arobey1/smooth-llm) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [TokenCost](https://github.com/AgentOps-AI/tokencost) | MIT | Python | none | none | none | none | none | 4/5 |
 | [TrustLLM](https://github.com/HowieHwong/TrustLLM) | Apache-2.0 | Python | none | none | none | none | partial | 4/5 |
 | [TypeChat](https://github.com/microsoft/TypeChat) | MIT | TypeScript | none | none | partial | native | none | 4/5 |
 | [Vigil](https://github.com/deadbits/vigil-llm) | Apache-2.0 | Python | partial | none | none | partial | partial | 4/5 |
 | [WildGuard](https://github.com/allenai/wildguard) | Apache-2.0 | Python | partial | none | none | partial | none | 4/5 |
+| [XGrammar](https://github.com/mlc-ai/xgrammar) | Apache-2.0 | C++ | none | none | partial | native | none | 4/5 |
 
 Component coverage values: `native` | `aligned` | `partial` | `none`. Definitions in `docs/five-component-overlay.md`.
 

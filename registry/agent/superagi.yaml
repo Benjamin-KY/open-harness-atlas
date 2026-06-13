@@ -22,5 +22,14 @@ harness_paradigm_alignment: aligned
 adjacent_to:
   - agentforge
   - agentgpt
+  - agentlite-salesforce
   - agixt
+  - autogen
   - babyagi
+  - crewai
+  - griptape-framework
+  - ix-autonomous-agent
+  - langgraph
+  - llmcompiler-parallel
+  - metagpt
+  - rd-agent-microsoft

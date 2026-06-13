@@ -23,6 +23,10 @@ adjacent_to:
   - alpaca-eval
   - arena-hard-auto
   - chateval
+  - judgelm
   - llmbar
+  - long-form-factuality
   - mt-bench
+  - pandalm
+  - prometheus-eval
   - rewardbench

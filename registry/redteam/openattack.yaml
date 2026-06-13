@@ -1,0 +1,26 @@
+id: openattack
+name: OpenAttack
+category: redteam
+subcategory: nlp-adversarial-toolkit
+repo_url: https://github.com/thunlp/OpenAttack
+license: MIT
+primary_language: Python
+tagline: 'Open-source Python toolkit for textual adversarial attacks: sentence/word/character perturbations, multilingual (EN+ZH), Hugging Face compatible'
+description: |
+  OpenAttack is THUNLP (Tsinghua NLP Lab)'s open-source Python toolkit for textual adversarial attacks: sentence/word/character perturbations, multilingual (EN+ZH), Hugging Face compatible. All attack types in one framework (gradient/score/decision/blind); parallel attack execution; 20+ built-in attack models including PWWS, TextFooler, BERT-Attack, VIPER..
+
+  In the atlas: OpenAttack is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: institution
+  name: THUNLP (Tsinghua NLP Lab)
+origin_country: CN
+model_agnostic_score: 5
+sovereignty_notes: |
+  THUNLP (Tsinghua NLP Lab) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - cleverhans
+  - harmbench
+  - promptbench
+  - textattack

@@ -1,0 +1,29 @@
+id: math
+name: MATH (Hendrycks Competition Math)
+category: eval
+subcategory: math-reasoning
+repo_url: https://github.com/hendrycks/math
+license: MIT
+primary_language: Python
+tagline: '12,500 competition mathematics problems across 7 categories with LaTeX solution chains; the de-facto standard math reasoning benchmark'
+description: |
+  MATH (Hendrycks Competition Math) is Dan Hendrycks's 12,500 competition mathematics problems across 7 categories with latex solution chains; the de-facto standard math reasoning benchmark. Foundational competition-math dataset with step-by-step solution grading; unlike mmlu-pro, focuses exclusively on math at olympiad level..
+
+  In the atlas: MATH (Hendrycks Competition Math) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: individual
+  name: Dan Hendrycks
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Dan Hendrycks (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - big-bench
+  - gpqa
+  - lm-evaluation-harness
+  - mathbench
+  - mmlu-pro
+  - musr
+  - opencompass

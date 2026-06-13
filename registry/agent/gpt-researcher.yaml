@@ -20,5 +20,8 @@ sovereignty_notes: |
   assafelovic (independent maintainer, IL); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - chemcrow-science-agent
   - deer-flow
+  - rd-agent-microsoft
   - storm
+  - voyager

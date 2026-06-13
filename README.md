@@ -9,7 +9,7 @@ routing — and free education resources.*
 [![License: Apache 2.0](https://img.shields.io/badge/code-Apache--2.0-blue?style=flat-square)](LICENSE)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-d68910?style=flat-square)](LICENSE-DOCS)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue?style=flat-square)](pyproject.toml)
-[![Entries: 236](https://img.shields.io/badge/entries-236-1f3a5f?style=flat-square)](docs/)
+[![Entries: 313](https://img.shields.io/badge/entries-313-1f3a5f?style=flat-square)](docs/)
 [![OSI-licensed](https://img.shields.io/badge/license_filter-OSI_only-28a745?style=flat-square)](GOVERNANCE.md)
 
 ---
@@ -18,18 +18,19 @@ routing — and free education resources.*
 
 > 📊 **[Open the interactive knowledge graph →](https://benjamin-ky.github.io/open-harness-atlas/)**
 >
-> 236 nodes · 738 adjacency edges · search, filter by category, click any
+> 313 nodes · 1,224 adjacency edges · search, filter by category, click any
 > node to see its neighbours, drag to rearrange, zoom to inspect dense
 > clusters. (Auto-generated from `registry/*/*.yaml` — re-deployed on every push to `main`.)
 
-![open-harness-atlas — 236-node, 738-edge knowledge graph](visuals/graph.svg)
+![open-harness-atlas — 313-node, 1,224-edge knowledge graph](visuals/graph.svg)
 
 *Node colour = category. Node size = degree (how many neighbours the entry has in the graph). Edge = explicit `adjacent_to` declaration. Force-directed layout; clusters are not hand-drawn — they fall out of the data.*
 
 ---
 
-> ⚠ **Pre-release (v0.1.0-dev).** Registry holds **236 entries** across
-> six categories — the catalog has been expanded by systematic
+> ⚠ **Pre-release (v0.1.0-dev).** Registry holds **313 entries** across
+> six categories (governance 46 · agent 79 · eval 76 · redteam 44 ·
+> routing 32 · education 36) — the catalog has been expanded by systematic
 > discovery across awesome-lists (`corca-ai/awesome-llm-security`,
 > `tensorchord/awesome-llmops`, `e2b-dev/awesome-ai-agents`,
 > `yueliu1999/Awesome-Jailbreak-on-LLMs`, `onejune2018/awesome-llm-eval`,

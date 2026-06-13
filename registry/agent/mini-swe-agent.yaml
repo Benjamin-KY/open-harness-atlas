@@ -21,7 +21,10 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - bigcode-evaluation-harness
+  - bigcodebench
   - evalplus
+  - humaneval
+  - livecodebench
   - open-interpreter
   - openhands
   - swe-agent

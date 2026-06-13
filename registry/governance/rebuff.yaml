@@ -52,6 +52,7 @@ adjacent_to:
   - autodefense
   - bipia
   - circuit-breakers
+  - deep-inception
   - garak
   - granite-guardian
   - guardrails-ai

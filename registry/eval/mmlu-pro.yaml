@@ -22,6 +22,12 @@ harness_paradigm_alignment: aligned
 adjacent_to:
   - big-bench
   - flask
+  - gpqa
   - legalbench
+  - lm-evaluation-harness
+  - math
+  - mathbench
   - mteb
+  - musr
+  - opencompass
   - truthfulqa

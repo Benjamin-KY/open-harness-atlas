@@ -26,6 +26,13 @@ sovereignty_notes: |
   WhyLabs (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - agentops
   - arize-phoenix
+  - helicone
   - langfuse
+  - langtrace
+  - langwatch
+  - openlit
+  - openllmetry
+  - opik
   - trulens

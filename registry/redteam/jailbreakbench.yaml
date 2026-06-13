@@ -20,10 +20,15 @@ sovereignty_notes: |
   Academic consortium (ETH, CMU, UPenn) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - circuit-breakers
   - do-not-answer
   - easyjailbreak
   - harmbench
   - jailbreak-evaluation
+  - jailbreak-hub
+  - llm-jailbreaking-defense
+  - safedecoding
   - safetybench
   - shieldlm
+  - smooth-llm
   - wmdp

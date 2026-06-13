@@ -1,0 +1,30 @@
+id: autoprompt-calibration
+name: AutoPrompt (Intent-based Prompt Calibration)
+category: redteam
+subcategory: prompt-robustness-optimization
+repo_url: https://github.com/Eladlev/AutoPrompt
+license: Apache-2.0
+primary_language: Python
+tagline: 'Automated prompt calibration framework that iteratively generates edge-case adversarial samples and optimizes prompts for safety/moderation tasks'
+description: |
+  AutoPrompt (Intent-based Prompt Calibration) is Elad Levi et al.'s automated prompt calibration framework that iteratively generates edge-case adversarial samples and optimizes prompts for safety/moderation tasks. Intent-based Prompt Calibration paper (arXiv 2402.03099); LangChain/W&B/Argilla integrated; designed specifically for production safety moderation robustness..
+
+  In the atlas: AutoPrompt (Intent-based Prompt Calibration) is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+maturity: beta
+maintainer:
+  type: individual
+  name: Elad Levi et al.
+origin_country: IL
+model_agnostic_score: 5
+sovereignty_notes: |
+  Elad Levi et al. (independent maintainer, IL); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - autodan
+  - deep-inception
+  - gptfuzz
+  - llm-attacks-gcg
+  - pair-jailbreak
+  - rain-self-alignment
+  - renellm
+  - tap-jailbreak

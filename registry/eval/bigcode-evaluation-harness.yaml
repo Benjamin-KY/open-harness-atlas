@@ -20,8 +20,15 @@ sovereignty_notes: |
   BigCode / HuggingFace (community-maintained, multi-country); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - apps
+  - bigcodebench
+  - classeval
+  - cruxeval
   - evalplus
+  - humaneval
+  - livecodebench
   - mini-swe-agent
   - openhands
+  - scicode
   - swe-agent
   - swe-bench

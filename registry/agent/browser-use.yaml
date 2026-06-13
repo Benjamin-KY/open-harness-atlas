@@ -22,8 +22,11 @@ harness_paradigm_alignment: aligned
 adjacent_to:
   - agentlab
   - browsergym
+  - mind2web
   - openhands
   - osworld
+  - tarsier-web-perception
   - theagentcompany
   - ufo
   - webarena
+  - webvoyager-multimodal

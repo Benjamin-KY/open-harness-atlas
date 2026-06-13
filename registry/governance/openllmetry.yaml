@@ -1,0 +1,38 @@
+id: openllmetry
+name: OpenLLMetry
+category: governance
+subcategory: tracing
+repo_url: https://github.com/traceloop/openllmetry
+license: Apache-2.0
+primary_language: Python
+tagline: 'OpenTelemetry-native SDK instrumenting every LLM provider call with standardized traces and spans'
+description: |
+  OpenLLMetry is Traceloop's openTelemetry-native SDK instrumenting every LLM provider call with standardized traces and spans. Emits standard OTel spans (now part of OpenTelemetry semantic conventions); feeds any existing observability backend (Datadog, Honeycomb, Jaeger) unlike langfuse's proprietary ingestion or langkit's whylogs format..
+
+  In the atlas: OpenLLMetry is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: company
+  name: Traceloop
+origin_country: IL
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: |
+  Traceloop (IL-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentops
+  - arize-phoenix
+  - helicone
+  - langfuse
+  - langkit
+  - langtrace
+  - langwatch
+  - openlit
+  - opik
+  - trulens

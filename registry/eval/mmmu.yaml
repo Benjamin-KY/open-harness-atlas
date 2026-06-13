@@ -1,0 +1,25 @@
+id: mmmu
+name: MMMU (Massive Multi-discipline Multimodal Understanding)
+category: eval
+subcategory: multimodal-eval
+repo_url: https://github.com/MMMU-Benchmark/MMMU
+license: Apache-2.0
+primary_language: Python
+tagline: '11,500 college-level multimodal questions spanning 30 subjects and 183 subfields with 32 heterogeneous image types requiring expert-level reasoning'
+description: |
+  MMMU (Massive Multi-discipline Multimodal Understanding) is MMMU Benchmark Team (CMU/UW)'s 11,500 college-level multimodal questions spanning 30 subjects and 183 subfields with 32 heterogeneous image types requiring expert-level reasoning. Expert-level multimodal benchmark; the primary reference leaderboard for multimodal college-level reasoning distinct from lmms-eval (which runs tasks)..
+
+  In the atlas: MMMU (Massive Multi-discipline Multimodal Understanding) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: community
+  name: MMMU Benchmark Team (CMU/UW)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  MMMU Benchmark Team (CMU/UW) (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - lmms-eval
+  - scienceqa
+  - vlmeval-kit

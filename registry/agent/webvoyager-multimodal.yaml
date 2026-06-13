@@ -1,0 +1,28 @@
+id: webvoyager-multimodal
+name: WebVoyager
+category: agent
+subcategory: web-agent-multimodal
+repo_url: https://github.com/MinorJerry/WebVoyager
+license: Apache-2.0
+primary_language: Python
+tagline: 'LMM-powered web agent combining visual + textual input for end-to-end real-website task completion; Selenium-based; GPT-4V evaluation protocol'
+description: |
+  WebVoyager is Hongliang He et al. (Zhejiang University / Tencent)'s lMM-powered web agent combining visual + textual input for end-to-end real-website task completion; Selenium-based; GPT-4V evaluation protocol. ACL 2024; 643 curated tasks across 15 real websites; GPT-4V automated eval; text-only mode outperforms GPT-4V screenshot via Tarsier-style encoding..
+
+  In the atlas: WebVoyager is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: institution
+  name: Hongliang He et al. (Zhejiang University / Tencent)
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Hongliang He et al. (Zhejiang University / Tencent) (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - browser-use
+  - browsergym
+  - mind2web
+  - tarsier-web-perception
+  - ufo
+  - webarena

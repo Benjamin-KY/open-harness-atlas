@@ -27,7 +27,11 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - autodefense
+  - easyjailbreak
+  - jailbreak-hub
+  - jailbreakbench
   - llm-guard
+  - llm-jailbreaking-defense
   - rebuff
   - safedecoding
   - shieldlm

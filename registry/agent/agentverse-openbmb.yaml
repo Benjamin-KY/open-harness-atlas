@@ -21,10 +21,12 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - ag2
+  - agentsims-sandbox
   - autogen
   - camel
   - chatdev
   - crewai
+  - generative-agents-stanford
   - metagpt
   - openagents-xlang
   - openmanus

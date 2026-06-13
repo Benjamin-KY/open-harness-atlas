@@ -45,11 +45,19 @@ sovereignty_notes: |
   against any supported backend with no code change.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - big-bench
+  - gpqa
   - helm
   - hf-evaluate
   - lighteval
   - lmms-eval
+  - longbench
+  - math
+  - mathbench
+  - mmlu-pro
   - modelbench
+  - musr
+  - needle-in-haystack
   - olmes
   - opencompass
   - simple-evals

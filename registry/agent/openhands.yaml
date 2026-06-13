@@ -21,12 +21,19 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - agentbench
+  - agentbench-thudm
   - autogen
+  - bfcl
   - bigcode-evaluation-harness
+  - bigcodebench
   - browser-use
   - evalplus
+  - gorilla-api-llm
+  - humaneval
+  - livecodebench
   - mini-swe-agent
   - open-interpreter
   - swe-agent
   - swe-bench
+  - toolbench-tool-learning
   - webarena

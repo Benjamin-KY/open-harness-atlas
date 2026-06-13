@@ -46,5 +46,6 @@ adjacent_to:
   - arize-phoenix
   - inspect-ai
   - openai-evals
+  - opik
   - promptfoo
   - ragas

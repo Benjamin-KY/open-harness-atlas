@@ -1,0 +1,32 @@
+id: agentlite-salesforce
+name: AgentLite
+category: agent
+subcategory: task-oriented-multiagent
+repo_url: https://github.com/SalesforceAIResearch/AgentLite
+license: Apache-2.0
+primary_language: Python
+tagline: 'Lightweight research library for task-oriented LLM agents with manager-based multi-agent orchestration and minimal abstraction layers'
+description: |
+  AgentLite is Salesforce AI Research's lightweight research library for task-oriented LLM agents with manager-based multi-agent orchestration and minimal abstraction layers. Designed for rapid architecture research; BaseAgent + ManagerAgent primitives; Streamlit UI demo; ICLR 2024 workshop paper; pip-installable as agentlite-llm..
+
+  In the atlas: AgentLite is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: company
+  name: Salesforce AI Research
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Salesforce AI Research (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - autogen
+  - babyagi
+  - crewai
+  - griptape-framework
+  - ix-autonomous-agent
+  - langgraph
+  - llmcompiler-parallel
+  - metagpt
+  - rd-agent-microsoft
+  - superagi

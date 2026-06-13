@@ -28,7 +28,11 @@ harness_paradigm_alignment: aligned
 adjacent_to:
   - autodefense
   - circuit-breakers
+  - easyjailbreak
+  - jailbreak-hub
+  - jailbreakbench
   - llm-guard
+  - llm-jailbreaking-defense
   - rebuff
   - shieldlm
   - smooth-llm

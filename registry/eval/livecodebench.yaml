@@ -1,0 +1,33 @@
+id: livecodebench
+name: LiveCodeBench
+category: eval
+subcategory: code-eval
+repo_url: https://github.com/LiveCodeBench/LiveCodeBench
+license: MIT
+primary_language: Python
+tagline: 'Contamination-free coding benchmark continuously collecting new competitive programming problems from LeetCode, AtCoder, and Codeforces post-May 2023'
+description: |
+  LiveCodeBench is LiveCodeBench Team's contamination-free coding benchmark continuously collecting new competitive programming problems from LeetCode, AtCoder, and Codeforces post-May 2023. Unique temporal cut-off versioning (v1–v6, 400–1055 problems); solves data contamination inherent in static datasets like HumanEval or EvalPlus..
+
+  In the atlas: LiveCodeBench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: community
+  name: LiveCodeBench Team
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  LiveCodeBench Team (community-maintained, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - apps
+  - bigcode-evaluation-harness
+  - bigcodebench
+  - classeval
+  - cruxeval
+  - evalplus
+  - humaneval
+  - mini-swe-agent
+  - openhands
+  - scicode
+  - swe-bench

@@ -26,7 +26,15 @@ sovereignty_notes: |
   567 Labs (community-maintained, CA); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - baml
+  - funcchain
   - guidance
+  - jsonformer
+  - lm-format-enforcer
   - lmql
+  - magentic
+  - marvin
   - outlines
+  - pydanticai
   - typechat
+  - xgrammar

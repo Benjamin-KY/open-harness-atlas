@@ -42,14 +42,21 @@ sovereignty_notes: |
 harness_paradigm_alignment: partial
 adjacent_to:
   - ag2
+  - agentlite-salesforce
   - agentverse-openbmb
   - autogen
+  - babyagi
   - camel
   - chatdev
+  - griptape-framework
+  - ix-autonomous-agent
   - langgraph
+  - llmcompiler-parallel
   - metagpt
   - openagents-xlang
   - openmanus
   - praisonai
+  - rd-agent-microsoft
   - smolagents
+  - superagi
   - swarm-openai

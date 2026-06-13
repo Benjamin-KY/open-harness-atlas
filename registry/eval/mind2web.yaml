@@ -1,0 +1,36 @@
+id: mind2web
+name: Mind2Web
+category: eval
+subcategory: agent-bench
+repo_url: https://github.com/OSU-NLP-Group/Mind2Web
+license: MIT
+primary_language: Python
+tagline: '2,000 generalist web agent tasks across 137 real websites in 31 domains; evaluates element grounding and action prediction with HTML context'
+description: |
+  Mind2Web is OSU NLP Group's 2,000 generalist web agent tasks across 137 real websites in 31 domains; evaluates element grounding and action prediction with html context. Uses real (scraped) websites vs. simulated; measures element selection accuracy and action step correctness distinct from WebArena's task success..
+
+  In the atlas: Mind2Web is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: OSU NLP Group
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  OSU NLP Group (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentbench
+  - appworld
+  - bfcl
+  - browser-use
+  - browsergym
+  - mle-bench
+  - osworld
+  - t-eval
+  - theagentcompany
+  - toolbench
+  - webarena
+  - webvoyager-multimodal
+  - wildbench
+  - workarena

@@ -1,0 +1,32 @@
+id: promptimize
+name: Promptimize
+category: governance
+subcategory: prompt-management
+repo_url: https://github.com/preset-io/promptimize
+license: Apache-2.0
+primary_language: Python
+tagline: 'TDD-inspired CLI toolkit defining prompt test cases as code with scoring functions and regression reporting'
+description: |
+  Promptimize is Preset (Maxime Beauchemin)'s tDD-inspired CLI toolkit defining prompt test cases as code with scoring functions and regression reporting. Brings test-driven development discipline to prompts: define PromptCase objects with Python lambda evaluators, run CLI suites, track regressions. Unlike prompttools (notebook-first) or promptfoo (YAML config), uses pure Python code for test/eval definitions. Dormant since 2023..
+
+  In the atlas: Promptimize is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: company
+  name: Preset (Maxime Beauchemin)
+origin_country: US
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: |
+  Preset (Maxime Beauchemin) (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agenta
+  - mlflow-ai-gateway
+  - promptfoo
+  - prompttools

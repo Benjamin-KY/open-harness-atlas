@@ -43,10 +43,14 @@ harness_paradigm_alignment: aligned
 adjacent_to:
   - ares
   - arize-phoenix
+  - beir
   - continuous-eval
   - deepeval
   - factscore
   - langfuse
+  - mteb
+  - opik
   - promptfoo
+  - ragchecker
   - tonic-validate
   - trulens

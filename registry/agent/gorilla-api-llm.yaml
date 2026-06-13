@@ -1,0 +1,31 @@
+id: gorilla-api-llm
+name: Gorilla LLM
+category: agent
+subcategory: api-function-calling
+repo_url: https://github.com/gorilla-llm/gorilla
+license: Apache-2.0
+primary_language: Python
+tagline: 'LLM fine-tuned on 1,600+ HuggingFace/Torch/TF APIs; Berkeley Function Calling Leaderboard; GoEx runtime for undo/damage-containment of LLM-generated actions'
+description: |
+  Gorilla LLM is Shishir G. Patil et al. (UC Berkeley Sky Computing)'s lLM fine-tuned on 1,600+ HuggingFace/Torch/TF APIs; Berkeley Function Calling Leaderboard; GoEx runtime for undo/damage-containment of LLM-generated actions. Berkeley Function Calling Leaderboard (BFCL) maintained; OpenFunctions-v2 matches GPT-4; GoEx adds "undo" and damage-confinement for agentic action safety; Apache 2.0..
+
+  In the atlas: Gorilla LLM is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: institution
+  name: Shishir G. Patil et al. (UC Berkeley Sky Computing)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Shishir G. Patil et al. (UC Berkeley Sky Computing) (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentbench
+  - agentbench-thudm
+  - autogen
+  - bfcl
+  - bmtools-tool-platform
+  - hugginggpt-jarvis
+  - openhands
+  - toolbench
+  - toolbench-tool-learning

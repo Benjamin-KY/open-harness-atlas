@@ -1,0 +1,40 @@
+id: baml
+name: BAML
+category: governance
+subcategory: structured-output
+repo_url: https://github.com/BoundaryML/baml
+license: Apache-2.0
+primary_language: Rust
+tagline: 'DSL and Rust compiler for type-safe LLM prompt functions with multi-language client generation and streaming'
+description: |
+  BAML is BoundaryML's dSL and Rust compiler for type-safe LLM prompt functions with multi-language client generation and streaming. Defines prompts as strongly-typed functions in a purpose-built DSL; Rust compiler emits Python/TS/Ruby/Go clients; supports partial streaming types and retry logic natively — no equivalent in outlines, guidance, or instructor which operate purely at Python runtime..
+
+  In the atlas: BAML is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: company
+  name: BoundaryML
+origin_country: US
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: partial
+  output_contract: native
+  audit_log_fsm: none
+sovereignty_notes: |
+  BoundaryML (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - funcchain
+  - guidance
+  - instructor
+  - jsonformer
+  - lm-format-enforcer
+  - lmql
+  - magentic
+  - marvin
+  - outlines
+  - pydanticai
+  - typechat
+  - xgrammar

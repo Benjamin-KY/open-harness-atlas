@@ -48,6 +48,7 @@ sovereignty_notes: |
   code path runs against every supported backend.
 harness_paradigm_alignment: partial
 adjacent_to:
+  - agentops
   - aisuite
   - fastchat
   - helicone
@@ -61,4 +62,5 @@ adjacent_to:
   - routellm
   - sglang
   - simonw-llm
+  - tokencost
   - vllm

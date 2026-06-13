@@ -21,7 +21,11 @@ sovereignty_notes: |
 harness_paradigm_alignment: aligned
 adjacent_to:
   - big-bench
+  - cmb
+  - finben
   - flask
+  - helm
+  - medqa
   - mmlu-pro
   - mteb
   - truthfulqa

@@ -1,0 +1,26 @@
+id: generative-agents-stanford
+name: Generative Agents (Stanford)
+category: agent
+subcategory: social-simulation
+repo_url: https://github.com/joonspk-research/generative_agents
+license: Apache-2.0
+primary_language: Python
+tagline: 'Reference implementation of interactive human-behavior simulacra ("Smallville"); 25 agents with memory, reflection, planning in a town environment'
+description: |
+  Generative Agents (Stanford) is Joon Sung Park et al. (Stanford)'s reference implementation of interactive human-behavior simulacra ("Smallville"); 25 agents with memory, reflection, planning in a town environment. UIST 2023 best-paper; introduced generative agent memory stream, reflection, and planning architecture; most-cited multi-agent social simulation codebase..
+
+  In the atlas: Generative Agents (Stanford) is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: institution
+  name: Joon Sung Park et al. (Stanford)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Joon Sung Park et al. (Stanford) (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentsims-sandbox
+  - agentverse-openbmb
+  - camel
+  - chatdev

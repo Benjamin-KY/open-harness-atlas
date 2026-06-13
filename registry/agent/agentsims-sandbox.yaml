@@ -1,0 +1,26 @@
+id: agentsims-sandbox
+name: AgentSims
+category: agent
+subcategory: llm-evaluation-sandbox
+repo_url: https://github.com/py499372727/AgentSims
+license: MIT
+primary_language: Python
+tagline: 'Open-source task-based evaluation sandbox for LLMs with GUI builder; agents interact in an environment with buildings and custom evaluation tasks'
+description: |
+  AgentSims is Haoran et al. (arXiv 2308.04026)'s open-source task-based evaluation sandbox for LLMs with GUI builder; agents interact in an environment with buildings and custom evaluation tasks. GUI-based agent/building creation; customizable evaluation Q&A every k ticks; MySQL backend; researcher-focused task-based eval vs. static benchmarks..
+
+  In the atlas: AgentSims is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: institution
+  name: Haoran et al. (arXiv 2308.04026)
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Haoran et al. (arXiv 2308.04026) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentverse-openbmb
+  - camel
+  - chatdev
+  - generative-agents-stanford

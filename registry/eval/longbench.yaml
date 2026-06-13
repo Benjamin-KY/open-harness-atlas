@@ -1,0 +1,24 @@
+id: longbench
+name: LongBench (v1 + v2)
+category: eval
+subcategory: long-context
+repo_url: https://github.com/THUDM/LongBench
+license: MIT
+primary_language: Python
+tagline: 'Bilingual long-context benchmark with 21 tasks (4.5K–200K tokens) covering single/multi-doc QA, summarization, few-shot, and code; v2 adds 8K–2M range'
+description: |
+  LongBench (v1 + v2) is Tsinghua University KEG / Zhipu AI's bilingual long-context benchmark with 21 tasks (4.5K–200K tokens) covering single/multi-doc QA, summarization, few-shot, and code; v2 adds 8K–2M range. First bilingual long-context benchmark; v2's 2M-token ceiling and human-expert difficulty; covers both understanding and generation unlike Needle-in-Haystack..
+
+  In the atlas: LongBench (v1 + v2) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: Tsinghua University KEG / Zhipu AI
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  Tsinghua University KEG / Zhipu AI (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - lm-evaluation-harness
+  - needle-in-haystack

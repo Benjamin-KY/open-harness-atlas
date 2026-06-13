@@ -1,0 +1,39 @@
+id: bfcl
+name: BFCL (Berkeley Function-Calling Leaderboard)
+category: eval
+subcategory: agent-bench
+repo_url: https://github.com/ShishirPatil/gorilla
+license: Apache-2.0
+primary_language: Python
+tagline: 'Rigorous function-calling and tool-use evaluation covering simple, parallel, multiple, nested, and agentic (V4) scenarios across 200+ models'
+description: |
+  BFCL (Berkeley Function-Calling Leaderboard) is UC Berkeley Sky Computing Lab's rigorous function-calling and tool-use evaluation covering simple, parallel, multiple, nested, and agentic (V4) scenarios across 200+ models. The standard leaderboard for LLM function-calling; BFCL V4 adds agentic web-search and memory tasks beyond what ToolBench covers..
+
+  In the atlas: BFCL (Berkeley Function-Calling Leaderboard) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: institution
+  name: UC Berkeley Sky Computing Lab
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  UC Berkeley Sky Computing Lab (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentbench
+  - agentbench-thudm
+  - appworld
+  - autogen
+  - browsergym
+  - gorilla-api-llm
+  - mind2web
+  - mle-bench
+  - openhands
+  - osworld
+  - t-eval
+  - theagentcompany
+  - toolbench
+  - toolbench-tool-learning
+  - webarena
+  - wildbench
+  - workarena

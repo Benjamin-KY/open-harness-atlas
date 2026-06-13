@@ -5,7 +5,7 @@
 # below is the **intended shape**; tooling that consumes this file in
 # v0.1.0 should treat the inventories as illustrative, not exhaustive.
 #
-# updated_at: 2026-06-13T00:00:00Z
+# updated_at: 2026-06-13T12:23:59Z
 
 domain:
   id: open-harnesses

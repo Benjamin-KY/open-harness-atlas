@@ -1,0 +1,29 @@
+id: pandalm
+name: PandaLM
+category: eval
+subcategory: llm-judge
+repo_url: https://github.com/WeOpenML/PandaLM
+license: Apache-2.0
+primary_language: Python
+tagline: 'Reproducible automated LLM judge (7B) for instruction-tuning comparison with a 1000-sample human-annotated test set; achieves 93.75% of GPT-3.5 F1'
+description: |
+  PandaLM is WeOpenML (Peking U / Westlake U)'s reproducible automated LLM judge (7B) for instruction-tuning comparison with a 1000-sample human-annotated test set; achieves 93.75% of GPT-3.5 F1. Provides human-validated test set and reproducible judgment; privacy-safe local evaluation for confidential data unlike GPT-4-as-judge approaches..
+
+  In the atlas: PandaLM is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: WeOpenML (Peking U / Westlake U)
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: |
+  WeOpenML (Peking U / Westlake U) (community-maintained, CN); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - arena-hard-auto
+  - flow-judge
+  - judgelm
+  - long-form-factuality
+  - mt-bench
+  - prometheus-eval
+  - rewardbench

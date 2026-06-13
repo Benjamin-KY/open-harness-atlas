@@ -1,0 +1,32 @@
+id: llmcompiler-parallel
+name: LLMCompiler
+category: agent
+subcategory: parallel-function-calling
+repo_url: https://github.com/SqueezeAILab/LLMCompiler
+license: MIT
+primary_language: Python
+tagline: 'Orchestrates parallel LLM function calls via a task-graph planner; reduces latency and cost vs. sequential ReAct; integrated with LangGraph/LlamaIndex'
+description: |
+  LLMCompiler is Sehoon Kim et al. (UC Berkeley SqueezeAI Lab)'s orchestrates parallel LLM function calls via a task-graph planner; reduces latency and cost vs. sequential ReAct; integrated with LangGraph/LlamaIndex. ICML 2024; automatic task-dependency graph from planner output; streaming execution; 3.7× latency speedup on HotpotQA; FriendliAI/vLLM compatible..
+
+  In the atlas: LLMCompiler is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: institution
+  name: Sehoon Kim et al. (UC Berkeley SqueezeAI Lab)
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Sehoon Kim et al. (UC Berkeley SqueezeAI Lab) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentlite-salesforce
+  - autogen
+  - babyagi
+  - crewai
+  - griptape-framework
+  - ix-autonomous-agent
+  - langgraph
+  - metagpt
+  - rd-agent-microsoft
+  - superagi

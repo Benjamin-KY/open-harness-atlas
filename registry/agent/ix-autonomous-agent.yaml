@@ -1,0 +1,32 @@
+id: ix-autonomous-agent
+name: iX — Autonomous GPT-4 Agent Platform
+category: agent
+subcategory: visual-no-code-platform
+repo_url: https://github.com/kreneskyp/ix
+license: MIT
+primary_language: Python
+tagline: 'No-code visual graph editor for designing and deploying autonomous LLM agents with Celery-based parallel workers; supports multi-agent chat rooms'
+description: |
+  iX — Autonomous GPT-4 Agent Platform is Peter Krenesky's no-code visual graph editor for designing and deploying autonomous LLM agents with Celery-based parallel workers; supports multi-agent chat rooms. LangChain-backed component config layer; drag-and-drop cognitive graph editor; scalable message-queue agent workers; @mention interface for agent delegation..
+
+  In the atlas: iX — Autonomous GPT-4 Agent Platform is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: individual
+  name: Peter Krenesky
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Peter Krenesky (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - agentlite-salesforce
+  - autogen
+  - babyagi
+  - crewai
+  - griptape-framework
+  - langgraph
+  - llmcompiler-parallel
+  - metagpt
+  - rd-agent-microsoft
+  - superagi

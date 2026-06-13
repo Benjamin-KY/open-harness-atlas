@@ -11,21 +11,30 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Agentic Radar](https://github.com/splx-ai/agentic-radar) | Apache-2.0 | Python | beta | SI | 5/5 | — | SPLX AI |
 | [AutoDAN-Turbo](https://github.com/SaFo-Lab/AutoDAN-Turbo) | MIT | Python | beta | US | 4/5 | — | SaFo-Lab / Chaowei Xiao (UW-Madison) |
 | [AutoDAN](https://github.com/SheltonLiu-N/AutoDAN) | MIT | Python | ga | US | 4/5 | — | Xiaogeng Liu et al. (UW-Madison) |
+| [AutoPrompt (Intent-based Prompt Calibration)](https://github.com/Eladlev/AutoPrompt) | Apache-2.0 | Python | beta | IL | 5/5 | — | Elad Levi et al. |
+| [BackdoorLLM](https://github.com/bboylyg/BackdoorLLM) | MIT | Python | beta | CN | 4/5 | — | Yige Li et al. (NeurIPS 2025 paper) |
 | [BIPIA](https://github.com/microsoft/BIPIA) | MIT | Python | beta | US | 4/5 | — | Microsoft Research |
 | [CipherChat](https://github.com/RobustNLP/CipherChat) | MIT | Python | beta | CN | 4/5 | — | Youliang Yuan et al. (CUHK/Tencent AI Lab) |
+| [CleverHans](https://github.com/cleverhans-lab/cleverhans) | MIT | Python | ga | US | 4/5 | — | Google Brain / OpenAI / Penn State (original); community since |
+| [DeepInception](https://github.com/tmlr-group/DeepInception) | MIT | Python | beta | CN | 4/5 | — | TMLR Group (multiple authors, PKU/Tsinghua) |
+| [Detecting Pretraining Data / Min-K% Prob](https://github.com/swj0419/detect-pretrain-code) | Apache-2.0 | Python | beta | US | 4/5 | — | Weijia Shi et al. (UW / Princeton / Google) |
+| [EasyEdit (Knowledge Editing / Poisoning Framework)](https://github.com/zjunlp/EasyEdit) | MIT | Python | ga | CN | 5/5 | — | zjunlp (Zhejiang University NLP Lab) |
 | [EasyJailbreak](https://github.com/EasyJailbreak/EasyJailbreak) | GPL-3.0 | Python | beta | CN | 5/5 | — | DAMO Academy / Alibaba |
 | [garak](https://github.com/NVIDIA/garak) | Apache-2.0 | Python | ga | US | 5/5 | — | NVIDIA |
 | [Giskard](https://github.com/Giskard-AI/giskard-oss) | Apache-2.0 | Python | ga | FR | 4/5 | — | Giskard AI |
 | [GPTFuzz](https://github.com/sherdencooper/GPTFuzz) | MIT | Python | ga | US | 4/5 | — | Jiahao Yu et al. (Northwestern) |
 | [HarmBench](https://github.com/centerforaisafety/HarmBench) | MIT | Python | ga | US | 5/5 | — | Center for AI Safety |
 | [jailbreak-evaluation](https://github.com/controllability/jailbreak-evaluation) | Apache-2.0 | Python | beta | US | 4/5 | — | PurSec Lab, Purdue University |
+| [JailbreakHub (In-The-Wild Jailbreaks)](https://github.com/verazuo/jailbreak_llms) | MIT | Python | beta | DE | 5/5 | — | Xinyue Shen et al. (CISPA / ACM CCS 2024) |
 | [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) | MIT | Python | ga | US | 4/5 | — | Academic consortium (ETH, CMU, UPenn) |
 | [LLM Adaptive Attacks](https://github.com/tml-epfl/llm-adaptive-attacks) | MIT | Python | beta | CH | 4/5 | — | Andriushchenko, Croce, Flammarion (EPFL) |
 | [LLM Attacks (GCG)](https://github.com/llm-attacks/llm-attacks) | MIT | Python | ga | US | 4/5 | — | Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google) |
+| [LLM Jailbreaking Defense Library](https://github.com/YihanWang617/llm-jailbreaking-defense) | MIT | Python | beta | US | 5/5 | — | Yihan Wang, Zhouxing Shi, Andrew Bai (UCLA / UCSD) |
 | [MIMIR](https://github.com/iamgroot42/mimir) | MIT | Python | beta | US | 4/5 | — | Anshuman Suri et al. (UVA/UW) |
 | [ModelScan](https://github.com/protectai/modelscan) | Apache-2.0 | Python | ga | US | 4/5 | — | Protect AI |
 | [nanoGCG](https://github.com/GraySwanAI/nanoGCG) | MIT | Python | ga | US | 4/5 | — | GraySwanAI |
 | [Open-Prompt-Injection](https://github.com/liu00222/Open-Prompt-Injection) | MIT | Python | ga | US | 4/5 | — | Yupei Liu et al. (Duke/Neil Gong Lab) |
+| [OpenAttack](https://github.com/thunlp/OpenAttack) | MIT | Python | beta | CN | 5/5 | — | THUNLP (Tsinghua NLP Lab) |
 | [PAIR / JailbreakingLLMs](https://github.com/patrickrchao/JailbreakingLLMs) | MIT | Python | ga | US | 4/5 | — | Chao et al. (UPenn/CMU) |
 | [PINT Benchmark](https://github.com/lakeraai/pint-benchmark) | MIT | Python | beta | CH | 4/5 | — | Lakera AI |
 | [Plexiglass](https://github.com/safellama/plexiglass) | MIT | Python | alpha | US | 4/5 | — | SafeLLama |
@@ -34,9 +43,11 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [PurpleLlama / CyberSecEval](https://github.com/meta-llama/PurpleLlama) | MIT | Python | ga | US | 4/5 | — | Meta AI |
 | [PyRIT (Python Risk Identification Tool)](https://github.com/Azure/PyRIT) | MIT | Python | ga | US | 5/5 | — | Microsoft (AI Red Team) |
 | [R-Judge](https://github.com/Lordog/R-Judge) | MIT | Python | beta | CN | 4/5 | — | SJTU / Tongxin Yuan et al. |
+| [RAIN](https://github.com/SafeAILab/RAIN) | BSD-2-Clause | Python | beta | CN | 5/5 | — | SafeAI Lab (Yuhui Li et al., PKU/Microsoft Research) |
 | [ReNeLLM](https://github.com/NJUNLP/ReNeLLM) | MIT | Python | beta | CN | 5/5 | — | NLP Lab, Nanjing University |
 | [SafetyBench](https://github.com/thu-coai/SafetyBench) | MIT | Python | ga | CN | 4/5 | — | COAI Lab, Tsinghua University |
 | [TAP - Tree of Attacks with Pruning](https://github.com/RICommunity/TAP) | MIT | Python | beta | US | 4/5 | — | Robust Intelligence Community |
+| [TextAttack](https://github.com/QData/TextAttack) | MIT | Python | ga | US | 5/5 | — | QData Lab (University of Virginia) |
 | [ToolEmu](https://github.com/ryoungj/ToolEmu) | Apache-2.0 | Python | beta | US | 4/5 | — | NYU / Independent research (ICLR 2024) |
 | [WMDP - Weapons of Mass Destruction Proxy](https://github.com/centerforaisafety/wmdp) | MIT | Python | ga | US | 4/5 | — | Center for AI Safety |
 

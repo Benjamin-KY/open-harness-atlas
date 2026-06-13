@@ -28,6 +28,7 @@ harness_paradigm_alignment: aligned
 adjacent_to:
   - autodefense
   - circuit-breakers
+  - deep-inception
   - garak
   - guardrails-ai
   - nemo-guardrails

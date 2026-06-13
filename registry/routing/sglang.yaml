@@ -27,4 +27,5 @@ adjacent_to:
   - ollama
   - openllm
   - vllm
+  - xgrammar
   - xinference

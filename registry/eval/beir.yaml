@@ -1,0 +1,26 @@
+id: beir
+name: BEIR (Benchmarking-IR)
+category: eval
+subcategory: rag-eval
+repo_url: https://github.com/beir-cellar/beir
+license: Apache-2.0
+primary_language: Python
+tagline: 'Heterogeneous zero-shot IR benchmark with 18 diverse datasets (BioASQ, NFCorpus, TREC-NEWS, etc.) and unified evaluation under NDCG@10'
+description: |
+  BEIR (Benchmarking-IR) is BEIR Community (Nandan Thakur et al.)'s heterogeneous zero-shot IR benchmark with 18 diverse datasets (BioASQ, NFCorpus, TREC-NEWS, etc.) and unified evaluation under NDCG@10. Standard retrieval transfer-learning benchmark; 18 domains in one toolkit; no other registry entry specifically covers retrieval model evaluation..
+
+  In the atlas: BEIR (Benchmarking-IR) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: ga
+maintainer:
+  type: community
+  name: BEIR Community (Nandan Thakur et al.)
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: |
+  BEIR Community (Nandan Thakur et al.) (community-maintained, multi-country); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - ares
+  - mteb
+  - ragas
+  - ragchecker

@@ -1,0 +1,32 @@
+id: agenta
+name: Agenta
+category: governance
+subcategory: prompt-management
+repo_url: https://github.com/Agenta-AI/agenta
+license: MIT
+primary_language: Python
+tagline: 'Open-source LLMOps platform with prompt playground, version control, human+automated evaluation, and production observability'
+description: |
+  Agenta is Agentatech UG's open-source LLMOps platform with prompt playground, version control, human+automated evaluation, and production observability. Integrates prompt versioning, side-by-side model comparison, dataset-driven evaluation, and CI/CD pipeline hooks in one self-hostable stack; broader scope than langfuse (no prompt editor) or prompttools (no versioning/CI)..
+
+  In the atlas: Agenta is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: company
+  name: Agentatech UG
+origin_country: DE
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: |
+  Agentatech UG (DE-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - mlflow-ai-gateway
+  - promptfoo
+  - promptimize
+  - prompttools

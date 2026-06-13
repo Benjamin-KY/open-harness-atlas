@@ -1,0 +1,26 @@
+id: hugginggpt-jarvis
+name: HuggingGPT / JARVIS
+category: agent
+subcategory: model-orchestration-hub
+repo_url: https://github.com/microsoft/JARVIS
+license: MIT
+primary_language: Python
+tagline: 'LLM orchestrates 100+ HuggingFace expert models for AI tasks; task planning → model selection → execution → response generation pipeline'
+description: |
+  HuggingGPT / JARVIS is Microsoft Research Asia's lLM orchestrates 100+ HuggingFace expert models for AI tasks; task planning → model selection → execution → response generation pipeline. NeurIPS 2023; uses ChatGPT as controller for vision, speech, video expert models; TaskBench included; light/hybrid/full inference modes; first HF model orchestrator..
+
+  In the atlas: HuggingGPT / JARVIS is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: company
+  name: Microsoft Research Asia
+origin_country: CN
+model_agnostic_score: 5
+sovereignty_notes: |
+  Microsoft Research Asia (CN-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - bmtools-tool-platform
+  - gorilla-api-llm
+  - toolbench
+  - toolbench-tool-learning

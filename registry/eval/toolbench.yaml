@@ -20,6 +20,22 @@ sovereignty_notes: |
   OpenBMB / Tsinghua (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 harness_paradigm_alignment: aligned
 adjacent_to:
+  - agentbench
+  - appworld
+  - bfcl
+  - bmtools-tool-platform
+  - browsergym
+  - gorilla-api-llm
+  - hugginggpt-jarvis
+  - mind2web
+  - mle-bench
   - needle-in-haystack
+  - osworld
   - promptbench
+  - t-eval
+  - theagentcompany
+  - toolbench-tool-learning
+  - webarena
+  - wildbench
+  - workarena
   - zeroeval
