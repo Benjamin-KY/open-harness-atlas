@@ -49,13 +49,22 @@ def build_graph(entries: list[dict]) -> nx.Graph:
     G = nx.Graph()
     by_id = {e["id"]: e for e in entries}
     for e in entries:
+        maint = e.get("maintainer") or {}
         G.add_node(
             e["id"],
             name=e.get("name", e["id"]),
             category=e["category"],
+            subcategory=e.get("subcategory", ""),
             url=e.get("repo_url", ""),
-            tagline=e.get("tagline", "")[:200],
+            tagline=e.get("tagline", "")[:240],
             mas=e.get("model_agnostic_score", 3),
+            license=e.get("license", ""),
+            primary_language=e.get("primary_language", ""),
+            maturity=e.get("maturity", ""),
+            origin_country=e.get("origin_country") or "",
+            maintainer_type=maint.get("type", "") if isinstance(maint, dict) else "",
+            maintainer_name=maint.get("name", "") if isinstance(maint, dict) else "",
+            harness_alignment=e.get("harness_paradigm_alignment", ""),
         )
     for e in entries:
         for tgt in e.get("adjacent_to", []) or []:
@@ -168,25 +177,65 @@ def main() -> int:
     print(f"wrote {out_png.relative_to(REPO)}")
 
     # --- JSON payload for the interactive HTML viewer ---
+    # Compute aggregate stats for the sidebar.
+    top_hubs = sorted(degrees.items(), key=lambda x: -x[1])[:12]
+    lic_counts: dict[str, int] = defaultdict(int)
+    mat_counts: dict[str, int] = defaultdict(int)
+    country_counts: dict[str, int] = defaultdict(int)
+    lang_counts: dict[str, int] = defaultdict(int)
+    mas_counts: dict[int, int] = defaultdict(int)
+    for n in G.nodes:
+        lic_counts[G.nodes[n].get("license") or "Unknown"] += 1
+        mat_counts[G.nodes[n].get("maturity") or "Unknown"] += 1
+        country_counts[G.nodes[n].get("origin_country") or "Unknown"] += 1
+        lang_counts[G.nodes[n].get("primary_language") or "Unknown"] += 1
+        mas_counts[G.nodes[n].get("mas", 3)] += 1
+
     payload = {
         "meta": {
             "n_nodes": G.number_of_nodes(),
             "n_edges": G.number_of_edges(),
+            "avg_degree": (
+                round(sum(degrees.values()) / max(len(degrees), 1), 2)
+            ),
+            "density": round(nx.density(G), 4),
             "categories": [
                 {"key": c, "color": CAT_COLOR[c], "count": cat_counts[c]}
                 for c in CAT_ORDER
             ],
+            "top_hubs": [
+                {
+                    "id": nid,
+                    "name": G.nodes[nid]["name"],
+                    "category": G.nodes[nid]["category"],
+                    "degree": d,
+                }
+                for nid, d in top_hubs
+            ],
+            "licenses":  sorted(lic_counts.items(),     key=lambda x: -x[1]),
+            "maturity":  sorted(mat_counts.items(),     key=lambda x: -x[1]),
+            "countries": sorted(country_counts.items(), key=lambda x: -x[1]),
+            "languages": sorted(lang_counts.items(),    key=lambda x: -x[1]),
+            "mas":       sorted(mas_counts.items(),     key=lambda x: x[0]),
         },
         "nodes": [
             {
                 "id": n,
                 "name": G.nodes[n]["name"],
                 "category": G.nodes[n]["category"],
+                "subcategory": G.nodes[n].get("subcategory", ""),
                 "color": CAT_COLOR[G.nodes[n]["category"]],
                 "url": G.nodes[n]["url"],
                 "tagline": G.nodes[n]["tagline"],
                 "degree": degrees[n],
                 "mas": G.nodes[n]["mas"],
+                "license": G.nodes[n].get("license", ""),
+                "language": G.nodes[n].get("primary_language", ""),
+                "maturity": G.nodes[n].get("maturity", ""),
+                "country": G.nodes[n].get("origin_country", ""),
+                "maintainer_type": G.nodes[n].get("maintainer_type", ""),
+                "maintainer_name": G.nodes[n].get("maintainer_name", ""),
+                "alignment": G.nodes[n].get("harness_alignment", ""),
             }
             for n in G.nodes
         ],

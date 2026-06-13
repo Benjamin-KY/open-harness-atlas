@@ -4,282 +4,1236 @@
 <meta charset="utf-8">
 <title>open-harness-atlas — interactive knowledge graph</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interactive force-directed graph of 236 OSS LLM/agent harnesses + free education resources. All OSI-licensed.">
+<meta name="description" content="Interactive force-directed graph of 313 OSI-licensed open-source LLM/agent harnesses + free education resources.">
+<meta property="og:title" content="open-harness-atlas — interactive knowledge graph">
+<meta property="og:description" content="313 OSS LLM/agent harnesses connected by 1,224 adjacency edges. Search, filter, find paths, share deep-links.">
+<meta property="og:image" content="https://benjamin-ky.github.io/open-harness-atlas/graph.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --brand-deep: #1f3a5f;
-    --brand-ink: #0d1f33;
-    --brand-mute: #4a5d75;
-    --brand-line: #d8e1eb;
-    --brand-bg: #fbfcfe;
-    --brand-panel: #ffffff;
+    --brand-deep:    #1f3a5f;
+    --brand-ink:     #0d1f33;
+    --brand-mute:    #4a5d75;
+    --brand-line:    #d8e1eb;
+    --brand-bg:      #fbfcfe;
+    --brand-panel:   #ffffff;
+    --brand-shadow:  0 1px 2px rgba(13,31,51,0.04), 0 4px 12px rgba(13,31,51,0.04);
+    --brand-glow:    0 0 0 4px rgba(31,58,95,0.18);
+    --link-base:     #1f3a5f;
+    --link-strong:   #0d1f33;
+    --focus-ring:    #d68910;
+    --good:          #28a745;
+    --warn:          #c0392b;
+    --radius:        10px;
+    --t-fast:        140ms cubic-bezier(.2,.7,.3,1);
+    --t-med:         260ms cubic-bezier(.2,.7,.3,1);
+  }
+  [data-theme="dark"] {
+    --brand-deep:    #c8d6ea;
+    --brand-ink:     #f4f7fb;
+    --brand-mute:    #94a4bd;
+    --brand-line:    #2a384a;
+    --brand-bg:      #0d1623;
+    --brand-panel:   #131d2c;
+    --brand-shadow:  0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.35);
+    --brand-glow:    0 0 0 4px rgba(214,137,16,0.30);
+    --link-base:     #6f88ad;
+    --link-strong:   #f4f7fb;
+    --focus-ring:    #f0b35a;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; height: 100%; font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--brand-bg); color: var(--brand-ink); }
-  header { padding: 18px 24px 12px; border-bottom: 1px solid var(--brand-line); background: var(--brand-panel); }
-  h1 { font-size: 18px; font-weight: 700; color: var(--brand-deep); margin: 0 0 4px; }
-  .sub { font-size: 12.5px; color: var(--brand-mute); margin: 0; }
-  .sub a { color: var(--brand-deep); }
-  #app { display: grid; grid-template-columns: 1fr 320px; height: calc(100vh - 64px); }
-  @media (max-width: 760px) { #app { grid-template-columns: 1fr; grid-template-rows: 1fr 200px; } }
-  #graph-wrap { position: relative; overflow: hidden; background: var(--brand-panel); border-right: 1px solid var(--brand-line); }
-  svg { width: 100%; height: 100%; display: block; cursor: grab; }
-  svg:active { cursor: grabbing; }
-  #side { padding: 16px 18px; overflow-y: auto; background: var(--brand-bg); }
-  .panel { background: var(--brand-panel); border: 1px solid var(--brand-line); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
-  .panel h3 { margin: 0 0 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-mute); font-weight: 700; }
-  input[type=text] { width: 100%; padding: 8px 10px; border: 1px solid var(--brand-line); border-radius: 6px; font: inherit; font-size: 13px; background: #fff; }
-  .legend-item { display: flex; align-items: center; gap: 8px; padding: 4px 0; cursor: pointer; user-select: none; font-size: 13px; }
-  .legend-item .swatch { width: 12px; height: 12px; border-radius: 50%; flex: 0 0 12px; }
+  html, body {
+    margin: 0; padding: 0; height: 100%; overflow: hidden;
+    font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--brand-bg); color: var(--brand-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  code, kbd { font-family: 'JetBrains Mono', SFMono-Regular, Consolas, monospace; font-size: 0.92em; }
+  kbd {
+    display: inline-block; padding: 1px 6px; min-width: 18px;
+    border: 1px solid var(--brand-line); border-bottom-width: 2px;
+    border-radius: 4px; background: var(--brand-panel); color: var(--brand-deep);
+    font-size: 11px; line-height: 1.4; text-align: center;
+  }
+  a { color: var(--brand-deep); }
+
+  /* ---------- App shell ---------- */
+  header {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 18px; border-bottom: 1px solid var(--brand-line);
+    background: var(--brand-panel); box-shadow: var(--brand-shadow); z-index: 5;
+  }
+  header .title {
+    flex: 1; min-width: 0;
+  }
+  header h1 {
+    font-size: 16px; font-weight: 700; color: var(--brand-deep); margin: 0;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  header .sub {
+    font-size: 12px; color: var(--brand-mute); margin: 2px 0 0;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  header .sub a { color: var(--brand-deep); text-decoration: none; }
+  header .sub a:hover { text-decoration: underline; }
+  header .header-actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .icon-btn {
+    width: 34px; height: 34px; border-radius: 8px;
+    border: 1px solid var(--brand-line); background: var(--brand-panel);
+    color: var(--brand-deep); cursor: pointer;
+    display: inline-flex; align-items: center; justify-content: center;
+    transition: background var(--t-fast), border-color var(--t-fast);
+  }
+  .icon-btn:hover { background: var(--brand-bg); border-color: var(--brand-deep); }
+  .icon-btn svg { width: 16px; height: 16px; }
+  .icon-btn[aria-pressed="true"] { background: var(--brand-deep); color: var(--brand-panel); }
+
+  #app {
+    display: grid; grid-template-columns: 1fr 360px;
+    height: calc(100vh - 59px); position: relative;
+  }
+  @media (max-width: 900px) {
+    #app { grid-template-columns: 1fr; grid-template-rows: 1fr auto; }
+    #side { max-height: 45vh; }
+  }
+
+  /* ---------- Graph canvas ---------- */
+  #graph-wrap {
+    position: relative; overflow: hidden;
+    background:
+      radial-gradient(circle at 50% 50%, var(--brand-panel) 0%, var(--brand-bg) 100%);
+    border-right: 1px solid var(--brand-line);
+  }
+  svg.graph { width: 100%; height: 100%; display: block; cursor: grab; outline: none; }
+  svg.graph:active { cursor: grabbing; }
+  .link {
+    stroke: var(--link-base); stroke-opacity: 0.13; fill: none;
+    transition: stroke-opacity var(--t-fast), stroke-width var(--t-fast);
+  }
+  .link.path { stroke: var(--focus-ring); stroke-opacity: 0.95; stroke-width: 2.2px; }
+  .link.highlight { stroke: var(--link-strong); stroke-opacity: 0.85; stroke-width: 1.6px; }
+  .link.dim       { stroke-opacity: 0.025; }
+  .node circle    {
+    transition: r var(--t-fast), stroke-width var(--t-fast), filter var(--t-med), opacity var(--t-med);
+    stroke: var(--brand-panel); stroke-width: 1.2px;
+  }
+  /* Dark-mode color remap: the governance navy (#1f3a5f) and a few other
+     deep palette colors are designed for white backgrounds and disappear
+     against the dark canvas. CSS wins over the SVG `fill` attribute. */
+  [data-theme="dark"] .node[data-category="governance"] circle { fill: #6f8cb8; }
+  [data-theme="dark"] .node[data-category="redteam"]    circle { fill: #e57063; }
+  [data-theme="dark"] .node[data-category="eval"]       circle { fill: #4dd07a; }
+  [data-theme="dark"] .node[data-category="routing"]    circle { fill: #5fb6f0; }
+  [data-theme="dark"] .node[data-category="education"]  circle { fill: #b478d4; }
+  [data-theme="dark"] .node[data-category="agent"]      circle { fill: #f0a634; }
+  .node.dim circle   { opacity: 0.10; }
+  .node.path  circle { stroke: var(--focus-ring); stroke-width: 2.4px; }
+  .node.hover circle {
+    stroke: var(--brand-ink); stroke-width: 2.4px;
+    filter: drop-shadow(0 0 6px rgba(31,58,95,0.45));
+  }
+  [data-theme="dark"] .node.hover circle {
+    filter: drop-shadow(0 0 8px rgba(240,179,90,0.65));
+  }
+  .node text {
+    pointer-events: none; font-size: 9.5px; font-weight: 600;
+    fill: var(--brand-ink); paint-order: stroke;
+    stroke: var(--brand-panel); stroke-width: 3px; stroke-linejoin: round;
+  }
+  .node.hover text { font-size: 11px; }
+
+  /* ---------- HUD: overlays on the canvas ---------- */
+  .hud {
+    position: absolute; pointer-events: none;
+  }
+  .hud-bottom-left {
+    bottom: 12px; left: 12px;
+    background: var(--brand-panel); border: 1px solid var(--brand-line);
+    border-radius: var(--radius); padding: 8px 12px; font-size: 12px;
+    color: var(--brand-mute); box-shadow: var(--brand-shadow);
+    pointer-events: auto; max-width: 320px;
+  }
+  .hud-bottom-left strong { color: var(--brand-ink); }
+  .hud-top-right {
+    top: 12px; right: 12px; display: flex; flex-direction: column; gap: 6px;
+    pointer-events: auto;
+  }
+  .hud-top-right .icon-btn {
+    background: var(--brand-panel);
+    box-shadow: var(--brand-shadow);
+  }
+  .tooltip {
+    position: absolute; pointer-events: none; opacity: 0;
+    background: var(--brand-ink); color: #fbfcfe;
+    border-radius: 6px; padding: 6px 9px; font-size: 12px;
+    max-width: 280px; line-height: 1.35;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    transition: opacity var(--t-fast);
+    z-index: 10;
+  }
+  .tooltip.visible { opacity: 0.98; }
+  .tooltip .t-name { font-weight: 700; }
+  .tooltip .t-cat  { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.7; }
+  .tooltip .t-tag  { margin-top: 3px; opacity: 0.92; }
+
+  /* ---------- Side panel ---------- */
+  #side {
+    padding: 14px; overflow-y: auto; background: var(--brand-bg);
+    border-left: 1px solid var(--brand-line);
+  }
+  #side::-webkit-scrollbar { width: 8px; }
+  #side::-webkit-scrollbar-thumb { background: var(--brand-line); border-radius: 4px; }
+  .panel {
+    background: var(--brand-panel); border: 1px solid var(--brand-line);
+    border-radius: var(--radius); padding: 12px 14px; margin-bottom: 10px;
+    box-shadow: var(--brand-shadow);
+  }
+  .panel-header {
+    display: flex; align-items: center; gap: 8px;
+    margin: -2px 0 8px; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--brand-mute); font-weight: 700;
+  }
+  .panel-header .count {
+    margin-left: auto; font-weight: 600; color: var(--brand-deep);
+    font-size: 11px; letter-spacing: 0; text-transform: none;
+  }
+  .panel.collapsible .panel-header { cursor: pointer; user-select: none; }
+  .panel.collapsible .chev {
+    transition: transform var(--t-fast); color: var(--brand-mute);
+  }
+  .panel.collapsed .panel-body { display: none; }
+  .panel.collapsed .chev { transform: rotate(-90deg); }
+
+  /* form controls */
+  input[type=text], input[type=search], select {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--brand-line);
+    border-radius: 7px; font: inherit; font-size: 13px;
+    background: var(--brand-panel); color: var(--brand-ink);
+    transition: border-color var(--t-fast), box-shadow var(--t-fast);
+  }
+  input:focus, select:focus {
+    outline: none; border-color: var(--brand-deep); box-shadow: var(--brand-glow);
+  }
+  .filter-row { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+  .filter-row label {
+    font-size: 11px; color: var(--brand-mute); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em; flex-shrink: 0;
+    min-width: 64px;
+  }
+  .filter-row select { flex: 1; padding: 5px 8px; font-size: 12px; }
+  .range-row { display: flex; align-items: center; gap: 8px; margin-top: 6px; font-size: 12px; }
+  .range-row .range-val {
+    color: var(--brand-deep); font-weight: 700; font-variant-numeric: tabular-nums;
+    min-width: 32px; text-align: right;
+  }
+  input[type=range] { flex: 1; accent-color: var(--brand-deep); }
+
+  /* legend */
+  .legend-item {
+    display: flex; align-items: center; gap: 8px; padding: 5px 6px;
+    cursor: pointer; user-select: none; font-size: 13px;
+    border-radius: 5px; transition: background var(--t-fast);
+  }
+  .legend-item:hover { background: var(--brand-bg); }
+  .legend-item .swatch {
+    width: 11px; height: 11px; border-radius: 50%; flex: 0 0 11px;
+    box-shadow: inset 0 0 0 1px rgba(13,31,51,0.18);
+  }
   .legend-item.off { opacity: 0.32; }
-  .legend-item .count { color: var(--brand-mute); font-variant-numeric: tabular-nums; }
-  .legend-item .label { flex: 1; }
-  .stats { font-size: 12px; color: var(--brand-mute); line-height: 1.5; }
-  .stats strong { color: var(--brand-ink); font-weight: 600; }
-  .node-detail-title { font-size: 15px; font-weight: 700; color: var(--brand-deep); margin: 0 0 4px; }
-  .node-detail-cat { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #fff; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; }
-  .node-detail-tag { font-size: 12.5px; color: var(--brand-ink); margin: 6px 0; }
-  .node-detail-meta { font-size: 12px; color: var(--brand-mute); margin: 4px 0; }
-  .node-detail-meta strong { color: var(--brand-ink); }
-  .node-detail-link { display: inline-block; margin-top: 8px; padding: 5px 10px; background: var(--brand-deep); color: #fff; text-decoration: none; border-radius: 5px; font-size: 12px; font-weight: 600; }
-  .node-detail-neighbors { margin-top: 10px; }
-  .node-detail-neighbors h4 { margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--brand-mute); font-weight: 700; }
-  .node-detail-neighbors ul { margin: 0; padding-left: 18px; font-size: 12px; }
+  .legend-item.off .swatch { opacity: 0.4; }
+  .legend-item .label { flex: 1; text-transform: capitalize; }
+  .legend-item .count {
+    color: var(--brand-mute); font-variant-numeric: tabular-nums;
+    font-size: 12px;
+  }
+
+  /* hubs */
+  .hub-list { list-style: none; padding: 0; margin: 0; }
+  .hub-list li {
+    display: flex; align-items: center; gap: 8px; padding: 4px 0;
+    font-size: 13px; cursor: pointer;
+  }
+  .hub-list li:hover { color: var(--brand-deep); }
+  .hub-list .hub-swatch { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .hub-list .hub-name { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hub-list .hub-deg {
+    color: var(--brand-mute); font-variant-numeric: tabular-nums; font-size: 12px;
+  }
+
+  /* stats */
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 12px; font-size: 12px; }
+  .stats-grid dt { color: var(--brand-mute); font-weight: 500; }
+  .stats-grid dd { margin: 0; color: var(--brand-ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+  /* detail */
+  .detail-empty { font-size: 12.5px; color: var(--brand-mute); margin: 2px 0 0; }
+  .node-detail-title {
+    font-size: 17px; font-weight: 700; color: var(--brand-deep); margin: 0 0 4px;
+    line-height: 1.2;
+  }
+  .node-detail-pills { display: flex; gap: 4px; flex-wrap: wrap; margin: 4px 0; }
+  .pill {
+    font-size: 10px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.05em; padding: 2px 8px; border-radius: 999px;
+    color: #fff; line-height: 1.5;
+  }
+  .pill.outline {
+    background: transparent; border: 1px solid var(--brand-line);
+    color: var(--brand-mute);
+  }
+  .node-detail-tag {
+    font-size: 13px; color: var(--brand-ink); margin: 8px 0; line-height: 1.45;
+  }
+  .node-detail-meta {
+    font-size: 11.5px; color: var(--brand-mute); margin: 3px 0;
+    display: flex; gap: 6px;
+  }
+  .node-detail-meta strong {
+    color: var(--brand-ink); font-weight: 600;
+    flex-shrink: 0;
+  }
+  .node-detail-link {
+    display: inline-block; margin: 10px 6px 0 0; padding: 6px 12px;
+    background: var(--brand-deep); color: var(--brand-panel);
+    text-decoration: none; border-radius: 6px;
+    font-size: 12px; font-weight: 600;
+    transition: transform var(--t-fast), background var(--t-fast);
+  }
+  .node-detail-link:hover { transform: translateY(-1px); }
+  .node-detail-link.secondary { background: transparent; color: var(--brand-deep); border: 1px solid var(--brand-line); }
+  .node-detail-neighbors h4 {
+    margin: 12px 0 4px; font-size: 10.5px; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--brand-mute); font-weight: 700;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .node-detail-neighbors h4 .swatch { width: 8px; height: 8px; border-radius: 50%; }
+  .node-detail-neighbors ul { margin: 0; padding-left: 18px; font-size: 12.5px; line-height: 1.6; }
   .node-detail-neighbors a { color: var(--brand-deep); text-decoration: none; }
   .node-detail-neighbors a:hover { text-decoration: underline; }
-  .footer { font-size: 11px; color: var(--brand-mute); text-align: center; padding: 8px; }
-  .footer a { color: var(--brand-deep); }
-  .node circle { transition: r 0.12s ease; }
-  .node.hover circle { stroke: var(--brand-ink); stroke-width: 2px; }
-  .node.dim circle { opacity: 0.18; }
-  .node text { pointer-events: none; font-size: 9px; font-weight: 600; fill: var(--brand-ink); text-shadow: 0 0 3px #fff, 0 0 2px #fff; }
-  .link { stroke: var(--brand-deep); stroke-opacity: 0.15; }
-  .link.highlight { stroke-opacity: 0.85; stroke-width: 1.6px; stroke: var(--brand-ink); }
-  .link.dim { stroke-opacity: 0.03; }
-  .controls { display: flex; gap: 6px; margin-top: 6px; }
-  .controls button { flex: 1; padding: 6px 8px; font: inherit; font-size: 11.5px; font-weight: 600; border: 1px solid var(--brand-line); background: #fff; color: var(--brand-deep); border-radius: 5px; cursor: pointer; }
-  .controls button:hover { background: var(--brand-bg); }
+
+  /* path-finder */
+  .path-finder { display: flex; flex-direction: column; gap: 6px; }
+  .path-finder .pf-row { display: flex; align-items: center; gap: 6px; }
+  .path-finder .pf-row label {
+    font-size: 11px; color: var(--brand-mute); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    min-width: 22px;
+  }
+  .path-finder input { flex: 1; font-size: 12px; padding: 6px 8px; }
+  .path-finder button {
+    margin-top: 4px; padding: 7px 10px; font: inherit; font-size: 12px;
+    font-weight: 600; border: none; background: var(--brand-deep);
+    color: var(--brand-panel); border-radius: 6px; cursor: pointer;
+    transition: filter var(--t-fast);
+  }
+  .path-finder button:hover { filter: brightness(1.12); }
+  .path-finder button.secondary {
+    background: transparent; border: 1px solid var(--brand-line);
+    color: var(--brand-deep);
+  }
+  .path-result { font-size: 12.5px; line-height: 1.5; margin-top: 6px; }
+  .path-result .crumb {
+    display: inline-block; padding: 2px 6px; margin: 2px 0;
+    background: var(--brand-bg); border: 1px solid var(--brand-line);
+    border-radius: 4px; color: var(--brand-deep); cursor: pointer;
+  }
+  .path-result .arrow { margin: 0 2px; color: var(--brand-mute); }
+
+  /* footer */
+  .footer {
+    font-size: 11px; color: var(--brand-mute); text-align: center;
+    padding: 10px 4px;
+  }
+  .footer a { color: var(--brand-deep); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  /* ---------- Onboarding overlay ---------- */
+  .overlay {
+    position: fixed; inset: 0; background: rgba(13,31,51,0.55);
+    display: none; align-items: center; justify-content: center;
+    z-index: 100; padding: 20px;
+  }
+  .overlay.visible { display: flex; animation: fadeIn 200ms ease; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .overlay-card {
+    max-width: 520px; width: 100%; background: var(--brand-panel);
+    border-radius: var(--radius); padding: 28px 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    color: var(--brand-ink);
+  }
+  .overlay-card h2 {
+    margin: 0 0 6px; font-size: 22px; color: var(--brand-deep);
+  }
+  .overlay-card p {
+    margin: 8px 0 16px; font-size: 14px; color: var(--brand-ink); line-height: 1.55;
+  }
+  .overlay-card .tip-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px;
+    font-size: 13px; margin: 14px 0 22px;
+  }
+  .overlay-card .tip-grid div { display: flex; gap: 8px; align-items: center; }
+  .overlay-card button {
+    padding: 10px 20px; font: inherit; font-size: 14px; font-weight: 600;
+    background: var(--brand-deep); color: var(--brand-panel);
+    border: none; border-radius: 7px; cursor: pointer;
+  }
+
+  [data-theme="dark"] { --link-base: #6f88ad; }
+  [data-theme="dark"] .link { stroke-opacity: 0.18; }
+  [data-theme="dark"] .legend-item[data-category="governance"] .swatch { background: #6f8cb8 !important; }
+  [data-theme="dark"] .legend-item[data-category="redteam"]    .swatch { background: #e57063 !important; }
+  [data-theme="dark"] .legend-item[data-category="eval"]       .swatch { background: #4dd07a !important; }
+  [data-theme="dark"] .legend-item[data-category="routing"]    .swatch { background: #5fb6f0 !important; }
+  [data-theme="dark"] .legend-item[data-category="education"]  .swatch { background: #b478d4 !important; }
+  [data-theme="dark"] .legend-item[data-category="agent"]      .swatch { background: #f0a634 !important; }
+  /* visually-hidden */
+  .vh {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
 </style>
 </head>
 <body>
+
 <header>
-  <h1>open-harness-atlas — interactive knowledge graph</h1>
-  <p class="sub">236 OSI-licensed open-source harnesses + free education resources, connected by adjacency. <a href="https://github.com/Benjamin-KY/open-harness-atlas">Repo</a> · <a href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/CHARTER.md">Why</a></p>
+  <div class="title">
+    <h1>open-harness-atlas — interactive knowledge graph</h1>
+    <p class="sub" id="header-sub">Loading…</p>
+  </div>
+  <div class="header-actions">
+    <button class="icon-btn" id="btn-shortcuts" title="Keyboard shortcuts (?)" aria-label="Keyboard shortcuts">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/><circle cx="12" cy="12" r="10"/></svg>
+    </button>
+    <button class="icon-btn" id="btn-theme" title="Toggle dark mode" aria-label="Toggle dark mode" aria-pressed="false">
+      <svg id="ico-sun"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <a class="icon-btn" href="https://github.com/Benjamin-KY/open-harness-atlas" title="View source on GitHub" target="_blank" rel="noopener" aria-label="Source repository">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.19 1.19a11 11 0 0 1 5.8 0c2.22-1.5 3.19-1.19 3.19-1.19.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.41.36.78 1.05.78 2.13v3.16c0 .31.21.68.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5Z"/></svg>
+    </a>
+  </div>
 </header>
+
 <div id="app">
   <div id="graph-wrap">
-    <svg id="graph"></svg>
+    <svg class="graph" id="graph" role="img" aria-label="Force-directed knowledge graph of OSS LLM harnesses" tabindex="0"></svg>
+
+    <!-- HUD overlays -->
+    <div class="hud hud-bottom-left" id="hud-stats">
+      <span id="hud-line">—</span>
+    </div>
+    <div class="hud hud-top-right" id="hud-actions">
+      <button class="icon-btn" id="btn-recenter" title="Re-run layout" aria-label="Re-run layout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7"/><polyline points="3 4 3 10 9 10"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-zoom-fit" title="Fit graph to view" aria-label="Fit to view">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 8 4 4 8 4"/><polyline points="16 4 20 4 20 8"/><polyline points="20 16 20 20 16 20"/><polyline points="8 20 4 20 4 16"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-layout" title="Toggle clustered layout" aria-label="Toggle clustered layout" aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/><line x1="6" y1="8" x2="6" y2="16"/><line x1="18" y1="8" x2="18" y2="16"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="18" x2="16" y2="18"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-export" title="Export PNG of current view" aria-label="Export PNG">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-share" title="Copy shareable link" aria-label="Copy shareable link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      </button>
+    </div>
+
+    <div class="tooltip" id="tooltip" role="tooltip"></div>
   </div>
-  <aside id="side">
+
+  <aside id="side" aria-label="Filters and details">
+
     <div class="panel">
-      <h3>Search</h3>
-      <input id="search" type="text" placeholder="e.g. autogen, langfuse, mlc-llm…" autocomplete="off">
-      <div class="controls">
-        <button id="reset">Reset view</button>
-        <button id="recenter">Re-center</button>
+      <div class="panel-header">Search<span class="count" id="search-count"></span></div>
+      <div class="panel-body">
+        <input id="search" type="search" placeholder="Search by name, id, tagline, license, country…" autocomplete="off" aria-label="Search nodes">
       </div>
     </div>
-    <div class="panel">
-      <h3>Categories (click to filter)</h3>
-      <div id="legend"></div>
+
+    <div class="panel collapsible">
+      <div class="panel-header" data-toggle><span>Filters</span><span class="count" id="filter-visible">313 visible</span><span class="chev">▾</span></div>
+      <div class="panel-body">
+        <div class="range-row">
+          <label for="mas-range" style="font-size:11px;color:var(--brand-mute);font-weight:600;text-transform:uppercase;letter-spacing:.04em;min-width:64px">MAS ≥</label>
+          <input type="range" id="mas-range" min="0" max="5" step="1" value="0">
+          <span class="range-val" id="mas-val">0</span>
+        </div>
+        <div class="filter-row">
+          <label for="mat-sel">Maturity</label>
+          <select id="mat-sel"><option value="">all</option></select>
+        </div>
+        <div class="filter-row">
+          <label for="cty-sel">Country</label>
+          <select id="cty-sel"><option value="">all</option></select>
+        </div>
+        <div class="filter-row">
+          <label for="lic-sel">License</label>
+          <select id="lic-sel"><option value="">all</option></select>
+        </div>
+        <div class="filter-row">
+          <label for="lang-sel">Language</label>
+          <select id="lang-sel"><option value="">all</option></select>
+        </div>
+      </div>
     </div>
+
+    <div class="panel">
+      <div class="panel-header">Categories<span class="count" id="cat-count"></span></div>
+      <div class="panel-body">
+        <div id="legend"></div>
+      </div>
+    </div>
+
+    <div class="panel collapsible">
+      <div class="panel-header" data-toggle><span>Path finder</span><span class="chev">▾</span></div>
+      <div class="panel-body">
+        <div class="path-finder">
+          <div class="pf-row"><label for="pf-from">From</label><input id="pf-from" type="text" placeholder="e.g. langfuse" list="node-ids"></div>
+          <div class="pf-row"><label for="pf-to">To</label><input id="pf-to" type="text" placeholder="e.g. garak" list="node-ids"></div>
+          <div style="display:flex;gap:6px;">
+            <button id="pf-find">Find shortest path</button>
+            <button id="pf-clear" class="secondary">Clear</button>
+          </div>
+          <div class="path-result" id="pf-result"></div>
+        </div>
+        <datalist id="node-ids"></datalist>
+      </div>
+    </div>
+
     <div class="panel" id="detail-panel">
-      <h3>Selection</h3>
-      <div id="detail">
-        <p class="stats">Click a node to see its details and neighbours.</p>
+      <div class="panel-header">Selection</div>
+      <div class="panel-body">
+        <div id="detail">
+          <p class="detail-empty">Click any node to see its details, neighbours by category, and a link to the source repository. Hover for a quick preview.</p>
+        </div>
       </div>
     </div>
-    <div class="panel">
-      <h3>About</h3>
-      <p class="stats">
-        Each node is a project in the registry. Edges are explicit
-        <code>adjacent_to</code> declarations (competitors, complements,
-        members of the same paradigm). Node size = degree.
-        <br><br>
-        OSI-license filter is strict — no source-available, no
-        non-commercial. See
-        <a href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/GOVERNANCE.md">GOVERNANCE.md</a>.
-      </p>
+
+    <div class="panel collapsible collapsed">
+      <div class="panel-header" data-toggle><span>Graph stats</span><span class="chev">▾</span></div>
+      <div class="panel-body">
+        <dl class="stats-grid" id="stats-grid"></dl>
+      </div>
     </div>
-    <p class="footer">CC BY-SA 4.0 · <span id="stat-line"></span></p>
+
+    <div class="panel collapsible collapsed">
+      <div class="panel-header" data-toggle><span>Top hubs</span><span class="count" id="hubs-count"></span><span class="chev">▾</span></div>
+      <div class="panel-body">
+        <ul class="hub-list" id="hub-list"></ul>
+      </div>
+    </div>
+
+    <p class="footer">
+      Auto-generated from <a href="https://github.com/Benjamin-KY/open-harness-atlas/tree/main/registry"><code>registry/*/*.yaml</code></a>
+      · CC BY-SA 4.0
+    </p>
   </aside>
 </div>
 
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script>
-(async () => {
-  const data = await (await fetch('graph-data.json')).json();
-  const svg = d3.select('#graph');
-  const wrap = document.getElementById('graph-wrap');
-  let width = wrap.clientWidth, height = wrap.clientHeight;
-  svg.attr('viewBox', [-width/2, -height/2, width, height]);
+<!-- onboarding -->
+<div class="overlay" id="onboarding" role="dialog" aria-modal="true" aria-labelledby="ob-title">
+  <div class="overlay-card">
+    <h2 id="ob-title">Welcome to the open-harness-atlas</h2>
+    <p>
+      Every node is an OSI-licensed open-source project that lets you build, evaluate,
+      route, govern or learn about LLM/agent stacks <em>without</em> being locked into
+      one provider. Edges are explicit adjacency declarations (competitors, complements,
+      members of the same paradigm).
+    </p>
+    <div class="tip-grid">
+      <div><kbd>/</kbd> focus search</div>
+      <div><kbd>?</kbd> shortcuts</div>
+      <div><kbd>Esc</kbd> clear selection</div>
+      <div><kbd>F</kbd> fit to view</div>
+      <div><kbd>D</kbd> toggle dark mode</div>
+      <div><kbd>L</kbd> toggle layout</div>
+    </div>
+    <button id="ob-close">Open the graph →</button>
+  </div>
+</div>
 
+<!-- shortcuts -->
+<div class="overlay" id="shortcuts-modal" role="dialog" aria-modal="true" aria-labelledby="sm-title">
+  <div class="overlay-card">
+    <h2 id="sm-title">Keyboard shortcuts</h2>
+    <div class="tip-grid">
+      <div><kbd>/</kbd> focus search</div>
+      <div><kbd>Esc</kbd> clear selection/search</div>
+      <div><kbd>F</kbd> fit graph to view</div>
+      <div><kbd>D</kbd> toggle dark mode</div>
+      <div><kbd>L</kbd> toggle clustered layout</div>
+      <div><kbd>R</kbd> re-run layout</div>
+      <div><kbd>E</kbd> export PNG</div>
+      <div><kbd>S</kbd> copy share link</div>
+      <div><kbd>?</kbd> open this dialog</div>
+    </div>
+    <p style="font-size:12.5px;color:var(--brand-mute);margin-top:4px;">
+      Tip: any URL with <code>#node=&lt;id&gt;</code> or
+      <code>#path=&lt;from&gt;,&lt;to&gt;</code> opens the graph focused
+      on that node or path — perfect for sharing.
+    </p>
+    <button id="sm-close">Close</button>
+  </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js" defer></script>
+<script defer>
+document.addEventListener('DOMContentLoaded', async () => {
+  // ============================================================
+  // 0. Boot
+  // ============================================================
+  const $ = (id) => document.getElementById(id);
+  const data = await (await fetch('graph-data.json')).json();
+  const nodes = data.nodes.map(n => ({...n}));
+  const links = data.links.map(l => ({...l}));
+  const byId  = new Map(nodes.map(n => [n.id, n]));
+
+  // header sub
+  $('header-sub').innerHTML =
+    `${data.meta.n_nodes} OSI-licensed projects · ${data.meta.n_edges} adjacency edges · ` +
+    `<a href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/CHARTER.md">why</a> · ` +
+    `<a href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/GOVERNANCE.md">license filter</a>`;
+
+  // ============================================================
+  // 1. Theme (system-aware + persisted)
+  // ============================================================
+  const themeKey = 'oha-theme';
+  const sys = window.matchMedia('(prefers-color-scheme: dark)');
+  function applyTheme(t) {
+    document.documentElement.dataset.theme = t;
+    $('btn-theme').setAttribute('aria-pressed', t === 'dark');
+    $('btn-theme').querySelector('svg').innerHTML = t === 'dark'
+      ? '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" stroke="none"/>'
+      : '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" fill="none" stroke="currentColor" stroke-width="2"/>';
+  }
+  applyTheme(localStorage.getItem(themeKey) || (sys.matches ? 'dark' : 'light'));
+  $('btn-theme').onclick = () => {
+    const cur = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem(themeKey, cur); applyTheme(cur);
+  };
+
+  // ============================================================
+  // 2. Onboarding
+  // ============================================================
+  if (!localStorage.getItem('oha-seen-onboarding')) {
+    $('onboarding').classList.add('visible');
+  }
+  $('ob-close').onclick = () => {
+    $('onboarding').classList.remove('visible');
+    localStorage.setItem('oha-seen-onboarding', '1');
+  };
+  $('btn-shortcuts').onclick = () => $('shortcuts-modal').classList.add('visible');
+  $('sm-close').onclick = () => $('shortcuts-modal').classList.remove('visible');
+  [$('onboarding'), $('shortcuts-modal')].forEach(o =>
+    o.addEventListener('click', e => { if (e.target === o) o.classList.remove('visible'); }));
+
+  // ============================================================
+  // 3. SVG + layers
+  // ============================================================
+  const svg  = d3.select('#graph');
+  const wrap = $('graph-wrap');
+  let width  = wrap.clientWidth, height = wrap.clientHeight;
+  svg.attr('viewBox', [-width/2, -height/2, width, height]);
   const root = svg.append('g');
-  const zoom = d3.zoom()
-    .scaleExtent([0.25, 6])
-    .on('zoom', (e) => root.attr('transform', e.transform));
+  const linkLayer = root.append('g').attr('class', 'links').attr('stroke-linecap', 'round');
+  const nodeLayer = root.append('g').attr('class', 'nodes');
+
+  const zoom = d3.zoom().scaleExtent([0.2, 8])
+    .on('zoom', (e) => { root.attr('transform', e.transform); updateLOD(e.transform.k); });
   svg.call(zoom);
 
-  const linkSel = root.append('g').attr('class', 'links')
-    .selectAll('line').data(data.links).enter().append('line').attr('class', 'link');
+  let currentK = 1;
+  function updateLOD(k) {
+    currentK = k;
+    nodeSel.selectAll('text').style('display', d => {
+      // Always label hubs; progressively reveal more as you zoom in.
+      const threshold = k < 1.0 ? 0.92 : k < 1.8 ? 0.80 : k < 3.0 ? 0.55 : 0.0;
+      return (d.deg_pct >= threshold) ? null : 'none';
+    });
+  }
 
-  const nodeSel = root.append('g').attr('class', 'nodes')
-    .selectAll('g.node').data(data.nodes).enter().append('g').attr('class', 'node');
+  // ============================================================
+  // 4. Render nodes + edges
+  // ============================================================
+  // Edges: cubic-bezier curves for visual elegance
+  const linkSel = linkLayer.selectAll('path')
+    .data(links).enter().append('path')
+    .attr('class', 'link')
+    .attr('fill', 'none')
+    .attr('stroke-width', 0.9);
 
-  const maxDeg = d3.max(data.nodes, d => d.degree) || 1;
+  // Pre-compute degree percentile for LOD
+  const degs = nodes.map(n => n.degree).sort(d3.ascending);
+  nodes.forEach(n => { n.deg_pct = d3.bisectLeft(degs, n.degree) / degs.length; });
+
+  const maxDeg = d3.max(nodes, d => d.degree) || 1;
   const radius = d => 4 + Math.sqrt(d.degree / maxDeg) * 12;
+
+  const nodeSel = nodeLayer.selectAll('g.node')
+    .data(nodes).enter().append('g')
+    .attr('class', 'node')
+    .attr('data-category', d => d.category)
+    .attr('data-id', d => d.id)
+    .attr('tabindex', 0)
+    .attr('role', 'button')
+    .attr('aria-label', d => `${d.name}: ${d.tagline}`);
 
   nodeSel.append('circle')
     .attr('r', d => radius(d))
-    .attr('fill', d => d.color)
-    .attr('stroke', '#fff').attr('stroke-width', 1.2);
+    .attr('fill', d => d.color);
 
-  // Inline label only for high-degree nodes.
-  const degPctile = d3.quantile(data.nodes.map(d => d.degree).sort(d3.ascending), 0.92);
-  nodeSel.filter(d => d.degree >= degPctile)
-    .append('text').attr('dx', d => radius(d) + 3).attr('dy', '0.32em').text(d => d.name);
+  nodeSel.append('text')
+    .attr('dx', d => radius(d) + 3)
+    .attr('dy', '0.32em')
+    .text(d => d.name);
 
-  nodeSel.append('title').text(d => `${d.name} (${d.category})\n${d.tagline}`);
-
-  // Forces.
-  const sim = d3.forceSimulation(data.nodes)
-    .force('charge', d3.forceManyBody().strength(-120))
-    .force('link', d3.forceLink(data.links).id(d => d.id).distance(38).strength(0.6))
-    .force('center', d3.forceCenter(0, 0))
+  // Simulation
+  const sim = d3.forceSimulation(nodes)
+    .force('charge',  d3.forceManyBody().strength(-130))
+    .force('link',    d3.forceLink(links).id(d => d.id).distance(40).strength(0.6))
+    .force('center',  d3.forceCenter(0, 0))
     .force('collide', d3.forceCollide().radius(d => radius(d) + 2))
-    .on('tick', () => {
-      linkSel
-        .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
-        .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
-      nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
-    });
+    .on('tick', tick);
 
-  // Drag.
+  function tick() {
+    linkSel.attr('d', d => {
+      const sx = d.source.x, sy = d.source.y, tx = d.target.x, ty = d.target.y;
+      const dx = tx - sx, dy = ty - sy;
+      const dr = Math.sqrt(dx*dx + dy*dy) * 4;  // gentle curvature
+      return `M${sx},${sy}A${dr},${dr} 0 0,1 ${tx},${ty}`;
+    });
+    nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+  }
+
+  // Drag
   nodeSel.call(d3.drag()
     .on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-    .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
-    .on('end',  (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+    .on('drag',  (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on('end',   (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
 
-  // Neighbour index.
-  const neighbours = new Map();
-  data.nodes.forEach(n => neighbours.set(n.id, new Set()));
-  data.links.forEach(l => {
+  // Neighbours
+  const neighbours = new Map(nodes.map(n => [n.id, new Set()]));
+  links.forEach(l => {
     const s = (l.source.id || l.source), t = (l.target.id || l.target);
     neighbours.get(s).add(t); neighbours.get(t).add(s);
   });
 
-  function focus(node) {
+  // ============================================================
+  // 5. Tooltip + interactions
+  // ============================================================
+  const tip = $('tooltip');
+  function showTip(d, evt) {
+    tip.innerHTML =
+      `<div class="t-name">${escapeHtml(d.name)}</div>` +
+      `<div class="t-cat" style="color:${d.color}">${escapeHtml(d.category)} · ${d.degree} link${d.degree===1?'':'s'} · MAS ${d.mas}/5</div>` +
+      `<div class="t-tag">${escapeHtml(d.tagline)}</div>`;
+    tip.classList.add('visible');
+    moveTip(evt);
+  }
+  function moveTip(evt) {
+    const rect = wrap.getBoundingClientRect();
+    const x = (evt.clientX - rect.left), y = (evt.clientY - rect.top);
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    const px = Math.min(x + 14, rect.width  - tw - 8);
+    const py = Math.min(y + 14, rect.height - th - 8);
+    tip.style.left = px + 'px'; tip.style.top = py + 'px';
+  }
+  function hideTip() { tip.classList.remove('visible'); }
+
+  nodeSel
+    .on('mouseenter', (e, d) => { showTip(d, e); })
+    .on('mousemove',  (e, d) => moveTip(e))
+    .on('mouseleave', () => hideTip())
+    .on('click', (e, d) => { e.stopPropagation(); focus(d); })
+    .on('keydown', (e, d) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); focus(d); } });
+  svg.on('click', () => { if (!pathActive) unfocus(); });
+
+  // ============================================================
+  // 6. Focus / unfocus / path highlight
+  // ============================================================
+  let focused = null;
+  let pathActive = null;  // array of ids, or null
+
+  function focus(node, opts = {}) {
+    focused = node;
+    pathActive = null;
     const keep = new Set([node.id, ...neighbours.get(node.id)]);
-    nodeSel.classed('dim', d => !keep.has(d.id)).classed('hover', d => d.id === node.id);
-    linkSel.classed('highlight', l => {
-      const s = (l.source.id || l.source), t = (l.target.id || l.target);
-      return s === node.id || t === node.id;
-    }).classed('dim', l => {
-      const s = (l.source.id || l.source), t = (l.target.id || l.target);
-      return s !== node.id && t !== node.id;
-    });
+    nodeSel
+      .classed('dim',   d => !keep.has(d.id))
+      .classed('hover', d => d.id === node.id)
+      .classed('path',  false);
+    linkSel
+      .classed('highlight', l => {
+        const s = (l.source.id || l.source), t = (l.target.id || l.target);
+        return s === node.id || t === node.id;
+      })
+      .classed('dim', l => {
+        const s = (l.source.id || l.source), t = (l.target.id || l.target);
+        return s !== node.id && t !== node.id;
+      })
+      .classed('path', false);
     renderDetail(node);
+    if (opts.center) {
+      svg.transition().duration(600).call(
+        zoom.transform,
+        d3.zoomIdentity.translate(-node.x * currentK, -node.y * currentK).scale(currentK)
+      );
+    }
+    if (!opts.skipHash) location.hash = `node=${encodeURIComponent(node.id)}`;
   }
+
   function unfocus() {
-    nodeSel.classed('dim', false).classed('hover', false);
-    linkSel.classed('highlight', false).classed('dim', false);
-    document.getElementById('detail').innerHTML = '<p class="stats">Click a node to see its details and neighbours.</p>';
+    focused = null; pathActive = null;
+    nodeSel.classed('dim', false).classed('hover', false).classed('path', false);
+    linkSel.classed('highlight', false).classed('dim', false).classed('path', false);
+    $('detail').innerHTML = '<p class="detail-empty">Click any node to see its details, neighbours by category, and a link to the source repository. Hover for a quick preview.</p>';
+    if (location.hash) history.replaceState(null, '', ' ');
   }
 
-  nodeSel.on('click', (e, d) => { e.stopPropagation(); focus(d); });
-  svg.on('click', unfocus);
+  function highlightPath(pathIds) {
+    if (!pathIds || pathIds.length < 2) return;
+    pathActive = pathIds;
+    const onPath = new Set(pathIds);
+    const pairOnPath = (a, b) => {
+      for (let i = 0; i < pathIds.length - 1; i++) {
+        if ((pathIds[i] === a && pathIds[i+1] === b) ||
+            (pathIds[i] === b && pathIds[i+1] === a)) return true;
+      }
+      return false;
+    };
+    nodeSel
+      .classed('dim',  d => !onPath.has(d.id))
+      .classed('path', d => onPath.has(d.id))
+      .classed('hover', false);
+    linkSel
+      .classed('highlight', false)
+      .classed('dim', l => {
+        const s = (l.source.id || l.source), t = (l.target.id || l.target);
+        return !pairOnPath(s, t);
+      })
+      .classed('path', l => {
+        const s = (l.source.id || l.source), t = (l.target.id || l.target);
+        return pairOnPath(s, t);
+      });
+  }
 
-  // Detail panel.
-  const detail = document.getElementById('detail');
-  function escapeHtml(s) { return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  // ============================================================
+  // 7. Detail panel
+  // ============================================================
+  const detail = $('detail');
+  function escapeHtml(s) {
+    return (s||'').replace(/[&<>"']/g, c =>
+      ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
   function renderDetail(node) {
     const nbrIds = [...neighbours.get(node.id)].sort();
     const byCat = {};
     nbrIds.forEach(id => {
-      const nb = data.nodes.find(n => n.id === id); if (!nb) return;
+      const nb = byId.get(id); if (!nb) return;
       (byCat[nb.category] = byCat[nb.category] || []).push(nb);
     });
+    const catOrder = ['governance','agent','eval','redteam','routing','education'];
     let nbrHtml = '';
-    for (const cat of Object.keys(byCat).sort()) {
-      nbrHtml += `<h4 style="margin-top:10px">${cat} (${byCat[cat].length})</h4><ul>`;
-      byCat[cat].forEach(nb => {
+    for (const cat of catOrder) {
+      if (!byCat[cat]) continue;
+      const color = data.meta.categories.find(c => c.key === cat)?.color || '#888';
+      nbrHtml += `<h4><span class="swatch" style="background:${color}"></span>${cat} (${byCat[cat].length})</h4><ul>`;
+      byCat[cat].sort((a,b) => a.name.localeCompare(b.name)).forEach(nb => {
         nbrHtml += `<li><a href="#" data-id="${escapeHtml(nb.id)}">${escapeHtml(nb.name)}</a></li>`;
       });
       nbrHtml += '</ul>';
     }
     detail.innerHTML = `
       <div class="node-detail-title">${escapeHtml(node.name)}</div>
-      <span class="node-detail-cat" style="background:${node.color}">${escapeHtml(node.category)}</span>
+      <div class="node-detail-pills">
+        <span class="pill" style="background:${node.color}">${escapeHtml(node.category)}</span>
+        ${node.maturity ? `<span class="pill outline">${escapeHtml(node.maturity)}</span>` : ''}
+        ${node.license  ? `<span class="pill outline">${escapeHtml(node.license)}</span>` : ''}
+      </div>
       <p class="node-detail-tag">${escapeHtml(node.tagline)}</p>
-      <div class="node-detail-meta"><strong>Degree:</strong> ${node.degree} neighbour${node.degree===1?'':'s'}</div>
-      <div class="node-detail-meta"><strong>Model-agnostic score:</strong> ${node.mas}/5</div>
+      <div class="node-detail-meta"><strong>Degree:</strong> ${node.degree}</div>
+      <div class="node-detail-meta"><strong>Model-agnostic:</strong> ${node.mas}/5</div>
+      ${node.language    ? `<div class="node-detail-meta"><strong>Language:</strong> ${escapeHtml(node.language)}</div>` : ''}
+      ${node.maintainer_name ? `<div class="node-detail-meta"><strong>Maintainer:</strong> ${escapeHtml(node.maintainer_name)} (${escapeHtml(node.maintainer_type)})</div>` : ''}
+      ${node.country     ? `<div class="node-detail-meta"><strong>Origin:</strong> ${escapeHtml(node.country)}</div>` : ''}
+      ${node.subcategory ? `<div class="node-detail-meta"><strong>Subcategory:</strong> ${escapeHtml(node.subcategory)}</div>` : ''}
       ${node.url ? `<a class="node-detail-link" href="${escapeHtml(node.url)}" target="_blank" rel="noopener">Open repo ↗</a>` : ''}
-      <div class="node-detail-neighbors">${nbrHtml}</div>
+      <a class="node-detail-link secondary" href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/registry/${escapeHtml(node.category)}/${escapeHtml(node.id)}.yaml" target="_blank" rel="noopener">View YAML ↗</a>
+      <div class="node-detail-neighbors">${nbrHtml || '<p class="detail-empty">(no adjacencies)</p>'}</div>
     `;
     detail.querySelectorAll('a[data-id]').forEach(a => {
       a.addEventListener('click', ev => {
         ev.preventDefault();
-        const nb = data.nodes.find(n => n.id === a.dataset.id);
-        if (nb) focus(nb);
+        const nb = byId.get(a.dataset.id);
+        if (nb) focus(nb, {center: true});
       });
     });
   }
 
-  // Search.
-  document.getElementById('search').addEventListener('input', e => {
-    const q = e.target.value.trim().toLowerCase();
-    if (!q) { unfocus(); return; }
-    const hits = data.nodes.filter(n =>
-      n.id.toLowerCase().includes(q) ||
-      n.name.toLowerCase().includes(q) ||
-      (n.tagline||'').toLowerCase().includes(q));
-    const hitSet = new Set(hits.map(n => n.id));
-    nodeSel.classed('dim', d => !hitSet.has(d.id));
-    linkSel.classed('dim', l => {
+  // ============================================================
+  // 8. Filters
+  // ============================================================
+  // populate selects
+  function fillSelect(id, items) {
+    const sel = $(id);
+    items.forEach(([k, c]) => {
+      if (!k || k === 'Unknown') return;
+      const o = document.createElement('option');
+      o.value = k; o.textContent = `${k} (${c})`; sel.appendChild(o);
+    });
+  }
+  fillSelect('mat-sel',  data.meta.maturity);
+  fillSelect('cty-sel',  data.meta.countries);
+  fillSelect('lic-sel',  data.meta.licenses);
+  fillSelect('lang-sel', data.meta.languages);
+
+  const filterState = {
+    q: '', mas: 0, mat: '', cty: '', lic: '', lang: '',
+    offCats: new Set(),
+  };
+
+  function applyFilters() {
+    const q = filterState.q.trim().toLowerCase();
+    let visibleCount = 0;
+    const visIds = new Set();
+
+    nodes.forEach(n => {
+      const matchesQ = !q ||
+        n.id.toLowerCase().includes(q) ||
+        n.name.toLowerCase().includes(q) ||
+        (n.tagline||'').toLowerCase().includes(q) ||
+        (n.license||'').toLowerCase().includes(q) ||
+        (n.country||'').toLowerCase().includes(q) ||
+        (n.subcategory||'').toLowerCase().includes(q);
+      const visible =
+        matchesQ &&
+        n.mas >= filterState.mas &&
+        (!filterState.mat  || n.maturity === filterState.mat) &&
+        (!filterState.cty  || n.country  === filterState.cty) &&
+        (!filterState.lic  || n.license  === filterState.lic) &&
+        (!filterState.lang || n.language === filterState.lang) &&
+        !filterState.offCats.has(n.category);
+      n._visible = visible;
+      if (visible) { visibleCount++; visIds.add(n.id); }
+    });
+
+    nodeSel.style('display', d => d._visible ? null : 'none');
+    linkSel.style('display', l => {
       const s = (l.source.id || l.source), t = (l.target.id || l.target);
-      return !hitSet.has(s) && !hitSet.has(t);
-    }).classed('highlight', false);
-    if (hits.length === 1) focus(hits[0]);
+      return (visIds.has(s) && visIds.has(t)) ? null : 'none';
+    });
+
+    $('filter-visible').textContent = `${visibleCount} visible`;
+    $('search-count').textContent = q ? `${visibleCount} match${visibleCount===1?'':'es'}` : '';
+  }
+
+  $('search').addEventListener('input', e => {
+    filterState.q = e.target.value;
+    applyFilters();
+    if (filterState.q) {
+      const hits = nodes.filter(n => n._visible);
+      if (hits.length === 1) focus(hits[0], {center: true});
+    }
+  });
+  $('mas-range').addEventListener('input', e => {
+    filterState.mas = +e.target.value;
+    $('mas-val').textContent = e.target.value;
+    applyFilters();
+  });
+  ['mat','cty','lic','lang'].forEach(k => {
+    $(`${k}-sel`).addEventListener('change', e => {
+      filterState[k] = e.target.value;
+      applyFilters();
+    });
   });
 
-  document.getElementById('reset').onclick = () => {
-    document.getElementById('search').value = '';
-    unfocus();
-    svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
-  };
-  document.getElementById('recenter').onclick = () => {
-    sim.alpha(0.6).restart();
-  };
-
-  // Legend.
-  const legend = document.getElementById('legend');
-  const offCats = new Set();
+  // ============================================================
+  // 9. Legend (category toggles)
+  // ============================================================
+  const legend = $('legend');
   data.meta.categories.forEach(c => {
     const row = document.createElement('div');
     row.className = 'legend-item';
+    row.setAttribute('role', 'button');
+    row.setAttribute('tabindex', '0');
+    row.setAttribute('data-category', c.key);
     row.innerHTML = `<span class="swatch" style="background:${c.color}"></span><span class="label">${c.key}</span><span class="count">${c.count}</span>`;
-    row.onclick = () => {
-      if (offCats.has(c.key)) offCats.delete(c.key); else offCats.add(c.key);
+    const toggle = () => {
+      if (filterState.offCats.has(c.key)) filterState.offCats.delete(c.key);
+      else filterState.offCats.add(c.key);
       row.classList.toggle('off');
-      nodeSel.style('display', d => offCats.has(d.category) ? 'none' : null);
-      linkSel.style('display', l => {
-        const s = data.nodes.find(n => n.id === (l.source.id || l.source));
-        const t = data.nodes.find(n => n.id === (l.target.id || l.target));
-        return (s && offCats.has(s.category)) || (t && offCats.has(t.category)) ? 'none' : null;
-      });
+      applyFilters();
     };
+    row.onclick = toggle;
+    row.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } };
     legend.appendChild(row);
   });
+  $('cat-count').textContent = `${data.meta.categories.length} categories`;
 
-  document.getElementById('stat-line').textContent = `${data.meta.n_nodes} nodes · ${data.meta.n_edges} edges`;
+  // ============================================================
+  // 10. Path finder (BFS)
+  // ============================================================
+  // datalist for autocomplete
+  const dl = $('node-ids');
+  nodes.forEach(n => {
+    const o = document.createElement('option');
+    o.value = n.id; o.label = n.name; dl.appendChild(o);
+  });
 
-  // Handle resize.
+  function bfsPath(fromId, toId) {
+    if (!byId.has(fromId) || !byId.has(toId)) return null;
+    if (fromId === toId) return [fromId];
+    const prev = new Map();
+    const seen = new Set([fromId]);
+    const q = [fromId];
+    while (q.length) {
+      const cur = q.shift();
+      for (const nb of neighbours.get(cur)) {
+        if (seen.has(nb)) continue;
+        seen.add(nb); prev.set(nb, cur);
+        if (nb === toId) {
+          const path = [nb];
+          let p = cur;
+          while (p !== undefined) { path.unshift(p); p = prev.get(p); }
+          return path;
+        }
+        q.push(nb);
+      }
+    }
+    return null;
+  }
+
+  function runPath(fromId, toId, opts = {}) {
+    const path = bfsPath(fromId, toId);
+    const out = $('pf-result');
+    if (!path) {
+      out.innerHTML = `<span style="color:var(--warn)">No path found between
+        <code>${escapeHtml(fromId)}</code> and <code>${escapeHtml(toId)}</code>
+        (they may be in disconnected components or one id is wrong).</span>`;
+      return;
+    }
+    highlightPath(path);
+    out.innerHTML = `<span style="color:var(--brand-mute)">${path.length-1} hop${path.length-1===1?'':'s'}:</span><br>` +
+      path.map(id => {
+        const n = byId.get(id);
+        return `<span class="crumb" data-id="${escapeHtml(id)}" style="border-left:3px solid ${n.color}">${escapeHtml(n.name)}</span>`;
+      }).join('<span class="arrow">→</span>');
+    out.querySelectorAll('.crumb').forEach(c =>
+      c.onclick = () => { const n = byId.get(c.dataset.id); if (n) focus(n, {center: true}); });
+    if (!opts.skipHash) location.hash = `path=${encodeURIComponent(fromId)},${encodeURIComponent(toId)}`;
+  }
+  $('pf-find').onclick = () => {
+    const f = $('pf-from').value.trim(), t = $('pf-to').value.trim();
+    if (f && t) runPath(f, t);
+  };
+  $('pf-clear').onclick = () => {
+    $('pf-result').innerHTML = '';
+    $('pf-from').value = ''; $('pf-to').value = '';
+    unfocus();
+  };
+
+  // ============================================================
+  // 11. Stats + hubs
+  // ============================================================
+  const stats = $('stats-grid');
+  const statItems = [
+    ['Nodes', data.meta.n_nodes],
+    ['Edges', data.meta.n_edges],
+    ['Avg degree', data.meta.avg_degree],
+    ['Density', data.meta.density],
+    ['Categories', data.meta.categories.length],
+    ['Top hub', data.meta.top_hubs[0]?.name + ' (' + data.meta.top_hubs[0]?.degree + ')'],
+  ];
+  stats.innerHTML = statItems.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+
+  const hubs = $('hub-list');
+  data.meta.top_hubs.forEach(h => {
+    const li = document.createElement('li');
+    const cat = data.meta.categories.find(c => c.key === h.category);
+    li.innerHTML = `<span class="hub-swatch" style="background:${cat?.color}"></span>
+      <span class="hub-name">${escapeHtml(h.name)}</span>
+      <span class="hub-deg">${h.degree}</span>`;
+    li.onclick = () => { const n = byId.get(h.id); if (n) focus(n, {center: true}); };
+    hubs.appendChild(li);
+  });
+  $('hubs-count').textContent = `top ${data.meta.top_hubs.length}`;
+
+  // HUD
+  $('hud-line').innerHTML =
+    `<strong>${data.meta.n_nodes}</strong> nodes · <strong>${data.meta.n_edges}</strong> edges · ` +
+    `density <strong>${data.meta.density}</strong>`;
+
+  // ============================================================
+  // 12. Layout toggle (force ↔ category-clustered)
+  // ============================================================
+  let clustered = false;
+  $('btn-layout').onclick = () => {
+    clustered = !clustered;
+    $('btn-layout').setAttribute('aria-pressed', clustered);
+    if (clustered) {
+      // place a target center per category in a hex pattern
+      const cats = data.meta.categories.map(c => c.key);
+      const R = Math.min(width, height) * 0.30;
+      const centers = {};
+      cats.forEach((c, i) => {
+        const a = (i / cats.length) * Math.PI * 2 - Math.PI/2;
+        centers[c] = { x: Math.cos(a) * R, y: Math.sin(a) * R };
+      });
+      sim.force('x', d3.forceX(d => centers[d.category].x).strength(0.15));
+      sim.force('y', d3.forceY(d => centers[d.category].y).strength(0.15));
+      sim.force('link').strength(0.3);
+      sim.alpha(0.7).restart();
+    } else {
+      sim.force('x', null); sim.force('y', null);
+      sim.force('link').strength(0.6);
+      sim.alpha(0.6).restart();
+    }
+  };
+
+  // ============================================================
+  // 13. HUD buttons: recenter / fit / export / share
+  // ============================================================
+  $('btn-recenter').onclick = () => sim.alpha(0.7).restart();
+  $('btn-zoom-fit').onclick = fitToView;
+  function fitToView() {
+    const xs = nodes.filter(n => n._visible !== false).map(n => n.x);
+    const ys = nodes.filter(n => n._visible !== false).map(n => n.y);
+    if (!xs.length) return;
+    const minX = d3.min(xs), maxX = d3.max(xs);
+    const minY = d3.min(ys), maxY = d3.max(ys);
+    const w = maxX - minX, h = maxY - minY;
+    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    const margin = 60;
+    const k = Math.min(width / (w + margin*2), height / (h + margin*2));
+    const cap = Math.min(k, 2.5);
+    svg.transition().duration(600).call(
+      zoom.transform,
+      d3.zoomIdentity.scale(cap).translate(-cx, -cy)
+    );
+  }
+
+  $('btn-export').onclick = exportPNG;
+  function exportPNG() {
+    // Serialize the SVG with computed styles inlined.
+    const svgNode = svg.node().cloneNode(true);
+    const style = document.createElement('style');
+    style.textContent = `
+      .link { stroke: ${getComputedStyle(document.documentElement).getPropertyValue('--link-base')}; stroke-opacity: 0.18; fill: none; }
+      .node circle { stroke: ${getComputedStyle(document.documentElement).getPropertyValue('--brand-panel')}; stroke-width: 1.2; }
+      .node text { font: 600 9.5px Inter, sans-serif; fill: ${getComputedStyle(document.documentElement).getPropertyValue('--brand-ink')}; paint-order: stroke; stroke: ${getComputedStyle(document.documentElement).getPropertyValue('--brand-panel')}; stroke-width: 3; stroke-linejoin: round; }
+    `;
+    svgNode.insertBefore(style, svgNode.firstChild);
+    svgNode.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    svgNode.setAttribute('width',  width  * 2);
+    svgNode.setAttribute('height', height * 2);
+    const data = new XMLSerializer().serializeToString(svgNode);
+    const blob = new Blob([data], {type: 'image/svg+xml'});
+    const url = URL.createObjectURL(blob);
+    const img = new Image();
+    img.onload = () => {
+      const c = document.createElement('canvas');
+      c.width = width * 2; c.height = height * 2;
+      const ctx = c.getContext('2d');
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--brand-panel') || '#fff';
+      ctx.fillRect(0, 0, c.width, c.height);
+      ctx.drawImage(img, 0, 0);
+      c.toBlob(b => {
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(b);
+        a.download = `open-harness-atlas-${new Date().toISOString().slice(0,10)}.png`;
+        a.click();
+        URL.revokeObjectURL(a.href);
+      }, 'image/png');
+      URL.revokeObjectURL(url);
+    };
+    img.src = url;
+  }
+
+  $('btn-share').onclick = async () => {
+    const url = location.href;
+    try { await navigator.clipboard.writeText(url); flashHUD('Link copied: ' + url.replace(location.origin,'')); }
+    catch { prompt('Copy this URL:', url); }
+  };
+  function flashHUD(msg) {
+    const old = $('hud-line').innerHTML;
+    $('hud-line').textContent = msg;
+    setTimeout(() => { $('hud-line').innerHTML = old; }, 1800);
+  }
+
+  // ============================================================
+  // 14. Collapsible panels
+  // ============================================================
+  document.querySelectorAll('.panel.collapsible .panel-header[data-toggle]').forEach(h => {
+    h.onclick = () => h.closest('.panel').classList.toggle('collapsed');
+  });
+
+  // ============================================================
+  // 15. Keyboard shortcuts
+  // ============================================================
+  document.addEventListener('keydown', (e) => {
+    if (e.target.matches('input, select, textarea')) {
+      if (e.key === 'Escape') e.target.blur();
+      return;
+    }
+    if (e.key === '/') { e.preventDefault(); $('search').focus(); }
+    else if (e.key === '?') $('btn-shortcuts').click();
+    else if (e.key === 'Escape') { unfocus(); $('search').value = ''; filterState.q = ''; applyFilters(); }
+    else if (e.key.toLowerCase() === 'f') fitToView();
+    else if (e.key.toLowerCase() === 'd') $('btn-theme').click();
+    else if (e.key.toLowerCase() === 'l') $('btn-layout').click();
+    else if (e.key.toLowerCase() === 'r') sim.alpha(0.7).restart();
+    else if (e.key.toLowerCase() === 'e') exportPNG();
+    else if (e.key.toLowerCase() === 's') $('btn-share').click();
+  });
+
+  // ============================================================
+  // 16. URL hash deep-linking
+  // ============================================================
+  function applyHash() {
+    const h = location.hash.replace(/^#/, '');
+    if (!h) return;
+    const params = new URLSearchParams(h);
+    if (params.has('node')) {
+      const n = byId.get(params.get('node'));
+      if (n) {
+        // wait for one sim tick so positions exist
+        setTimeout(() => focus(n, {center: true, skipHash: true}), 250);
+      }
+    } else if (params.has('path')) {
+      const [f, t] = (params.get('path') || '').split(',');
+      if (f && t) {
+        $('pf-from').value = f; $('pf-to').value = t;
+        setTimeout(() => runPath(f, t, {skipHash: true}), 250);
+      }
+    }
+  }
+  window.addEventListener('hashchange', applyHash);
+
+  // ============================================================
+  // 17. Resize
+  // ============================================================
   window.addEventListener('resize', () => {
     width = wrap.clientWidth; height = wrap.clientHeight;
     svg.attr('viewBox', [-width/2, -height/2, width, height]);
-    sim.force('center', d3.forceCenter(0, 0)).alpha(0.3).restart();
+    sim.force('center', d3.forceCenter(0, 0)).alpha(0.2).restart();
   });
-})();
+
+  // ============================================================
+  // 18. Initial state — let the sim settle, then fit and apply hash
+  // ============================================================
+  applyFilters();
+  updateLOD(1);
+  // Let initial layout settle, then fit
+  setTimeout(() => { fitToView(); applyHash(); }, 600);
+});
 </script>
 </body>
 </html>
