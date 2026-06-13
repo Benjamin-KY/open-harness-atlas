@@ -16,11 +16,16 @@ routing — and free education resources.*
 > (**v0.1.0**) is the current state; v0.2.0+ adds the data-driven
 > spectrum / radial visuals and adjacencies page (see `CHANGELOG.md`).
 >
-> **Deferred from v0.1.0** (deliberate, with reasons recorded):
-> Llama Guard 3 and ShieldGemma (non-OSI licenses fail
-> `GOVERNANCE.md` §1.1); `sa-sovereign-llm-harness` (upstream has no
-> `LICENSE` file yet — entry lands once that ships); DeepLearning.AI
-> shorts (no underlying OSS repo).
+> **Out of scope for the registry by design**: closed-source projects;
+> non-OSI licenses (so Llama Guard 3 and ShieldGemma are excluded
+> under `GOVERNANCE.md` §1.1, even where they are technically excellent);
+> internal / unreleased projects (so the author's research repo
+> `sa-sovereign-llm-harness` is *not* a deferred candidate — it is
+> referenced as the canonical source of the framing in `CHARTER.md`
+> but does not enter the catalog regardless of its future
+> publication status); resources without an underlying OSS repository
+> (so DeepLearning.AI shorts, however useful, do not satisfy the
+> registry schema).
 
 ---
 

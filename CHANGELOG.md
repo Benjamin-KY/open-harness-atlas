@@ -37,20 +37,28 @@ follows [SemVer](https://semver.org/).
 - `companion/` skeleton with `open-harnesses` custom domain for
   `create-context-graph` (full graph build deferred to v0.3.0).
 
-### Deferred from v0.1.0 (deliberate)
-- **Llama Guard 3** (Llama Community License) and **ShieldGemma**
-  (Gemma License) — not OSI-approved, fail `GOVERNANCE.md` §1.1.
-  Will land in `docs/adjacencies.md` at v0.2.0.
-- **`sa-sovereign-llm-harness`** — upstream has no `LICENSE` file at
-  time of writing; entry will be added once that lands upstream.
-- **DeepLearning.AI short courses** — no underlying OSS repository to
-  satisfy the registry schema. Replaced in the education lineup with
-  eight OSS-licensed alternatives.
-- **`docs/adjacencies.md`** (RAG cores, observability stacks) —
-  deferred to v0.2.0 per the release ladder.
-- **`visuals/sovereignty-radial.svg`** — deferred to v0.2.0.
-- **`visuals/fable-mythos-pattern-fire.svg`** illustration — deferred
-  to v0.4.0; the *text* worked example ships in v0.1.0.
+### Out of scope for the registry (not deferred — by design)
+- **Closed-source projects.** The atlas catalogs *open* infrastructure.
+- **Non-OSI licenses.** Llama Guard 3 (Llama Community License) and
+  ShieldGemma (Gemma License) — technically capable but fail
+  `GOVERNANCE.md` §1.1. Will be named in `docs/adjacencies.md` at v0.2.0
+  with the reason, not added to the registry.
+- **Internal / unreleased projects.** The author's research repo
+  `sa-sovereign-llm-harness` is referenced as the canonical source of
+  the framing in `CHARTER.md` and `docs/sovereignty-rubric.md` but is
+  *not* a registry candidate — the registry catalogs released OSS
+  third-party projects, not internal work-in-progress.
+- **Resources without an underlying OSS repository.** DeepLearning.AI
+  shorts and similar — do not satisfy the registry schema's
+  `repo_url` requirement. The education lineup is filled with eight
+  OSS-licensed alternatives instead.
+
+### Deferred to later releases (genuinely deferred, will land)
+- `docs/adjacencies.md` (named adjacencies with reasons) — v0.2.0.
+- `visuals/sovereignty-radial.svg` — v0.2.0.
+- `visuals/fable-mythos-pattern-fire.svg` illustration — v0.4.0
+  (the *text* worked example shipped in v0.1.0).
+- Full registry-driven companion domain generation — v0.3.0.
 
 ---
 

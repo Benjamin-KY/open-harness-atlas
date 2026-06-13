@@ -73,7 +73,7 @@ A holistic call by the curator:
 | `none` | Project is useful in the ecosystem but does not embody the harness pattern (e.g., a pure routing layer). |
 | `partial` | Implements 1–2 components fully or many partially. |
 | `aligned` | Implements 3+ components and pitches itself as governance-first. |
-| `native` | Built explicitly as a five-component harness from day one (current example: `harmless-harnesses` + `sa-sovereign-llm-harness`). |
+| `native` | Built explicitly as a five-component harness from day one (current registry example: `harmless-harnesses`). |
 
 ---
 
