@@ -9,6 +9,14 @@
 <meta property="og:description" content="816 OSS LLM/agent harnesses connected by 3,358 adjacency edges. Search, filter, find paths, share deep-links.">
 <meta property="og:image" content="https://benjamin-ky.github.io/open-harness-atlas/hero.svg">
 <meta name="twitter:card" content="summary_large_image">
+<!-- Content-Security-Policy: defence-in-depth even though GitHub Pages can't
+     set the HTTP header equivalent. `'unsafe-inline'` is required because the
+     viewer ships its full app as inline <script> + extensive inline styling.
+     Removing it would require a major refactor; the meaningful guarantees we
+     keep are (a) only the pinned d3js.org d3.v7 bundle can load JS (re-validated
+     by SRI), (b) fonts can only come from Google Fonts, (c) all other origins
+     are blocked. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://d3js.org; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -1021,13 +1029,20 @@ document.addEventListener('DOMContentLoaded', async () => {
   const radius = d => (4 + Math.sqrt(d.degree / maxDeg) * 12) * (d.tier_radius_mult || 1);
 
   // Per-tier UI affordances (mirror the 3D viewer)
+  // Tier palette — designed for both colour-vision-deficiency (CVD) safety
+  // and achromatopsia/monochrome legibility. The bottom 3 tiers used to be
+  // sequential dim shades of the same blue-grey hue and collapsed together
+  // under monochrome/CVD. They now use distinct hues (sea-green / cool slate
+  // / warm umber) plus stroke-pattern differentiation (solid / dashed /
+  // dotted on the graph node outline) so each tier remains distinguishable
+  // across all colour-vision conditions.
   const TIER_COLOR_MAP = {
     landmark:    '#f0b35a',
     canonical:   '#b08acc',
     established: '#5fb6f0',
-    emerging:    '#94a4bd',
-    frontier:    '#5e6e84',
-    unknown:     '#3a4859'
+    emerging:    '#6fb59a',
+    frontier:    '#7e8a9c',
+    unknown:     '#9c8062'
   };
   const TIER_LABEL = {
     landmark:    'Landmark',
@@ -1492,9 +1507,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     row.setAttribute('tabindex', '0');
     row.setAttribute('data-tier', t.key);
     row.title = TIER_HINT[t.key] || '';
-    const swatchStyle = t.outline === 'dashed'
-      ? `background:${TIER_COLOR_MAP[t.key]||'#888'};opacity:${t.opacity};border:1px dashed #94a4bd`
-      : `background:${TIER_COLOR_MAP[t.key]||'#888'};opacity:${t.opacity}`;
+    const swatchBase = `background:${TIER_COLOR_MAP[t.key]||'#888'};opacity:${t.opacity}`;
+    const swatchStyle =
+        t.outline === 'dashed' ? `${swatchBase};border:1px dashed #94a4bd`
+      : t.outline === 'dotted' ? `${swatchBase};border:1px dotted #94a4bd`
+      : swatchBase;
     row.innerHTML = `<span class="swatch" style="${swatchStyle}"></span><span class="label">${TIER_LABEL[t.key]||t.key}</span><span class="count">${t.count}</span>`;
     const toggleTier = () => {
       if (filterState.offTiers.has(t.key)) filterState.offTiers.delete(t.key);
