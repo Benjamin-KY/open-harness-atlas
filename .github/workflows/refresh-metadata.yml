@@ -28,6 +28,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/refresh_metadata.py
 
+      - name: Recompute tier overlay
+        run: python scripts/compute_tier.py
+
+      - name: Recompute uptake velocity (+ docs/rising.md)
+        run: python scripts/compute_velocity.py --rising
+
       - name: Validate registry after refresh
         run: python scripts/validate_registry.py
 

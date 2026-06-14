@@ -6,6 +6,29 @@ writes one JSON sidecar per registry entry. Hand-curated YAML is never
 modified — sidecars are a separate file so curators and the refresh bot
 never conflict.
 
+Sidecar shape
+-------------
+
+Each sidecar is append-only::
+
+    {
+      "created_at": "2022-10-17T03:34:50Z",   // stable repo birthday
+      "default_branch": "main",                // stable-ish
+      "snapshots": [
+        {"refreshed_at": "...", "stars": 1234, "last_commit_at": "...",
+         "latest_release": "v1.2", "license_spdx": "MIT", "archived": false},
+        ...                                    // newest at tail
+      ]
+    }
+
+Older snapshots are pruned to ``MAX_SNAPSHOTS`` (≈26 weekly snapshots
+≈ 6 months of history) to keep file size bounded. ``compute_velocity.py``
+reads this list; ``compute_tier.py`` reads the latest snapshot.
+
+Sidecars written under the legacy *flat* shape (single-snapshot,
+no ``snapshots`` key) are migrated automatically on first refresh — the
+old fields become the first snapshot.
+
 Usage:
     python scripts/refresh_metadata.py                # refresh all entries
     python scripts/refresh_metadata.py --only id1 id2 # refresh subset
@@ -35,8 +58,26 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_DIR = REPO_ROOT / "registry"
 METADATA_DIR = REGISTRY_DIR / "_metadata"
-USER_AGENT = "open-harness-atlas-refresh/0.1 (+https://github.com/)"
+USER_AGENT = "open-harness-atlas-refresh/0.2 (+https://github.com/)"
 GH_API = "https://api.github.com"
+
+# Keep ~6 months of weekly snapshots — enough for 4w and 12w velocity.
+MAX_SNAPSHOTS = 26
+# Don't append a new snapshot if the last one is younger than this. Stops
+# multiple same-day refreshes from inflating the snapshot list.
+MIN_SNAPSHOT_INTERVAL_HOURS = 12
+
+# Stable fields live at the top level of the sidecar; everything else
+# is per-snapshot.
+STABLE_FIELDS = ("created_at", "default_branch")
+SNAPSHOT_FIELDS = (
+    "refreshed_at",
+    "stars",
+    "last_commit_at",
+    "latest_release",
+    "license_spdx",
+    "archived",
+)
 
 
 def _gh_request(path: str, token: str | None) -> dict[str, Any] | None:
@@ -82,6 +123,7 @@ def _fetch_one(owner: str, repo: str, token: str | None) -> dict[str, Any] | Non
     latest_release = _gh_request(f"/repos/{owner}/{repo}/releases/latest", token)
     return {
         "stars": repo_meta.get("stargazers_count"),
+        "created_at": repo_meta.get("created_at"),
         "last_commit_at": repo_meta.get("pushed_at"),
         "latest_release": (latest_release or {}).get("tag_name"),
         "license_spdx": (repo_meta.get("license") or {}).get("spdx_id"),
@@ -102,6 +144,68 @@ def _iter_entries() -> list[tuple[str, Path, dict[str, Any]]]:
             continue
         entries.append((data["id"], path, data))
     return entries
+
+
+def _load_existing(sidecar_path: Path) -> dict[str, Any]:
+    if not sidecar_path.exists():
+        return {"snapshots": []}
+    try:
+        data = json.loads(sidecar_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {"snapshots": []}
+    if "snapshots" in data and isinstance(data["snapshots"], list):
+        return data
+    # Migrate flat shape -> snapshot shape (first run after refactor).
+    snapshot = {k: data.get(k) for k in SNAPSHOT_FIELDS if k in data}
+    migrated = {k: data.get(k) for k in STABLE_FIELDS if data.get(k) is not None}
+    migrated["snapshots"] = [snapshot] if snapshot.get("refreshed_at") else []
+    return migrated
+
+
+def _parse_iso(ts: str | None) -> datetime | None:
+    if not ts:
+        return None
+    try:
+        return datetime.strptime(ts.replace("Z", "+0000"), "%Y-%m-%dT%H:%M:%S%z")
+    except ValueError:
+        try:
+            return datetime.fromisoformat(ts.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+
+
+def _merge_snapshot(existing: dict[str, Any], fresh: dict[str, Any]) -> dict[str, Any]:
+    """Append a new snapshot to ``existing`` and prune to MAX_SNAPSHOTS."""
+    merged: dict[str, Any] = {}
+    for field in STABLE_FIELDS:
+        value = fresh.get(field) or existing.get(field)
+        if value is not None:
+            merged[field] = value
+
+    snapshots = list(existing.get("snapshots", []))
+    new_snapshot = {k: fresh.get(k) for k in SNAPSHOT_FIELDS if k in fresh}
+
+    # Suppress a new snapshot if the last one is too recent — keeps the
+    # list bounded against accidental rapid refreshes.
+    if snapshots:
+        last_refresh = _parse_iso(snapshots[-1].get("refreshed_at"))
+        this_refresh = _parse_iso(new_snapshot.get("refreshed_at"))
+        if last_refresh and this_refresh:
+            delta_hours = (this_refresh - last_refresh).total_seconds() / 3600
+            if delta_hours < MIN_SNAPSHOT_INTERVAL_HOURS:
+                snapshots[-1] = new_snapshot  # in-place replace
+            else:
+                snapshots.append(new_snapshot)
+        else:
+            snapshots.append(new_snapshot)
+    else:
+        snapshots.append(new_snapshot)
+
+    if len(snapshots) > MAX_SNAPSHOTS:
+        snapshots = snapshots[-MAX_SNAPSHOTS:]
+
+    merged["snapshots"] = snapshots
+    return merged
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -141,11 +245,13 @@ def main(argv: list[str] | None = None) -> int:
             time.sleep(args.sleep)
             continue
         sidecar_path = METADATA_DIR / f"{entry_id}.json"
-        new_text = json.dumps(fresh, indent=2, sort_keys=True) + "\n"
+        existing = _load_existing(sidecar_path)
+        merged = _merge_snapshot(existing, fresh)
+        new_text = json.dumps(merged, indent=2, sort_keys=True) + "\n"
         if args.check:
-            existing = sidecar_path.read_text(encoding="utf-8") if sidecar_path.exists() else ""
-            # Ignore the volatile refreshed_at field for the drift check.
-            if _strip_refreshed_at(existing) != _strip_refreshed_at(new_text):
+            existing_text = sidecar_path.read_text(encoding="utf-8") if sidecar_path.exists() else ""
+            # Ignore the volatile refreshed_at field on the latest snapshot for the drift check.
+            if _strip_refreshed_at(existing_text) != _strip_refreshed_at(new_text):
                 drifted.append(entry_id)
         else:
             sidecar_path.write_text(new_text, encoding="utf-8")
@@ -164,7 +270,11 @@ def _strip_refreshed_at(text: str) -> str:
         data = json.loads(text)
     except json.JSONDecodeError:
         return text
-    data.pop("refreshed_at", None)
+    # Snapshot shape: strip refreshed_at from latest snapshot only.
+    if isinstance(data, dict) and isinstance(data.get("snapshots"), list) and data["snapshots"]:
+        data["snapshots"][-1].pop("refreshed_at", None)
+    else:
+        data.pop("refreshed_at", None)
     return json.dumps(data, indent=2, sort_keys=True) + "\n"
 
 

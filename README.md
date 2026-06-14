@@ -106,21 +106,33 @@ comparable.
 
 ---
 
-## The six categories (launch scope)
+## The six categories
 
 | Category | What's catalogued | Entries |
 |---|---|---|
-| 🛡  **Governance harnesses** | Output-contract / citation / refusal / audit frameworks | 28 |
-| 🤖 **Agent frameworks** | Tool-using multi-turn agent runtimes | 62 |
-| 📏 **Eval harnesses** | Behaviour measurement runners | 45 |
-| 🎯 **Red-team / safety harnesses** | Adversarial probes & attack-class coverage | 33 |
-| 🔀 **Routing / model-agnostic infra** | Provider gateways & swappable backends | 32 |
-| 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | 36 |
-| | **Total** | **44** |
+| 🛡  **Governance harnesses** | Output-contract / citation / refusal / audit / observability-with-eval-features | 106 |
+| 🤖 **Agent frameworks** | Tool-using multi-turn agent runtimes | 249 |
+| 📏 **Eval harnesses** | Behaviour measurement runners | 206 |
+| 🎯 **Red-team / safety harnesses** | Adversarial probes & attack-class coverage | 101 |
+| 🔀 **Routing / model-agnostic infra** | Provider gateways & swappable backends | 92 |
+| 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | 50 |
+| | **Total** | **804** |
 
-**Out-of-scope by design** (linked as adjacencies, not catalog entries):
-pure RAG cores · observability stacks · vector databases as
-infrastructure. See [`GOVERNANCE.md`](GOVERNANCE.md) §8.
+Counts auto-validated on every push by `tests/test_registry.py`. Visual
+adoption tiers (Landmark · Established · Emerging · Frontier — derived
+from stars + age + commit recency) overlay the graph so newer entries are
+visible without sitting visually equal to landmark projects.
+**Uptake velocity** (stars-per-week over a trailing 4-week window) is
+tracked per entry in the scheduled metadata refresh and ranked in
+[`docs/rising.md`](docs/rising.md); detail panels in both viewers show
+a tiny inline sparkline. See
+[`docs/sovereignty-rubric.md` §7–8](docs/sovereignty-rubric.md) for
+methodology.
+
+**Out-of-scope by design** (cross-linked in [`docs/adjacencies.md`](docs/adjacencies.md),
+not catalogued): pure-infrastructure vector databases · closed-source services ·
+paid courses · personal blog posts. See [`GOVERNANCE.md`](GOVERNANCE.md) §8
+for the full exclusion policy.
 
 ---
 

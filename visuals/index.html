@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <title>open-harness-atlas — 3D knowledge graph</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Interactive 3D force-directed graph of 313+ OSI-licensed open-source LLM/agent harnesses + free education resources. WebGL / Three.js.">
+<meta name="description" content="Interactive 3D force-directed graph of 800+ OSI-licensed open-source LLM/agent harnesses + free education resources. WebGL / Three.js. Adoption tiers visible: landmark · established · emerging · frontier.">
 <meta property="og:title" content="open-harness-atlas — 3D interactive knowledge graph">
-<meta property="og:description" content="WebGL 3D map of OSS LLM/agent harnesses. Search, filter, fly through curated tours, share deep-links.">
+<meta property="og:description" content="WebGL 3D map of 800+ OSS LLM/agent harnesses with adoption-tier overlay (landmark / established / emerging / frontier). Search, filter, fly through curated tours, share deep-links.">
 <meta property="og:image" content="https://benjamin-ky.github.io/open-harness-atlas/graph.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -230,6 +230,9 @@
     text-decoration: none; font-size: 12.5px; font-weight: 600;
   }
   #detail .node-detail-link.secondary { background: transparent; color: var(--brand-deep); border: 1px solid var(--brand-line); }
+  #detail .node-detail-meta.uptake { margin-top: 8px; }
+  #detail .node-detail-spark { color: var(--brand-deep); margin: 0 0 6px; opacity: 0.78; }
+  #detail .node-detail-spark .spark { display: block; }
   #detail .node-detail-neighbors h4 { font-size: 11px; text-transform: uppercase; letter-spacing: .06em;
     color: var(--brand-mute); margin: 10px 0 3px; display: flex; align-items: center; gap: 6px; }
   #detail .node-detail-neighbors h4 .swatch { width: 8px; height: 8px; border-radius: 2px; }
@@ -417,7 +420,7 @@
     </div>
 
     <div class="panel">
-      <div class="panel-header">Filters<span class="count" id="filter-visible">313 visible</span></div>
+      <div class="panel-header">Filters<span class="count" id="filter-visible">loading…</span></div>
       <div class="panel-body">
         <div class="range-row">
           <label for="mas-range" style="font-size:11px;color:var(--brand-mute);font-weight:600;text-transform:uppercase;letter-spacing:.04em;min-width:64px">MAS ≥</label>
@@ -434,6 +437,18 @@
     <div class="panel">
       <div class="panel-header">Categories<span class="count" id="cat-count"></span></div>
       <div class="panel-body"><div id="legend"></div></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">Adoption tier<span class="count" id="tier-count"></span></div>
+      <div class="panel-body">
+        <p style="font-size:11.5px;color:var(--brand-mute);margin:0 0 6px;line-height:1.45">
+          Computed weekly from GitHub stars + age + commit recency.
+          Frontier = newer / less-adopted entries that still pass inclusion
+          criteria. Click a row to hide that tier.
+        </p>
+        <div id="tier-legend"></div>
+      </div>
     </div>
 
     <div class="panel">
@@ -556,6 +571,41 @@
     education:  '#b478d4'
   };
 
+  // Per-tier swatch colour for the side-panel pill / legend.
+  // Tier *opacity* and *radius* come from graph-data.json per-node;
+  // these colours are only for UI affordances (pills, legend rows).
+  const TIER_COLOR_MAP = {
+    landmark:    '#f0b35a',
+    established: '#5fb6f0',
+    emerging:    '#94a4bd',
+    frontier:    '#5e6e84',
+    unknown:     '#3a4859'
+  };
+  const TIER_LABEL = {
+    landmark:    'Landmark',
+    established: 'Established',
+    emerging:    'Emerging',
+    frontier:    'Frontier',
+    unknown:     'Unknown'
+  };
+  const TIER_HINT = {
+    landmark:    '≥10k stars, or 3yr+ at 1k+ stars with active commits',
+    established: '≥1k stars, 1yr+ old, actively maintained',
+    emerging:    '≥100 stars, 3mo+ old, actively maintained',
+    frontier:    'Passes inclusion criteria, no independent adoption signal yet',
+    unknown:     'Metadata fetch failed (e.g., SSO-restricted org)'
+  };
+
+  // Linearly blend two #rrggbb colours by t (0 = c1, 1 = c2).
+  // Used to dim lower-tier nodes toward the dark canvas colour.
+  function tintBlend(c1, c2, t) {
+    const a = parseInt(c1.slice(1), 16), b = parseInt(c2.slice(1), 16);
+    const r = Math.round(((a >> 16) & 255) * (1 - t) + ((b >> 16) & 255) * t);
+    const g = Math.round(((a >>  8) & 255) * (1 - t) + ((b >>  8) & 255) * t);
+    const b2 = Math.round((a & 255) * (1 - t) + (b & 255) * t);
+    return '#' + ((r << 16) | (g << 8) | b2).toString(16).padStart(6, '0');
+  }
+
   let particlesOn = true;
   let autoSpin = false;
   let focused = null;
@@ -565,18 +615,20 @@
   const G = ForceGraph3D()(document.getElementById('graph-3d'))
     .backgroundColor('#050a14')
     .nodeId('id')
-    .nodeVal(n => 1 + Math.sqrt(n.degree) * 1.6)
+    .nodeVal(n => (1 + Math.sqrt(n.degree) * 1.6) * (n.tier_radius_mult || 1))
     .nodeColor(n => {
       if (pathHighlight && !pathHighlight.has(n.id)) return '#2a384a';
       if (focused && n.id !== focused.id && !neighbours.get(focused.id).has(n.id)) return '#2a384a';
-      return NODE_COLOR_MAP[n.category] || n.color || '#6f88ad';
+      const base = NODE_COLOR_MAP[n.category] || n.color || '#6f88ad';
+      const tierOpacity = n.tier_opacity != null ? n.tier_opacity : 1;
+      return tierOpacity >= 0.99 ? base : tintBlend(base, '#050a14', 1 - tierOpacity);
     })
     .nodeOpacity(0.92)
     .nodeResolution(12)
     .nodeLabel(n =>
       `<div style="background:rgba(13,22,35,0.94);color:#f4f7fb;padding:8px 12px;border:1px solid rgba(255,255,255,0.08);border-radius:8px;font:600 12px Inter,sans-serif;max-width:300px;line-height:1.4">
         <div style="font-weight:700">${escapeHtml(n.name)}</div>
-        <div style="font-size:11px;opacity:0.85;margin-top:2px"><span style="color:${NODE_COLOR_MAP[n.category]||'#fff'}">${escapeHtml(n.category)}</span> · ${n.degree} link${n.degree===1?'':'s'} · MAS ${n.mas}/5</div>
+        <div style="font-size:11px;opacity:0.85;margin-top:2px"><span style="color:${NODE_COLOR_MAP[n.category]||'#fff'}">${escapeHtml(n.category)}</span> · ${n.degree} link${n.degree===1?'':'s'} · MAS ${n.mas}/5${n.tier && n.tier !== 'unknown' ? ` · <span style="color:${TIER_COLOR_MAP[n.tier]||'#fff'}">${escapeHtml(n.tier)}</span>` : ''}</div>
         <div style="font-size:12px;opacity:0.9;margin-top:4px;font-weight:400">${escapeHtml(n.tagline||'')}</div>
       </div>`
     )
@@ -633,6 +685,51 @@
   }
   function escapeHtml(s) {
     return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  // ============================================================
+  // Sparkline (uptake / star history) — inline SVG, no deps
+  // ============================================================
+  function sparklineSvg(values, opts = {}) {
+    if (!Array.isArray(values) || values.length < 2) return '';
+    const w = opts.w || 140, h = opts.h || 32, pad = 2;
+    const lo = Math.min(...values), hi = Math.max(...values);
+    const range = Math.max(1, hi - lo);
+    const stride = (w - pad * 2) / (values.length - 1);
+    const pts = values.map((v, i) => {
+      const x = pad + i * stride;
+      const y = h - pad - ((v - lo) / range) * (h - pad * 2);
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    });
+    const path = `M ${pts.join(' L ')}`;
+    const lastX = pad + (values.length - 1) * stride;
+    const lastY = h - pad - ((values[values.length - 1] - lo) / range) * (h - pad * 2);
+    return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">
+      <path d="${path}" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="2.2" fill="currentColor"/>
+    </svg>`;
+  }
+
+  function fmtStars(n) {
+    if (!Number.isFinite(n)) return null;
+    return n >= 1000 ? (n/1000).toFixed(1) + 'k' : String(n);
+  }
+
+  function uptakeHtml(node) {
+    const bits = [];
+    if (node.stars != null) bits.push(`<strong>${fmtStars(node.stars)} ★</strong>`);
+    if (typeof node.velocity_4w === 'number') {
+      const v = node.velocity_4w;
+      const sign = v >= 0 ? '+' : '';
+      bits.push(`${sign}${v.toFixed(1)} / wk (4w)`);
+    }
+    if (typeof node.days_since_commit === 'number') {
+      bits.push(`commit ${node.days_since_commit}d ago`);
+    }
+    if (!bits.length) return '';
+    const spark = sparklineSvg(node.spark || []);
+    const sparkBlock = spark ? `<div class="node-detail-spark">${spark}</div>` : '';
+    return `<div class="node-detail-meta uptake"><strong>Uptake:</strong> ${bits.join(' · ')}</div>${sparkBlock}`;
   }
 
   // ============================================================
@@ -711,12 +808,14 @@
       <div class="node-detail-title">${escapeHtml(node.name)}</div>
       <div class="node-detail-pills">
         <span class="pill" style="background:${NODE_COLOR_MAP[node.category]||node.color}">${escapeHtml(node.category)}</span>
+        ${node.tier && node.tier !== 'unknown' ? `<span class="pill" style="background:${TIER_COLOR_MAP[node.tier]||'#888'}" title="Adoption tier — computed from stars, age, commit recency">${escapeHtml(node.tier)}</span>` : ''}
         ${node.maturity ? `<span class="pill outline">${escapeHtml(node.maturity)}</span>` : ''}
         ${node.license  ? `<span class="pill outline">${escapeHtml(node.license)}</span>` : ''}
       </div>
       <p class="node-detail-tag">${escapeHtml(node.tagline)}</p>
       <div class="node-detail-meta"><strong>Degree:</strong> ${node.degree}</div>
       <div class="node-detail-meta"><strong>Model-agnostic:</strong> ${node.mas}/5</div>
+      ${uptakeHtml(node)}
       ${node.language       ? `<div class="node-detail-meta"><strong>Language:</strong> ${escapeHtml(node.language)}</div>` : ''}
       ${node.maintainer_name? `<div class="node-detail-meta"><strong>Maintainer:</strong> ${escapeHtml(node.maintainer_name)} (${escapeHtml(node.maintainer_type)})</div>` : ''}
       ${node.country        ? `<div class="node-detail-meta"><strong>Origin:</strong> ${escapeHtml(node.country)}</div>` : ''}
@@ -750,7 +849,7 @@
   fillSelect('lic-sel',  data.meta.licenses);
   fillSelect('lang-sel', data.meta.languages);
 
-  const filterState = { q: '', mas: 0, mat: '', cty: '', lic: '', lang: '', offCats: new Set() };
+  const filterState = { q: '', mas: 0, mat: '', cty: '', lic: '', lang: '', offCats: new Set(), offTiers: new Set() };
   let chipOv = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null };
 
   function applyFilters() {
@@ -771,7 +870,8 @@
         (!filterState.cty  || n.country  === filterState.cty) &&
         (!filterState.lic  || n.license  === filterState.lic) &&
         (!filterState.lang || n.language === filterState.lang) &&
-        !filterState.offCats.has(n.category);
+        !filterState.offCats.has(n.category) &&
+        !filterState.offTiers.has(n.tier || 'unknown');
       if (v && chipOv.licList   && !chipOv.licList.includes(n.license)) v = false;
       if (v && chipOv.ctyNegate && n.country === chipOv.ctyNegate)      v = false;
       if (v && chipOv.hubsOnly  && !n._isHub)                            v = false;
@@ -823,6 +923,32 @@
     legend.appendChild(row);
   });
   $('cat-count').textContent = `${data.meta.categories.length} categories`;
+
+  // ============================================================
+  // Tier legend (visual caveat for newer / less-adopted entries)
+  // ============================================================
+  const tierLegend = $('tier-legend');
+  const tierMeta = (data.meta.tiers || []).filter(t => t.count > 0);
+  let tierShown = 0;
+  tierMeta.forEach(t => {
+    tierShown += t.count;
+    const row = document.createElement('div');
+    row.className = 'legend-item';
+    row.setAttribute('data-tier', t.key);
+    row.title = TIER_HINT[t.key] || '';
+    const swatchStyle = t.outline === 'dashed'
+      ? `background:${TIER_COLOR_MAP[t.key]||'#888'};opacity:${t.opacity};border:1px dashed #94a4bd`
+      : `background:${TIER_COLOR_MAP[t.key]||'#888'};opacity:${t.opacity}`;
+    row.innerHTML = `<span class="swatch" style="${swatchStyle}"></span><span class="label">${TIER_LABEL[t.key]||t.key}</span><span class="count">${t.count}</span>`;
+    row.onclick = () => {
+      if (filterState.offTiers.has(t.key)) filterState.offTiers.delete(t.key);
+      else filterState.offTiers.add(t.key);
+      row.classList.toggle('off');
+      applyFilters();
+    };
+    tierLegend.appendChild(row);
+  });
+  $('tier-count').textContent = `${tierShown} entries`;
 
   // ============================================================
   // Quick-filter chips (same set as 2D)

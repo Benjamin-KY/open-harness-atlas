@@ -21,6 +21,11 @@ REPO = Path(__file__).resolve().parent.parent
 REG = REPO / "registry"
 OUT_SVG = REPO / "visuals" / "graph.svg"
 OUT_JSON = REPO / "visuals" / "graph-data.json"
+TIERS_PATH = REG / "_metadata" / "_tiers.json"
+VELOCITY_PATH = REG / "_metadata" / "_velocity.json"
+METADATA_DIR = REG / "_metadata"
+# Per-node sparkline data: how many recent star counts to emit per node.
+SPARK_MAX_POINTS = 12
 
 # BRAND palette (mirrors harmless-harnesses + taxonomy.svg).
 CAT_COLOR = {
@@ -32,6 +37,71 @@ CAT_COLOR = {
     "education":  "#7d3c98",
 }
 CAT_ORDER = ["governance", "agent", "eval", "redteam", "routing", "education"]
+TIER_ORDER = ["landmark", "established", "emerging", "frontier", "unknown"]
+
+# Per-tier visual encoding for the interactive (3D + 2D) viewers.
+# The static SVG keeps a simpler encoding to stay legible at A4 print size.
+TIER_OPACITY = {
+    "landmark":    1.00,
+    "established": 1.00,
+    "emerging":    0.70,
+    "frontier":    0.40,
+    "unknown":     0.40,
+}
+TIER_RADIUS_MULTIPLIER = {
+    "landmark":    1.30,
+    "established": 1.00,
+    "emerging":    0.85,
+    "frontier":    0.70,
+    "unknown":     0.70,
+}
+TIER_OUTLINE = {
+    "landmark":    "solid",
+    "established": "solid",
+    "emerging":    "solid",
+    "frontier":    "dashed",
+    "unknown":     "dashed",
+}
+
+
+def load_tiers() -> dict[str, str]:
+    """Load id -> tier mapping. Returns {} if _tiers.json missing."""
+    if not TIERS_PATH.exists():
+        return {}
+    try:
+        return json.loads(TIERS_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def load_velocity() -> dict[str, dict]:
+    """Load id -> velocity stats. Returns {} if _velocity.json missing."""
+    if not VELOCITY_PATH.exists():
+        return {}
+    try:
+        return json.loads(VELOCITY_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
+def load_spark(entry_id: str) -> list[int]:
+    """Return up to SPARK_MAX_POINTS recent star counts for an entry."""
+    sidecar_path = METADATA_DIR / f"{entry_id}.json"
+    if not sidecar_path.exists():
+        return []
+    try:
+        sidecar = json.loads(sidecar_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    snapshots = sidecar.get("snapshots")
+    if not isinstance(snapshots, list):
+        return []
+    pts: list[int] = []
+    for snap in snapshots[-SPARK_MAX_POINTS:]:
+        stars = snap.get("stars")
+        if isinstance(stars, int):
+            pts.append(stars)
+    return pts
 
 
 def load_entries() -> list[dict]:
@@ -75,8 +145,24 @@ def build_graph(entries: list[dict]) -> nx.Graph:
 
 def main() -> int:
     entries = load_entries()
+    tiers = load_tiers()
+    velocity = load_velocity()
     G = build_graph(entries)
     print(f"loaded {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    if tiers:
+        from collections import Counter
+        dist = Counter(tiers.get(e["id"], "unknown") for e in entries)
+        print("  tier distribution: " + " ".join(f"{t}={dist.get(t,0)}" for t in TIER_ORDER))
+    else:
+        print("  WARN: registry/_metadata/_tiers.json not found — all nodes will render as 'unknown'")
+    if velocity:
+        with_history = sum(
+            1 for v in velocity.values()
+            if isinstance(v.get("stars_per_week_4w"), (int, float))
+        )
+        print(f"  velocity: {len(velocity)} entries scored, {with_history} with >=2 snapshots")
+    else:
+        print("  WARN: registry/_metadata/_velocity.json not found — sparklines disabled")
 
     # Force-directed layout. Higher k = more spread; seed for reproducibility.
     pos = nx.spring_layout(G, seed=42, k=0.55, iterations=180, weight=None)
@@ -203,6 +289,16 @@ def main() -> int:
                 {"key": c, "color": CAT_COLOR[c], "count": cat_counts[c]}
                 for c in CAT_ORDER
             ],
+            "tiers": [
+                {
+                    "key": t,
+                    "count": sum(1 for n in G.nodes if tiers.get(n, "unknown") == t),
+                    "opacity": TIER_OPACITY[t],
+                    "radius_mult": TIER_RADIUS_MULTIPLIER[t],
+                    "outline": TIER_OUTLINE[t],
+                }
+                for t in TIER_ORDER
+            ],
             "top_hubs": [
                 {
                     "id": nid,
@@ -236,6 +332,15 @@ def main() -> int:
                 "maintainer_type": G.nodes[n].get("maintainer_type", ""),
                 "maintainer_name": G.nodes[n].get("maintainer_name", ""),
                 "alignment": G.nodes[n].get("harness_alignment", ""),
+                "tier": tiers.get(n, "unknown"),
+                "tier_opacity": TIER_OPACITY[tiers.get(n, "unknown")],
+                "tier_radius_mult": TIER_RADIUS_MULTIPLIER[tiers.get(n, "unknown")],
+                "tier_outline": TIER_OUTLINE[tiers.get(n, "unknown")],
+                "stars": (velocity.get(n) or {}).get("stars"),
+                "velocity_4w": (velocity.get(n) or {}).get("stars_per_week_4w"),
+                "velocity_12w": (velocity.get(n) or {}).get("stars_per_week_12w"),
+                "days_since_commit": (velocity.get(n) or {}).get("days_since_commit"),
+                "spark": load_spark(n),
             }
             for n in G.nodes
         ],

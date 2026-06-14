@@ -26,5 +26,18 @@ jobs:
       - name: Pytest
         run: pytest -q
 
+      - name: Lint with ruff
+        run: ruff check scripts tests
+
+      - name: Recompute tier overlay (no drift)
+        run: |
+          python scripts/compute_tier.py
+          python scripts/compute_tier.py --check
+
+      - name: Recompute uptake velocity (no drift)
+        run: |
+          python scripts/compute_velocity.py --rising
+          python scripts/compute_velocity.py --rising --check
+
       - name: Check matrices are up to date
         run: python scripts/build_matrices.py --check

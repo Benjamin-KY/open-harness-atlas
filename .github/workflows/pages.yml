@@ -6,7 +6,10 @@ on:
     paths:
       - "visuals/**"
       - "registry/**"
+      - "docs/**"
       - "scripts/build_graph.py"
+      - "scripts/compute_tier.py"
+      - "scripts/compute_velocity.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -34,12 +37,18 @@ jobs:
       - name: Install package (dev extras)
         run: pip install -e ".[dev]"
 
+      - name: Recompute tier overlay
+        run: python scripts/compute_tier.py
+
+      - name: Recompute uptake velocity
+        run: python scripts/compute_velocity.py --rising
+
       - name: Rebuild graph payload (graph-data.json + graph.svg + graph.png)
         run: python scripts/build_graph.py
 
       - name: Assemble site
         run: |
-          mkdir -p _site
+          mkdir -p _site _site/docs
           cp visuals/index.html _site/index.html
           cp visuals/2d.html _site/2d.html
           cp visuals/graph-data.json _site/graph-data.json
@@ -49,6 +58,8 @@ jobs:
           cp visuals/taxonomy.svg _site/taxonomy.svg
           cp visuals/five-component-overlay.svg _site/five-component-overlay.svg
           cp README.md _site/README.md
+          # Mirror docs/*.md so cross-links (sovereignty-rubric, adjacencies, rising) resolve.
+          cp docs/*.md _site/docs/ 2>/dev/null || true
 
       - name: Upload artefact
         uses: actions/upload-pages-artifact@v3

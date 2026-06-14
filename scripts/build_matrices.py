@@ -23,6 +23,8 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_DIR = REPO_ROOT / "registry"
 METADATA_DIR = REGISTRY_DIR / "_metadata"
+TIERS_PATH = METADATA_DIR / "_tiers.json"
+VELOCITY_PATH = METADATA_DIR / "_velocity.json"
 DOCS_DIR = REPO_ROOT / "docs"
 
 CATEGORIES = ["governance", "agent", "eval", "redteam", "routing", "education"]
@@ -32,11 +34,22 @@ HEADER_NOTE = (
 )
 
 
+def _load_json_map(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+
 def _load_entries(category: str) -> list[dict[str, Any]]:
     folder = REGISTRY_DIR / category
     entries: list[dict[str, Any]] = []
     if not folder.is_dir():
         return entries
+    tiers = _load_json_map(TIERS_PATH)
+    velocity = _load_json_map(VELOCITY_PATH)
     for path in sorted(folder.glob("*.yaml")):
         if path.name.startswith("_"):
             continue
@@ -46,6 +59,8 @@ def _load_entries(category: str) -> list[dict[str, Any]]:
         if sidecar.exists():
             with sidecar.open(encoding="utf-8") as fh:
                 data["_sidecar"] = json.load(fh)
+        data["_tier"] = tiers.get(data.get("id"), "unknown")
+        data["_velocity"] = velocity.get(data.get("id"), {})
         entries.append(data)
     return entries
 
@@ -57,13 +72,30 @@ def _md_escape(text: str | None) -> str:
 
 
 def _stars_cell(entry: dict[str, Any]) -> str:
-    sidecar = entry.get("_sidecar")
-    if not sidecar or sidecar.get("stars") is None:
+    sidecar = entry.get("_sidecar") or {}
+    snapshots = sidecar.get("snapshots")
+    stars = (
+        snapshots[-1].get("stars")
+        if isinstance(snapshots, list) and snapshots
+        else sidecar.get("stars")
+    )
+    if stars is None:
         return "—"
-    stars = sidecar["stars"]
     if stars >= 1000:
         return f"{stars / 1000:.1f}k"
     return str(stars)
+
+
+def _tier_cell(entry: dict[str, Any]) -> str:
+    tier = entry.get("_tier") or "unknown"
+    return tier if tier != "unknown" else "—"
+
+
+def _velocity_cell(entry: dict[str, Any]) -> str:
+    v = (entry.get("_velocity") or {}).get("stars_per_week_4w")
+    if not isinstance(v, (int, float)):
+        return "—"
+    return f"{v:+.1f}"
 
 
 def _link_name(entry: dict[str, Any]) -> str:
@@ -104,27 +136,32 @@ def _render_common(category: str, entries: list[dict[str, Any]]) -> str:
 def _render_default(category: str, entries: list[dict[str, Any]]) -> str:
     parts = [_render_common(category, entries)]
     parts.append(
-        "| Entry | License | Lang | Maturity | Origin | Model-agnostic | Stars | Maintainer |"
+        "| Entry | License | Lang | Maturity | Origin | Model-agnostic | Tier "
+        "| Stars | ★/wk (4w) | Maintainer |"
     )
     parts.append(
-        "|---|---|---|---|---|---|---|---|"
+        "|---|---|---|---|---|---|---|---:|---:|---|"
     )
     for entry in entries:
-        parts.append(
-            "| {name} | {license} | {lang} | {maturity} | {origin} | {agn} | {stars} | {maint} |".format(
-                name=_link_name(entry),
-                license=_md_escape(entry.get("license")),
-                lang=_md_escape(entry.get("primary_language")),
-                maturity=_md_escape(entry.get("maturity")),
-                origin=_md_escape(entry.get("origin_country") or "—"),
-                agn=_agnostic_cell(entry),
-                stars=_stars_cell(entry),
-                maint=_md_escape((entry.get("maintainer") or {}).get("name")),
-            )
+        row = (
+            f"| {_link_name(entry)} "
+            f"| {_md_escape(entry.get('license'))} "
+            f"| {_md_escape(entry.get('primary_language'))} "
+            f"| {_md_escape(entry.get('maturity'))} "
+            f"| {_md_escape(entry.get('origin_country') or '—')} "
+            f"| {_agnostic_cell(entry)} "
+            f"| {_tier_cell(entry)} "
+            f"| {_stars_cell(entry)} "
+            f"| {_velocity_cell(entry)} "
+            f"| {_md_escape((entry.get('maintainer') or {}).get('name'))} |"
         )
+        parts.append(row)
     parts.append("")
     parts.append(
-        f"_Generated from `registry/{category}/*.yaml` (+ `registry/_metadata/*.json` if present). "
+        f"_Tier and ★/wk (4-week star velocity) are computed from "
+        f"`registry/_metadata/_tiers.json` + `_velocity.json`; see "
+        f"`scripts/compute_tier.py` and `scripts/compute_velocity.py` for "
+        f"methodology. Generated from `registry/{category}/*.yaml`. "
         "Run `python scripts/build_matrices.py` to refresh._"
     )
     parts.append("")

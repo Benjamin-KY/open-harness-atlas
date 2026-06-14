@@ -133,3 +133,60 @@ flexible").
 The Harmless Harnesses course teaches the same discipline in P10 §10:
 operators pin to *their* constraints, not to a vendor's preferred
 ranking.
+
+---
+
+## 7. Adoption tier overlay (visual caveat)
+
+Curators add entries to the registry as soon as they pass inclusion
+criteria — which means the catalogue intentionally mixes landmarks
+(LangGraph, lm-evaluation-harness) with brand-new repos that may not
+yet have any independent adoption signal. To keep the visualisation
+honest about this, every node is tagged with an **adoption tier**
+that drives its opacity, radius, and outline style in both the 3D
+and 2D viewers.
+
+Tier is **computed**, not self-reported in YAML — this prevents
+curators from inflating their own entries. Computation happens in
+`scripts/compute_tier.py` from the
+[`registry/_metadata/*.json`](../registry/_metadata) sidecars (stars,
+created_at, last_commit_at, archived flag).
+
+| Tier | Heuristic | Visual encoding |
+|---|---|---|
+| **landmark** | ≥ 30k stars **or** ≥ 3 yr age + ≥ 5k stars + commit ≤ 30 d | full opacity · larger radius · solid outline |
+| **established** | ≥ 1k stars · ≥ 1 yr age · commit ≤ 180 d | full opacity · normal radius · solid outline |
+| **emerging** | ≥ 100 stars · ≥ 3 mo age · commit ≤ 180 d | 70% opacity · normal radius · solid outline |
+| **frontier** | passes inclusion criteria but no independent adoption signal yet | 40% opacity · smaller radius · dashed outline |
+| **unknown** | sidecar missing or fetch failed (e.g., SSO-restricted org) | renders as `frontier` |
+
+The thresholds are tuned against the live catalogue so `landmark`
+stays around 10–15% of entries (visually distinguishable), `frontier`
+is the long tail (~45%), and the middle tiers split the rest. When
+`created_at` is unavailable, the script falls back to higher star
+thresholds as a maturity proxy.
+
+---
+
+## 8. Uptake velocity (the flow measure)
+
+Tier is a **stock** measure (cumulative state). It rewards old projects
+and under-counts fast-rising newcomers. To complement it, the atlas
+computes **stars-per-week velocity** from the trailing 4-week and
+12-week windows of the sidecar snapshot history.
+
+- `scripts/refresh_metadata.py` is append-only: each weekly cron run
+  writes a new snapshot to the `snapshots[]` list per sidecar, capped
+  at the last 26 snapshots (≈ 6 months).
+- `scripts/compute_velocity.py` reads those snapshots and emits
+  `registry/_metadata/_velocity.json` plus an auto-generated
+  [`docs/rising.md`](rising.md) (top 25 by 4-week velocity).
+- The 3D and 2D viewers render a tiny inline-SVG sparkline in each
+  node's detail panel and surface `stars / wk (4w)` alongside the
+  raw star count.
+
+Like the tier overlay, this is intentionally **not** a leaderboard
+(see §6) — it surfaces what's gaining traction *right now* so
+operators can decide whether to invest attention in something newer
+than the landmarks. Entries with fewer than two snapshots show no
+velocity; the data accrues as the scheduled refresh runs.
