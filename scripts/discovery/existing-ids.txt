@@ -143,6 +143,7 @@ chateval
 chatgpt-jailbreak-pro
 chemcrow-science-agent
 cherry-studio
+chrome-devtools-mcp
 cipherchat
 circle-guard-bench
 circuit-breakers
@@ -157,6 +158,7 @@ clawrouter
 clawx
 cleverhans
 cli
+cline
 clinverdict-physician-curated-clinical-ai-evals-suite
 cloak-cli
 cmb
@@ -195,6 +197,8 @@ deepeval
 deepeval-evaluation-harness
 deepmind-educational
 deepresearch
+deepresearchagent
+deepsec
 deepseek-reasonix
 deepspeed-mii
 deeptutor
@@ -531,6 +535,7 @@ open-instruct
 open-interpreter
 open-next-router
 open-prompt-injection
+open-swe
 openagent
 openagentbench
 openagents-org
@@ -577,6 +582,7 @@ parallax
 parea-sdk-py
 parry-guard
 pdf-prompt-injection-toolkit
+pentestagent
 pint-benchmark
 pipelock
 plandex
@@ -708,6 +714,7 @@ swe-agent
 swe-bench
 swing-skills
 swt-bench
+symphony
 t-eval
 tabularis
 takt
@@ -770,6 +777,7 @@ web-llm
 web-ui
 webarena
 webvoyager-multimodal
+webwright
 wildbench
 wildguard
 windsurfapi

@@ -1,0 +1,57 @@
+id: symphony
+name: Symphony
+
+category: agent
+subcategory: agent-orchestrator
+
+repo_url: https://github.com/openai/symphony
+homepage: https://openai.com/index/open-source-codex-orchestration-symphony/
+
+license: Apache-2.0
+primary_language: Elixir
+
+tagline: OpenAI's open-source orchestration layer for parallel, isolated coding-agent runs.
+
+description: |
+  Symphony turns project work into isolated, autonomous
+  implementation runs — each coding agent gets a sandboxed
+  workspace, its own branch, and a structured task description;
+  the orchestrator collects results and surfaces them for review.
+  Released as open source by OpenAI alongside Codex CLI;
+  Elixir/OTP underneath for supervisor-tree fan-out.
+
+  In the atlas: the orchestration-layer half of an agent stack
+  (Pattern 5 — multi-tenant policy isolation applied to agents
+  rather than tenants). Pairs with any coding agent at the leaf
+  (cline, swe-agent, openhands, mini-swe-agent) and a code-review
+  tool to gate merges.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: OpenAI
+
+origin_country: US
+
+model_agnostic_score: 3
+
+sovereignty_notes: |
+  Added 2026-06-14 via the recency-biased discovery sweep. Apache-
+  2.0 and runnable locally as an Elixir application; the
+  orchestrator itself is provider-agnostic but the released
+  reference configuration targets the OpenAI Codex CLI as the
+  default leaf agent. Swappable with any CLI-shaped coding agent
+  via configuration. model_agnostic_score=3 reflects the default
+  reference flow being OpenAI-flavoured even though the
+  orchestration layer is portable.
+
+harness_paradigm_alignment: partial
+
+deployment_posture: local-first
+
+adjacent_to:
+  - cline
+  - openhands
+  - swe-agent
+  - mini-swe-agent

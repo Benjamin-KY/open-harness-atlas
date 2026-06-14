@@ -1,0 +1,57 @@
+id: deepresearchagent
+name: DeepResearchAgent
+
+category: agent
+subcategory: multi-agent
+
+repo_url: https://github.com/SkyworkAI/DeepResearchAgent
+homepage: https://skyworkai.github.io/DeepResearchAgent/
+
+license: MIT
+primary_language: Python
+
+tagline: Hierarchical multi-agent framework for deep research and general-purpose task solving.
+
+description: |
+  DeepResearchAgent is a hierarchical multi-agent system: a
+  top-level planning agent decomposes a research goal into
+  sub-tasks and coordinates specialised lower-level agents
+  (search, summarise, synthesise, fact-check). Designed for
+  deep-research workloads but generalises to other planning-
+  heavy task families.
+
+  In the atlas: a planner-coordinator-worker shape complementing
+  `crewai`, `autogen`, and `metagpt` as alternatives at the
+  multi-agent layer; closest in design intent to `metagpt`'s
+  role-based decomposition. Pairs with a retrieval layer
+  (haystack / llama-index) and an eval harness for the research
+  outputs.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: Skywork AI
+
+origin_country: CN
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the recency-biased discovery sweep. MIT-
+  licensed, self-hostable. Backend abstraction supports OpenAI-
+  compatible endpoints (Ollama, vLLM, SGLang) alongside vendor
+  APIs. Skywork AI is a China-based company; users with
+  jurisdictional concerns should review provider configuration
+  and any defaults that point at vendor endpoints. The framework
+  itself runs entirely inside the user's process.
+
+harness_paradigm_alignment: partial
+
+deployment_posture: local-first
+
+adjacent_to:
+  - crewai
+  - autogen
+  - metagpt
+  - langgraph

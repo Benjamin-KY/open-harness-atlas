@@ -64,9 +64,11 @@ sovereignty_notes: 'NVIDIA (US-incorporated company); Apache-2.0; runs entirely
 harness_paradigm_alignment: aligned
 adjacent_to:
 - art-toolkit
+- deepsec
 - easyjailbreak
 - llm-guard
 - modelscan
+- pentestagent
 - plexiglass
 - promptfoo
 - promptmap

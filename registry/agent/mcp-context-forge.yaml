@@ -6,20 +6,34 @@ repo_url: https://github.com/IBM/mcp-context-forge
 homepage: https://ibm.github.io/mcp-context-forge/
 license: Apache-2.0
 primary_language: Python
-tagline: An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management.
-description: 'MCP Context Forge — An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management. Optimizes Agent & Tool calling, and supports plugins. Upstream maintainer: IBM.
+tagline: An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or
+  REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails
+  and management.
+description: 'MCP Context Forge — An AI Gateway, registry, and proxy that sits in
+  front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized
+  discovery, guardrails and management. Optimizes Agent & Tool calling, and supports
+  plugins. Upstream maintainer: IBM.
 
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent
+  frameworks as the policy + tool-routing layer that sits between intent and the model
+  tier.'
 maturity: ga
 maintainer:
   type: company
   name: IBM
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: 'IBM is a company maintainer (publicly listed US corporation, GitHub Organization owner); the OSS core is Apache-2.0-licensed and self-hostable with full Docker support. Model-agnostic score revised to 4: the gateway federates any MCP, A2A, or REST/gRPC endpoint through a unified interface, enabling local-weights providers alongside commercial APIs. Agent/mcp subcategory is confirmed by the README''s centralized governance and multi-protocol federation surface.'
+sovereignty_notes: 'IBM is a company maintainer (publicly listed US corporation, GitHub
+  Organization owner); the OSS core is Apache-2.0-licensed and self-hostable with
+  full Docker support. Model-agnostic score revised to 4: the gateway federates any
+  MCP, A2A, or REST/gRPC endpoint through a unified interface, enabling local-weights
+  providers alongside commercial APIs. Agent/mcp subcategory is confirmed by the README''s
+  centralized governance and multi-protocol federation surface.'
 harness_paradigm_alignment: partial
 adjacent_to:
+- chrome-devtools-mcp
+- cline
 - langgraph
 - mcp-use
 - mcphub-nvim

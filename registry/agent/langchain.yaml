@@ -6,14 +6,18 @@ repo_url: https://github.com/langchain-ai/langchain
 homepage: https://docs.langchain.com/langchain/
 license: MIT
 primary_language: Python
-tagline: Provider-agnostic Python/JS framework for chaining LLM calls, tools, retrievers, and agent loops; the de-facto reference implementation for the harness-as-application-layer pattern.
-description: 'LangChain is a provider-agnostic framework (Python + JavaScript packages) that ships
+tagline: Provider-agnostic Python/JS framework for chaining LLM calls, tools, retrievers,
+  and agent loops; the de-facto reference implementation for the harness-as-application-layer
+  pattern.
+description: 'LangChain is a provider-agnostic framework (Python + JavaScript packages)
+  that ships
 
   abstractions for LLM calls, prompt templates, chat models, embeddings, retrievers,
 
   document loaders, tools, output parsers, and agent loops. It includes adapters for
 
-  100+ providers (OpenAI / Anthropic / Bedrock / Vertex / Ollama / vLLM / HuggingFace / etc.)
+  100+ providers (OpenAI / Anthropic / Bedrock / Vertex / Ollama / vLLM / HuggingFace
+  / etc.)
 
   and is intentionally swap-routable across them.
 
@@ -29,21 +33,27 @@ maintainer:
   name: LangChain Inc
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: 'LangChain Inc (US-incorporated commercial company); the OSS core (langchain-core,
+sovereignty_notes: 'LangChain Inc (US-incorporated commercial company); the OSS core
+  (langchain-core,
 
   langchain, langchain-community) is MIT-licensed and fully self-hostable. The hosted
 
-  LangSmith observability product is separately commercial — but the catalogue scope is
+  LangSmith observability product is separately commercial — but the catalogue scope
+  is
 
-  the OSS framework, which does not require LangSmith. Model-agnostic 4 — adapters exist
+  the OSS framework, which does not require LangSmith. Model-agnostic 4 — adapters
+  exist
 
-  for every major provider tier including local-weights (Ollama, vLLM, llama.cpp, HF
+  for every major provider tier including local-weights (Ollama, vLLM, llama.cpp,
+  HF
 
-  Transformers) but a handful of community packages and tutorials default to OpenAI, so
+  Transformers) but a handful of community packages and tutorials default to OpenAI,
+  so
 
   not a clean 5.'
 harness_paradigm_alignment: partial
-notes_for_maintainers: 'Restored in v0.2.0 under the GOVERNANCE.md §8 "feature surface, not
+notes_for_maintainers: 'Restored in v0.2.0 under the GOVERNANCE.md §8 "feature surface,
+  not
 
   project lineage" rule. The v0.1.0 seed excluded `langchain` core in
 
@@ -67,5 +77,6 @@ adjacent_to:
 - oh-my-claudecode
 - oh-my-pi
 - open-design
+- open-swe
 - openbrowser
 deployment_posture: local-first

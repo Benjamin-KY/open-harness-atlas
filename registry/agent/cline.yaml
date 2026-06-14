@@ -1,0 +1,67 @@
+id: cline
+name: Cline
+category: agent
+subcategory: code-agent
+repo_url: https://github.com/cline/cline
+homepage: https://cline.bot
+license: Apache-2.0
+primary_language: TypeScript
+tagline: Open-source autonomous coding agent shipped as an SDK, IDE extension, and
+  CLI.
+description: 'Cline is an autonomous coding agent — read/edit files, run commands,
+
+  use a browser, ask follow-up questions — distributed as a VS Code
+
+  extension, an embeddable SDK, and a standalone CLI. Approval-gated
+
+  by default (every shell command and write is shown for review),
+
+  with a `--auto-approve` mode for trusted workflows.
+
+
+  In the atlas: the highest-star (~63k) member of the recent
+
+  generation of OSS coding agents. Pairs with `mcp-server` /
+
+  `mcp-context-forge` for tool access and with `instructor` /
+
+  `outlines` for structured outputs when wired into a larger
+
+  agent stack.
+
+  '
+maturity: ga
+maintainer:
+  type: company
+  name: Cline Bot, Inc.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: 'Added 2026-06-14 via the recency-biased discovery sweep
+
+  (created≥2024-06-01). The project is Apache-2.0 and self-hostable
+
+  as both a VS Code extension and a CLI; both connect to whichever
+
+  provider the user configures (Anthropic, OpenAI, Bedrock, Vertex,
+
+  OpenRouter, Ollama, LM Studio, vLLM via OpenAI-compatible
+
+  endpoint, etc.), so the model is portable and the data path is
+
+  user-controlled. No mandatory telemetry; opt-in usage analytics
+
+  ship to Cline.bot servers and can be disabled. model_agnostic_score
+
+  reflects broad provider support including local backends.
+
+  '
+harness_paradigm_alignment: partial
+deployment_posture: local-first
+adjacent_to:
+- mcp-agent
+- mcp-context-forge
+- mini-swe-agent
+- open-swe
+- openhands
+- swe-agent
+- symphony

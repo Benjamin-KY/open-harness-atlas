@@ -7,22 +7,33 @@ homepage: https://nanobrowser.ai
 license: Apache-2.0
 primary_language: TypeScript
 tagline: Open-Source Chrome extension for AI-powered web automation.
-description: 'Nanobrowser — Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator. Upstream maintainer: nanobrowser.
+description: 'Nanobrowser — Open-Source Chrome extension for AI-powered web automation.
+  Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator.
+  Upstream maintainer: nanobrowser.
 
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent
+  frameworks as the policy + tool-routing layer that sits between intent and the model
+  tier.'
 maturity: ga
 maintainer:
   type: community
   name: nanobrowser
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: The nanobrowser organisation (small commercial team behind nanobrowser.ai) ships the Chrome extension under Apache-2.0 with BYO API key support and a documented free alternative to OpenAI Operator. Model-agnostic 4 — multi-agent planner/navigator system is wired to flexible LLM backends and the project is explicit that you bring whichever provider you want. Curator-reviewed; sits in agent as a browser-runtime tool with broad provider pluggability.
+sovereignty_notes: The nanobrowser organisation (small commercial team behind nanobrowser.ai)
+  ships the Chrome extension under Apache-2.0 with BYO API key support and a documented
+  free alternative to OpenAI Operator. Model-agnostic 4 — multi-agent planner/navigator
+  system is wired to flexible LLM backends and the project is explicit that you bring
+  whichever provider you want. Curator-reviewed; sits in agent as a browser-runtime
+  tool with broad provider pluggability.
 harness_paradigm_alignment: partial
 adjacent_to:
+- chrome-devtools-mcp
 - langgraph
 - open-design
 - openbrowser
 - opencli
 - openfang
+- webwright
 deployment_posture: local-first

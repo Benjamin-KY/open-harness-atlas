@@ -6,6 +6,16 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — 8 high-signal entries from recency-biased discovery sweep (2026-06-14)
+
+- New entries (all Apache-2.0 or MIT, all `deployment_posture` in `{local-only, local-first}`, all with sovereignty_notes carrying explicit provenance — "Added 2026-06-14 via recency-biased discovery sweep" — and provider-portability statements):
+  - **agent** (+6): `cline` (63k★), `chrome-devtools-mcp` (43k★), `symphony` (25k★), `open-swe` (10k★), `webwright` (5k★), `deepresearchagent` (3.5k★)
+  - **redteam** (+2): `deepsec` (3.2k★), `pentestagent` (2.6k★)
+- Adjacency edges: 37 reciprocal back-links inserted on existing entries (so the new nodes appear in BFS / "Related" panels from both sides).
+- Discovery infrastructure: `scripts/discovery/curate_recent.py` (heuristic curator — drops wrappers / spec-docs / aggregators, applies per-category caps) committed alongside the discovery scripts shipped in `270a03d`.
+
+**Registry**: 793 → 801 entries (+8) · 3,148 → 3,186 edges (+38) · category totals: governance 101 · agent 231 → 237 · eval 203 · redteam 94 → 96 · routing 92 · education 72. Tier flow: landmark +2 (cline, chrome-devtools-mcp), established +1, emerging +2, frontier +3.
+
 ### Added — Harness design patterns + worked-example walkthrough (2026-06-14)
 
 - **`docs/patterns/`** — seven named, reusable harness design patterns.

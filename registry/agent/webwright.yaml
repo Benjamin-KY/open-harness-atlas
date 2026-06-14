@@ -1,0 +1,53 @@
+id: webwright
+name: Webwright
+
+category: agent
+subcategory: browser-agent
+
+repo_url: https://github.com/microsoft/Webwright
+
+license: MIT
+primary_language: Python
+
+tagline: Microsoft's SWE-style browser-agent framework for long-horizon web tasks.
+
+description: |
+  Webwright is Microsoft Research's browser-agent framework
+  organised after the SWE-agent pattern: a structured interaction
+  loop, deliberate action vocabulary (click / type / scroll /
+  back / submit / read), and SOTA results on long-horizon web
+  benchmarks. Python implementation; pluggable LLM backends.
+
+  In the atlas: a research-quality browser agent that fits
+  alongside `browser-use`, `nanobrowser`, `openbrowser`, and
+  `webvoyager-multimodal` as alternatives at the "browser agent"
+  layer of any web-task stack.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: Microsoft Research
+
+origin_country: US
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the recency-biased discovery sweep. MIT-
+  licensed, self-hostable; Python project with a clean LLM
+  abstraction so any chat-completions endpoint works (Azure
+  OpenAI, OpenAI, Anthropic, Ollama, vLLM). No mandatory
+  telemetry. Microsoft Research host; benchmark numbers in
+  README cite WebArena and similar contamination-aware suites.
+
+harness_paradigm_alignment: partial
+
+deployment_posture: local-first
+
+adjacent_to:
+  - browser-use
+  - nanobrowser
+  - openbrowser
+  - webvoyager-multimodal
+  - browsergym

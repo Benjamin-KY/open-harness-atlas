@@ -6,7 +6,8 @@ repo_url: https://github.com/langchain-ai/langgraph
 homepage: https://langchain-ai.github.io/langgraph/
 license: MIT
 primary_language: Python
-tagline: Stateful, controllable agents as explicit graphs of nodes and edges — checkpointing and time-travel built in.
+tagline: Stateful, controllable agents as explicit graphs of nodes and edges — checkpointing
+  and time-travel built in.
 description: 'LangGraph models agents as state-machine graphs: nodes are functions
 
   (LLM calls, tool calls, deterministic code) and edges are typed
@@ -48,7 +49,8 @@ education_resources:
   url: https://langchain-ai.github.io/langgraph/tutorials/
   type: tutorial
   free: true
-sovereignty_notes: 'LangChain is US-incorporated; LangGraph itself is MIT-licensed and
+sovereignty_notes: 'LangChain is US-incorporated; LangGraph itself is MIT-licensed
+  and
 
   fully self-hostable. Multi-provider via LangChain''s `ChatModel`
 
@@ -74,6 +76,7 @@ adjacent_to:
 - babyagi
 - beeai-framework
 - crewai
+- deepresearchagent
 - griptape-framework
 - haystack
 - ix-autonomous-agent
@@ -82,6 +85,7 @@ adjacent_to:
 - mastra
 - metagpt
 - microsoft-agent-framework
+- open-swe
 - pydanticai
 - rd-agent-microsoft
 - semantic-kernel

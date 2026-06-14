@@ -6,17 +6,26 @@ repo_url: https://github.com/ntegrals/openbrowser
 license: MIT
 primary_language: TypeScript
 tagline: Let AI agents browse the web.
-description: 'Openbrowser — Let AI agents browse the web. An autonomous toolkit for browser-based AI agents. Upstream maintainer: ntegrals.
+description: 'Openbrowser — Let AI agents browse the web. An autonomous toolkit for
+  browser-based AI agents. Upstream maintainer: ntegrals.
 
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent
+  frameworks as the policy + tool-routing layer that sits between intent and the model
+  tier.'
 maturity: ga
 maintainer:
   type: community
   name: ntegrals
 origin_country: null
 model_agnostic_score: 2
-sovereignty_notes: ntegrals (individual maintainer; community). MIT, autonomous browser-agent SDK on Playwright with sandboxed execution, cost tracking, and replay recording. MAS=2 — multi-provider but limited to commercial APIs (OpenAI / Anthropic / Google via Vercel AI SDK) per the README's stated 'first-class' set; local-weights paths via OpenAI-compatible endpoints are possible through the underlying SDK but not promoted. Harness alignment partial — tool routing and sandboxing, but no source_authority or refusal FSM.
+sovereignty_notes: ntegrals (individual maintainer; community). MIT, autonomous browser-agent
+  SDK on Playwright with sandboxed execution, cost tracking, and replay recording.
+  MAS=2 — multi-provider but limited to commercial APIs (OpenAI / Anthropic / Google
+  via Vercel AI SDK) per the README's stated 'first-class' set; local-weights paths
+  via OpenAI-compatible endpoints are possible through the underlying SDK but not
+  promoted. Harness alignment partial — tool routing and sandboxing, but no source_authority
+  or refusal FSM.
 harness_paradigm_alignment: partial
 adjacent_to:
 - 9router
@@ -24,4 +33,5 @@ adjacent_to:
 - opencli
 - wanwu
 - web-ui
+- webwright
 deployment_posture: cloud-first

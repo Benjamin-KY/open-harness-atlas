@@ -6,21 +6,31 @@ repo_url: https://github.com/mcp-use/mcp-use
 homepage: https://manufact.com
 license: MIT
 primary_language: TypeScript
-tagline: The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.
-description: 'MCP Use — The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents. Upstream maintainer: mcp-use.
+tagline: The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP
+  Servers for AI Agents.
+description: 'MCP Use — The fullstack MCP framework to develop MCP Apps for ChatGPT
+  / Claude & MCP Servers for AI Agents. Upstream maintainer: mcp-use.
 
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent
+  frameworks as the policy + tool-routing layer that sits between intent and the model
+  tier.'
 maturity: ga
 maintainer:
   type: company
   name: mcp-use
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: mcp-use is maintained by Manufact (manufact.com, a company), as explicitly stated in the README; the OSS core is MIT-licensed and available on PyPI and npm. Model-agnostic score of 3 reflects LangChain-based multi-provider LLM support with documented local-model paths through compatible backends. Agent/mcp subcategory is confirmed by the README's description of a framework bridging LangChain agents to MCP servers for ChatGPT, Claude, and other AI agents.
+sovereignty_notes: mcp-use is maintained by Manufact (manufact.com, a company), as
+  explicitly stated in the README; the OSS core is MIT-licensed and available on PyPI
+  and npm. Model-agnostic score of 3 reflects LangChain-based multi-provider LLM support
+  with documented local-model paths through compatible backends. Agent/mcp subcategory
+  is confirmed by the README's description of a framework bridging LangChain agents
+  to MCP servers for ChatGPT, Claude, and other AI agents.
 harness_paradigm_alignment: partial
 adjacent_to:
 - assetopsbench
+- chrome-devtools-mcp
 - langgraph
 - mcphub-nvim
 - unity-mcp

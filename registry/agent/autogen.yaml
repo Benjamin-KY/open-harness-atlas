@@ -6,7 +6,8 @@ repo_url: https://github.com/microsoft/autogen
 homepage: https://microsoft.github.io/autogen/
 license: MIT
 primary_language: Python
-tagline: Microsoft Research's multi-agent conversation framework — agents talk to each other to solve tasks.
+tagline: Microsoft Research's multi-agent conversation framework — agents talk to
+  each other to solve tasks.
 description: 'AutoGen is Microsoft Research''s MIT-licensed framework for building
 
   multi-agent systems where agents converse with each other to solve
@@ -72,6 +73,7 @@ adjacent_to:
 - camel
 - chatdev
 - crewai
+- deepresearchagent
 - gorilla-api-llm
 - griptape-framework
 - ix-autonomous-agent

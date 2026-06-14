@@ -1,0 +1,54 @@
+id: open-swe
+name: Open SWE
+
+category: agent
+subcategory: code-agent
+
+repo_url: https://github.com/langchain-ai/open-swe
+homepage: https://www.langchain.com/blog/open-swe-an-open-source-framework-for-internal-coding-agents
+
+license: MIT
+primary_language: Python
+
+tagline: LangChain's open-source asynchronous coding-agent framework.
+
+description: |
+  Open SWE is LangChain's reference framework for internal
+  coding agents: an asynchronous, long-running agent that reads
+  the repo, drafts a plan, edits files, runs tests, and posts a
+  PR for review. Built on LangGraph; supports any LangChain-
+  compatible model backend (Anthropic, OpenAI, Bedrock, local
+  via Ollama / vLLM).
+
+  In the atlas: the LangChain stack's official answer to the
+  cline / openhands / Symphony class. Pairs naturally with
+  `langgraph` (its own runtime), `langfuse` (traces), and an
+  eval harness (`promptfoo`, `deepeval`) for the PR-gate step.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: LangChain Inc.
+
+origin_country: US
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the recency-biased discovery sweep. MIT-
+  licensed, self-hostable, and model-agnostic because it inherits
+  LangChain's provider abstraction. Telemetry is opt-in through
+  LangSmith; the framework runs without it. Works against local
+  backends via Ollama / vLLM OpenAI-compatible endpoints.
+
+harness_paradigm_alignment: partial
+
+deployment_posture: local-first
+
+adjacent_to:
+  - langgraph
+  - langchain
+  - cline
+  - openhands
+  - swe-agent

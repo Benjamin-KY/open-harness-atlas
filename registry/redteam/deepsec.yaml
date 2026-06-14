@@ -1,0 +1,55 @@
+id: deepsec
+name: Deepsec
+
+category: redteam
+subcategory: code-security-agent
+
+repo_url: https://github.com/vercel-labs/deepsec
+homepage: https://vercel.com/blog/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base
+
+license: Apache-2.0
+primary_language: TypeScript
+
+tagline: Coding-agent-powered security harness for finding (and fixing) vulnerabilities in source code.
+
+description: |
+  Deepsec is a coding-agent-driven security harness: it walks a
+  codebase, identifies vulnerability classes (injection, auth
+  bypass, unsafe deserialisation, secrets in source), proposes
+  diffs that fix them, and produces a report. Released by Vercel
+  Labs under Apache-2.0; TypeScript implementation built on top
+  of the same agent loop Vercel uses internally.
+
+  In the atlas: complements `garak`, `pyrit`, and `llm-attacks`
+  on the red-team side, but takes the codebase (not the model)
+  as its attack surface. Closer kin: `pentestagent`,
+  `agent-security-scanner-mcp`, `ai-infra-guard`.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: Vercel
+
+origin_country: US
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the recency-biased discovery sweep.
+  Apache-2.0 and self-hostable; TypeScript project that runs as a
+  CLI. The agent calls the LLM provider configured by the user
+  (OpenAI, Anthropic, Ollama / vLLM via OpenAI-compatible
+  endpoints) — Vercel does not mandate a particular provider.
+  Sensitive: the tool reads source code, so the provider chosen
+  determines whether that source ever leaves the boundary.
+
+harness_paradigm_alignment: partial
+
+deployment_posture: local-first
+
+adjacent_to:
+  - pentestagent
+  - garak
+  - ai-infra-guard
+  - agent-security-scanner-mcp

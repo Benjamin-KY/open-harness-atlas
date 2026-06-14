@@ -57,12 +57,14 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [ChatDev](https://github.com/OpenBMB/ChatDev) | Apache-2.0 | Python | ga | CN | 4/5 | landmark | 33.4k | — | Tsinghua / OpenBMB |
 | [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) | MIT | Python | beta | CH | 4/5 | frontier | 924 | — | Andres M. Bran et al. (White Lab / EPFL) |
 | [Cherry Studio](https://github.com/CherryHQ/cherry-studio) | AGPL-3.0-only | TypeScript | ga | CN | 4/5 | landmark | 47.3k | — | CherryHQ |
+| [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | TypeScript | ga | US | 5/5 | — | — | — | Google (Chrome DevTools) |
 | [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) | MIT | Python | ga | US | 1/5 | established | 7.3k | — | Anthropic |
 | [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | MIT | Shell | ga | — | 0/5 | established | 21.6k | — | Donchitos |
 | [Claude Context](https://github.com/zilliztech/claude-context) | MIT | TypeScript | ga | — | 3/5 | established | 11.8k | — | zilliztech |
 | [Claude Mem](https://github.com/thedotmack/claude-mem) | Apache-2.0 | JavaScript | ga | — | 3/5 | landmark | 82.1k | — | thedotmack |
 | [Claw X](https://github.com/ValueCell-ai/ClawX) | MIT | TypeScript | ga | CN | 3/5 | emerging | 7.4k | — | ValueCell-ai |
 | [Cli](https://github.com/googleworkspace/cli) | Apache-2.0 | Rust | ga | US | 3/5 | established | 27.0k | — | googleworkspace |
+| [Cline](https://github.com/cline/cline) | Apache-2.0 | TypeScript | ga | US | 4/5 | — | — | — | Cline Bot, Inc. |
 | [Code Review Graph](https://github.com/tirth8205/code-review-graph) | MIT | Python | ga | — | 3/5 | emerging | 18.5k | — | tirth8205 |
 | [CopilotKit](https://github.com/CopilotKit/CopilotKit) | MIT | TypeScript | ga | US | 4/5 | landmark | 35.0k | — | CopilotKit Inc. |
 | [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | frontier | 723 | — | Human-Agent-Society |
@@ -78,6 +80,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Deepchat](https://github.com/ThinkInAIXYZ/deepchat) | Apache-2.0 | TypeScript | ga | — | 4/5 | established | 6.0k | — | ThinkInAIXYZ |
 | [Deep Code](https://github.com/HKUDS/DeepCode) | MIT | Python | ga | HK | 3/5 | established | 15.8k | — | HKUDS |
 | [Deep Research](https://github.com/Alibaba-NLP/DeepResearch) | Apache-2.0 | Python | ga | CN | 3/5 | established | 19.4k | — | Alibaba-NLP |
+| [DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) | MIT | Python | beta | CN | 4/5 | — | — | — | Skywork AI |
 | [Deep Seek Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | MIT | Go | ga | — | 3/5 | established | 21.8k | — | esengine |
 | [Deep Tutor](https://github.com/HKUDS/DeepTutor) | Apache-2.0 | Python | ga | — | 3/5 | established | 24.7k | — | HKUDS |
 | [DeerFlow](https://github.com/bytedance/deer-flow) | MIT | Python | ga | CN | 4/5 | landmark | 71.1k | — | ByteDance |
@@ -167,6 +170,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Open Cowork](https://github.com/OpenCoworkAI/open-cowork) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.6k | — | OpenCoworkAI |
 | [Open Design](https://github.com/nexu-io/open-design) | Apache-2.0 | TypeScript | beta | — | 4/5 | landmark | 64.4k | — | nexu-io |
 | [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | Apache-2.0 | Rust | beta | US | 4/5 | landmark | 63.9k | — | Open Interpreter Inc. |
+| [Open SWE](https://github.com/langchain-ai/open-swe) | MIT | Python | beta | US | 4/5 | — | — | — | LangChain Inc. |
 | [Openagent](https://github.com/the-open-agent/openagent) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 5.2k | — | the-open-agent |
 | [OpenAgents (openagents-org)](https://github.com/openagents-org/openagents) | Apache-2.0 | Python | beta | — | 4/5 | established | 3.8k | — | openagents-org community |
 | [OpenAgents (xlang)](https://github.com/xlang-ai/OpenAgents) | Apache-2.0 | Python | beta | HK | 4/5 | frontier | 4.8k | — | XLang Lab / HKU |
@@ -205,6 +209,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Swarm (OpenAI)](https://github.com/openai/swarm) | MIT | Python | beta | US | 4/5 | established | 21.6k | — | OpenAI |
 | [Swarms](https://github.com/kyegomez/swarms) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 6.8k | — | kyegomez |
 | [SWE-agent](https://github.com/SWE-agent/SWE-agent) | MIT | Python | ga | US | 4/5 | landmark | 19.5k | — | Princeton + Stanford |
+| [Symphony](https://github.com/openai/symphony) | Apache-2.0 | Elixir | beta | US | 3/5 | — | — | — | OpenAI |
 | [Tabularis](https://github.com/TabularisDB/tabularis) | Apache-2.0 | TypeScript | ga | — | 3/5 | emerging | 2.4k | — | TabularisDB |
 | [Takt](https://github.com/nrslib/takt) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.1k | — | nrslib |
 | [Tambo](https://github.com/tambo-ai/tambo) | MIT | TypeScript | beta | US | 4/5 | established | 11.2k | — | Tambo AI |
@@ -230,6 +235,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Wanwu](https://github.com/UnicomAI/wanwu) | Apache-2.0 | Go | ga | CN | 3/5 | established | 2.5k | — | UnicomAI |
 | [Web Ui](https://github.com/browser-use/web-ui) | MIT | Python | ga | — | 3/5 | established | 16.1k | — | browser-use |
 | [WebVoyager](https://github.com/MinorJerry/WebVoyager) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 1.1k | — | Hongliang He et al. (Zhejiang University / Tencent) |
+| [Webwright](https://github.com/microsoft/Webwright) | MIT | Python | beta | US | 4/5 | — | — | — | Microsoft Research |
 | [XAgent](https://github.com/OpenBMB/XAgent) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 8.5k | — | Tsinghua / OpenBMB |
 | [Xcode Build MCP](https://github.com/getsentry/XcodeBuildMCP) | MIT | TypeScript | ga | — | 3/5 | established | 5.9k | — | getsentry |
 | [Xiaozhi Esp32](https://github.com/78/xiaozhi-esp32) | MIT | C++ | ga | — | 3/5 | established | 27.3k | — | 78 |

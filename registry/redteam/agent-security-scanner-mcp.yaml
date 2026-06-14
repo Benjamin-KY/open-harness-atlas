@@ -7,19 +7,33 @@ homepage: https://www.npmjs.com/package/agent-security-scanner-mcp
 license: MIT
 primary_language: JavaScript
 tagline: Security scanner MCP server for AI coding agents.
-description: 'Agent Security Scanner MCP — Security scanner MCP server for AI coding agents. Prompt injection firewall, package hallucination detection (4.3M+ packages), 1000+ vulnerability rules with AST & taint analysis, auto-fix. Upstream maintainer: sinewaveai.
+description: 'Agent Security Scanner MCP — Security scanner MCP server for AI coding
+  agents. Prompt injection firewall, package hallucination detection (4.3M+ packages),
+  1000+ vulnerability rules with AST & taint analysis, auto-fix. Upstream maintainer:
+  sinewaveai.
 
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm
+  treats red-team tooling as a continuous probe against the model and the governance
+  scaffold around it.'
 maturity: beta
 maintainer:
   type: company
   name: sinewaveai
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: Sinewave AI (commercial company; ProofLayer brand, 110 stars, MIT) ships agent-security-scanner-mcp as both a 'ProofLayer' lightweight regex scanner (~81KB, 400+ rules across 9 languages, 7 MCP tools, zero Python) and a full AST/taint-tracking version (1,700+ rules across 12 languages, 11 MCP tools, LLM-powered semantic review). Model-agnostic 4 — packaged as an MCP server that plugs into Claude Code, Cursor, Windsurf, Cline and OpenClaw, plus a standalone CLI for CI/CD; provider choice is a host-MCP-config concern. Genuine redteam/ai-security surface covering hallucinated-package detection, prompt-injection blocking and vulnerability scanning.
+sovereignty_notes: Sinewave AI (commercial company; ProofLayer brand, 110 stars, MIT)
+  ships agent-security-scanner-mcp as both a 'ProofLayer' lightweight regex scanner
+  (~81KB, 400+ rules across 9 languages, 7 MCP tools, zero Python) and a full AST/taint-tracking
+  version (1,700+ rules across 12 languages, 11 MCP tools, LLM-powered semantic review).
+  Model-agnostic 4 — packaged as an MCP server that plugs into Claude Code, Cursor,
+  Windsurf, Cline and OpenClaw, plus a standalone CLI for CI/CD; provider choice is
+  a host-MCP-config concern. Genuine redteam/ai-security surface covering hallucinated-package
+  detection, prompt-injection blocking and vulnerability scanning.
 harness_paradigm_alignment: partial
 adjacent_to:
+- deepsec
+- pentestagent
 - pipelock
 - prompt-guard
 - pyrit

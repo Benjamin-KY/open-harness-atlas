@@ -1,0 +1,58 @@
+id: chrome-devtools-mcp
+name: Chrome DevTools MCP
+
+category: agent
+subcategory: mcp-server
+
+repo_url: https://github.com/ChromeDevTools/chrome-devtools-mcp
+homepage: https://npmjs.org/package/chrome-devtools-mcp
+
+license: Apache-2.0
+primary_language: TypeScript
+
+tagline: MCP server exposing Chrome DevTools (performance, network, console, DOM) to coding agents.
+
+description: |
+  An official Model Context Protocol server from the Chrome DevTools
+  team that gives agents structured access to a Chrome browser:
+  performance traces, network requests, console messages, runtime
+  evaluation, and DOM inspection. Distributed as an npm package
+  consumable by any MCP-capable host (Claude Desktop, Continue,
+  Cline, Cursor, Aider, custom LangGraph agents, etc.).
+
+  In the atlas: the Chrome team's contribution to the MCP ecosystem,
+  bringing browser observability into the agent loop. Pairs with
+  `browser-use`, `nanobrowser`, and `webvoyager-multimodal` for
+  agents that need both browser automation and developer-grade
+  introspection.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Google (Chrome DevTools)
+
+origin_country: US
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the recency-biased discovery sweep. The
+  server is Apache-2.0, runs locally as an npm package, and is
+  model-agnostic by design — it speaks MCP, not any specific
+  provider's API. No outbound network calls beyond what the agent
+  itself initiates. Sovereignty posture is excellent: agent +
+  browser + DevTools all run inside the user's machine.
+
+harness_paradigm_alignment: partial
+
+deployment_posture: local-only
+
+adjacent_to:
+  - mcp-agent
+  - mcp-context-forge
+  - mcp-use
+  - mcp-server
+  - browser-use
+  - nanobrowser
+  - webvoyager-multimodal

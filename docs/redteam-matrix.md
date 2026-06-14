@@ -30,6 +30,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [CleverHans](https://github.com/cleverhans-lab/cleverhans) | MIT | Python | ga | US | 4/5 | frontier | 6.4k | — | Google Brain / OpenAI / Penn State (original); community since |
 | [Cloak Cli](https://github.com/stabgan/cloak-cli) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | stabgan |
 | [DeepInception](https://github.com/tmlr-group/DeepInception) | MIT | Python | beta | CN | 4/5 | frontier | 175 | — | TMLR Group (multiple authors, PKU/Tsinghua) |
+| [Deepsec](https://github.com/vercel-labs/deepsec) | Apache-2.0 | TypeScript | beta | US | 4/5 | — | — | — | Vercel |
 | [Detecting Pretraining Data / Min-K% Prob](https://github.com/swj0419/detect-pretrain-code) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 242 | — | Weijia Shi et al. (UW / Princeton / Google) |
 | [Dvai](https://github.com/bb1nfosec/dvai) | MIT | TypeScript | beta | — | 1/5 | frontier | 5 | — | bb1nfosec |
 | [EasyEdit (Knowledge Editing / Poisoning Framework)](https://github.com/zjunlp/EasyEdit) | MIT | Python | ga | CN | 5/5 | established | 2.8k | — | zjunlp (Zhejiang University NLP Lab) |
@@ -67,6 +68,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [PAIR / JailbreakingLLMs](https://github.com/patrickrchao/JailbreakingLLMs) | MIT | Python | ga | US | 4/5 | frontier | 741 | — | Chao et al. (UPenn/CMU) |
 | [Parry Guard](https://github.com/vaporif/parry-guard) | MIT | Rust | beta | — | 3/5 | frontier | 43 | — | vaporif |
 | [PDF Prompt Injection Toolkit](https://github.com/zhihuiyuze/PDF-Prompt-Injection-Toolkit) | MIT | Python | beta | — | 3/5 | frontier | 53 | — | zhihuiyuze |
+| [PentestAgent](https://github.com/GH05TCREW/pentestagent) | MIT | Python | beta | — | 4/5 | — | — | — | GH05TCREW |
 | [PINT Benchmark](https://github.com/lakeraai/pint-benchmark) | MIT | Python | beta | CH | 4/5 | emerging | 189 | — | Lakera AI |
 | [Pipelock](https://github.com/luckyPipewrench/pipelock) | Apache-2.0 | Go | ga | — | 3/5 | emerging | 717 | — | luckyPipewrench |
 | [Plexiglass](https://github.com/safellama/plexiglass) | MIT | Python | alpha | US | 4/5 | emerging | 153 | — | SafeLLama |

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="hero-title hero-desc">
-<title id="hero-title">open-harness-atlas — 793 OSS harnesses across six categories</title>
+<title id="hero-title">open-harness-atlas — 801 OSS harnesses across six categories</title>
 <desc id="hero-desc">Six labelled category tiles showing total entries and tier breakdown (landmark, established, emerging, frontier) with four representative projects per category.</desc>
 <style>.bg{fill:#ffffff}.brand{fill:#1f3a5f;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.muted{fill:#555;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.tile{fill:#fafbfd;stroke:#e2e7ee;stroke-width:1.2}.tile-label{font-size:18px;font-weight:700;fill:#1f3a5f;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.tile-blurb{font-size:11px;fill:#6b7a8c;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.tile-count{font-size:36px;font-weight:800;fill:#1f3a5f;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.tile-count-label{font-size:11px;fill:#6b7a8c;letter-spacing:0.06em;text-transform:uppercase;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.featured{font-size:12px;fill:#222;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.title{font-size:34px;font-weight:800;fill:#1f3a5f;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.tag{font-size:14px;fill:#4a5d75;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.total{font-size:13px;font-weight:600;fill:#1f3a5f;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.url{font-size:12px;fill:#4a5d75;font-family:"JetBrains Mono",Consolas,monospace}.legend{font-size:11px;fill:#555;font-family:Inter,"Helvetica Neue",Arial,sans-serif}</style>
 <rect class="bg" width="1200" height="630"/>
 <text class="title" x="32" y="68">open-harness-atlas</text>
-<text class="tag" x="32" y="94">The OSS layer that makes model-agnostic AI workloads possible — 793 curated, OSI-licensed harnesses + free education.</text>
+<text class="tag" x="32" y="94">The OSS layer that makes model-agnostic AI workloads possible — 801 curated, OSI-licensed harnesses + free education.</text>
 <text class="tag" x="32" y="116" fill="#7a8a9e">Live 3D knowledge graph · 6 categories · tier overlay · entry-point lenses · supply chains.</text>
 <rect class="tile" x="32.0" y="128.0" width="366.7" height="194.0" rx="10"/>
 <text x="50.0" y="158.0" class="tile-label"><tspan style="font-size:18px">🛡</tspan><tspan dx="10">Governance harnesses</tspan></text>
@@ -24,12 +24,13 @@
 <rect class="tile" x="416.7" y="128.0" width="366.7" height="194.0" rx="10"/>
 <text x="434.7" y="158.0" class="tile-label"><tspan style="font-size:18px">🤖</tspan><tspan dx="10">Agent frameworks</tspan></text>
 <text x="434.7" y="176.0" class="tile-blurb">Tool-using multi-turn agent runtimes</text>
-<text x="765.3" y="164.0" class="tile-count" text-anchor="end">231</text>
+<text x="765.3" y="164.0" class="tile-count" text-anchor="end">237</text>
 <text x="765.3" y="180.0" class="tile-count-label" text-anchor="end">entries</text>
-<rect x="434.7" y="196.0" width="75.9" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="510.5" y="196.0" width="146.0" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="656.5" y="196.0" width="64.4" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="721.0" y="196.0" width="41.5" height="8" rx="2" fill="#c8d3e0"/>
+<rect x="434.7" y="196.0" width="73.9" height="8" rx="2" fill="#1f3a5f"/>
+<rect x="508.6" y="196.0" width="142.3" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="650.9" y="196.0" width="62.8" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="713.7" y="196.0" width="40.5" height="8" rx="2" fill="#c8d3e0"/>
+<rect x="754.2" y="196.0" width="8.4" height="8" rx="2" fill="#e8ecf0"/>
 <text x="434.6666666666667" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">53</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">102</tspan> established · <tspan fill="#8aa6c8" font-weight="700">45</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">29</tspan> frontier</text>
 <text x="434.7" y="256.0" class="featured">› LangChain</text>
 <text x="434.7" y="272.0" class="featured">› Langflow</text>
@@ -52,12 +53,13 @@
 <rect class="tile" x="32.0" y="340.0" width="366.7" height="194.0" rx="10"/>
 <text x="50.0" y="370.0" class="tile-label"><tspan style="font-size:18px">🎯</tspan><tspan dx="10">Red-team &amp; safety</tspan></text>
 <text x="50.0" y="388.0" class="tile-blurb">Adversarial probes · jailbreak suites · agent attacks</text>
-<text x="380.7" y="376.0" class="tile-count" text-anchor="end">94</text>
+<text x="380.7" y="376.0" class="tile-count" text-anchor="end">96</text>
 <text x="380.7" y="392.0" class="tile-count-label" text-anchor="end">entries</text>
-<rect x="50.0" y="408.0" width="7.0" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="57.0" y="408.0" width="17.6" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="74.6" y="408.0" width="59.8" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="134.4" y="408.0" width="246.2" height="8" rx="2" fill="#c8d3e0"/>
+<rect x="50.0" y="408.0" width="6.9" height="8" rx="2" fill="#1f3a5f"/>
+<rect x="56.9" y="408.0" width="17.2" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="74.1" y="408.0" width="58.6" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="132.7" y="408.0" width="241.1" height="8" rx="2" fill="#c8d3e0"/>
+<rect x="373.8" y="408.0" width="6.9" height="8" rx="2" fill="#e8ecf0"/>
 <text x="50.0" y="432.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">2</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">5</tspan> established · <tspan fill="#8aa6c8" font-weight="700">17</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">70</tspan> frontier</text>
 <text x="50.0" y="468.0" class="featured">› garak</text>
 <text x="50.0" y="484.0" class="featured">› Giskard</text>

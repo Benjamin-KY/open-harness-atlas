@@ -6,7 +6,8 @@ repo_url: https://github.com/crewAIInc/crewAI
 homepage: https://www.crewai.com/open-source
 license: MIT
 primary_language: Python
-tagline: Role-based multi-agent orchestration — Agents with goals and roles execute Tasks within a Crew.
+tagline: Role-based multi-agent orchestration — Agents with goals and roles execute
+  Tasks within a Crew.
 description: 'CrewAI models problems as a **Crew** of role-specialised **Agents**
 
   who execute **Tasks** in sequence or in parallel under a process
@@ -66,6 +67,7 @@ adjacent_to:
 - babyagi
 - camel
 - chatdev
+- deepresearchagent
 - griptape-framework
 - ix-autonomous-agent
 - langgraph

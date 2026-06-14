@@ -6,7 +6,8 @@ repo_url: https://github.com/Azure/PyRIT
 homepage: https://azure.github.io/PyRIT/
 license: MIT
 primary_language: Python
-tagline: Microsoft AI Red Team's framework for automated risk identification across generative AI systems.
+tagline: Microsoft AI Red Team's framework for automated risk identification across
+  generative AI systems.
 description: 'PyRIT (Python Risk Identification Tool) is the Microsoft AI Red
 
   Team''s MIT-licensed framework for automating risk identification
@@ -66,6 +67,7 @@ adjacent_to:
 - art-toolkit
 - easyjailbreak
 - garak
+- pentestagent
 - plexiglass
 - promptfoo
 - promptmap

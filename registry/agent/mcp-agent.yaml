@@ -6,19 +6,31 @@ repo_url: https://github.com/lastmile-ai/mcp-agent
 license: Apache-2.0
 primary_language: Python
 tagline: Build effective agents using Model Context Protocol and simple workflow patterns
-description: 'MCP Agent — Build effective agents using Model Context Protocol and simple workflow patterns. Upstream maintainer: lastmile-ai.
+description: 'MCP Agent — Build effective agents using Model Context Protocol and
+  simple workflow patterns. Upstream maintainer: lastmile-ai.
 
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent
+  frameworks as the policy + tool-routing layer that sits between intent and the model
+  tier.'
 maturity: ga
 maintainer:
   type: company
   name: lastmile-ai
 origin_country: US
 model_agnostic_score: 3
-sovereignty_notes: 'LastMile AI (US commercial company, lastmile-ai org, 8.4k stars) publishes mcp-agent under Apache-2.0: a simple composable framework implementing the full Anthropic ''Building Effective Agents'' pattern catalogue on top of the Model Context Protocol, with managed connection lifecycle and durable-agent support. Model-agnostic 4 — provider switching is handled at the MCP/provider-adapter layer and the framework is positioned as ''MCP is all you need'', accommodating commercial APIs and local backends interchangeably. Agent-framework artefact rather than a governance harness.'
+sovereignty_notes: 'LastMile AI (US commercial company, lastmile-ai org, 8.4k stars)
+  publishes mcp-agent under Apache-2.0: a simple composable framework implementing
+  the full Anthropic ''Building Effective Agents'' pattern catalogue on top of the
+  Model Context Protocol, with managed connection lifecycle and durable-agent support.
+  Model-agnostic 4 — provider switching is handled at the MCP/provider-adapter layer
+  and the framework is positioned as ''MCP is all you need'', accommodating commercial
+  APIs and local backends interchangeably. Agent-framework artefact rather than a
+  governance harness.'
 harness_paradigm_alignment: partial
 adjacent_to:
+- chrome-devtools-mcp
+- cline
 - langgraph
 - vibe-trading
 - voltagent

@@ -6,20 +6,30 @@ repo_url: https://github.com/iris-eval/mcp-server
 homepage: https://iris-eval.com
 license: MIT
 primary_language: TypeScript
-tagline: The agent eval standard for MCP — score output quality, catch safety failures, enforce cost budgets
-description: 'MCP Server — The agent eval standard for MCP — score output quality, catch safety failures, enforce cost budgets. Upstream maintainer: iris-eval.
+tagline: The agent eval standard for MCP — score output quality, catch safety failures,
+  enforce cost budgets
+description: 'MCP Server — The agent eval standard for MCP — score output quality,
+  catch safety failures, enforce cost budgets. Upstream maintainer: iris-eval.
 
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that
+  keeps every other harness honest — if you cannot measure the behaviour of the swap
+  target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: company
   name: iris-eval
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: iris-eval is a company-maintained project (GitHub Organization with associated iris-eval.com product domain); the OSS core is MIT-licensed and published to npm. Model-agnostic score of 3 is appropriate given the eval server hooks into any MCP-compatible agent regardless of underlying LLM provider. Eval/agent-eval category is confirmed by the README's quality scoring, safety failure detection, and cost budget enforcement for MCP agent outputs.
+sovereignty_notes: iris-eval is a company-maintained project (GitHub Organization
+  with associated iris-eval.com product domain); the OSS core is MIT-licensed and
+  published to npm. Model-agnostic score of 3 is appropriate given the eval server
+  hooks into any MCP-compatible agent regardless of underlying LLM provider. Eval/agent-eval
+  category is confirmed by the README's quality scoring, safety failure detection,
+  and cost budget enforcement for MCP agent outputs.
 harness_paradigm_alignment: partial
 adjacent_to:
+- chrome-devtools-mcp
 - lm-evaluation-harness
 - nasde-toolkit
 - oh-my-knowledge
