@@ -1,0 +1,27 @@
+id: llm-attacks
+name: LLM Attacks
+category: redteam
+subcategory: adversarial-ml
+repo_url: https://github.com/AI-Security-Research-Group/LLM-Attacks
+homepage: https://ai-security-research-group.github.io/LLM-Attacks/
+license: GPL-3.0-only
+primary_language: Multiple
+tagline: Comprehensive taxonomy of AI security vulnerabilities, LLM adversarial attacks, prompt injection techniques, and machine learning security research.
+description: |-
+  LLM Attacks — Comprehensive taxonomy of AI security vulnerabilities, LLM adversarial attacks, prompt injection techniques, and machine learning security research. Covers 71+ attack vectors including model poisoning, agentic AI exploits, and privacy breaches. Upstream maintainer: AI-Security-Research-Group.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: institution
+  name: AI-Security-Research-Group
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: AI-Security-Research-Group (institution-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- llm-jailbreak-taxonomy
+- llm-prompt-injection-tester
+- llm-watermark-robustness
+- pyrit
+- yaramint

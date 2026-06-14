@@ -1,0 +1,26 @@
+id: deepeval-evaluation-harness
+name: Deepeval Evaluation Harness
+category: eval
+subcategory: rag-eval
+repo_url: https://github.com/sunilp303/deepeval-evaluation-harness
+license: MIT
+primary_language: Python
+tagline: Pluggable DeepEval scaffold for RAG, agents, and LLM apps across Anthropic, Bedrock, Azure OpenAI, and Vertex.
+description: |-
+  Deepeval Evaluation Harness — Pluggable DeepEval scaffold for RAG, agents, and LLM apps across Anthropic, Bedrock, Azure OpenAI, and Vertex. Ships traceability, test synthesis, safety/PII gating, multi-turn conversation eval, agentic tool-use scoring, JSON validation, judge benchmarks, hyperparameter sweeps, and pytest CI — one Makefile target per feature. Upstream maintainer: sunilp303.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: sunilp303
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: sunilp303 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- groundcheck
+- lm-evaluation-harness
+- rag-benchmarking
+- ragas-evaluation-harness
+- trulens-agent-starter

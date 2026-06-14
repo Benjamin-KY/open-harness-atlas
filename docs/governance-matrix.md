@@ -6,52 +6,112 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Lang | Policy router | Source authority | Prompt composer | Output contract | Audit-log FSM | Agnostic |
 |---|---|---|---|---|---|---|---|---|
+| [Aegis Gate](https://github.com/ax128/AegisGate) | MIT | Python | partial | none | none | none | none | 3/5 |
+| [Agent Guardrails Template](https://github.com/TheArchitectit/agent-guardrails-template) | BSD-3-Clause | Go | partial | none | none | none | none | 3/5 |
 | [Agenta](https://github.com/Agenta-AI/agenta) | MIT | Python | none | none | none | none | none | 4/5 |
+| [Agentic Guardrails](https://github.com/FareedKhan-dev/agentic-guardrails) | MIT | Jupyter Notebook | partial | none | none | none | none | 3/5 |
+| [Agentlint](https://github.com/mauhpr/agentlint) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [AgentOps](https://github.com/AgentOps-AI/agentops) | MIT | Python | none | none | none | partial | native | 4/5 |
+| [AI Gateway](https://github.com/ferro-labs/ai-gateway) | Apache-2.0 | Go | partial | none | none | none | none | 3/5 |
+| [AI Harness Template](https://github.com/studioKjm/ai-harness-template) | MIT | Python | partial | none | none | none | none | 3/5 |
+| [AI Protector](https://github.com/Szesnasty/ai-protector) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
 | [Arize Phoenix](https://github.com/Arize-AI/phoenix) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
+| [Armorer](https://github.com/ArmorerLabs/Armorer) | MIT | TypeScript | partial | none | none | none | none | 3/5 |
 | [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) | MIT | Python | partial | none | none | partial | partial | 4/5 |
 | [AutoDefense](https://github.com/XHMY/AutoDefense) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [Awesome Foundry Nextgen](https://github.com/corticalstack/awesome-foundry-nextgen) | MIT | Jupyter Notebook | partial | none | none | none | none | 3/5 |
 | [BAML](https://github.com/BoundaryML/baml) | Apache-2.0 | Rust | none | none | partial | native | none | 4/5 |
+| [Banned Words](https://github.com/readme-SVG/Banned-words) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
+| [Bifrost](https://github.com/maximhq/bifrost) | Apache-2.0 | Go | partial | none | none | none | none | 3/5 |
+| [Brigade](https://github.com/escoffier-labs/brigade) | MIT | Python | partial | none | none | none | none | 3/5 |
+| [Circle Guard Bench](https://github.com/whitecircle/circle-guard-bench) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
 | [Circuit Breakers](https://github.com/GraySwanAI/circuit-breakers) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [Clawlens](https://github.com/nk3750/clawlens) | MIT | TypeScript | partial | none | none | none | none | 3/5 |
+| [Constrained Diffusion](https://github.com/eth-sri/constrained-diffusion) | MIT | Rust | none | none | none | partial | none | 3/5 |
+| [Content Moderation Deep Learning](https://github.com/fcakyon/content-moderation-deep-learning) | MIT | Multiple | partial | none | none | none | none | 3/5 |
+| [Datafog Python](https://github.com/DataFog/datafog-python) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [DataFog](https://github.com/DataFog/datafog-python) | MIT | Python | none | none | none | none | none | 4/5 |
 | [Detoxify](https://github.com/unitaryai/detoxify) | Apache-2.0 | Python | partial | none | none | partial | none | 5/5 |
 | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer) | Apache-2.0 | Python | partial | none | none | partial | none | 4/5 |
+| [Fireagent](https://github.com/buptlg/fireagent) | MIT | Python | partial | none | none | none | none | 3/5 |
+| [Fls Jaime](https://github.com/firstlinesoftware/fls-jaime) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
+| [Frai](https://github.com/sebuzdugan/frai) | MIT | JavaScript | none | none | none | none | none | 3/5 |
 | [funcchain](https://github.com/shroominic/funcchain) | MIT | Python | none | none | partial | native | none | 4/5 |
+| [Gateway](https://github.com/Portkey-AI/gateway) | MIT | TypeScript | partial | none | none | none | none | 3/5 |
+| [Gollm](https://github.com/teilomillet/gollm) | Apache-2.0 | Go | none | none | none | none | none | 3/5 |
 | [IBM Granite Guardian](https://github.com/ibm-granite/granite-guardian) | Apache-2.0 | Python | partial | partial | none | native | none | 5/5 |
+| [Grps Trtllm](https://github.com/NetEase-Media/grps_trtllm) | Apache-2.0 | Python | none | none | none | partial | none | 4/5 |
+| [Guard Eval Harness](https://github.com/Virtue-Research/guard-eval-harness) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [Guardrails AI](https://github.com/guardrails-ai/guardrails) | Apache-2.0 | Python | none | partial | none | native | partial | 4/5 |
 | [Guidance](https://github.com/guidance-ai/guidance) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [Harmless Harnesses](https://github.com/Benjamin-KY/Harmless-Harnesses) | Apache-2.0 | Python | native | native | native | native | native | 4/5 |
+| [Hortator](https://github.com/hortator-ai/Hortator) | MIT | Go | partial | none | none | none | none | 3/5 |
+| [Idun Agent Platform](https://github.com/Idun-Group/idun-agent-platform) | GPL-3.0-only | Python | partial | none | none | none | none | 3/5 |
 | [Instructor](https://github.com/567-labs/instructor) | MIT | Python | none | none | partial | native | none | 4/5 |
+| [I Verify Apps](https://github.com/undp/iVerify-Apps) | AGPL-3.0-only | TypeScript | none | none | none | none | none | 3/5 |
 | [Jsonformer](https://github.com/1rgs/jsonformer) | MIT | Python | none | none | partial | native | none | 4/5 |
+| [Jsonschema](https://github.com/mattt/JSONSchema) | MIT | Swift | none | none | none | partial | none | 3/5 |
+| [Lanekeep](https://github.com/algorismo-au/lanekeep) | Apache-2.0 | Shell | partial | none | none | none | none | 3/5 |
 | [Langfuse](https://github.com/langfuse/langfuse) | MIT | TypeScript | none | none | none | partial | native | 4/5 |
 | [LangKit](https://github.com/whylabs/langkit) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
 | [Langtrace](https://github.com/Scale3-Labs/langtrace) | AGPL-3.0 | TypeScript | none | none | none | none | none | 4/5 |
 | [LangWatch](https://github.com/langwatch/langwatch) | Apache-2.0 | TypeScript | none | none | none | partial | native | 4/5 |
 | [LLM Guard](https://github.com/protectai/llm-guard) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [LLM Landscape](https://github.com/poloclub/llm-landscape) | MIT | Python | none | none | none | none | none | 3/5 |
 | [LM Format Enforcer](https://github.com/noamgat/lm-format-enforcer) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [LMQL](https://github.com/eth-sri/lmql) | Apache-2.0 | Python | none | none | partial | native | none | 4/5 |
+| [Localmod](https://github.com/KOKOSde/localmod) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [magentic](https://github.com/jackmpcollins/magentic) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [Marvin](https://github.com/PrefectHQ/marvin) | Apache-2.0 | Python | none | none | partial | native | none | 4/5 |
+| [Mda](https://github.com/sno-ai/mda) | Apache-2.0 | TypeScript | none | none | none | partial | none | 3/5 |
 | [ModelBench](https://github.com/mlcommons/modelbench) | Apache-2.0 | Python | none | none | none | none | partial | 4/5 |
+| [Moderator](https://github.com/kisugez/moderator) | MIT | Python | partial | none | none | none | none | 3/5 |
+| [Multilingual LLM Safety Bench](https://github.com/YutoTerashima/multilingual-llm-safety-bench) | MIT | Python | none | none | none | none | none | 3/5 |
 | [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) | Apache-2.0 | Python | native | partial | native | native | partial | 4/5 |
+| [Node Llama Cpp](https://github.com/withcatai/node-llama-cpp) | MIT | TypeScript | none | none | none | partial | none | 4/5 |
+| [Openclaw Middleware Suite](https://github.com/Sapience-AI/openclaw-middleware-suite) | Apache-2.0 | TypeScript | partial | none | none | none | none | 3/5 |
 | [OpenLIT](https://github.com/openlit/openlit) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
 | [OpenLLMetry](https://github.com/traceloop/openllmetry) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
 | [Opik (by Comet)](https://github.com/comet-ml/opik) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
+| [Ouro Loop](https://github.com/VictorVVedtion/ouro-loop) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [Outlines](https://github.com/dottxt-ai/outlines) | Apache-2.0 | Python | none | none | partial | native | none | 4/5 |
+| [Outputguard](https://github.com/ndcorder/outputguard) | MIT | Python | none | none | none | partial | none | 3/5 |
+| [Packmind](https://github.com/PackmindHub/packmind) | Apache-2.0 | TypeScript | partial | none | none | none | none | 3/5 |
 | [Microsoft Presidio](https://github.com/microsoft/presidio) | MIT | Python | none | none | none | native | none | 5/5 |
 | [Promptimize](https://github.com/preset-io/promptimize) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
 | [PromptInject](https://github.com/agencyenterprise/PromptInject) | MIT | Python | partial | none | none | none | none | 4/5 |
+| [Promptpurify](https://github.com/securelayer7/PROMPTPurify) | MIT | TypeScript | partial | none | none | none | none | 3/5 |
 | [PromptTools](https://github.com/hegelai/prompttools) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
+| [Pydantic AI Shields](https://github.com/vstorm-co/pydantic-ai-shields) | MIT | Python | partial | none | none | none | none | 3/5 |
+| [Pytector](https://github.com/MaxMLang/pytector) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
+| [Rail Score Js](https://github.com/Responsible-AI-Labs/rail-score-js) | MIT | TypeScript | partial | none | none | none | none | 3/5 |
+| [Rail Score Sdk](https://github.com/Responsible-AI-Labs/rail-score-sdk) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [Rebuff](https://github.com/protectai/rebuff) | Apache-2.0 | Python | partial | none | none | partial | partial | 3/5 |
+| [Responsible AI Toolbox](https://github.com/microsoft/responsible-ai-toolbox) | MIT | TypeScript | none | none | none | none | none | 3/5 |
+| [Responsible AI Workshop](https://github.com/microsoft/responsible-ai-workshop) | CC-BY-4.0 | Jupyter Notebook | none | none | none | none | none | 3/5 |
+| [Rstructor](https://github.com/clifton/rstructor) | MIT | Rust | none | none | none | partial | none | 3/5 |
+| [Safe Zone](https://github.com/thyrisAI/safe-zone) | Apache-2.0 | Go | partial | none | none | none | none | 3/5 |
 | [SafeDecoding](https://github.com/uw-nsl/SafeDecoding) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [SECA](https://github.com/Buyun-Liang/SECA) | MIT | Python | none | none | none | none | none | 3/5 |
+| [Sentinel AI](https://github.com/MaxwellCalkin/sentinel-ai) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
+| [Shekel](https://github.com/arieradle/shekel) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [ShieldLM](https://github.com/thu-coai/ShieldLM) | MIT | Python | partial | none | none | partial | none | 4/5 |
 | [SmoothLLM](https://github.com/arobey1/smooth-llm) | MIT | Python | partial | none | none | partial | partial | 4/5 |
+| [Sob](https://github.com/JigsawStack/sob) | MIT | Python | none | none | none | partial | none | 3/5 |
+| [Structured Outputs](https://github.com/thedataquarry/structured-outputs) | MIT | Python | none | none | none | partial | none | 3/5 |
+| [Supra Wall](https://github.com/wiserautomation/SupraWall) | Apache-2.0 | TypeScript | partial | none | none | none | none | 3/5 |
+| [Swing Skills](https://github.com/TheStack-ai/swing-skills) | MIT | Multiple | none | none | none | none | none | 3/5 |
 | [TokenCost](https://github.com/AgentOps-AI/tokencost) | MIT | Python | none | none | none | none | none | 4/5 |
+| [Trident](https://github.com/StyrbjornKall/TRIDENT) | MIT | Jupyter Notebook | none | none | none | none | none | 3/5 |
 | [TrustLLM](https://github.com/HowieHwong/TrustLLM) | Apache-2.0 | Python | none | none | none | none | partial | 4/5 |
+| [Trust Loop Guard](https://github.com/ducnguyen67201/TrustLoopGuard) | Apache-2.0 | HTML | partial | none | none | none | none | 3/5 |
 | [TypeChat](https://github.com/microsoft/TypeChat) | MIT | TypeScript | none | none | partial | native | none | 4/5 |
+| [Uqlm](https://github.com/cvs-health/uqlm) | Apache-2.0 | Python | none | none | none | none | none | 3/5 |
+| [Vibeguard](https://github.com/majiayu000/vibeguard) | MIT | Shell | none | none | none | none | none | 3/5 |
 | [Vigil](https://github.com/deadbits/vigil-llm) | Apache-2.0 | Python | partial | none | none | partial | partial | 4/5 |
 | [WildGuard](https://github.com/allenai/wildguard) | Apache-2.0 | Python | partial | none | none | partial | none | 4/5 |
 | [XGrammar](https://github.com/mlc-ai/xgrammar) | Apache-2.0 | C++ | none | none | partial | native | none | 4/5 |
+| [Yaicli](https://github.com/belingud/yaicli) | Apache-2.0 | Python | none | none | none | partial | none | 3/5 |
 
 Component coverage values: `native` | `aligned` | `partial` | `none`. Definitions in `docs/five-component-overlay.md`.
 

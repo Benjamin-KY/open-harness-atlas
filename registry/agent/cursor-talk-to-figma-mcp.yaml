@@ -1,0 +1,27 @@
+id: cursor-talk-to-figma-mcp
+name: Cursor Talk To Figma MCP
+category: agent
+subcategory: agentic
+repo_url: https://github.com/grab/cursor-talk-to-figma-mcp
+homepage: https://www.figma.com/community/plugin/1485687494525374295/cursor-talk-to-figma-mcp-plugin
+license: MIT
+primary_language: JavaScript
+tagline: 'TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code) and Figma, allowing Agentic AI to communicate with Figma for reading designs and modifying them programmatically.'
+description: |-
+  Cursor Talk To Figma MCP — TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code) and Figma, allowing Agentic AI to communicate with Figma for reading designs and modifying them programmatically. Upstream maintainer: grab.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: grab
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: grab (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- kaibanjs
+- langgraph
+- openagent
+- ragaai-catalyst
+- rlinf

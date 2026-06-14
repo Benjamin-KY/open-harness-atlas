@@ -1,0 +1,27 @@
+id: anvil
+name: Anvil
+category: redteam
+subcategory: adversarial-ml
+repo_url: https://github.com/Ganglet/Anvil
+homepage: https://ganglet.github.io/Anvil/
+license: MIT
+primary_language: Python
+tagline: 'Autonomous ML red-teaming pipeline: attacks any PyTorch model with FGSM/PGD/Patch/Semantic strategies, clusters failure modes via UMAP+HDBSCAN, explains each vulnerability using a RAG-grounded Lang...'
+description: |-
+  Anvil — Autonomous ML red-teaming pipeline: attacks any PyTorch model with FGSM/PGD/Patch/Semantic strategies, clusters failure modes via UMAP+HDBSCAN, explains each vulnerability using a RAG-grounded LangGraph agent (Gemini 2.5 Flash + FAISS), patches autonomously with a safety gate, and generates a professional PDF audit report. Zero human decisions. Upstream maintainer: Ganglet.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: Ganglet
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Ganglet (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- automated-adversial-testing-framework
+- dvai
+- genai-security-literature-review
+- journey-to-red-team
+- pyrit

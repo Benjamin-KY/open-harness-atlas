@@ -1,0 +1,27 @@
+id: llm-jailbreak-taxonomy
+name: LLM Jailbreak Taxonomy
+category: redteam
+subcategory: adversarial-ml
+repo_url: https://github.com/zakky8/llm-jailbreak-taxonomy
+homepage: https://zakky8.github.io/llm-jailbreak-taxonomy/
+license: MIT
+primary_language: Jupyter Notebook
+tagline: Mechanism-grounded taxonomy of 40 LLM jailbreak patterns across 10 categories.
+description: |-
+  LLM Jailbreak Taxonomy — Mechanism-grounded taxonomy of 40 LLM jailbreak patterns across 10 categories. 8,000-trial bootstrap evaluation for the June 2026 frontier (Claude Opus 4-8, GPT-5.5, Gemini 3.5, DeepSeek V4). Every citation direct-WebFetch verified; refuted claims documented. Upstream maintainer: zakky8.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: zakky8
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: zakky8 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- memory-poisoning-persistence
+- ml-security-papers
+- pyrit
+- wraith-challenges
+- yaramint

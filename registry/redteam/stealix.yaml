@@ -1,0 +1,24 @@
+id: stealix
+name: Stealix
+category: redteam
+subcategory: model-stealing
+repo_url: https://github.com/boschresearch/stealix
+homepage: https://zhixiongzh.github.io/stealix/
+license: AGPL-3.0-only
+primary_language: Python
+tagline: 'Official implementation of "Stealix: Model Stealing via Prompt Evolution" (ICML 2025)'
+description: |-
+  Stealix — Official implementation of "Stealix: Model Stealing via Prompt Evolution" (ICML 2025). Upstream maintainer: boschresearch.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: institution
+  name: boschresearch
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: boschresearch (institution-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ai-security-labs
+- pyrit

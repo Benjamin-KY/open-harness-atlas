@@ -1,0 +1,26 @@
+id: guizang-ppt-skill
+name: Guizang Ppt Skill
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/op7418/guizang-ppt-skill
+license: AGPL-3.0-only
+primary_language: HTML
+tagline: 'AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime.'
+description: |-
+  Guizang Ppt Skill — AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime. Upstream maintainer: op7418.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: op7418
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: op7418 (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ii-agent
+- insforge
+- intentkit
+- jido
+- langgraph

@@ -1,0 +1,27 @@
+id: ag-ui
+name: Ag Ui
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/ag-ui-protocol/ag-ui
+homepage: https://ag-ui.com
+license: MIT
+primary_language: Python
+tagline: 'AG-UI: the Agent-User Interaction Protocol.'
+description: |-
+  Ag Ui — AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications. Upstream maintainer: ag-ui-protocol.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: ag-ui-protocol
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: ag-ui-protocol (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- agent
+- agent-reach
+- agent-s
+- agents
+- langgraph

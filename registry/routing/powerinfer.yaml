@@ -1,0 +1,26 @@
+id: powerinfer
+name: Power Infer
+category: routing
+subcategory: inference-server
+repo_url: https://github.com/Tiiny-AI/PowerInfer
+license: MIT
+primary_language: C++
+tagline: High-speed Large Language Model Serving for Local Deployment
+description: |-
+  Power Infer — High-speed Large Language Model Serving for Local Deployment. Upstream maintainer: Tiiny-AI.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: company
+  name: Tiiny-AI
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Tiiny-AI (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- sie
+- spiceai
+- vllm-qwen
+- xllm

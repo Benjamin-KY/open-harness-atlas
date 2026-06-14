@@ -1,0 +1,24 @@
+id: quantum-free-router
+name: Quantum Free Router
+category: routing
+subcategory: llm-router
+repo_url: https://github.com/spacepirate15/quantum-free-router
+license: MIT
+primary_language: Shell
+tagline: Zero-cost LLM routing across free-tier model APIs with Bifrost, certification scripts, and agent-ready fallback chains
+description: |-
+  Quantum Free Router — Zero-cost LLM routing across free-tier model APIs with Bifrost, certification scripts, and agent-ready fallback chains. Upstream maintainer: spacepirate15.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: spacepirate15
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: spacepirate15 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- clawrouter
+- litellm
+- routectl

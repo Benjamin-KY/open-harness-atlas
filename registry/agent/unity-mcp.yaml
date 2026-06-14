@@ -1,0 +1,27 @@
+id: unity-mcp
+name: Unity MCP
+category: agent
+subcategory: mcp
+repo_url: https://github.com/CoplayDev/unity-mcp
+homepage: https://www.coplay.dev
+license: MIT
+primary_language: C#
+tagline: Unity MCP acts as a bridge between AI assistants and your Unity Editor.
+description: |-
+  Unity MCP — Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity. Upstream maintainer: CoplayDev.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: CoplayDev
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: CoplayDev (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- assetopsbench
+- firecrawl-mcp-server
+- ghidra-mcp
+- langgraph
+- xcodebuildmcp

@@ -1,0 +1,27 @@
+id: nadirclaw
+name: Nadir Claw
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/NadirRouter/NadirClaw
+homepage: https://getnadir.com
+license: MIT
+primary_language: Python
+tagline: Open-source LLM router & AI cost optimizer.
+description: |-
+  Nadir Claw — Open-source LLM router & AI cost optimizer. Routes simple prompts to cheap/local models, complex ones to premium — automatically. Drop-in OpenAI-compatible proxy for Claude Code, Codex, Cursor, OpenClaw. Saves 40-70% on AI API costs. Self-hosted, no middleman. Upstream maintainer: NadirRouter.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: community
+  name: NadirRouter
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: NadirRouter (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- a3m-router
+- litellm
+- opencode-models-discovery
+- otoroshi-llm-extension
+- windsurfapi

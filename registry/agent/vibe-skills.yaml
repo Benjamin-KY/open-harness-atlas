@@ -1,0 +1,26 @@
+id: vibe-skills
+name: Vibe Skills
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/foryourhealth111-pixel/Vibe-Skills
+license: Apache-2.0
+primary_language: Python
+tagline: Vibe-Skills is an all-in-one AI skills package.
+description: |-
+  Vibe Skills — Vibe-Skills is an all-in-one AI skills package. It seamlessly integrates expert-level capabilities and context management into a general-purpose skills package， enabling any AI agent to instantly upgrade its functionality—eliminating the friction of fragmented tools and complex harnesses. Upstream maintainer: foryourhealth111-pixel.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: foryourhealth111-pixel
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: foryourhealth111-pixel (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- aigc-interview-book
+- aionui
+- anthropic-cybersecurity-skills
+- antigravity-awesome-skills
+- langgraph

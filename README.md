@@ -9,7 +9,7 @@ routing — and free education resources.*
 [![License: Apache 2.0](https://img.shields.io/badge/code-Apache--2.0-blue?style=flat-square)](LICENSE)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-d68910?style=flat-square)](LICENSE-DOCS)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue?style=flat-square)](pyproject.toml)
-[![Entries: 313](https://img.shields.io/badge/entries-313-1f3a5f?style=flat-square)](docs/)
+[![Entries: 804](https://img.shields.io/badge/entries-804-1f3a5f?style=flat-square)](docs/)
 [![OSI-licensed](https://img.shields.io/badge/license_filter-OSI_only-28a745?style=flat-square)](GOVERNANCE.md)
 
 ---
@@ -18,7 +18,7 @@ routing — and free education resources.*
 
 > 🌐 **[Open the 3D interactive knowledge graph →](https://benjamin-ky.github.io/open-harness-atlas/)**
 >
-> 313 nodes · 1,224 adjacency edges · WebGL 3D view (drag to orbit, scroll to
+> 804 nodes · 3,338 adjacency edges · WebGL 3D view (drag to orbit, scroll to
 > zoom), live search, faceted filters, BFS path finder, curated tours,
 > particle-flow edges, dark canvas, deep-linkable. Prefer the classic 2D
 > layout? **[Open the 2D viewer →](https://benjamin-ky.github.io/open-harness-atlas/2d.html)**
@@ -26,16 +26,19 @@ routing — and free education resources.*
 >
 > Both views are auto-generated from `registry/*/*.yaml` and re-deployed on every push to `main`.
 
-![open-harness-atlas — 313-node, 1,224-edge knowledge graph](visuals/graph.svg)
+![open-harness-atlas — 804-node, 3,338-edge knowledge graph](visuals/graph.svg)
 
 *Node colour = category. Node size = degree (how many neighbours the entry has in the graph). Edge = explicit `adjacent_to` declaration. Force-directed layout; clusters are not hand-drawn — they fall out of the data.*
 
 ---
 
-> ⚠ **Pre-release (v0.1.0-dev).** Registry holds **313 entries** across
-> six categories (governance 46 · agent 79 · eval 76 · redteam 44 ·
-> routing 32 · education 36) — the catalog has been expanded by systematic
-> discovery across awesome-lists (`corca-ai/awesome-llm-security`,
+> ⚠ **Pre-release (v0.1.0-dev).** Registry holds **804 entries** across
+> six categories (governance 106 · agent 249 · eval 206 · redteam 101 ·
+> routing 92 · education 50) — the v0.2.0 expansion added 491 entries
+> via the systematic GitHub-topic-discovery harness in
+> [`scripts/discovery/`](scripts/discovery/) (deterministic, reproducible,
+> no from-memory shortlists). The v0.1.0 seed (313 entries) was curated
+> from awesome-lists (`corca-ai/awesome-llm-security`,
 > `tensorchord/awesome-llmops`, `e2b-dev/awesome-ai-agents`,
 > `yueliu1999/Awesome-Jailbreak-on-LLMs`, `onejune2018/awesome-llm-eval`,
 > and others), GitHub topic searches (`llm-evaluation`, `ai-gateway`,

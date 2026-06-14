@@ -1,0 +1,27 @@
+id: lorax
+name: Lorax
+category: routing
+subcategory: inference-server
+repo_url: https://github.com/predibase/lorax
+homepage: https://loraexchange.ai
+license: Apache-2.0
+primary_language: Python
+tagline: Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs
+description: |-
+  Lorax — Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs. Upstream maintainer: predibase.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: community
+  name: predibase
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: predibase (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- ome
+- omlx
+- powerinfer
+- sie

@@ -1,0 +1,26 @@
+id: lightagent
+name: Light Agent
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/wanxingai/LightAgent
+license: Apache-2.0
+primary_language: Python
+tagline: 'LightAgent: Lightweight AI agent framework with memory, mcp & skill.'
+description: |-
+  Light Agent — LightAgent: Lightweight AI agent framework with memory, mcp & skill. Supports multi-agent collaboration, self-learning, and major LLMs (OpenAI/DeepSeek/Qwen). Open-source with MCP/SSE protocol integration. Upstream maintainer: wanxingai.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: wanxingai
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: wanxingai (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- ruflo
+- sre
+- tabularis
+- tribe

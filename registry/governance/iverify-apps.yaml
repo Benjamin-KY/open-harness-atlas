@@ -1,0 +1,28 @@
+id: iverify-apps
+name: I Verify Apps
+category: governance
+subcategory: hate-speech-detection
+repo_url: https://github.com/undp/iVerify-Apps
+license: AGPL-3.0-only
+primary_language: TypeScript
+tagline: 'iVerify Apps: Apps that support the AI-powered iVerify platform to combat misinformation and hate speech'
+description: |-
+  I Verify Apps — iVerify Apps: Apps that support the AI-powered iVerify platform to combat misinformation and hate speech. Upstream maintainer: undp.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: undp
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: undp (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai

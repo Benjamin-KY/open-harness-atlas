@@ -1,0 +1,26 @@
+id: llmbench
+name: LLM Bench
+category: eval
+subcategory: benchmark
+repo_url: https://github.com/AnkitNayak-eth/llmBench
+license: MIT
+primary_language: Python
+tagline: llmBench is a high-depth benchmarking tool designed to measure the raw performance of local LLM runtimes (Ollama, llama.cpp) while providing deep hardware intelligence.
+description: |-
+  LLM Bench — llmBench is a high-depth benchmarking tool designed to measure the raw performance of local LLM runtimes (Ollama, llama.cpp) while providing deep hardware intelligence. Upstream maintainer: AnkitNayak-eth.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: AnkitNayak-eth
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: AnkitNayak-eth (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- lm-evaluation-harness
+- myclaw-bench
+- neuroguard
+- openclaw-llm-bench
+- otter

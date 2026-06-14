@@ -1,0 +1,26 @@
+id: otter
+name: Otter
+category: eval
+subcategory: benchmark
+repo_url: https://github.com/GalenChen320/Otter
+license: Apache-2.0
+primary_language: Python
+tagline: An agent evaluation framework with native multi-turn feedback iteration.
+description: |-
+  Otter — An agent evaluation framework with native multi-turn feedback iteration. Upstream maintainer: GalenChen320.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: GalenChen320
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: GalenChen320 (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- agent-arena
+- lm-evaluation-harness
+- seci
+- tau2-bench
+- weird-ai-test-museum

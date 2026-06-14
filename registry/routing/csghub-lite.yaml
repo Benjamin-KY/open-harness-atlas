@@ -1,0 +1,26 @@
+id: csghub-lite
+name: Csghub Lite
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/OpenCSGs/csghub-lite
+license: Apache-2.0
+primary_language: Go
+tagline: csghub-lite is a lightweight local LLM runner for the CSGHub platform.
+description: |-
+  Csghub Lite — csghub-lite is a lightweight local LLM runner for the CSGHub platform. One command downloads, loads, and chats with models. It ships a web UI, OpenAI-compatible API, llama.cpp inference, resumable downloads, marketplace browsing, and one-click AI app and coding-agent setup—all in a single cross-platform binary. Upstream maintainer: OpenCSGs.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: OpenCSGs
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: OpenCSGs (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- llmio
+- lmeterx
+- nyro
+- omniroute

@@ -1,0 +1,23 @@
+id: row-bot
+name: Row Bot
+category: agent
+subcategory: react-agent
+repo_url: https://github.com/siddsachar/row-bot
+homepage: https://row-bot.ai
+license: Apache-2.0
+primary_language: Python
+tagline: Row-Bot - Personal AI Sovereignty.
+description: |-
+  Row Bot — Row-Bot - Personal AI Sovereignty. A local-first AI assistant with integrated tools, a personal knowledge graph, voice, vision, shell, browser automation, scheduled tasks, health tracking, and messaging channels. Run locally via Ollama or add opt-in cloud models. Your data stays on your machine. Upstream maintainer: siddsachar.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: siddsachar
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: siddsachar (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph

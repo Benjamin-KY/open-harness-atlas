@@ -1,0 +1,27 @@
+id: flock
+name: Flock
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/hadihonarvar/flock
+homepage: https://flockllm.com
+license: Apache-2.0
+primary_language: Go
+tagline: Self-hosted LLM gateway.
+description: |-
+  Flock — Self-hosted LLM gateway. One Go binary turns your Macs and Linux boxes into a private inference cluster — multi-machine routing, sharding via llama.cpp-RPC, per-user keys + quotas + audit, OpenAI- and Anthropic-compatible APIs behind one endpoint. Point Cursor / Claude Code / Aider / SDKs at it. Upstream maintainer: hadihonarvar.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: hadihonarvar
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: hadihonarvar (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- gomodel
+- litellm
+- opencode-llm-proxy
+- routerly
+- smarterrouter

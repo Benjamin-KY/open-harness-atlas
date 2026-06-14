@@ -1,0 +1,27 @@
+id: windsurfapi
+name: Windsurf API
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/dwgx/WindsurfAPI
+homepage: https://dwgx.github.io/WindsurfAPI/
+license: MIT
+primary_language: JavaScript
+tagline: Windsurf OpenAI-compatible and Anthropic-compatible LLM API proxy
+description: |-
+  Windsurf API — Windsurf OpenAI-compatible and Anthropic-compatible LLM API proxy. Upstream maintainer: dwgx.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: community
+  name: dwgx
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: dwgx (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- bitrouter
+- edgee
+- freellmpool
+- litellm
+- llm-router

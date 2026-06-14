@@ -1,0 +1,27 @@
+id: py-xiaozhi
+name: Py Xiaozhi
+category: agent
+subcategory: mcp-client
+repo_url: https://github.com/huangjunsen0406/py-xiaozhi
+homepage: https://huangjunsen0406.github.io/py-xiaozhi/
+license: MIT
+primary_language: Python
+tagline: Open-source AI assistant ecosystem with MCP integrations, multimodal workflows, IoT support, and cross-platform voice interaction.
+description: |-
+  Py Xiaozhi — Open-source AI assistant ecosystem with MCP integrations, multimodal workflows, IoT support, and cross-platform voice interaction. Upstream maintainer: huangjunsen0406.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: huangjunsen0406
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: huangjunsen0406 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- aiaw
+- archestra
+- deepchat
+- dive
+- langgraph

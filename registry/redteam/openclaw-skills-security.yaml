@@ -1,0 +1,23 @@
+id: openclaw-skills-security
+name: Openclaw Skills Security
+category: redteam
+subcategory: ai-safety
+repo_url: https://github.com/UseAI-pro/openclaw-skills-security
+homepage: https://useclaw.pro
+license: MIT
+primary_language: Python
+tagline: Curated, security-first OpenClaw skills (Markdown-based).
+description: |-
+  Openclaw Skills Security — Curated, security-first OpenClaw skills (Markdown-based). Security audit skills - detect prompt injection, supply chain attacks, credential leaks. Works with Codex CLI, Claude Code, any LLM. Upstream maintainer: UseAI-pro.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: UseAI-pro
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: UseAI-pro (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- pyrit

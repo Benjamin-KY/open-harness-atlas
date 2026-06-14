@@ -1,0 +1,27 @@
+id: plandex
+name: Plandex
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/plandex-ai/plandex
+homepage: https://plandex.ai
+license: MIT
+primary_language: Go
+tagline: Open source AI coding agent.
+description: |-
+  Plandex — Open source AI coding agent. Designed for large projects and real world tasks. Upstream maintainer: plandex-ai.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: plandex-ai
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: plandex-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- 9router
+- langgraph
+- voltagent
+- wanwu
+- web-ui

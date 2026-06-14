@@ -1,0 +1,26 @@
+id: llm-prompt-injection-tester
+name: LLM Prompt Injection Tester
+category: redteam
+subcategory: adversarial-ml
+repo_url: https://github.com/Azcerate/llm-prompt-injection-tester
+license: MIT
+primary_language: Python
+tagline: Reproducible prompt-injection and jailbreak defense scoring for LLMs, mapped to MITRE ATLAS.
+description: |-
+  LLM Prompt Injection Tester — Reproducible prompt-injection and jailbreak defense scoring for LLMs, mapped to MITRE ATLAS. Upstream maintainer: Azcerate.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: Azcerate
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Azcerate (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- llm-watermark-robustness
+- memory-poisoning-persistence
+- ml-security-papers
+- pyrit
+- wraith-challenges

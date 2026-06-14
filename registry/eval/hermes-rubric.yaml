@@ -1,0 +1,27 @@
+id: hermes-rubric
+name: Hermes Rubric
+category: eval
+subcategory: llm-judge
+repo_url: https://github.com/hermes-labs-ai/hermes-rubric
+homepage: https://hermes-labs.ai
+license: MIT
+primary_language: Python
+tagline: 'Evidence-first structured scoring for AI artifacts: synthesize a rubric, collect citations, score only against quoted evidence, hedge on thin evidence.'
+description: |-
+  Hermes Rubric — Evidence-first structured scoring for AI artifacts: synthesize a rubric, collect citations, score only against quoted evidence, hedge on thin evidence. Every dimension ties to a file:line or quote, with reproducibility receipts. For papers, PRs, prompts, and emails where a defensible LLM-backed score beats a headline number. 7 backends. Upstream maintainer: hermes-labs-ai.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: company
+  name: hermes-labs-ai
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: hermes-labs-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- juryeval
+- llm-eval-ci
+- lm-evaluation-harness
+- mental-health-llm-eval
+- mini-omega-lock

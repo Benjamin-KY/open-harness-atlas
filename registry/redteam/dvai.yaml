@@ -1,0 +1,27 @@
+id: dvai
+name: Dvai
+category: redteam
+subcategory: adversarial-ml
+repo_url: https://github.com/bb1nfosec/dvai
+homepage: https://dvai-red.vercel.app/
+license: MIT
+primary_language: TypeScript
+tagline: DVAI - Damn Vulnerable AI Ecosystem.
+description: |-
+  Dvai — DVAI - Damn Vulnerable AI Ecosystem. Open-source, zero-infrastructure-cost AI red team training range. Upstream maintainer: bb1nfosec.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: bb1nfosec
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: bb1nfosec (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- memory-poisoning-persistence
+- ml-security-papers
+- pyrit
+- wraith-challenges
+- yaramint

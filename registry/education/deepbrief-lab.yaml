@@ -1,0 +1,28 @@
+id: deepbrief-lab
+name: Deepbrief Lab
+category: education
+subcategory: agent-tutorial
+repo_url: https://github.com/zyziyun/deepbrief-lab
+license: MIT
+primary_language: Python
+tagline: Build Your Own Deep Research — a 9-notebook student lab covering MCP, A2A, multi-agent, and HITL agent patterns
+description: |-
+  Deepbrief Lab — Build Your Own Deep Research — a 9-notebook student lab covering MCP, A2A, multi-agent, and HITL agent patterns. Upstream maintainer: zyziyun.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+maturity: beta
+maintainer:
+  type: community
+  name: zyziyun
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: zyziyun (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+education_resources:
+- title: Deepbrief Lab repository
+  url: https://github.com/zyziyun/deepbrief-lab
+  type: docs
+  free: true
+adjacent_to:
+- harmless-harnesses
+- learn-hermes-agent

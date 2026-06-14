@@ -1,0 +1,24 @@
+id: ai-security-labs
+name: AI Security LABS
+category: redteam
+subcategory: model-stealing
+repo_url: https://github.com/alekhakumarswain/AI-SECURITY-LABS
+homepage: https://ai-security-labs.vercel.app
+license: MIT
+primary_language: HTML
+tagline: An advanced, interactive educational platform focused on AI system vulnerabilities, attack vectors, and offensive security methodologies.
+description: |-
+  AI Security LABS — An advanced, interactive educational platform focused on AI system vulnerabilities, attack vectors, and offensive security methodologies. [Prompt Injection, Model Evasion, Data Poisoning, Agent Hijacking]. Upstream maintainer: alekhakumarswain.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: alekhakumarswain
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: alekhakumarswain (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- pyrit
+- stealix

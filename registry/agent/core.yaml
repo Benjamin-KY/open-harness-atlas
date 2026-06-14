@@ -1,0 +1,27 @@
+id: core
+name: Core
+category: agent
+subcategory: browser-agent
+repo_url: https://github.com/cheshire-cat-ai/core
+homepage: https://cheshirecat.ai
+license: GPL-3.0-only
+primary_language: Python
+tagline: AI agent microservice
+description: |-
+  Core — AI agent microservice. Upstream maintainer: cheshire-cat-ai.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: cheshire-cat-ai
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: cheshire-cat-ai (company-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- deepresearch
+- fara
+- langgraph
+- turix-cua
+- ui-tars-desktop

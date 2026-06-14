@@ -1,0 +1,26 @@
+id: claude-code-game-studios
+name: Claude Code Game Studios
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/Donchitos/Claude-Code-Game-Studios
+license: MIT
+primary_language: Shell
+tagline: Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.
+description: |-
+  Claude Code Game Studios — Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. Upstream maintainer: Donchitos.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: Donchitos
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Donchitos (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- deepseek-reasonix
+- deeptutor
+- ecc
+- edict
+- langgraph

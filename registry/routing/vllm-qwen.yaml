@@ -1,0 +1,26 @@
+id: vllm-qwen
+name: Vllm Qwen
+category: routing
+subcategory: inference-server
+repo_url: https://github.com/hec-ovi/vllm-qwen
+license: Unlicense
+primary_language: Python
+tagline: vLLM + Qwen3.6-27B (BF16) OpenAI-compatible inference server on AMD Strix Halo (Ryzen AI Max+ 395, gfx1151).
+description: |-
+  Vllm Qwen — vLLM + Qwen3.6-27B (BF16) OpenAI-compatible inference server on AMD Strix Halo (Ryzen AI Max+ 395, gfx1151). Vision input, 256K context, /v1/responses with separated reasoning, via TheRock ROCm. Upstream maintainer: hec-ovi.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: hec-ovi
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: hec-ovi (community-maintained); OSS core is The Unlicense and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- flashinfer
+- goinfer
+- litellm
+- llm-server
+- xllm

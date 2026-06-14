@@ -1,0 +1,26 @@
+id: burstgpt
+name: Burst GPT
+category: routing
+subcategory: serving
+repo_url: https://github.com/HPMLL/BurstGPT
+license: CC-BY-4.0
+primary_language: Python
+tagline: A ChatGPT(GPT-3.5) & GPT-4 Workload Trace to Optimize LLM Serving Systems
+description: |-
+  Burst GPT — A ChatGPT(GPT-3.5) & GPT-4 Workload Trace to Optimize LLM Serving Systems. Upstream maintainer: HPMLL.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: community
+  name: HPMLL
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: HPMLL (community-maintained); OSS core is Creative Commons Attribution 4.0 International and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- openinfer
+- parallax
+- powerserve
+- rtp-llm

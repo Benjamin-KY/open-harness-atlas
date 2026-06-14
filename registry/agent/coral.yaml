@@ -1,0 +1,27 @@
+id: coral
+name: CORAL
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/Human-Agent-Society/CORAL
+homepage: https://docs.coralxyz.com
+license: Apache-2.0
+primary_language: Python
+tagline: CORAL is a robust, lightweight infrastructure for multi-agent autonomous self-evolution, built for autoresearch.
+description: |-
+  CORAL — CORAL is a robust, lightweight infrastructure for multi-agent autonomous self-evolution, built for autoresearch. Works with Claude Code, Codex, Cursor, OpenCode, Kiro, and more. Upstream maintainer: Human-Agent-Society.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: Human-Agent-Society
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Human-Agent-Society (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- hermes-webui
+- hexstrike-ai
+- hive
+- holmesgpt
+- langgraph

@@ -54,3 +54,8 @@ visuals/**/*.png
 
 # Node / docs tooling (if added later)
 node_modules/
+
+# Discovery intermediate artifacts (regenerable from gh search; the curated
+# JSONL IS kept as the deterministic input to generate_entries.py).
+scripts/discovery/candidates.raw.jsonl
+scripts/discovery/candidates.dedup.jsonl

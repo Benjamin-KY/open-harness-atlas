@@ -1,0 +1,27 @@
+id: neo
+name: Neo
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/neomjs/neo
+homepage: https://neomjs.com
+license: MIT
+primary_language: JavaScript
+tagline: 'Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and sel...'
+description: |-
+  Neo — Neo.mjs is a self-evolving software organism: a professional end-to-end AI engineering team whose cross-model swarm inhabits live apps via Neural Link, Active Hybrid GraphRAG, DreamService, and self-healing loops. Upstream maintainer: neomjs.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: neomjs
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: neomjs (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- ouroboros
+- page-agent
+- plandex
+- planning-with-files

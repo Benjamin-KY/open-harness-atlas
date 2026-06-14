@@ -1,0 +1,27 @@
+id: routerly
+name: Routerly
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/Inebrio/Routerly
+homepage: https://www.routerly.ai/
+license: AGPL-3.0-only
+primary_language: TypeScript
+tagline: Self-hosted LLM gateway that routes requests across AI providers (OpenAI, Anthropic, Gemini, Mistral, Ollama) using intelligent multi-policy scoring — including an LLM-native routing policy.
+description: |-
+  Routerly — Self-hosted LLM gateway that routes requests across AI providers (OpenAI, Anthropic, Gemini, Mistral, Ollama) using intelligent multi-policy scoring — including an LLM-native routing policy. Drop-in compatible: just swap the base URL. No database required, built-in cost tracking, budget enforcement and multi-tenant isolation. Upstream maintainer: Inebrio.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: Inebrio
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: Inebrio (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ai-worker-proxy
+- apisix
+- aqbot
+- litellm
+- smarterrouter

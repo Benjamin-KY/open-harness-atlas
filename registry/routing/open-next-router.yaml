@@ -1,0 +1,26 @@
+id: open-next-router
+name: Open Next Router
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/r9s-ai/open-next-router
+license: MIT
+primary_language: Go
+tagline: A lightweight, DSL-driven LLM gateway for routing, patching provider quirks, and normalizing APIs across channels
+description: |-
+  Open Next Router — A lightweight, DSL-driven LLM gateway for routing, patching provider quirks, and normalizing APIs across channels. Upstream maintainer: r9s-ai.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: company
+  name: r9s-ai
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: r9s-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- a3m-router
+- litellm
+- opencode-models-discovery
+- otoroshi-llm-extension
+- windsurfapi

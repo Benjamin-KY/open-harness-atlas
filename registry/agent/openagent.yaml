@@ -1,0 +1,27 @@
+id: openagent
+name: Openagent
+category: agent
+subcategory: agentic
+repo_url: https://github.com/the-open-agent/openagent
+homepage: https://www.openagentai.org/
+license: Apache-2.0
+primary_language: Go
+tagline: '️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org'
+description: |-
+  Openagent — ️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org. Upstream maintainer: the-open-agent.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: the-open-agent
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: the-open-agent (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- ragaai-catalyst
+- rlinf
+- valuecell
+- zeroclaw

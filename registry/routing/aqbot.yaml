@@ -1,0 +1,27 @@
+id: aqbot
+name: Aqbot
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/AQBot-Desktop/AQBot
+homepage: https://app.aqbot.top
+license: AGPL-3.0-only
+primary_language: TypeScript
+tagline: ️ 轻量级高性能跨平台AI对话 + AI网关桌面客户端 | Lightweight, high-performance cross-platform AI dialogue + AI gateway desktop client
+description: |-
+  Aqbot — ️ 轻量级高性能跨平台AI对话 + AI网关桌面客户端 | Lightweight, high-performance cross-platform AI dialogue + AI gateway desktop client. Upstream maintainer: AQBot-Desktop.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: community
+  name: AQBot-Desktop
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: AQBot-Desktop (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- llmio
+- lmeterx
+- nyro
+- omniroute

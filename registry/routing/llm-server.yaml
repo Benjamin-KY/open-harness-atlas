@@ -1,0 +1,26 @@
+id: llm-server
+name: LLM Server
+category: routing
+subcategory: inference-server
+repo_url: https://github.com/raketenkater/llm-server
+license: MIT
+primary_language: Go
+tagline: Auto-tuned launcher for GGUF models on llama.cpp / ik_llama.cpp — OpenAI-compatible server with multi-GPU tensor-split, MoE expert placement, measured flag tuning (AI Tune), hardware-matched Huggin...
+description: |-
+  LLM Server — Auto-tuned launcher for GGUF models on llama.cpp / ik_llama.cpp — OpenAI-compatible server with multi-GPU tensor-split, MoE expert placement, measured flag tuning (AI Tune), hardware-matched HuggingFace downloads, and crash recovery. An Ollama alternative for multi-GPU rigs. Upstream maintainer: raketenkater.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: community
+  name: raketenkater
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: raketenkater (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- lorax
+- tiny-vllm
+- vllm-qwen
+- xllm

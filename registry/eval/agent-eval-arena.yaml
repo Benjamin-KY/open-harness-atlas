@@ -1,0 +1,26 @@
+id: agent-eval-arena
+name: Agent Eval Arena
+category: eval
+subcategory: llm-eval
+repo_url: https://github.com/mizcausevic-dev/agent-eval-arena
+license: MIT
+primary_language: TypeScript
+tagline: Agent and LLM evaluation harness — golden datasets, multi-scorer execution, regression detection across model versions, cost-quality leaderboards, and CI gates for model promotion.
+description: |-
+  Agent Eval Arena — Agent and LLM evaluation harness — golden datasets, multi-scorer execution, regression detection across model versions, cost-quality leaderboards, and CI gates for model promotion. Upstream maintainer: mizcausevic-dev.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: mizcausevic-dev
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: mizcausevic-dev (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- benchjack
+- eval
+- eval-ai-library
+- eval-resume
+- lm-evaluation-harness

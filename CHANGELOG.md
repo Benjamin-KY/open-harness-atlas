@@ -6,6 +6,54 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — Phase 2 (registry expansion to 804 entries)
+
+- **+491 registry entries** (governance +60 · agent +170 · eval +130 ·
+  redteam +57 · routing +60 · education +14) via the new
+  `scripts/discovery/` curation harness — taking the catalog from
+  313 → **804** entries (governance 106 · agent 249 · eval 206 ·
+  redteam 101 · routing 92 · education 50).
+- `scripts/discovery/` — systematic, reproducible candidate-discovery
+  pipeline (NOT from-memory shortlists):
+  - `existing_ids.py` snapshots every catalogued id for dedupe.
+  - `search_github.py` sweeps a planned topic matrix (≈ 90 GitHub topics
+    across the 6 in-scope categories) via `gh search repos`; filters
+    archived / non-OSI / >18-month-old; emits `candidates.dedup.jsonl`.
+  - `curate_candidates.py` applies an AI-context regex per category
+    plus an out-of-scope deny-list (per `GOVERNANCE.md` §8: pure RAG
+    cores, observability stacks, vector DBs, off-domain ML benchmarks,
+    cybersecurity tooling without LLM context, awesome-list aggregators,
+    etc.). Per-category caps land the total at ≈ 500.
+  - `generate_entries.py` emits schema-valid YAMLs with conservative
+    defaults (`model_agnostic_score=3`, `harness_paradigm_alignment=partial`,
+    governance `five_component_coverage` all `none` unless the description
+    explicitly proves a `partial` posture). Auto-generated
+    `sovereignty_notes` carry a "conservative auto-curated default —
+    refine on first manual README review" flag.
+  - `add_adjacencies.py` cross-links each new entry to up to 4 siblings
+    in the same (category, subcategory) bucket plus one well-known
+    category anchor, ensuring the new entries land inside the main
+    connected component of the knowledge graph (now 804 nodes, 3,338 edges).
+- README and visuals updated for the new entry count.
+- Regenerated `visuals/graph.svg`, `visuals/graph.png`,
+  `visuals/graph-data.json`, `visuals/model-agnostic-spectrum.svg`,
+  and the six per-category matrices under `docs/`.
+
+### Phase 2 notes
+
+- The committed `scripts/discovery/candidates.curated.jsonl` is the
+  deterministic input that pairs with this batch of generated entries.
+  Re-running discovery on a different date will produce a different
+  candidate set (GitHub stars / topics drift).
+- Strict OSI-license filter retained: every new entry has an SPDX
+  identifier mapped from GitHub's reported `license.key`.
+- Maturity inferred from upstream signals (`alpha` / `beta` / `ga`).
+- Conservative scoring throughout: `model_agnostic_score=3` is the median
+  default; `=4` only when the description explicitly states multi-provider
+  / OpenAI-compatible. Manual upgrades welcome via PR.
+
+## [Unreleased — Phase 1 (v0.1.0-dev seed, retained below)]
+
 ### Added
 - Initial repository skeleton: directory layout, dual licensing
   (Apache-2.0 code + CC BY-SA 4.0 content), `pyproject.toml`, `Makefile`,

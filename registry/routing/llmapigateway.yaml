@@ -1,0 +1,26 @@
+id: llmapigateway
+name: Llmapi Gateway
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/fabiojbg/LLMApiGateway
+license: MIT
+primary_language: Python
+tagline: A personal LLM gateway with fault-tolerant capabilities for calls to LLM models from any provider with OpenAI-compatible APIs.
+description: |-
+  Llmapi Gateway — A personal LLM gateway with fault-tolerant capabilities for calls to LLM models from any provider with OpenAI-compatible APIs. Advanced features like retry, model sequencing, and body parameter injection are also available. Especially useful to work with AI coders like Cline and RooCode and providers like OpenRouter. Upstream maintainer: fabiojbg.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: fabiojbg
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: fabiojbg (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- lm-proxy
+- local-ai-toolkit
+- model-flux
+- nadirclaw

@@ -1,0 +1,32 @@
+id: localmod
+name: Localmod
+category: governance
+subcategory: content-moderation
+repo_url: https://github.com/KOKOSde/localmod
+license: MIT
+primary_language: Python
+tagline: Self-hosted content moderation API that outperforms Amazon Comprehend.
+description: |-
+  Localmod — Self-hosted content moderation API that outperforms Amazon Comprehend. 100% offline, your data never leaves your server. Text + Image moderation. Upstream maintainer: KOKOSde.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: KOKOSde
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: KOKOSde (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- banned-words
+- guardrails-ai
+- moderator
+- pytector
+- rail-score-js

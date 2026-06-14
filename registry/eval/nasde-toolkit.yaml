@@ -1,0 +1,27 @@
+id: nasde-toolkit
+name: Nasde Toolkit
+category: eval
+subcategory: agent-eval
+repo_url: https://github.com/NoesisVision/nasde-toolkit
+homepage: https://noesis.vision/nasde/
+license: MIT
+primary_language: Python
+tagline: CLI for benchmarks & evals of AI coding agents — on tasks you already understand, using your Claude / Codex / Gemini individual subscriptions or API keys.
+description: |-
+  Nasde Toolkit — CLI for benchmarks & evals of AI coding agents — on tasks you already understand, using your Claude / Codex / Gemini individual subscriptions or API keys. Upstream maintainer: NoesisVision.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: NoesisVision
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: NoesisVision (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- lm-evaluation-harness
+- oh-my-knowledge
+- openagentbench
+- pandaprobe
+- patent-creator

@@ -1,0 +1,27 @@
+id: atmosphere
+name: Atmosphere
+category: agent
+subcategory: agentic
+repo_url: https://github.com/Atmosphere/atmosphere
+homepage: https://async-io.live
+license: Apache-2.0
+primary_language: Java
+tagline: Real-time transport layer for Java AI agents.
+description: |-
+  Atmosphere — Real-time transport layer for Java AI agents. Build once with @Agent — deliver over WebSocket, SSE, gRPC, and WebTransport/HTTP3. Talk MCP, A2A and AG-UI. Upstream maintainer: Atmosphere.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: Atmosphere
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Atmosphere (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- everos
+- hindsight
+- kaibanjs
+- langgraph
+- openagent

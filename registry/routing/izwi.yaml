@@ -1,0 +1,23 @@
+id: izwi
+name: Izwi
+category: routing
+subcategory: openai-compatible
+repo_url: https://github.com/izwi-ai/izwi
+homepage: https://www.izwiai.com
+license: MIT
+primary_language: Rust
+tagline: Voice AI runtime.
+description: |-
+  Izwi — Voice AI runtime. Local first transcription, speaker diarization, TTS, and voice cloning with an OpenAI compatible API. Upstream maintainer: izwi-ai.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: company
+  name: izwi-ai
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: izwi-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm

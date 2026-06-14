@@ -1,0 +1,26 @@
+id: smarterrouter
+name: Smarter Router
+category: routing
+subcategory: ai-gateway
+repo_url: https://github.com/peva3/SmarterRouter
+license: MIT
+primary_language: Python
+tagline: 'SmarterRouter: An intelligent LLM gateway and VRAM-aware router for Ollama, llama.cpp, and OpenAI.'
+description: |-
+  Smarter Router — SmarterRouter: An intelligent LLM gateway and VRAM-aware router for Ollama, llama.cpp, and OpenAI. Features semantic caching, model profiling, and automatic failover for local AI labs. Upstream maintainer: peva3.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: peva3
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: peva3 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- atidraw
+- coai
+- csghub-lite
+- flock
+- litellm

@@ -1,0 +1,31 @@
+id: shannon-b1
+name: Shannon B1
+category: education
+subcategory: from-scratch
+repo_url: https://github.com/Oringes9235/Shannon-b1
+homepage: https://repo.xuefengpeng.com/Shannon
+license: MIT
+primary_language: Python
+tagline: A large language model built from scratch using NumPy.
+description: |-
+  Shannon B1 — A large language model built from scratch using NumPy. Currently, it is in the initial stage of the development process using numpy. Upstream maintainer: Oringes9235.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+maturity: beta
+maintainer:
+  type: community
+  name: Oringes9235
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Oringes9235 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+education_resources:
+- title: Shannon B1 repository
+  url: https://github.com/Oringes9235/Shannon-b1
+  type: docs
+  free: true
+adjacent_to:
+- harmless-harnesses
+- mini-llm
+- pytorch-transformer-from-scratch
+- transformer-pytorch-scratch

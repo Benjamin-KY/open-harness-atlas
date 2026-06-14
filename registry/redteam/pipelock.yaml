@@ -1,0 +1,27 @@
+id: pipelock
+name: Pipelock
+category: redteam
+subcategory: ai-security
+repo_url: https://github.com/luckyPipewrench/pipelock
+homepage: https://pipelab.org
+license: Apache-2.0
+primary_language: Go
+tagline: Open-source AI agent firewall for MCP security and agent egress.
+description: |-
+  Pipelock — Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent. Upstream maintainer: luckyPipewrench.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: ga
+maintainer:
+  type: community
+  name: luckyPipewrench
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: luckyPipewrench (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- adrian
+- prompt-guard
+- pyrit
+- redairange
+- securemcp

@@ -1,0 +1,27 @@
+id: trpc-agent-go
+name: Trpc Agent Go
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/trpc-group/trpc-agent-go
+homepage: https://trpc-group.github.io/trpc-agent-go/
+license: Apache-2.0
+primary_language: Go
+tagline: A Go framework for building production agent systems with graph workflows, tools, memory, A2A, AG-UI, MCP, evaluation, and observability.
+description: |-
+  Trpc Agent Go — A Go framework for building production agent systems with graph workflows, tools, memory, A2A, AG-UI, MCP, evaluation, and observability. Upstream maintainer: trpc-group.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: trpc-group
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: trpc-group (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- 9router
+- ag-ui
+- agency-agents-zh
+- langgraph
+- web-ui

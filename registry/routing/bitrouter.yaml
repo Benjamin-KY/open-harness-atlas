@@ -1,0 +1,27 @@
+id: bitrouter
+name: Bitrouter
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/bitrouter/bitrouter
+homepage: https://bitrouter.ai
+license: Apache-2.0
+primary_language: Rust
+tagline: An open-source LLM router that optimize your agent for cost and performance — with every run.
+description: |-
+  Bitrouter — An open-source LLM router that optimize your agent for cost and performance — with every run. Upstream maintainer: bitrouter.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: bitrouter
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: bitrouter (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- edgee
+- litellm
+- opencode-models-discovery
+- otoroshi-llm-extension
+- windsurfapi

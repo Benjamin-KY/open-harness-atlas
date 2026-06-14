@@ -1,0 +1,27 @@
+id: eval-dev-quality
+name: Eval Dev Quality
+category: eval
+subcategory: eval-framework
+repo_url: https://github.com/symflower/eval-dev-quality
+homepage: https://symflower.com/en/company/blog/2025/dev-quality-eval-v1.0-anthropic-s-claude-3.7-sonnet-is-the-king-with-help-and-deepseek-r1-disappoints/
+license: MIT
+primary_language: Go
+tagline: 'DevQualityEval: An evaluation benchmark and framework to compare and evolve the quality of code generation of LLMs.'
+description: |-
+  Eval Dev Quality — DevQualityEval: An evaluation benchmark and framework to compare and evolve the quality of code generation of LLMs. Upstream maintainer: symflower.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: symflower
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: symflower (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- lm-evaluation-harness
+- skill-optimizer
+- swt-bench
+- turtle
+- vero-eval

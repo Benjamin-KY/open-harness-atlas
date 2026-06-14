@@ -1,0 +1,29 @@
+id: responsible-ai-toolbox
+name: Responsible AI Toolbox
+category: governance
+subcategory: explainability
+repo_url: https://github.com/microsoft/responsible-ai-toolbox
+homepage: https://responsibleaitoolbox.ai/
+license: MIT
+primary_language: TypeScript
+tagline: Responsible AI Toolbox is a suite of tools providing model and data exploration and assessment user interfaces and libraries that enable a better understanding of AI systems.
+description: |-
+  Responsible AI Toolbox — Responsible AI Toolbox is a suite of tools providing model and data exploration and assessment user interfaces and libraries that enable a better understanding of AI systems. These interfaces and libraries empower developers and stakeholders of AI systems to develop and monitor AI more responsibly, and take better data-driven actions. Upstream maintainer: microsoft.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: ga
+maintainer:
+  type: institution
+  name: microsoft
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: microsoft (institution-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai

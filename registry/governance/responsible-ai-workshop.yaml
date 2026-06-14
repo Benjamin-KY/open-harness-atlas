@@ -1,0 +1,28 @@
+id: responsible-ai-workshop
+name: Responsible AI Workshop
+category: governance
+subcategory: fairness
+repo_url: https://github.com/microsoft/responsible-ai-workshop
+license: CC-BY-4.0
+primary_language: Jupyter Notebook
+tagline: 'Responsible AI Workshop: a series of tutorials & walkthroughs to illustrate how put responsible AI into practice'
+description: |-
+  Responsible AI Workshop — Responsible AI Workshop: a series of tutorials & walkthroughs to illustrate how put responsible AI into practice. Upstream maintainer: microsoft.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: institution
+  name: microsoft
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: microsoft (institution-maintained); OSS core is Creative Commons Attribution 4.0 International and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai

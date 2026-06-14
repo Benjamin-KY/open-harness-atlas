@@ -1,0 +1,27 @@
+id: dagu
+name: Dagu
+category: agent
+subcategory: agent-workflow
+repo_url: https://github.com/dagucloud/dagu
+homepage: https://dagu.sh
+license: GPL-3.0-only
+primary_language: Go
+tagline: Local-first workflow engine with a Web UI for small teams.
+description: |-
+  Dagu — Local-first workflow engine with a Web UI for small teams. Define DAGs in a declarative YAML format. Self-contained and no DBMS required. Use any AI agent to manage your DAGs. Upstream maintainer: dagucloud.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: dagucloud
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: dagucloud (community-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- sim
+- solace-agent-mesh
+- swarms
+- zeroshot

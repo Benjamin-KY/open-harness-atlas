@@ -1,0 +1,26 @@
+id: pdf-prompt-injection-toolkit
+name: PDF Prompt Injection Toolkit
+category: redteam
+subcategory: llm-security
+repo_url: https://github.com/zhihuiyuze/PDF-Prompt-Injection-Toolkit
+license: MIT
+primary_language: Python
+tagline: A red team / blue team toolkit for testing and detecting prompt injection attacks hidden inside PDF documents.
+description: |-
+  PDF Prompt Injection Toolkit — A red team / blue team toolkit for testing and detecting prompt injection attacks hidden inside PDF documents. 一个用于测试和检测 PDF 文档中隐藏的提示词注入攻击的红蓝对抗工具包。. Upstream maintainer: zhihuiyuze.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: zhihuiyuze
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: zhihuiyuze (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- pyrit
+- rag-security-scanner
+- redforge-ai
+- spikee
+- www-project-llm-verification-standard

@@ -1,0 +1,30 @@
+id: mini-llm
+name: Mini LLM
+category: education
+subcategory: from-scratch
+repo_url: https://github.com/07Codex07/Mini_LLM
+license: MIT
+primary_language: Python
+tagline: Building a complete LLM from scratch.
+description: |-
+  Mini LLM — Building a complete LLM from scratch. No libraries. No shortcuts. Just NumPy, math, and first principles. Upstream maintainer: 07Codex07.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+maturity: beta
+maintainer:
+  type: community
+  name: 07Codex07
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 07Codex07 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+education_resources:
+- title: Mini LLM repository
+  url: https://github.com/07Codex07/Mini_LLM
+  type: docs
+  free: true
+adjacent_to:
+- harmless-harnesses
+- pytorch-transformer-from-scratch
+- shannon-b1
+- transformer-pytorch-scratch

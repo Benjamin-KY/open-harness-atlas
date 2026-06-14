@@ -1,0 +1,27 @@
+id: oh-my-knowledge
+name: Oh My Knowledge
+category: eval
+subcategory: agent-eval
+repo_url: https://github.com/lizhiyao/oh-my-knowledge
+homepage: https://www.npmjs.com/package/oh-my-knowledge
+license: MIT
+primary_language: TypeScript
+tagline: Evaluation framework for LLM knowledge inputs — prompts, RAG corpora, skills, agent workflows.
+description: |-
+  Oh My Knowledge — Evaluation framework for LLM knowledge inputs — prompts, RAG corpora, skills, agent workflows. Fix the model, vary the artifact. Built-in statistical rigor: bootstrap CI, Krippendorff α, length-debias, saturation curves. Upstream maintainer: lizhiyao.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: lizhiyao
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: lizhiyao (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- adarubrics
+- lm-evaluation-harness
+- sral-framework
+- statebind-guard
+- trellm

@@ -1,0 +1,27 @@
+id: ecc
+name: ECC
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/affaan-m/ECC
+homepage: https://ecc.tools
+license: MIT
+primary_language: JavaScript
+tagline: The agent harness performance optimization system.
+description: |-
+  ECC — The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. Upstream maintainer: affaan-m.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: affaan-m
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: affaan-m (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- ouroboros
+- page-agent
+- plandex
+- planning-with-files

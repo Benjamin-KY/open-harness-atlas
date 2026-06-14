@@ -1,0 +1,33 @@
+id: suprawall
+name: Supra Wall
+category: governance
+subcategory: guardrails
+repo_url: https://github.com/wiserautomation/SupraWall
+homepage: https://supra-wall.com
+license: Apache-2.0
+primary_language: TypeScript
+tagline: The open-source security layer for AI agents.
+description: |-
+  Supra Wall — The open-source security layer for AI agents. Deterministic guardrails, PII redaction, and EU AI Act compliance in one line of code. Upstream maintainer: wiserautomation.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: wiserautomation
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: wiserautomation (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- armorer
+- awesome-foundry-nextgen
+- guardrails-ai
+- swing-skills
+- trustloopguard

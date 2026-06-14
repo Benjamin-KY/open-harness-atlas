@@ -1,0 +1,27 @@
+id: oh-my-pi
+name: Oh My Pi
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/can1357/oh-my-pi
+homepage: https://omp.sh
+license: MIT
+primary_language: TypeScript
+tagline: ⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more
+description: |-
+  Oh My Pi — ⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more. Upstream maintainer: can1357.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: can1357
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: can1357 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- tabularis
+- tribe
+- trpc-agent-go
+- txtai

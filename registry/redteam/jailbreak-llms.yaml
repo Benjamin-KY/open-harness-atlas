@@ -1,0 +1,27 @@
+id: jailbreak-llms
+name: Jailbreak Llms
+category: redteam
+subcategory: jailbreak
+repo_url: https://github.com/verazuo/jailbreak_llms
+homepage: https://jailbreak-llms.xinyueshen.me/
+license: MIT
+primary_language: Jupyter Notebook
+tagline: '[CCS''24] A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts).'
+description: |-
+  Jailbreak Llms — [CCS'24] A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts). Upstream maintainer: verazuo.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: ga
+maintainer:
+  type: community
+  name: verazuo
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: verazuo (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- chatgpt-jailbreak-pro
+- hacxgpt-jailbreak-prompts
+- llm-jailbreaks
+- principles-of-ai-llms
+- pyrit

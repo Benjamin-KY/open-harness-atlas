@@ -1,0 +1,25 @@
+id: mm-plan
+name: MM Plan
+category: redteam
+subcategory: red-team
+repo_url: https://github.com/yunbeizhang/MM-Plan
+homepage: https://yunbeizhang.github.io/MM-Plan/
+license: Apache-2.0
+primary_language: Python
+tagline: '[ICLRW 2026 Best Short Paper Award] Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning'
+description: |-
+  MM Plan — [ICLRW 2026 Best Short Paper Award] Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning. Upstream maintainer: yunbeizhang.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: yunbeizhang
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: yunbeizhang (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litterbox
+- pyrit
+- redamon

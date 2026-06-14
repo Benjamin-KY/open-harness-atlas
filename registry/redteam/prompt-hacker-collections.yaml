@@ -1,0 +1,27 @@
+id: prompt-hacker-collections
+name: Prompt Hacker Collections
+category: redteam
+subcategory: prompt-injection
+repo_url: https://github.com/yunwei37/prompt-hacker-collections
+homepage: https://yunwei37.github.io/prompt-hacker-collections/
+license: MIT
+primary_language: Multiple
+tagline: prompt attack-defense, prompt Injection, reverse engineering notes and examples | 提示词对抗、破解例子与笔记
+description: |-
+  Prompt Hacker Collections — prompt attack-defense, prompt Injection, reverse engineering notes and examples | 提示词对抗、破解例子与笔记. Upstream maintainer: yunwei37.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: ga
+maintainer:
+  type: community
+  name: yunwei37
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: yunwei37 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ai-red-teaming-playground-labs
+- earl
+- hermes-katana
+- pyrit
+- tensor-trust

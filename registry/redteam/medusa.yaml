@@ -1,0 +1,27 @@
+id: medusa
+name: Medusa
+category: redteam
+subcategory: ai-security
+repo_url: https://github.com/Pantheon-Security/medusa
+homepage: https://pantheonsecurity.io
+license: AGPL-3.0-only
+primary_language: Python
+tagline: AI-first security scanner with 79 analyzers, 40,000+ detection rules, and repo poisoning detection for AI/ML, LLM agents, and MCP servers.
+description: |-
+  Medusa — AI-first security scanner with 79 analyzers, 40,000+ detection rules, and repo poisoning detection for AI/ML, LLM agents, and MCP servers. Scan any GitHub repo with: medusa scan --git user/repo. Upstream maintainer: Pantheon-Security.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: ga
+maintainer:
+  type: community
+  name: Pantheon-Security
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Pantheon-Security (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- pipelock
+- prompt-guard
+- pyrit
+- redairange
+- securemcp

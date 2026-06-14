@@ -1,0 +1,26 @@
+id: principles-of-ai-llms
+name: Principles Of AI Llms
+category: redteam
+subcategory: jailbreak
+repo_url: https://github.com/dobriban/Principles-of-AI-LLMs
+license: CC0-1.0
+primary_language: Multiple
+tagline: 'Materials for the course Principles of AI: LLMs at UPenn (Stat 9911, Spring 2025).'
+description: |-
+  Principles Of AI Llms — Materials for the course Principles of AI: LLMs at UPenn (Stat 9911, Spring 2025). LLM architectures, training paradigms (pre- and post-training, alignment), test-time computation, reasoning, safety and robustness (jailbreaking, oversight, uncertainty), representations, interpretability (circuits), etc. Upstream maintainer: dobriban.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: dobriban
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: dobriban (community-maintained); OSS core is Creative Commons Zero v1.0 Universal and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- chatgpt-jailbreak-pro
+- hacxgpt-jailbreak-prompts
+- jailbreak-llms
+- llm-jailbreaks
+- pyrit

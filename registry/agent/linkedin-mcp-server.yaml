@@ -1,0 +1,26 @@
+id: linkedin-mcp-server
+name: Linkedin MCP Server
+category: agent
+subcategory: mcp
+repo_url: https://github.com/stickerdaniel/linkedin-mcp-server
+license: Apache-2.0
+primary_language: Python
+tagline: Open-source MCP server for LinkedIn.
+description: |-
+  Linkedin MCP Server — Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI agent access to profiles, companies, jobs, and messages. Upstream maintainer: stickerdaniel.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: stickerdaniel
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: stickerdaniel (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- mcp-context-forge
+- mcp-for-beginners
+- unity-mcp
+- xcodebuildmcp

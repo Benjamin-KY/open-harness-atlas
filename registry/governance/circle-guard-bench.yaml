@@ -1,0 +1,33 @@
+id: circle-guard-bench
+name: Circle Guard Bench
+category: governance
+subcategory: guardrails
+repo_url: https://github.com/whitecircle/circle-guard-bench
+homepage: https://whitecircle.ai
+license: Apache-2.0
+primary_language: Python
+tagline: First-of-its-kind AI benchmark for evaluating the protection capabilities of large language model (LLM) guard systems (guardrails and safeguards)
+description: |-
+  Circle Guard Bench — First-of-its-kind AI benchmark for evaluating the protection capabilities of large language model (LLM) guard systems (guardrails and safeguards). Upstream maintainer: whitecircle.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: whitecircle
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: whitecircle (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai
+- hortator
+- idun-agent-platform
+- lanekeep
+- openclaw-middleware-suite

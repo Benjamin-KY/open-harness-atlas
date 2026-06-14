@@ -1,0 +1,27 @@
+id: trendradar
+name: Trend Radar
+category: agent
+subcategory: mcp-host
+repo_url: https://github.com/sansan0/TrendRadar
+homepage: https://sansan0.github.io/TrendRadar/
+license: GPL-3.0-only
+primary_language: Python
+tagline: ⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.
+description: |-
+  Trend Radar — ⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts. 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 + RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 + AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。. Upstream maintainer: sansan0.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: sansan0
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: sansan0 (community-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ai-engineering-hub
+- astrbot
+- auto-claude-code-research-in-sleep
+- langgraph
+- xiaozhi-esp32

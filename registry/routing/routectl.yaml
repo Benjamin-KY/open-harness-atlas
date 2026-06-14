@@ -1,0 +1,24 @@
+id: routectl
+name: Routectl
+category: routing
+subcategory: llm-router
+repo_url: https://github.com/meepolabs/routectl
+license: MIT
+primary_language: Rust
+tagline: A local LLM router with OpenAI and Anthropic format translation, retry and fallback chains
+description: |-
+  Routectl — A local LLM router with OpenAI and Anthropic format translation, retry and fallback chains. Upstream maintainer: meepolabs.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: company
+  name: meepolabs
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: meepolabs (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- clawrouter
+- litellm
+- quantum-free-router

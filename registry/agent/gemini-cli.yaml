@@ -1,0 +1,27 @@
+id: gemini-cli
+name: Gemini Cli
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/google-gemini/gemini-cli
+homepage: https://geminicli.com
+license: Apache-2.0
+primary_language: TypeScript
+tagline: An open-source AI agent that brings the power of Gemini directly into your terminal.
+description: |-
+  Gemini Cli — An open-source AI agent that brings the power of Gemini directly into your terminal. Upstream maintainer: google-gemini.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: institution
+  name: google-gemini
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: google-gemini (institution-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- vibe-kanban
+- vibe-skills
+- vibe-trading
+- voltagent

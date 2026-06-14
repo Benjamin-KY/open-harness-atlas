@@ -1,0 +1,33 @@
+id: frai
+name: Frai
+category: governance
+subcategory: guardrails
+repo_url: https://github.com/sebuzdugan/frai
+homepage: https://frai.cc/
+license: MIT
+primary_language: JavaScript
+tagline: 'Open-source toolkit for responsible AI: CLI + SDK to scan code, collect evidence, and generate model cards, risk files, evals, and RAG indexes.'
+description: |-
+  Frai — Open-source toolkit for responsible AI: CLI + SDK to scan code, collect evidence, and generate model cards, risk files, evals, and RAG indexes. Upstream maintainer: sebuzdugan.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: sebuzdugan
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: sebuzdugan (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai
+- idun-agent-platform
+- lanekeep
+- openclaw-middleware-suite
+- ouro-loop

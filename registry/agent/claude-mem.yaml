@@ -1,0 +1,27 @@
+id: claude-mem
+name: Claude Mem
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/thedotmack/claude-mem
+homepage: https://claude-mem.ai
+license: Apache-2.0
+primary_language: JavaScript
+tagline: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.
+description: |-
+  Claude Mem — Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More. Upstream maintainer: thedotmack.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: thedotmack
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: thedotmack (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- fast-agent
+- gemini-cli
+- genericagent
+- goose
+- langgraph

@@ -1,0 +1,26 @@
+id: aichat
+name: Aichat
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/sigoden/aichat
+license: Apache-2.0
+primary_language: Rust
+tagline: All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.
+description: |-
+  Aichat — All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more. Upstream maintainer: sigoden.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: sigoden
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: sigoden (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- hermes-agent
+- hermes-webui
+- hexstrike-ai
+- hive
+- langgraph

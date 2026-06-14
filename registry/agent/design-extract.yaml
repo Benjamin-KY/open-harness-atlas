@@ -1,0 +1,27 @@
+id: design-extract
+name: Design Extract
+category: agent
+subcategory: mcp-server
+repo_url: https://github.com/Manavarya09/design-extract
+homepage: https://www.designlang.app
+license: MIT
+primary_language: JavaScript
+tagline: Extract any website's complete design system with one command.
+description: |-
+  Design Extract — Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Compose, Flutter, WordPress), Tailwind v4, Figma variables, shadcn/ui, CSS health audit, WCAG remediation, Chrome extension. MIT, Playwright, Node 20+. Upstream maintainer: Manavarya09.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: Manavarya09
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Manavarya09 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- buildwithclaude
+- deep-research
+- langgraph
+- lean-ctx
+- serena

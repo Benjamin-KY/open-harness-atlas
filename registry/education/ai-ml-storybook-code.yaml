@@ -1,0 +1,29 @@
+id: ai-ml-storybook-code
+name: AI ML Storybook Code
+category: education
+subcategory: course
+repo_url: https://github.com/TechStoriesBlog/ai-ml-storybook-code
+license: MIT
+primary_language: Python
+tagline: Official Python code examples and notebooks for the AI-ML-Storybook educational series - https://techstories.blog/pages/homecategory/artificial-intelligence/artificialintelligencestorybook.html
+description: |-
+  AI ML Storybook Code — Official Python code examples and notebooks for the AI-ML-Storybook educational series - https://techstories.blog/pages/homecategory/artificial-intelligence/artificialintelligencestorybook.html. Upstream maintainer: TechStoriesBlog.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+maturity: beta
+maintainer:
+  type: community
+  name: TechStoriesBlog
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: TechStoriesBlog (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+education_resources:
+- title: AI ML Storybook Code repository
+  url: https://github.com/TechStoriesBlog/ai-ml-storybook-code
+  type: docs
+  free: true
+adjacent_to:
+- genai-llm-bootcamp-2026
+- harmless-harnesses
+- ml-oneday-course

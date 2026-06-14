@@ -1,0 +1,27 @@
+id: agency-agents-zh
+name: Agency Agents Zh
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/jnMetaCode/agency-agents-zh
+homepage: https://github.com/jnMetaCode/agency-orchestrator
+license: MIT
+primary_language: Shell
+tagline: 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）
+description: |-
+  Agency Agents Zh — 211 个即插即用的 AI 专家角色 — 支持 Hermes Agent/Claude Code/Cursor/Copilot 等 16 种工具，覆盖工程/设计/营销/金融等 18 个部门。含 46 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉等）. Upstream maintainer: jnMetaCode.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: institution
+  name: jnMetaCode
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: jnMetaCode (institution-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ai-agents-from-scratch
+- aichat
+- aigc-interview-book
+- aionui
+- langgraph

@@ -1,0 +1,27 @@
+id: every-eval-ever
+name: Every Eval Ever
+category: eval
+subcategory: agent-eval
+repo_url: https://github.com/evaleval/every_eval_ever
+homepage: https://evalevalai.com/projects/every-eval-ever/
+license: MIT
+primary_language: Python
+tagline: Every Eval Ever is a shared schema and crowdsourced eval database.
+description: |-
+  Every Eval Ever — Every Eval Ever is a shared schema and crowdsourced eval database. It defines a standardized metadata format for storing AI evaluation results — from leaderboard scrapes and research papers to local evaluation runs — so that results from different frameworks can be compared, reproduced, and reused. Upstream maintainer: evaleval.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: evaleval
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: evaleval (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- holon-bench
+- keel
+- langeval
+- lm-evaluation-harness
+- trellm

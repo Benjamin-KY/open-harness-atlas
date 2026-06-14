@@ -1,0 +1,26 @@
+id: repoagentbench
+name: Repoagentbench
+category: eval
+subcategory: llm-eval
+repo_url: https://github.com/HumphreySun98/repoagentbench
+license: MIT
+primary_language: Python
+tagline: SWE-bench for your codebase — mine your merged PRs into local, contamination-free coding-agent benchmarks.
+description: |-
+  Repoagentbench — SWE-bench for your codebase — mine your merged PRs into local, contamination-free coding-agent benchmarks. Adapters: claude-code, aider (Opus 4.7 / GPT-5.5 / Sonnet 4.6 / Gemini 3.1 Pro). Upstream maintainer: HumphreySun98.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: HumphreySun98
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: HumphreySun98 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- agent-eval-arena
+- benchjack
+- lm-evaluation-harness
+- typescript-sdk
+- valor

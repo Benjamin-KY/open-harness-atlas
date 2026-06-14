@@ -1,0 +1,27 @@
+id: parry-guard
+name: Parry Guard
+category: redteam
+subcategory: prompt-injection
+repo_url: https://github.com/vaporif/parry-guard
+homepage: https://crates.io/crates/parry-guard
+license: MIT
+primary_language: Rust
+tagline: Prompt injection scanner for AI coding tools (Claude Code / Codex / etc).
+description: |-
+  Parry Guard — Prompt injection scanner for AI coding tools (Claude Code / Codex / etc). Runs DeBERTa/Llama transformers via Candle or ONNX in Rust. Upstream maintainer: vaporif.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: vaporif
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: vaporif (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ai-red-teaming-playground-labs
+- earl
+- prompt-hacker-collections
+- pyrit
+- tensor-trust

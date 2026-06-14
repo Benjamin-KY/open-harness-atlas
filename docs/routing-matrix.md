@@ -6,38 +6,98 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Lang | Maturity | Origin | Model-agnostic | Stars | Maintainer |
 |---|---|---|---|---|---|---|---|
+| [A3m Router](https://github.com/Das-rebel/a3m-router) | MIT | TypeScript | beta | — | 3/5 | — | Das-rebel |
+| [Agentgate AI](https://github.com/dengmengmian/agentgate-ai) | MIT | Rust | beta | — | 3/5 | — | dengmengmian |
+| [AI API](https://github.com/timcsy/ai-api) | MIT | Python | beta | — | 4/5 | — | timcsy |
+| [AI Worker Proxy](https://github.com/zxcloli666/AI-Worker-Proxy) | MIT | TypeScript | beta | — | 4/5 | — | zxcloli666 |
 | [aisuite](https://github.com/andrewyng/aisuite) | MIT | Python | beta | US | 4/5 | — | Andrew Ng (and contributors) |
 | [Apache APISIX](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 5/5 | — | Apache Software Foundation |
 | [apfel](https://github.com/Arthur-Ficial/apfel) | MIT | Swift | alpha | US | 5/5 | — | Arthur-Ficial |
+| [Apisix](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 3/5 | — | apache |
+| [Aqbot](https://github.com/AQBot-Desktop/AQBot) | AGPL-3.0-only | TypeScript | ga | — | 3/5 | — | AQBot-Desktop |
+| [Aqueduct](https://github.com/TU-Wien-dataLAB/aqueduct) | BSD-3-Clause | Python | beta | — | 3/5 | — | TU-Wien-dataLAB |
+| [Atidraw](https://github.com/atinux/atidraw) | MIT | Vue | ga | — | 3/5 | — | atinux |
+| [Bitrouter](https://github.com/bitrouter/bitrouter) | Apache-2.0 | Rust | beta | — | 3/5 | — | bitrouter |
+| [Burst GPT](https://github.com/HPMLL/BurstGPT) | CC-BY-4.0 | Python | ga | — | 3/5 | — | HPMLL |
+| [Claude Code Usage Bar](https://github.com/leeguooooo/claude-code-usage-bar) | MIT | Python | ga | — | 3/5 | — | leeguooooo |
+| [Claw Router](https://github.com/BlockRunAI/ClawRouter) | MIT | TypeScript | ga | — | 3/5 | — | BlockRunAI |
+| [Coai](https://github.com/coaidev/coai) | Apache-2.0 | TypeScript | ga | — | 3/5 | — | coaidev |
+| [Csghub Lite](https://github.com/OpenCSGs/csghub-lite) | Apache-2.0 | Go | beta | — | 4/5 | — | OpenCSGs |
 | [DeepSpeed-MII](https://github.com/deepspeedai/DeepSpeed-MII) | Apache-2.0 | Python | beta | US | 4/5 | — | Microsoft DeepSpeed team |
+| [Edgee](https://github.com/edgee-ai/edgee) | Apache-2.0 | Rust | beta | — | 3/5 | — | edgee-ai |
 | [Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway) | Apache-2.0 | Go | beta | — | 4/5 | — | Envoy Project (CNCF Sandbox) |
 | [exo](https://github.com/exo-explore/exo) | Apache-2.0 | Python | beta | US | 5/5 | — | exo-explore |
 | [FastChat](https://github.com/lm-sys/FastChat) | Apache-2.0 | Python | beta | US | 5/5 | — | lm-sys (LMSYS / UC Berkeley) |
+| [Flashinfer](https://github.com/flashinfer-ai/flashinfer) | Apache-2.0 | Python | ga | — | 3/5 | — | flashinfer-ai |
+| [Flock](https://github.com/hadihonarvar/flock) | Apache-2.0 | Go | beta | — | 4/5 | — | hadihonarvar |
+| [Freellmpool](https://github.com/0xzr/freellmpool) | MIT | Python | beta | — | 4/5 | — | 0xzr |
+| [Goinfer](https://github.com/lynxai-team/goinfer) | MIT | Go | beta | — | 3/5 | — | lynxai-team |
+| [Go Model](https://github.com/ENTERPILOT/GoModel) | MIT | Go | ga | — | 4/5 | — | ENTERPILOT |
 | [Helicone](https://github.com/Helicone/helicone) | Apache-2.0 | TypeScript | ga | US | 4/5 | — | Helicone Inc. |
+| [Higress](https://github.com/higress-group/higress) | Apache-2.0 | Go | ga | — | 3/5 | — | higress-group |
+| [Izwi](https://github.com/izwi-ai/izwi) | MIT | Rust | ga | — | 4/5 | — | izwi-ai |
 | [Jan](https://github.com/janhq/jan) | Apache-2.0 | TypeScript | beta | VN | 5/5 | — | Menlo Research (janhq) |
 | [kgateway](https://github.com/kgateway-dev/kgateway) | Apache-2.0 | Go | ga | US | 4/5 | — | kgateway-dev (ex-Solo.io) |
 | [Kong](https://github.com/Kong/kong) | Apache-2.0 | Lua | ga | US | 4/5 | — | Kong Inc. |
 | [LiteLLM](https://github.com/BerriAI/litellm) | MIT | Python | ga | US | 5/5 | — | BerriAI |
 | [llama.cpp](https://github.com/ggml-org/llama.cpp) | MIT | C++ | ga | BG | 5/5 | — | ggml-org (Georgi Gerganov) |
+| [LLM Router](https://github.com/radlab-dev-group/llm-router) | Apache-2.0 | Python | beta | — | 3/5 | — | radlab-dev-group |
+| [LLM Server](https://github.com/raketenkater/llm-server) | MIT | Go | ga | — | 4/5 | — | raketenkater |
+| [Llmapi Gateway](https://github.com/fabiojbg/LLMApiGateway) | MIT | Python | beta | — | 4/5 | — | fabiojbg |
+| [Llmio](https://github.com/atopos31/llmio) | MIT | TypeScript | ga | — | 3/5 | — | atopos31 |
+| [Lm Proxy](https://github.com/Nayjest/lm-proxy) | MIT | Python | beta | — | 4/5 | — | Nayjest |
 | [LMDeploy](https://github.com/InternLM/lmdeploy) | Apache-2.0 | Python | ga | CN | 5/5 | — | Shanghai AI Lab (InternLM) |
+| [Lmeter X](https://github.com/MigoXLab/LMeterX) | Apache-2.0 | Python | beta | — | 3/5 | — | MigoXLab |
+| [Local AI Toolkit](https://github.com/wa91h/local-ai-toolkit) | MIT | Go Template | beta | — | 3/5 | — | wa91h |
 | [LocalAI](https://github.com/mudler/LocalAI) | MIT | Go | ga | IT | 5/5 | — | mudler (Ettore Di Giacinto) |
+| [Lorax](https://github.com/predibase/lorax) | Apache-2.0 | Python | ga | — | 3/5 | — | predibase |
 | [MLC-LLM](https://github.com/mlc-ai/mlc-llm) | Apache-2.0 | Python | beta | US | 4/5 | — | MLC-AI (Tianqi Chen) |
 | [MLflow AI Gateway](https://github.com/mlflow/mlflow) | Apache-2.0 | Python | ga | US | 5/5 | — | Databricks / Linux Foundation |
+| [Model Flux](https://github.com/dabao-yi/model-flux) | MIT | TypeScript | beta | — | 4/5 | — | dabao-yi |
+| [Nadir Claw](https://github.com/NadirRouter/NadirClaw) | MIT | Python | ga | — | 4/5 | — | NadirRouter |
 | [New API](https://github.com/QuantumNous/new-api) | AGPL-3.0 | Go | beta | CN | 5/5 | — | QuantumNous / Calcium-Ion |
+| [Nyro](https://github.com/nyroway/nyro) | Apache-2.0 | Rust | beta | — | 3/5 | — | nyroway |
 | [Ollama](https://github.com/ollama/ollama) | MIT | Go | ga | US | 5/5 | — | ollama |
+| [Ome](https://github.com/ome-projects/ome) | Apache-2.0 | Go | ga | — | 4/5 | — | ome-projects |
+| [Omlx](https://github.com/jundot/omlx) | Apache-2.0 | Python | ga | — | 3/5 | — | jundot |
+| [Omni Route](https://github.com/diegosouzapw/OmniRoute) | MIT | TypeScript | ga | — | 3/5 | — | diegosouzapw |
 | [One API](https://github.com/songquanpeng/one-api) | MIT | Go | beta | CN | 5/5 | — | Song Jinlang |
+| [Open Next Router](https://github.com/r9s-ai/open-next-router) | MIT | Go | beta | — | 3/5 | — | r9s-ai |
+| [Opencode LLM Proxy](https://github.com/KochC/opencode-llm-proxy) | MIT | JavaScript | beta | — | 3/5 | — | KochC |
+| [Opencode Models Discovery](https://github.com/yuhp/opencode-models-discovery) | MIT | TypeScript | beta | — | 4/5 | — | yuhp |
+| [Openinfer](https://github.com/openinfer-project/openinfer) | Apache-2.0 | Rust | ga | — | 3/5 | — | openinfer-project |
 | [OpenLLM](https://github.com/bentoml/OpenLLM) | Apache-2.0 | Python | ga | US | 5/5 | — | BentoML |
+| [Otoroshi LLM Extension](https://github.com/cloud-apim/otoroshi-llm-extension) | Apache-2.0 | Scala | beta | — | 4/5 | — | cloud-apim |
+| [Parallax](https://github.com/GradientHQ/parallax) | Apache-2.0 | Python | ga | — | 3/5 | — | GradientHQ |
 | [Plano](https://github.com/katanemo/plano) | Apache-2.0 | Rust | beta | US | 4/5 | — | katanemo |
 | [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) | MIT | TypeScript | ga | US | 5/5 | — | Portkey AI |
+| [Power Infer](https://github.com/Tiiny-AI/PowerInfer) | MIT | C++ | ga | — | 3/5 | — | Tiiny-AI |
+| [Power Serve](https://github.com/powerserve-project/PowerServe) | Apache-2.0 | C++ | beta | — | 3/5 | — | powerserve-project |
+| [Quantum Free Router](https://github.com/spacepirate15/quantum-free-router) | MIT | Shell | beta | — | 3/5 | — | spacepirate15 |
+| [Qwen Gate](https://github.com/youssefvdel/qwen-gate) | MIT | TypeScript | beta | — | 4/5 | — | youssefvdel |
 | [RamaLama](https://github.com/containers/ramalama) | MIT | Python | beta | US | 4/5 | — | Red Hat / containers org |
+| [Routectl](https://github.com/meepolabs/routectl) | MIT | Rust | beta | — | 3/5 | — | meepolabs |
 | [RouteLLM](https://github.com/lm-sys/RouteLLM) | Apache-2.0 | Python | beta | US | 5/5 | — | LMSYS Org |
+| [Routerly](https://github.com/Inebrio/Routerly) | AGPL-3.0-only | TypeScript | beta | — | 4/5 | — | Inebrio |
+| [Rtp LLM](https://github.com/alibaba/rtp-llm) | Apache-2.0 | Cuda | ga | — | 3/5 | — | alibaba |
+| [Serve Gen](https://github.com/alibaba/ServeGen) | Apache-2.0 | Python | beta | — | 3/5 | — | alibaba |
+| [Serverless LLM](https://github.com/ServerlessLLM/ServerlessLLM) | Apache-2.0 | Python | ga | — | 3/5 | — | ServerlessLLM |
 | [SGLang](https://github.com/sgl-project/sglang) | Apache-2.0 | Python | ga | US | 5/5 | — | sgl-project |
 | [Shimmy](https://github.com/Michael-A-Kuykendall/shimmy) | Apache-2.0 | Rust | alpha | US | 5/5 | — | Michael Kuykendall |
+| [Sie](https://github.com/superlinked/sie) | Apache-2.0 | Python | ga | — | 3/5 | — | superlinked |
 | [LLM (CLI)](https://github.com/simonw/llm) | Apache-2.0 | Python | ga | GB | 5/5 | — | Simon Willison |
+| [Smarter Router](https://github.com/peva3/SmarterRouter) | MIT | Python | beta | — | 4/5 | — | peva3 |
+| [Spiceai](https://github.com/spiceai/spiceai) | Apache-2.0 | Rust | ga | — | 3/5 | — | spiceai |
 | [text-generation-webui](https://github.com/oobabooga/textgen) | AGPL-3.0 | Python | ga | US | 5/5 | — | oobabooga |
+| [Tiny Vllm](https://github.com/jmaczan/tiny-vllm) | Apache-2.0 | C++ | ga | — | 4/5 | — | jmaczan |
+| [Tokligence Gateway](https://github.com/tokligence/tokligence-gateway) | Apache-2.0 | Go | beta | — | 4/5 | — | tokligence |
+| [Vllm Qwen](https://github.com/hec-ovi/vllm-qwen) | Unlicense | Python | beta | — | 4/5 | — | hec-ovi |
 | [vLLM](https://github.com/vllm-project/vllm) | Apache-2.0 | Python | ga | US | 5/5 | — | vllm-project (Berkeley) |
 | [WebLLM](https://github.com/mlc-ai/web-llm) | Apache-2.0 | TypeScript | beta | US | 5/5 | — | MLC-AI |
+| [Windsurf API](https://github.com/dwgx/WindsurfAPI) | MIT | JavaScript | ga | — | 4/5 | — | dwgx |
 | [Xinference](https://github.com/xorbitsai/inference) | Apache-2.0 | Python | ga | CN | 5/5 | — | Xorbits AI |
+| [Xllm](https://github.com/jd-opensource/xllm) | Apache-2.0 | C++ | ga | — | 3/5 | — | jd-opensource |
+| [Yu Ki Ko](https://github.com/dwgx/YuKiKo) | MIT | Python | beta | — | 3/5 | — | dwgx |
 
 _Generated from `registry/routing/*.yaml` (+ `registry/_metadata/*.json` if present). Run `python scripts/build_matrices.py` to refresh._
 

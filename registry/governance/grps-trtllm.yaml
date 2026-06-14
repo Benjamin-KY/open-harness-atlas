@@ -1,0 +1,32 @@
+id: grps-trtllm
+name: Grps Trtllm
+category: governance
+subcategory: structured-output
+repo_url: https://github.com/NetEase-Media/grps_trtllm
+license: Apache-2.0
+primary_language: Python
+tagline: 'Higher performance OpenAI LLM service than vLLM serve: A pure C++ high-performance OpenAI LLM service implemented with GPRS+TensorRT-LLM+Tokenizers.cpp, supporting chat and function call, AI agents...'
+description: |-
+  Grps Trtllm — Higher performance OpenAI LLM service than vLLM serve: A pure C++ high-performance OpenAI LLM service implemented with GPRS+TensorRT-LLM+Tokenizers.cpp, supporting chat and function call, AI agents, distributed multi-GPU inference, multimodal capabilities, and a Gradio chat interface. Upstream maintainer: NetEase-Media.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: NetEase-Media
+origin_country: null
+model_agnostic_score: 4
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: none
+sovereignty_notes: NetEase-Media (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai
+- outputguard
+- rstructor
+- sob
+- yaicli

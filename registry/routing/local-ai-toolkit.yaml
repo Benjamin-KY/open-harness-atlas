@@ -1,0 +1,26 @@
+id: local-ai-toolkit
+name: Local AI Toolkit
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/wa91h/local-ai-toolkit
+license: MIT
+primary_language: Go Template
+tagline: A self-hosted AI toolkit running locally via Docker Compose, bundling an LLM gateway, workflow automation, and a chat UI — all backed by a shared PostgreSQL database.
+description: |-
+  Local AI Toolkit — A self-hosted AI toolkit running locally via Docker Compose, bundling an LLM gateway, workflow automation, and a chat UI — all backed by a shared PostgreSQL database. Upstream maintainer: wa91h.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: wa91h
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: wa91h (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- model-flux
+- nadirclaw
+- open-next-router
+- opencode-models-discovery

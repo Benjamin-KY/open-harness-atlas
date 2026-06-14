@@ -1,0 +1,26 @@
+id: auto-claude-code-research-in-sleep
+name: Auto Claude Code Research In Sleep
+category: agent
+subcategory: mcp-host
+repo_url: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
+license: MIT
+primary_language: Python
+tagline: 'ARIS ️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation.'
+description: |-
+  Auto Claude Code Research In Sleep — ARIS ️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent. Upstream maintainer: wanshuiyin.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: wanshuiyin
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: wanshuiyin (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ida-pro-mcp
+- kubeshark
+- lamda
+- langgraph
+- librechat

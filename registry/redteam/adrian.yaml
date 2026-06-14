@@ -1,0 +1,27 @@
+id: adrian
+name: Adrian
+category: redteam
+subcategory: ai-security
+repo_url: https://github.com/secureagentics/Adrian
+homepage: https://app.adrian.secureagentics.ai/
+license: Apache-2.0
+primary_language: Python
+tagline: Runtime security monitoring and control for AI agents.
+description: |-
+  Adrian — Runtime security monitoring and control for AI agents. Catches malicious tool use, prompt injection, and policy drift in real time, before the agent acts. Upstream maintainer: secureagentics.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: ga
+maintainer:
+  type: community
+  name: secureagentics
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: secureagentics (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- agent-security-scanner-mcp
+- augustus
+- defender
+- medusa
+- pyrit

@@ -1,0 +1,29 @@
+id: constrained-diffusion
+name: Constrained Diffusion
+category: governance
+subcategory: constrained-decoding
+repo_url: https://github.com/eth-sri/constrained-diffusion
+homepage: https://constrained-diffusion.ai
+license: MIT
+primary_language: Rust
+tagline: Constrained Decoding of Diffusion LLMs with Context-Free Grammars.
+description: |-
+  Constrained Diffusion — Constrained Decoding of Diffusion LLMs with Context-Free Grammars. Upstream maintainer: eth-sri.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: eth-sri
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: none
+sovereignty_notes: eth-sri (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai

@@ -1,0 +1,27 @@
+id: ome
+name: Ome
+category: routing
+subcategory: inference-server
+repo_url: https://github.com/ome-projects/ome
+homepage: http://ome-projects.github.io/ome/
+license: Apache-2.0
+primary_language: Go
+tagline: Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management.
+description: |-
+  Ome — Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management. Works with SGLang, vLLM, TensorRT-LLM, and Triton. Upstream maintainer: ome-projects.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: community
+  name: ome-projects
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: ome-projects (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- spiceai
+- tiny-vllm
+- vllm-qwen
+- xllm

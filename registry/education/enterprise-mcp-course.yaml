@@ -1,0 +1,31 @@
+id: enterprise-mcp-course
+name: Enterprise MCP Course
+category: education
+subcategory: ai-engineering-course
+repo_url: https://github.com/decodingai-magazine/enterprise-mcp-course
+homepage: https://decodingml.substack.com/p/why-mcp-breaks-old-enterprise-ai
+license: MIT
+primary_language: Python
+tagline: Learn to build from scratch an AI PR reviewer integrated with GitHub, Slack and Asana that scales within your organization.
+description: |-
+  Enterprise MCP Course — Learn to build from scratch an AI PR reviewer integrated with GitHub, Slack and Asana that scales within your organization. Upstream maintainer: decodingai-magazine.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+maturity: ga
+maintainer:
+  type: community
+  name: decodingai-magazine
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: decodingai-magazine (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+education_resources:
+- title: Enterprise MCP Course repository
+  url: https://github.com/decodingai-magazine/enterprise-mcp-course
+  type: docs
+  free: true
+adjacent_to:
+- ai-engineer-roadmap
+- awesome-llm-knowledge-systems
+- harmless-harnesses
+- langchain-multi-agent-example

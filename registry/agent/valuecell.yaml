@@ -1,0 +1,27 @@
+id: valuecell
+name: Valuecell
+category: agent
+subcategory: agentic
+repo_url: https://github.com/ValueCell-ai/valuecell
+homepage: https://valuecell.ai
+license: Apache-2.0
+primary_language: Python
+tagline: ValueCell is a community-driven, multi-agent platform for financial applications.
+description: |-
+  Valuecell — ValueCell is a community-driven, multi-agent platform for financial applications. Upstream maintainer: ValueCell-ai.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: ValueCell-ai
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: ValueCell-ai (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- agentica
+- agenticseek
+- atmosphere
+- autonomous-agents
+- langgraph

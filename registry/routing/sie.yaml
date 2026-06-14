@@ -1,0 +1,27 @@
+id: sie
+name: Sie
+category: routing
+subcategory: inference-server
+repo_url: https://github.com/superlinked/sie
+homepage: https://superlinked.com
+license: Apache-2.0
+primary_language: Python
+tagline: Open-source inference server and production cluster for all the models your agent needs.
+description: |-
+  Sie — Open-source inference server and production cluster for all the models your agent needs. Upstream maintainer: superlinked.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: community
+  name: superlinked
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: superlinked (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- spiceai
+- tiny-vllm
+- vllm-qwen
+- xllm

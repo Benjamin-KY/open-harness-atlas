@@ -1,0 +1,30 @@
+id: transformer-pytorch-scratch
+name: Transformer Pytorch Scratch
+category: education
+subcategory: from-scratch
+repo_url: https://github.com/IsmaelMousa/transformer-pytorch-scratch
+license: MIT
+primary_language: Jupyter Notebook
+tagline: Implement the "Attention Is All You Need" paper from scratch using PyTorch, focusing on building a sequence-to-sequence transformer architecture for translating text from English to Italian
+description: |-
+  Transformer Pytorch Scratch — Implement the "Attention Is All You Need" paper from scratch using PyTorch, focusing on building a sequence-to-sequence transformer architecture for translating text from English to Italian. Upstream maintainer: IsmaelMousa.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+maturity: beta
+maintainer:
+  type: community
+  name: IsmaelMousa
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: IsmaelMousa (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+education_resources:
+- title: Transformer Pytorch Scratch repository
+  url: https://github.com/IsmaelMousa/transformer-pytorch-scratch
+  type: docs
+  free: true
+adjacent_to:
+- harmless-harnesses
+- mini-llm
+- pytorch-transformer-from-scratch
+- shannon-b1

@@ -1,0 +1,27 @@
+id: openfang
+name: Openfang
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/RightNow-AI/openfang
+homepage: https://www.openfang.sh/
+license: Apache-2.0
+primary_language: Rust
+tagline: Open-source Agent Operating System
+description: |-
+  Openfang — Open-source Agent Operating System. Upstream maintainer: RightNow-AI.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: RightNow-AI
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: RightNow-AI (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- planning-with-files
+- pydantic-ai
+- ralph-claude-code
+- ruflo

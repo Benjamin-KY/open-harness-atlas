@@ -6,12 +6,18 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Maintainer | Origin | Resources |
 |---|---|---|---|---|
+| [AI Engineer Roadmap](https://github.com/MuhammadIbtisam/ai-engineer-roadmap) | MIT | MuhammadIbtisam | — | [AI Engineer Roadmap repository](https://github.com/MuhammadIbtisam/ai-engineer-roadmap) |
+| [AI ML Storybook Code](https://github.com/TechStoriesBlog/ai-ml-storybook-code) | MIT | TechStoriesBlog | — | [AI ML Storybook Code repository](https://github.com/TechStoriesBlog/ai-ml-storybook-code) |
 | [Anthropic Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial) | MIT | Anthropic | US | [Anthropic Prompt Engineering Interactive Tutorial — notebooks](https://github.com/anthropics/prompt-eng-interactive-tutorial) |
+| [Awesome LLM Knowledge Systems](https://github.com/kennethlaw325/awesome-llm-knowledge-systems) | MIT | kennethlaw325 | — | [Awesome LLM Knowledge Systems repository](https://github.com/kennethlaw325/awesome-llm-knowledge-systems) |
 | [Amazon Bedrock Workshop](https://github.com/aws-samples/amazon-bedrock-workshop) | MIT-0 | AWS Samples | US | [Amazon Bedrock Workshop — source repository](https://github.com/aws-samples/amazon-bedrock-workshop) |
 | [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | MIT | DAIR.AI | — | [Prompt Engineering Guide — source repository](https://github.com/dair-ai/Prompt-Engineering-Guide) |
+| [Deepbrief Lab](https://github.com/zyziyun/deepbrief-lab) | MIT | zyziyun | — | [Deepbrief Lab repository](https://github.com/zyziyun/deepbrief-lab) |
 | [DeepMind Educational Resources](https://github.com/google-deepmind/educational) | Apache-2.0 | Google DeepMind | GB | [DeepMind Educational Resources — source repository](https://github.com/google-deepmind/educational) |
+| [Enterprise MCP Course](https://github.com/decodingai-magazine/enterprise-mcp-course) | MIT | decodingai-magazine | — | [Enterprise MCP Course repository](https://github.com/decodingai-magazine/enterprise-mcp-course) |
 | [fast.ai — Practical Deep Learning for Coders (Part 2 / course22p2)](https://github.com/fastai/course22p2) | Apache-2.0 | fast.ai | AU | [fast.ai — Part 2 course site (free videos)](https://course.fast.ai/Lessons/part2.html); [course22p2 — Source notebooks](https://github.com/fastai/course22p2) |
 | [Google Cloud Generative AI](https://github.com/GoogleCloudPlatform/generative-ai) | Apache-2.0 | Google Cloud | US | [Google Cloud Generative AI — source repository](https://github.com/GoogleCloudPlatform/generative-ai) |
+| [Genai LLM Bootcamp 2026](https://github.com/GenAI-LLMs-Bootcamp/genai-llm-bootcamp-2026) | MIT | GenAI-LLMs-Bootcamp | — | [Genai LLM Bootcamp 2026 repository](https://github.com/GenAI-LLMs-Bootcamp/genai-llm-bootcamp-2026) |
 | [Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) | Apache-2.0 | Jay Alammar + Maarten Grootendorst | US | [Hands-On Large Language Models — source repository](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) |
 | [Hands-On Machine Learning 3rd Ed.](https://github.com/ageron/handson-ml3) | Apache-2.0 | Aurelien Geron | FR | [Hands-On Machine Learning 3rd Ed. — source repository](https://github.com/ageron/handson-ml3) |
 | [The Annotated Transformer](https://github.com/harvardnlp/annotated-transformer) | MIT | Harvard NLP (Sasha Rush) | US | [The Annotated Transformer — source repository](https://github.com/harvardnlp/annotated-transformer) |
@@ -25,10 +31,15 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [nanoGPT](https://github.com/karpathy/nanoGPT) | MIT | Andrej Karpathy | US | [nanoGPT — source repository](https://github.com/karpathy/nanoGPT) |
 | [Neural Networks — Zero to Hero (Karpathy)](https://github.com/karpathy/nn-zero-to-hero) | MIT | Andrej Karpathy | US | [Neural Networks — Zero to Hero (YouTube playlist)](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ); [nn-zero-to-hero — Jupyter notebooks](https://github.com/karpathy/nn-zero-to-hero); [micrograd — Companion repo (autograd in 100 LOC)](https://github.com/karpathy/micrograd) |
 | [Annotated Deep Learning Paper Implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | MIT | labmlai | LK | [Annotated Deep Learning Paper Implementations — source repository](https://github.com/labmlai/annotated_deep_learning_paper_implementations) |
+| [Langchain Multi Agent Example](https://github.com/groovy-web/langchain-multi-agent-example) | MIT | groovy-web | — | [Langchain Multi Agent Example repository](https://github.com/groovy-web/langchain-multi-agent-example) |
+| [Learn Hermes Agent](https://github.com/longyunfeigu/learn-hermes-agent) | MIT | longyunfeigu | — | [Learn Hermes Agent repository](https://github.com/longyunfeigu/learn-hermes-agent) |
 | [Learn Prompting](https://github.com/trigaten/Learn_Prompting) | MIT | Learn Prompting Project (community-led, primary editor Sander Schulhoff) | — | [Learn Prompting (rendered site)](https://learnprompting.org/); [Learn Prompting — source repository](https://github.com/trigaten/Learn_Prompting) |
 | [Large-Language-Model-Notebooks-Course](https://github.com/peremartra/Large-Language-Model-Notebooks-Course) | MIT | Pere Martra | ES | [Large-Language-Model-Notebooks-Course — source repository](https://github.com/peremartra/Large-Language-Model-Notebooks-Course) |
+| [LLM](https://github.com/gocronx/llm) | MIT | gocronx | — | [LLM repository](https://github.com/gocronx/llm) |
 | [AI Agents for Beginners (Microsoft)](https://github.com/microsoft/ai-agents-for-beginners) | MIT | Microsoft | US | [AI Agents for Beginners (rendered course site)](https://microsoft.github.io/ai-agents-for-beginners/); [AI Agents for Beginners — source repository](https://github.com/microsoft/ai-agents-for-beginners) |
+| [Mini LLM](https://github.com/07Codex07/Mini_LLM) | MIT | 07Codex07 | — | [Mini LLM repository](https://github.com/07Codex07/Mini_LLM) |
 | [Mistral Cookbook](https://github.com/mistralai/cookbook) | MIT | Mistral AI | FR | [Mistral Cookbook — source repository](https://github.com/mistralai/cookbook) |
+| [ML One Day Course](https://github.com/gozsari/ML-OneDay-Course) | MIT | gozsari | — | [ML One Day Course repository](https://github.com/gozsari/ML-OneDay-Course) |
 | [LLM Course](https://github.com/mlabonne/llm-course) | Apache-2.0 | Maxime Labonne | FR | [LLM Course — source repository](https://github.com/mlabonne/llm-course) |
 | [Microsoft AI for Beginners](https://github.com/microsoft/AI-For-Beginners) | MIT | Microsoft | US | [Microsoft AI for Beginners — source repository](https://github.com/microsoft/AI-For-Beginners) |
 | [Microsoft Data Science for Beginners](https://github.com/microsoft/Data-Science-For-Beginners) | MIT | Microsoft | US | [Microsoft Data Science for Beginners — source repository](https://github.com/microsoft/Data-Science-For-Beginners) |
@@ -38,8 +49,11 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [NLP with Transformers (notebooks)](https://github.com/nlp-with-transformers/notebooks) | Apache-2.0 | Tunstall, von Werra, Wolf | GB | [NLP with Transformers (notebooks) — source repository](https://github.com/nlp-with-transformers/notebooks) |
 | [Pytudes (Peter Norvig)](https://github.com/norvig/pytudes) | MIT | Peter Norvig | US | [Pytudes (Peter Norvig) — source repository](https://github.com/norvig/pytudes) |
 | [OpenAI Cookbook](https://github.com/openai/openai-cookbook) | MIT | OpenAI | US | [OpenAI Cookbook (renders as a website)](https://cookbook.openai.com/); [openai-cookbook — Source notebooks on GitHub](https://github.com/openai/openai-cookbook) |
+| [Pytorch Transformer From Scratch](https://github.com/msmrexe/pytorch-transformer-from-scratch) | MIT | msmrexe | — | [Pytorch Transformer From Scratch repository](https://github.com/msmrexe/pytorch-transformer-from-scratch) |
 | [PyTorch Official Tutorials](https://github.com/pytorch/tutorials) | BSD-3-Clause | PyTorch / Meta | US | [PyTorch Official Tutorials — source repository](https://github.com/pytorch/tutorials) |
 | [Build a Large Language Model (From Scratch)](https://github.com/rasbt/LLMs-from-scratch) | Apache-2.0 | Sebastian Raschka | US | [Build a Large Language Model (From Scratch) — source repository](https://github.com/rasbt/LLMs-from-scratch) |
+| [Shannon B1](https://github.com/Oringes9235/Shannon-b1) | MIT | Oringes9235 | — | [Shannon B1 repository](https://github.com/Oringes9235/Shannon-b1) |
 | [Stanford CS336 — Language Models from Scratch](https://github.com/stanford-cs336/spring2025-lectures) | MIT | Stanford University | US | [Stanford CS336 — Course website](https://stanford-cs336.github.io/spring2025/); [Stanford CS336 — Lecture repository](https://github.com/stanford-cs336/spring2025-lectures) |
+| [Transformer Pytorch Scratch](https://github.com/IsmaelMousa/transformer-pytorch-scratch) | MIT | IsmaelMousa | — | [Transformer Pytorch Scratch repository](https://github.com/IsmaelMousa/transformer-pytorch-scratch) |
 | [Weights & Biases AI Academy](https://github.com/wandb/edu) | GPL-2.0 | Weights & Biases | US | [Weights & Biases AI Academy — source repository](https://github.com/wandb/edu) |
 

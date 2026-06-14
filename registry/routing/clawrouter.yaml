@@ -1,0 +1,24 @@
+id: clawrouter
+name: Claw Router
+category: routing
+subcategory: llm-router
+repo_url: https://github.com/BlockRunAI/ClawRouter
+license: MIT
+primary_language: TypeScript
+tagline: The agent-native LLM router for OpenClaw.
+description: |-
+  Claw Router — The agent-native LLM router for OpenClaw. 41+ models, <1ms routing, USDC payments on Base & Solana via x402. Upstream maintainer: BlockRunAI.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: ga
+maintainer:
+  type: company
+  name: BlockRunAI
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: BlockRunAI (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- quantum-free-router
+- routectl

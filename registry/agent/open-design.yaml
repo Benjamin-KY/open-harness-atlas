@@ -1,0 +1,27 @@
+id: open-design
+name: Open Design
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/nexu-io/open-design
+homepage: https://open-design.ai
+license: Apache-2.0
+primary_language: TypeScript
+tagline: Local-first, open-source Claude Design alternative.
+description: |-
+  Open Design — Local-first, open-source Claude Design alternative. ️ Native desktop app. 259+ Skills · 142+ Design Systems ️ Web · desktop · mobile prototypes · slides · images · videos · HyperFrames Sandboxed preview · HTML/PDF/PPTX/MP4 export Claude Code / OpenClaw / Codex / Cursor / OpenCode / Qwen / Copilot / Hermes / Kimi & 17+ CLIs. Upstream maintainer: nexu-io.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: beta
+maintainer:
+  type: community
+  name: nexu-io
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: nexu-io (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- vibe-kanban
+- vibe-skills
+- vibe-trading
+- voltagent

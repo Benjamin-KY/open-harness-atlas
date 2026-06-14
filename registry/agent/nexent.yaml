@@ -1,0 +1,27 @@
+id: nexent
+name: Nexent
+category: agent
+subcategory: agent-workflow
+repo_url: https://github.com/ModelEngine-Group/nexent
+homepage: https://nexent.tech
+license: MIT
+primary_language: Python
+tagline: Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feed...
+description: |-
+  Nexent — Nexent is a zero-code platform for auto-generating production-grade AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes. Upstream maintainer: ModelEngine-Group.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: ModelEngine-Group
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: ModelEngine-Group (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- sim
+- solace-agent-mesh
+- swarms
+- zeroshot

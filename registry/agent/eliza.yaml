@@ -1,0 +1,27 @@
+id: eliza
+name: Eliza
+category: agent
+subcategory: agentic
+repo_url: https://github.com/elizaOS/eliza
+homepage: https://elizaos.ai/
+license: MIT
+primary_language: TypeScript
+tagline: Open source agentic operating system
+description: |-
+  Eliza — Open source agentic operating system. Upstream maintainer: elizaOS.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: elizaOS
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: elizaOS (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- spring-ai-alibaba
+- tidb
+- valuecell
+- zeroclaw

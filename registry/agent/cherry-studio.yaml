@@ -1,0 +1,27 @@
+id: cherry-studio
+name: Cherry Studio
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/CherryHQ/cherry-studio
+homepage: https://cherryai.com
+license: AGPL-3.0-only
+primary_language: TypeScript
+tagline: AI productivity studio with smart chat, autonomous agents, and 300+ assistants.
+description: |-
+  Cherry Studio — AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs. Upstream maintainer: CherryHQ.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: CherryHQ
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: CherryHQ (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- claude-code-best-practice
+- claude-code-game-studios
+- claude-mem
+- cli
+- langgraph

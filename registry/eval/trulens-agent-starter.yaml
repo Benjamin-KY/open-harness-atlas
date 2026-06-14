@@ -1,0 +1,26 @@
+id: trulens-agent-starter
+name: Trulens Agent Starter
+category: eval
+subcategory: rag-eval
+repo_url: https://github.com/sunilp303/trulens-agent-starter
+license: MIT
+primary_language: Python
+tagline: Drop-in TruLens evaluation harness for tool-calling LangGraph agents.
+description: |-
+  Trulens Agent Starter — Drop-in TruLens evaluation harness for tool-calling LangGraph agents. Swap LLM providers (OpenAI, Anthropic via LiteLLM, Bedrock, Cortex, Gemini, Ollama) with a single env var. Ships with the RAG Triad plus Plan Quality, Plan Adherence, Execution Efficiency, and Logical Consistency metrics. Upstream maintainer: sunilp303.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+maturity: beta
+maintainer:
+  type: community
+  name: sunilp303
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: sunilp303 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- beir
+- deepeval-evaluation-harness
+- groundcheck
+- lm-evaluation-harness
+- rag-benchmarking

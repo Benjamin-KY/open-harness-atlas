@@ -1,0 +1,24 @@
+id: litterbox
+name: Litter Box
+category: redteam
+subcategory: red-team
+repo_url: https://github.com/BlackSnufkin/LitterBox
+license: GPL-3.0-only
+primary_language: YARA
+tagline: A self-hosted sandbox for red teams to test payloads against modern detection before deployment.
+description: |-
+  Litter Box — A self-hosted sandbox for red teams to test payloads against modern detection before deployment. MCP integration lets an LLM agent drive analysis end to end. Upstream maintainer: BlackSnufkin.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: ga
+maintainer:
+  type: community
+  name: BlackSnufkin
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: BlackSnufkin (community-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- mm-plan
+- pyrit
+- redamon

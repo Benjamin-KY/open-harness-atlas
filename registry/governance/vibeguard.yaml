@@ -1,0 +1,33 @@
+id: vibeguard
+name: Vibeguard
+category: governance
+subcategory: guardrails
+repo_url: https://github.com/majiayu000/vibeguard
+homepage: https://majiayu000.github.io/vibeguard/
+license: MIT
+primary_language: Shell
+tagline: Native rules, hooks, and guards that prevent Claude Code and Codex from hallucinating code, duplicating files, or shipping unverified changes.
+description: |-
+  Vibeguard — Native rules, hooks, and guards that prevent Claude Code and Codex from hallucinating code, duplicating files, or shipping unverified changes. Upstream maintainer: majiayu000.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: majiayu000
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: majiayu000 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- brigade
+- circle-guard-bench
+- clawlens
+- datafog-python
+- guardrails-ai

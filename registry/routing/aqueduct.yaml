@@ -1,0 +1,24 @@
+id: aqueduct
+name: Aqueduct
+category: routing
+subcategory: openai-compatible-proxy
+repo_url: https://github.com/TU-Wien-dataLAB/aqueduct
+homepage: https://tu-wien-datalab.github.io/aqueduct/
+license: BSD-3-Clause
+primary_language: Python
+tagline: Aqueduct is a simple yet fully-featured AI gateway built on top of the LiteLLM Router SDK using Django.
+description: |-
+  Aqueduct — Aqueduct is a simple yet fully-featured AI gateway built on top of the LiteLLM Router SDK using Django. Upstream maintainer: TU-Wien-dataLAB.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: company
+  name: TU-Wien-dataLAB
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: TU-Wien-dataLAB (company-maintained); OSS core is BSD 3-Clause "New" or "Revised" License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- yukiko

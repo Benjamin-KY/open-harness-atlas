@@ -1,0 +1,27 @@
+id: clawx
+name: Claw X
+category: agent
+subcategory: agentic
+repo_url: https://github.com/ValueCell-ai/ClawX
+homepage: https://claw-x.com
+license: MIT
+primary_language: TypeScript
+tagline: ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents.
+description: |-
+  Claw X — ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. China website is https://clawx.com.cn. Upstream maintainer: ValueCell-ai.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: ValueCell-ai
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: ValueCell-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- eliza
+- embabel-agent
+- everos
+- hindsight
+- langgraph

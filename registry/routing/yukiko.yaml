@@ -1,0 +1,23 @@
+id: yukiko
+name: Yu Ki Ko
+category: routing
+subcategory: openai-compatible-proxy
+repo_url: https://github.com/dwgx/YuKiKo
+license: MIT
+primary_language: Python
+tagline: AI QQ bot with OneBot, NapCat, LLM routing, plugins, and WebUI
+description: |-
+  Yu Ki Ko — AI QQ bot with OneBot, NapCat, LLM routing, plugins, and WebUI. Upstream maintainer: dwgx.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+maturity: beta
+maintainer:
+  type: community
+  name: dwgx
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: dwgx (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- aqueduct
+- litellm

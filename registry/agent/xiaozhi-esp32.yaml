@@ -1,0 +1,27 @@
+id: xiaozhi-esp32
+name: Xiaozhi Esp32
+category: agent
+subcategory: mcp-host
+repo_url: https://github.com/78/xiaozhi-esp32
+homepage: https://xiaozhi.me
+license: MIT
+primary_language: C++
+tagline: An MCP-based chatbot | 一个基于MCP的聊天机器人
+description: |-
+  Xiaozhi Esp32 — An MCP-based chatbot | 一个基于MCP的聊天机器人. Upstream maintainer: 78.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: '78'
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 78 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- awesome-mcp-zh
+- cc-switch
+- claude-context
+- code-review-graph
+- langgraph

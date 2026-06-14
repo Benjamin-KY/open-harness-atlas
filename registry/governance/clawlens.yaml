@@ -1,0 +1,33 @@
+id: clawlens
+name: Clawlens
+category: governance
+subcategory: guardrails
+repo_url: https://github.com/nk3750/clawlens
+homepage: https://clawhub.ai/plugins/@nk3750/openclaw-clawlens
+license: MIT
+primary_language: TypeScript
+tagline: Agent observability and guardrails for OpenClaw — risk scoring, audit trails, dashboard.
+description: |-
+  Clawlens — Agent observability and guardrails for OpenClaw — risk scoring, audit trails, dashboard. Upstream maintainer: nk3750.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+maturity: beta
+maintainer:
+  type: community
+  name: nk3750
+origin_country: null
+model_agnostic_score: 3
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none
+sovereignty_notes: nk3750 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai
+- ouro-loop
+- packmind
+- rail-score-sdk
+- safe-zone

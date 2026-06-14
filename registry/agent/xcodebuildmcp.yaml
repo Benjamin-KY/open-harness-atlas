@@ -1,0 +1,27 @@
+id: xcodebuildmcp
+name: Xcode Build MCP
+category: agent
+subcategory: mcp
+repo_url: https://github.com/getsentry/XcodeBuildMCP
+homepage: https://www.xcodebuildmcp.com
+license: MIT
+primary_language: TypeScript
+tagline: A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.
+description: |-
+  Xcode Build MCP — A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects. Upstream maintainer: getsentry.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: getsentry
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: getsentry (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- assetopsbench
+- ghidra-mcp
+- google-workspace-mcp
+- langgraph
+- linkedin-mcp-server

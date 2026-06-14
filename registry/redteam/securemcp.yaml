@@ -1,0 +1,26 @@
+id: securemcp
+name: Secure MCP
+category: redteam
+subcategory: ai-security
+repo_url: https://github.com/makalin/SecureMCP
+license: MIT
+primary_language: Go
+tagline: SecureMCP is a security auditing tool designed to detect vulnerabilities and misconfigurations in applications using the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction).
+description: |-
+  Secure MCP — SecureMCP is a security auditing tool designed to detect vulnerabilities and misconfigurations in applications using the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction). It proactively identifies threats like OAuth token leakage, prompt injection vulnerabilities, rogue MCP servers, and tool poisoning attacks. Upstream maintainer: makalin.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: makalin
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: makalin (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- adrian
+- agent-security-scanner-mcp
+- augustus
+- defender
+- pyrit

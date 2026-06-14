@@ -1,0 +1,27 @@
+id: hacxgpt-jailbreak-prompts
+name: Hacx GPT Jailbreak Prompts
+category: redteam
+subcategory: jailbreak
+repo_url: https://github.com/BlackTechX011/HacxGPT-Jailbreak-prompts
+homepage: https://github.com/BlackTechX011/HacxGPT-Jailbreak-prompts
+license: MIT
+primary_language: Multiple
+tagline: 'HacxGPT Jailbreak : Unlock the full potential of top AI models like ChatGPT, LLaMA, and more with the advanced Jailbreak prompts .'
+description: |-
+  Hacx GPT Jailbreak Prompts — HacxGPT Jailbreak : Unlock the full potential of top AI models like ChatGPT, LLaMA, and more with the advanced Jailbreak prompts . Upstream maintainer: BlackTechX011.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+maturity: beta
+maintainer:
+  type: community
+  name: BlackTechX011
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: BlackTechX011 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- chatgpt-jailbreak-pro
+- jailbreak-llms
+- llm-jailbreaks
+- principles-of-ai-llms
+- pyrit

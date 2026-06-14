@@ -1,0 +1,23 @@
+id: agi
+name: Agi
+category: agent
+subcategory: autonomous-agent
+repo_url: https://github.com/hyperspaceai/agi
+homepage: https://agents.hyper.space/
+license: MIT
+primary_language: Multiple
+tagline: The first distributed AGI system.
+description: |-
+  Agi — The first distributed AGI system. Thousands of autonomous AI agents collaboratively train models, share experiments via P2P gossip, and push breakthroughs here. Fully peer-to-peer. Join from your browser or CLI. Upstream maintainer: hyperspaceai.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: company
+  name: hyperspaceai
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: hyperspaceai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph

@@ -1,0 +1,27 @@
+id: maibot
+name: Mai Bot
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/Mai-with-u/MaiBot
+homepage: https://docs.mai-mai.org/
+license: GPL-3.0-only
+primary_language: Python
+tagline: MaiSaka, an LLM-based intelligent agent, is a digital lifeform devoted to understanding you and interacting in the style of a real human.
+description: |-
+  Mai Bot — MaiSaka, an LLM-based intelligent agent, is a digital lifeform devoted to understanding you and interacting in the style of a real human. She does not pursue perfection, nor does she seek efficiency; instead, she values warmth, authenticity, and genuine connection. Upstream maintainer: Mai-with-u.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+maturity: ga
+maintainer:
+  type: community
+  name: Mai-with-u
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Mai-with-u (community-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- trpc-agent-go
+- txtai
+- vibe-kanban
+- vibe-skills
