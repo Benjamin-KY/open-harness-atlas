@@ -6,6 +6,35 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — Pre-launch polish (Phase 7, 2026-06-14)
+
+- **Tier-stratified hero infographic** (`visuals/hero.svg`) — 1200×630
+  LinkedIn-social-card banner emitted by `scripts/build_visuals.py`.
+  Header (816 total) + six category tiles (icon, name, blurb, count,
+  tier-stacked horizontal bar, tier micro-legend, four featured
+  landmark names) + footer (repo / Pages URL / tier legend). Curator-
+  vetted `HERO_CATEGORIES` allowlist guards against top-stars surfacing
+  Phase-4-flagged outliers on launch-day artefacts. Auto-rebuilt by the
+  same pipeline as `graph.svg` / matrices — counts cannot silently drift.
+- **Live 3D viewer screenshot** (`visuals/viewer-3d-screenshot.png`,
+  1600×900 @2×) inserted into README as the "this is what it looks like"
+  visual above the force-directed static layout. Captured headless via
+  Playwright against the deployed Pages site (clean image, no devtools).
+- Both viewer `<meta name="description">` + `<meta property="og:description">`
+  refreshed to **816** entries / **3,358** edges; `og:image` repointed
+  from `graph.png` to `hero.svg` so LinkedIn / Slack / Discord link
+  previews surface the scannable infographic, not the dense graph dot.
+- README counts table refreshed end-to-end (badge `entries=816`,
+  governance 107 / agent 251 / eval 210 / redteam 102 / routing 95 /
+  education 51 = 816) — six stale "804" / "3,338" references replaced.
+
+### Fixed
+
+- **Git author attribution**: rewrote every commit on `main` to
+  `99622824+Benjamin-KY@users.noreply.github.com`. Prior commits used
+  `benke@users.noreply.github.com` which GitHub mistakenly routed to an
+  unrelated public user. No code or content changed — metadata-only.
+
 ### Added — Phase 2 (registry expansion to 804 entries)
 
 - **+491 registry entries** (governance +60 · agent +170 · eval +130 ·
