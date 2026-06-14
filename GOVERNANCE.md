@@ -168,20 +168,41 @@ bump the **minor** version of the atlas.
 The following are *deliberately* not catalogued, to keep the atlas
 focused:
 
-- **Pure RAG cores** (LlamaIndex core, Haystack, txtai). Cross-linked
-  in `docs/adjacencies.md`.
-- **Observability / tracing stacks** (Langfuse, Phoenix/Arize,
-  OpenLLMetry, MLflow LLM tracking). Cross-linked.
-- **Vector databases** as infrastructure. Cross-linked if referenced by
-  a registered harness.
-- **Closed-source services** of any kind. Not even cross-linked.
+- **Pure-infrastructure vector databases** (Pinecone-the-database, Weaviate
+  core, Qdrant core when used purely as a vector index without an
+  agent/eval/governance surface). Cross-linked in
+  [`docs/adjacencies.md`](docs/adjacencies.md) when referenced by a
+  registered harness.
+- **Pure observability / tracing stacks without an eval or governance
+  feature surface.** Projects that *only* trace LLM calls without
+  eval runners, output-contract validation, or routing intelligence are
+  out-of-scope. Projects with eval or governance features (e.g.,
+  Langfuse Evals, Arize Phoenix LLM Evals, OpenLLMetry semantic
+  conventions enforcing governance contracts) are catalogued under the
+  category that matches their primary user-facing harness function.
+- **Pure RAG cores without an agent / eval / governance surface.**
+  Standalone retrieval pipelines are out-of-scope; the same project
+  *becomes* in-scope once it ships agent / eval / governance features
+  (e.g., the current Haystack is an agent framework, not the 1.x RAG
+  core; txtai now ships LLM-judge eval harness functions).
+- **Closed-source services** of any kind. Not cross-linked.
 - **Paid courses, paid books, paywalled tutorials.** Not catalogued in
   `registry/education/`.
 - **Personal blog posts.** Even excellent ones — too unstable and
   numerous to curate fairly.
 
-Out-of-scope is not "low value" — it is "would distort the catalog if
-included".
+The line is **feature surface, not project lineage** — a project earns
+inclusion by shipping in-scope features, regardless of what historical
+category it's been pigeonholed in. Out-of-scope is not "low value" — it
+is "would distort the catalog if included as-is".
+
+**Why this language was tightened in v0.2.0**: the original v0.1.0
+phrasing named specific projects as out-of-scope, but several of those
+projects (Langfuse, Phoenix, OpenLLMetry, Haystack, txtai, MLflow AI
+Gateway) had since shipped substantial eval / governance / routing
+features that *did* qualify them. The policy now describes the feature
+boundary, and the catalog reflects the lived reality of each project's
+current shipping surface, not its historical lineage.
 
 ---
 
