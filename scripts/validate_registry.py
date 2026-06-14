@@ -26,6 +26,11 @@ from rich.table import Table
 REPO_ROOT = Path(__file__).resolve().parent.parent
 REGISTRY_DIR = REPO_ROOT / "registry"
 SCHEMA_PATH = REGISTRY_DIR / "_schema.yaml"
+COMPANION_DIR = REPO_ROOT / "companion"
+USE_CASES_PATH = COMPANION_DIR / "use_cases.yaml"
+USE_CASES_SCHEMA_PATH = COMPANION_DIR / "_use_cases.schema.yaml"
+SUPPLY_CHAINS_PATH = COMPANION_DIR / "supply_chains.yaml"
+SUPPLY_CHAINS_SCHEMA_PATH = COMPANION_DIR / "_supply_chains.schema.yaml"
 
 CATEGORIES = ("governance", "agent", "eval", "redteam", "routing", "education")
 
@@ -77,6 +82,74 @@ def validate_category_matches_folder(path: Path, entry: dict[str, Any]) -> str |
             f"folder `{folder_category}`"
         )
     return None
+
+
+def _validate_companion(
+    data_path: Path,
+    schema_path: Path,
+    known_ids: set[str],
+    *,
+    kind: str,
+) -> list[tuple[Path, str]]:
+    """Validate companion file against its schema and cross-check IDs.
+
+    `kind` is either "use_case" or "supply_chain"; controls which fields
+    are walked for ID resolution.
+    """
+    out: list[tuple[Path, str]] = []
+    if not data_path.exists():
+        return out  # optional file
+    if not schema_path.exists():
+        out.append((data_path, f"missing companion schema at {schema_path}"))
+        return out
+    try:
+        schema = load_schema(schema_path)
+        data = yaml.safe_load(data_path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        out.append((data_path, f"YAML/schema load error: {exc}"))
+        return out
+
+    validator = Draft202012Validator(schema)
+    for err in validator.iter_errors(data):
+        pointer = "/".join(str(p) for p in err.absolute_path) or "<root>"
+        out.append((data_path, f"{pointer}: {err.message}"))
+
+    if out:
+        return out  # bail before walking IDs on a structurally invalid doc
+
+    if kind == "use_case":
+        for uc in data.get("use_cases", []):
+            uc_id = uc.get("id", "?")
+            for field in ("featured", "recommended"):
+                for ref in uc.get(field, []) or []:
+                    if ref not in known_ids:
+                        out.append(
+                            (
+                                data_path,
+                                f"use_case '{uc_id}'.{field}: unknown id '{ref}'",
+                            )
+                        )
+    elif kind == "supply_chain":
+        for sc in data.get("supply_chains", []):
+            sc_id = sc.get("id", "?")
+            for step in sc.get("chain", []):
+                step_id = step.get("id")
+                if step_id and step_id not in known_ids:
+                    out.append(
+                        (
+                            data_path,
+                            f"supply_chain '{sc_id}'.chain: unknown id '{step_id}'",
+                        )
+                    )
+                for alt in step.get("alternatives", []) or []:
+                    if alt not in known_ids:
+                        out.append(
+                            (
+                                data_path,
+                                f"supply_chain '{sc_id}'.chain[{step_id}].alternatives: unknown id '{alt}'",
+                            )
+                        )
+    return out
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -156,6 +229,16 @@ def main(argv: list[str] | None = None) -> int:
                     f"unknown adjacency reference '{ref}' from: {', '.join(sources)}",
                 )
             )
+
+    # ------------------------------------------------------------------
+    # Companion files (use_cases, supply_chains) — schema + ID resolution
+    # ------------------------------------------------------------------
+    errors.extend(_validate_companion(
+        USE_CASES_PATH, USE_CASES_SCHEMA_PATH, known, kind="use_case",
+    ))
+    errors.extend(_validate_companion(
+        SUPPLY_CHAINS_PATH, SUPPLY_CHAINS_SCHEMA_PATH, known, kind="supply_chain",
+    ))
 
     if not errors:
         table = Table(title=f"open-harness-atlas — registry OK ({len(files)} entries)")

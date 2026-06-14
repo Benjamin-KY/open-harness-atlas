@@ -1,0 +1,61 @@
+# JSON Schema for companion/supply_chains.yaml
+# Validated by scripts/validate_registry.py (after registry IDs are loaded).
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://github.com/Benjamin-KY/open-harness-atlas/companion/_supply_chains.schema.yaml"
+title: open-harness-atlas harness supply chains
+type: object
+additionalProperties: false
+required: [version, supply_chains]
+properties:
+  version:
+    const: 1
+  supply_chains:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required: [id, name, icon, description, chain]
+      properties:
+        id:
+          type: string
+          pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+          minLength: 2
+          maxLength: 60
+        name:
+          type: string
+          minLength: 1
+          maxLength: 60
+          pattern: "^[^<>]*$"
+        icon:
+          type: string
+          minLength: 1
+          maxLength: 8
+        description:
+          type: string
+          minLength: 40
+          maxLength: 800
+        chain:
+          type: array
+          minItems: 2
+          maxItems: 9
+          items:
+            type: object
+            additionalProperties: false
+            required: [id, role]
+            properties:
+              id:
+                type: string
+                pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+              role:
+                type: string
+                minLength: 1
+                maxLength: 60
+                pattern: "^[^<>]*$"
+              alternatives:
+                type: array
+                uniqueItems: true
+                maxItems: 12
+                items:
+                  type: string
+                  pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"

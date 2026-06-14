@@ -1,0 +1,150 @@
+# open-harness-atlas — harness supply chains
+# ----------------------------------------------------------------------------
+# Curated end-to-end paths through the registry. Each chain represents a
+# sequenced stack you'd actually deploy: e.g. inference engine →
+# provider router → agent framework → eval gate → observability.
+#
+# Unlike `adjacent_to` (undirected, "they're related"), a chain is
+# DIRECTED and ORDERED — `chain[n+1]` is downstream of `chain[n]`.
+#
+# Editing rules:
+#   * `id` is kebab-case, stable, used as the URL filter key.
+#   * Every entry ID in `chain` MUST exist in the registry; validation
+#     fails loudly otherwise.
+#   * Each chain step has `id` (required) + `role` (required, ≤ 60 chars).
+#   * Chains should be 3–7 steps. Longer chains lose narrative value.
+#   * `alternatives` (optional) lists drop-in swaps for any step, by ID.
+#     Useful when there are 2–3 idiomatic choices at a level.
+#
+# Schema: companion/_supply_chains.schema.yaml
+# ----------------------------------------------------------------------------
+
+version: 1
+
+supply_chains:
+
+  - id: serve-and-ship-agent
+    name: "Build & ship an agent"
+    icon: "🚀"
+    description: |
+      The canonical hosted-agent stack — self-host inference, route through
+      a gateway for failover and budget control, orchestrate with a graph
+      framework, gate releases with eval, observe in prod.
+    chain:
+      - id: vllm
+        role: "Inference engine"
+        alternatives: [sglang, ollama, tensorrt-llm]
+      - id: litellm
+        role: "Provider router"
+        alternatives: [portkey-gateway, gateway, helicone]
+      - id: langgraph
+        role: "Agent framework"
+        alternatives: [llama-index-agents, crewai, autogen, haystack]
+      - id: promptfoo
+        role: "Eval gate"
+        alternatives: [deepeval, ragas]
+      - id: langfuse
+        role: "Observability"
+        alternatives: [arize-phoenix, opik, openllmetry]
+
+  - id: eval-driven-development
+    name: "TDD an LLM feature"
+    icon: "🧪"
+    description: |
+      Test-first for LLM features — write evals before the prompt, run them
+      in CI with the same rigour as unit tests, capture regressions
+      against the harness's own snapshot.
+    chain:
+      - id: lm-evaluation-harness
+        role: "Public-benchmark baseline"
+        alternatives: [opencompass]
+      - id: deepeval
+        role: "Custom eval framework"
+        alternatives: [ragas, promptfoo]
+      - id: promptfoo
+        role: "Regression gate (CI)"
+      - id: langfuse
+        role: "Eval traces in prod"
+        alternatives: [arize-phoenix, opik]
+
+  - id: redteam-then-harden
+    name: "Red-team → harden"
+    icon: "🛡️"
+    description: |
+      Discover unsafe outputs first, then close them — adversarial probe →
+      structural-output guardrail → policy validator → continuous re-probe
+      in CI.
+    chain:
+      - id: garak
+        role: "Adversarial probe suite"
+        alternatives: [pyrit, giskard]
+      - id: agentdojo
+        role: "Agentic-attack simulator"
+        alternatives: [llm-attacks, rebuff]
+      - id: instructor
+        role: "Schema-validated output"
+        alternatives: [outlines, baml]
+      - id: guardrails-ai
+        role: "Policy validator"
+        alternatives: [nemo-guardrails, llm-guard]
+      - id: promptfoo
+        role: "Re-probe in CI"
+
+  - id: rag-pipeline
+    name: "RAG end-to-end"
+    icon: "📚"
+    description: |
+      Document → retrieval → reasoning → grounded answer → eval. RAG
+      frameworks typically own steps 1–3; you bring the eval and trace.
+    chain:
+      - id: llama-index-agents
+        role: "Retrieval + reasoning"
+        alternatives: [langchain, haystack]
+      - id: dspy
+        role: "Structured prompting"
+        alternatives: [instructor, outlines, baml]
+      - id: ragas
+        role: "RAG eval (faithfulness, recall)"
+        alternatives: [deepeval]
+      - id: langfuse
+        role: "Trace + retrieval logging"
+        alternatives: [arize-phoenix, opik]
+
+  - id: alignment-train-and-eval
+    name: "Fine-tune → evaluate"
+    icon: "🎯"
+    description: |
+      Post-training pipeline — supervised fine-tune, preference-optimise
+      (DPO/GRPO), score against held-out benchmarks, gate the release.
+    chain:
+      - id: huggingface-trl
+        role: "Preference fine-tuning (RLHF/DPO/GRPO)"
+      - id: lm-evaluation-harness
+        role: "Public-benchmark eval"
+        alternatives: [opencompass]
+      - id: arc-agi
+        role: "Reasoning landmark"
+        alternatives: [swe-bench, livebench]
+      - id: promptfoo
+        role: "Behavioural regression gate"
+        alternatives: [deepeval]
+
+  - id: multi-tenant-gateway
+    name: "Multi-tenant LLM gateway"
+    icon: "🏛️"
+    description: |
+      Stand up an internal LLM platform — auth, per-tenant policy and
+      budget, audit trail, validator-enforced outputs, full traces.
+    chain:
+      - id: kong
+        role: "API gateway / auth"
+        alternatives: [apache-apisix, higress, kgateway]
+      - id: litellm
+        role: "Model router / cost"
+        alternatives: [portkey-gateway, gateway]
+      - id: guardrails-ai
+        role: "Output policy"
+        alternatives: [nemo-guardrails, llm-guard]
+      - id: openllmetry
+        role: "OTEL traces"
+        alternatives: [langfuse, arize-phoenix, opik]

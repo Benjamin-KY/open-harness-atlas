@@ -24,6 +24,8 @@ OUT_JSON = REPO / "visuals" / "graph-data.json"
 TIERS_PATH = REG / "_metadata" / "_tiers.json"
 VELOCITY_PATH = REG / "_metadata" / "_velocity.json"
 METADATA_DIR = REG / "_metadata"
+USE_CASES_PATH = REPO / "companion" / "use_cases.yaml"
+SUPPLY_CHAINS_PATH = REPO / "companion" / "supply_chains.yaml"
 # Per-node sparkline data: how many recent star counts to emit per node.
 SPARK_MAX_POINTS = 12
 
@@ -89,6 +91,87 @@ def load_velocity() -> dict[str, dict]:
         return {}
 
 
+def load_use_cases() -> tuple[list[dict], dict[str, list[dict]]]:
+    """Load companion/use_cases.yaml and return (use_cases_list, by_entry_id).
+
+    `by_entry_id[entry_id]` is a list of {id, level} dicts where
+    `level in ("featured", "recommended", "auto")`. The viewer uses this
+    to render per-entry "in N use cases" hints and to filter by lens.
+    """
+    if not USE_CASES_PATH.exists():
+        return [], {}
+    raw = yaml.safe_load(USE_CASES_PATH.read_text(encoding="utf-8")) or {}
+    return raw.get("use_cases", []) or [], {}
+
+
+def load_supply_chains() -> list[dict]:
+    if not SUPPLY_CHAINS_PATH.exists():
+        return []
+    raw = yaml.safe_load(SUPPLY_CHAINS_PATH.read_text(encoding="utf-8")) or {}
+    return raw.get("supply_chains", []) or []
+
+
+def resolve_use_case_membership(
+    use_cases: list[dict],
+    entries: list[dict],
+) -> tuple[dict[str, list[dict]], list[dict]]:
+    """Compute per-entry use-case membership.
+
+    Returns:
+        membership: {entry_id: [{id, level}, ...]} sorted by level priority.
+        enriched:   the same use_cases list with an added `members.auto`
+                    array (IDs picked up by auto_match) so the viewer can
+                    show the full membership without a second pass.
+
+    Levels (highest precedence first): featured > recommended > auto.
+    An entry only carries the highest level it qualifies for in a given
+    use case (so a featured entry is never double-counted as recommended).
+    """
+    by_id = {e["id"]: e for e in entries}
+    membership: dict[str, list[dict]] = defaultdict(list)
+    enriched: list[dict] = []
+
+    for uc in use_cases:
+        uc_id = uc["id"]
+        featured = [eid for eid in (uc.get("featured") or []) if eid in by_id]
+        recommended = [
+            eid for eid in (uc.get("recommended") or [])
+            if eid in by_id and eid not in featured
+        ]
+        auto: list[str] = []
+        auto_match = uc.get("auto_match") or {}
+        cats = set(auto_match.get("categories") or [])
+        subs = set(auto_match.get("subcategories") or [])
+        if cats or subs:
+            already = set(featured) | set(recommended)
+            for e in entries:
+                if e["id"] in already:
+                    continue
+                if cats and e.get("category") not in cats:
+                    continue
+                if subs and e.get("subcategory") not in subs:
+                    continue
+                auto.append(e["id"])
+
+        for eid in featured:
+            membership[eid].append({"id": uc_id, "level": "featured"})
+        for eid in recommended:
+            membership[eid].append({"id": uc_id, "level": "recommended"})
+        for eid in auto:
+            membership[eid].append({"id": uc_id, "level": "auto"})
+
+        enriched.append({
+            **uc,
+            "members": {
+                "featured": featured,
+                "recommended": recommended,
+                "auto": sorted(auto),
+            },
+        })
+
+    return membership, enriched
+
+
 def load_spark(entry_id: str) -> list[int]:
     """Return up to SPARK_MAX_POINTS recent star counts for an entry."""
     sidecar_path = METADATA_DIR / f"{entry_id}.json"
@@ -152,8 +235,19 @@ def main() -> int:
     entries = load_entries()
     tiers = load_tiers()
     velocity = load_velocity()
+    use_cases_raw, _ = load_use_cases()
+    supply_chains = load_supply_chains()
+    membership, use_cases_enriched = resolve_use_case_membership(use_cases_raw, entries)
     G = build_graph(entries)
     print(f"loaded {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    if use_cases_enriched:
+        def _uc_total(uc: dict) -> int:
+            members = uc["members"]
+            return len(members["featured"]) + len(members["recommended"]) + len(members["auto"])
+        sizes = ", ".join(f"{uc['id']}={_uc_total(uc)}" for uc in use_cases_enriched)
+        print(f"  use_cases: {len(use_cases_enriched)} ({sizes})")
+    if supply_chains:
+        print(f"  supply_chains: {len(supply_chains)} ({[c['id'] for c in supply_chains]})")
     if tiers:
         from collections import Counter
         dist = Counter(tiers.get(e["id"], "unknown") for e in entries)
@@ -353,10 +447,13 @@ def main() -> int:
                 "velocity_12w": (velocity.get(n) or {}).get("stars_per_week_12w"),
                 "days_since_commit": (velocity.get(n) or {}).get("days_since_commit"),
                 "spark": load_spark(n),
+                "use_cases": membership.get(n, []),
             }
             for n in G.nodes
         ],
         "links": [{"source": s, "target": t} for s, t in G.edges],
+        "use_cases": use_cases_enriched,
+        "supply_chains": supply_chains,
     }
     OUT_JSON.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     print(f"wrote {OUT_JSON.relative_to(REPO)}")

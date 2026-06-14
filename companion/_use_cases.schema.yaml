@@ -1,0 +1,73 @@
+# JSON Schema for companion/use_cases.yaml
+# Validated by scripts/validate_registry.py (after registry IDs are loaded).
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://github.com/Benjamin-KY/open-harness-atlas/companion/_use_cases.schema.yaml"
+title: open-harness-atlas use-case lens
+type: object
+additionalProperties: false
+required: [version, use_cases]
+properties:
+  version:
+    const: 1
+  use_cases:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required: [id, name, icon, short, description, featured]
+      properties:
+        id:
+          type: string
+          pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+          minLength: 2
+          maxLength: 60
+        name:
+          type: string
+          minLength: 1
+          maxLength: 60
+          pattern: "^[^<>]*$"
+        icon:
+          type: string
+          minLength: 1
+          maxLength: 8
+        short:
+          type: string
+          minLength: 10
+          maxLength: 160
+        description:
+          type: string
+          minLength: 40
+          maxLength: 800
+        featured:
+          type: array
+          minItems: 1
+          maxItems: 12
+          uniqueItems: true
+          items:
+            type: string
+            pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+        recommended:
+          type: array
+          maxItems: 30
+          uniqueItems: true
+          items:
+            type: string
+            pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+        auto_match:
+          type: object
+          additionalProperties: false
+          properties:
+            categories:
+              type: array
+              uniqueItems: true
+              items:
+                type: string
+                enum: [governance, agent, eval, redteam, routing, education]
+            subcategories:
+              type: array
+              uniqueItems: true
+              items:
+                type: string
+                minLength: 1
+                maxLength: 60

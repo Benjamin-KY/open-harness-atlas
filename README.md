@@ -24,7 +24,22 @@ routing — and free education resources.*
 > layout? **[Open the 2D viewer →](https://benjamin-ky.github.io/open-harness-atlas/2d.html)**
 > (mini-map, compare mode, cluster layout, PNG export).
 >
-> Both views are auto-generated from `registry/*/*.yaml` and re-deployed on every push to `main`.
+> **New in Phase 6** — both viewers now ship two overlays:
+> **🎯 Entry points** ("I need a harness for…") — eight curated lenses
+> (evaluate an LLM, red-team a chatbot, monitor production agents, build a
+> RAG agent, serve inference, route across providers, govern LLM policy,
+> learn the stack) filter the graph to the entries that actually solve
+> that job, with featured / recommended / auto-matched tiers. Deep-link
+> with `#lens=evaluate-llm`.
+> **🔗 Harness supply chains** — six curated directional stacks
+> (serve-and-ship-agent, eval-driven-development, redteam-then-harden,
+> rag-pipeline, alignment-train-and-eval, multi-tenant-gateway) overlay
+> the canonical 3–7-step paths through the graph, with named alternatives
+> at each step. Deep-link with `#chain=rag-pipeline`.
+>
+> Both views are auto-generated from `registry/*/*.yaml` +
+> `companion/use_cases.yaml` + `companion/supply_chains.yaml`, and are
+> re-deployed on every push to `main`.
 
 ![open-harness-atlas — 804-node, 3,338-edge knowledge graph](visuals/graph.svg)
 

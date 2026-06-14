@@ -434,6 +434,74 @@
   }
   .chip .dot { width: 8px; height: 8px; border-radius: 50%; }
 
+  /* Entry-points lens + supply chains — same UX as the 3D viewer. */
+  .lens-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .lens-card {
+    display: flex; align-items: flex-start; gap: 8px;
+    padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--brand-line); background: var(--brand-panel);
+    color: var(--brand-ink); cursor: pointer; text-align: left;
+    transition: background var(--t-fast), border-color var(--t-fast), color var(--t-fast);
+    font: inherit;
+  }
+  .lens-card:hover { border-color: var(--brand-deep); }
+  .lens-card[aria-pressed="true"] {
+    background: var(--brand-deep); color: var(--brand-panel); border-color: var(--brand-deep);
+  }
+  .lens-card[aria-pressed="true"] .lens-count { color: var(--brand-panel); }
+  .lens-icon { font-size: 16px; line-height: 1; flex-shrink: 0; }
+  .lens-meta { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+  .lens-name { font-size: 12px; font-weight: 700; line-height: 1.2; }
+  .lens-count { font-size: 10.5px; font-weight: 500; color: var(--brand-mute); }
+  .lens-clear {
+    display: block; width: 100%; margin-top: 8px;
+    padding: 5px 10px; border-radius: 6px; cursor: pointer;
+    border: 1px dashed var(--brand-line); background: transparent; color: var(--brand-mute);
+    font-size: 11.5px; font-weight: 600;
+  }
+  .lens-clear:hover { color: var(--brand-deep); border-color: var(--brand-deep); }
+
+  .chain-select { width: 100%; padding: 6px 8px; border-radius: 6px;
+    border: 1px solid var(--brand-line); background: var(--brand-panel);
+    color: var(--brand-ink); font-size: 12.5px; }
+  .chain-detail { margin-top: 8px; font-size: 11.5px; color: var(--brand-mute); line-height: 1.45; }
+  .chain-steps { margin-top: 8px; display: flex; flex-direction: column; gap: 4px; }
+  .chain-step {
+    display: grid; grid-template-columns: 18px 1fr auto; align-items: center; gap: 6px;
+    padding: 4px 6px; border-radius: 6px;
+    border-left: 3px solid var(--brand-deep); background: var(--brand-bg);
+    font-size: 12px; cursor: pointer;
+  }
+  .chain-step:hover { background: var(--brand-line); }
+  .chain-step .step-n { font-weight: 700; color: var(--brand-deep); text-align: center; }
+  .chain-step .step-id { font-weight: 700; color: var(--brand-ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .chain-step .step-role { font-size: 10.5px; color: var(--brand-mute); padding-left: 6px; white-space: nowrap; }
+  .chain-step .step-alt {
+    font-size: 10px; color: var(--brand-mute); font-weight: 500;
+    grid-column: 2 / -1; padding-top: 2px; line-height: 1.3;
+  }
+  .chain-step .step-alt code { font-size: 9.5px; padding: 0 3px; border-radius: 3px; background: var(--brand-panel); cursor: pointer; }
+
+  .uc-pills { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+  .uc-pill {
+    display: inline-flex; align-items: center; gap: 3px;
+    padding: 1px 7px; border-radius: 999px; font-size: 10.5px;
+    cursor: pointer; user-select: none;
+    border: 1px solid var(--brand-line); background: var(--brand-bg); color: var(--brand-deep);
+  }
+  .uc-pill:hover { border-color: var(--brand-deep); }
+  .uc-pill.level-featured    { border-color: var(--focus-ring); color: var(--focus-ring); font-weight: 700; }
+  .uc-pill.level-recommended { color: var(--brand-deep); font-weight: 600; }
+  .uc-pill.level-auto        { color: var(--brand-mute); }
+
+  /* Supply-chain edge overlay drawn on top of the SVG. */
+  .chain-edge {
+    fill: none; stroke: var(--focus-ring); stroke-width: 2.5;
+    stroke-dasharray: 6 4; opacity: 0.85;
+    pointer-events: none;
+  }
+  .chain-edge-arrow { fill: var(--focus-ring); opacity: 0.9; pointer-events: none; }
+
   /* Hub glow — top 10% degree */
   .node.is-hub circle {
     filter: drop-shadow(0 0 4px rgba(214, 137, 16, 0.55))
@@ -678,6 +746,14 @@
 
   <aside id="side" aria-label="Filters and details">
 
+    <div class="panel" id="panel-lens">
+      <div class="panel-header">I need a harness for…<span class="count" id="lens-count"></span></div>
+      <div class="panel-body">
+        <div class="lens-grid" id="lens-grid"></div>
+        <button class="lens-clear" id="lens-clear" type="button" hidden>Clear lens</button>
+      </div>
+    </div>
+
     <div class="panel">
       <div class="panel-header">Quick filters</div>
       <div class="panel-body">
@@ -751,6 +827,17 @@
           <div class="path-result" id="pf-result"></div>
         </div>
         <datalist id="node-ids"></datalist>
+      </div>
+    </div>
+
+    <div class="panel" id="panel-chain">
+      <div class="panel-header">Harness supply chain<span class="count" id="chain-count"></span></div>
+      <div class="panel-body">
+        <select class="chain-select" id="chain-select" aria-label="Pick a supply chain">
+          <option value="">— pick a stack —</option>
+        </select>
+        <div class="chain-detail" id="chain-detail" hidden></div>
+        <div class="chain-steps" id="chain-steps"></div>
       </div>
     </div>
 
@@ -1227,6 +1314,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         ${node.license  ? `<span class="pill outline">${escapeHtml(node.license)}</span>` : ''}
       </div>
       <p class="node-detail-tag">${escapeHtml(node.tagline)}</p>
+      ${renderUseCasePills(node)}
       <div class="node-detail-meta"><strong>Degree:</strong> ${node.degree}</div>
       <div class="node-detail-meta"><strong>Model-agnostic:</strong> ${node.mas}/5</div>
       ${uptakeHtml(node)}
@@ -1245,6 +1333,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (nb) focus(nb, {center: true});
       });
     });
+    detail.querySelectorAll('.uc-pill[data-uc]').forEach(el => {
+      el.addEventListener('click', () => setLens(el.dataset.uc));
+    });
+  }
+
+  function renderUseCasePills(node) {
+    const memberships = Array.isArray(node.use_cases) ? node.use_cases : [];
+    if (!memberships.length) return '';
+    const order = { featured: 0, recommended: 1, auto: 2 };
+    const sorted = [...memberships].sort((a,b) => (order[a.level] ?? 9) - (order[b.level] ?? 9));
+    const pills = sorted.map(m => {
+      const uc = useCaseById.get(m.id);
+      if (!uc) return '';
+      const tip = `${uc.icon || ''} ${uc.name} — ${m.level}`;
+      return `<span class="uc-pill level-${escapeHtml(m.level)}" data-uc="${escapeHtml(m.id)}" title="${escapeHtml(tip)}">${escapeHtml(uc.icon || '·')} ${escapeHtml(uc.name)}</span>`;
+    }).join('');
+    return `<div class="uc-pills" title="Click to filter to this use case">${pills}</div>`;
   }
 
   // ============================================================
@@ -1268,7 +1373,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     q: '', mas: 0, mat: '', cty: '', lic: '', lang: '',
     offCats: new Set(),
     offTiers: new Set(),
+    useCase: null,
   };
+
+  // Pre-index use-case membership for fast lookups.
+  const useCaseList = data.use_cases || [];
+  const useCaseById = new Map(useCaseList.map(uc => [uc.id, uc]));
+  const entryUseCases = new Map();
+  useCaseList.forEach(uc => {
+    const all = new Set([
+      ...((uc.members && uc.members.featured)    || []),
+      ...((uc.members && uc.members.recommended) || []),
+      ...((uc.members && uc.members.auto)        || []),
+    ]);
+    all.forEach(eid => {
+      if (!entryUseCases.has(eid)) entryUseCases.set(eid, new Set());
+      entryUseCases.get(eid).add(uc.id);
+    });
+  });
 
   function applyFilters() {
     const q = filterState.q.trim().toLowerCase();
@@ -1283,7 +1405,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         (n.license||'').toLowerCase().includes(q) ||
         (n.country||'').toLowerCase().includes(q) ||
         (n.subcategory||'').toLowerCase().includes(q);
-      const visible =
+      let visible =
         matchesQ &&
         n.mas >= filterState.mas &&
         (!filterState.mat  || n.maturity === filterState.mat) &&
@@ -1292,6 +1414,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         (!filterState.lang || n.language === filterState.lang) &&
         !filterState.offCats.has(n.category) &&
         !filterState.offTiers.has(n.tier || 'unknown');
+      if (visible && filterState.useCase) {
+        const memberships = entryUseCases.get(n.id);
+        if (!memberships || !memberships.has(filterState.useCase)) visible = false;
+      }
       n._visible = visible;
       if (visible) { visibleCount++; visIds.add(n.id); }
     });
@@ -1615,6 +1741,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         $('pf-from').value = f; $('pf-to').value = t;
         setTimeout(() => runPath(f, t, {skipHash: true}), 250);
       }
+    } else if (params.has('lens')) {
+      const lensId = params.get('lens');
+      if (useCaseById.has(lensId)) setLens(lensId, {skipHash: true});
+    } else if (params.has('chain')) {
+      const chainId = params.get('chain');
+      if (chainById.has(chainId)) setTimeout(() => applySupplyChain(chainId, {skipHash: true}), 250);
     }
   }
   window.addEventListener('hashchange', applyHash);
@@ -1709,6 +1841,140 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
   let chipOverrides = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null };
   renderChips();
+
+  // ============================================================
+  // Entry-points lens — "I need a harness for…"
+  // Dims everything except a curated use-case subset.
+  // ============================================================
+  function renderLens() {
+    const wrap = $('lens-grid');
+    wrap.innerHTML = '';
+    useCaseList.forEach(uc => {
+      const total = (uc.members?.featured?.length || 0)
+                  + (uc.members?.recommended?.length || 0)
+                  + (uc.members?.auto?.length || 0);
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'lens-card';
+      btn.setAttribute('aria-pressed', filterState.useCase === uc.id);
+      btn.title = uc.short || '';
+      btn.dataset.id = uc.id;
+      btn.innerHTML =
+        `<span class="lens-icon" aria-hidden="true">${escapeHtml(uc.icon || '·')}</span>` +
+        `<span class="lens-meta">` +
+          `<span class="lens-name">${escapeHtml(uc.name)}</span>` +
+          `<span class="lens-count">${total} entries</span>` +
+        `</span>`;
+      btn.onclick = () => setLens(filterState.useCase === uc.id ? null : uc.id);
+      wrap.appendChild(btn);
+    });
+    $('lens-count').textContent = `${useCaseList.length} use cases`;
+    $('lens-clear').hidden = !filterState.useCase;
+    if (filterState.useCase) {
+      const uc = useCaseById.get(filterState.useCase);
+      $('lens-clear').textContent = uc ? `Clear lens · ${uc.name}` : 'Clear lens';
+    }
+  }
+  function setLens(ucId, opts = {}) {
+    filterState.useCase = ucId || null;
+    applyFilters();
+    renderLens();
+    if (!opts.skipHash) {
+      const url = new URL(location.href);
+      if (filterState.useCase) url.hash = `lens=${encodeURIComponent(filterState.useCase)}`;
+      else if (url.hash.startsWith('#lens=')) url.hash = '';
+      history.replaceState(null, '', url);
+    }
+  }
+  $('lens-clear').onclick = () => setLens(null);
+  renderLens();
+
+  // ============================================================
+  // Harness supply chains — directed, curated stack overlays.
+  // Reuses the highlightPath() machinery so the SVG renders the
+  // chain as a highlighted set of nodes + connecting links (when
+  // present in the underlying adjacency).
+  // ============================================================
+  const supplyChains = data.supply_chains || [];
+  const chainById = new Map(supplyChains.map(c => [c.id, c]));
+  function renderChainSelector() {
+    const sel = $('chain-select');
+    sel.innerHTML = '<option value="">— pick a stack —</option>';
+    supplyChains.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c.id;
+      opt.textContent = `${c.icon || ''} ${c.name}`.trim();
+      sel.appendChild(opt);
+    });
+    $('chain-count').textContent = `${supplyChains.length} chains`;
+  }
+  function applySupplyChain(chainId, opts = {}) {
+    const detailEl = $('chain-detail');
+    const stepsEl  = $('chain-steps');
+    if (!chainId) {
+      detailEl.hidden = true;
+      detailEl.textContent = '';
+      stepsEl.innerHTML = '';
+      $('chain-select').value = '';
+      unfocus();
+      if (!opts.skipHash && location.hash.startsWith('#chain=')) {
+        history.replaceState(null, '', location.pathname + location.search);
+      }
+      return;
+    }
+    const c = chainById.get(chainId);
+    if (!c) return;
+    $('chain-select').value = chainId;
+    detailEl.hidden = false;
+    detailEl.textContent = c.description || '';
+    stepsEl.innerHTML = '';
+    const knownIds = [];
+    c.chain.forEach((step, idx) => {
+      const node = byId.get(step.id);
+      if (node) knownIds.push(step.id);
+      const stepEl = document.createElement('div');
+      stepEl.className = 'chain-step';
+      const safeRole = escapeHtml(step.role || '');
+      const safeId   = escapeHtml(step.id);
+      stepEl.style.borderLeftColor = node
+        ? (data.meta.categories.find(cc => cc.key === node.category)?.color || 'var(--brand-deep)')
+        : 'var(--brand-mute)';
+      stepEl.innerHTML =
+        `<span class="step-n">${idx+1}</span>` +
+        `<span class="step-id" title="${safeId}">${node ? escapeHtml(node.name) : safeId + ' (missing)'}</span>` +
+        `<span class="step-role">${safeRole}</span>`;
+      if (step.alternatives && step.alternatives.length) {
+        const alt = document.createElement('span');
+        alt.className = 'step-alt';
+        const altList = step.alternatives
+          .filter(a => byId.has(a))
+          .map(a => `<code data-id="${escapeHtml(a)}">${escapeHtml(a)}</code>`)
+          .join(', ');
+        if (altList) alt.innerHTML = `alt: ${altList}`;
+        stepEl.appendChild(alt);
+      }
+      if (node) {
+        stepEl.style.cursor = 'pointer';
+        stepEl.onclick = () => focus(node, {center: true});
+      }
+      stepsEl.appendChild(stepEl);
+    });
+    stepsEl.querySelectorAll('code[data-id]').forEach(code => {
+      code.onclick = ev => {
+        ev.stopPropagation();
+        const n = byId.get(code.dataset.id);
+        if (n) focus(n, {center: true});
+      };
+    });
+    if (knownIds.length >= 2) highlightPath(knownIds);
+    if (!opts.skipHash) {
+      const url = new URL(location.href);
+      url.hash = `chain=${encodeURIComponent(chainId)}`;
+      history.replaceState(null, '', url);
+    }
+  }
+  $('chain-select').onchange = e => applySupplyChain(e.target.value);
+  renderChainSelector();
 
   // Extend applyFilters via wrapper: re-run + apply chip overrides post-pass
   const _origApplyFilters = applyFilters;
