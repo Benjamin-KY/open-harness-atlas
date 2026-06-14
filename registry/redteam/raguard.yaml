@@ -17,7 +17,7 @@ maintainer:
   name: Carlos-Projects
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: Carlos-Projects (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+sovereignty_notes: Carlos-Projects (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
 harness_paradigm_alignment: partial
 adjacent_to:
 - ai-supply-chain-scanner
