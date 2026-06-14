@@ -1,0 +1,58 @@
+id: huggingface-tgi
+name: Hugging Face Text Generation Inference
+category: routing
+subcategory: inference-runtime
+repo_url: https://github.com/huggingface/text-generation-inference
+homepage: https://huggingface.co/docs/text-generation-inference/
+license: Apache-2.0
+primary_language: Python
+tagline: Production-grade LLM-serving runtime in Rust + Python — the inference engine behind Hugging Face's Inference Endpoints, with continuous batching, paged attention, and quantisation.
+description: |
+  Text Generation Inference (TGI) is Hugging Face's production
+  inference runtime for large language models: a Rust HTTP / gRPC
+  server with a Python frontend that does continuous batching,
+  paged attention (via Flash Attention), tensor-parallel sharding,
+  speculative decoding, and quantisation (BitsAndBytes, GPTQ,
+  AWQ, Marlin). It powers Hugging Face's hosted Inference
+  Endpoints product and is the engine behind much of the HF
+  ecosystem's "deploy this model" UX. TGI ships
+  OpenAI-compatible endpoints, an Open Inference Protocol API,
+  and Prometheus / OpenTelemetry observability.
+
+  In the atlas: TGI is the Hugging Face counterpart to vLLM and
+  NVIDIA TensorRT-LLM in the **inference-runtime** subcategory.
+  Operators choose it when their workflow centres on Hugging Face
+  Hub conventions (model formats, safetensors, transformers
+  configs) or when they want to mirror the Inference Endpoints
+  behaviour on-prem. NOTE — the project is currently `archived`
+  on GitHub as Hugging Face transitions to `text-generation-router`
+  / Inference Endpoints v2; existing deployments remain
+  serviceable but new feature work has moved upstream.
+maturity: ga
+maintainer:
+  type: company
+  name: Hugging Face
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Hugging Face is US-incorporated (NYC); TGI is Apache-2.0 OSS
+  and fully self-hostable on any CUDA-capable host (Docker / k8s).
+  Supports any Hugging Face Transformers-format checkpoint plus
+  AWQ / GPTQ / Marlin quantised variants. No call-home / telemetry
+  by default. `model_agnostic_score` is 4 (rather than 5) because
+  the runtime is CUDA-only for high-throughput paged-attention —
+  CPU-only and AMD ROCm paths exist but are second-class.
+  notes_for_maintainers: TGI is currently `archived: true` on
+  GitHub as of mid-2025 — re-review when HF clarifies the
+  successor project's identity.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - bentoml
+  - sglang
+  - tensorrt-llm
+  - vllm
+notes_for_maintainers: |
+  As of metadata refresh, the upstream repo is GitHub-archived
+  but still in widespread production use. Watch for the
+  text-generation-router successor and reclassify if the lineage
+  moves.

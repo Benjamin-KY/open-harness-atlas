@@ -1,0 +1,50 @@
+id: huggingface-trl
+name: Hugging Face TRL
+category: governance
+subcategory: alignment-training
+repo_url: https://github.com/huggingface/trl
+homepage: https://huggingface.co/docs/trl/
+license: Apache-2.0
+primary_language: Python
+tagline: Hugging Face's library for training transformers with RLHF, DPO, GRPO, KTO and online RL — the de-facto OSS alignment stack.
+description: |
+  TRL (Transformer Reinforcement Learning) is Hugging Face's library
+  for post-training and aligning transformer language models. It
+  implements the canonical alignment recipes — SFT, reward modeling,
+  PPO, DPO, GRPO, KTO, online RL with vLLM — as `Trainer` subclasses
+  that compose with HF Transformers, PEFT, and Accelerate. TRL is the
+  upstream that most production OSS alignment work (Llama-Factory,
+  Axolotl, OpenRLHF, verl) either depends on or directly forks.
+
+  In the atlas: TRL is catalogued under **governance** because it is
+  the substrate by which an organisation actually executes the
+  Harmless Harnesses §1 policy-router and §3 prompt-composer training
+  cycles. The DPO / GRPO trainers in particular are the concrete
+  mechanism by which a refusal policy or a structured-output contract
+  is baked into model weights, rather than enforced only at inference
+  time by a guardrail layer.
+maturity: ga
+maintainer:
+  type: company
+  name: Hugging Face
+origin_country: US
+model_agnostic_score: 5
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: native
+  output_contract: native
+  audit_log_fsm: partial
+sovereignty_notes: |
+  Hugging Face is US-incorporated (NYC); TRL itself is Apache-2.0 and
+  fully self-hostable. Multi-provider via the HF Transformers
+  abstraction (works against any HF-format checkpoint — Llama, Mistral,
+  Qwen, Gemma, DeepSeek, Phi, etc.) and against any backend Accelerate
+  supports (single-GPU, DDP, FSDP, DeepSpeed, multi-node). Online RL
+  trainers integrate with vLLM for self-hosted generation — no
+  dependency on Hugging Face Hub at training time beyond initial model
+  download. Optional W&B / TensorBoard logging is configurable.
+harness_paradigm_alignment: aligned
+adjacent_to:
+  - guardrails-ai
+  - nemo-guardrails

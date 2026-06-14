@@ -7,22 +7,36 @@ homepage: https://docs.nvidia.com/nemo/guardrails/latest/index.html
 license: Apache-2.0
 primary_language: Python
 tagline: Programmable rails between user input, model, and external systems via the Colang DSL.
-description: |
-  NeMo Guardrails sits between a user, an LLM, and external tools as a
+description: 'NeMo Guardrails sits between a user, an LLM, and external tools as a
+
   policy-driven dialogue manager. It uses **Colang**, a small declarative
+
   DSL, to define flows: input rails (validate / refuse / rephrase),
+
   output rails (mask PII, fact-check, jailbreak detection), dialogue rails
+
   (canonical-form intents → flows), retrieval rails (RAG citation
+
   discipline), and execution rails (tool call mediation). Each rail
+
   intercepts the message stream at a known point and applies a
+
   deterministic or model-based check.
 
+
   In the atlas: NeMo Guardrails is the most feature-complete OSS
+
   governance harness in production use today. It implements all five
+
   invariants partially or natively, but in a programmable-rails idiom
+
   rather than the five-component spine of the Harmless Harnesses
+
   reference. Cross-link target for anyone graduating from a single-rail
+
   setup to a structured spine.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -36,26 +50,34 @@ five_component_coverage:
   output_contract: native
   audit_log_fsm: partial
 education_resources:
-  - title: NeMo Guardrails — Official documentation
-    url: https://docs.nvidia.com/nemo/guardrails/latest/index.html
-    type: docs
-    free: true
-  - title: Getting Started with NeMo Guardrails (tutorial)
-    url: https://docs.nvidia.com/nemo/guardrails/latest/getting-started/index.html
-    type: tutorial
-    free: true
-sovereignty_notes: |
-  NVIDIA-maintained, Apache-2.0, fully self-hostable as a Python package.
+- title: NeMo Guardrails — Official documentation
+  url: https://docs.nvidia.com/nemo/guardrails/latest/index.html
+  type: docs
+  free: true
+- title: Getting Started with NeMo Guardrails (tutorial)
+  url: https://docs.nvidia.com/nemo/guardrails/latest/getting-started/index.html
+  type: tutorial
+  free: true
+sovereignty_notes: 'NVIDIA-maintained, Apache-2.0, fully self-hostable as a Python package.
+
   Multi-provider via the `models:` config: OpenAI, Anthropic, Azure
+
   OpenAI, Cohere, Hugging Face, vLLM, Ollama, and any
+
   OpenAI-compatible endpoint via `base_url`. No telemetry by default.
+
   Conservative model-agnostic 4 rather than 5 because Colang flows
+
   occasionally exhibit provider-specific behaviour around stop-tokens
+
   and structured-output formatting that requires per-provider tuning.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - guardrails-ai
-  - llm-guard
-  - presidio
-  - rebuff
-  - vigil-llm
+- guardrails-ai
+- huggingface-trl
+- llm-guard
+- presidio
+- rebuff
+- vigil-llm

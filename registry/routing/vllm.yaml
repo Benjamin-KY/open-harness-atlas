@@ -5,27 +5,33 @@ subcategory: local-inference-server
 repo_url: https://github.com/vllm-project/vllm
 license: Apache-2.0
 primary_language: Python
-tagline: 'High-throughput memory-efficient LLM inference engine with PagedAttention and OpenAI-compat server'
-description: |
-  vLLM is vllm-project (Berkeley)'s high-throughput memory-efficient LLM inference engine with PagedAttention and OpenAI-compat server. PagedAttention KV-cache; 60+ model families; disaggregated prefill.
+tagline: High-throughput memory-efficient LLM inference engine with PagedAttention and OpenAI-compat server
+description: 'vLLM is vllm-project (Berkeley)''s high-throughput memory-efficient LLM inference engine with PagedAttention and OpenAI-compat server. PagedAttention KV-cache; 60+ model families; disaggregated prefill.
+
 
   In the atlas: vLLM is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: ga
 maintainer:
   type: community
   name: vllm-project (Berkeley)
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  vllm-project (Berkeley) (community-maintained, US); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'vllm-project (Berkeley) (community-maintained, US); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - deepspeed-mii
-  - litellm
-  - llama-cpp
-  - lmdeploy
-  - ollama
-  - openllm
-  - sglang
-  - xgrammar
-  - xinference
+- bentoml
+- deepspeed-mii
+- huggingface-tgi
+- litellm
+- llama-cpp
+- lmdeploy
+- ollama
+- openllm
+- sglang
+- tensorrt-llm
+- xgrammar
+- xinference

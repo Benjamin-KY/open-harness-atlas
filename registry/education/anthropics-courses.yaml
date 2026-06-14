@@ -1,0 +1,59 @@
+id: anthropics-courses
+name: Anthropic Courses
+category: education
+subcategory: vendor-cookbook
+repo_url: https://github.com/anthropics/courses
+homepage: https://github.com/anthropics/courses
+license: Apache-2.0
+primary_language: Jupyter Notebook
+tagline: Anthropic's official educational courses on prompt engineering, real-world prompting, agents, tool use, and the Model Context Protocol.
+description: |
+  Anthropic's official open-source education repository — five
+  self-paced courses covering Anthropic API fundamentals, prompt
+  engineering, real-world prompting patterns, agentic tool use, and
+  the Model Context Protocol (MCP). Each course is a sequence of
+  Jupyter notebooks with executable cells, exercises, and reference
+  answers. The agents and MCP courses in particular ship working
+  reference implementations of tool-using agents end-to-end.
+
+  In the atlas: Anthropic Courses is the canonical
+  **vendor-cookbook** for the Anthropic stack — the educational
+  counterpart to OpenAI's `openai-cookbook` and Mistral's
+  `mistral-cookbook`. It is catalogued under `education` because
+  the deliverable is teaching material; the runnable code is
+  vendor-specific to the Anthropic API rather than provider-neutral
+  framework code.
+maturity: ga
+maintainer:
+  type: company
+  name: Anthropic, PBC
+origin_country: US
+model_agnostic_score: 1
+education_resources:
+  - title: Anthropic Courses — README and course index
+    url: https://github.com/anthropics/courses
+    type: course
+    free: true
+  - title: Prompt Engineering Interactive Tutorial
+    url: https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial
+    type: tutorial
+    free: true
+  - title: Tool Use Course
+    url: https://github.com/anthropics/courses/tree/master/tool_use
+    type: course
+    free: true
+sovereignty_notes: |
+  Anthropic is US-incorporated (San Francisco PBC); the course
+  materials are Apache-2.0 OSS and self-hostable as static
+  notebooks. The runnable code, however, calls the hosted Anthropic
+  API (claude.ai) — there is no local-backend variant. `model_agnostic
+  _score` is 1 because every executable example assumes Anthropic
+  models and the Anthropic SDK. Operators using the materials as
+  pedagogy can swap the model layer for OpenAI / Mistral / Ollama /
+  vLLM with minor SDK rewrites; the prompt-engineering content
+  translates across providers but is calibrated to Claude's behaviour.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - mistral-cookbook
+  - ms-phi-cookbook
+  - openai-cookbook

@@ -5,11 +5,13 @@ subcategory: practitioner-guides
 repo_url: https://github.com/microsoft/PhiCookBook
 license: MIT
 primary_language: Markdown
-tagline: 'Hands-on examples for the Phi-3/4 small language model family across cloud and edge'
-description: |
-  Phi Cookbook is Microsoft's hands-on examples for the Phi-3/4 small language model family across cloud and edge. On-device / edge inference focus with limited GPU; first-party Phi curriculum.
+tagline: Hands-on examples for the Phi-3/4 small language model family across cloud and edge
+description: 'Phi Cookbook is Microsoft''s hands-on examples for the Phi-3/4 small language model family across cloud and edge. On-device / edge inference focus with limited GPU; first-party Phi curriculum.
+
 
   In the atlas: Phi Cookbook is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -17,16 +19,18 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: Phi Cookbook — source repository
-    url: https://github.com/microsoft/PhiCookBook
-    type: course
-    free: true
-sovereignty_notes: |
-  Microsoft (US-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: Phi Cookbook — source repository
+  url: https://github.com/microsoft/PhiCookBook
+  type: course
+  free: true
+sovereignty_notes: 'Microsoft (US-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - anthropic-prompt-eng-tutorial
-  - aws-bedrock-workshop
-  - gcp-generative-ai
-  - mistral-cookbook
-  - openai-cookbook
+- anthropic-prompt-eng-tutorial
+- anthropics-courses
+- aws-bedrock-workshop
+- gcp-generative-ai
+- mistral-cookbook
+- openai-cookbook

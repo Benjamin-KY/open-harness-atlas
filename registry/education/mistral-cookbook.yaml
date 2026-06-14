@@ -6,10 +6,12 @@ repo_url: https://github.com/mistralai/cookbook
 license: MIT
 primary_language: Jupyter Notebook
 tagline: 'Recipes for Mistral models: function-calling, RAG, vision, fine-tuning, agentic pipelines'
-description: |
-  Mistral Cookbook is Mistral AI's recipes for Mistral models: function-calling, RAG, vision, fine-tuning, agentic pipelines. First-party examples for Mistral open-weight models; codestral and pixtral coverage.
+description: 'Mistral Cookbook is Mistral AI''s recipes for Mistral models: function-calling, RAG, vision, fine-tuning, agentic pipelines. First-party examples for Mistral open-weight models; codestral and pixtral coverage.
+
 
   In the atlas: Mistral Cookbook is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -17,16 +19,18 @@ maintainer:
 origin_country: FR
 model_agnostic_score: 5
 education_resources:
-  - title: Mistral Cookbook — source repository
-    url: https://github.com/mistralai/cookbook
-    type: course
-    free: true
-sovereignty_notes: |
-  Mistral AI (FR-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: Mistral Cookbook — source repository
+  url: https://github.com/mistralai/cookbook
+  type: course
+  free: true
+sovereignty_notes: 'Mistral AI (FR-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - anthropic-prompt-eng-tutorial
-  - aws-bedrock-workshop
-  - gcp-generative-ai
-  - ms-phi-cookbook
-  - openai-cookbook
+- anthropic-prompt-eng-tutorial
+- anthropics-courses
+- aws-bedrock-workshop
+- gcp-generative-ai
+- ms-phi-cookbook
+- openai-cookbook

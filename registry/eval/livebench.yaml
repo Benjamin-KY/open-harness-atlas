@@ -1,0 +1,43 @@
+id: livebench
+name: LiveBench
+category: eval
+subcategory: contamination-resistant-benchmark
+repo_url: https://github.com/LiveBench/LiveBench
+homepage: https://livebench.ai/
+license: Apache-2.0
+primary_language: Python
+tagline: Contamination-resistant LLM benchmark whose questions are rotated monthly from frontier-fresh sources — math competitions, IPCC reports, arXiv abstracts.
+description: |
+  LiveBench is a benchmark designed by Abacus AI and NYU to defeat
+  training-data contamination by rotating its question pool from
+  sources that post-date most pre-training cutoffs: current math
+  competitions, recent arXiv abstracts, IPCC reports, news from the
+  past month. Every question has a verifiable ground-truth answer;
+  scoring is automatic. The benchmark covers six categories (math,
+  reasoning, coding, language, instruction-following, data analysis)
+  and publishes a rolling leaderboard.
+
+  In the atlas: LiveBench is the **contamination-resistant**
+  benchmark counterpart to ARC-AGI in the eval space. Where ARC-AGI
+  uses a static private test set with procedurally-generated tasks,
+  LiveBench achieves contamination resistance through monthly
+  rotation of fresh real-world content. Both belong on an
+  operator's "ceiling test" shortlist for any model whose training
+  cutoff is plausibly older than the live test items.
+maturity: ga
+maintainer:
+  type: institution
+  name: Abacus AI / NYU (LiveBench team)
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  The benchmark scripts and historical question sets are
+  Apache-2.0 OSS and run entirely offline against any
+  chat-completion endpoint. The official leaderboard at
+  livebench.ai is a hosted service; submitting to it requires
+  uploading model outputs but the benchmark can be run privately
+  without disclosing scores. Provider-neutral: works against any
+  OpenAI-compatible endpoint including local vLLM / Ollama.
+harness_paradigm_alignment: none
+adjacent_to:
+  - arc-agi
