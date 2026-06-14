@@ -16068,7 +16068,7 @@
           "level": "featured"
         },
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "recommended"
         }
       ]
@@ -20678,7 +20678,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "recommended"
         },
         {
@@ -21566,7 +21566,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21600,7 +21600,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21634,7 +21634,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21668,7 +21668,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21702,7 +21702,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21736,7 +21736,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21770,7 +21770,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "featured"
         }
       ]
@@ -21804,7 +21804,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21838,7 +21838,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21872,7 +21872,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21906,7 +21906,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21940,7 +21940,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -21974,7 +21974,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22008,7 +22008,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22042,7 +22042,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22076,7 +22076,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22110,7 +22110,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22144,7 +22144,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22178,7 +22178,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22212,7 +22212,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22246,7 +22246,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22280,7 +22280,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22314,7 +22314,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22348,7 +22348,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22382,7 +22382,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22416,7 +22416,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22450,7 +22450,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22484,7 +22484,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22518,7 +22518,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22552,7 +22552,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22586,7 +22586,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22620,7 +22620,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22654,7 +22654,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22688,7 +22688,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "featured"
         }
       ]
@@ -22722,7 +22722,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22756,7 +22756,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "featured"
         }
       ]
@@ -22790,7 +22790,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22824,7 +22824,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22858,7 +22858,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22892,7 +22892,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22926,7 +22926,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22960,7 +22960,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -22994,7 +22994,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23028,7 +23028,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23062,7 +23062,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23096,7 +23096,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23130,7 +23130,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23164,7 +23164,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23198,7 +23198,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23232,7 +23232,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "recommended"
         }
       ]
@@ -23266,7 +23266,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23300,7 +23300,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23334,7 +23334,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23368,7 +23368,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23402,7 +23402,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23436,7 +23436,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23470,7 +23470,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23504,7 +23504,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23538,7 +23538,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23572,7 +23572,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23606,7 +23606,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23640,7 +23640,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23674,7 +23674,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23708,7 +23708,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23742,7 +23742,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23776,7 +23776,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23810,7 +23810,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23844,7 +23844,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23878,7 +23878,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23912,7 +23912,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23946,7 +23946,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -23980,7 +23980,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24014,7 +24014,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24048,7 +24048,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24082,7 +24082,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24116,7 +24116,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24150,7 +24150,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24184,7 +24184,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24218,7 +24218,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24252,7 +24252,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "featured"
         }
       ]
@@ -24286,7 +24286,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24320,7 +24320,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24354,7 +24354,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24388,7 +24388,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24422,7 +24422,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24456,7 +24456,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24490,7 +24490,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24524,7 +24524,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24558,7 +24558,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24592,7 +24592,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24626,7 +24626,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24660,7 +24660,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24694,7 +24694,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24728,7 +24728,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "recommended"
         }
       ]
@@ -24762,7 +24762,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24796,7 +24796,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24830,7 +24830,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24864,7 +24864,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24898,7 +24898,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24932,7 +24932,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -24966,7 +24966,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -25000,7 +25000,7 @@
       "spark": [],
       "use_cases": [
         {
-          "id": "redteam-chatbot",
+          "id": "redteam-ai-system",
           "level": "auto"
         }
       ]
@@ -41969,11 +41969,11 @@
       }
     },
     {
-      "id": "redteam-chatbot",
-      "name": "Red-team a chatbot",
+      "id": "redteam-ai-system",
+      "name": "Red-team an AI system",
       "icon": "\ud83d\udee1\ufe0f",
-      "short": "Adversarial probes, jailbreak suites, agentic attack simulators.",
-      "description": "Find unsafe outputs before users do \u2014 prompt-injection, jailbreaks,\nagentic exfiltration, prompt-leak, tool misuse. Run continuously in\nCI; the best harnesses ship taxonomies plus generators.\n",
+      "short": "Adversarial probes, jailbreak suites, agentic attack simulators across chatbots, agents, and pipelines.",
+      "description": "Find unsafe outputs before users do \u2014 prompt-injection, jailbreaks,\nagentic exfiltration, prompt-leak, tool misuse, multi-turn coercion.\nRun continuously in CI against any AI surface (chatbot, agent,\nRAG pipeline, tool-using assistant); the best harnesses ship\ntaxonomies plus generators rather than a fixed bench.\n",
       "featured": [
         "garak",
         "pyrit",

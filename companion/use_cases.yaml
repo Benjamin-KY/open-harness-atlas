@@ -51,14 +51,16 @@ use_cases:
     auto_match:
       categories: [eval]
 
-  - id: redteam-chatbot
-    name: "Red-team a chatbot"
+  - id: redteam-ai-system
+    name: "Red-team an AI system"
     icon: "🛡️"
-    short: "Adversarial probes, jailbreak suites, agentic attack simulators."
+    short: "Adversarial probes, jailbreak suites, agentic attack simulators across chatbots, agents, and pipelines."
     description: |
       Find unsafe outputs before users do — prompt-injection, jailbreaks,
-      agentic exfiltration, prompt-leak, tool misuse. Run continuously in
-      CI; the best harnesses ship taxonomies plus generators.
+      agentic exfiltration, prompt-leak, tool misuse, multi-turn coercion.
+      Run continuously in CI against any AI surface (chatbot, agent,
+      RAG pipeline, tool-using assistant); the best harnesses ship
+      taxonomies plus generators rather than a fixed bench.
     featured:
       - garak
       - pyrit

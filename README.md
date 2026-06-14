@@ -26,7 +26,7 @@ routing — and free education resources.*
 >
 > **New in Phase 6** — both viewers now ship two overlays:
 > **🎯 Entry points** ("I need a harness for…") — eight curated lenses
-> (evaluate an LLM, red-team a chatbot, monitor production agents, build a
+> (evaluate an LLM, red-team an AI system, monitor production agents, build a
 > RAG agent, serve inference, route across providers, govern LLM policy,
 > learn the stack) filter the graph to the entries that actually solve
 > that job, with featured / recommended / auto-matched tiers. Deep-link
