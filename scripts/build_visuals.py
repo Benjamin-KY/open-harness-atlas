@@ -39,7 +39,7 @@ CATEGORY_COLOUR = {
     "agent": "#d68910",
     "eval": "#28a745",
     "redteam": "#c0392b",
-    "routing": "#1f3a5f",
+    "routing": "#3498db",
     "education": "#7d3c98",
 }
 SPECTRUM_FILE = VISUALS_DIR / "model-agnostic-spectrum.svg"
@@ -124,95 +124,224 @@ def _iter_yaml(category: str) -> Iterable[dict]:
 
 
 def _build_spectrum() -> str:
-    """SVG bar chart: each entry plotted as a coloured tile at its model-agnostic score."""
-    rows: list[tuple[str, str, int]] = []
+    """SVG distribution chart: macro stacked histogram + per-category small-multiples.
+
+    Reports the registry's distribution across model_agnostic_score (0..5).
+    Top panel = combined stacked histogram, bars at each score, segments
+    coloured by category. Bottom panel = a 2x3 grid of per-category mini
+    histograms so the reader can compare each category's posture.
+
+    Replaces the old vertical-line-of-816-bars layout which was readable
+    only as a wall of colour, not as a distribution.
+    """
+    import collections
+
+    SCORES = list(range(6))
+    counts: dict[tuple[str, int], int] = collections.Counter()
     for category in CATEGORY_ORDER:
         for entry in _iter_yaml(category):
             score = entry.get("model_agnostic_score")
             if isinstance(score, int) and 0 <= score <= 5:
-                rows.append((entry["name"], category, score))
+                counts[(category, score)] += 1
 
-    if not rows:
+    if not counts:
         return _empty_svg("model-agnostic spectrum — no entries to plot")
 
-    rows.sort(key=lambda r: (-r[2], r[1], r[0]))
+    total_by_score = {s: sum(counts.get((c, s), 0) for c in CATEGORY_ORDER) for s in SCORES}
+    total_by_cat = {c: sum(counts.get((c, s), 0) for s in SCORES) for c in CATEGORY_ORDER}
+    grand_total = sum(total_by_score.values())
+    macro_max = max(total_by_score.values()) if total_by_score else 1
 
-    cell_height = 18
-    label_width = 250
-    score_axis_width = 360
-    padding_top = 84
-    padding_bottom = 56
-    width = label_width + score_axis_width + 60
-    height = padding_top + cell_height * len(rows) + padding_bottom
-
+    W, H = 1200, 720
     parts: list[str] = []
     parts.append(
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
         f'role="img" aria-labelledby="title desc">'
     )
-    parts.append('<title id="title">Model-agnostic spectrum across the open-harness-atlas registry</title>')
     parts.append(
-        '<desc id="desc">A horizontal bar chart where each open-source harness in the registry '
-        'is plotted at its model-agnostic score from 0 (provider-locked) to 5 (fully portable). '
-        'Colour encodes category.</desc>'
+        '<title id="title">Model-agnostic spectrum across the open-harness-atlas registry</title>'
     )
-    parts.append('<style>'
-                 '.body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}'
-                 '.title{font-size:18px;font-weight:700;fill:#1f3a5f;}'
-                 '.sub{font-size:11px;font-weight:400;fill:#4a5d75;}'
-                 '.axis{font-size:11px;font-weight:600;fill:#1f3a5f;text-anchor:middle;}'
-                 '.row-label{font-size:11px;fill:#1f3a5f;text-anchor:end;}'
-                 '.footer{font-size:10px;fill:#6b7a8c;text-anchor:middle;}'
-                 '</style>')
-    parts.append(f'<rect width="{width}" height="{height}" fill="#ffffff"/>')
-    parts.append('<text x="30" y="36" class="body title">Model-agnostic spectrum</text>')
     parts.append(
-        '<text x="30" y="54" class="body sub">'
-        'Per-entry score 0 (provider-locked) → 5 (fully portable). '
-        'Auto-generated from registry/*/*.yaml — do not hand-edit.</text>'
+        '<desc id="desc">A stacked histogram showing how '
+        f'{grand_total} open-source harnesses distribute across the model_agnostic_score axis '
+        '(0 = provider-locked through 5 = fully portable), with a six-category small-multiples grid '
+        'below comparing each category\'s distribution.</desc>'
+    )
+    parts.append(
+        '<style>'
+        '.body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}'
+        '.title{font-size:20px;font-weight:700;fill:#1f3a5f;}'
+        '.sub{font-size:12px;font-weight:400;fill:#4a5d75;}'
+        '.h2{font-size:13px;font-weight:600;fill:#1f3a5f;}'
+        '.axis{font-size:11px;fill:#4a5d75;}'
+        '.axis-bold{font-size:11px;font-weight:600;fill:#1f3a5f;text-anchor:middle;}'
+        '.bar-total{font-size:11px;font-weight:700;fill:#1f3a5f;text-anchor:middle;}'
+        '.seg-label{font-size:10px;font-weight:600;fill:#ffffff;text-anchor:middle;}'
+        '.mini-title{font-size:11px;font-weight:600;fill:#1f3a5f;}'
+        '.mini-count{font-size:10px;fill:#6b7a8c;}'
+        '.mini-axis{font-size:9px;fill:#6b7a8c;text-anchor:middle;}'
+        '.mini-bar-label{font-size:9px;font-weight:600;fill:#1f3a5f;text-anchor:middle;}'
+        '.legend-text{font-size:11px;fill:#1f3a5f;}'
+        '.footer{font-size:10px;fill:#6b7a8c;text-anchor:middle;}'
+        '</style>'
+    )
+    parts.append(f'<rect width="{W}" height="{H}" fill="#ffffff"/>')
+
+    parts.append('<text x="40" y="38" class="body title">Model-agnostic spectrum</text>')
+    parts.append(
+        f'<text x="40" y="58" class="body sub">'
+        f'{grand_total} open-source harnesses scored 0 (provider-locked) through 5 (fully portable). '
+        'Auto-generated from registry/*/*.yaml. '
+        'Conservative defaults (3) reflect entries pending manual review.'
+        '</text>'
     )
 
-    axis_y = padding_top - 12
-    axis_x0 = label_width + 20
-    axis_x5 = axis_x0 + score_axis_width
-    parts.append(f'<line x1="{axis_x0}" y1="{axis_y}" x2="{axis_x5}" y2="{axis_y}" '
-                 f'stroke="#1f3a5f" stroke-width="1" opacity="0.4"/>')
-    for score in range(6):
-        x = axis_x0 + score * (score_axis_width / 5)
+    px_left, px_right, py_top, py_bot = 140, 1160, 110, 330
+    plot_w = px_right - px_left
+    plot_h = py_bot - py_top
+    bar_w = 100
+    slot_w = plot_w / 6
+    y_max = ((macro_max // 100) + 1) * 100
+
+    for tick in range(0, y_max + 1, 100):
+        ty = py_bot - (tick / y_max) * plot_h
         parts.append(
-            f'<line x1="{x:.1f}" y1="{axis_y - 4}" x2="{x:.1f}" y2="{axis_y + 4}" '
-            f'stroke="#1f3a5f" stroke-width="1"/>'
+            f'<line x1="{px_left}" y1="{ty:.1f}" x2="{px_right}" y2="{ty:.1f}" '
+            f'stroke="#e6e9ee" stroke-width="1"/>'
         )
-        parts.append(f'<text x="{x:.1f}" y="{axis_y - 8}" class="body axis">{score}</text>')
-
-    for i, (name, category, score) in enumerate(rows):
-        y = padding_top + i * cell_height
-        text_y = y + cell_height * 0.7
         parts.append(
-            f'<text x="{label_width + 12}" y="{text_y:.1f}" class="body row-label">'
-            f'{_xml_escape(name)} '
-            f'<tspan class="sub">[{category}]</tspan></text>'
+            f'<text x="{px_left - 10}" y="{ty + 4:.1f}" class="body axis" text-anchor="end">{tick}</text>'
         )
-        x = axis_x0
-        bar_w = score * (score_axis_width / 5)
-        if bar_w > 0:
-            parts.append(f'<rect x="{x:.1f}" y="{y + 2}" width="{bar_w:.1f}" height="{cell_height - 6}" '
-                         f'rx="3" fill="{CATEGORY_COLOUR[category]}"/>')
-        else:
-            parts.append(f'<rect x="{x:.1f}" y="{y + 2}" width="6" height="{cell_height - 6}" '
-                         f'rx="2" fill="#c0392b"/>')
 
-    legend_y = height - 32
-    legend_x = 30
-    for category in CATEGORY_ORDER:
-        parts.append(f'<rect x="{legend_x}" y="{legend_y - 10}" width="14" height="14" rx="3" '
-                     f'fill="{CATEGORY_COLOUR[category]}"/>')
-        parts.append(f'<text x="{legend_x + 20}" y="{legend_y}" class="body sub">{category}</text>')
-        legend_x += 110
+    parts.append(
+        f'<text x="{px_left - 50}" y="{py_top + plot_h / 2:.1f}" class="body sub" '
+        f'transform="rotate(-90 {px_left - 50},{py_top + plot_h / 2:.1f})" '
+        f'text-anchor="middle">entries</text>'
+    )
 
-    parts.append(f'<text x="{width / 2:.0f}" y="{height - 10}" class="body footer">'
-                 f'CC BY-SA 4.0 — open-harness-atlas. Generated by scripts/build_visuals.py.</text>')
+    for s in SCORES:
+        bx = px_left + s * slot_w + (slot_w - bar_w) / 2
+        running_y = py_bot
+        for cat in CATEGORY_ORDER:
+            n = counts.get((cat, s), 0)
+            if n == 0:
+                continue
+            seg_h = (n / y_max) * plot_h
+            running_y -= seg_h
+            parts.append(
+                f'<rect x="{bx:.1f}" y="{running_y:.1f}" width="{bar_w}" height="{seg_h:.2f}" '
+                f'fill="{CATEGORY_COLOUR[cat]}"/>'
+            )
+            if seg_h >= 18:
+                parts.append(
+                    f'<text x="{bx + bar_w / 2:.1f}" y="{running_y + seg_h / 2 + 4:.1f}" '
+                    f'class="body seg-label">{n}</text>'
+                )
+
+        total = total_by_score[s]
+        if total > 0:
+            top_y = py_bot - (total / y_max) * plot_h
+            parts.append(
+                f'<text x="{bx + bar_w / 2:.1f}" y="{top_y - 6:.1f}" class="body bar-total">{total}</text>'
+            )
+        parts.append(
+            f'<text x="{bx + bar_w / 2:.1f}" y="{py_bot + 18:.1f}" class="body axis-bold">{s}</text>'
+        )
+
+    score_descriptors = {
+        0: "locked",
+        1: "single primary",
+        2: "multi-API",
+        3: "+ local opt",
+        4: "swap by config",
+        5: "config-only",
+    }
+    for s in SCORES:
+        bx = px_left + s * slot_w + slot_w / 2
+        parts.append(
+            f'<text x="{bx:.1f}" y="{py_bot + 32:.1f}" class="body axis" text-anchor="middle">'
+            f'{score_descriptors[s]}</text>'
+        )
+
+    parts.append(
+        '<text x="40" y="380" class="body h2">Per-category distribution '
+        '<tspan class="sub">(each chart\'s y-axis is independently scaled '
+        '\u2014 read shape, not height)</tspan></text>'
+    )
+
+    grid_cols = 3
+    cell_w = 360
+    cell_h = 130
+    cell_gap_x = 20
+    cell_gap_y = 30
+    grid_left = 40
+    grid_top = 400
+    mini_bar_w = 36
+    mini_plot_h = 76
+    mini_plot_top_pad = 28
+
+    for idx, cat in enumerate(CATEGORY_ORDER):
+        row = idx // grid_cols
+        col = idx % grid_cols
+        cx = grid_left + col * (cell_w + cell_gap_x)
+        cy = grid_top + row * (cell_h + cell_gap_y)
+
+        cat_total = total_by_cat[cat]
+        cat_max = max((counts.get((cat, s), 0) for s in SCORES), default=1) or 1
+
+        parts.append(
+            f'<rect x="{cx}" y="{cy}" width="{cell_w}" height="{cell_h}" rx="6" '
+            f'fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>'
+        )
+        parts.append(
+            f'<rect x="{cx}" y="{cy}" width="6" height="{cell_h}" rx="3" '
+            f'fill="{CATEGORY_COLOUR[cat]}"/>'
+        )
+        parts.append(
+            f'<text x="{cx + 16}" y="{cy + 18}" class="body mini-title">{cat}</text>'
+        )
+        parts.append(
+            f'<text x="{cx + cell_w - 12}" y="{cy + 18}" class="body mini-count" '
+            f'text-anchor="end">{cat_total} entries</text>'
+        )
+
+        mini_left = cx + 24
+        mini_right = cx + cell_w - 16
+        mini_plot_w = mini_right - mini_left
+        mini_slot = mini_plot_w / 6
+        mini_bottom = cy + mini_plot_top_pad + mini_plot_h
+
+        for s in SCORES:
+            n = counts.get((cat, s), 0)
+            bx = mini_left + s * mini_slot + (mini_slot - mini_bar_w) / 2
+            if n > 0:
+                bh = (n / cat_max) * mini_plot_h
+                parts.append(
+                    f'<rect x="{bx:.1f}" y="{mini_bottom - bh:.2f}" width="{mini_bar_w}" '
+                    f'height="{bh:.2f}" rx="2" fill="{CATEGORY_COLOUR[cat]}" opacity="0.85"/>'
+                )
+                parts.append(
+                    f'<text x="{bx + mini_bar_w / 2:.1f}" y="{mini_bottom - bh - 4:.1f}" '
+                    f'class="body mini-bar-label">{n}</text>'
+                )
+            else:
+                parts.append(
+                    f'<line x1="{bx:.1f}" y1="{mini_bottom - 1}" x2="{bx + mini_bar_w:.1f}" '
+                    f'y2="{mini_bottom - 1}" stroke="#cfd6df" stroke-width="2"/>'
+                )
+            parts.append(
+                f'<text x="{bx + mini_bar_w / 2:.1f}" y="{mini_bottom + 12:.1f}" '
+                f'class="body mini-axis">{s}</text>'
+            )
+
+    parts.append(
+        f'<text x="{W / 2:.0f}" y="{H - 16}" class="body footer">'
+        f'CC BY-SA 4.0 \u2014 open-harness-atlas \u00b7 '
+        f'generated by scripts/build_visuals.py::_build_spectrum'
+        f'</text>'
+    )
+
     parts.append('</svg>\n')
     return "\n".join(parts)
 
