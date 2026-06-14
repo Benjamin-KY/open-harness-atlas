@@ -24,3 +24,4 @@ adjacent_to:
 - scaffold-bench
 - seci
 - tau2-bench
+deployment_posture: local-first

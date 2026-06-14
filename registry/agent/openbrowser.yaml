@@ -24,3 +24,4 @@ adjacent_to:
 - opencli
 - wanwu
 - web-ui
+deployment_posture: cloud-first

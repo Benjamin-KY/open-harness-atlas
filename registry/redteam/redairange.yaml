@@ -24,3 +24,4 @@ adjacent_to:
 - augustus
 - pyrit
 - securemcp
+deployment_posture: local-first

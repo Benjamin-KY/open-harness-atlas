@@ -7,22 +7,36 @@ homepage: https://toolemu.com/
 license: Apache-2.0
 primary_language: Python
 tagline: LM-emulated sandbox for identifying tool-use risks in LLM agents at scale.
-description: |
-  ToolEmu (ICLR 2024 spotlight) is an Apache-2.0 framework that uses
+description: 'ToolEmu (ICLR 2024 spotlight) is an Apache-2.0 framework that uses
+
   one language model to **emulate** tool execution for another
+
   language model under test, allowing safety-evaluation of
+
   tool-using agents without actually executing risky side effects
+
   (rm-rf-style commands, financial transactions, sending real
+
   emails). It ships a curated test suite of 36 high-stakes
+
   tool-use scenarios, an emulator prompt, and safety / helpfulness
+
   evaluators.
 
+
   In the atlas: ToolEmu is the canonical **safe-by-construction
+
   agent-evaluation environment**. It is the answer to the practical
+
   problem "how do I evaluate an autonomous agent on dangerous
+
   scenarios without giving it dangerous tools?" — strong fit for
+
   pre-deployment safety review under a Harmless Harnesses
+
   audit-log invariant.
+
+  '
 maturity: beta
 maintainer:
   type: institution
@@ -30,29 +44,36 @@ maintainer:
 origin_country: US
 model_agnostic_score: 4
 education_resources:
-  - title: ToolEmu — Documentation and examples
-    url: https://github.com/ryoungj/ToolEmu#readme
-    type: docs
-    free: true
-  - title: Identifying the Risks of LM Agents with an LM-Emulated Sandbox (paper)
-    url: https://arxiv.org/abs/2309.15817
-    type: paper
-    free: true
-sovereignty_notes: |
-  Academic research project (NYU lead author); Apache-2.0; runs
+- title: ToolEmu — Documentation and examples
+  url: https://github.com/ryoungj/ToolEmu#readme
+  type: docs
+  free: true
+- title: Identifying the Risks of LM Agents with an LM-Emulated Sandbox (paper)
+  url: https://arxiv.org/abs/2309.15817
+  type: paper
+  free: true
+sovereignty_notes: 'Academic research project (NYU lead author); Apache-2.0; runs
+
   entirely locally. Both the agent-under-test and the emulator LM
+
   are pluggable, but the emulator quality matters — small / weak
+
   local LMs may emulate badly. Conservative model-agnostic 4 — the
+
   framework is provider-agnostic but the emulator role is sensitive
+
   to model capability.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agent-attack
-  - agentdojo
-  - agentic-radar
-  - bipia
-  - mimir
-  - open-prompt-injection
-  - ps-fuzz
-  - pyrit
-  - r-judge
+- agent-attack
+- agentdojo
+- agentic-radar
+- bipia
+- mimir
+- open-prompt-injection
+- ps-fuzz
+- pyrit
+- r-judge
+deployment_posture: local-first

@@ -5,23 +5,27 @@ subcategory: local-inference-server
 repo_url: https://github.com/mudler/LocalAI
 license: MIT
 primary_language: Go
-tagline: 'Self-hosted OpenAI API drop-in for LLMs, vision, audio, image-gen - no GPU required'
-description: |
-  LocalAI is mudler (Ettore Di Giacinto)'s self-hosted OpenAI API drop-in for LLMs, vision, audio, image-gen - no GPU required. Multi-modal (text/vision/audio/image); P2P via libp2p; MCP support.
+tagline: Self-hosted OpenAI API drop-in for LLMs, vision, audio, image-gen - no GPU required
+description: 'LocalAI is mudler (Ettore Di Giacinto)''s self-hosted OpenAI API drop-in for LLMs, vision, audio, image-gen - no GPU required. Multi-modal (text/vision/audio/image); P2P via libp2p; MCP support.
+
 
   In the atlas: LocalAI is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: ga
 maintainer:
   type: individual
   name: mudler (Ettore Di Giacinto)
 origin_country: IT
 model_agnostic_score: 5
-sovereignty_notes: |
-  mudler (Ettore Di Giacinto) (independent maintainer, IT); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'mudler (Ettore Di Giacinto) (independent maintainer, IT); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - jan
-  - llama-cpp
-  - ollama
-  - ramalama
-  - text-generation-webui
+- jan
+- llama-cpp
+- ollama
+- ramalama
+- text-generation-webui
+deployment_posture: local-first

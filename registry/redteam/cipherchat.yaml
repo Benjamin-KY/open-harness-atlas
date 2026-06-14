@@ -5,27 +5,31 @@ subcategory: adversarial-attack-toolkit
 repo_url: https://github.com/RobustNLP/CipherChat
 license: MIT
 primary_language: Python
-tagline: 'Systematically probes LLM safety alignment gaps using ciphers (Caesar, Morse, Base64) to bypass natural-language safety filters'
-description: |
-  CipherChat is Youliang Yuan et al. (CUHK/Tencent AI Lab)'s systematically probes LLM safety alignment gaps using ciphers (Caesar, Morse, Base64) to bypass natural-language safety filters. Demonstrates alignment generalises poorly beyond natural language; ICLR 2024.
+tagline: Systematically probes LLM safety alignment gaps using ciphers (Caesar, Morse, Base64) to bypass natural-language safety filters
+description: 'CipherChat is Youliang Yuan et al. (CUHK/Tencent AI Lab)''s systematically probes LLM safety alignment gaps using ciphers (Caesar, Morse, Base64) to bypass natural-language safety filters. Demonstrates alignment generalises poorly beyond natural language; ICLR 2024.
+
 
   In the atlas: CipherChat is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: Youliang Yuan et al. (CUHK/Tencent AI Lab)
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  Youliang Yuan et al. (CUHK/Tencent AI Lab) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Youliang Yuan et al. (CUHK/Tencent AI Lab) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - autodan
-  - autodan-turbo
-  - gptfuzz
-  - llm-adaptive-attacks
-  - llm-attacks-gcg
-  - nanogcg
-  - pair-jailbreak
-  - renellm
-  - tap-jailbreak
+- autodan
+- autodan-turbo
+- gptfuzz
+- llm-adaptive-attacks
+- llm-attacks-gcg
+- nanogcg
+- pair-jailbreak
+- renellm
+- tap-jailbreak
+deployment_posture: local-first

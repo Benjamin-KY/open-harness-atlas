@@ -22,3 +22,4 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - litellm
 - tokligence-gateway
+deployment_posture: api-only

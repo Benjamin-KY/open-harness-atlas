@@ -23,3 +23,4 @@ adjacent_to:
 - parea-sdk-py
 - prompty
 - qa-metrics
+deployment_posture: cloud-first

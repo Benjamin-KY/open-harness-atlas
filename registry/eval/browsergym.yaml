@@ -5,35 +5,39 @@ subcategory: agent-eval
 repo_url: https://github.com/ServiceNow/BrowserGym
 license: Apache-2.0
 primary_language: Python
-tagline: 'Gymnasium-compatible web interaction environment unifying 8+ web-agent benchmarks'
-description: |
-  BrowserGym is ServiceNow Research's gymnasium-compatible web interaction environment unifying 8+ web-agent benchmarks. Gym API wrapper unifies MiniWoB, WorkArena, AssistGUI, WebArena.
+tagline: Gymnasium-compatible web interaction environment unifying 8+ web-agent benchmarks
+description: 'BrowserGym is ServiceNow Research''s gymnasium-compatible web interaction environment unifying 8+ web-agent benchmarks. Gym API wrapper unifies MiniWoB, WorkArena, AssistGUI, WebArena.
+
 
   In the atlas: BrowserGym is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: ServiceNow Research
 origin_country: CA
 model_agnostic_score: 4
-sovereignty_notes: |
-  ServiceNow Research (CA-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'ServiceNow Research (CA-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentbench
-  - agentlab
-  - appworld
-  - bfcl
-  - browser-use
-  - mind2web
-  - mle-bench
-  - osworld
-  - t-eval
-  - tarsier-web-perception
-  - theagentcompany
-  - toolbench
-  - ufo
-  - webarena
-  - webvoyager-multimodal
-  - wildbench
-  - workarena
+- agentbench
+- agentlab
+- appworld
+- bfcl
+- browser-use
+- mind2web
+- mle-bench
+- osworld
+- t-eval
+- tarsier-web-perception
+- theagentcompany
+- toolbench
+- ufo
+- webarena
+- webvoyager-multimodal
+- wildbench
+- workarena
+deployment_posture: local-first

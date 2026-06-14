@@ -6,10 +6,10 @@ repo_url: https://github.com/raketenkater/llm-server
 license: MIT
 primary_language: Go
 tagline: Auto-tuned launcher for GGUF models on llama.cpp / ik_llama.cpp — OpenAI-compatible server with multi-GPU tensor-split, MoE expert placement, measured flag tuning (AI Tune), hardware-matched Huggin...
-description: |-
-  LLM Server — Auto-tuned launcher for GGUF models on llama.cpp / ik_llama.cpp — OpenAI-compatible server with multi-GPU tensor-split, MoE expert placement, measured flag tuning (AI Tune), hardware-matched HuggingFace downloads, and crash recovery. An Ollama alternative for multi-GPU rigs. Upstream maintainer: raketenkater.
+description: 'LLM Server — Auto-tuned launcher for GGUF models on llama.cpp / ik_llama.cpp — OpenAI-compatible server with multi-GPU tensor-split, MoE expert placement, measured flag tuning (AI Tune), hardware-matched HuggingFace downloads, and crash recovery. An Ollama alternative for multi-GPU rigs. Upstream maintainer: raketenkater.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: community
@@ -24,3 +24,4 @@ adjacent_to:
 - tiny-vllm
 - vllm-qwen
 - xllm
+deployment_posture: local-first

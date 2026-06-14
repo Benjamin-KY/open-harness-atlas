@@ -79,6 +79,14 @@ sovereignty_notes: |
 # GOVERNANCE.md §2.3.
 harness_paradigm_alignment: partial
 
+# REQUIRED. Where does it run? See docs/deployment-posture.md.
+#   local-only  = air-gappable, no network egress required after install
+#   local-first = `docker compose up` works out of the box; cloud optional
+#   hybrid      = requires both local and cloud at runtime by design
+#   cloud-first = SaaS is the primary path; self-host is thin/advanced
+#   api-only    = no local path exists (calls a third-party API)
+deployment_posture: local-first
+
 # Other registry ids that relate to this entry (replaces / complements /
 # depends-on). Used to render adjacency edges in the taxonomy and companion.
 adjacent_to:

@@ -25,3 +25,4 @@ adjacent_to:
 - refusebench
 - research-sweeper
 - self-healing-rag
+deployment_posture: local-first

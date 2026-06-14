@@ -7,39 +7,64 @@ homepage: https://openai.com/safety/preparedness/
 license: MIT
 primary_language: Python
 tagline: OpenAI's open-source releases supporting the Preparedness Framework — frontier-risk evaluation methodology (cybersecurity, biosecurity, autonomy).
-description: |
-  OpenAI's `openai/preparedness` repository is the official
+description: 'OpenAI''s `openai/preparedness` repository is the official
+
   open-source release of evaluation methodology, harnesses, and
-  reproduction code supporting OpenAI's Preparedness Framework —
-  the company's commitment to evaluate frontier models for
+
+  reproduction code supporting OpenAI''s Preparedness Framework —
+
+  the company''s commitment to evaluate frontier models for
+
   catastrophic risk capabilities across cybersecurity, CBRN, model
+
   autonomy, and persuasion before deployment. It is the upstream
-  source for evaluation harnesses described in OpenAI's model
+
+  source for evaluation harnesses described in OpenAI''s model
+
   system cards.
 
+
   In the atlas: openai-preparedness is the **frontier-risk
-  evaluation** subcategory point — adjacent in spirit to METR's
-  task-standard, the UK AI Security Institute's evals, and
-  Anthropic's Responsible Scaling Policy methodology. Operators
+
+  evaluation** subcategory point — adjacent in spirit to METR''s
+
+  task-standard, the UK AI Security Institute''s evals, and
+
+  Anthropic''s Responsible Scaling Policy methodology. Operators
+
   evaluating frontier-class deployments use these harnesses both
+
   as primary signal and as a comparability anchor against
+
   published OpenAI model cards. Catalogued separately from
-  OpenAI's general `openai-cookbook` because the deliverable is
+
+  OpenAI''s general `openai-cookbook` because the deliverable is
+
   risk-eval methodology, not tutorial content.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: OpenAI, OpCo, LLC
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  OpenAI is US-incorporated; the released methodology and code is
+sovereignty_notes: 'OpenAI is US-incorporated; the released methodology and code is
+
   MIT-licensed and runs offline against any chat-completion
+
   endpoint that the operator can call. The harnesses are written
+
   against OpenAI SDK conventions but the abstractions accept any
+
   OpenAI-compatible backend (vLLM / Ollama / TGI / local). No
+
   required hosted dependency beyond whichever model is being
+
   evaluated.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - metr-task-standard
+- metr-task-standard
+deployment_posture: local-only

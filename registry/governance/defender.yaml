@@ -30,3 +30,4 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: none
+deployment_posture: local-first

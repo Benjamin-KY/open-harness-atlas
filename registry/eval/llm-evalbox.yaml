@@ -24,3 +24,4 @@ adjacent_to:
 - lm-evaluation-harness
 - mac-llm-bench
 - mac-mini-llm-roster
+deployment_posture: local-first

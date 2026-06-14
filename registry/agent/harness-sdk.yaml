@@ -25,3 +25,4 @@ adjacent_to:
 - langroid
 - learn-claude-code
 - lightagent
+deployment_posture: local-first

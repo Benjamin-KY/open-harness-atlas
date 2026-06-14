@@ -37,6 +37,7 @@ required:
   - model_agnostic_score
   - sovereignty_notes
   - harness_paradigm_alignment
+  - deployment_posture
 
 properties:
 
@@ -194,6 +195,18 @@ properties:
     enum: [none, partial, aligned, native]
     description: >-
       Holistic curator call per GOVERNANCE.md §2.3.
+
+  deployment_posture:
+    type: string
+    enum: [local-only, local-first, hybrid, cloud-first, api-only]
+    description: >-
+      Practical deployment dimension per `docs/deployment-posture.md`.
+      `local-only` runs offline with no network calls. `local-first` works
+      fully local; cloud paths are optional. `hybrid` mixes local + cloud
+      components by design. `cloud-first` is cloud-deployable; self-host
+      is possible but secondary. `api-only` requires a hosted provider
+      and has no local path. Combines with `model_agnostic_score` to
+      surface the sovereignty quadrant filter in both viewers.
 
   adjacent_to:
     type: array

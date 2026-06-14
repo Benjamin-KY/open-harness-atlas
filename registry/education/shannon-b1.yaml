@@ -7,10 +7,10 @@ homepage: https://repo.xuefengpeng.com/Shannon
 license: MIT
 primary_language: Python
 tagline: A large language model built from scratch using NumPy.
-description: |-
-  Shannon B1 — A large language model built from scratch using NumPy. Currently, it is in the initial stage of the development process using numpy. Upstream maintainer: Oringes9235.
+description: 'Shannon B1 — A large language model built from scratch using NumPy. Currently, it is in the initial stage of the development process using numpy. Upstream maintainer: Oringes9235.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: beta
 maintainer:
   type: community
@@ -29,3 +29,4 @@ adjacent_to:
 - mini-llm
 - pytorch-transformer-from-scratch
 - transformer-pytorch-scratch
+deployment_posture: local-only

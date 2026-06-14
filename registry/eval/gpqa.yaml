@@ -5,25 +5,29 @@ subcategory: reasoning
 repo_url: https://github.com/idavidrein/gpqa
 license: MIT
 primary_language: Python
-tagline: '448 expert-written, Google-proof graduate-level multiple-choice questions in biology, chemistry, and physics; humans achieve only ~34% without search'
-description: |
-  GPQA (Graduate-Level Google-Proof QA) is David Rein et al. (NYU)'s 448 expert-written, google-proof graduate-level multiple-choice questions in biology, chemistry, and physics; humans achieve only ~34% without search. Deliberately designed to defeat web-search shortcuts; domain expert authorship; fills gap at top difficulty ceiling above MMLU and MMLU-Pro..
+tagline: 448 expert-written, Google-proof graduate-level multiple-choice questions in biology, chemistry, and physics; humans achieve only ~34% without search
+description: 'GPQA (Graduate-Level Google-Proof QA) is David Rein et al. (NYU)''s 448 expert-written, google-proof graduate-level multiple-choice questions in biology, chemistry, and physics; humans achieve only ~34% without search. Deliberately designed to defeat web-search shortcuts; domain expert authorship; fills gap at top difficulty ceiling above MMLU and MMLU-Pro..
+
 
   In the atlas: GPQA (Graduate-Level Google-Proof QA) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: individual
   name: David Rein et al. (NYU)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  David Rein et al. (NYU) (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'David Rein et al. (NYU) (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - big-bench
-  - lm-evaluation-harness
-  - math
-  - mathbench
-  - mmlu-pro
-  - musr
-  - opencompass
+- big-bench
+- lm-evaluation-harness
+- math
+- mathbench
+- mmlu-pro
+- musr
+- opencompass
+deployment_posture: local-first

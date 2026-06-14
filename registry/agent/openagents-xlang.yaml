@@ -6,28 +6,32 @@ repo_url: https://github.com/xlang-ai/OpenAgents
 license: Apache-2.0
 primary_language: Python
 tagline: 'Open platform with three production-ready agents: data analyst, plugin orchestrator, web browser'
-description: |
-  OpenAgents (xlang) is XLang Lab / HKU's open platform with three production-ready agents: data analyst, plugin orchestrator, web browser. Full-stack app including web UI; 200+ plugins; code, browse, data use-cases.
+description: 'OpenAgents (xlang) is XLang Lab / HKU''s open platform with three production-ready agents: data analyst, plugin orchestrator, web browser. Full-stack app including web UI; 200+ plugins; code, browse, data use-cases.
+
 
   In the atlas: OpenAgents (xlang) is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: XLang Lab / HKU
 origin_country: HK
 model_agnostic_score: 4
-sovereignty_notes: |
-  XLang Lab / HKU (HK-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'XLang Lab / HKU (HK-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ag2
-  - agentverse-openbmb
-  - autogen
-  - camel
-  - chatdev
-  - crewai
-  - metagpt
-  - openagents-org
-  - openmanus
-  - praisonai
-  - swarm-openai
+- ag2
+- agentverse-openbmb
+- autogen
+- camel
+- chatdev
+- crewai
+- metagpt
+- openagents-org
+- openmanus
+- praisonai
+- swarm-openai
+deployment_posture: local-first

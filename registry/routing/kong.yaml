@@ -5,23 +5,27 @@ subcategory: ai-gateway
 repo_url: https://github.com/Kong/kong
 license: Apache-2.0
 primary_language: Lua
-tagline: 'API and AI Gateway built on Nginx/OpenResty; AI plugins do LLM proxying, prompt decoration, cost tracking'
-description: |
-  Kong is Kong Inc.'s aPI and AI Gateway built on Nginx/OpenResty; AI plugins do LLM proxying, prompt decoration, cost tracking. ai-proxy + ai-rate-limiting + ai-semantic-caching plugins; K8s-native.
+tagline: API and AI Gateway built on Nginx/OpenResty; AI plugins do LLM proxying, prompt decoration, cost tracking
+description: 'Kong is Kong Inc.''s aPI and AI Gateway built on Nginx/OpenResty; AI plugins do LLM proxying, prompt decoration, cost tracking. ai-proxy + ai-rate-limiting + ai-semantic-caching plugins; K8s-native.
+
 
   In the atlas: Kong is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: Kong Inc.
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Kong Inc. (US-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Kong Inc. (US-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - apache-apisix
-  - apfel
-  - envoy-ai-gateway
-  - kgateway
-  - plano
+- apache-apisix
+- apfel
+- envoy-ai-gateway
+- kgateway
+- plano
+deployment_posture: local-first

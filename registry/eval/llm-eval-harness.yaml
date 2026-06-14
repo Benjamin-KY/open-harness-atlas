@@ -24,3 +24,4 @@ adjacent_to:
 - rag-eval-pack
 - ragrank
 - repoagentbench
+deployment_posture: local-first

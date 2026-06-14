@@ -7,22 +7,36 @@ homepage: https://stanford-cs336.github.io/spring2025/
 license: MIT
 primary_language: Python
 tagline: Stanford's open course on building large language models from scratch — architecture, training, inference, evaluation.
-description: |
-  Stanford CS336 (Language Models from Scratch) is Stanford's open
+description: 'Stanford CS336 (Language Models from Scratch) is Stanford''s open
+
   graduate course on building large language models end-to-end. The
+
   spring-2025 instance ships lecture slides, assignment skeletons,
+
   and reading lists in the public repository under MIT — covering
+
   tokenisation, transformer architecture, training infrastructure,
+
   efficient inference, RLHF / RLAIF, evaluation, and safety. The
+
   course is designed to leave students able to reason about every
+
   layer of the stack rather than treating the model as a black box.
 
+
   In the atlas: CS336 is the **graduate-grade foundations** entry.
-  Where Karpathy's Zero to Hero is the from-scratch introduction,
+
+  Where Karpathy''s Zero to Hero is the from-scratch introduction,
+
   CS336 is the formal university course at the next layer of
+
   rigour — and the open release of the lecture materials is itself
+
   a sovereignty-relevant artefact (the curriculum is portable across
+
   jurisdictions).
+
+  '
 maturity: ga
 maintainer:
   type: institution
@@ -30,24 +44,29 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: Stanford CS336 — Course website
-    url: https://stanford-cs336.github.io/spring2025/
-    type: course
-    free: true
-  - title: Stanford CS336 — Lecture repository
-    url: https://github.com/stanford-cs336/spring2025-lectures
-    type: course
-    free: true
-sovereignty_notes: |
-  Stanford academic course; published lecture materials MIT-licensed;
+- title: Stanford CS336 — Course website
+  url: https://stanford-cs336.github.io/spring2025/
+  type: course
+  free: true
+- title: Stanford CS336 — Lecture repository
+  url: https://github.com/stanford-cs336/spring2025-lectures
+  type: course
+  free: true
+sovereignty_notes: 'Stanford academic course; published lecture materials MIT-licensed;
+
   the course teaches model construction, not consumption — so it is
+
   provider-independent by construction. Model-agnostic 5 — you are
+
   building the model.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - hf-nlp-course
-  - hf-smol-course
-  - karpathy-nn-zero-to-hero
-  - llm-notebooks-course
-  - mlabonne-llm-course
-  - ms-generative-ai-for-beginners
+- hf-nlp-course
+- hf-smol-course
+- karpathy-nn-zero-to-hero
+- llm-notebooks-course
+- mlabonne-llm-course
+- ms-generative-ai-for-beginners
+deployment_posture: local-only

@@ -31,3 +31,4 @@ adjacent_to:
 - lanekeep
 - openclaw-middleware-suite
 - ouro-loop
+deployment_posture: local-first

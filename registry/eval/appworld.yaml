@@ -5,30 +5,34 @@ subcategory: agent-bench
 repo_url: https://github.com/stonybrooknlp/appworld
 license: Apache-2.0
 primary_language: Python
-tagline: 'High-fidelity execution environment of 9 day-to-day apps with 457 APIs and 750 diverse coding-agent tasks requiring interactive multi-step API calls'
-description: |
-  AppWorld is Stony Brook NLP Group's high-fidelity execution environment of 9 day-to-day apps with 457 APIs and 750 diverse coding-agent tasks requiring interactive multi-step API calls. Full application simulation (Spotify, Venmo, Gmail, etc.) with in-process Python execution; tests coding agents end-to-end unlike WebArena's browser focus..
+tagline: High-fidelity execution environment of 9 day-to-day apps with 457 APIs and 750 diverse coding-agent tasks requiring interactive multi-step API calls
+description: 'AppWorld is Stony Brook NLP Group''s high-fidelity execution environment of 9 day-to-day apps with 457 APIs and 750 diverse coding-agent tasks requiring interactive multi-step API calls. Full application simulation (Spotify, Venmo, Gmail, etc.) with in-process Python execution; tests coding agents end-to-end unlike WebArena''s browser focus..
+
 
   In the atlas: AppWorld is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Stony Brook NLP Group
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Stony Brook NLP Group (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Stony Brook NLP Group (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentbench
-  - bfcl
-  - browsergym
-  - mind2web
-  - mle-bench
-  - osworld
-  - t-eval
-  - theagentcompany
-  - toolbench
-  - webarena
-  - wildbench
-  - workarena
+- agentbench
+- bfcl
+- browsergym
+- mind2web
+- mle-bench
+- osworld
+- t-eval
+- theagentcompany
+- toolbench
+- webarena
+- wildbench
+- workarena
+deployment_posture: local-first

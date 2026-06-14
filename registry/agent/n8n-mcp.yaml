@@ -24,3 +24,4 @@ adjacent_to:
 - astrbot
 - langgraph
 - xiaozhi-esp32
+deployment_posture: local-first

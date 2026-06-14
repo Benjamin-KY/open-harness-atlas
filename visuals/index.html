@@ -534,6 +534,19 @@
     </div>
 
     <div class="panel">
+      <div class="panel-header">Deployment posture<span class="count" id="posture-count"></span></div>
+      <div class="panel-body">
+        <p style="font-size:11.5px;color:var(--brand-mute);margin:0 0 6px;line-height:1.45">
+          Where does it run? Heuristic + 3-model ensemble curation.
+          <em>local-only</em> = air-gappable · <em>local-first</em> = self-host is the documented default ·
+          <em>hybrid</em> = both local and cloud at runtime by design · <em>cloud-first</em> = SaaS is primary ·
+          <em>api-only</em> = no local path. Click a row to hide that posture.
+        </p>
+        <div id="posture-legend"></div>
+      </div>
+    </div>
+
+    <div class="panel">
       <div class="panel-header">Path finder</div>
       <div class="panel-body">
         <div class="path-finder">
@@ -589,6 +602,10 @@
       <strong>Drag</strong> to rotate · <strong>scroll</strong> to zoom · <strong>right-click + drag</strong> to pan.
       Click any node to see details and fly the camera to it. Take a curated tour for a
       guided 5-stop tour of the atlas.
+    </p>
+    <p style="font-size:13px;color:var(--brand-mute);margin:0 0 12px">
+      New: filter by <strong>deployment posture</strong> (local-only · local-first · hybrid · cloud-first · api-only)
+      to find harnesses you can actually self-host. Try the <em>Local-possible only</em> chip.
     </p>
     <div class="tip-grid">
       <div><kbd>/</kbd> focus search</div>
@@ -700,6 +717,35 @@
     emerging:    '≥100 stars, 3mo+ old, actively maintained',
     frontier:    'Passes inclusion criteria, no independent adoption signal yet',
     unknown:     'Metadata fetch failed — operational issue (SSO-restricted org, repo moved, rate-limit) rather than a low-signal verdict'
+  };
+
+  // Deployment-posture palette. Neutral perceptual gradient — warm teal at
+  // the local end, cool blue at the cloud end. Deliberately not a
+  // good/bad ramp: cloud-first + api-only are valid choices, the panel
+  // just surfaces the dimension.
+  const POSTURE_COLOR_MAP = {
+    'local-only':  '#1f8a70',
+    'local-first': '#86b8b1',
+    'hybrid':      '#c9b08c',
+    'cloud-first': '#9cb8dd',
+    'api-only':    '#5b7fc7',
+    'unknown':     '#5d6470'
+  };
+  const POSTURE_LABEL = {
+    'local-only':  'Local only',
+    'local-first': 'Local first',
+    'hybrid':      'Hybrid',
+    'cloud-first': 'Cloud first',
+    'api-only':    'API only',
+    'unknown':     'Unknown'
+  };
+  const POSTURE_HINT = {
+    'local-only':  'Air-gappable — no network egress required after install',
+    'local-first': '`docker compose up` works out of the box; cloud is optional',
+    'hybrid':      'Requires both local and cloud at runtime by design (e.g. local classifier feeds cloud generator)',
+    'cloud-first': 'Self-host docs are thin or advanced-only; SaaS is the primary path',
+    'api-only':    'No local path exists — calls a third-party API as a hard dependency',
+    'unknown':     'Posture not yet classified — pending ensemble curator review'
   };
 
   // Linearly blend two #rrggbb colours by t (0 = c1, 1 = c2).
@@ -915,6 +961,7 @@
       <div class="node-detail-pills">
         <span class="pill" style="background:${NODE_COLOR_MAP[node.category]||node.color}">${escapeHtml(node.category)}</span>
         ${node.tier && node.tier !== 'unknown' ? `<span class="pill" style="background:${TIER_COLOR_MAP[node.tier]||'#888'}" title="Adoption tier — computed from stars, age, commit recency">${escapeHtml(node.tier)}</span>` : ''}
+        ${node.deployment_posture ? `<span class="pill" style="background:${POSTURE_COLOR_MAP[node.deployment_posture]||'#888'}" title="${escapeHtml(POSTURE_HINT[node.deployment_posture]||'')}">${escapeHtml(POSTURE_LABEL[node.deployment_posture]||node.deployment_posture)}</span>` : ''}
         ${node.maturity ? `<span class="pill outline">${escapeHtml(node.maturity)}</span>` : ''}
         ${node.license  ? `<span class="pill outline">${escapeHtml(node.license)}</span>` : ''}
       </div>
@@ -973,8 +1020,8 @@
   fillSelect('lic-sel',  data.meta.licenses);
   fillSelect('lang-sel', data.meta.languages);
 
-  const filterState = { q: '', mas: 0, mat: '', cty: '', lic: '', lang: '', offCats: new Set(), offTiers: new Set(), useCase: null };
-  let chipOv = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null };
+  const filterState = { q: '', mas: 0, mat: '', cty: '', lic: '', lang: '', offCats: new Set(), offTiers: new Set(), offPostures: new Set(), useCase: null };
+  let chipOv = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null, posturesOnly: null };
 
   // Pre-index use-case membership for fast lookups.
   const useCaseList = data.use_cases || [];
@@ -1011,11 +1058,13 @@
         (!filterState.lic  || n.license  === filterState.lic) &&
         (!filterState.lang || n.language === filterState.lang) &&
         !filterState.offCats.has(n.category) &&
-        !filterState.offTiers.has(n.tier || 'unknown');
+        !filterState.offTiers.has(n.tier || 'unknown') &&
+        !filterState.offPostures.has(n.deployment_posture || 'unknown');
       if (v && chipOv.licList   && !chipOv.licList.includes(n.license)) v = false;
       if (v && chipOv.ctyNegate && n.country === chipOv.ctyNegate)      v = false;
       if (v && chipOv.hubsOnly  && !n._isHub)                            v = false;
-      if (v && chipOv.catsOnly  && !chipOv.catsOnly.includes(n.category))v = false;
+      if (v && chipOv.catsOnly  && !chipOv.catsOnly.includes(n.category)) v = false;
+      if (v && chipOv.posturesOnly && !chipOv.posturesOnly.includes(n.deployment_posture)) v = false;
       if (v && filterState.useCase) {
         const memberships = entryUseCases.get(n.id);
         if (!memberships || !memberships.has(filterState.useCase)) v = false;
@@ -1097,6 +1146,30 @@
   $('tier-count').textContent = `${tierShown} entries`;
 
   // ============================================================
+  // Deployment-posture legend (where it runs)
+  // ============================================================
+  const postureLegend = $('posture-legend');
+  const postureMeta = (data.meta.deployment_posture || []).filter(([, c]) => c > 0);
+  let postureShown = 0;
+  postureMeta.forEach(([key, count]) => {
+    postureShown += count;
+    const row = document.createElement('div');
+    row.className = 'legend-item';
+    row.setAttribute('data-posture', key);
+    row.title = POSTURE_HINT[key] || '';
+    const swatchStyle = `background:${POSTURE_COLOR_MAP[key]||'#888'}`;
+    row.innerHTML = `<span class="swatch" style="${swatchStyle}"></span><span class="label">${POSTURE_LABEL[key]||key}</span><span class="count">${count}</span>`;
+    row.onclick = () => {
+      if (filterState.offPostures.has(key)) filterState.offPostures.delete(key);
+      else filterState.offPostures.add(key);
+      row.classList.toggle('off');
+      applyFilters();
+    };
+    postureLegend.appendChild(row);
+  });
+  $('posture-count').textContent = `${postureShown} entries`;
+
+  // ============================================================
   // Quick-filter chips (same set as 2D)
   // ============================================================
   const CHIPS = [
@@ -1116,6 +1189,9 @@
       apply: () => ({ hubsOnly: true }) },
     { id: 'education', label: 'Free education', dot: '#7d3c98', title: 'Education + learning resources',
       apply: () => ({ catsOnly: ['education'] }) },
+    { id: 'local-possible', label: 'Local-possible only', dot: '#1f8a70',
+      title: 'Self-host is realistic — local-only, local-first, or hybrid posture',
+      apply: () => ({ posturesOnly: ['local-only','local-first','hybrid'] }) },
   ];
   const activeChips = new Set();
   function renderChips() {
@@ -1133,7 +1209,7 @@
     });
   }
   function applyChipFilters() {
-    chipOv = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null };
+    chipOv = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null, posturesOnly: null };
     let lastMas = 0, lastMat = '';
     activeChips.forEach(id => {
       const c = CHIPS.find(x => x.id === id);
@@ -1144,6 +1220,7 @@
       if (eff.cty && eff.cty.startsWith('NEGATE:')) chipOv.ctyNegate = eff.cty.slice(7);
       if (eff.hubsOnly)    chipOv.hubsOnly  = true;
       if (eff.catsOnly)    chipOv.catsOnly  = eff.catsOnly;
+      if (eff.posturesOnly) chipOv.posturesOnly = eff.posturesOnly;
     });
     filterState.mas = lastMas; $('mas-range').value = lastMas; $('mas-val').textContent = lastMas;
     filterState.mat = lastMat; $('mat-sel').value = lastMat;

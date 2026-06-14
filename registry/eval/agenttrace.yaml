@@ -25,3 +25,4 @@ adjacent_to:
 - eval-kit
 - evalbench
 - lm-evaluation-harness
+deployment_posture: local-first

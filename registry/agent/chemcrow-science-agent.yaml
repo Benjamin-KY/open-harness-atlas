@@ -5,21 +5,25 @@ subcategory: domain-specific-science
 repo_url: https://github.com/ur-whitelab/chemcrow-public
 license: MIT
 primary_language: Python
-tagline: 'Chemistry-specialized LLM agent with RDKit, PubChem, Chemspace, paper-qa tools; solves complex organic synthesis and chemical reasoning tasks'
-description: |
-  ChemCrow is Andres M. Bran et al. (White Lab / EPFL)'s chemistry-specialized LLM agent with RDKit, PubChem, Chemspace, paper-qa tools; solves complex organic synthesis and chemical reasoning tasks. Nature Chemistry 2024; uses 18 chemistry tools; self-hosting via Docker for retrosynthesis API; first domain-specific science agent with real tool safety..
+tagline: Chemistry-specialized LLM agent with RDKit, PubChem, Chemspace, paper-qa tools; solves complex organic synthesis and chemical reasoning tasks
+description: 'ChemCrow is Andres M. Bran et al. (White Lab / EPFL)''s chemistry-specialized LLM agent with RDKit, PubChem, Chemspace, paper-qa tools; solves complex organic synthesis and chemical reasoning tasks. Nature Chemistry 2024; uses 18 chemistry tools; self-hosting via Docker for retrosynthesis API; first domain-specific science agent with real tool safety..
+
 
   In the atlas: ChemCrow is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: Andres M. Bran et al. (White Lab / EPFL)
 origin_country: CH
 model_agnostic_score: 4
-sovereignty_notes: |
-  Andres M. Bran et al. (White Lab / EPFL) (CH-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Andres M. Bran et al. (White Lab / EPFL) (CH-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - gpt-researcher
-  - rd-agent-microsoft
-  - voyager
+- gpt-researcher
+- rd-agent-microsoft
+- voyager
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - eval-dev-quality
 - lm-evaluation-harness
 - vero-eval
+deployment_posture: local-first

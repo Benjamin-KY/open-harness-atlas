@@ -25,3 +25,4 @@ adjacent_to:
 - pairjudge
 - proofloop
 - proofrag
+deployment_posture: local-first

@@ -24,3 +24,4 @@ adjacent_to:
 - lamda
 - langgraph
 - librechat
+deployment_posture: hybrid

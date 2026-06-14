@@ -6,17 +6,24 @@ repo_url: https://github.com/microsoft/responsible-ai-workshop
 license: CC-BY-4.0
 primary_language: Jupyter Notebook
 tagline: Tutorials and walkthroughs for putting Responsible AI into practice — fairness, interpretability, error analysis, counterfactuals.
-description: |-
-  Responsible AI Workshop is a Microsoft-published series of Jupyter tutorials and
+description: 'Responsible AI Workshop is a Microsoft-published series of Jupyter tutorials and
+
   walkthroughs that introduce the Responsible AI Toolbox, Fairlearn, InterpretML, and
+
   related evaluation techniques. Lessons walk through fairness assessment, error analysis,
+
   counterfactual exploration, and model interpretability — primarily on tabular ML and
+
   classical models, with some content extending to LLM scenarios.
 
+
   In the atlas: this is an education entry. The atlas catalogues free, open-licence
+
   learning material that builds practitioner literacy in the harness paradigm; this
+
   workshop is the closest free training material on auditing, fairness, and
-  interpretability tooling that sits underneath any governance layer.
+
+  interpretability tooling that sits underneath any governance layer.'
 maturity: beta
 maintainer:
   type: company
@@ -24,22 +31,29 @@ maintainer:
 origin_country: US
 model_agnostic_score: 3
 education_resources:
-  - title: Responsible AI Workshop — source repository
-    url: https://github.com/microsoft/responsible-ai-workshop
-    type: course
-    free: true
-sovereignty_notes: |-
-  Microsoft (US-incorporated company); content is CC-BY-4.0 and openly published; code
+- title: Responsible AI Workshop — source repository
+  url: https://github.com/microsoft/responsible-ai-workshop
+  type: course
+  free: true
+sovereignty_notes: 'Microsoft (US-incorporated company); content is CC-BY-4.0 and openly published; code
+
   (where present) is self-hostable. Model-agnostic 3 — the demonstrated tooling (Fairlearn,
+
   InterpretML, Responsible AI Toolbox) is provider-agnostic and runs on local-weights
+
   models, but the worked examples often use Azure-aligned scenarios. Curator-reviewed
+
   2026-06-14: recategorised governance → education; the artefact is a tutorial series
+
   under a content licence (CC-BY-4.0), not a runtime governance harness with the five-
+
   component spine; the OSS tooling it teaches (Fairlearn, InterpretML) is catalogued
-  separately under governance.
+
+  separately under governance.'
 harness_paradigm_alignment: partial
 adjacent_to:
-  - guardrails-ai
-  - microsoft-ai-agents-for-beginners
-  - ms-ai-for-beginners
-  - ms-generative-ai-for-beginners
+- guardrails-ai
+- microsoft-ai-agents-for-beginners
+- ms-ai-for-beginners
+- ms-generative-ai-for-beginners
+deployment_posture: local-only

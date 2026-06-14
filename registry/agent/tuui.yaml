@@ -21,3 +21,4 @@ sovereignty_notes: AI-QL (commercial vendor at tuui.com); Apache-2.0 cross-platf
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph
+deployment_posture: local-first

@@ -6,10 +6,12 @@ repo_url: https://github.com/pytorch/tutorials
 license: BSD-3-Clause
 primary_language: Python
 tagline: 'Official PyTorch tutorials: tensors, autograd, NLP, transformers, ViT, LLM fine-tuning'
-description: |
-  PyTorch Official Tutorials is PyTorch / Meta's official PyTorch tutorials: tensors, autograd, NLP, transformers, ViT, LLM fine-tuning. Authoritative first-party tutorials; text generation, seq2seq, LLM fine-tuning labs.
+description: 'PyTorch Official Tutorials is PyTorch / Meta''s official PyTorch tutorials: tensors, autograd, NLP, transformers, ViT, LLM fine-tuning. Authoritative first-party tutorials; text generation, seq2seq, LLM fine-tuning labs.
+
 
   In the atlas: PyTorch Official Tutorials is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -17,13 +19,15 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: PyTorch Official Tutorials — source repository
-    url: https://github.com/pytorch/tutorials
-    type: course
-    free: true
-sovereignty_notes: |
-  PyTorch / Meta (US-incorporated company); OSS core is BSD-3-Clause and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: PyTorch Official Tutorials — source repository
+  url: https://github.com/pytorch/tutorials
+  type: course
+  free: true
+sovereignty_notes: 'PyTorch / Meta (US-incorporated company); OSS core is BSD-3-Clause and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - deepmind-educational
-  - fast-ai-course22
+- deepmind-educational
+- fast-ai-course22
+deployment_posture: local-only

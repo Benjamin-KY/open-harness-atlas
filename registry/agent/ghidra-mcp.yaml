@@ -24,3 +24,4 @@ adjacent_to:
 - linkedin-mcp-server
 - unity-mcp
 - xcodebuildmcp
+deployment_posture: local-first

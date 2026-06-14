@@ -7,23 +7,38 @@ homepage: https://github.com/karpathy/nanochat
 license: MIT
 primary_language: Python
 tagline: Karpathy's minimal end-to-end LLM training harness — tokenizer, pretraining, fine-tuning, eval, inference, and chat UI in a single hackable codebase.
-description: |
-  nanochat is Andrej Karpathy's MIT-licensed minimal training
+description: 'nanochat is Andrej Karpathy''s MIT-licensed minimal training
+
   harness that walks through every stage of building a ChatGPT-style
+
   model end-to-end on a single GPU node: BPE tokenization,
+
   pretraining, supervised fine-tuning, evaluation, inference, and
+
   a chat UI. The codebase is deliberately small and hackable so the
+
   reader can step through the full pipeline rather than treating
-  any stage as a black box. The README's central example trains a
+
+  any stage as a black box. The README''s central example trains a
+
   GPT-2-class model from scratch for roughly $48 on a spot-priced
+
   8xH100 node.
 
+
   In the atlas: nanochat is the **build-from-scratch chat-model
+
   training reference** point in the education space — adjacent to
-  Karpathy's earlier `mingpt` and `nn-zero-to-hero` series. Where
+
+  Karpathy''s earlier `mingpt` and `nn-zero-to-hero` series. Where
+
   those teach the building blocks (attention, backprop, tokenisers,
+
   GPT), nanochat composes the building blocks into a complete
+
   ChatGPT-equivalent pipeline an operator can run on rented compute.
+
+  '
 maturity: beta
 maintainer:
   type: individual
@@ -31,22 +46,29 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: nanochat — README walkthrough
-    url: https://github.com/karpathy/nanochat
-    type: tutorial
-    free: true
-  - title: nanochat — speedrun training script
-    url: https://github.com/karpathy/nanochat/blob/master/speedrun.sh
-    type: notebook
-    free: true
-sovereignty_notes: |
-  Individually maintained by Karpathy; MIT-licensed; the harness
+- title: nanochat — README walkthrough
+  url: https://github.com/karpathy/nanochat
+  type: tutorial
+  free: true
+- title: nanochat — speedrun training script
+  url: https://github.com/karpathy/nanochat/blob/master/speedrun.sh
+  type: notebook
+  free: true
+sovereignty_notes: 'Individually maintained by Karpathy; MIT-licensed; the harness
+
   runs entirely on rented or owned GPU hardware with no hosted
+
   dependency. Tokenizer, training loop, evaluation, and chat UI all
+
   produce standard PyTorch checkpoints. Model-agnostic 5 — the
+
   whole point is that no provider is in the loop; the operator
+
   trains their own model from scratch and serves it locally.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - karpathy-mingpt
-  - karpathy-nn-zero-to-hero
+- karpathy-mingpt
+- karpathy-nn-zero-to-hero
+deployment_posture: local-only

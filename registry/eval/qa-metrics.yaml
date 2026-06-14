@@ -22,3 +22,4 @@ adjacent_to:
 - lm-evaluation-harness
 - ragrank
 - repoagentbench
+deployment_posture: local-first

@@ -5,23 +5,27 @@ subcategory: local-inference-server
 repo_url: https://github.com/janhq/jan
 license: Apache-2.0
 primary_language: TypeScript
-tagline: 'Offline-first AI desktop app with built-in OpenAI-compat local server and multi-provider support'
-description: |
-  Jan is Menlo Research (janhq)'s offline-first AI desktop app with built-in OpenAI-compat local server and multi-provider support. Fully offline; open-weights model hub built-in.
+tagline: Offline-first AI desktop app with built-in OpenAI-compat local server and multi-provider support
+description: 'Jan is Menlo Research (janhq)''s offline-first AI desktop app with built-in OpenAI-compat local server and multi-provider support. Fully offline; open-weights model hub built-in.
+
 
   In the atlas: Jan is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Menlo Research (janhq)
 origin_country: VN
 model_agnostic_score: 5
-sovereignty_notes: |
-  Menlo Research (janhq) (VN-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'Menlo Research (janhq) (VN-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - llama-cpp
-  - localai
-  - ollama
-  - ramalama
-  - text-generation-webui
+- llama-cpp
+- localai
+- ollama
+- ramalama
+- text-generation-webui
+deployment_posture: local-only

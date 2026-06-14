@@ -25,3 +25,4 @@ adjacent_to:
 - multiagent-ai-evaluator
 - ollive-ai-assistant
 - pairjudge
+deployment_posture: cloud-first

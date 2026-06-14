@@ -5,24 +5,28 @@ subcategory: embodied
 repo_url: https://github.com/MineDojo/Voyager
 license: MIT
 primary_language: Python
-tagline: 'First lifelong LLM-powered embodied agent in Minecraft with auto-curriculum and self-growing skill library'
-description: |
-  Voyager is CMU + NVIDIA research's first lifelong LLM-powered embodied agent in Minecraft with auto-curriculum and self-growing skill library. Skill-library approach: stores reusable JS code skills; Minecraft as eval environment.
+tagline: First lifelong LLM-powered embodied agent in Minecraft with auto-curriculum and self-growing skill library
+description: 'Voyager is CMU + NVIDIA research''s first lifelong LLM-powered embodied agent in Minecraft with auto-curriculum and self-growing skill library. Skill-library approach: stores reusable JS code skills; Minecraft as eval environment.
+
 
   In the atlas: Voyager is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: CMU + NVIDIA research
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  CMU + NVIDIA research (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'CMU + NVIDIA research (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - chatdev
-  - chemcrow-science-agent
-  - gpt-researcher
-  - metagpt
-  - rd-agent-microsoft
-  - xagent
+- chatdev
+- chemcrow-science-agent
+- gpt-researcher
+- metagpt
+- rd-agent-microsoft
+- xagent
+deployment_posture: local-first

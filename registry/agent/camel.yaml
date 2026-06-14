@@ -5,30 +5,34 @@ subcategory: multi-agent
 repo_url: https://github.com/camel-ai/camel
 license: Apache-2.0
 primary_language: Python
-tagline: 'Communicative role-playing multi-agent framework for scaling law research and agent interaction'
-description: |
-  CAMEL is CAMEL-AI community's communicative role-playing multi-agent framework for scaling law research and agent interaction. Inception-prompting + role assignment; OWL and SocietyOfMind implementations.
+tagline: Communicative role-playing multi-agent framework for scaling law research and agent interaction
+description: 'CAMEL is CAMEL-AI community''s communicative role-playing multi-agent framework for scaling law research and agent interaction. Inception-prompting + role assignment; OWL and SocietyOfMind implementations.
+
 
   In the atlas: CAMEL is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: community
   name: CAMEL-AI community
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  CAMEL-AI community (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'CAMEL-AI community (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ag2
-  - agentsims-sandbox
-  - agentverse-openbmb
-  - autogen
-  - chatdev
-  - crewai
-  - generative-agents-stanford
-  - metagpt
-  - openagents-xlang
-  - openmanus
-  - praisonai
-  - swarm-openai
+- ag2
+- agentsims-sandbox
+- agentverse-openbmb
+- autogen
+- chatdev
+- crewai
+- generative-agents-stanford
+- metagpt
+- openagents-xlang
+- openmanus
+- praisonai
+- swarm-openai
+deployment_posture: local-first

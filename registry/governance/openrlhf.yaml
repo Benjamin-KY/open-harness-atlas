@@ -7,23 +7,38 @@ homepage: https://openrlhf.readthedocs.io/
 license: Apache-2.0
 primary_language: Python
 tagline: Ray-based RLHF / DPO / GRPO / REINFORCE++ framework for scaled multi-node alignment training with vLLM-backed online rollouts.
-description: |
-  OpenRLHF is an Apache-2.0 RLHF / preference-optimisation framework
+description: 'OpenRLHF is an Apache-2.0 RLHF / preference-optimisation framework
+
   built on Ray, vLLM, and Hugging Face Accelerate. It implements PPO,
+
   DPO, GRPO, REINFORCE++, KTO, online RL, and VLM training as
+
   scalable trainers that span single-GPU experiments to multi-node
+
   clusters. Online RL uses vLLM as the rollout backend so generation
+
   and learning loops run at production-grade throughput; checkpoints
+
   are standard Hugging Face format.
 
+
   In the atlas: OpenRLHF is the **production-scale alignment
-  trainer** point — adjacent to Hugging Face TRL and AllenAI's
+
+  trainer** point — adjacent to Hugging Face TRL and AllenAI''s
+
   open-instruct in the governance space. Where TRL emphasises
+
   composable `Trainer` subclasses on a single node and
+
   open-instruct emphasises recipe reproducibility, OpenRLHF
+
   emphasises multi-node throughput for organisations that need to
+
   align frontier-class models against in-house preference data
+
   without a hosted alignment service.
+
+  '
 maturity: ga
 maintainer:
   type: community
@@ -36,14 +51,21 @@ five_component_coverage:
   prompt_composer: native
   output_contract: native
   audit_log_fsm: partial
-sovereignty_notes: |
-  Community-maintained; Apache-2.0 OSS; fully self-hostable. Works
+sovereignty_notes: 'Community-maintained; Apache-2.0 OSS; fully self-hostable. Works
+
   against any Hugging Face-format checkpoint (Llama, Qwen, Mistral,
+
   DeepSeek, Gemma, Phi) and any backend Accelerate / Ray supports.
+
   vLLM is the default rollout backend for online RL but can be
+
   swapped for any OpenAI-compatible local server. No required hosted
+
   dependency; optional W&B / TensorBoard logging is configurable.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - huggingface-trl
-  - open-instruct
+- huggingface-trl
+- open-instruct
+deployment_posture: local-first

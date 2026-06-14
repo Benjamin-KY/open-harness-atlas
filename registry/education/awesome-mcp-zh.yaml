@@ -27,3 +27,4 @@ education_resources:
   url: https://github.com/yzfly/Awesome-MCP-ZH
   type: docs
   free: true
+deployment_posture: local-only

@@ -6,10 +6,12 @@ repo_url: https://github.com/aws-samples/amazon-bedrock-workshop
 license: MIT-0
 primary_language: Jupyter Notebook
 tagline: 'Self-paced hands-on workshop: Bedrock text gen, Knowledge Bases RAG, agents, fine-tuning'
-description: |
-  Amazon Bedrock Workshop is AWS Samples's self-paced hands-on workshop: Bedrock text gen, Knowledge Bases RAG, agents, fine-tuning. MIT-0 (no attribution required); uses Strands Agents framework; CloudFormation auto-setup.
+description: 'Amazon Bedrock Workshop is AWS Samples''s self-paced hands-on workshop: Bedrock text gen, Knowledge Bases RAG, agents, fine-tuning. MIT-0 (no attribution required); uses Strands Agents framework; CloudFormation auto-setup.
+
 
   In the atlas: Amazon Bedrock Workshop is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -17,16 +19,18 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: Amazon Bedrock Workshop — source repository
-    url: https://github.com/aws-samples/amazon-bedrock-workshop
-    type: course
-    free: true
-sovereignty_notes: |
-  AWS Samples (US-incorporated company); OSS core is MIT-0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: Amazon Bedrock Workshop — source repository
+  url: https://github.com/aws-samples/amazon-bedrock-workshop
+  type: course
+  free: true
+sovereignty_notes: 'AWS Samples (US-incorporated company); OSS core is MIT-0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - anthropic-prompt-eng-tutorial
-  - gcp-generative-ai
-  - mistral-cookbook
-  - ms-phi-cookbook
-  - openai-cookbook
+- anthropic-prompt-eng-tutorial
+- gcp-generative-ai
+- mistral-cookbook
+- ms-phi-cookbook
+- openai-cookbook
+deployment_posture: local-only

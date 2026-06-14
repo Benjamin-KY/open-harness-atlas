@@ -25,3 +25,4 @@ adjacent_to:
 - lm-evaluation-harness
 - vietnamese-secretary-llm
 - zpokenclaw
+deployment_posture: local-first

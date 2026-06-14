@@ -25,3 +25,4 @@ adjacent_to:
 - atmosphere
 - autonomous-agents
 - langgraph
+deployment_posture: cloud-first

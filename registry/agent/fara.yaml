@@ -24,3 +24,4 @@ adjacent_to:
 - langgraph
 - turix-cua
 - ui-tars-desktop
+deployment_posture: local-first

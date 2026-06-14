@@ -5,28 +5,32 @@ subcategory: prompt-injection-scanner
 repo_url: https://github.com/microsoft/BIPIA
 license: MIT
 primary_language: Python
-tagline: 'First benchmark for indirect prompt injection attacks across 5 NLP tasks'
-description: |
-  BIPIA is Microsoft Research's first benchmark for indirect prompt injection attacks across 5 NLP tasks. 25-LLM evaluation; black-box + white-box defenses; USENIX Security 2025.
+tagline: First benchmark for indirect prompt injection attacks across 5 NLP tasks
+description: 'BIPIA is Microsoft Research''s first benchmark for indirect prompt injection attacks across 5 NLP tasks. 25-LLM evaluation; black-box + white-box defenses; USENIX Security 2025.
+
 
   In the atlas: BIPIA is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Microsoft Research
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agent-attack
-  - agentdojo
-  - agentic-radar
-  - mimir
-  - open-prompt-injection
-  - promptinject
-  - ps-fuzz
-  - r-judge
-  - rebuff
-  - toolemu
+- agent-attack
+- agentdojo
+- agentic-radar
+- mimir
+- open-prompt-injection
+- promptinject
+- ps-fuzz
+- r-judge
+- rebuff
+- toolemu
+deployment_posture: local-first

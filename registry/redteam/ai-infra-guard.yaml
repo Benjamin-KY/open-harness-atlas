@@ -21,3 +21,4 @@ sovereignty_notes: 'Tencent (company-maintained Apache-2.0). CN origin. Combines
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness
+deployment_posture: local-first

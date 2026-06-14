@@ -5,20 +5,24 @@ subcategory: planning
 repo_url: https://github.com/bytedance/deer-flow
 license: MIT
 primary_language: Python
-tagline: 'Super-agent harness with specialized sub-agents, scratchpad memory, code sandbox, report generation'
-description: |
-  DeerFlow is ByteDance's super-agent harness with specialized sub-agents, scratchpad memory, code sandbox, report generation. ByteDance production deep-research stack; v2.0 super agent with parallel sub-agents.
+tagline: Super-agent harness with specialized sub-agents, scratchpad memory, code sandbox, report generation
+description: 'DeerFlow is ByteDance''s super-agent harness with specialized sub-agents, scratchpad memory, code sandbox, report generation. ByteDance production deep-research stack; v2.0 super agent with parallel sub-agents.
+
 
   In the atlas: DeerFlow is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: ByteDance
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  ByteDance (CN-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'ByteDance (CN-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - gpt-researcher
-  - storm
+- gpt-researcher
+- storm
+deployment_posture: local-first

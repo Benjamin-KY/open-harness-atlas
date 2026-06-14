@@ -24,3 +24,4 @@ adjacent_to:
 - ml-security-papers
 - pyrit
 - wraith-challenges
+deployment_posture: local-first

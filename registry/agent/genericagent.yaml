@@ -25,3 +25,4 @@ adjacent_to:
 - langgraph
 - wanwu
 - web-ui
+deployment_posture: local-first

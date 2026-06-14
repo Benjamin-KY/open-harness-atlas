@@ -161,6 +161,18 @@ a tiny inline sparkline. See
 [`docs/sovereignty-rubric.md` §7–8](docs/sovereignty-rubric.md) for
 methodology.
 
+**Deployment posture** — every entry now declares one of five postures so
+the catalogue can answer "if I install this today, can I run it locally?"
+in one click. Current distribution: 573 local-first (72%) · 133 local-only
+(17%) · 37 cloud-first (5%) · 30 hybrid (4%) · 20 api-only (3%) — 92.8%
+of the catalogue is realistically self-hostable.
+Classified by heuristic + 3-model ensemble (claude-sonnet-4.5 +
+claude-opus-4.7-xhigh + gpt-5.4); see
+[`docs/deployment-posture.md`](docs/deployment-posture.md) and the
+[posture chart](visuals/deployment-posture.svg) for the per-category
+breakdown. Filter the viewer with the **Local-possible only** chip to
+hide cloud-first + api-only entries in one click.
+
 **Out-of-scope by design** (cross-linked in [`docs/adjacencies.md`](docs/adjacencies.md),
 not catalogued): pure-infrastructure vector databases · closed-source services ·
 paid courses · personal blog posts. See [`GOVERNANCE.md`](GOVERNANCE.md) §8
@@ -176,6 +188,9 @@ for the full exclusion policy.
 - Open [`docs/taxonomy.md`](docs/taxonomy.md) for the 6-category map.
 - Open [`docs/sovereignty-rubric.md`](docs/sovereignty-rubric.md) for
   the scoring methodology.
+- Open [`docs/deployment-posture.md`](docs/deployment-posture.md) for
+  the "where does it run?" dimension (local-only · local-first ·
+  hybrid · cloud-first · api-only).
 - Open the comparison matrices: [`docs/governance-matrix.md`](docs/governance-matrix.md),
   [`docs/agent-matrix.md`](docs/agent-matrix.md), and the four others
   under [`docs/`](docs/).

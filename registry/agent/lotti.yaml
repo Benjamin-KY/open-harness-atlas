@@ -24,3 +24,4 @@ adjacent_to:
 - moai-adk
 - nexent
 - zeroshot
+deployment_posture: local-only

@@ -24,3 +24,4 @@ adjacent_to:
 - multiagent-ai-evaluator
 - ollive-ai-assistant
 - zpokenclaw
+deployment_posture: local-first

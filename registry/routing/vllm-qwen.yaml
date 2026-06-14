@@ -23,3 +23,4 @@ adjacent_to:
 - litellm
 - llm-server
 - xllm
+deployment_posture: local-first

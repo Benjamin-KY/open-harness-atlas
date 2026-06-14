@@ -7,23 +7,38 @@ homepage: https://allenai.org/
 license: Apache-2.0
 primary_language: Python
 tagline: Allen Institute for AI's post-training codebase — the reproducible recipe stack behind the open Tülu / Olmo instruct models.
-description: |
-  open-instruct is the Allen Institute for AI's Apache-2.0
+description: 'open-instruct is the Allen Institute for AI''s Apache-2.0
+
   post-training codebase: the SFT, DPO, RLVR, and reward-modelling
+
   recipes that produced the Tülu series of instruction-tuned models
+
   and supported post-training of Olmo. It packages dataset prep,
+
   Hugging Face-compatible trainers, eval scripts, and the exact
+
   configuration files used to produce each released model, so the
+
   recipes are end-to-end reproducible by external researchers.
 
+
   In the atlas: open-instruct is the **reproducible post-training
+
   recipe** point in the governance space — adjacent to Hugging Face
+
   TRL and OpenRLHF. Where TRL emphasises the trainer abstractions
+
   themselves and OpenRLHF emphasises multi-node scale, open-instruct
+
   emphasises the full reproducible recipe: data, hyperparameters,
+
   evals, and released weights tied to each commit. For organisations
+
   trying to understand "what recipe produced this model", it is the
+
   canonical published reference.
+
+  '
 maturity: ga
 maintainer:
   type: institution
@@ -36,15 +51,23 @@ five_component_coverage:
   prompt_composer: native
   output_contract: native
   audit_log_fsm: partial
-sovereignty_notes: |
-  AllenAI is a US-based non-profit research institute (Seattle); the
+sovereignty_notes: 'AllenAI is a US-based non-profit research institute (Seattle); the
+
   codebase is Apache-2.0 OSS and fully self-hostable. Works against
+
   any Hugging Face-format checkpoint and any backend Accelerate /
+
   DeepSpeed supports. No required hosted dependency; the recipes
+
   consume open datasets (Tülu-3, Olmo Mix, etc.) which AllenAI
+
   publishes alongside the code. Optional W&B / Beaker logging is
+
   configurable.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - huggingface-trl
-  - openrlhf
+- huggingface-trl
+- openrlhf
+deployment_posture: local-first

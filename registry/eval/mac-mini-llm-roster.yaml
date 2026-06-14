@@ -23,3 +23,4 @@ adjacent_to:
 - makerbench-hwe
 - memorylens
 - tau2-bench
+deployment_posture: local-first

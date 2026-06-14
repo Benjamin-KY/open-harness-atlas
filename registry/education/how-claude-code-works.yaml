@@ -30,3 +30,4 @@ education_resources:
   url: https://github.com/Windy3f3f3f3f/how-claude-code-works
   type: tutorial
   free: true
+deployment_posture: local-only

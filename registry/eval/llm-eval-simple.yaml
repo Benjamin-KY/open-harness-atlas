@@ -21,3 +21,4 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness
 - nexa-gauge
+deployment_posture: local-first

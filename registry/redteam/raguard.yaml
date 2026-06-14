@@ -24,3 +24,4 @@ adjacent_to:
 - llm-security-alignment
 - pyrit
 - rejection-cascade
+deployment_posture: local-first

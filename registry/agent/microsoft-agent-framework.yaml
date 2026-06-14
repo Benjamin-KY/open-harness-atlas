@@ -5,24 +5,28 @@ subcategory: multi-agent
 repo_url: https://github.com/microsoft/agent-framework
 license: MIT
 primary_language: C#
-tagline: 'Multi-language successor to Semantic Kernel for multi-agent orchestration'
-description: |
-  Microsoft Agent Framework is Microsoft's multi-language successor to Semantic Kernel for multi-agent orchestration. v1.0 GA target 2025; replaces Semantic Kernel agent API; stronger typed multi-agent contracts.
+tagline: Multi-language successor to Semantic Kernel for multi-agent orchestration
+description: 'Microsoft Agent Framework is Microsoft''s multi-language successor to Semantic Kernel for multi-agent orchestration. v1.0 GA target 2025; replaces Semantic Kernel agent API; stronger typed multi-agent contracts.
+
 
   In the atlas: Microsoft Agent Framework is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Microsoft
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Microsoft (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Microsoft (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentscope
-  - beeai-framework
-  - haystack
-  - langgraph
-  - llama-index-agents
-  - semantic-kernel
+- agentscope
+- beeai-framework
+- haystack
+- langgraph
+- llama-index-agents
+- semantic-kernel
+deployment_posture: local-first

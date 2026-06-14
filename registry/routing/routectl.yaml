@@ -22,3 +22,4 @@ adjacent_to:
 - clawrouter
 - litellm
 - quantum-free-router
+deployment_posture: local-first

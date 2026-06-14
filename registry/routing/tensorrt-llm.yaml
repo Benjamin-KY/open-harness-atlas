@@ -7,41 +7,65 @@ homepage: https://nvidia.github.io/TensorRT-LLM/
 license: Apache-2.0
 primary_language: Python
 tagline: NVIDIA's TensorRT-backed inference runtime for LLMs — kernel-fused, paged-attention serving on NVIDIA GPUs.
-description: |
-  TensorRT-LLM is NVIDIA's purpose-built inference runtime for large
+description: 'TensorRT-LLM is NVIDIA''s purpose-built inference runtime for large
+
   language models on NVIDIA GPUs. It compiles a model into a
+
   TensorRT engine using fused kernels, paged KV-cache, in-flight
+
   batching, and tensor/pipeline-parallel sharding, then serves it via
+
   either the bundled `tensorrt_llm` Python runtime or the Triton
-  Inference Server's `tensorrtllm_backend`. It targets the
+
+  Inference Server''s `tensorrtllm_backend`. It targets the
+
   highest-throughput / lowest-latency tier of on-prem and cloud
+
   inference.
 
+
   In the atlas: TensorRT-LLM is the NVIDIA-stack counterpart to vLLM
+
   and SGLang in the **inference-runtime** subcategory. It is hardware-
+
   bound to NVIDIA GPUs (CUDA / Tensor Cores) and therefore scores
+
   lower on `model_agnostic_score` than provider-neutral gateways like
+
   LiteLLM, but it is fully self-hostable and the entire runtime is
+
   Apache-2.0 OSS. Operators choosing between vLLM and TensorRT-LLM
+
   typically optimise on Hopper / Blackwell-class hardware where
-  TensorRT's fused kernels still measurably win throughput.
+
+  TensorRT''s fused kernels still measurably win throughput.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: NVIDIA Corporation
 origin_country: US
 model_agnostic_score: 2
-sovereignty_notes: |
-  US-incorporated; the runtime is Apache-2.0 OSS and fully self-hostable
+sovereignty_notes: 'US-incorporated; the runtime is Apache-2.0 OSS and fully self-hostable
+
   on any NVIDIA GPU node. No telemetry / call-home by default. Bound to
+
   CUDA + Tensor Cores so it cannot serve on AMD ROCm or Intel Habana
+
   hardware — `model_agnostic_score` is 2 to reflect this hardware
+
   lock-in. Model-side it is provider-neutral: any HF-checkpoint with a
+
   supported architecture (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma,
+
   GPT-NeoX, etc.) can be compiled and served.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - llama-cpp
-  - ollama
-  - sglang
-  - vllm
+- llama-cpp
+- ollama
+- sglang
+- vllm
+deployment_posture: local-first

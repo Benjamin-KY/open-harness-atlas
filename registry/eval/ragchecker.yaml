@@ -5,22 +5,26 @@ subcategory: rag-eval
 repo_url: https://github.com/amazon-science/RAGChecker
 license: Apache-2.0
 primary_language: Python
-tagline: 'Fine-grained RAG diagnostic framework using claim-level entailment to decompose retrieval and generation errors into 10 targeted diagnostic metrics'
-description: |
-  RAGChecker is Amazon AWS AI's fine-grained RAG diagnostic framework using claim-level entailment to decompose retrieval and generation errors into 10 targeted diagnostic metrics. Claim-level entailment metrics distinguish retrieval vs. generation failures; more diagnostic than RAGAS's holistic scores; 4K-question benchmark included..
+tagline: Fine-grained RAG diagnostic framework using claim-level entailment to decompose retrieval and generation errors into 10 targeted diagnostic metrics
+description: 'RAGChecker is Amazon AWS AI''s fine-grained RAG diagnostic framework using claim-level entailment to decompose retrieval and generation errors into 10 targeted diagnostic metrics. Claim-level entailment metrics distinguish retrieval vs. generation failures; more diagnostic than RAGAS''s holistic scores; 4K-question benchmark included..
+
 
   In the atlas: RAGChecker is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Amazon AWS AI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Amazon AWS AI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Amazon AWS AI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ares
-  - beir
-  - mteb
-  - ragas
+- ares
+- beir
+- mteb
+- ragas
+deployment_posture: local-first

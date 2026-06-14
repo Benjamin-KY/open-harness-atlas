@@ -40,3 +40,4 @@ adjacent_to:
 - arcreel
 - awesome-agent-skills
 - langgraph
+deployment_posture: local-first

@@ -30,3 +30,4 @@ adjacent_to:
 - ouro-loop
 - packmind
 - vibeguard
+deployment_posture: api-only

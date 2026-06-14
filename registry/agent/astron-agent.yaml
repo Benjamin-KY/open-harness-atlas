@@ -25,3 +25,4 @@ adjacent_to:
 - eko
 - forge
 - langgraph
+deployment_posture: local-first

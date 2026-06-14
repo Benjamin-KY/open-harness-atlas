@@ -28,3 +28,4 @@ adjacent_to:
 - guard-eval-harness
 - guardrails-ai
 - llm-landscape
+deployment_posture: local-first

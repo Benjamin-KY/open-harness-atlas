@@ -31,3 +31,4 @@ adjacent_to:
 - outputguard
 - sob
 - yaicli
+deployment_posture: local-first

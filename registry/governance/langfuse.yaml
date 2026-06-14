@@ -5,11 +5,13 @@ subcategory: audit-log
 repo_url: https://github.com/langfuse/langfuse
 license: MIT
 primary_language: TypeScript
-tagline: 'Self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards'
-description: |
-  Langfuse is Langfuse GmbH's self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards. Self-hostable audit-log store (ClickHouse) targeted at regulated industries needing data residency.
+tagline: Self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards
+description: 'Langfuse is Langfuse GmbH''s self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards. Self-hostable audit-log store (ClickHouse) targeted at regulated industries needing data residency.
+
 
   In the atlas: Langfuse is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -22,18 +24,20 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: native
-sovereignty_notes: |
-  Langfuse GmbH (DE-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Langfuse GmbH (DE-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentops
-  - arize-phoenix
-  - helicone
-  - langkit
-  - langtrace
-  - langwatch
-  - openlit
-  - openllmetry
-  - opik
-  - ragas
-  - trulens
+- agentops
+- arize-phoenix
+- helicone
+- langkit
+- langtrace
+- langwatch
+- openlit
+- openllmetry
+- opik
+- ragas
+- trulens
+deployment_posture: local-first

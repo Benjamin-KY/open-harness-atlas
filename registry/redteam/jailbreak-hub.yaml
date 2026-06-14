@@ -5,24 +5,28 @@ subcategory: jailbreak-dataset-framework
 repo_url: https://github.com/verazuo/jailbreak_llms
 license: MIT
 primary_language: Python
-tagline: 'Largest in-the-wild jailbreak dataset (15,140 prompts, 1,405 jailbreaks) with JailbreakHub measurement framework for red-teaming LLMs'
-description: |
-  JailbreakHub (In-The-Wild Jailbreaks) is Xinyue Shen et al. (CISPA / ACM CCS 2024)'s largest in-the-wild jailbreak dataset (15,140 prompts, 1,405 jailbreaks) with JailbreakHub measurement framework for red-teaming LLMs. CCS 2024; scrapes Reddit, Discord, FlowGPT; 10+ adversarial user personas; systematic empirical analysis of 6 LLMs; HuggingFace dataset release..
+tagline: Largest in-the-wild jailbreak dataset (15,140 prompts, 1,405 jailbreaks) with JailbreakHub measurement framework for red-teaming LLMs
+description: 'JailbreakHub (In-The-Wild Jailbreaks) is Xinyue Shen et al. (CISPA / ACM CCS 2024)''s largest in-the-wild jailbreak dataset (15,140 prompts, 1,405 jailbreaks) with JailbreakHub measurement framework for red-teaming LLMs. CCS 2024; scrapes Reddit, Discord, FlowGPT; 10+ adversarial user personas; systematic empirical analysis of 6 LLMs; HuggingFace dataset release..
+
 
   In the atlas: JailbreakHub (In-The-Wild Jailbreaks) is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: Xinyue Shen et al. (CISPA / ACM CCS 2024)
 origin_country: DE
 model_agnostic_score: 5
-sovereignty_notes: |
-  Xinyue Shen et al. (CISPA / ACM CCS 2024) (DE-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'Xinyue Shen et al. (CISPA / ACM CCS 2024) (DE-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - circuit-breakers
-  - easyjailbreak
-  - jailbreakbench
-  - llm-jailbreaking-defense
-  - safedecoding
-  - smooth-llm
+- circuit-breakers
+- easyjailbreak
+- jailbreakbench
+- llm-jailbreaking-defense
+- safedecoding
+- smooth-llm
+deployment_posture: local-first

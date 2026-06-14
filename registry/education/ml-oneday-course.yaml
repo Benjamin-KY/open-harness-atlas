@@ -6,10 +6,10 @@ repo_url: https://github.com/gozsari/ML-OneDay-Course
 license: MIT
 primary_language: Python
 tagline: This is a one-day machine learning introductory course for beginners
-description: |-
-  ML One Day Course — This is a one-day machine learning introductory course for beginners. Upstream maintainer: gozsari.
+description: 'ML One Day Course — This is a one-day machine learning introductory course for beginners. Upstream maintainer: gozsari.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: beta
 maintainer:
   type: community
@@ -27,3 +27,4 @@ adjacent_to:
 - ai-ml-storybook-code
 - genai-llm-bootcamp-2026
 - harmless-harnesses
+deployment_posture: local-only

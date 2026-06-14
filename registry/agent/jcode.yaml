@@ -23,3 +23,4 @@ adjacent_to:
 - open-cowork
 - openinterpreter
 - zerostack
+deployment_posture: local-first

@@ -65,3 +65,4 @@ adjacent_to:
 - gcp-generative-ai
 - mistral-cookbook
 - ms-phi-cookbook
+deployment_posture: local-only

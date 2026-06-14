@@ -23,3 +23,4 @@ adjacent_to:
 - powerserve
 - rtp-llm
 - serverlessllm
+deployment_posture: local-first

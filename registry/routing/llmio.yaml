@@ -24,3 +24,4 @@ adjacent_to:
 - nyro
 - omniroute
 - opencode-llm-proxy
+deployment_posture: local-first

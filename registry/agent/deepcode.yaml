@@ -25,3 +25,4 @@ adjacent_to:
 - maibot
 - mcp-agent
 - nanobot
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - solace-agent-mesh
 - swarms
 - zeroshot
+deployment_posture: local-first

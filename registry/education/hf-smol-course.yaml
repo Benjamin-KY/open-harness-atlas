@@ -5,11 +5,13 @@ subcategory: practitioner-guides
 repo_url: https://github.com/huggingface/smol-course
 license: Apache-2.0
 primary_language: Jupyter Notebook
-tagline: 'Practical alignment course (SFT, DPO, evals, RL, synthetic data) using SmolLM on local hardware'
-description: |
-  Hugging Face Smol Course is HuggingFace's practical alignment course (SFT, DPO, evals, RL, synthetic data) using SmolLM on local hardware. Community-reviewed with HF Hub leaderboard; full alignment pipeline on consumer GPUs.
+tagline: Practical alignment course (SFT, DPO, evals, RL, synthetic data) using SmolLM on local hardware
+description: 'Hugging Face Smol Course is HuggingFace''s practical alignment course (SFT, DPO, evals, RL, synthetic data) using SmolLM on local hardware. Community-reviewed with HF Hub leaderboard; full alignment pipeline on consumer GPUs.
+
 
   In the atlas: Hugging Face Smol Course is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -17,20 +19,22 @@ maintainer:
 origin_country: FR
 model_agnostic_score: 5
 education_resources:
-  - title: Hugging Face Smol Course — source repository
-    url: https://github.com/huggingface/smol-course
-    type: course
-    free: true
-sovereignty_notes: |
-  HuggingFace (FR-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: Hugging Face Smol Course — source repository
+  url: https://github.com/huggingface/smol-course
+  type: course
+  free: true
+sovereignty_notes: 'HuggingFace (FR-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - hf-audio-transformers-course
-  - hf-deep-rl-class
-  - hf-diffusion-models-class
-  - hf-nlp-course
-  - hugging-face-agents-course
-  - llm-notebooks-course
-  - mlabonne-llm-course
-  - ms-generative-ai-for-beginners
-  - stanford-cs336
+- hf-audio-transformers-course
+- hf-deep-rl-class
+- hf-diffusion-models-class
+- hf-nlp-course
+- hugging-face-agents-course
+- llm-notebooks-course
+- mlabonne-llm-course
+- ms-generative-ai-for-beginners
+- stanford-cs336
+deployment_posture: local-only

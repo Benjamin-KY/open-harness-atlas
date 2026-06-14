@@ -5,22 +5,26 @@ subcategory: single-agent
 repo_url: https://github.com/microsoft/TaskWeaver
 license: MIT
 primary_language: Python
-tagline: 'Code-first data analytics agent that maintains dual history (chat + code) and generates reusable plugins'
-description: |
-  TaskWeaver is Microsoft Research's code-first data analytics agent that maintains dual history (chat + code) and generates reusable plugins. Persistent plugin registry from past sessions; stateful code-execution.
+tagline: Code-first data analytics agent that maintains dual history (chat + code) and generates reusable plugins
+description: 'TaskWeaver is Microsoft Research''s code-first data analytics agent that maintains dual history (chat + code) and generates reusable plugins. Persistent plugin registry from past sessions; stateful code-execution.
+
 
   In the atlas: TaskWeaver is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Microsoft Research
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - dspy
-  - guidance
-  - mirascope
-  - outlines
+- dspy
+- guidance
+- mirascope
+- outlines
+deployment_posture: local-first

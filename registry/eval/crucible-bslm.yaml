@@ -24,3 +24,4 @@ adjacent_to:
 - gdpval-realworks
 - llm-colosseum
 - lm-evaluation-harness
+deployment_posture: local-first

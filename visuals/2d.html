@@ -822,6 +822,19 @@
       </div>
     </div>
 
+    <div class="panel">
+      <div class="panel-header">Deployment posture<span class="count" id="posture-count"></span></div>
+      <div class="panel-body">
+        <p style="font-size:11.5px;color:var(--brand-mute);margin:0 0 6px;line-height:1.45">
+          Where does it run? Heuristic + 3-model ensemble curation.
+          <em>local-only</em> = air-gappable · <em>local-first</em> = self-host is the documented default ·
+          <em>hybrid</em> = both local and cloud at runtime by design · <em>cloud-first</em> = SaaS is primary ·
+          <em>api-only</em> = no local path. Click a row to hide that posture.
+        </p>
+        <div id="posture-legend"></div>
+      </div>
+    </div>
+
     <div class="panel collapsible">
       <div class="panel-header" data-toggle><span>Path finder</span><span class="chev">▾</span></div>
       <div class="panel-body">
@@ -1059,6 +1072,33 @@ document.addEventListener('DOMContentLoaded', async () => {
     emerging:    '≥100 stars, 3mo+ old, actively maintained',
     frontier:    'Passes inclusion criteria, no independent adoption signal yet',
     unknown:     'Metadata fetch failed — operational issue (SSO-restricted org, repo moved, rate-limit) rather than a low-signal verdict'
+  };
+
+  // Deployment-posture palette (neutral warm-teal → cool-blue gradient).
+  // Mirrors the 3D viewer so the visual language stays consistent.
+  const POSTURE_COLOR_MAP = {
+    'local-only':  '#1f8a70',
+    'local-first': '#86b8b1',
+    'hybrid':      '#c9b08c',
+    'cloud-first': '#9cb8dd',
+    'api-only':    '#5b7fc7',
+    'unknown':     '#5d6470'
+  };
+  const POSTURE_LABEL = {
+    'local-only':  'Local only',
+    'local-first': 'Local first',
+    'hybrid':      'Hybrid',
+    'cloud-first': 'Cloud first',
+    'api-only':    'API only',
+    'unknown':     'Unknown'
+  };
+  const POSTURE_HINT = {
+    'local-only':  'Air-gappable — no network egress required after install',
+    'local-first': '`docker compose up` works out of the box; cloud is optional',
+    'hybrid':      'Requires both local and cloud at runtime by design (e.g. local classifier feeds cloud generator)',
+    'cloud-first': 'Self-host docs are thin or advanced-only; SaaS is the primary path',
+    'api-only':    'No local path exists — calls a third-party API as a hard dependency',
+    'unknown':     'Posture not yet classified — pending ensemble curator review'
   };
 
   const nodeSel = nodeLayer.selectAll('g.node')
@@ -1328,6 +1368,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       <div class="node-detail-pills">
         <span class="pill" style="background:${node.color}">${escapeHtml(node.category)}</span>
         ${node.tier && node.tier !== 'unknown' ? `<span class="pill" style="background:${TIER_COLOR_MAP[node.tier]||'#888'}" title="Adoption tier — computed from stars, age, commit recency">${escapeHtml(node.tier)}</span>` : ''}
+        ${node.deployment_posture ? `<span class="pill" style="background:${POSTURE_COLOR_MAP[node.deployment_posture]||'#888'}" title="${escapeHtml(POSTURE_HINT[node.deployment_posture]||'')}">${escapeHtml(POSTURE_LABEL[node.deployment_posture]||node.deployment_posture)}</span>` : ''}
         ${node.maturity ? `<span class="pill outline">${escapeHtml(node.maturity)}</span>` : ''}
         ${node.license  ? `<span class="pill outline">${escapeHtml(node.license)}</span>` : ''}
       </div>
@@ -1391,6 +1432,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     q: '', mas: 0, mat: '', cty: '', lic: '', lang: '',
     offCats: new Set(),
     offTiers: new Set(),
+    offPostures: new Set(),
     useCase: null,
   };
 
@@ -1431,7 +1473,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         (!filterState.lic  || n.license  === filterState.lic) &&
         (!filterState.lang || n.language === filterState.lang) &&
         !filterState.offCats.has(n.category) &&
-        !filterState.offTiers.has(n.tier || 'unknown');
+        !filterState.offTiers.has(n.tier || 'unknown') &&
+        !filterState.offPostures.has(n.deployment_posture || 'unknown');
       if (visible && filterState.useCase) {
         const memberships = entryUseCases.get(n.id);
         if (!memberships || !memberships.has(filterState.useCase)) visible = false;
@@ -1524,6 +1567,34 @@ document.addEventListener('DOMContentLoaded', async () => {
     tierLegend.appendChild(row);
   });
   $('tier-count').textContent = `${tierShown} entries`;
+
+  // ============================================================
+  // 9c. Deployment-posture legend (where it runs)
+  // ============================================================
+  const postureLegend = $('posture-legend');
+  const postureMeta = (data.meta.deployment_posture || []).filter(([, c]) => c > 0);
+  let postureShown = 0;
+  postureMeta.forEach(([key, count]) => {
+    postureShown += count;
+    const row = document.createElement('div');
+    row.className = 'legend-item';
+    row.setAttribute('role', 'button');
+    row.setAttribute('tabindex', '0');
+    row.setAttribute('data-posture', key);
+    row.title = POSTURE_HINT[key] || '';
+    const swatchStyle = `background:${POSTURE_COLOR_MAP[key]||'#888'}`;
+    row.innerHTML = `<span class="swatch" style="${swatchStyle}"></span><span class="label">${POSTURE_LABEL[key]||key}</span><span class="count">${count}</span>`;
+    const togglePosture = () => {
+      if (filterState.offPostures.has(key)) filterState.offPostures.delete(key);
+      else filterState.offPostures.add(key);
+      row.classList.toggle('off');
+      applyFilters();
+    };
+    row.onclick = togglePosture;
+    row.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); togglePosture(); } };
+    postureLegend.appendChild(row);
+  });
+  $('posture-count').textContent = `${postureShown} entries`;
 
   // ============================================================
   // 10. Path finder (BFS)
@@ -1822,6 +1893,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       title: 'Education + learning resources only',
       apply: () => ({ catsOnly: ['education'] })
     },
+    { id: 'local-possible', label: 'Local-possible only', dot: '#1f8a70',
+      title: 'Self-host is realistic — local-only, local-first, or hybrid posture',
+      apply: () => ({ posturesOnly: ['local-only','local-first','hybrid'] })
+    },
   ];
   const activeChips = new Set();
   function renderChips() {
@@ -1843,7 +1918,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
   function applyChipFilters() {
     // reset overrides
-    chipOverrides = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null };
+    chipOverrides = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null, posturesOnly: null };
     let lastMas = 0, lastMat = '';
     activeChips.forEach(id => {
       const c = CHIPS.find(x => x.id === id);
@@ -1854,12 +1929,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (eff.cty && eff.cty.startsWith('NEGATE:')) chipOverrides.ctyNegate = eff.cty.slice(7);
       if (eff.hubsOnly)    chipOverrides.hubsOnly  = true;
       if (eff.catsOnly)    chipOverrides.catsOnly  = eff.catsOnly;
+      if (eff.posturesOnly) chipOverrides.posturesOnly = eff.posturesOnly;
     });
     filterState.mas = lastMas; $('mas-range').value = lastMas; $('mas-val').textContent = lastMas;
     filterState.mat = lastMat; $('mat-sel').value = lastMat;
     applyFilters();
   }
-  let chipOverrides = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null };
+  let chipOverrides = { licList: null, ctyNegate: null, hubsOnly: false, catsOnly: null, posturesOnly: null };
   renderChips();
 
   // ============================================================
@@ -2000,7 +2076,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const _origApplyFilters = applyFilters;
   applyFilters = function() {
     _origApplyFilters();
-    if (!chipOverrides.licList && !chipOverrides.ctyNegate && !chipOverrides.hubsOnly && !chipOverrides.catsOnly) {
+    if (!chipOverrides.licList && !chipOverrides.ctyNegate && !chipOverrides.hubsOnly && !chipOverrides.catsOnly && !chipOverrides.posturesOnly) {
       updateMinimap();
       return;
     }
@@ -2012,6 +2088,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (chipOverrides.ctyNegate && n.country === chipOverrides.ctyNegate)     ok = false;
       if (chipOverrides.hubsOnly  && n.deg_pct < hubThreshold)                  ok = false;
       if (chipOverrides.catsOnly  && !chipOverrides.catsOnly.includes(n.category)) ok = false;
+      if (chipOverrides.posturesOnly && !chipOverrides.posturesOnly.includes(n.deployment_posture)) ok = false;
       n._visible = ok;
       if (ok) { visibleCount++; visIds.add(n.id); }
     });
@@ -2114,6 +2191,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     activeChips.clear(); applyChipFilters(); renderChips();
     filterState.offCats.clear();
     filterState.offTiers.clear();
+    filterState.offPostures.clear();
     document.querySelectorAll('.legend-item').forEach(i => i.classList.remove('off'));
     $('tour-card').classList.add('visible');
     $('tc-tour-name').textContent = t.title;

@@ -24,3 +24,4 @@ adjacent_to:
 - pyrit
 - spikee
 - www-project-llm-verification-standard
+deployment_posture: local-first

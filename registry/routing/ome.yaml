@@ -7,10 +7,10 @@ homepage: http://ome-projects.github.io/ome/
 license: Apache-2.0
 primary_language: Go
 tagline: Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management.
-description: |-
-  Ome — Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management. Works with SGLang, vLLM, TensorRT-LLM, and Triton. Upstream maintainer: ome-projects.
+description: 'Ome — Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management. Works with SGLang, vLLM, TensorRT-LLM, and Triton. Upstream maintainer: ome-projects.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: community
@@ -25,3 +25,4 @@ adjacent_to:
 - tiny-vllm
 - vllm-qwen
 - xllm
+deployment_posture: local-first

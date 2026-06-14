@@ -7,17 +7,26 @@ homepage: https://microsoft.github.io/ai-agents-for-beginners/
 license: MIT
 primary_language: Jupyter Notebook
 tagline: Microsoft's 11-lesson free curriculum on building AI agents — covers Autogen, Semantic Kernel, and agent design patterns.
-description: |
-  AI Agents for Beginners is Microsoft's MIT-licensed 11-lesson free
+description: 'AI Agents for Beginners is Microsoft''s MIT-licensed 11-lesson free
+
   curriculum on AI agents. It covers agent design patterns (tool-use,
+
   planning, multi-agent orchestration, memory, MCP), with concrete
+
   worked examples in AutoGen, Semantic Kernel, and Azure AI Agent
+
   Service. Each lesson is a Jupyter notebook with code and exercises.
 
+
   In the atlas: this is included as a **major-vendor agent-curriculum
+
   example**. The core patterns (planning, tool-calling, multi-agent
+
   routing, memory, MCP) are framework-portable; the AutoGen examples
+
   run end-to-end against any OpenAI-compatible local backend.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -25,26 +34,34 @@ maintainer:
 origin_country: US
 model_agnostic_score: 4
 education_resources:
-  - title: AI Agents for Beginners (rendered course site)
-    url: https://microsoft.github.io/ai-agents-for-beginners/
-    type: course
-    free: true
-  - title: AI Agents for Beginners — source repository
-    url: https://github.com/microsoft/ai-agents-for-beginners
-    type: course
-    free: true
-sovereignty_notes: |
-  Microsoft (US-incorporated company); MIT-licensed; concepts
-  framework-portable. Examples emphasise Microsoft's own agent stack
+- title: AI Agents for Beginners (rendered course site)
+  url: https://microsoft.github.io/ai-agents-for-beginners/
+  type: course
+  free: true
+- title: AI Agents for Beginners — source repository
+  url: https://github.com/microsoft/ai-agents-for-beginners
+  type: course
+  free: true
+sovereignty_notes: 'Microsoft (US-incorporated company); MIT-licensed; concepts
+
+  framework-portable. Examples emphasise Microsoft''s own agent stack
+
   (AutoGen, Semantic Kernel, Azure AI Agent Service); AutoGen
+
   examples are unambiguously runnable against local backends, Azure
+
   AI Agent Service examples are vendor-coupled to Azure. Model-
+
   agnostic 4 — patterns are portable, some example scaffolding is
+
   vendor-coupled.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - hugging-face-agents-course
-  - ms-ai-for-beginners
-  - ms-data-science-for-beginners
-  - ms-generative-ai-for-beginners
-  - ms-ml-for-beginners
+- hugging-face-agents-course
+- ms-ai-for-beginners
+- ms-data-science-for-beginners
+- ms-generative-ai-for-beginners
+- ms-ml-for-beginners
+deployment_posture: local-only

@@ -24,3 +24,4 @@ adjacent_to:
 - microsoft-agent-framework
 - agent-governance-toolkit
 - langgraph
+deployment_posture: local-first

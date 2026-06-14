@@ -25,3 +25,4 @@ adjacent_to:
 - ghidra-mcp
 - langgraph
 - xcodebuildmcp
+deployment_posture: local-first

@@ -5,11 +5,13 @@ subcategory: tracing
 repo_url: https://github.com/Scale3-Labs/langtrace
 license: AGPL-3.0
 primary_language: TypeScript
-tagline: 'OTEL-compliant LLM observability for Python and TypeScript supporting 25+ providers and frameworks'
-description: |
-  Langtrace is Scale3 Labs's oTEL-compliant LLM observability for Python and TypeScript supporting 25+ providers and frameworks. Full TypeScript SDK parity with Python (OpenAI, Anthropic, Vercel AI SDK, LlamaIndex); AGPL guarantees open-source derivatives; purpose-built ClickHouse + Postgres stack vs. langfuse's Postgres-only default..
+tagline: OTEL-compliant LLM observability for Python and TypeScript supporting 25+ providers and frameworks
+description: 'Langtrace is Scale3 Labs''s oTEL-compliant LLM observability for Python and TypeScript supporting 25+ providers and frameworks. Full TypeScript SDK parity with Python (OpenAI, Anthropic, Vercel AI SDK, LlamaIndex); AGPL guarantees open-source derivatives; purpose-built ClickHouse + Postgres stack vs. langfuse''s Postgres-only default..
+
 
   In the atlas: Langtrace is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -22,17 +24,19 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: |
-  Scale3 Labs (US-incorporated company); OSS core is AGPL-3.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Scale3 Labs (US-incorporated company); OSS core is AGPL-3.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentops
-  - arize-phoenix
-  - helicone
-  - langfuse
-  - langkit
-  - langwatch
-  - openlit
-  - openllmetry
-  - opik
-  - trulens
+- agentops
+- arize-phoenix
+- helicone
+- langfuse
+- langkit
+- langwatch
+- openlit
+- openllmetry
+- opik
+- trulens
+deployment_posture: local-first

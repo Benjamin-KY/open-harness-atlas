@@ -31,3 +31,4 @@ adjacent_to:
 - packmind
 - rail-score-sdk
 - safe-zone
+deployment_posture: api-only

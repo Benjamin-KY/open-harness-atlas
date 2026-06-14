@@ -25,3 +25,4 @@ adjacent_to:
 - openfang
 - ouroboros
 - page-agent
+deployment_posture: local-first

@@ -5,11 +5,13 @@ subcategory: output-toxicity-filter
 repo_url: https://github.com/unitaryai/detoxify
 license: Apache-2.0
 primary_language: Python
-tagline: 'Multilingual toxicity text classifier (BERT/RoBERTa; 3 model flavours) deployable as LLM output gating filter'
-description: |
-  Detoxify is Unitary's multilingual toxicity text classifier (BERT/RoBERTa; 3 model flavours) deployable as LLM output gating filter. Jigsaw Toxic Comment dataset; bias-reduced and multilingual variants; 100+ language deployments.
+tagline: Multilingual toxicity text classifier (BERT/RoBERTa; 3 model flavours) deployable as LLM output gating filter
+description: 'Detoxify is Unitary''s multilingual toxicity text classifier (BERT/RoBERTa; 3 model flavours) deployable as LLM output gating filter. Jigsaw Toxic Comment dataset; bias-reduced and multilingual variants; 100+ language deployments.
+
 
   In the atlas: Detoxify is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -22,10 +24,12 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: none
-sovereignty_notes: |
-  Unitary (GB-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'Unitary (GB-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - granite-guardian
-  - shieldlm
-  - wildguard
+- granite-guardian
+- shieldlm
+- wildguard
+deployment_posture: local-only

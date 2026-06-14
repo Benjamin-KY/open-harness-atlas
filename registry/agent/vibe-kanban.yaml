@@ -25,3 +25,4 @@ adjacent_to:
 - ai-agents-from-scratch
 - aichat
 - langgraph
+deployment_posture: local-first

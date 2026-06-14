@@ -5,23 +5,27 @@ subcategory: local-inference-server
 repo_url: https://github.com/bentoml/OpenLLM
 license: Apache-2.0
 primary_language: Python
-tagline: 'Run any open-source LLM as an OpenAI-compatible API endpoint in cloud or on-prem'
-description: |
-  OpenLLM is BentoML's run any open-source LLM as an OpenAI-compatible API endpoint in cloud or on-prem. BentoML cloud integration; openllm run <model> zero-config serving.
+tagline: Run any open-source LLM as an OpenAI-compatible API endpoint in cloud or on-prem
+description: 'OpenLLM is BentoML''s run any open-source LLM as an OpenAI-compatible API endpoint in cloud or on-prem. BentoML cloud integration; openllm run <model> zero-config serving.
+
 
   In the atlas: OpenLLM is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: BentoML
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  BentoML (US-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'BentoML (US-incorporated company); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - deepspeed-mii
-  - lmdeploy
-  - sglang
-  - vllm
-  - xinference
+- deepspeed-mii
+- lmdeploy
+- sglang
+- vllm
+- xinference
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - proofrag
 - ragaliq
 - refusebench
+deployment_posture: local-first

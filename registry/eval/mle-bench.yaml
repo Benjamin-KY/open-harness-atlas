@@ -5,31 +5,35 @@ subcategory: agent-bench
 repo_url: https://github.com/openai/mle-bench
 license: MIT
 primary_language: Python
-tagline: '75 real Kaggle ML competitions used to evaluate ML engineering agents on end-to-end data science and model-building tasks with automated grading'
-description: |
-  MLE-Bench is OpenAI's 75 real kaggle ml competitions used to evaluate ml engineering agents on end-to-end data science and model-building tasks with automated grading. Unique ML-engineering agent domain (feature eng, modeling, submission); uses real Kaggle leaderboard baselines unavailable in any other registry entry..
+tagline: 75 real Kaggle ML competitions used to evaluate ML engineering agents on end-to-end data science and model-building tasks with automated grading
+description: 'MLE-Bench is OpenAI''s 75 real kaggle ml competitions used to evaluate ml engineering agents on end-to-end data science and model-building tasks with automated grading. Unique ML-engineering agent domain (feature eng, modeling, submission); uses real Kaggle leaderboard baselines unavailable in any other registry entry..
+
 
   In the atlas: MLE-Bench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: OpenAI
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  OpenAI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'OpenAI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentbench
-  - appworld
-  - bfcl
-  - browsergym
-  - mind2web
-  - osworld
-  - rd-agent-microsoft
-  - t-eval
-  - theagentcompany
-  - toolbench
-  - webarena
-  - wildbench
-  - workarena
+- agentbench
+- appworld
+- bfcl
+- browsergym
+- mind2web
+- osworld
+- rd-agent-microsoft
+- t-eval
+- theagentcompany
+- toolbench
+- webarena
+- wildbench
+- workarena
+deployment_posture: local-first

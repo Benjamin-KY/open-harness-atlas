@@ -7,37 +7,61 @@ homepage: https://arxiv.org/abs/2402.10260
 license: MIT
 primary_language: Python
 tagline: Berkeley's improved jailbreak benchmark and automated grader — patches the well-known scoring artifacts in earlier harmful-behavior datasets like AdvBench.
-description: |
-  StrongREJECT is the Berkeley benchmark and grader for evaluating
+description: 'StrongREJECT is the Berkeley benchmark and grader for evaluating
+
   the *strength* of jailbreak attacks against aligned LLMs.
+
   Earlier benchmarks (AdvBench, HarmBench) suffer from grader
+
   artifacts where superficial refusals or topic-deflection score
+
   as "successful jailbreak" even when the actual model output
+
   contains no harmful content. StrongREJECT pairs a curated
+
   forbidden-prompts dataset with an LLM-based grader that scores
+
   on the specificity and convincingness of harmful content, not
+
   on string-level cues. Subsequent jailbreak research routinely
+
   re-runs against StrongREJECT to validate against the legacy
+
   benchmark inflation.
 
+
   In the atlas: strong-reject is the canonical
+
   **jailbreak benchmark + automated grader** in the red-team
+
   space, adjacent to harmbench, agentharm, and the broader
+
   attack-evaluation literature. Catalogued under redteam because
+
   the deliverable is an attack-evaluation harness; operators use
+
   it to measure refusal robustness rather than to train
+
   alignment.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: UC Berkeley (Dan Bowen et al.)
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  UC Berkeley-affiliated research project; MIT-licensed and runs
+sovereignty_notes: 'UC Berkeley-affiliated research project; MIT-licensed and runs
+
   entirely offline. The grader can use any chat-completion
+
   endpoint (the paper uses GPT-4 as reference, but operators can
+
   swap in local vLLM / Ollama / Claude / open-source
+
   Llama-class models). Provider-neutral.
+
+  '
 harness_paradigm_alignment: none
 adjacent_to: []
+deployment_posture: local-only

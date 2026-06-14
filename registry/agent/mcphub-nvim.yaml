@@ -25,3 +25,4 @@ adjacent_to:
 - langgraph
 - unity-mcp
 - xcodebuildmcp
+deployment_posture: local-first

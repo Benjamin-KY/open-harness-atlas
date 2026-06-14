@@ -5,31 +5,35 @@ subcategory: planning
 repo_url: https://github.com/TransformerOptimus/SuperAGI
 license: MIT
 primary_language: Python
-tagline: 'Dev-first autonomous agent framework with web console, agent marketplace, and performance telemetry'
-description: |
-  SuperAGI is TransformerOptimus's dev-first autonomous agent framework with web console, agent marketplace, and performance telemetry. Graphical agent dashboard + marketplace; tools: browser, email, code.
+tagline: Dev-first autonomous agent framework with web console, agent marketplace, and performance telemetry
+description: 'SuperAGI is TransformerOptimus''s dev-first autonomous agent framework with web console, agent marketplace, and performance telemetry. Graphical agent dashboard + marketplace; tools: browser, email, code.
+
 
   In the atlas: SuperAGI is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: TransformerOptimus
 origin_country: IN
 model_agnostic_score: 4
-sovereignty_notes: |
-  TransformerOptimus (IN-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'TransformerOptimus (IN-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentforge
-  - agentgpt
-  - agentlite-salesforce
-  - agixt
-  - autogen
-  - babyagi
-  - crewai
-  - griptape-framework
-  - ix-autonomous-agent
-  - langgraph
-  - llmcompiler-parallel
-  - metagpt
-  - rd-agent-microsoft
+- agentforge
+- agentgpt
+- agentlite-salesforce
+- agixt
+- autogen
+- babyagi
+- crewai
+- griptape-framework
+- ix-autonomous-agent
+- langgraph
+- llmcompiler-parallel
+- metagpt
+- rd-agent-microsoft
+deployment_posture: local-first

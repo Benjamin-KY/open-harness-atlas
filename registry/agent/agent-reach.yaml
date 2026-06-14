@@ -24,3 +24,4 @@ adjacent_to:
 - claude-code-game-studios
 - claude-mem
 - langgraph
+deployment_posture: hybrid

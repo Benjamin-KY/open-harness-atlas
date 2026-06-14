@@ -5,25 +5,29 @@ subcategory: llm-judge
 repo_url: https://github.com/prometheus-eval/prometheus-eval
 license: Apache-2.0
 primary_language: Python
-tagline: 'Open-source LLM judge family (3B–14B) trained on feedback data with rubric-based absolute/relative scoring; M-Prometheus supports multilingual evaluation'
-description: |
-  Prometheus-Eval is KAIST / Unbabel (multilingual fork)'s open-source LLM judge family (3B–14B) trained on feedback data with rubric-based absolute/relative scoring; M-Prometheus supports multilingual evaluation. Rubric-conditioned judge fully open-source (model weights + code); M-Prometheus extends to multilingual unlike English-only judge frameworks..
+tagline: Open-source LLM judge family (3B–14B) trained on feedback data with rubric-based absolute/relative scoring; M-Prometheus supports multilingual evaluation
+description: 'Prometheus-Eval is KAIST / Unbabel (multilingual fork)''s open-source LLM judge family (3B–14B) trained on feedback data with rubric-based absolute/relative scoring; M-Prometheus supports multilingual evaluation. Rubric-conditioned judge fully open-source (model weights + code); M-Prometheus extends to multilingual unlike English-only judge frameworks..
+
 
   In the atlas: Prometheus-Eval is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: community
   name: KAIST / Unbabel (multilingual fork)
 origin_country: KR
 model_agnostic_score: 4
-sovereignty_notes: |
-  KAIST / Unbabel (multilingual fork) (community-maintained, KR); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'KAIST / Unbabel (multilingual fork) (community-maintained, KR); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - arena-hard-auto
-  - flow-judge
-  - judgelm
-  - long-form-factuality
-  - mt-bench
-  - pandalm
-  - rewardbench
+- arena-hard-auto
+- flow-judge
+- judgelm
+- long-form-factuality
+- mt-bench
+- pandalm
+- rewardbench
+deployment_posture: local-first

@@ -7,20 +7,32 @@ homepage: https://langchain-ai.github.io/langgraph/
 license: MIT
 primary_language: Python
 tagline: Stateful, controllable agents as explicit graphs of nodes and edges — checkpointing and time-travel built in.
-description: |
-  LangGraph models agents as state-machine graphs: nodes are functions
+description: 'LangGraph models agents as state-machine graphs: nodes are functions
+
   (LLM calls, tool calls, deterministic code) and edges are typed
+
   transitions (conditional, parallel, cyclic). The framework provides
+
   checkpointing (persist any state to a store), time-travel debugging
+
   (rewind and replay any node), human-in-the-loop interrupts, and
+
   streaming via `astream_events`. The pre-built `create_react_agent`
+
   is the easiest on-ramp.
 
+
   In the atlas: LangGraph is the canonical example of a **graph-state-
+
   machine** agent framework. The explicit-graph idiom maps directly to
+
   the Harmless Harnesses §5 audit-log + FSM-escalation invariant — the
+
   graph IS the FSM, so refusal and escalation are deterministic
+
   transitions rather than stochastic completions.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -28,41 +40,50 @@ maintainer:
 origin_country: US
 model_agnostic_score: 4
 education_resources:
-  - title: LangGraph — Official documentation
-    url: https://langchain-ai.github.io/langgraph/
-    type: docs
-    free: true
-  - title: LangGraph — Tutorials
-    url: https://langchain-ai.github.io/langgraph/tutorials/
-    type: tutorial
-    free: true
-sovereignty_notes: |
-  LangChain is US-incorporated; LangGraph itself is MIT-licensed and
-  fully self-hostable. Multi-provider via LangChain's `ChatModel`
+- title: LangGraph — Official documentation
+  url: https://langchain-ai.github.io/langgraph/
+  type: docs
+  free: true
+- title: LangGraph — Tutorials
+  url: https://langchain-ai.github.io/langgraph/tutorials/
+  type: tutorial
+  free: true
+sovereignty_notes: 'LangChain is US-incorporated; LangGraph itself is MIT-licensed and
+
+  fully self-hostable. Multi-provider via LangChain''s `ChatModel`
+
   abstraction (OpenAI / Anthropic / Google / Cohere / Mistral / Ollama /
+
   vLLM / any OpenAI-compatible endpoint). LangSmith observability is a
+
   separate hosted product and entirely optional — LangGraph runs
+
   without it. Model-agnostic 4 because some node-level features
+
   (structured-output coercion, tool-result formatting) work best on
+
   specific provider tool-call dialects.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentlite-salesforce
-  - agentscope
-  - atomic-agents
-  - autogen
-  - babyagi
-  - beeai-framework
-  - crewai
-  - griptape-framework
-  - haystack
-  - ix-autonomous-agent
-  - llama-index-agents
-  - llmcompiler-parallel
-  - mastra
-  - metagpt
-  - microsoft-agent-framework
-  - pydanticai
-  - rd-agent-microsoft
-  - semantic-kernel
-  - superagi
+- agentlite-salesforce
+- agentscope
+- atomic-agents
+- autogen
+- babyagi
+- beeai-framework
+- crewai
+- griptape-framework
+- haystack
+- ix-autonomous-agent
+- llama-index-agents
+- llmcompiler-parallel
+- mastra
+- metagpt
+- microsoft-agent-framework
+- pydanticai
+- rd-agent-microsoft
+- semantic-kernel
+- superagi
+deployment_posture: local-first

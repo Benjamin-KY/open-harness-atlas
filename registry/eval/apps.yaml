@@ -5,27 +5,31 @@ subcategory: code-eval
 repo_url: https://github.com/hendrycks/apps
 license: MIT
 primary_language: Python
-tagline: '10,000 Python coding problems from competitive programming sites across intro, interview, and competition difficulty levels with execution grading'
-description: |
-  APPS (Automated Programming Progress Standard) is Dan Hendrycks's 10,000 python coding problems from competitive programming sites across intro, interview, and competition difficulty levels with execution grading. Three-tier difficulty (introductory → competition), graded by full test-suite pass rate; far broader difficulty range than HumanEval or BigCodeBench..
+tagline: 10,000 Python coding problems from competitive programming sites across intro, interview, and competition difficulty levels with execution grading
+description: 'APPS (Automated Programming Progress Standard) is Dan Hendrycks''s 10,000 python coding problems from competitive programming sites across intro, interview, and competition difficulty levels with execution grading. Three-tier difficulty (introductory → competition), graded by full test-suite pass rate; far broader difficulty range than HumanEval or BigCodeBench..
+
 
   In the atlas: APPS (Automated Programming Progress Standard) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: individual
   name: Dan Hendrycks
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Dan Hendrycks (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Dan Hendrycks (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - bigcode-evaluation-harness
-  - bigcodebench
-  - classeval
-  - cruxeval
-  - evalplus
-  - humaneval
-  - livecodebench
-  - scicode
-  - swe-bench
+- bigcode-evaluation-harness
+- bigcodebench
+- classeval
+- cruxeval
+- evalplus
+- humaneval
+- livecodebench
+- scicode
+- swe-bench
+deployment_posture: local-first

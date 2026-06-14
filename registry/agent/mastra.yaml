@@ -5,21 +5,25 @@ subcategory: multi-agent
 repo_url: https://github.com/mastra-ai/mastra
 license: Apache-2.0
 primary_language: TypeScript
-tagline: 'TypeScript-first multi-agent framework with workflows, RAG pipelines, observability, MCP support'
-description: |
-  Mastra is Mastra AI's typeScript-first multi-agent framework with workflows, RAG pipelines, observability, MCP support. Native A2A + MCP protocols; built-in evals, tracing, vector store connectors.
+tagline: TypeScript-first multi-agent framework with workflows, RAG pipelines, observability, MCP support
+description: 'Mastra is Mastra AI''s typeScript-first multi-agent framework with workflows, RAG pipelines, observability, MCP support. Native A2A + MCP protocols; built-in evals, tracing, vector store connectors.
+
 
   In the atlas: Mastra is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Mastra AI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Mastra AI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Mastra AI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - atomic-agents
-  - beeai-framework
-  - langgraph
+- atomic-agents
+- beeai-framework
+- langgraph
+deployment_posture: local-first

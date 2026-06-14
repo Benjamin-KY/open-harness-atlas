@@ -5,20 +5,24 @@ subcategory: multi-agent
 repo_url: https://github.com/eidolon-ai/eidolon
 license: Apache-2.0
 primary_language: Python
-tagline: 'Service-oriented agent SDK where each agent is a deployable HTTP service with OpenAPI schema'
-description: |
-  Eidolon is Eidolon AI's service-oriented agent SDK where each agent is a deployable HTTP service with OpenAPI schema. Agents-as-services pattern: automatic REST API per agent; dynamic agent-to-agent tool calls.
+tagline: Service-oriented agent SDK where each agent is a deployable HTTP service with OpenAPI schema
+description: 'Eidolon is Eidolon AI''s service-oriented agent SDK where each agent is a deployable HTTP service with OpenAPI schema. Agents-as-services pattern: automatic REST API per agent; dynamic agent-to-agent tool calls.
+
 
   In the atlas: Eidolon is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Eidolon AI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Eidolon AI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Eidolon AI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentforge
-  - fastagency
+- agentforge
+- fastagency
+deployment_posture: local-first

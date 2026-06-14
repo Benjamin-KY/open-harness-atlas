@@ -25,3 +25,4 @@ adjacent_to:
 - sie
 - spiceai
 - tiny-vllm
+deployment_posture: local-first

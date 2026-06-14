@@ -5,27 +5,31 @@ subcategory: adversarial-attack-toolkit
 repo_url: https://github.com/GraySwanAI/nanoGCG
 license: MIT
 primary_language: Python
-tagline: 'Lightweight pip-installable GCG implementation with multi-position swap, history buffer, mellowmax, probe sampling'
-description: |
-  nanoGCG is GraySwanAI's lightweight pip-installable GCG implementation with multi-position swap, history buffer, mellowmax, probe sampling. pip install nanogcg; 2.9x speedup via probe sampling.
+tagline: Lightweight pip-installable GCG implementation with multi-position swap, history buffer, mellowmax, probe sampling
+description: 'nanoGCG is GraySwanAI''s lightweight pip-installable GCG implementation with multi-position swap, history buffer, mellowmax, probe sampling. pip install nanogcg; 2.9x speedup via probe sampling.
+
 
   In the atlas: nanoGCG is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: GraySwanAI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  GraySwanAI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'GraySwanAI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - autodan
-  - autodan-turbo
-  - cipherchat
-  - gptfuzz
-  - llm-adaptive-attacks
-  - llm-attacks-gcg
-  - pair-jailbreak
-  - renellm
-  - tap-jailbreak
+- autodan
+- autodan-turbo
+- cipherchat
+- gptfuzz
+- llm-adaptive-attacks
+- llm-attacks-gcg
+- pair-jailbreak
+- renellm
+- tap-jailbreak
+deployment_posture: local-first

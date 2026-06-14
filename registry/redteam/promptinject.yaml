@@ -24,3 +24,4 @@ adjacent_to:
 - bipia
 - open-prompt-injection
 - rebuff
+deployment_posture: local-first

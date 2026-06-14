@@ -24,3 +24,4 @@ adjacent_to:
 - rstructor
 - sob
 - yaicli
+deployment_posture: local-first

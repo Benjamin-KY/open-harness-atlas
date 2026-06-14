@@ -24,3 +24,4 @@ adjacent_to:
 - nexa-gauge
 - parea-sdk-py
 - prompty
+deployment_posture: cloud-first

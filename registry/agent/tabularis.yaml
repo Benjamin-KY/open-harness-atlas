@@ -7,10 +7,10 @@ homepage: https://tabularis.dev
 license: Apache-2.0
 primary_language: TypeScript
 tagline: Open-source database client for PostgreSQL, MySQL/MariaDB and SQLite with SQL notebooks, visual EXPLAIN, AI and MCP built in.
-description: |-
-  Tabularis — Open-source database client for PostgreSQL, MySQL/MariaDB and SQLite with SQL notebooks, visual EXPLAIN, AI and MCP built in. Hackable with plugins. Upstream maintainer: TabularisDB.
+description: 'Tabularis — Open-source database client for PostgreSQL, MySQL/MariaDB and SQLite with SQL notebooks, visual EXPLAIN, AI and MCP built in. Hackable with plugins. Upstream maintainer: TabularisDB.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
@@ -25,3 +25,4 @@ adjacent_to:
 - trpc-agent-go
 - txtai
 - vibe-kanban
+deployment_posture: local-first

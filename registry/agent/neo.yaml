@@ -25,3 +25,4 @@ adjacent_to:
 - page-agent
 - plandex
 - planning-with-files
+deployment_posture: local-first

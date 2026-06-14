@@ -24,3 +24,4 @@ adjacent_to:
 - pipelock
 - prompt-guard
 - pyrit
+deployment_posture: local-first

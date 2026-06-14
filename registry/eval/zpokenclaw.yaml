@@ -24,3 +24,4 @@ adjacent_to:
 - llm-eval-ci
 - lm-evaluation-harness
 - mental-health-llm-eval
+deployment_posture: local-first

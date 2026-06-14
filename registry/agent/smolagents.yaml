@@ -73,3 +73,4 @@ adjacent_to:
 - openai-agents-sdk
 - pydanticai
 - strands
+deployment_posture: local-first

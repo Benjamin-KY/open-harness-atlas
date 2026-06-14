@@ -7,21 +7,34 @@ homepage: https://huggingface.co/ibm-granite
 license: Apache-2.0
 primary_language: Python
 tagline: IBM's openly-licensed risk-and-harm classifier family for upstream input / output filtering.
-description: |
-  Granite Guardian is IBM's family of small classifier models (3B–8B)
+description: 'Granite Guardian is IBM''s family of small classifier models (3B–8B)
+
   released under Apache-2.0 that score LLM inputs and outputs against a
+
   catalogue of risk categories (harm, bias, jailbreak attempt, profanity,
+
   unethical behaviour, RAG context grounding, function-call safety). The
+
   models are designed to sit at the boundaries of a deployed LLM as a
+
   cheap, deterministic-budget filter before / after a more expensive
+
   frontier call.
 
+
   In the atlas: Granite Guardian is the canonical example of an
+
   **openly-licensed classifier-model** harness component — not a
+
   framework but a load-bearing input/output rail you plug into any other
+
   governance harness (NeMo Guardrails, Guardrails AI, your own
+
   composition). Apache-2.0 weights make it usable as a fully local rail
+
   with no third-party API call.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -35,27 +48,35 @@ five_component_coverage:
   output_contract: native
   audit_log_fsm: none
 education_resources:
-  - title: ibm-granite — Hugging Face organisation
-    url: https://huggingface.co/ibm-granite
-    type: docs
-    free: true
-  - title: Granite Guardian — Technical report
-    url: https://arxiv.org/abs/2412.07724
-    type: paper
-    free: true
-sovereignty_notes: |
-  IBM-maintained, Apache-2.0 for both code and model weights — fully
+- title: ibm-granite — Hugging Face organisation
+  url: https://huggingface.co/ibm-granite
+  type: docs
+  free: true
+- title: Granite Guardian — Technical report
+  url: https://arxiv.org/abs/2412.07724
+  type: paper
+  free: true
+sovereignty_notes: 'IBM-maintained, Apache-2.0 for both code and model weights — fully
+
   redistributable, fully self-hostable. Runs on any local inference
+
   stack that handles the model architecture (vLLM, Transformers,
+
   Ollama once converted, llama.cpp). No telemetry by construction
+
   (it is a model, not a service). Model-agnostic 5 because the
+
   classifier is a single artefact that integrates into any harness via
+
   whichever inference backend the operator chooses.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - detoxify
-  - guardrails-ai
-  - nemo-guardrails
-  - rebuff
-  - shieldlm
-  - wildguard
+- detoxify
+- guardrails-ai
+- nemo-guardrails
+- rebuff
+- shieldlm
+- wildguard
+deployment_posture: local-only

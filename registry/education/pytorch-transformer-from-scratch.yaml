@@ -28,3 +28,4 @@ adjacent_to:
 - mini-llm
 - shannon-b1
 - transformer-pytorch-scratch
+deployment_posture: local-only

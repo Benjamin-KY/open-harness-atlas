@@ -25,3 +25,4 @@ adjacent_to:
 - model-flux
 - nadirclaw
 - open-next-router
+deployment_posture: local-first

@@ -6,25 +6,31 @@ repo_url: https://github.com/dwgx/YuKiKo
 license: MIT
 primary_language: Python
 tagline: AI QQ bot with OneBot, NapCat, LLM routing, plugins, and WebUI
-description: |-
-  Yu Ki Ko — AI QQ bot with OneBot, NapCat, LLM routing, plugins, and WebUI. Upstream maintainer: dwgx.
+description: 'Yu Ki Ko — AI QQ bot with OneBot, NapCat, LLM routing, plugins, and WebUI. Upstream maintainer: dwgx.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: dwgx
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: |-
-  dwgx (community-maintained); OSS core is MIT and self-hostable. Model-agnostic 3 —
+sovereignty_notes: 'dwgx (community-maintained); OSS core is MIT and self-hostable. Model-agnostic 3 —
+
   multi-provider via the LLM-routing layer including at least one local-weights option.
+
   Curator note (2026-06-14): YuKiKo is primarily a QQ instant-messenger bot built on
+
   OneBot + NapCat protocols; LLM routing is plumbing under the chatbot surface rather
+
   than the harness surface itself. Catalogued under routing because the project ships a
+
   reusable provider-abstraction module, but readers should treat it as a
-  domain-adjacent example rather than a standalone routing harness.
+
+  domain-adjacent example rather than a standalone routing harness.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - aqueduct
 - litellm
+deployment_posture: cloud-first

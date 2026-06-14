@@ -5,28 +5,32 @@ subcategory: browser-use
 repo_url: https://github.com/browser-use/browser-use
 license: MIT
 primary_language: Python
-tagline: 'LLM-driven browser automation with Playwright; SOTA on WebVoyager'
-description: |
-  Browser Use is Browser Use AG's lLM-driven browser automation with Playwright; SOTA on WebVoyager. Highest reported WebVoyager score among open frameworks; vision + DOM dual-representation.
+tagline: LLM-driven browser automation with Playwright; SOTA on WebVoyager
+description: 'Browser Use is Browser Use AG''s lLM-driven browser automation with Playwright; SOTA on WebVoyager. Highest reported WebVoyager score among open frameworks; vision + DOM dual-representation.
+
 
   In the atlas: Browser Use is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Browser Use AG
 origin_country: CH
 model_agnostic_score: 4
-sovereignty_notes: |
-  Browser Use AG (CH-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Browser Use AG (CH-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentlab
-  - browsergym
-  - mind2web
-  - openhands
-  - osworld
-  - tarsier-web-perception
-  - theagentcompany
-  - ufo
-  - webarena
-  - webvoyager-multimodal
+- agentlab
+- browsergym
+- mind2web
+- openhands
+- osworld
+- tarsier-web-perception
+- theagentcompany
+- ufo
+- webarena
+- webvoyager-multimodal
+deployment_posture: local-first

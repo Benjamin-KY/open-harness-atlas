@@ -25,3 +25,4 @@ adjacent_to:
 - claude-context
 - code-review-graph
 - langgraph
+deployment_posture: local-first

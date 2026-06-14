@@ -7,10 +7,10 @@ homepage: https://aiaw.app
 license: BSD-3-Clause
 primary_language: TypeScript
 tagline: AI as Workspace - An elegant AI chat client.
-description: |-
-  Aia W — AI as Workspace - An elegant AI chat client. Full-featured, lightweight. Support multiple workspaces, plugin system, cross-platform, local first + real-time cloud sync, Artifacts, MCP | 更好的 AI 客户端. Upstream maintainer: NitroRCr.
+description: 'Aia W — AI as Workspace - An elegant AI chat client. Full-featured, lightweight. Support multiple workspaces, plugin system, cross-platform, local first + real-time cloud sync, Artifacts, MCP | 更好的 AI 客户端. Upstream maintainer: NitroRCr.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
@@ -25,3 +25,4 @@ adjacent_to:
 - dive
 - klavis
 - langgraph
+deployment_posture: local-first

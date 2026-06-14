@@ -24,3 +24,4 @@ adjacent_to:
 - prompty
 - qa-metrics
 - rag-eval-pack
+deployment_posture: api-only

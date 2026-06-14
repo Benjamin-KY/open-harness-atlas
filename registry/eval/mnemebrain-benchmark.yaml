@@ -24,3 +24,4 @@ adjacent_to:
 - sral-framework
 - statebind-guard
 - trellm
+deployment_posture: local-first

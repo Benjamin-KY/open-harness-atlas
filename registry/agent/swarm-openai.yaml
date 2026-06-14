@@ -5,28 +5,32 @@ subcategory: multi-agent
 repo_url: https://github.com/openai/swarm
 license: MIT
 primary_language: Python
-tagline: 'Educational reference implementation of lightweight multi-agent handoff and orchestration patterns'
-description: |
-  Swarm (OpenAI) is OpenAI's educational reference implementation of lightweight multi-agent handoff and orchestration patterns. Minimal primitive: Agent + handoff. Predecessor to OpenAI Agents SDK; widely cited.
+tagline: Educational reference implementation of lightweight multi-agent handoff and orchestration patterns
+description: 'Swarm (OpenAI) is OpenAI''s educational reference implementation of lightweight multi-agent handoff and orchestration patterns. Minimal primitive: Agent + handoff. Predecessor to OpenAI Agents SDK; widely cited.
+
 
   In the atlas: Swarm (OpenAI) is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: OpenAI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  OpenAI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'OpenAI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ag2
-  - agentverse-openbmb
-  - autogen
-  - camel
-  - chatdev
-  - crewai
-  - metagpt
-  - openagents-xlang
-  - openmanus
-  - praisonai
+- ag2
+- agentverse-openbmb
+- autogen
+- camel
+- chatdev
+- crewai
+- metagpt
+- openagents-xlang
+- openmanus
+- praisonai
+deployment_posture: local-first

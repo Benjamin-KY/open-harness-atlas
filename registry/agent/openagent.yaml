@@ -24,3 +24,4 @@ adjacent_to:
 - ragaai-catalyst
 - valuecell
 - zeroclaw
+deployment_posture: local-first

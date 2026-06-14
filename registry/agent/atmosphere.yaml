@@ -25,3 +25,4 @@ adjacent_to:
 - kaibanjs
 - langgraph
 - openagent
+deployment_posture: local-first

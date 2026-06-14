@@ -5,30 +5,34 @@ subcategory: academic-benchmark-runner
 repo_url: https://github.com/SWE-bench/SWE-bench
 license: MIT
 primary_language: Python
-tagline: 'Measures LLM ability to resolve real GitHub issues from popular open-source Python repositories'
-description: |
-  SWE-bench is Princeton / Stanford's measures LLM ability to resolve real GitHub issues from popular open-source Python repositories. Tasks are actual open issues with pass/fail via test execution.
+tagline: Measures LLM ability to resolve real GitHub issues from popular open-source Python repositories
+description: 'SWE-bench is Princeton / Stanford''s measures LLM ability to resolve real GitHub issues from popular open-source Python repositories. Tasks are actual open issues with pass/fail via test execution.
+
 
   In the atlas: SWE-bench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Princeton / Stanford
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Princeton / Stanford (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Princeton / Stanford (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - apps
-  - bigcode-evaluation-harness
-  - bigcodebench
-  - classeval
-  - cruxeval
-  - evalplus
-  - humaneval
-  - livecodebench
-  - mini-swe-agent
-  - openhands
-  - scicode
-  - swe-agent
+- apps
+- bigcode-evaluation-harness
+- bigcodebench
+- classeval
+- cruxeval
+- evalplus
+- humaneval
+- livecodebench
+- mini-swe-agent
+- openhands
+- scicode
+- swe-agent
+deployment_posture: local-first

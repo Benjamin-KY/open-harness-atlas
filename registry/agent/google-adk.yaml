@@ -7,17 +7,26 @@ homepage: https://google.github.io/adk-docs/
 license: Apache-2.0
 primary_language: Python
 tagline: Google's Apache-2.0 agent SDK with FunctionTool, Gemini-native tool use, and async runners.
-description: |
-  Google ADK is the Apache-2.0 Python SDK from Google for building
+description: 'Google ADK is the Apache-2.0 Python SDK from Google for building
+
   agentic systems on top of Gemini and other supported backends.
+
   Tools are wrapped with `FunctionTool`, agents are declared with
+
   instructions + a tool list, and the `Runner.run_async()` loop
+
   handles the model-native tool-use cycle.
 
+
   In the atlas: Google ADK is the **provider-native** reference for
+
   Gemini-side development. Like Claude Agent SDK and OpenAI Agents
+
   SDK, the same sovereignty caution applies — wrap the SDK in a
+
   routing layer if the deployment must survive provider-side disruption.
+
+  '
 maturity: beta
 maintainer:
   type: company
@@ -25,23 +34,29 @@ maintainer:
 origin_country: US
 model_agnostic_score: 2
 education_resources:
-  - title: Google ADK — Documentation
-    url: https://google.github.io/adk-docs/
-    type: docs
-    free: true
-sovereignty_notes: |
-  Google-maintained, Apache-2.0, self-hostable as a Python package.
+- title: Google ADK — Documentation
+  url: https://google.github.io/adk-docs/
+  type: docs
+  free: true
+sovereignty_notes: 'Google-maintained, Apache-2.0, self-hostable as a Python package.
+
   Primary target is Gemini (via API key or Vertex AI); additional
+
   backends are supported via the same configuration but the integration
+
   is less mature. Model-agnostic 2 — provider-locked posture in
+
   practice despite formally supporting alternatives.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - agno
-  - atomic-agents
-  - claude-agent-sdk
-  - litellm
-  - openai-agents-sdk
-  - pydanticai
-  - smolagents
-  - strands
+- agno
+- atomic-agents
+- claude-agent-sdk
+- litellm
+- openai-agents-sdk
+- pydanticai
+- smolagents
+- strands
+deployment_posture: cloud-first

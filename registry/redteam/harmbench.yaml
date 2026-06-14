@@ -5,30 +5,34 @@ subcategory: ai-red-team-framework
 repo_url: https://github.com/centerforaisafety/HarmBench
 license: MIT
 primary_language: Python
-tagline: 'Standardized evaluation framework benchmarking 18 automated red-teaming methods against 33 target LLMs/defenses'
-description: |
-  HarmBench is Center for AI Safety's standardized evaluation framework benchmarking 18 automated red-teaming methods against 33 target LLMs/defenses. Built-in implementations of GCG, PAIR, TAP, AutoDAN; SLURM-native; NeurIPS 2024.
+tagline: Standardized evaluation framework benchmarking 18 automated red-teaming methods against 33 target LLMs/defenses
+description: 'HarmBench is Center for AI Safety''s standardized evaluation framework benchmarking 18 automated red-teaming methods against 33 target LLMs/defenses. Built-in implementations of GCG, PAIR, TAP, AutoDAN; SLURM-native; NeurIPS 2024.
+
 
   In the atlas: HarmBench is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Center for AI Safety
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  Center for AI Safety (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'Center for AI Safety (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - cleverhans
-  - do-not-answer
-  - easyjailbreak
-  - jailbreak-evaluation
-  - jailbreakbench
-  - openattack
-  - promptbench
-  - safetybench
-  - textattack
-  - trustllm
-  - wildguard
-  - wmdp
+- cleverhans
+- do-not-answer
+- easyjailbreak
+- jailbreak-evaluation
+- jailbreakbench
+- openattack
+- promptbench
+- safetybench
+- textattack
+- trustllm
+- wildguard
+- wmdp
+deployment_posture: local-first

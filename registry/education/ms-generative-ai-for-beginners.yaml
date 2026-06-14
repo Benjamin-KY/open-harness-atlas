@@ -5,11 +5,13 @@ subcategory: practitioner-guides
 repo_url: https://github.com/microsoft/generative-ai-for-beginners
 license: MIT
 primary_language: Jupyter Notebook
-tagline: '21-lesson structured curriculum on building GenAI apps with Python + Azure OpenAI'
-description: |
-  Generative AI for Beginners is Microsoft's 21-lesson structured curriculum on building genai apps with python + azure openai. 60k+ forks; 18 language translations; lesson quizzes; separate video/colab per lesson.
+tagline: 21-lesson structured curriculum on building GenAI apps with Python + Azure OpenAI
+description: 'Generative AI for Beginners is Microsoft''s 21-lesson structured curriculum on building genai apps with python + azure openai. 60k+ forks; 18 language translations; lesson quizzes; separate video/colab per lesson.
+
 
   In the atlas: Generative AI for Beginners is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -17,26 +19,34 @@ maintainer:
 origin_country: US
 model_agnostic_score: 3
 education_resources:
-  - title: Generative AI for Beginners — source repository
-    url: https://github.com/microsoft/generative-ai-for-beginners
-    type: course
-    free: true
-sovereignty_notes: |
-  Microsoft (US-incorporated company); content and code are MIT-licensed and the entire
+- title: Generative AI for Beginners — source repository
+  url: https://github.com/microsoft/generative-ai-for-beginners
+  type: course
+  free: true
+sovereignty_notes: 'Microsoft (US-incorporated company); content and code are MIT-licensed and the entire
+
   curriculum is openly published, forkable, and self-hostable. Model-agnostic 3 (corrected
+
   2026-06-14, was 5): the curriculum is structurally Azure-OpenAI-first — most lessons
+
   walk through `azure-openai`-namespaced endpoints, deployment names, and the AI Studio
+
   UI; the "use a different provider" path is shown but not the default. Honest reading is
+
   "multi-provider including at least one local-weights option" rather than a clean swap-
+
   target curriculum. Kept catalogued because the lesson-architecture is reusable.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - hf-nlp-course
-  - hf-smol-course
-  - llm-notebooks-course
-  - microsoft-ai-agents-for-beginners
-  - mlabonne-llm-course
-  - ms-ai-for-beginners
-  - ms-data-science-for-beginners
-  - ms-ml-for-beginners
-  - stanford-cs336
+- hf-nlp-course
+- hf-smol-course
+- llm-notebooks-course
+- microsoft-ai-agents-for-beginners
+- mlabonne-llm-course
+- ms-ai-for-beginners
+- ms-data-science-for-beginners
+- ms-ml-for-beginners
+- stanford-cs336
+deployment_posture: local-only

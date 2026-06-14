@@ -6,10 +6,12 @@ repo_url: https://github.com/deadbits/vigil-llm
 license: Apache-2.0
 primary_language: Python
 tagline: 'REST API + Python library for LLM prompt security scanning: YARA/heuristics, vector-DB similarity, transformer classifier, canary tokens'
-description: |
-  Vigil is Adam Swanda's rEST API + Python library for LLM prompt security scanning: YARA/heuristics, vector-DB similarity, transformer classifier, canary tokens. Canary token leakage detection for goal-hijacking; multi-scanner layered approach.
+description: 'Vigil is Adam Swanda''s rEST API + Python library for LLM prompt security scanning: YARA/heuristics, vector-DB similarity, transformer classifier, canary tokens. Canary token leakage detection for goal-hijacking; multi-scanner layered approach.
+
 
   In the atlas: Vigil is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: alpha
 maintainer:
   type: individual
@@ -22,18 +24,20 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: partial
-sovereignty_notes: |
-  Adam Swanda (independent maintainer, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Adam Swanda (independent maintainer, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - autodefense
-  - circuit-breakers
-  - guardrails-ai
-  - llm-guard
-  - nemo-guardrails
-  - presidio
-  - rebuff
-  - safedecoding
-  - shieldlm
-  - smooth-llm
-  - wildguard
+- autodefense
+- circuit-breakers
+- guardrails-ai
+- llm-guard
+- nemo-guardrails
+- presidio
+- rebuff
+- safedecoding
+- shieldlm
+- smooth-llm
+- wildguard
+deployment_posture: local-first

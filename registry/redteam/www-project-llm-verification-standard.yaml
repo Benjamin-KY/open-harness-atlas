@@ -25,3 +25,4 @@ adjacent_to:
 - pyrit
 - rag-security-scanner
 - redforge-ai
+deployment_posture: local-only

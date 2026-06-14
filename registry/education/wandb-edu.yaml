@@ -6,10 +6,12 @@ repo_url: https://github.com/wandb/edu
 license: GPL-2.0
 primary_language: Jupyter Notebook
 tagline: 'LLM engineering notebooks: structured outputs, RAG++, prompt engineering, evals with W&B logging'
-description: |
-  Weights & Biases AI Academy is Weights & Biases's lLM engineering notebooks: structured outputs, RAG++, prompt engineering, evals with W&B logging. GPL-2.0 copyleft; integrated experiment-tracking throughout every notebook exercise.
+description: 'Weights & Biases AI Academy is Weights & Biases''s lLM engineering notebooks: structured outputs, RAG++, prompt engineering, evals with W&B logging. GPL-2.0 copyleft; integrated experiment-tracking throughout every notebook exercise.
+
 
   In the atlas: Weights & Biases AI Academy is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -17,14 +19,16 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: Weights & Biases AI Academy — source repository
-    url: https://github.com/wandb/edu
-    type: course
-    free: true
-sovereignty_notes: |
-  Weights & Biases (US-incorporated company); OSS core is GPL-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: Weights & Biases AI Academy — source repository
+  url: https://github.com/wandb/edu
+  type: course
+  free: true
+sovereignty_notes: 'Weights & Biases (US-incorporated company); OSS core is GPL-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - hands-on-llms
-  - handson-ml3
-  - nlp-with-transformers-notebooks
+- hands-on-llms
+- handson-ml3
+- nlp-with-transformers-notebooks
+deployment_posture: local-only

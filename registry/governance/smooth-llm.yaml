@@ -5,11 +5,13 @@ subcategory: adversarial-defense
 repo_url: https://github.com/arobey1/smooth-llm
 license: MIT
 primary_language: Python
-tagline: 'Randomized text-perturbation defense (swap/patch/insert) against GCG and transfer adversarial jailbreak suffixes'
-description: |
-  SmoothLLM is Academic (UPenn)'s randomized text-perturbation defense (swap/patch/insert) against GCG and transfer adversarial jailbreak suffixes. Certifiably effective against GCG with ~10% perturbation; pre-generation input filter.
+tagline: Randomized text-perturbation defense (swap/patch/insert) against GCG and transfer adversarial jailbreak suffixes
+description: 'SmoothLLM is Academic (UPenn)''s randomized text-perturbation defense (swap/patch/insert) against GCG and transfer adversarial jailbreak suffixes. Certifiably effective against GCG with ~10% perturbation; pre-generation input filter.
+
 
   In the atlas: SmoothLLM is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: alpha
 maintainer:
   type: institution
@@ -22,19 +24,21 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: partial
-sovereignty_notes: |
-  Academic (UPenn) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Academic (UPenn) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - autodefense
-  - circuit-breakers
-  - easyjailbreak
-  - jailbreak-hub
-  - jailbreakbench
-  - llm-guard
-  - llm-jailbreaking-defense
-  - rebuff
-  - safedecoding
-  - shieldlm
-  - vigil-llm
-  - wildguard
+- autodefense
+- circuit-breakers
+- easyjailbreak
+- jailbreak-hub
+- jailbreakbench
+- llm-guard
+- llm-jailbreaking-defense
+- rebuff
+- safedecoding
+- shieldlm
+- vigil-llm
+- wildguard
+deployment_posture: local-first

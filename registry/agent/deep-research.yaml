@@ -25,3 +25,4 @@ adjacent_to:
 - langgraph
 - lean-ctx
 - serena
+deployment_posture: local-first

@@ -30,3 +30,4 @@ education_resources:
   url: https://github.com/shanraisshan/claude-code-best-practice
   type: tutorial
   free: true
+deployment_posture: local-only

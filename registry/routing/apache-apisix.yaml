@@ -5,23 +5,27 @@ subcategory: ai-gateway
 repo_url: https://github.com/apache/apisix
 license: Apache-2.0
 primary_language: Lua
-tagline: 'Cloud-native API gateway with AI plugin suite for multi-provider LLM proxying and semantic caching'
-description: |
-  Apache APISIX is Apache Software Foundation's cloud-native API gateway with AI plugin suite for multi-provider LLM proxying and semantic caching. ai-proxy, ai-semantic-cache, ai-rag plugins; CNCF member project.
+tagline: Cloud-native API gateway with AI plugin suite for multi-provider LLM proxying and semantic caching
+description: 'Apache APISIX is Apache Software Foundation''s cloud-native API gateway with AI plugin suite for multi-provider LLM proxying and semantic caching. ai-proxy, ai-semantic-cache, ai-rag plugins; CNCF member project.
+
 
   In the atlas: Apache APISIX is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Apache Software Foundation
 origin_country: null
 model_agnostic_score: 5
-sovereignty_notes: |
-  Apache Software Foundation (multi-country-based academic/research institution); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'Apache Software Foundation (multi-country-based academic/research institution); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - apfel
-  - envoy-ai-gateway
-  - kgateway
-  - kong
-  - plano
+- apfel
+- envoy-ai-gateway
+- kgateway
+- kong
+- plano
+deployment_posture: local-first

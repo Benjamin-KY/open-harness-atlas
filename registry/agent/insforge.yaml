@@ -25,3 +25,4 @@ adjacent_to:
 - langchain
 - langgraph
 - web-ui
+deployment_posture: local-first

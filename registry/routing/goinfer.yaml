@@ -25,3 +25,4 @@ adjacent_to:
 - powerinfer
 - sie
 - spiceai
+deployment_posture: local-first

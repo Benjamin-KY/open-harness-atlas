@@ -29,3 +29,4 @@ education_resources:
   url: https://github.com/microsoft/mcp-for-beginners
   type: course
   free: true
+deployment_posture: local-only

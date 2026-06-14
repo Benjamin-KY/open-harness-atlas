@@ -7,39 +7,62 @@ homepage: https://www.bentoml.com/
 license: Apache-2.0
 primary_language: Python
 tagline: Build, ship, and scale AI model-serving APIs — Python-first, framework-agnostic, with first-class LLM inference primitives.
-description: |
-  BentoML is a model-serving framework that packages ML and LLM
+description: 'BentoML is a model-serving framework that packages ML and LLM
+
   workloads as Python "Service" classes, builds them into portable
+
   "Bentos" (versioned artifacts containing the model, dependencies,
+
   and runtime), and serves them as HTTP / gRPC / streaming APIs. The
+
   LLM track adds first-class support for vLLM and TGI-style
+
   continuous batching, OpenAI-compatible endpoints, and adaptive
+
   batching across heterogeneous request shapes. The companion
+
   OpenLLM project builds on Bento to ship pre-packaged LLM
+
   inference runtimes for popular open models.
 
+
   In the atlas: BentoML is catalogued under **routing** as a
+
   framework-agnostic model-serving substrate. Unlike vLLM /
+
   TensorRT-LLM (single-runtime engines) or LiteLLM (provider-router
+
   proxy), Bento is the application-server layer that operators use
+
   to ship the model behind any of those engines as a stable,
+
   observable API surface with its own batching, auth, and metrics.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: BentoML / bentoml.com
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  BentoML Inc. is US-incorporated; the OSS core is Apache-2.0 and
+sovereignty_notes: 'BentoML Inc. is US-incorporated; the OSS core is Apache-2.0 and
+
   fully self-hostable on any container platform. Multi-provider on
+
   both the model side (any vLLM-supported checkpoint, plus
+
   HF Transformers, llama.cpp, ONNX, scikit-learn) and the deployment
+
   side (Docker, Kubernetes, AWS, GCP, Azure, on-prem). The optional
+
   BentoCloud hosted control-plane is opt-in — running entirely
+
   on-prem requires no Bento-side dependency. No call-home by default.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - sglang
-  - tensorrt-llm
-  - vllm
+- sglang
+- tensorrt-llm
+- vllm
+deployment_posture: local-first

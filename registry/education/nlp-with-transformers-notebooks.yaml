@@ -6,10 +6,12 @@ repo_url: https://github.com/nlp-with-transformers/notebooks
 license: Apache-2.0
 primary_language: Jupyter Notebook
 tagline: 'O Reilly book companion: NLP pipeline tasks, QA, summarization, generation, multilingual'
-description: |
-  NLP with Transformers (notebooks) is Tunstall, von Werra, Wolf's o Reilly book companion: NLP pipeline tasks, QA, summarization, generation, multilingual. Systematic chapter-by-chapter coverage of every major NLP task using Transformers.
+description: 'NLP with Transformers (notebooks) is Tunstall, von Werra, Wolf''s o Reilly book companion: NLP pipeline tasks, QA, summarization, generation, multilingual. Systematic chapter-by-chapter coverage of every major NLP task using Transformers.
+
 
   In the atlas: NLP with Transformers (notebooks) is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -17,14 +19,16 @@ maintainer:
 origin_country: GB
 model_agnostic_score: 5
 education_resources:
-  - title: NLP with Transformers (notebooks) — source repository
-    url: https://github.com/nlp-with-transformers/notebooks
-    type: course
-    free: true
-sovereignty_notes: |
-  Tunstall, von Werra, Wolf (GB-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: NLP with Transformers (notebooks) — source repository
+  url: https://github.com/nlp-with-transformers/notebooks
+  type: course
+  free: true
+sovereignty_notes: 'Tunstall, von Werra, Wolf (GB-incorporated company); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - hands-on-llms
-  - handson-ml3
-  - wandb-edu
+- hands-on-llms
+- handson-ml3
+- wandb-edu
+deployment_posture: local-only

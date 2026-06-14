@@ -22,3 +22,4 @@ adjacent_to:
 - litellm
 - openinfer
 - serverlessllm
+deployment_posture: cloud-first

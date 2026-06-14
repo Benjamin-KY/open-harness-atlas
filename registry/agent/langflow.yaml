@@ -5,22 +5,26 @@ subcategory: workflow-graph
 repo_url: https://github.com/langflow-ai/langflow
 license: MIT
 primary_language: Python
-tagline: 'Drag-and-drop visual builder for LLM flows and agent pipelines; exports as MCP server'
-description: |
-  Langflow is DataStax's drag-and-drop visual builder for LLM flows and agent pipelines; exports as MCP server. Native MCP server export, REST API, vector-store components for RAG-agent hybrids.
+tagline: Drag-and-drop visual builder for LLM flows and agent pipelines; exports as MCP server
+description: 'Langflow is DataStax''s drag-and-drop visual builder for LLM flows and agent pipelines; exports as MCP server. Native MCP server export, REST API, vector-store components for RAG-agent hybrids.
+
 
   In the atlas: Langflow is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: DataStax
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  DataStax (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'DataStax (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - copilotkit
-  - flowise
-  - rivet
-  - tambo
+- copilotkit
+- flowise
+- rivet
+- tambo
+deployment_posture: local-first

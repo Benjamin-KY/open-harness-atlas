@@ -6,22 +6,26 @@ repo_url: https://github.com/reworkd/tarsier
 license: MIT
 primary_language: Python
 tagline: 'Vision utility for web agents: tags interactable elements with bracket IDs, converts pages to OCR-structured ASCII text for text-only LLM agents'
-description: |
-  Tarsier is Reworkd AI's vision utility for web agents: tags interactable elements with bracket IDs, converts pages to OCR-structured ASCII text for text-only LLM agents. Unimodal GPT-4 + Tarsier-Text beats GPT-4V on internal benchmarks by 10-20%; Google Vision + Azure OCR backends; compatible with Playwright; reusable perception layer..
+description: 'Tarsier is Reworkd AI''s vision utility for web agents: tags interactable elements with bracket IDs, converts pages to OCR-structured ASCII text for text-only LLM agents. Unimodal GPT-4 + Tarsier-Text beats GPT-4V on internal benchmarks by 10-20%; Google Vision + Azure OCR backends; compatible with Playwright; reusable perception layer..
+
 
   In the atlas: Tarsier is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Reworkd AI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Reworkd AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Reworkd AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - browser-use
-  - browsergym
-  - ufo
-  - webarena
-  - webvoyager-multimodal
+- browser-use
+- browsergym
+- ufo
+- webarena
+- webvoyager-multimodal
+deployment_posture: local-first

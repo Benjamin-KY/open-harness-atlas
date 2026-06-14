@@ -5,25 +5,29 @@ subcategory: llm-vulnerability-scanner
 repo_url: https://github.com/thu-coai/SafetyBench
 license: MIT
 primary_language: Python
-tagline: '11435 bilingual (CN+EN) safety MCQ benchmark spanning 7 safety categories with automated evaluation scripts'
-description: |
-  SafetyBench is COAI Lab, Tsinghua University's 11435 bilingual (cn+en) safety mcq benchmark spanning 7 safety categories with automated evaluation scripts. Largest bilingual LLM safety MCQ benchmark; ACL 2024.
+tagline: 11435 bilingual (CN+EN) safety MCQ benchmark spanning 7 safety categories with automated evaluation scripts
+description: 'SafetyBench is COAI Lab, Tsinghua University''s 11435 bilingual (cn+en) safety mcq benchmark spanning 7 safety categories with automated evaluation scripts. Largest bilingual LLM safety MCQ benchmark; ACL 2024.
+
 
   In the atlas: SafetyBench is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: COAI Lab, Tsinghua University
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  COAI Lab, Tsinghua University (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'COAI Lab, Tsinghua University (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - do-not-answer
-  - easyjailbreak
-  - harmbench
-  - jailbreak-evaluation
-  - jailbreakbench
-  - trustllm
-  - wmdp
+- do-not-answer
+- easyjailbreak
+- harmbench
+- jailbreak-evaluation
+- jailbreakbench
+- trustllm
+- wmdp
+deployment_posture: local-first

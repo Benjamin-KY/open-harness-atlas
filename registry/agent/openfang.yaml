@@ -25,3 +25,4 @@ adjacent_to:
 - pydantic-ai
 - ralph-claude-code
 - ruflo
+deployment_posture: local-first

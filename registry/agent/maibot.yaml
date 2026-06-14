@@ -25,3 +25,4 @@ adjacent_to:
 - txtai
 - vibe-kanban
 - vibe-skills
+deployment_posture: local-first

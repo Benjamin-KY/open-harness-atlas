@@ -31,3 +31,4 @@ adjacent_to:
 - brigade
 - circle-guard-bench
 - guardrails-ai
+deployment_posture: local-first

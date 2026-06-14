@@ -25,3 +25,4 @@ adjacent_to:
 - fara
 - langgraph
 - ui-tars-desktop
+deployment_posture: local-first

@@ -7,40 +7,64 @@ homepage: https://arxiv.org/abs/2402.05044
 license: Apache-2.0
 primary_language: Python
 tagline: ACL 2024 safety benchmark covering a 66-category taxonomy across attack, defence, and evaluation — ships the open MD-Judge safety classifier.
-description: |
-  SALAD-Bench is the Apache-2.0 benchmark and evaluation toolkit
+description: 'SALAD-Bench is the Apache-2.0 benchmark and evaluation toolkit
+
   from the ACL 2024 paper "SALAD-Bench: A Hierarchical and
+
   Comprehensive Safety Benchmark for Large Language Models". It
+
   supplies a hierarchical 66-category safety taxonomy (3 base
+
   domains → 16 subdomains → 66 categories) and ~30k prompts
+
   spanning standard queries, attack-augmented queries, and
+
   defence-augmented queries. The repository also ships MD-Judge,
+
   an open-source fine-tuned safety classifier trained to score
+
   responses against the SALAD taxonomy.
 
+
   In the atlas: SALAD-Bench is the **hierarchical safety taxonomy
+
   benchmark** point in the redteam space — adjacent to SORRY-Bench
+
   (fine-grained refusal evaluation), StrongREJECT (jailbreak
+
   scoring), and garak (general red-team probe runner). Together
+
   they form a layered 2024-2025 safety-eval stack: SALAD-Bench
+
   gives operators a comprehensive coverage matrix; SORRY-Bench
+
   drills into refusal categorisation; StrongREJECT scores
+
   jailbreaks; garak orchestrates the probes.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: OpenSafetyLab (Shanghai AI Lab)
 origin_country: CN
 model_agnostic_score: 5
-sovereignty_notes: |
-  Maintained by OpenSafetyLab at Shanghai AI Lab; Apache-2.0 OSS;
+sovereignty_notes: 'Maintained by OpenSafetyLab at Shanghai AI Lab; Apache-2.0 OSS;
+
   runs entirely offline against any chat-completion endpoint. The
+
   MD-Judge safety classifier is published as standard Hugging Face
+
   weights and can be served locally via vLLM / TGI. Multi-provider
+
   via OpenAI-compatible HTTP — works against local backends as well
+
   as hosted providers. No hosted-service dependency.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - garak
-  - sorry-bench
-  - strong-reject
+- garak
+- sorry-bench
+- strong-reject
+deployment_posture: local-only

@@ -27,3 +27,4 @@ sovereignty_notes: 'eth-sri is the Security, Reliability, and Intelligence Lab a
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai
+deployment_posture: local-first

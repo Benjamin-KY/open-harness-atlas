@@ -5,32 +5,36 @@ subcategory: agent-eval
 repo_url: https://github.com/xlang-ai/OSWorld
 license: Apache-2.0
 primary_language: Python
-tagline: 'Desktop GUI agent benchmark across Ubuntu, macOS, Windows with 369 diverse real computer tasks'
-description: |
-  OSWorld is HKU / CMU's desktop GUI agent benchmark across Ubuntu, macOS, Windows with 369 diverse real computer tasks. Unified cross-OS environment with screenshot-based observations; supports AWS parallel eval.
+tagline: Desktop GUI agent benchmark across Ubuntu, macOS, Windows with 369 diverse real computer tasks
+description: 'OSWorld is HKU / CMU''s desktop GUI agent benchmark across Ubuntu, macOS, Windows with 369 diverse real computer tasks. Unified cross-OS environment with screenshot-based observations; supports AWS parallel eval.
+
 
   In the atlas: OSWorld is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: HKU / CMU
 origin_country: HK
 model_agnostic_score: 4
-sovereignty_notes: |
-  HKU / CMU (HK-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'HKU / CMU (HK-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentbench
-  - agentlab
-  - appworld
-  - bfcl
-  - browser-use
-  - browsergym
-  - mind2web
-  - mle-bench
-  - t-eval
-  - theagentcompany
-  - toolbench
-  - webarena
-  - wildbench
-  - workarena
+- agentbench
+- agentlab
+- appworld
+- bfcl
+- browser-use
+- browsergym
+- mind2web
+- mle-bench
+- t-eval
+- theagentcompany
+- toolbench
+- webarena
+- wildbench
+- workarena
+deployment_posture: local-first

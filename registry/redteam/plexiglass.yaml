@@ -6,21 +6,25 @@ repo_url: https://github.com/safellama/plexiglass
 license: MIT
 primary_language: Python
 tagline: 'CLI/Python toolkit for LLM vulnerability scanning: jailbreak, prompt-injection, toxicity benchmarks from live sources'
-description: |
-  Plexiglass is SafeLLama's cLI/Python toolkit for LLM vulnerability scanning: jailbreak, prompt-injection, toxicity benchmarks from live sources. Scrapes fresh adversarial prompts at runtime.
+description: 'Plexiglass is SafeLLama''s cLI/Python toolkit for LLM vulnerability scanning: jailbreak, prompt-injection, toxicity benchmarks from live sources. Scrapes fresh adversarial prompts at runtime.
+
 
   In the atlas: Plexiglass is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: alpha
 maintainer:
   type: community
   name: SafeLLama
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  SafeLLama (community-maintained, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'SafeLLama (community-maintained, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - easyjailbreak
-  - garak
-  - promptmap
-  - pyrit
+- easyjailbreak
+- garak
+- promptmap
+- pyrit
+deployment_posture: local-first

@@ -24,3 +24,4 @@ adjacent_to:
 - cli
 - coral
 - langgraph
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - lm-evaluation-harness
 - mental-health-llm-eval
 - mini-omega-lock
+deployment_posture: local-first

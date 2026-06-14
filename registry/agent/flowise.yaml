@@ -5,22 +5,26 @@ subcategory: workflow-graph
 repo_url: https://github.com/FlowiseAI/Flowise
 license: Apache-2.0
 primary_language: TypeScript
-tagline: 'Low-code drag-drop UI for building LLM agents and RAG pipelines; REST API and Docker deployable'
-description: |
-  Flowise is FlowiseAI's low-code drag-drop UI for building LLM agents and RAG pipelines; REST API and Docker deployable. Node-based visual canvas; 100+ integrations; REST API generation (community core only).
+tagline: Low-code drag-drop UI for building LLM agents and RAG pipelines; REST API and Docker deployable
+description: 'Flowise is FlowiseAI''s low-code drag-drop UI for building LLM agents and RAG pipelines; REST API and Docker deployable. Node-based visual canvas; 100+ integrations; REST API generation (community core only).
+
 
   In the atlas: Flowise is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: FlowiseAI
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  FlowiseAI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'FlowiseAI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - copilotkit
-  - langflow
-  - rivet
-  - tambo
+- copilotkit
+- langflow
+- rivet
+- tambo
+deployment_posture: local-first

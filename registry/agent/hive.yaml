@@ -24,3 +24,4 @@ adjacent_to:
 - plandex
 - planning-with-files
 - pydantic-ai
+deployment_posture: local-first

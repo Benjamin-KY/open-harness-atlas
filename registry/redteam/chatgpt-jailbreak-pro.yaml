@@ -25,3 +25,4 @@ adjacent_to:
 - llm-jailbreaks
 - principles-of-ai-llms
 - pyrit
+deployment_posture: api-only

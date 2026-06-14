@@ -29,3 +29,4 @@ adjacent_to:
 - awesome-llm-knowledge-systems
 - enterprise-mcp-course
 - harmless-harnesses
+deployment_posture: local-only

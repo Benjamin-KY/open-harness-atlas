@@ -25,3 +25,4 @@ adjacent_to:
 - dokimos
 - every-eval-ever
 - lm-evaluation-harness
+deployment_posture: local-first

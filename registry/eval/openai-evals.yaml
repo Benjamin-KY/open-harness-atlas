@@ -7,22 +7,36 @@ homepage: https://github.com/openai/evals
 license: MIT
 primary_language: Python
 tagline: OpenAI's framework and registry of evaluations for LLMs and LLM-using systems.
-description: |
-  OpenAI Evals is OpenAI's MIT-licensed evaluation framework and
+description: 'OpenAI Evals is OpenAI''s MIT-licensed evaluation framework and
+
   registry of evaluations for language models and the systems that
+
   use them. It defines an `Eval` abstraction (dataset + grading
+
   logic + completion function), ships a registry of community-
+
   contributed evals, and supports YAML-defined evals for the common
+
   cases (multiple-choice, model-graded, custom-grader).
 
+
   In the atlas: OpenAI Evals is included as the **OpenAI-origin
+
   application-level eval** — historically influential, MIT-licensed,
+
   and still in active use even though the field has largely shifted
+
   to lm-evaluation-harness (academic) and DeepEval / promptfoo
+
   (application). Its presence in the atlas demonstrates that
+
   OpenAI-origin OSS evaluation infrastructure is OSI-licensed and
+
   portable to any backend, even though hosted Fable / Mythos-class
+
   *models* may not be.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -30,21 +44,30 @@ maintainer:
 origin_country: US
 model_agnostic_score: 3
 education_resources:
-  - title: OpenAI Evals — Documentation
-    url: https://github.com/openai/evals/blob/main/docs/eval-templates.md
-    type: docs
-    free: true
-sovereignty_notes: |
-  US-incorporated company; OSS framework is MIT-licensed and runs
-  entirely locally. The framework is more idiomatic against OpenAI's
+- title: OpenAI Evals — Documentation
+  url: https://github.com/openai/evals/blob/main/docs/eval-templates.md
+  type: docs
+  free: true
+sovereignty_notes: 'US-incorporated company; OSS framework is MIT-licensed and runs
+
+  entirely locally. The framework is more idiomatic against OpenAI''s
+
   own completion API; running against non-OpenAI backends requires a
+
   custom `CompletionFn` wrapper (LiteLLM is a common adapter).
+
   Conservative model-agnostic 3 — the framework works against any
+
   backend with adapter code, but the out-of-box ergonomics assume
+
   OpenAI; community evals frequently embed OpenAI-specific
+
   assumptions in graders.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - deepeval
-  - inspect-ai
-  - promptfoo
+- deepeval
+- inspect-ai
+- promptfoo
+deployment_posture: local-first

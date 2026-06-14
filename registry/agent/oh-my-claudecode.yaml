@@ -25,3 +25,4 @@ adjacent_to:
 - ralph-claude-code
 - ruflo
 - sre
+deployment_posture: api-only

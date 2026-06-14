@@ -21,3 +21,4 @@ sovereignty_notes: izwi-ai (commercial vendor at izwiai.com); MIT Rust stack —
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm
+deployment_posture: local-first

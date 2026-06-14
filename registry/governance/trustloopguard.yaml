@@ -31,3 +31,4 @@ adjacent_to:
 - armorer
 - awesome-foundry-nextgen
 - guardrails-ai
+deployment_posture: local-first

@@ -5,21 +5,25 @@ subcategory: edge-gateway
 repo_url: https://github.com/mlc-ai/web-llm
 license: Apache-2.0
 primary_language: TypeScript
-tagline: 'In-browser LLM inference via WebGPU/WASM; fully OpenAI-API-compatible; zero server-side processing'
-description: |
-  WebLLM is MLC-AI's in-browser LLM inference via WebGPU/WASM; fully OpenAI-API-compatible; zero server-side processing. Entirely in-browser; WebGPU-accelerated; npm package; Chrome extension support.
+tagline: In-browser LLM inference via WebGPU/WASM; fully OpenAI-API-compatible; zero server-side processing
+description: 'WebLLM is MLC-AI''s in-browser LLM inference via WebGPU/WASM; fully OpenAI-API-compatible; zero server-side processing. Entirely in-browser; WebGPU-accelerated; npm package; Chrome extension support.
+
 
   In the atlas: WebLLM is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: MLC-AI
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  MLC-AI (US-based academic/research institution); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'MLC-AI (US-based academic/research institution); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - exo
-  - mlc-llm
-  - shimmy
+- exo
+- mlc-llm
+- shimmy
+deployment_posture: local-first

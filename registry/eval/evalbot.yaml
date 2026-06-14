@@ -24,3 +24,4 @@ adjacent_to:
 - verdict
 - vietnamese-secretary-llm
 - zpokenclaw
+deployment_posture: local-first

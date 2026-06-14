@@ -25,3 +25,4 @@ adjacent_to:
 - verdict
 - vietnamese-secretary-llm
 - zpokenclaw
+deployment_posture: api-only

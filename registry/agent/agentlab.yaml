@@ -5,23 +5,27 @@ subcategory: browser-use
 repo_url: https://github.com/ServiceNow/AgentLab
 license: Apache-2.0
 primary_language: Python
-tagline: 'Research harness for developing and comparing web agents on BrowserGym standardized benchmarks'
-description: |
-  AgentLab is ServiceNow Research's research harness for developing and comparing web agents on BrowserGym standardized benchmarks. Unified benchmark interface across WebArena, WorkArena, GAIA.
+tagline: Research harness for developing and comparing web agents on BrowserGym standardized benchmarks
+description: 'AgentLab is ServiceNow Research''s research harness for developing and comparing web agents on BrowserGym standardized benchmarks. Unified benchmark interface across WebArena, WorkArena, GAIA.
+
 
   In the atlas: AgentLab is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: ServiceNow Research
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  ServiceNow Research (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'ServiceNow Research (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - browser-use
-  - browsergym
-  - osworld
-  - theagentcompany
-  - webarena
+- browser-use
+- browsergym
+- osworld
+- theagentcompany
+- webarena
+deployment_posture: local-first

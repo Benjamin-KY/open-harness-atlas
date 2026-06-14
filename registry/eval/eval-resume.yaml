@@ -24,3 +24,4 @@ adjacent_to:
 - llm-eval-simple
 - lm-evaluation-harness
 - nexa-gauge
+deployment_posture: cloud-first

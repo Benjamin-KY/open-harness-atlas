@@ -30,3 +30,4 @@ adjacent_to:
 - bifrost
 - gateway
 - guardrails-ai
+deployment_posture: local-first

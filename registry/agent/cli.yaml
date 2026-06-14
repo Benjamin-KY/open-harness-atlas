@@ -24,3 +24,4 @@ adjacent_to:
 - harness-sdk
 - hermes-agent
 - langgraph
+deployment_posture: hybrid

@@ -5,22 +5,26 @@ subcategory: knowledge-poisoning
 repo_url: https://github.com/zjunlp/EasyEdit
 license: MIT
 primary_language: Python
-tagline: 'Unified framework for editing/poisoning LLM knowledge using ROME, MEMIT, MEND, GRACE and 20+ methods; also supports representation steering'
-description: |
-  EasyEdit (Knowledge Editing / Poisoning Framework) is zjunlp (Zhejiang University NLP Lab)'s unified framework for editing/poisoning LLM knowledge using ROME, MEMIT, MEND, GRACE and 20+ methods; also supports representation steering. Active as of 2026; 20+ editing algorithms; can silently poison targeted facts at scale; EasyEdit2 adds inference-time steering; IJCAI/EMNLP tutorials published..
+tagline: Unified framework for editing/poisoning LLM knowledge using ROME, MEMIT, MEND, GRACE and 20+ methods; also supports representation steering
+description: 'EasyEdit (Knowledge Editing / Poisoning Framework) is zjunlp (Zhejiang University NLP Lab)''s unified framework for editing/poisoning LLM knowledge using ROME, MEMIT, MEND, GRACE and 20+ methods; also supports representation steering. Active as of 2026; 20+ editing algorithms; can silently poison targeted facts at scale; EasyEdit2 adds inference-time steering; IJCAI/EMNLP tutorials published..
+
 
   In the atlas: EasyEdit (Knowledge Editing / Poisoning Framework) is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: zjunlp (Zhejiang University NLP Lab)
 origin_country: CN
 model_agnostic_score: 5
-sovereignty_notes: |
-  zjunlp (Zhejiang University NLP Lab) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'zjunlp (Zhejiang University NLP Lab) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - backdoor-llm
-  - detect-pretrain-mink
-  - modelscan
-  - purple-llama
+- backdoor-llm
+- detect-pretrain-mink
+- modelscan
+- purple-llama
+deployment_posture: local-first

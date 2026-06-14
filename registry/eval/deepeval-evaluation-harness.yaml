@@ -24,3 +24,4 @@ adjacent_to:
 - rag-benchmarking
 - ragas-evaluation-harness
 - trulens-agent-starter
+deployment_posture: local-only

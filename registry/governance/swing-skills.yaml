@@ -31,3 +31,4 @@ adjacent_to:
 - agentlint
 - guardrails-ai
 - vibeguard
+deployment_posture: hybrid

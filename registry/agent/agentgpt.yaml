@@ -5,22 +5,26 @@ subcategory: planning
 repo_url: https://github.com/reworkd/AgentGPT
 license: MIT
 primary_language: TypeScript
-tagline: 'Browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution'
-description: |
-  AgentGPT is Reworkd's browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution. First prominent browser-based AutoGPT-style runner; NextJS + FastAPI backend.
+tagline: Browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution
+description: 'AgentGPT is Reworkd''s browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution. First prominent browser-based AutoGPT-style runner; NextJS + FastAPI backend.
+
 
   In the atlas: AgentGPT is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Reworkd
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Reworkd (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Reworkd (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentforge
-  - agixt
-  - babyagi
-  - superagi
+- agentforge
+- agixt
+- babyagi
+- superagi
+deployment_posture: local-first

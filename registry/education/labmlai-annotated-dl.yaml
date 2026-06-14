@@ -5,11 +5,13 @@ subcategory: foundations
 repo_url: https://github.com/labmlai/annotated_deep_learning_paper_implementations
 license: MIT
 primary_language: Python
-tagline: '60+ annotated DL paper implementations with rendered side-by-side code/explanation notes'
-description: |
-  Annotated Deep Learning Paper Implementations is labmlai's 60+ annotated dl paper implementations with rendered side-by-side code/explanation notes. Unique literate-program format; transformer variants, LLM optimizers, RL.
+tagline: 60+ annotated DL paper implementations with rendered side-by-side code/explanation notes
+description: 'Annotated Deep Learning Paper Implementations is labmlai''s 60+ annotated dl paper implementations with rendered side-by-side code/explanation notes. Unique literate-program format; transformer variants, LLM optimizers, RL.
+
 
   In the atlas: Annotated Deep Learning Paper Implementations is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: community
@@ -17,16 +19,18 @@ maintainer:
 origin_country: LK
 model_agnostic_score: 5
 education_resources:
-  - title: Annotated Deep Learning Paper Implementations — source repository
-    url: https://github.com/labmlai/annotated_deep_learning_paper_implementations
-    type: course
-    free: true
-sovereignty_notes: |
-  labmlai (community-maintained, LK); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: Annotated Deep Learning Paper Implementations — source repository
+  url: https://github.com/labmlai/annotated_deep_learning_paper_implementations
+  type: course
+  free: true
+sovereignty_notes: 'labmlai (community-maintained, LK); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - harvard-annotated-transformer
-  - karpathy-mingpt
-  - karpathy-nanogpt
-  - karpathy-nn-zero-to-hero
-  - rasbt-llms-from-scratch
+- harvard-annotated-transformer
+- karpathy-mingpt
+- karpathy-nanogpt
+- karpathy-nn-zero-to-hero
+- rasbt-llms-from-scratch
+deployment_posture: local-only

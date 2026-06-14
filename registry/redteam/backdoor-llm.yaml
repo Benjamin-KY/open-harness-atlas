@@ -6,21 +6,25 @@ repo_url: https://github.com/bboylyg/BackdoorLLM
 license: MIT
 primary_language: Python
 tagline: 'First comprehensive benchmark for backdoor attacks on LLMs: data poisoning, weight poisoning, hidden-state steering, CoT attacks, and 7 defenses'
-description: |
-  BackdoorLLM is Yige Li et al. (NeurIPS 2025 paper)'s first comprehensive benchmark for backdoor attacks on LLMs: data poisoning, weight poisoning, hidden-state steering, CoT attacks, and 7 defenses. Winner of SafetyBench First Prize (CAIS 2025); covers 6 LLM architectures including 70B; unified defense evaluation suite; actively extended to agents/VLMs..
+description: 'BackdoorLLM is Yige Li et al. (NeurIPS 2025 paper)''s first comprehensive benchmark for backdoor attacks on LLMs: data poisoning, weight poisoning, hidden-state steering, CoT attacks, and 7 defenses. Winner of SafetyBench First Prize (CAIS 2025); covers 6 LLM architectures including 70B; unified defense evaluation suite; actively extended to agents/VLMs..
+
 
   In the atlas: BackdoorLLM is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: Yige Li et al. (NeurIPS 2025 paper)
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  Yige Li et al. (NeurIPS 2025 paper) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Yige Li et al. (NeurIPS 2025 paper) (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - detect-pretrain-mink
-  - easyedit-knowledge-attacks
-  - modelscan
-  - purple-llama
+- detect-pretrain-mink
+- easyedit-knowledge-attacks
+- modelscan
+- purple-llama
+deployment_posture: local-first

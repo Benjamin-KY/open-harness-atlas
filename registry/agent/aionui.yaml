@@ -25,3 +25,4 @@ adjacent_to:
 - langchain
 - langgraph
 - langroid
+deployment_posture: local-first

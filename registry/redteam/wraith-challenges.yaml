@@ -24,3 +24,4 @@ adjacent_to:
 - ai-seclists
 - pyrit
 - yaramint
+deployment_posture: local-only

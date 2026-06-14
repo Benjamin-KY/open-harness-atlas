@@ -35,3 +35,4 @@ adjacent_to:
 - tensorrt-llm
 - xgrammar
 - xinference
+deployment_posture: local-first

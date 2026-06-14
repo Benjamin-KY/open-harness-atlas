@@ -30,3 +30,4 @@ adjacent_to:
 - guardrails-ai
 - localmod
 - rail-score-js
+deployment_posture: local-first

@@ -5,11 +5,13 @@ subcategory: structured-output
 repo_url: https://github.com/shroominic/funcchain
 license: MIT
 primary_language: Python
-tagline: 'Pythonic LangChain-backed library that turns annotated Python functions into LLM chains with Pydantic output parsing'
-description: |
-  funcchain is Dominic Bäumer's pythonic LangChain-backed library that turns annotated Python functions into LLM chains with Pydantic output parsing. Uses Python function signatures + docstrings as the prompt; compiles to LangChain LCEL runnables for compatibility; supports llama.cpp grammar mode and Ollama; smaller and more idiomatic than funcchain-alternatives like guidance or instructor for simple use-cases. Low recent activity (~2024)..
+tagline: Pythonic LangChain-backed library that turns annotated Python functions into LLM chains with Pydantic output parsing
+description: 'funcchain is Dominic Bäumer''s pythonic LangChain-backed library that turns annotated Python functions into LLM chains with Pydantic output parsing. Uses Python function signatures + docstrings as the prompt; compiles to LangChain LCEL runnables for compatibility; supports llama.cpp grammar mode and Ollama; smaller and more idiomatic than funcchain-alternatives like guidance or instructor for simple use-cases. Low recent activity (~2024)..
+
 
   In the atlas: funcchain is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: beta
 maintainer:
   type: individual
@@ -22,18 +24,20 @@ five_component_coverage:
   prompt_composer: partial
   output_contract: native
   audit_log_fsm: none
-sovereignty_notes: |
-  Dominic Bäumer (independent maintainer, DE); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Dominic Bäumer (independent maintainer, DE); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - baml
-  - guidance
-  - instructor
-  - jsonformer
-  - lm-format-enforcer
-  - lmql
-  - magentic
-  - marvin
-  - outlines
-  - typechat
-  - xgrammar
+- baml
+- guidance
+- instructor
+- jsonformer
+- lm-format-enforcer
+- lmql
+- magentic
+- marvin
+- outlines
+- typechat
+- xgrammar
+deployment_posture: local-first

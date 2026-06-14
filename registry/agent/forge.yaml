@@ -24,3 +24,4 @@ adjacent_to:
 - sim
 - solace-agent-mesh
 - swarms
+deployment_posture: local-first

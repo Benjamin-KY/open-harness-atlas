@@ -5,30 +5,34 @@ subcategory: multi-agent
 repo_url: https://github.com/OpenBMB/AgentVerse
 license: Apache-2.0
 primary_language: Python
-tagline: 'Multi-agent simulation and task-solving framework with task-oriented and simulation operating modes'
-description: |
-  AgentVerse is Tsinghua / OpenBMB's multi-agent simulation and task-solving framework with task-oriented and simulation operating modes. Two modes: collaborative task-solving and open-world agent society simulation; ICLR 2024.
+tagline: Multi-agent simulation and task-solving framework with task-oriented and simulation operating modes
+description: 'AgentVerse is Tsinghua / OpenBMB''s multi-agent simulation and task-solving framework with task-oriented and simulation operating modes. Two modes: collaborative task-solving and open-world agent society simulation; ICLR 2024.
+
 
   In the atlas: AgentVerse is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: Tsinghua / OpenBMB
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  Tsinghua / OpenBMB (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Tsinghua / OpenBMB (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ag2
-  - agentsims-sandbox
-  - autogen
-  - camel
-  - chatdev
-  - crewai
-  - generative-agents-stanford
-  - metagpt
-  - openagents-xlang
-  - openmanus
-  - praisonai
-  - swarm-openai
+- ag2
+- agentsims-sandbox
+- autogen
+- camel
+- chatdev
+- crewai
+- generative-agents-stanford
+- metagpt
+- openagents-xlang
+- openmanus
+- praisonai
+- swarm-openai
+deployment_posture: local-first

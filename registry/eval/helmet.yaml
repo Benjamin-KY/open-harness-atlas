@@ -7,37 +7,59 @@ homepage: https://princeton-nlp.github.io/HELMET/
 license: MIT
 primary_language: Python
 tagline: Princeton NLP's long-context evaluation benchmark — seven application-oriented categories scored against models with up to 128k-token context.
-description: |
-  HELMET (How to Evaluate Long-context Models Effectively and
+description: 'HELMET (How to Evaluate Long-context Models Effectively and
+
   Thoroughly) is the Princeton NLP MIT-licensed benchmark suite for
+
   long-context language-model evaluation. It scores models across
+
   seven application-oriented categories — retrieval-augmented
+
   generation, passkey-style retrieval, citation, re-ranking,
+
   long-document QA, summarisation, and many-shot in-context
+
   learning — at context lengths up to 128k tokens. The benchmark
+
   is designed to surface the gap between "needle-in-haystack"
+
   micro-tests and the realistic long-context workloads operators
+
   actually run.
 
+
   In the atlas: HELMET is the **long-context evaluation** point in
+
   the eval space — adjacent to LiveBench (contamination-resistant
+
   general capability) and lm-evaluation-harness (general-purpose
+
   evaluation runner). Operators selecting a model for
+
   long-document-RAG or large-codebase workloads use HELMET as the
+
   application-realistic ceiling test for context-length capability.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Princeton NLP Group
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  Academic-paper-backed; MIT-licensed; runs entirely offline against
+sovereignty_notes: 'Academic-paper-backed; MIT-licensed; runs entirely offline against
+
   any chat-completion endpoint. Multi-provider via standard
+
   OpenAI-compatible HTTP — works against local vLLM / Ollama / TGI
+
   as well as hosted providers. No hosted-service dependency; results
+
   are reproducible from the published configuration files.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - livebench
-  - lm-evaluation-harness
+- livebench
+- lm-evaluation-harness
+deployment_posture: local-only

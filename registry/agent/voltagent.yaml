@@ -24,3 +24,4 @@ adjacent_to:
 - cherry-studio
 - claude-code-best-practice
 - langgraph
+deployment_posture: local-first

@@ -31,3 +31,4 @@ adjacent_to:
 - ai-harness-template
 - ai-protector
 - guardrails-ai
+deployment_posture: local-first

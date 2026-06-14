@@ -25,3 +25,4 @@ adjacent_to:
 - mindtrial
 - myclaw-bench
 - neuroguard
+deployment_posture: local-first

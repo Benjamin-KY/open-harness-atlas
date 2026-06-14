@@ -29,3 +29,4 @@ education_resources:
   url: https://github.com/dobriban/Principles-of-AI-LLMs
   type: course
   free: true
+deployment_posture: local-only

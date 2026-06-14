@@ -25,3 +25,4 @@ adjacent_to:
 - holmesgpt
 - how-claude-code-works
 - langgraph
+deployment_posture: local-only

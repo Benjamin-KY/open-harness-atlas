@@ -25,3 +25,4 @@ adjacent_to:
 - rag-security-scanner
 - redforge-ai
 - spikee
+deployment_posture: local-first

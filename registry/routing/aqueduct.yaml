@@ -22,3 +22,4 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - litellm
 - yukiko
+deployment_posture: local-first

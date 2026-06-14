@@ -21,3 +21,4 @@ sovereignty_notes: 'Langfuse GmbH (Berlin) maintains this template as a referenc
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness
+deployment_posture: local-first

@@ -7,20 +7,32 @@ homepage: https://docs.llamaindex.ai/en/stable/module_guides/deploying/agents/
 license: MIT
 primary_language: Python
 tagline: LlamaIndex's agent layer — ReAct / OpenAIAgent / FunctionCallingAgent over a RAG-native data substrate.
-description: |
-  LlamaIndex's agent layer (the `llama_index.core.agent` module) provides
+description: 'LlamaIndex''s agent layer (the `llama_index.core.agent` module) provides
+
   ReAct, OpenAIAgent, and FunctionCallingAgent implementations on top
-  of LlamaIndex's data-substrate primitives (Indices, Retrievers,
+
+  of LlamaIndex''s data-substrate primitives (Indices, Retrievers,
+
   Engines). The defining strength of the LlamaIndex agent path is its
+
   tight coupling with the RAG layer — `QueryEngineTool` wraps any
+
   index as a tool with zero glue code.
 
+
   In the atlas: LlamaIndex Agents is the canonical example of a
+
   **RAG-native** agent framework. Note: the LlamaIndex RAG core itself
+
   is out of scope for the registry per
+
   [`GOVERNANCE.md`](../../GOVERNANCE.md) §8 (pure RAG cores are
+
   catalogued in [`docs/adjacencies.md`](../../docs/adjacencies.md)) —
+
   but the agent layer is in scope.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -28,24 +40,31 @@ maintainer:
 origin_country: US
 model_agnostic_score: 4
 education_resources:
-  - title: LlamaIndex Agents — Documentation
-    url: https://docs.llamaindex.ai/en/stable/module_guides/deploying/agents/
-    type: docs
-    free: true
-sovereignty_notes: |
-  US-incorporated; OSS core is MIT-licensed and fully self-hostable.
+- title: LlamaIndex Agents — Documentation
+  url: https://docs.llamaindex.ai/en/stable/module_guides/deploying/agents/
+  type: docs
+  free: true
+sovereignty_notes: 'US-incorporated; OSS core is MIT-licensed and fully self-hostable.
+
   Multi-provider via `llama_index.llms.*` adapters (OpenAI / Anthropic /
+
   Google / Mistral / Ollama / vLLM / OpenAI-compatible endpoints).
+
   Conservative model-agnostic 4 because some agent classes
+
   (OpenAIAgent specifically) assume OpenAI tool-call protocol;
+
   generic FunctionCallingAgent works against any compatible backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - agentscope
-  - beeai-framework
-  - haystack
-  - langgraph
-  - microsoft-agent-framework
-  - pydanticai
-  - semantic-kernel
-  - smolagents
+- agentscope
+- beeai-framework
+- haystack
+- langgraph
+- microsoft-agent-framework
+- pydanticai
+- semantic-kernel
+- smolagents
+deployment_posture: local-first

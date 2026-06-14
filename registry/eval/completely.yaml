@@ -31,3 +31,4 @@ five_component_coverage:
   prompt_composer: none
   output_contract: native
   audit_log_fsm: partial
+deployment_posture: api-only

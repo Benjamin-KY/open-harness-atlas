@@ -5,30 +5,34 @@ subcategory: agent-bench
 repo_url: https://github.com/ServiceNow/WorkArena
 license: Apache-2.0
 primary_language: Python
-tagline: '33 browser-based knowledge-work tasks on ServiceNow platform covering forms, lists, knowledge retrieval, and multi-step compositional tasks'
-description: |
-  WorkArena is ServiceNow Research's 33 browser-based knowledge-work tasks on servicenow platform covering forms, lists, knowledge retrieval, and multi-step compositional tasks. Enterprise software domain (ServiceNow) vs. generic web; WorkArena++ adds compositional planning tasks; integrates with BrowserGym framework. ICML 2024..
+tagline: 33 browser-based knowledge-work tasks on ServiceNow platform covering forms, lists, knowledge retrieval, and multi-step compositional tasks
+description: 'WorkArena is ServiceNow Research''s 33 browser-based knowledge-work tasks on servicenow platform covering forms, lists, knowledge retrieval, and multi-step compositional tasks. Enterprise software domain (ServiceNow) vs. generic web; WorkArena++ adds compositional planning tasks; integrates with BrowserGym framework. ICML 2024..
+
 
   In the atlas: WorkArena is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: ServiceNow Research
 origin_country: CA
 model_agnostic_score: 4
-sovereignty_notes: |
-  ServiceNow Research (CA-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'ServiceNow Research (CA-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentbench
-  - appworld
-  - bfcl
-  - browsergym
-  - mind2web
-  - mle-bench
-  - osworld
-  - t-eval
-  - theagentcompany
-  - toolbench
-  - webarena
-  - wildbench
+- agentbench
+- appworld
+- bfcl
+- browsergym
+- mind2web
+- mle-bench
+- osworld
+- t-eval
+- theagentcompany
+- toolbench
+- webarena
+- wildbench
+deployment_posture: local-first

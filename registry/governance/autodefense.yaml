@@ -5,11 +5,13 @@ subcategory: agent-defense-pipeline
 repo_url: https://github.com/XHMY/AutoDefense
 license: MIT
 primary_language: Python
-tagline: 'Multi-agent defense framework where a downstream filter agent re-evaluates LLM responses to intercept jailbreak completions'
-description: |
-  AutoDefense is Academic CN's multi-agent defense framework where a downstream filter agent re-evaluates LLM responses to intercept jailbreak completions. LLM-as-a-judge pipeline pattern for defense - separates generation from safety evaluation.
+tagline: Multi-agent defense framework where a downstream filter agent re-evaluates LLM responses to intercept jailbreak completions
+description: 'AutoDefense is Academic CN''s multi-agent defense framework where a downstream filter agent re-evaluates LLM responses to intercept jailbreak completions. LLM-as-a-judge pipeline pattern for defense - separates generation from safety evaluation.
+
 
   In the atlas: AutoDefense is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: alpha
 maintainer:
   type: institution
@@ -22,15 +24,17 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: partial
-sovereignty_notes: |
-  Academic CN (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Academic CN (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - circuit-breakers
-  - llm-guard
-  - rebuff
-  - safedecoding
-  - shieldlm
-  - smooth-llm
-  - vigil-llm
-  - wildguard
+- circuit-breakers
+- llm-guard
+- rebuff
+- safedecoding
+- shieldlm
+- smooth-llm
+- vigil-llm
+- wildguard
+deployment_posture: local-first

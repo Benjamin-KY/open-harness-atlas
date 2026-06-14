@@ -28,3 +28,4 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - datafog
 - guardrails-ai
+deployment_posture: cloud-first

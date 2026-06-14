@@ -25,3 +25,4 @@ adjacent_to:
 - vibe-kanban
 - vibe-skills
 - vibe-trading
+deployment_posture: local-first

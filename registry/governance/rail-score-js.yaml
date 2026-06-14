@@ -30,3 +30,4 @@ adjacent_to:
 - guardrails-ai
 - localmod
 - moderator
+deployment_posture: hybrid

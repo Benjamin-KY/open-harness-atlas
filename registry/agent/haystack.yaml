@@ -5,25 +5,29 @@ subcategory: workflow-graph
 repo_url: https://github.com/deepset-ai/haystack
 license: Apache-2.0
 primary_language: Python
-tagline: 'Modular pipeline orchestration for LLM apps with RAG, agent tools, and streaming support'
-description: |
-  Haystack is deepset's modular pipeline orchestration for LLM apps with RAG, agent tools, and streaming support. True pipeline DAG with typed inputs/outputs; rich component ecosystem; v2 agent-aware.
+tagline: Modular pipeline orchestration for LLM apps with RAG, agent tools, and streaming support
+description: 'Haystack is deepset''s modular pipeline orchestration for LLM apps with RAG, agent tools, and streaming support. True pipeline DAG with typed inputs/outputs; rich component ecosystem; v2 agent-aware.
+
 
   In the atlas: Haystack is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: deepset
 origin_country: DE
 model_agnostic_score: 4
-sovereignty_notes: |
-  deepset (DE-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'deepset (DE-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentscope
-  - beeai-framework
-  - db-gpt
-  - langgraph
-  - llama-index-agents
-  - microsoft-agent-framework
-  - semantic-kernel
+- agentscope
+- beeai-framework
+- db-gpt
+- langgraph
+- llama-index-agents
+- microsoft-agent-framework
+- semantic-kernel
+deployment_posture: local-first

@@ -24,3 +24,4 @@ adjacent_to:
 - jailbreak-llms
 - principles-of-ai-llms
 - pyrit
+deployment_posture: local-only

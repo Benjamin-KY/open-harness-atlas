@@ -23,3 +23,4 @@ adjacent_to:
 - langgraph
 - librechat
 - n8n-mcp
+deployment_posture: local-first

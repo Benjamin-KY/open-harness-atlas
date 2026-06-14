@@ -24,3 +24,4 @@ adjacent_to:
 - openagentbench
 - pandaprobe
 - sral-framework
+deployment_posture: local-only

@@ -7,38 +7,62 @@ homepage: https://metr.org/
 license: MIT
 primary_language: Python
 tagline: METR's standard schema for autonomous-agent evaluation tasks — a portable contract for "run this agent through this task and score it", used in frontier-risk evaluations.
-description: |
-  The METR Task Standard is a portable schema and runtime contract
+description: 'The METR Task Standard is a portable schema and runtime contract
+
   for defining autonomous-agent evaluation tasks: a task is a
+
   reproducible bundle that sets up a sandbox (Docker container,
+
   resources, scoring criteria) and a scoring function. Any
+
   conforming evaluation harness can ingest a Task Standard bundle
+
   and execute it against any agent that exposes the standard
+
   interface. The standard was developed by METR (Model Evaluation
+
   and Threat Research) to support cross-org, cross-lab
+
   reproducibility of dangerous-capability evaluations.
 
+
   In the atlas: metr-task-standard is the
+
   **agent-task evaluation contract** that sits underneath
+
   evaluation harnesses, not a harness itself. It is the
+
   interoperability layer that lets a research lab publish an eval
+
   bundle once and have it run against any agent system. Adjacent
-  to OpenAI's preparedness evaluations (which adopt task-standard
-  conventions) and to inspect (the UK AISI's evaluation harness
+
+  to OpenAI''s preparedness evaluations (which adopt task-standard
+
+  conventions) and to inspect (the UK AISI''s evaluation harness
+
   that consumes task-standard tasks).
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: METR (Model Evaluation and Threat Research)
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  METR is a US-based non-profit research organisation; the task
+sovereignty_notes: 'METR is a US-based non-profit research organisation; the task
+
   standard and reference runtime are MIT-licensed and run entirely
+
   offline (Docker sandboxes on local infra). Provider-neutral by
+
   design — task bundles wrap arbitrary agent systems behind a
+
   uniform interface and impose no model-side assumptions. No
+
   hosted dependency.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - openai-preparedness
+- openai-preparedness
+deployment_posture: local-only

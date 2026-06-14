@@ -24,3 +24,4 @@ adjacent_to:
 - automated-adversial-testing-framework
 - dvai
 - pyrit
+deployment_posture: local-first

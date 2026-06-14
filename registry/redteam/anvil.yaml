@@ -25,3 +25,4 @@ adjacent_to:
 - genai-security-literature-review
 - journey-to-red-team
 - pyrit
+deployment_posture: cloud-first

@@ -34,3 +34,4 @@ adjacent_to:
 - gcp-generative-ai
 - mistral-cookbook
 - openai-cookbook
+deployment_posture: local-only

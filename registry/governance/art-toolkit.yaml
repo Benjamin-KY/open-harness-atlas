@@ -5,11 +5,13 @@ subcategory: adversarial-defense
 repo_url: https://github.com/Trusted-AI/adversarial-robustness-toolbox
 license: MIT
 primary_language: Python
-tagline: 'Comprehensive adversarial-defense library for evasion, poisoning, extraction, inference attacks across ML frameworks'
-description: |
-  Adversarial Robustness Toolbox is IBM / LF AI & Data's comprehensive adversarial-defense library for evasion, poisoning, extraction, inference attacks across ML frameworks. Linux Foundation AI&Data hosted; cross-framework support (TF, PyTorch, sklearn, XGBoost); DARPA-backed.
+tagline: Comprehensive adversarial-defense library for evasion, poisoning, extraction, inference attacks across ML frameworks
+description: 'Adversarial Robustness Toolbox is IBM / LF AI & Data''s comprehensive adversarial-defense library for evasion, poisoning, extraction, inference attacks across ML frameworks. Linux Foundation AI&Data hosted; cross-framework support (TF, PyTorch, sklearn, XGBoost); DARPA-backed.
+
 
   In the atlas: Adversarial Robustness Toolbox is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: ga
 maintainer:
   type: institution
@@ -22,10 +24,12 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: partial
-sovereignty_notes: |
-  IBM / LF AI & Data (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'IBM / LF AI & Data (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - easyjailbreak
-  - garak
-  - pyrit
+- easyjailbreak
+- garak
+- pyrit
+deployment_posture: local-only

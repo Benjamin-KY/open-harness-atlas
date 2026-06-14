@@ -30,3 +30,4 @@ education_resources:
   url: https://github.com/VoltAgent/awesome-agent-skills
   type: tutorial
   free: true
+deployment_posture: local-only

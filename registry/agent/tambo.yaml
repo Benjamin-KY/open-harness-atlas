@@ -5,22 +5,26 @@ subcategory: conversational
 repo_url: https://github.com/tambo-ai/tambo
 license: MIT
 primary_language: TypeScript
-tagline: 'React generative-UI library where LLMs stream rendered components; AG-UI and MCP compliant'
-description: |
-  Tambo is Tambo AI's react generative-UI library where LLMs stream rendered components; AG-UI and MCP compliant. Components as agent outputs (not text); AG-UI protocol for stream-rendered React state.
+tagline: React generative-UI library where LLMs stream rendered components; AG-UI and MCP compliant
+description: 'Tambo is Tambo AI''s react generative-UI library where LLMs stream rendered components; AG-UI and MCP compliant. Components as agent outputs (not text); AG-UI protocol for stream-rendered React state.
+
 
   In the atlas: Tambo is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Tambo AI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Tambo AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Tambo AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - copilotkit
-  - flowise
-  - langflow
-  - rivet
+- copilotkit
+- flowise
+- langflow
+- rivet
+deployment_posture: local-first

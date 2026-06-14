@@ -24,3 +24,4 @@ adjacent_to:
 - mnemebrain-benchmark
 - nasde-toolkit
 - oh-my-knowledge
+deployment_posture: local-first

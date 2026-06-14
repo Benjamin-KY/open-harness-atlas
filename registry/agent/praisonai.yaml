@@ -5,29 +5,33 @@ subcategory: multi-agent
 repo_url: https://github.com/MervinPraison/PraisonAI
 license: MIT
 primary_language: Python
-tagline: 'Low-code multi-agent framework with 100+ LLMs via LiteLLM, MCP, self-reflection, visual dashboard'
-description: |
-  PraisonAI is MervinPraison's low-code multi-agent framework with 100+ LLMs via LiteLLM, MCP, self-reflection, visual dashboard. Five lines from YAML spec to running multi-agent team; built-in self-criticism.
+tagline: Low-code multi-agent framework with 100+ LLMs via LiteLLM, MCP, self-reflection, visual dashboard
+description: 'PraisonAI is MervinPraison''s low-code multi-agent framework with 100+ LLMs via LiteLLM, MCP, self-reflection, visual dashboard. Five lines from YAML spec to running multi-agent team; built-in self-criticism.
+
 
   In the atlas: PraisonAI is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: individual
   name: MervinPraison
 origin_country: MY
 model_agnostic_score: 5
-sovereignty_notes: |
-  MervinPraison (independent maintainer, MY); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'MervinPraison (independent maintainer, MY); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ag2
-  - agentverse-openbmb
-  - autogen
-  - camel
-  - chatdev
-  - crewai
-  - metagpt
-  - openagents-xlang
-  - openmanus
-  - swarm-openai
-  - upsonic
+- ag2
+- agentverse-openbmb
+- autogen
+- camel
+- chatdev
+- crewai
+- metagpt
+- openagents-xlang
+- openmanus
+- swarm-openai
+- upsonic
+deployment_posture: local-first

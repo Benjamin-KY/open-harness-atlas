@@ -23,3 +23,4 @@ adjacent_to:
 - langgraph
 - ragaai-catalyst
 - spring-ai-alibaba
+deployment_posture: local-first

@@ -22,3 +22,4 @@ adjacent_to:
 - agent-eval-arena
 - benchjack
 - lm-evaluation-harness
+deployment_posture: local-first

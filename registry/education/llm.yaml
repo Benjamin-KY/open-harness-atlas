@@ -25,3 +25,4 @@ education_resources:
   free: true
 adjacent_to:
 - harmless-harnesses
+deployment_posture: local-only

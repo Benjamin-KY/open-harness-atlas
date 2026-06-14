@@ -25,3 +25,4 @@ adjacent_to:
 - omlx
 - powerinfer
 - sie
+deployment_posture: local-first

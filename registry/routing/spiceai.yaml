@@ -24,3 +24,4 @@ adjacent_to:
 - tiny-vllm
 - vllm-qwen
 - xllm
+deployment_posture: cloud-first

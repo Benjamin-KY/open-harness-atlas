@@ -5,19 +5,23 @@ subcategory: single-agent
 repo_url: https://github.com/upsonic/upsonic
 license: MIT
 primary_language: Python
-tagline: 'Reliability-layer agent framework with MCP-native tooling, workspace sandboxing, OCR integration'
-description: |
-  Upsonic is Upsonic community's reliability-layer agent framework with MCP-native tooling, workspace sandboxing, OCR integration. MCP-first architecture with isolated workspace per agent.
+tagline: Reliability-layer agent framework with MCP-native tooling, workspace sandboxing, OCR integration
+description: 'Upsonic is Upsonic community''s reliability-layer agent framework with MCP-native tooling, workspace sandboxing, OCR integration. MCP-first architecture with isolated workspace per agent.
+
 
   In the atlas: Upsonic is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: community
   name: Upsonic community
 origin_country: TR
 model_agnostic_score: 4
-sovereignty_notes: |
-  Upsonic community (community-maintained, TR); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Upsonic community (community-maintained, TR); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - praisonai
+- praisonai
+deployment_posture: local-first

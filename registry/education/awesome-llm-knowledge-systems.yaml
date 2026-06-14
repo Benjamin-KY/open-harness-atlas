@@ -28,3 +28,4 @@ adjacent_to:
 - enterprise-mcp-course
 - harmless-harnesses
 - langchain-multi-agent-example
+deployment_posture: local-only

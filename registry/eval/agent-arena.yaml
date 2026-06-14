@@ -21,3 +21,4 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - arguslm
 - lm-evaluation-harness
+deployment_posture: local-first

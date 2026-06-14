@@ -7,38 +7,61 @@ homepage: https://huggingface.co/spaces/vectara/Hallucination-evaluation-leaderb
 license: Apache-2.0
 primary_language: Python
 tagline: Open leaderboard and reproducible methodology for measuring LLM hallucination rates on short-document summarisation, scored by the HHEM classifier.
-description: |
-  The Vectara Hallucination Leaderboard is the open methodology and
+description: 'The Vectara Hallucination Leaderboard is the open methodology and
+
   reproduction code behind a continuously-updated comparison of how
+
   often LLMs hallucinate when summarising short documents. The
+
   benchmark feeds 1,006 short documents to each model under a
+
   uniform "concise faithful summary" instruction, then scores the
-  produced summaries against the source with Vectara's open-source
+
+  produced summaries against the source with Vectara''s open-source
+
   Hughes Hallucination Evaluation Model (HHEM). Results are
+
   published as a leaderboard tracking dozens of providers.
 
+
   In the atlas: this is the **hallucination-evaluation** point in
+
   the eval space — adjacent to deepeval, ragas, and the broader
+
   RAG-faithfulness evaluation literature. Where deepeval / ragas
+
   give operators an in-pipeline faithfulness metric for their own
+
   retrieval workloads, the Vectara leaderboard provides the
+
   ecosystem-wide comparative reference: a single faithful-summary
+
   task scored consistently across every notable model.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: Vectara
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  Vectara is US-incorporated (Palo Alto); the leaderboard scripts,
+sovereignty_notes: 'Vectara is US-incorporated (Palo Alto); the leaderboard scripts,
+
   methodology, source documents, and the HHEM classifier are all
+
   Apache-2.0 OSS and run entirely offline. Multi-provider via simple
+
   prompt-completion calls — works against any OpenAI-compatible
+
   endpoint including local vLLM / Ollama / TGI. The hosted Vectara
+
   RAG platform is a separate commercial offering; the leaderboard
+
   itself has no Vectara-service dependency.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - deepeval
-  - ragas
+- deepeval
+- ragas
+deployment_posture: local-only

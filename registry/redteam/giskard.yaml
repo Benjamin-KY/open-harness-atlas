@@ -7,20 +7,32 @@ homepage: https://www.giskard.ai/
 license: Apache-2.0
 primary_language: Python
 tagline: Open-source evaluation and testing for ML and LLM models — automated scan for 40+ vulnerability classes.
-description: |
-  Giskard is an Apache-2.0 evaluation and testing framework for ML
+description: 'Giskard is an Apache-2.0 evaluation and testing framework for ML
+
   and LLM applications. Its `scan` function probes a target model
+
   with 40+ adversarial probes covering prompt injection, character
+
   injection, sycophancy, hallucination, harmful-content generation,
+
   sensitive-info disclosure, stereotype / bias, and output-format
+
   robustness, producing an HTML report. Beyond LLMs, Giskard also
+
   covers classical tabular ML — making it a good fit for teams
+
   whose surface area includes both.
 
+
   In the atlas: Giskard is the **report-generating scanner** sibling
+
   of garak. Where garak emphasises CLI-driven probe + detector
+
   reporting, Giskard emphasises an interactive HTML report and
+
   integration with classical-ML pipelines.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -28,18 +40,25 @@ maintainer:
 origin_country: FR
 model_agnostic_score: 4
 education_resources:
-  - title: Giskard — Documentation
-    url: https://docs.giskard.ai/
-    type: docs
-    free: true
-sovereignty_notes: |
-  French-incorporated company; OSS library (`giskard-oss`) is
+- title: Giskard — Documentation
+  url: https://docs.giskard.ai/
+  type: docs
+  free: true
+sovereignty_notes: 'French-incorporated company; OSS library (`giskard-oss`) is
+
   Apache-2.0 and runs entirely locally; a separate commercial Hub
+
   product offers enterprise features but is not required.
+
   Multi-backend for target models (OpenAI, Anthropic, Hugging Face,
+
   local). Conservative model-agnostic 4 — some probes use LLM-as-judge
+
   scoring, sensitivity to judge model.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - garak
-  - deepeval
+- garak
+- deepeval
+deployment_posture: local-only

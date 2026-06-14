@@ -5,23 +5,27 @@ subcategory: planning
 repo_url: https://github.com/assafelovic/gpt-researcher
 license: MIT
 primary_language: Python
-tagline: 'Autonomous research agent producing long-form reports from 20+ web sources with planner/executor pattern'
-description: |
-  GPT Researcher is assafelovic's autonomous research agent producing long-form reports from 20+ web sources with planner/executor pattern. Multi-source parallel scraping + cross-referencing + citation; report length controls.
+tagline: Autonomous research agent producing long-form reports from 20+ web sources with planner/executor pattern
+description: 'GPT Researcher is assafelovic''s autonomous research agent producing long-form reports from 20+ web sources with planner/executor pattern. Multi-source parallel scraping + cross-referencing + citation; report length controls.
+
 
   In the atlas: GPT Researcher is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: individual
   name: assafelovic
 origin_country: IL
 model_agnostic_score: 4
-sovereignty_notes: |
-  assafelovic (independent maintainer, IL); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'assafelovic (independent maintainer, IL); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - chemcrow-science-agent
-  - deer-flow
-  - rd-agent-microsoft
-  - storm
-  - voyager
+- chemcrow-science-agent
+- deer-flow
+- rd-agent-microsoft
+- storm
+- voyager
+deployment_posture: local-first

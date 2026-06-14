@@ -7,37 +7,59 @@ homepage: https://arxiv.org/abs/2406.14598
 license: MIT
 primary_language: Python
 tagline: ICLR 2025 benchmark for systematically evaluating LLM safety refusal across a 44-class fine-grained unsafe-instruction taxonomy.
-description: |
-  SORRY-Bench is the MIT-licensed benchmark and grader from the
+description: 'SORRY-Bench is the MIT-licensed benchmark and grader from the
+
   ICLR 2025 paper "SORRY-Bench: Systematically Evaluating Large
+
   Language Model Safety Refusal Behaviors". It supplies a 440-prompt
+
   evaluation set covering a 44-class fine-grained taxonomy of
+
   potentially-unsafe instructions, plus 21 linguistic mutators
+
   (paraphrase, encoding, role-play) and an automated grader. The
+
   benchmark is designed to address class imbalance and surface
+
   artifacts in earlier safety datasets like AdvBench by carefully
+
   balancing topics, mutators, and linguistic styles.
 
+
   In the atlas: SORRY-Bench is the **fine-grained refusal
+
   benchmark** point in the redteam space — adjacent to StrongREJECT
+
   (which corrects scoring artifacts in earlier jailbreak datasets)
+
   and SALAD-BENCH (which provides a different safety taxonomy).
+
   Together they form the modern 2024-2025 refusal-evaluation
+
   reference set for any organisation calibrating a safety policy.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: SORRY-Bench paper authors (UC Berkeley / Princeton / others)
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  Academic-paper-backed; MIT-licensed; runs entirely offline
+sovereignty_notes: 'Academic-paper-backed; MIT-licensed; runs entirely offline
+
   against any chat-completion endpoint. The grader is an automated
+
   classifier (LLM-as-a-judge configurable to use any provider, or a
+
   fine-tuned local model published alongside the paper).
+
   Multi-provider via standard OpenAI-compatible HTTP — works against
+
   local vLLM / Ollama / TGI as well as hosted providers.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - garak
-  - strong-reject
+- garak
+- strong-reject
+deployment_posture: local-only

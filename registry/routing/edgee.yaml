@@ -25,3 +25,4 @@ adjacent_to:
 - llm-router
 - llmapigateway
 - lm-proxy
+deployment_posture: cloud-first

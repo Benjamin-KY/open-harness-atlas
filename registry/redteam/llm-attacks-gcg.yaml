@@ -5,30 +5,34 @@ subcategory: adversarial-attack-toolkit
 repo_url: https://github.com/llm-attacks/llm-attacks
 license: MIT
 primary_language: Python
-tagline: 'Greedy Coordinate Gradient white-box adversarial suffix optimisation for universal transferable jailbreaks'
-description: |
-  LLM Attacks (GCG) is Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google)'s greedy Coordinate Gradient white-box adversarial suffix optimisation for universal transferable jailbreaks. Foundational GCG algorithm; AdvBench; cited by nearly every subsequent jailbreak paper.
+tagline: Greedy Coordinate Gradient white-box adversarial suffix optimisation for universal transferable jailbreaks
+description: 'LLM Attacks (GCG) is Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google)''s greedy Coordinate Gradient white-box adversarial suffix optimisation for universal transferable jailbreaks. Foundational GCG algorithm; AdvBench; cited by nearly every subsequent jailbreak paper.
+
 
   In the atlas: LLM Attacks (GCG) is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - autodan
-  - autodan-turbo
-  - autoprompt-calibration
-  - cipherchat
-  - deep-inception
-  - gptfuzz
-  - llm-adaptive-attacks
-  - nanogcg
-  - pair-jailbreak
-  - rain-self-alignment
-  - renellm
-  - tap-jailbreak
+- autodan
+- autodan-turbo
+- autoprompt-calibration
+- cipherchat
+- deep-inception
+- gptfuzz
+- llm-adaptive-attacks
+- nanogcg
+- pair-jailbreak
+- rain-self-alignment
+- renellm
+- tap-jailbreak
+deployment_posture: local-first

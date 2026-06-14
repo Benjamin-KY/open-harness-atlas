@@ -25,3 +25,4 @@ adjacent_to:
 - forge
 - langgraph
 - lotti
+deployment_posture: cloud-first

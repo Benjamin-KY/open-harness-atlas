@@ -25,3 +25,4 @@ adjacent_to:
 - gemini-cli
 - genericagent
 - langgraph
+deployment_posture: local-first

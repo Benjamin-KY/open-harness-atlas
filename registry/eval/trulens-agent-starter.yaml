@@ -24,3 +24,4 @@ adjacent_to:
 - groundcheck
 - lm-evaluation-harness
 - rag-benchmarking
+deployment_posture: local-first

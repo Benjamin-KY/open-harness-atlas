@@ -77,3 +77,4 @@ adjacent_to:
 - presidio
 - rebuff
 - vigil-llm
+deployment_posture: local-first

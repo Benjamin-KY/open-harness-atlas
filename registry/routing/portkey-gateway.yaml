@@ -7,19 +7,30 @@ homepage: https://portkey.ai/features/ai-gateway
 license: MIT
 primary_language: TypeScript
 tagline: AI gateway — load balancing, fallbacks, retries, caching, and observability across 250+ models.
-description: |
-  Portkey AI Gateway is a Node.js / TypeScript open-source gateway that
+description: 'Portkey AI Gateway is a Node.js / TypeScript open-source gateway that
+
   fronts 250+ LLM providers with a single OpenAI-compatible interface.
+
   It adds first-class load balancing, conditional routing, automatic
+
   fallbacks, retries with exponential backoff, semantic caching, and
+
   request / response logging — designed to run as a production
+
   edge service.
 
+
   In the atlas: Portkey AI Gateway is the canonical example of a
+
   **production AI gateway**. Compared with LiteLLM (Python proxy) and
+
   aisuite (Python SDK), Portkey targets the edge-service tier and
+
   composes well in front of Python apps that themselves use a thinner
+
   routing layer.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -27,26 +38,33 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: Portkey Gateway — Documentation
-    url: https://portkey.ai/docs/product/ai-gateway
-    type: docs
-    free: true
-sovereignty_notes: |
-  US-incorporated company; OSS gateway is MIT-licensed, fully
+- title: Portkey Gateway — Documentation
+  url: https://portkey.ai/docs/product/ai-gateway
+  type: docs
+  free: true
+sovereignty_notes: 'US-incorporated company; OSS gateway is MIT-licensed, fully
+
   self-hostable, and ships an official Docker image. Hosted dashboard
+
   is a separate optional paid product — the gateway runs entirely
+
   standalone. Supports any OpenAI-compatible local backend. Model-agnostic 5
+
   — a config change reroutes traffic between providers / models /
+
   local backends transparently to the calling application.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - aisuite
-  - envoy-ai-gateway
-  - fastchat
-  - helicone
-  - litellm
-  - mlflow-ai-gateway
-  - new-api
-  - one-api
-  - routellm
-  - simonw-llm
+- aisuite
+- envoy-ai-gateway
+- fastchat
+- helicone
+- litellm
+- mlflow-ai-gateway
+- new-api
+- one-api
+- routellm
+- simonw-llm
+deployment_posture: local-first

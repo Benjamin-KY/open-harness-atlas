@@ -25,3 +25,4 @@ adjacent_to:
 - metorial
 - moai-adk
 - nexent
+deployment_posture: local-first

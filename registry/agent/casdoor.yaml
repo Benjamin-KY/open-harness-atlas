@@ -25,3 +25,4 @@ adjacent_to:
 - langgraph
 - valuecell
 - zeroclaw
+deployment_posture: local-first

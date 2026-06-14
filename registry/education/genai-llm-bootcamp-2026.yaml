@@ -27,3 +27,4 @@ adjacent_to:
 - ai-ml-storybook-code
 - harmless-harnesses
 - ml-oneday-course
+deployment_posture: local-only

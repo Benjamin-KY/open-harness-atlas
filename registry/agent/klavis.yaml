@@ -7,10 +7,10 @@ homepage: https://www.klavis.ai/
 license: Apache-2.0
 primary_language: Python
 tagline: 'Klavis AI: MCP integration platforms that let AI agents use tools reliably at any scale'
-description: |-
-  Klavis — Klavis AI: MCP integration platforms that let AI agents use tools reliably at any scale. Upstream maintainer: Klavis-AI.
+description: 'Klavis — Klavis AI: MCP integration platforms that let AI agents use tools reliably at any scale. Upstream maintainer: Klavis-AI.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
@@ -25,3 +25,4 @@ adjacent_to:
 - deepchat
 - langgraph
 - py-xiaozhi
+deployment_posture: local-first

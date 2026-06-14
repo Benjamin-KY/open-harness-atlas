@@ -25,3 +25,4 @@ adjacent_to:
 - google-workspace-mcp
 - langgraph
 - linkedin-mcp-server
+deployment_posture: local-only

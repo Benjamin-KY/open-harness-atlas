@@ -6,31 +6,35 @@ repo_url: https://github.com/microsoft/RD-Agent
 license: MIT
 primary_language: Python
 tagline: '#1 on MLE-bench: autonomous R&D agent for ML engineering tasks including data analysis, model training, and Kaggle competition automation'
-description: |
-  RD-Agent (Research & Development Agent) is Microsoft Research's #1 on mle-bench: autonomous r&d agent for ml engineering tasks including data analysis, model training, and kaggle competition automation. Leads MLE-bench (75 Kaggle tasks); o3/GPT-4.1 backend; automated hypothesis → experiment → evaluation loop; rdagent pip package; arXiv 2505.14738..
+description: 'RD-Agent (Research & Development Agent) is Microsoft Research''s #1 on mle-bench: autonomous r&d agent for ml engineering tasks including data analysis, model training, and kaggle competition automation. Leads MLE-bench (75 Kaggle tasks); o3/GPT-4.1 backend; automated hypothesis → experiment → evaluation loop; rdagent pip package; arXiv 2505.14738..
+
 
   In the atlas: RD-Agent (Research & Development Agent) is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Microsoft Research
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentlite-salesforce
-  - autogen
-  - babyagi
-  - chemcrow-science-agent
-  - crewai
-  - gpt-researcher
-  - griptape-framework
-  - ix-autonomous-agent
-  - langgraph
-  - llmcompiler-parallel
-  - metagpt
-  - mle-bench
-  - superagi
-  - voyager
+- agentlite-salesforce
+- autogen
+- babyagi
+- chemcrow-science-agent
+- crewai
+- gpt-researcher
+- griptape-framework
+- ix-autonomous-agent
+- langgraph
+- llmcompiler-parallel
+- metagpt
+- mle-bench
+- superagi
+- voyager
+deployment_posture: local-first

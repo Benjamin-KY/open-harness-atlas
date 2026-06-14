@@ -5,20 +5,24 @@ subcategory: memory-layer-infrastructure
 repo_url: https://github.com/mem0ai/mem0
 license: Apache-2.0
 primary_language: Python
-tagline: 'Intelligent memory layer for AI agents; multi-level user/session/agent state with semantic + BM25 + entity retrieval; 91.6 on LoCoMo benchmark (Apr 2026)'
-description: |
-  Mem0 (formerly Embedchain) is Mem0 AI (YC S24)'s intelligent memory layer for AI agents; multi-level user/session/agent state with semantic + BM25 + entity retrieval; 91.6 on LoCoMo benchmark (Apr 2026). YC S24; 26k+ stars; pip install mem0ai; API-first with SDK for Python/JS; new algorithm (Apr 2026) outperforms previous by +20 pts on LoCoMo; benchmarks open-sourced..
+tagline: Intelligent memory layer for AI agents; multi-level user/session/agent state with semantic + BM25 + entity retrieval; 91.6 on LoCoMo benchmark (Apr 2026)
+description: 'Mem0 (formerly Embedchain) is Mem0 AI (YC S24)''s intelligent memory layer for AI agents; multi-level user/session/agent state with semantic + BM25 + entity retrieval; 91.6 on LoCoMo benchmark (Apr 2026). YC S24; 26k+ stars; pip install mem0ai; API-first with SDK for Python/JS; new algorithm (Apr 2026) outperforms previous by +20 pts on LoCoMo; benchmarks open-sourced..
+
 
   In the atlas: Mem0 (formerly Embedchain) is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: Mem0 AI (YC S24)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Mem0 AI (YC S24) (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Mem0 AI (YC S24) (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - adala-data-agents
-  - letta
+- adala-data-agents
+- letta
+deployment_posture: local-first

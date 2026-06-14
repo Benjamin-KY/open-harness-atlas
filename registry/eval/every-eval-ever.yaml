@@ -25,3 +25,4 @@ adjacent_to:
 - langeval
 - lm-evaluation-harness
 - trellm
+deployment_posture: local-first

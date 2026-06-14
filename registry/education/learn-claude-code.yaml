@@ -30,3 +30,4 @@ education_resources:
   url: https://github.com/shareAI-lab/learn-claude-code
   type: tutorial
   free: true
+deployment_posture: local-only

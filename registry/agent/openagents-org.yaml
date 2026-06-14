@@ -5,19 +5,23 @@ subcategory: multi-agent
 repo_url: https://github.com/openagents-org/openagents
 license: Apache-2.0
 primary_language: Python
-tagline: 'Multi-protocol agent networking platform supporting A2A, MCP, WebSocket-based agent communication'
-description: |
-  OpenAgents (openagents-org) is openagents-org community's multi-protocol agent networking platform supporting A2A, MCP, WebSocket-based agent communication. Protocol-agnostic agent bus with real-time WebSocket coordination.
+tagline: Multi-protocol agent networking platform supporting A2A, MCP, WebSocket-based agent communication
+description: 'OpenAgents (openagents-org) is openagents-org community''s multi-protocol agent networking platform supporting A2A, MCP, WebSocket-based agent communication. Protocol-agnostic agent bus with real-time WebSocket coordination.
+
 
   In the atlas: OpenAgents (openagents-org) is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: community
   name: openagents-org community
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: |
-  openagents-org community (community-maintained, multi-country); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'openagents-org community (community-maintained, multi-country); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - openagents-xlang
+- openagents-xlang
+deployment_posture: local-first

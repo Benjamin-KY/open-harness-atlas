@@ -31,3 +31,4 @@ adjacent_to:
 - guardrails-ai
 - jsonschema
 - yaicli
+deployment_posture: local-first

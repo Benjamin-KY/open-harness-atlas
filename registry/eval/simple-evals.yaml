@@ -5,27 +5,31 @@ subcategory: academic-benchmark-runner
 repo_url: https://github.com/openai/simple-evals
 license: MIT
 primary_language: Python
-tagline: 'Lightweight Python library for running MMLU, HumanEval, GPQA, MATH, MGSM, SimpleQA head-to-head'
-description: |
-  SimpleEvals is OpenAI's lightweight Python library for running MMLU, HumanEval, GPQA, MATH, MGSM, SimpleQA head-to-head. Dead-simple eval wrapper OpenAI uses internally; SimpleQA factuality dataset included.
+tagline: Lightweight Python library for running MMLU, HumanEval, GPQA, MATH, MGSM, SimpleQA head-to-head
+description: 'SimpleEvals is OpenAI''s lightweight Python library for running MMLU, HumanEval, GPQA, MATH, MGSM, SimpleQA head-to-head. Dead-simple eval wrapper OpenAI uses internally; SimpleQA factuality dataset included.
+
 
   In the atlas: SimpleEvals is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: OpenAI
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  OpenAI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'OpenAI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - helm
-  - hf-evaluate
-  - lighteval
-  - lm-evaluation-harness
-  - lmms-eval
-  - olmes
-  - opencompass
-  - ultraeval
-  - unitxt
+- helm
+- hf-evaluate
+- lighteval
+- lm-evaluation-harness
+- lmms-eval
+- olmes
+- opencompass
+- ultraeval
+- unitxt
+deployment_posture: local-first

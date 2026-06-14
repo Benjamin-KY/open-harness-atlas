@@ -25,3 +25,4 @@ adjacent_to:
 - pyrit
 - rag-security-scanner
 - www-project-llm-verification-standard
+deployment_posture: local-first

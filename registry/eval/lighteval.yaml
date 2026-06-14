@@ -7,20 +7,32 @@ homepage: https://github.com/huggingface/lighteval
 license: MIT
 primary_language: Python
 tagline: Hugging Face's lightweight, fast LLM evaluation suite with multiple backends and Open-LLM-Leaderboard compatibility.
-description: |
-  Lighteval is Hugging Face's MIT-licensed lightweight evaluation
+description: 'Lighteval is Hugging Face''s MIT-licensed lightweight evaluation
+
   framework, designed as a faster, more modular alternative to running
+
   the full lm-evaluation-harness for everyday evaluations. It supports
+
   multiple inference backends (Hugging Face transformers, accelerate,
+
   vLLM, Nanotron, OpenAI-compatible endpoints), is the framework
+
   behind the Open LLM Leaderboard v2 task definitions, and is designed
+
   to be modifiable for custom benchmarks without forking the harness.
 
+
   In the atlas: Lighteval is the **fast-iteration academic eval
+
   alternative**. Lower coverage than lm-evaluation-harness, but
+
   faster to run and easier to extend — useful as the inner-loop
+
   eval during model post-training, with lm-evaluation-harness
+
   reserved for the publication-grade run.
+
+  '
 maturity: beta
 maintainer:
   type: company
@@ -28,24 +40,30 @@ maintainer:
 origin_country: FR
 model_agnostic_score: 4
 education_resources:
-  - title: Lighteval — README and examples
-    url: https://github.com/huggingface/lighteval#readme
-    type: docs
-    free: true
-sovereignty_notes: |
-  Hugging Face (French-incorporated company, multi-jurisdiction
+- title: Lighteval — README and examples
+  url: https://github.com/huggingface/lighteval#readme
+  type: docs
+  free: true
+sovereignty_notes: 'Hugging Face (French-incorporated company, multi-jurisdiction
+
   operation); MIT-licensed; runs entirely locally with multiple
+
   inference backends. Conservative model-agnostic 4 — non-Hugging-
+
   Face backends (vLLM, OpenAI-compatible) are supported but most
+
   examples and documentation assume the HF transformers path.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - helm
-  - hf-evaluate
-  - lm-evaluation-harness
-  - lmms-eval
-  - olmes
-  - opencompass
-  - simple-evals
-  - ultraeval
-  - unitxt
+- helm
+- hf-evaluate
+- lm-evaluation-harness
+- lmms-eval
+- olmes
+- opencompass
+- simple-evals
+- ultraeval
+- unitxt
+deployment_posture: local-only

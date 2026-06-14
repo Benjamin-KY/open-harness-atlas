@@ -5,11 +5,13 @@ subcategory: book-as-repo
 repo_url: https://github.com/rasbt/LLMs-from-scratch
 license: Apache-2.0
 primary_language: Jupyter Notebook
-tagline: 'Step-by-step PyTorch GPT book companion covering pretraining, SFT, and RLHF from scratch'
-description: |
-  Build a Large Language Model (From Scratch) is Sebastian Raschka's step-by-step PyTorch GPT book companion covering pretraining, SFT, and RLHF from scratch. Only end-to-end book teaching pretraining + instruction-tuning + DPO in runnable notebooks.
+tagline: Step-by-step PyTorch GPT book companion covering pretraining, SFT, and RLHF from scratch
+description: 'Build a Large Language Model (From Scratch) is Sebastian Raschka''s step-by-step PyTorch GPT book companion covering pretraining, SFT, and RLHF from scratch. Only end-to-end book teaching pretraining + instruction-tuning + DPO in runnable notebooks.
+
 
   In the atlas: Build a Large Language Model (From Scratch) is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: community
@@ -17,16 +19,18 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: Build a Large Language Model (From Scratch) — source repository
-    url: https://github.com/rasbt/LLMs-from-scratch
-    type: course
-    free: true
-sovereignty_notes: |
-  Sebastian Raschka (community-maintained, US); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: Build a Large Language Model (From Scratch) — source repository
+  url: https://github.com/rasbt/LLMs-from-scratch
+  type: course
+  free: true
+sovereignty_notes: 'Sebastian Raschka (community-maintained, US); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - harvard-annotated-transformer
-  - karpathy-mingpt
-  - karpathy-nanogpt
-  - karpathy-nn-zero-to-hero
-  - labmlai-annotated-dl
+- harvard-annotated-transformer
+- karpathy-mingpt
+- karpathy-nanogpt
+- karpathy-nn-zero-to-hero
+- labmlai-annotated-dl
+deployment_posture: local-only

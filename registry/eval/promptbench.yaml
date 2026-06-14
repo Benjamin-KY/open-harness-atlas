@@ -5,25 +5,29 @@ subcategory: application-level-eval
 repo_url: https://github.com/microsoftarchive/promptbench
 license: MIT
 primary_language: Python
-tagline: 'LLM eval toolkit with adversarial prompt robustness testing, dynamic DyVal eval, prompt-engineering comparison'
-description: |
-  PromptBench is Microsoft Research's lLM eval toolkit with adversarial prompt robustness testing, dynamic DyVal eval, prompt-engineering comparison. Only framework with formal adversarial prompt attack suite (char/word/sentence/semantic vectors).
+tagline: LLM eval toolkit with adversarial prompt robustness testing, dynamic DyVal eval, prompt-engineering comparison
+description: 'PromptBench is Microsoft Research''s lLM eval toolkit with adversarial prompt robustness testing, dynamic DyVal eval, prompt-engineering comparison. Only framework with formal adversarial prompt attack suite (char/word/sentence/semantic vectors).
+
 
   In the atlas: PromptBench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Microsoft Research
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Microsoft Research (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - cleverhans
-  - harmbench
-  - needle-in-haystack
-  - openattack
-  - textattack
-  - toolbench
-  - zeroeval
+- cleverhans
+- harmbench
+- needle-in-haystack
+- openattack
+- textattack
+- toolbench
+- zeroeval
+deployment_posture: local-first

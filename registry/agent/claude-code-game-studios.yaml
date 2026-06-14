@@ -24,3 +24,4 @@ adjacent_to:
 - ecc
 - edict
 - langgraph
+deployment_posture: api-only

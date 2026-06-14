@@ -5,11 +5,13 @@ subcategory: structured-output
 repo_url: https://github.com/mlc-ai/xgrammar
 license: Apache-2.0
 primary_language: C++
-tagline: 'Near-zero-overhead context-free grammar engine for 100% structurally correct LLM outputs; default backend in vLLM and SGLang'
-description: |
-  XGrammar is MLC AI (CMU / UMich / UW)'s near-zero-overhead context-free grammar engine for 100% structurally correct LLM outputs; default backend in vLLM and SGLang. C++ grammar engine integrated as default structured-generation backend in vLLM, SGLang, TensorRT-LLM, and MLC-LLM; XGrammar-2 adds dynamic context support for agentic LLMs; outperforms outlines/lm-format-enforcer by orders of magnitude at inference scale..
+tagline: Near-zero-overhead context-free grammar engine for 100% structurally correct LLM outputs; default backend in vLLM and SGLang
+description: 'XGrammar is MLC AI (CMU / UMich / UW)''s near-zero-overhead context-free grammar engine for 100% structurally correct LLM outputs; default backend in vLLM and SGLang. C++ grammar engine integrated as default structured-generation backend in vLLM, SGLang, TensorRT-LLM, and MLC-LLM; XGrammar-2 adds dynamic context support for agentic LLMs; outperforms outlines/lm-format-enforcer by orders of magnitude at inference scale..
+
 
   In the atlas: XGrammar is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: ga
 maintainer:
   type: community
@@ -22,20 +24,22 @@ five_component_coverage:
   prompt_composer: partial
   output_contract: native
   audit_log_fsm: none
-sovereignty_notes: |
-  MLC AI (CMU / UMich / UW) (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'MLC AI (CMU / UMich / UW) (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - baml
-  - funcchain
-  - guidance
-  - instructor
-  - jsonformer
-  - lm-format-enforcer
-  - lmql
-  - magentic
-  - marvin
-  - outlines
-  - sglang
-  - typechat
-  - vllm
+- baml
+- funcchain
+- guidance
+- instructor
+- jsonformer
+- lm-format-enforcer
+- lmql
+- magentic
+- marvin
+- outlines
+- sglang
+- typechat
+- vllm
+deployment_posture: local-first

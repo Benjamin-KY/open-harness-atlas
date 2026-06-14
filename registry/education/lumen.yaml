@@ -26,3 +26,4 @@ education_resources:
   url: https://github.com/ahmedEid1/lumen
   type: course
   free: true
+deployment_posture: local-only

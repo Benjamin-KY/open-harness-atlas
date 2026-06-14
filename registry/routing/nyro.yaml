@@ -24,3 +24,4 @@ adjacent_to:
 - opencode-llm-proxy
 - routerly
 - smarterrouter
+deployment_posture: local-first

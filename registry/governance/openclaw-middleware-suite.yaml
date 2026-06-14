@@ -30,3 +30,4 @@ adjacent_to:
 - safe-zone
 - sentinel-ai
 - shekel
+deployment_posture: local-first

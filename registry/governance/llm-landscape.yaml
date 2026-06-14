@@ -29,3 +29,4 @@ adjacent_to:
 - guard-eval-harness
 - guardrails-ai
 - multilingual-llm-safety-bench
+deployment_posture: local-first

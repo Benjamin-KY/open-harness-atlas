@@ -25,3 +25,4 @@ adjacent_to:
 - skill-optimizer
 - swt-bench
 - turtle
+deployment_posture: local-first

@@ -24,3 +24,4 @@ adjacent_to:
 - holon-bench
 - keel
 - lm-evaluation-harness
+deployment_posture: local-first

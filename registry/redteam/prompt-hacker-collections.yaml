@@ -25,3 +25,4 @@ adjacent_to:
 - hermes-katana
 - pyrit
 - tensor-trust
+deployment_posture: local-only

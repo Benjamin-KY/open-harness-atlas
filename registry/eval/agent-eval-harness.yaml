@@ -25,3 +25,4 @@ adjacent_to:
 - completely
 - coze-loop
 - lm-evaluation-harness
+deployment_posture: cloud-first

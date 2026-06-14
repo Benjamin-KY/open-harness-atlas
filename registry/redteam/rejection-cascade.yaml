@@ -24,3 +24,4 @@ adjacent_to:
 - llm-security-alignment
 - pyrit
 - raguard
+deployment_posture: api-only

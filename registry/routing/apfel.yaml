@@ -5,23 +5,27 @@ subcategory: local-inference-server
 repo_url: https://github.com/Arthur-Ficial/apfel
 license: MIT
 primary_language: Swift
-tagline: 'OpenAI-compat server fronting Apple on-device Foundation Models; no cloud/API keys/download needed'
-description: |
-  apfel is Arthur-Ficial's openAI-compat server fronting Apple on-device Foundation Models; no cloud/API keys/download needed. macOS-26+; zero-cost inference on existing Apple Silicon.
+tagline: OpenAI-compat server fronting Apple on-device Foundation Models; no cloud/API keys/download needed
+description: 'apfel is Arthur-Ficial''s openAI-compat server fronting Apple on-device Foundation Models; no cloud/API keys/download needed. macOS-26+; zero-cost inference on existing Apple Silicon.
+
 
   In the atlas: apfel is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: alpha
 maintainer:
   type: individual
   name: Arthur-Ficial
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  Arthur-Ficial (independent maintainer, US); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'Arthur-Ficial (independent maintainer, US); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - apache-apisix
-  - envoy-ai-gateway
-  - kgateway
-  - kong
-  - plano
+- apache-apisix
+- envoy-ai-gateway
+- kgateway
+- kong
+- plano
+deployment_posture: local-first

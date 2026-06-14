@@ -5,27 +5,31 @@ subcategory: code-eval
 repo_url: https://github.com/SciCode-Bench/SciCode
 license: Apache-2.0
 primary_language: Python
-tagline: '338 scientific research coding subproblems across 5 domains (physics, math, chemistry, biology, materials science), curated by domain scientists'
-description: |
-  SciCode is SciCode Benchmark (multi-institution)'s 338 scientific research coding subproblems across 5 domains (physics, math, chemistry, biology, materials science), curated by domain scientists. Only benchmark requiring domain-expert scientific knowledge for code synthesis; NeurIPS 2024 D&B track; scientist-annotated gold solutions..
+tagline: 338 scientific research coding subproblems across 5 domains (physics, math, chemistry, biology, materials science), curated by domain scientists
+description: 'SciCode is SciCode Benchmark (multi-institution)''s 338 scientific research coding subproblems across 5 domains (physics, math, chemistry, biology, materials science), curated by domain scientists. Only benchmark requiring domain-expert scientific knowledge for code synthesis; NeurIPS 2024 D&B track; scientist-annotated gold solutions..
+
 
   In the atlas: SciCode is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: community
   name: SciCode Benchmark (multi-institution)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  SciCode Benchmark (multi-institution) (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'SciCode Benchmark (multi-institution) (community-maintained, US); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - apps
-  - bigcode-evaluation-harness
-  - bigcodebench
-  - classeval
-  - cruxeval
-  - evalplus
-  - humaneval
-  - livecodebench
-  - swe-bench
+- apps
+- bigcode-evaluation-harness
+- bigcodebench
+- classeval
+- cruxeval
+- evalplus
+- humaneval
+- livecodebench
+- swe-bench
+deployment_posture: local-first

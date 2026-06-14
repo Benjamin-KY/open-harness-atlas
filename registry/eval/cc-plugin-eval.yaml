@@ -24,3 +24,4 @@ adjacent_to:
 - mateval
 - moonshot
 - skill-lab
+deployment_posture: api-only

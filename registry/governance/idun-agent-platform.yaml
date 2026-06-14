@@ -31,3 +31,4 @@ adjacent_to:
 - suprawall
 - swing-skills
 - trustloopguard
+deployment_posture: local-first

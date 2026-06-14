@@ -38,3 +38,4 @@ adjacent_to:
 - langgraph
 - librechat
 - xiaozhi-esp32
+deployment_posture: local-first

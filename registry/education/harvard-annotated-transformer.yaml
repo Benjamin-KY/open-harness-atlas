@@ -5,11 +5,13 @@ subcategory: foundations
 repo_url: https://github.com/harvardnlp/annotated-transformer
 license: MIT
 primary_language: Python
-tagline: 'Line-by-line PyTorch annotation of Attention Is All You Need rendered as Jupyter notebook'
-description: |
-  The Annotated Transformer is Harvard NLP (Sasha Rush)'s line-by-line PyTorch annotation of Attention Is All You Need rendered as Jupyter notebook. Definitive academic transformer reference; paired with ACL 2018 paper; runs on Colab.
+tagline: Line-by-line PyTorch annotation of Attention Is All You Need rendered as Jupyter notebook
+description: 'The Annotated Transformer is Harvard NLP (Sasha Rush)''s line-by-line PyTorch annotation of Attention Is All You Need rendered as Jupyter notebook. Definitive academic transformer reference; paired with ACL 2018 paper; runs on Colab.
+
 
   In the atlas: The Annotated Transformer is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: institution
@@ -17,17 +19,19 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: The Annotated Transformer — source repository
-    url: https://github.com/harvardnlp/annotated-transformer
-    type: course
-    free: true
-sovereignty_notes: |
-  Harvard NLP (Sasha Rush) (US-based academic/research institution); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: The Annotated Transformer — source repository
+  url: https://github.com/harvardnlp/annotated-transformer
+  type: course
+  free: true
+sovereignty_notes: 'Harvard NLP (Sasha Rush) (US-based academic/research institution); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - karpathy-mingpt
-  - karpathy-nanogpt
-  - karpathy-nn-zero-to-hero
-  - labmlai-annotated-dl
-  - norvig-pytudes
-  - rasbt-llms-from-scratch
+- karpathy-mingpt
+- karpathy-nanogpt
+- karpathy-nn-zero-to-hero
+- labmlai-annotated-dl
+- norvig-pytudes
+- rasbt-llms-from-scratch
+deployment_posture: local-only

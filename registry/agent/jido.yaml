@@ -25,3 +25,4 @@ adjacent_to:
 - nanobot
 - nanobrowser
 - neo
+deployment_posture: local-first

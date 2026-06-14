@@ -21,3 +21,4 @@ sovereignty_notes: 'TIGER-AI-Lab (institution-maintained, Wenhu Chen''s TIGER La
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness
+deployment_posture: local-first

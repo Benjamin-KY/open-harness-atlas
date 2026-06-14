@@ -25,3 +25,4 @@ adjacent_to:
 - langgraph
 - openagents-org
 - takt
+deployment_posture: api-only

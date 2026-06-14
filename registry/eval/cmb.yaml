@@ -5,22 +5,26 @@ subcategory: domain-medical
 repo_url: https://github.com/FreedomIntelligence/CMB
 license: Apache-2.0
 primary_language: Python
-tagline: 'Comprehensive Chinese medical LLM benchmark covering exam QA (CMB-Exam) and complex clinical case consultation (CMB-Clin) across 28 departments'
-description: |
-  CMB (Chinese Medical Benchmark) is Chinese University of HK (Shenzhen)'s comprehensive Chinese medical LLM benchmark covering exam QA (CMB-Exam) and complex clinical case consultation (CMB-Clin) across 28 departments. Only Chinese-specific medical benchmark in registry; dual tracks (exam MCQ + clinical dialogue); covers TCM and modern medicine. EMNLP 2024..
+tagline: Comprehensive Chinese medical LLM benchmark covering exam QA (CMB-Exam) and complex clinical case consultation (CMB-Clin) across 28 departments
+description: 'CMB (Chinese Medical Benchmark) is Chinese University of HK (Shenzhen)''s comprehensive Chinese medical LLM benchmark covering exam QA (CMB-Exam) and complex clinical case consultation (CMB-Clin) across 28 departments. Only Chinese-specific medical benchmark in registry; dual tracks (exam MCQ + clinical dialogue); covers TCM and modern medicine. EMNLP 2024..
+
 
   In the atlas: CMB (Chinese Medical Benchmark) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: Chinese University of HK (Shenzhen)
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  Chinese University of HK (Shenzhen) (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Chinese University of HK (Shenzhen) (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - finben
-  - helm
-  - legalbench
-  - medqa
+- finben
+- helm
+- legalbench
+- medqa
+deployment_posture: local-first

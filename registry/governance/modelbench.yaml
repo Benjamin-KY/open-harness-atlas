@@ -5,11 +5,13 @@ subcategory: safety-benchmark-runner
 repo_url: https://github.com/mlcommons/modelbench
 license: Apache-2.0
 primary_language: Python
-tagline: 'AI safety benchmark runner (MLCommons AILuminate) measuring hazard response rates using LlamaGuard as safety judge'
-description: |
-  ModelBench is MLCommons's aI safety benchmark runner (MLCommons AILuminate) measuring hazard response rates using LlamaGuard as safety judge. Official MLCommons benchmark; feeds public AILuminate safety leaderboard.
+tagline: AI safety benchmark runner (MLCommons AILuminate) measuring hazard response rates using LlamaGuard as safety judge
+description: 'ModelBench is MLCommons''s aI safety benchmark runner (MLCommons AILuminate) measuring hazard response rates using LlamaGuard as safety judge. Official MLCommons benchmark; feeds public AILuminate safety leaderboard.
+
 
   In the atlas: ModelBench is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: beta
 maintainer:
   type: institution
@@ -22,10 +24,12 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: partial
-sovereignty_notes: |
-  MLCommons (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'MLCommons (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - helm
-  - lm-evaluation-harness
-  - opencompass
+- helm
+- lm-evaluation-harness
+- opencompass
+deployment_posture: local-first

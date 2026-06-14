@@ -25,3 +25,4 @@ adjacent_to:
 - neo
 - oh-my-claudecode
 - oh-my-pi
+deployment_posture: local-first

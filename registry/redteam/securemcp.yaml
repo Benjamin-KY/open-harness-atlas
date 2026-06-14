@@ -24,3 +24,4 @@ adjacent_to:
 - augustus
 - defender
 - pyrit
+deployment_posture: local-first

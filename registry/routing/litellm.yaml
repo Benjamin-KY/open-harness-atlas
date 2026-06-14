@@ -7,21 +7,34 @@ homepage: https://www.litellm.ai/
 license: MIT
 primary_language: Python
 tagline: Unified SDK and proxy that normalises 100+ LLM APIs into the OpenAI format.
-description: |
-  LiteLLM is a unified Python SDK and standalone proxy server that
+description: 'LiteLLM is a unified Python SDK and standalone proxy server that
+
   normalises calls to most major LLM providers (OpenAI, Anthropic,
+
   Google, Cohere, Hugging Face, Bedrock, Vertex, Groq, Mistral,
+
   local Ollama / vLLM / llama.cpp, and many others) into a single
+
   OpenAI-compatible interface. It also provides token-budget tracking,
+
   retry / fallback policies, cost accounting, and request / response
+
   logging primitives.
 
+
   In the atlas: LiteLLM is the **canonical routing harness**. It does
+
   not constrain model output (no governance), but it makes the model
+
   tier itself swappable, which is the necessary precondition for every
+
   other harness category to be sovereign-by-construction. In the
+
   Fable / Mythos worked example, a LiteLLM-fronted deployment swaps
+
   the `model:` config string and the agent stack keeps serving.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -29,38 +42,47 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: LiteLLM — Documentation
-    url: https://docs.litellm.ai/
-    type: docs
-    free: true
-  - title: LiteLLM Proxy — Quickstart
-    url: https://docs.litellm.ai/docs/proxy/quick_start
-    type: tutorial
-    free: true
-sovereignty_notes: |
-  US-incorporated company; OSS core is MIT-licensed and fully
+- title: LiteLLM — Documentation
+  url: https://docs.litellm.ai/
+  type: docs
+  free: true
+- title: LiteLLM Proxy — Quickstart
+  url: https://docs.litellm.ai/docs/proxy/quick_start
+  type: tutorial
+  free: true
+sovereignty_notes: 'US-incorporated company; OSS core is MIT-licensed and fully
+
   self-hostable as a Python package or via the official Docker image.
+
   Supports any OpenAI-compatible local backend (Ollama, vLLM,
+
   llama.cpp, text-generation-inference) as a first-class provider —
+
   meaning the swap target can be a fully local model with no outbound
+
   API call. The hosted dashboard is optional and separable from the
+
   proxy. Model-agnostic 5 — provider is a config string and the same
+
   code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - agentops
-  - aisuite
-  - fastchat
-  - helicone
-  - llama-cpp
-  - lmdeploy
-  - mlflow-ai-gateway
-  - new-api
-  - ollama
-  - one-api
-  - portkey-gateway
-  - routellm
-  - sglang
-  - simonw-llm
-  - tokencost
-  - vllm
+- agentops
+- aisuite
+- fastchat
+- helicone
+- llama-cpp
+- lmdeploy
+- mlflow-ai-gateway
+- new-api
+- ollama
+- one-api
+- portkey-gateway
+- routellm
+- sglang
+- simonw-llm
+- tokencost
+- vllm
+deployment_posture: local-only

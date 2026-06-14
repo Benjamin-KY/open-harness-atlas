@@ -7,19 +7,30 @@ homepage: https://github.com/andrewyng/aisuite
 license: MIT
 primary_language: Python
 tagline: Simple unified interface to multiple LLM providers — Andrew Ng's minimal alternative to LiteLLM.
-description: |
-  aisuite is a small, MIT-licensed Python library by Andrew Ng that
+description: 'aisuite is a small, MIT-licensed Python library by Andrew Ng that
+
   provides a unified, OpenAI-style interface across multiple providers
+
   (Anthropic, Azure, Google, Hugging Face, OpenAI, Mistral, Together AI,
+
   Ollama, and more). The API is deliberately minimal: a `Client` object
+
   with `chat.completions.create()` that accepts `model="provider:model"`
+
   to select the backend.
 
+
   In the atlas: aisuite is the **minimal-API routing alternative** to
+
   LiteLLM. Both serve the same role; aisuite trades feature breadth for
+
   a smaller surface area and a simpler installation story. Useful when
+
   the project wants the swap-the-model invariant without the proxy /
+
   cost-tracking / fallback features.
+
+  '
 maturity: beta
 maintainer:
   type: individual
@@ -27,25 +38,32 @@ maintainer:
 origin_country: US
 model_agnostic_score: 4
 education_resources:
-  - title: aisuite — README and examples
-    url: https://github.com/andrewyng/aisuite#readme
-    type: docs
-    free: true
-sovereignty_notes: |
-  Solo-maintained, MIT-licensed. Supports Ollama as a local-backend
+- title: aisuite — README and examples
+  url: https://github.com/andrewyng/aisuite#readme
+  type: docs
+  free: true
+sovereignty_notes: 'Solo-maintained, MIT-licensed. Supports Ollama as a local-backend
+
   option; per-provider extras are installed on demand
+
   (`pip install aisuite[anthropic,ollama]`). Conservative
-  model-agnostic 4 because some providers' adapters are less mature
-  than LiteLLM's equivalents — feature parity (e.g., streaming on every
+
+  model-agnostic 4 because some providers'' adapters are less mature
+
+  than LiteLLM''s equivalents — feature parity (e.g., streaming on every
+
   backend) is not yet guaranteed.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - fastchat
-  - helicone
-  - litellm
-  - mlflow-ai-gateway
-  - new-api
-  - one-api
-  - portkey-gateway
-  - routellm
-  - simonw-llm
+- fastchat
+- helicone
+- litellm
+- mlflow-ai-gateway
+- new-api
+- one-api
+- portkey-gateway
+- routellm
+- simonw-llm
+deployment_posture: local-first

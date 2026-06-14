@@ -6,10 +6,10 @@ repo_url: https://github.com/07Codex07/Mini_LLM
 license: MIT
 primary_language: Python
 tagline: Building a complete LLM from scratch.
-description: |-
-  Mini LLM — Building a complete LLM from scratch. No libraries. No shortcuts. Just NumPy, math, and first principles. Upstream maintainer: 07Codex07.
+description: 'Mini LLM — Building a complete LLM from scratch. No libraries. No shortcuts. Just NumPy, math, and first principles. Upstream maintainer: 07Codex07.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: beta
 maintainer:
   type: community
@@ -28,3 +28,4 @@ adjacent_to:
 - pytorch-transformer-from-scratch
 - shannon-b1
 - transformer-pytorch-scratch
+deployment_posture: local-only

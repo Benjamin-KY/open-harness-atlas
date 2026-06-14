@@ -25,3 +25,4 @@ adjacent_to:
 - llm-framework-benchmark
 - llmbench
 - lm-evaluation-harness
+deployment_posture: local-first

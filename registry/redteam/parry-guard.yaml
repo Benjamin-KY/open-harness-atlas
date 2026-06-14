@@ -25,3 +25,4 @@ adjacent_to:
 - prompt-hacker-collections
 - pyrit
 - tensor-trust
+deployment_posture: local-first

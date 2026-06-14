@@ -5,25 +5,29 @@ subcategory: reasoning
 repo_url: https://github.com/Zayne-sprague/MuSR
 license: MIT
 primary_language: Python
-tagline: 'Tests chain-of-thought limits with procedurally generated multi-step reasoning tasks (murder mysteries, team allocation, object placement)'
-description: |
-  MuSR (Multistep Soft Reasoning) is Zayne Sprague (UT Austin)'s tests chain-of-thought limits with procedurally generated multi-step reasoning tasks (murder mysteries, team allocation, object placement). Algorithmic generation prevents data contamination; measures actual multi-hop commonsense reasoning chains, not memorized answers. ICLR 2024 spotlight..
+tagline: Tests chain-of-thought limits with procedurally generated multi-step reasoning tasks (murder mysteries, team allocation, object placement)
+description: 'MuSR (Multistep Soft Reasoning) is Zayne Sprague (UT Austin)''s tests chain-of-thought limits with procedurally generated multi-step reasoning tasks (murder mysteries, team allocation, object placement). Algorithmic generation prevents data contamination; measures actual multi-hop commonsense reasoning chains, not memorized answers. ICLR 2024 spotlight..
+
 
   In the atlas: MuSR (Multistep Soft Reasoning) is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: beta
 maintainer:
   type: individual
   name: Zayne Sprague (UT Austin)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Zayne Sprague (UT Austin) (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Zayne Sprague (UT Austin) (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - big-bench
-  - gpqa
-  - lm-evaluation-harness
-  - math
-  - mathbench
-  - mmlu-pro
-  - opencompass
+- big-bench
+- gpqa
+- lm-evaluation-harness
+- math
+- mathbench
+- mmlu-pro
+- opencompass
+deployment_posture: local-first

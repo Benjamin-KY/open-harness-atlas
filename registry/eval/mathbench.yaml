@@ -5,25 +5,29 @@ subcategory: math-reasoning
 repo_url: https://github.com/open-compass/MathBench
 license: Apache-2.0
 primary_language: Python
-tagline: '3709 bilingual (Chinese + English) math questions spanning five school stages from arithmetic to college-level; uses Circular Evaluation for robustness'
-description: |
-  MathBench is OpenCompass / Shanghai AI Lab's 3709 bilingual (chinese + english) math questions spanning five school stages from arithmetic to college-level; uses circular evaluation for robustness. Unique hierarchical five-stage difficulty and bilingual design; Circular Evaluation (CE) resists option-order memorization; ACL 2024..
+tagline: 3709 bilingual (Chinese + English) math questions spanning five school stages from arithmetic to college-level; uses Circular Evaluation for robustness
+description: 'MathBench is OpenCompass / Shanghai AI Lab''s 3709 bilingual (chinese + english) math questions spanning five school stages from arithmetic to college-level; uses circular evaluation for robustness. Unique hierarchical five-stage difficulty and bilingual design; Circular Evaluation (CE) resists option-order memorization; ACL 2024..
+
 
   In the atlas: MathBench is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: OpenCompass / Shanghai AI Lab
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  OpenCompass / Shanghai AI Lab (CN-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'OpenCompass / Shanghai AI Lab (CN-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - big-bench
-  - gpqa
-  - lm-evaluation-harness
-  - math
-  - mmlu-pro
-  - musr
-  - opencompass
+- big-bench
+- gpqa
+- lm-evaluation-harness
+- math
+- mmlu-pro
+- musr
+- opencompass
+deployment_posture: local-first

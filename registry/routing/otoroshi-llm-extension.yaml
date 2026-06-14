@@ -25,3 +25,4 @@ adjacent_to:
 - ai-api
 - litellm
 - windsurfapi
+deployment_posture: local-first

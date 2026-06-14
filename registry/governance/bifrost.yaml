@@ -7,10 +7,10 @@ homepage: https://www.getmaxim.ai/bifrost
 license: Apache-2.0
 primary_language: Go
 tagline: Fastest enterprise AI gateway with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS.
-description: |-
-  Bifrost — Fastest enterprise AI gateway with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS. Upstream maintainer: Maxim AI (getmaxim.ai).
+description: 'Bifrost — Fastest enterprise AI gateway with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS. Upstream maintainer: Maxim AI (getmaxim.ai).
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: ga
 maintainer:
   type: company
@@ -23,18 +23,25 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: |-
-  Maxim AI (commercial company, homepage getmaxim.ai); OSS core is Apache-2.0 and the
+sovereignty_notes: 'Maxim AI (commercial company, homepage getmaxim.ai); OSS core is Apache-2.0 and the
+
   gateway is fully self-hostable in a single Go binary. Catalogued as governance because
+
   bifrost ships routing policy + guardrails + cluster-mode failover (partial policy_router
+
   coverage) on top of the routing primitives. The hosted Maxim AI evaluation product is a
+
   separate commercial offering; not required to run the gateway. Model-agnostic 4 — 1,000+
+
   upstream models claimed including local-weights backends. Curator-reviewed 2026-06-14:
+
   maintainer.type fixed `community` → `company`; origin_country set to IN (Maxim AI Indian
-  HQ per company website); tagline empty `()` cleaned; replaced auto-curated default note.
+
+  HQ per company website); tagline empty `()` cleaned; replaced auto-curated default note.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - aegisgate
 - ai-gateway
 - gateway
 - guardrails-ai
+deployment_posture: local-first

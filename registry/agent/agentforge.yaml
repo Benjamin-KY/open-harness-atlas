@@ -5,24 +5,28 @@ subcategory: single-agent
 repo_url: https://github.com/DataBassGit/AgentForge
 license: GPL-3.0
 primary_language: Python
-tagline: 'YAML-driven cognitive architecture builder with hot-reloadable agent configs and memory management'
-description: |
-  AgentForge is DataBassGit's yAML-driven cognitive architecture builder with hot-reloadable agent configs and memory management. YAML-first config: swap any component without code changes; built-in iteration/sub-task loops.
+tagline: YAML-driven cognitive architecture builder with hot-reloadable agent configs and memory management
+description: 'AgentForge is DataBassGit''s yAML-driven cognitive architecture builder with hot-reloadable agent configs and memory management. YAML-first config: swap any component without code changes; built-in iteration/sub-task loops.
+
 
   In the atlas: AgentForge is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: alpha
 maintainer:
   type: individual
   name: DataBassGit
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  DataBassGit (independent maintainer, US); OSS core is GPL-3.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'DataBassGit (independent maintainer, US); OSS core is GPL-3.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentgpt
-  - agixt
-  - babyagi
-  - eidolon
-  - fastagency
-  - superagi
+- agentgpt
+- agixt
+- babyagi
+- eidolon
+- fastagency
+- superagi
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - langgraph
 - langroid
 - learn-claude-code
+deployment_posture: local-first

@@ -23,3 +23,4 @@ adjacent_to:
 - guardrails-ai
 - llm-landscape
 - multilingual-llm-safety-bench
+deployment_posture: local-first

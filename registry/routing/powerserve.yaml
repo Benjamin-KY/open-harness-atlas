@@ -22,3 +22,4 @@ adjacent_to:
 - litellm
 - rtp-llm
 - serverlessllm
+deployment_posture: cloud-first

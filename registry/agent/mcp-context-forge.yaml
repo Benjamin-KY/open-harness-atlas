@@ -25,3 +25,4 @@ adjacent_to:
 - mcphub-nvim
 - unity-mcp
 - xcodebuildmcp
+deployment_posture: local-first

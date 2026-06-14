@@ -24,3 +24,4 @@ adjacent_to:
 - deepcode
 - deepseek-reasonix
 - langgraph
+deployment_posture: local-first

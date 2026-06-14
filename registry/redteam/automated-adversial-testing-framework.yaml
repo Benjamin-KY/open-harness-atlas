@@ -6,10 +6,10 @@ repo_url: https://github.com/A-Kuo/Automated-Adversial-Testing-Framework
 license: MIT
 primary_language: Python
 tagline: Automated adversarial testing for LLMs with EU AI Act compliance-ready reports.
-description: |-
-  Automated Adversial Testing Framework — Automated adversarial testing for LLMs with EU AI Act compliance-ready reports. Extends AI-Safety-Benchmarking-RedTeam-Framework into a production API. Upstream maintainer: A-Kuo.
+description: 'Automated Adversial Testing Framework — Automated adversarial testing for LLMs with EU AI Act compliance-ready reports. Extends AI-Safety-Benchmarking-RedTeam-Framework into a production API. Upstream maintainer: A-Kuo.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
@@ -24,3 +24,4 @@ adjacent_to:
 - llm-prompt-injection-tester
 - llm-watermark-robustness
 - pyrit
+deployment_posture: local-first

@@ -27,3 +27,4 @@ education_resources:
   url: https://github.com/alekhakumarswain/AI-SECURITY-LABS
   type: tutorial
   free: true
+deployment_posture: local-only

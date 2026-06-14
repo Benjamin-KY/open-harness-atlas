@@ -27,3 +27,4 @@ education_resources:
   url: https://github.com/tmgthb/Autonomous-Agents
   type: paper
   free: true
+deployment_posture: local-only

@@ -5,22 +5,26 @@ subcategory: tool-augmented-llm
 repo_url: https://github.com/OpenBMB/BMTools
 license: Apache-2.0
 primary_language: Python
-tagline: 'Community platform for extending LLMs with tools via Python functions or ChatGPT plugin format; precursor to XAgent and ToolBench'
-description: |
-  BMTools is OpenBMB (Tsinghua / THUNLP)'s community platform for extending LLMs with tools via Python functions or ChatGPT plugin format; precursor to XAgent and ToolBench. Easy tool-building via decorators; ChatGPT Plugin compatible; multi-tool recursive reasoning; historically significant as open-source ChatGPT plugin equivalent..
+tagline: Community platform for extending LLMs with tools via Python functions or ChatGPT plugin format; precursor to XAgent and ToolBench
+description: 'BMTools is OpenBMB (Tsinghua / THUNLP)''s community platform for extending LLMs with tools via Python functions or ChatGPT plugin format; precursor to XAgent and ToolBench. Easy tool-building via decorators; ChatGPT Plugin compatible; multi-tool recursive reasoning; historically significant as open-source ChatGPT plugin equivalent..
+
 
   In the atlas: BMTools is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: OpenBMB (Tsinghua / THUNLP)
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  OpenBMB (Tsinghua / THUNLP) (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'OpenBMB (Tsinghua / THUNLP) (CN-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - gorilla-api-llm
-  - hugginggpt-jarvis
-  - toolbench
-  - toolbench-tool-learning
+- gorilla-api-llm
+- hugginggpt-jarvis
+- toolbench
+- toolbench-tool-learning
+deployment_posture: local-first

@@ -7,39 +7,63 @@ homepage: https://adalflow.sylph.ai/
 license: MIT
 primary_language: Python
 tagline: PyTorch-style auto-optimising framework for LLM and RAG pipelines — define a typed component graph, get gradient-free prompt/parameter tuning over it.
-description: |
-  AdalFlow is a Python framework that builds LLM applications as a
+description: 'AdalFlow is a Python framework that builds LLM applications as a
+
   PyTorch-style typed component graph (`Generator`, `Retriever`,
+
   `Embedder`, `Tool`) and then offers automatic optimisation over
+
   that graph using textual-gradient and few-shot bootstrapping
+
   techniques (a generalisation of the TextGrad / DSPy paradigm).
+
   The same primitives compose into single-turn LLM apps, RAG
+
   pipelines, and ReAct-style tool-using agents — the differentiator
+
   is that the framework treats the prompt and few-shot examples as
+
   optimisable "parameters" the way PyTorch treats weights.
 
+
   In the atlas: AdalFlow is the **typed-graph + auto-optimiser**
+
   subcategory point in the agent space, adjacent to DSPy in spirit
+
   but with a PyTorch-style ergonomics that map well to teams
+
   already familiar with deep-learning frameworks. The auto-tuning
+
   loop is the harness-level mechanism by which §3 prompt-composer
+
   contracts and §4 output-contract specs can be improved against a
+
   held-out eval set without manual prompt rewriting.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: SylphAI, Inc.
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  SylphAI is US-incorporated; AdalFlow is MIT-licensed and fully
+sovereignty_notes: 'SylphAI is US-incorporated; AdalFlow is MIT-licensed and fully
+
   self-hostable. Multi-provider on both the LLM side
+
   (OpenAI / Anthropic / Google / Groq / Together / Ollama /
+
   vLLM / OpenAI-compatible endpoints) and the embedding side
+
   (OpenAI / Cohere / HF / Ollama). No call-home by default. The
+
   auto-optimisation loop is local — it issues training-call traffic
+
   against whichever provider the operator configures.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - smolagents
-  - textgrad
+- smolagents
+- textgrad
+deployment_posture: local-first

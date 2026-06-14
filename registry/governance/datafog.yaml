@@ -5,11 +5,13 @@ subcategory: pii-redaction
 repo_url: https://github.com/DataFog/datafog-python
 license: MIT
 primary_language: Python
-tagline: 'Lightweight PII detection and redaction library with regex, spaCy NER, and GLiNER engines plus LLM guardrail decorators'
-description: |
-  DataFog is DataFog Inc.'s lightweight PII detection and redaction library with regex, spaCy NER, and GLiNER engines plus LLM guardrail decorators. Provides scan_prompt() / filter_output() / create_guardrail() decorators purpose-built for LLM pipelines; multi-engine cascade (regex→spaCy→GLiNER); German locale structured PII (VAT, IBAN, tax ID) not in presidio defaults; Spark distributed surface for batch workloads..
+tagline: Lightweight PII detection and redaction library with regex, spaCy NER, and GLiNER engines plus LLM guardrail decorators
+description: 'DataFog is DataFog Inc.''s lightweight PII detection and redaction library with regex, spaCy NER, and GLiNER engines plus LLM guardrail decorators. Provides scan_prompt() / filter_output() / create_guardrail() decorators purpose-built for LLM pipelines; multi-engine cascade (regex→spaCy→GLiNER); German locale structured PII (VAT, IBAN, tax ID) not in presidio defaults; Spark distributed surface for batch workloads..
+
 
   In the atlas: DataFog is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -22,6 +24,8 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: |
-  DataFog Inc. (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'DataFog Inc. (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
+deployment_posture: local-first

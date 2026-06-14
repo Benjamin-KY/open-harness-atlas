@@ -28,3 +28,4 @@ education_resources:
   url: https://github.com/pguso/ai-agents-from-scratch
   type: tutorial
   free: true
+deployment_posture: local-only

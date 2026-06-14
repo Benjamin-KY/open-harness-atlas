@@ -30,3 +30,4 @@ education_resources:
   url: https://github.com/fcakyon/content-moderation-deep-learning
   type: video
   free: true
+deployment_posture: local-only

@@ -24,3 +24,4 @@ adjacent_to:
 - leva
 - litmus
 - lm-evaluation-harness
+deployment_posture: local-first

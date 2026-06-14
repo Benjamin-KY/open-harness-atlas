@@ -5,22 +5,26 @@ subcategory: adversarial-examples-benchmark
 repo_url: https://github.com/cleverhans-lab/cleverhans
 license: MIT
 primary_language: Python
-tagline: 'Seminal adversarial-example benchmark library supporting JAX, PyTorch, TF2; FGSM, PGD, C&W, and more for vision + NLP robustness testing'
-description: |
-  CleverHans is Google Brain / OpenAI / Penn State (original); community since's seminal adversarial-example benchmark library supporting JAX, PyTorch, TF2; FGSM, PGD, C&W, and more for vision + NLP robustness testing. Oldest widely-cited adversarial ML library; JAX/PyTorch/TF2 support v4.0; reference implementations for evaluating model robustness under gradient attacks..
+tagline: Seminal adversarial-example benchmark library supporting JAX, PyTorch, TF2; FGSM, PGD, C&W, and more for vision + NLP robustness testing
+description: 'CleverHans is Google Brain / OpenAI / Penn State (original); community since''s seminal adversarial-example benchmark library supporting JAX, PyTorch, TF2; FGSM, PGD, C&W, and more for vision + NLP robustness testing. Oldest widely-cited adversarial ML library; JAX/PyTorch/TF2 support v4.0; reference implementations for evaluating model robustness under gradient attacks..
+
 
   In the atlas: CleverHans is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Google Brain / OpenAI / Penn State (original); community since
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Google Brain / OpenAI / Penn State (original); community since (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Google Brain / OpenAI / Penn State (original); community since (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - harmbench
-  - openattack
-  - promptbench
-  - textattack
+- harmbench
+- openattack
+- promptbench
+- textattack
+deployment_posture: local-only

@@ -5,11 +5,13 @@ subcategory: practitioner-guides
 repo_url: https://github.com/mlabonne/llm-course
 license: Apache-2.0
 primary_language: Markdown
-tagline: 'Three-part roadmap (fundamentals -> LLM Scientist -> LLM Engineer) with curated Colab notebooks'
-description: |
-  LLM Course is Maxime Labonne's three-part roadmap (fundamentals -> LLM Scientist -> LLM Engineer) with curated Colab notebooks. Visual roadmap linking 100+ Colab notebooks; quantization, RLHF, RAG, deployment.
+tagline: Three-part roadmap (fundamentals -> LLM Scientist -> LLM Engineer) with curated Colab notebooks
+description: 'LLM Course is Maxime Labonne''s three-part roadmap (fundamentals -> LLM Scientist -> LLM Engineer) with curated Colab notebooks. Visual roadmap linking 100+ Colab notebooks; quantization, RLHF, RAG, deployment.
+
 
   In the atlas: LLM Course is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: community
@@ -17,16 +19,18 @@ maintainer:
 origin_country: FR
 model_agnostic_score: 5
 education_resources:
-  - title: LLM Course — source repository
-    url: https://github.com/mlabonne/llm-course
-    type: course
-    free: true
-sovereignty_notes: |
-  Maxime Labonne (community-maintained, FR); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: LLM Course — source repository
+  url: https://github.com/mlabonne/llm-course
+  type: course
+  free: true
+sovereignty_notes: 'Maxime Labonne (community-maintained, FR); OSS core is Apache-2.0 and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - hf-nlp-course
-  - hf-smol-course
-  - llm-notebooks-course
-  - ms-generative-ai-for-beginners
-  - stanford-cs336
+- hf-nlp-course
+- hf-smol-course
+- llm-notebooks-course
+- ms-generative-ai-for-beginners
+- stanford-cs336
+deployment_posture: local-only

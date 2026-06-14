@@ -23,3 +23,4 @@ adjacent_to:
 - lm-evaluation-harness
 - nexa-gauge
 - parea-sdk-py
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - eliza
 - embabel-agent
 - langgraph
+deployment_posture: local-only

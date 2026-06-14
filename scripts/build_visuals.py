@@ -45,6 +45,23 @@ CATEGORY_COLOUR = {
 SPECTRUM_FILE = VISUALS_DIR / "model-agnostic-spectrum.svg"
 HERO_FILE = VISUALS_DIR / "hero.svg"
 OVERLAY_FILE = VISUALS_DIR / "five-component-overlay.svg"
+POSTURE_FILE = VISUALS_DIR / "deployment-posture.svg"
+
+POSTURE_ORDER = ["local-only", "local-first", "hybrid", "cloud-first", "api-only"]
+POSTURE_COLOUR = {
+    "local-only":  "#1f8a70",
+    "local-first": "#86b8b1",
+    "hybrid":      "#c9b08c",
+    "cloud-first": "#9cb8dd",
+    "api-only":    "#5b7fc7",
+}
+POSTURE_LABEL = {
+    "local-only":  "Local only",
+    "local-first": "Local first",
+    "hybrid":      "Hybrid",
+    "cloud-first": "Cloud first",
+    "api-only":    "API only",
+}
 
 # ---------------------------------------------------------------------------
 # Hero banner — curator-vetted landmark picks per category.
@@ -798,6 +815,170 @@ def _xml_escape(text: str) -> str:
     )
 
 
+def _build_deployment_posture() -> str:
+    """Per-category stacked horizontal bar chart of deployment posture.
+
+    Reads ``deployment_posture`` from every registry YAML and renders six
+    horizontal bars (one per category) showing the five-posture mix
+    (``local-only`` -> ``api-only``). Plus a top-row total bar and a
+    posture-legend block.
+    """
+    import collections
+
+    by_cat: dict[str, collections.Counter] = {
+        cat: collections.Counter() for cat in CATEGORY_ORDER
+    }
+    for cat in CATEGORY_ORDER:
+        for entry in _iter_yaml(cat):
+            posture = entry.get("deployment_posture") or "unknown"
+            if posture in POSTURE_ORDER:
+                by_cat[cat][posture] += 1
+    totals = collections.Counter()
+    for c in by_cat.values():
+        totals.update(c)
+    grand_total = sum(totals.values())
+
+    if grand_total == 0:
+        return _empty_svg("deployment-posture — no entries to plot")
+
+    W, H = 1200, 720
+    parts: list[str] = []
+    parts.append(
+        f'<?xml version="1.0" encoding="UTF-8"?>\n'
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
+        f'role="img" aria-labelledby="title desc">'
+    )
+    parts.append(
+        '<title id="title">Deployment posture across the open-harness-atlas registry</title>'
+    )
+    parts.append(
+        '<desc id="desc">A stacked horizontal bar chart per category showing how '
+        f'{grand_total} open-source harnesses split across five deployment postures '
+        '(local-only, local-first, hybrid, cloud-first, api-only). Local-only is air-gappable; '
+        'local-first means docker compose up works out of the box; hybrid requires both '
+        'local and cloud at runtime by design; cloud-first means SaaS is the primary path; '
+        'api-only means no local path exists.</desc>'
+    )
+    parts.append(
+        '<style>'
+        '.body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}'
+        '.title{font-size:20px;font-weight:700;fill:#1f3a5f;}'
+        '.sub{font-size:12px;font-weight:400;fill:#4a5d75;}'
+        '.h2{font-size:14px;font-weight:600;fill:#1f3a5f;}'
+        '.cat-label{font-size:13px;font-weight:600;fill:#1f3a5f;text-anchor:end;}'
+        '.cat-count{font-size:11px;fill:#6b7a8c;text-anchor:start;}'
+        '.seg-label{font-size:11px;font-weight:700;fill:#ffffff;text-anchor:middle;dominant-baseline:central;}'
+        '.seg-label-dark{font-size:11px;font-weight:700;fill:#1f3a5f;text-anchor:middle;dominant-baseline:central;}'
+        '.legend-text{font-size:12px;fill:#1f3a5f;}'
+        '.legend-hint{font-size:10px;fill:#6b7a8c;}'
+        '.footer{font-size:10px;fill:#6b7a8c;text-anchor:middle;}'
+        '</style>'
+    )
+    parts.append(f'<rect width="{W}" height="{H}" fill="#ffffff"/>')
+
+    parts.append('<text x="40" y="38" class="body title">Deployment posture</text>')
+    parts.append(
+        f'<text x="40" y="58" class="body sub">'
+        f'Where does it run? {grand_total} open-source harnesses split across five postures. '
+        'Heuristic + 3-model ensemble curation (claude-sonnet-4.5 + claude-opus-4.7-xhigh + gpt-5.4).'
+        '</text>'
+    )
+
+    # ---------------------------------------------------------------
+    # Top: total bar
+    # ---------------------------------------------------------------
+    x_left, x_right = 200, 1160
+    bar_w = x_right - x_left
+
+    def _stacked(y: int, counts: collections.Counter, total: int, height: int = 36):
+        cx = x_left
+        for posture in POSTURE_ORDER:
+            n = counts.get(posture, 0)
+            if n == 0:
+                continue
+            seg_w = bar_w * n / total
+            parts.append(
+                f'<rect x="{cx:.2f}" y="{y}" width="{seg_w:.2f}" height="{height}" '
+                f'fill="{POSTURE_COLOUR[posture]}" />'
+            )
+            if seg_w >= 28:
+                # Use dark text on the pale hybrid/local-first segments for AA contrast.
+                cls = "seg-label-dark" if posture in ("local-first", "hybrid", "cloud-first") else "seg-label"
+                parts.append(
+                    f'<text x="{cx + seg_w / 2:.2f}" y="{y + height / 2:.2f}" '
+                    f'class="body {cls}">{n}</text>'
+                )
+            cx += seg_w
+
+    # All-categories total bar
+    y_total = 100
+    parts.append(f'<text x="40" y="{y_total + 14}" class="body h2">All entries</text>')
+    parts.append(
+        f'<text x="40" y="{y_total + 32}" class="body cat-count" text-anchor="start">'
+        f'{grand_total} total</text>'
+    )
+    _stacked(y_total, totals, grand_total, height=42)
+
+    # ---------------------------------------------------------------
+    # Per-category rows
+    # ---------------------------------------------------------------
+    y_first = 200
+    row_h, gap = 56, 18
+    label_x = 190
+    for i, cat in enumerate(CATEGORY_ORDER):
+        y = y_first + i * (row_h + gap)
+        counts = by_cat[cat]
+        total = sum(counts.values())
+        if total == 0:
+            continue
+        parts.append(
+            f'<text x="{label_x}" y="{y + 18}" class="body cat-label">{cat}</text>'
+        )
+        parts.append(
+            f'<text x="{label_x}" y="{y + 36}" class="body cat-count" text-anchor="end">'
+            f'(n={total})</text>'
+        )
+        _stacked(y, counts, total, height=36)
+
+    # ---------------------------------------------------------------
+    # Bottom legend
+    # ---------------------------------------------------------------
+    y_legend = y_first + len(CATEGORY_ORDER) * (row_h + gap) + 12
+    legend_x = 40
+    cell_w = 232
+    hints = {
+        "local-only":  "air-gappable",
+        "local-first": "self-host is the default",
+        "hybrid":      "needs both at runtime",
+        "cloud-first": "SaaS is the primary path",
+        "api-only":    "no local path exists",
+    }
+    for i, posture in enumerate(POSTURE_ORDER):
+        cx = legend_x + i * cell_w
+        parts.append(
+            f'<rect x="{cx}" y="{y_legend}" width="14" height="14" '
+            f'rx="2" fill="{POSTURE_COLOUR[posture]}"/>'
+        )
+        parts.append(
+            f'<text x="{cx + 22}" y="{y_legend + 11}" class="body legend-text">'
+            f'{POSTURE_LABEL[posture]}</text>'
+        )
+        parts.append(
+            f'<text x="{cx + 22}" y="{y_legend + 27}" class="body legend-hint">'
+            f'{hints[posture]}</text>'
+        )
+
+    parts.append(
+        f'<text x="{W // 2}" y="{H - 14}" class="body footer">'
+        f'CC BY-SA 4.0 \u2014 open-harness-atlas \u00b7 '
+        f'generated by scripts/build_visuals.py::_build_deployment_posture'
+        f'</text>'
+    )
+
+    parts.append('</svg>\n')
+    return "\n".join(parts)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -811,6 +992,8 @@ def main(argv: list[str] | None = None) -> int:
                         help="Do not rebuild hero.svg.")
     parser.add_argument("--skip-overlay", action="store_true",
                         help="Do not rebuild five-component-overlay.svg.")
+    parser.add_argument("--skip-posture", action="store_true",
+                        help="Do not rebuild deployment-posture.svg.")
     args = parser.parse_args(argv)
 
     VISUALS_DIR.mkdir(parents=True, exist_ok=True)
@@ -848,6 +1031,17 @@ def main(argv: list[str] | None = None) -> int:
         else:
             OVERLAY_FILE.write_text(rendered, encoding="utf-8")
             print(f"wrote {OVERLAY_FILE.relative_to(REPO_ROOT)}")
+
+    if not args.skip_posture:
+        rendered = _build_deployment_posture()
+        if args.check:
+            existing = POSTURE_FILE.read_text(encoding="utf-8") if POSTURE_FILE.exists() else ""
+            if existing != rendered:
+                sys.stderr.write(f"DRIFT: {POSTURE_FILE.relative_to(REPO_ROOT)}\n")
+                drift = True
+        else:
+            POSTURE_FILE.write_text(rendered, encoding="utf-8")
+            print(f"wrote {POSTURE_FILE.relative_to(REPO_ROOT)}")
 
     return 1 if drift else 0
 

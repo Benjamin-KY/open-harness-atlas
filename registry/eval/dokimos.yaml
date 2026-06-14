@@ -24,3 +24,4 @@ adjacent_to:
 - pandaprobe
 - sral-framework
 - statebind-guard
+deployment_posture: local-first

@@ -31,3 +31,4 @@ adjacent_to:
 - guardrails-ai
 - swing-skills
 - trustloopguard
+deployment_posture: local-first

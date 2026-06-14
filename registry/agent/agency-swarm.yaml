@@ -5,20 +5,24 @@ subcategory: multi-agent
 repo_url: https://github.com/VRSEN/agency-swarm
 license: MIT
 primary_language: Python
-tagline: 'Role-based multi-agent system extending OpenAI Agents SDK with org-chart communication protocols'
-description: |
-  Agency Swarm is VRSEN's role-based multi-agent system extending OpenAI Agents SDK with org-chart communication protocols. Explicit agency communication graph (like org chart); custom tool validation.
+tagline: Role-based multi-agent system extending OpenAI Agents SDK with org-chart communication protocols
+description: 'Agency Swarm is VRSEN''s role-based multi-agent system extending OpenAI Agents SDK with org-chart communication protocols. Explicit agency communication graph (like org chart); custom tool validation.
+
 
   In the atlas: Agency Swarm is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: individual
   name: VRSEN
 origin_country: UA
 model_agnostic_score: 4
-sovereignty_notes: |
-  VRSEN (independent maintainer, UA); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'VRSEN (independent maintainer, UA); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ag2
-  - autogen
+- ag2
+- autogen
+deployment_posture: local-first

@@ -5,11 +5,13 @@ subcategory: output-contract
 repo_url: https://github.com/dottxt-ai/outlines
 license: Apache-2.0
 primary_language: Python
-tagline: 'Guaranteed structured generation via FSM-guided token masking; enforces regex, JSON Schema, Pydantic, CFG output contracts'
-description: |
-  Outlines is dottxt's guaranteed structured generation via FSM-guided token masking; enforces regex, JSON Schema, Pydantic, CFG output contracts. Mathematically guarantees every token is structurally valid; no added model latency.
+tagline: Guaranteed structured generation via FSM-guided token masking; enforces regex, JSON Schema, Pydantic, CFG output contracts
+description: 'Outlines is dottxt''s guaranteed structured generation via FSM-guided token masking; enforces regex, JSON Schema, Pydantic, CFG output contracts. Mathematically guarantees every token is structurally valid; no added model latency.
+
 
   In the atlas: Outlines is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -22,21 +24,23 @@ five_component_coverage:
   prompt_composer: partial
   output_contract: native
   audit_log_fsm: none
-sovereignty_notes: |
-  dottxt (FR-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'dottxt (FR-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - baml
-  - dspy
-  - funcchain
-  - guidance
-  - instructor
-  - jsonformer
-  - lm-format-enforcer
-  - lmql
-  - magentic
-  - marvin
-  - mirascope
-  - taskweaver
-  - typechat
-  - xgrammar
+- baml
+- dspy
+- funcchain
+- guidance
+- instructor
+- jsonformer
+- lm-format-enforcer
+- lmql
+- magentic
+- marvin
+- mirascope
+- taskweaver
+- typechat
+- xgrammar
+deployment_posture: local-first

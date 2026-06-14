@@ -5,11 +5,13 @@ subcategory: practitioner-guides
 repo_url: https://github.com/dair-ai/Prompt-Engineering-Guide
 license: MIT
 primary_language: MDX
-tagline: 'Comprehensive reference + notebooks covering CoT, ToT, RAG, agents, and advanced prompting'
-description: |
-  Prompt Engineering Guide is DAIR.AI's comprehensive reference + notebooks covering CoT, ToT, RAG, agents, and advanced prompting. 3M+ learners; deepest academic citation of prompting techniques; 13 language translations.
+tagline: Comprehensive reference + notebooks covering CoT, ToT, RAG, agents, and advanced prompting
+description: 'Prompt Engineering Guide is DAIR.AI''s comprehensive reference + notebooks covering CoT, ToT, RAG, agents, and advanced prompting. 3M+ learners; deepest academic citation of prompting techniques; 13 language translations.
+
 
   In the atlas: Prompt Engineering Guide is a free education entry. The catalog tracks free OSS learning material so the skill of operating model-agnostic stacks remains accessible regardless of vendor curriculum availability.
+
+  '
 maturity: ga
 maintainer:
   type: community
@@ -17,13 +19,15 @@ maintainer:
 origin_country: null
 model_agnostic_score: 5
 education_resources:
-  - title: Prompt Engineering Guide — source repository
-    url: https://github.com/dair-ai/Prompt-Engineering-Guide
-    type: course
-    free: true
-sovereignty_notes: |
-  DAIR.AI (community-maintained, multi-country); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+- title: Prompt Engineering Guide — source repository
+  url: https://github.com/dair-ai/Prompt-Engineering-Guide
+  type: course
+  free: true
+sovereignty_notes: 'DAIR.AI (community-maintained, multi-country); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - anthropic-prompt-eng-tutorial
-  - learn-prompting
+- anthropic-prompt-eng-tutorial
+- learn-prompting
+deployment_posture: local-only

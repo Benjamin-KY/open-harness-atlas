@@ -30,3 +30,4 @@ education_resources:
   url: https://github.com/sickn33/antigravity-awesome-skills
   type: docs
   free: true
+deployment_posture: local-only

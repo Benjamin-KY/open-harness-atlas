@@ -25,3 +25,4 @@ adjacent_to:
 - agentkernelarena
 - lm-evaluation-harness
 - trellm
+deployment_posture: local-first

@@ -30,3 +30,4 @@ education_resources:
   url: https://github.com/emmanuelgjr/GenAI-Security-Literature-Review
   type: paper
   free: true
+deployment_posture: local-only

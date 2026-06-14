@@ -24,3 +24,4 @@ adjacent_to:
 - hermes-agent
 - hermes-webui
 - langgraph
+deployment_posture: local-first

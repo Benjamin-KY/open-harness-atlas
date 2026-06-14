@@ -23,3 +23,4 @@ adjacent_to:
 - ai-seclists
 - anvil
 - pyrit
+deployment_posture: hybrid

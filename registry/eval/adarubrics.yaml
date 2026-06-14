@@ -24,3 +24,4 @@ adjacent_to:
 - agentrial
 - ai-agents-reality-check
 - lm-evaluation-harness
+deployment_posture: local-first

@@ -5,30 +5,34 @@ subcategory: prompt-injection-scanner
 repo_url: https://github.com/liu00222/Open-Prompt-Injection
 license: MIT
 primary_language: Python
-tagline: 'Toolkit to evaluate prompt injection attack success + defenses; includes DataSentinel detection and PromptLocate localisation'
-description: |
-  Open-Prompt-Injection is Yupei Liu et al. (Duke/Neil Gong Lab)'s toolkit to evaluate prompt injection attack success + defenses; includes DataSentinel detection and PromptLocate localisation. USENIX Security 2024; ASV metric; full detection + localisation pipeline.
+tagline: Toolkit to evaluate prompt injection attack success + defenses; includes DataSentinel detection and PromptLocate localisation
+description: 'Open-Prompt-Injection is Yupei Liu et al. (Duke/Neil Gong Lab)''s toolkit to evaluate prompt injection attack success + defenses; includes DataSentinel detection and PromptLocate localisation. USENIX Security 2024; ASV metric; full detection + localisation pipeline.
+
 
   In the atlas: Open-Prompt-Injection is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Yupei Liu et al. (Duke/Neil Gong Lab)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Yupei Liu et al. (Duke/Neil Gong Lab) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Yupei Liu et al. (Duke/Neil Gong Lab) (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agent-attack
-  - agentdojo
-  - agentic-radar
-  - bipia
-  - mimir
-  - pint-benchmark
-  - promptinject
-  - promptmap
-  - ps-fuzz
-  - r-judge
-  - rebuff
-  - toolemu
+- agent-attack
+- agentdojo
+- agentic-radar
+- bipia
+- mimir
+- pint-benchmark
+- promptinject
+- promptmap
+- ps-fuzz
+- r-judge
+- rebuff
+- toolemu
+deployment_posture: local-first

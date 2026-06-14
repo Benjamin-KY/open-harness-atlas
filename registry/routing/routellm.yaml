@@ -7,20 +7,32 @@ homepage: https://lmsys.org/blog/2024-07-01-routellm/
 license: Apache-2.0
 primary_language: Python
 tagline: Open framework for serving and evaluating LLM routers that direct queries to strong or weak models based on predicted quality.
-description: |
-  RouteLLM is an Apache-2.0 framework from LMSYS for serving and
+description: 'RouteLLM is an Apache-2.0 framework from LMSYS for serving and
+
   evaluating **LLM routers** — components that direct each incoming
+
   query to either a strong (expensive) or weak (cheap) model based on
+
   predicted quality. The framework ships several pre-trained routers
+
   (causal LLM, BERT, matrix factorization, similarity-weighted), a
+
   benchmark suite against MT-Bench and MMLU, and an
+
   OpenAI-compatible serving endpoint.
 
+
   In the atlas: RouteLLM is the canonical **cost-quality router**. It
+
   composes cleanly above LiteLLM (RouteLLM picks the model tier,
+
   LiteLLM dispatches it) and is the cleanest demonstration that
+
   model-tier choice can be a deterministic, evaluable component
+
   rather than a hard-coded `model:` parameter.
+
+  '
 maturity: beta
 maintainer:
   type: institution
@@ -28,28 +40,34 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: RouteLLM — Blog announcement
-    url: https://lmsys.org/blog/2024-07-01-routellm/
-    type: docs
-    free: true
-  - title: RouteLLM — Paper
-    url: https://arxiv.org/abs/2406.18665
-    type: paper
-    free: true
-sovereignty_notes: |
-  LMSYS Org (academic / Berkeley), Apache-2.0, fully self-hostable.
+- title: RouteLLM — Blog announcement
+  url: https://lmsys.org/blog/2024-07-01-routellm/
+  type: docs
+  free: true
+- title: RouteLLM — Paper
+  url: https://arxiv.org/abs/2406.18665
+  type: paper
+  free: true
+sovereignty_notes: 'LMSYS Org (academic / Berkeley), Apache-2.0, fully self-hostable.
+
   Routers themselves are trained classifiers that run locally; the
+
   backend models are pluggable via LiteLLM or direct adapters, so any
+
   combination of local / commercial backends can be the strong / weak
+
   pair. Model-agnostic 5 — provider on both tiers is a config string.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - aisuite
-  - fastchat
-  - helicone
-  - litellm
-  - mlflow-ai-gateway
-  - new-api
-  - one-api
-  - portkey-gateway
-  - simonw-llm
+- aisuite
+- fastchat
+- helicone
+- litellm
+- mlflow-ai-gateway
+- new-api
+- one-api
+- portkey-gateway
+- simonw-llm
+deployment_posture: local-first

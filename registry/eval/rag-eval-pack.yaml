@@ -25,3 +25,4 @@ adjacent_to:
 - eval-ai-library
 - eval-resume
 - lm-evaluation-harness
+deployment_posture: local-first

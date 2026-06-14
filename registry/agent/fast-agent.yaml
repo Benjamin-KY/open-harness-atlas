@@ -25,3 +25,4 @@ adjacent_to:
 - tribe
 - trpc-agent-go
 - txtai
+deployment_posture: local-first

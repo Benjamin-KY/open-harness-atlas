@@ -29,3 +29,4 @@ education_resources:
   url: https://github.com/wonderstone843/journey-to-red-team
   type: tutorial
   free: true
+deployment_posture: local-only

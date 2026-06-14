@@ -31,3 +31,4 @@ adjacent_to:
 - guardrails-ai
 - sob
 - yaicli
+deployment_posture: local-first

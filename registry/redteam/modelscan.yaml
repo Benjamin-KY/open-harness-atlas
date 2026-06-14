@@ -5,23 +5,27 @@ subcategory: model-supply-chain-scanner
 repo_url: https://github.com/protectai/modelscan
 license: Apache-2.0
 primary_language: Python
-tagline: 'Scans serialised ML model files (Pickle, PyTorch, H5, SavedModel) for malicious code injected during supply-chain attacks'
-description: |
-  ModelScan is Protect AI's scans serialised ML model files (Pickle, PyTorch, H5, SavedModel) for malicious code injected during supply-chain attacks. Only OSS tool supporting multi-format model scanning; signature-based without loading the model.
+tagline: Scans serialised ML model files (Pickle, PyTorch, H5, SavedModel) for malicious code injected during supply-chain attacks
+description: 'ModelScan is Protect AI''s scans serialised ML model files (Pickle, PyTorch, H5, SavedModel) for malicious code injected during supply-chain attacks. Only OSS tool supporting multi-format model scanning; signature-based without loading the model.
+
 
   In the atlas: ModelScan is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: Protect AI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Protect AI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Protect AI (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - backdoor-llm
-  - detect-pretrain-mink
-  - easyedit-knowledge-attacks
-  - garak
-  - purple-llama
+- backdoor-llm
+- detect-pretrain-mink
+- easyedit-knowledge-attacks
+- garak
+- purple-llama
+deployment_posture: local-only

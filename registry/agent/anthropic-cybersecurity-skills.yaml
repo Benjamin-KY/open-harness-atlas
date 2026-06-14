@@ -25,3 +25,4 @@ adjacent_to:
 - lightagent
 - maibot
 - mcp-agent
+deployment_posture: local-only

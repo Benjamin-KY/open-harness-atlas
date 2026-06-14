@@ -71,6 +71,12 @@ independently so a reader can see the *shape* of an entry's posture.
   only, never *winners*.
 - **Maintainer organisation type or nationality.** Both are recorded
   for transparency and excluded from scoring per §0.
+- **Deployment posture** (`local-only`, `local-first`, `hybrid`,
+  `cloud-first`, `api-only`) is a separate **first-class dimension**
+  with its own rubric — see
+  [`docs/deployment-posture.md`](deployment-posture.md). MAS asks
+  "can I swap the model?"; posture asks "where does the harness run?".
+  The two together describe the full sovereignty story.
 
 ---
 

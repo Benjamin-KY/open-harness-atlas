@@ -25,3 +25,4 @@ adjacent_to:
 - guessarena
 - htr
 - lm-evaluation-harness
+deployment_posture: cloud-first

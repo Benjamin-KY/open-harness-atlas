@@ -26,3 +26,4 @@ education_resources:
 adjacent_to:
 - deepbrief-lab
 - harmless-harnesses
+deployment_posture: local-only

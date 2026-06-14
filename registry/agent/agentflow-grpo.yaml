@@ -5,19 +5,23 @@ subcategory: multi-agent
 repo_url: https://github.com/lupantech/agentflow
 license: MIT
 primary_language: Python
-tagline: 'Trainable multi-agent framework with GRPO-based RL optimization across 4-stage agent pipeline'
-description: |
-  AgentFlow is Stanford research's trainable multi-agent framework with GRPO-based RL optimization across 4-stage agent pipeline. First framework to train multi-agent workflows end-to-end with flow-level GRPO.
+tagline: Trainable multi-agent framework with GRPO-based RL optimization across 4-stage agent pipeline
+description: 'AgentFlow is Stanford research''s trainable multi-agent framework with GRPO-based RL optimization across 4-stage agent pipeline. First framework to train multi-agent workflows end-to-end with flow-level GRPO.
+
 
   In the atlas: AgentFlow is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: alpha
 maintainer:
   type: institution
   name: Stanford research
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Stanford research (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Stanford research (US-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - aiwaves-agents
+- aiwaves-agents
+deployment_posture: local-first

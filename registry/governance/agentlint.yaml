@@ -31,3 +31,4 @@ adjacent_to:
 - fireagent
 - frai
 - guardrails-ai
+deployment_posture: local-first

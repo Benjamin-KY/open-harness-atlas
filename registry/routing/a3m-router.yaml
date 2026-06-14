@@ -25,3 +25,4 @@ adjacent_to:
 - bitrouter
 - edgee
 - litellm
+deployment_posture: local-first

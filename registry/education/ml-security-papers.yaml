@@ -28,3 +28,4 @@ education_resources:
   url: https://github.com/0xkadxr/ml-security-papers
   type: paper
   free: true
+deployment_posture: local-only

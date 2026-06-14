@@ -24,3 +24,4 @@ adjacent_to:
 - self-healing-rag
 - verdict
 - vietnamese-secretary-llm
+deployment_posture: local-first

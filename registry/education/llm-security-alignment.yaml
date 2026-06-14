@@ -28,3 +28,4 @@ education_resources:
   url: https://github.com/mohd-faizy/llm-security-alignment
   type: tutorial
   free: true
+deployment_posture: local-only

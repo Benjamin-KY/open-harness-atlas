@@ -29,3 +29,4 @@ adjacent_to:
 - awesome-llm-knowledge-systems
 - harmless-harnesses
 - langchain-multi-agent-example
+deployment_posture: local-only

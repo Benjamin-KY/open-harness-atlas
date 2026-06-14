@@ -6,10 +6,10 @@ repo_url: https://github.com/Albako/multiagent-ai-evaluator
 license: Apache-2.0
 primary_language: Python
 tagline: Multi-Agent architecture where a LLM acts as an evaluator inside Judge-Worker project.
-description: |-
-  Multiagent AI Evaluator — Multi-Agent architecture where a LLM acts as an evaluator inside Judge-Worker project. Upstream maintainer: Albako.
+description: 'Multiagent AI Evaluator — Multi-Agent architecture where a LLM acts as an evaluator inside Judge-Worker project. Upstream maintainer: Albako.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
@@ -24,3 +24,4 @@ adjacent_to:
 - research-sweeper
 - self-healing-rag
 - verdict
+deployment_posture: local-first

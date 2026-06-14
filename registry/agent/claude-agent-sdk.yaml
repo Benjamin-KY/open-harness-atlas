@@ -7,22 +7,36 @@ homepage: https://github.com/anthropics/claude-agent-sdk-python
 license: MIT
 primary_language: Python
 tagline: Anthropic's MIT-licensed agent SDK with declarative tool definitions and bounded agentic loops.
-description: |
-  Claude Agent SDK is Anthropic's MIT-licensed Python SDK for building
+description: 'Claude Agent SDK is Anthropic''s MIT-licensed Python SDK for building
+
   agentic loops on top of the Claude API. Tools are declared as
-  dict-based schemas (compatible with Anthropic's native tool-use
+
+  dict-based schemas (compatible with Anthropic''s native tool-use
+
   protocol), agents iterate model calls and tool executions until the
+
   model emits a final response, and streaming is supported via the
-  Anthropic SDK's `messages.stream()` interface.
+
+  Anthropic SDK''s `messages.stream()` interface.
+
 
   In the atlas: Claude Agent SDK is the **provider-native** reference
+
   for Anthropic-side development. The 2026-06-13 Fable / Mythos
+
   recall is a vivid demonstration of why an Anthropic-only agent loop
+
   is a sovereignty risk — the SDK is included here on technical merit,
+
   but operators are explicitly counselled (see
+
   [`docs/fable-mythos-pattern-fire.md`](../../docs/fable-mythos-pattern-fire.md))
+
   to wrap it in a routing layer (LiteLLM / RouteLLM) so the same
+
   agent code can target a non-Anthropic backend on short notice.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -30,24 +44,31 @@ maintainer:
 origin_country: US
 model_agnostic_score: 1
 education_resources:
-  - title: Anthropic — Tool use documentation
-    url: https://docs.anthropic.com/en/docs/build-with-claude/tool-use
-    type: docs
-    free: true
-sovereignty_notes: |
-  Anthropic-maintained, MIT-licensed, self-hostable as a Python package.
+- title: Anthropic — Tool use documentation
+  url: https://docs.anthropic.com/en/docs/build-with-claude/tool-use
+  type: docs
+  free: true
+sovereignty_notes: 'Anthropic-maintained, MIT-licensed, self-hostable as a Python package.
+
   The SDK itself is provider-locked to Anthropic Claude — `model_agnostic_score: 1`
+
   reflects this. Cross-provider use requires wrapping with a routing
+
   layer (LiteLLM, RouteLLM, Aisuite) or rewriting against a different
+
   agent SDK. The Fable / Mythos recall is the canonical worked example
+
   of why pinning to a single provider is a sovereignty risk.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - agno
-  - atomic-agents
-  - google-adk
-  - litellm
-  - openai-agents-sdk
-  - pydanticai
-  - smolagents
-  - strands
+- agno
+- atomic-agents
+- google-adk
+- litellm
+- openai-agents-sdk
+- pydanticai
+- smolagents
+- strands
+deployment_posture: api-only

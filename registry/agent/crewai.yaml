@@ -7,20 +7,32 @@ homepage: https://www.crewai.com/open-source
 license: MIT
 primary_language: Python
 tagline: Role-based multi-agent orchestration — Agents with goals and roles execute Tasks within a Crew.
-description: |
-  CrewAI models problems as a **Crew** of role-specialised **Agents**
+description: 'CrewAI models problems as a **Crew** of role-specialised **Agents**
+
   who execute **Tasks** in sequence or in parallel under a process
+
   manager. Each Agent has a role, goal, backstory, and tool set;
+
   Tasks are typed with expected_output and assigned to specific Agents.
+
   The Crew runs the orchestration loop, handles delegation, and
+
   composes the final output. It also ships **Flows** — deterministic
+
   state-machine workflows that can call into Crews when needed.
 
+
   In the atlas: CrewAI is the canonical example of a **role-based
+
   multi-agent** framework. The Crew/Task abstraction is useful when
+
   problems decompose into independent specialist sub-tasks. Like other
+
   agent frameworks, pair with a governance harness for output contracts
+
   and citation discipline.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -28,35 +40,42 @@ maintainer:
 origin_country: US
 model_agnostic_score: 3
 education_resources:
-  - title: CrewAI — Documentation
-    url: https://docs.crewai.com/
-    type: docs
-    free: true
-sovereignty_notes: |
-  US-incorporated company; OSS framework is MIT-licensed and
+- title: CrewAI — Documentation
+  url: https://docs.crewai.com/
+  type: docs
+  free: true
+sovereignty_notes: 'US-incorporated company; OSS framework is MIT-licensed and
+
   self-hostable. Multi-provider via the `Agent(llm=...)` config — most
+
   commonly OpenAI / Anthropic / Groq / Ollama via the `crewai[anthropic]`
+
   or LiteLLM-bridged adapters. Conservative model-agnostic 3 because
+
   default tutorials assume OpenAI and switching to a local backend
+
   requires explicit LLM-class wiring per agent.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - ag2
-  - agentlite-salesforce
-  - agentverse-openbmb
-  - autogen
-  - babyagi
-  - camel
-  - chatdev
-  - griptape-framework
-  - ix-autonomous-agent
-  - langgraph
-  - llmcompiler-parallel
-  - metagpt
-  - openagents-xlang
-  - openmanus
-  - praisonai
-  - rd-agent-microsoft
-  - smolagents
-  - superagi
-  - swarm-openai
+- ag2
+- agentlite-salesforce
+- agentverse-openbmb
+- autogen
+- babyagi
+- camel
+- chatdev
+- griptape-framework
+- ix-autonomous-agent
+- langgraph
+- llmcompiler-parallel
+- metagpt
+- openagents-xlang
+- openmanus
+- praisonai
+- rd-agent-microsoft
+- smolagents
+- superagi
+- swarm-openai
+deployment_posture: local-first

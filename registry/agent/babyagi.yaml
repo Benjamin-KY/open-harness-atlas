@@ -5,31 +5,35 @@ subcategory: planning
 repo_url: https://github.com/yoheinakajima/babyagi
 license: MIT
 primary_language: Python
-tagline: 'Self-building autonomous agent that stores function definitions and iteratively invents new tools'
-description: |
-  BabyAGI is yoheinakajima's self-building autonomous agent that stores function definitions and iteratively invents new tools. Pioneered task queue + memory pattern; v2 framework stores and executes its own code.
+tagline: Self-building autonomous agent that stores function definitions and iteratively invents new tools
+description: 'BabyAGI is yoheinakajima''s self-building autonomous agent that stores function definitions and iteratively invents new tools. Pioneered task queue + memory pattern; v2 framework stores and executes its own code.
+
 
   In the atlas: BabyAGI is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: alpha
 maintainer:
   type: individual
   name: yoheinakajima
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  yoheinakajima (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'yoheinakajima (independent maintainer, US); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentforge
-  - agentgpt
-  - agentlite-salesforce
-  - agixt
-  - autogen
-  - crewai
-  - griptape-framework
-  - ix-autonomous-agent
-  - langgraph
-  - llmcompiler-parallel
-  - metagpt
-  - rd-agent-microsoft
-  - superagi
+- agentforge
+- agentgpt
+- agentlite-salesforce
+- agixt
+- autogen
+- crewai
+- griptape-framework
+- ix-autonomous-agent
+- langgraph
+- llmcompiler-parallel
+- metagpt
+- rd-agent-microsoft
+- superagi
+deployment_posture: local-first

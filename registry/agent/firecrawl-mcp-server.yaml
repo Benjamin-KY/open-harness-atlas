@@ -7,25 +7,31 @@ homepage: https://firecrawl.dev
 license: MIT
 primary_language: JavaScript
 tagline: Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.
-description: |-
-  Firecrawl MCP Server — Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. Upstream maintainer: firecrawl.
+description: 'Firecrawl MCP Server — Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients. Upstream maintainer: firecrawl.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: Firecrawl
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: |-
-  Firecrawl Inc (US-incorporated commercial company); the MCP server itself is MIT-licensed,
-  but the default code path calls Firecrawl's commercial cloud API (api.firecrawl.dev) which
+sovereignty_notes: 'Firecrawl Inc (US-incorporated commercial company); the MCP server itself is MIT-licensed,
+
+  but the default code path calls Firecrawl''s commercial cloud API (api.firecrawl.dev) which
+
   requires an API key and is not OSS. A self-hostable Firecrawl backend exists
+
   (github.com/firecrawl/firecrawl, AGPLv3) and the MCP server accepts a custom base URL, so
+
   full self-sovereignty is possible but requires standing up the OSS Firecrawl service
+
   separately. Model-agnostic 3 — multi-provider via the MCP-client side; the scraping tier
+
   itself is provider-agnostic. Curator note (2026-06-14): catalogued because of the OSS
-  self-host path; defaults bias toward the commercial cloud API.
+
+  self-host path; defaults bias toward the commercial cloud API.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph
@@ -33,3 +39,4 @@ adjacent_to:
 - mcp-for-beginners
 - mcp-use
 - mcphub-nvim
+deployment_posture: local-first

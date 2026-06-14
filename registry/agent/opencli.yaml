@@ -7,10 +7,10 @@ homepage: https://opencli.info/
 license: Apache-2.0
 primary_language: JavaScript
 tagline: Make Any Website into CLI & Use your logged-in browser by AI agent.
-description: |-
-  Open CLI — Make Any Website into CLI & Use your logged-in browser by AI agent. Upstream maintainer: jackwener.
+description: 'Open CLI — Make Any Website into CLI & Use your logged-in browser by AI agent. Upstream maintainer: jackwener.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
@@ -25,3 +25,4 @@ adjacent_to:
 - ouroboros
 - page-agent
 - plandex
+deployment_posture: local-first

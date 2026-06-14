@@ -35,3 +35,4 @@ adjacent_to:
 - vllm
 - xgrammar
 - xinference
+deployment_posture: local-first

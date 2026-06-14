@@ -5,21 +5,25 @@ subcategory: computer-use
 repo_url: https://github.com/openinterpreter/openinterpreter
 license: Apache-2.0
 primary_language: Rust
-tagline: 'Terminal-native coding agent that executes code locally; rebuilt in Rust with pluggable harnesses'
-description: |
-  Open Interpreter is Open Interpreter Inc.'s terminal-native coding agent that executes code locally; rebuilt in Rust with pluggable harnesses. Rust core v0.4 with harness plug-in architecture; runs natively on device.
+tagline: Terminal-native coding agent that executes code locally; rebuilt in Rust with pluggable harnesses
+description: 'Open Interpreter is Open Interpreter Inc.''s terminal-native coding agent that executes code locally; rebuilt in Rust with pluggable harnesses. Rust core v0.4 with harness plug-in architecture; runs natively on device.
+
 
   In the atlas: Open Interpreter is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: beta
 maintainer:
   type: company
   name: Open Interpreter Inc.
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Open Interpreter Inc. (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Open Interpreter Inc. (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - mini-swe-agent
-  - openhands
-  - swe-agent
+- mini-swe-agent
+- openhands
+- swe-agent
+deployment_posture: local-first

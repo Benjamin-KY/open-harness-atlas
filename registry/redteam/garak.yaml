@@ -7,21 +7,34 @@ homepage: https://garak.ai/
 license: Apache-2.0
 primary_language: Python
 tagline: LLM vulnerability scanner — nmap for language models.
-description: |
-  garak is NVIDIA's Apache-2.0 LLM vulnerability scanner: an
+description: 'garak is NVIDIA''s Apache-2.0 LLM vulnerability scanner: an
+
   `nmap`-style probe-and-detector framework that targets a model
+
   with a battery of pre-defined probes (prompt injection, jailbreak,
+
   hallucination, toxicity, data leakage, encoding-based attacks,
+
   malware-generation, sensitive-info disclosure, and more) and
+
   reports findings against pluggable detectors. It includes 100+
+
   probes covering known attack families and integrates with
+
   Hugging Face, OpenAI, Replicate, Cohere, Anthropic, Ollama, and
+
   any OpenAI-compatible local backend.
 
+
   In the atlas: garak is the canonical **LLM vulnerability scanner**
+
   — the off-the-shelf scanner you point at a target to get a
+
   baseline finding inventory before doing targeted PyRIT work. The
+
   two compose: garak gives breadth, PyRIT gives depth.
+
+  '
 maturity: ga
 maintainer:
   type: company
@@ -29,29 +42,35 @@ maintainer:
 origin_country: US
 model_agnostic_score: 5
 education_resources:
-  - title: garak — Documentation
-    url: https://reference.garak.ai/
-    type: docs
-    free: true
-  - title: garak — Paper
-    url: https://arxiv.org/abs/2406.11036
-    type: paper
-    free: true
-sovereignty_notes: |
-  NVIDIA (US-incorporated company); Apache-2.0; runs entirely
+- title: garak — Documentation
+  url: https://reference.garak.ai/
+  type: docs
+  free: true
+- title: garak — Paper
+  url: https://arxiv.org/abs/2406.11036
+  type: paper
+  free: true
+sovereignty_notes: 'NVIDIA (US-incorporated company); Apache-2.0; runs entirely
+
   locally; supports any HTTP-reachable target including local
+
   Ollama / vLLM / llama.cpp. Model-agnostic 5 — the generator
+
   abstraction normalises across providers and the same probe runs
+
   against any target.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - art-toolkit
-  - easyjailbreak
-  - llm-guard
-  - modelscan
-  - plexiglass
-  - promptfoo
-  - promptmap
-  - purple-llama
-  - pyrit
-  - rebuff
+- art-toolkit
+- easyjailbreak
+- llm-guard
+- modelscan
+- plexiglass
+- promptfoo
+- promptmap
+- purple-llama
+- pyrit
+- rebuff
+deployment_posture: local-first

@@ -7,10 +7,10 @@ homepage: https://get-hermes.ai/
 license: MIT
 primary_language: Python
 tagline: 'Hermes WebUI: way to use Hermes Agent from the web or from your phone!'
-description: |-
-  Hermes Webui — Hermes WebUI: way to use Hermes Agent from the web or from your phone!. Upstream maintainer: nesquena.
+description: 'Hermes Webui — Hermes WebUI: way to use Hermes Agent from the web or from your phone!. Upstream maintainer: nesquena.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
@@ -25,3 +25,4 @@ adjacent_to:
 - oh-my-claudecode
 - oh-my-pi
 - open-design
+deployment_posture: local-first

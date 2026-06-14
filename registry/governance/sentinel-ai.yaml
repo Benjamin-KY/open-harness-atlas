@@ -31,3 +31,4 @@ adjacent_to:
 - swing-skills
 - trustloopguard
 - vibeguard
+deployment_posture: local-first

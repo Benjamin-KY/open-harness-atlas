@@ -21,3 +21,4 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - mm-plan
 - pyrit
+deployment_posture: local-first

@@ -29,3 +29,4 @@ adjacent_to:
 - guardrails-ai
 - pydantic-ai-shields
 - uqlm
+deployment_posture: hybrid

@@ -25,3 +25,4 @@ adjacent_to:
 - fara
 - langgraph
 - turix-cua
+deployment_posture: local-first

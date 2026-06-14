@@ -6,27 +6,31 @@ repo_url: https://github.com/griptape-ai/griptape
 license: Apache-2.0
 primary_language: Python
 tagline: 'Modular Python framework for genAI apps: Agents, Pipelines, Workflows; rich driver ecosystem for LLMs, vector stores, web scraping, observability'
-description: |
-  Griptape is Griptape AI (Foundry)'s modular Python framework for genAI apps: Agents, Pipelines, Workflows; rich driver ecosystem for LLMs, vector stores, web scraping, observability. Fully type-annotated (pyright); 20+ built-in tools; Griptape Nodes desktop visual builder; Codecov tested; active release cadence 2026..
+description: 'Griptape is Griptape AI (Foundry)''s modular Python framework for genAI apps: Agents, Pipelines, Workflows; rich driver ecosystem for LLMs, vector stores, web scraping, observability. Fully type-annotated (pyright); 20+ built-in tools; Griptape Nodes desktop visual builder; Codecov tested; active release cadence 2026..
+
 
   In the atlas: Griptape is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: company
   name: Griptape AI (Foundry)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Griptape AI (Foundry) (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Griptape AI (Foundry) (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - agentlite-salesforce
-  - autogen
-  - babyagi
-  - crewai
-  - ix-autonomous-agent
-  - langgraph
-  - llmcompiler-parallel
-  - metagpt
-  - rd-agent-microsoft
-  - superagi
+- agentlite-salesforce
+- autogen
+- babyagi
+- crewai
+- ix-autonomous-agent
+- langgraph
+- llmcompiler-parallel
+- metagpt
+- rd-agent-microsoft
+- superagi
+deployment_posture: local-first

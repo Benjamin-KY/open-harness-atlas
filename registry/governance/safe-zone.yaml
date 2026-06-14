@@ -31,3 +31,4 @@ adjacent_to:
 - sentinel-ai
 - shekel
 - suprawall
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - freellmpool
 - litellm
 - llm-router
+deployment_posture: local-first

@@ -31,3 +31,4 @@ adjacent_to:
 - jsonschema
 - mda
 - node-llama-cpp
+deployment_posture: local-first

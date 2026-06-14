@@ -24,3 +24,4 @@ adjacent_to:
 - neuroguard
 - openclaw-llm-bench
 - otter
+deployment_posture: local-first

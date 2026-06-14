@@ -24,3 +24,4 @@ adjacent_to:
 - nadirclaw
 - open-next-router
 - opencode-models-discovery
+deployment_posture: local-first

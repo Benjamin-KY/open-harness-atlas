@@ -24,3 +24,4 @@ adjacent_to:
 - openinfer
 - parallax
 - powerserve
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - figma-context-mcp
 - headroom
 - langgraph
+deployment_posture: local-first

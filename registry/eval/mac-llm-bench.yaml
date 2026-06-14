@@ -24,3 +24,4 @@ adjacent_to:
 - precisionmembench
 - scaffold-bench
 - seci
+deployment_posture: local-first

@@ -25,3 +25,4 @@ adjacent_to:
 - hive
 - holmesgpt
 - langgraph
+deployment_posture: local-first

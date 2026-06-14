@@ -33,3 +33,4 @@ adjacent_to:
 - tensorrt-llm
 - text-generation-webui
 - vllm
+deployment_posture: local-first

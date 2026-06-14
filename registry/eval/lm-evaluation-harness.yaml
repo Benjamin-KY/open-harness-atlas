@@ -7,21 +7,34 @@ homepage: https://www.eleuther.ai/projects/lm-evaluation-harness
 license: MIT
 primary_language: Python
 tagline: De facto academic standard for few-shot LLM benchmark evaluation across 200+ tasks.
-description: |
-  lm-evaluation-harness (often abbreviated `lm-eval` or `lm-eval-harness`)
+description: 'lm-evaluation-harness (often abbreviated `lm-eval` or `lm-eval-harness`)
+
   is the de facto academic standard for running few-shot benchmark
+
   evaluations against language models. It ships ~200+ tasks (MMLU, ARC,
+
   HellaSwag, TruthfulQA, GSM8K, BBH, IFEval, AGIEval, MATH, GPQA, and
+
   many more), pluggable model backends (Hugging Face transformers,
+
   vLLM, OpenAI-compatible endpoints, llama.cpp, Anthropic, Cohere), and
+
   a reproducible task-definition YAML format used in most major
+
   open-weights model releases.
 
+
   In the atlas: lm-evaluation-harness is the canonical
+
   **academic-benchmark eval harness** — the one new open-weights
+
   releases score against to publish a leaderboard-comparable
+
   evaluation. It composes cleanly under any harness governance /
+
   routing layer because it treats the model as a pluggable backend.
+
+  '
 maturity: ga
 maintainer:
   type: institution
@@ -29,37 +42,43 @@ maintainer:
 origin_country: null
 model_agnostic_score: 5
 education_resources:
-  - title: lm-evaluation-harness — Documentation
-    url: https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/README.md
-    type: docs
-    free: true
-  - title: A Framework for Few-Shot Language Model Evaluation (paper)
-    url: https://zenodo.org/records/12608602
-    type: paper
-    free: true
-sovereignty_notes: |
-  EleutherAI — independent non-profit research lab (multi-country
+- title: lm-evaluation-harness — Documentation
+  url: https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/README.md
+  type: docs
+  free: true
+- title: A Framework for Few-Shot Language Model Evaluation (paper)
+  url: https://zenodo.org/records/12608602
+  type: paper
+  free: true
+sovereignty_notes: 'EleutherAI — independent non-profit research lab (multi-country
+
   contributor base). MIT-licensed; runs entirely locally; any
+
   OpenAI-compatible local backend (vLLM, llama.cpp, Ollama) is a
+
   first-class model option. Model-agnostic 5 — the same task YAML runs
+
   against any supported backend with no code change.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - big-bench
-  - gpqa
-  - helm
-  - hf-evaluate
-  - lighteval
-  - lmms-eval
-  - longbench
-  - math
-  - mathbench
-  - mmlu-pro
-  - modelbench
-  - musr
-  - needle-in-haystack
-  - olmes
-  - opencompass
-  - simple-evals
-  - ultraeval
-  - unitxt
+- big-bench
+- gpqa
+- helm
+- hf-evaluate
+- lighteval
+- lmms-eval
+- longbench
+- math
+- mathbench
+- mmlu-pro
+- modelbench
+- musr
+- needle-in-haystack
+- olmes
+- opencompass
+- simple-evals
+- ultraeval
+- unitxt
+deployment_posture: local-only

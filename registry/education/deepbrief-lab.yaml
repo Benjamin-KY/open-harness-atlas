@@ -26,3 +26,4 @@ education_resources:
 adjacent_to:
 - harmless-harnesses
 - learn-hermes-agent
+deployment_posture: local-only

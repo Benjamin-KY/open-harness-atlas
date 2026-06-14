@@ -5,27 +5,31 @@ subcategory: multi-provider-sdk
 repo_url: https://github.com/simonw/llm
 license: Apache-2.0
 primary_language: Python
-tagline: 'CLI tool + Python library to run prompts against any LLM; 50+ provider plugins'
-description: |
-  LLM (CLI) is Simon Willison's cLI tool + Python library to run prompts against any LLM; 50+ provider plugins. Plugin architecture (llm-claude, llm-gemini, llm-ollama); SQLite logging.
+tagline: CLI tool + Python library to run prompts against any LLM; 50+ provider plugins
+description: 'LLM (CLI) is Simon Willison''s cLI tool + Python library to run prompts against any LLM; 50+ provider plugins. Plugin architecture (llm-claude, llm-gemini, llm-ollama); SQLite logging.
+
 
   In the atlas: LLM (CLI) is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: ga
 maintainer:
   type: individual
   name: Simon Willison
 origin_country: GB
 model_agnostic_score: 5
-sovereignty_notes: |
-  Simon Willison (independent maintainer, GB); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'Simon Willison (independent maintainer, GB); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - aisuite
-  - fastchat
-  - helicone
-  - litellm
-  - mlflow-ai-gateway
-  - new-api
-  - one-api
-  - portkey-gateway
-  - routellm
+- aisuite
+- fastchat
+- helicone
+- litellm
+- mlflow-ai-gateway
+- new-api
+- one-api
+- portkey-gateway
+- routellm
+deployment_posture: local-first

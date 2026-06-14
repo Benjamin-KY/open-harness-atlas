@@ -5,38 +5,42 @@ subcategory: multi-agent
 repo_url: https://github.com/FoundationAgents/MetaGPT
 license: MIT
 primary_language: Python
-tagline: 'Simulates a software company with role-playing LLM agents (PM, Dev, QA) for code generation'
-description: |
-  MetaGPT is FoundationAgents (ex-DeepWisdom)'s simulates a software company with role-playing LLM agents (PM, Dev, QA) for code generation. Pioneer of role-playing multi-agent SWE; company-as-prompt; SWE-bench leader.
+tagline: Simulates a software company with role-playing LLM agents (PM, Dev, QA) for code generation
+description: 'MetaGPT is FoundationAgents (ex-DeepWisdom)''s simulates a software company with role-playing LLM agents (PM, Dev, QA) for code generation. Pioneer of role-playing multi-agent SWE; company-as-prompt; SWE-bench leader.
+
 
   In the atlas: MetaGPT is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  '
 maturity: ga
 maintainer:
   type: community
   name: FoundationAgents (ex-DeepWisdom)
 origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: |
-  FoundationAgents (ex-DeepWisdom) (community-maintained, CN); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'FoundationAgents (ex-DeepWisdom) (community-maintained, CN); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - ag2
-  - agentlite-salesforce
-  - agentverse-openbmb
-  - autogen
-  - babyagi
-  - camel
-  - chatdev
-  - crewai
-  - griptape-framework
-  - ix-autonomous-agent
-  - langgraph
-  - llmcompiler-parallel
-  - openagents-xlang
-  - openmanus
-  - praisonai
-  - rd-agent-microsoft
-  - superagi
-  - swarm-openai
-  - voyager
-  - xagent
+- ag2
+- agentlite-salesforce
+- agentverse-openbmb
+- autogen
+- babyagi
+- camel
+- chatdev
+- crewai
+- griptape-framework
+- ix-autonomous-agent
+- langgraph
+- llmcompiler-parallel
+- openagents-xlang
+- openmanus
+- praisonai
+- rd-agent-microsoft
+- superagi
+- swarm-openai
+- voyager
+- xagent
+deployment_posture: local-first

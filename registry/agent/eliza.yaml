@@ -24,3 +24,4 @@ adjacent_to:
 - spring-ai-alibaba
 - valuecell
 - zeroclaw
+deployment_posture: local-first

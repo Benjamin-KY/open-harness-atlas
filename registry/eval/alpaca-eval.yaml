@@ -5,24 +5,28 @@ subcategory: llm-judge-framework
 repo_url: https://github.com/tatsu-lab/alpaca_eval
 license: Apache-2.0
 primary_language: Python
-tagline: 'Automated win-rate eval for instruction-following using LLM-as-judge with length-control'
-description: |
-  AlpacaEval is Stanford NLP's automated win-rate eval for instruction-following using LLM-as-judge with length-control. Length-Controlled WinRate removes length bias; highest correlation with human Chatbot Arena.
+tagline: Automated win-rate eval for instruction-following using LLM-as-judge with length-control
+description: 'AlpacaEval is Stanford NLP''s automated win-rate eval for instruction-following using LLM-as-judge with length-control. Length-Controlled WinRate removes length bias; highest correlation with human Chatbot Arena.
+
 
   In the atlas: AlpacaEval is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  '
 maturity: ga
 maintainer:
   type: institution
   name: Stanford NLP
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: |
-  Stanford NLP (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Stanford NLP (US-based academic/research institution); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - arena-hard-auto
-  - chateval
-  - flow-judge
-  - llmbar
-  - mt-bench
-  - rewardbench
+- arena-hard-auto
+- chateval
+- flow-judge
+- llmbar
+- mt-bench
+- rewardbench
+deployment_posture: local-first

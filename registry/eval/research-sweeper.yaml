@@ -24,3 +24,4 @@ adjacent_to:
 - critical-thinking
 - lm-evaluation-harness
 - zpokenclaw
+deployment_posture: cloud-first

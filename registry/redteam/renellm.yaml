@@ -6,29 +6,33 @@ repo_url: https://github.com/NJUNLP/ReNeLLM
 license: MIT
 primary_language: Python
 tagline: 'Generalised jailbreak framework: rewrites + scenario-nesting to shift prompt execution priority and evade defences'
-description: |
-  ReNeLLM is NLP Lab, Nanjing University's generalised jailbreak framework: rewrites + scenario-nesting to shift prompt execution priority and evade defences. Generalises manual and algorithmic attacks; NAACL 2024 main.
+description: 'ReNeLLM is NLP Lab, Nanjing University''s generalised jailbreak framework: rewrites + scenario-nesting to shift prompt execution priority and evade defences. Generalises manual and algorithmic attacks; NAACL 2024 main.
+
 
   In the atlas: ReNeLLM is a red-team / adversarial-evaluation entry. Red-team harnesses surface the failure modes that downstream governance and routing layers need to guard against.
+
+  '
 maturity: beta
 maintainer:
   type: institution
   name: NLP Lab, Nanjing University
 origin_country: CN
 model_agnostic_score: 5
-sovereignty_notes: |
-  NLP Lab, Nanjing University (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'NLP Lab, Nanjing University (CN-based academic/research institution); OSS core is MIT and fully self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: aligned
 adjacent_to:
-  - autodan
-  - autodan-turbo
-  - autoprompt-calibration
-  - cipherchat
-  - deep-inception
-  - gptfuzz
-  - llm-adaptive-attacks
-  - llm-attacks-gcg
-  - nanogcg
-  - pair-jailbreak
-  - rain-self-alignment
-  - tap-jailbreak
+- autodan
+- autodan-turbo
+- autoprompt-calibration
+- cipherchat
+- deep-inception
+- gptfuzz
+- llm-adaptive-attacks
+- llm-attacks-gcg
+- nanogcg
+- pair-jailbreak
+- rain-self-alignment
+- tap-jailbreak
+deployment_posture: local-first

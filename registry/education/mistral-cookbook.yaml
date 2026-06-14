@@ -34,3 +34,4 @@ adjacent_to:
 - gcp-generative-ai
 - ms-phi-cookbook
 - openai-cookbook
+deployment_posture: local-only

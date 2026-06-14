@@ -25,3 +25,4 @@ adjacent_to:
 - finsight-ai
 - lm-evaluation-harness
 - repoagentbench
+deployment_posture: local-first

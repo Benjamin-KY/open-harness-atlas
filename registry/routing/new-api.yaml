@@ -6,26 +6,30 @@ repo_url: https://github.com/QuantumNous/new-api
 license: AGPL-3.0
 primary_language: Go
 tagline: 'Extended One API fork: unified hub with billing, multi-format conversion (OpenAI<->Claude<->Gemini)'
-description: |
-  New API is QuantumNous / Calcium-Ion's extended One API fork: unified hub with billing, multi-format conversion (OpenAI<->Claude<->Gemini). Bi-directional format conversion; reasoning-effort routing; OIDC auth.
+description: 'New API is QuantumNous / Calcium-Ion''s extended One API fork: unified hub with billing, multi-format conversion (OpenAI<->Claude<->Gemini). Bi-directional format conversion; reasoning-effort routing; OIDC auth.
+
 
   In the atlas: New API is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+
+  '
 maturity: beta
 maintainer:
   type: community
   name: QuantumNous / Calcium-Ion
 origin_country: CN
 model_agnostic_score: 5
-sovereignty_notes: |
-  QuantumNous / Calcium-Ion (community-maintained, CN); OSS core is AGPL-3.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'QuantumNous / Calcium-Ion (community-maintained, CN); OSS core is AGPL-3.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+
+  '
 harness_paradigm_alignment: partial
 adjacent_to:
-  - aisuite
-  - fastchat
-  - helicone
-  - litellm
-  - mlflow-ai-gateway
-  - one-api
-  - portkey-gateway
-  - routellm
-  - simonw-llm
+- aisuite
+- fastchat
+- helicone
+- litellm
+- mlflow-ai-gateway
+- one-api
+- portkey-gateway
+- routellm
+- simonw-llm
+deployment_posture: local-first

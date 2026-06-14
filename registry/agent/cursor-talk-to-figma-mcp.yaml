@@ -24,3 +24,4 @@ adjacent_to:
 - langgraph
 - openagent
 - ragaai-catalyst
+deployment_posture: hybrid

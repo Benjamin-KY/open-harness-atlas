@@ -24,3 +24,4 @@ adjacent_to:
 - parallax
 - powerserve
 - serverlessllm
+deployment_posture: local-first

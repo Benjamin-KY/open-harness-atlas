@@ -31,3 +31,4 @@ adjacent_to:
 - rail-score-sdk
 - safe-zone
 - sentinel-ai
+deployment_posture: local-first

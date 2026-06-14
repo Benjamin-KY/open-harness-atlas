@@ -7,39 +7,65 @@ homepage: https://arcprize.org/
 license: Apache-2.0
 primary_language: JavaScript
 tagline: François Chollet's Abstraction and Reasoning Corpus — visual reasoning puzzles designed to measure broad fluid intelligence, contamination-resistant by construction.
-description: |
-  ARC-AGI is a benchmark of visual reasoning puzzles where each task
+description: 'ARC-AGI is a benchmark of visual reasoning puzzles where each task
+
   is a few input-output grid pairs and the system must induce the
+
   transformation rule. The benchmark was designed by François
+
   Chollet to measure broad fluid intelligence — the ability to
+
   generalise from a small number of examples — rather than the
+
   narrow pattern-matching that scales with training data. The
+
   repository ships the public training and evaluation tasks (the
+
   private test set is held back). The companion ARC Prize awards
+
   cash bounties for systems crossing performance thresholds.
 
+
   In the atlas: ARC-AGI is the canonical
+
   **contamination-resistant** reasoning benchmark. Because each
+
   puzzle is procedurally generated under a held-out grammar and the
+
   test set is private, it cannot be saturated by web-scale
+
   pre-training contamination. It complements LiveBench (which
+
   rotates its tasks monthly) and HELM-style aggregations (which
+
   combine many static benchmarks). Operators use ARC scores as a
+
   ceiling-test for reasoning systems, not as a production-quality
+
   signal.
+
+  '
 maturity: ga
 maintainer:
   type: individual
   name: François Chollet (with the ARC Prize Foundation)
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: |
-  The task corpus and reference scoring harness are Apache-2.0 OSS
+sovereignty_notes: 'The task corpus and reference scoring harness are Apache-2.0 OSS
+
   and run entirely offline against any LLM — there is no required
+
   hosted endpoint. The ARC Prize leaderboard at arcprize.org is a
+
   separate hosted service; submitting to the leaderboard requires a
+
   submission upload but the benchmark itself can be run privately
+
   without disclosing scores. Provider-neutral: the harness wraps
+
   any text-completion or chat model the operator can call.
+
+  '
 harness_paradigm_alignment: none
 adjacent_to: []
+deployment_posture: local-only

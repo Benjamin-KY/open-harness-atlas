@@ -24,3 +24,4 @@ adjacent_to:
 - sre
 - tabularis
 - tribe
+deployment_posture: local-first

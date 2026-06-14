@@ -27,3 +27,4 @@ adjacent_to:
 - genai-llm-bootcamp-2026
 - harmless-harnesses
 - ml-oneday-course
+deployment_posture: local-only
