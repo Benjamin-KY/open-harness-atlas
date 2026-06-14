@@ -154,17 +154,20 @@ created_at, last_commit_at, archived flag).
 
 | Tier | Heuristic | Visual encoding |
 |---|---|---|
-| **landmark** | ≥ 30k stars **or** ≥ 3 yr age + ≥ 5k stars + commit ≤ 30 d | full opacity · larger radius · solid outline |
+| **landmark** | ≥ 30k stars **or** ≥ 2 yr age + ≥ 5k stars + commit ≤ 30 d | full opacity · larger radius · solid outline |
 | **established** | ≥ 1k stars · ≥ 1 yr age · commit ≤ 180 d | full opacity · normal radius · solid outline |
 | **emerging** | ≥ 100 stars · ≥ 3 mo age · commit ≤ 180 d | 70% opacity · normal radius · solid outline |
 | **frontier** | passes inclusion criteria but no independent adoption signal yet | 40% opacity · smaller radius · dashed outline |
-| **unknown** | sidecar missing or fetch failed (e.g., SSO-restricted org) | renders as `frontier` |
+| **unknown** | sidecar missing or fetch failed (e.g., SSO-restricted org) | 40% opacity · smaller radius · **dotted** outline + `data_missing: true` in payload so viewers can mark "data unavailable" rather than "low signal" |
 
 The thresholds are tuned against the live catalogue so `landmark`
 stays around 10–15% of entries (visually distinguishable), `frontier`
 is the long tail (~45%), and the middle tiers split the rest. When
 `created_at` is unavailable, the script falls back to higher star
-thresholds as a maturity proxy.
+thresholds as a maturity proxy. The 2-year age path (Phase 5
+calibration; previously 3-year) admits LLM-era harnesses like
+autogen, langgraph, and crewai that clearly warrant landmark status
+on stars + activity but were too young under the prior rule.
 
 ---
 

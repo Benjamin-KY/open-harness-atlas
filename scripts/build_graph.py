@@ -55,12 +55,17 @@ TIER_RADIUS_MULTIPLIER = {
     "frontier":    0.70,
     "unknown":     0.70,
 }
+# `unknown` uses a distinct "dotted" stroke so operators can tell at a
+# glance "this is a failed fetch / SSO-blocked org" apart from a
+# `frontier` entry that legitimately has no adoption signal yet. The
+# 2D viewer maps these to SVG stroke-dasharray patterns; the 3D viewer
+# overlays a faint ring on `data_missing` nodes (set below in the payload).
 TIER_OUTLINE = {
     "landmark":    "solid",
     "established": "solid",
     "emerging":    "solid",
     "frontier":    "dashed",
-    "unknown":     "dashed",
+    "unknown":     "dotted",
 }
 
 
@@ -336,6 +341,13 @@ def main() -> int:
                 "tier_opacity": TIER_OPACITY[tiers.get(n, "unknown")],
                 "tier_radius_mult": TIER_RADIUS_MULTIPLIER[tiers.get(n, "unknown")],
                 "tier_outline": TIER_OUTLINE[tiers.get(n, "unknown")],
+                # data_missing distinguishes "metadata fetch failed / SSO-blocked"
+                # (operational issue — likely fixable) from "frontier" (entry is
+                # genuinely new / low-signal). Critical for projects like
+                # microsoft/autogen (40k+ stars) that fall into `unknown` only
+                # because their sidecar fetch failed; without this flag the
+                # viewer would render them identically to a 10-star hobby repo.
+                "data_missing": tiers.get(n, "unknown") == "unknown",
                 "stars": (velocity.get(n) or {}).get("stars"),
                 "velocity_4w": (velocity.get(n) or {}).get("stars_per_week_4w"),
                 "velocity_12w": (velocity.get(n) or {}).get("stars_per_week_12w"),
