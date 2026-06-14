@@ -191,6 +191,15 @@ for the full exclusion policy.
 - Open [`docs/deployment-posture.md`](docs/deployment-posture.md) for
   the "where does it run?" dimension (local-only · local-first ·
   hybrid · cloud-first · api-only).
+- Read [`docs/patterns/`](docs/patterns/README.md) for the **7 named
+  harness design patterns** (eval-driven gate · sovereignty-preserving
+  routing · red-team then harden · audit-log FSM escalation ·
+  multi-tenant policy isolation · provider fallback chain ·
+  local-possible spine).
+- Read [`docs/worked-example-model-agnostic-stack.md`](docs/worked-example-model-agnostic-stack.md)
+  for a full walkthrough that assembles a locally-deployable,
+  model-agnostic stack from the atlas — step by step, with the
+  design pattern, the posture filter, and the picks at each layer.
 - Open the comparison matrices: [`docs/governance-matrix.md`](docs/governance-matrix.md),
   [`docs/agent-matrix.md`](docs/agent-matrix.md), and the four others
   under [`docs/`](docs/).

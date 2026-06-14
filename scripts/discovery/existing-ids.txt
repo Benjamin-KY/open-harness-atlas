@@ -1,6 +1,7 @@
 9router
 a3m-router
 adala-data-agents
+adalflow
 adarubrics
 adrian
 adversarial-robustness-toolbox
@@ -8,21 +9,18 @@ aegisgate
 aeromind-paper
 ag-ui
 ag2
-agency-agents-zh
 agency-swarm
 agent
 agent-arena
 agent-attack
 agent-eval-arena
 agent-eval-harness
-agent-framework
 agent-governance-toolkit
 agent-guardrails-template
 agent-reach
 agent-s
 agent-security-scanner-mcp
 agent-semantic-resistance
-agent-sports-league-sdk
 agenta
 agentbench
 agentbench-thudm
@@ -61,13 +59,10 @@ ai-ml-storybook-code
 ai-protector
 ai-red-teaming-playground-labs
 ai-seclists
-ai-security-lab
 ai-security-labs
-ai-supply-chain-scanner
 ai-worker-proxy
 aiaw
 aichat
-aigc-interview-book
 aigoat
 aionui
 aisuite
@@ -75,6 +70,7 @@ aiwaves-agents
 alpaca-eval
 anthropic-cybersecurity-skills
 anthropic-prompt-eng-tutorial
+anthropics-courses
 antigravity-awesome-skills
 anvil
 any-agent
@@ -86,10 +82,9 @@ apps
 appworld
 aqbot
 aqueduct
+arc-agi
 archestra
 arcreel
-areal
-arena-ai-leaderboards
 arena-hard-auto
 ares
 arguslm
@@ -99,8 +94,6 @@ art-toolkit
 assetopsbench
 astrbot
 astron-agent
-athloneval
-atidraw
 atmosphere
 atomic-agents
 augustus
@@ -113,7 +106,6 @@ automated-adversial-testing-framework
 autonomous-agents
 autoprompt-calibration
 awesome-agent-skills
-awesome-agentic-ai-zh
 awesome-foundry-nextgen
 awesome-llm-knowledge-systems
 awesome-mcp-zh
@@ -122,11 +114,11 @@ babyagi
 babysitter
 backdoor-llm
 baml
-banned-words
 beeai-framework
 beir
 benchclaw
 benchjack
+bentoml
 besttester
 bfcl
 bifrost
@@ -141,7 +133,6 @@ brigade
 browser-use
 browsergym
 buildwithclaude
-burstgpt
 camel
 capbencher
 casdoor
@@ -159,7 +150,6 @@ classeval
 claude-agent-sdk
 claude-code-best-practice
 claude-code-game-studios
-claude-code-usage-bar
 claude-context
 claude-mem
 clawlens
@@ -255,7 +245,6 @@ finben
 finsight-ai
 fireagent
 firecrawl-mcp-server
-flashinfer
 flask
 flock
 flow-judge
@@ -296,8 +285,8 @@ guard-eval-harness
 guardrails-ai
 guessarena
 guidance
-guizang-ppt-skill
 hacxgpt-jailbreak-prompts
+hallucination-leaderboard
 hands-on-llms
 handson-ml3
 harmbench
@@ -308,6 +297,7 @@ haystack
 headroom
 helicone
 helm
+helmet
 helmor
 hermes-agent
 hermes-katana
@@ -329,6 +319,8 @@ hortator
 how-claude-code-works
 htr
 hugging-face-agents-course
+huggingface-tgi
+huggingface-trl
 hugginggpt-jarvis
 humaneval
 ida-pro-mcp
@@ -366,7 +358,6 @@ keel
 kgateway
 klavis
 kong
-kubeshark
 labmlai-annotated-dl
 lamda
 lanekeep
@@ -393,7 +384,7 @@ lighteval
 linkedin-mcp-server
 litellm
 litmus
-litterbox
+livebench
 livecodebench
 llama-cpp
 llama-index-agents
@@ -417,7 +408,6 @@ llm-jailbreaks
 llm-landscape
 llm-notebooks-course
 llm-prompt-injection-tester
-llm-pruning-collection
 llm-router
 llm-security-alignment
 llm-server
@@ -467,6 +457,7 @@ memorylens
 mental-health-llm-eval
 metagpt
 metorial
+metr-task-standard
 metrillm
 microsoft-agent-framework
 microsoft-ai-agents-for-beginners
@@ -510,6 +501,7 @@ n8n-mcp
 nadirclaw
 nanobot
 nanobrowser
+nanochat
 nanogcg
 nasde-toolkit
 needle-in-haystack
@@ -535,6 +527,7 @@ omniroute
 one-api
 open-cowork
 open-design
+open-instruct
 open-interpreter
 open-next-router
 open-prompt-injection
@@ -545,6 +538,7 @@ openagents-xlang
 openai-agents-sdk
 openai-cookbook
 openai-evals
+openai-preparedness
 openattack
 openbrowser
 openclaw-llm-bench
@@ -562,7 +556,9 @@ openlit
 openllm
 openllmetry
 openmanus
+openrlhf
 opik
+or-bench
 oss-llmops-stack
 osworld
 otoroshi-llm-extension
@@ -580,9 +576,7 @@ pandaprobe
 parallax
 parea-sdk-py
 parry-guard
-patent-creator
 pdf-prompt-injection-toolkit
-pdfmathtranslate
 pint-benchmark
 pipelock
 plandex
@@ -618,7 +612,6 @@ pydantic-ai-shields
 pydanticai
 pyrit
 pytector
-python-sdk
 pytorch-transformer-from-scratch
 pytorch-tutorials
 qa-metrics
@@ -656,7 +649,6 @@ responsible-ai-workshop
 rewardbench
 rewardharness
 rivet
-rlinf
 routectl
 routellm
 routerly
@@ -667,17 +659,16 @@ ruflo
 safe-zone
 safedecoding
 safetybench
+salad-bench
 scaffold-bench
 scicode
 scienceqa
-seca
 seci
 securemcp
 self-healing-rag
 semantic-kernel
 sentinel-ai
 serena
-servegen
 serverlessllm
 sglang
 shannon-b1
@@ -695,6 +686,7 @@ smolagents
 smooth-llm
 sob
 solace-agent-mesh
+sorry-bench
 spiceai
 spikee
 spring-ai-alibaba
@@ -706,6 +698,7 @@ statebind-guard
 stealix
 storm
 strands
+strong-reject
 structured-outputs
 superagi
 suprawall
@@ -724,10 +717,11 @@ tarsier-web-perception
 taskweaver
 tau2-bench
 tensor-trust
+tensorrt-llm
 text-generation-webui
 textattack
+textgrad
 theagentcompany
-tidb
 tiny-vllm
 tokencost
 tokligence-gateway
@@ -737,9 +731,7 @@ toolbench-tool-learning
 toolemu
 transformer-pytorch-scratch
 trellm
-trendradar
 tribe
-trident
 trpc-agent-go
 trulens
 trulens-agent-starter
@@ -751,7 +743,6 @@ turtle
 tuui
 txtai
 typechat
-typescript-sdk
 ufo
 ui-tars-desktop
 ultraeval
@@ -759,7 +750,6 @@ unitxt
 unity-mcp
 upsonic
 uqlm
-valor
 valuecell
 verdict
 vero-eval
@@ -780,7 +770,6 @@ web-llm
 web-ui
 webarena
 webvoyager-multimodal
-weird-ai-test-museum
 wildbench
 wildguard
 windsurfapi

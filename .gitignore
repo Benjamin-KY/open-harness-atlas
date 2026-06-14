@@ -59,3 +59,7 @@ node_modules/
 # JSONL IS kept as the deterministic input to generate_entries.py).
 scripts/discovery/candidates.raw.jsonl
 scripts/discovery/candidates.dedup.jsonl
+
+# Discovery scratch logs (do not commit)
+.tmp-discovery/
+

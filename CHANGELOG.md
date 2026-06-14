@@ -6,6 +6,59 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — Harness design patterns + worked-example walkthrough (2026-06-14)
+
+- **`docs/patterns/`** — seven named, reusable harness design patterns.
+  Each follows the same skeleton (problem · forces · shape · realising
+  the shape with atlas entries · anti-patterns · see also) so they're
+  trivial to scan:
+    1. **Eval-driven gate** — regression-gate every model / prompt
+       change in CI before merge.
+    2. **Sovereignty-preserving routing** — gateway-first design so the
+       provider becomes a config concern, not a code concern.
+    3. **Red-team then harden** — probe → schema → guard → re-probe
+       loop; close the loop on adversarial findings.
+    4. **Audit-log FSM escalation** — agent as finite-state machine with
+       append-only audit log and human-review queue on irreversible
+       actions.
+    5. **Multi-tenant policy isolation** — one platform, N tenants,
+       per-tenant policy packs in the gateway.
+    6. **Provider fallback chain** — ordered failover with per-step
+       budget and a terminal safe default.
+    7. **Local-possible spine** — assemble the entire stack from
+       `deployment_posture ∈ {local-only, local-first, hybrid}` entries
+       (92.8% of the atlas).
+- **`docs/worked-example-model-agnostic-stack.md`** — long-form
+  walkthrough that takes a real scenario (Australian government
+  agency: data residency, multi-team, auditable, multi-provider
+  resilient) and assembles a 10-component stack from the atlas step
+  by step, citing the design pattern, the posture filter, and the
+  picks at each layer. Includes a 6-question decision tree.
+- README updated to link both the patterns folder and the worked
+  example from the "Browse" section.
+
+### Added — Discovery sweep infrastructure (2026-06-14)
+
+- **`scripts/discovery/search_recent.py`** — recency-biased GitHub
+  search (`--created>=YYYY-MM-DD`, default 2024-06-01) over 33
+  free-text queries spanning all six categories. Closes the
+  "18-24mo recency gap" surfaced by the Phase 4 curation-coverage
+  swarm agent. First run produced 289 unique candidates.
+- **`scripts/discovery/parse_awesome_lists.py`** — parses the
+  README of 20 high-quality awesome-* curated lists (LLMOps,
+  agents, evaluation, security, prompt engineering, …), extracts
+  every `github.com/<owner>/<repo>` link, applies the same filter
+  chain as `search_github.py` (not archived · pushed ≤ 18 months ·
+  OSI licence · not already in `existing-ids.txt`), and emits
+  `candidates.awesome.jsonl`.
+- Both scripts reuse the OSI allowlist, freshness cutoff, alias
+  table, and `existing-ids.txt` from `search_github.py` for full
+  consistency with the v0.2.0 sweep.
+- `scripts/discovery/existing-ids.txt` refreshed to 793 lines
+  (matching the current registry size).
+- `.tmp-discovery/` added to `.gitignore` as a scratch directory
+  for discovery logs.
+
 ### Added — Deployment-posture dimension (2026-06-14)
 
 - **New `deployment_posture` field** on every entry. Five-value enum:
