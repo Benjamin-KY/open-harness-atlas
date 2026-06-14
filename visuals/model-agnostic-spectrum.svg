@@ -28,25 +28,25 @@
 <rect x="515.0" y="329.1" width="100" height="0.44" fill="#3498db"/>
 <text x="565.0" y="323.1" class="body bar-total">2</text>
 <text x="565.0" y="348.0" class="body axis-bold">2</text>
-<rect x="685.0" y="305.8" width="100" height="24.20" fill="#1f3a5f"/>
-<text x="735.0" y="321.9" class="body seg-label">55</text>
-<rect x="685.0" y="233.2" width="100" height="72.60" fill="#d68910"/>
-<text x="735.0" y="273.5" class="body seg-label">165</text>
-<rect x="685.0" y="180.0" width="100" height="53.24" fill="#28a745"/>
-<text x="735.0" y="210.6" class="body seg-label">121</text>
-<rect x="685.0" y="154.9" width="100" height="25.08" fill="#c0392b"/>
-<text x="735.0" y="171.4" class="body seg-label">57</text>
-<rect x="685.0" y="138.6" width="100" height="16.28" fill="#3498db"/>
-<rect x="685.0" y="130.7" width="100" height="7.92" fill="#7d3c98"/>
+<rect x="685.0" y="306.7" width="100" height="23.32" fill="#1f3a5f"/>
+<text x="735.0" y="322.3" class="body seg-label">53</text>
+<rect x="685.0" y="235.0" width="100" height="71.72" fill="#d68910"/>
+<text x="735.0" y="274.8" class="body seg-label">163</text>
+<rect x="685.0" y="181.7" width="100" height="53.24" fill="#28a745"/>
+<text x="735.0" y="212.3" class="body seg-label">121</text>
+<rect x="685.0" y="156.6" width="100" height="25.08" fill="#c0392b"/>
+<text x="735.0" y="173.2" class="body seg-label">57</text>
+<rect x="685.0" y="140.4" width="100" height="16.28" fill="#3498db"/>
+<rect x="685.0" y="130.7" width="100" height="9.68" fill="#7d3c98"/>
 <text x="735.0" y="124.7" class="body bar-total">453</text>
 <text x="735.0" y="348.0" class="body axis-bold">3</text>
-<rect x="855.0" y="310.2" width="100" height="19.80" fill="#1f3a5f"/>
-<text x="905.0" y="324.1" class="body seg-label">45</text>
-<rect x="855.0" y="277.6" width="100" height="32.56" fill="#d68910"/>
-<text x="905.0" y="297.9" class="body seg-label">74</text>
-<rect x="855.0" y="244.2" width="100" height="33.44" fill="#28a745"/>
-<text x="905.0" y="264.9" class="body seg-label">76</text>
-<rect x="855.0" y="231.4" width="100" height="12.76" fill="#c0392b"/>
+<rect x="855.0" y="310.6" width="100" height="19.36" fill="#1f3a5f"/>
+<text x="905.0" y="324.3" class="body seg-label">44</text>
+<rect x="855.0" y="278.1" width="100" height="32.56" fill="#d68910"/>
+<text x="905.0" y="298.4" class="body seg-label">74</text>
+<rect x="855.0" y="244.6" width="100" height="33.44" fill="#28a745"/>
+<text x="905.0" y="265.4" class="body seg-label">76</text>
+<rect x="855.0" y="231.4" width="100" height="13.20" fill="#c0392b"/>
 <rect x="855.0" y="217.4" width="100" height="14.08" fill="#3498db"/>
 <rect x="855.0" y="216.9" width="100" height="0.44" fill="#7d3c98"/>
 <text x="905.0" y="210.9" class="body bar-total">257</text>
@@ -69,7 +69,7 @@
 <rect x="40" y="400" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
 <rect x="40" y="400" width="6" height="130" rx="3" fill="#1f3a5f"/>
 <text x="56" y="418" class="body mini-title">governance</text>
-<text x="388" y="418" class="body mini-count" text-anchor="end">106 entries</text>
+<text x="388" y="418" class="body mini-count" text-anchor="end">103 entries</text>
 <line x1="72.7" y1="503" x2="108.7" y2="503" stroke="#cfd6df" stroke-width="2"/>
 <text x="90.7" y="516.0" class="body mini-axis">0</text>
 <line x1="126.0" y1="503" x2="162.0" y2="503" stroke="#cfd6df" stroke-width="2"/>
@@ -77,33 +77,33 @@
 <line x1="179.3" y1="503" x2="215.3" y2="503" stroke="#cfd6df" stroke-width="2"/>
 <text x="197.3" y="516.0" class="body mini-axis">2</text>
 <rect x="232.7" y="428.00" width="36" height="76.00" rx="2" fill="#1f3a5f" opacity="0.85"/>
-<text x="250.7" y="424.0" class="body mini-bar-label">55</text>
+<text x="250.7" y="424.0" class="body mini-bar-label">53</text>
 <text x="250.7" y="516.0" class="body mini-axis">3</text>
-<rect x="286.0" y="441.82" width="36" height="62.18" rx="2" fill="#1f3a5f" opacity="0.85"/>
-<text x="304.0" y="437.8" class="body mini-bar-label">45</text>
+<rect x="286.0" y="440.91" width="36" height="63.09" rx="2" fill="#1f3a5f" opacity="0.85"/>
+<text x="304.0" y="436.9" class="body mini-bar-label">44</text>
 <text x="304.0" y="516.0" class="body mini-axis">4</text>
-<rect x="339.3" y="495.71" width="36" height="8.29" rx="2" fill="#1f3a5f" opacity="0.85"/>
-<text x="357.3" y="491.7" class="body mini-bar-label">6</text>
+<rect x="339.3" y="495.40" width="36" height="8.60" rx="2" fill="#1f3a5f" opacity="0.85"/>
+<text x="357.3" y="491.4" class="body mini-bar-label">6</text>
 <text x="357.3" y="516.0" class="body mini-axis">5</text>
 <rect x="420" y="400" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
 <rect x="420" y="400" width="6" height="130" rx="3" fill="#d68910"/>
 <text x="436" y="418" class="body mini-title">agent</text>
-<text x="768" y="418" class="body mini-count" text-anchor="end">247 entries</text>
+<text x="768" y="418" class="body mini-count" text-anchor="end">245 entries</text>
 <line x1="452.7" y1="503" x2="488.7" y2="503" stroke="#cfd6df" stroke-width="2"/>
 <text x="470.7" y="516.0" class="body mini-axis">0</text>
-<rect x="506.0" y="503.54" width="36" height="0.46" rx="2" fill="#d68910" opacity="0.85"/>
+<rect x="506.0" y="503.53" width="36" height="0.47" rx="2" fill="#d68910" opacity="0.85"/>
 <text x="524.0" y="499.5" class="body mini-bar-label">1</text>
 <text x="524.0" y="516.0" class="body mini-axis">1</text>
-<rect x="559.3" y="503.54" width="36" height="0.46" rx="2" fill="#d68910" opacity="0.85"/>
+<rect x="559.3" y="503.53" width="36" height="0.47" rx="2" fill="#d68910" opacity="0.85"/>
 <text x="577.3" y="499.5" class="body mini-bar-label">1</text>
 <text x="577.3" y="516.0" class="body mini-axis">2</text>
 <rect x="612.7" y="428.00" width="36" height="76.00" rx="2" fill="#d68910" opacity="0.85"/>
-<text x="630.7" y="424.0" class="body mini-bar-label">165</text>
+<text x="630.7" y="424.0" class="body mini-bar-label">163</text>
 <text x="630.7" y="516.0" class="body mini-axis">3</text>
-<rect x="666.0" y="469.92" width="36" height="34.08" rx="2" fill="#d68910" opacity="0.85"/>
-<text x="684.0" y="465.9" class="body mini-bar-label">74</text>
+<rect x="666.0" y="469.50" width="36" height="34.50" rx="2" fill="#d68910" opacity="0.85"/>
+<text x="684.0" y="465.5" class="body mini-bar-label">74</text>
 <text x="684.0" y="516.0" class="body mini-axis">4</text>
-<rect x="719.3" y="501.24" width="36" height="2.76" rx="2" fill="#d68910" opacity="0.85"/>
+<rect x="719.3" y="501.20" width="36" height="2.80" rx="2" fill="#d68910" opacity="0.85"/>
 <text x="737.3" y="497.2" class="body mini-bar-label">6</text>
 <text x="737.3" y="516.0" class="body mini-axis">5</text>
 <rect x="800" y="400" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
@@ -128,7 +128,7 @@
 <rect x="40" y="560" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
 <rect x="40" y="560" width="6" height="130" rx="3" fill="#c0392b"/>
 <text x="56" y="578" class="body mini-title">redteam</text>
-<text x="388" y="578" class="body mini-count" text-anchor="end">105 entries</text>
+<text x="388" y="578" class="body mini-count" text-anchor="end">106 entries</text>
 <line x1="72.7" y1="663" x2="108.7" y2="663" stroke="#cfd6df" stroke-width="2"/>
 <text x="90.7" y="676.0" class="body mini-axis">0</text>
 <line x1="126.0" y1="663" x2="162.0" y2="663" stroke="#cfd6df" stroke-width="2"/>
@@ -138,8 +138,8 @@
 <rect x="232.7" y="588.00" width="36" height="76.00" rx="2" fill="#c0392b" opacity="0.85"/>
 <text x="250.7" y="584.0" class="body mini-bar-label">57</text>
 <text x="250.7" y="676.0" class="body mini-axis">3</text>
-<rect x="286.0" y="625.33" width="36" height="38.67" rx="2" fill="#c0392b" opacity="0.85"/>
-<text x="304.0" y="621.3" class="body mini-bar-label">29</text>
+<rect x="286.0" y="624.00" width="36" height="40.00" rx="2" fill="#c0392b" opacity="0.85"/>
+<text x="304.0" y="620.0" class="body mini-bar-label">30</text>
 <text x="304.0" y="676.0" class="body mini-axis">4</text>
 <rect x="339.3" y="638.67" width="36" height="25.33" rx="2" fill="#c0392b" opacity="0.85"/>
 <text x="357.3" y="634.7" class="body mini-bar-label">19</text>
@@ -167,7 +167,7 @@
 <rect x="800" y="560" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
 <rect x="800" y="560" width="6" height="130" rx="3" fill="#7d3c98"/>
 <text x="816" y="578" class="body mini-title">education</text>
-<text x="1148" y="578" class="body mini-count" text-anchor="end">53 entries</text>
+<text x="1148" y="578" class="body mini-count" text-anchor="end">57 entries</text>
 <line x1="832.7" y1="663" x2="868.7" y2="663" stroke="#cfd6df" stroke-width="2"/>
 <text x="850.7" y="676.0" class="body mini-axis">0</text>
 <rect x="886.0" y="661.70" width="36" height="2.30" rx="2" fill="#7d3c98" opacity="0.85"/>
@@ -175,8 +175,8 @@
 <text x="904.0" y="676.0" class="body mini-axis">1</text>
 <line x1="939.3" y1="663" x2="975.3" y2="663" stroke="#cfd6df" stroke-width="2"/>
 <text x="957.3" y="676.0" class="body mini-axis">2</text>
-<rect x="992.7" y="622.55" width="36" height="41.45" rx="2" fill="#7d3c98" opacity="0.85"/>
-<text x="1010.7" y="618.5" class="body mini-bar-label">18</text>
+<rect x="992.7" y="613.33" width="36" height="50.67" rx="2" fill="#7d3c98" opacity="0.85"/>
+<text x="1010.7" y="609.3" class="body mini-bar-label">22</text>
 <text x="1010.7" y="676.0" class="body mini-axis">3</text>
 <rect x="1046.0" y="661.70" width="36" height="2.30" rx="2" fill="#7d3c98" opacity="0.85"/>
 <text x="1064.0" y="657.7" class="body mini-bar-label">1</text>

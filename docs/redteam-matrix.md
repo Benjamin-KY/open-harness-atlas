@@ -83,6 +83,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Principles Of AI Llms](https://github.com/dobriban/Principles-of-AI-LLMs) | CC0-1.0 | Multiple | beta | — | 3/5 | frontier | 46 | — | dobriban |
 | [Prompt Guard](https://github.com/seojoonkim/prompt-guard) | MIT | Python | beta | — | 3/5 | emerging | 165 | — | seojoonkim |
 | [Prompt Hacker Collections](https://github.com/yunwei37/prompt-hacker-collections) | MIT | Multiple | ga | — | 3/5 | frontier | 329 | — | yunwei37 |
+| [PromptInject](https://github.com/agencyenterprise/PromptInject) | MIT | Python | alpha | US | 4/5 | emerging | 498 | — | AgencyEnterprise |
 | [promptmap](https://github.com/utkusen/promptmap) | GPL-3.0 | Python | beta | TR | 4/5 | frontier | 1.2k | — | Utku Sen |
 | [Prompt Fuzzer (ps-fuzz)](https://github.com/prompt-security/ps-fuzz) | MIT | Python | beta | IL | 4/5 | emerging | 686 | — | Prompt Security |
 | [PurpleLlama / CyberSecEval](https://github.com/meta-llama/PurpleLlama) | MIT | Python | ga | US | 4/5 | established | 4.2k | — | Meta AI |

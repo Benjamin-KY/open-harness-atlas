@@ -24,7 +24,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Banned Words](https://github.com/readme-SVG/Banned-words) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
 | [Bifrost](https://github.com/maximhq/bifrost) | Apache-2.0 | Go | partial | none | none | none | none | 4/5 |
 | [Brigade](https://github.com/escoffier-labs/brigade) | MIT | Python | partial | none | none | none | none | 3/5 |
-| [Circle Guard Bench](https://github.com/whitecircle/circle-guard-bench) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
 | [Circuit Breakers](https://github.com/GraySwanAI/circuit-breakers) | MIT | Python | partial | none | none | partial | partial | 4/5 |
 | [Clawlens](https://github.com/nk3750/clawlens) | MIT | TypeScript | partial | none | none | none | none | 3/5 |
 | [Constrained Diffusion](https://github.com/eth-sri/constrained-diffusion) | MIT | Rust | none | none | none | partial | none | 3/5 |
@@ -41,7 +40,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Gollm](https://github.com/teilomillet/gollm) | Apache-2.0 | Go | none | none | none | none | none | 3/5 |
 | [IBM Granite Guardian](https://github.com/ibm-granite/granite-guardian) | Apache-2.0 | Python | partial | partial | none | native | none | 5/5 |
 | [Grps Trtllm](https://github.com/NetEase-Media/grps_trtllm) | Apache-2.0 | Python | none | none | none | partial | none | 4/5 |
-| [Guard Eval Harness](https://github.com/Virtue-Research/guard-eval-harness) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [Guardrails AI](https://github.com/guardrails-ai/guardrails) | Apache-2.0 | Python | none | partial | none | native | partial | 4/5 |
 | [Guidance](https://github.com/guidance-ai/guidance) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [Harmless Harnesses](https://github.com/Benjamin-KY/Harmless-Harnesses) | Apache-2.0 | Python | native | native | native | native | native | 4/5 |
@@ -82,7 +80,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Packmind](https://github.com/PackmindHub/packmind) | Apache-2.0 | TypeScript | partial | none | none | none | none | 3/5 |
 | [Microsoft Presidio](https://github.com/microsoft/presidio) | MIT | Python | none | none | none | native | none | 5/5 |
 | [Promptimize](https://github.com/preset-io/promptimize) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
-| [PromptInject](https://github.com/agencyenterprise/PromptInject) | MIT | Python | partial | none | none | none | none | 4/5 |
 | [Promptpurify](https://github.com/securelayer7/PROMPTPurify) | MIT | TypeScript | partial | none | none | none | none | 3/5 |
 | [PromptTools](https://github.com/hegelai/prompttools) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
 | [Pydantic AI Shields](https://github.com/vstorm-co/pydantic-ai-shields) | MIT | Python | partial | none | none | none | none | 3/5 |

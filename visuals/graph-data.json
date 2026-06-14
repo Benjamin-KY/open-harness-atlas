@@ -8,12 +8,12 @@
       {
         "key": "governance",
         "color": "#1f3a5f",
-        "count": 106
+        "count": 103
       },
       {
         "key": "agent",
         "color": "#d68910",
-        "count": 247
+        "count": 245
       },
       {
         "key": "eval",
@@ -23,7 +23,7 @@
       {
         "key": "redteam",
         "color": "#c0392b",
-        "count": 105
+        "count": 106
       },
       {
         "key": "routing",
@@ -33,7 +33,7 @@
       {
         "key": "education",
         "color": "#7d3c98",
-        "count": 53
+        "count": 57
       }
     ],
     "tiers": [
@@ -1355,44 +1355,6 @@
       ]
     },
     {
-      "id": "ai-engineering-hub",
-      "name": "AI Engineering Hub",
-      "category": "agent",
-      "subcategory": "mcp-host",
-      "color": "#d68910",
-      "url": "https://github.com/patchy631/ai-engineering-hub",
-      "tagline": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
-      "degree": 8,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Jupyter Notebook",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "patchy631",
-      "alignment": "partial",
-      "tier": "landmark",
-      "tier_opacity": 1.0,
-      "tier_radius_mult": 1.3,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 35765,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 5,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "build-rag-agent",
-          "level": "auto"
-        },
-        {
-          "id": "learn-the-stack",
-          "level": "recommended"
-        }
-      ]
-    },
-    {
       "id": "aiaw",
       "name": "Aia W",
       "category": "agent",
@@ -2032,40 +1994,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 1,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "build-rag-agent",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "awesome-mcp-zh",
-      "name": "Awesome MCP ZH",
-      "category": "agent",
-      "subcategory": "mcp-host",
-      "color": "#d68910",
-      "url": "https://github.com/yzfly/Awesome-MCP-ZH",
-      "tagline": "MCP \u8d44\u6e90\u7cbe\u9009\uff0c MCP\u6307\u5357\uff0cClaude MCP\uff0cMCP Servers, MCP Clients",
-      "degree": 6,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Multiple",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "yzfly",
-      "alignment": "partial",
-      "tier": "established",
-      "tier_opacity": 1.0,
-      "tier_radius_mult": 1.0,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 7278,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -2913,6 +2841,40 @@
       "tier_outline": "solid",
       "data_missing": false,
       "stars": 45282,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 0,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "build-rag-agent",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "coze-loop",
+      "name": "Coze Loop",
+      "category": "agent",
+      "subcategory": "agent-optimization-platform",
+      "color": "#d68910",
+      "url": "https://github.com/coze-dev/coze-loop",
+      "tagline": "Next-generation AI Agent Optimization Platform: Cozeloop addresses challenges in AI agent development by providing full-lifecycle management capabilities from development, debugging, and evaluation...",
+      "degree": 8,
+      "mas": 3,
+      "license": "Apache-2.0",
+      "language": "Go",
+      "maturity": "ga",
+      "country": "",
+      "maintainer_type": "community",
+      "maintainer_name": "coze-dev",
+      "alignment": "partial",
+      "tier": "emerging",
+      "tier_opacity": 0.7,
+      "tier_radius_mult": 0.85,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 5519,
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 0,
@@ -5709,42 +5671,6 @@
       "velocity_12w": null,
       "days_since_commit": 0,
       "spark": [],
-      "use_cases": [
-        {
-          "id": "build-rag-agent",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "mcp-for-beginners",
-      "name": "MCP For Beginners",
-      "category": "agent",
-      "subcategory": "mcp",
-      "color": "#d68910",
-      "url": "https://github.com/microsoft/mcp-for-beginners",
-      "tagline": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python.",
-      "degree": 8,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Jupyter Notebook",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "institution",
-      "maintainer_name": "microsoft",
-      "alignment": "partial",
-      "tier": "established",
-      "tier_opacity": 1.0,
-      "tier_radius_mult": 1.0,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 16526,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 1,
-      "spark": [
-        16526
-      ],
       "use_cases": [
         {
           "id": "build-rag-agent",
@@ -8927,6 +8853,40 @@
       ]
     },
     {
+      "id": "ai-engineering-hub",
+      "name": "AI Engineering Hub",
+      "category": "education",
+      "subcategory": "practitioner-guides",
+      "color": "#7d3c98",
+      "url": "https://github.com/patchy631/ai-engineering-hub",
+      "tagline": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+      "degree": 8,
+      "mas": 3,
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "maturity": "ga",
+      "country": "",
+      "maintainer_type": "community",
+      "maintainer_name": "patchy631",
+      "alignment": "partial",
+      "tier": "landmark",
+      "tier_opacity": 1.0,
+      "tier_radius_mult": 1.3,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 35765,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 5,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "learn-the-stack",
+          "level": "recommended"
+        }
+      ]
+    },
+    {
       "id": "ai-ml-storybook-code",
       "name": "AI ML Storybook Code",
       "category": "education",
@@ -9056,6 +9016,40 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 10,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "learn-the-stack",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "awesome-mcp-zh",
+      "name": "Awesome MCP ZH",
+      "category": "education",
+      "subcategory": "awesome-lists",
+      "color": "#7d3c98",
+      "url": "https://github.com/yzfly/Awesome-MCP-ZH",
+      "tagline": "MCP \u8d44\u6e90\u7cbe\u9009\uff0c MCP\u6307\u5357\uff0cClaude MCP\uff0cMCP Servers, MCP Clients",
+      "degree": 6,
+      "mas": 3,
+      "license": "MIT",
+      "language": "Multiple",
+      "maturity": "ga",
+      "country": "",
+      "maintainer_type": "community",
+      "maintainer_name": "yzfly",
+      "alignment": "partial",
+      "tier": "established",
+      "tier_opacity": 1.0,
+      "tier_radius_mult": 1.0,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 7278,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -9941,6 +9935,76 @@
       "velocity_12w": null,
       "days_since_commit": 0,
       "spark": [],
+      "use_cases": [
+        {
+          "id": "learn-the-stack",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "lumen",
+      "name": "Lumen",
+      "category": "education",
+      "subcategory": "ai-tutoring-platform",
+      "color": "#7d3c98",
+      "url": "https://github.com/ahmedEid1/lumen",
+      "tagline": "Lumen \u2014 learner-owned AI education platform.",
+      "degree": 1,
+      "mas": 3,
+      "license": "GPL-3.0-only",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "community",
+      "maintainer_name": "ahmedEid1",
+      "alignment": "partial",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
+      "data_missing": false,
+      "stars": 70,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 6,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "learn-the-stack",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "mcp-for-beginners",
+      "name": "MCP For Beginners",
+      "category": "education",
+      "subcategory": "practitioner-guides",
+      "color": "#7d3c98",
+      "url": "https://github.com/microsoft/mcp-for-beginners",
+      "tagline": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python.",
+      "degree": 8,
+      "mas": 3,
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "maturity": "ga",
+      "country": "",
+      "maintainer_type": "institution",
+      "maintainer_name": "microsoft",
+      "alignment": "partial",
+      "tier": "established",
+      "tier_opacity": 1.0,
+      "tier_radius_mult": 1.0,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 16526,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 1,
+      "spark": [
+        16526
+      ],
       "use_cases": [
         {
           "id": "learn-the-stack",
@@ -11837,6 +11901,40 @@
       ]
     },
     {
+      "id": "circle-guard-bench",
+      "name": "Circle Guard Bench",
+      "category": "eval",
+      "subcategory": "guardrail-eval",
+      "color": "#28a745",
+      "url": "https://github.com/whitecircle/circle-guard-bench",
+      "tagline": "First-of-its-kind AI benchmark for evaluating the protection capabilities of large language model (LLM) guard systems (guardrails and safeguards)",
+      "degree": 8,
+      "mas": 3,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "community",
+      "maintainer_name": "whitecircle",
+      "alignment": "partial",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
+      "data_missing": false,
+      "stars": 70,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 98,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "evaluate-llm",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "classeval",
       "name": "ClassEval",
       "category": "eval",
@@ -12066,40 +12164,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 17,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "evaluate-llm",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "coze-loop",
-      "name": "Coze Loop",
-      "category": "eval",
-      "subcategory": "agent-eval",
-      "color": "#28a745",
-      "url": "https://github.com/coze-dev/coze-loop",
-      "tagline": "Next-generation AI Agent Optimization Platform: Cozeloop addresses challenges in AI agent development by providing full-lifecycle management capabilities from development, debugging, and evaluation...",
-      "degree": 8,
-      "mas": 3,
-      "license": "Apache-2.0",
-      "language": "Go",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "coze-dev",
-      "alignment": "partial",
-      "tier": "emerging",
-      "tier_opacity": 0.7,
-      "tier_radius_mult": 0.85,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 5519,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -13052,6 +13116,40 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 12,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "evaluate-llm",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "guard-eval-harness",
+      "name": "Guard Eval Harness",
+      "category": "eval",
+      "subcategory": "guardrail-eval",
+      "color": "#28a745",
+      "url": "https://github.com/Virtue-Research/guard-eval-harness",
+      "tagline": "Evaluate any AI guardrail on 80+ safety benchmarks \u2014 jailbreaks, toxicity, prompt injection \u2014 with one command.",
+      "degree": 3,
+      "mas": 3,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "institution",
+      "maintainer_name": "Virtue-Research",
+      "alignment": "partial",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
+      "data_missing": false,
+      "stars": 11,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -14350,40 +14448,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 514,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "evaluate-llm",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "lumen",
-      "name": "Lumen",
-      "category": "eval",
-      "subcategory": "inference-server",
-      "color": "#28a745",
-      "url": "https://github.com/ahmedEid1/lumen",
-      "tagline": "Lumen \u2014 learner-owned AI education platform.",
-      "degree": 1,
-      "mas": 3,
-      "license": "GPL-3.0-only",
-      "language": "Python",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "ahmedEid1",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 70,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -18489,40 +18553,6 @@
       ]
     },
     {
-      "id": "circle-guard-bench",
-      "name": "Circle Guard Bench",
-      "category": "governance",
-      "subcategory": "guardrails",
-      "color": "#1f3a5f",
-      "url": "https://github.com/whitecircle/circle-guard-bench",
-      "tagline": "First-of-its-kind AI benchmark for evaluating the protection capabilities of large language model (LLM) guard systems (guardrails and safeguards)",
-      "degree": 8,
-      "mas": 3,
-      "license": "Apache-2.0",
-      "language": "Python",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "whitecircle",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 70,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 98,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "govern-llm-policy",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "circuit-breakers",
       "name": "Circuit Breakers",
       "category": "governance",
@@ -19062,40 +19092,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 187,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "govern-llm-policy",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "guard-eval-harness",
-      "name": "Guard Eval Harness",
-      "category": "governance",
-      "subcategory": "safety-layer",
-      "color": "#1f3a5f",
-      "url": "https://github.com/Virtue-Research/guard-eval-harness",
-      "tagline": "Evaluate any AI guardrail on 80+ safety benchmarks \u2014 jailbreaks, toxicity, prompt injection \u2014 with one command.",
-      "degree": 3,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Python",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "institution",
-      "maintainer_name": "Virtue-Research",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 11,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -20476,40 +20472,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 19,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "govern-llm-policy",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "promptinject",
-      "name": "PromptInject",
-      "category": "governance",
-      "subcategory": "prompt-injection-research",
-      "color": "#1f3a5f",
-      "url": "https://github.com/agencyenterprise/PromptInject",
-      "tagline": "Original 2022 prompt injection research framework for goal hijacking and prompt leaking experiments",
-      "degree": 3,
-      "mas": 4,
-      "license": "MIT",
-      "language": "Python",
-      "maturity": "alpha",
-      "country": "US",
-      "maintainer_type": "company",
-      "maintainer_name": "AgencyEnterprise",
-      "alignment": "aligned",
-      "tier": "emerging",
-      "tier_opacity": 0.7,
-      "tier_radius_mult": 0.85,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 498,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 47,
       "spark": [],
       "use_cases": [
         {
@@ -24128,6 +24090,40 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 473,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "promptinject",
+      "name": "PromptInject",
+      "category": "redteam",
+      "subcategory": "prompt-injection",
+      "color": "#c0392b",
+      "url": "https://github.com/agencyenterprise/PromptInject",
+      "tagline": "Original 2022 prompt injection research framework for goal hijacking and prompt leaking experiments",
+      "degree": 3,
+      "mas": 4,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "alpha",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "AgencyEnterprise",
+      "alignment": "aligned",
+      "tier": "emerging",
+      "tier_opacity": 0.7,
+      "tier_radius_mult": 0.85,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 498,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 47,
       "spark": [],
       "use_cases": [
         {
@@ -28957,38 +28953,6 @@
       "target": "vibe-kanban"
     },
     {
-      "source": "ai-engineering-hub",
-      "target": "astrbot"
-    },
-    {
-      "source": "ai-engineering-hub",
-      "target": "auto-claude-code-research-in-sleep"
-    },
-    {
-      "source": "ai-engineering-hub",
-      "target": "awesome-mcp-zh"
-    },
-    {
-      "source": "ai-engineering-hub",
-      "target": "cc-switch"
-    },
-    {
-      "source": "ai-engineering-hub",
-      "target": "langgraph"
-    },
-    {
-      "source": "ai-engineering-hub",
-      "target": "librechat"
-    },
-    {
-      "source": "ai-engineering-hub",
-      "target": "n8n-mcp"
-    },
-    {
-      "source": "ai-engineering-hub",
-      "target": "trendradar"
-    },
-    {
       "source": "aiaw",
       "target": "archestra"
     },
@@ -29305,6 +29269,10 @@
       "target": "trendradar"
     },
     {
+      "source": "astrbot",
+      "target": "ai-engineering-hub"
+    },
+    {
       "source": "astron-agent",
       "target": "babysitter"
     },
@@ -29427,6 +29395,10 @@
     {
       "source": "auto-claude-code-research-in-sleep",
       "target": "trendradar"
+    },
+    {
+      "source": "auto-claude-code-research-in-sleep",
+      "target": "ai-engineering-hub"
     },
     {
       "source": "autogen",
@@ -29559,26 +29531,6 @@
     {
       "source": "awesome-agent-skills",
       "target": "vibe-trading"
-    },
-    {
-      "source": "awesome-mcp-zh",
-      "target": "langgraph"
-    },
-    {
-      "source": "awesome-mcp-zh",
-      "target": "n8n-mcp"
-    },
-    {
-      "source": "awesome-mcp-zh",
-      "target": "pdfmathtranslate"
-    },
-    {
-      "source": "awesome-mcp-zh",
-      "target": "trendradar"
-    },
-    {
-      "source": "awesome-mcp-zh",
-      "target": "xiaozhi-esp32"
     },
     {
       "source": "babyagi",
@@ -29843,6 +29795,10 @@
     {
       "source": "cc-switch",
       "target": "xiaozhi-esp32"
+    },
+    {
+      "source": "cc-switch",
+      "target": "ai-engineering-hub"
     },
     {
       "source": "chatdev",
@@ -30187,6 +30143,38 @@
     {
       "source": "cowagent",
       "target": "web-ui"
+    },
+    {
+      "source": "coze-loop",
+      "target": "lm-evaluation-harness"
+    },
+    {
+      "source": "coze-loop",
+      "target": "mnemebrain-benchmark"
+    },
+    {
+      "source": "coze-loop",
+      "target": "nasde-toolkit"
+    },
+    {
+      "source": "coze-loop",
+      "target": "oh-my-knowledge"
+    },
+    {
+      "source": "coze-loop",
+      "target": "openagentbench"
+    },
+    {
+      "source": "coze-loop",
+      "target": "agent-eval-harness"
+    },
+    {
+      "source": "coze-loop",
+      "target": "benchclaw"
+    },
+    {
+      "source": "coze-loop",
+      "target": "trellm"
     },
     {
       "source": "crewai",
@@ -31470,10 +31458,6 @@
     },
     {
       "source": "langgraph",
-      "target": "mcp-for-beginners"
-    },
-    {
-      "source": "langgraph",
       "target": "mcp-use"
     },
     {
@@ -31714,7 +31698,19 @@
     },
     {
       "source": "langgraph",
+      "target": "ai-engineering-hub"
+    },
+    {
+      "source": "langgraph",
+      "target": "awesome-mcp-zh"
+    },
+    {
+      "source": "langgraph",
       "target": "hugging-face-agents-course"
+    },
+    {
+      "source": "langgraph",
+      "target": "mcp-for-beginners"
     },
     {
       "source": "langroid",
@@ -31755,6 +31751,10 @@
     {
       "source": "letta",
       "target": "mem0-memory-layer"
+    },
+    {
+      "source": "librechat",
+      "target": "ai-engineering-hub"
     },
     {
       "source": "librechat",
@@ -31897,22 +31897,6 @@
       "target": "xcodebuildmcp"
     },
     {
-      "source": "mcp-for-beginners",
-      "target": "mcp-use"
-    },
-    {
-      "source": "mcp-for-beginners",
-      "target": "mcphub-nvim"
-    },
-    {
-      "source": "mcp-for-beginners",
-      "target": "unity-mcp"
-    },
-    {
-      "source": "mcp-for-beginners",
-      "target": "xcodebuildmcp"
-    },
-    {
       "source": "mcp-use",
       "target": "mcphub-nvim"
     },
@@ -31925,12 +31909,20 @@
       "target": "xcodebuildmcp"
     },
     {
+      "source": "mcp-use",
+      "target": "mcp-for-beginners"
+    },
+    {
       "source": "mcphub-nvim",
       "target": "unity-mcp"
     },
     {
       "source": "mcphub-nvim",
       "target": "xcodebuildmcp"
+    },
+    {
+      "source": "mcphub-nvim",
+      "target": "mcp-for-beginners"
     },
     {
       "source": "metagpt",
@@ -32058,11 +32050,19 @@
     },
     {
       "source": "n8n-mcp",
+      "target": "ai-engineering-hub"
+    },
+    {
+      "source": "n8n-mcp",
       "target": "trendradar"
     },
     {
       "source": "n8n-mcp",
       "target": "xiaozhi-esp32"
+    },
+    {
+      "source": "n8n-mcp",
+      "target": "awesome-mcp-zh"
     },
     {
       "source": "nanobot",
@@ -32378,6 +32378,10 @@
     },
     {
       "source": "pdfmathtranslate",
+      "target": "awesome-mcp-zh"
+    },
+    {
+      "source": "pdfmathtranslate",
       "target": "trendradar"
     },
     {
@@ -32570,7 +32574,15 @@
     },
     {
       "source": "trendradar",
+      "target": "ai-engineering-hub"
+    },
+    {
+      "source": "trendradar",
       "target": "xiaozhi-esp32"
+    },
+    {
+      "source": "trendradar",
+      "target": "awesome-mcp-zh"
     },
     {
       "source": "tribe",
@@ -32613,6 +32625,10 @@
       "target": "xcodebuildmcp"
     },
     {
+      "source": "unity-mcp",
+      "target": "mcp-for-beginners"
+    },
+    {
       "source": "voyager",
       "target": "xagent"
     },
@@ -32629,6 +32645,14 @@
       "target": "webarena"
     },
     {
+      "source": "xcodebuildmcp",
+      "target": "mcp-for-beginners"
+    },
+    {
+      "source": "xiaozhi-esp32",
+      "target": "awesome-mcp-zh"
+    },
+    {
       "source": "ai-engineer-roadmap",
       "target": "awesome-llm-knowledge-systems"
     },
@@ -32643,6 +32667,10 @@
     {
       "source": "ai-engineer-roadmap",
       "target": "langchain-multi-agent-example"
+    },
+    {
+      "source": "ai-engineering-hub",
+      "target": "awesome-mcp-zh"
     },
     {
       "source": "ai-ml-storybook-code",
@@ -33005,6 +33033,10 @@
       "target": "harmless-harnesses"
     },
     {
+      "source": "lumen",
+      "target": "lm-evaluation-harness"
+    },
+    {
       "source": "microsoft-ai-agents-for-beginners",
       "target": "ms-ai-for-beginners"
     },
@@ -33239,10 +33271,6 @@
     {
       "source": "agent-eval-harness",
       "target": "completely"
-    },
-    {
-      "source": "agent-eval-harness",
-      "target": "coze-loop"
     },
     {
       "source": "agent-eval-harness",
@@ -33742,10 +33770,6 @@
     },
     {
       "source": "benchclaw",
-      "target": "coze-loop"
-    },
-    {
-      "source": "benchclaw",
       "target": "dokimos"
     },
     {
@@ -34073,6 +34097,38 @@
       "target": "rewardbench"
     },
     {
+      "source": "circle-guard-bench",
+      "target": "guardrails-ai"
+    },
+    {
+      "source": "circle-guard-bench",
+      "target": "hortator"
+    },
+    {
+      "source": "circle-guard-bench",
+      "target": "idun-agent-platform"
+    },
+    {
+      "source": "circle-guard-bench",
+      "target": "lanekeep"
+    },
+    {
+      "source": "circle-guard-bench",
+      "target": "openclaw-middleware-suite"
+    },
+    {
+      "source": "circle-guard-bench",
+      "target": "agentic-guardrails"
+    },
+    {
+      "source": "circle-guard-bench",
+      "target": "awesome-foundry-nextgen"
+    },
+    {
+      "source": "circle-guard-bench",
+      "target": "vibeguard"
+    },
+    {
       "source": "classeval",
       "target": "cruxeval"
     },
@@ -34223,30 +34279,6 @@
     {
       "source": "coordbench",
       "target": "precisionmembench"
-    },
-    {
-      "source": "coze-loop",
-      "target": "lm-evaluation-harness"
-    },
-    {
-      "source": "coze-loop",
-      "target": "mnemebrain-benchmark"
-    },
-    {
-      "source": "coze-loop",
-      "target": "nasde-toolkit"
-    },
-    {
-      "source": "coze-loop",
-      "target": "oh-my-knowledge"
-    },
-    {
-      "source": "coze-loop",
-      "target": "openagentbench"
-    },
-    {
-      "source": "coze-loop",
-      "target": "trellm"
     },
     {
       "source": "critical-thinking",
@@ -34875,6 +34907,18 @@
     {
       "source": "groundcheck",
       "target": "trulens-agent-starter"
+    },
+    {
+      "source": "guard-eval-harness",
+      "target": "guardrails-ai"
+    },
+    {
+      "source": "guard-eval-harness",
+      "target": "llm-landscape"
+    },
+    {
+      "source": "guard-eval-harness",
+      "target": "multilingual-llm-safety-bench"
     },
     {
       "source": "guessarena",
@@ -35567,10 +35611,6 @@
     {
       "source": "lm-evaluation-harness",
       "target": "unitxt"
-    },
-    {
-      "source": "lm-evaluation-harness",
-      "target": "lumen"
     },
     {
       "source": "lm-evaluation-harness",
@@ -36942,10 +36982,6 @@
     },
     {
       "source": "agentic-guardrails",
-      "target": "circle-guard-bench"
-    },
-    {
-      "source": "agentic-guardrails",
       "target": "guardrails-ai"
     },
     {
@@ -37202,10 +37238,6 @@
     },
     {
       "source": "awesome-foundry-nextgen",
-      "target": "circle-guard-bench"
-    },
-    {
-      "source": "awesome-foundry-nextgen",
       "target": "guardrails-ai"
     },
     {
@@ -37318,30 +37350,6 @@
     },
     {
       "source": "brigade",
-      "target": "vibeguard"
-    },
-    {
-      "source": "circle-guard-bench",
-      "target": "guardrails-ai"
-    },
-    {
-      "source": "circle-guard-bench",
-      "target": "hortator"
-    },
-    {
-      "source": "circle-guard-bench",
-      "target": "idun-agent-platform"
-    },
-    {
-      "source": "circle-guard-bench",
-      "target": "lanekeep"
-    },
-    {
-      "source": "circle-guard-bench",
-      "target": "openclaw-middleware-suite"
-    },
-    {
-      "source": "circle-guard-bench",
       "target": "vibeguard"
     },
     {
@@ -37671,18 +37679,6 @@
     {
       "source": "grps-trtllm",
       "target": "yaicli"
-    },
-    {
-      "source": "guard-eval-harness",
-      "target": "guardrails-ai"
-    },
-    {
-      "source": "guard-eval-harness",
-      "target": "llm-landscape"
-    },
-    {
-      "source": "guard-eval-harness",
-      "target": "multilingual-llm-safety-bench"
     },
     {
       "source": "guardrails-ai",
@@ -38409,18 +38405,6 @@
       "target": "prompttools"
     },
     {
-      "source": "promptinject",
-      "target": "bipia"
-    },
-    {
-      "source": "promptinject",
-      "target": "open-prompt-injection"
-    },
-    {
-      "source": "promptinject",
-      "target": "rebuff"
-    },
-    {
       "source": "promptpurify",
       "target": "pydantic-ai-shields"
     },
@@ -38471,6 +38455,10 @@
     {
       "source": "rebuff",
       "target": "open-prompt-injection"
+    },
+    {
+      "source": "rebuff",
+      "target": "promptinject"
     },
     {
       "source": "rebuff",
@@ -39206,6 +39194,10 @@
     },
     {
       "source": "bipia",
+      "target": "promptinject"
+    },
+    {
+      "source": "bipia",
       "target": "ps-fuzz"
     },
     {
@@ -39883,6 +39875,10 @@
     {
       "source": "open-prompt-injection",
       "target": "pint-benchmark"
+    },
+    {
+      "source": "open-prompt-injection",
+      "target": "promptinject"
     },
     {
       "source": "open-prompt-injection",
@@ -41693,6 +41689,7 @@
           "capbencher",
           "cc-plugin-eval",
           "chateval",
+          "circle-guard-bench",
           "classeval",
           "clinverdict-physician-curated-clinical-ai-evals-suite",
           "cmb",
@@ -41700,7 +41697,6 @@
           "continuous-eval",
           "contribarena",
           "coordbench",
-          "coze-loop",
           "critical-thinking",
           "crucible",
           "crucible-bslm",
@@ -41728,6 +41724,7 @@
           "gdpval-realworks",
           "gpqa",
           "groundcheck",
+          "guard-eval-harness",
           "guessarena",
           "hallucination-leaderboard",
           "helm",
@@ -41764,7 +41761,6 @@
           "lmms-eval",
           "long-form-factuality",
           "longbench",
-          "lumen",
           "mac-llm-bench",
           "mac-mini-llm-roster",
           "makerbench-hwe",
@@ -41973,6 +41969,7 @@
           "principles-of-ai-llms",
           "prompt-guard",
           "prompt-hacker-collections",
+          "promptinject",
           "promptmap",
           "ps-fuzz",
           "purple-llama",
@@ -42102,7 +42099,6 @@
           "agi",
           "agixt",
           "ai-agents-from-scratch",
-          "ai-engineering-hub",
           "aiaw",
           "aichat",
           "aionui",
@@ -42121,7 +42117,6 @@
           "auto-claude-code-research-in-sleep",
           "autonomous-agents",
           "awesome-agent-skills",
-          "awesome-mcp-zh",
           "babyagi",
           "babysitter",
           "beeai-framework",
@@ -42146,6 +42141,7 @@
           "coral",
           "core",
           "cowagent",
+          "coze-loop",
           "cua",
           "cursor-talk-to-figma-mcp",
           "dagu",
@@ -42222,7 +42218,6 @@
           "mastra",
           "mcp-agent",
           "mcp-context-forge",
-          "mcp-for-beginners",
           "mcp-use",
           "mcphub-nvim",
           "mem0-memory-layer",
@@ -42537,7 +42532,6 @@
           "banned-words",
           "bifrost",
           "brigade",
-          "circle-guard-bench",
           "circuit-breakers",
           "clawlens",
           "constrained-diffusion",
@@ -42554,7 +42548,6 @@
           "gollm",
           "granite-guardian",
           "grps-trtllm",
-          "guard-eval-harness",
           "harmless-harnesses",
           "hortator",
           "idun-agent-platform",
@@ -42588,7 +42581,6 @@
           "packmind",
           "presidio",
           "promptimize",
-          "promptinject",
           "promptpurify",
           "prompttools",
           "pydantic-ai-shields",
@@ -42665,6 +42657,7 @@
           "ai-engineer-roadmap",
           "ai-ml-storybook-code",
           "awesome-llm-knowledge-systems",
+          "awesome-mcp-zh",
           "aws-bedrock-workshop",
           "deepbrief-lab",
           "deepmind-educational",
@@ -42687,6 +42680,8 @@
           "learn-prompting",
           "llm",
           "llm-notebooks-course",
+          "lumen",
+          "mcp-for-beginners",
           "microsoft-ai-agents-for-beginners",
           "mini-llm",
           "mistral-cookbook",

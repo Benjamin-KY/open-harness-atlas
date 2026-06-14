@@ -7,10 +7,12 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | Entry | License | Maintainer | Origin | Resources |
 |---|---|---|---|---|
 | [AI Engineer Roadmap](https://github.com/MuhammadIbtisam/ai-engineer-roadmap) | MIT | MuhammadIbtisam | — | [AI Engineer Roadmap repository](https://github.com/MuhammadIbtisam/ai-engineer-roadmap) |
+| [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub) | MIT | patchy631 | — | [AI Engineering Hub — source repository](https://github.com/patchy631/ai-engineering-hub) |
 | [AI ML Storybook Code](https://github.com/TechStoriesBlog/ai-ml-storybook-code) | MIT | TechStoriesBlog | — | [AI ML Storybook Code repository](https://github.com/TechStoriesBlog/ai-ml-storybook-code) |
 | [Anthropic Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial) | MIT | Anthropic | US | [Anthropic Prompt Engineering Interactive Tutorial — notebooks](https://github.com/anthropics/prompt-eng-interactive-tutorial) |
 | [Anthropic Courses](https://github.com/anthropics/courses) | Apache-2.0 | Anthropic, PBC | US | [Anthropic Courses — README and course index](https://github.com/anthropics/courses); [Prompt Engineering Interactive Tutorial](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial); [Tool Use Course](https://github.com/anthropics/courses/tree/master/tool_use) |
 | [Awesome LLM Knowledge Systems](https://github.com/kennethlaw325/awesome-llm-knowledge-systems) | MIT | kennethlaw325 | — | [Awesome LLM Knowledge Systems repository](https://github.com/kennethlaw325/awesome-llm-knowledge-systems) |
+| [Awesome MCP ZH](https://github.com/yzfly/Awesome-MCP-ZH) | MIT | yzfly | — | [Awesome MCP ZH — source repository](https://github.com/yzfly/Awesome-MCP-ZH) |
 | [Amazon Bedrock Workshop](https://github.com/aws-samples/amazon-bedrock-workshop) | MIT-0 | AWS Samples | US | [Amazon Bedrock Workshop — source repository](https://github.com/aws-samples/amazon-bedrock-workshop) |
 | [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | MIT | DAIR.AI | — | [Prompt Engineering Guide — source repository](https://github.com/dair-ai/Prompt-Engineering-Guide) |
 | [Deepbrief Lab](https://github.com/zyziyun/deepbrief-lab) | MIT | zyziyun | — | [Deepbrief Lab repository](https://github.com/zyziyun/deepbrief-lab) |
@@ -37,6 +39,8 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Learn Prompting](https://github.com/trigaten/Learn_Prompting) | MIT | Learn Prompting Project (community-led, primary editor Sander Schulhoff) | — | [Learn Prompting (rendered site)](https://learnprompting.org/); [Learn Prompting — source repository](https://github.com/trigaten/Learn_Prompting) |
 | [Large-Language-Model-Notebooks-Course](https://github.com/peremartra/Large-Language-Model-Notebooks-Course) | MIT | Pere Martra | ES | [Large-Language-Model-Notebooks-Course — source repository](https://github.com/peremartra/Large-Language-Model-Notebooks-Course) |
 | [LLM](https://github.com/gocronx/llm) | MIT | gocronx | — | [LLM repository](https://github.com/gocronx/llm) |
+| [Lumen](https://github.com/ahmedEid1/lumen) | GPL-3.0-only | ahmedEid1 | — | [Lumen — source repository](https://github.com/ahmedEid1/lumen) |
+| [MCP For Beginners](https://github.com/microsoft/mcp-for-beginners) | MIT | microsoft | — | [MCP For Beginners — source repository](https://github.com/microsoft/mcp-for-beginners) |
 | [AI Agents for Beginners (Microsoft)](https://github.com/microsoft/ai-agents-for-beginners) | MIT | Microsoft | US | [AI Agents for Beginners (rendered course site)](https://microsoft.github.io/ai-agents-for-beginners/); [AI Agents for Beginners — source repository](https://github.com/microsoft/ai-agents-for-beginners) |
 | [Mini LLM](https://github.com/07Codex07/Mini_LLM) | MIT | 07Codex07 | — | [Mini LLM repository](https://github.com/07Codex07/Mini_LLM) |
 | [Mistral Cookbook](https://github.com/mistralai/cookbook) | MIT | Mistral AI | FR | [Mistral Cookbook — source repository](https://github.com/mistralai/cookbook) |

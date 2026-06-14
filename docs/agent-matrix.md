@@ -32,7 +32,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AGiXT](https://github.com/Josh-XT/AGiXT) | MIT | Python | beta | US | 5/5 | established | 3.2k | — | Josh-XT |
 | [Agno](https://github.com/agno-agi/agno) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 40.7k | — | Agno AGI (ex-phidata) |
 | [AI Agents From Scratch](https://github.com/pguso/ai-agents-from-scratch) | MIT | JavaScript | ga | — | 3/5 | emerging | 4.3k | — | pguso |
-| [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub) | MIT | Jupyter Notebook | ga | — | 3/5 | landmark | 35.8k | — | patchy631 |
 | [Aia W](https://github.com/NitroRCr/AIaW) | BSD-3-Clause | TypeScript | ga | — | 3/5 | established | 1.8k | — | NitroRCr |
 | [Aichat](https://github.com/sigoden/aichat) | Apache-2.0 | Rust | ga | — | 4/5 | established | 10.1k | — | sigoden |
 | [Aion Ui](https://github.com/iOfficeAI/AionUi) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 28.2k | — | iOfficeAI |
@@ -52,7 +51,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AutoGen](https://github.com/microsoft/autogen) | MIT | Python | ga | US | 4/5 | landmark | 58.9k | — | Microsoft Research |
 | [Autonomous Agents](https://github.com/tmgthb/Autonomous-Agents) | MIT | Multiple | ga | — | 3/5 | established | 1.3k | — | tmgthb |
 | [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) | MIT | Multiple | ga | — | 3/5 | established | 25.2k | — | VoltAgent |
-| [Awesome MCP ZH](https://github.com/yzfly/Awesome-MCP-ZH) | MIT | Multiple | ga | — | 3/5 | established | 7.3k | — | yzfly |
 | [BabyAGI](https://github.com/yoheinakajima/babyagi) | MIT | Python | alpha | US | 4/5 | established | 22.3k | — | yoheinakajima |
 | [Babysitter](https://github.com/a5c-ai/babysitter) | MIT | JavaScript | ga | — | 3/5 | emerging | 1.3k | — | a5c-ai |
 | [BeeAI Framework](https://github.com/i-am-bee/beeai-framework) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.3k | — | IBM / Linux Foundation |
@@ -78,6 +76,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | frontier | 723 | — | Human-Agent-Society |
 | [Core](https://github.com/cheshire-cat-ai/core) | GPL-3.0-only | Python | ga | — | 3/5 | established | 3.0k | — | cheshire-cat-ai |
 | [Cow Agent](https://github.com/zhayujie/CowAgent) | MIT | Python | ga | — | 3/5 | landmark | 45.3k | — | zhayujie |
+| [Coze Loop](https://github.com/coze-dev/coze-loop) | Apache-2.0 | Go | ga | — | 3/5 | emerging | 5.5k | — | coze-dev |
 | [CrewAI](https://github.com/crewAIInc/crewAI) | MIT | Python | ga | US | 3/5 | landmark | 53.5k | — | CrewAI Inc. |
 | [Cua](https://github.com/trycua/cua) | MIT | HTML | ga | — | 3/5 | established | 17.9k | — | trycua |
 | [Cursor Talk To Figma MCP](https://github.com/grab/cursor-talk-to-figma-mcp) | MIT | JavaScript | ga | — | 3/5 | established | 6.8k | — | grab |
@@ -160,7 +159,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Mastra](https://github.com/mastra-ai/mastra) | Apache-2.0 | TypeScript | beta | US | 4/5 | established | 25.0k | — | Mastra AI |
 | [MCP Agent](https://github.com/lastmile-ai/mcp-agent) | Apache-2.0 | Python | ga | — | 3/5 | established | 8.4k | — | lastmile-ai |
 | [MCP Context Forge](https://github.com/IBM/mcp-context-forge) | Apache-2.0 | Python | ga | — | 3/5 | established | 3.9k | — | IBM |
-| [MCP For Beginners](https://github.com/microsoft/mcp-for-beginners) | MIT | Jupyter Notebook | ga | — | 3/5 | established | 16.5k | — | microsoft |
 | [MCP Use](https://github.com/mcp-use/mcp-use) | MIT | TypeScript | ga | — | 3/5 | established | 10.1k | — | mcp-use |
 | [Mcphub.nvim](https://github.com/ravitemer/mcphub.nvim) | MIT | Lua | ga | — | 3/5 | established | 1.8k | — | ravitemer |
 | [Mem0 (formerly Embedchain)](https://github.com/mem0ai/mem0) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 58.5k | — | Mem0 AI (YC S24) |

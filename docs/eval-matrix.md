@@ -39,6 +39,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Capbencher](https://github.com/ishida-lab/capbencher) | MIT | Python | beta | — | 3/5 | frontier | 8 | — | ishida-lab |
 | [Cc Plugin Eval](https://github.com/sjnims/cc-plugin-eval) | MIT | TypeScript | beta | — | 3/5 | frontier | 20 | — | sjnims |
 | [ChatEval](https://github.com/thunlp/ChatEval) | MIT | Python | beta | CN | 4/5 | frontier | 335 | — | THUDM / Tsinghua |
+| [Circle Guard Bench](https://github.com/whitecircle/circle-guard-bench) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 70 | — | whitecircle |
 | [ClassEval](https://github.com/FudanSELab/ClassEval) | MIT | Python | beta | SG | 4/5 | frontier | 151 | — | NLP Group, Nanyang Technological University / Fudan University |
 | [Clin Verdict Physician Curated Clinical AI Evals Suite](https://github.com/sharifalzaber/ClinVerdict-Physician-Curated-Clinical-AI-Evals-Suite) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | sharifalzaber |
 | [CMB (Chinese Medical Benchmark)](https://github.com/FreedomIntelligence/CMB) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 243 | — | Chinese University of HK (Shenzhen) |
@@ -46,7 +47,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Continuous Eval](https://github.com/relari-ai/continuous-eval) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 516 | — | Relari AI |
 | [Contrib Arena](https://github.com/qWaitCrypto/ContribArena) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | qWaitCrypto |
 | [Coordbench](https://github.com/JY0xLU/coordbench) | MIT | HTML | beta | — | 3/5 | frontier | 2 | — | JY0xLU |
-| [Coze Loop](https://github.com/coze-dev/coze-loop) | Apache-2.0 | Go | ga | — | 3/5 | emerging | 5.5k | — | coze-dev |
 | [Critical Thinking](https://github.com/Johna2an/critical-thinking) | MIT | HTML | beta | — | 3/5 | frontier | 2 | — | Johna2an |
 | [Crucible Bslm](https://github.com/Nimblestorm/crucible-bslm) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | Nimblestorm |
 | [Crucible](https://github.com/lord-arbiter/Crucible) | MIT | Python | beta | — | 4/5 | frontier | 2 | — | lord-arbiter |
@@ -75,6 +75,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Gdpval Realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | MIT | Python | beta | — | 3/5 | frontier | 14 | — | hyeonsangjeon |
 | [GPQA (Graduate-Level Google-Proof QA)](https://github.com/idavidrein/gpqa) | MIT | Python | ga | US | 4/5 | frontier | 510 | — | David Rein et al. (NYU) |
 | [Groundcheck](https://github.com/zhjai/groundcheck) | MIT | Multiple | beta | — | 3/5 | frontier | 0 | — | zhjai |
+| [Guard Eval Harness](https://github.com/Virtue-Research/guard-eval-harness) | MIT | Python | beta | — | 3/5 | frontier | 11 | — | Virtue-Research |
 | [Guess Arena](https://github.com/IAAR-Shanghai/GuessArena) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 10 | — | IAAR-Shanghai |
 | [Vectara Hallucination Leaderboard](https://github.com/vectara/hallucination-leaderboard) | Apache-2.0 | Python | ga | US | 5/5 | established | 3.3k | — | Vectara |
 | [HELM (Holistic Evaluation of Language Models)](https://github.com/stanford-crfm/helm) | Apache-2.0 | Python | ga | US | 4/5 | established | 2.8k | — | Stanford CRFM |
@@ -113,7 +114,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [LMMs-Eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) | Apache-2.0 | Python | ga | SG | 4/5 | established | 4.2k | — | NTU / UCSB |
 | [Long-Form Factuality / SAFE](https://github.com/google-deepmind/long-form-factuality) | Apache-2.0 | Python | ga | GB | 4/5 | emerging | 688 | — | Google DeepMind |
 | [LongBench (v1 + v2)](https://github.com/THUDM/LongBench) | MIT | Python | ga | CN | 4/5 | frontier | 1.2k | — | Tsinghua University KEG / Zhipu AI |
-| [Lumen](https://github.com/ahmedEid1/lumen) | GPL-3.0-only | Python | beta | — | 3/5 | frontier | 70 | — | ahmedEid1 |
 | [Mac LLM Bench](https://github.com/enescingoz/mac-llm-bench) | MIT | Shell | beta | — | 3/5 | frontier | 32 | — | enescingoz |
 | [Mac Mini LLM Roster](https://github.com/slogsdon/mac-mini-llm-roster) | MIT | Python | beta | — | 4/5 | frontier | 0 | — | slogsdon |
 | [Makerbench Hwe](https://github.com/tonykoop/makerbench-hwe) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 0 | — | tonykoop |

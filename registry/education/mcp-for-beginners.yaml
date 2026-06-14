@@ -1,0 +1,31 @@
+id: mcp-for-beginners
+name: MCP For Beginners
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/microsoft/mcp-for-beginners
+license: MIT
+primary_language: Jupyter Notebook
+tagline: This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python.
+description: 'MCP For Beginners — This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration. Upstream maintainer: microsoft.
+
+
+  In the atlas: this is an education entry. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
+maturity: ga
+maintainer:
+  type: institution
+  name: microsoft
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 'microsoft (institution-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README. Curator note (2026-06-14): recategorised agent → education under the Phase 4 governance-consistency swarm finding; the artefact is better understood as education-shaped per its primary surface.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- mcp-use
+- mcphub-nvim
+- unity-mcp
+- xcodebuildmcp
+education_resources:
+- title: MCP For Beginners — source repository
+  url: https://github.com/microsoft/mcp-for-beginners
+  type: course
+  free: true
