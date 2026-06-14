@@ -6,17 +6,17 @@ repo_url: https://github.com/Tiiny-AI/PowerInfer
 license: MIT
 primary_language: C++
 tagline: High-speed Large Language Model Serving for Local Deployment
-description: |-
-  Power Infer — High-speed Large Language Model Serving for Local Deployment. Upstream maintainer: Tiiny-AI.
+description: 'Power Infer — High-speed Large Language Model Serving for Local Deployment. Upstream maintainer: Tiiny-AI.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: company
   name: Tiiny-AI
-origin_country: null
+origin_country: CN
 model_agnostic_score: 3
-sovereignty_notes: Tiiny-AI (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Tiiny-AI is a CN-based commercial AI hardware and software company (company-maintained; already correctly set). MIT license is OSI-approved and confirmed. Origin country revised to CN: the README references the SJTU-IPADS project kanban (Shanghai Jiao Tong University) confirming Chinese academic origins, and Tiiny AI (tiiny.ai) is a Chinese consumer-AI company. Model-agnostic score 3 is appropriate for a local CPU/GPU inference engine leveraging activation locality; local-weight inference is the sole compute path.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

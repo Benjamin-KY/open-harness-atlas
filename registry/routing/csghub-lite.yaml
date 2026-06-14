@@ -6,17 +6,17 @@ repo_url: https://github.com/OpenCSGs/csghub-lite
 license: Apache-2.0
 primary_language: Go
 tagline: csghub-lite is a lightweight local LLM runner for the CSGHub platform.
-description: |-
-  Csghub Lite — csghub-lite is a lightweight local LLM runner for the CSGHub platform. One command downloads, loads, and chats with models. It ships a web UI, OpenAI-compatible API, llama.cpp inference, resumable downloads, marketplace browsing, and one-click AI app and coding-agent setup—all in a single cross-platform binary. Upstream maintainer: OpenCSGs.
+description: 'Csghub Lite — csghub-lite is a lightweight local LLM runner for the CSGHub platform. One command downloads, loads, and chats with models. It ships a web UI, OpenAI-compatible API, llama.cpp inference, resumable downloads, marketplace browsing, and one-click AI app and coding-agent setup—all in a single cross-platform binary. Upstream maintainer: OpenCSGs.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: OpenCSGs
-origin_country: null
+origin_country: CN
 model_agnostic_score: 4
-sovereignty_notes: OpenCSGs (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'OpenCSGs is the GitHub organization for CSGHub (opencsg.com), a commercial Chinese AI model-hosting platform (company-maintained). Apache-2.0 license is OSI-approved and confirmed. Model-agnostic score 4 is accurate and confirmed by the README: the binary ships an OpenAI-compatible REST API and llama.cpp local inference, making local-weight models first-class alongside CSGHub-hosted models. Origin country CN is confirmed by the OpenCSG platform identity and Chinese-language documentation.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

@@ -7,17 +7,17 @@ homepage: https://yunbeizhang.github.io/MM-Plan/
 license: Apache-2.0
 primary_language: Python
 tagline: '[ICLRW 2026 Best Short Paper Award] Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning'
-description: |-
-  MM Plan — [ICLRW 2026 Best Short Paper Award] Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning. Upstream maintainer: yunbeizhang.
+description: 'MM Plan — [ICLRW 2026 Best Short Paper Award] Visual Exclusivity Attacks: Automatic Multimodal Red Teaming via Agentic Planning. Upstream maintainer: yunbeizhang.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: yunbeizhang
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: yunbeizhang (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: yunbeizhang is an individual researcher (GitHub User, community-maintained). Apache-2.0 license is OSI-approved and confirmed. The ICLRW 2026 Best Short Paper Award satisfies §8 §3 reference-quality criterion via peer-reviewed publication. Model-agnostic score 3 is appropriate for a multimodal red-teaming framework targeting vision-language models via agentic planning without explicit provider lock-in. The visual-exclusivity attack surface extends the redteam category into the multimodal dimension with no §8 exclusion flags.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litterbox

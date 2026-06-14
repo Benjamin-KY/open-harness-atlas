@@ -7,17 +7,17 @@ homepage: https://open-infer.org/
 license: Apache-2.0
 primary_language: Rust
 tagline: Pure Rust + CUDA LLM inference engine
-description: |-
-  Openinfer — Pure Rust + CUDA LLM inference engine. Upstream maintainer: openinfer-project.
+description: 'Openinfer — Pure Rust + CUDA LLM inference engine. Upstream maintainer: openinfer-project.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: community
   name: openinfer-project
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: openinfer-project (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: openinfer-project is a community organisation shipping openinfer as an Apache-2.0 pure-Rust + CUDA local LLM inference engine (no PyTorch, no ONNX, every kernel hand-written) targeting frontier-scale local models (Qwen3, Qwen3.5, DeepSeek V4 Flash, Kimi-K2). Model-agnostic 4 — exposes OpenAI-compatible `/v1/completions` (and streaming), so any OpenAI SDK swaps baseURL and runs the same code path against local weights. Pushed 2026-06-14.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

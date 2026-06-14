@@ -6,17 +6,17 @@ repo_url: https://github.com/langgptai/LLM-Jailbreaks
 license: Apache-2.0
 primary_language: Multiple
 tagline: LLM Jailbreaks, ChatGPT, Claude, Llama, DAN Prompts, Prompt Leaking
-description: |-
-  LLM Jailbreaks — LLM Jailbreaks, ChatGPT, Claude, Llama, DAN Prompts, Prompt Leaking. Upstream maintainer: langgptai.
+description: 'LLM Jailbreaks — LLM Jailbreaks, ChatGPT, Claude, Llama, DAN Prompts, Prompt Leaking. Upstream maintainer: langgptai.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: ga
 maintainer:
   type: company
   name: langgptai
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: langgptai (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: langgptai is the open-source prompt-engineering community behind the LangGPT structured-prompt language (Chinese-origin community organisation) — maintainer.type community, origin CN. Apache-2.0 curated wordlist of jailbreak prompts spanning DeepSeek R1, Grok3, Gemini 2.0, ChatGPT (DAN), Claude, Llama. Model-agnostic 3 holds — payloads are static text covering both Western and Chinese-market LLMs. Last pushed 2025-04-13 (within the §1.3 18-month maintained window).
 harness_paradigm_alignment: partial
 adjacent_to:
 - chatgpt-jailbreak-pro

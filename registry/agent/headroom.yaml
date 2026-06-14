@@ -7,10 +7,10 @@ homepage: https://headroom-docs.vercel.app/docs
 license: Apache-2.0
 primary_language: Python
 tagline: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM.
-description: |-
-  Headroom — Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server. Upstream maintainer: chopratejas.
+description: 'Headroom — Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server. Upstream maintainer: chopratejas.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
@@ -24,4 +24,3 @@ adjacent_to:
 - librechat
 - n8n-mcp
 - pdfmathtranslate
-- trendradar

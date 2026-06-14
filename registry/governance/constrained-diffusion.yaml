@@ -7,15 +7,15 @@ homepage: https://constrained-diffusion.ai
 license: MIT
 primary_language: Rust
 tagline: Constrained Decoding of Diffusion LLMs with Context-Free Grammars.
-description: |-
-  Constrained Diffusion — Constrained Decoding of Diffusion LLMs with Context-Free Grammars. Upstream maintainer: eth-sri.
+description: 'Constrained Diffusion — Constrained Decoding of Diffusion LLMs with Context-Free Grammars. Upstream maintainer: eth-sri.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
-  type: community
+  type: institution
   name: eth-sri
-origin_country: null
+origin_country: CH
 model_agnostic_score: 3
 five_component_coverage:
   policy_router: none
@@ -23,7 +23,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: none
-sovereignty_notes: eth-sri (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'eth-sri is the Security, Reliability, and Intelligence Lab at ETH Zurich, a leading Swiss federal technical university (institution-maintained). MIT license is OSI-approved and confirmed in the repository. The associated arXiv paper (arXiv:2508.10111) satisfies §8 §3 reference-quality maintenance criterion via peer-reviewed publication. Model-agnostic score 3 is a reasonable default for a constrained-decoding library applied to diffusion LLMs via context-free grammars; five_component_coverage.output_contract: partial correctly reflects the CFG-enforced output constraint surface.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

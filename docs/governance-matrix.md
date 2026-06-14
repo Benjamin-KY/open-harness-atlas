@@ -19,7 +19,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Armorer](https://github.com/ArmorerLabs/Armorer) | MIT | TypeScript | partial | none | none | none | none | 3/5 |
 | [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) | MIT | Python | partial | none | none | partial | partial | 4/5 |
 | [AutoDefense](https://github.com/XHMY/AutoDefense) | MIT | Python | partial | none | none | partial | partial | 4/5 |
-| [Awesome Foundry Nextgen](https://github.com/corticalstack/awesome-foundry-nextgen) | MIT | Jupyter Notebook | partial | none | none | none | none | 3/5 |
 | [BAML](https://github.com/BoundaryML/baml) | Apache-2.0 | Rust | none | none | partial | native | none | 4/5 |
 | [Banned Words](https://github.com/readme-SVG/Banned-words) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
 | [Bifrost](https://github.com/maximhq/bifrost) | Apache-2.0 | Go | partial | none | none | none | none | 4/5 |

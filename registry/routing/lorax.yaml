@@ -7,17 +7,17 @@ homepage: https://loraexchange.ai
 license: Apache-2.0
 primary_language: Python
 tagline: Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs
-description: |-
-  Lorax — Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs. Upstream maintainer: predibase.
+description: 'Lorax — Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs. Upstream maintainer: predibase.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: predibase
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: predibase (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: 'predibase is a US-based commercial AI startup (company-maintained). Apache-2.0 license is OSI-approved and confirmed. Model-agnostic score revised to 4: the README table of contents includes a ''Chat via OpenAI API'' section confirming OpenAI-compatible endpoint support, and the core use case is serving local fine-tuned LoRA adapters at scale on a single GPU — local weights are first-class. No §8 exclusion flags; LoRAX is free and open-source with no paywalled tier for the catalogued artefact.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

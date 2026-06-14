@@ -13,9 +13,9 @@ against the source repository and rewritten the auto-curated defaults.
 
 | Status | Count |
 |---|---|
-| Backlog (auto-ingested, pending review) | 475 |
-| Curator-reviewed | 340 |
-| Total catalogue | 815 |
+| Backlog (auto-ingested, pending review) | 447 |
+| Curator-reviewed | 367 |
+| Total catalogue | 814 |
 
 Honest disclosure: the integrity gap this file tracks is real. Trust the
 explicitly curator-reviewed entries first; treat the backlog as best-effort
@@ -27,7 +27,7 @@ take an entry off this list with a PR.
 
 ---
 
-## agent (160 entries)
+## agent (155 entries)
 
 - `9router`
 - `ag-ui`
@@ -69,10 +69,8 @@ take an entry off this list with a PR.
 - `clawx`
 - `cli`
 - `code-review-graph`
-- `coral`
 - `core`
 - `cowagent`
-- `coze-loop`
 - `cua`
 - `cursor-talk-to-figma-mcp`
 - `dagu`
@@ -93,7 +91,6 @@ take an entry off this list with a PR.
 - `fara`
 - `fast-agent`
 - `figma-context-mcp`
-- `forge`
 - `gemini-cli`
 - `genericagent`
 - `ghidra-mcp`
@@ -170,13 +167,11 @@ take an entry off this list with a PR.
 - `tabularis`
 - `takt`
 - `tidb`
-- `trendradar`
 - `tribe`
 - `trpc-agent-go`
 - `turix-cua`
 - `tuui`
 - `txtai`
-- `ui-tars-desktop`
 - `unity-mcp`
 - `valuecell`
 - `vibe-kanban`
@@ -190,20 +185,17 @@ take an entry off this list with a PR.
 - `zeroshot`
 - `zerostack`
 
-## education (18 entries)
+## education (15 entries)
 
 - `ai-engineer-roadmap`
 - `ai-engineering-hub`
 - `ai-ml-storybook-code`
 - `awesome-llm-knowledge-systems`
 - `awesome-mcp-zh`
-- `deepbrief-lab`
-- `enterprise-mcp-course`
 - `genai-llm-bootcamp-2026`
 - `langchain-multi-agent-example`
 - `learn-hermes-agent`
 - `llm`
-- `lumen`
 - `mcp-for-beginners`
 - `mini-llm`
 - `ml-oneday-course`
@@ -211,7 +203,7 @@ take an entry off this list with a PR.
 - `shannon-b1`
 - `transformer-pytorch-scratch`
 
-## eval (128 entries)
+## eval (123 entries)
 
 - `adarubrics`
 - `agent-arena`
@@ -250,9 +242,7 @@ take an entry off this list with a PR.
 - `eval-kit`
 - `eval-resume`
 - `evalbench`
-- `evalbot`
 - `every-eval-ever`
-- `fieldtest`
 - `finsight-ai`
 - `gauntlet`
 - `gdpval-realworks`
@@ -260,7 +250,6 @@ take an entry off this list with a PR.
 - `guard-eval-harness`
 - `guessarena`
 - `hermes-rubric`
-- `holon-bench`
 - `htr`
 - `j-rig-skill-binary-eval`
 - `judgeit-llm-as-a-judge`
@@ -279,7 +268,6 @@ take an entry off this list with a PR.
 - `llm-evalbox`
 - `llm-framework-benchmark`
 - `llm-pruning-collection`
-- `llmbench`
 - `mac-llm-bench`
 - `mac-mini-llm-roster`
 - `makerbench-hwe`
@@ -327,7 +315,6 @@ take an entry off this list with a PR.
 - `seci`
 - `self-healing-rag`
 - `skill-lab`
-- `skill-optimizer`
 - `sral-framework`
 - `statebind-guard`
 - `swt-bench`
@@ -342,7 +329,7 @@ take an entry off this list with a PR.
 - `vietnamese-secretary-llm`
 - `zpokenclaw`
 
-## governance (54 entries)
+## governance (49 entries)
 
 - `aegisgate`
 - `agent-guardrails-template`
@@ -352,11 +339,9 @@ take an entry off this list with a PR.
 - `ai-harness-template`
 - `ai-protector`
 - `armorer`
-- `awesome-foundry-nextgen`
 - `banned-words`
 - `brigade`
 - `clawlens`
-- `constrained-diffusion`
 - `content-moderation-deep-learning`
 - `datafog-python`
 - `fireagent`
@@ -377,12 +362,10 @@ take an entry off this list with a PR.
 - `multilingual-llm-safety-bench`
 - `node-llama-cpp`
 - `openclaw-middleware-suite`
-- `ouro-loop`
 - `outputguard`
 - `packmind`
 - `promptpurify`
 - `pydantic-ai-shields`
-- `pytector`
 - `rail-score-js`
 - `rail-score-sdk`
 - `responsible-ai-toolbox`
@@ -394,12 +377,11 @@ take an entry off this list with a PR.
 - `structured-outputs`
 - `suprawall`
 - `swing-skills`
-- `trustloopguard`
 - `uqlm`
 - `vibeguard`
 - `yaicli`
 
-## redteam (57 entries)
+## redteam (52 entries)
 
 - `adrian`
 - `adversarial-robustness-toolbox`
@@ -407,7 +389,6 @@ take an entry off this list with a PR.
 - `agent-security-scanner-mcp`
 - `agent-semantic-resistance`
 - `ai-red-teaming-playground-labs`
-- `ai-seclists`
 - `ai-security-lab`
 - `ai-security-labs`
 - `ai-supply-chain-scanner`
@@ -422,7 +403,6 @@ take an entry off this list with a PR.
 - `earl`
 - `genai-security-literature-review`
 - `hacxgpt-jailbreak-prompts`
-- `hermes-katana`
 - `imperio`
 - `jailbreak-llms`
 - `journey-to-red-team`
@@ -430,14 +410,12 @@ take an entry off this list with a PR.
 - `llm-attacks`
 - `llm-backdoor`
 - `llm-jailbreak-taxonomy`
-- `llm-jailbreaks`
 - `llm-prompt-injection-tester`
 - `llm-security-alignment`
 - `llm-watermark-robustness`
 - `medusa`
 - `memory-poisoning-persistence`
 - `ml-security-papers`
-- `mm-plan`
 - `openclaw-skills-security`
 - `parry-guard`
 - `pdf-prompt-injection-toolkit`
@@ -445,7 +423,6 @@ take an entry off this list with a PR.
 - `principles-of-ai-llms`
 - `prompt-guard`
 - `prompt-hacker-collections`
-- `rag-security-scanner`
 - `raguard`
 - `redairange`
 - `redamon`
@@ -459,13 +436,12 @@ take an entry off this list with a PR.
 - `www-project-llm-verification-standard`
 - `yaramint`
 
-## routing (58 entries)
+## routing (53 entries)
 
 - `a3m-router`
 - `agentgate-ai`
 - `ai-api`
 - `ai-worker-proxy`
-- `apisix`
 - `aqbot`
 - `aqueduct`
 - `bitrouter`
@@ -473,7 +449,6 @@ take an entry off this list with a PR.
 - `claude-code-usage-bar`
 - `clawrouter`
 - `coai`
-- `csghub-lite`
 - `edgee`
 - `flashinfer`
 - `flock`
@@ -489,7 +464,6 @@ take an entry off this list with a PR.
 - `lm-proxy`
 - `lmeterx`
 - `local-ai-toolkit`
-- `lorax`
 - `model-flux`
 - `nadirclaw`
 - `nyro`
@@ -499,10 +473,8 @@ take an entry off this list with a PR.
 - `open-next-router`
 - `opencode-llm-proxy`
 - `opencode-models-discovery`
-- `openinfer`
 - `otoroshi-llm-extension`
 - `parallax`
-- `powerinfer`
 - `powerserve`
 - `quantum-free-router`
 - `qwen-gate`

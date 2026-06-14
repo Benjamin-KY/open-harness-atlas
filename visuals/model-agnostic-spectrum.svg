@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
 <title id="title">Model-agnostic spectrum across the open-harness-atlas registry</title>
-<desc id="desc">A stacked histogram showing how 815 open-source harnesses distribute across the model_agnostic_score axis (0 = provider-locked through 5 = fully portable), with a six-category small-multiples grid below comparing each category's distribution.</desc>
+<desc id="desc">A stacked histogram showing how 814 open-source harnesses distribute across the model_agnostic_score axis (0 = provider-locked through 5 = fully portable), with a six-category small-multiples grid below comparing each category's distribution.</desc>
 <style>.body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}.title{font-size:20px;font-weight:700;fill:#1f3a5f;}.sub{font-size:12px;font-weight:400;fill:#4a5d75;}.h2{font-size:13px;font-weight:600;fill:#1f3a5f;}.axis{font-size:11px;fill:#4a5d75;}.axis-bold{font-size:11px;font-weight:600;fill:#1f3a5f;text-anchor:middle;}.bar-total{font-size:11px;font-weight:700;fill:#1f3a5f;text-anchor:middle;}.seg-label{font-size:10px;font-weight:600;fill:#ffffff;text-anchor:middle;}.mini-title{font-size:11px;font-weight:600;fill:#1f3a5f;}.mini-count{font-size:10px;fill:#6b7a8c;}.mini-axis{font-size:9px;fill:#6b7a8c;text-anchor:middle;}.mini-bar-label{font-size:9px;font-weight:600;fill:#1f3a5f;text-anchor:middle;}.legend-text{font-size:11px;fill:#1f3a5f;}.footer{font-size:10px;fill:#6b7a8c;text-anchor:middle;}</style>
 <rect width="1200" height="720" fill="#ffffff"/>
 <text x="40" y="38" class="body title">Model-agnostic spectrum</text>
-<text x="40" y="58" class="body sub">815 open-source harnesses scored 0 (provider-locked) through 5 (fully portable). Auto-generated from registry/*/*.yaml. Conservative defaults (3) reflect entries pending manual review.</text>
+<text x="40" y="58" class="body sub">814 open-source harnesses scored 0 (provider-locked) through 5 (fully portable). Auto-generated from registry/*/*.yaml. Conservative defaults (3) reflect entries pending manual review.</text>
 <line x1="140" y1="330.0" x2="1160" y2="330.0" stroke="#e6e9ee" stroke-width="1"/>
 <text x="130" y="334.0" class="body axis" text-anchor="end">0</text>
 <line x1="140" y1="286.0" x2="1160" y2="286.0" stroke="#e6e9ee" stroke-width="1"/>
@@ -24,32 +24,33 @@
 <rect x="345.0" y="329.1" width="100" height="0.44" fill="#7d3c98"/>
 <text x="395.0" y="323.1" class="body bar-total">2</text>
 <text x="395.0" y="348.0" class="body axis-bold">1</text>
-<rect x="515.0" y="329.6" width="100" height="0.44" fill="#d68910"/>
-<rect x="515.0" y="329.1" width="100" height="0.44" fill="#3498db"/>
-<text x="565.0" y="323.1" class="body bar-total">2</text>
+<rect x="515.0" y="329.1" width="100" height="0.88" fill="#d68910"/>
+<rect x="515.0" y="328.7" width="100" height="0.44" fill="#28a745"/>
+<rect x="515.0" y="328.2" width="100" height="0.44" fill="#3498db"/>
+<text x="565.0" y="322.2" class="body bar-total">4</text>
 <text x="565.0" y="348.0" class="body axis-bold">2</text>
-<rect x="685.0" y="306.7" width="100" height="23.32" fill="#1f3a5f"/>
-<text x="735.0" y="322.3" class="body seg-label">53</text>
-<rect x="685.0" y="235.0" width="100" height="71.72" fill="#d68910"/>
-<text x="735.0" y="274.8" class="body seg-label">163</text>
-<rect x="685.0" y="181.7" width="100" height="53.24" fill="#28a745"/>
-<text x="735.0" y="212.3" class="body seg-label">121</text>
-<rect x="685.0" y="156.6" width="100" height="25.08" fill="#c0392b"/>
-<text x="735.0" y="173.2" class="body seg-label">57</text>
-<rect x="685.0" y="140.4" width="100" height="16.28" fill="#3498db"/>
-<rect x="685.0" y="130.7" width="100" height="9.68" fill="#7d3c98"/>
-<text x="735.0" y="124.7" class="body bar-total">453</text>
+<rect x="685.0" y="307.1" width="100" height="22.88" fill="#1f3a5f"/>
+<text x="735.0" y="322.6" class="body seg-label">52</text>
+<rect x="685.0" y="236.3" width="100" height="70.84" fill="#d68910"/>
+<text x="735.0" y="275.7" class="body seg-label">161</text>
+<rect x="685.0" y="183.9" width="100" height="52.36" fill="#28a745"/>
+<text x="735.0" y="214.1" class="body seg-label">119</text>
+<rect x="685.0" y="158.8" width="100" height="25.08" fill="#c0392b"/>
+<text x="735.0" y="175.4" class="body seg-label">57</text>
+<rect x="685.0" y="143.4" width="100" height="15.40" fill="#3498db"/>
+<rect x="685.0" y="133.3" width="100" height="10.12" fill="#7d3c98"/>
+<text x="735.0" y="127.3" class="body bar-total">447</text>
 <text x="735.0" y="348.0" class="body axis-bold">3</text>
 <rect x="855.0" y="310.6" width="100" height="19.36" fill="#1f3a5f"/>
 <text x="905.0" y="324.3" class="body seg-label">44</text>
 <rect x="855.0" y="278.1" width="100" height="32.56" fill="#d68910"/>
 <text x="905.0" y="298.4" class="body seg-label">74</text>
-<rect x="855.0" y="244.6" width="100" height="33.44" fill="#28a745"/>
-<text x="905.0" y="265.4" class="body seg-label">76</text>
-<rect x="855.0" y="231.4" width="100" height="13.20" fill="#c0392b"/>
-<rect x="855.0" y="217.4" width="100" height="14.08" fill="#3498db"/>
-<rect x="855.0" y="216.9" width="100" height="0.44" fill="#7d3c98"/>
-<text x="905.0" y="210.9" class="body bar-total">257</text>
+<rect x="855.0" y="244.2" width="100" height="33.88" fill="#28a745"/>
+<text x="905.0" y="265.1" class="body seg-label">77</text>
+<rect x="855.0" y="231.0" width="100" height="13.20" fill="#c0392b"/>
+<rect x="855.0" y="216.0" width="100" height="14.96" fill="#3498db"/>
+<rect x="855.0" y="215.6" width="100" height="0.44" fill="#7d3c98"/>
+<text x="905.0" y="209.6" class="body bar-total">260</text>
 <text x="905.0" y="348.0" class="body axis-bold">4</text>
 <rect x="1025.0" y="327.4" width="100" height="2.64" fill="#1f3a5f"/>
 <rect x="1025.0" y="324.7" width="100" height="2.64" fill="#d68910"/>
@@ -69,7 +70,7 @@
 <rect x="40" y="400" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
 <rect x="40" y="400" width="6" height="130" rx="3" fill="#1f3a5f"/>
 <text x="56" y="418" class="body mini-title">governance</text>
-<text x="388" y="418" class="body mini-count" text-anchor="end">103 entries</text>
+<text x="388" y="418" class="body mini-count" text-anchor="end">102 entries</text>
 <line x1="72.7" y1="503" x2="108.7" y2="503" stroke="#cfd6df" stroke-width="2"/>
 <text x="90.7" y="516.0" class="body mini-axis">0</text>
 <line x1="126.0" y1="503" x2="162.0" y2="503" stroke="#cfd6df" stroke-width="2"/>
@@ -77,33 +78,33 @@
 <line x1="179.3" y1="503" x2="215.3" y2="503" stroke="#cfd6df" stroke-width="2"/>
 <text x="197.3" y="516.0" class="body mini-axis">2</text>
 <rect x="232.7" y="428.00" width="36" height="76.00" rx="2" fill="#1f3a5f" opacity="0.85"/>
-<text x="250.7" y="424.0" class="body mini-bar-label">53</text>
+<text x="250.7" y="424.0" class="body mini-bar-label">52</text>
 <text x="250.7" y="516.0" class="body mini-axis">3</text>
-<rect x="286.0" y="440.91" width="36" height="63.09" rx="2" fill="#1f3a5f" opacity="0.85"/>
-<text x="304.0" y="436.9" class="body mini-bar-label">44</text>
+<rect x="286.0" y="439.69" width="36" height="64.31" rx="2" fill="#1f3a5f" opacity="0.85"/>
+<text x="304.0" y="435.7" class="body mini-bar-label">44</text>
 <text x="304.0" y="516.0" class="body mini-axis">4</text>
-<rect x="339.3" y="495.40" width="36" height="8.60" rx="2" fill="#1f3a5f" opacity="0.85"/>
-<text x="357.3" y="491.4" class="body mini-bar-label">6</text>
+<rect x="339.3" y="495.23" width="36" height="8.77" rx="2" fill="#1f3a5f" opacity="0.85"/>
+<text x="357.3" y="491.2" class="body mini-bar-label">6</text>
 <text x="357.3" y="516.0" class="body mini-axis">5</text>
 <rect x="420" y="400" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
 <rect x="420" y="400" width="6" height="130" rx="3" fill="#d68910"/>
 <text x="436" y="418" class="body mini-title">agent</text>
-<text x="768" y="418" class="body mini-count" text-anchor="end">245 entries</text>
+<text x="768" y="418" class="body mini-count" text-anchor="end">244 entries</text>
 <line x1="452.7" y1="503" x2="488.7" y2="503" stroke="#cfd6df" stroke-width="2"/>
 <text x="470.7" y="516.0" class="body mini-axis">0</text>
 <rect x="506.0" y="503.53" width="36" height="0.47" rx="2" fill="#d68910" opacity="0.85"/>
 <text x="524.0" y="499.5" class="body mini-bar-label">1</text>
 <text x="524.0" y="516.0" class="body mini-axis">1</text>
-<rect x="559.3" y="503.53" width="36" height="0.47" rx="2" fill="#d68910" opacity="0.85"/>
-<text x="577.3" y="499.5" class="body mini-bar-label">1</text>
+<rect x="559.3" y="503.06" width="36" height="0.94" rx="2" fill="#d68910" opacity="0.85"/>
+<text x="577.3" y="499.1" class="body mini-bar-label">2</text>
 <text x="577.3" y="516.0" class="body mini-axis">2</text>
 <rect x="612.7" y="428.00" width="36" height="76.00" rx="2" fill="#d68910" opacity="0.85"/>
-<text x="630.7" y="424.0" class="body mini-bar-label">163</text>
+<text x="630.7" y="424.0" class="body mini-bar-label">161</text>
 <text x="630.7" y="516.0" class="body mini-axis">3</text>
-<rect x="666.0" y="469.50" width="36" height="34.50" rx="2" fill="#d68910" opacity="0.85"/>
-<text x="684.0" y="465.5" class="body mini-bar-label">74</text>
+<rect x="666.0" y="469.07" width="36" height="34.93" rx="2" fill="#d68910" opacity="0.85"/>
+<text x="684.0" y="465.1" class="body mini-bar-label">74</text>
 <text x="684.0" y="516.0" class="body mini-axis">4</text>
-<rect x="719.3" y="501.20" width="36" height="2.80" rx="2" fill="#d68910" opacity="0.85"/>
+<rect x="719.3" y="501.17" width="36" height="2.83" rx="2" fill="#d68910" opacity="0.85"/>
 <text x="737.3" y="497.2" class="body mini-bar-label">6</text>
 <text x="737.3" y="516.0" class="body mini-axis">5</text>
 <rect x="800" y="400" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
@@ -114,16 +115,17 @@
 <text x="850.7" y="516.0" class="body mini-axis">0</text>
 <line x1="886.0" y1="503" x2="922.0" y2="503" stroke="#cfd6df" stroke-width="2"/>
 <text x="904.0" y="516.0" class="body mini-axis">1</text>
-<line x1="939.3" y1="503" x2="975.3" y2="503" stroke="#cfd6df" stroke-width="2"/>
+<rect x="939.3" y="503.36" width="36" height="0.64" rx="2" fill="#28a745" opacity="0.85"/>
+<text x="957.3" y="499.4" class="body mini-bar-label">1</text>
 <text x="957.3" y="516.0" class="body mini-axis">2</text>
 <rect x="992.7" y="428.00" width="36" height="76.00" rx="2" fill="#28a745" opacity="0.85"/>
-<text x="1010.7" y="424.0" class="body mini-bar-label">121</text>
+<text x="1010.7" y="424.0" class="body mini-bar-label">119</text>
 <text x="1010.7" y="516.0" class="body mini-axis">3</text>
-<rect x="1046.0" y="456.26" width="36" height="47.74" rx="2" fill="#28a745" opacity="0.85"/>
-<text x="1064.0" y="452.3" class="body mini-bar-label">76</text>
+<rect x="1046.0" y="454.82" width="36" height="49.18" rx="2" fill="#28a745" opacity="0.85"/>
+<text x="1064.0" y="450.8" class="body mini-bar-label">77</text>
 <text x="1064.0" y="516.0" class="body mini-axis">4</text>
-<rect x="1099.3" y="495.83" width="36" height="8.17" rx="2" fill="#28a745" opacity="0.85"/>
-<text x="1117.3" y="491.8" class="body mini-bar-label">13</text>
+<rect x="1099.3" y="495.70" width="36" height="8.30" rx="2" fill="#28a745" opacity="0.85"/>
+<text x="1117.3" y="491.7" class="body mini-bar-label">13</text>
 <text x="1117.3" y="516.0" class="body mini-axis">5</text>
 <rect x="40" y="560" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
 <rect x="40" y="560" width="6" height="130" rx="3" fill="#c0392b"/>
@@ -152,22 +154,22 @@
 <text x="470.7" y="676.0" class="body mini-axis">0</text>
 <line x1="506.0" y1="663" x2="542.0" y2="663" stroke="#cfd6df" stroke-width="2"/>
 <text x="524.0" y="676.0" class="body mini-axis">1</text>
-<rect x="559.3" y="661.95" width="36" height="2.05" rx="2" fill="#3498db" opacity="0.85"/>
-<text x="577.3" y="657.9" class="body mini-bar-label">1</text>
+<rect x="559.3" y="661.83" width="36" height="2.17" rx="2" fill="#3498db" opacity="0.85"/>
+<text x="577.3" y="657.8" class="body mini-bar-label">1</text>
 <text x="577.3" y="676.0" class="body mini-axis">2</text>
 <rect x="612.7" y="588.00" width="36" height="76.00" rx="2" fill="#3498db" opacity="0.85"/>
-<text x="630.7" y="584.0" class="body mini-bar-label">37</text>
+<text x="630.7" y="584.0" class="body mini-bar-label">35</text>
 <text x="630.7" y="676.0" class="body mini-axis">3</text>
-<rect x="666.0" y="598.27" width="36" height="65.73" rx="2" fill="#3498db" opacity="0.85"/>
-<text x="684.0" y="594.3" class="body mini-bar-label">32</text>
+<rect x="666.0" y="590.17" width="36" height="73.83" rx="2" fill="#3498db" opacity="0.85"/>
+<text x="684.0" y="586.2" class="body mini-bar-label">34</text>
 <text x="684.0" y="676.0" class="body mini-axis">4</text>
-<rect x="719.3" y="614.70" width="36" height="49.30" rx="2" fill="#3498db" opacity="0.85"/>
-<text x="737.3" y="610.7" class="body mini-bar-label">24</text>
+<rect x="719.3" y="611.89" width="36" height="52.11" rx="2" fill="#3498db" opacity="0.85"/>
+<text x="737.3" y="607.9" class="body mini-bar-label">24</text>
 <text x="737.3" y="676.0" class="body mini-axis">5</text>
 <rect x="800" y="560" width="360" height="130" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>
 <rect x="800" y="560" width="6" height="130" rx="3" fill="#7d3c98"/>
 <text x="816" y="578" class="body mini-title">education</text>
-<text x="1148" y="578" class="body mini-count" text-anchor="end">57 entries</text>
+<text x="1148" y="578" class="body mini-count" text-anchor="end">58 entries</text>
 <line x1="832.7" y1="663" x2="868.7" y2="663" stroke="#cfd6df" stroke-width="2"/>
 <text x="850.7" y="676.0" class="body mini-axis">0</text>
 <rect x="886.0" y="661.70" width="36" height="2.30" rx="2" fill="#7d3c98" opacity="0.85"/>
@@ -175,8 +177,8 @@
 <text x="904.0" y="676.0" class="body mini-axis">1</text>
 <line x1="939.3" y1="663" x2="975.3" y2="663" stroke="#cfd6df" stroke-width="2"/>
 <text x="957.3" y="676.0" class="body mini-axis">2</text>
-<rect x="992.7" y="613.33" width="36" height="50.67" rx="2" fill="#7d3c98" opacity="0.85"/>
-<text x="1010.7" y="609.3" class="body mini-bar-label">22</text>
+<rect x="992.7" y="611.03" width="36" height="52.97" rx="2" fill="#7d3c98" opacity="0.85"/>
+<text x="1010.7" y="607.0" class="body mini-bar-label">23</text>
 <text x="1010.7" y="676.0" class="body mini-axis">3</text>
 <rect x="1046.0" y="661.70" width="36" height="2.30" rx="2" fill="#7d3c98" opacity="0.85"/>
 <text x="1064.0" y="657.7" class="body mini-bar-label">1</text>

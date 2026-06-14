@@ -82,7 +82,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [HELMET](https://github.com/princeton-nlp/HELMET) | MIT | Python | ga | US | 5/5 | emerging | 217 | — | Princeton NLP Group |
 | [Hermes Rubric](https://github.com/hermes-labs-ai/hermes-rubric) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | hermes-labs-ai |
 | [Hugging Face Evaluate](https://github.com/huggingface/evaluate) | Apache-2.0 | Python | beta | — | 5/5 | established | 2.5k | — | Hugging Face |
-| [Holon Bench](https://github.com/JohnYCChiang/holon-bench) | MIT | Python | beta | — | 3/5 | frontier | 4 | — | JohnYCChiang |
+| [Holon Bench](https://github.com/JohnYCChiang/holon-bench) | MIT | Python | beta | — | 4/5 | frontier | 4 | — | JohnYCChiang |
 | [Htr](https://github.com/lehigh-university-libraries/htr) | Apache-2.0 | Go | beta | — | 3/5 | frontier | 2 | — | lehigh-university-libraries |
 | [HumanEval](https://github.com/openai/human-eval) | MIT | Python | ga | US | 4/5 | frontier | 3.3k | — | OpenAI |
 | [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai) | MIT | Python | ga | GB | 5/5 | established | 2.2k | — | UK AI Safety Institute (UK AISI) |
@@ -188,7 +188,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Self Healing RAG](https://github.com/jawwad-ali/self-healing-rag) | MIT | TypeScript | beta | — | 3/5 | frontier | 1 | — | jawwad-ali |
 | [SimpleEvals](https://github.com/openai/simple-evals) | MIT | Python | ga | US | 5/5 | established | 4.5k | — | OpenAI |
 | [Skill Lab](https://github.com/8ddieHu0314/Skill-Lab) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 52 | — | 8ddieHu0314 |
-| [Skill Optimizer](https://github.com/fastxyz/skill-optimizer) | MIT | TypeScript | beta | — | 3/5 | frontier | 65 | — | fastxyz |
+| [Skill Optimizer](https://github.com/fastxyz/skill-optimizer) | MIT | TypeScript | beta | — | 2/5 | frontier | 65 | — | fastxyz |
 | [Sral Framework](https://github.com/kemalefee8/sral-framework) | MIT | Multiple | beta | — | 3/5 | frontier | 2 | — | kemalefee8 |
 | [Statebind Guard](https://github.com/FU-max-boop/statebind-guard) | MIT | Python | beta | — | 3/5 | frontier | 2 | — | FU-max-boop |
 | [SWE-bench](https://github.com/SWE-bench/SWE-bench) | MIT | Python | ga | US | 4/5 | established | 5.2k | — | Princeton / Stanford |

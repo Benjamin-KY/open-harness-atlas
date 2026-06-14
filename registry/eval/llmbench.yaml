@@ -6,17 +6,17 @@ repo_url: https://github.com/AnkitNayak-eth/llmBench
 license: MIT
 primary_language: Python
 tagline: llmBench is a high-depth benchmarking tool designed to measure the raw performance of local LLM runtimes (Ollama, llama.cpp) while providing deep hardware intelligence.
-description: |-
-  LLM Bench — llmBench is a high-depth benchmarking tool designed to measure the raw performance of local LLM runtimes (Ollama, llama.cpp) while providing deep hardware intelligence. Upstream maintainer: AnkitNayak-eth.
+description: 'LLM Bench — llmBench is a high-depth benchmarking tool designed to measure the raw performance of local LLM runtimes (Ollama, llama.cpp) while providing deep hardware intelligence. Upstream maintainer: AnkitNayak-eth.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: AnkitNayak-eth
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: AnkitNayak-eth (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'AnkitNayak-eth is an individual developer (GitHub User, community-maintained). MIT license is OSI-approved and confirmed in the repository. Model-agnostic score 4 is accurate: the tool explicitly benchmarks Ollama and llama.cpp local runtimes with hardware-intelligence reporting, and serves as an OpenAI-compatible-endpoint probe — local-weight inference is the primary design target. Satisfies §8 eval criteria as a free, open-source performance benchmarking runner.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

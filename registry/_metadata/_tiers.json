@@ -751,7 +751,6 @@
   "toolemu": "frontier",
   "transformer-pytorch-scratch": "frontier",
   "trellm": "frontier",
-  "trendradar": "landmark",
   "tribe": "frontier",
   "trpc-agent-go": "established",
   "trulens": "established",

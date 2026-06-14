@@ -7,17 +7,17 @@ homepage: https://github.com/AUTHENSOR/AUTHENSOR
 license: MIT
 primary_language: HTML
 tagline: AI security payloads and wordlists.
-description: |-
-  AI Seclists — AI security payloads and wordlists. Prompt injection, jailbreaks, model exploitation. The SecLists of AI. From the team behind 350+ verified vulnerabilities across the ML ecosystem. Upstream maintainer: AUTHENSOR.
+description: 'AI Seclists — AI security payloads and wordlists. Prompt injection, jailbreaks, model exploitation. The SecLists of AI. From the team behind 350+ verified vulnerabilities across the ML ecosystem. Upstream maintainer: AUTHENSOR.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: AUTHENSOR
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: AUTHENSOR (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'AUTHENSOR is an individual security researcher (GitHub User, community-maintained) with a stated track record of 350+ verified ML-ecosystem vulnerabilities. MIT license is OSI-approved and confirmed. Model-agnostic score 3 is appropriate: a prompt-injection and jailbreak payload corpus applies across ChatGPT, Claude, Llama, and other model families by design. Satisfies §8 redteam criteria as a free, open-source adversarial probe and wordlist collection with no §8 exclusion triggers.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - llm-attacks

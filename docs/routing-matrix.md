@@ -13,7 +13,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [aisuite](https://github.com/andrewyng/aisuite) | MIT | Python | beta | US | 4/5 | established | 14.1k | — | Andrew Ng (and contributors) |
 | [Apache APISIX](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 5/5 | landmark | 16.7k | — | Apache Software Foundation |
 | [apfel](https://github.com/Arthur-Ficial/apfel) | MIT | Swift | alpha | US | 5/5 | frontier | 5.8k | — | Arthur-Ficial |
-| [Apisix](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 3/5 | landmark | 16.7k | — | apache |
+| [Apisix](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | US | 4/5 | landmark | 16.7k | — | apache |
 | [Aqbot](https://github.com/AQBot-Desktop/AQBot) | AGPL-3.0-only | TypeScript | ga | — | 3/5 | frontier | 635 | — | AQBot-Desktop |
 | [Aqueduct](https://github.com/TU-Wien-dataLAB/aqueduct) | BSD-3-Clause | Python | beta | — | 3/5 | frontier | 23 | — | TU-Wien-dataLAB |
 | [BentoML](https://github.com/bentoml/BentoML) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 8.7k | — | BentoML / bentoml.com |
@@ -22,7 +22,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Claude Code Usage Bar](https://github.com/leeguooooo/claude-code-usage-bar) | MIT | Python | ga | — | 3/5 | emerging | 270 | — | leeguooooo |
 | [Claw Router](https://github.com/BlockRunAI/ClawRouter) | MIT | TypeScript | ga | — | 3/5 | emerging | 6.6k | — | BlockRunAI |
 | [Coai](https://github.com/coaidev/coai) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 9.2k | — | coaidev |
-| [Csghub Lite](https://github.com/OpenCSGs/csghub-lite) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 29 | — | OpenCSGs |
+| [Csghub Lite](https://github.com/OpenCSGs/csghub-lite) | Apache-2.0 | Go | beta | CN | 4/5 | frontier | 29 | — | OpenCSGs |
 | [DeepSpeed-MII](https://github.com/deepspeedai/DeepSpeed-MII) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 2.1k | — | Microsoft DeepSpeed team |
 | [Edgee](https://github.com/edgee-ai/edgee) | Apache-2.0 | Rust | beta | — | 3/5 | frontier | 89 | — | edgee-ai |
 | [Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway) | Apache-2.0 | Go | beta | — | 4/5 | established | 1.7k | — | Envoy Project (CNCF Sandbox) |
@@ -51,7 +51,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Lmeter X](https://github.com/MigoXLab/LMeterX) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 197 | — | MigoXLab |
 | [Local AI Toolkit](https://github.com/wa91h/local-ai-toolkit) | MIT | Go Template | beta | — | 3/5 | frontier | 16 | — | wa91h |
 | [LocalAI](https://github.com/mudler/LocalAI) | MIT | Go | ga | IT | 5/5 | landmark | 46.8k | — | mudler (Ettore Di Giacinto) |
-| [Lorax](https://github.com/predibase/lorax) | Apache-2.0 | Python | ga | — | 3/5 | established | 3.8k | — | predibase |
+| [Lorax](https://github.com/predibase/lorax) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.8k | — | predibase |
 | [MLC-LLM](https://github.com/mlc-ai/mlc-llm) | Apache-2.0 | Python | beta | US | 4/5 | established | 22.8k | — | MLC-AI (Tianqi Chen) |
 | [MLflow AI Gateway](https://github.com/mlflow/mlflow) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 26.5k | — | Databricks / Linux Foundation |
 | [Model Flux](https://github.com/dabao-yi/model-flux) | MIT | TypeScript | beta | — | 4/5 | frontier | 22 | — | dabao-yi |
@@ -72,7 +72,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Parallax](https://github.com/GradientHQ/parallax) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 1.3k | — | GradientHQ |
 | [Plano](https://github.com/katanemo/plano) | Apache-2.0 | Rust | beta | US | 4/5 | established | 6.6k | — | katanemo |
 | [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) | MIT | TypeScript | ga | US | 5/5 | landmark | 12.1k | — | Portkey AI |
-| [Power Infer](https://github.com/Tiiny-AI/PowerInfer) | MIT | C++ | ga | — | 3/5 | established | 9.6k | — | Tiiny-AI |
+| [Power Infer](https://github.com/Tiiny-AI/PowerInfer) | MIT | C++ | ga | CN | 3/5 | established | 9.6k | — | Tiiny-AI |
 | [Power Serve](https://github.com/powerserve-project/PowerServe) | Apache-2.0 | C++ | beta | — | 3/5 | frontier | 155 | — | powerserve-project |
 | [Quantum Free Router](https://github.com/spacepirate15/quantum-free-router) | MIT | Shell | beta | — | 3/5 | frontier | 28 | — | spacepirate15 |
 | [Qwen Gate](https://github.com/youssefvdel/qwen-gate) | MIT | TypeScript | beta | — | 4/5 | frontier | 40 | — | youssefvdel |

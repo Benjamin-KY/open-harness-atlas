@@ -1,19 +1,19 @@
 {
   "meta": {
-    "n_nodes": 815,
-    "n_edges": 3316,
-    "avg_degree": 8.14,
+    "n_nodes": 814,
+    "n_edges": 3304,
+    "avg_degree": 8.12,
     "density": 0.01,
     "categories": [
       {
         "key": "governance",
         "color": "#1f3a5f",
-        "count": 103
+        "count": 102
       },
       {
         "key": "agent",
         "color": "#d68910",
-        "count": 245
+        "count": 244
       },
       {
         "key": "eval",
@@ -33,13 +33,13 @@
       {
         "key": "education",
         "color": "#7d3c98",
-        "count": 57
+        "count": 58
       }
     ],
     "tiers": [
       {
         "key": "landmark",
-        "count": 129,
+        "count": 128,
         "opacity": 1.0,
         "radius_mult": 1.3,
         "outline": "solid"
@@ -85,7 +85,7 @@
         "id": "langgraph",
         "name": "LangGraph",
         "category": "agent",
-        "degree": 186
+        "degree": 185
       },
       {
         "id": "lm-evaluation-harness",
@@ -165,7 +165,7 @@
       ],
       [
         "GPL-3.0-only",
-        13
+        12
       ],
       [
         "AGPL-3.0-only",
@@ -219,7 +219,7 @@
     "maturity": [
       [
         "ga",
-        423
+        422
       ],
       [
         "beta",
@@ -233,15 +233,15 @@
     "countries": [
       [
         "Unknown",
-        491
+        483
       ],
       [
         "US",
-        214
+        216
       ],
       [
         "CN",
-        47
+        51
       ],
       [
         "FR",
@@ -253,7 +253,7 @@
       ],
       [
         "CH",
-        6
+        7
       ],
       [
         "IL",
@@ -331,7 +331,7 @@
     "languages": [
       [
         "Python",
-        510
+        509
       ],
       [
         "TypeScript",
@@ -449,15 +449,15 @@
       ],
       [
         2,
-        2
+        4
       ],
       [
         3,
-        453
+        447
       ],
       [
         4,
-        257
+        260
       ],
       [
         5,
@@ -1736,7 +1736,7 @@
       "color": "#d68910",
       "url": "https://github.com/AstrBotDevs/AstrBot",
       "tagline": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "AGPL-3.0-only",
       "language": "Python",
@@ -1872,7 +1872,7 @@
       "color": "#d68910",
       "url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
       "tagline": "ARIS \ufe0f (Auto-Research-In-Sleep) \u2014 Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -2690,7 +2690,7 @@
       "color": "#d68910",
       "url": "https://github.com/tirth8205/code-review-graph",
       "tagline": "Local-first code intelligence graph for MCP and CLI.",
-      "degree": 7,
+      "degree": 6,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -2861,12 +2861,12 @@
       "url": "https://github.com/coze-dev/coze-loop",
       "tagline": "Next-generation AI Agent Optimization Platform: Cozeloop addresses challenges in AI agent development by providing full-lifecycle management capabilities from development, debugging, and evaluation...",
       "degree": 8,
-      "mas": 3,
+      "mas": 2,
       "license": "Apache-2.0",
       "language": "Go",
       "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
+      "country": "CN",
+      "maintainer_type": "company",
       "maintainer_name": "coze-dev",
       "alignment": "partial",
       "tier": "emerging",
@@ -4358,7 +4358,7 @@
       "color": "#d68910",
       "url": "https://github.com/chopratejas/headroom",
       "tagline": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -5040,7 +5040,7 @@
       "color": "#d68910",
       "url": "https://github.com/kubeshark/kubeshark",
       "tagline": "eBPF-powered network observability for Kubernetes.",
-      "degree": 9,
+      "degree": 8,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Go",
@@ -5074,7 +5074,7 @@
       "color": "#d68910",
       "url": "https://github.com/firerpa/lamda",
       "tagline": "Android RPA agent framework, next generation mobile automation.",
-      "degree": 9,
+      "degree": 8,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -5176,7 +5176,7 @@
       "color": "#d68910",
       "url": "https://github.com/langchain-ai/langgraph",
       "tagline": "Stateful, controllable agents as explicit graphs of nodes and edges \u2014 checkpointing and time-travel built in.",
-      "degree": 186,
+      "degree": 185,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -5994,7 +5994,7 @@
       "color": "#d68910",
       "url": "https://github.com/czlonkowski/n8n-mcp",
       "tagline": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you",
-      "degree": 11,
+      "degree": 10,
       "mas": 3,
       "license": "MIT",
       "language": "TypeScript",
@@ -6742,7 +6742,7 @@
       "color": "#d68910",
       "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
       "tagline": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - \u57fa\u4e8e AI \u5b8c\u6574\u4fdd\u7559\u6392\u7248\u7684 PDF \u6587\u6863\u5168\u6587\u53cc\u8bed\u7ffb\u8bd1\uff0c\u652f\u6301 Google/DeepL/Ollama/OpenAI \u7b49\u670d\u52a1\uff0c\u63d0\u4f9b CLI/GUI/MCP/Docker/Zotero",
-      "degree": 10,
+      "degree": 9,
       "mas": 4,
       "license": "AGPL-3.0-only",
       "language": "Python",
@@ -7967,40 +7967,6 @@
       ]
     },
     {
-      "id": "trendradar",
-      "name": "Trend Radar",
-      "category": "agent",
-      "subcategory": "mcp-host",
-      "color": "#d68910",
-      "url": "https://github.com/sansan0/TrendRadar",
-      "tagline": "\u2b50AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.",
-      "degree": 12,
-      "mas": 3,
-      "license": "GPL-3.0-only",
-      "language": "Python",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "sansan0",
-      "alignment": "partial",
-      "tier": "landmark",
-      "tier_opacity": 1.0,
-      "tier_radius_mult": 1.3,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 59393,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 0,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "build-rag-agent",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "tribe",
       "name": "Tribe",
       "category": "agent",
@@ -8219,8 +8185,8 @@
       "license": "Apache-2.0",
       "language": "TypeScript",
       "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
+      "country": "CN",
+      "maintainer_type": "company",
       "maintainer_name": "bytedance",
       "alignment": "partial",
       "tier": "landmark",
@@ -8690,7 +8656,7 @@
       "color": "#d68910",
       "url": "https://github.com/78/xiaozhi-esp32",
       "tagline": "An MCP-based chatbot | \u4e00\u4e2a\u57fa\u4e8eMCP\u7684\u804a\u5929\u673a\u5668\u4eba",
-      "degree": 10,
+      "degree": 9,
       "mas": 3,
       "license": "MIT",
       "language": "C++",
@@ -8860,7 +8826,7 @@
       "color": "#7d3c98",
       "url": "https://github.com/patchy631/ai-engineering-hub",
       "tagline": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Jupyter Notebook",
@@ -8991,6 +8957,40 @@
       ]
     },
     {
+      "id": "awesome-foundry-nextgen",
+      "name": "Awesome Foundry Nextgen",
+      "category": "education",
+      "subcategory": "awesome-lists",
+      "color": "#7d3c98",
+      "url": "https://github.com/corticalstack/awesome-foundry-nextgen",
+      "tagline": "Hands-on labs for Microsoft Foundry - Azure's unified PaaS for enterprise AI.",
+      "degree": 7,
+      "mas": 3,
+      "license": "MIT",
+      "language": "Jupyter Notebook",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "community",
+      "maintainer_name": "corticalstack",
+      "alignment": "partial",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
+      "data_missing": false,
+      "stars": 22,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 3,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "learn-the-stack",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "awesome-llm-knowledge-systems",
       "name": "Awesome LLM Knowledge Systems",
       "category": "education",
@@ -9032,7 +9032,7 @@
       "color": "#7d3c98",
       "url": "https://github.com/yzfly/Awesome-MCP-ZH",
       "tagline": "MCP \u8d44\u6e90\u7cbe\u9009\uff0c MCP\u6307\u5357\uff0cClaude MCP\uff0cMCP Servers, MCP Clients",
-      "degree": 6,
+      "degree": 5,
       "mas": 3,
       "license": "MIT",
       "language": "Multiple",
@@ -12832,7 +12832,7 @@
       "language": "Python",
       "maturity": "beta",
       "country": "",
-      "maintainer_type": "institution",
+      "maintainer_type": "community",
       "maintainer_name": "gmitt98",
       "alignment": "partial",
       "tier": "frontier",
@@ -13375,7 +13375,7 @@
       "url": "https://github.com/JohnYCChiang/holon-bench",
       "tagline": "Open-source benchmark harness for evaluating AI coding agents on OSS maintainer workflows: repair loops, regression safety, scope control, and multi-language patches.",
       "degree": 8,
-      "mas": 3,
+      "mas": 4,
       "license": "MIT",
       "language": "Python",
       "maturity": "beta",
@@ -16993,7 +16993,7 @@
       "url": "https://github.com/fastxyz/skill-optimizer",
       "tagline": "Benchmark, evaluate, and optimize skills to ensure reliable performance across all LLMs",
       "degree": 10,
-      "mas": 3,
+      "mas": 2,
       "license": "MIT",
       "language": "TypeScript",
       "maturity": "beta",
@@ -18383,40 +18383,6 @@
       ]
     },
     {
-      "id": "awesome-foundry-nextgen",
-      "name": "Awesome Foundry Nextgen",
-      "category": "governance",
-      "subcategory": "guardrails",
-      "color": "#1f3a5f",
-      "url": "https://github.com/corticalstack/awesome-foundry-nextgen",
-      "tagline": "Hands-on labs for Microsoft Foundry - Azure's unified PaaS for enterprise AI.",
-      "degree": 7,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Jupyter Notebook",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "corticalstack",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 22,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 3,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "govern-llm-policy",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "baml",
       "name": "BAML",
       "category": "governance",
@@ -18633,8 +18599,8 @@
       "license": "MIT",
       "language": "Rust",
       "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
+      "country": "CH",
+      "maintainer_type": "institution",
       "maintainer_name": "eth-sri",
       "alignment": "partial",
       "tier": "frontier",
@@ -25343,11 +25309,11 @@
       "url": "https://github.com/apache/apisix",
       "tagline": "The Cloud-Native API Gateway and AI Gateway",
       "degree": 8,
-      "mas": 3,
+      "mas": 4,
       "license": "Apache-2.0",
       "language": "Lua",
       "maturity": "ga",
-      "country": "",
+      "country": "US",
       "maintainer_type": "community",
       "maintainer_name": "apache",
       "alignment": "partial",
@@ -25655,8 +25621,8 @@
       "license": "Apache-2.0",
       "language": "Go",
       "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
+      "country": "CN",
+      "maintainer_type": "company",
       "maintainer_name": "OpenCSGs",
       "alignment": "partial",
       "tier": "frontier",
@@ -26667,12 +26633,12 @@
       "url": "https://github.com/predibase/lorax",
       "tagline": "Multi-LoRA inference server that scales to 1000s of fine-tuned LLMs",
       "degree": 8,
-      "mas": 3,
+      "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
       "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
+      "country": "US",
+      "maintainer_type": "company",
       "maintainer_name": "predibase",
       "alignment": "partial",
       "tier": "established",
@@ -27405,7 +27371,7 @@
       "license": "MIT",
       "language": "C++",
       "maturity": "ga",
-      "country": "",
+      "country": "CN",
       "maintainer_type": "company",
       "maintainer_name": "Tiiny-AI",
       "alignment": "partial",
@@ -29266,10 +29232,6 @@
     },
     {
       "source": "astrbot",
-      "target": "trendradar"
-    },
-    {
-      "source": "astrbot",
       "target": "ai-engineering-hub"
     },
     {
@@ -29391,10 +29353,6 @@
     {
       "source": "auto-claude-code-research-in-sleep",
       "target": "pdfmathtranslate"
-    },
-    {
-      "source": "auto-claude-code-research-in-sleep",
-      "target": "trendradar"
     },
     {
       "source": "auto-claude-code-research-in-sleep",
@@ -30051,10 +30009,6 @@
     {
       "source": "code-review-graph",
       "target": "pdfmathtranslate"
-    },
-    {
-      "source": "code-review-graph",
-      "target": "trendradar"
     },
     {
       "source": "code-review-graph",
@@ -30981,10 +30935,6 @@
       "target": "pdfmathtranslate"
     },
     {
-      "source": "headroom",
-      "target": "trendradar"
-    },
-    {
       "source": "helmor",
       "target": "langgraph"
     },
@@ -31326,10 +31276,6 @@
     },
     {
       "source": "kubeshark",
-      "target": "trendradar"
-    },
-    {
-      "source": "kubeshark",
       "target": "xiaozhi-esp32"
     },
     {
@@ -31347,10 +31293,6 @@
     {
       "source": "lamda",
       "target": "pdfmathtranslate"
-    },
-    {
-      "source": "lamda",
-      "target": "trendradar"
     },
     {
       "source": "langchain",
@@ -31615,10 +31557,6 @@
     {
       "source": "langgraph",
       "target": "tidb"
-    },
-    {
-      "source": "langgraph",
-      "target": "trendradar"
     },
     {
       "source": "langgraph",
@@ -32054,10 +31992,6 @@
     },
     {
       "source": "n8n-mcp",
-      "target": "trendradar"
-    },
-    {
-      "source": "n8n-mcp",
       "target": "xiaozhi-esp32"
     },
     {
@@ -32381,10 +32315,6 @@
       "target": "awesome-mcp-zh"
     },
     {
-      "source": "pdfmathtranslate",
-      "target": "trendradar"
-    },
-    {
       "source": "plandex",
       "target": "voltagent"
     },
@@ -32573,18 +32503,6 @@
       "target": "toolbench"
     },
     {
-      "source": "trendradar",
-      "target": "ai-engineering-hub"
-    },
-    {
-      "source": "trendradar",
-      "target": "xiaozhi-esp32"
-    },
-    {
-      "source": "trendradar",
-      "target": "awesome-mcp-zh"
-    },
-    {
       "source": "tribe",
       "target": "vibe-skills"
     },
@@ -32723,6 +32641,34 @@
     {
       "source": "anthropics-courses",
       "target": "openai-cookbook"
+    },
+    {
+      "source": "awesome-foundry-nextgen",
+      "target": "brigade"
+    },
+    {
+      "source": "awesome-foundry-nextgen",
+      "target": "circle-guard-bench"
+    },
+    {
+      "source": "awesome-foundry-nextgen",
+      "target": "guardrails-ai"
+    },
+    {
+      "source": "awesome-foundry-nextgen",
+      "target": "trustloopguard"
+    },
+    {
+      "source": "awesome-foundry-nextgen",
+      "target": "vibeguard"
+    },
+    {
+      "source": "awesome-foundry-nextgen",
+      "target": "agentic-guardrails"
+    },
+    {
+      "source": "awesome-foundry-nextgen",
+      "target": "suprawall"
     },
     {
       "source": "awesome-llm-knowledge-systems",
@@ -34119,10 +34065,6 @@
     {
       "source": "circle-guard-bench",
       "target": "agentic-guardrails"
-    },
-    {
-      "source": "circle-guard-bench",
-      "target": "awesome-foundry-nextgen"
     },
     {
       "source": "circle-guard-bench",
@@ -36974,10 +36916,6 @@
     },
     {
       "source": "agentic-guardrails",
-      "target": "awesome-foundry-nextgen"
-    },
-    {
-      "source": "agentic-guardrails",
       "target": "brigade"
     },
     {
@@ -37231,26 +37169,6 @@
     {
       "source": "autodefense",
       "target": "wildguard"
-    },
-    {
-      "source": "awesome-foundry-nextgen",
-      "target": "brigade"
-    },
-    {
-      "source": "awesome-foundry-nextgen",
-      "target": "guardrails-ai"
-    },
-    {
-      "source": "awesome-foundry-nextgen",
-      "target": "trustloopguard"
-    },
-    {
-      "source": "awesome-foundry-nextgen",
-      "target": "vibeguard"
-    },
-    {
-      "source": "awesome-foundry-nextgen",
-      "target": "suprawall"
     },
     {
       "source": "baml",
@@ -42284,7 +42202,6 @@
           "textgrad",
           "tidb",
           "toolbench-tool-learning",
-          "trendradar",
           "tribe",
           "trpc-agent-go",
           "turix-cua",
@@ -42528,7 +42445,6 @@
           "armorer",
           "art-toolkit",
           "autodefense",
-          "awesome-foundry-nextgen",
           "banned-words",
           "bifrost",
           "brigade",
@@ -42656,6 +42572,7 @@
         "auto": [
           "ai-engineer-roadmap",
           "ai-ml-storybook-code",
+          "awesome-foundry-nextgen",
           "awesome-llm-knowledge-systems",
           "awesome-mcp-zh",
           "aws-bedrock-workshop",

@@ -7,10 +7,10 @@ homepage: https://code-review-graph.com
 license: MIT
 primary_language: Python
 tagline: Local-first code intelligence graph for MCP and CLI.
-description: |-
-  Code Review Graph — Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows. Upstream maintainer: tirth8205.
+description: 'Code Review Graph — Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows. Upstream maintainer: tirth8205.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
@@ -23,5 +23,4 @@ adjacent_to:
 - langgraph
 - n8n-mcp
 - pdfmathtranslate
-- trendradar
 - xiaozhi-esp32

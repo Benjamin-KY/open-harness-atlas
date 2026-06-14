@@ -76,7 +76,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | frontier | 723 | — | Human-Agent-Society |
 | [Core](https://github.com/cheshire-cat-ai/core) | GPL-3.0-only | Python | ga | — | 3/5 | established | 3.0k | — | cheshire-cat-ai |
 | [Cow Agent](https://github.com/zhayujie/CowAgent) | MIT | Python | ga | — | 3/5 | landmark | 45.3k | — | zhayujie |
-| [Coze Loop](https://github.com/coze-dev/coze-loop) | Apache-2.0 | Go | ga | — | 3/5 | emerging | 5.5k | — | coze-dev |
+| [Coze Loop](https://github.com/coze-dev/coze-loop) | Apache-2.0 | Go | ga | CN | 2/5 | emerging | 5.5k | — | coze-dev |
 | [CrewAI](https://github.com/crewAIInc/crewAI) | MIT | Python | ga | US | 3/5 | landmark | 53.5k | — | CrewAI Inc. |
 | [Cua](https://github.com/trycua/cua) | MIT | HTML | ga | — | 3/5 | established | 17.9k | — | trycua |
 | [Cursor Talk To Figma MCP](https://github.com/grab/cursor-talk-to-figma-mcp) | MIT | JavaScript | ga | — | 3/5 | established | 6.8k | — | grab |
@@ -226,14 +226,13 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [TextGrad](https://github.com/zou-group/textgrad) | MIT | Python | beta | US | 4/5 | frontier | 3.6k | — | Stanford ZouLab / James Zou Group |
 | [Tidb](https://github.com/pingcap/tidb) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 40.2k | — | pingcap |
 | [ToolBench / ToolLLM](https://github.com/OpenBMB/ToolBench) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 5.7k | — | OpenBMB / Tsinghua KEG |
-| [Trend Radar](https://github.com/sansan0/TrendRadar) | GPL-3.0-only | Python | ga | — | 3/5 | landmark | 59.4k | — | sansan0 |
 | [Tribe](https://github.com/StreetLamb/tribe) | MIT | TypeScript | ga | — | 3/5 | frontier | 1.1k | — | StreetLamb |
 | [Trpc Agent Go](https://github.com/trpc-group/trpc-agent-go) | Apache-2.0 | Go | ga | — | 3/5 | established | 1.4k | — | trpc-group |
 | [Turi X CUA](https://github.com/TurixAI/TuriX-CUA) | MIT | Python | ga | — | 3/5 | emerging | 3.1k | — | TurixAI |
 | [Tuui](https://github.com/AI-QL/tuui) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 1.1k | — | AI-QL |
 | [Txtai](https://github.com/neuml/txtai) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 12.7k | — | neuml |
 | [UFO/UFO3 Galaxy](https://github.com/microsoft/UFO) | MIT | Python | ga | US | 4/5 | landmark | 9.0k | — | Microsoft Research |
-| [UI TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | Apache-2.0 | TypeScript | ga | — | 3/5 | landmark | 36.4k | — | bytedance |
+| [UI TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | Apache-2.0 | TypeScript | ga | CN | 3/5 | landmark | 36.4k | — | bytedance |
 | [Unity MCP](https://github.com/CoplayDev/unity-mcp) | MIT | C# | ga | — | 3/5 | established | 10.6k | — | CoplayDev |
 | [Upsonic](https://github.com/upsonic/upsonic) | MIT | Python | beta | TR | 4/5 | landmark | 7.9k | — | Upsonic community |
 | [Valuecell](https://github.com/ValueCell-ai/valuecell) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 10.8k | — | ValueCell-ai |

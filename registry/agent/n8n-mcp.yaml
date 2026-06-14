@@ -7,10 +7,10 @@ homepage: https://www.n8n-mcp.com/
 license: MIT
 primary_language: TypeScript
 tagline: A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you
-description: |-
-  N8n MCP — A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you. Upstream maintainer: czlonkowski.
+description: 'N8n MCP — A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you. Upstream maintainer: czlonkowski.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
@@ -23,5 +23,4 @@ adjacent_to:
 - ai-engineering-hub
 - astrbot
 - langgraph
-- trendradar
 - xiaozhi-esp32

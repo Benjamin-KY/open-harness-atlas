@@ -7,17 +7,17 @@ homepage: https://decodingml.substack.com/p/why-mcp-breaks-old-enterprise-ai
 license: MIT
 primary_language: Python
 tagline: Learn to build from scratch an AI PR reviewer integrated with GitHub, Slack and Asana that scales within your organization.
-description: |-
-  Enterprise MCP Course — Learn to build from scratch an AI PR reviewer integrated with GitHub, Slack and Asana that scales within your organization. Upstream maintainer: decodingai-magazine.
+description: 'Enterprise MCP Course — Learn to build from scratch an AI PR reviewer integrated with GitHub, Slack and Asana that scales within your organization. Upstream maintainer: decodingai-magazine.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: ga
 maintainer:
   type: community
   name: decodingai-magazine
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: decodingai-magazine (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'decodingai-magazine is a small community/newsletter organization shipping the GitHub repo as an MIT-licensed free open-source MCP tutorial; the linked Substack is paid but the catalogued artefact (code + README walkthrough) is free per §8. Pushed 2026-04-06. Model-agnostic 3 — README recommends Gemini''s free tier but the architecture is provider-agnostic MCP-host wiring that any LLM client can drive. Flag: heavy newsletter cross-promotion in README, so curator should re-verify in future sweeps that the code stays first-class and not gated behind a paywall.'
 harness_paradigm_alignment: partial
 education_resources:
 - title: Enterprise MCP Course repository

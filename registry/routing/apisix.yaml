@@ -7,17 +7,17 @@ homepage: https://apisix.apache.org/blog/
 license: Apache-2.0
 primary_language: Lua
 tagline: The Cloud-Native API Gateway and AI Gateway
-description: |-
-  Apisix — The Cloud-Native API Gateway and AI Gateway. Upstream maintainer: apache.
+description: 'Apisix — The Cloud-Native API Gateway and AI Gateway. Upstream maintainer: apache.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: community
   name: apache
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: apache (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: 'apache is the Apache Software Foundation, a US-based non-profit foundation governing open-source projects (community-maintained; ASF is a community foundation distinct from university/government/standards body). Apache-2.0 license is ASF''s own, OSI-approved. Model-agnostic score revised to 4: APISIX functions as an AI Gateway where backend provider endpoints are routing-rule configuration, supporting local-weight backends and commercial API endpoints interchangeably with OpenAI-compatible routing. Actively maintained Apache top-level project with no §8 exclusion flags.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - csghub-lite

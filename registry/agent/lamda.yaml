@@ -7,10 +7,10 @@ homepage: https://device-farm.com/
 license: MIT
 primary_language: Python
 tagline: Android RPA agent framework, next generation mobile automation.
-description: |-
-  Lamda — Android RPA agent framework, next generation mobile automation. Upstream maintainer: firerpa.
+description: 'Lamda — Android RPA agent framework, next generation mobile automation. Upstream maintainer: firerpa.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
@@ -24,4 +24,3 @@ adjacent_to:
 - librechat
 - n8n-mcp
 - pdfmathtranslate
-- trendradar

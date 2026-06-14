@@ -6,17 +6,17 @@ repo_url: https://github.com/antoinezambelli/forge
 license: MIT
 primary_language: Python
 tagline: A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows
-description: |-
-  Forge — A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows. Upstream maintainer: antoinezambelli.
+description: 'Forge — A Python framework for self-hosted LLM tool-calling and multi-step agentic workflows. Upstream maintainer: antoinezambelli.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: antoinezambelli
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: antoinezambelli (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'forge is community-maintained and MIT licensed. Model-agnostic score 3 remains appropriate because the README names Ollama, llama.cpp/llama-server, Llamafile, vLLM, and Anthropic backends on the same reliability layer, which is broader than a single hosted provider but not a fully generic provider-string abstraction. Noteworthy: the project is better understood as governance middleware for tool-calling reliability than as an agent framework in its own right.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

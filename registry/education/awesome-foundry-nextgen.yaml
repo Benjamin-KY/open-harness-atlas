@@ -1,0 +1,31 @@
+id: awesome-foundry-nextgen
+name: Awesome Foundry Nextgen
+category: education
+subcategory: awesome-lists
+repo_url: https://github.com/corticalstack/awesome-foundry-nextgen
+license: MIT
+primary_language: Jupyter Notebook
+tagline: Hands-on labs for Microsoft Foundry - Azure's unified PaaS for enterprise AI.
+description: 'Awesome Foundry Nextgen — Hands-on labs for Microsoft Foundry - Azure''s unified PaaS for enterprise AI. Notebooks + Bicep covering provisioning, agents (incl. hosted Copilot SDK + REST), MCP, Foundry IQ knowledge bases, guardrails, red-teaming, and fine-tuning. Upstream maintainer: corticalstack.
+
+
+  In the atlas: this is an education entry. It lists hands-on labs / notebooks for a specific vendor stack (Microsoft Foundry) and is included for practitioner-discovery; it does not implement governance primitives itself.'
+maturity: beta
+maintainer:
+  type: community
+  name: corticalstack
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: corticalstack is a solo community maintainer publishing this MIT-licensed Awesome-list of 50+ hands-on Jupyter labs for Microsoft Foundry (Azure's enterprise-AI PaaS). Recategorised from governance/guardrails to education/awesome-lists — the repo demonstrates Azure's guardrails/agents/RAG/eval surface but does not implement governance primitives, so the original framing misrepresented its feature surface. Model-agnostic 0–3 in practice — labs are hard-locked to Azure Foundry endpoints, DefaultAzureCredential auth, and az CLI. Pushed 2026-06-10.
+harness_paradigm_alignment: partial
+adjacent_to:
+- brigade
+- circle-guard-bench
+- guardrails-ai
+- trustloopguard
+- vibeguard
+education_resources:
+- title: Awesome Foundry Nextgen — labs index
+  url: https://github.com/corticalstack/awesome-foundry-nextgen
+  type: notebook
+  free: true
