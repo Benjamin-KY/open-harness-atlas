@@ -24,7 +24,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Claw Router](https://github.com/BlockRunAI/ClawRouter) | MIT | TypeScript | ga | — | 3/5 | emerging | 6.6k | — | BlockRunAI |
 | [Coai](https://github.com/coaidev/coai) | Apache-2.0 | TypeScript | ga | — | 4/5 | established | 9.2k | — | coaidev |
 | [Csghub Lite](https://github.com/OpenCSGs/csghub-lite) | Apache-2.0 | Go | beta | CN | 4/5 | frontier | 29 | — | OpenCSGs |
-| [DeepSpeed-MII](https://github.com/deepspeedai/DeepSpeed-MII) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 2.1k | — | Microsoft DeepSpeed team |
+| [DeepSpeed-MII](https://github.com/deepspeedai/DeepSpeed-MII) | Apache-2.0 | Python | beta | US | 4/5 | established | 2.1k | — | Microsoft DeepSpeed team |
 | [Edgee](https://github.com/edgee-ai/edgee) | Apache-2.0 | Rust | beta | — | 3/5 | frontier | 89 | — | edgee-ai |
 | [Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway) | Apache-2.0 | Go | beta | — | 4/5 | established | 1.7k | — | Envoy Project (CNCF Sandbox) |
 | [exo](https://github.com/exo-explore/exo) | Apache-2.0 | Python | beta | US | 5/5 | landmark | 45.3k | — | exo-explore |
@@ -83,7 +83,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Qwen Gate](https://github.com/youssefvdel/qwen-gate) | MIT | TypeScript | beta | — | 0/5 | frontier | 40 | — | youssefvdel |
 | [RamaLama](https://github.com/containers/ramalama) | MIT | Python | beta | US | 4/5 | established | 2.9k | — | Red Hat / containers org |
 | [Routectl](https://github.com/meepolabs/routectl) | MIT | Rust | beta | — | 4/5 | frontier | 14 | — | meepolabs |
-| [RouteLLM](https://github.com/lm-sys/RouteLLM) | Apache-2.0 | Python | beta | US | 5/5 | frontier | 5.0k | — | LMSYS Org |
+| [RouteLLM](https://github.com/lm-sys/RouteLLM) | Apache-2.0 | Python | beta | US | 5/5 | canonical | 5.0k | — | LMSYS Org |
 | [Routerly](https://github.com/Inebrio/Routerly) | AGPL-3.0-only | TypeScript | beta | — | 4/5 | frontier | 57 | — | Inebrio |
 | [Rtp LLM](https://github.com/alibaba/rtp-llm) | Apache-2.0 | Cuda | ga | CN | 3/5 | established | 1.2k | — | alibaba |
 | [Serverless LLM](https://github.com/ServerlessLLM/ServerlessLLM) | Apache-2.0 | Python | ga | GB | 3/5 | emerging | 684 | — | ServerlessLLM |

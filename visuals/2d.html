@@ -1054,6 +1054,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     canonical:   '#b08acc',
     established: '#5fb6f0',
     emerging:    '#6fb59a',
+    dormant:     '#5c6470',
     frontier:    '#7e8a9c',
     unknown:     '#9c8062'
   };
@@ -1062,14 +1063,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     canonical:   'Canonical',
     established: 'Established',
     emerging:    'Emerging',
+    dormant:     'Dormant',
     frontier:    'Frontier',
     unknown:     'Unknown'
   };
   const TIER_HINT = {
     landmark:    '≥30k stars, or ≥2 yr at 5k+ stars with active commits',
-    canonical:   'Archived but ≥5k stars — reference implementation / feature-complete',
-    established: '≥1k stars, 1yr+ old, actively maintained (or ≥20k stars at slower cadence)',
-    emerging:    '≥100 stars, 3mo+ old, actively maintained',
+    canonical:   'Reference implementation — archived ≥5k★, or non-archived ≥5k★ + 1yr+ + idle >180d (quiet stable / quiet iconic)',
+    established: '≥1k stars + 1yr+ + active (or ≥20k stars at slower cadence, or ≥2k research-cadence)',
+    emerging:    '≥100 stars + 3mo+ + active (or ≥200 stars + 6mo+ at slower research cadence)',
+    dormant:     '>18 months since last commit, not iconic enough for canonical — has history but no recent maintenance signal',
     frontier:    'Passes inclusion criteria, no independent adoption signal yet',
     unknown:     'Metadata fetch failed — operational issue (SSO-restricted org, repo moved, rate-limit) rather than a low-signal verdict'
   };

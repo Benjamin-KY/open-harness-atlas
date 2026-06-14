@@ -15,29 +15,29 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Agentrial](https://github.com/alepot55/agentrial) | MIT | Python | beta | — | 3/5 | frontier | 17 | — | alepot55 |
 | [Agenttrace](https://github.com/tensorstax/agenttrace) | MIT | TypeScript | beta | — | 3/5 | frontier | 67 | — | tensorstax |
 | [AI Agents Reality Check](https://github.com/Cre4T3Tiv3/ai-agents-reality-check) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 59 | — | Cre4T3Tiv3 |
-| [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) | Apache-2.0 | Python | ga | US | 4/5 | frontier | 2.0k | — | Stanford NLP |
+| [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 2.0k | — | Stanford NLP |
 | [Any Agent](https://github.com/mozilla-ai/any-agent) | Apache-2.0 | Python | ga | — | 2/5 | established | 1.2k | — | mozilla-ai |
-| [APPS (Automated Programming Progress Standard)](https://github.com/hendrycks/apps) | MIT | Python | ga | US | 4/5 | frontier | 533 | — | Dan Hendrycks |
+| [APPS (Automated Programming Progress Standard)](https://github.com/hendrycks/apps) | MIT | Python | ga | US | 4/5 | dormant | 533 | — | Dan Hendrycks |
 | [AppWorld](https://github.com/stonybrooknlp/appworld) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 441 | — | Stony Brook NLP Group |
 | [ARC-AGI (Abstraction and Reasoning Corpus)](https://github.com/fchollet/ARC-AGI) | Apache-2.0 | JavaScript | ga | US | 5/5 | frontier | 4.8k | — | François Chollet (with the ARC Prize Foundation) |
-| [Arena-Hard-Auto](https://github.com/lmarena/arena-hard-auto) | Apache-2.0 | Python | ga | US | 4/5 | frontier | 1.0k | — | LM Arena / UC Berkeley |
+| [Arena-Hard-Auto](https://github.com/lmarena/arena-hard-auto) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 1.0k | — | LM Arena / UC Berkeley |
 | [ARES](https://github.com/stanford-futuredata/ARES) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 715 | — | Stanford FutureData |
 | [Arguslm](https://github.com/bluet/arguslm) | Apache-2.0 | Python | beta | — | 4/5 | frontier | 1 | — | bluet |
 | [Autorag](https://github.com/Marker-Inc-Korea/AutoRAG) | Apache-2.0 | Python | ga | KR | 5/5 | — | — | — | Marker Inc |
-| [BEIR (Benchmarking-IR)](https://github.com/beir-cellar/beir) | Apache-2.0 | Python | ga | — | 4/5 | frontier | 2.2k | — | BEIR Community (Nandan Thakur et al.) |
+| [BEIR (Benchmarking-IR)](https://github.com/beir-cellar/beir) | Apache-2.0 | Python | ga | — | 4/5 | established | 2.2k | — | BEIR Community (Nandan Thakur et al.) |
 | [Benchclaw](https://github.com/Agnuxo1/benchclaw) | MIT | HTML | beta | — | 4/5 | frontier | 5 | — | Agnuxo1 |
 | [Benchjack](https://github.com/benchjack/benchjack) | Apache-2.0 | Python | beta | — | 2/5 | frontier | 39 | — | benchjack |
 | [Best Tester](https://github.com/nshportun/BestTester) | Apache-2.0 | TypeScript | beta | — | 3/5 | frontier | 16 | — | nshportun |
 | [BFCL (Berkeley Function-Calling Leaderboard)](https://github.com/ShishirPatil/gorilla) | Apache-2.0 | Python | ga | US | 4/5 | established | 12.9k | — | UC Berkeley Sky Computing Lab |
-| [BIG-bench](https://github.com/google/BIG-bench) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 3.2k | — | Google Research |
-| [BigCode Evaluation Harness](https://github.com/bigcode-project/bigcode-evaluation-harness) | Apache-2.0 | Python | ga | — | 4/5 | frontier | 1.0k | — | BigCode / HuggingFace |
+| [BIG-bench](https://github.com/google/BIG-bench) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 3.2k | — | Google Research |
+| [BigCode Evaluation Harness](https://github.com/bigcode-project/bigcode-evaluation-harness) | Apache-2.0 | Python | ga | — | 4/5 | emerging | 1.0k | — | BigCode / HuggingFace |
 | [BigCodeBench](https://github.com/bigcode-project/bigcodebench) | Apache-2.0 | Python | ga | — | 4/5 | emerging | 507 | — | BigCode Project |
 | [BrowserGym](https://github.com/ServiceNow/BrowserGym) | Apache-2.0 | Python | beta | CA | 4/5 | established | 1.2k | — | ServiceNow Research |
 | [Capbencher](https://github.com/ishida-lab/capbencher) | MIT | Python | beta | JP | 3/5 | frontier | 8 | — | ishida-lab |
 | [Cc Plugin Eval](https://github.com/sjnims/cc-plugin-eval) | MIT | TypeScript | beta | — | 0/5 | frontier | 20 | — | sjnims |
-| [ChatEval](https://github.com/thunlp/ChatEval) | MIT | Python | beta | CN | 4/5 | frontier | 335 | — | THUDM / Tsinghua |
+| [ChatEval](https://github.com/thunlp/ChatEval) | MIT | Python | beta | CN | 4/5 | dormant | 335 | — | THUDM / Tsinghua |
 | [Circle Guard Bench](https://github.com/whitecircle/circle-guard-bench) | Apache-2.0 | Python | beta | FR | 3/5 | frontier | 70 | — | whitecircle |
-| [ClassEval](https://github.com/FudanSELab/ClassEval) | MIT | Python | beta | SG | 4/5 | frontier | 151 | — | NLP Group, Nanyang Technological University / Fudan University |
+| [ClassEval](https://github.com/FudanSELab/ClassEval) | MIT | Python | beta | SG | 4/5 | dormant | 151 | — | NLP Group, Nanyang Technological University / Fudan University |
 | [Clin Verdict Physician Curated Clinical AI Evals Suite](https://github.com/sharifalzaber/ClinVerdict-Physician-Curated-Clinical-AI-Evals-Suite) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | sharifalzaber |
 | [CMB (Chinese Medical Benchmark)](https://github.com/FreedomIntelligence/CMB) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 243 | — | Chinese University of HK (Shenzhen) |
 | [Completely](https://github.com/23ag1/completely) | MIT | Shell | beta | — | 1/5 | frontier | 3 | — | 23ag1 |
@@ -47,7 +47,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Critical Thinking](https://github.com/Johna2an/critical-thinking) | MIT | HTML | beta | — | 3/5 | frontier | 2 | — | Johna2an |
 | [Crucible Bslm](https://github.com/Nimblestorm/crucible-bslm) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | Nimblestorm |
 | [Crucible](https://github.com/lord-arbiter/Crucible) | MIT | Python | beta | — | 4/5 | frontier | 2 | — | lord-arbiter |
-| [CRUXEval](https://github.com/facebookresearch/cruxeval) | MIT | Python | beta | US | 4/5 | frontier | 170 | — | Meta / FAIR |
+| [CRUXEval](https://github.com/facebookresearch/cruxeval) | MIT | Python | beta | US | 4/5 | dormant | 170 | — | Meta / FAIR |
 | [Deepeval Evaluation Harness](https://github.com/sunilp303/deepeval-evaluation-harness) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | sunilp303 |
 | [DeepEval](https://github.com/confident-ai/deepeval) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 16.1k | — | Confident AI |
 | [Dokimos](https://github.com/dokimos-dev/dokimos) | MIT | Java | beta | — | 3/5 | frontier | 39 | — | dokimos-dev |
@@ -60,16 +60,16 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Eval](https://github.com/ejentum/eval) | MIT | Python | beta | — | 3/5 | frontier | 3 | — | ejentum |
 | [Evalbench](https://github.com/GoogleCloudPlatform/evalbench) | Apache-2.0 | Python | beta | US | 2/5 | frontier | 48 | — | GoogleCloudPlatform |
 | [Evalbot](https://github.com/prat3ik/evalbot) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 0 | — | prat3ik |
-| [EvalPlus](https://github.com/evalplus/evalplus) | Apache-2.0 | Python | ga | US | 4/5 | frontier | 1.8k | — | UIUC / HKU |
+| [EvalPlus](https://github.com/evalplus/evalplus) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 1.8k | — | UIUC / HKU |
 | [Every Eval Ever](https://github.com/evaleval/every_eval_ever) | MIT | Python | beta | — | 3/5 | frontier | 76 | — | evaleval |
 | [FActScore](https://github.com/shmsw25/FActScore) | MIT | Python | ga | US | 4/5 | frontier | 442 | — | UW / Meta AI |
 | [Fieldtest](https://github.com/gmitt98/fieldtest) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | gmitt98 |
 | [FinBen / PIXIU](https://github.com/The-FinAI/PIXIU) | MIT | Python | beta | CN | 4/5 | frontier | 867 | — | The FinAI Consortium (multi-institution) |
-| [FLASK](https://github.com/kaistAI/FLASK) | MIT | Python | ga | KR | 4/5 | frontier | 218 | — | KAIST AI |
-| [Flow-Judge](https://github.com/flowaicom/flow-judge) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 86 | — | Flow AI |
+| [FLASK](https://github.com/kaistAI/FLASK) | MIT | Python | ga | KR | 4/5 | dormant | 218 | — | KAIST AI |
+| [Flow-Judge](https://github.com/flowaicom/flow-judge) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 86 | — | Flow AI |
 | [Gauntlet](https://github.com/Basaltlabs-app/Gauntlet) | MIT | Python | beta | — | 3/5 | frontier | 5 | — | Basaltlabs-app |
 | [Gdpval Realworks](https://github.com/hyeonsangjeon/gdpval-realworks) | MIT | Python | beta | — | 3/5 | frontier | 14 | — | hyeonsangjeon |
-| [GPQA (Graduate-Level Google-Proof QA)](https://github.com/idavidrein/gpqa) | MIT | Python | ga | US | 4/5 | frontier | 510 | — | David Rein et al. (NYU) |
+| [GPQA (Graduate-Level Google-Proof QA)](https://github.com/idavidrein/gpqa) | MIT | Python | ga | US | 4/5 | dormant | 510 | — | David Rein et al. (NYU) |
 | [Groundcheck](https://github.com/zhjai/groundcheck) | MIT | Multiple | beta | — | 3/5 | frontier | 0 | — | zhjai |
 | [Guard Eval Harness](https://github.com/Virtue-Research/guard-eval-harness) | MIT | Python | beta | — | 3/5 | frontier | 11 | — | Virtue-Research |
 | [Guess Arena](https://github.com/IAAR-Shanghai/GuessArena) | Apache-2.0 | Python | beta | CN | 3/5 | frontier | 10 | — | IAAR-Shanghai |
@@ -95,7 +95,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Lighteval](https://github.com/huggingface/lighteval) | MIT | Python | beta | FR | 4/5 | established | 2.4k | — | Hugging Face |
 | [Litmus](https://github.com/google/litmus) | Apache-2.0 | Vue | beta | US | 2/5 | frontier | 50 | — | google |
 | [LiveBench](https://github.com/LiveBench/LiveBench) | Apache-2.0 | Python | ga | US | 5/5 | established | 1.2k | — | Abacus AI / NYU (LiveBench team) |
-| [LiveCodeBench](https://github.com/LiveCodeBench/LiveCodeBench) | MIT | Python | ga | US | 4/5 | frontier | 884 | — | LiveCodeBench Team |
+| [LiveCodeBench](https://github.com/LiveCodeBench/LiveCodeBench) | MIT | Python | ga | US | 4/5 | emerging | 884 | — | LiveCodeBench Team |
 | [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) | MIT | Jupyter Notebook | ga | — | 3/5 | frontier | 1.5k | — | OpenGenerativeAI |
 | [LLM Determinism Bench](https://github.com/julienmerconsulting/llm-determinism-bench) | MIT | HTML | beta | — | 2/5 | frontier | 0 | — | julienmerconsulting |
 | [LLM Eval Ci](https://github.com/omarnagy91/llm-eval-ci) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | omarnagy91 |
@@ -104,7 +104,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [LLM Eval](https://github.com/Aysnc-Labs/llm-eval) | MIT | PHP | beta | — | 2/5 | frontier | 1 | — | Aysnc-Labs |
 | [LLM Evalbox](https://github.com/Chedrian07/llm-evalbox) | Apache-2.0 | Python | beta | — | 4/5 | frontier | 2 | — | Chedrian07 |
 | [LLM Framework Benchmark](https://github.com/tomas-samek/llm-framework-benchmark) | MIT | Java | beta | — | 3/5 | frontier | 1 | — | tomas-samek |
-| [LLMBar](https://github.com/princeton-nlp/LLMBar) | MIT | Python | ga | US | 4/5 | frontier | 138 | — | Princeton NLP |
+| [LLMBar](https://github.com/princeton-nlp/LLMBar) | MIT | Python | ga | US | 4/5 | dormant | 138 | — | Princeton NLP |
 | [LLM Bench](https://github.com/AnkitNayak-eth/llmBench) | MIT | Python | beta | — | 4/5 | frontier | 45 | — | AnkitNayak-eth |
 | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | MIT | Python | ga | — | 5/5 | landmark | 12.9k | — | EleutherAI |
 | [Lmeter X](https://github.com/MigoXLab/LMeterX) | Apache-2.0 | Python | beta | — | 4/5 | emerging | 197 | — | MigoXLab |
@@ -115,15 +115,15 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Mac Mini LLM Roster](https://github.com/slogsdon/mac-mini-llm-roster) | MIT | Python | beta | — | 4/5 | frontier | 0 | — | slogsdon |
 | [Makerbench Hwe](https://github.com/tonykoop/makerbench-hwe) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 0 | — | tonykoop |
 | [Mateval](https://github.com/ElevenLiy/MATEval) | MIT | Python | beta | — | 3/5 | frontier | 28 | — | ElevenLiy |
-| [MATH (Hendrycks Competition Math)](https://github.com/hendrycks/math) | MIT | Python | ga | US | 4/5 | frontier | 1.4k | — | Dan Hendrycks |
+| [MATH (Hendrycks Competition Math)](https://github.com/hendrycks/math) | MIT | Python | ga | US | 4/5 | emerging | 1.4k | — | Dan Hendrycks |
 | [MathBench](https://github.com/open-compass/MathBench) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 115 | — | OpenCompass / Shanghai AI Lab |
 | [MCP Server](https://github.com/iris-eval/mcp-server) | MIT | TypeScript | beta | — | 3/5 | frontier | 7 | — | iris-eval |
-| [MedQA (USMLE)](https://github.com/jind11/MedQA) | MIT | Python | ga | US | 4/5 | frontier | 384 | — | Di Jin (MIT) |
+| [MedQA (USMLE)](https://github.com/jind11/MedQA) | MIT | Python | ga | US | 4/5 | dormant | 384 | — | Di Jin (MIT) |
 | [Memorylens](https://github.com/Neal006/memorylens) | MIT | Python | beta | — | 3/5 | frontier | 7 | — | Neal006 |
 | [Mental Health LLM Eval](https://github.com/KarmaEnchanter/mental-health-llm-eval) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | KarmaEnchanter |
 | [METR Task Standard](https://github.com/METR/task-standard) | MIT | Python | beta | US | 5/5 | frontier | 181 | — | METR (Model Evaluation and Threat Research) |
 | [Metrillm](https://github.com/MetriLLM/metrillm) | Apache-2.0 | TypeScript | beta | — | 3/5 | frontier | 5 | — | MetriLLM |
-| [Mind2Web](https://github.com/OSU-NLP-Group/Mind2Web) | MIT | Python | ga | US | 4/5 | frontier | 1.0k | — | OSU NLP Group |
+| [Mind2Web](https://github.com/OSU-NLP-Group/Mind2Web) | MIT | Python | ga | US | 4/5 | emerging | 1.0k | — | OSU NLP Group |
 | [Mind Trial](https://github.com/petmal/MindTrial) | MPL-2.0 | Go | beta | — | 2/5 | frontier | 13 | — | petmal |
 | [Mini Omega Lock](https://github.com/hibou04-ops/mini-omega-lock) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 1 | — | hibou04-ops |
 | [MLE-Bench](https://github.com/openai/mle-bench) | MIT | Python | ga | US | 5/5 | established | 1.6k | — | OpenAI |
@@ -135,7 +135,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [MT-Bench (FastChat)](https://github.com/lm-sys/FastChat) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 39.5k | — | LMSYS / UC Berkeley |
 | [MTEB](https://github.com/embeddings-benchmark/mteb) | Apache-2.0 | Python | ga | — | 4/5 | established | 3.3k | — | HuggingFace / community |
 | [Multiagent AI Evaluator](https://github.com/Albako/multiagent-ai-evaluator) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 0 | — | Albako |
-| [MuSR (Multistep Soft Reasoning)](https://github.com/Zayne-sprague/MuSR) | MIT | Python | beta | US | 4/5 | frontier | 56 | — | Zayne Sprague (UT Austin) |
+| [MuSR (Multistep Soft Reasoning)](https://github.com/Zayne-sprague/MuSR) | MIT | Python | beta | US | 4/5 | dormant | 56 | — | Zayne Sprague (UT Austin) |
 | [Myclaw Bench](https://github.com/LeoYeAI/myclaw-bench) | MIT | Python | ga | — | 3/5 | emerging | 229 | — | LeoYeAI |
 | [Nasde Toolkit](https://github.com/NoesisVision/nasde-toolkit) | MIT | Python | beta | — | 3/5 | frontier | 10 | — | NoesisVision |
 | [Needle in a Haystack](https://github.com/gkamradt/needle-in-a-haystack) | MIT | Python | ga | US | 4/5 | established | 2.3k | — | Greg Kamradt |
@@ -154,7 +154,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [OSWorld](https://github.com/xlang-ai/OSWorld) | Apache-2.0 | Python | ga | HK | 4/5 | established | 2.9k | — | HKU / CMU |
 | [Otter](https://github.com/GalenChen320/Otter) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 10 | — | GalenChen320 |
 | [Pairjudge](https://github.com/DaoyuanLi2816/pairjudge) | MIT | Python | beta | — | 3/5 | emerging | 169 | — | DaoyuanLi2816 |
-| [PandaLM](https://github.com/WeOpenML/PandaLM) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 924 | — | WeOpenML (Peking U / Westlake U) |
+| [PandaLM](https://github.com/WeOpenML/PandaLM) | Apache-2.0 | Python | beta | CN | 4/5 | dormant | 924 | — | WeOpenML (Peking U / Westlake U) |
 | [Pandaprobe](https://github.com/chirpz-ai/pandaprobe) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 318 | — | chirpz-ai |
 | [Parea Sdk Py](https://github.com/parea-ai/parea-sdk-py) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 82 | — | parea-ai |
 | [Play Bench](https://github.com/playsaurus-inc/play-bench) | MIT | Blade | beta | — | 3/5 | frontier | 2 | — | playsaurus-inc |
@@ -180,7 +180,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Reward Harness](https://github.com/TIGER-AI-Lab/RewardHarness) | Apache-2.0 | Python | beta | CA | 3/5 | frontier | 13 | — | TIGER-AI-Lab |
 | [Scaffold Bench](https://github.com/1337hero/scaffold-bench) | MIT | TypeScript | beta | — | 4/5 | frontier | 4 | — | 1337hero |
 | [SciCode](https://github.com/SciCode-Bench/SciCode) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 205 | — | SciCode Benchmark (multi-institution) |
-| [ScienceQA](https://github.com/lupantech/ScienceQA) | MIT | Python | ga | US | 4/5 | frontier | 737 | — | Pan Lu (UCLA) |
+| [ScienceQA](https://github.com/lupantech/ScienceQA) | MIT | Python | ga | US | 4/5 | dormant | 737 | — | Pan Lu (UCLA) |
 | [SECI](https://github.com/devmance/SECI) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | devmance |
 | [Self Healing RAG](https://github.com/jawwad-ali/self-healing-rag) | MIT | TypeScript | beta | — | 1/5 | frontier | 1 | — | jawwad-ali |
 | [SimpleEvals](https://github.com/openai/simple-evals) | MIT | Python | ga | US | 5/5 | established | 4.5k | — | OpenAI |
@@ -191,24 +191,24 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Structured Outputs](https://github.com/thedataquarry/structured-outputs) | MIT | Python | beta | — | 2/5 | frontier | 28 | — | thedataquarry |
 | [SWE-bench](https://github.com/SWE-bench/SWE-bench) | MIT | Python | ga | US | 4/5 | established | 5.2k | — | Princeton / Stanford |
 | [Swt Bench](https://github.com/logic-star-ai/swt-bench) | MIT | Python | beta | CH | 3/5 | frontier | 83 | — | logic-star-ai |
-| [T-Eval](https://github.com/open-compass/T-Eval) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 310 | — | OpenCompass / Shanghai AI Lab |
+| [T-Eval](https://github.com/open-compass/T-Eval) | Apache-2.0 | Python | beta | CN | 4/5 | dormant | 310 | — | OpenCompass / Shanghai AI Lab |
 | [Tau2 Bench](https://github.com/sierra-research/tau2-bench) | MIT | Python | ga | US | 3/5 | established | 1.3k | — | sierra-research |
-| [TheAgentCompany](https://github.com/TheAgentCompany/TheAgentCompany) | MIT | Python | beta | US | 5/5 | frontier | 728 | — | CMU LTI |
-| [Tonic Validate](https://github.com/TonicAI/tonic_validate) | MIT | Python | beta | US | 4/5 | frontier | 326 | — | Tonic AI |
-| [ToolBench](https://github.com/OpenBMB/ToolBench) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 5.7k | — | OpenBMB / Tsinghua |
+| [TheAgentCompany](https://github.com/TheAgentCompany/TheAgentCompany) | MIT | Python | beta | US | 5/5 | emerging | 728 | — | CMU LTI |
+| [Tonic Validate](https://github.com/TonicAI/tonic_validate) | MIT | Python | beta | US | 4/5 | emerging | 326 | — | Tonic AI |
+| [ToolBench](https://github.com/OpenBMB/ToolBench) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 5.7k | — | OpenBMB / Tsinghua |
 | [Tre LLM](https://github.com/weich97/TreLLM) | MIT | Python | beta | — | 3/5 | frontier | 3 | — | weich97 |
 | [Trulens Agent Starter](https://github.com/sunilp303/trulens-agent-starter) | MIT | Python | beta | — | 4/5 | frontier | 1 | — | sunilp303 |
 | [TruLens](https://github.com/truera/trulens) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.4k | — | Snowflake (ex-TruEra) |
 | [TruthfulQA](https://github.com/sylinrl/TruthfulQA) | Apache-2.0 | Python | ga | GB | 4/5 | frontier | 926 | — | Oxford / OpenAI |
 | [Tu Rtle](https://github.com/HPAI-BSC/TuRTLe) | Apache-2.0 | Python | beta | ES | 3/5 | frontier | 44 | — | HPAI-BSC |
-| [UltraEval](https://github.com/OpenBMB/UltraEval) | Apache-2.0 | Python | ga | CN | 4/5 | frontier | 258 | — | OpenBMB / Tsinghua |
+| [UltraEval](https://github.com/OpenBMB/UltraEval) | Apache-2.0 | Python | ga | CN | 4/5 | dormant | 258 | — | OpenBMB / Tsinghua |
 | [Unitxt](https://github.com/IBM/unitxt) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 214 | — | IBM Research |
-| [Verdict](https://github.com/haizelabs/verdict) | MIT | Jupyter Notebook | ga | — | 2/5 | frontier | 343 | — | haizelabs |
+| [Verdict](https://github.com/haizelabs/verdict) | MIT | Jupyter Notebook | ga | — | 2/5 | emerging | 343 | — | haizelabs |
 | [Vero Eval](https://github.com/vero-labs-ai/vero-eval) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 32 | — | vero-labs-ai |
 | [Vietnamese Secretary LLM](https://github.com/khoa-na/vietnamese-secretary-llm) | MIT | Python | beta | — | 4/5 | frontier | 0 | — | khoa-na |
 | [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) | Apache-2.0 | Python | ga | CN | 4/5 | established | 4.2k | — | OpenCompass / Shanghai AI Lab |
-| [WebArena](https://github.com/web-arena-x/webarena) | MIT | Python | ga | US | 4/5 | frontier | 1.5k | — | CMU |
-| [WildBench](https://github.com/allenai/WildBench) | Apache-2.0 | Python | ga | US | 4/5 | frontier | 254 | — | Allen Institute for AI (AI2) |
+| [WebArena](https://github.com/web-arena-x/webarena) | MIT | Python | ga | US | 4/5 | emerging | 1.5k | — | CMU |
+| [WildBench](https://github.com/allenai/WildBench) | Apache-2.0 | Python | ga | US | 4/5 | dormant | 254 | — | Allen Institute for AI (AI2) |
 | [WorkArena](https://github.com/ServiceNow/WorkArena) | Apache-2.0 | Python | ga | CA | 4/5 | emerging | 252 | — | ServiceNow Research |
 | [ZeroEval](https://github.com/WildEval/ZeroEval) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 271 | — | Allen AI / WildEval |
 | [Zpoken Claw](https://github.com/ZpokenWeb3/ZpokenClaw) | MIT | TypeScript | beta | — | 3/5 | frontier | 1 | — | ZpokenWeb3 |

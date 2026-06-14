@@ -43,19 +43,29 @@ def compute_tier():
 
 
 def _iso(days_ago: int) -> str:
-    return (datetime.now(UTC) - timedelta(days=days_ago)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    # Pin to UTC midnight so the gap (compute_tier._now() - parsed) is exactly
+    # ``days_ago`` integer days regardless of wall-clock time of day. Without
+    # this pinning the boundary cases in the truth-table (e.g. exactly 547d
+    # or 548d idle for the dormant tier) become flaky depending on when the
+    # tests happen to run.
+    midnight = datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+    return (midnight - timedelta(days=days_ago)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 @pytest.mark.parametrize(
     "meta,expected",
     [
-        # ≥30k stars short-circuits to landmark regardless of age/recency.
+        # ≥30k stars short-circuits to landmark regardless of age/recency
+        # (provided it's still active — the post-canonical-priority dormant
+        # rule keeps multi-year-idle high-star projects in canonical/dormant
+        # rather than letting them re-enter landmark).
         ({"stars": 35_000, "created_at": _iso(60), "last_commit_at": _iso(120),
           "archived": False}, "landmark"),
         # 2-year + 5k stars + active commit reaches landmark (Phase 5 path).
         ({"stars": 7_500, "created_at": _iso(800), "last_commit_at": _iso(10),
           "archived": False}, "landmark"),
-        # Same stars + 2yr but stale commit drops to established (commit > 30d).
+        # Same stars + 2yr but stale commit drops to established (commit > 30d
+        # but ≤ 180d still passes the established path).
         ({"stars": 7_500, "created_at": _iso(800), "last_commit_at": _iso(60),
           "archived": False}, "established"),
         # 1k stars, 1yr, active commit → established.
@@ -72,28 +82,94 @@ def _iso(days_ago: int) -> str:
         # collapsed into ``frontier`` and rendered as dim long-tail).
         ({"stars": 50_000, "created_at": _iso(2_000), "last_commit_at": _iso(5),
           "archived": True}, "canonical"),
-        # Archived but <5k stars stays in frontier — canonical is a positive
-        # signal, not a generic "archived" bucket.
+        # Archived but <5k stars and recent commit (≤547d idle) stays in frontier.
+        # The dormant tier only catches >547d-idle entries; this one is 60d-idle
+        # so it falls through canonical and dormant and lands in frontier.
         ({"stars": 1_200, "created_at": _iso(1_000), "last_commit_at": _iso(60),
           "archived": True}, "frontier"),
         # Archived + exactly 5k stars (canonical floor) still earns canonical.
         ({"stars": 5_000, "created_at": _iso(900), "last_commit_at": _iso(30),
           "archived": True}, "canonical"),
+        # Archived + ≥5k stars + multi-year idle stays canonical (canonical
+        # takes priority over dormant for iconic reference impls).
+        ({"stars": 12_000, "created_at": _iso(2_000), "last_commit_at": _iso(900),
+          "archived": True}, "canonical"),
         # Relaxed-recency established path: ≥20k stars + last commit ≤365d
-        # rescues foundational projects that don't push weekly
-        # (anthropics/courses at 212d, microsoft/JARVIS at 319d) from the
-        # otherwise-strict 180d gate. Without this rule they fall to frontier.
+        # would normally rescue foundational projects that don't push weekly
+        # (anthropics/courses at 212d, microsoft/JARVIS at 319d). Under the
+        # v0.4.0 canonical (2) expansion this case is PRE-EMPTED by canonical
+        # for entries that match both — a 22k-star + 800d age + 300d-idle
+        # project is quiet-iconic, so canonical wins. The relaxed-established
+        # path now only catches stars≥20k + age<365d (e.g. a recent popular
+        # fork), which is rare in practice.
         ({"stars": 22_000, "created_at": _iso(800), "last_commit_at": _iso(300),
+          "archived": False}, "canonical"),
+        # Sub-canonical research-cadence cohort: ≥200 + ≥6mo + ≤365d-idle
+        # → emerging via the v0.4.0 research-cadence path. A 1.5k-star
+        # project at 300d stale used to fall to frontier; under v0.4.0 it
+        # legitimately reads as "emerging-but-quiet" research work and the
+        # research-cadence emerging path catches it.
+        ({"stars": 1_500, "created_at": _iso(800), "last_commit_at": _iso(300),
+          "archived": False}, "emerging"),
+        # LLM-era research-cadence established path: ≥2k stars + ≥1yr age +
+        # ≤365d idle. Catches LiveBench-class harnesses (research benchmarks
+        # that ship quarterly rather than weekly).
+        ({"stars": 2_500, "created_at": _iso(500), "last_commit_at": _iso(300),
           "archived": False}, "established"),
-        # The relaxed path must NOT catch sub-20k projects — a 10k-star project
-        # at 300d stale stays in frontier (not enough star signal to override
-        # the recency requirement).
-        ({"stars": 10_000, "created_at": _iso(800), "last_commit_at": _iso(300),
+        # The research-cadence path is bounded by 365d — at 400d idle it must
+        # NOT promote to established (and would land in frontier if not >547d).
+        ({"stars": 2_500, "created_at": _iso(500), "last_commit_at": _iso(400),
           "archived": False}, "frontier"),
         # 1.5yr old (548d) + 5k stars + active commit must NOT be landmark
         # (Phase 5 floor is 730d — guards against accidental relaxation).
         ({"stars": 6_000, "created_at": _iso(548), "last_commit_at": _iso(10),
           "archived": False}, "established"),
+        # Canonical (2) — non-archived quiet-iconic: ≥5k stars + ≥1yr +
+        # >180d idle. agentgpt-class (164k★, ~16mo idle, not archived).
+        ({"stars": 164_000, "created_at": _iso(1_200), "last_commit_at": _iso(480),
+          "archived": False}, "canonical"),
+        # Canonical (2) — quiet-stable: 10k stars + 2yr + 300d idle, not archived.
+        # Previously fell to frontier despite being an unambiguous reference impl.
+        ({"stars": 10_000, "created_at": _iso(800), "last_commit_at": _iso(300),
+          "archived": False}, "canonical"),
+        # Canonical (2) lower bound: ≥5k stars + ≥1yr + >180d (not ≥180d).
+        # At exactly 180d idle the entry must NOT earn canonical (it should
+        # fall to established via the relaxed-recency 7.5k-2yr path, but here
+        # we test a 6k-1.5yr entry whose only path would be established-strict
+        # — and 180d sits ON the boundary, so by the >180d definition we are
+        # checking the strict-180-day established path).
+        ({"stars": 6_000, "created_at": _iso(500), "last_commit_at": _iso(180),
+          "archived": False}, "established"),
+        # Canonical (2) iconic-but-very-quiet: must beat dormant priority.
+        # karpathy/minGPT-class (22k★, ~5yr age, ~4yr idle, not archived).
+        # >547d idle would normally trigger dormant, but canonical fires first.
+        ({"stars": 22_000, "created_at": _iso(2_000), "last_commit_at": _iso(1_500),
+          "archived": False}, "canonical"),
+        # Dormant — low-star quiet long-tail: 700 stars + 700d age + 700d idle,
+        # not archived. Fails canonical (stars < 5k), days_since_commit > 547d
+        # so dormant fires. Without this tier these academic-leftover entries
+        # were rendering identical to "no signal yet" frontier nodes.
+        ({"stars": 700, "created_at": _iso(700), "last_commit_at": _iso(700),
+          "archived": False}, "dormant"),
+        # Dormant — exactly at 18mo boundary: 547d idle is NOT dormant (must
+        # be strictly > 547d). At 548d the entry is dormant.
+        ({"stars": 50, "created_at": _iso(800), "last_commit_at": _iso(547),
+          "archived": False}, "frontier"),
+        ({"stars": 50, "created_at": _iso(800), "last_commit_at": _iso(548),
+          "archived": False}, "dormant"),
+        # Dormant + archived but <5k: dormant takes the entry first (it's
+        # never reached the archived→frontier fallthrough).
+        ({"stars": 800, "created_at": _iso(1_000), "last_commit_at": _iso(900),
+          "archived": True}, "dormant"),
+        # Emerging research-cadence path: ≥200 stars + ≥6mo age + ≤365d idle.
+        # 300 stars, 200d age, 200d idle. The strict path fails (idle > 180d
+        # for emerging-strict), but the research-cadence path catches it.
+        ({"stars": 300, "created_at": _iso(200), "last_commit_at": _iso(200),
+          "archived": False}, "emerging"),
+        # Emerging research-cadence lower bound: 200 stars + 180d + 365d
+        # idle — the boundary case. Must still emerge.
+        ({"stars": 200, "created_at": _iso(180), "last_commit_at": _iso(365),
+          "archived": False}, "emerging"),
     ],
 )
 def test_classify_truth_table(compute_tier, meta, expected):

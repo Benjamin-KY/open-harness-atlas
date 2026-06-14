@@ -162,19 +162,28 @@ created_at, last_commit_at, archived flag).
 | Tier | Heuristic | Visual encoding |
 |---|---|---|
 | **landmark** | ≥ 30k stars **or** ≥ 2 yr age + ≥ 5k stars + commit ≤ 30 d | full opacity · larger radius · solid outline |
-| **established** | ≥ 1k stars · ≥ 1 yr age · commit ≤ 180 d | full opacity · normal radius · solid outline |
-| **emerging** | ≥ 100 stars · ≥ 3 mo age · commit ≤ 180 d | 70% opacity · normal radius · solid outline |
+| **canonical** | `archived: true` + ≥ 5k stars **or** ≥ 5k stars + ≥ 1 yr age + last commit > 180 d (quiet stable / quiet iconic reference impl) | full opacity · slightly larger · solid outline · purple swatch |
+| **established** | ≥ 1k stars · ≥ 1 yr age · commit ≤ 180 d **or** ≥ 20k stars · commit ≤ 365 d (relaxed-recency) **or** ≥ 2k stars · ≥ 1 yr · commit ≤ 365 d (LLM-era research cadence) | full opacity · normal radius · solid outline |
+| **emerging** | ≥ 100 stars · ≥ 3 mo age · commit ≤ 180 d **or** ≥ 200 stars · ≥ 6 mo · commit ≤ 365 d (research cadence) | 70% opacity · normal radius · solid outline |
+| **dormant** | last commit > 18 mo, didn't earn canonical above — has history but no recent maintenance signal | 50% opacity · normal radius · solid outline · slate swatch |
 | **frontier** | passes inclusion criteria but no independent adoption signal yet | 40% opacity · smaller radius · dashed outline |
 | **unknown** | sidecar missing or fetch failed (e.g., SSO-restricted org) | 40% opacity · smaller radius · **dotted** outline + `data_missing: true` in payload so viewers can mark "data unavailable" rather than "low signal" |
 
 The thresholds are tuned against the live catalogue so `landmark`
 stays around 10–15% of entries (visually distinguishable), `frontier`
-is the long tail (~45%), and the middle tiers split the rest. When
+is reserved for genuinely-pre-adoption work, and `dormant` separates
+"hasn't been touched in 18+ months" from "no signal yet". When
 `created_at` is unavailable, the script falls back to higher star
 thresholds as a maturity proxy. The 2-year age path (Phase 5
 calibration; previously 3-year) admits LLM-era harnesses like
 autogen, langgraph, and crewai that clearly warrant landmark status
 on stars + activity but were too young under the prior rule.
+
+The v0.4.0 Phase 6 recalibration expanded `canonical` to also cover
+non-archived but quiet-stable reference impls (agentgpt, storm,
+karpathy/minGPT, generative-agents-stanford) and added the `dormant`
+tier so the long tail of academic research benchmarks no longer
+visually conflates with genuinely-pre-adoption work on the eval shelf.
 
 ---
 

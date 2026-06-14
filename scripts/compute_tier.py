@@ -11,19 +11,31 @@ Tier ladder
 ==============  ===========================================  ============================
 Tier            Heuristic                                    Visual encoding (viewers)
 ==============  ===========================================  ============================
-``landmark``    ≥30k stars **OR** ≥2 yr age AND ≥5k stars    Full opacity · larger radius
-                AND last-commit ≤30 d                         · solid outline
+``landmark``    ≥30k stars AND last-commit ≤547 d            Full opacity · larger radius
+                **OR** ≥2 yr age AND ≥5k stars                · solid outline
+                AND last-commit ≤30 d
 ``canonical``   ``archived: true`` AND ≥5k stars             Full opacity · slightly larger
-                                                              · solid outline · distinct
-                                                              purple swatch — signals
-                                                              "reference impl / feature-
+                **OR** ≥5k stars AND ≥1 yr age AND            · solid outline · distinct
+                last-commit >180 d (quiet stable /            purple swatch — signals
+                quiet iconic reference impl)                  "reference impl / feature-
                                                               complete" rather than dim
                                                               long-tail
 ``established`` ≥1k stars · ≥1 yr age · last-commit ≤180 d   Full opacity · normal radius
                 **OR** ≥20k stars · last-commit ≤365 d
                 (relaxed-recency path for foundational
                 projects with a slow cadence)
+                **OR** ≥2k stars · ≥1 yr · last-commit ≤365 d
+                (LLM-era research-cadence path — catches
+                academic / lab harnesses with quarterly
+                rather than weekly commits)
 ``emerging``    ≥100 stars · ≥3 mo age · last-commit ≤180 d  70% opacity · normal radius
+                **OR** ≥200 stars · ≥6 mo age · ≤365 d
+                (LLM-era research-cadence path; higher
+                star floor compensates for relaxed recency)
+``dormant``     last-commit >18 mo AND not captured by       50% opacity · normal radius
+                canonical above (low-star quiet projects     · solid outline · slate swatch
+                that still pass inclusion criteria but
+                show no recent maintenance signal)
 ``frontier``    everything else that passes inclusion        40% opacity · dashed outline
                 criteria                                      · smaller radius
 ``unknown``     sidecar missing or fetch failed              40% opacity · dotted outline
@@ -44,12 +56,29 @@ The 2-year age requirement (Phase 5 calibration; previously 3-year)
 relaxes just enough to admit LLM-era harnesses (autogen, langgraph,
 crewai) without admitting fast-rising single-year hype projects.
 
-The ``canonical`` tier (post-launch 2026-06-14 follow-up) catches the
-"archived household-name reference implementation" cohort — without it,
-projects like ``huggingface/text-generation-inference`` (10k★, archived)
-or ``microsoft/TaskWeaver`` (6k★, archived) collapsed into ``frontier``
-and rendered as dim long-tail nodes despite being the canonical
-reference points reviewers would expect to see.
+The ``canonical`` tier (Phase 6 v0.4.0 expansion) catches two cohorts:
+(1) archived household-name reference impls (``huggingface/text-generation-inference``,
+``microsoft/TaskWeaver``) and (2) non-archived but quiet-stable / quiet-iconic
+projects with ≥5k stars and >180d since last commit (``agentgpt``,
+``storm``, ``karpathy/minGPT``, ``generative-agents-stanford``). Both
+cohorts are reference impls every reader expects to find; without the
+canonical tier they collapsed into ``frontier`` and rendered as dim
+long-tail nodes.
+
+The ``dormant`` tier (Phase 6 v0.4.0) catches entries past 18 months
+since their last commit that did not earn canonical above. It is
+visually distinct from frontier because a dormant entry has a history
+the catalogue can vouch for; it just hasn't been touched recently. A
+frontier entry, by contrast, is one that might earn its first big
+commit any day. Conflating the two under ``frontier`` left ~150 eval
+shelf entries (LLM-era research benchmarks that publish-and-don't-update
+by design) visually indistinguishable from genuinely-pre-adoption work.
+
+The LLM-era research-cadence paths in ``established`` (≥2k stars + 1yr
++ 365d recency) and ``emerging`` (≥200 stars + 6mo + 365d recency) are
+the second half of the Phase 6 recalibration — they admit the academic /
+lab harnesses whose maintainers ship quarterly rather than weekly,
+without admitting fast-rising hype projects with no track record.
 
 Usage
 -----
@@ -86,6 +115,7 @@ TIER_LANDMARK = "landmark"
 TIER_CANONICAL = "canonical"
 TIER_ESTABLISHED = "established"
 TIER_EMERGING = "emerging"
+TIER_DORMANT = "dormant"
 TIER_FRONTIER = "frontier"
 TIER_UNKNOWN = "unknown"
 
@@ -135,17 +165,56 @@ def _classify(meta: dict[str, Any]) -> str:
     age_days, days_since_commit = _age_days(created_at, last_commit_at)
     have_age = age_days is not None
 
-    # Canonical: archived AND ≥5k stars — historically significant reference
+    # Canonical (1): archived AND ≥5k stars — historically significant reference
     # implementations whose maintainers signalled "this is done" or moved on
-    # (eg huggingface/text-generation-inference, microsoft/TaskWeaver). Without
-    # this tier these projects fell into ``frontier`` and rendered as dim
-    # long-tail nodes despite being household names.
+    # (huggingface/text-generation-inference, microsoft/TaskWeaver). Checked
+    # before the landmark/dormant paths because an archived household-name
+    # reads as "canonical reference impl", not "dormant long-tail".
     if archived and isinstance(stars, int) and stars >= 5_000:
         return TIER_CANONICAL
 
+    # Canonical (2): non-archived but quiet-stable or quiet-iconic.
+    # ≥5k stars + ≥1 yr age + >180 d since last commit. Captures the cohort
+    # of unambiguous reference impls whose maintainers shipped a thing and
+    # moved on without archiving the repo — agentgpt (164k★, ~16 mo idle),
+    # storm (~10k★, ~18 mo idle), karpathy/minGPT (~22k★, multi-year idle),
+    # generative-agents-stanford (~17k★, ~2 yr idle). Without this tier
+    # they fall into frontier or dormant and render as dim long-tail despite
+    # being the reference points every reader expects to see. The 5k star
+    # floor and 1 yr age floor keep this tier honest — single-year flashes
+    # with brief star spikes can't qualify.
+    if (
+        not archived
+        and isinstance(stars, int)
+        and stars >= 5_000
+        and have_age
+        and age_days >= 365
+        and days_since_commit is not None
+        and days_since_commit > 180
+    ):
+        return TIER_CANONICAL
+
+    # Dormant: > 18 months (547 d) since last commit AND did not earn
+    # canonical above. This is the long tail of quiet projects that pass
+    # inclusion criteria but show no recent maintenance signal. Visually
+    # distinct from ``frontier`` because a dormant entry has history the
+    # catalogue can vouch for — it just hasn't been touched recently. A
+    # frontier entry, by contrast, is one that might still earn its first
+    # big commit any day.
+    #
+    # Placed AFTER canonical so that iconic-but-quiet projects (karpathy
+    # minGPT) stay canonical rather than collapsing into dormant; placed
+    # BEFORE the landmark/established/emerging paths so that a project
+    # idle for years can't accidentally re-earn an "active" tier from
+    # high star count alone.
+    if days_since_commit is not None and days_since_commit > 547:
+        return TIER_DORMANT
+
     if archived:
-        # Other archived projects can still be referenced but don't earn an
-        # active tier — they drop to frontier and visibly read as "low signal".
+        # Other archived projects (≥5k stars + <18mo idle didn't fire
+        # canonical above; long-idle archived would have fired dormant).
+        # Anything reaching here is archived + <5k stars + ≤547 d idle —
+        # falls through to frontier so it visibly reads as "low signal".
         return TIER_FRONTIER
 
     # Landmark: very high stars OR (mature + active + popular).
@@ -198,6 +267,22 @@ def _classify(meta: dict[str, Any]) -> str:
     ):
         return TIER_ESTABLISHED
 
+    # Established (LLM-era research-cadence path): ≥2k stars + ≥1yr age +
+    # ≤365d idle. Catches academic / lab eval harnesses (LiveBench,
+    # AdalFlow, textgrad-class) that ship quarterly rather than weekly.
+    # Star floor of 2k is high enough to filter noise; 365d recency window
+    # admits the typical research-cadence push pattern without admitting
+    # genuinely-abandoned work (the >547d dormant tier above catches that).
+    if (
+        isinstance(stars, int)
+        and stars >= 2_000
+        and have_age
+        and age_days >= 365
+        and days_since_commit is not None
+        and days_since_commit <= 365
+    ):
+        return TIER_ESTABLISHED
+
     # Emerging: meaningful traction, a few months old, recently active.
     # Fallback when ``created_at`` is unavailable: require a slightly
     # higher star threshold (300+) as a maturity proxy.
@@ -209,6 +294,21 @@ def _classify(meta: dict[str, Any]) -> str:
             (stars >= 100 and have_age and age_days >= 90)
             or (stars >= 300 and not have_age)
         )
+    ):
+        return TIER_EMERGING
+
+    # Emerging (LLM-era research-cadence path): ≥200 stars + ≥6mo age +
+    # ≤365d idle. Catches the long-tail of academic eval / red-team
+    # harnesses that have meaningful star traction but slower commit
+    # cadence than infra projects. Star floor (200) is higher than the
+    # strict path (100) to compensate for the relaxed recency.
+    if (
+        isinstance(stars, int)
+        and stars >= 200
+        and have_age
+        and age_days >= 180
+        and days_since_commit is not None
+        and days_since_commit <= 365
     ):
         return TIER_EMERGING
 
@@ -282,7 +382,7 @@ def main(argv: list[str] | None = None) -> int:
         print("Tier distribution")
         print("-----------------")
         for tier in (TIER_LANDMARK, TIER_CANONICAL, TIER_ESTABLISHED,
-                     TIER_EMERGING, TIER_FRONTIER, TIER_UNKNOWN):
+                     TIER_EMERGING, TIER_DORMANT, TIER_FRONTIER, TIER_UNKNOWN):
             count = dist.get(tier, 0)
             pct = 100.0 * count / total if total else 0.0
             print(f"  {tier:13s} {count:4d}  ({pct:5.1f}%)")

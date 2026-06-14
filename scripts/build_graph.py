@@ -39,7 +39,7 @@ CAT_COLOR = {
     "education":  "#7d3c98",
 }
 CAT_ORDER = ["governance", "agent", "eval", "redteam", "routing", "education"]
-TIER_ORDER = ["landmark", "canonical", "established", "emerging", "frontier", "unknown"]
+TIER_ORDER = ["landmark", "canonical", "established", "emerging", "dormant", "frontier", "unknown"]
 
 # Per-tier visual encoding for the interactive (3D + 2D) viewers.
 # The static SVG keeps a simpler encoding to stay legible at A4 print size.
@@ -48,6 +48,7 @@ TIER_OPACITY = {
     "canonical":   0.95,
     "established": 1.00,
     "emerging":    0.70,
+    "dormant":     0.50,
     "frontier":    0.40,
     "unknown":     0.40,
 }
@@ -56,19 +57,23 @@ TIER_RADIUS_MULTIPLIER = {
     "canonical":   1.10,
     "established": 1.00,
     "emerging":    0.85,
+    "dormant":     0.80,
     "frontier":    0.70,
     "unknown":     0.70,
 }
 # `unknown` uses a distinct "dotted" stroke so operators can tell at a
 # glance "this is a failed fetch / SSO-blocked org" apart from a
-# `frontier` entry that legitimately has no adoption signal yet. The
-# 2D viewer maps these to SVG stroke-dasharray patterns; the 3D viewer
+# `frontier` entry that legitimately has no adoption signal yet. `dormant`
+# stays solid because the data IS present — the entry just hasn't been
+# touched in 18+ months; that's a real signal, not a missing-data signal.
+# The 2D viewer maps these to SVG stroke-dasharray patterns; the 3D viewer
 # overlays a faint ring on `data_missing` nodes (set below in the payload).
 TIER_OUTLINE = {
     "landmark":    "solid",
     "canonical":   "solid",
     "established": "solid",
     "emerging":    "solid",
+    "dormant":     "solid",
     "frontier":    "dashed",
     "unknown":     "dotted",
 }
