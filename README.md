@@ -42,7 +42,7 @@ routing — and free education resources.*
 > `companion/use_cases.yaml` + `companion/supply_chains.yaml`, and are
 > re-deployed on every push to `main`.
 
-[![Live 3D viewer — open-harness-atlas at 816 nodes, 3,358 edges](visuals/viewer-3d-screenshot.png)](https://benjamin-ky.github.io/open-harness-atlas/)
+[![Live 3D viewer — open-harness-atlas at 816 nodes, 3,358 edges](visuals/viewer-3d/preview.png)](https://benjamin-ky.github.io/open-harness-atlas/)
 
 *The live 3D viewer (click to open). Orange = agent · green = eval · blue = governance · slate-blue = routing · red = red-team · purple = education. Right rail: eight entry-point lenses, quick filters, search, faceted filters. Drag to orbit, scroll to zoom.*
 
