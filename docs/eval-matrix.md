@@ -21,6 +21,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Any Agent](https://github.com/mozilla-ai/any-agent) | Apache-2.0 | Python | ga | — | 3/5 | established | 1.2k | — | mozilla-ai |
 | [APPS (Automated Programming Progress Standard)](https://github.com/hendrycks/apps) | MIT | Python | ga | US | 4/5 | frontier | 533 | — | Dan Hendrycks |
 | [AppWorld](https://github.com/stonybrooknlp/appworld) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 441 | — | Stony Brook NLP Group |
+| [ARC-AGI (Abstraction and Reasoning Corpus)](https://github.com/fchollet/ARC-AGI) | Apache-2.0 | JavaScript | ga | US | 5/5 | — | — | — | François Chollet (with the ARC Prize Foundation) |
 | [Arena AI Leaderboards](https://github.com/oolong-tea-2026/arena-ai-leaderboards) | MIT | Python | beta | — | 3/5 | frontier | 14 | — | oolong-tea-2026 |
 | [Arena-Hard-Auto](https://github.com/lmarena/arena-hard-auto) | Apache-2.0 | Python | ga | US | 4/5 | frontier | 1.0k | — | LM Arena / UC Berkeley |
 | [ARES](https://github.com/stanford-futuredata/ARES) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 715 | — | Stanford FutureData |
@@ -51,7 +52,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Crucible](https://github.com/lord-arbiter/Crucible) | MIT | Python | beta | — | 4/5 | frontier | 2 | — | lord-arbiter |
 | [CRUXEval](https://github.com/facebookresearch/cruxeval) | MIT | Python | beta | US | 4/5 | frontier | 170 | — | Meta / FAIR |
 | [Deepeval Evaluation Harness](https://github.com/sunilp303/deepeval-evaluation-harness) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | sunilp303 |
-| [DeepEval](https://github.com/confident-ai/deepeval) | Apache-2.0 | Python | ga | US | 4/5 | established | 16.1k | — | Confident AI |
+| [DeepEval](https://github.com/confident-ai/deepeval) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 16.1k | — | Confident AI |
 | [Dokimos](https://github.com/dokimos-dev/dokimos) | MIT | Java | beta | — | 3/5 | frontier | 39 | — | dokimos-dev |
 | [Dt Evals](https://github.com/dynatrace-oss/dt-evals) | Apache-2.0 | TypeScript | beta | — | 3/5 | frontier | 25 | — | dynatrace-oss |
 | [ERR EVAL](https://github.com/BennettSchwartz/ERR-EVAL) | MIT | Python | beta | — | 3/5 | frontier | 10 | — | BennettSchwartz |
@@ -93,6 +94,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Leva](https://github.com/kieranklaassen/leva) | MIT | Ruby | beta | — | 3/5 | emerging | 140 | — | kieranklaassen |
 | [Lighteval](https://github.com/huggingface/lighteval) | MIT | Python | beta | FR | 4/5 | established | 2.4k | — | Hugging Face |
 | [Litmus](https://github.com/google/litmus) | Apache-2.0 | Vue | beta | — | 3/5 | frontier | 50 | — | google |
+| [LiveBench](https://github.com/LiveBench/LiveBench) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | Abacus AI / NYU (LiveBench team) |
 | [LiveCodeBench](https://github.com/LiveCodeBench/LiveCodeBench) | MIT | Python | ga | US | 4/5 | frontier | 884 | — | LiveCodeBench Team |
 | [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) | MIT | Jupyter Notebook | ga | — | 3/5 | frontier | 1.5k | — | OpenGenerativeAI |
 | [LLM Determinism Bench](https://github.com/julienmerconsulting/llm-determinism-bench) | MIT | HTML | beta | — | 3/5 | frontier | 0 | — | julienmerconsulting |
@@ -120,6 +122,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [MedQA (USMLE)](https://github.com/jind11/MedQA) | MIT | Python | ga | US | 4/5 | frontier | 384 | — | Di Jin (MIT) |
 | [Memorylens](https://github.com/Neal006/memorylens) | MIT | Python | beta | — | 3/5 | frontier | 7 | — | Neal006 |
 | [Mental Health LLM Eval](https://github.com/KarmaEnchanter/mental-health-llm-eval) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | KarmaEnchanter |
+| [METR Task Standard](https://github.com/METR/task-standard) | MIT | Python | beta | US | 5/5 | — | — | — | METR (Model Evaluation and Threat Research) |
 | [Metrillm](https://github.com/MetriLLM/metrillm) | Apache-2.0 | TypeScript | beta | — | 3/5 | frontier | 5 | — | MetriLLM |
 | [Mind2Web](https://github.com/OSU-NLP-Group/Mind2Web) | MIT | Python | ga | US | 4/5 | frontier | 1.0k | — | OSU NLP Group |
 | [Mind Trial](https://github.com/petmal/MindTrial) | MPL-2.0 | Go | beta | — | 3/5 | frontier | 13 | — | petmal |
@@ -144,8 +147,9 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [OLMES](https://github.com/allenai/olmes) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 379 | — | Allen AI (AI2) |
 | [Open Agent Bench](https://github.com/generalaimodels/OpenAgentBench) | GPL-3.0-only | Python | beta | — | 3/5 | frontier | 1 | — | generalaimodels |
 | [OpenAI Evals](https://github.com/openai/evals) | MIT | Python | ga | US | 3/5 | established | 18.7k | — | OpenAI |
+| [OpenAI Preparedness Evaluations](https://github.com/openai/preparedness) | MIT | Python | beta | US | 4/5 | — | — | — | OpenAI, OpCo, LLC |
 | [Openclaw LLM Bench](https://github.com/arthursoares/openclaw-llm-bench) | MIT | Python | beta | — | 3/5 | frontier | 2 | — | arthursoares |
-| [OpenCompass](https://github.com/open-compass/opencompass) | Apache-2.0 | Python | ga | CN | 5/5 | established | 7.1k | — | Shanghai AI Lab |
+| [OpenCompass](https://github.com/open-compass/opencompass) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 7.1k | — | Shanghai AI Lab |
 | [Oss Llmops Stack](https://github.com/langfuse/oss-llmops-stack) | MIT | Multiple | beta | — | 3/5 | frontier | 140 | — | langfuse |
 | [OSWorld](https://github.com/xlang-ai/OSWorld) | Apache-2.0 | Python | ga | HK | 4/5 | established | 2.9k | — | HKU / CMU |
 | [Otter](https://github.com/GalenChen320/Otter) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 10 | — | GalenChen320 |

@@ -88,7 +88,7 @@
     "stars_per_week_4w": null
   },
   "agency-swarm": {
-    "days_since_commit": 2,
+    "days_since_commit": 1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 4445,
@@ -240,7 +240,7 @@
     "stars_per_week_4w": null
   },
   "agentgpt": {
-    "days_since_commit": 411,
+    "days_since_commit": 410,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 36192,
@@ -296,7 +296,7 @@
     "stars_per_week_4w": null
   },
   "agentlint": {
-    "days_since_commit": 19,
+    "days_since_commit": 18,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 24,
@@ -328,7 +328,7 @@
     "stars_per_week_4w": null
   },
   "agents": {
-    "days_since_commit": 2,
+    "days_since_commit": 1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 36705,
@@ -368,7 +368,7 @@
     "stars_per_week_4w": null
   },
   "agi": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1928,
@@ -376,7 +376,7 @@
     "stars_per_week_4w": null
   },
   "agixt": {
-    "days_since_commit": 12,
+    "days_since_commit": 11,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 3197,
@@ -432,7 +432,7 @@
     "stars_per_week_4w": null
   },
   "ai-gateway": {
-    "days_since_commit": 2,
+    "days_since_commit": 1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 130,
@@ -616,7 +616,7 @@
     "stars_per_week_4w": null
   },
   "anything-llm": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 61541,
@@ -736,7 +736,7 @@
     "stars_per_week_4w": null
   },
   "arize-phoenix": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 10126,
@@ -760,7 +760,7 @@
     "stars_per_week_4w": null
   },
   "assetopsbench": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1770,
@@ -768,7 +768,7 @@
     "stars_per_week_4w": null
   },
   "astrbot": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 34595,
@@ -888,7 +888,7 @@
     "stars_per_week_4w": null
   },
   "awesome-agentic-ai-zh": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2673,
@@ -952,7 +952,7 @@
     "stars_per_week_4w": null
   },
   "baml": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 8364,
@@ -1072,7 +1072,7 @@
     "stars_per_week_4w": null
   },
   "brigade": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 28,
@@ -1184,7 +1184,7 @@
     "stars_per_week_4w": null
   },
   "cherry-studio": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 47281,
@@ -1224,7 +1224,7 @@
     "stars_per_week_4w": null
   },
   "claude-agent-sdk": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 7293,
@@ -1264,7 +1264,7 @@
     "stars_per_week_4w": null
   },
   "claude-mem": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 82146,
@@ -1392,7 +1392,7 @@
     "stars_per_week_4w": null
   },
   "coordbench": {
-    "days_since_commit": 18,
+    "days_since_commit": 17,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2,
@@ -1440,7 +1440,7 @@
     "stars_per_week_4w": null
   },
   "crewai": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 53482,
@@ -1568,7 +1568,7 @@
     "stars_per_week_4w": null
   },
   "deepchat": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 6005,
@@ -1592,7 +1592,7 @@
     "stars_per_week_4w": null
   },
   "deepeval-evaluation-harness": {
-    "days_since_commit": 11,
+    "days_since_commit": 10,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1,
@@ -1792,7 +1792,7 @@
     "stars_per_week_4w": null
   },
   "eliza": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 18578,
@@ -1896,7 +1896,7 @@
     "stars_per_week_4w": null
   },
   "everos": {
-    "days_since_commit": 4,
+    "days_since_commit": 3,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 7394,
@@ -1912,7 +1912,7 @@
     "stars_per_week_4w": null
   },
   "exo": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 45347,
@@ -1944,7 +1944,7 @@
     "stars_per_week_4w": null
   },
   "fastagency": {
-    "days_since_commit": 111,
+    "days_since_commit": 110,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 540,
@@ -1952,7 +1952,7 @@
     "stars_per_week_4w": null
   },
   "fastchat": {
-    "days_since_commit": 44,
+    "days_since_commit": 43,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 39472,
@@ -1984,7 +1984,7 @@
     "stars_per_week_4w": null
   },
   "finsight-ai": {
-    "days_since_commit": 19,
+    "days_since_commit": 18,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1159,
@@ -2008,7 +2008,7 @@
     "stars_per_week_4w": null
   },
   "flashinfer": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 5787,
@@ -2056,7 +2056,7 @@
     "stars_per_week_4w": null
   },
   "forge": {
-    "days_since_commit": 2,
+    "days_since_commit": 1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2060,
@@ -2128,7 +2128,7 @@
     "stars_per_week_4w": null
   },
   "gemini-cli": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 105251,
@@ -2160,7 +2160,7 @@
     "stars_per_week_4w": null
   },
   "genericagent": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 12844,
@@ -2168,7 +2168,7 @@
     "stars_per_week_4w": null
   },
   "ghidra-mcp": {
-    "days_since_commit": 2,
+    "days_since_commit": 1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2419,
@@ -2176,7 +2176,7 @@
     "stars_per_week_4w": null
   },
   "giskard": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 5429,
@@ -2232,7 +2232,7 @@
     "stars_per_week_4w": null
   },
   "gorilla-api-llm": {
-    "days_since_commit": 562,
+    "days_since_commit": 561,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 3,
@@ -2264,7 +2264,7 @@
     "stars_per_week_4w": null
   },
   "gptme": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 4330,
@@ -2272,7 +2272,7 @@
     "stars_per_week_4w": null
   },
   "granite-guardian": {
-    "days_since_commit": 40,
+    "days_since_commit": 39,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 154,
@@ -2280,7 +2280,7 @@
     "stars_per_week_4w": null
   },
   "griptape-framework": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2541,
@@ -2296,7 +2296,7 @@
     "stars_per_week_4w": null
   },
   "grps-trtllm": {
-    "days_since_commit": 188,
+    "days_since_commit": 187,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 160,
@@ -2312,7 +2312,7 @@
     "stars_per_week_4w": null
   },
   "guardrails-ai": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 7000,
@@ -2376,7 +2376,7 @@
     "stars_per_week_4w": null
   },
   "harmless-harnesses": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 0,
@@ -2384,7 +2384,7 @@
     "stars_per_week_4w": null
   },
   "harness-sdk": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 6122,
@@ -2432,7 +2432,7 @@
     "stars_per_week_4w": null
   },
   "helmor": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1226,
@@ -2440,7 +2440,7 @@
     "stars_per_week_4w": null
   },
   "hermes-agent": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 192794,
@@ -2464,7 +2464,7 @@
     "stars_per_week_4w": null
   },
   "hermes-webui": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 14371,
@@ -2568,7 +2568,7 @@
     "stars_per_week_4w": null
   },
   "hortator": {
-    "days_since_commit": 12,
+    "days_since_commit": 11,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 16,
@@ -2632,7 +2632,7 @@
     "stars_per_week_4w": null
   },
   "imperio": {
-    "days_since_commit": 481,
+    "days_since_commit": 480,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 44,
@@ -2696,7 +2696,7 @@
     "stars_per_week_4w": null
   },
   "j-rig-skill-binary-eval": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 0,
@@ -2904,7 +2904,7 @@
     "stars_per_week_4w": null
   },
   "lamda": {
-    "days_since_commit": 82,
+    "days_since_commit": 81,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 7830,
@@ -2912,7 +2912,7 @@
     "stars_per_week_4w": null
   },
   "lanekeep": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 18,
@@ -2944,7 +2944,7 @@
     "stars_per_week_4w": null
   },
   "langflow": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 149630,
@@ -2960,7 +2960,7 @@
     "stars_per_week_4w": null
   },
   "langgraph": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 34662,
@@ -3056,7 +3056,7 @@
     "stars_per_week_4w": null
   },
   "librechat": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 39064,
@@ -3080,7 +3080,7 @@
     "stars_per_week_4w": null
   },
   "linkedin-mcp-server": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2340,
@@ -3088,7 +3088,7 @@
     "stars_per_week_4w": null
   },
   "litellm": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 50279,
@@ -3112,7 +3112,7 @@
     "stars_per_week_4w": null
   },
   "livecodebench": {
-    "days_since_commit": 333,
+    "days_since_commit": 332,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 884,
@@ -3120,7 +3120,7 @@
     "stars_per_week_4w": null
   },
   "llama-cpp": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 116416,
@@ -3264,7 +3264,7 @@
     "stars_per_week_4w": null
   },
   "llm-jailbreaks": {
-    "days_since_commit": 427,
+    "days_since_commit": 426,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 661,
@@ -3464,7 +3464,7 @@
     "stars_per_week_4w": null
   },
   "longbench": {
-    "days_since_commit": 515,
+    "days_since_commit": 514,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1191,
@@ -3480,7 +3480,7 @@
     "stars_per_week_4w": null
   },
   "lotti": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1126,
@@ -3528,7 +3528,7 @@
     "stars_per_week_4w": null
   },
   "makerbench-hwe": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 0,
@@ -3544,7 +3544,7 @@
     "stars_per_week_4w": null
   },
   "mastra": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 25029,
@@ -3680,7 +3680,7 @@
     "stars_per_week_4w": null
   },
   "metorial": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 3304,
@@ -3704,7 +3704,7 @@
     "stars_per_week_4w": null
   },
   "mind2web": {
-    "days_since_commit": 221,
+    "days_since_commit": 220,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1002,
@@ -3712,7 +3712,7 @@
     "stars_per_week_4w": null
   },
   "mindtrial": {
-    "days_since_commit": 16,
+    "days_since_commit": 15,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 13,
@@ -3736,7 +3736,7 @@
     "stars_per_week_4w": null
   },
   "mini-swe-agent": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 5135,
@@ -3800,7 +3800,7 @@
     "stars_per_week_4w": null
   },
   "mlflow-ai-gateway": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 26501,
@@ -3896,7 +3896,7 @@
     "stars_per_week_4w": null
   },
   "mt-bench": {
-    "days_since_commit": 44,
+    "days_since_commit": 43,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 39472,
@@ -4000,7 +4000,7 @@
     "stars_per_week_4w": null
   },
   "nemo-guardrails": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 6422,
@@ -4008,7 +4008,7 @@
     "stars_per_week_4w": null
   },
   "neo": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 3203,
@@ -4080,7 +4080,7 @@
     "stars_per_week_4w": null
   },
   "oh-my-claudecode": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 36344,
@@ -4096,7 +4096,7 @@
     "stars_per_week_4w": null
   },
   "oh-my-pi": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 12258,
@@ -4144,7 +4144,7 @@
     "stars_per_week_4w": null
   },
   "omniroute": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 6125,
@@ -4168,7 +4168,7 @@
     "stars_per_week_4w": null
   },
   "open-design": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 64380,
@@ -4200,7 +4200,7 @@
     "stars_per_week_4w": null
   },
   "openagent": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 5234,
@@ -4440,7 +4440,7 @@
     "stars_per_week_4w": null
   },
   "ouroboros": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 4563,
@@ -4480,7 +4480,7 @@
     "stars_per_week_4w": null
   },
   "pair-jailbreak": {
-    "days_since_commit": 347,
+    "days_since_commit": 346,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 741,
@@ -4568,7 +4568,7 @@
     "stars_per_week_4w": null
   },
   "pipelock": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 717,
@@ -4600,7 +4600,7 @@
     "stars_per_week_4w": null
   },
   "play-bench": {
-    "days_since_commit": 11,
+    "days_since_commit": 10,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2,
@@ -4672,7 +4672,7 @@
     "stars_per_week_4w": null
   },
   "prompt-guard": {
-    "days_since_commit": 53,
+    "days_since_commit": 52,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 165,
@@ -4776,7 +4776,7 @@
     "stars_per_week_4w": null
   },
   "pydantic-ai": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 17744,
@@ -4792,7 +4792,7 @@
     "stars_per_week_4w": null
   },
   "pydanticai": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 17744,
@@ -4856,7 +4856,7 @@
     "stars_per_week_4w": null
   },
   "r-judge": {
-    "days_since_commit": 154,
+    "days_since_commit": 153,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 105,
@@ -5032,7 +5032,7 @@
     "stars_per_week_4w": null
   },
   "rejection-cascade": {
-    "days_since_commit": 59,
+    "days_since_commit": 58,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2,
@@ -5264,7 +5264,7 @@
     "stars_per_week_4w": null
   },
   "sglang": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 28971,
@@ -5312,7 +5312,7 @@
     "stars_per_week_4w": null
   },
   "sim": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 28760,
@@ -5392,7 +5392,7 @@
     "stars_per_week_4w": null
   },
   "spiceai": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2957,
@@ -5472,7 +5472,7 @@
     "stars_per_week_4w": null
   },
   "strands": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 6122,
@@ -5536,7 +5536,7 @@
     "stars_per_week_4w": null
   },
   "swing-skills": {
-    "days_since_commit": 45,
+    "days_since_commit": 44,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 36,
@@ -5576,7 +5576,7 @@
     "stars_per_week_4w": null
   },
   "tambo": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 11157,
@@ -5640,7 +5640,7 @@
     "stars_per_week_4w": null
   },
   "tidb": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 40162,
@@ -5664,7 +5664,7 @@
     "stars_per_week_4w": null
   },
   "tokligence-gateway": {
-    "days_since_commit": 111,
+    "days_since_commit": 110,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 19,
@@ -5696,7 +5696,7 @@
     "stars_per_week_4w": null
   },
   "toolemu": {
-    "days_since_commit": 814,
+    "days_since_commit": 813,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 208,
@@ -5720,7 +5720,7 @@
     "stars_per_week_4w": null
   },
   "trendradar": {
-    "days_since_commit": 1,
+    "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 59393,
@@ -5776,7 +5776,7 @@
     "stars_per_week_4w": null
   },
   "trustloopguard": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 15,
@@ -5960,7 +5960,7 @@
     "stars_per_week_4w": null
   },
   "vllm": {
-    "days_since_commit": 0,
+    "days_since_commit": -1,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 82783,
@@ -6096,7 +6096,7 @@
     "stars_per_week_4w": null
   },
   "wraith-challenges": {
-    "days_since_commit": 51,
+    "days_since_commit": 50,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1,

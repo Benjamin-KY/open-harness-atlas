@@ -17,6 +17,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Aqbot](https://github.com/AQBot-Desktop/AQBot) | AGPL-3.0-only | TypeScript | ga | — | 3/5 | frontier | 635 | — | AQBot-Desktop |
 | [Aqueduct](https://github.com/TU-Wien-dataLAB/aqueduct) | BSD-3-Clause | Python | beta | — | 3/5 | frontier | 23 | — | TU-Wien-dataLAB |
 | [Atidraw](https://github.com/atinux/atidraw) | MIT | Vue | ga | — | 3/5 | emerging | 211 | — | atinux |
+| [BentoML](https://github.com/bentoml/BentoML) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | BentoML / bentoml.com |
 | [Bitrouter](https://github.com/bitrouter/bitrouter) | Apache-2.0 | Rust | beta | — | 3/5 | emerging | 179 | — | bitrouter |
 | [Burst GPT](https://github.com/HPMLL/BurstGPT) | CC-BY-4.0 | Python | ga | — | 3/5 | emerging | 269 | — | HPMLL |
 | [Claude Code Usage Bar](https://github.com/leeguooooo/claude-code-usage-bar) | MIT | Python | ga | — | 3/5 | emerging | 270 | — | leeguooooo |
@@ -28,13 +29,14 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway) | Apache-2.0 | Go | beta | — | 4/5 | established | 1.7k | — | Envoy Project (CNCF Sandbox) |
 | [exo](https://github.com/exo-explore/exo) | Apache-2.0 | Python | beta | US | 5/5 | landmark | 45.3k | — | exo-explore |
 | [FastChat](https://github.com/lm-sys/FastChat) | Apache-2.0 | Python | beta | US | 5/5 | landmark | 39.5k | — | lm-sys (LMSYS / UC Berkeley) |
-| [Flashinfer](https://github.com/flashinfer-ai/flashinfer) | Apache-2.0 | Python | ga | — | 3/5 | established | 5.8k | — | flashinfer-ai |
+| [Flashinfer](https://github.com/flashinfer-ai/flashinfer) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 5.8k | — | flashinfer-ai |
 | [Flock](https://github.com/hadihonarvar/flock) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 43 | — | hadihonarvar |
 | [Freellmpool](https://github.com/0xzr/freellmpool) | MIT | Python | beta | — | 4/5 | frontier | 8 | — | 0xzr |
 | [Goinfer](https://github.com/lynxai-team/goinfer) | MIT | Go | beta | — | 3/5 | frontier | 10 | — | lynxai-team |
 | [Go Model](https://github.com/ENTERPILOT/GoModel) | MIT | Go | ga | — | 4/5 | emerging | 938 | — | ENTERPILOT |
 | [Helicone](https://github.com/Helicone/helicone) | Apache-2.0 | TypeScript | ga | US | 4/5 | landmark | 5.8k | — | Helicone Inc. |
 | [Higress](https://github.com/higress-group/higress) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 8.6k | — | higress-group |
+| [Hugging Face Text Generation Inference](https://github.com/huggingface/text-generation-inference) | Apache-2.0 | Python | ga | US | 4/5 | — | — | — | Hugging Face |
 | [Izwi](https://github.com/izwi-ai/izwi) | MIT | Rust | ga | — | 4/5 | emerging | 339 | — | izwi-ai |
 | [Jan](https://github.com/janhq/jan) | Apache-2.0 | TypeScript | beta | VN | 5/5 | landmark | 43.0k | — | Menlo Research (janhq) |
 | [kgateway](https://github.com/kgateway-dev/kgateway) | Apache-2.0 | Go | ga | US | 4/5 | landmark | 5.6k | — | kgateway-dev (ex-Solo.io) |
@@ -46,7 +48,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Llmapi Gateway](https://github.com/fabiojbg/LLMApiGateway) | MIT | Python | beta | — | 4/5 | frontier | 28 | — | fabiojbg |
 | [Llmio](https://github.com/atopos31/llmio) | MIT | TypeScript | ga | — | 3/5 | emerging | 311 | — | atopos31 |
 | [Lm Proxy](https://github.com/Nayjest/lm-proxy) | MIT | Python | beta | — | 4/5 | emerging | 135 | — | Nayjest |
-| [LMDeploy](https://github.com/InternLM/lmdeploy) | Apache-2.0 | Python | ga | CN | 5/5 | established | 7.9k | — | Shanghai AI Lab (InternLM) |
+| [LMDeploy](https://github.com/InternLM/lmdeploy) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 7.9k | — | Shanghai AI Lab (InternLM) |
 | [Lmeter X](https://github.com/MigoXLab/LMeterX) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 197 | — | MigoXLab |
 | [Local AI Toolkit](https://github.com/wa91h/local-ai-toolkit) | MIT | Go Template | beta | — | 3/5 | frontier | 16 | — | wa91h |
 | [LocalAI](https://github.com/mudler/LocalAI) | MIT | Go | ga | IT | 5/5 | landmark | 46.8k | — | mudler (Ettore Di Giacinto) |
@@ -70,7 +72,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Otoroshi LLM Extension](https://github.com/cloud-apim/otoroshi-llm-extension) | Apache-2.0 | Scala | beta | — | 4/5 | frontier | 18 | — | cloud-apim |
 | [Parallax](https://github.com/GradientHQ/parallax) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 1.3k | — | GradientHQ |
 | [Plano](https://github.com/katanemo/plano) | Apache-2.0 | Rust | beta | US | 4/5 | established | 6.6k | — | katanemo |
-| [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) | MIT | TypeScript | ga | US | 5/5 | established | 12.1k | — | Portkey AI |
+| [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) | MIT | TypeScript | ga | US | 5/5 | landmark | 12.1k | — | Portkey AI |
 | [Power Infer](https://github.com/Tiiny-AI/PowerInfer) | MIT | C++ | ga | — | 3/5 | established | 9.6k | — | Tiiny-AI |
 | [Power Serve](https://github.com/powerserve-project/PowerServe) | Apache-2.0 | C++ | beta | — | 3/5 | frontier | 155 | — | powerserve-project |
 | [Quantum Free Router](https://github.com/spacepirate15/quantum-free-router) | MIT | Shell | beta | — | 3/5 | frontier | 28 | — | spacepirate15 |
@@ -82,12 +84,13 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Rtp LLM](https://github.com/alibaba/rtp-llm) | Apache-2.0 | Cuda | ga | — | 3/5 | established | 1.2k | — | alibaba |
 | [Serve Gen](https://github.com/alibaba/ServeGen) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 152 | — | alibaba |
 | [Serverless LLM](https://github.com/ServerlessLLM/ServerlessLLM) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 684 | — | ServerlessLLM |
-| [SGLang](https://github.com/sgl-project/sglang) | Apache-2.0 | Python | ga | US | 5/5 | established | 29.0k | — | sgl-project |
+| [SGLang](https://github.com/sgl-project/sglang) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 29.0k | — | sgl-project |
 | [Shimmy](https://github.com/Michael-A-Kuykendall/shimmy) | Apache-2.0 | Rust | alpha | US | 5/5 | emerging | 5.4k | — | Michael Kuykendall |
 | [Sie](https://github.com/superlinked/sie) | Apache-2.0 | Python | ga | — | 3/5 | established | 2.0k | — | superlinked |
 | [LLM (CLI)](https://github.com/simonw/llm) | Apache-2.0 | Python | ga | GB | 5/5 | landmark | 12.0k | — | Simon Willison |
 | [Smarter Router](https://github.com/peva3/SmarterRouter) | MIT | Python | beta | — | 4/5 | emerging | 137 | — | peva3 |
 | [Spiceai](https://github.com/spiceai/spiceai) | Apache-2.0 | Rust | ga | — | 3/5 | established | 3.0k | — | spiceai |
+| [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Apache-2.0 | Python | ga | US | 2/5 | — | — | — | NVIDIA Corporation |
 | [text-generation-webui](https://github.com/oobabooga/textgen) | AGPL-3.0 | Python | ga | US | 5/5 | landmark | 47.3k | — | oobabooga |
 | [Tiny Vllm](https://github.com/jmaczan/tiny-vllm) | Apache-2.0 | C++ | ga | — | 4/5 | emerging | 793 | — | jmaczan |
 | [Tokligence Gateway](https://github.com/tokligence/tokligence-gateway) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 19 | — | tokligence |

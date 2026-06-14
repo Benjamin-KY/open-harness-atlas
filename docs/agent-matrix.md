@@ -8,6 +8,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 |---|---|---|---|---|---|---|---:|---:|---|
 | [9router](https://github.com/decolua/9router) | MIT | JavaScript | ga | — | 3/5 | emerging | 17.4k | — | decolua |
 | [Adala — Autonomous Data (Labeling) Agents](https://github.com/HumanSignal/Adala) | Apache-2.0 | Python | beta | US | 4/5 | established | 1.6k | — | HumanSignal (Label Studio makers) |
+| [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | MIT | Python | beta | US | 5/5 | — | — | — | SylphAI, Inc. |
 | [Ag Ui](https://github.com/ag-ui-protocol/ag-ui) | MIT | Python | ga | — | 3/5 | established | 14.2k | — | ag-ui-protocol |
 | [AG2](https://github.com/ag2ai/ag2) | Apache-2.0 | Python | beta | US | 4/5 | established | 4.7k | — | ag2ai community |
 | [Agency Agents Zh](https://github.com/jnMetaCode/agency-agents-zh) | MIT | Shell | ga | — | 3/5 | emerging | 14.8k | — | jnMetaCode |
@@ -26,7 +27,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AgentLab](https://github.com/ServiceNow/AgentLab) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 589 | — | ServiceNow Research |
 | [AgentLite](https://github.com/SalesforceAIResearch/AgentLite) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 644 | — | Salesforce AI Research |
 | [Agents](https://github.com/wshobson/agents) | MIT | Python | ga | — | 3/5 | landmark | 36.7k | — | wshobson |
-| [AgentScope](https://github.com/agentscope-ai/agentscope) | Apache-2.0 | Python | ga | CN | 4/5 | established | 26.8k | — | Alibaba DAMO |
+| [AgentScope](https://github.com/agentscope-ai/agentscope) | Apache-2.0 | Python | ga | CN | 4/5 | landmark | 26.8k | — | Alibaba DAMO |
 | [AgentSims](https://github.com/py499372727/AgentSims) | MIT | Python | beta | CN | 4/5 | frontier | 954 | — | Haoran et al. (arXiv 2308.04026) |
 | [AgentVerse](https://github.com/OpenBMB/AgentVerse) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 5.1k | — | Tsinghua / OpenBMB |
 | [Agi](https://github.com/hyperspaceai/agi) | MIT | Multiple | ga | — | 3/5 | emerging | 1.9k | — | hyperspaceai |
@@ -49,7 +50,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Astr Bot](https://github.com/AstrBotDevs/AstrBot) | AGPL-3.0-only | Python | ga | — | 3/5 | landmark | 34.6k | — | AstrBotDevs |
 | [Astron Agent](https://github.com/iflytek/astron-agent) | Apache-2.0 | Java | ga | — | 3/5 | emerging | 8.6k | — | iflytek |
 | [Atmosphere](https://github.com/Atmosphere/atmosphere) | Apache-2.0 | Java | ga | — | 3/5 | established | 3.8k | — | Atmosphere |
-| [Atomic Agents](https://github.com/Eigenwise/atomic-agents) | MIT | Python | beta | US | 4/5 | established | 6.0k | — | Eigenwise |
+| [Atomic Agents](https://github.com/Eigenwise/atomic-agents) | MIT | Python | beta | US | 4/5 | landmark | 6.0k | — | Eigenwise |
 | [Auto Claude Code Research In Sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | MIT | Python | ga | — | 3/5 | emerging | 12.0k | — | wanshuiyin |
 | [AutoGen](https://github.com/microsoft/autogen) | MIT | Python | ga | US | 4/5 | — | — | — | Microsoft Research |
 | [Autonomous Agents](https://github.com/tmgthb/Autonomous-Agents) | MIT | Multiple | ga | — | 3/5 | established | 1.3k | — | tmgthb |
@@ -152,7 +153,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Langroid](https://github.com/langroid/langroid) | MIT | Python | ga | — | 3/5 | established | 4.0k | — | langroid |
 | [Lean Ctx](https://github.com/yvgude/lean-ctx) | Apache-2.0 | Rust | ga | — | 3/5 | frontier | 2.7k | — | yvgude |
 | [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code) | MIT | Python | ga | — | 3/5 | landmark | 66.4k | — | shareAI-lab |
-| [Letta](https://github.com/letta-ai/letta) | Apache-2.0 | Python | ga | US | 4/5 | established | 23.3k | — | Letta AI |
+| [Letta](https://github.com/letta-ai/letta) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 23.3k | — | Letta AI |
 | [Libre Chat](https://github.com/danny-avila/LibreChat) | MIT | TypeScript | ga | — | 3/5 | landmark | 39.1k | — | danny-avila |
 | [Light Agent](https://github.com/wanxingai/LightAgent) | Apache-2.0 | Python | ga | — | 3/5 | established | 1.1k | — | wanxingai |
 | [Linkedin MCP Server](https://github.com/stickerdaniel/linkedin-mcp-server) | Apache-2.0 | Python | ga | — | 3/5 | established | 2.3k | — | stickerdaniel |
@@ -198,7 +199,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Pdfmath Translate](https://github.com/PDFMathTranslate/PDFMathTranslate) | AGPL-3.0-only | Python | ga | — | 4/5 | landmark | 34.8k | — | PDFMathTranslate |
 | [Plandex](https://github.com/plandex-ai/plandex) | MIT | Go | ga | — | 3/5 | frontier | 15.5k | — | plandex-ai |
 | [Planning With Files](https://github.com/OthmanAdi/planning-with-files) | MIT | Python | ga | — | 3/5 | emerging | 23.2k | — | OthmanAdi |
-| [PraisonAI](https://github.com/MervinPraison/PraisonAI) | MIT | Python | ga | MY | 5/5 | established | 8.1k | — | MervinPraison |
+| [PraisonAI](https://github.com/MervinPraison/PraisonAI) | MIT | Python | ga | MY | 5/5 | landmark | 8.1k | — | MervinPraison |
 | [Py Xiaozhi](https://github.com/huangjunsen0406/py-xiaozhi) | MIT | Python | ga | — | 3/5 | established | 3.4k | — | huangjunsen0406 |
 | [Pydantic AI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | — | 3/5 | established | 17.7k | — | pydantic |
 | [PydanticAI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | GB | 4/5 | established | 17.7k | — | Pydantic Services Inc. |
@@ -222,12 +223,13 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) | MIT | Python | beta | IN | 4/5 | frontier | 17.6k | — | TransformerOptimus |
 | [Swarm (OpenAI)](https://github.com/openai/swarm) | MIT | Python | beta | US | 4/5 | established | 21.6k | — | OpenAI |
 | [Swarms](https://github.com/kyegomez/swarms) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 6.8k | — | kyegomez |
-| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | MIT | Python | ga | US | 4/5 | established | 19.5k | — | Princeton + Stanford |
+| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | MIT | Python | ga | US | 4/5 | landmark | 19.5k | — | Princeton + Stanford |
 | [Tabularis](https://github.com/TabularisDB/tabularis) | Apache-2.0 | TypeScript | ga | — | 3/5 | emerging | 2.4k | — | TabularisDB |
 | [Takt](https://github.com/nrslib/takt) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.1k | — | nrslib |
 | [Tambo](https://github.com/tambo-ai/tambo) | MIT | TypeScript | beta | US | 4/5 | established | 11.2k | — | Tambo AI |
 | [Tarsier](https://github.com/reworkd/tarsier) | MIT | Python | beta | US | 4/5 | frontier | 1.8k | — | Reworkd AI |
 | [TaskWeaver](https://github.com/microsoft/TaskWeaver) | MIT | Python | beta | US | 4/5 | — | — | — | Microsoft Research |
+| [TextGrad](https://github.com/zou-group/textgrad) | MIT | Python | beta | US | 4/5 | — | — | — | Stanford ZouLab / James Zou Group |
 | [Tidb](https://github.com/pingcap/tidb) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 40.2k | — | pingcap |
 | [ToolBench / ToolLLM](https://github.com/OpenBMB/ToolBench) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 5.7k | — | OpenBMB / Tsinghua KEG |
 | [Trend Radar](https://github.com/sansan0/TrendRadar) | GPL-3.0-only | Python | ga | — | 3/5 | landmark | 59.4k | — | sansan0 |
@@ -239,7 +241,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [UFO/UFO3 Galaxy](https://github.com/microsoft/UFO) | MIT | Python | ga | US | 4/5 | — | — | — | Microsoft Research |
 | [UI TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | Apache-2.0 | TypeScript | ga | — | 3/5 | landmark | 36.4k | — | bytedance |
 | [Unity MCP](https://github.com/CoplayDev/unity-mcp) | MIT | C# | ga | — | 3/5 | established | 10.6k | — | CoplayDev |
-| [Upsonic](https://github.com/upsonic/upsonic) | MIT | Python | beta | TR | 4/5 | established | 7.9k | — | Upsonic community |
+| [Upsonic](https://github.com/upsonic/upsonic) | MIT | Python | beta | TR | 4/5 | landmark | 7.9k | — | Upsonic community |
 | [Valuecell](https://github.com/ValueCell-ai/valuecell) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 10.8k | — | ValueCell-ai |
 | [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) | Apache-2.0 | Rust | ga | — | 3/5 | emerging | 27.0k | — | BloopAI |
 | [Vibe Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 2.3k | — | foryourhealth111-pixel |

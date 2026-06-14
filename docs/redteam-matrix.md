@@ -99,6 +99,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Secure MCP](https://github.com/makalin/SecureMCP) | MIT | Go | beta | — | 3/5 | frontier | 140 | — | makalin |
 | [Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 196 | — | ReversecLabs |
 | [Stealix](https://github.com/boschresearch/stealix) | AGPL-3.0-only | Python | beta | — | 3/5 | frontier | 3 | — | boschresearch |
+| [StrongREJECT](https://github.com/dsbowen/strong_reject) | MIT | Python | beta | US | 5/5 | — | — | — | UC Berkeley (Dan Bowen et al.) |
 | [TAP - Tree of Attacks with Pruning](https://github.com/RICommunity/TAP) | MIT | Python | beta | US | 4/5 | frontier | 237 | — | Robust Intelligence Community |
 | [Tensor Trust](https://github.com/HumanCompatibleAI/tensor-trust) | BSD-2-Clause | Python | beta | — | 3/5 | frontier | 70 | — | HumanCompatibleAI |
 | [TextAttack](https://github.com/QData/TextAttack) | MIT | Python | ga | US | 5/5 | established | 3.4k | — | QData Lab (University of Virginia) |

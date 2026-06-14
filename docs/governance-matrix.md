@@ -46,6 +46,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Guidance](https://github.com/guidance-ai/guidance) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [Harmless Harnesses](https://github.com/Benjamin-KY/Harmless-Harnesses) | Apache-2.0 | Python | native | native | native | native | native | 4/5 |
 | [Hortator](https://github.com/hortator-ai/Hortator) | MIT | Go | partial | none | none | none | none | 3/5 |
+| [Hugging Face TRL](https://github.com/huggingface/trl) | Apache-2.0 | Python | partial | none | native | native | partial | 5/5 |
 | [Idun Agent Platform](https://github.com/Idun-Group/idun-agent-platform) | GPL-3.0-only | Python | partial | none | none | none | none | 3/5 |
 | [Instructor](https://github.com/567-labs/instructor) | MIT | Python | none | none | partial | native | none | 4/5 |
 | [I Verify Apps](https://github.com/undp/iVerify-Apps) | AGPL-3.0-only | TypeScript | none | none | none | none | none | 3/5 |
