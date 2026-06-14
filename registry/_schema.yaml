@@ -55,7 +55,11 @@ properties:
     type: string
     minLength: 1
     maxLength: 80
-    description: Human-readable project name (display form).
+    pattern: "^[^<>]*$"
+    description: >-
+      Human-readable project name (display form). HTML-tag characters
+      (``<``, ``>``) are rejected to prevent injection through the
+      viewer's render path.
 
   category:
     type: string
@@ -198,6 +202,7 @@ properties:
       pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
     description: List of registry ids this entry relates to.
     uniqueItems: true
+    maxItems: 50
 
   notes_for_maintainers:
     type: string

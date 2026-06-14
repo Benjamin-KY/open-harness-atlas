@@ -510,7 +510,10 @@
 </div>
 
 <!-- 3d-force-graph (UMD bundle includes three + d3-force-3d) -->
-<script src="https://unpkg.com/3d-force-graph@1.73.4/dist/3d-force-graph.min.js"></script>
+<script src="https://unpkg.com/3d-force-graph@1.73.4/dist/3d-force-graph.min.js"
+        integrity="sha384-GNPicn8pBA2/PGSyPTpxIlPurgLUYcNYJ2zskIq782dE9+gp5E32WSyuxZqA7J+u"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
 <script>
 (async () => {
   const $ = (id) => document.getElementById(id);
@@ -589,11 +592,11 @@
     unknown:     'Unknown'
   };
   const TIER_HINT = {
-    landmark:    '≥10k stars, or 3yr+ at 1k+ stars with active commits',
+    landmark:    '≥30k stars, or ≥2 yr at 5k+ stars with active commits',
     established: '≥1k stars, 1yr+ old, actively maintained',
     emerging:    '≥100 stars, 3mo+ old, actively maintained',
     frontier:    'Passes inclusion criteria, no independent adoption signal yet',
-    unknown:     'Metadata fetch failed (e.g., SSO-restricted org)'
+    unknown:     'Metadata fetch failed — operational issue (SSO-restricted org, repo moved, rate-limit) rather than a low-signal verdict'
   };
 
   // Linearly blend two #rrggbb colours by t (0 = c1, 1 = c2).
@@ -1154,7 +1157,13 @@
   $('btn-csv').onclick = () => {
     const visible = new Set(gData.nodes.filter(n => n._visible).map(n => n.id));
     const cols = ['id','name','category','subcategory','maturity','license','language','country','mas','degree','url'];
-    const esc = v => { const s = (v??'').toString(); return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s; };
+    const esc = v => {
+      const s = (v??'').toString();
+      // Prefix-quote any value that starts with a formula-injection
+      // sentinel — see 2d.html for rationale.
+      const dangerous = /^[=+\-@\t\r]/.test(s) ? "'" + s : s;
+      return /[",\n]/.test(dangerous) ? `"${dangerous.replace(/"/g,'""')}"` : dangerous;
+    };
     const nlines = [cols.join(',')];
     gData.nodes.filter(n => visible.has(n.id)).forEach(n => nlines.push(cols.map(c => esc(n[c])).join(',')));
     const elines = ['source,target'];

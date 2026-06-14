@@ -836,7 +836,11 @@
   </div>
 </div>
 
-<script src="https://d3js.org/d3.v7.min.js" defer></script>
+<script src="https://d3js.org/d3.v7.min.js"
+        integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        defer></script>
 <script defer>
 document.addEventListener('DOMContentLoaded', async () => {
   // ============================================================
@@ -945,11 +949,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     unknown:     'Unknown'
   };
   const TIER_HINT = {
-    landmark:    '≥10k stars, or 3yr+ at 1k+ stars with active commits',
+    landmark:    '≥30k stars, or ≥2 yr at 5k+ stars with active commits',
     established: '≥1k stars, 1yr+ old, actively maintained',
     emerging:    '≥100 stars, 3mo+ old, actively maintained',
     frontier:    'Passes inclusion criteria, no independent adoption signal yet',
-    unknown:     'Metadata fetch failed (e.g., SSO-restricted org)'
+    unknown:     'Metadata fetch failed — operational issue (SSO-restricted org, repo moved, rate-limit) rather than a low-signal verdict'
   };
 
   const nodeSel = nodeLayer.selectAll('g.node')
@@ -965,7 +969,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     .attr('r', d => radius(d))
     .attr('fill', d => d.color)
     .attr('fill-opacity', d => d.tier_opacity != null ? d.tier_opacity : 1)
-    .attr('stroke-dasharray', d => d.tier_outline === 'dashed' ? '2,2' : null);
+    // Stroke dasharray distinguishes the three groups: solid (landmark /
+    // established / emerging), dashed (frontier — passes inclusion but
+    // no signal yet), dotted (unknown — metadata fetch failed). All three
+    // patterns are colour-blind-distinguishable.
+    .attr('stroke-dasharray', d => {
+      if (d.tier_outline === 'dotted') return '1,2.5';
+      if (d.tier_outline === 'dashed') return '2,2';
+      return null;
+    });
 
   nodeSel.append('text')
     .attr('dx', d => radius(d) + 3)
@@ -1433,15 +1445,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 11. Stats + hubs
   // ============================================================
   const stats = $('stats-grid');
+  const topHub = data.meta.top_hubs[0];
   const statItems = [
     ['Nodes', data.meta.n_nodes],
     ['Edges', data.meta.n_edges],
     ['Avg degree', data.meta.avg_degree],
     ['Density', data.meta.density],
     ['Categories', data.meta.categories.length],
-    ['Top hub', data.meta.top_hubs[0]?.name + ' (' + data.meta.top_hubs[0]?.degree + ')'],
+    ['Top hub', topHub ? `${topHub.name} (${topHub.degree})` : '—'],
   ];
-  stats.innerHTML = statItems.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+  stats.innerHTML = statItems.map(([k, v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(String(v))}</dd>`).join('');
 
   const hubs = $('hub-list');
   data.meta.top_hubs.forEach(h => {
@@ -2020,7 +2033,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const cols = ['id','name','category','subcategory','maturity','license','language','country','mas','degree','url'];
     const esc = (v) => {
       const s = (v ?? '').toString();
-      return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s;
+      // Prefix-quote any value that starts with a formula-injection
+      // sentinel (=, +, -, @, tab, CR). Excel/Sheets interpret these as
+      // formulas on import; the leading single-quote suppresses that.
+      const dangerous = /^[=+\-@\t\r]/.test(s) ? "'" + s : s;
+      return /[",\n]/.test(dangerous) ? `"${dangerous.replace(/"/g,'""')}"` : dangerous;
     };
     const nlines = [cols.join(',')];
     nodes.filter(n => visibleIds.has(n.id)).forEach(n => {

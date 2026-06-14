@@ -5,15 +5,18 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.12"
 
@@ -29,15 +32,14 @@ jobs:
       - name: Lint with ruff
         run: ruff check scripts tests
 
-      - name: Recompute tier overlay (no drift)
-        run: |
-          python scripts/compute_tier.py
-          python scripts/compute_tier.py --check
+      - name: Tier overlay is up to date (no drift)
+        run: python scripts/compute_tier.py --check
 
-      - name: Recompute uptake velocity (no drift)
-        run: |
-          python scripts/compute_velocity.py --rising
-          python scripts/compute_velocity.py --rising --check
+      - name: Uptake velocity + rising.md are up to date (no drift)
+        run: python scripts/compute_velocity.py --rising --check
 
-      - name: Check matrices are up to date
+      - name: Matrices are up to date
         run: python scripts/build_matrices.py --check
+
+      - name: Visuals (SVG + PNG) are up to date
+        run: python scripts/build_visuals.py --check
