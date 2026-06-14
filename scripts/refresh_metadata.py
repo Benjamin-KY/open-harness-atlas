@@ -55,6 +55,11 @@ from urllib.request import Request, urlopen
 
 import yaml
 
+try:
+    from scripts._atomic import atomic_write_text
+except ModuleNotFoundError:
+    from _atomic import atomic_write_text  # type: ignore[no-redef]
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_DIR = REPO_ROOT / "registry"
 METADATA_DIR = REGISTRY_DIR / "_metadata"
@@ -274,14 +279,11 @@ def main(argv: list[str] | None = None) -> int:
             if _strip_refreshed_at(existing_text) != _strip_refreshed_at(new_text):
                 drifted.append(entry_id)
         else:
-            # Atomic write: write to temp file in same directory, then rename.
-            # `os.replace` is atomic on POSIX and as-atomic-as-possible on
-            # Windows — prevents partial-JSON corruption (and silent snapshot
-            # history loss via the JSONDecodeError fallback in _load_existing)
-            # if the process is killed mid-write.
-            tmp_path = sidecar_path.with_suffix(sidecar_path.suffix + ".tmp")
-            tmp_path.write_text(new_text, encoding="utf-8")
-            os.replace(tmp_path, sidecar_path)
+            # Atomic write — see scripts/_atomic.py. Same-directory .tmp +
+            # os.replace prevents partial-JSON corruption (and silent
+            # snapshot-history loss via the JSONDecodeError fallback in
+            # _load_existing) if the process is killed mid-write.
+            atomic_write_text(sidecar_path, new_text)
         time.sleep(args.sleep)
 
     if args.check and drifted:

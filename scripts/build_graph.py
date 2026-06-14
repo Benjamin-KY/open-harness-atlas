@@ -17,6 +17,11 @@ import networkx as nx
 import yaml
 from adjustText import adjust_text
 
+try:
+    from scripts._atomic import atomic_write_text
+except ModuleNotFoundError:
+    from _atomic import atomic_write_text  # type: ignore[no-redef]
+
 REPO = Path(__file__).resolve().parent.parent
 REG = REPO / "registry"
 OUT_SVG = REPO / "visuals" / "graph.svg"
@@ -468,7 +473,7 @@ def main() -> int:
         "use_cases": use_cases_enriched,
         "supply_chains": supply_chains,
     }
-    OUT_JSON.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    atomic_write_text(OUT_JSON, json.dumps(payload, indent=2))
     print(f"wrote {OUT_JSON.relative_to(REPO)}")
     return 0
 

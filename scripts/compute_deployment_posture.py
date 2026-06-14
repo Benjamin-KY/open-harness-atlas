@@ -33,6 +33,11 @@ from pathlib import Path
 
 import yaml
 
+try:
+    from scripts._atomic import atomic_write_text
+except ModuleNotFoundError:
+    from _atomic import atomic_write_text  # type: ignore[no-redef]
+
 REGISTRY = Path(r"C:\Users\benke\open-harness-atlas\registry")
 META = REGISTRY / "_metadata"
 
@@ -189,7 +194,7 @@ def main() -> int:
 
     META.mkdir(parents=True, exist_ok=True)
     out = META / "_deployment.json"
-    out.write_text(json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
+    atomic_write_text(out, json.dumps(results, indent=2, ensure_ascii=False))
 
     print(f"Classified {len(results)} entries -> {out}")
     print("\nPosture distribution:")

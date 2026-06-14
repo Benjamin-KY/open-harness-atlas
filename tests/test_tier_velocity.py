@@ -274,7 +274,12 @@ def test_strip_refreshed_at_normalises_flat_to_snapshot(refresh_metadata):
 
 
 def test_atomic_write_uses_replace(tmp_path):
-    """Verify the atomic-write helper round-trips and doesn't leak .tmp files."""
+    """Verify the inline atomic-write pattern round-trips and doesn't leak .tmp files.
+
+    Kept as a pattern-only check; the actual production wrapper has its
+    own focused tests in :mod:`test_atomic_write` (round-trip, crash
+    safety, regression pin that each critical writer imports the helper).
+    """
     target = tmp_path / "sidecar.json"
     target.write_text("OLD CONTENT", encoding="utf-8")
     tmp_target = target.with_suffix(target.suffix + ".tmp")

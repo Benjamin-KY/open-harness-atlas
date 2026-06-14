@@ -106,6 +106,14 @@ from typing import Any
 
 import yaml
 
+try:
+    # Module-style invocation: ``python -m scripts.compute_tier``.
+    from scripts._atomic import atomic_write_text
+except ModuleNotFoundError:
+    # Direct-script invocation: ``python scripts/compute_tier.py`` (CI).
+    # The script's own directory is on sys.path; the helper lives there.
+    from _atomic import atomic_write_text  # type: ignore[no-redef]
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_DIR = REPO_ROOT / "registry"
 METADATA_DIR = REGISTRY_DIR / "_metadata"
@@ -397,7 +405,7 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         return 0
 
-    TIERS_PATH.write_text(new_text, encoding="utf-8")
+    atomic_write_text(TIERS_PATH, new_text)
     return 0
 
 

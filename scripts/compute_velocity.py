@@ -56,6 +56,11 @@ from typing import Any
 
 import yaml
 
+try:
+    from scripts._atomic import atomic_write_text
+except ModuleNotFoundError:
+    from _atomic import atomic_write_text  # type: ignore[no-redef]
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_DIR = REPO_ROOT / "registry"
 METADATA_DIR = REGISTRY_DIR / "_metadata"
@@ -301,10 +306,10 @@ def main(argv: list[str] | None = None) -> int:
                 return 1
         return 0
 
-    VELOCITY_PATH.write_text(new_text, encoding="utf-8")
+    atomic_write_text(VELOCITY_PATH, new_text)
     if args.rising:
         RISING_PATH.parent.mkdir(parents=True, exist_ok=True)
-        RISING_PATH.write_text(_rising_table(velocity, entries_map) + "\n", encoding="utf-8")
+        atomic_write_text(RISING_PATH, _rising_table(velocity, entries_map) + "\n")
     return 0
 
 
