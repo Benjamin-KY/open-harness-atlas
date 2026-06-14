@@ -11,19 +11,29 @@ Tier ladder
 ==============  ===========================================  ============================
 Tier            Heuristic                                    Visual encoding (viewers)
 ==============  ===========================================  ============================
-``landmark``    ≥30k stars **OR** ≥3 yr age AND ≥5k stars    Full opacity · larger radius
+``landmark``    ≥30k stars **OR** ≥2 yr age AND ≥5k stars    Full opacity · larger radius
                 AND last-commit ≤30 d                         · solid outline
 ``established`` ≥1k stars · ≥1 yr age · last-commit ≤180 d   Full opacity · normal radius
 ``emerging``    ≥100 stars · ≥3 mo age · last-commit ≤180 d  70% opacity · normal radius
 ``frontier``    everything else that passes inclusion        40% opacity · dashed outline
                 criteria                                      · smaller radius
-``unknown``     sidecar missing or fetch failed              Renders as ``frontier``
+``unknown``     sidecar missing or fetch failed              40% opacity · dotted outline
+                                                              · the graph payload sets
+                                                              ``data_missing: true`` so
+                                                              the viewer can distinguish
+                                                              "no signal yet" from
+                                                              "data unavailable"
 ==============  ===========================================  ============================
 
 The thresholds are deliberately conservative to keep ``landmark`` rare
-(target ~5-10% of the catalog) and to keep ``frontier`` visually
-honest about what it means: an entry that passes inclusion criteria
-but has not yet accumulated independent adoption signal.
+(target ~10-15% of the catalog, matching the live distribution) and to
+keep ``frontier`` visually honest about what it means: an entry that
+passes inclusion criteria but has not yet accumulated independent
+adoption signal.
+
+The 2-year age requirement (Phase 5 calibration; previously 3-year)
+relaxes just enough to admit LLM-era harnesses (autogen, langgraph,
+crewai) without admitting fast-rising single-year hype projects.
 
 Usage
 -----
@@ -62,7 +72,20 @@ TIER_EMERGING = "emerging"
 TIER_FRONTIER = "frontier"
 TIER_UNKNOWN = "unknown"
 
-NOW = datetime.now(UTC)
+
+def _now() -> datetime:
+    """Return the reference timestamp for tier classification.
+
+    Pinned to UTC midnight of the current day so two consecutive process
+    invocations (e.g. ``compute_tier.py`` then ``compute_tier.py --check``
+    in CI) yield identical results. Without this, repos crossing an
+    integer-day boundary between the two runs would flip ``days_since_commit``
+    and trigger a spurious drift detection.
+    """
+    return datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+
+
+NOW = _now()
 
 
 def _parse_iso(ts: str | None) -> datetime | None:
@@ -104,13 +127,19 @@ def _classify(meta: dict[str, Any]) -> str:
     # ≥30k stars sits around the 8% mark which keeps the landmark tier
     # visually rare. The age path catches established popular projects
     # that haven't crossed 30k yet but have a clear track record.
+    #
+    # The 2-year age threshold (730 days) is the Phase 5 calibration —
+    # the previous 3-year (1095-day) requirement excluded every LLM-era
+    # harness even when stars+activity clearly placed them in the
+    # landmark bracket. 730 days is still mature enough to filter out
+    # single-year hype projects while admitting the 2023+ canon.
     if isinstance(stars, int) and stars >= 30_000:
         return TIER_LANDMARK
     if (
         isinstance(stars, int)
         and stars >= 5_000
         and have_age
-        and age_days >= 3 * 365
+        and age_days >= 730
         and days_since_commit is not None
         and days_since_commit <= 30
     ):

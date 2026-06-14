@@ -254,7 +254,14 @@ def main(argv: list[str] | None = None) -> int:
             if _strip_refreshed_at(existing_text) != _strip_refreshed_at(new_text):
                 drifted.append(entry_id)
         else:
-            sidecar_path.write_text(new_text, encoding="utf-8")
+            # Atomic write: write to temp file in same directory, then rename.
+            # `os.replace` is atomic on POSIX and as-atomic-as-possible on
+            # Windows — prevents partial-JSON corruption (and silent snapshot
+            # history loss via the JSONDecodeError fallback in _load_existing)
+            # if the process is killed mid-write.
+            tmp_path = sidecar_path.with_suffix(sidecar_path.suffix + ".tmp")
+            tmp_path.write_text(new_text, encoding="utf-8")
+            os.replace(tmp_path, sidecar_path)
         time.sleep(args.sleep)
 
     if args.check and drifted:
@@ -266,15 +273,38 @@ def main(argv: list[str] | None = None) -> int:
 
 
 def _strip_refreshed_at(text: str) -> str:
+    """Normalise both flat and snapshot shapes to the same comparable form.
+
+    The drift check (``--check``) needs to compare what is committed against
+    what would be written, ignoring the volatile ``refreshed_at`` timestamp
+    on the latest snapshot. Because committed sidecars may still be in the
+    legacy flat shape while the new write is always snapshot-shape, naive
+    JSON comparison reports false-positive drift on every entry.
+
+    We normalise both inputs to snapshot-shape first, then strip
+    ``refreshed_at`` from the latest snapshot, then re-serialise. This means
+    a flat sidecar is only flagged as drifted if its underlying data
+    (stars / last_commit_at / archived / etc) actually changed — which is
+    what the check is supposed to detect.
+    """
     try:
         data = json.loads(text)
     except json.JSONDecodeError:
         return text
-    # Snapshot shape: strip refreshed_at from latest snapshot only.
-    if isinstance(data, dict) and isinstance(data.get("snapshots"), list) and data["snapshots"]:
+    if not isinstance(data, dict):
+        return text
+
+    # Normalise flat shape -> snapshot shape so both inputs are comparable.
+    if not isinstance(data.get("snapshots"), list):
+        snapshot = {k: data.get(k) for k in SNAPSHOT_FIELDS if k in data}
+        normalised: dict[str, Any] = {
+            k: data.get(k) for k in STABLE_FIELDS if data.get(k) is not None
+        }
+        normalised["snapshots"] = [snapshot] if snapshot.get("refreshed_at") else []
+        data = normalised
+
+    if data["snapshots"]:
         data["snapshots"][-1].pop("refreshed_at", None)
-    else:
-        data.pop("refreshed_at", None)
     return json.dumps(data, indent=2, sort_keys=True) + "\n"
 
 

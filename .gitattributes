@@ -1,0 +1,20 @@
+# Force LF on all generated files that have a CI drift-check, so the same
+# byte-for-byte content is produced on Linux runners and on Windows
+# contributor checkouts. Without this, the scripts write LF, Windows-side
+# git normalises to CRLF on checkout, and CI's `--check` mode fires false
+# positives on every entry.
+#
+# Scope: only the deterministic output files. Source files keep git's
+# default behaviour so contributors can use platform-native line endings.
+
+registry/_metadata/_tiers.json   text eol=lf
+registry/_metadata/_velocity.json text eol=lf
+registry/_metadata/*.json        text eol=lf
+visuals/graph-data.json          text eol=lf
+visuals/graph.svg                text eol=lf
+docs/rising.md                   text eol=lf
+docs/*-matrix.md                 text eol=lf
+
+# Binary outputs — never normalise.
+visuals/graph.png                binary
+visuals/*.png                    binary

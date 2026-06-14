@@ -61,7 +61,14 @@ REGISTRY_DIR = REPO_ROOT / "registry"
 METADATA_DIR = REGISTRY_DIR / "_metadata"
 VELOCITY_PATH = METADATA_DIR / "_velocity.json"
 RISING_PATH = REPO_ROOT / "docs" / "rising.md"
-NOW = datetime.now(UTC)
+
+
+def _now() -> datetime:
+    """Pinned to UTC midnight — see ``compute_tier.py:_now`` for rationale."""
+    return datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+
+
+NOW = _now()
 
 
 def _parse_iso(ts: str | None) -> datetime | None:
@@ -177,11 +184,15 @@ def _rising_table(
     entries: dict[str, dict[str, Any]],
     limit: int = 25,
 ) -> str:
+    # Only include positive-velocity entries: a repo that LOST stars
+    # (manipulation, mass-unstar, repo deletion controversy) is not
+    # "rising" in the editorial sense the doc title implies.
     ranked = sorted(
         (
             (eid, v)
             for eid, v in velocity.items()
             if isinstance(v.get("stars_per_week_4w"), (int, float))
+            and v["stars_per_week_4w"] > 0
         ),
         key=lambda kv: kv[1]["stars_per_week_4w"],
         reverse=True,
@@ -257,6 +268,7 @@ def main(argv: list[str] | None = None) -> int:
                 (eid, v)
                 for eid, v in velocity.items()
                 if isinstance(v.get("stars_per_week_4w"), (int, float))
+                and v["stars_per_week_4w"] > 0
             ),
             key=lambda kv: kv[1]["stars_per_week_4w"],
             reverse=True,
