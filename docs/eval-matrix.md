@@ -76,7 +76,9 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [GPQA (Graduate-Level Google-Proof QA)](https://github.com/idavidrein/gpqa) | MIT | Python | ga | US | 4/5 | frontier | 510 | — | David Rein et al. (NYU) |
 | [Groundcheck](https://github.com/zhjai/groundcheck) | MIT | Multiple | beta | — | 3/5 | frontier | 0 | — | zhjai |
 | [Guess Arena](https://github.com/IAAR-Shanghai/GuessArena) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 10 | — | IAAR-Shanghai |
+| [Vectara Hallucination Leaderboard](https://github.com/vectara/hallucination-leaderboard) | Apache-2.0 | Python | ga | US | 5/5 | established | 3.3k | — | Vectara |
 | [HELM (Holistic Evaluation of Language Models)](https://github.com/stanford-crfm/helm) | Apache-2.0 | Python | ga | US | 4/5 | established | 2.8k | — | Stanford CRFM |
+| [HELMET](https://github.com/princeton-nlp/HELMET) | MIT | Python | ga | US | 5/5 | emerging | 217 | — | Princeton NLP Group |
 | [Hermes Rubric](https://github.com/hermes-labs-ai/hermes-rubric) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | hermes-labs-ai |
 | [Hugging Face Evaluate](https://github.com/huggingface/evaluate) | Apache-2.0 | Python | beta | — | 5/5 | established | 2.5k | — | Hugging Face |
 | [Holon Bench](https://github.com/JohnYCChiang/holon-bench) | MIT | Python | beta | — | 3/5 | frontier | 4 | — | JohnYCChiang |

@@ -2431,6 +2431,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "hallucination-leaderboard": {
+    "days_since_commit": 33,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 3278,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "hands-on-llms": {
     "days_since_commit": 50,
     "history_days": null,
@@ -2508,6 +2516,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 2823,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "helmet": {
+    "days_since_commit": 57,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 217,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4159,6 +4175,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "nanochat": {
+    "days_since_commit": 39,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 55003,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "nanogcg": {
     "days_since_commit": 396,
     "history_days": null,
@@ -4356,6 +4380,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 64380,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "open-instruct": {
+    "days_since_commit": 1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 3752,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4583,11 +4615,27 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "openrlhf": {
+    "days_since_commit": 4,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 9633,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "opik": {
     "days_since_commit": 0,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 19616,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "or-bench": {
+    "days_since_commit": 466,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 28,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -5423,6 +5471,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "salad-bench": {
+    "days_since_commit": 462,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 176,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "scaffold-bench": {
     "days_since_commit": 0,
     "history_days": null,
@@ -5644,6 +5700,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 4889,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "sorry-bench": {
+    "days_since_commit": 469,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 83,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },

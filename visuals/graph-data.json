@@ -1,14 +1,14 @@
 {
   "meta": {
-    "n_nodes": 816,
-    "n_edges": 3358,
-    "avg_degree": 8.23,
-    "density": 0.0101,
+    "n_nodes": 824,
+    "n_edges": 3374,
+    "avg_degree": 8.19,
+    "density": 0.01,
     "categories": [
       {
         "key": "governance",
         "color": "#1f3a5f",
-        "count": 107
+        "count": 109
       },
       {
         "key": "agent",
@@ -18,12 +18,12 @@
       {
         "key": "eval",
         "color": "#28a745",
-        "count": 210
+        "count": 212
       },
       {
         "key": "redteam",
         "color": "#c0392b",
-        "count": 102
+        "count": 105
       },
       {
         "key": "routing",
@@ -33,13 +33,13 @@
       {
         "key": "education",
         "color": "#7d3c98",
-        "count": 51
+        "count": 52
       }
     ],
     "tiers": [
       {
         "key": "landmark",
-        "count": 127,
+        "count": 129,
         "opacity": 1.0,
         "radius_mult": 1.3,
         "outline": "solid"
@@ -53,21 +53,21 @@
       },
       {
         "key": "established",
-        "count": 178,
+        "count": 180,
         "opacity": 1.0,
         "radius_mult": 1.0,
         "outline": "solid"
       },
       {
         "key": "emerging",
-        "count": 123,
+        "count": 124,
         "opacity": 0.7,
         "radius_mult": 0.85,
         "outline": "solid"
       },
       {
         "key": "frontier",
-        "count": 385,
+        "count": 388,
         "opacity": 0.4,
         "radius_mult": 0.7,
         "outline": "dashed"
@@ -91,7 +91,7 @@
         "id": "lm-evaluation-harness",
         "name": "lm-evaluation-harness",
         "category": "eval",
-        "degree": 149
+        "degree": 150
       },
       {
         "id": "litellm",
@@ -157,11 +157,11 @@
     "licenses": [
       [
         "MIT",
-        460
+        463
       ],
       [
         "Apache-2.0",
-        311
+        316
       ],
       [
         "GPL-3.0-only",
@@ -219,11 +219,11 @@
     "maturity": [
       [
         "ga",
-        421
+        428
       ],
       [
         "beta",
-        381
+        382
       ],
       [
         "alpha",
@@ -233,15 +233,15 @@
     "countries": [
       [
         "Unknown",
-        502
+        503
       ],
       [
         "US",
-        206
+        212
       ],
       [
         "CN",
-        46
+        47
       ],
       [
         "FR",
@@ -331,7 +331,7 @@
     "languages": [
       [
         "Python",
-        506
+        514
       ],
       [
         "TypeScript",
@@ -461,7 +461,7 @@
       ],
       [
         5,
-        94
+        102
       ]
     ]
   },
@@ -9788,7 +9788,7 @@
       "color": "#7d3c98",
       "url": "https://github.com/karpathy/minGPT",
       "tagline": "300-line educational GPT library with BPE tokenizer; pre-nanoGPT reference impl",
-      "degree": 5,
+      "degree": 6,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -9856,7 +9856,7 @@
       "color": "#7d3c98",
       "url": "https://github.com/karpathy/nn-zero-to-hero",
       "tagline": "Andrej Karpathy's video-lecture series and accompanying notebooks building neural networks and transformers from scratch.",
-      "degree": 8,
+      "degree": 9,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -10430,6 +10430,42 @@
       "days_since_commit": 4,
       "spark": [
         3750
+      ],
+      "use_cases": [
+        {
+          "id": "learn-the-stack",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "nanochat",
+      "name": "nanochat",
+      "category": "education",
+      "subcategory": "build-from-scratch",
+      "color": "#7d3c98",
+      "url": "https://github.com/karpathy/nanochat",
+      "tagline": "Karpathy's minimal end-to-end LLM training harness \u2014 tokenizer, pretraining, fine-tuning, eval, inference, and chat UI in a single hackable codebase.",
+      "degree": 2,
+      "mas": 5,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "US",
+      "maintainer_type": "individual",
+      "maintainer_name": "Andrej Karpathy",
+      "alignment": "partial",
+      "tier": "landmark",
+      "tier_opacity": 1.0,
+      "tier_radius_mult": 1.3,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 55003,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 39,
+      "spark": [
+        55003
       ],
       "use_cases": [
         {
@@ -12352,7 +12388,7 @@
       "color": "#28a745",
       "url": "https://github.com/confident-ai/deepeval",
       "tagline": "Pytest-style LLM evaluation framework with 30+ metrics for RAG, agents, and chatbots.",
-      "degree": 7,
+      "degree": 8,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -13161,6 +13197,42 @@
       ]
     },
     {
+      "id": "hallucination-leaderboard",
+      "name": "Vectara Hallucination Leaderboard",
+      "category": "eval",
+      "subcategory": "hallucination-evaluation",
+      "color": "#28a745",
+      "url": "https://github.com/vectara/hallucination-leaderboard",
+      "tagline": "Open leaderboard and reproducible methodology for measuring LLM hallucination rates on short-document summarisation, scored by the HHEM classifier.",
+      "degree": 2,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Vectara",
+      "alignment": "partial",
+      "tier": "established",
+      "tier_opacity": 1.0,
+      "tier_radius_mult": 1.0,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 3278,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 33,
+      "spark": [
+        3278
+      ],
+      "use_cases": [
+        {
+          "id": "evaluate-llm",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "helm",
       "name": "HELM (Holistic Evaluation of Language Models)",
       "category": "eval",
@@ -13187,6 +13259,42 @@
       "velocity_12w": null,
       "days_since_commit": 8,
       "spark": [],
+      "use_cases": [
+        {
+          "id": "evaluate-llm",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "helmet",
+      "name": "HELMET",
+      "category": "eval",
+      "subcategory": "long-context-benchmark",
+      "color": "#28a745",
+      "url": "https://github.com/princeton-nlp/HELMET",
+      "tagline": "Princeton NLP's long-context evaluation benchmark \u2014 seven application-oriented categories scored against models with up to 128k-token context.",
+      "degree": 2,
+      "mas": 5,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "institution",
+      "maintainer_name": "Princeton NLP Group",
+      "alignment": "partial",
+      "tier": "emerging",
+      "tier_opacity": 0.7,
+      "tier_radius_mult": 0.85,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 217,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 57,
+      "spark": [
+        217
+      ],
       "use_cases": [
         {
           "id": "evaluate-llm",
@@ -13780,7 +13888,7 @@
       "color": "#28a745",
       "url": "https://github.com/LiveBench/LiveBench",
       "tagline": "Contamination-resistant LLM benchmark whose questions are rotated monthly from frontier-fresh sources \u2014 math competitions, IPCC reports, arXiv abstracts.",
-      "degree": 1,
+      "degree": 2,
       "mas": 5,
       "license": "Apache-2.0",
       "language": "Python",
@@ -14224,7 +14332,7 @@
       "color": "#28a745",
       "url": "https://github.com/EleutherAI/lm-evaluation-harness",
       "tagline": "De facto academic standard for few-shot LLM benchmark evaluation across 200+ tasks.",
-      "degree": 149,
+      "degree": 150,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -16446,7 +16554,7 @@
       "color": "#28a745",
       "url": "https://github.com/explodinggradients/ragas",
       "tagline": "Reference-free and reference-based evaluation framework for retrieval-augmented generation pipelines.",
-      "degree": 13,
+      "degree": 14,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -19310,7 +19418,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/huggingface/trl",
       "tagline": "Hugging Face's library for training transformers with RLHF, DPO, GRPO, KTO and online RL \u2014 the de-facto OSS alignment stack.",
-      "degree": 2,
+      "degree": 4,
       "mas": 5,
       "license": "Apache-2.0",
       "language": "Python",
@@ -20125,6 +20233,42 @@
       ]
     },
     {
+      "id": "open-instruct",
+      "name": "AllenAI Open-Instruct",
+      "category": "governance",
+      "subcategory": "alignment-training",
+      "color": "#1f3a5f",
+      "url": "https://github.com/allenai/open-instruct",
+      "tagline": "Allen Institute for AI's post-training codebase \u2014 the reproducible recipe stack behind the open T\u00fclu / Olmo instruct models.",
+      "degree": 2,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "institution",
+      "maintainer_name": "Allen Institute for AI",
+      "alignment": "aligned",
+      "tier": "established",
+      "tier_opacity": 1.0,
+      "tier_radius_mult": 1.0,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 3752,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 1,
+      "spark": [
+        3752
+      ],
+      "use_cases": [
+        {
+          "id": "govern-llm-policy",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "openclaw-middleware-suite",
       "name": "Openclaw Middleware Suite",
       "category": "governance",
@@ -20224,6 +20368,42 @@
           "id": "monitor-production-agents",
           "level": "featured"
         },
+        {
+          "id": "govern-llm-policy",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "openrlhf",
+      "name": "OpenRLHF",
+      "category": "governance",
+      "subcategory": "alignment-training",
+      "color": "#1f3a5f",
+      "url": "https://github.com/OpenRLHF/OpenRLHF",
+      "tagline": "Ray-based RLHF / DPO / GRPO / REINFORCE++ framework for scaled multi-node alignment training with vLLM-backed online rollouts.",
+      "degree": 2,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "",
+      "maintainer_type": "community",
+      "maintainer_name": "OpenRLHF contributors",
+      "alignment": "aligned",
+      "tier": "landmark",
+      "tier_opacity": 1.0,
+      "tier_radius_mult": 1.3,
+      "tier_outline": "solid",
+      "data_missing": false,
+      "stars": 9633,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 4,
+      "spark": [
+        9633
+      ],
+      "use_cases": [
         {
           "id": "govern-llm-policy",
           "level": "auto"
@@ -22740,7 +22920,7 @@
       "color": "#c0392b",
       "url": "https://github.com/NVIDIA/garak",
       "tagline": "LLM vulnerability scanner \u2014 nmap for language models.",
-      "degree": 11,
+      "degree": 13,
       "mas": 5,
       "license": "Apache-2.0",
       "language": "Python",
@@ -23889,6 +24069,42 @@
       ]
     },
     {
+      "id": "or-bench",
+      "name": "OR-Bench",
+      "category": "redteam",
+      "subcategory": "over-refusal-benchmark",
+      "color": "#c0392b",
+      "url": "https://github.com/justincui03/or-bench",
+      "tagline": "ICML 2025 over-refusal benchmark \u2014 measures how often safety-tuned LLMs incorrectly refuse benign-but-superficially-sensitive prompts.",
+      "degree": 2,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "institution",
+      "maintainer_name": "OR-Bench paper authors (UC Berkeley)",
+      "alignment": "partial",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
+      "data_missing": false,
+      "stars": 28,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 466,
+      "spark": [
+        28
+      ],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "pair-jailbreak",
       "name": "PAIR / JailbreakingLLMs",
       "category": "redteam",
@@ -24673,6 +24889,42 @@
       ]
     },
     {
+      "id": "salad-bench",
+      "name": "SALAD-Bench",
+      "category": "redteam",
+      "subcategory": "safety-taxonomy-benchmark",
+      "color": "#c0392b",
+      "url": "https://github.com/OpenSafetyLab/SALAD-BENCH",
+      "tagline": "ACL 2024 safety benchmark covering a 66-category taxonomy across attack, defence, and evaluation \u2014 ships the open MD-Judge safety classifier.",
+      "degree": 3,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "CN",
+      "maintainer_type": "institution",
+      "maintainer_name": "OpenSafetyLab (Shanghai AI Lab)",
+      "alignment": "partial",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
+      "data_missing": false,
+      "stars": 176,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 462,
+      "spark": [
+        176
+      ],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "securemcp",
       "name": "Secure MCP",
       "category": "redteam",
@@ -24699,6 +24951,42 @@
       "velocity_12w": null,
       "days_since_commit": 371,
       "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "sorry-bench",
+      "name": "SORRY-Bench",
+      "category": "redteam",
+      "subcategory": "refusal-benchmark",
+      "color": "#c0392b",
+      "url": "https://github.com/SORRY-Bench/sorry-bench",
+      "tagline": "ICLR 2025 benchmark for systematically evaluating LLM safety refusal across a 44-class fine-grained unsafe-instruction taxonomy.",
+      "degree": 4,
+      "mas": 5,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "institution",
+      "maintainer_name": "SORRY-Bench paper authors (UC Berkeley / Princeton / others)",
+      "alignment": "partial",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
+      "data_missing": false,
+      "stars": 83,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 469,
+      "spark": [
+        83
+      ],
       "use_cases": [
         {
           "id": "redteam-ai-system",
@@ -24782,7 +25070,7 @@
       "color": "#c0392b",
       "url": "https://github.com/dsbowen/strong_reject",
       "tagline": "Berkeley's improved jailbreak benchmark and automated grader \u2014 patches the well-known scoring artifacts in earlier harmful-behavior datasets like AdvBench.",
-      "degree": 0,
+      "degree": 3,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -33073,6 +33361,10 @@
       "target": "rasbt-llms-from-scratch"
     },
     {
+      "source": "karpathy-mingpt",
+      "target": "nanochat"
+    },
+    {
       "source": "karpathy-nanogpt",
       "target": "karpathy-nn-zero-to-hero"
     },
@@ -33095,6 +33387,10 @@
     {
       "source": "karpathy-nn-zero-to-hero",
       "target": "rasbt-llms-from-scratch"
+    },
+    {
+      "source": "karpathy-nn-zero-to-hero",
+      "target": "nanochat"
     },
     {
       "source": "karpathy-nn-zero-to-hero",
@@ -34522,6 +34818,10 @@
     },
     {
       "source": "deepeval",
+      "target": "hallucination-leaderboard"
+    },
+    {
+      "source": "deepeval",
       "target": "giskard"
     },
     {
@@ -35037,6 +35337,10 @@
       "target": "valor"
     },
     {
+      "source": "hallucination-leaderboard",
+      "target": "ragas"
+    },
+    {
       "source": "helm",
       "target": "hf-evaluate"
     },
@@ -35087,6 +35391,14 @@
     {
       "source": "helm",
       "target": "unitxt"
+    },
+    {
+      "source": "helmet",
+      "target": "livebench"
+    },
+    {
+      "source": "helmet",
+      "target": "lm-evaluation-harness"
     },
     {
       "source": "hermes-rubric",
@@ -38101,6 +38413,14 @@
       "target": "nemo-guardrails"
     },
     {
+      "source": "huggingface-trl",
+      "target": "open-instruct"
+    },
+    {
+      "source": "huggingface-trl",
+      "target": "openrlhf"
+    },
+    {
       "source": "idun-agent-platform",
       "target": "shekel"
     },
@@ -38495,6 +38815,10 @@
     {
       "source": "node-llama-cpp",
       "target": "yaicli"
+    },
+    {
+      "source": "open-instruct",
+      "target": "openrlhf"
     },
     {
       "source": "openclaw-middleware-suite",
@@ -39657,6 +39981,14 @@
       "target": "giskard"
     },
     {
+      "source": "garak",
+      "target": "salad-bench"
+    },
+    {
+      "source": "garak",
+      "target": "sorry-bench"
+    },
+    {
       "source": "genai-security-literature-review",
       "target": "journey-to-red-team"
     },
@@ -40093,6 +40425,14 @@
       "target": "pyrit"
     },
     {
+      "source": "or-bench",
+      "target": "sorry-bench"
+    },
+    {
+      "source": "or-bench",
+      "target": "strong-reject"
+    },
+    {
       "source": "pair-jailbreak",
       "target": "rain-self-alignment"
     },
@@ -40303,6 +40643,18 @@
     {
       "source": "safetybench",
       "target": "wmdp"
+    },
+    {
+      "source": "salad-bench",
+      "target": "sorry-bench"
+    },
+    {
+      "source": "salad-bench",
+      "target": "strong-reject"
+    },
+    {
+      "source": "sorry-bench",
+      "target": "strong-reject"
     },
     {
       "source": "spikee",
@@ -41917,7 +42269,9 @@
           "gpqa",
           "groundcheck",
           "guessarena",
+          "hallucination-leaderboard",
           "helm",
+          "helmet",
           "hermes-rubric",
           "hf-evaluate",
           "holon-bench",
@@ -42151,6 +42505,7 @@
           "open-prompt-injection",
           "openattack",
           "openclaw-skills-security",
+          "or-bench",
           "pair-jailbreak",
           "parry-guard",
           "pdf-prompt-injection-toolkit",
@@ -42173,7 +42528,9 @@
           "rejection-cascade",
           "renellm",
           "safetybench",
+          "salad-bench",
           "securemcp",
+          "sorry-bench",
           "spikee",
           "stealix",
           "tap-jailbreak",
@@ -42767,9 +43124,11 @@
           "moderator",
           "multilingual-llm-safety-bench",
           "node-llama-cpp",
+          "open-instruct",
           "openclaw-middleware-suite",
           "openlit",
           "openllmetry",
+          "openrlhf",
           "opik",
           "ouro-loop",
           "outputguard",
@@ -42887,6 +43246,7 @@
           "ms-generative-ai-for-beginners",
           "ms-ml-for-beginners",
           "ms-phi-cookbook",
+          "nanochat",
           "nlp-with-transformers-notebooks",
           "norvig-pytudes",
           "pytorch-transformer-from-scratch",

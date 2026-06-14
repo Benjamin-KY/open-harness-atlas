@@ -73,6 +73,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Open-Prompt-Injection](https://github.com/liu00222/Open-Prompt-Injection) | MIT | Python | ga | US | 4/5 | frontier | 458 | — | Yupei Liu et al. (Duke/Neil Gong Lab) |
 | [OpenAttack](https://github.com/thunlp/OpenAttack) | MIT | Python | beta | CN | 5/5 | frontier | 777 | — | THUNLP (Tsinghua NLP Lab) |
 | [Openclaw Skills Security](https://github.com/UseAI-pro/openclaw-skills-security) | MIT | Python | beta | — | 3/5 | frontier | 63 | — | UseAI-pro |
+| [OR-Bench](https://github.com/justincui03/or-bench) | Apache-2.0 | Python | ga | US | 5/5 | frontier | 28 | — | OR-Bench paper authors (UC Berkeley) |
 | [PAIR / JailbreakingLLMs](https://github.com/patrickrchao/JailbreakingLLMs) | MIT | Python | ga | US | 4/5 | frontier | 741 | — | Chao et al. (UPenn/CMU) |
 | [Parry Guard](https://github.com/vaporif/parry-guard) | MIT | Rust | beta | — | 3/5 | frontier | 43 | — | vaporif |
 | [PDF Prompt Injection Toolkit](https://github.com/zhihuiyuze/PDF-Prompt-Injection-Toolkit) | MIT | Python | beta | — | 3/5 | frontier | 53 | — | zhihuiyuze |
@@ -96,7 +97,9 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Rejection Cascade](https://github.com/moscovium-mc/rejection-cascade) | MIT | JavaScript | beta | — | 3/5 | frontier | 2 | — | moscovium-mc |
 | [ReNeLLM](https://github.com/NJUNLP/ReNeLLM) | MIT | Python | beta | CN | 5/5 | frontier | 160 | — | NLP Lab, Nanjing University |
 | [SafetyBench](https://github.com/thu-coai/SafetyBench) | MIT | Python | ga | CN | 4/5 | frontier | 290 | — | COAI Lab, Tsinghua University |
+| [SALAD-Bench](https://github.com/OpenSafetyLab/SALAD-BENCH) | Apache-2.0 | Python | ga | CN | 5/5 | frontier | 176 | — | OpenSafetyLab (Shanghai AI Lab) |
 | [Secure MCP](https://github.com/makalin/SecureMCP) | MIT | Go | beta | — | 3/5 | frontier | 140 | — | makalin |
+| [SORRY-Bench](https://github.com/SORRY-Bench/sorry-bench) | MIT | Python | ga | US | 5/5 | frontier | 83 | — | SORRY-Bench paper authors (UC Berkeley / Princeton / others) |
 | [Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 196 | — | ReversecLabs |
 | [Stealix](https://github.com/boschresearch/stealix) | AGPL-3.0-only | Python | beta | — | 3/5 | frontier | 3 | — | boschresearch |
 | [StrongREJECT](https://github.com/dsbowen/strong_reject) | MIT | Python | beta | US | 5/5 | frontier | 140 | — | UC Berkeley (Dan Bowen et al.) |

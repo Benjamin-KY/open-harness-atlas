@@ -1,0 +1,43 @@
+id: or-bench
+name: OR-Bench
+category: redteam
+subcategory: over-refusal-benchmark
+repo_url: https://github.com/justincui03/or-bench
+homepage: https://arxiv.org/abs/2405.20947
+license: Apache-2.0
+primary_language: Python
+tagline: ICML 2025 over-refusal benchmark — measures how often safety-tuned LLMs incorrectly refuse benign-but-superficially-sensitive prompts.
+description: |
+  OR-Bench is the Apache-2.0 benchmark from the ICML 2025 paper
+  "OR-Bench: An Over-Refusal Benchmark for Large Language Models".
+  It supplies 80,000 seemingly-toxic-but-actually-benign prompts
+  designed to measure the failure mode opposite to under-refusal: a
+  safety-tuned model that refuses too much (e.g., refusing to
+  explain how to "kill a process" or discuss chemistry homework).
+  The benchmark exposes the alignment tax that aggressive safety
+  tuning often imposes on legitimate user requests.
+
+  In the atlas: OR-Bench is the **over-refusal benchmark** point in
+  the redteam space — the complement to SORRY-Bench (which measures
+  refusal of genuinely-unsafe prompts) and StrongREJECT (which
+  measures jailbreak susceptibility). Together they bound the
+  refusal-calibration question from both sides: refuses too little
+  (jailbreak), refuses too much (over-refusal), or refuses the right
+  things.
+maturity: ga
+maintainer:
+  type: institution
+  name: OR-Bench paper authors (UC Berkeley)
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Academic-paper-backed; Apache-2.0 OSS; runs entirely offline
+  against any chat-completion endpoint. The grader is an automated
+  LLM-as-a-judge configurable to use any provider. Multi-provider
+  via standard OpenAI-compatible HTTP — works against local vLLM /
+  Ollama / TGI as well as hosted providers. No hosted-service
+  dependency.
+harness_paradigm_alignment: partial
+adjacent_to:
+  - sorry-bench
+  - strong-reject

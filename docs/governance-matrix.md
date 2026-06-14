@@ -70,9 +70,11 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Multilingual LLM Safety Bench](https://github.com/YutoTerashima/multilingual-llm-safety-bench) | MIT | Python | none | none | none | none | none | 3/5 |
 | [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) | Apache-2.0 | Python | native | partial | native | native | partial | 4/5 |
 | [Node Llama Cpp](https://github.com/withcatai/node-llama-cpp) | MIT | TypeScript | none | none | none | partial | none | 4/5 |
+| [AllenAI Open-Instruct](https://github.com/allenai/open-instruct) | Apache-2.0 | Python | none | none | native | native | partial | 5/5 |
 | [Openclaw Middleware Suite](https://github.com/Sapience-AI/openclaw-middleware-suite) | Apache-2.0 | TypeScript | partial | none | none | none | none | 3/5 |
 | [OpenLIT](https://github.com/openlit/openlit) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
 | [OpenLLMetry](https://github.com/traceloop/openllmetry) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
+| [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) | Apache-2.0 | Python | partial | none | native | native | partial | 5/5 |
 | [Opik (by Comet)](https://github.com/comet-ml/opik) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
 | [Ouro Loop](https://github.com/VictorVVedtion/ouro-loop) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [Outlines](https://github.com/dottxt-ai/outlines) | Apache-2.0 | Python | none | none | partial | native | none | 4/5 |
