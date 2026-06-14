@@ -76,9 +76,11 @@ deployment needs, not a leaderboard.
 
 ## How this overlay stays accurate
 
-When a registry entry's `five_component_coverage` field is updated, the
-overlay SVG and this Markdown page are updated in the same PR. The
-overlay is **hand-authored** (committed as `visuals/five-component-
-overlay.svg`); both files are reviewed together. See
-[`visuals/README.md`](../visuals/README.md) for the rationale on which
-visuals are hand-authored vs generated.
+The overlay (`visuals/five-component-overlay.svg`) is **generated** by
+`scripts/build_visuals.py::_build_overlay` directly from the
+`five_component_coverage` field of the six reference governance YAMLs
+(`registry/governance/{guardrails-ai, nemo-guardrails, presidio,
+granite-guardian, rebuff, harmless-harnesses}.yaml`). When a registry
+entry's coverage field is updated, `make build` rebuilds the overlay in
+the same commit and `python scripts/build_visuals.py --check` enforces
+this in CI — the SVG can never silently disagree with the YAML.

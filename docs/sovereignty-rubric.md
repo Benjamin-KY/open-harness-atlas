@@ -1,9 +1,9 @@
 # Sovereignty rubric
 
 This document defines how `open-harness-atlas` scores
-**`model_agnostic_score`** (0–5) and the axes used in
-`visuals/sovereignty-radial.svg`. It is referenced from
-[`CONTRIBUTING.md`](../CONTRIBUTING.md) and
+**`model_agnostic_score`** (0–5) plus the secondary axes (licence
+openness, self-hostability, telemetry default) and an optional adoption
+tier. It is referenced from [`CONTRIBUTING.md`](../CONTRIBUTING.md) and
 [`GOVERNANCE.md`](../GOVERNANCE.md) §2.
 
 > ⚠ **Informational, not normative for *people*.** Country of origin
@@ -42,10 +42,11 @@ schema-enforced.
 
 ---
 
-## 2. Sovereignty radial — secondary axes
+## 2. Sovereignty axes — secondary scoring
 
-`visuals/sovereignty-radial.svg` plots each entry across **four axes**.
-This is a *visual* tool — none of these axes affect inclusion.
+Each entry carries four secondary axes alongside `model_agnostic_score`.
+These are *transparency* fields — they do not affect inclusion, and the
+atlas does not combine them into a single ranking number.
 
 | Axis | Range | Meaning |
 |---|---|---|

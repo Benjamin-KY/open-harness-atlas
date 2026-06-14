@@ -164,11 +164,14 @@ the weekly refresh bot will flag most of these automatically.
 
 ## Visuals and matrices
 
-You typically do not need to touch these by hand — they regenerate from
-the registry via `make build`. If you do want to rework a hand-authored
-visual (`visuals/taxonomy.svg`, `visuals/five-component-overlay.svg`,
-`visuals/fable-mythos-pattern-fire.svg`), follow `BRAND.md` and place
-source files under `visuals/source/`.
+You do not need to touch these by hand — every committed visual under
+`visuals/` is generated. `hero.svg`, `five-component-overlay.svg`, and
+`model-agnostic-spectrum.svg` are emitted by `scripts/build_visuals.py`;
+`graph.svg` / `graph.png` / `graph-data.json` by `scripts/build_graph.py`;
+the docs matrices by `scripts/build_matrices.py`. Run `make build` to
+regenerate them all. To propose a *new* visual, follow `BRAND.md` and add
+the generator to `scripts/build_visuals.py` so the SVG can never silently
+drift from the registry data.
 
 ---
 

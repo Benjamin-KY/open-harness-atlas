@@ -82,12 +82,13 @@ distributed in the repo.
 4. **Edges carry verbs.** `implements`, `replaces-for`, `adjacent-to`,
    `maintained-by`, not bare arrows.
 5. **Provenance footer.** Every SVG carries a footer with:
-   - source file path (e.g., `visuals/source/taxonomy.svg.j2`)
+   - generator (e.g., `scripts/build_visuals.py::_build_hero`)
    - generation timestamp or last-edited date
-   - registry version that produced the data (for generated visuals)
-6. **Two layers per diagram.** Canonical SVG checked in; data sources
-   (Mermaid `.mmd`, Excalidraw `.excalidraw`, Python plot scripts) live in
-   `visuals/source/` so output is reproducible.
+   - registry version that produced the data
+6. **One source of truth.** Visuals are emitted directly from
+   `registry/*/*.yaml` + `companion/*.yaml` by the `scripts/build_*.py`
+   generators. No checked-in SVG should ever disagree with the underlying
+   YAML — if it does, the generator is wrong and must be fixed.
 7. **Atlas-specific overlay.** Where a figure shows the Harmless Harnesses
    five components (Policy Router · Source Authority · Prompt Composer ·
    Output Contract · Audit Log + FSM), use the canonical component glyphs

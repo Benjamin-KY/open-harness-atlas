@@ -1,5 +1,7 @@
 # open-harness-atlas
 
+> *Created by **[Ben Kereopa-Yorke](https://github.com/Benjamin-KY)**, Co-Founder at **[Australi.ai](https://australi.ai)**.*
+
 ### **The OSS layer that makes model-agnostic AI workloads possible.**
 
 *A curated, jurisdiction-neutral catalog and knowledge graph of free,

@@ -63,8 +63,13 @@ jobs:
           cp visuals/graph.svg _site/graph.svg
           cp visuals/graph.png _site/graph.png
           cp visuals/model-agnostic-spectrum.svg _site/model-agnostic-spectrum.svg
-          cp visuals/taxonomy.svg _site/taxonomy.svg
           cp visuals/five-component-overlay.svg _site/five-component-overlay.svg
+          # Social-card / OpenGraph asset (referenced by visuals/index.html + 2d.html).
+          cp visuals/hero.svg _site/hero.svg
+          # Live-viewer screenshot used by the README. Copy under the same
+          # subpath so absolute URLs resolve in both GitHub and Pages.
+          mkdir -p _site/viewer-3d
+          cp visuals/viewer-3d/preview.png _site/viewer-3d/preview.png
           cp README.md _site/README.md
           # Mirror docs/*.md so cross-links (sovereignty-rubric, adjacencies, rising) resolve.
           cp docs/*.md _site/docs/ 2>/dev/null || true

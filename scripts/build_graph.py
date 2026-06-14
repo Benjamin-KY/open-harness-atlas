@@ -29,7 +29,7 @@ SUPPLY_CHAINS_PATH = REPO / "companion" / "supply_chains.yaml"
 # Per-node sparkline data: how many recent star counts to emit per node.
 SPARK_MAX_POINTS = 12
 
-# BRAND palette (mirrors harmless-harnesses + taxonomy.svg).
+# BRAND palette (mirrors harmless-harnesses + scripts/build_visuals.py).
 CAT_COLOR = {
     "governance": "#1f3a5f",
     "agent":      "#d68910",

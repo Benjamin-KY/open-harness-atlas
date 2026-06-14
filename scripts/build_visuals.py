@@ -1,20 +1,23 @@
 """Generate data-driven SVG visuals from the registry.
 
-For v0.1.0 the two front-door visuals (``taxonomy.svg`` and
-``five-component-overlay.svg``) are committed under ``visuals/`` as
-hand-authored SVGs — they are reviewed for narrative correctness on every
-release rather than auto-regenerated.
+Every front-door visual is emitted from the curated registry YAML so that
+no committed SVG can silently drift from the catalogue. This module owns:
 
-This script is the slot for the **v0.2.0+ data-driven visuals**
-(``model-agnostic-spectrum.svg`` and ``sovereignty-radial.svg``). They are
-emitted directly from the curated YAML so the visuals can never silently
-drift from the registry numbers.
+* ``hero.svg`` — 1200x630 LinkedIn-social-card banner (header counts +
+  six category tiles with tier-stacked bars + featured landmark names).
+* ``five-component-overlay.svg`` — six-project x five-component coverage
+  grid, sourced from the ``five_component_coverage`` field of each
+  reference governance YAML.
+* ``model-agnostic-spectrum.svg`` — distribution of the registry over the
+  0-5 ``model_agnostic_score`` axis.
 
 Usage::
 
-    python scripts/build_visuals.py               # write visuals
-    python scripts/build_visuals.py --check       # exit 1 on drift
-    python scripts/build_visuals.py --skip-spectrum  # incremental
+    python scripts/build_visuals.py                 # write visuals
+    python scripts/build_visuals.py --check         # exit 1 on drift
+    python scripts/build_visuals.py --skip-hero     # incremental
+    python scripts/build_visuals.py --skip-overlay  # incremental
+    python scripts/build_visuals.py --skip-spectrum # incremental
 """
 
 from __future__ import annotations

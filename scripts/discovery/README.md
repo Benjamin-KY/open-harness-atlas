@@ -1,9 +1,11 @@
 # scripts/discovery/ — Phase 2 candidate-discovery harness
 
 This folder is the curation infrastructure used to expand the
-`open-harness-atlas` registry from 313 (v0.1.0) to 804 entries
-through **systematic GitHub topic discovery** — not from-memory
-shortlists.
+`open-harness-atlas` registry from 313 entries (v0.1.0 seed) to 804
+entries (v0.2.0) through **systematic GitHub topic discovery** — not
+from-memory shortlists. The current catalogue (816 entries) is the
+v0.2.0 baseline plus targeted curator-driven additions; the discovery
+pipeline below remains the canonical path for future bulk expansions.
 
 The discovery pipeline is reproducible from a clean checkout:
 
