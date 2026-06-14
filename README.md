@@ -206,6 +206,8 @@ for the full exclusion policy.
   for a full walkthrough that assembles a locally-deployable,
   model-agnostic stack from the atlas — step by step, with the
   design pattern, the posture filter, and the picks at each layer.
+- Read [`docs/ROADMAP.md`](docs/ROADMAP.md) for the six-month
+  monthly-ship plan through v1.0 on 2026-12-14.
 - Open the comparison matrices: [`docs/governance-matrix.md`](docs/governance-matrix.md),
   [`docs/agent-matrix.md`](docs/agent-matrix.md), and the four others
   under [`docs/`](docs/).

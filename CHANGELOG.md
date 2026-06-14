@@ -6,6 +6,22 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — Public six-month roadmap (2026-06-14)
+
+- New `docs/ROADMAP.md` — public commitment covering Jun 15 →
+  Dec 14, 2026. Six monthly minor releases (v0.4.0 → v0.9.0)
+  culminating in v1.0.0 on 2026-12-14.
+- Each month has one headline ship plus 2–3 quality threads, with
+  concrete and externally verifiable exit criteria.
+- Sequencing principle: ship what unblocks the next ship.
+  Editorial integrity → DOI → paper citation; per-entry pages →
+  newsletter; CLI + API → ecosystem reuse.
+- v1.0 release gates set: ≥ 99% curator-reviewed · DOI live ·
+  companion live · per-entry pages live · API live · ≥ 6 months
+  of velocity history · zero known §8 violations · all CI
+  workflows pinned to commit SHAs.
+- README "Use this atlas" section now links the roadmap.
+
 ### Added — 32 high-signal entries from two recency-biased discovery sweeps (2026-06-14)
 
 Two sweeps shipped together (with discovery infrastructure rewrites):
