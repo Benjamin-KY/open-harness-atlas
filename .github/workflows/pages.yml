@@ -41,6 +41,7 @@ jobs:
         run: |
           mkdir -p _site
           cp visuals/index.html _site/index.html
+          cp visuals/2d.html _site/2d.html
           cp visuals/graph-data.json _site/graph-data.json
           cp visuals/graph.svg _site/graph.svg
           cp visuals/graph.png _site/graph.png
