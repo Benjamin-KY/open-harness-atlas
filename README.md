@@ -222,7 +222,7 @@ open-harness-atlas/
 │   ├── routing/               # Routing / model-agnostic infra
 │   └── education/             # Free education resources
 ├── docs/                      # Taxonomy, matrices, rubrics, worked examples
-├── visuals/                   # Canonical SVGs (taxonomy, overlay, spectrum, radial, worked example)
+├── visuals/                   # hero.svg (banner) · graph.svg (knowledge graph) · viewer-3d/preview.png · five-component-overlay.svg · interactive viewers (index.html + 2d.html)
 ├── scripts/                   # Validate / refresh / build (Python 3.11+)
 ├── companion/                 # Optional create-context-graph companion app
 ├── tests/                     # pytest — hermetic by default
