@@ -6,17 +6,17 @@ repo_url: https://github.com/fabiojbg/LLMApiGateway
 license: MIT
 primary_language: Python
 tagline: A personal LLM gateway with fault-tolerant capabilities for calls to LLM models from any provider with OpenAI-compatible APIs.
-description: |-
-  Llmapi Gateway — A personal LLM gateway with fault-tolerant capabilities for calls to LLM models from any provider with OpenAI-compatible APIs. Advanced features like retry, model sequencing, and body parameter injection are also available. Especially useful to work with AI coders like Cline and RooCode and providers like OpenRouter. Upstream maintainer: fabiojbg.
+description: 'Llmapi Gateway — A personal LLM gateway with fault-tolerant capabilities for calls to LLM models from any provider with OpenAI-compatible APIs. Advanced features like retry, model sequencing, and body parameter injection are also available. Especially useful to work with AI coders like Cline and RooCode and providers like OpenRouter. Upstream maintainer: fabiojbg.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: fabiojbg
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: fabiojbg (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: fabiojbg is a single community maintainer (GitHub User owner); LLMApiGateway is an MIT-licensed personal OpenAI-compatible LLM gateway with fault-tolerant fallback chains, model rotation, custom-parameter injection (reasoning_effort/service_tier/etc.), and explicit integrations for Cline, RooCode, OpenCode, and GitHub Copilot. Model-agnostic 4 — exposes the OpenAI-compat /v1 surface and routes to any OpenAI-compatible upstream provider configured via providers.json, with OpenRouter provider ordering as a first-class feature.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

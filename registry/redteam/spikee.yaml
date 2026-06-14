@@ -7,17 +7,17 @@ homepage: https://spikee.ai
 license: Apache-2.0
 primary_language: Python
 tagline: Simple Prompt Injection Kit for Evaluation and Exploitation
-description: |-
-  Spikee — Simple Prompt Injection Kit for Evaluation and Exploitation. Upstream maintainer: ReversecLabs.
+description: 'Spikee — Simple Prompt Injection Kit for Evaluation and Exploitation. Upstream maintainer: ReversecLabs.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: company
   name: ReversecLabs
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: ReversecLabs (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Company-maintained by Reversec Labs; the toolkit is Apache-2.0 licensed and purpose-built for prompt-injection and jailbreak assessment. MAS 3 remains conservative because the project is attack-surface tooling with configurable provider use, but the reviewed README does not show a stronger single abstraction tier than that. Notable flag: its primary value is adversarial testing coverage, not general observability or routing.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - aigoat

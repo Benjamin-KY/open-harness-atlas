@@ -7,17 +7,17 @@ homepage: https://aigoat.co.in
 license: Apache-2.0
 primary_language: JavaScript
 tagline: AIGoat - Open-source AI security playground for LLM red teaming.
-description: |-
-  Aigoat — AIGoat - Open-source AI security playground for LLM red teaming. AI Goat provides hands-on labs covering the full OWASP LLM Top 10 with progressive defenses. Upstream maintainer: AISecurityConsortium.
+description: 'Aigoat — AIGoat - Open-source AI security playground for LLM red teaming. AI Goat provides hands-on labs covering the full OWASP LLM Top 10 with progressive defenses. Upstream maintainer: AISecurityConsortium.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: company
   name: AISecurityConsortium
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: AISecurityConsortium (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'AISecurityConsortium (community-maintained, India-based AI security collective); OSS code is Apache-2.0 and self-hostable; training content uses CC BY-NC-SA 4.0 as a separate non-code licence. MAS 3: heuristic default; the security playground tests LLM vulnerabilities rather than routing model calls itself. Hands-on OWASP LLM Top 10 red-team playground with progressive labs covering prompt injection, data exfiltration, and model manipulation; pushed through 2026-04-24.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - pdf-prompt-injection-toolkit

@@ -6,17 +6,17 @@ repo_url: https://github.com/wa91h/local-ai-toolkit
 license: MIT
 primary_language: Go Template
 tagline: A self-hosted AI toolkit running locally via Docker Compose, bundling an LLM gateway, workflow automation, and a chat UI — all backed by a shared PostgreSQL database.
-description: |-
-  Local AI Toolkit — A self-hosted AI toolkit running locally via Docker Compose, bundling an LLM gateway, workflow automation, and a chat UI — all backed by a shared PostgreSQL database. Upstream maintainer: wa91h.
+description: 'Local AI Toolkit — A self-hosted AI toolkit running locally via Docker Compose, bundling an LLM gateway, workflow automation, and a chat UI — all backed by a shared PostgreSQL database. Upstream maintainer: wa91h.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: wa91h
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: wa91h (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: wa91h (community maintainer) ships AI Local Toolkit under MIT as a Docker-Compose + Helm bundle around LiteLLM, n8n and Open WebUI on PostgreSQL, with an explicit production-checklist disclaimer about missing TLS, auth and secrets management. Model-agnostic 5 — the LiteLLM admin UI lets you register any provider and use it as an OpenAI-compatible endpoint from any consumer in the stack, so provider really is a config string. Curator-reviewed; sits in routing as a sovereign local-deployment recipe.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

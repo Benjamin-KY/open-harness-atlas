@@ -6,17 +6,17 @@ repo_url: https://github.com/OthmanAdi/planning-with-files
 license: MIT
 primary_language: Python
 tagline: Persistent file-based planning for AI coding agents and long-running agentic tasks.
-description: |-
-  Planning With Files — Persistent file-based planning for AI coding agents and long-running agentic tasks. Crash-proof markdown plans that survive context loss and /clear, plus a deterministic completion gate and multi-agent shared state on disk. Manus-style. Works with Claude Code, Codex CLI, Cursor, Kiro, OpenCode and 60+ agents via the SKILL.md standard. Upstream maintainer: OthmanAdi.
+description: 'Planning With Files — Persistent file-based planning for AI coding agents and long-running agentic tasks. Crash-proof markdown plans that survive context loss and /clear, plus a deterministic completion gate and multi-agent shared state on disk. Manus-style. Works with Claude Code, Codex CLI, Cursor, Kiro, OpenCode and 60+ agents via the SKILL.md standard. Upstream maintainer: OthmanAdi.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: OthmanAdi
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: OthmanAdi (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'Single-maintainer (OthmanAdi; MIT) persistent file-based planning skill that survives /clear, crashes, and context truncation by keeping task_plan.md, findings.md, and progress.md on disk, with an opt-in completion gate. Model-agnostic 4 because the SKILL.md installation surface targets 60+ coding agents (Claude Code, Cursor, Codex CLI, etc.) and the artefacts are plain Markdown — no vendor coupling. Alignment ''partial'': the completion gate is a small but real FSM-style discipline, and the on-disk state is an audit-trail proxy, but the project is a skill, not a full harness.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - ag-ui

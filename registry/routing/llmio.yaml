@@ -6,17 +6,17 @@ repo_url: https://github.com/atopos31/llmio
 license: MIT
 primary_language: TypeScript
 tagline: Unified LLM gateway with weighted load balancing, observability & cost tracking.
-description: |-
-  Llmio — Unified LLM gateway with weighted load balancing, observability & cost tracking. 统一的 LLM 网关，提供权重负载均衡、可观测性与费用追踪。. Upstream maintainer: atopos31.
+description: 'Llmio — Unified LLM gateway with weighted load balancing, observability & cost tracking. 统一的 LLM 网关，提供权重负载均衡、可观测性与费用追踪。. Upstream maintainer: atopos31.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: community
   name: atopos31
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: atopos31 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: Single-maintainer community project (atopos31, CN) under MIT; Go-based OpenAI/Anthropic/Gemini-compatible gateway with weighted scheduling, rate-limit fallback, pure-Go SQLite persistence, React admin UI, and per-request TraceID + token/cost accounting. Model-agnostic 4 — unifies four API shapes (OpenAI Chat Completions / Responses, Gemini Native, Anthropic Messages) under one base URL, so client code stays stable. Routing/ai-gateway is correct; observability is gateway-level and not paired with a governance/eval contract.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

@@ -1,0 +1,26 @@
+id: grps-trtllm
+name: Grps Trtllm
+category: routing
+subcategory: serving
+repo_url: https://github.com/NetEase-Media/grps_trtllm
+license: Apache-2.0
+primary_language: Python
+tagline: 'Higher performance OpenAI LLM service than vLLM serve: A pure C++ high-performance OpenAI LLM service implemented with GPRS+TensorRT-LLM+Tokenizers.cpp, supporting chat and function call, AI agents...'
+description: 'Grps Trtllm — Higher performance OpenAI LLM service than vLLM serve: A pure C++ high-performance OpenAI LLM service implemented with GPRS+TensorRT-LLM+Tokenizers.cpp, supporting chat and function call, AI agents, distributed multi-GPU inference, multimodal capabilities, and a Gradio chat interface. Upstream maintainer: NetEase-Media.
+
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
+maturity: beta
+maintainer:
+  type: company
+  name: NetEase-Media
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: 'NetEase Media (Chinese commercial tech company) ships grps_trtllm under Apache-2.0: a pure-C++ inference server combining the GRPS framework with TensorRT-LLM to expose OpenAI-protocol chat, function-calling, ai-agent (via llama_index) and multi-modal endpoints with inflight batching and multi-GPU support. Model-agnostic 3 — the backend is TRT-LLM-locked, but the exposed endpoint is OpenAI-compatible so clients can target any local TRT-LLM-supported model. The original governance/structured-output framing did not match the README; this is a serving/routing artefact.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai
+- outputguard
+- rstructor
+- sob
+- yaicli

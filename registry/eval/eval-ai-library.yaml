@@ -6,17 +6,17 @@ repo_url: https://github.com/meshkovQA/Eval-ai-library
 license: Apache-2.0
 primary_language: Python
 tagline: Comprehensive AI Model Evaluation Framework with advanced techniques including Temperature-Controlled Verdict Aggregation via Generalized Power Mean.
-description: |-
-  Eval AI Library — Comprehensive AI Model Evaluation Framework with advanced techniques including Temperature-Controlled Verdict Aggregation via Generalized Power Mean. Support for multiple LLM providers and 15+ evaluation metrics for RAG systems and AI agents. Upstream maintainer: meshkovQA.
+description: 'Eval AI Library — Comprehensive AI Model Evaluation Framework with advanced techniques including Temperature-Controlled Verdict Aggregation via Generalized Power Mean. Support for multiple LLM providers and 15+ evaluation metrics for RAG systems and AI agents. Upstream maintainer: meshkovQA.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: meshkovQA
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: meshkovQA (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: meshkovQA / Aleksandr Meshkov (community / individual maintainer) publishes Eval AI Library under Apache-2.0 as an independently maintained fork of firstlinesoftware/eval-ai-library with PyPI distribution and additional features, supporting 35+ evaluation metrics for RAG systems and AI agents, 12 LLM providers, built-in document-derived test-data generation, and an interactive dashboard. Model-agnostic 3 is fair given the breadth of provider coverage; whether local-weights backends (Ollama / vLLM) are first-class is not explicitly verified from the README snippet, so the score stays conservative. Implements published techniques (G-Eval / EMNLP 2023) cited inline with BibTeX.
 harness_paradigm_alignment: partial
 adjacent_to:
 - j-rig-skill-binary-eval

@@ -7,17 +7,17 @@ homepage: https://www.xcodebuildmcp.com
 license: MIT
 primary_language: TypeScript
 tagline: A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.
-description: |-
-  Xcode Build MCP — A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects. Upstream maintainer: getsentry.
+description: 'Xcode Build MCP — A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects. Upstream maintainer: getsentry.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: getsentry
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: getsentry (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Sentry (commercial; MIT) maintains XcodeBuildMCP, a Node.js MCP server (and CLI) that exposes Xcode build / simulator / device automation as MCP tools for AI coding agents, with Homebrew and npm distributions. Model-agnostic 4 because MCP is a transport contract: the server has no opinion about which LLM client is on the other end — Cursor, Claude Code, Codex, and any MCP-compatible client are all first-class. Alignment ''partial'': it is a tool surface for the Agent component, not a harness.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - assetopsbench

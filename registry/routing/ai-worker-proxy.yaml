@@ -6,17 +6,17 @@ repo_url: https://github.com/zxcloli666/AI-Worker-Proxy
 license: MIT
 primary_language: TypeScript
 tagline: 'OpenAI-compatible AI proxy: Anthropic Claude, Google Gemini, GPT-5, Cloudflare AI.'
-description: |-
-  AI Worker Proxy — OpenAI-compatible AI proxy: Anthropic Claude, Google Gemini, GPT-5, Cloudflare AI. Free hosting, automatic failover, token rotation. Deploy in 1 minute. Upstream maintainer: zxcloli666.
+description: 'AI Worker Proxy — OpenAI-compatible AI proxy: Anthropic Claude, Google Gemini, GPT-5, Cloudflare AI. Free hosting, automatic failover, token rotation. Deploy in 1 minute. Upstream maintainer: zxcloli666.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: zxcloli666
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: zxcloli666 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'zxcloli666 (community-maintained, individual GitHub User); OSS under MIT, deployed via GitHub Actions to Cloudflare Workers'' free tier (~100k req/day). Model-agnostic 2 — multi-provider OpenAI-compatible bridge across Anthropic, Google Gemini, OpenAI GPT, and Cloudflare AI, but no local-weights path: it is a hosted commercial-API multiplexer, not a swap-target gateway. Key rotation and failover are the differentiating features; routing config can be flipped via GitHub repo Variables without code edits.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - apisix

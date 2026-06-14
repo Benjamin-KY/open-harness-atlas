@@ -6,17 +6,17 @@ repo_url: https://github.com/meepolabs/routectl
 license: MIT
 primary_language: Rust
 tagline: A local LLM router with OpenAI and Anthropic format translation, retry and fallback chains
-description: |-
-  Routectl — A local LLM router with OpenAI and Anthropic format translation, retry and fallback chains. Upstream maintainer: meepolabs.
+description: 'Routectl — A local LLM router with OpenAI and Anthropic format translation, retry and fallback chains. Upstream maintainer: meepolabs.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: company
   name: meepolabs
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: meepolabs (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: Meepolabs (small commercial outfit; MIT) maintains a single-binary Rust router that proxies OpenAI chat-completions and Anthropic Messages requests across openai-compat hosts, native Anthropic, AWS Bedrock (SigV4), and openai-responses. Model-agnostic 4 because the openai-compat egress is a generic plugin surface (vLLM, llama.cpp, NIM, Groq, DeepSeek all named in README) and local options are first-class. Strong on the routing axis (policy router, retry/circuit breaker, RPM bucket); thinner on output-contract enforcement, so alignment stays 'partial'.
 harness_paradigm_alignment: partial
 adjacent_to:
 - clawrouter

@@ -7,17 +7,17 @@ homepage: https://intentcat.com/docs
 license: MIT
 primary_language: Python
 tagline: IntentKit is an open-source, self-hosted cloud agent cluster that manages a collaborative team of AI agents for you.
-description: |-
-  Intentkit — IntentKit is an open-source, self-hosted cloud agent cluster that manages a collaborative team of AI agents for you. Upstream maintainer: crestalnetwork.
+description: 'Intentkit — IntentKit is an open-source, self-hosted cloud agent cluster that manages a collaborative team of AI agents for you. Upstream maintainer: crestalnetwork.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: crestalnetwork
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: crestalnetwork (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Crestal Network is the company-backing GitHub Organization for IntentKit (MIT) — a cloud-native, self-hosted agent cluster manager with Docker/PyPI distribution, secure-by-design key handling, optional Web3/crypto integrations, and a skill system. Model-agnostic 3 — multi-provider including local options via the agent''s runtime configuration. Notable governance flag: contributions via PRs are not accepted (only issues), so the project is corporate-controlled despite the open licence.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

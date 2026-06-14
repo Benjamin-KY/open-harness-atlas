@@ -7,17 +7,17 @@ homepage: https://yunwei37.github.io/prompt-hacker-collections/
 license: MIT
 primary_language: Multiple
 tagline: prompt attack-defense, prompt Injection, reverse engineering notes and examples | 提示词对抗、破解例子与笔记
-description: |-
-  Prompt Hacker Collections — prompt attack-defense, prompt Injection, reverse engineering notes and examples | 提示词对抗、破解例子与笔记. Upstream maintainer: yunwei37.
+description: 'Prompt Hacker Collections — prompt attack-defense, prompt Injection, reverse engineering notes and examples | 提示词对抗、破解例子与笔记. Upstream maintainer: yunwei37.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: ga
 maintainer:
   type: community
   name: yunwei37
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: yunwei37 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'Single-maintainer (yunwei37; MIT) bilingual (English/Chinese) collection of jailbreak prompts, prompt-injection examples, and defensive patterns, organised as YAML so consumers can parse and replay against any target. Model-agnostic 4 because the catalogued artefact is provider-neutral text — the same prompts can be fed to any commercial, hosted-OSS, or local backend without modification. Alignment ''partial'': useful as the seed corpus for a redteam probe component, not itself a runner.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - ai-red-teaming-playground-labs

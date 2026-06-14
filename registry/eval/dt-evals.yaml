@@ -6,17 +6,17 @@ repo_url: https://github.com/dynatrace-oss/dt-evals
 license: Apache-2.0
 primary_language: TypeScript
 tagline: AI evaluators CLI for your AI apps and Agents - Dynatrace AI Observability
-description: |-
-  Dt Evals — AI evaluators CLI for your AI apps and Agents - Dynatrace AI Observability. Upstream maintainer: dynatrace-oss.
+description: 'Dt Evals — AI evaluators CLI for your AI apps and Agents - Dynatrace AI Observability. Upstream maintainer: dynatrace-oss.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: dynatrace-oss
-origin_country: null
+origin_country: AT
 model_agnostic_score: 3
-sovereignty_notes: dynatrace-oss (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Dynatrace (commercial observability vendor; dynatrace-oss is its public OSS organisation, Austrian engineering origin) publishes dt-evals under Apache-2.0: an end-to-end LLM evaluation toolkit (CLI + TS library + deploy + ingest) that pulls live gen_ai.* spans from a Dynatrace tenant, masks PII in-memory, scores them with an LLM judge, and writes results back as business events. Model-agnostic 3 — judge LLM and ingestion are provider-agnostic across hosted backends, though the closed-loop value proposition is anchored to Dynatrace AI Observability. Alpha-stage but actively maintained.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

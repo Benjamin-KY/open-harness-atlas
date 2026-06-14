@@ -6,17 +6,17 @@ repo_url: https://github.com/enescingoz/mac-llm-bench
 license: MIT
 primary_language: Shell
 tagline: Community benchmark database for running LLMs on Apple Silicon Macs
-description: |-
-  Mac LLM Bench — Community benchmark database for running LLMs on Apple Silicon Macs. Upstream maintainer: enescingoz.
+description: 'Mac LLM Bench — Community benchmark database for running LLMs on Apple Silicon Macs. Upstream maintainer: enescingoz.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: enescingoz
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: enescingoz (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Single-maintainer (enescingoz; MIT) reproducible benchmark suite and result database for running GGUF (via llama.cpp''s `llama-bench`) and MLX models on Apple Silicon, plus a HumanEval+ code-quality runner — results tabled by chip generation (M1-M5) for cross-rig comparison. Model-agnostic 3 because the runner is local-weights-only by design (its whole point is on-device measurement), but it is model-pluggable across any GGUF / MLX checkpoint. Alignment ''partial'': it is a focused performance + quality eval — no agent or governance surface.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

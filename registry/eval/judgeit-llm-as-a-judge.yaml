@@ -6,17 +6,17 @@ repo_url: https://github.com/ibm-self-serve-assets/JudgeIt-LLM-as-a-Judge
 license: Apache-2.0
 primary_language: Python
 tagline: Automation Framework using LLM-as-a-judge to evaluate of Agentic AI, RAG, Text2SQL at scale; that is a good proxy for human judgement.
-description: |-
-  Judge It LLM As A Judge — Automation Framework using LLM-as-a-judge to evaluate of Agentic AI, RAG, Text2SQL at scale; that is a good proxy for human judgement. Upstream maintainer: ibm-self-serve-assets.
+description: 'Judge It LLM As A Judge — Automation Framework using LLM-as-a-judge to evaluate of Agentic AI, RAG, Text2SQL at scale; that is a good proxy for human judgement. Upstream maintainer: ibm-self-serve-assets.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: ibm-self-serve-assets
-origin_country: null
+origin_country: US
 model_agnostic_score: 3
-sovereignty_notes: ibm-self-serve-assets (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: IBM is a company maintainer (ibm-self-serve-assets is an IBM GitHub Organization); the OSS core is Apache-2.0-licensed and published from IBM's SuperKnowa AI platform initiative. Model-agnostic score of 3 is plausible for an LLM-as-judge framework that abstracts over multiple underlying judge model providers. Eval/eval-framework category is confirmed by the README's batch evaluation pipeline for RAG, multi-turn conversations, and Text2SQL pipelines at scale.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

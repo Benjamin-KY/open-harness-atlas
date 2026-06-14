@@ -7,17 +7,17 @@ homepage: https://github.com/BlackTechX011/HacxGPT-Jailbreak-prompts
 license: MIT
 primary_language: Multiple
 tagline: 'HacxGPT Jailbreak : Unlock the full potential of top AI models like ChatGPT, LLaMA, and more with the advanced Jailbreak prompts .'
-description: |-
-  Hacx GPT Jailbreak Prompts — HacxGPT Jailbreak : Unlock the full potential of top AI models like ChatGPT, LLaMA, and more with the advanced Jailbreak prompts . Upstream maintainer: BlackTechX011.
+description: 'Hacx GPT Jailbreak Prompts — HacxGPT Jailbreak : Unlock the full potential of top AI models like ChatGPT, LLaMA, and more with the advanced Jailbreak prompts . Upstream maintainer: BlackTechX011.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: BlackTechX011
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: BlackTechX011 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: BlackTechX011 (community individual maintainer on GitHub); MIT-licensed research corpus of jailbreak prompts targeting ChatGPT/LLaMA-class models with an explicit 'educational and security research only' disclaimer. Model-agnostic 3 — prompts are platform-portable across major commercial and OSS models. Dual-use; useful as a known-prompt source for hardening evals and aligning-on-refusal training, but the harness atlas should label its risk surface clearly. Complements jailbreak-llms (CCS 2024 dataset).
 harness_paradigm_alignment: partial
 adjacent_to:
 - chatgpt-jailbreak-pro

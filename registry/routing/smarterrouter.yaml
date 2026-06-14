@@ -6,17 +6,17 @@ repo_url: https://github.com/peva3/SmarterRouter
 license: MIT
 primary_language: Python
 tagline: 'SmarterRouter: An intelligent LLM gateway and VRAM-aware router for Ollama, llama.cpp, and OpenAI.'
-description: |-
-  Smarter Router — SmarterRouter: An intelligent LLM gateway and VRAM-aware router for Ollama, llama.cpp, and OpenAI. Features semantic caching, model profiling, and automatic failover for local AI labs. Upstream maintainer: peva3.
+description: 'Smarter Router — SmarterRouter: An intelligent LLM gateway and VRAM-aware router for Ollama, llama.cpp, and OpenAI. Features semantic caching, model profiling, and automatic failover for local AI labs. Upstream maintainer: peva3.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: peva3
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: peva3 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Single-maintainer (peva3; MIT) Python router that auto-discovers local Ollama models, benchmarks them on the host hardware, and routes each prompt to the best-performing local model through an OpenAI-compatible endpoint, with optional fallback to commercial backends. Model-agnostic 4 because the client surface is OpenAI-compatible and the backend mix (Ollama + llama.cpp + OpenAI) makes local options first-class — provider choice is configuration. Alignment ''partial'': clear Policy Router (the learned profiler), no Output Contract or audit-log spine.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - coai

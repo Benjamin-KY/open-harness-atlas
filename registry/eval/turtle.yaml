@@ -7,17 +7,17 @@ homepage: https://huggingface.co/spaces/HPAI-BSC/TuRTLe-Leaderboard
 license: Apache-2.0
 primary_language: Python
 tagline: 'TuRTLe: A Unified Evaluation of LLMs for RTL Generation (MLCAD 2025)'
-description: |-
-  Tu Rtle — TuRTLe: A Unified Evaluation of LLMs for RTL Generation (MLCAD 2025). Upstream maintainer: HPAI-BSC.
+description: 'Tu Rtle — TuRTLe: A Unified Evaluation of LLMs for RTL Generation (MLCAD 2025). Upstream maintainer: HPAI-BSC.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
-  type: community
+  type: institution
   name: HPAI-BSC
-origin_country: null
+origin_country: ES
 model_agnostic_score: 3
-sovereignty_notes: HPAI-BSC (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: HPAI-BSC (institution; High-Performance AI group, Barcelona Supercomputing Center, Spain) publishes TuRTLe under Apache-2.0 — a unified evaluation framework for LLMs on RTL generation across VerilogEval, RTLLM, VGen, RTL-Repo and a new Tiny Tapeout NotSoTiny benchmark, with Icarus Verilog / Verilator (syntax + functionality), Yosys (synthesis + equivalence) and LibreLane / OpenROAD (PPA) as deterministic graders. Model-agnostic 3 reflects API inference via any OpenAI-compatible endpoint (OpenRouter, OpenAI, Azure) plus multi-node Ray-based local inference. Published as MLCAD 2025 paper (arXiv:2504.01986) and a live Hugging Face leaderboard — reference-quality.
 harness_paradigm_alignment: partial
 adjacent_to:
 - agenttrace

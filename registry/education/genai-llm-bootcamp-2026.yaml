@@ -6,17 +6,17 @@ repo_url: https://github.com/GenAI-LLMs-Bootcamp/genai-llm-bootcamp-2026
 license: MIT
 primary_language: Jupyter Notebook
 tagline: Materials for the Bootcamp on Generative AI and LLM Applications April 1 - 4, 2026 at Amrita Vishwa Vidyapeetham, Bengaluru
-description: |-
-  Genai LLM Bootcamp 2026 — Materials for the Bootcamp on Generative AI and LLM Applications April 1 - 4, 2026 at Amrita Vishwa Vidyapeetham, Bengaluru. Upstream maintainer: GenAI-LLMs-Bootcamp.
+description: 'Genai LLM Bootcamp 2026 — Materials for the Bootcamp on Generative AI and LLM Applications April 1 - 4, 2026 at Amrita Vishwa Vidyapeetham, Bengaluru. Upstream maintainer: GenAI-LLMs-Bootcamp.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: beta
 maintainer:
   type: community
   name: GenAI-LLMs-Bootcamp
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: GenAI-LLMs-Bootcamp (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Amrita Vishwa Vidyapeetham, Bengaluru Campus (institution-maintained, MIT) — free four-day university bootcamp materials (lectures, demo notebooks, Colab quickstarts) covering GenAI foundations, LLM applications, prompt engineering, RAG, PEFT fine-tuning, and multimodal (text/speech/vision). Model-agnostic 3 — notebooks reference Hugging Face Transformers, OpenAI-style API patterns and local notebook execution; provider choice is per-notebook with no central abstraction.
 harness_paradigm_alignment: partial
 education_resources:
 - title: Genai LLM Bootcamp 2026 repository

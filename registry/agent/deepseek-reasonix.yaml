@@ -7,17 +7,17 @@ homepage: http://reasonix.io/
 license: MIT
 primary_language: Go
 tagline: DeepSeek-native AI coding agent for your terminal.
-description: |-
-  Deep Seek Reasonix — DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running. Upstream maintainer: esengine.
+description: 'Deep Seek Reasonix — DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running. Upstream maintainer: esengine.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: esengine
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: esengine (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Single-maintainer (esengine; MIT) reasoning agent CLI distributed as the `reasonix` npm package, recently rewritten in Go (main-v2) and mirrored on AtomGit alongside GitHub — strongly suggests a Chinese-origin maintainer. Model-agnostic 3 because the v1.0 spec treats the model backend as a configured provider with documented OpenAI-compatible paths and the DeepSeek name is brand-historical, not a runtime lock. Alignment ''partial'': it implements an agent reasoning loop but does not pitch itself as governance-first.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

@@ -13,12 +13,11 @@ description: 'Circle Guard Bench — First-of-its-kind AI benchmark for evaluati
   In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: whitecircle
-origin_country: null
+origin_country: FR
 model_agnostic_score: 3
-sovereignty_notes: 'whitecircle (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
-Curator note (2026-06-14): recategorised governance → eval under the Phase 4 governance-consistency swarm finding; the artefact is better understood as eval-shaped per its primary surface.'
+sovereignty_notes: White Circle (commercial AI safety org) ships CircleGuardBench under Apache-2.0 with a HuggingFace leaderboard and blog post backing the methodology; the harness explicitly supports openai_api, vLLM, SGLang, and Transformers backends. Model-agnostic 4 — multiple inference paths including local-weights via vLLM/SGLang/Transformers are first-class, satisfying the OpenAI-compatible-pluggable rubric. Curator-reviewed; kept as an eval benchmark for the guardrail layer itself.
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

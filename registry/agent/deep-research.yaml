@@ -7,17 +7,17 @@ homepage: https://research.u14.app
 license: MIT
 primary_language: JavaScript
 tagline: Use any LLMs (Large Language Models) for Deep Research.
-description: |-
-  Deep Research — Use any LLMs (Large Language Models) for Deep Research. Support SSE API and MCP server. Upstream maintainer: u14app.
+description: 'Deep Research — Use any LLMs (Large Language Models) for Deep Research. Support SSE API and MCP server. Upstream maintainer: u14app.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: u14app
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: u14app (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: u14app (community / project Organization on GitHub) ships deep-research under MIT — a Next.js 15 / Shadcn UI application that generates deep-research reports in ~2 minutes with thinking + task model phases, optional MCP server / SSE API exposure, local knowledge base, and PWA install. Model-agnostic 4 reflects explicit support for Gemini, OpenAI, Anthropic, DeepSeek, Grok, Mistral, Azure OpenAI, any OpenAI-compatible endpoint, OpenRouter, and Ollama with local-first data handling. Multi-engine search grounding (Searxng / Tavily / Firecrawl / Exa / Bocha / Brave) and optional Vercel / Cloudflare deployments keep the artefact fully self-hostable.
 harness_paradigm_alignment: partial
 adjacent_to:
 - buildwithclaude

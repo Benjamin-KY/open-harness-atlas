@@ -7,17 +7,17 @@ homepage: https://www.groovyweb.co
 license: MIT
 primary_language: Multiple
 tagline: Comprehensive tutorial and code examples for building multi-agent systems with LangChain
-description: |-
-  Langchain Multi Agent Example — Comprehensive tutorial and code examples for building multi-agent systems with LangChain. Upstream maintainer: groovy-web.
+description: 'Langchain Multi Agent Example — Comprehensive tutorial and code examples for building multi-agent systems with LangChain. Upstream maintainer: groovy-web.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: beta
 maintainer:
   type: community
   name: groovy-web
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: groovy-web (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 2
+sovereignty_notes: groovy-web (community Organization, unaffiliated with the Apache Groovy project) maintains this MIT-licensed TypeScript tutorial covering LangChain multi-agent orchestration patterns; code is free and self-hostable. Model-agnostic score 3 reflects LangChain framework multi-provider support, including local-weights adapters. Education entry providing copy-paste-ready multi-agent code examples from an active open-source organization.
 harness_paradigm_alignment: partial
 education_resources:
 - title: Langchain Multi Agent Example repository

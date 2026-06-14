@@ -7,17 +7,17 @@ homepage: https://www.routerly.ai/
 license: AGPL-3.0-only
 primary_language: TypeScript
 tagline: Self-hosted LLM gateway that routes requests across AI providers (OpenAI, Anthropic, Gemini, Mistral, Ollama) using intelligent multi-policy scoring — including an LLM-native routing policy.
-description: |-
-  Routerly — Self-hosted LLM gateway that routes requests across AI providers (OpenAI, Anthropic, Gemini, Mistral, Ollama) using intelligent multi-policy scoring — including an LLM-native routing policy. Drop-in compatible: just swap the base URL. No database required, built-in cost tracking, budget enforcement and multi-tenant isolation. Upstream maintainer: Inebrio.
+description: 'Routerly — Self-hosted LLM gateway that routes requests across AI providers (OpenAI, Anthropic, Gemini, Mistral, Ollama) using intelligent multi-policy scoring — including an LLM-native routing policy. Drop-in compatible: just swap the base URL. No database required, built-in cost tracking, budget enforcement and multi-tenant isolation. Upstream maintainer: Inebrio.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: Inebrio
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: Inebrio (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Inebrio (company-style Organization on GitHub, routerly.ai) with CLA assistant; AGPL-3.0 Node.js ≥20 self-hosted gateway distributed via curl/npm, Docker Hub (inebrio/routerly) and PowerShell. Model-agnostic 4 — exposes both OpenAI and Anthropic-native APIs with 9 parallel scoring policies (including an LLM-native router that asks an AI which AI to use); config lives in a JSON file with no Postgres/Redis dependency. AGPL forces share-back if redistributed; OK for self-hosted gateway use.
 harness_paradigm_alignment: partial
 adjacent_to:
 - ai-worker-proxy

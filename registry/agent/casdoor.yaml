@@ -7,17 +7,17 @@ homepage: https://casdoor.ai
 license: Apache-2.0
 primary_language: Go
 tagline: An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MF...
-description: |-
-  Casdoor — An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD. Upstream maintainer: casdoor.
+description: 'Casdoor — An open-source Agent-first Identity and Access Management (IAM) /LLM MCP & agent gateway and auth server with web UI supporting OpenClaw, MCP, OAuth, OIDC, SAML, CAS, LDAP, SCIM, WebAuthn, TOTP, MFA, Face ID, Google Workspace, Azure AD. Upstream maintainer: casdoor.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: casdoor
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: casdoor (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: casdoor (Casbin/casdoor.ai commercial team) maintains Casdoor under Apache-2.0 with Docker Hub images, a live demo at door.casdoor.com and broad authentication-protocol coverage; the README adds MCP/A2A gateway + agent-gateway features on top of the IAM core. Model-agnostic 4 — the gateway is provider-agnostic at the protocol layer and accepts any MCP server as a swap target. Curator-reviewed; sovereignty caveat is the China-tied origin worth surfacing, and the agent-vs-routing category line is genuinely borderline here.
 harness_paradigm_alignment: partial
 adjacent_to:
 - clawx

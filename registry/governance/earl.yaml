@@ -1,0 +1,33 @@
+id: earl
+name: Earl
+category: governance
+subcategory: prompt-injection
+repo_url: https://github.com/mathematic-inc/earl
+homepage: https://mathematic-inc.github.io/earl/
+license: Apache-2.0
+primary_language: Rust
+tagline: Secure CLI proxy for AI agents — HCL-defined operation templates with OS keychain secrets, MCP integration, and prompt injection protection
+description: 'Earl — Secure CLI proxy for AI agents — HCL-defined operation templates with OS keychain secrets, MCP integration, and prompt injection protection. Upstream maintainer: mathematic-inc.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: company
+  name: mathematic-inc
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: mathematic-inc (company-maintained Organization); Apache-2.0 Rust CLI proxy that sits between an AI agent and external services, exposing HCL-defined operation templates so the LLM only sees tool names and descriptions, never tool internals or secrets (stored in OS keychain). Model-agnostic 4 — the proxy is provider-agnostic across MCP and works with any LLM that can invoke a tool. §8 fit is on the governance/policy-router line (policy_router and output_contract via the HCL contract, audit_log_fsm via traced calls); recategorised away from red-team because the artefact is defensive rather than an adversarial probe.
+harness_paradigm_alignment: partial
+adjacent_to:
+- hermes-katana
+- parry-guard
+- prompt-hacker-collections
+- pyrit
+- tensor-trust
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none

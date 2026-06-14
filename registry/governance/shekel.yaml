@@ -7,23 +7,23 @@ homepage: https://pypi.org/project/shekel/
 license: MIT
 primary_language: Python
 tagline: LLM budget control and cost governance for AI agents.
-description: |-
-  Shekel — LLM budget control and cost governance for AI agents. Python library for token budgets, usage limits and guardrails for OpenAI, Anthropic, LangChain, LangGraph and agentic systems. Upstream maintainer: arieradle.
+description: 'Shekel — LLM budget control and cost governance for AI agents. Python library for token budgets, usage limits and guardrails for OpenAI, Anthropic, LangChain, LangGraph and agentic systems. Upstream maintainer: arieradle.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: community
   name: arieradle
 origin_country: null
-model_agnostic_score: 3
+model_agnostic_score: 5
 five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
   output_contract: none
-  audit_log_fsm: none
-sovereignty_notes: arieradle (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+  audit_log_fsm: partial
+sovereignty_notes: 'arieradle (community / individual) publishes shekel on PyPI under MIT as a budget-control / cost-governance library for AI agents: a `with budget(max_usd=…)` context manager that monkey-patches every major SDK (OpenAI, Anthropic, Gemini, LiteLLM, HuggingFace, Groq, LangChain, LangGraph, CrewAI, OpenAI Agents SDK, MCP, AutoGen, LlamaIndex) and raises BudgetExceededError on breach — plus loop guard, max-velocity throttling, per-agent caps and a `shekel run` CLI for code-free enforcement. Model-agnostic 5: provider abstraction is effectively complete because shekel sits beneath them all. Alignment is `aligned` — the pitch is explicitly governance-first (cost contract + loop guardrails) with a real hard-cap output contract and per-call audit/state tracking.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - agentic-guardrails

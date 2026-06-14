@@ -7,17 +7,17 @@ homepage: https://claude-mem.ai
 license: Apache-2.0
 primary_language: JavaScript
 tagline: Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions.
-description: |-
-  Claude Mem — Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More. Upstream maintainer: thedotmack.
+description: 'Claude Mem — Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More. Upstream maintainer: thedotmack.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: thedotmack
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: thedotmack (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: thedotmack is a single community maintainer (GitHub User owner) shipping claude-mem under Apache-2.0; the persistent-memory layer is OSS and self-hostable via npx install across multiple AI CLIs (Claude Code, Gemini CLI, OpenCode) plus OpenClaw gateway integration. Model-agnostic 3 — AI provider configuration is plug-in via OpenClaw and the host CLI's own provider list (multi-provider including local options via OpenClaw routing), but the compression worker still relies on whatever provider the host environment supplies rather than a uniform provider-abstraction API. Privacy posture is notable (local SQLite + Chroma store, `<private>` tag for redaction).
 harness_paradigm_alignment: partial
 adjacent_to:
 - fast-agent

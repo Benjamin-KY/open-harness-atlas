@@ -7,20 +7,19 @@ homepage: https://moscovium-mc.github.io/blog/2026/rejection-cascade-extension/
 license: MIT
 primary_language: JavaScript
 tagline: Chrome extension PoC for AI training data poisoning via silent network interception.
-description: |-
-  Rejection Cascade — Chrome extension PoC for AI training data poisoning via silent network interception. Inverts subscribe→unsubscribe, like→dislike, accept→reject while preserving UX. Upstream maintainer: moscovium-mc.
+description: 'Rejection Cascade — Chrome extension PoC for AI training data poisoning via silent network interception. Inverts subscribe→unsubscribe, like→dislike, accept→reject while preserving UX. Upstream maintainer: moscovium-mc.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: moscovium-mc
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: moscovium-mc (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: 'moscovium-mc (individual maintainer, community) publishes Rejection Cascade under MIT: a Chrome extension that silently inverts affirmative user signals (clicks, consent forms, JSON request bodies) for AI training-data corruption research. Model-agnostic 0 — the tool never calls a model provider; it operates entirely on the user-agent side. Tiny research-only artefact (2 stars) carrying an explicit ''do not deploy without authorization'' caveat; in-scope as a redteam/poisoning probe but not a behaviour-measurement runner.'
 harness_paradigm_alignment: partial
 adjacent_to:
-- ai-supply-chain-scanner
 - cloak-cli
 - llm-security-alignment
 - pyrit

@@ -7,17 +7,17 @@ homepage: https://tensortrust.ai/paper
 license: BSD-2-Clause
 primary_language: Python
 tagline: A prompt injection game to collect data for robust ML research
-description: |-
-  Tensor Trust — A prompt injection game to collect data for robust ML research. Upstream maintainer: HumanCompatibleAI.
+description: 'Tensor Trust — A prompt injection game to collect data for robust ML research. Upstream maintainer: HumanCompatibleAI.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
-  type: company
+  type: institution
   name: HumanCompatibleAI
-origin_country: null
+origin_country: US
 model_agnostic_score: 3
-sovereignty_notes: HumanCompatibleAI (company-maintained); OSS core is BSD 2-Clause "Simplified" License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'HumanCompatibleAI (institution-maintained, Center for Human-Compatible AI at UC Berkeley); OSS under BSD-2-Clause, accompanies Toyer et al. 2023, ''Tensor Trust: Interpretable Prompt Injection Attacks from an Online Game'' (arXiv 2311.01011). Model-agnostic 1 — single-primary OpenAI integration baked into the Django web game; the value is the released attack/defense corpus rather than provider flexibility. Reference-quality artefact: the companion `tensor-trust-data` dataset is heavily cited in prompt-injection research.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - ai-red-teaming-playground-labs

@@ -7,13 +7,13 @@ homepage: https://shengyun-peng.github.io/papers/llm-safety-landscape
 license: MIT
 primary_language: Python
 tagline: NeurIPS'24 - LLM Safety Landscape
-description: |-
-  LLM Landscape — NeurIPS'24 - LLM Safety Landscape. Upstream maintainer: poloclub.
+description: 'LLM Landscape — NeurIPS''24 - LLM Safety Landscape. Upstream maintainer: poloclub.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
-  type: community
+  type: institution
   name: poloclub
 origin_country: null
 model_agnostic_score: 3
@@ -23,7 +23,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: poloclub (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Polo Club of Data Science (Duen Horng ''Polo'' Chau''s lab at Georgia Tech, with IBM Research co-author Pin-Yu Chen) maintains llm-landscape under MIT — official research code for the NeurIPS 2024 paper ''Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models'' that visualises 1D/2D LLM safety landscapes and computes the VISAGE score. Institution-grade reference per §8.3 (named in peer-reviewed paper). Model-agnostic 0 — research artefact wired to specific open-weight models (Llama2-7b-chat) requiring ~27 GB A100 access; no provider abstraction. Curators should consider recategorising from governance/safety-layer to eval/safety-eval since the artefact measures rather than enforces.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - guard-eval-harness

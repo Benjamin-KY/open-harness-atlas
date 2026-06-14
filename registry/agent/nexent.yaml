@@ -7,17 +7,17 @@ homepage: https://nexent.tech
 license: MIT
 primary_language: Python
 tagline: Nexent is a zero-code platform for auto-generating AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feed...
-description: |-
-  Nexent — Nexent is a zero-code platform for auto-generating AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes. Upstream maintainer: ModelEngine-Group.
+description: 'Nexent — Nexent is a zero-code platform for auto-generating AI agents using Harness Engineering principles — unified tools, skills, memory, and orchestration with built-in constraints, feedback loops, and control planes. Upstream maintainer: ModelEngine-Group.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: ModelEngine-Group
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: ModelEngine-Group (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: ModelEngine-Group (community OSS governance group seeded by Huawei's ModelEngine; MIT). CN origin. MAS=3 — multi-provider zero-code agent builder with OpenAI-compatible model bindings and explicit local-deploy story via Docker/Kubernetes (4 cores / 8 GiB minimum). Harness alignment partial — markets itself as 'harness engineering' with unified tools, skills, memory, and control planes, but per-component enforcement (output_contract, refusal FSM) is not surfaced in the README.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

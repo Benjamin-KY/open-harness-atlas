@@ -7,17 +7,17 @@ homepage: https://github.com/youssefvdel/qwen-gate
 license: MIT
 primary_language: TypeScript
 tagline: Drop-in OpenAI-compatible API gateway for Qwen AI models.
-description: |-
-  Qwen Gate — Drop-in OpenAI-compatible API gateway for Qwen AI models. Use your Qwen account (chat.qwen.ai) as a free AI API provider in any OpenAI-compatible client — Cursor, Continue.dev, Claude Code, VS Code Copilot, or any coding agent. Self-hosted, Chromium-based auth, streaming support, tool calling, dashboard. Upstream maintainer: youssefvdel.
+description: 'Qwen Gate — Drop-in OpenAI-compatible API gateway for Qwen AI models. Use your Qwen account (chat.qwen.ai) as a free AI API provider in any OpenAI-compatible client — Cursor, Continue.dev, Claude Code, VS Code Copilot, or any coding agent. Self-hosted, Chromium-based auth, streaming support, tool calling, dashboard. Upstream maintainer: youssefvdel.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: youssefvdel
 origin_country: null
-model_agnostic_score: 4
-sovereignty_notes: youssefvdel (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: 'youssefvdel is a single community maintainer (GitHub User owner); qwen-gate is an MIT-licensed Bun/TypeScript browser-automation gateway that scrapes chat.qwen.ai via Playwright + CloakBrowser anti-detection patches and exposes an OpenAI-compatible /v1 endpoint with multi-account rotation, cooldown tracking, tool-calling, and SSE streaming. Model-agnostic 0 — hard-locked to Qwen web models as the only upstream provider. Significant flag: the project is explicitly not affiliated with Alibaba/Qwen and depends on ToS-grey-area browser automation of a free consumer service; suitability for the catalogue depends on whether curators accept ToS-borderline ''free-tier extraction'' tooling under §8.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

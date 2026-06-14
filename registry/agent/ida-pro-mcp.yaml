@@ -7,28 +7,33 @@ homepage: https://plugins.hex-rays.com/mrexodia/ida-pro-mcp
 license: MIT
 primary_language: Python
 tagline: AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.
-description: |-
-  Ida Pro MCP — AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP. Upstream maintainer: mrexodia.
+description: 'Ida Pro MCP — AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP. Upstream maintainer: mrexodia.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: mrexodia
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: |-
-  mrexodia (community-maintained); the MCP server itself is MIT-licensed and self-hostable.
+sovereignty_notes: 'mrexodia (community-maintained); the MCP server itself is MIT-licensed and self-hostable.
+
   Catalogued with a strong caveat: the entire harness is inert without IDA Pro, a
+
   proprietary commercial reverse-engineering tool from Hex-Rays (single-user licences start
+
   at ~USD 1,799/yr; the free IDA Free SKU is API-restricted and not supported by this MCP).
+
   Model-agnostic 3 — the MCP layer routes to any LLM client, but the underlying reverse-
+
   engineering substrate is closed-source. Curator note (2026-06-14): kept as an MCP entry
+
   because the orchestration layer is OSS; users should treat the IDA Pro dependency as a
-  proprietary host they cannot self-sovereign.
+
+  proprietary host they cannot self-sovereign.'
 harness_paradigm_alignment: partial
 adjacent_to:
-- kubeshark
 - lamda
 - langgraph
 - librechat

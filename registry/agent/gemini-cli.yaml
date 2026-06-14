@@ -7,17 +7,17 @@ homepage: https://geminicli.com
 license: Apache-2.0
 primary_language: TypeScript
 tagline: An open-source AI agent that brings the power of Gemini directly into your terminal.
-description: |-
-  Gemini Cli — An open-source AI agent that brings the power of Gemini directly into your terminal. Upstream maintainer: google-gemini.
+description: 'Gemini Cli — An open-source AI agent that brings the power of Gemini directly into your terminal. Upstream maintainer: google-gemini.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: institution
+  type: company
   name: google-gemini
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: google-gemini (institution-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: US
+model_agnostic_score: 0
+sovereignty_notes: 'Google (commercial company; google-gemini is Google''s official org for the CLI) ships Gemini CLI under Apache-2.0: an open-source terminal agent with built-in tools (Google Search grounding, file ops, shell, web fetch) and MCP extensibility, fronting Gemini 3 with a generous free tier. Model-agnostic 0 — provider is hard-locked to Gemini, with no swap path to other commercial or local backends; the OSS surface is the wrapper, not the model. Useful as a reference agent CLI; not a sovereignty story.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

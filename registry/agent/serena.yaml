@@ -7,17 +7,17 @@ homepage: https://oraios.github.io/serena
 license: MIT
 primary_language: Python
 tagline: A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities - the IDE for your agent
-description: |-
-  Serena — A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities - the IDE for your agent. Upstream maintainer: oraios.
+description: 'Serena — A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities - the IDE for your agent. Upstream maintainer: oraios.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: oraios
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: oraios (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'Oraios (company, Germany — oraios.de / oraios.github.io) ships Serena under MIT as an MCP toolkit that provides IDE-grade semantic code retrieval, editing and refactoring tools operating at the symbol level via language-server abstractions, callable from any MCP-capable client (Claude Code, Codex, OpenCode, Gemini-CLI, Cursor, JetBrains, Claude Desktop, Open WebUI, …). Model-agnostic 4: provider choice happens upstream at the MCP client, so the same Serena code path serves commercial, hosted-OSS and local backends. The published evaluation methodology and unbiased agent-as-end-user scoring are an honest comparative signal.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - buildwithclaude

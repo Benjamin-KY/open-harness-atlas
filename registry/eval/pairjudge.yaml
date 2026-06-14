@@ -7,17 +7,17 @@ homepage: https://pypi.org/project/pairjudge/
 license: MIT
 primary_language: Python
 tagline: 'Pairwise LLM judges (A/B/tie): budget-aware multi-turn packing, position-bias correction, pseudo-label distillation.'
-description: |-
-  Pairjudge — Pairwise LLM judges (A/B/tie): budget-aware multi-turn packing, position-bias correction, pseudo-label distillation. Generalized from the 4th-place (gold) solution to Kaggle LMSYS Chatbot Arena. Upstream maintainer: DaoyuanLi2816.
+description: 'Pairjudge — Pairwise LLM judges (A/B/tie): budget-aware multi-turn packing, position-bias correction, pseudo-label distillation. Generalized from the 4th-place (gold) solution to Kaggle LMSYS Chatbot Arena. Upstream maintainer: DaoyuanLi2816.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: DaoyuanLi2816
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: DaoyuanLi2816 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Single-maintainer community project (DaoyuanLi2816) under MIT; generalises the gold-medal (4th of 1,849) LMSYS Chatbot Arena pairwise-judge solution into a small library trained/served on any Hugging Face backbone, with PairPacker truncation handling, position-bias correction, and pseudo-label distillation. Model-agnostic 3 — local-weights are first-class via HF, and the original competition artefacts are byte-pinned by a golden test. Reference-quality at the eval/llm-judge slot.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

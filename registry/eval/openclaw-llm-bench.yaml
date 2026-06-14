@@ -6,17 +6,17 @@ repo_url: https://github.com/arthursoares/openclaw-llm-bench
 license: MIT
 primary_language: Python
 tagline: A reasoning benchmark runner for comparing LLMs as OpenClaw agents use them.
-description: |-
-  Openclaw LLM Bench — A reasoning benchmark runner for comparing LLMs as OpenClaw agents use them. 52 prompts, 3 eval sets, 11 traps, LLM-as-judge, tier-based leaderboard. Upstream maintainer: arthursoares.
+description: 'Openclaw LLM Bench — A reasoning benchmark runner for comparing LLMs as OpenClaw agents use them. 52 prompts, 3 eval sets, 11 traps, LLM-as-judge, tier-based leaderboard. Upstream maintainer: arthursoares.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: arthursoares
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: arthursoares (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: arthursoares (community-maintained, individual developer who built the runner during a model-migration day); MIT-licensed reasoning benchmark with 52 prompts and an LLM-judge that emits a side-by-side HTML report. Model-agnostic 4 — models are added via standard endpoint configs (OpenAI/Anthropic/Qwen/GLM/Kimi/MiniMax), so local-weights backends through OpenAI-compatible servers are first-class swap targets. §8 fit on the benchmark line is clean even with low star count, given the well-documented methodology and recent commits.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

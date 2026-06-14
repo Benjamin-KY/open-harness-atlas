@@ -6,18 +6,18 @@ repo_url: https://github.com/Q00/ouroboros
 license: MIT
 primary_language: Python
 tagline: 'Agent OS: Stop prompting.'
-description: |-
-  Ouroboros — Agent OS: Stop prompting. Start specifying. Upstream maintainer: Q00.
+description: 'Ouroboros — Agent OS: Stop prompting. Start specifying. Upstream maintainer: Q00.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: Q00
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: Q00 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
-harness_paradigm_alignment: partial
+model_agnostic_score: 5
+sovereignty_notes: 'Q00 (community / individual) ships Ouroboros as MIT-licensed Python under the PyPI name `ouroboros-ai`, with a multi-runtime adapter that targets Claude Code, Codex CLI, Copilot CLI, OpenCode, Hermes, Gemini, Kiro and Pi plus a LiteLLM extra, so the provider surface is meaningfully multi-vendor (model-agnostic 4: OpenAI-compatible pluggable, local first-class via LiteLLM). Alignment is `aligned`: the project pitches itself as an Agent OS with a Seed/Ledger/EventStore (audit + replay), a 3-stage Mechanical→Semantic→Consensus evaluation gate (output contract), an interview→seed→execute policy loop and a stable governance-prompt spec layer.'
+harness_paradigm_alignment: aligned
 adjacent_to:
 - langgraph
 - sre

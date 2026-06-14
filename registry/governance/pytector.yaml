@@ -26,7 +26,6 @@ five_component_coverage:
 sovereignty_notes: 'MaxMLang is an individual developer (GitHub User, community-maintained) with a Zenodo DOI (10.5281/zenodo.19041628) making this a citable persistent reference. Apache-2.0 license is OSI-approved and confirmed. Model-agnostic score 3 is accurate: the README explicitly supports both local transformer models (via HuggingFace transformers) and API-based safeguard models (Groq), confirming multi-provider support including a local-weights path. The five_component_coverage.policy_router: partial assignment correctly reflects the prompt-injection detection role.'
 harness_paradigm_alignment: partial
 adjacent_to:
-- banned-words
 - content-moderation-deep-learning
 - guardrails-ai
 - localmod

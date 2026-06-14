@@ -7,17 +7,17 @@ homepage: https://basaltlabs.app/gauntlet/leaderboard
 license: MIT
 primary_language: Python
 tagline: Community-driven behavioral reliability benchmark for LLMs.
-description: |-
-  Gauntlet — Community-driven behavioral reliability benchmark for LLMs. 231 probes across 19 modules, deterministic scoring, perplexity correlation, layer sensitivity mapping, quant method capture, hardware-stratified community rankings. Every test contributes to the community dataset. Upstream maintainer: Basaltlabs-app.
+description: 'Gauntlet — Community-driven behavioral reliability benchmark for LLMs. 231 probes across 19 modules, deterministic scoring, perplexity correlation, layer sensitivity mapping, quant method capture, hardware-stratified community rankings. Every test contributes to the community dataset. Upstream maintainer: Basaltlabs-app.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: Basaltlabs-app
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: Basaltlabs-app (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Basaltlabs-app (community individual maintainer on GitHub); MIT-licensed PyPI behavioural benchmark with 240 probes designed to expose how quantization (FP16 → Q4) degrades sycophancy resistance, instruction following, confidence calibration and prompt-injection resistance — not just perplexity. Model-agnostic 4 — first-class LM Studio and llama.cpp drivers with optional MCP server endpoint; results aggregated into a community leaderboard scored per-hardware-configuration. Small but actively iterated (v2.1.1).
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

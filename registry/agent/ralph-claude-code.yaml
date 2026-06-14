@@ -6,17 +6,17 @@ repo_url: https://github.com/frankbria/ralph-claude-code
 license: MIT
 primary_language: Shell
 tagline: Autonomous AI development loop for Claude Code with intelligent exit detection
-description: |-
-  Ralph Claude Code — Autonomous AI development loop for Claude Code with intelligent exit detection. Upstream maintainer: frankbria.
+description: 'Ralph Claude Code — Autonomous AI development loop for Claude Code with intelligent exit detection. Upstream maintainer: frankbria.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: frankbria
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: frankbria (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: 'Single-maintainer (frankbria) MIT project that wraps Claude Code into an autonomous loop with exit gates, rate limiting, and a circuit breaker. Model-agnostic 0: the runtime is hard-locked to the Anthropic Claude Code CLI — there is no provider-swap path documented in the README. The loop-governance ideas (dual-condition exit, EXIT_SIGNAL, response analyzer) are reusable patterns even though the catalogued artefact is provider-locked, which is why it earns ''partial'' harness alignment.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - ai-agents-from-scratch

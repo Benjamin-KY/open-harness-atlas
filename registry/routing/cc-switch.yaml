@@ -1,0 +1,27 @@
+id: cc-switch
+name: Cc Switch
+category: routing
+subcategory: mcp-host
+repo_url: https://github.com/farion1231/cc-switch
+homepage: https://ccswitch.io
+license: MIT
+primary_language: Rust
+tagline: A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent.
+description: 'Cc Switch — A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io. Upstream maintainer: farion1231.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: community
+  name: farion1231
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 'farion1231 (community / individual, China-based per the bilingual README and sponsor mix) maintains cc-switch as an MIT-licensed Tauri 2 desktop app for swapping API keys / endpoint profiles across Claude Code, Claude Desktop, Codex, Gemini CLI, OpenCode, OpenClaw and Hermes. It belongs in `routing / provider-switcher` rather than `agent / mcp-host` — there is no agent runtime, no MCP server, only credential and profile management. Model-agnostic 4: by design it makes the provider a configuration choice across many commercial relays and direct vendor endpoints; sovereignty risk is that the bundled sponsor list nudges users toward Chinese API relay services rather than first-party vendor accounts.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- claude-context
+- code-review-graph
+- figma-context-mcp
+- headroom
+- langgraph

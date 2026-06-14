@@ -7,17 +7,17 @@ homepage: https://coai.dev
 license: Apache-2.0
 primary_language: TypeScript
 tagline: Next Gen Multi-tenant AI One-Stop Solution.
-description: |-
-  Coai — Next Gen Multi-tenant AI One-Stop Solution. Builtin Admin & Billing System. Unified LLM Gateway Support for 200+ Models And 35+ Providers, Load Balacing w/ Priority-base Routing, Cost Management, Chat Share, Cloud Sync, Credit/Subscription Billing, All File Parsing, Web Search, Built-in Model Cache. Upstream maintainer: coaidev.
+description: 'Coai — Next Gen Multi-tenant AI One-Stop Solution. Builtin Admin & Billing System. Unified LLM Gateway Support for 200+ Models And 35+ Providers, Load Balacing w/ Priority-base Routing, Cost Management, Chat Share, Cloud Sync, Credit/Subscription Billing, All File Parsing, Web Search, Built-in Model Cache. Upstream maintainer: coaidev.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: coaidev
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: coaidev (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: coaidev (company-maintained Chinese AIGC vendor); Apache-2.0 self-hostable multi-tenant AI gateway and business platform with billing, admin dashboard, and 35+ provider / 200+ model coverage. Model-agnostic 4 — provider routing is OpenAI-compatible across commercial APIs and 'private LLM support', so local/self-hosted weights are first-class targets. §8 routing fit is clear; the multi-tenant billing surface does not invalidate the open licence on the catalogued OSS core.
 harness_paradigm_alignment: partial
 adjacent_to:
 - csghub-lite

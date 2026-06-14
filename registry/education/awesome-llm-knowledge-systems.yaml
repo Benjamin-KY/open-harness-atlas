@@ -6,17 +6,17 @@ repo_url: https://github.com/kennethlaw325/awesome-llm-knowledge-systems
 license: MIT
 primary_language: HTML
 tagline: 'The Map Everyone''s Missing: LLM Knowledge Engineering in 2026 — First unified guide connecting RAG, Context Engineering, Harness Engineering, Skill Systems, Agent Memory, MCP, and Progressive Discl...'
-description: |-
-  Awesome LLM Knowledge Systems — The Map Everyone's Missing: LLM Knowledge Engineering in 2026 — First unified guide connecting RAG, Context Engineering, Harness Engineering, Skill Systems, Agent Memory, MCP, and Progressive Disclosure. Upstream maintainer: kennethlaw325.
+description: 'Awesome LLM Knowledge Systems — The Map Everyone''s Missing: LLM Knowledge Engineering in 2026 — First unified guide connecting RAG, Context Engineering, Harness Engineering, Skill Systems, Agent Memory, MCP, and Progressive Disclosure. Upstream maintainer: kennethlaw325.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: beta
 maintainer:
   type: community
   name: kennethlaw325
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: kennethlaw325 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: kennethlaw325 (Hong Kong community maintainer) ships the guide under MIT with a multilingual README, a CHANGELOG, dated timeline entries and chapter files (e.g. ch04-harness-engineering, ch11-timeline, glossary). Model-agnostic 4 — as a curated map of LLM knowledge-engineering practice it is provider-agnostic in content and covers harness-native training, MCP security and progressive disclosure across vendors. Curator-reviewed; kept as a free, open-licence education resource that satisfies §8.4's education-category criterion.
 harness_paradigm_alignment: partial
 education_resources:
 - title: Awesome LLM Knowledge Systems repository

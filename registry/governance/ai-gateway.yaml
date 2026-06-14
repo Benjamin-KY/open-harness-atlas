@@ -7,23 +7,23 @@ homepage: https://docs.ferrolabs.ai
 license: Apache-2.0
 primary_language: Go
 tagline: Unified AI Gateway for 30+ LLMs (OpenAI, Anthropic, Bedrock, Azure etc) with Caching, Guardrails, A/B test & cost controls.
-description: |-
-  AI Gateway — Unified AI Gateway for 30+ LLMs (OpenAI, Anthropic, Bedrock, Azure etc) with Caching, Guardrails, A/B test & cost controls. Go-native Fastest & Scalable AI Gateway LiteLLM & Kong AI Gateway alternative. Upstream maintainer: ferro-labs.
+description: 'AI Gateway — Unified AI Gateway for 30+ LLMs (OpenAI, Anthropic, Bedrock, Azure etc) with Caching, Guardrails, A/B test & cost controls. Go-native Fastest & Scalable AI Gateway LiteLLM & Kong AI Gateway alternative. Upstream maintainer: ferro-labs.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: company
   name: ferro-labs
 origin_country: null
-model_agnostic_score: 3
+model_agnostic_score: 4
 five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: ferro-labs (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Ferro Labs (company-maintained, Apache-2.0). Go single-binary gateway with SQLite/PostgreSQL backends and Railway/Render deploy templates. MAS=4 — OpenAI-compatible facade across 30+ providers; local weights (Ollama, vLLM) supported via the same code path. Harness alignment partial: native policy_router (provider/model routing, A/B), partial output_contract (guardrails), built-in audit-via-logging and cost telemetry. Self-hostable end-to-end — strong sovereignty posture.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - aegisgate

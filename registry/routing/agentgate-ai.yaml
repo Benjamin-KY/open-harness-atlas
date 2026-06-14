@@ -7,17 +7,17 @@ homepage: https://dengmengmian.github.io/agentgate-ai/
 license: MIT
 primary_language: Rust
 tagline: Local AI gateway for coding agents — run Codex, Claude Code & Gemini CLI on cheaper models with automatic failover & cost tracking.
-description: |-
-  Agentgate AI — Local AI gateway for coding agents — run Codex, Claude Code & Gemini CLI on cheaper models with automatic failover & cost tracking. One-click setup, 26 providers. Upstream maintainer: dengmengmian.
+description: 'Agentgate AI — Local AI gateway for coding agents — run Codex, Claude Code & Gemini CLI on cheaper models with automatic failover & cost tracking. One-click setup, 26 providers. Upstream maintainer: dengmengmian.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: dengmengmian
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: dengmengmian (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'dengmengmian is an individual community maintainer in China; MIT-licensed cross-platform native app (macOS/Windows/Linux/AppImage) with a headless `agentgate-serve` CLI. Catalogued as routing/llm-gateway because AgentGate is a local control point that intercepts requests from official agent CLIs (Codex/Claude Code/Gemini CLI/OpenCode/AtomCode) and routes them to 26 providers with protocol conversion, native pass-through, cost tracking, and request tracing. Model-agnostic 4: explicit 26-provider catalogue with failover, behaves as a provider gateway/swap target without code rewrites.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - freellmpool

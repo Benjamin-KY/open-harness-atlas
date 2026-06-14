@@ -7,13 +7,13 @@ homepage: https://idun-group.com/engine
 license: GPL-3.0-only
 primary_language: Python
 tagline: Open-source runtime that ships any LangGraph or Google ADK agent as a FastAPI service.
-description: |-
-  Idun Agent Platform — Open-source runtime that ships any LangGraph or Google ADK agent as a FastAPI service. Bundled , AG-UI copilotkit API, chat UI, 15+ guardrails, MCP, OpenTelemetry, OIDC. One pip install. Self-hosted, no vendor lock-in. Upstream maintainer: Idun-Group.
+description: 'Idun Agent Platform — Open-source runtime that ships any LangGraph or Google ADK agent as a FastAPI service. Bundled , AG-UI copilotkit API, chat UI, 15+ guardrails, MCP, OpenTelemetry, OIDC. One pip install. Self-hosted, no vendor lock-in. Upstream maintainer: Idun-Group.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: Idun-Group
 origin_country: null
 model_agnostic_score: 3
@@ -23,7 +23,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: Idun-Group (community-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Idun-Group (company-maintained French AI engineering Organization); GPL-3.0-only self-hosted production runtime that wraps LangGraph and Google ADK agents as FastAPI services with chat UI, admin panel, prompt management, 15+ guardrails, MCP tool governance and OpenTelemetry observability. Model-agnostic 4 — providers are inherited from LangGraph/ADK adapters, so any commercial or local-weights backend they support drops in. §8 governance fit is strong — policy-router and audit-log-FSM partial via guardrails+OTel, prompt-composer partial via the prompt-management module; companion cloud.idunplatform.com SaaS is optional.
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

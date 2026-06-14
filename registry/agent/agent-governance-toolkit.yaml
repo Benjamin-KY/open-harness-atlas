@@ -6,20 +6,19 @@ repo_url: https://github.com/microsoft/agent-governance-toolkit
 license: MIT
 primary_language: Python
 tagline: AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents.
-description: |-
-  Agent Governance Toolkit — AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10. Upstream maintainer: microsoft.
+description: 'Agent Governance Toolkit — AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10. Upstream maintainer: microsoft.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: institution
   name: microsoft
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: microsoft (institution-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Microsoft (US company) ships the Agent Governance Toolkit under MIT in public preview with PyPI, npm (@microsoft/agent-governance-sdk), NuGet (Microsoft.AgentGovernance), Rust and Go SDKs, OpenSSF Scorecard and Best Practices badges, and an explicit 10/10 OWASP Agentic Top 10 mapping. Model-agnostic 4 — governance interception happens in deterministic application code before model intent reaches the wire, so the kernel is provider-agnostic across any framework. Curator-reviewed; recategorised from agent → governance because the entire pitch is policy enforcement, identity, sandboxing and tamper-evident audit logging, with policy-router and audit-log spine slots at full coverage.
 harness_paradigm_alignment: partial
 adjacent_to:
-- areal
 - awesome-agent-skills
 - botsharp
 - langgraph

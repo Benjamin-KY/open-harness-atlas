@@ -7,17 +7,17 @@ homepage: https://tu-wien-datalab.github.io/aqueduct/
 license: BSD-3-Clause
 primary_language: Python
 tagline: Aqueduct is a simple yet fully-featured AI gateway built on top of the LiteLLM Router SDK using Django.
-description: |-
-  Aqueduct — Aqueduct is a simple yet fully-featured AI gateway built on top of the LiteLLM Router SDK using Django. Upstream maintainer: TU-Wien-dataLAB.
+description: 'Aqueduct — Aqueduct is a simple yet fully-featured AI gateway built on top of the LiteLLM Router SDK using Django. Upstream maintainer: TU-Wien-dataLAB.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
-  type: company
+  type: institution
   name: TU-Wien-dataLAB
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: TU-Wien-dataLAB (company-maintained); OSS core is BSD 3-Clause "New" or "Revised" License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: AT
+model_agnostic_score: 4
+sovereignty_notes: TU Wien Data Lab (institution / university research lab at Vienna University of Technology); BSD-3-Clause Django + LiteLLM-Router self-hosted gateway with MCP support, deployed via docker-compose with Postgres/Celery/Redis/Tika/Dex OIDC for self-service multi-tenant operation. Model-agnostic 3 — relies on LiteLLM under the hood, so inherits multi-provider + local-weights coverage; OpenAI-compatible. Still WIP (per repostatus badge) but the institutional backing and explicit anti-paywall stance make it a clean sovereignty-friendly entry.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

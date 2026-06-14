@@ -6,17 +6,17 @@ repo_url: https://github.com/hibou04-ops/mini-omega-lock
 license: Apache-2.0
 primary_language: Python
 tagline: Measure your LLM judge's noise floor — an A/B improvement smaller than the judge's own noise isn't real.
-description: |-
-  Mini Omega Lock — Measure your LLM judge's noise floor — an A/B improvement smaller than the judge's own noise isn't real. Pre-flight probes for prompt-eval setups; works standalone and with omegaprompt. Upstream maintainer: hibou04-ops.
+description: 'Mini Omega Lock — Measure your LLM judge''s noise floor — an A/B improvement smaller than the judge''s own noise isn''t real. Pre-flight probes for prompt-eval setups; works standalone and with omegaprompt. Upstream maintainer: hibou04-ops.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: hibou04-ops
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: hibou04-ops (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: hibou04-ops is a single community maintainer (GitHub User owner) shipping mini-omega-lock under Apache-2.0 — a PyPI-distributed pre-flight probe (~5 cheap API calls, <$0.01) that measures an LLM judge's self-disagreement noise floor, endpoint schema reliability, context-budget margin, and wall-time projection before any A/B prompt-eval delta is trusted. Model-agnostic 3 — multi-provider through the omegaprompt provider abstraction (≥1.1.0). Useful CI-gating tool with explicit fail-closed warnings; sits cleanly in the eval/llm-judge spine slot.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

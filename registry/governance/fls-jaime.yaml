@@ -7,23 +7,23 @@ homepage: https://firstlinesoftware.com/
 license: Apache-2.0
 primary_language: Python
 tagline: Open-source AI platform for personalized conversations — embeddable chat widget, pluggable LLM engines, PII redaction, voice I/O, and admin-driven intent & preset personalization.
-description: |-
-  Fls Jaime — Open-source AI platform for personalized conversations — embeddable chat widget, pluggable LLM engines, PII redaction, voice I/O, and admin-driven intent & preset personalization. Upstream maintainer: firstlinesoftware.
+description: 'Fls Jaime — Open-source AI platform for personalized conversations — embeddable chat widget, pluggable LLM engines, PII redaction, voice I/O, and admin-driven intent & preset personalization. Upstream maintainer: firstlinesoftware.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: firstlinesoftware
-origin_country: null
-model_agnostic_score: 3
+origin_country: US
+model_agnostic_score: 2
 five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: firstlinesoftware (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: First Line Software (company) maintains Jaime under Apache-2.0; the README documents an enterprise chat-widget platform with pluggable engines, five PII-detection providers (Presidio + DataFog variants), and persistent conversation storage with redact-then-pass semantics. Model-agnostic 2 — three commercial-API engines are wired in and new ones are added via a registry/factory pattern, but local-weights paths are not first-class. Curator-reviewed; sits in governance via PII redaction (source authority / output contract) and conversation persistence (audit log) coverage.
 harness_paradigm_alignment: partial
 adjacent_to:
 - datafog

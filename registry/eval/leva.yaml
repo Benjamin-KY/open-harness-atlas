@@ -6,21 +6,20 @@ repo_url: https://github.com/kieranklaassen/leva
 license: MIT
 primary_language: Ruby
 tagline: LLM Evaluation Framework for Rails apps to be used with production data.
-description: |-
-  Leva — LLM Evaluation Framework for Rails apps to be used with production data. Upstream maintainer: kieranklaassen.
+description: 'Leva — LLM Evaluation Framework for Rails apps to be used with production data. Upstream maintainer: kieranklaassen.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: kieranklaassen
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: kieranklaassen (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'This is a community-maintained MIT evaluation framework. Model-agnostic 2 fits because Leva is designed to evaluate LLM behavior inside Rails apps, but the README stops short of documenting local-first provider swapping. Noteworthy flag: its primary value is production-data eval workflow for Ruby/Rails teams.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litmus
 - llm-eval-harness
 - llm-eval-simple
-- llm-pruning-collection
 - lm-evaluation-harness

@@ -7,17 +7,17 @@ homepage: https://kemalefee8.github.io
 license: MIT
 primary_language: Multiple
 tagline: ️ Evaluate agentic AI architectures with the SRAL framework, focusing on state management to enhance reasoning, action, and learning efficiency.
-description: |-
-  Sral Framework — ️ Evaluate agentic AI architectures with the SRAL framework, focusing on state management to enhance reasoning, action, and learning efficiency. Upstream maintainer: kemalefee8.
+description: 'Sral Framework — ️ Evaluate agentic AI architectures with the SRAL framework, focusing on state management to enhance reasoning, action, and learning efficiency. Upstream maintainer: kemalefee8.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: kemalefee8
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: kemalefee8 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: kemalefee8 is a single community maintainer (GitHub User owner); the SRAL framework (MIT) is a paper + checklist methodology for evaluating agentic AI architectures with a focus on state management (markdown checklist, evaluation template, scoring guide, examples, a 251 KB PDF paper, and beta zip bundles). Model-agnostic 0 — there is no runtime or provider abstraction; the deliverable is reference material. README is auto-generated-looking and underspecifies the artefact, but the underlying eval/* directory contains real evaluator-facing checklists and case studies; curators should verify rigour before promoting.
 harness_paradigm_alignment: partial
 adjacent_to:
 - adarubrics

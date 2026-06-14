@@ -7,17 +7,17 @@ homepage: https://wrtnlabs.io/agentica
 license: MIT
 primary_language: TypeScript
 tagline: TypeScript AI AI Function Calling Framework enhanced by compiler skills.
-description: |-
-  Agentica — TypeScript AI AI Function Calling Framework enhanced by compiler skills. Upstream maintainer: wrtnlabs.
+description: 'Agentica — TypeScript AI AI Function Calling Framework enhanced by compiler skills. Upstream maintainer: wrtnlabs.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: wrtnlabs
-origin_country: null
+origin_country: KR
 model_agnostic_score: 3
-sovereignty_notes: wrtnlabs (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: wrtnlabs (company-maintained GitHub Organization behind Wrtn Technologies, the Korean Series B-funded AI startup); OSS core is MIT and distributed via `@agentica/core` on npm. Model-agnostic 3 — `vendor` is a pluggable interface (default example uses OpenAI gpt-4o-mini) so any OpenAI SDK-compatible backend (including local OpenAI-compatible servers) can be wired in. Notable for compile-time function-calling via typia — function schemas derived from TypeScript types or Swagger/MCP documents.
 harness_paradigm_alignment: partial
 adjacent_to:
 - agenticseek

@@ -7,17 +7,17 @@ homepage: https://superlinked.com
 license: Apache-2.0
 primary_language: Python
 tagline: Open-source inference server and production cluster for all the models your agent needs.
-description: |-
-  Sie — Open-source inference server and production cluster for all the models your agent needs. Upstream maintainer: superlinked.
+description: 'Sie — Open-source inference server and production cluster for all the models your agent needs. Upstream maintainer: superlinked.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: superlinked
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: superlinked (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Superlinked (commercial vendor at superlinked.com); Apache-2.0 inference engine for 85+ embedding/reranking/extraction models with three-call SDK (`encode`/`score`/`extract`), hot-swap and LRU eviction. Model-agnostic 4 — drop-in OpenAI-compatible `/v1/embeddings`, local Docker first-class, integrates with LangChain/LlamaIndex/Haystack/DSPy/CrewAI; ships full production stack (gateway, KEDA autoscaling, Grafana, Terraform). Anonymous telemetry on by default (`SIE_TELEMETRY_DISABLED=1` to opt out).
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

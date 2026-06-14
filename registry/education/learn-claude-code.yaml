@@ -1,0 +1,32 @@
+id: learn-claude-code
+name: Learn Claude Code
+category: education
+subcategory: agent-framework
+repo_url: https://github.com/shareAI-lab/learn-claude-code
+homepage: https://learn.shareai.run
+license: MIT
+primary_language: Python
+tagline: Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1
+description: 'Learn Claude Code — Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1. Upstream maintainer: shareAI-lab.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: company
+  name: shareAI-lab
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: shareAI-lab is a community-oriented Organisation account publishing this MIT-licensed teaching repo (Chinese/English/Japanese READMEs). Catalogued as education/tutorial because the project is explicitly a from-scratch walkthrough of how an LLM-driven agent harness is built, complete with historical motivation and reference implementation. Model-agnostic 3 is nominal — the example harness can be pointed at any model; the educational artefact itself is harness-/provider-agnostic.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- plandex
+- planning-with-files
+- pydantic-ai
+- ralph-claude-code
+education_resources:
+- title: Learn Claude Code
+  url: https://github.com/shareAI-lab/learn-claude-code
+  type: tutorial
+  free: true

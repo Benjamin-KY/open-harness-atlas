@@ -6,24 +6,24 @@ repo_url: https://github.com/studioKjm/ai-harness-template
 license: MIT
 primary_language: Python
 tagline: AI Harness Engineering Template — guardrails, gates, and boundaries for AI coding agents.
-description: |-
-  AI Harness Template — AI Harness Engineering Template — guardrails, gates, and boundaries for AI coding agents. One-command install. Zero dependencies. Upstream maintainer: studioKjm.
+description: 'AI Harness Template — AI Harness Engineering Template — guardrails, gates, and boundaries for AI coding agents. One-command install. Zero dependencies. Upstream maintainer: studioKjm.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: community
   name: studioKjm
-origin_country: null
-model_agnostic_score: 3
+origin_country: KR
+model_agnostic_score: 0
 five_component_coverage:
   policy_router: partial
   source_authority: none
-  prompt_composer: none
-  output_contract: none
-  audit_log_fsm: none
-sovereignty_notes: studioKjm (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
-harness_paradigm_alignment: partial
+  prompt_composer: partial
+  output_contract: partial
+  audit_log_fsm: partial
+sovereignty_notes: studioKjm (Korean community maintainer) ships the AI Harness Engineering Template under MIT with v2.6.0 stable releases, 12 structural gates, a methodology plugin system (16 stable bundles including bdd, tdd-strict, ddd-lite, shape-up), an isolated AI Security Gate that blocks commits on critical/high findings, and an Ouroboros spec-first workflow. Model-agnostic 0 — the security gate prefers the Claude CLI (Pro/Max) with an ANTHROPIC_API_KEY fallback, so the harness is hard-locked to Anthropic. Curator-reviewed; flagged as aligned because the template fills the policy-router, prompt-composer, output-contract and audit-log governance spine slots simultaneously.
+harness_paradigm_alignment: aligned
 adjacent_to:
 - guardrails-ai
 - hortator

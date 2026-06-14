@@ -7,17 +7,17 @@ homepage: https://arc-reel.com
 license: AGPL-3.0-only
 primary_language: Python
 tagline: AI Agent 驱动的开源视频生成工作台 — 小说→角色/场景/道具设计→剧本→分镜图→视频，跨镜头角色与场景一致 | Open-source AI video workspace powered by AI Agents, Nano Banana 2 & Veo 3.1 / Grok / Seedance / OpenAI
-description: |-
-  Arc Reel — AI Agent 驱动的开源视频生成工作台 — 小说→角色/场景/道具设计→剧本→分镜图→视频，跨镜头角色与场景一致 | Open-source AI video workspace powered by AI Agents, Nano Banana 2 & Veo 3.1 / Grok / Seedance / OpenAI. Upstream maintainer: ArcReel.
+description: 'Arc Reel — AI Agent 驱动的开源视频生成工作台 — 小说→角色/场景/道具设计→剧本→分镜图→视频，跨镜头角色与场景一致 | Open-source AI video workspace powered by AI Agents, Nano Banana 2 & Veo 3.1 / Grok / Seedance / OpenAI. Upstream maintainer: ArcReel.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: ArcReel
-origin_country: null
+origin_country: CN
 model_agnostic_score: 3
-sovereignty_notes: ArcReel (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'ArcReel (Chinese-origin community OSS organisation, 2.6k stars) publishes ArcReel under AGPL-3.0: an open AI video-generation workbench that drives the full novel-to-short-video pipeline through AI agents (Python 3.12 + React 19 + FastAPI). Model-agnostic 3 — composes multiple LLM and generative-media backends but does not document a single-config provider switch. Strong copyleft licence; in-scope as an agent/agent-framework artefact, no governance/audit surface.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

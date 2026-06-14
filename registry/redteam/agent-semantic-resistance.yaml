@@ -6,17 +6,17 @@ repo_url: https://github.com/rexcoleman/agent-semantic-resistance
 license: MIT
 primary_language: Python
 tagline: 'FP-17: Why Real LLM Agents Resist Cascade Poisoning — first mechanistic study of the 37pp simulation-to-real gap'
-description: |-
-  Agent Semantic Resistance — FP-17: Why Real LLM Agents Resist Cascade Poisoning — first mechanistic study of the 37pp simulation-to-real gap. Upstream maintainer: rexcoleman.
+description: 'Agent Semantic Resistance — FP-17: Why Real LLM Agents Resist Cascade Poisoning — first mechanistic study of the 37pp simulation-to-real gap. Upstream maintainer: rexcoleman.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: rexcoleman
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: rexcoleman (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: Rex Coleman (community-maintained, MIT) — pre-registered research artifact measuring multi-agent semantic resistance to four payload types (privilege escalation, generic crypto-scam, data exfiltration, domain-aligned). Reports a 98pp spread and an honest detection-vs-resistance disclaimer for domain-aligned attacks. Model-agnostic 1 — Claude Haiku only per the stated limitations; single-model, 5 seeds × 5 tasks. Governed by the author's `govML` methodology.
 harness_paradigm_alignment: partial
 adjacent_to:
 - automated-adversial-testing-framework

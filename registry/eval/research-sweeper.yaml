@@ -6,17 +6,17 @@ repo_url: https://github.com/aw-pr/research-sweeper
 license: MIT
 primary_language: TypeScript
 tagline: 'Multi-lane agentic research harness: parallel Claude / OpenAI / Gemini lanes synthesised into Obsidian-ready markdown, with LLM-judge scoring per sweep.'
-description: |-
-  Research Sweeper — Multi-lane agentic research harness: parallel Claude / OpenAI / Gemini lanes synthesised into Obsidian-ready markdown, with LLM-judge scoring per sweep. Upstream maintainer: aw-pr.
+description: 'Research Sweeper — Multi-lane agentic research harness: parallel Claude / OpenAI / Gemini lanes synthesised into Obsidian-ready markdown, with LLM-judge scoring per sweep. Upstream maintainer: aw-pr.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: aw-pr
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: aw-pr (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 2
+sovereignty_notes: 'aw-pr (small organisation account, community-maintained) publishes a multi-lane agentic research harness under MIT that fans out parallel Claude/OpenAI/Gemini research agents and scores each sweep with a claude-haiku LLM judge. Model-agnostic 2: explicitly tied to the three commercial APIs (forced web_search tool use on Claude/OpenAI, Google Search grounding on Gemini); no local-weights option. Genuine eval surface via the structured judge rubric, but no governance/audit primitives beyond the run-record persistence.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - besttester

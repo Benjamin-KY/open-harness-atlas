@@ -7,17 +7,17 @@ homepage: https://github.com/benchjack/benchjack
 license: Apache-2.0
 primary_language: Python
 tagline: AI agent benchmark hackability scanner — find evaluation vulnerabilities before they undermine your results
-description: |-
-  Benchjack — AI agent benchmark hackability scanner — find evaluation vulnerabilities before they undermine your results. Upstream maintainer: benchjack.
+description: 'Benchjack — AI agent benchmark hackability scanner — find evaluation vulnerabilities before they undermine your results. Upstream maintainer: benchjack.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: benchjack
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: benchjack (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 2
+sovereignty_notes: 'benchjack (organisation) ships BenchJack under Apache-2.0 as a hackability scanner that runs Semgrep/Bandit/Hadolint plus AI-driven deep inspection (Claude Code or Codex) against AI-agent benchmarks, emits PoC exploit code, and streams findings to a live dashboard. Model-agnostic 2: the AI inspection layer requires Claude Code or Codex — both commercial-API only — so no local-weights path. Documented audit found every one of 8 major benchmarks exploitable (4,458 tasks, 73–100% gameable); category eval/llm-eval is correct as a meta-eval of benchmarks themselves.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - fieldtest

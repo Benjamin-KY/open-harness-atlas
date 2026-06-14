@@ -7,17 +7,17 @@ homepage: https://www.aionui.com
 license: Apache-2.0
 primary_language: TypeScript
 tagline: Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ more CLI | Customize your assistants | Star if you like it!
-description: |-
-  Aion Ui — Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ more CLI | Customize your assistants | Star if you like it!. Upstream maintainer: iOfficeAI.
+description: 'Aion Ui — Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ more CLI | Customize your assistants | Star if you like it!. Upstream maintainer: iOfficeAI.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: iOfficeAI
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: iOfficeAI (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'iOfficeAI (commercial; Apache-2.0) ships AionUi, a free cross-platform desktop ''Cowork with AI Agents'' app with multi-agent orchestration, remote access, and explicit ''Any API Key'' BYO-provider design — Chinese-language documentation, WeChat community, and the iOfficeAI org domain place origin in China. Model-agnostic 3 because the documented provider surface covers commercial APIs and local backends via API-key configuration, but local-weights paths are not the marketing centerpiece. Alignment ''partial'': solid agent + tool-use surface; governance components are not enforced.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - intentkit

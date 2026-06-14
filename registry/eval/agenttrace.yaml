@@ -7,17 +7,17 @@ homepage: https://tensorstax.com/
 license: MIT
 primary_language: TypeScript
 tagline: AgentTrace is a lightweight observability library to trace and evaluate agentic systems.
-description: |-
-  Agenttrace — AgentTrace is a lightweight observability library to trace and evaluate agentic systems. Upstream maintainer: tensorstax.
+description: 'Agenttrace — AgentTrace is a lightweight observability library to trace and evaluate agentic systems. Upstream maintainer: tensorstax.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: tensorstax
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: tensorstax (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: TensorStax (company-backing GitHub Organization, product site tensorstax.com) maintains AgentTrace under MIT — a lightweight tracing/evaluation framework for AI agents and LLMs with a `@tracer.trace` decorator, SQLite trace store, web dashboard (backend on port 3033, frontend on port 5173), and a TracerEval evaluation framework with custom scoring functions. Model-agnostic 3 — tracing wraps arbitrary async functions so any provider (OpenAI shown in examples; works with any) is supported; the evaluator scores outputs without provider lock-in. Maintenance pace has slowed (last push April 2025) — still within 18 months but worth a curator re-check.
 harness_paradigm_alignment: partial
 adjacent_to:
 - cc-plugin-eval

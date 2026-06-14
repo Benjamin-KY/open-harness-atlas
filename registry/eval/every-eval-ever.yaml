@@ -7,17 +7,17 @@ homepage: https://evalevalai.com/projects/every-eval-ever/
 license: MIT
 primary_language: Python
 tagline: Every Eval Ever is a shared schema and crowdsourced eval database.
-description: |-
-  Every Eval Ever — Every Eval Ever is a shared schema and crowdsourced eval database. It defines a standardized metadata format for storing AI evaluation results — from leaderboard scrapes and research papers to local evaluation runs — so that results from different frameworks can be compared, reproduced, and reused. Upstream maintainer: evaleval.
+description: 'Every Eval Ever — Every Eval Ever is a shared schema and crowdsourced eval database. It defines a standardized metadata format for storing AI evaluation results — from leaderboard scrapes and research papers to local evaluation runs — so that results from different frameworks can be compared, reproduced, and reused. Upstream maintainer: evaleval.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: evaleval
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: evaleval (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: evaleval (institution-maintained, EvalEval Coalition researcher community publishing through evalevalai.com); OSS under MIT, distributed as the `every-eval-ever` Python package with optional `[inspect]`, `[helm]`, `[all]` extras. Model-agnostic 3 — Every Eval Ever is a metadata schema and converter layer rather than an LLM client, so the schema applies uniformly across leaderboard scrapes, paper results, and local evaluation runs from any provider. Operates more as an eval-schema / eval-database than a runner; catalogued under the closest existing agent-eval subcategory.
 harness_paradigm_alignment: partial
 adjacent_to:
 - holon-bench

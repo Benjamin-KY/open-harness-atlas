@@ -7,15 +7,15 @@ homepage: https://cvs-health.github.io/uqlm/latest/index.html
 license: Apache-2.0
 primary_language: Python
 tagline: 'UQLM: Uncertainty Quantification for Language Models, is a Python package for UQ-based LLM hallucination detection'
-description: |-
-  Uqlm — UQLM: Uncertainty Quantification for Language Models, is a Python package for UQ-based LLM hallucination detection. Upstream maintainer: cvs-health.
+description: 'Uqlm — UQLM: Uncertainty Quantification for Language Models, is a Python package for UQ-based LLM hallucination detection. Upstream maintainer: cvs-health.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: cvs-health
-origin_country: null
+origin_country: US
 model_agnostic_score: 3
 five_component_coverage:
   policy_router: none
@@ -23,7 +23,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: cvs-health (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'CVS Health (commercial; Apache-2.0) maintains uqlm, a Python library for response-level uncertainty quantification on any LLM call, with peer-reviewed publication in JMLR and TMLR per the badges. Model-agnostic 3 because the scorers are provider-agnostic and the documented integrations include OpenAI-compatible endpoints with no hard-coded vendor lock; local backends are usable but not the marketing centerpiece. Harness alignment ''partial'': it gives you a numeric uncertainty surface useful for an output contract / refusal trigger, but the FSM and audit-log composition is the caller''s responsibility.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

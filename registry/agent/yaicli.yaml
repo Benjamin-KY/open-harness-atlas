@@ -1,0 +1,27 @@
+id: yaicli
+name: Yaicli
+category: agent
+subcategory: structured-output
+repo_url: https://github.com/belingud/yaicli
+homepage: https://belingud.github.io/yaicli/
+license: Apache-2.0
+primary_language: Python
+tagline: 'YAICLI: A powerful command-line AI assistant with 25+ LLM providers.'
+description: 'Yaicli — YAICLI: A powerful command-line AI assistant with 25+ LLM providers. Features chat, command execution, quick queries, function calling, MCP support, and persistent history. Seamlessly integrates into workflows with smart environment detection. Upstream maintainer: belingud.
+
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
+maturity: beta
+maintainer:
+  type: community
+  name: belingud
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: belingud is a single community maintainer (GitHub User owner) shipping yaicli under Apache-2.0 (PyPI) — a CLI AI assistant with chat/execute/quick-query modes, image input across 30+ providers, function calling, MCP support since v0.7.0, shell auto-detection, and safe-command-exec verification. Model-agnostic 4 — works with any OpenAI-compatible endpoint and supports 25+ provider families including Ollama. Recategorised from governance/structured-output to agent/cli-agent because the primary surface is a tool-using multi-turn CLI runtime; function calling is a feature, not the core. CN origin.
+harness_paradigm_alignment: partial
+adjacent_to:
+- gollm
+- grps-trtllm
+- guardrails-ai
+- jsonschema
+- mda

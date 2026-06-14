@@ -7,17 +7,17 @@ homepage: https://oh-my-claudecode.dev
 license: MIT
 primary_language: TypeScript
 tagline: Teams-first Multi-agent orchestration for Claude Code
-description: |-
-  Oh My Claudecode — Teams-first Multi-agent orchestration for Claude Code. Upstream maintainer: Yeachan-Heo.
+description: 'Oh My Claudecode — Teams-first Multi-agent orchestration for Claude Code. Upstream maintainer: Yeachan-Heo.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: Yeachan-Heo
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: Yeachan-Heo (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: Yeachan-Heo (Korean community maintainer) ships oh-my-claudecode under MIT; the README is explicit that OMC layers multi-agent orchestration directly on Claude Code with a separate oh-my-codex sibling project for OpenAI's CLI. Model-agnostic 0 — the catalogued artefact is hard-locked to Anthropic's Claude Code runtime, so portability to other vendors is not in scope. Curator-reviewed; kept as an agent-harness layer with honest scope, sovereignty caveat is the single-vendor tie-in.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

@@ -7,21 +7,20 @@ homepage: https://intentsolutions.io
 license: Apache-2.0
 primary_language: TypeScript
 tagline: Binary-criteria evaluation harness for Claude skills with planned extension to plugins, agents, and MCP servers.
-description: |-
-  J Rig Skill Binary Eval — Binary-criteria evaluation harness for Claude skills with planned extension to plugins, agents, and MCP servers. Score every change yes/no across 7 layers — package integrity, trigger quality, functional quality, regression protection, baseline value, model variance, rollout safety. Never gradients. Upstream maintainer: jeremylongshore.
+description: 'J Rig Skill Binary Eval — Binary-criteria evaluation harness for Claude skills with planned extension to plugins, agents, and MCP servers. Score every change yes/no across 7 layers — package integrity, trigger quality, functional quality, regression protection, baseline value, model variance, rollout safety. Never gradients. Upstream maintainer: jeremylongshore.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: jeremylongshore
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: jeremylongshore (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 1
+sovereignty_notes: 'jeremylongshore (community, intent-solutions-io umbrella) ships j-rig-skill-binary-eval under Apache-2.0 as a 7-layer release-discipline harness for Claude Skills with binary yes/no criteria, separated evaluators, regression gates and a model-variance layer specifically targeting Haiku/Sonnet/Opus. Model-agnostic 1: explicitly Claude-only (the model-variance layer tests across Anthropic tiers); the harness is provider-locked even though the methodology generalises. Eval/llm-eval category fit is correct (skill-package eval is a specialised eval surface).'
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness
 - prompty
-- python-sdk
 - qa-metrics
 - rag-eval-pack

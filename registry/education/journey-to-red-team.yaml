@@ -1,0 +1,31 @@
+id: journey-to-red-team
+name: Journey To Red Team
+category: education
+subcategory: adversarial-ml
+repo_url: https://github.com/wonderstone843/journey-to-red-team
+license: MIT
+primary_language: Multiple
+tagline: 'AI security training path: adversarial ML, prompt injection, model theft, data poisoning.'
+description: 'Journey To Red Team — AI security training path: adversarial ML, prompt injection, model theft, data poisoning. Hands-on with TextAttack, IBM ART, Microsoft Counterfit. Upstream maintainer: wonderstone843.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: community
+  name: wonderstone843
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: wonderstone843 (Joshua Penn) is a single community maintainer (GitHub User owner); the repo is an MIT-licensed 5-module self-directed curriculum on AI security/red-teaming (foundations, threat landscape, pipeline security with STRIDE, tools survey of TextAttack/IBM ART/Counterfit, career path) plus a 'grey area' prompt JSON and a Grok-incident case study. Model-agnostic 0 — purely educational markdown; no LLM provider runtime. Recategorised from redteam to education to reflect that the artefact is reading material pointing at external tools rather than an executable adversarial probe harness.
+harness_paradigm_alignment: partial
+adjacent_to:
+- llm-watermark-robustness
+- memory-poisoning-persistence
+- ml-security-papers
+- pyrit
+- wraith-challenges
+education_resources:
+- title: Journey To Red Team
+  url: https://github.com/wonderstone843/journey-to-red-team
+  type: tutorial
+  free: true

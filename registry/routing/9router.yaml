@@ -1,0 +1,26 @@
+id: 9router
+name: 9router
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/decolua/9router
+homepage: https://9router.com
+license: MIT
+primary_language: JavaScript
+tagline: Unlimited FREE AI coding.
+description: '9router — Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits. Upstream maintainer: decolua.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: community
+  name: decolua
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: decolua (community individual maintainer on GitHub); MIT Node.js + Docker self-hosted LLM router exposing http://localhost:20128/v1 in both OpenAI and Anthropic-native formats, with multi-account round-robin, RTK tool-result compression and per-provider quota tracking. Model-agnostic 4 — drop-in OpenAI/Anthropic compatibility lets any coding-agent CLI swap base URLs without code changes; supports paid, cheap (GLM/MiniMax) and free (Kiro, OpenCode Free) tiers. Tracked here as a routing entry, correcting the original 'agent-framework' tag.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ag-ui
+- microsoft-agent-framework
+- agent-governance-toolkit
+- langgraph

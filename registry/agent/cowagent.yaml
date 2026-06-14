@@ -7,17 +7,17 @@ homepage: https://cowagent.ai
 license: MIT
 primary_language: Python
 tagline: Open-source super AI assistant & Agent Harness.
-description: |-
-  Cow Agent — Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat). Upstream maintainer: zhayujie.
+description: 'Cow Agent — Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat). Upstream maintainer: zhayujie.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: zhayujie
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: zhayujie (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: zhayujie (community individual maintainer on GitHub, China-based — also maintainer of chatgpt-on-wechat); MIT Python agent runtime self-hostable on personal computer/server across web and IM platforms. Model-agnostic 3 — pluggable across major LLM providers with the docs explicitly framing it as a 'reference implementation of Agent Harness engineering'. Notable for the explicit three-tier memory + Deep Dream distillation + Self-Evolution loop and an integrated Skill Hub for one-click skill install.
 harness_paradigm_alignment: partial
 adjacent_to:
 - how-claude-code-works

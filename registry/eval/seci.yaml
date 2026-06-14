@@ -7,21 +7,18 @@ homepage: https://seci.simulatedemergence.ai
 license: MIT
 primary_language: Python
 tagline: An open multi-rater benchmark for characterizing architectural fingerprints in identity-scaffolded LLMs.
-description: |-
-  SECI — An open multi-rater benchmark for characterizing architectural fingerprints in identity-scaffolded LLMs. Upstream maintainer: devmance.
+description: 'SECI — An open multi-rater benchmark for characterizing architectural fingerprints in identity-scaffolded LLMs. Upstream maintainer: devmance.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: devmance
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: devmance (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Devmance Labs (small community/research lab) under MIT; reproducible code for a variance-decomposed identity-architecture benchmark with paper (`paper/seci.pdf`) evaluating 7 frontier models across 36 identities × 3 protocol arms on a 6-dimension fingerprint (ICT, NCG, PD, TP, CCC, DEA). Model-agnostic 2 — multi-provider commercial-API only, no first-class local-weights coverage. Reference-quality as an eval methodology paper; treat the numbers as a single re-analysis run rather than a continuously-updated leaderboard.
 harness_paradigm_alignment: partial
 adjacent_to:
-- agent-sports-league-sdk
-- arena-ai-leaderboards
 - arguslm
-- athloneval
 - lm-evaluation-harness

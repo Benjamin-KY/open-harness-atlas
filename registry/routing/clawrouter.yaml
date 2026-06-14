@@ -6,17 +6,17 @@ repo_url: https://github.com/BlockRunAI/ClawRouter
 license: MIT
 primary_language: TypeScript
 tagline: The agent-native LLM router for OpenClaw.
-description: |-
-  Claw Router — The agent-native LLM router for OpenClaw. 41+ models, <1ms routing, USDC payments on Base & Solana via x402. Upstream maintainer: BlockRunAI.
+description: 'Claw Router — The agent-native LLM router for OpenClaw. 41+ models, <1ms routing, USDC payments on Base & Solana via x402. Upstream maintainer: BlockRunAI.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: company
   name: BlockRunAI
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: BlockRunAI (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'BlockRunAI (company-maintained, MIT). Router is genuinely model-agnostic via an OpenAI-compatible facade plus 7 free models and per-call x402/USDC settlement, so MAS=3 is conservative — could plausibly be 4 once local-weights routing is documented. Harness alignment partial: provides a policy_router (cost/intent-based routing) but no source_authority or output_contract enforcement; agent-native pitch (no API keys) is the differentiator. Note the crypto-payment dependency for paid models — a sovereignty consideration for orgs that cannot transact in stablecoins.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

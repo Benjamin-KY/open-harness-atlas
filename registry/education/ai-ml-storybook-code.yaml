@@ -6,17 +6,17 @@ repo_url: https://github.com/TechStoriesBlog/ai-ml-storybook-code
 license: MIT
 primary_language: Python
 tagline: Official Python code examples and notebooks for the AI-ML-Storybook educational series - https://techstories.blog/pages/homecategory/artificial-intelligence/artificialintelligencestorybook.html
-description: |-
-  AI ML Storybook Code — Official Python code examples and notebooks for the AI-ML-Storybook educational series - https://techstories.blog/pages/homecategory/artificial-intelligence/artificialintelligencestorybook.html. Upstream maintainer: TechStoriesBlog.
+description: 'AI ML Storybook Code — Official Python code examples and notebooks for the AI-ML-Storybook educational series - https://techstories.blog/pages/homecategory/artificial-intelligence/artificialintelligencestorybook.html. Upstream maintainer: TechStoriesBlog.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: beta
 maintainer:
   type: community
   name: TechStoriesBlog
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: TechStoriesBlog (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'TechStoriesBlog (community-maintained, GitHub Organization); MIT licensed, free open-source educational resource. Model-agnostic score 3: code examples demonstrate general ML/AI concepts using standard Python libraries without coupling to a specific model provider. Noteworthy: beginner-oriented practical companion to a free blog series; chapter-aligned structure supports structured self-paced learning.'
 harness_paradigm_alignment: partial
 education_resources:
 - title: AI ML Storybook Code repository

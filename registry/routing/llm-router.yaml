@@ -7,17 +7,17 @@ homepage: https://llm-router.cloud/
 license: Apache-2.0
 primary_language: Python
 tagline: LLM Router is a service that can be deployed on‑premises or in the cloud.
-description: |-
-  LLM Router — LLM Router is a service that can be deployed on‑premises or in the cloud. It adds a layer between any application and the LLM provider. In real time it controls traffic, distributes a load among providers of a specific LLM, and enables analysis of outgoing requests from a security perspective (masking, anonymization, prohibited content). Upstream maintainer: radlab-dev-group.
+description: 'LLM Router — LLM Router is a service that can be deployed on‑premises or in the cloud. It adds a layer between any application and the LLM provider. In real time it controls traffic, distributes a load among providers of a specific LLM, and enables analysis of outgoing requests from a security perspective (masking, anonymization, prohibited content). Upstream maintainer: radlab-dev-group.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: radlab-dev-group
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: radlab-dev-group (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: PL
+model_agnostic_score: 4
+sovereignty_notes: 'radlab-dev-group ships LLM Router as Apache-2.0 with hosted positioning at llm-router.cloud and a Polish NASK-PIB/Sojka guardrail integration; treated as a company-maintained project. Model-agnostic 4: a single OpenAI-compatible entry point fronts OpenAI, Anthropic, Ollama, vLLM and LM Studio backends with local-first deployment. Plugin layer adds PII masking, semantic routing, and RAG hooks — places it adjacent to governance but the catalogued artefact is the gateway core.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

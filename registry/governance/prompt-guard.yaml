@@ -1,0 +1,32 @@
+id: prompt-guard
+name: Prompt Guard
+category: governance
+subcategory: guardrails
+repo_url: https://github.com/seojoonkim/prompt-guard
+license: MIT
+primary_language: Python
+tagline: Advanced prompt injection defense system for AI agents.
+description: 'Prompt Guard — Advanced prompt injection defense system for AI agents. Multi-language detection, severity scoring, and security auditing. Upstream maintainer: seojoonkim.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: community
+  name: seojoonkim
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: Single-maintainer community project (seojoonkim) under MIT; runs as Python lib + Docker /scan API to detect prompt-injection, instruction overrides, DLP/PII leakage and sanitisation across ~10 languages. Model-agnostic 3 by default — the scanner sits in front of any LLM and ships no model integrations of its own, so MAS is effectively N/A and inherited from the host. Useful as a deterministic first-pass refusal layer alongside model-side safety, not as a complete governance stack.
+harness_paradigm_alignment: partial
+adjacent_to:
+- adrian
+- agent-security-scanner-mcp
+- pyrit
+- redairange
+- securemcp
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none

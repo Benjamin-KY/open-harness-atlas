@@ -7,17 +7,17 @@ homepage: https://langeval.space
 license: Apache-2.0
 primary_language: TypeScript
 tagline: Evaluation Infrastructure for AI Agents
-description: |-
-  Langeval — Evaluation Infrastructure for AI Agents. Upstream maintainer: solana8800.
+description: 'Langeval — Evaluation Infrastructure for AI Agents. Upstream maintainer: solana8800.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: solana8800
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: solana8800 (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: solana8800 (community maintainer with Vietnamese-localised docs) ships LangEval under Apache-2.0 with a live demo at langeval.space and an enterprise-flavoured pitch around Active Testing, User Simulation and Red-Teaming in a sandbox. Model-agnostic 3 default — the platform treats Agents as evaluation targets so it inherits whatever provider pluggability the underlying agent runtime ships. Curator-reviewed; kept as an evaluation platform whose value is the proactive-attack feedback loop on top of monitoring.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

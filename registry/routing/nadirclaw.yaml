@@ -7,17 +7,17 @@ homepage: https://getnadir.com
 license: MIT
 primary_language: Python
 tagline: Open-source LLM router & AI cost optimizer.
-description: |-
-  Nadir Claw — Open-source LLM router & AI cost optimizer. Routes simple prompts to cheap/local models, complex ones to premium — automatically. Drop-in OpenAI-compatible proxy for Claude Code, Codex, Cursor, OpenClaw. Saves 40-70% on AI API costs. Self-hosted, no middleman. Upstream maintainer: NadirRouter.
+description: 'Nadir Claw — Open-source LLM router & AI cost optimizer. Routes simple prompts to cheap/local models, complex ones to premium — automatically. Drop-in OpenAI-compatible proxy for Claude Code, Codex, Cursor, OpenClaw. Saves 40-70% on AI API costs. Self-hosted, no middleman. Upstream maintainer: NadirRouter.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: community
   name: NadirRouter
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: NadirRouter (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Nadir (company-maintained; MIT OSS proxy + paid Nadir Pro hosted classifier). The catalogued artefact (nadirclaw PyPI package + CLI) is free and self-hosted, advertised at 40-70% cost savings on coding-agent traffic. MAS=4 — OpenAI-compatible drop-in proxy across local (Ollama, llama.cpp) and commercial backends. Harness alignment partial — explicit policy_router (intent-based routing classifier) is the core component; no source_authority or audit FSM in the OSS edition.
 harness_paradigm_alignment: partial
 adjacent_to:
 - a3m-router

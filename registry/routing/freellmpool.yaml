@@ -7,17 +7,17 @@ homepage: https://0xzr.github.io/freellmpool/
 license: MIT
 primary_language: Python
 tagline: Pool the free tiers of 18 LLM providers (Groq, Cerebras, NVIDIA NIM, Gemini, OpenRouter, Cloudflare, Hugging Face…) behind one OpenAI-compatible /v1 endpoint.
-description: |-
-  Freellmpool — Pool the free tiers of 18 LLM providers (Groq, Cerebras, NVIDIA NIM, Gemini, OpenRouter, Cloudflare, Hugging Face…) behind one OpenAI-compatible /v1 endpoint. Free, zero-config, automatic failover. Codex/agent ready. Upstream maintainer: 0xzr.
+description: 'Freellmpool — Pool the free tiers of 18 LLM providers (Groq, Cerebras, NVIDIA NIM, Gemini, OpenRouter, Cloudflare, Hugging Face…) behind one OpenAI-compatible /v1 endpoint. Free, zero-config, automatic failover. Codex/agent ready. Upstream maintainer: 0xzr.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: 0xzr
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: 0xzr (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 0xzr is a single community maintainer (GitHub User owner) shipping freellmpool under MIT — a Python CLI/library and local OpenAI+Anthropic-compatible proxy that pools 18 commercial free-tier LLM providers (Groq, Cerebras, NVIDIA NIM, Gemini, OpenRouter, GitHub Models, Cloudflare, Mistral, Cohere, Pollinations/OVHcloud/Kilo Gateway with no API key) with failover, per-day usage tracking, MCP server, latency-aware routing, and OpenCode TUI integration. Model-agnostic 4 — OpenAI-compatible pluggable across 200+ live-validated models from 18 providers behind one /v1 endpoint. FAQ explicitly addresses ToS posture (relies on legitimate free tiers rather than scraping).
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

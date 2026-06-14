@@ -1,0 +1,33 @@
+id: adrian
+name: Adrian
+category: governance
+subcategory: ai-security
+repo_url: https://github.com/secureagentics/Adrian
+homepage: https://app.adrian.secureagentics.ai/
+license: Apache-2.0
+primary_language: Python
+tagline: Runtime security monitoring and control for AI agents.
+description: 'Adrian — Runtime security monitoring and control for AI agents. Catches malicious tool use, prompt injection, and policy drift in real time, before the agent acts. Upstream maintainer: secureagentics.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: ga
+maintainer:
+  type: company
+  name: secureagentics
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 'secureagentics (company-maintained GitHub Organization behind Secure Agentics, with a managed dashboard at app.adrian.secureagentics.ai); OSS SDK under Apache 2.0, distributed as `adrian-sdk` on PyPI with two-line LangChain/LangGraph instrumentation. Model-agnostic 3 — Adrian observes and intervenes on agent tool calls and reasoning traces rather than acting as an LLM client, so it works with whichever provider the host LangChain agent is configured for. Recategorised from redteam → governance / runtime-security: AARM-aligned defensive intervention (policy_router partial via audit/block modes and remit gating; audit_log_fsm partial via activity-log + reasoning-trace persistence) is the correct framing for an in-flight guardrail engine.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- agent-security-scanner-mcp
+- augustus
+- defender
+- medusa
+- pyrit
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: partial

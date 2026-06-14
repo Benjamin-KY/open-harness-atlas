@@ -7,30 +7,36 @@ homepage: https://vibetrading.wiki/
 license: MIT
 primary_language: Python
 tagline: '"Vibe-Trading: Your Personal Trading Agent"'
-description: |-
-  Vibe Trading — "Vibe-Trading: Your Personal Trading Agent". Upstream maintainer: HKUDS.
+description: 'Vibe Trading — "Vibe-Trading: Your Personal Trading Agent". Upstream maintainer: HKUDS.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: HKUDS
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: |-
-  HKUDS (Hong Kong University Data Science group, academic-affiliated open source);
+sovereignty_notes: 'HKUDS (Hong Kong University Data Science group, academic-affiliated open source);
+
   OSS core is MIT and self-hostable. Model-agnostic 3 — multi-provider including at least
+
   one local-weights option. Curator note (2026-06-14): Vibe-Trading is a domain-specific
+
   trading-agent application built on top of conventional agent-framework primitives
+
   rather than a reusable framework in its own right. Catalogued under agent because the
+
   prompt + tool-routing layer is open and the project demonstrates a credible
+
   reference implementation of the harness pattern in a non-trivial domain (financial
+
   trading), but readers seeking general-purpose agent infrastructure should look at the
-  adjacent framework entries (langgraph, awesome-agent-skills) rather than this app.
+
+  adjacent framework entries (langgraph, awesome-agent-skills) rather than this app.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - anything-llm
 - arcreel
-- areal
 - awesome-agent-skills
 - langgraph

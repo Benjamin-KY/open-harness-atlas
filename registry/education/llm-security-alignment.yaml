@@ -1,0 +1,30 @@
+id: llm-security-alignment
+name: LLM Security Alignment
+category: education
+subcategory: poisoning
+repo_url: https://github.com/mohd-faizy/llm-security-alignment
+license: MIT
+primary_language: Python
+tagline: learning path for adversarial LLM security and alignment.
+description: 'LLM Security Alignment — learning path for adversarial LLM security and alignment. Contains structured defensive coding labs, threat modeling exercises, and model hardening checkable suites using pure Python. Upstream maintainer: mohd-faizy.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: community
+  name: mohd-faizy
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: mohd-faizy is a single community maintainer (GitHub User owner) shipping llm-security-alignment under MIT — a 12-module curriculum on LLM adversarial security and alignment (intro, prompt injection, jailbreaking, data poisoning, model extraction, adversarial examples, membership inference, model inversion, supply-chain, RAG security, agentic AI security, defence + red-teaming) with per-module attack and defence Python implementations, capstone projects, and a comprehensive PDF guide. Model-agnostic 0 — pure curriculum with Python code samples; no provider abstraction. Recategorised from redteam to education to reflect the syllabus/learning-path nature.
+harness_paradigm_alignment: partial
+adjacent_to:
+- cloak-cli
+- pyrit
+- raguard
+- rejection-cascade
+education_resources:
+- title: LLM Security Alignment
+  url: https://github.com/mohd-faizy/llm-security-alignment
+  type: tutorial
+  free: true

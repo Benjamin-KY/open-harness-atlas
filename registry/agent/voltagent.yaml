@@ -7,17 +7,17 @@ homepage: https://voltagent.dev
 license: MIT
 primary_language: TypeScript
 tagline: AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework
-description: |-
-  Voltagent — AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework. Upstream maintainer: VoltAgent.
+description: 'Voltagent — AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework. Upstream maintainer: VoltAgent.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: VoltAgent
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: VoltAgent (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'VoltAgent (company-maintained; MIT framework + VoltOps console available self-hosted, hosted cloud is paid). The catalogued artefact is the OSS TS framework — fully free. MAS=3 retained: multi-provider with guardrail/RAG integrations; pluggability for local backends present but not the lead pitch. Harness alignment partial — workflow orchestration, memory, MCP, guardrails and observability hooks cover policy_router and partial audit_log_fsm, but no enforced source_authority.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - botsharp

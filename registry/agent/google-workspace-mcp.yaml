@@ -7,17 +7,17 @@ homepage: https://workspacemcp.com
 license: MIT
 primary_language: Python
 tagline: Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server & CLI Tool
-description: |-
-  Google Workspace MCP — Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server & CLI Tool. Upstream maintainer: taylorwilsdon.
+description: 'Google Workspace MCP — Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server & CLI Tool. Upstream maintainer: taylorwilsdon.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: taylorwilsdon
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: taylorwilsdon (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'taylorwilsdon (community-maintained, individual); MIT licensed, self-hostable MCP server. Model-agnostic score 4: MCP (Model Context Protocol) is a client-agnostic tool-calling standard; any OpenAI-compatible or MCP-native runtime — including local model runtimes — can consume the Google Workspace tools without provider-specific code. Noteworthy: covers Gmail, Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search, and Drive via a single server; active maintenance confirmed with recent push.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

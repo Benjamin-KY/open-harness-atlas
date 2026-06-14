@@ -7,10 +7,10 @@ homepage: https://frai.cc/
 license: MIT
 primary_language: JavaScript
 tagline: 'Open-source toolkit for responsible AI: CLI + SDK to scan code, collect evidence, and generate model cards, risk files, evals, and RAG indexes.'
-description: |-
-  Frai — Open-source toolkit for responsible AI: CLI + SDK to scan code, collect evidence, and generate model cards, risk files, evals, and RAG indexes. Upstream maintainer: sebuzdugan.
+description: 'Frai — Open-source toolkit for responsible AI: CLI + SDK to scan code, collect evidence, and generate model cards, risk files, evals, and RAG indexes. Upstream maintainer: sebuzdugan.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: community
@@ -23,7 +23,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: sebuzdugan (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'sebuzdugan (community, Romanian developer behind frai.cc) maintains FRAI under MIT across three npm packages — frai (CLI), frai-core (SDK), frai-agent (LangChain agent) — focused on compliance docs, code scanning, evaluation reports and RAG indexing aligned to EU AI Act tiering. Output_contract=partial captures the model-card/risk-file enforcement surface; other spine components are not the project''s primary pitch. Model-agnostic 2: LangChain backend across mainstream commercial APIs; no first-class local-weights story.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

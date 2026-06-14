@@ -6,18 +6,18 @@ repo_url: https://github.com/nrslib/takt
 license: MIT
 primary_language: TypeScript
 tagline: TAKT Agent Koordination Topology - Define how AI agents coordinate, where humans intervene, and what gets recorded — in YAML
-description: |-
-  Takt — TAKT Agent Koordination Topology - Define how AI agents coordinate, where humans intervene, and what gets recorded — in YAML. Upstream maintainer: nrslib.
+description: 'Takt — TAKT Agent Koordination Topology - Define how AI agents coordinate, where humans intervene, and what gets recorded — in YAML. Upstream maintainer: nrslib.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: nrslib
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: nrslib (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
-harness_paradigm_alignment: partial
+sovereignty_notes: 'nrslib (community, Japanese maintainer) ships TAKT under MIT as a CLI that runs AI coding agents through declarative YAML workflows — each step has its own persona, policy, knowledge, instruction and output contract. Five-component coverage: policy_router=partial (per-step routing to specific agent providers with permissions), output_contract=partial (output contracts per step, review-to-fix loops cannot be silently skipped), audit_log_fsm=partial (isolated worktrees + logs + reports per task make transitions traceable). Model-agnostic 3 across Claude Code, Codex, OpenCode, Cursor, GitHub Copilot CLI and Kiro — commercial coding agents.'
+harness_paradigm_alignment: aligned
 adjacent_to:
 - agency-swarm
 - agentflow-grpo

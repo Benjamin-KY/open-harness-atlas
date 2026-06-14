@@ -7,17 +7,17 @@ homepage: https://tokligence.ai
 license: Apache-2.0
 primary_language: Go
 tagline: Go LLM gateway — one interface for Claude Code, Codex, Gemini CLI, Anthropic, OpenAI, Qwen, and vLLM.
-description: |-
-  Tokligence Gateway — Go LLM gateway — one interface for Claude Code, Codex, Gemini CLI, Anthropic, OpenAI, Qwen, and vLLM. Upstream maintainer: tokligence.
+description: 'Tokligence Gateway — Go LLM gateway — one interface for Claude Code, Codex, Gemini CLI, Anthropic, OpenAI, Qwen, and vLLM. Upstream maintainer: tokligence.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: tokligence
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: tokligence (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Tokligence (commercial vendor at tokligence.ai); Apache-2.0 Go gateway self-hostable per README. Model-agnostic 4 — native OpenAI + Anthropic protocols with bidirectional translation, plus Gemini/Qwen/vLLM upstreams via config; OpenAI-compatible endpoints make local backends first-class swap targets. README leans heavily on marketing (LiteLLM-vs-Tokligence benchmarks, token-marketplace pitch) but the OSS core is a real multi-protocol proxy.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

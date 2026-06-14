@@ -1,0 +1,32 @@
+id: awesome-agent-skills
+name: Awesome Agent Skills
+category: education
+subcategory: awesome-list
+repo_url: https://github.com/VoltAgent/awesome-agent-skills
+homepage: https://officialskills.sh/
+license: MIT
+primary_language: Multiple
+tagline: A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.
+description: 'Awesome Agent Skills — A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. Upstream maintainer: VoltAgent.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: company
+  name: VoltAgent
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: VoltAgent is a commercial company (voltagent.dev) that curates this MIT-licensed list of 1400+ agent skills from Anthropic, Google Labs, Stripe, Vercel, Cloudflare, Trail of Bits, Hugging Face, and the community. Catalogued as education/awesome-list per §8 because it is a reading/index resource, not an executable runtime. Model-agnostic 3 is nominal — the underlying skills target multiple agent harnesses (Claude Code, Codex, Gemini CLI, Cursor, Copilot) and the index itself is harness-agnostic.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- sre
+- tabularis
+- tribe
+- trpc-agent-go
+education_resources:
+- title: Awesome Agent Skills
+  url: https://github.com/VoltAgent/awesome-agent-skills
+  type: tutorial
+  free: true

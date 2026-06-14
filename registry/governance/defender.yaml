@@ -1,0 +1,32 @@
+id: defender
+name: Defender
+category: governance
+subcategory: guardrails
+repo_url: https://github.com/StackOneHQ/defender
+license: Apache-2.0
+primary_language: TypeScript
+tagline: Open source prompt injection protection for Agents calling tools (via MCP, CLI or direct function calling).
+description: 'Defender — Open source prompt injection protection for Agents calling tools (via MCP, CLI or direct function calling). Detect and defend against prompt injection attacks. 22MB, CPU-only, < 10ms latency. Upstream maintainer: StackOneHQ.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: company
+  name: StackOneHQ
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 'StackOne (commercial vendor at stackone.com); Apache-2.0 TypeScript guardrail that intercepts tool results before they reach the LLM. Three tiers: pattern detection (Unicode normalisation, role stripping, encoding detection), bundled ONNX multi-head MiniLM classifier (~22MB, ~10ms, F1 0.91 average across Qualifire/xxz224/jayavibhav), and an opt-in consumer-supplied Tier-3 LLM. Model-agnostic 3 — the defender itself is local and provider-neutral. Recategorised from redteam to governance/guardrails since the implementation defends, not probes.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- medusa
+- pipelock
+- pyrit
+- redairange
+- securemcp
+five_component_coverage:
+  policy_router: partial
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: none

@@ -7,17 +7,17 @@ homepage: https://www.npmjs.com/package/opencode-llm-proxy
 license: MIT
 primary_language: JavaScript
 tagline: Local AI gateway for OpenCode — use any model via OpenAI, Anthropic, or Gemini API
-description: |-
-  Opencode LLM Proxy — Local AI gateway for OpenCode — use any model via OpenAI, Anthropic, or Gemini API. Upstream maintainer: KochC.
+description: 'Opencode LLM Proxy — Local AI gateway for OpenCode — use any model via OpenAI, Anthropic, or Gemini API. Upstream maintainer: KochC.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: KochC
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: KochC (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'KochC (community / individual) publishes opencode-llm-proxy on npm under MIT as an OpenCode plugin that starts a local HTTP server (127.0.0.1:4010) translating between OpenAI Chat Completions, OpenAI Responses, Anthropic Messages and Google Gemini APIs over the top of OpenCode''s configured backends (GitHub Copilot, Anthropic, Gemini, Ollama, OpenRouter, Bedrock, etc.), all with streaming. Model-agnostic 5: provider is a config string at the OpenCode layer, and the same proxy path runs commercial, hosted-OSS and local backends without code changes — local Ollama is treated as first-class alongside vendor APIs.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - apisix

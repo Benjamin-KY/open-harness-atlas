@@ -6,6 +6,37 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — Three-model ensemble curation pass (Phase 3a closeout, 2026-06-14)
+
+- **Multi-model consensus review of 445 backlog entries** by
+  Claude Sonnet 4.6 + Claude Opus 4.7 (extra-high reasoning) + GPT-5.4,
+  each independently scoring the same entry against `GOVERNANCE.md` §1-§8.
+  1,335 reviews total (42 batches of ~32 entries × 3 reviewers), each
+  agent reading the source repo via raw.githubusercontent / gh CLI and
+  emitting strict-schema JSON with action / field_changes / new_sovereignty_notes
+  / rationale / confidence. Consensus rules: action requires ≥2/3 agreement
+  (else deferred to human review); field values require ≥2/3 same value
+  (or ±1 median for numeric scores); sovereignty_notes picks the longest
+  proposal from agreeing reviewers; full audit trail preserved per entry,
+  per reviewer in the session report. **Outcome: 91 keep / 312 revise /
+  21 remove / 21 three-way-dissent** at mean reviewer confidence ≈ 0.87.
+  391 field corrections applied (maintainer.type, origin_country,
+  model_agnostic_score, primary_language, five_component_coverage shape);
+  28 entries moved between categories (e.g. `defender` redteam→governance,
+  `casdoor` agent→routing, `principles-of-ai-llms` redteam→education);
+  21 entries removed for §8 violations (binary-only distros, single-vendor
+  monitors, workload-trace datasets, RL training infra mislabelled as
+  agent runtimes, planning-only repos with no code, paid-SaaS client SDKs);
+  79 adjacency files cleaned of references to removed entries.
+- **`docs/CURATION_BACKLOG.md` reduced from 447 → 23 entries** — the
+  remaining 23 are the 21 three-way-dissent cases plus 2 pilot deferrals
+  whose evidence was too thin for any reviewer to render confident action.
+  Curator-reviewed proportion: **770 of 793 entries (97%)**, up from 45%.
+- Registry now: **793 entries** across six categories (governance 101 ·
+  agent 231 · eval 203 · redteam 94 · routing 92 · education 72) ·
+  **3,148 adjacency edges** · tier distribution
+  landmark=124 / canonical=3 / established=176 / emerging=118 / frontier=372.
+
 ### Added — Pre-launch polish (Phase 7, 2026-06-14)
 
 - **Tier-stratified hero infographic** (`visuals/hero.svg`) — 1200×630

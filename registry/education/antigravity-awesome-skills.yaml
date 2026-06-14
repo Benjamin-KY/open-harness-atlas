@@ -1,0 +1,32 @@
+id: antigravity-awesome-skills
+name: Antigravity Awesome Skills
+category: education
+subcategory: agent-framework
+repo_url: https://github.com/sickn33/antigravity-awesome-skills
+homepage: https://sickn33.github.io/antigravity-awesome-skills/
+license: MIT
+primary_language: Python
+tagline: Installable GitHub library of 1,500+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more.
+description: 'Antigravity Awesome Skills — Installable GitHub library of 1,500+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes specialized plugins, installer CLI, bundles, workflows, and official/community skill collections. Upstream maintainer: sickn33.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: community
+  name: sickn33
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: sickn33 (community-maintained, individual GitHub User); OSS library under MIT, installable via `npx antigravity-awesome-skills` into the host coding-agent's skills directory. Primary surface is a curated catalogue of 1,550+ agentic skill playbooks plus specialised plugin bundles and workflows — distributed content rather than a runtime — so education (skill-library) is the honest category. Model-agnostic score is heuristic; the artefact is consumed by whichever coding agent the operator points it at.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- nanobot
+- nanobrowser
+- neo
+- oh-my-claudecode
+education_resources:
+- title: Antigravity Awesome Skills
+  url: https://github.com/sickn33/antigravity-awesome-skills
+  type: docs
+  free: true

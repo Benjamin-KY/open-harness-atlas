@@ -7,17 +7,17 @@ homepage: https://hermes-labs.ai
 license: MIT
 primary_language: Python
 tagline: 'Evidence-first structured scoring for AI artifacts: synthesize a rubric, collect citations, score only against quoted evidence, hedge on thin evidence.'
-description: |-
-  Hermes Rubric — Evidence-first structured scoring for AI artifacts: synthesize a rubric, collect citations, score only against quoted evidence, hedge on thin evidence. Every dimension ties to a file:line or quote, with reproducibility receipts. For papers, PRs, prompts, and emails where a defensible LLM-backed score beats a headline number. 7 backends. Upstream maintainer: hermes-labs-ai.
+description: 'Hermes Rubric — Evidence-first structured scoring for AI artifacts: synthesize a rubric, collect citations, score only against quoted evidence, hedge on thin evidence. Every dimension ties to a file:line or quote, with reproducibility receipts. For papers, PRs, prompts, and emails where a defensible LLM-backed score beats a headline number. 7 backends. Upstream maintainer: hermes-labs-ai.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: company
   name: hermes-labs-ai
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: hermes-labs-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: hermes-labs-ai (company-style Organization on GitHub, hermes-labs.ai); MIT Python CLI/library distributed on PyPI that replaces unaudited LLM scoring with rubric-synthesis + evidence-citation + hedge-on-thin-evidence + reproducibility receipts (re-runs land within ±1). Model-agnostic 3 — seven backends including a 'claude-cli' option, so works against multiple providers including locally hosted endpoints. Good fit for the eval feedback-loop slot in the harness paradigm.
 harness_paradigm_alignment: partial
 adjacent_to:
 - juryeval

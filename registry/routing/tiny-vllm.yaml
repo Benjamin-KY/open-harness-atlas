@@ -6,20 +6,19 @@ repo_url: https://github.com/jmaczan/tiny-vllm
 license: Apache-2.0
 primary_language: C++
 tagline: Build your own high performance LLM inference engine in C++ and CUDA - a smaller version of vLLM
-description: |-
-  Tiny Vllm — Build your own high performance LLM inference engine in C++ and CUDA - a smaller version of vLLM. Upstream maintainer: jmaczan.
+description: 'Tiny Vllm — Build your own high performance LLM inference engine in C++ and CUDA - a smaller version of vLLM. Upstream maintainer: jmaczan.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: community
   name: jmaczan
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: jmaczan (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Jędrzej Maczan (jmaczan — community / individual, Poland) publishes tiny-vllm under Apache-2.0 as both a working C++/CUDA inference engine (Safetensors loader, full Llama 3.2 1B forward pass, KV cache, static + continuous batching, online softmax / FlashAttention-like attention, PagedAttention) and a long-form course that derives every kernel from scratch. Repositioned to `education / inference-tutorial` because the README's stated primary purpose is teaching ('use it as a learning tool…or as a teaching resource at your university'). Model-agnostic 3 default holds; for sovereignty, this is a useful reference for understanding what a vLLM-style server is doing under the hood.
 harness_paradigm_alignment: partial
 adjacent_to:
-- flashinfer
 - goinfer
 - litellm
 - vllm-qwen

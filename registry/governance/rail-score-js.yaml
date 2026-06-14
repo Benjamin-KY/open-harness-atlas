@@ -7,10 +7,10 @@ homepage: https://www.npmjs.com/package/@responsible-ai-labs/rail-score
 license: MIT
 primary_language: TypeScript
 tagline: Official JavaScript and TypeScript SDK for RAIL Score.
-description: |-
-  Rail Score Js — Official JavaScript and TypeScript SDK for RAIL Score. Type-safe LLM evaluation across 8 dimensions, guardrails, policy engine, safe regeneration, and multi-framework compliance. Upstream maintainer: Responsible-AI-Labs.
+description: 'Rail Score Js — Official JavaScript and TypeScript SDK for RAIL Score. Type-safe LLM evaluation across 8 dimensions, guardrails, policy engine, safe regeneration, and multi-framework compliance. Upstream maintainer: Responsible-AI-Labs.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: company
@@ -21,12 +21,11 @@ five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
-  output_contract: none
+  output_contract: partial
   audit_log_fsm: none
-sovereignty_notes: Responsible-AI-Labs (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Responsible AI Labs (commercial company; rail-score-js is their official JS/TS SDK, MIT-licensed) ships a typed client for the hosted RAIL Score API that scores generations across 8 responsibility dimensions, with a configurable policy engine (log/block/regenerate/custom), agent-policy enforcement, prompt-injection detection, session tracking and OTel/Langfuse observability. Model-agnostic 3 — built-in wrappers for OpenAI, Anthropic and Google Generative AI; the SDK is provider-pluggable. SERVICE-DEPENDENCY FLAG: the SDK is free OSS but is a client to a third-party hosted scoring service, so the catalogued artefact''s usefulness depends on the API''s continued free-tier availability — re-confirm before merge.'
 harness_paradigm_alignment: partial
 adjacent_to:
-- banned-words
 - content-moderation-deep-learning
 - guardrails-ai
 - localmod

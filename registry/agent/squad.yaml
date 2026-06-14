@@ -7,17 +7,17 @@ homepage: https://bradygaster.github.io/squad/
 license: MIT
 primary_language: TypeScript
 tagline: 'Squad: AI agent teams for any project'
-description: |-
-  Squad — Squad: AI agent teams for any project. Upstream maintainer: bradygaster.
+description: 'Squad — Squad: AI agent teams for any project. Upstream maintainer: bradygaster.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: bradygaster
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: bradygaster (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: 'bradygaster (individual maintainer — note: Brady Gaster is a Microsoft employee but this is his personal repo, MIT). Alpha-stage multi-agent dev-team templating layer over GitHub Copilot CLI; team members and routing rules persist as files in `.squad/`. MAS=1 — hard-coupled to the GitHub Copilot runtime; swapping to a different agent harness would require rewriting the invocation layer. Harness alignment partial — explicit team charters, routing rules, and a stated human-in-the-loop Responsible AI stance, but no enforced output_contract or audit FSM.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - agentflow-grpo

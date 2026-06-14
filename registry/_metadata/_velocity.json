@@ -183,14 +183,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "agent-sports-league-sdk": {
-    "days_since_commit": 12,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 0,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "agenta": {
     "days_since_commit": 0,
     "history_days": null,
@@ -495,24 +487,8 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "ai-security-lab": {
-    "days_since_commit": 0,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 4,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "ai-security-labs": {
     "days_since_commit": 25,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 0,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "ai-supply-chain-scanner": {
-    "days_since_commit": 43,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 0,
@@ -719,22 +695,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "areal": {
-    "days_since_commit": 0,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 5301,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "arena-ai-leaderboards": {
-    "days_since_commit": 0,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 14,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "arena-hard-auto": {
     "days_since_commit": 357,
     "history_days": null,
@@ -804,14 +764,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 8556,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "athloneval": {
-    "days_since_commit": 0,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 0,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -975,14 +927,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "banned-words": {
-    "days_since_commit": 61,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 4,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "beeai-framework": {
     "days_since_commit": 1,
     "history_days": null,
@@ -1135,14 +1079,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "burstgpt": {
-    "days_since_commit": 86,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 269,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "camel": {
     "days_since_commit": 1,
     "history_days": null,
@@ -1276,14 +1212,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 21564,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "claude-code-usage-bar": {
-    "days_since_commit": 1,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 270,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -2047,14 +1975,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "flashinfer": {
-    "days_since_commit": -1,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 5787,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "flask": {
     "days_since_commit": 902,
     "history_days": null,
@@ -2372,14 +2292,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 21497,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "guizang-ppt-skill": {
-    "days_since_commit": 11,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 17018,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -2967,14 +2879,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "kubeshark": {
-    "days_since_commit": 10,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 11952,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "labmlai-annotated-dl": {
     "days_since_commit": 142,
     "history_days": null,
@@ -3183,14 +3087,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "litterbox": {
-    "days_since_commit": 39,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 1461,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "livebench": {
     "days_since_commit": 1,
     "history_days": null,
@@ -3380,14 +3276,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 0,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "llm-pruning-collection": {
-    "days_since_commit": 54,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 63,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4743,14 +4631,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "pdfmathtranslate": {
-    "days_since_commit": 19,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 34818,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "pint-benchmark": {
     "days_since_commit": 58,
     "history_days": null,
@@ -5028,14 +4908,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 42,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "python-sdk": {
-    "days_since_commit": 31,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 8,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -5335,14 +5207,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "rlinf": {
-    "days_since_commit": 0,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 3779,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "routectl": {
     "days_since_commit": 2,
     "history_days": null,
@@ -5500,14 +5364,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 25325,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "servegen": {
-    "days_since_commit": 33,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 152,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -5935,14 +5791,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "tidb": {
-    "days_since_commit": -1,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 40162,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "tiny-vllm": {
     "days_since_commit": 60,
     "history_days": null,
@@ -6111,14 +5959,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "typescript-sdk": {
-    "days_since_commit": 31,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 6,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "ufo": {
     "days_since_commit": 1,
     "history_days": null,
@@ -6172,14 +6012,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1166,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "valor": {
-    "days_since_commit": 124,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 41,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },

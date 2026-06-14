@@ -7,17 +7,17 @@ homepage: https://greasyfork.org/en/scripts/487193-chatgpt-jailbroken-use-it-for
 license: MIT
 primary_language: JavaScript
 tagline: The ultimate ChatGPT Jailbreak Tool with stunning themes, categorized prompts, and a user-friendly interface.
-description: |-
-  Chat GPT Jailbreak Pro — The ultimate ChatGPT Jailbreak Tool with stunning themes, categorized prompts, and a user-friendly interface. Upstream maintainer: Batlez.
+description: 'Chat GPT Jailbreak Pro — The ultimate ChatGPT Jailbreak Tool with stunning themes, categorized prompts, and a user-friendly interface. Upstream maintainer: Batlez.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: Batlez
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: Batlez (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: 'Batlez is a single community maintainer (GitHub User owner); ChatGPT Jailbreak Pro is an MIT Tampermonkey userscript that adds a categorised prompt-picker UI and themes to chat.openai.com. Model-agnostic 0 — hard-locked to ChatGPT''s web UI as the single delivery surface; no provider abstraction or API access. Scope is borderline for the redteam category: this is an end-user prompt-collection convenience tool rather than a research-grade adversarial probe runner with measurable robustness output, and curators may wish to either retain as a low-rigour jailbreak corpus or remove on a stricter §8 read.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - hacxgpt-jailbreak-prompts

@@ -6,21 +6,20 @@ repo_url: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep
 license: MIT
 primary_language: Python
 tagline: 'ARIS ️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation.'
-description: |-
-  Auto Claude Code Research In Sleep — ARIS ️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent. Upstream maintainer: wanshuiyin.
+description: 'Auto Claude Code Research In Sleep — ARIS ️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent. Upstream maintainer: wanshuiyin.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: wanshuiyin
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: wanshuiyin (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: wanshuiyin (community-maintained, MIT); ARIS is a research-loop methodology bundled as skills for Claude Code / Codex CLI / Cursor / Copilot CLI / OpenClaw plus a standalone `aris` CLI. v0.4.17 made `mcpServers` real (NDJSON JSON-RPC, tool dispatch, approval gate) and wires cross-model adversarial review through Codex MCP with no API key. Model-agnostic 4 — same workflow rides multiple host CLIs and providers (Anthropic, OpenAI via ChatGPT subscription, plus arbitrary MCP servers).
 harness_paradigm_alignment: partial
 adjacent_to:
 - ida-pro-mcp
-- kubeshark
 - lamda
 - langgraph
 - librechat

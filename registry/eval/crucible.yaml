@@ -7,17 +7,17 @@ homepage: https://github.com/lord-arbiter/Crucible
 license: MIT
 primary_language: Python
 tagline: Multi-axis VLM-as-judge data curation for robot demonstrations.
-description: |-
-  Crucible — Multi-axis VLM-as-judge data curation for robot demonstrations. Five specialist critics (visual / kinematic / task / strategy / safety) score every LeRobot episode with rationale and timestamp evidence. Model-agnostic — any OpenAI-compatible vision endpoint. Upstream maintainer: lord-arbiter.
+description: 'Crucible — Multi-axis VLM-as-judge data curation for robot demonstrations. Five specialist critics (visual / kinematic / task / strategy / safety) score every LeRobot episode with rationale and timestamp evidence. Model-agnostic — any OpenAI-compatible vision endpoint. Upstream maintainer: lord-arbiter.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: lord-arbiter
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: lord-arbiter (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: lord-arbiter (community-maintained, MIT); VLM-judge data-curation studio for LeRobot robotics demonstrations with a five-axis behavioural rubric and structured timestamp evidence. Model-agnostic 4 — auto-selects between OpenAI direct, OpenAI-compatible endpoints (vLLM/Hyperbolic/Together/DashScope/Gemini-compat) and an opt-in LiteLLM universal transport (`[universal]` extra) for Anthropic/Bedrock/Vertex/etc. Eval-runner surface is clear; no LLM provider lock-in.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

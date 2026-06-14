@@ -1,0 +1,22 @@
+id: structured-outputs
+name: Structured Outputs
+category: eval
+subcategory: benchmark
+repo_url: https://github.com/thedataquarry/structured-outputs
+license: MIT
+primary_language: Python
+tagline: Structured output benchmarks comparing DSPy and BAML with different LLMs
+description: 'Structured Outputs — Structured output benchmarks comparing DSPy and BAML with different LLMs. Upstream maintainer: thedataquarry.
+
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
+maturity: beta
+maintainer:
+  type: community
+  name: thedataquarry
+origin_country: null
+model_agnostic_score: 2
+sovereignty_notes: thedataquarry (community-maintained, MIT); benchmark comparing BAML and DSPy on four nested-JSON extraction tasks (FHIR patient notes + three Cleanlab structured-output datasets). Implementation surface is an eval/benchmark, not a governance enforcement layer, so re-categorised. Model-agnostic 2 — exercises BAML/DSPy across multiple commercial LLM APIs but offers no local-weights provider abstraction of its own.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai

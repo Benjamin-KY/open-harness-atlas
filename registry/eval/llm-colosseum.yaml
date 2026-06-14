@@ -7,17 +7,17 @@ homepage: https://llm-colosseum.phospho.ai
 license: MIT
 primary_language: Jupyter Notebook
 tagline: Benchmark LLMs by fighting in Street Fighter 3!
-description: |-
-  LLM Colosseum — Benchmark LLMs by fighting in Street Fighter 3! The new way to evaluate the quality of an LLM. Upstream maintainer: OpenGenerativeAI.
+description: 'LLM Colosseum — Benchmark LLMs by fighting in Street Fighter 3! The new way to evaluate the quality of an LLM. Upstream maintainer: OpenGenerativeAI.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: ga
 maintainer:
   type: company
   name: OpenGenerativeAI
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: OpenGenerativeAI (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: OpenGenerativeAI (company-maintained, phospho.ai-affiliated) ships llm-colosseum under MIT — a behavioural benchmark that pits LLMs against each other in Street Fighter III and ranks them by ELO over hundreds of fights. Model-agnostic 2 — multi-provider commercial-API only (OpenAI, Mistral, etc.); local-weights coverage is not advertised. Last push 2025-03 keeps it inside the 18-month maintained window; treat the leaderboard as a novelty behavioural-eval rather than a calibrated capability benchmark.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

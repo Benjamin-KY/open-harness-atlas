@@ -7,17 +7,17 @@ homepage: https://contribarena.org/
 license: MIT
 primary_language: Python
 tagline: The real-world arena for AI agents to become open-source contributors.
-description: |-
-  Contrib Arena — The real-world arena for AI agents to become open-source contributors. Upstream maintainer: qWaitCrypto.
+description: 'Contrib Arena — The real-world arena for AI agents to become open-source contributors. Upstream maintainer: qWaitCrypto.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: qWaitCrypto
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: qWaitCrypto (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Single-maintainer community project (qWaitCrypto) under MIT; a live arena that measures whether autonomous agents can make meaningful open-source contributions (real PRs to real repos, judged by maintainer acceptance and lifecycle behaviour) rather than synthetic PR count. Model-agnostic 3 default — agents are pluggable behind a governance/control layer that decides what is allowed to touch GitHub. Early-stage and ambitious; treat the contribarena.org leaderboard as a live signal, not a stabilised benchmark.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

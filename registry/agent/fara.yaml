@@ -6,17 +6,17 @@ repo_url: https://github.com/microsoft/fara
 license: MIT
 primary_language: Python
 tagline: 'Fara-7B: An Efficient Agentic Model for Computer Use'
-description: |-
-  Fara — Fara-7B: An Efficient Agentic Model for Computer Use. Upstream maintainer: microsoft.
+description: 'Fara — Fara-7B: An Efficient Agentic Model for Computer Use. Upstream maintainer: microsoft.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: institution
+  type: company
   name: microsoft
-origin_country: null
+origin_country: US
 model_agnostic_score: 3
-sovereignty_notes: microsoft (institution-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Microsoft (company, US — Microsoft Research, project page at aka.ms/msaif/fara) publishes microsoft/fara under MIT as the Fara-7B agentic computer-use stack: the 7B model on HuggingFace (`microsoft/Fara-7b`) and Azure Foundry, the WebTailBench V2 (609 tasks) and CUAVerifierBench datasets, the WebEval benchmark library and the MMRubricAgent Universal Verifier (a multimodal rubric-grounded `gpt-5.2`+`o4-mini` ensemble). Model-agnostic 1: the headline artefact is a specific 7B model with a fixed verifier ensemble — the benchmark harness is portable, but the model and the verifier-of-record are single-primary. Note: README fetched via raw.githubusercontent.com because the microsoft GitHub org enforces SAML SSO; `gh api` was rejected with 403.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - core

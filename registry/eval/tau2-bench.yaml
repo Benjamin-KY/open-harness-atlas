@@ -7,17 +7,17 @@ homepage: https://www.taubench.com
 license: MIT
 primary_language: Python
 tagline: 'τ-Bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains'
-description: |-
-  Tau2 Bench — τ-Bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains. Upstream maintainer: sierra-research.
+description: 'Tau2 Bench — τ-Bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains. Upstream maintainer: sierra-research.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: ga
 maintainer:
-  type: institution
+  type: company
   name: sierra-research
-origin_country: null
+origin_country: US
 model_agnostic_score: 3
-sovereignty_notes: sierra-research (institution-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Sierra (US AI company) maintains τ-bench under MIT; the README covers τ-bench, τ²-bench, τ³-bench and the new τ-Voice/τ-Knowledge multimodal evaluations with the live leaderboard at taubench.com. Model-agnostic 4 — the harness is structured around pluggable model adapters so any provider that meets the tool-agent contract can be benchmarked without code drift. Curator-reviewed; kept as a reference agent eval surface that the field treats as a canonical baseline.
 harness_paradigm_alignment: partial
 adjacent_to:
 - capbencher

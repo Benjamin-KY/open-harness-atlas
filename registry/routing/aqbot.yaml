@@ -7,17 +7,17 @@ homepage: https://app.aqbot.top
 license: AGPL-3.0-only
 primary_language: TypeScript
 tagline: ️ 轻量级高性能跨平台AI对话 + AI网关桌面客户端 | Lightweight, high-performance cross-platform AI dialogue + AI gateway desktop client
-description: |-
-  Aqbot — ️ 轻量级高性能跨平台AI对话 + AI网关桌面客户端 | Lightweight, high-performance cross-platform AI dialogue + AI gateway desktop client. Upstream maintainer: AQBot-Desktop.
+description: 'Aqbot — ️ 轻量级高性能跨平台AI对话 + AI网关桌面客户端 | Lightweight, high-performance cross-platform AI dialogue + AI gateway desktop client. Upstream maintainer: AQBot-Desktop.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: community
   name: AQBot-Desktop
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: AQBot-Desktop (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'AQBot-Desktop (community organisation; AGPL-3.0 — strong copyleft requires source disclosure for hosted deployments). CN origin, Chinese-language primary. Local-first desktop client with multi-provider routing, MCP tools, sqlite-vec knowledge base, and an embedded local API gateway that exposes OpenAI Chat/Responses + Claude native + Gemini native endpoints. MAS=3 — multi-provider via OpenAI-compatible adapters; local-weights via configurable Base URL. Harness alignment partial: tool-permission UI (standard / auto-accept / full access) provides a policy_router surface, plus workdir sandbox checks and a per-session approval/cost panel.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

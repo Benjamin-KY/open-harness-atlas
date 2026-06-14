@@ -7,17 +7,17 @@ homepage: https://rewardharness.com
 license: Apache-2.0
 primary_language: Python
 tagline: Self-evolving agentic reward framework for image-editing evaluation — 47.4% on EditReward-Bench from only 100 preference demos, no reward-model training.
-description: |-
-  Reward Harness — Self-evolving agentic reward framework for image-editing evaluation — 47.4% on EditReward-Bench from only 100 preference demos, no reward-model training. arXiv 2605.08703. Upstream maintainer: TIGER-AI-Lab.
+description: 'Reward Harness — Self-evolving agentic reward framework for image-editing evaluation — 47.4% on EditReward-Bench from only 100 preference demos, no reward-model training. arXiv 2605.08703. Upstream maintainer: TIGER-AI-Lab.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
-  type: company
+  type: institution
   name: TIGER-AI-Lab
-origin_country: null
+origin_country: CA
 model_agnostic_score: 3
-sovereignty_notes: TIGER-AI-Lab (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'TIGER-AI-Lab (institution-maintained, Wenhu Chen''s TIGER Lab at the University of Waterloo); OSS under Apache 2.0, accompanies arXiv 2605.08703 (''RewardHarness: Self-Evolving Agentic Post-Training''). Model-agnostic 3 — Orchestrator (Gemini) + frozen Sub-Agent (Qwen2.5-VL-7B served via vLLM) is a multi-provider design with a first-class local-weights leg (vLLM); the sub-agent is documented as swappable via env-var coverage in the latest CHANGELOG. Reference-quality eval artefact: claims 47.4% on EditReward-Bench from ~100 preference demos with no reward-model training.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

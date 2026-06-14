@@ -7,17 +7,17 @@ homepage: https://arxiv.org/abs/2505.18102
 license: MIT
 primary_language: Python
 tagline: '[ICML 2026] CapBencher toolkit: Give your LLM benchmark a built-in alarm for leakage and gaming'
-description: |-
-  Capbencher — [ICML 2026] CapBencher toolkit: Give your LLM benchmark a built-in alarm for leakage and gaming. Upstream maintainer: ishida-lab.
+description: 'Capbencher — [ICML 2026] CapBencher toolkit: Give your LLM benchmark a built-in alarm for leakage and gaming. Upstream maintainer: ishida-lab.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
-  type: company
+  type: institution
   name: ishida-lab
-origin_country: null
+origin_country: JP
 model_agnostic_score: 3
-sovereignty_notes: ishida-lab (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'ishida-lab is an academic lab (publishes datasets to huggingface.co/ishidalab and a blog under ishida-lab.github.io); MIT-licensed and self-hostable. Catalogued as eval/benchmark because CapBencher is a protocol for capping benchmark accuracy and surfacing contamination/leaderboard-gaming. Model-agnostic 3: the harness loads any HF/local model through standard inference and was demonstrated on multiple frontier models in the ICML 2026 paper. Reference-quality status anchored to arXiv 2505.18102.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

@@ -7,17 +7,17 @@ homepage: https://cloud-apim.github.io/otoroshi-llm-extension/
 license: Apache-2.0
 primary_language: Scala
 tagline: Connect, setup, secure and seamlessly manage LLM models using an Universal/OpenAI compatible API
-description: |-
-  Otoroshi LLM Extension — Connect, setup, secure and seamlessly manage LLM models using an Universal/OpenAI compatible API. Upstream maintainer: cloud-apim.
+description: 'Otoroshi LLM Extension — Connect, setup, secure and seamlessly manage LLM models using an Universal/OpenAI compatible API. Upstream maintainer: cloud-apim.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: cloud-apim
-origin_country: null
+origin_country: FR
 model_agnostic_score: 4
-sovereignty_notes: cloud-apim (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Cloud APIM is a French commercial company (cloud-apim.github.io) building the Apache-2.0 LLM extension for the open-source MAIF Otoroshi gateway. Catalogued as routing/llm-gateway because the extension is a provider-swap target with unified OpenAI-compatible API, load balancing, fallback, guardrails, vault, audit, and quotas. Model-agnostic 4: 50+ providers including Ollama (local), French/EU sovereign endpoints (OVH, Scaleway, Mistral, Cloud Temple), plus all major commercial APIs.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - a3m-router

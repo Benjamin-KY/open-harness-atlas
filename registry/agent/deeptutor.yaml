@@ -7,17 +7,17 @@ homepage: http://arxiv.org/abs/2604.26962
 license: Apache-2.0
 primary_language: Python
 tagline: 'DeepTutor: Agent-native, Open-sourced Personalized Tutoring.'
-description: |-
-  Deep Tutor — DeepTutor: Agent-native, Open-sourced Personalized Tutoring. https://deeptutor.info/. Upstream maintainer: HKUDS.
+description: 'Deep Tutor — DeepTutor: Agent-native, Open-sourced Personalized Tutoring. https://deeptutor.info/. Upstream maintainer: HKUDS.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: institution
   name: HKUDS
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: HKUDS (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: HKUDS — University of Hong Kong Data Science Lab (academic institution); Apache-2.0. CN origin (Hong Kong SAR). MAS=3 conservative default; the tutoring agent supports multiple model backends but the README does not enumerate Ollama/vLLM paths so 3 is the safe call. Harness alignment partial — agent-orchestration framework wrapping retrieval and a multi-step tutoring policy, but no explicit output_contract enforcement against pedagogical rules.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

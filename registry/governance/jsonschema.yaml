@@ -6,10 +6,10 @@ repo_url: https://github.com/mattt/JSONSchema
 license: MIT
 primary_language: Swift
 tagline: A Swift library for working with JSON Schema definitions — especially for AI tool use.
-description: |-
-  Jsonschema — A Swift library for working with JSON Schema definitions — especially for AI tool use. Upstream maintainer: mattt.
+description: 'Jsonschema — A Swift library for working with JSON Schema definitions — especially for AI tool use. Upstream maintainer: mattt.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: community
@@ -22,7 +22,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: none
-sovereignty_notes: mattt (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Mattt (Mattt Thompson) is a single community maintainer (GitHub User owner, well-known Swift OSS author — NSHipster/Alamofire); JSONSchema (MIT) is a Swift 6 / Apple-platform library for declaring JSON Schema draft-2020-12 definitions, optimised for declaring AI tool-use schemas. Model-agnostic 0 — declaration utility with no runtime, no provider abstraction. Catalogued under governance/structured-output because it underpins the output-contract spine slot for Swift-based tool-use surfaces; US origin.
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

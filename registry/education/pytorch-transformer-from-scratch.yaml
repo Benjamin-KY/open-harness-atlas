@@ -6,17 +6,17 @@ repo_url: https://github.com/msmrexe/pytorch-transformer-from-scratch
 license: MIT
 primary_language: Python
 tagline: A complete implementation of the "Attention Is All You Need" Transformer model from scratch using PyTorch.
-description: |-
-  Pytorch Transformer From Scratch — A complete implementation of the "Attention Is All You Need" Transformer model from scratch using PyTorch. This project focuses on building and training a Transformer for neural machine translation (English-to-Italian) on the OpusBooks dataset. Upstream maintainer: msmrexe.
+description: 'Pytorch Transformer From Scratch — A complete implementation of the "Attention Is All You Need" Transformer model from scratch using PyTorch. This project focuses on building and training a Transformer for neural machine translation (English-to-Italian) on the OpusBooks dataset. Upstream maintainer: msmrexe.
 
-  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.
+
+  In the atlas: this is an education resource. The atlas catalogues free, open-licence learning material that builds practitioner literacy in the harness paradigm.'
 maturity: beta
 maintainer:
   type: community
   name: msmrexe
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: msmrexe (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'msmrexe is a single community maintainer (GitHub user); the artefact is a from-scratch PyTorch Transformer (Attention Is All You Need) trained on OpusBooks EN→IT, distributed under MIT and fully self-hostable. Model-agnostic 0 — there is no provider/LLM abstraction; the project IS the model implementation, so the MAS rubric doesn''t apply in a meaningful sense. Catalogued as an education resource: builds practitioner literacy on Transformer internals (multi-head attention, positional encoding, causal masking, Pre-LN), which is foundational to understanding modern harness components.'
 harness_paradigm_alignment: partial
 education_resources:
 - title: Pytorch Transformer From Scratch repository

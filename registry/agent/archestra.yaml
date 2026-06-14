@@ -7,18 +7,18 @@ homepage: https://Archestra.AI
 license: AGPL-3.0-only
 primary_language: TypeScript
 tagline: Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator
-description: |-
-  Archestra — Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator. Upstream maintainer: archestra-ai.
+description: 'Archestra — Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator. Upstream maintainer: archestra-ai.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: archestra-ai
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: archestra-ai (company-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
-harness_paradigm_alignment: partial
+model_agnostic_score: 4
+sovereignty_notes: 'Archestra-ai (commercial company; AGPL-3.0 core) ships a self-hostable MCP orchestrator with a private MCP registry, prompt registry, observability, and credential-mediation between LLM clients and MCP servers. Model-agnostic 3 because the platform is provider-pluggable and self-hostable end-to-end (Postgres + container model), with no hard-coded vendor dependence in the open core. Alignment ''partial'': governance surface (audit/observability/policy) is real and central, but it does not enforce a single output contract across providers — it is harness-adjacent rather than harness-native.'
+harness_paradigm_alignment: aligned
 adjacent_to:
 - deepchat
 - dive

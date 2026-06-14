@@ -7,17 +7,17 @@ homepage: https://langroid.github.io/langroid/
 license: MIT
 primary_language: Python
 tagline: Harness LLMs with Multi-Agent Programming
-description: |-
-  Langroid — Harness LLMs with Multi-Agent Programming. Upstream maintainer: langroid.
+description: 'Langroid — Harness LLMs with Multi-Agent Programming. Upstream maintainer: langroid.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: langroid
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: langroid (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: Langroid is a community-maintained Python multi-agent framework originating from CMU and UW-Madison researchers (Prasad Chalasani et al.), distributed under MIT. The runtime treats provider as a config string (OpenAI, Ollama, any OpenAI-compatible endpoint) with a MCP tool adapter — earning MAS=4 (OpenAI-compatible pluggable, local first-class via Ollama). Documented as in production at multiple companies (e.g., Nullify) and used in peer-reviewed ML4H 2024 work (MALADE pharmacovigilance system); 4k+ stars with active CI and Docker publishing.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

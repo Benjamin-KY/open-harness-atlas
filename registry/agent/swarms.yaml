@@ -7,17 +7,17 @@ homepage: https://docs.swarms.world
 license: Apache-2.0
 primary_language: Python
 tagline: The Multi-Agent Orchestration Framework.
-description: |-
-  Swarms — The Multi-Agent Orchestration Framework. Website: https://swarms.ai. Upstream maintainer: kyegomez.
+description: 'Swarms — The Multi-Agent Orchestration Framework. Website: https://swarms.ai. Upstream maintainer: kyegomez.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: kyegomez
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: kyegomez (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'kyegomez (community-maintained, individual); Apache-2.0 licensed, self-hostable. Model-agnostic score 3: supports multiple commercial LLM providers (OpenAI, Anthropic, and others) with local model support available; local-first is not the primary pitch but is documented. Noteworthy: production multi-agent orchestration framework with multiple topology patterns (sequential, concurrent, hierarchical); very active development with recent push.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - astron-agent

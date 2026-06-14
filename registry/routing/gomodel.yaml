@@ -7,17 +7,17 @@ homepage: https://gomodel.enterpilot.io/
 license: MIT
 primary_language: Go
 tagline: AI gateway written in Go.
-description: |-
-  Go Model — AI gateway written in Go. Lightweight unified OpenAI-compatible API for OpenAI, Anthropic, Gemini, Groq, xAI & Ollama. LiteLLM alternative with observability, guardrails, streaming, costs and usage tracking. Upstream maintainer: ENTERPILOT.
+description: 'Go Model — AI gateway written in Go. Lightweight unified OpenAI-compatible API for OpenAI, Anthropic, Gemini, Groq, xAI & Ollama. LiteLLM alternative with observability, guardrails, streaming, costs and usage tracking. Upstream maintainer: ENTERPILOT.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: ENTERPILOT
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: ENTERPILOT (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'ENTERPILOT (company, enterpilot.io) ships GoModel under MIT as a unified OpenAI-compatible Go gateway with Docker quick-start and a dashboard for observability, token/cost tracking, and guardrails. Model-agnostic 4 is correct: provider is environment-variable config, `/v1/chat/completions`, `/v1/responses`, embeddings, files, batches and passthrough are routed across many commercial backends plus first-class Ollama and vLLM via `OLLAMA_BASE_URL` / `VLLM_BASE_URL`. The README explicitly cautions against passing keys via `-e` in production — good operational signal.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - higress

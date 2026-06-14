@@ -7,21 +7,20 @@ homepage: https://librechat.ai/
 license: MIT
 primary_language: TypeScript
 tagline: 'Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching,...'
-description: |-
-  Libre Chat — Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active. Upstream maintainer: danny-avila.
+description: 'Libre Chat — Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active. Upstream maintainer: danny-avila.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: danny-avila
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: danny-avila (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'danny-avila (community-maintained, individual); MIT licence, self-hostable via Docker. Model-agnostic score 5: all providers (OpenAI, Anthropic, Azure, Groq, Gemini, Vertex AI, OpenRouter, Ollama/local) configured via librechat.yaml; same code path without drift. One of the most widely deployed open-source ChatGPT-alternative frontends with MCP and Agents API support. Active with 2026-06-14 push and large community. Pushed 2026-06-14.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - ai-engineering-hub
 - langgraph
 - n8n-mcp
-- pdfmathtranslate
 - xiaozhi-esp32

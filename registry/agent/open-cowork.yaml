@@ -7,17 +7,17 @@ homepage: https://github.com/OpenCoworkAI/open-cowork
 license: MIT
 primary_language: TypeScript
 tagline: Open-source AI agent desktop app for Windows & macOS.
-description: |-
-  Open Cowork — Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Feishu/Slack integration. Upstream maintainer: OpenCoworkAI.
+description: 'Open Cowork — Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Feishu/Slack integration. Upstream maintainer: OpenCoworkAI.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: OpenCoworkAI
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: OpenCoworkAI (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'OpenCoworkAI (company, GitHub Organization with bilingual EN/中文 README and WeChat/Discord community) ships Open Cowork under MIT as an open-source desktop alternative to Claude Cowork on Windows and macOS. Model-agnostic 3 reflects support for Claude, OpenAI-compatible APIs, and Chinese models (GLM, MiniMax, Kimi) plus OpenRouter; local-weights paths are not pitched first-class. Noteworthy operational flags: VM-level sandbox via WSL2 (Windows) / Lima (macOS), built-in MCP and skill systems, and Feishu/Lark + Slack remote-control integrations. Origin country set to CN based on Feishu/WeChat-first community and Chinese-model first-class support.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - jcode

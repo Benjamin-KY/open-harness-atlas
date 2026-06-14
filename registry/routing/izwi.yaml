@@ -7,17 +7,17 @@ homepage: https://www.izwiai.com
 license: MIT
 primary_language: Rust
 tagline: Voice AI runtime.
-description: |-
-  Izwi — Voice AI runtime. Local first transcription, speaker diarization, TTS, and voice cloning with an OpenAI compatible API. Upstream maintainer: izwi-ai.
+description: 'Izwi — Voice AI runtime. Local first transcription, speaker diarization, TTS, and voice cloning with an OpenAI compatible API. Upstream maintainer: izwi-ai.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
   type: company
   name: izwi-ai
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: izwi-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: izwi-ai (commercial vendor at izwiai.com); MIT Rust stack — desktop app, web UI, CLI and local inference server — for voice AI workflows (TTS, ASR, diarization, alignment, chat) with OpenAI-compatible `/v1` routes for models / chat completions / audio speech / audio transcriptions (preview Responses). Apple Silicon uses Metal; Linux/Windows release builds are CPU; CUDA via Docker profile or source build. Model-agnostic 4 — local-first inference server exposing OpenAI-compatible APIs as the canonical surface, telemetry disabled unless explicitly enabled.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

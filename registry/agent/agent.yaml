@@ -7,17 +7,17 @@ homepage: https://stakpak.dev
 license: Apache-2.0
 primary_language: Rust
 tagline: Ship your code, on autopilot.
-description: |-
-  Agent — Ship your code, on autopilot. An open source agent that lives on your machines 24/7 and keeps your apps running. Upstream maintainer: stakpak.
+description: 'Agent — Ship your code, on autopilot. An open source agent that lives on your machines 24/7 and keeps your apps running. Upstream maintainer: stakpak.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: stakpak
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: stakpak (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Stakpak (commercial vendor at stakpak.dev); Rust/Ratatui DevOps autopilot agent (`stakpak up`/`down`) with secret-substitution so the LLM never sees credentials, Warden network-level guardrails blocking destructive operations, and a Rulebook library for Kubernetes/CI/CD/Terraform tasks. Apache-2.0. Model-agnostic 3 — provider abstraction documented at install time; left at the catalog default pending deeper provider-config review.
 harness_paradigm_alignment: partial
 adjacent_to:
 - deepcode

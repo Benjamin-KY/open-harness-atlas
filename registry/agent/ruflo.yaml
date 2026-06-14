@@ -7,17 +7,17 @@ homepage: https://Cognitum.One
 license: MIT
 primary_language: TypeScript
 tagline: agent meta-harness for Claude.
-description: |-
-  Ruflo — agent meta-harness for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration. Upstream maintainer: ruvnet.
+description: 'Ruflo — agent meta-harness for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration. Upstream maintainer: ruvnet.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: ruvnet
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: ruvnet (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: ruvnet (community individual maintainer on GitHub) — MIT TypeScript/Rust agent meta-harness, formerly known as Claude Flow, self-hostable via `npx ruflo init` with a daemon, MCP server, 98 agents and 33 plugins. Model-agnostic 4 — bundles Claude/GPT/Gemini/Cohere/Ollama via OpenRouter and accepts any OpenAI-compatible endpoint (vLLM, LM Studio, Together, Groq, self-hosted) with local-first ruvLLM/MicroLoRA. Tight integration with Claude Code/Codex CLIs is the primary harness surface, so sovereignty depends on running the local plugins/ruvLLM path rather than the hosted SaaS UI.
 harness_paradigm_alignment: partial
 adjacent_to:
 - anthropic-cybersecurity-skills

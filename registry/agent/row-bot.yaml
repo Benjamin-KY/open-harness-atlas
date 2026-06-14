@@ -7,17 +7,17 @@ homepage: https://row-bot.ai
 license: Apache-2.0
 primary_language: Python
 tagline: Row-Bot - Personal AI Sovereignty.
-description: |-
-  Row Bot — Row-Bot - Personal AI Sovereignty. A local-first AI assistant with integrated tools, a personal knowledge graph, voice, vision, shell, browser automation, scheduled tasks, health tracking, and messaging channels. Run locally via Ollama or add opt-in cloud models. Your data stays on your machine. Upstream maintainer: siddsachar.
+description: 'Row Bot — Row-Bot - Personal AI Sovereignty. A local-first AI assistant with integrated tools, a personal knowledge graph, voice, vision, shell, browser automation, scheduled tasks, health tracking, and messaging channels. Run locally via Ollama or add opt-in cloud models. Your data stays on your machine. Upstream maintainer: siddsachar.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: siddsachar
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: siddsachar (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'siddsachar is a single community maintainer (GitHub User owner) shipping Row-Bot (formerly Thoth) under Apache-2.0 — a local-first desktop AI assistant built on a LangGraph ReAct agent with a personal knowledge graph (10 entity types, 67 typed relations), 30+ core tools (search, Gmail/Calendar, filesystem, shell, browser automation, MCP, Developer Studio with Docker sandbox, Designer Studio for decks/docs), workflows, voice channels (Telegram/WhatsApp/Discord/Slack/SMS), and explicit Dream Cycle memory refinement. Model-agnostic 4 — Ollama (local first-class), OpenAI/Anthropic/Google/xAI/MiniMax/OpenRouter/Atlas/Ollama Cloud, plus OpenAI-compatible LM Studio/vLLM/llama.cpp/LocalAI/LiteLLM/SGLang/oMLX — all selectable per-thread/per-workflow with explicit capability labels and chat-only fallback. Strong sovereignty posture: no Row-Bot-hosted inference, no telemetry, OS-credential-store key storage.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

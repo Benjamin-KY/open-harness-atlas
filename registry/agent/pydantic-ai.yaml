@@ -7,17 +7,17 @@ homepage: https://ai.pydantic.dev
 license: MIT
 primary_language: Python
 tagline: AI Agent Framework, the Pydantic way
-description: |-
-  Pydantic AI — AI Agent Framework, the Pydantic way. Upstream maintainer: pydantic.
+description: 'Pydantic AI — AI Agent Framework, the Pydantic way. Upstream maintainer: pydantic.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: pydantic
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: pydantic (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: Pydantic (company, UK; pydantic.dev / Logfire) publishes Pydantic AI under MIT as a Python agent framework with first-class typing, agent capabilities, MCP / A2A / UI integrations, human-in-the-loop tool approval, durable execution, streamed structured outputs, and a Graph API. Model-agnostic 4 is supported by the README's exhaustive provider list (OpenAI, Anthropic, Gemini, DeepSeek, Grok, Cohere, Mistral, Perplexity, plus Azure / Bedrock / Vertex / Ollama / LiteLLM / Groq / OpenRouter / Together / Fireworks / Cerebras / HF / GitHub / Heroku / Vercel / Nebius / OVHcloud / Alibaba / SambaNova) and explicit custom-model extension. Tight Logfire OTel integration is opt-in; the agent framework runs against any OTel-compatible backend.
 harness_paradigm_alignment: partial
 adjacent_to:
 - agent

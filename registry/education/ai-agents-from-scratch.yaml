@@ -1,0 +1,30 @@
+id: ai-agents-from-scratch
+name: AI Agents From Scratch
+category: education
+subcategory: agent-framework
+repo_url: https://github.com/pguso/ai-agents-from-scratch
+license: MIT
+primary_language: JavaScript
+tagline: Demystify AI agents by building them yourself.
+description: 'AI Agents From Scratch — Demystify AI agents by building them yourself. Local LLMs, no black boxes, real understanding of function calling, memory, and ReAct patterns. Upstream maintainer: pguso.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: community
+  name: pguso
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 'pguso (community / individual author) ships AI Agents From Scratch under MIT as a JavaScript / node-llama-cpp tutorial that walks readers from raw LLM calls to ReAct agents using local models, with a companion site at agentsfromscratch.com and a parallel Python edition linked from the README. Model-agnostic 3 is fair: local LLMs via node-llama-cpp are first-class, with an optional OpenAI chapter for comparison. Best treated as `registry/education/` content (tutorial subcategory) rather than an agent framework — the explicit framing is ''no frameworks, build it yourself''.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- goose
+- gptme
+- harness-sdk
+- langgraph
+education_resources:
+- title: AI Agents From Scratch
+  url: https://github.com/pguso/ai-agents-from-scratch
+  type: tutorial
+  free: true

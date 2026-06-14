@@ -7,21 +7,20 @@ homepage: https://github.com/melody-ling-L/judgebuddy
 license: MIT
 primary_language: HTML
 tagline: 第一个聚焦"简历改写诚实度"的中文 LLM benchmark：20 真实脱敏简历 × 3 模型 × 4 评分维度
-description: |-
-  Eval Resume — 第一个聚焦"简历改写诚实度"的中文 LLM benchmark：20 真实脱敏简历 × 3 模型 × 4 评分维度. Upstream maintainer: melody-ling-L.
+description: 'Eval Resume — 第一个聚焦"简历改写诚实度"的中文 LLM benchmark：20 真实脱敏简历 × 3 模型 × 4 评分维度. Upstream maintainer: melody-ling-L.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: melody-ling-L
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: melody-ling-L (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 2
+sovereignty_notes: 'melody-ling-L is an individual community maintainer; MIT-licensed and self-hostable via promptfoo. Catalogued as eval/llm-eval because the project is a small but well-designed Chinese benchmark measuring resume-rewriting honesty across four scoring dimensions, with prompt-variant ablations and meta-eval calibration via the companion JudgeBuddy tool. Model-agnostic 2: evaluates three commercial frontier models (GPT-5.4, Claude Sonnet 4.6, Gemini 3.1 Pro) with no documented local-weights pathway.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - llm-eval-harness
 - llm-eval-simple
-- llm-pruning-collection
 - lm-evaluation-harness
 - nexa-gauge

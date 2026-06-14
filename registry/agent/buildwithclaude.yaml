@@ -7,17 +7,17 @@ homepage: https://www.buildwithclaude.com
 license: MIT
 primary_language: TypeScript
 tagline: A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw
-description: |-
-  Buildwithclaude — A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw. Upstream maintainer: davepoon.
+description: 'Buildwithclaude — A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw. Upstream maintainer: davepoon.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: davepoon
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: davepoon (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: Single-maintainer (davepoon; MIT) curated marketplace of plugins, agents, commands, hooks, and skills for Anthropic's Claude Code CLI — effectively an awesome-list with a companion web UI. Reclassified to education because the artefact is a discovery catalogue of third-party assets, not an agent runtime itself. Model-agnostic 0 because every catalogued asset targets Claude Code as its execution environment; the marketplace has no path off the Anthropic runtime. Harness alignment 'partial' is generous — the marketplace itself ships none of the five components.
 harness_paradigm_alignment: partial
 adjacent_to:
 - deep-research

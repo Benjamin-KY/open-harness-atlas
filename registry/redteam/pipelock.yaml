@@ -7,17 +7,17 @@ homepage: https://pipelab.org
 license: Apache-2.0
 primary_language: Go
 tagline: Open-source AI agent firewall for MCP security and agent egress.
-description: |-
-  Pipelock — Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent. Upstream maintainer: luckyPipewrench.
+description: 'Pipelock — Open-source AI agent firewall for MCP security and agent egress. Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection, and emits mediator-signed action receipts: verifiable audit evidence from outside the agent. Upstream maintainer: luckyPipewrench.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: ga
 maintainer:
   type: community
   name: luckyPipewrench
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: luckyPipewrench (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: luckyPipewrench / Pipelab (company; pipelab.org) ships the catalogued Pipelock OSS core under Apache-2.0 (a separate `enterprise/` tree carries the non-OSI ELv2; only the Apache-2.0 core is catalogued per §1.1). Model-agnostic 3 is correct because Pipelock sits at the network boundary and inspects the actual content crossing mediated transports rather than calling models. Policy-router `partial` (62 credential and 29 injection patterns with 6-pass normalisation enforce content-aware allow / deny before egress) and audit-log `partial` (mediator-signed action receipts from outside the agent process give third-party-verifiable evidence). OSSF Scorecard + Best Practices Silver + SLSA + SBOM attestations indicate strong supply-chain hygiene.
 harness_paradigm_alignment: partial
 adjacent_to:
 - adrian

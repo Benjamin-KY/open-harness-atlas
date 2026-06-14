@@ -7,17 +7,17 @@ homepage: https://www.simular.ai
 license: Apache-2.0
 primary_language: Python
 tagline: 'Agent S: an open agentic framework that uses computers like a human'
-description: |-
-  Agent S — Agent S: an open agentic framework that uses computers like a human. Upstream maintainer: simular-ai.
+description: 'Agent S — Agent S: an open agentic framework that uses computers like a human. Upstream maintainer: simular-ai.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: simular-ai
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: simular-ai (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'simular-ai (company-maintained, AI company); OSS core is Apache-2.0 and self-hostable. MAS 3: multi-provider support including local-weights options per the agent framework design; GUI-based computer use is model-agnostic in the agent loop. Open agentic framework enabling AI agents to interact with computers as a human would via GUI; active development through 2026-05-13.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - cli

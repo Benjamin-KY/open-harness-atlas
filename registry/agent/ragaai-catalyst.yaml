@@ -7,21 +7,20 @@ homepage: https://catalyst.raga.ai/
 license: Apache-2.0
 primary_language: Python
 tagline: Python SDK for Agent AI Observability, Monitoring and Evaluation Framework.
-description: |-
-  Raga AI Catalyst — Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view. Upstream maintainer: raga-ai-hub.
+description: 'Raga AI Catalyst — Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like agent, llm and tools tracing, debugging multi-agentic system, self-hosted dashboard and advanced analytics with timeline and execution graph view. Upstream maintainer: raga-ai-hub.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: raga-ai-hub
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: raga-ai-hub (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: raga-ai-hub is a company-maintained organization (RagaAI, professional AI platform with LinkedIn/Discord/X presence); the OSS core is Apache-2.0-licensed with a self-hosted dashboard. Model-agnostic score of 3 is supported by the platform's multi-LLM tracing and evaluation features covering OpenAI-compatible providers. Agent/agentic category is justified by the README's multi-agent system debugging, timeline visualization, and guardrail management surfaced alongside observability features.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph
 - spring-ai-alibaba
-- tidb
 - valuecell
 - zeroclaw

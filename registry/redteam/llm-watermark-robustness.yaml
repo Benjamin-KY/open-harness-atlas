@@ -6,17 +6,17 @@ repo_url: https://github.com/rexcoleman/llm-watermark-robustness
 license: MIT
 primary_language: Python
 tagline: 'FP-18: LLM Watermark Robustness Under Adversarial Paraphrasing'
-description: |-
-  LLM Watermark Robustness — FP-18: LLM Watermark Robustness Under Adversarial Paraphrasing. Upstream maintainer: rexcoleman.
+description: 'LLM Watermark Robustness — FP-18: LLM Watermark Robustness Under Adversarial Paraphrasing. Upstream maintainer: rexcoleman.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: rexcoleman
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: rexcoleman (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Rex Coleman (US community researcher) ships llm-watermark-robustness under MIT with a CITATION.cff, blog post, FINDINGS.md and EXPERIMENTAL_DESIGN.md backing the methodology; the project is the code companion for a published analysis of watermark robustness under adversarial paraphrasing. Model-agnostic 2 — the experiment runs against the Kirchenbauer watermarking pipeline and Claude Haiku as the paraphrase attacker, so the artefact is intrinsically multi-provider-commercial-API rather than provider-agnostic. Curator-reviewed; kept as a small but reference-quality redteam study with reproducible design.
 harness_paradigm_alignment: partial
 adjacent_to:
 - aeromind-paper

@@ -7,17 +7,17 @@ homepage: https://claw-x.com
 license: MIT
 primary_language: TypeScript
 tagline: ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents.
-description: |-
-  Claw X — ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. China website is https://clawx.com.cn. Upstream maintainer: ValueCell-ai.
+description: 'Claw X — ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents. It turns CLI-based AI orchestration into a desktop experience without using the terminal. China website is https://clawx.com.cn. Upstream maintainer: ValueCell-ai.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: ValueCell-ai
-origin_country: null
+origin_country: CN
 model_agnostic_score: 3
-sovereignty_notes: ValueCell-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: ValueCell-ai is a company-backed Organization (China website clawx.com.cn, enterprise-edition contact public@valuecell.ai) shipping ClawX under MIT — an Electron+React desktop client that embeds the OpenClaw agent runtime with unified multi-provider configuration. Model-agnostic 3 — comes pre-configured with multi-provider model settings and inherits OpenClaw's provider abstraction (multi-provider including local options when configured). CN-origin, with native Windows/macOS/Linux builds and i18n covering EN/zh-CN/ja/ru.
 harness_paradigm_alignment: partial
 adjacent_to:
 - eliza

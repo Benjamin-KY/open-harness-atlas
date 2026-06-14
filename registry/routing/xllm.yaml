@@ -7,17 +7,17 @@ homepage: https://xllm-ai.com/
 license: Apache-2.0
 primary_language: C++
 tagline: A high-performance inference engine for LLM, VLM, DiT and REC models, optimized for diverse AI accelerators.
-description: |-
-  Xllm — A high-performance inference engine for LLM, VLM, DiT and REC models, optimized for diverse AI accelerators. Upstream maintainer: jd-opensource.
+description: 'Xllm — A high-performance inference engine for LLM, VLM, DiT and REC models, optimized for diverse AI accelerators. Upstream maintainer: jd-opensource.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: jd-opensource
-origin_country: null
+origin_country: CN
 model_agnostic_score: 3
-sovereignty_notes: jd-opensource (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'jd-opensource (company-maintained; JD.com/京东, major Chinese technology company) publishes xLLM under Apache-2.0 licence; the C++-based inference engine is self-hostable. Model-agnostic score 3 is confirmed: README shows support for diverse model families (DeepSeek, MiniMax, Qwen, Llama) and accelerators (NVIDIA/AMD) with OpenAI-compatible API. Technical report arXiv 2510.14686 and day-0 model support cadence confirm quality. Note: PRC-domiciled corporate maintainer; no export-control concerns for Apache-2.0 inference engine code, but regulated-sector deployments should audit supply-chain provenance.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

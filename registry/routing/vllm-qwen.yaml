@@ -6,20 +6,19 @@ repo_url: https://github.com/hec-ovi/vllm-qwen
 license: Unlicense
 primary_language: Python
 tagline: vLLM + Qwen3.6-27B (BF16) OpenAI-compatible inference server on AMD Strix Halo (Ryzen AI Max+ 395, gfx1151).
-description: |-
-  Vllm Qwen — vLLM + Qwen3.6-27B (BF16) OpenAI-compatible inference server on AMD Strix Halo (Ryzen AI Max+ 395, gfx1151). Vision input, 256K context, /v1/responses with separated reasoning, via TheRock ROCm. Upstream maintainer: hec-ovi.
+description: 'Vllm Qwen — vLLM + Qwen3.6-27B (BF16) OpenAI-compatible inference server on AMD Strix Halo (Ryzen AI Max+ 395, gfx1151). Vision input, 256K context, /v1/responses with separated reasoning, via TheRock ROCm. Upstream maintainer: hec-ovi.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: hec-ovi
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: hec-ovi (community-maintained); OSS core is The Unlicense and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'hec-ovi (community / individual) publishes vllm-qwen under the Unlicense — a thin Docker Compose wrapper that builds vLLM from source against a TheRock ROCm nightly to serve `Qwen/Qwen3.6-27B` (BF16, native 256K context, vision) on AMD Ryzen AI Max+ 395 ''Strix Halo'' (gfx1151, 128 GB UMA). Model-agnostic 4 reflects an OpenAI-compatible local-first endpoint that drops into anything OpenAI-shaped, though the only-supported configuration is the specific Strix Halo hardware. Honest disclosure flags: README links to a sibling `llama-qwen` repo with ~75% faster decode but no vision, and documents three known upstream vLLM tool-parser bugs.'
 harness_paradigm_alignment: partial
 adjacent_to:
-- flashinfer
 - goinfer
 - litellm
 - llm-server

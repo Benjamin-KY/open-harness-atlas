@@ -6,17 +6,17 @@ repo_url: https://github.com/wanxingai/LightAgent
 license: Apache-2.0
 primary_language: Python
 tagline: 'LightAgent: Lightweight AI agent framework with memory, mcp & skill.'
-description: |-
-  Light Agent — LightAgent: Lightweight AI agent framework with memory, mcp & skill. Supports multi-agent collaboration, self-learning, and major LLMs (OpenAI/DeepSeek/Qwen). Open-source with MCP/SSE protocol integration. Upstream maintainer: wanxingai.
+description: 'Light Agent — LightAgent: Lightweight AI agent framework with memory, mcp & skill. Supports multi-agent collaboration, self-learning, and major LLMs (OpenAI/DeepSeek/Qwen). Open-source with MCP/SSE protocol integration. Upstream maintainer: wanxingai.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: wanxingai
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: wanxingai (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: CN
+model_agnostic_score: 4
+sovereignty_notes: LightAgent is shipped by the company-backed wanxingai Organization (Apache-2.0, PyPI `lightagent`) with documentation on the SUFE AI-FLM Lab GitHub Pages site and an arXiv preprint (2509.09292) — a lightweight Python agentic framework with skills, ToT reasoning, MCP (stdio+SSE), LightSwarm multi-agent orchestration, LightFlow workflow orchestration, mem0 memory, and OpenAI-streaming-compatible output. Model-agnostic 4 — explicitly OpenAI-compatible-endpoint pluggable across OpenAI, OpenRouter, Zhipu/Baichuan/StepFun/DeepSeek/Qwen and local vLLM/llama.cpp. CN origin.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

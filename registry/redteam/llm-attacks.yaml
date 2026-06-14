@@ -7,17 +7,17 @@ homepage: https://ai-security-research-group.github.io/LLM-Attacks/
 license: GPL-3.0-only
 primary_language: Multiple
 tagline: Comprehensive taxonomy of AI security vulnerabilities, LLM adversarial attacks, prompt injection techniques, and machine learning security research.
-description: |-
-  LLM Attacks — Comprehensive taxonomy of AI security vulnerabilities, LLM adversarial attacks, prompt injection techniques, and machine learning security research. Covers 71+ attack vectors including model poisoning, agentic AI exploits, and privacy breaches. Upstream maintainer: AI-Security-Research-Group.
+description: 'LLM Attacks — Comprehensive taxonomy of AI security vulnerabilities, LLM adversarial attacks, prompt injection techniques, and machine learning security research. Covers 71+ attack vectors including model poisoning, agentic AI exploits, and privacy breaches. Upstream maintainer: AI-Security-Research-Group.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
-  type: institution
+  type: community
   name: AI-Security-Research-Group
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: AI-Security-Research-Group (institution-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'AI-Security-Research-Group is a community-collective GitHub Organization (not a recognised academic or standards institution); the artefact is a GPL-3.0 markdown taxonomy of 71+ LLM/AI attack vectors with linked per-attack notes (agentic exploitation, RAG poisoning, prompt injection, model extraction, etc.). Model-agnostic 0 — there is no runtime or provider abstraction; it is pure reference text. Borderline scope: catalogued under redteam but better characterised as an awareness/reference index (closer to OWASP-style enumeration than to an executable probe harness) — curators may wish to recategorise to education in a later pass.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - llm-jailbreak-taxonomy

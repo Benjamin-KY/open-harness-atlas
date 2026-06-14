@@ -1,27 +1,26 @@
 id: figma-context-mcp
 name: Figma Context MCP
 category: agent
-subcategory: mcp-host
+subcategory: mcp-server
 repo_url: https://github.com/GLips/Figma-Context-MCP
 homepage: https://www.framelink.ai/
 license: MIT
 primary_language: TypeScript
 tagline: MCP server to provide Figma layout information to AI coding agents like Cursor
-description: |-
-  Figma Context MCP — MCP server to provide Figma layout information to AI coding agents like Cursor. Upstream maintainer: GLips.
+description: 'Figma Context MCP — MCP server to provide Figma layout information to AI coding agents like Cursor. Upstream maintainer: GLips.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: GLips
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: GLips (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: GLips / Framelink (commercial vendor at framelink.ai); MIT-licensed MCP server (`figma-developer-mcp` on npm) that translates the Figma API into a layout-context tool for MCP hosts like Cursor. Model-agnostic 3 — neutral on the LLM side, since context selection happens server-side and is consumed by whatever model the host runs. No own routing/eval/governance surface beyond the tool contract.
 harness_paradigm_alignment: partial
 adjacent_to:
 - headroom
 - ida-pro-mcp
-- kubeshark
 - lamda
 - langgraph

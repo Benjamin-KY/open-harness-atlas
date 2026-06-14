@@ -6,17 +6,17 @@ repo_url: https://github.com/petmal/MindTrial
 license: MPL-2.0
 primary_language: Go
 tagline: 'MindTrial: Evaluate and compare AI language models (LLMs) on text-based tasks with optional file/image attachments and tool use.'
-description: |-
-  Mind Trial — MindTrial: Evaluate and compare AI language models (LLMs) on text-based tasks with optional file/image attachments and tool use. Supports multiple providers (OpenAI, Google, Anthropic, DeepSeek, Mistral AI, xAI, Alibaba, Moonshot AI, OpenRouter), custom tasks in YAML, and HTML/CSV/JSON reports. Upstream maintainer: petmal.
+description: 'Mind Trial — MindTrial: Evaluate and compare AI language models (LLMs) on text-based tasks with optional file/image attachments and tool use. Supports multiple providers (OpenAI, Google, Anthropic, DeepSeek, Mistral AI, xAI, Alibaba, Moonshot AI, OpenRouter), custom tasks in YAML, and HTML/CSV/JSON reports. Upstream maintainer: petmal.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: petmal
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: petmal (community-maintained); OSS core is Mozilla Public License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 2
+sovereignty_notes: 'petmal (individual maintainer; MPL-2.0 — file-level copyleft). Lightweight Go-based eval runner with LLM-judge or exact-match validation, sandboxed tool execution, and interactive TUI. MAS=2 — multi-provider but limited to commercial APIs (OpenAI, Google, Anthropic, DeepSeek, Mistral, xAI, Alibaba, Moonshot) plus OpenRouter; local-weights paths via OpenAI-compatible endpoints possible but not documented. Harness alignment partial: deterministic output_contract via exact match / structured JSON; no policy_router or refusal FSM.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

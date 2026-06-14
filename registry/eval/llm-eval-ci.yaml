@@ -7,17 +7,17 @@ homepage: https://omargnagy.com/work/llm-eval-ci
 license: MIT
 primary_language: Python
 tagline: 'Catch LLM quality regressions in CI: a golden-set regression gate with calibrated graders (grounding, hallucination, tool-call, LLM-judge) that fails the PR when answer quality drops.'
-description: |-
-  LLM Eval Ci — Catch LLM quality regressions in CI: a golden-set regression gate with calibrated graders (grounding, hallucination, tool-call, LLM-judge) that fails the PR when answer quality drops. Upstream maintainer: omarnagy91.
+description: 'LLM Eval Ci — Catch LLM quality regressions in CI: a golden-set regression gate with calibrated graders (grounding, hallucination, tool-call, LLM-judge) that fails the PR when answer quality drops. Upstream maintainer: omarnagy91.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: omarnagy91
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: omarnagy91 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Single-maintainer community project (omarnagy91) under MIT; ~667 LOC Python CI gate that scaffolds a golden regression set from production traces, runs grouped graders (facts, hallucination traps, relevance, tool calls, format, rubric LLM-judge), and exits non-zero on regression vs baseline. Model-agnostic 3 default — the rubric judge can be swapped behind config; provider coverage is not the project's pitch. Useful as a lean PR-time eval gate; pair with a heavier eval suite for coverage.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

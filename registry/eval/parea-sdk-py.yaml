@@ -7,21 +7,19 @@ homepage: https://docs.parea.ai/sdk/python
 license: Apache-2.0
 primary_language: Python
 tagline: Python SDK for experimenting, testing, evaluating & monitoring LLM-powered applications - Parea AI ()
-description: |-
-  Parea Sdk Py — Python SDK for experimenting, testing, evaluating & monitoring LLM-powered applications - Parea AI (). Upstream maintainer: parea-ai.
+description: 'Parea Sdk Py — Python SDK for experimenting, testing, evaluating & monitoring LLM-powered applications - Parea AI (). Upstream maintainer: parea-ai.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: company
   name: parea-ai
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: parea-ai (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: parea-ai (company) publishes parea-sdk-py under Apache-2.0 as the open client SDK for the Parea AI evaluation/observability platform. Model-agnostic 3 reflects the README's coverage of OpenAI, Anthropic, and integrations into LangChain / Instructor / DSPy / LiteLLM (which itself routes to local backends), without the SDK pinning a provider. Note that the richest workflows assume a Parea AI hosted account/API key; the SDK is OSS and self-hostable for its trace/eval primitives but the managed UI is a paid service — only the OSS SDK is the catalogued artefact.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness
 - prompty
-- python-sdk
 - qa-metrics
-- valor

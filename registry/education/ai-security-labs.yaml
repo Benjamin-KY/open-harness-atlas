@@ -1,0 +1,29 @@
+id: ai-security-labs
+name: AI Security LABS
+category: education
+subcategory: model-stealing
+repo_url: https://github.com/alekhakumarswain/AI-SECURITY-LABS
+homepage: https://ai-security-labs.vercel.app
+license: MIT
+primary_language: HTML
+tagline: An advanced, interactive educational platform focused on AI system vulnerabilities, attack vectors, and offensive security methodologies.
+description: 'AI Security LABS — An advanced, interactive educational platform focused on AI system vulnerabilities, attack vectors, and offensive security methodologies. [Prompt Injection, Model Evasion, Data Poisoning, Agent Hijacking]. Upstream maintainer: alekhakumarswain.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: community
+  name: alekhakumarswain
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: alekhakumarswain (individual maintainer; MIT). Free OSS curriculum platform for AI-security education — modular YAML-defined courses on adversarial prompt injection, data poisoning, model evasion, model stealing, agent hijacking, and AI quality testing. Pre-configured for Vercel edge deployment. MAS=3 is not particularly meaningful for a course platform (no model invocations in the curriculum runner). Harness alignment partial — not a runtime; pure education resource. Low star count (0) but recent and in-scope per §8 education clause (free OSS course with at least one free education resource).
+harness_paradigm_alignment: partial
+adjacent_to:
+- pyrit
+- stealix
+education_resources:
+- title: AI Security LABS
+  url: https://github.com/alekhakumarswain/AI-SECURITY-LABS
+  type: tutorial
+  free: true

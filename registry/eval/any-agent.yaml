@@ -7,17 +7,17 @@ homepage: https://docs.mozilla.ai/any-agent
 license: Apache-2.0
 primary_language: Python
 tagline: A single interface to use and evaluate different agent frameworks
-description: |-
-  Any Agent — A single interface to use and evaluate different agent frameworks. Upstream maintainer: mozilla-ai.
+description: 'Any Agent — A single interface to use and evaluate different agent frameworks. Upstream maintainer: mozilla-ai.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: ga
 maintainer:
   type: company
   name: mozilla-ai
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: mozilla-ai (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 2
+sovereignty_notes: Mozilla.ai (commercial vendor mozilla.ai, Mozilla-backed startup); Apache-2.0 evaluation harness providing a single Python surface (`AnyAgent.create`) to run and evaluate seven agent frameworks (TinyAgent, Google ADK, LangChain, LlamaIndex, OpenAI Agents SDK, Smolagents, Agno). Now in soft deprecation in favour of `mozilla-ai-tinyagent` but still maintained for cross-framework eval use. Model-agnostic 2 — multi-provider via the underlying frameworks (Mistral, OpenAI, etc.) but no first-class local-weights surface of its own.
 harness_paradigm_alignment: partial
 adjacent_to:
 - benchclaw

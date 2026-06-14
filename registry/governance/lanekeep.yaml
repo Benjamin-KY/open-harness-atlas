@@ -6,23 +6,23 @@ repo_url: https://github.com/algorismo-au/lanekeep
 license: Apache-2.0
 primary_language: Shell
 tagline: Governance guardrails and insights for AI coding agents
-description: |-
-  Lanekeep — Governance guardrails and insights for AI coding agents. Upstream maintainer: algorismo-au.
+description: 'Lanekeep — Governance guardrails and insights for AI coding agents. Upstream maintainer: algorismo-au.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: algorismo-au
 origin_country: null
-model_agnostic_score: 3
+model_agnostic_score: 0
 five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: algorismo-au (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Algorismo (company, Australia; algorismo.com) ships LaneKeep under Apache-2.0 as bash + jq + socat guardrails that intercept Claude Code CLI tool calls and enforce deterministic rules locally with zero network calls. Model-agnostic 1 reflects the README's current scope (Claude Code on Linux / macOS / Windows-WSL only; 'other platforms coming soon'). Policy-router `partial` for the 12 deterministic evaluators + optional semantic layer, and audit-log `partial` for the per-decision local log with matched-rule reason, agent-memory view, and built-in NIST / OWASP / CWE / ATT&CK compliance tags.
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

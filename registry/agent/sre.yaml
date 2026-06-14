@@ -7,20 +7,19 @@ homepage: https://smythos.com
 license: MIT
 primary_language: TypeScript
 tagline: The SmythOS Runtime Environment (SRE) is an open-source, cloud-native runtime for agentic AI.
-description: |-
-  Sre — The SmythOS Runtime Environment (SRE) is an open-source, cloud-native runtime for agentic AI. Secure, modular, and , it lets developers build, run, and manage intelligent agents across local, cloud, and edge environments. Upstream maintainer: SmythOS.
+description: 'Sre — The SmythOS Runtime Environment (SRE) is an open-source, cloud-native runtime for agentic AI. Secure, modular, and , it lets developers build, run, and manage intelligent agents across local, cloud, and edge environments. Upstream maintainer: SmythOS.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: SmythOS
-origin_country: null
+origin_country: US
 model_agnostic_score: 3
-sovereignty_notes: SmythOS (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: SmythOS (US company) maintains the SRE runtime, SDK and CLI under MIT; the README pitches an OS-level abstraction across LLMs, vector DBs, storage and cache with a single API surface and built-in security and observability. Model-agnostic 4 — the unified resource abstraction lets the same code path target multiple LLM providers (OpenAI, Anthropic, etc.) without drift, and the runtime is self-hostable from local through cloud. Curator-reviewed; catalogued as an agent-runtime/orchestration layer.
 harness_paradigm_alignment: partial
 adjacent_to:
-- areal
 - awesome-agent-skills
 - botsharp
 - langgraph

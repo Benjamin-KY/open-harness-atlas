@@ -1,0 +1,32 @@
+id: genai-security-literature-review
+name: Gen AI Security Literature Review
+category: education
+subcategory: adversarial-ml
+repo_url: https://github.com/emmanuelgjr/GenAI-Security-Literature-Review
+homepage: https://emmanuelgjr.github.io/GenAI-Security-Literature-Review/
+license: MIT
+primary_language: Python
+tagline: Comprehensive, auto-updating literature review of GenAI & LLM security research, standards, tools, and resources.
+description: 'Gen AI Security Literature Review — Comprehensive, auto-updating literature review of GenAI & LLM security research, standards, tools, and resources. 100+ curated entries with interactive webapp. Upstream maintainer: emmanuelgjr.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: community
+  name: emmanuelgjr
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: emmanuelgjr (community) maintains this MIT-licensed curated database of 100+ GenAI/LLM security resources across 46 categories, with weekly auto-updates from arXiv/Semantic Scholar/CrossRef and an interactive webapp. Mapped to OWASP LLM Top 10, OWASP Agentic Top 10, MITRE ATLAS, NIST AI RMF and ISO/IEC 42001 — strong fit for education/awesome-list rather than redteam (no adversarial runtime tool here). Model-agnostic 0 is not applicable in the usual sense — the artefact is a literature catalogue, not a runtime.
+harness_paradigm_alignment: partial
+adjacent_to:
+- journey-to-red-team
+- llm-attacks
+- llm-jailbreak-taxonomy
+- llm-prompt-injection-tester
+- pyrit
+education_resources:
+- title: Gen AI Security Literature Review
+  url: https://github.com/emmanuelgjr/GenAI-Security-Literature-Review
+  type: paper
+  free: true

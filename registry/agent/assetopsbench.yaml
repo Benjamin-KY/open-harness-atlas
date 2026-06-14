@@ -6,17 +6,17 @@ repo_url: https://github.com/IBM/AssetOpsBench
 license: Apache-2.0
 primary_language: Python
 tagline: 'AssetOpsBench - Industry 4.0: A unified benchmark and framework for building, orchestrating, and evaluating domain-specific AI agents for Industry 4.0 asset operations and maintenance, with 460+ sc...'
-description: |-
-  Asset Ops Bench — AssetOpsBench - Industry 4.0: A unified benchmark and framework for building, orchestrating, and evaluating domain-specific AI agents for Industry 4.0 asset operations and maintenance, with 460+ scenarios, 5 specialist agents (IoT, FMSR, TSFM, Work Order,...), and multi-agent orchestration blueprints (MetaAgent, AgentHive) over MCP. Upstream maintainer: IBM.
+description: 'Asset Ops Bench — AssetOpsBench - Industry 4.0: A unified benchmark and framework for building, orchestrating, and evaluating domain-specific AI agents for Industry 4.0 asset operations and maintenance, with 460+ scenarios, 5 specialist agents (IoT, FMSR, TSFM, Work Order,...), and multi-agent orchestration blueprints (MetaAgent, AgentHive) over MCP. Upstream maintainer: IBM.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: IBM
-origin_country: null
+origin_country: US
 model_agnostic_score: 3
-sovereignty_notes: IBM (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: IBM Research (company / corporate research lab Organization on GitHub) — Apache-2.0 unified framework + benchmark for Industry 4.0 LLM agents with KDD 2026 Datasets & Benchmarks Track acceptance plus EMNLP/NeurIPS/AAAI/IAAI/ICLR/ACL 2025–2026 work. Model-agnostic 3 — supports multiple LLM and Time Series Foundation Model back-ends via standard orchestration frameworks; runs locally with HF dataset and Colab playgrounds. Reference-quality bench with a growing university extension network and IJCAI 2026 live competition.
 harness_paradigm_alignment: partial
 adjacent_to:
 - firecrawl-mcp-server

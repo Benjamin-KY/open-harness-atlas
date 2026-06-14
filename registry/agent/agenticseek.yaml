@@ -7,17 +7,17 @@ homepage: http://agenticseek.tech
 license: GPL-3.0-only
 primary_language: Python
 tagline: Fully Local Manus AI.
-description: |-
-  Agentic Seek — Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that thinks, browses the web, and code for the sole cost of electricity. Official updates only via twitter @Martin993886460 (Beware of fake account). Upstream maintainer: Fosowl.
+description: 'Agentic Seek — Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that thinks, browses the web, and code for the sole cost of electricity. Official updates only via twitter @Martin993886460 (Beware of fake account). Upstream maintainer: Fosowl.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: Fosowl
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: Fosowl (community-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Fosowl (community-maintained, individual developer); OSS core is GPL-3.0 and self-hostable. MAS 3: fully local agent tailored for local reasoning models via Ollama; zero cloud dependency per README with no commercial API path documented. Autonomous web-browsing, code-writing, and task-planning agent with voice input described as a private local alternative to Manus AI; actively maintained through 2026-06-10.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - clawx

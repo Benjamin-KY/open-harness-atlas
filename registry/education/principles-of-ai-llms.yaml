@@ -1,0 +1,31 @@
+id: principles-of-ai-llms
+name: Principles Of AI Llms
+category: education
+subcategory: course
+repo_url: https://github.com/dobriban/Principles-of-AI-LLMs
+license: CC0-1.0
+primary_language: Multiple
+tagline: 'Materials for the course Principles of AI: LLMs at UPenn (Stat 9911, Spring 2025).'
+description: 'Principles Of AI Llms — Materials for the course Principles of AI: LLMs at UPenn (Stat 9911, Spring 2025). LLM architectures, training paradigms (pre- and post-training, alignment), test-time computation, reasoning, safety and robustness (jailbreaking, oversight, uncertainty), representations, interpretability (circuits), etc. Upstream maintainer: dobriban.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: institution
+  name: dobriban
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Edgar Dobriban, faculty at the Wharton School (University of Pennsylvania), maintains this CC0-licensed graduate course (Stat 9911, Spring 2025) covering LLM architecture, pre/post-training, alignment, reasoning, safety, jailbreaking, oversight, and uncertainty. Catalogued as education/course per §8 because the repo is free course materials and student presentations from an accredited university programme. Model-agnostic 3 is nominal — content surveys multiple LLM families (GPT, Llama, DeepSeek, LLM360) and is provider-neutral.
+harness_paradigm_alignment: partial
+adjacent_to:
+- chatgpt-jailbreak-pro
+- hacxgpt-jailbreak-prompts
+- jailbreak-llms
+- llm-jailbreaks
+- pyrit
+education_resources:
+- title: Principles Of AI Llms
+  url: https://github.com/dobriban/Principles-of-AI-LLMs
+  type: course
+  free: true

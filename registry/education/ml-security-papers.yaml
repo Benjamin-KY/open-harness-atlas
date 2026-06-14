@@ -1,0 +1,30 @@
+id: ml-security-papers
+name: ML Security Papers
+category: education
+subcategory: awesome-list
+repo_url: https://github.com/0xkadxr/ml-security-papers
+license: MIT
+primary_language: Multiple
+tagline: Curated, annotated reading list of ML security and AI red-teaming research papers.
+description: 'ML Security Papers — Curated, annotated reading list of ML security and AI red-teaming research papers. Prompt injection, jailbreaking, adversarial ML, agent security, and more. Upstream maintainer: 0xkadxr.
+
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
+maturity: beta
+maintainer:
+  type: community
+  name: 0xkadxr
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 0xkadxr is an individual community maintainer; MIT-licensed reading list with weekly CI badge. Catalogued as education/awesome-list per §8 because the repo is a curated, annotated index of ML-security and AI red-teaming papers (prompt injection, jailbreaking, adversarial ML, multimodal attacks, alignment, agent security) rather than executable probes. Model-agnostic 3 is nominal — the curated content references work across many model families and provider types.
+harness_paradigm_alignment: partial
+adjacent_to:
+- ai-seclists
+- anvil
+- pyrit
+- wraith-challenges
+education_resources:
+- title: ML Security Papers
+  url: https://github.com/0xkadxr/ml-security-papers
+  type: paper
+  free: true

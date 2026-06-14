@@ -7,17 +7,17 @@ homepage: https://synw.github.io/goinfer/
 license: MIT
 primary_language: Go
 tagline: Local LLM proxy, DevOps friendly
-description: |-
-  Goinfer — Local LLM proxy, DevOps friendly. Upstream maintainer: lynxai-team.
+description: 'Goinfer — Local LLM proxy, DevOps friendly. Upstream maintainer: lynxai-team.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
-  type: community
+  type: company
   name: lynxai-team
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: lynxai-team (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: lynxai-team (community-style Organization on GitHub, lynxai.team); MIT Go inference proxy for swapping *.gguf models on remote machines, built on llama.cpp + llama-swap with OpenAI-compatible /v1/ and llama.cpp-compatible /completions endpoints, API-key auth and CORS. Model-agnostic 4 — drop-in OpenAI-compatible against any GGUF backend, with outbound-initiated client/server design for home-LLM access without inbound port forwarding. Self-flagged as 'Not yet implemented. Please contribute.' — useful design but treat as alpha.
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

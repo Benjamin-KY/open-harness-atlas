@@ -7,17 +7,17 @@ homepage: https://omp.sh
 license: MIT
 primary_language: TypeScript
 tagline: ⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more
-description: |-
-  Oh My Pi — ⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more. Upstream maintainer: can1357.
+description: 'Oh My Pi — ⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more. Upstream maintainer: can1357.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: can1357
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: can1357 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Community-maintained user project; the OSS core is MIT-licensed and self-hosted as a terminal coding agent. MAS 3 is a conservative fit because the reviewed README shows agent/runtime flexibility and multi-tool execution, but not a stronger universal provider abstraction in the materials reviewed here. Notable flag: this is clearly an agent runtime, not merely an editor plugin.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

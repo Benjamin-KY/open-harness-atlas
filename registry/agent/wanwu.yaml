@@ -6,17 +6,17 @@ repo_url: https://github.com/UnicomAI/wanwu
 license: Apache-2.0
 primary_language: Go
 tagline: China Unicom's Yuanjing Wanwu Agent Platform is an , multi-tenant AI agent development platform.
-description: |-
-  Wanwu — China Unicom's Yuanjing Wanwu Agent Platform is an , multi-tenant AI agent development platform. It helps users build applications such as intelligent agents, workflows, and rag, and also supports model management. The platform features a developer-friendly license, and we welcome all developers to build upon the platform. Upstream maintainer: UnicomAI.
+description: 'Wanwu — China Unicom''s Yuanjing Wanwu Agent Platform is an , multi-tenant AI agent development platform. It helps users build applications such as intelligent agents, workflows, and rag, and also supports model management. The platform features a developer-friendly license, and we welcome all developers to build upon the platform. Upstream maintainer: UnicomAI.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: UnicomAI
-origin_country: null
+origin_country: CN
 model_agnostic_score: 3
-sovereignty_notes: UnicomAI (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'China Unicom — UnicomAI / Yuanjing (company-maintained Apache-2.0; state-affiliated Chinese telecom). CN origin. Enterprise multi-tenant agent platform pitched as a ''Full-Stack FDE Toolchain'' with RAG/KB agent, workflows, and model management. MAS=3 retained: multi-provider with explicit model-management UI; local-deploy story is enterprise-on-prem first. Harness alignment partial — agent + workflow + RAG orchestration with developer-friendly licensing, but no enforced governance components (output_contract, refusal FSM) surfaced in the README.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - claude-code-game-studios

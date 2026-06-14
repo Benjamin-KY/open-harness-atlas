@@ -6,17 +6,17 @@ repo_url: https://github.com/Panniantong/Agent-Reach
 license: MIT
 primary_language: Python
 tagline: Give your AI agent eyes to see the entire internet.
-description: |-
-  Agent Reach — Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. Upstream maintainer: Panniantong.
+description: 'Agent Reach — Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. Upstream maintainer: Panniantong.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: Panniantong
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: Panniantong (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Single-maintainer community project (Panniantong, CN) under MIT; a single-CLI 'eyes for the agent' tool layer that wraps Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu access into installable agent tools with zero API fees and an explicit upkeep contract (the project tracks platform changes for you). Model-agnostic 3 default — the package is harness-neutral and used by any agent that can run CLIs/MCP tools. Treat star count as Chinese-domestic virality; the supply-chain risk is install-time scripts and per-platform scraping legality.
 harness_paradigm_alignment: partial
 adjacent_to:
 - cherry-studio

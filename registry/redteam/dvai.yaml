@@ -7,17 +7,17 @@ homepage: https://dvai-red.vercel.app/
 license: MIT
 primary_language: TypeScript
 tagline: DVAI - Damn Vulnerable AI Ecosystem.
-description: |-
-  Dvai — DVAI - Damn Vulnerable AI Ecosystem. Open-source, zero-infrastructure-cost AI red team training range. Upstream maintainer: bb1nfosec.
+description: 'Dvai — DVAI - Damn Vulnerable AI Ecosystem. Open-source, zero-infrastructure-cost AI red team training range. Upstream maintainer: bb1nfosec.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: bb1nfosec
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: bb1nfosec (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 1
+sovereignty_notes: 'bb1nfosec (community-maintained, individual User account); MIT-licensed Next.js red-team training range that self-hosts on the Vercel free tier and routes inference through player-supplied Groq keys. Model-agnostic 1 — the platform is hard-wired to Groq because it relies on logprob access, with no abstraction across providers in the current codebase. Genuine §8 fit on the red-team line: it is an adversarial-probe playground, not a production governance harness.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - memory-poisoning-persistence

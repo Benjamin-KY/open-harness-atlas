@@ -16,12 +16,11 @@ maintainer:
   name: yzfly
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: 'yzfly (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md. Curator note (2026-06-14): recategorised agent → education under the Phase 4 governance-consistency swarm finding; the artefact is better understood as education-shaped per its primary surface.'
+sovereignty_notes: yzfly / 云中江树 (community-maintained, individual Chinese AI content creator with a WeChat following); MIT-licensed Chinese-language Awesome-MCP curation covering clients, servers, integrations, and beginner guides. Model-agnostic 3 — the list itself points at provider-diverse MCP servers and clients including local-weights options. §8 education fit is genuine; per the Phase 4 governance-consistency note, category remains education with one free resource recorded.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph
 - n8n-mcp
-- pdfmathtranslate
 - xiaozhi-esp32
 education_resources:
 - title: Awesome MCP ZH — source repository

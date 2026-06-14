@@ -7,17 +7,17 @@ homepage: https://gi-dellav.github.io/zerostack/
 license: GPL-3.0-only
 primary_language: Rust
 tagline: Minimal coding agent written in Rust, optimized for memory footprint and performance
-description: |-
-  Zerostack — Minimal coding agent written in Rust, optimized for memory footprint and performance. Upstream maintainer: gi-dellav.
+description: 'Zerostack — Minimal coding agent written in Rust, optimized for memory footprint and performance. Upstream maintainer: gi-dellav.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: gi-dellav
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: gi-dellav (community-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: gi-dellav (community-maintained, individual Italian developer with Ko-fi sponsorship); GPL-3.0-only Rust coding agent inspired by pi and opencode, fully self-hostable. Model-agnostic 4 — OpenRouter / OpenAI / Anthropic / Gemini / Ollama plus user-defined 'custom providers' through a uniform interface, with local-first Ollama treated as a first-class backend. Permission system, MCP tooling and runtime-switchable prompt modes give it a credible §8 agent-orchestration surface.
 harness_paradigm_alignment: partial
 adjacent_to:
 - jcode

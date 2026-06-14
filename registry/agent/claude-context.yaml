@@ -7,10 +7,10 @@ homepage: https://github.com/zilliztech/claude-context/tree/master/docs
 license: MIT
 primary_language: TypeScript
 tagline: Code search MCP for Claude Code.
-description: |-
-  Claude Context — Code search MCP for Claude Code. Make entire codebase the context for any coding agent. Upstream maintainer: zilliztech.
+description: 'Claude Context — Code search MCP for Claude Code. Make entire codebase the context for any coding agent. Upstream maintainer: zilliztech.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
@@ -21,7 +21,6 @@ sovereignty_notes: zilliztech (company-maintained); OSS core is MIT License and 
 harness_paradigm_alignment: partial
 adjacent_to:
 - ida-pro-mcp
-- kubeshark
 - lamda
 - langgraph
 - librechat

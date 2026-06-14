@@ -6,13 +6,13 @@ repo_url: https://github.com/undp/iVerify-Apps
 license: AGPL-3.0-only
 primary_language: TypeScript
 tagline: 'iVerify Apps: Apps that support the AI-powered iVerify platform to combat misinformation and hate speech'
-description: |-
-  I Verify Apps — iVerify Apps: Apps that support the AI-powered iVerify platform to combat misinformation and hate speech. Upstream maintainer: undp.
+description: 'I Verify Apps — iVerify Apps: Apps that support the AI-powered iVerify platform to combat misinformation and hate speech. Upstream maintainer: undp.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
-  type: community
+  type: institution
   name: undp
 origin_country: null
 model_agnostic_score: 3
@@ -22,7 +22,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: undp (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: UNDP (United Nations Development Programme — a UN/institution maintainer) ships iVerify Apps as AGPL-3.0-only Node.js / Nest.js integration apps that wire WordPress, Meedan Check, Detoxify and the Perspective API into a human-in-the-loop fact-checking workflow (publisher + triage). No generative-LLM provider abstraction exists, so model-agnostic 0 — the project is hard-locked to its specific classifier and fact-checking endpoints; the deterministic verification-status FSM (UNSTARTED → IN_PROGRESS → FALSE / MISLEADING / PARTLY_FALSE …) gives a partial `audit_log_fsm` slot, but this is governance for classification AI, not a generative harness.
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

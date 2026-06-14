@@ -1,0 +1,26 @@
+id: lmeterx
+name: Lmeter X
+category: eval
+subcategory: ai-gateway
+repo_url: https://github.com/MigoXLab/LMeterX
+license: Apache-2.0
+primary_language: Python
+tagline: A general-purpose API load testing platform that supports LLM services and business HTTP interfaces, enabling one-click performance testing, result comparison, and AI-powered intelligent analysis a...
+description: 'Lmeter X — A general-purpose API load testing platform that supports LLM services and business HTTP interfaces, enabling one-click performance testing, result comparison, and AI-powered intelligent analysis and summarization. 一站式通用 API 压测平台，支持大模型推理与业务 HTTP 接口，一键完成性能测试、结果对比与 AI 智能分析总结. Upstream maintainer: MigoXLab.
+
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
+maturity: beta
+maintainer:
+  type: company
+  name: MigoXLab
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: 'MigoXLab (Chinese OSS company in the OpenMMLab orbit) ships LMeterX under Apache-2.0: a web-UI-driven performance/load-testing platform for LLM inference services. Model-agnostic 4 — runs against vLLM, TensorRT-LLM, LiteLLM, LMDeploy plus Azure OpenAI, AWS Bedrock and Vertex via standard Chat APIs, with the same harness covering local and hosted backends. Slots more accurately as eval/performance-eval than routing — it measures serving systems, it does not route traffic between providers.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- litellm
+- nyro
+- omniroute
+- routerly
+- smarterrouter

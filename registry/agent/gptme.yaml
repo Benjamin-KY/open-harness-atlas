@@ -7,17 +7,17 @@ homepage: https://gptme.org/docs/
 license: MIT
 primary_language: Python
 tagline: 'Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web.'
-description: |-
-  Gptme — Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top!. Upstream maintainer: gptme.
+description: 'Gptme — Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top!. Upstream maintainer: gptme.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: gptme
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: gptme (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: gptme (community / gptme GitHub Organization, gptme.org) is an MIT-licensed terminal agent with shell/python/web/vision tools and an extensibility surface (plugins, skills, lessons). Model-agnostic 4 is supported by the README's explicit list (Anthropic, OpenAI, Google, xAI, DeepSeek, OpenRouter, or fully local via `llama.cpp`) with local first-class and a config-driven provider swap. One of the earliest agent CLIs (Spring 2023), still in active development on PyPI with current daily downloads.
 harness_paradigm_alignment: partial
 adjacent_to:
 - hexstrike-ai

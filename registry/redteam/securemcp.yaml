@@ -6,17 +6,17 @@ repo_url: https://github.com/makalin/SecureMCP
 license: MIT
 primary_language: Go
 tagline: SecureMCP is a security auditing tool designed to detect vulnerabilities and misconfigurations in applications using the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction).
-description: |-
-  Secure MCP — SecureMCP is a security auditing tool designed to detect vulnerabilities and misconfigurations in applications using the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction). It proactively identifies threats like OAuth token leakage, prompt injection vulnerabilities, rogue MCP servers, and tool poisoning attacks. Upstream maintainer: makalin.
+description: 'Secure MCP — SecureMCP is a security auditing tool designed to detect vulnerabilities and misconfigurations in applications using the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction). It proactively identifies threats like OAuth token leakage, prompt injection vulnerabilities, rogue MCP servers, and tool poisoning attacks. Upstream maintainer: makalin.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: makalin
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: makalin (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'makalin (community / individual, Türkiye — long-running Turkish OSS author) ships SecureMCP under MIT as a Go CLI + Docker image for security auditing Model Context Protocol servers: OAuth/JWT scanner, prompt-injection probe (multiple payload positions, system-prompt override and role-confusion detection), TLS/auth/HSTS/CSP header validation, HTML+JSON reports with severity scoring. Model-agnostic 2 — the scanner targets HTTP endpoints rather than LLM providers, with prompt-injection tests assuming an OpenAI-compatible chat surface; redteam scope is well-suited to §8 even though the MAS rubric is a poor fit for a pure auditing tool.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - adrian

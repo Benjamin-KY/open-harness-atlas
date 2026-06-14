@@ -7,15 +7,15 @@ homepage: https://packmindhub.github.io/packmind/
 license: Apache-2.0
 primary_language: TypeScript
 tagline: Packmind seamlessly captures your engineering playbook and turns it into AI context, guardrails, and governance.
-description: |-
-  Packmind — Packmind seamlessly captures your engineering playbook and turns it into AI context, guardrails, and governance. Upstream maintainer: PackmindHub.
+description: 'Packmind — Packmind seamlessly captures your engineering playbook and turns it into AI context, guardrails, and governance. Upstream maintainer: PackmindHub.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: PackmindHub
-origin_country: null
+origin_country: FR
 model_agnostic_score: 3
 five_component_coverage:
   policy_router: partial
@@ -23,7 +23,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: PackmindHub (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'PackmindHub (FR, company-maintained) ships Packmind under Apache-2.0 as a centralised playbook + multi-harness renderer that emits per-tool context files (Copilot, Claude Code, Cursor, AGENTS.md). It is a governance/prompt-composer layer: rules live once, get rendered everywhere, with ownership/approval workflow for edits. Model-agnostic 3 is structural — Packmind does not invoke models itself, so its agnosticism is inherited from whichever harness consumes the generated files.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

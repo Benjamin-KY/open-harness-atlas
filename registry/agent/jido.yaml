@@ -7,17 +7,17 @@ homepage: https://jido.run
 license: Apache-2.0
 primary_language: Elixir
 tagline: Autonomous agent framework for Elixir.
-description: |-
-  Jido — Autonomous agent framework for Elixir. Built for distributed, autonomous behavior and dynamic workflows. Upstream maintainer: agentjido.
+description: 'Jido — Autonomous agent framework for Elixir. Built for distributed, autonomous behavior and dynamic workflows. Upstream maintainer: agentjido.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: agentjido
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: agentjido (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'agentjido is a community/OSS organisation (Hex package, jido.run, public Discord); Apache-2.0 and fully self-hostable on the BEAM. Catalogued as agent/agent-framework because Jido provides an OTP-native agent runtime with signals, directives, and supervision for multi-agent workflows. Model-agnostic 3: AI is optional and integration comes through companion packages like req_llm / jido_ai, which support multiple commercial providers and at least one local-weights option.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

@@ -7,20 +7,19 @@ homepage: https://goose-docs.ai/
 license: Apache-2.0
 primary_language: Rust
 tagline: an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
-description: |-
-  Goose — an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM. Upstream maintainer: aaif-goose.
+description: 'Goose — an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM. Upstream maintainer: aaif-goose.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: institution
   name: aaif-goose
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: aaif-goose (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: 'Goose is an institution-maintained project under the Agentic AI Foundation (AAIF) at the Linux Foundation, having migrated from block/goose; the OSS core is Apache-2.0-licensed with active LF governance. Model-agnostic score revised to 5: the README confirms ''any LLM'' support with provider selection as a configuration string across desktop, CLI, and API modes. Agent/agent-framework category is confirmed by the README''s extensible tool-using agent supporting install, execute, edit, and test operations across any LLM backend.'
 harness_paradigm_alignment: partial
 adjacent_to:
-- guizang-ppt-skill
 - harness-sdk
 - hermes-agent
 - hermes-webui

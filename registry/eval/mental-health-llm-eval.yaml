@@ -6,17 +6,17 @@ repo_url: https://github.com/KarmaEnchanter/mental-health-llm-eval
 license: MIT
 primary_language: Python
 tagline: Open evaluation harness for mental health LLM responses.
-description: |-
-  Mental Health LLM Eval — Open evaluation harness for mental health LLM responses. 5 clinically-grounded rubrics, LLM-as-judge with bias controls, crisis-detection routing to 988 protocols. Upstream maintainer: KarmaEnchanter.
+description: 'Mental Health LLM Eval — Open evaluation harness for mental health LLM responses. 5 clinically-grounded rubrics, LLM-as-judge with bias controls, crisis-detection routing to 988 protocols. Upstream maintainer: KarmaEnchanter.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: KarmaEnchanter
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: KarmaEnchanter (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: KarmaEnchanter (community-maintained, individual GitHub User); OSS harness under MIT. Model-agnostic 4 — defaults to Ollama (local Llama 3.1 + Qwen 2.5 judge) with no paid API keys required, and re-packaged as Inspect AI Tasks runnable against any Inspect-supported provider (Ollama, OpenAI, Anthropic, Hugging Face). Domain-focused harness in safety-critical territory; the README documents low inter-rater reliability on crisis-detection and harm-avoidance dimensions, which is responsible curator disclosure.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

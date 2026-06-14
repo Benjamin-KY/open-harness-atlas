@@ -6,17 +6,17 @@ repo_url: https://github.com/sjnims/cc-plugin-eval
 license: MIT
 primary_language: TypeScript
 tagline: 4-stage evaluation framework for testing Claude Code plugin component triggering.
-description: |-
-  Cc Plugin Eval — 4-stage evaluation framework for testing Claude Code plugin component triggering. Validates skills, agents, and commands activate correctly via programmatic detection and LLM judgment. Upstream maintainer: sjnims.
+description: 'Cc Plugin Eval — 4-stage evaluation framework for testing Claude Code plugin component triggering. Validates skills, agents, and commands activate correctly via programmatic detection and LLM judgment. Upstream maintainer: sjnims.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: sjnims
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: sjnims (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: 'sjnims maintains this MIT-licensed eval framework for Claude Code plugin triggering across skills/agents/commands/hooks/MCP servers, with checkpointable stages and JSON/YAML/JUnit/TAP output. Model-agnostic 1: the harness runs only against the Anthropic Claude Agent SDK and uses Anthropic Batches for cost reduction, so the same code path does not work against other providers. In-scope as a tool-trigger eval runner; the Anthropic lock is a meaningful sovereignty constraint to surface to readers.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - judgeit-llm-as-a-judge

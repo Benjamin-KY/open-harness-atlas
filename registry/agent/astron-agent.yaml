@@ -7,17 +7,17 @@ homepage: http://astron.ai/
 license: Apache-2.0
 primary_language: Java
 tagline: commercial-friendly agentic workflow platform for building next-generation SuperAgents.
-description: |-
-  Astron Agent — commercial-friendly agentic workflow platform for building next-generation SuperAgents. Upstream maintainer: iflytek.
+description: 'Astron Agent — commercial-friendly agentic workflow platform for building next-generation SuperAgents. Upstream maintainer: iflytek.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: iflytek
-origin_country: null
+origin_country: CN
 model_agnostic_score: 3
-sovereignty_notes: iflytek (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: iFLYTEK (company-maintained Chinese AI vendor Organization); Apache-2.0 enterprise agentic-workflow platform built on the same core as the Astron commercial offering, with workflow orchestration, MCP, RPA and model management. Model-agnostic 3 — the platform is multi-provider and supports private/local models per the README, though the default deployment is biased toward Spark and other iFLYTEK-hosted backends. §8 fit on the agent-orchestration line is clear; users should weigh CN vendor sovereignty implications.
 harness_paradigm_alignment: partial
 adjacent_to:
 - babysitter

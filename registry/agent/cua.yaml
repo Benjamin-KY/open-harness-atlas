@@ -7,17 +7,17 @@ homepage: https://cua.ai
 license: MIT
 primary_language: HTML
 tagline: Open-source infrastructure for Computer-Use Agents.
-description: |-
-  Cua — Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows). Upstream maintainer: trycua.
+description: 'Cua — Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows). Upstream maintainer: trycua.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: trycua
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: trycua (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: 'Cua Inc. (US commercial company, trycua org, 17.9k stars) publishes Cua under MIT: a computer-use agent stack combining background Cua Drivers (macOS/Windows + Linux pre-release), agent-ready Sandboxes, a Cua Bench environment harness, and the Lume macOS virtualization layer. Model-agnostic 4 — the driver/sandbox/bench layers are provider-agnostic and intended to host any computer-use agent (commercial or local). The benchmark/RL-environment surface is a meaningful eval adjacency even though the catalogue slots it as agent.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - jido

@@ -20,6 +20,5 @@ model_agnostic_score: 3
 sovereignty_notes: yunbeizhang is an individual researcher (GitHub User, community-maintained). Apache-2.0 license is OSI-approved and confirmed. The ICLRW 2026 Best Short Paper Award satisfies §8 §3 reference-quality criterion via peer-reviewed publication. Model-agnostic score 3 is appropriate for a multimodal red-teaming framework targeting vision-language models via agentic planning without explicit provider lock-in. The visual-exclusivity attack surface extends the redteam category into the multimodal dimension with no §8 exclusion flags.
 harness_paradigm_alignment: partial
 adjacent_to:
-- litterbox
 - pyrit
 - redamon

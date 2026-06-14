@@ -7,17 +7,17 @@ homepage: https://ibm.github.io/mcp-context-forge/
 license: Apache-2.0
 primary_language: Python
 tagline: An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management.
-description: |-
-  MCP Context Forge — An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management. Optimizes Agent & Tool calling, and supports plugins. Upstream maintainer: IBM.
+description: 'MCP Context Forge — An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and management. Optimizes Agent & Tool calling, and supports plugins. Upstream maintainer: IBM.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: IBM
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: IBM (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: 'IBM is a company maintainer (publicly listed US corporation, GitHub Organization owner); the OSS core is Apache-2.0-licensed and self-hostable with full Docker support. Model-agnostic score revised to 4: the gateway federates any MCP, A2A, or REST/gRPC endpoint through a unified interface, enabling local-weights providers alongside commercial APIs. Agent/mcp subcategory is confirmed by the README''s centralized governance and multi-protocol federation surface.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

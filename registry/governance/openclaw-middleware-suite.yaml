@@ -6,10 +6,10 @@ repo_url: https://github.com/Sapience-AI/openclaw-middleware-suite
 license: Apache-2.0
 primary_language: TypeScript
 tagline: 'Six in-process middlewares for OpenClaw: HITL approvals, prompt-injection guardrails, PII redaction, tool-call budgets, context compaction, and complexity-aware model routing.'
-description: |-
-  Openclaw Middleware Suite — Six in-process middlewares for OpenClaw: HITL approvals, prompt-injection guardrails, PII redaction, tool-call budgets, context compaction, and complexity-aware model routing. Zero telemetry, all state local. Upstream maintainer: Sapience-AI.
+description: 'Openclaw Middleware Suite — Six in-process middlewares for OpenClaw: HITL approvals, prompt-injection guardrails, PII redaction, tool-call budgets, context compaction, and complexity-aware model routing. Zero telemetry, all state local. Upstream maintainer: Sapience-AI.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: company
@@ -20,9 +20,9 @@ five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
-  output_contract: none
+  output_contract: partial
   audit_log_fsm: none
-sovereignty_notes: Sapience-AI (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Sapience-AI (company-maintained Organization on GitHub); Apache-2.0 TypeScript suite published to npm with CI/coverage ≥80%, all six middlewares run in-process with zero telemetry. Model-agnostic 3 — the complexity-aware model router supports multi-provider (including local) but is wired specifically to the OpenClaw runtime. Notable governance surface: HITL gates, PII redaction, prompt-injection guardrails and tool-call budgets give it partial coverage across policy_router, prompt_composer, output_contract, and audit_log_fsm.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

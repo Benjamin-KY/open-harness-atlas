@@ -6,17 +6,17 @@ repo_url: https://github.com/matthiasn/lotti
 license: GPL-3.0-only
 primary_language: Dart
 tagline: Open-source private logbook with a local agentic layer.
-description: |-
-  Lotti — Open-source private logbook with a local agentic layer. Long-living AI agents read what you record and propose what to do next. Hardware permitting, the models runs locally too. Matrix + Vodozemac for end-to-end encrypted sync between your own devices. Upstream maintainer: matthiasn.
+description: 'Lotti — Open-source private logbook with a local agentic layer. Long-living AI agents read what you record and propose what to do next. Hardware permitting, the models runs locally too. Matrix + Vodozemac for end-to-end encrypted sync between your own devices. Upstream maintainer: matthiasn.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: matthiasn
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: matthiasn (community-maintained); OSS core is GNU General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'matthiasn (community-maintained, individual GitHub User — long-running Flutter project distributed via Flathub, the App Store, and GitHub Releases); OSS under GPL-3.0-only. Model-agnostic 4 — provider configured per category with any OpenAI-compatible endpoint plugging in directly and local execution via Qwen 3.6 35B / Whisper / Voxtral called out as a design goal, so the same code path serves cloud and on-device models. Strong data-sovereignty pitch: local logbook, optional local agents, Matrix + Vodozemac for E2E-encrypted multi-device sync.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

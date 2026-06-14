@@ -7,24 +7,24 @@ homepage: https://github.com/ax128/AegisGate
 license: MIT
 primary_language: Python
 tagline: Open-source security gateway for LLM APIs — prompt injection detection, PII redaction, dangerous response sanitization, and audit logging.
-description: |-
-  Aegis Gate — Open-source security gateway for LLM APIs — prompt injection detection, PII redaction, dangerous response sanitization, and audit logging. OpenAI/Claude compatible, MCP & Agent SKILL support. Drop-in proxy for AI coding agents (Cursor, Claude Code, Codex). Upstream maintainer: ax128.
+description: 'Aegis Gate — Open-source security gateway for LLM APIs — prompt injection detection, PII redaction, dangerous response sanitization, and audit logging. OpenAI/Claude compatible, MCP & Agent SKILL support. Drop-in proxy for AI coding agents (Cursor, Claude Code, Codex). Upstream maintainer: ax128.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: community
   name: ax128
 origin_country: null
-model_agnostic_score: 3
+model_agnostic_score: 4
 five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
-  output_contract: none
-  audit_log_fsm: none
-sovereignty_notes: ax128 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
-harness_paradigm_alignment: partial
+  output_contract: partial
+  audit_log_fsm: partial
+sovereignty_notes: 'ax128 (community, bilingual EN/ZH README) maintains AegisGate under MIT as a self-hosted policy gateway for LLM traffic with OpenAI/Anthropic-compatible drop-in routes and on-the-fly Anthropic↔OpenAI protocol conversion. Five-component coverage: policy_router=partial (regex/semantic prompt-injection and Unicode/typoglycemia gating before forwarding), output_contract=partial (response-side sanitization of shell/SQL/HTTP-smuggling payloads at configurable severity), audit_log_fsm=partial (structured logging plus admin-console stats). Model-agnostic 4 because the gateway brokers any OpenAI-compatible upstream with token-mapped routing and Docker-Compose self-host.'
+harness_paradigm_alignment: aligned
 adjacent_to:
 - ai-gateway
 - bifrost

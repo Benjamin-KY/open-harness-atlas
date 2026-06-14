@@ -7,17 +7,17 @@ homepage: https://jailbreak-llms.xinyueshen.me/
 license: MIT
 primary_language: Jupyter Notebook
 tagline: '[CCS''24] A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts).'
-description: |-
-  Jailbreak Llms — [CCS'24] A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts). Upstream maintainer: verazuo.
+description: 'Jailbreak Llms — [CCS''24] A dataset consists of 15,140 ChatGPT prompts from Reddit, Discord, websites, and open-source datasets (including 1,405 jailbreak prompts). Upstream maintainer: verazuo.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: ga
 maintainer:
   type: community
   name: verazuo
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: verazuo (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Verazuo / TrustAIRLab (CISPA Helmholtz Center for Information Security, Saarbrücken) — MIT, reference-quality dataset and analysis code for the ACM CCS 2024 'Do Anything Now' paper. 15,140 prompts (1,405 jailbreaks) with semantic clustering and prompt-injection evaluation across six commercial and OSS models. Model-agnostic 3 — eval pipeline targets multiple commercial APIs plus open weights; data and code remain valid as a citation benchmark even though active maintenance slowed after the paper's release.
 harness_paradigm_alignment: partial
 adjacent_to:
 - chatgpt-jailbreak-pro

@@ -7,17 +7,17 @@ homepage: https://hindsight.vectorize.io/
 license: MIT
 primary_language: Python
 tagline: 'Hindsight: Agent Memory That Learns'
-description: |-
-  Hindsight — Hindsight: Agent Memory That Learns. Upstream maintainer: vectorize-io.
+description: 'Hindsight — Hindsight: Agent Memory That Learns. Upstream maintainer: vectorize-io.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: vectorize-io
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: vectorize-io (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: vectorize-io (company-maintained GitHub Organization behind Vectorize.io, which also runs a managed Hindsight Cloud); OSS core is MIT and self-hostable via a single Docker command. Model-agnostic 3 — provider selected via `HINDSIGHT_API_LLM_PROVIDER` across OpenAI, Anthropic, Gemini, Groq, Ollama, LM Studio, and Minimax, with Ollama and LM Studio giving a local-weights option. Published research benchmark (LongMemEval) backs the memory-system claims.
 harness_paradigm_alignment: partial
 adjacent_to:
 - kaibanjs

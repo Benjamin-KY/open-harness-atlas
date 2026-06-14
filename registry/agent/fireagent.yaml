@@ -1,0 +1,26 @@
+id: fireagent
+name: Fireagent
+category: agent
+subcategory: guardrails
+repo_url: https://github.com/buptlg/fireagent
+license: MIT
+primary_language: Python
+tagline: Knowledge-enhanced multimodal Fire Safety Agent with two-hop reasoning, evidence-tree RAG, open-set guardrails, and four-layer memory.
+description: 'Fireagent — Knowledge-enhanced multimodal Fire Safety Agent with two-hop reasoning, evidence-tree RAG, open-set guardrails, and four-layer memory. Upstream maintainer: buptlg.
+
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
+maturity: beta
+maintainer:
+  type: community
+  name: buptlg
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 'buptlg (community individual maintainer on GitHub, China-based — naming suggests Beijing University of Posts and Telecommunications affiliation but no institutional repository); MIT Python multimodal agent for fire-safety hazard image analysis with FastAPI backend, static web demo and WeChat Mini Program. Model-agnostic 3 — uses VLM + LLM stages with hybrid RAG over a fire-safety knowledge base; backend swappable. Domain-specific but a useful reference implementation of governance: evidence-first reasoning, open-set guardrail with refusal on weak evidence, and a debuggable pipeline that returns retrieval queries, evidence IDs and guardrail decisions.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- frai
+- guardrails-ai
+- hortator
+- trustloopguard
+- vibeguard

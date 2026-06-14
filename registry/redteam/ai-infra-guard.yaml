@@ -1,0 +1,23 @@
+id: ai-infra-guard
+name: AI Infra Guard
+category: redteam
+subcategory: ai-security
+repo_url: https://github.com/Tencent/AI-Infra-Guard
+homepage: https://tencent.github.io/AI-Infra-Guard/
+license: Apache-2.0
+primary_language: Python
+tagline: A full-stack AI Red Teaming platform securing AI ecosystems via OpenClaw Security Scan, Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.
+description: 'AI Infra Guard — A full-stack AI Red Teaming platform securing AI ecosystems via OpenClaw Security Scan, Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation. Upstream maintainer: Tencent.
+
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
+maturity: ga
+maintainer:
+  type: company
+  name: Tencent
+origin_country: CN
+model_agnostic_score: 3
+sovereignty_notes: 'Tencent (company-maintained Apache-2.0). CN origin. Combines AI-infrastructure CVE scanning, MCP server scanning, agent/skill scanning, and a jailbreak evaluation harness in one platform — pitched as ''AI Red Teaming''. MAS=3 retained: scanners are model-agnostic, jailbreak harness can target any OpenAI-compatible backend including local. Harness alignment partial — strong redteam probe surface, no governance components implemented in-tree.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- lm-evaluation-harness

@@ -1,0 +1,32 @@
+id: content-moderation-deep-learning
+name: Content Moderation Deep Learning
+category: education
+subcategory: awesome-list
+repo_url: https://github.com/fcakyon/content-moderation-deep-learning
+homepage: https://arxiv.org/abs/2212.04533
+license: MIT
+primary_language: Multiple
+tagline: Deep learning based content moderation from text, audio, video & image input modalities.
+description: 'Content Moderation Deep Learning — Deep learning based content moderation from text, audio, video & image input modalities. Upstream maintainer: fcakyon.
+
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
+maturity: ga
+maintainer:
+  type: community
+  name: fcakyon
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Fatih Cagatay Akyon maintains this MIT-licensed curated bibliography of deep-learning content-moderation work, cited in his own ICASSPW 2023 and arXiv 2022 papers. Catalogued as education/awesome-list per §8 because the repo aggregates datasets, models, multimodal architectures, and tools — it indexes research rather than implementing a governance runtime. Model-agnostic 3 is nominal; the referenced techniques span CNNs, transformers, and multimodal models across providers.
+harness_paradigm_alignment: partial
+adjacent_to:
+- guardrails-ai
+- localmod
+- moderator
+- pytector
+- rail-score-js
+education_resources:
+- title: Content Moderation Deep Learning
+  url: https://github.com/fcakyon/content-moderation-deep-learning
+  type: video
+  free: true

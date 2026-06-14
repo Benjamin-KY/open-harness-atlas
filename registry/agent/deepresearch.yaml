@@ -7,17 +7,17 @@ homepage: https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/
 license: Apache-2.0
 primary_language: Python
 tagline: Tongyi Deep Research, Open-source Deep Research Agent
-description: |-
-  Deep Research — Tongyi Deep Research, Open-source Deep Research Agent. Upstream maintainer: Alibaba-NLP.
+description: 'Deep Research — Tongyi Deep Research, Open-source Deep Research Agent. Upstream maintainer: Alibaba-NLP.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: Alibaba-NLP
-origin_country: null
+origin_country: CN
 model_agnostic_score: 3
-sovereignty_notes: Alibaba-NLP (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Alibaba-NLP (Tongyi Lab, Alibaba Group) maintains DeepResearch with Apache-2.0 code and open weights on HuggingFace and ModelScope; reference-quality per the arXiv paper 2510.24701 and benchmark coverage (BrowseComp, FRAMES, Humanity's Last Exam, SimpleQA). Model-agnostic 2 conservatively — the runtime is built around their own Tongyi DeepResearch model rather than a provider-pluggable backend, although the weights themselves are open. Browser-agent runtime with WebAgent lineage; out-of-scope for catalogued governance components.
 harness_paradigm_alignment: partial
 adjacent_to:
 - core

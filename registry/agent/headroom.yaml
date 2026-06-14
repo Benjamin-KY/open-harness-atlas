@@ -17,10 +17,9 @@ maintainer:
   name: chopratejas
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: chopratejas (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'chopratejas is an individual maintainer publishing under Apache-2.0; PyPI `headroom-ai`, npm `headroom-ai`, and a Hugging Face model (`chopratejas/kompress-v2-base`), all locally runnable. Catalogued as agent/mcp-host because Headroom ships an MCP server (`headroom_compress`/`retrieve`/`stats`) plus a transparent proxy and `headroom wrap` for Claude/Codex/Cursor/Aider/Copilot, sitting in the agent context pipeline. Model-agnostic 3: local-first compression model with reversible CCR cache; works against any LLM via the proxy or MCP surface.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph
 - librechat
 - n8n-mcp
-- pdfmathtranslate

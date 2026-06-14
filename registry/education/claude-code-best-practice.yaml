@@ -1,0 +1,32 @@
+id: claude-code-best-practice
+name: Claude Code Best Practice
+category: education
+subcategory: practitioner-guides
+repo_url: https://github.com/shanraisshan/claude-code-best-practice
+homepage: https://linkedin.com/in/shanraisshan
+license: MIT
+primary_language: HTML
+tagline: from vibe coding to agentic engineering - practice makes claude perfect
+description: 'Claude Code Best Practice — from vibe coding to agentic engineering - practice makes claude perfect. Upstream maintainer: shanraisshan.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: community
+  name: shanraisshan
+origin_country: null
+model_agnostic_score: 0
+sovereignty_notes: shanraisshan (community-maintained, individual GitHub User); OSS content under MIT. Primary surface is a high-traffic practitioner guide / awesome-list catalogue of Claude Code subagents, commands, skills, hooks, MCP servers, workflows, and orchestration patterns, with linked external implementations rather than a runtime of its own — hence the education recategorisation. Model-agnostic score is heuristic (the catalogued artefact is documentation, not a runnable harness).
+harness_paradigm_alignment: partial
+adjacent_to:
+- coral
+- cowagent
+- cua
+- deepcode
+- langgraph
+education_resources:
+- title: Claude Code Best Practice
+  url: https://github.com/shanraisshan/claude-code-best-practice
+  type: tutorial
+  free: true

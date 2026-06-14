@@ -7,10 +7,10 @@ homepage: https://evermind.ai/everos
 license: Apache-2.0
 primary_language: Python
 tagline: Self-evolving memory across Agent and platform.
-description: |-
-  Ever OS — Self-evolving memory across Agent and platform. The one portable memory layer for every agent they use - Claude Code, Codex, OpenClaw, Hermes, and more. Upstream maintainer: EverMind-AI.
+description: 'Ever OS — Self-evolving memory across Agent and platform. The one portable memory layer for every agent they use - Claude Code, Codex, OpenClaw, Hermes, and more. Upstream maintainer: EverMind-AI.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
@@ -22,6 +22,4 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph
 - ragaai-catalyst
-- rlinf
 - spring-ai-alibaba
-- tidb

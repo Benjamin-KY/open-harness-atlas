@@ -6,17 +6,17 @@ repo_url: https://github.com/sunilp303/deepeval-evaluation-harness
 license: MIT
 primary_language: Python
 tagline: Pluggable DeepEval scaffold for RAG, agents, and LLM apps across Anthropic, Bedrock, Azure OpenAI, and Vertex.
-description: |-
-  Deepeval Evaluation Harness — Pluggable DeepEval scaffold for RAG, agents, and LLM apps across Anthropic, Bedrock, Azure OpenAI, and Vertex. Ships traceability, test synthesis, safety/PII gating, multi-turn conversation eval, agentic tool-use scoring, JSON validation, judge benchmarks, hyperparameter sweeps, and pytest CI — one Makefile target per feature. Upstream maintainer: sunilp303.
+description: 'Deepeval Evaluation Harness — Pluggable DeepEval scaffold for RAG, agents, and LLM apps across Anthropic, Bedrock, Azure OpenAI, and Vertex. Ships traceability, test synthesis, safety/PII gating, multi-turn conversation eval, agentic tool-use scoring, JSON validation, judge benchmarks, hyperparameter sweeps, and pytest CI — one Makefile target per feature. Upstream maintainer: sunilp303.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: sunilp303
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: sunilp303 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'sunilp303 (community User) maintains this MIT-licensed DeepEval scaffold supporting judge LLMs across Anthropic, AWS Bedrock, Azure OpenAI, and Vertex AI, with local offline embeddings as the default. Model-agnostic score 3 confirmed: multiple commercial-cloud LLM judge providers plus a local sentence-transformers embedding option; the judge LLM itself does not support local-weights, keeping score at 3 rather than 4. Free and self-hostable; comprehensive Makefile targets for CI/CD evaluation workflows.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - groundcheck

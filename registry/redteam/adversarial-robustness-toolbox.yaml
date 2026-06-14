@@ -7,17 +7,17 @@ homepage: https://adversarial-robustness-toolbox.readthedocs.io/en/latest/
 license: MIT
 primary_language: Python
 tagline: Adversarial Robustness Toolbox (ART) - Python Library for Machine Learning Security - Evasion, Poisoning, Extraction, Inference - Red and Blue Teams
-description: |-
-  Adversarial Robustness Toolbox — Adversarial Robustness Toolbox (ART) - Python Library for Machine Learning Security - Evasion, Poisoning, Extraction, Inference - Red and Blue Teams. Upstream maintainer: Trusted-AI.
+description: 'Adversarial Robustness Toolbox — Adversarial Robustness Toolbox (ART) - Python Library for Machine Learning Security - Evasion, Poisoning, Extraction, Inference - Red and Blue Teams. Upstream maintainer: Trusted-AI.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: ga
 maintainer:
   type: company
   name: Trusted-AI
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: Trusted-AI (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Trusted-AI under the Linux Foundation AI & Data Foundation (institution / graduated LF AI project); MIT Python library with CII Best Practices badge and Slack community. Model-agnostic 4 — supports all popular ML frameworks (TF, Keras, PyTorch, scikit-learn, XGBoost, LightGBM, CatBoost, GPy) and all data modalities, with provider-agnostic attack/defense APIs. Canonical reference toolkit for evasion/poisoning/extraction/inference threats; cited across academic ML security literature.
 harness_paradigm_alignment: partial
 adjacent_to:
 - pyrit

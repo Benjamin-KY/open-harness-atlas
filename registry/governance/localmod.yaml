@@ -6,10 +6,10 @@ repo_url: https://github.com/KOKOSde/localmod
 license: MIT
 primary_language: Python
 tagline: Self-hosted content moderation API that outperforms Amazon Comprehend.
-description: |-
-  Localmod — Self-hosted content moderation API that outperforms Amazon Comprehend. 100% offline, your data never leaves your server. Text + Image moderation. Upstream maintainer: KOKOSde.
+description: 'Localmod — Self-hosted content moderation API that outperforms Amazon Comprehend. 100% offline, your data never leaves your server. Text + Image moderation. Upstream maintainer: KOKOSde.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: community
@@ -22,10 +22,9 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: KOKOSde (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: KOKOSde (German community maintainer) ships LocalMod under MIT as a fully offline content-moderation API with 109 passing tests and a published CHI-2025-methodology benchmark across PII (1.000 F1), toxicity (0.697), prompt-injection (0.890) and spam (0.993). Model-agnostic 4 — the entire moderation stack is local-first transformer classifiers with no required external provider, so the artefact is the swap target. Curator-reviewed; flagged as aligned because the moderation surface fills policy-router, output-contract and audit-log governance slots simultaneously.
 harness_paradigm_alignment: partial
 adjacent_to:
-- banned-words
 - guardrails-ai
 - moderator
 - pytector

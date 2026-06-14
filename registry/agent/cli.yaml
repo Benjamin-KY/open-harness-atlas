@@ -7,21 +7,20 @@ homepage: https://developers.google.com/workspace
 license: Apache-2.0
 primary_language: Rust
 tagline: Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more.
-description: |-
-  Cli — Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills. Upstream maintainer: googleworkspace.
+description: 'Cli — Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills. Upstream maintainer: googleworkspace.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: institution
+  type: company
   name: googleworkspace
-origin_country: null
+origin_country: US
 model_agnostic_score: 3
-sovereignty_notes: googleworkspace (institution-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'googleworkspace (company-maintained; Google, US) hosts the gws CLI under Apache-2.0 licence; self-hostable, though the README explicitly states it is ''not an officially supported Google product.'' Model-agnostic score 3 reflects that 40+ AI agent skills are consumable by any MCP-compatible or tool-calling LLM — the CLI is model-agnostic at the tool layer while the underlying APIs are Google Workspace-specific. Active June 2026. Google provenance: telemetry and dependency risks are low but worth noting for regulated-sector deployments where Google API calls may carry data-residency implications.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - gptme
-- guizang-ppt-skill
 - harness-sdk
 - hermes-agent
 - langgraph

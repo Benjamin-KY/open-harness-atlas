@@ -7,13 +7,13 @@ homepage: https://responsibleaitoolbox.ai/
 license: MIT
 primary_language: TypeScript
 tagline: Responsible AI Toolbox is a suite of tools providing model and data exploration and assessment user interfaces and libraries that enable a better understanding of AI systems.
-description: |-
-  Responsible AI Toolbox — Responsible AI Toolbox is a suite of tools providing model and data exploration and assessment user interfaces and libraries that enable a better understanding of AI systems. These interfaces and libraries empower developers and stakeholders of AI systems to develop and monitor AI more responsibly, and take better data-driven actions. Upstream maintainer: microsoft.
+description: 'Responsible AI Toolbox — Responsible AI Toolbox is a suite of tools providing model and data exploration and assessment user interfaces and libraries that enable a better understanding of AI systems. These interfaces and libraries empower developers and stakeholders of AI systems to develop and monitor AI more responsibly, and take better data-driven actions. Upstream maintainer: microsoft.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: ga
 maintainer:
-  type: institution
+  type: company
   name: microsoft
 origin_country: null
 model_agnostic_score: 3
@@ -23,7 +23,7 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: none
-sovereignty_notes: microsoft (institution-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Microsoft Corporation (company-maintained, MIT licence). The toolbox bundles InterpretML, Fairlearn and Error Analysis widgets for tabular/vision/NLP model assessment; the governance surface here is observability-with-eval rather than LLM output-contract enforcement. Model-agnostic 1 — the dashboards plug into whatever framework's model you bring (sklearn/PyTorch/TF) but the project predates LLM-provider routing and offers no provider-swap abstraction.
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

@@ -6,21 +6,20 @@ repo_url: https://github.com/3odat/AeroMind-Paper
 license: MIT
 primary_language: TeX
 tagline: 'Memory as a Control Plane: Poisoning Attacks on LLM Multi-Agent UAV Systems - IEEE Conference Paper'
-description: |-
-  Aero Mind Paper — Memory as a Control Plane: Poisoning Attacks on LLM Multi-Agent UAV Systems - IEEE Conference Paper. Upstream maintainer: 3odat.
+description: 'Aero Mind Paper — Memory as a Control Plane: Poisoning Attacks on LLM Multi-Agent UAV Systems - IEEE Conference Paper. Upstream maintainer: 3odat.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: beta
 maintainer:
   type: community
   name: 3odat
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: 3odat (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: '3odat (community-maintained, individual researcher); MIT licensed, research code openly available. Model-agnostic score 3: attack methodology targets memory poisoning in LLM multi-agent architectures generally; code demonstrates attacks applicable across different LLM providers. Noteworthy: peer-reviewed IEEE conference paper; attack surface covers multi-agent memory control planes in physical UAV systems — a concrete threat-modelling contribution for safety-critical agentic deployments.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - agent-semantic-resistance
 - ai-seclists
-- ai-security-lab
 - anvil
 - pyrit

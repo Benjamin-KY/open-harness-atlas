@@ -13,14 +13,13 @@ description: 'Lamda — Android RPA agent framework, next generation mobile auto
   In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: firerpa
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: firerpa (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'firerpa is a GitHub Organisation, catalogued as company-maintained. Core is MIT-licensed; the FIRERPA binary is deployable on-device. MAS 3: local-first Android automation with built-in MCP server that exposes 160+ device APIs as tool-calls to any MCP-compatible agent; no cloud provider lock-in. Pushed 2026-03-24, within the 18-month maintenance window.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph
 - librechat
 - n8n-mcp
-- pdfmathtranslate

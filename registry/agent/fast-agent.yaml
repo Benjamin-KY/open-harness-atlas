@@ -7,17 +7,17 @@ homepage: https://fast-agent.ai
 license: Apache-2.0
 primary_language: Python
 tagline: Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support
-description: |-
-  Fast Agent — Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support. Upstream maintainer: evalstate.
+description: 'Fast Agent — Code, Build and Evaluate agents - excellent Model and Skills/MCP/ACP Support. Upstream maintainer: evalstate.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: evalstate
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: evalstate (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: Single-maintainer (evalstate; Apache-2.0) Python agent framework built on the Model Context Protocol, with explicit packs for Hugging Face Inference Providers and Codex, MCP STDIO / Streamable HTTP transports with OAuth, a `/skills` registry, and an interactive shell with subagent / compaction strategies. Model-agnostic 4 because provider choice is a `--pack` selector and the MCP surface decouples tool-use from any specific vendor; local-weights paths through HF/Ollama are first-class. Alignment 'partial' — strong on Policy Router / Prompt Composer through MCP and packs; lighter on enforced Output Contract / FSM.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

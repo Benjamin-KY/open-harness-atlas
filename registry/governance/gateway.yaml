@@ -7,23 +7,23 @@ homepage: https://portkey.ai/features/ai-gateway
 license: MIT
 primary_language: TypeScript
 tagline: A AI Gateway with integrated guardrails.
-description: |-
-  Gateway — A AI Gateway with integrated guardrails. Route to 1,600+ LLMs, 50+ AI Guardrails with 1 fast & friendly API. Upstream maintainer: Portkey-AI.
+description: 'Gateway — A AI Gateway with integrated guardrails. Route to 1,600+ LLMs, 50+ AI Guardrails with 1 fast & friendly API. Upstream maintainer: Portkey-AI.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: ga
 maintainer:
   type: company
   name: Portkey-AI
 origin_country: null
-model_agnostic_score: 3
+model_agnostic_score: 4
 five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
-  output_contract: none
-  audit_log_fsm: none
-sovereignty_notes: Portkey-AI (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+  output_contract: partial
+  audit_log_fsm: partial
+sovereignty_notes: 'Portkey-AI (company-maintained GitHub Organization, US-headquartered, Series A-funded); OSS core is MIT, deployable via npx, Docker, Cloudflare Workers, Replit, or AWS EC2 quicklaunch. Model-agnostic 4 — OpenAI-compatible client with provider selected as a config string across 1,600+ models from 250+ providers (commercial APIs and self-hosted/local OpenAI-compatible endpoints alike). Five-component coverage: policy_router partial (conditional routing, retries, fallbacks, load-balancing), output_contract partial (50+ guardrails), audit_log_fsm partial (built-in observability and analytics surface).'
 harness_paradigm_alignment: partial
 adjacent_to:
 - aegisgate

@@ -7,17 +7,17 @@ homepage: http://verdict.haizelabs.com/docs
 license: MIT
 primary_language: Jupyter Notebook
 tagline: Inference-time scaling for LLMs-as-a-judge.
-description: |-
-  Verdict — Inference-time scaling for LLMs-as-a-judge. Upstream maintainer: haizelabs.
+description: 'Verdict — Inference-time scaling for LLMs-as-a-judge. Upstream maintainer: haizelabs.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: ga
 maintainer:
   type: company
   name: haizelabs
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: haizelabs (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 2
+sovereignty_notes: 'Haize Labs (commercial; MIT) maintains Verdict, a declarative framework for specifying compound LLM-as-judge systems as composable Layer/Unit pipelines with rate-limiting, retries, and DSPy interop. Model-agnostic 3 because the judge `via(''gpt-4o'', ...)` provider string is pluggable across commercial APIs and OpenAI-compatible local backends; the framework imposes no vendor lock. Harness alignment ''partial'': it is a strong building block for an Output-Contract layer but does not, by itself, enforce a refusal FSM or audit-log — those are the caller''s composition.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - besttester

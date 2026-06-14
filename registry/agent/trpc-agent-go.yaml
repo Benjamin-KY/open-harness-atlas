@@ -7,17 +7,17 @@ homepage: https://trpc-group.github.io/trpc-agent-go/
 license: Apache-2.0
 primary_language: Go
 tagline: A Go framework for building production agent systems with graph workflows, tools, memory, A2A, AG-UI, MCP, evaluation, and observability.
-description: |-
-  Trpc Agent Go — A Go framework for building production agent systems with graph workflows, tools, memory, A2A, AG-UI, MCP, evaluation, and observability. Upstream maintainer: trpc-group.
+description: 'Trpc Agent Go — A Go framework for building production agent systems with graph workflows, tools, memory, A2A, AG-UI, MCP, evaluation, and observability. Upstream maintainer: trpc-group.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: trpc-group
-origin_country: null
+origin_country: CN
 model_agnostic_score: 3
-sovereignty_notes: trpc-group (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: trpc-group (company; Tencent's open-source tRPC umbrella, CN) ships tRPC-Agent-Go under Apache-2.0 as a Go-native agent runtime with GraphAgent (type-safe multi-conditional workflows), chain / parallel / cycle multi-agent orchestrators, session and memory state, knowledge retrieval, Agent Skills (SKILL.md), prompt caching, eval sets and OpenTelemetry tracing/metrics with Langfuse examples. Model-agnostic 3 reflects multi-provider model layer plus first-class MCP tooling and protocol interop (A2A, AG-UI). Built for Go services with concurrent, observable, deployable footprint.
 harness_paradigm_alignment: partial
 adjacent_to:
 - 9router

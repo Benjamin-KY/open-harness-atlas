@@ -7,17 +7,17 @@ homepage: https://adk.mo.ai.kr
 license: Apache-2.0
 primary_language: Go
 tagline: SPEC-First Agentic Development Kit for Claude Code — 24 AI agents + 52 skills with TDD/DDD quality gates, 16-language projects, 4-language docs.
-description: |-
-  Moai Adk — SPEC-First Agentic Development Kit for Claude Code — 24 AI agents + 52 skills with TDD/DDD quality gates, 16-language projects, 4-language docs. Go CLI, zero deps. Upstream maintainer: modu-ai.
+description: 'Moai Adk — SPEC-First Agentic Development Kit for Claude Code — 24 AI agents + 52 skills with TDD/DDD quality gates, 16-language projects, 4-language docs. Go CLI, zero deps. Upstream maintainer: modu-ai.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: company
   name: modu-ai
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: modu-ai (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+origin_country: KR
+model_agnostic_score: 0
+sovereignty_notes: 'modu-ai (company, South Korea — documentation hosted at adk.mo.ai.kr) ships MoAI-ADK under Apache-2.0 as a Go single binary (the repo was rewritten from ~73k lines of Python to ~38.7k lines of Go across 38 packages) explicitly built for Claude Code only — so model-agnostic 0, hard-locked to one provider. Harness paradigm alignment is `aligned`: the README enumerates a Self-Verify Loop (output contract + audit), a progress.md Session Persistence ledger (audit_log_fsm), Codemaps as a context/source-authority surface, a Failing Checklist gate and a 27-event Claude Code hook policy router, all framed as ''Harness Engineering''. Note: the catalogued primary_language should be Go, not Python — please update the YAML in a separate sweep.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

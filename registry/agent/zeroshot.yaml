@@ -7,17 +7,17 @@ homepage: https://covibes.ai
 license: MIT
 primary_language: JavaScript
 tagline: Your autonomous engineering team in a CLI.
-description: |-
-  Zeroshot — Your autonomous engineering team in a CLI. Point Zeroshot at an issue, walk away, and return to merge-ready code. Supports Claude Code, OpenAI Codex, OpenCode, and Gemini CLI. Upstream maintainer: covibes.
+description: 'Zeroshot — Your autonomous engineering team in a CLI. Point Zeroshot at an issue, walk away, and return to merge-ready code. Supports Claude Code, OpenAI Codex, OpenCode, and Gemini CLI. Upstream maintainer: covibes.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: covibes
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: covibes (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: covibes (company-maintained Organization behind covibes.ai); MIT-licensed Node CLI that orchestrates planner/implementer/validator agents in isolated workspaces and shells out to existing coding-agent CLIs. Model-agnostic 2 — provider list (Claude Code / OpenAI Codex / Gemini CLI / OpenCode) is mostly commercial-API client wrappers, with OpenCode the only OSS local option. §8 agent-orchestration fit is solid; the harness is a meta-orchestrator over other agents.
 harness_paradigm_alignment: partial
 adjacent_to:
 - dagu

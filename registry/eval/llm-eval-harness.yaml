@@ -6,17 +6,17 @@ repo_url: https://github.com/Victor-David-Medina/llm-eval-harness
 license: MIT
 primary_language: Python
 tagline: 'LLM evaluation harness that gates quality in CI: golden datasets, regression detection, grounding and faithfulness checks.'
-description: |-
-  LLM Eval Harness — LLM evaluation harness that gates quality in CI: golden datasets, regression detection, grounding and faithfulness checks. Upstream maintainer: Victor-David-Medina.
+description: 'LLM Eval Harness — LLM evaluation harness that gates quality in CI: golden datasets, regression detection, grounding and faithfulness checks. Upstream maintainer: Victor-David-Medina.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: community
   name: Victor-David-Medina
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: Victor-David-Medina (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 4
+sovereignty_notes: 'Victor-David-Medina (community / individual) ships llm-eval-harness under MIT as a deliberately small, stdlib-only Python evaluation harness designed to be read end-to-end by a reviewer — golden-set JSONL inputs are scored on grounding, faithfulness (contradiction + invented-number flags), relevance and exact-keyword presence, then compared against a baseline and tiered into info/warn/critical with a non-zero CI exit. Model-agnostic 4: because the harness consumes JSONL outputs and only invokes LLM-as-judge on the free-form dims, provider choice is essentially orthogonal to the runner. Partial coverage for output_contract / audit_log_fsm / source_authority is earned by the tier policy, the recorded baseline-vs-current diff and the grounding/faithfulness checks.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness

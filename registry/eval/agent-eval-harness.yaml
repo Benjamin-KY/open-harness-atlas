@@ -7,17 +7,17 @@ homepage: https://reaatech.com/products/evals-quality/agent-eval-harness
 license: MIT
 primary_language: TypeScript
 tagline: End-to-end agent evaluation — trajectory eval, tool-use correctness, cost-per-task, latency budgets, regression suites with golden trajectories, LLM-as-judge with calibration.
-description: |-
-  Agent Eval Harness — End-to-end agent evaluation — trajectory eval, tool-use correctness, cost-per-task, latency budgets, regression suites with golden trajectories, LLM-as-judge with calibration. For full agent runs, not just classifiers. Upstream maintainer: reaatech.
+description: 'Agent Eval Harness — End-to-end agent evaluation — trajectory eval, tool-use correctness, cost-per-task, latency budgets, regression suites with golden trajectories, LLM-as-judge with calibration. For full agent runs, not just classifiers. Upstream maintainer: reaatech.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
   type: company
   name: reaatech
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: reaatech (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 2
+sovereignty_notes: 'reaatech is the publishing scope for this MIT-licensed monorepo of twelve composable packages spanning trajectory eval, tool-use validation, cost/latency budgets, LLM-as-judge, golden-trajectory comparison, suite runner, CI gates, MCP server and OpenTelemetry observability. Model-agnostic 3: judge is provider-agnostic across Claude/GPT/Gemini/OpenRouter (commercial APIs) with local-weights judges not first-class. Strong eval surface with audit_log/output-contract adjacencies via gates and structured exporters.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - any-agent

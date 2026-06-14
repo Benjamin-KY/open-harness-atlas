@@ -6,19 +6,18 @@ repo_url: https://github.com/samugit83/redamon
 license: MIT
 primary_language: Python
 tagline: An AI-powered agentic red team framework that automates offensive security operations, from reconnaissance to exploitation to post-exploitation, with zero human intervention.
-description: |-
-  Redamon — An AI-powered agentic red team framework that automates offensive security operations, from reconnaissance to exploitation to post-exploitation, with zero human intervention. Upstream maintainer: samugit83.
+description: 'Redamon — An AI-powered agentic red team framework that automates offensive security operations, from reconnaissance to exploitation to post-exploitation, with zero human intervention. Upstream maintainer: samugit83.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: ga
 maintainer:
   type: community
   name: samugit83
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: samugit83 (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'samugit83 is an individual community maintainer; the OSS core is MIT-licensed and self-hostable. Model-agnostic score of 3 is approximate for an agentic framework that can route its attack-chain reasoning through multiple LLM providers. Redteam/red-team category is retained: while the primary target is general system security rather than AI model internals specifically, the fully agentic AI-driven attack pipeline qualifies as an adversarial probe tool within the harness paradigm''s redteam scope.'
 harness_paradigm_alignment: partial
 adjacent_to:
-- litterbox
 - mm-plan
 - pyrit

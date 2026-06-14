@@ -1,0 +1,32 @@
+id: how-claude-code-works
+name: How Claude Code Works
+category: education
+subcategory: agent-tutorial
+repo_url: https://github.com/Windy3f3f3f3f/how-claude-code-works
+homepage: https://windy3f3f3f3f.github.io/how-claude-code-works/#/
+license: MIT
+primary_language: Multiple
+tagline: Deep dive into Claude Code internals — architecture, agent loop, context engineering, and more.
+description: 'How Claude Code Works — Deep dive into Claude Code internals — architecture, agent loop, context engineering, and more. / 深入解析 Claude Code 源码：架构、Agent 循环、上下文工程、工具系统等. Upstream maintainer: Windy3f3f3f3f.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: community
+  name: Windy3f3f3f3f
+origin_country: null
+model_agnostic_score: 0
+sovereignty_notes: Windy3f3f3f3f (community / individual, China — bilingual Chinese-first README, Chinese-language documentation site at windy3f3f3f3f.github.io) maintains how-claude-code-works under MIT as a 15-chapter source-code analysis of Anthropic's Claude Code (~500k lines of TypeScript) covering the agent loop, tool execution engine, context engineering, permission system, 4-level progressive compression and 7 continuation strategies. This is an education / agent-tutorial entry — there is no runnable framework here, only documentation plus a companion 'claude-code-from-scratch' tutorial. Model-agnostic 0 because the subject under study is a single closed-source product.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- tribe
+- trpc-agent-go
+- txtai
+- vibe-kanban
+education_resources:
+- title: How Claude Code Works
+  url: https://github.com/Windy3f3f3f3f/how-claude-code-works
+  type: tutorial
+  free: true

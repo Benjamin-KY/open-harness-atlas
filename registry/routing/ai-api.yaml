@@ -7,17 +7,17 @@ homepage: https://ai-ccsh.tew.tw/
 license: MIT
 primary_language: Python
 tagline: Self-hosted, OpenAI-compatible AI gateway for organizations — multi-provider (Azure/OpenAI/Anthropic/Gemini), revocable per-allocation credentials, usage & cost tracking, and an OpenAI Codex–ready...
-description: |-
-  AI API — Self-hosted, OpenAI-compatible AI gateway for organizations — multi-provider (Azure/OpenAI/Anthropic/Gemini), revocable per-allocation credentials, usage & cost tracking, and an OpenAI Codex–ready /v1/responses endpoint. Upstream maintainer: timcsy.
+description: 'AI API — Self-hosted, OpenAI-compatible AI gateway for organizations — multi-provider (Azure/OpenAI/Anthropic/Gemini), revocable per-allocation credentials, usage & cost tracking, and an OpenAI Codex–ready /v1/responses endpoint. Upstream maintainer: timcsy.
 
-  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.
+
+  In the atlas: this is a routing-layer entry. The harness paradigm requires a swap target — provider abstractions, gateways, and OpenAI-compatible proxies are the substrate that makes the swap practical.'
 maturity: beta
 maintainer:
   type: community
   name: timcsy
 origin_country: null
 model_agnostic_score: 4
-sovereignty_notes: timcsy (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 4 — multi-provider, OpenAI-compatible-endpoint pluggable per the README; local backends explicitly supported. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Community-maintained user project; the OSS core is MIT-licensed and self-hostable as an organization-facing AI gateway. MAS 4 is appropriate because the README documents one OpenAI-compatible entry point over multiple upstream providers with shared auth, quota, and billing controls. Notable flag: the project mixes routing with governance features such as audit records and credential revocation, but routing is still the primary catalogue role.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - litellm

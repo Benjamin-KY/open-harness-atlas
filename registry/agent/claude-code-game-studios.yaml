@@ -6,17 +6,17 @@ repo_url: https://github.com/Donchitos/Claude-Code-Game-Studios
 license: MIT
 primary_language: Shell
 tagline: Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.
-description: |-
-  Claude Code Game Studios — Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. Upstream maintainer: Donchitos.
+description: 'Claude Code Game Studios — Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy. Upstream maintainer: Donchitos.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
   type: community
   name: Donchitos
 origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: Donchitos (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+model_agnostic_score: 0
+sovereignty_notes: 'Donchitos (community-maintained individual) distributes Claude Code Game Studios under MIT licence; the framework is self-hostable as a shell-script skill system. Model-agnostic score revised to 2: the 49 AI agents and 72 workflow skills are architected around Claude Code as primary orchestrator, with Codex and Cursor cited as secondary targets — multi-provider commercial-API scope without local-weights first-class support. Active May 2026. No notable sovereignty flags.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - deepseek-reasonix

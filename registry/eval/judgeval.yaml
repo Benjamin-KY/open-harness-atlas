@@ -7,21 +7,19 @@ homepage: https://judgmentlabs.ai/
 license: Apache-2.0
 primary_language: Python
 tagline: The Continuous-Improvement Stack for Agents.
-description: |-
-  Judgeval — The Continuous-Improvement Stack for Agents. Our environment data and evals power agent improvement and monitoring. Upstream maintainer: JudgmentLabs.
+description: 'Judgeval — The Continuous-Improvement Stack for Agents. Our environment data and evals power agent improvement and monitoring. Upstream maintainer: JudgmentLabs.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: ga
 maintainer:
   type: company
   name: JudgmentLabs
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: JudgmentLabs (company-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: JudgmentLabs (company-maintained San Francisco startup); Apache-2.0 Python SDK that combines OpenTelemetry tracing with prompt-defined agent-judges, designed to score live traffic and replay against historical traces. Model-agnostic 4 — auto-instruments OpenAI/Anthropic/Google/Together and runs against any OpenAI-compatible local endpoint via the same OTel hooks. §8 fit is on the eval line; the companion judgmentlabs.ai SaaS is optional and not the catalogued artefact.
 harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness
 - ragrank
 - repoagentbench
-- typescript-sdk
-- valor

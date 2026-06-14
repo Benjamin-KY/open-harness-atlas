@@ -7,17 +7,17 @@ homepage: https://pantheonsecurity.io
 license: AGPL-3.0-only
 primary_language: Python
 tagline: AI-first security scanner with 79 analyzers, 40,000+ detection rules, and repo poisoning detection for AI/ML, LLM agents, and MCP servers.
-description: |-
-  Medusa — AI-first security scanner with 79 analyzers, 40,000+ detection rules, and repo poisoning detection for AI/ML, LLM agents, and MCP servers. Scan any GitHub repo with: medusa scan --git user/repo. Upstream maintainer: Pantheon-Security.
+description: 'Medusa — AI-first security scanner with 79 analyzers, 40,000+ detection rules, and repo poisoning detection for AI/ML, LLM agents, and MCP servers. Scan any GitHub repo with: medusa scan --git user/repo. Upstream maintainer: Pantheon-Security.
 
-  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.
+
+  In the atlas: this is a red-team / adversarial-evaluation entry. The harness paradigm treats red-team tooling as a continuous probe against the model and the governance scaffold around it.'
 maturity: ga
 maintainer:
-  type: community
+  type: company
   name: Pantheon-Security
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: Pantheon-Security (community-maintained); OSS core is GNU Affero General Public License v3.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: 'Pantheon-Security (commercial; AGPL-3.0) ships MEDUSA, a pattern-based scanner with ~40k rules harvested from AI-security research for detecting prompt injection in MCP servers and RAG pipelines, unsafe agent patterns, repo-poisoning markers, and leaked API keys across IDE/CLI histories. Model-agnostic 3 because detection is rule-based and provider-independent; some optional LLM-assisted enrichments work against any OpenAI-compatible endpoint. Harness alignment ''partial'': it is a strong probe/scan surface for the redteam axis but does not implement the agent-side spine.'
 harness_paradigm_alignment: partial
 adjacent_to:
 - pipelock

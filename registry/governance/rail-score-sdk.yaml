@@ -7,10 +7,10 @@ homepage: https://pypi.org/project/rail-score-sdk/
 license: MIT
 primary_language: Python
 tagline: Official Python SDK for RAIL Score.
-description: |-
-  Rail Score Sdk — Official Python SDK for RAIL Score. LLM evaluation across 8 dimensions, guardrails, safe regeneration, agent tool-call eval, and compliance (GDPR, HIPAA, EU AI Act, India DPDP). Upstream maintainer: Responsible-AI-Labs.
+description: 'Rail Score Sdk — Official Python SDK for RAIL Score. LLM evaluation across 8 dimensions, guardrails, safe regeneration, agent tool-call eval, and compliance (GDPR, HIPAA, EU AI Act, India DPDP). Upstream maintainer: Responsible-AI-Labs.
 
-  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+
+  In the atlas: this is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.'
 maturity: beta
 maintainer:
   type: company
@@ -21,9 +21,9 @@ five_component_coverage:
   policy_router: partial
   source_authority: none
   prompt_composer: none
-  output_contract: none
+  output_contract: partial
   audit_log_fsm: none
-sovereignty_notes: Responsible-AI-Labs (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: Responsible-AI-Labs (company) ships the MIT-licensed Python client for the RAIL Score evaluation API, plus a documented MCP server companion. Model-agnostic 2 — the SDK orchestrates evaluation calls against the hosted RAIL Score service and integrates with multiple commercial LLM providers, but the judge surface itself is the RAIL API rather than a local-weights drop-in. Curator-reviewed; kept because the SDK plus policy engine, safe-regeneration and OpenTelemetry hooks cover real governance spine slots (policy router, output contract, audit log).
 harness_paradigm_alignment: partial
 adjacent_to:
 - guardrails-ai

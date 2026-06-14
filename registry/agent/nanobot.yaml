@@ -7,17 +7,17 @@ homepage: https://nanobot.wiki
 license: MIT
 primary_language: Python
 tagline: Lightweight, open-source AI agent for your tools, chats, and workflows.
-description: |-
-  Nanobot — Lightweight, open-source AI agent for your tools, chats, and workflows. Upstream maintainer: HKUDS.
+description: 'Nanobot — Lightweight, open-source AI agent for your tools, chats, and workflows. Upstream maintainer: HKUDS.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
 maturity: ga
 maintainer:
-  type: community
+  type: institution
   name: HKUDS
-origin_country: null
+origin_country: HK
 model_agnostic_score: 3
-sovereignty_notes: HKUDS (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: HKUDS (Hong Kong University Data Sciences research group) maintains nanobot under MIT with a PyPI package and multilingual docs at nanobot.wiki; the README documents an ultra-lightweight personal-agent core with chat channels (Telegram, Discord, WeChat, Slack, Email), MCP, model routing and Langfuse observability. Model-agnostic 4 — provider fallback and model routing are configuration concerns, making the runtime an OpenAI-compatible-style swap target. Curator-reviewed; sovereignty caveat is the China/Hong Kong research-group origin worth surfacing for downstream users sensitive to that.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

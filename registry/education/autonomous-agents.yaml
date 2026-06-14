@@ -1,0 +1,29 @@
+id: autonomous-agents
+name: Autonomous Agents
+category: education
+subcategory: awesome-list
+repo_url: https://github.com/tmgthb/Autonomous-Agents
+license: MIT
+primary_language: Multiple
+tagline: Autonomous Agents (LLMs) research papers.
+description: 'Autonomous Agents — Autonomous Agents (LLMs) research papers. Updated Daily. Upstream maintainer: tmgthb.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: community
+  name: tmgthb
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: Single-maintainer community project (Teemu Maatta) under MIT; a daily-updated curated reading list of autonomous-agents research papers with a companion resources index. Category corrected to education/awesome-list — it is reference material, not a runnable agent runtime. Model-agnostic 3 is structural and effectively N/A for a paper list; value is in pointer-quality and update cadence.
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- ragaai-catalyst
+- spring-ai-alibaba
+education_resources:
+- title: Autonomous Agents
+  url: https://github.com/tmgthb/Autonomous-Agents
+  type: paper
+  free: true

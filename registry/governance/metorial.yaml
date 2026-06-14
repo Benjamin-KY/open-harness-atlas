@@ -1,0 +1,33 @@
+id: metorial
+name: Metorial
+category: governance
+subcategory: agent-workflow
+repo_url: https://github.com/metorial/metorial
+homepage: https://metorial.com
+license: Apache-2.0
+primary_language: TypeScript
+tagline: Connect any AI model to 1200+ integrations (MCP, CLI, API)
+description: 'Metorial — Connect any AI model to 1200+ integrations (MCP, CLI, API). Upstream maintainer: metorial.
+
+
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.'
+maturity: ga
+maintainer:
+  type: company
+  name: metorial
+origin_country: null
+model_agnostic_score: 3
+sovereignty_notes: 'Metorial Inc (YC F25 company; Apache-2.0 OSS + paid hosted control plane). The catalogued artefact (the OSS server) is free and self-hostable. MAS=3 — any-model claim is true at the agent layer but Metorial itself doesn''t switch models; it routes auth/tool calls. Harness alignment partial: strong policy_router (scoped per-agent permissions, RBAC, SAML SSO) and audit_log_fsm (per-credential traceability), no output_contract on model responses.'
+harness_paradigm_alignment: partial
+adjacent_to:
+- langgraph
+- sim
+- solace-agent-mesh
+- swarms
+- zeroshot
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: none
+  audit_log_fsm: none

@@ -6,17 +6,17 @@ repo_url: https://github.com/zhjai/groundcheck
 license: MIT
 primary_language: Multiple
 tagline: Single-agent, evidence-grounded claim verification to catch LLM hallucinations — a pluggable fact-gate for agent-arena and any multi-agent system (CrewAI, AutoGen, LangGraph).
-description: |-
-  Groundcheck — Single-agent, evidence-grounded claim verification to catch LLM hallucinations — a pluggable fact-gate for agent-arena and any multi-agent system (CrewAI, AutoGen, LangGraph). Upstream maintainer: zhjai.
+description: 'Groundcheck — Single-agent, evidence-grounded claim verification to catch LLM hallucinations — a pluggable fact-gate for agent-arena and any multi-agent system (CrewAI, AutoGen, LangGraph). Upstream maintainer: zhjai.
 
-  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+
+  In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.'
 maturity: beta
 maintainer:
-  type: company
+  type: community
   name: zhjai
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: zhjai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Auto-ingested by the Phase 3a sweep (2026-06-13) without per-entry maintainer-page review; the maintainer.type, origin_country, model_agnostic_score, and alignment fields are heuristic defaults that may be revised on individual curator review. Tracked in docs/CURATION_BACKLOG.md.
+sovereignty_notes: zhjai (community-maintained, individual developer also behind the companion agent-arena project); MIT-licensed single-agent fact-gate that grounds each claim in deterministic external evidence and emits per-claim verdicts plus a recommended action (keep/revise/retract/send-back). Model-agnostic 3 — evidence sources and judge LLM are pluggable per the README, with no provider hard-coding. §8 fit is firmly on the RAG-eval/hallucination-detection surface, complementing agent-arena's overconfidence angle.
 harness_paradigm_alignment: partial
 adjacent_to:
 - deepeval-evaluation-harness
