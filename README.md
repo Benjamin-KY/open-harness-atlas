@@ -16,11 +16,15 @@ routing — and free education resources.*
 
 ## The graph
 
-> 📊 **[Open the interactive knowledge graph →](https://benjamin-ky.github.io/open-harness-atlas/)**
+> 🌐 **[Open the 3D interactive knowledge graph →](https://benjamin-ky.github.io/open-harness-atlas/)**
 >
-> 313 nodes · 1,224 adjacency edges · search, filter by category, click any
-> node to see its neighbours, drag to rearrange, zoom to inspect dense
-> clusters. (Auto-generated from `registry/*/*.yaml` — re-deployed on every push to `main`.)
+> 313 nodes · 1,224 adjacency edges · WebGL 3D view (drag to orbit, scroll to
+> zoom), live search, faceted filters, BFS path finder, curated tours,
+> particle-flow edges, dark canvas, deep-linkable. Prefer the classic 2D
+> layout? **[Open the 2D viewer →](https://benjamin-ky.github.io/open-harness-atlas/2d.html)**
+> (mini-map, compare mode, cluster layout, PNG export).
+>
+> Both views are auto-generated from `registry/*/*.yaml` and re-deployed on every push to `main`.
 
 ![open-harness-atlas — 313-node, 1,224-edge knowledge graph](visuals/graph.svg)
 
