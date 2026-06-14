@@ -97,8 +97,6 @@ why "jurisdiction-neutral" is a design commitment, not a slogan).
 
 ## How harnesses are the foundation for model-agnostic workloads
 
-![Six-category taxonomy](visuals/taxonomy.svg)
-
 A **harness** is the structural scaffolding *around* the model that
 makes the model itself swappable. In the [Harmless Harnesses][hh] spec,
 a harness has five components, each enforcing one invariant:

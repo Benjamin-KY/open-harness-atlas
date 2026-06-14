@@ -6,7 +6,9 @@ stack: governance, agent, eval, red-team, routing — plus an education
 category for the free curricula that teach the same patterns from
 foundations through frameworks.
 
-![Six-category taxonomy](../visuals/taxonomy.svg)
+See [`../visuals/hero.svg`](../visuals/hero.svg) for the at-a-glance
+infographic showing per-category counts, adoption-tier mix, and the
+landmark projects in each cluster.
 
 ## Decision rule for category membership
 

@@ -41,6 +41,7 @@ CATEGORY_COLOUR = {
 }
 SPECTRUM_FILE = VISUALS_DIR / "model-agnostic-spectrum.svg"
 HERO_FILE = VISUALS_DIR / "hero.svg"
+OVERLAY_FILE = VISUALS_DIR / "five-component-overlay.svg"
 
 # ---------------------------------------------------------------------------
 # Hero banner — curator-vetted landmark picks per category.
@@ -415,6 +416,235 @@ def _build_hero() -> str:
     return "\n".join(parts)
 
 
+# ---------------------------------------------------------------------------
+# Five-component overlay — auto-built from the six reference governance YAMLs.
+#
+# Replaces the old hand-authored visuals/five-component-overlay.svg which
+# drifted from the YAML truth (e.g. guardrails-ai.policy_router was rendered
+# as "partial" while the YAML says "none"). Now the SVG is one rebuild away
+# from the underlying registry data and cannot silently disagree with it.
+# ---------------------------------------------------------------------------
+OVERLAY_PROJECTS = [
+    "guardrails-ai",
+    "nemo-guardrails",
+    "presidio",
+    "granite-guardian",
+    "rebuff",
+    "harmless-harnesses",
+]
+OVERLAY_COMPONENTS = [
+    ("policy_router", "policy router"),
+    ("source_authority", "source authority"),
+    ("prompt_composer", "prompt composer"),
+    ("output_contract", "output contract"),
+    ("audit_log_fsm", "audit-log FSM"),
+]
+OVERLAY_LEVELS = ["native", "aligned", "partial", "none"]
+OVERLAY_FILL = {
+    "native":  "#28a745",
+    "aligned": "#4a6fa5",
+    "partial": "#d68910",
+    "none":    "#e6e9ee",
+}
+OVERLAY_TEXT = {
+    "native":  "#ffffff",
+    "aligned": "#ffffff",
+    "partial": "#ffffff",
+    "none":    "#6b7a8c",
+}
+OVERLAY_BLURB = {
+    "native":  "component is the project's core abstraction",
+    "aligned": "project implements the component substantively",
+    "partial": "project covers the component for a narrow case only",
+    "none":    "component is out of scope for this project",
+}
+
+
+def _overlay_data() -> dict[str, dict[str, str]]:
+    out: dict[str, dict[str, str]] = {}
+    for pid in OVERLAY_PROJECTS:
+        path = REGISTRY_DIR / "governance" / f"{pid}.yaml"
+        coverage = {k: "none" for k, _ in OVERLAY_COMPONENTS}
+        if path.exists():
+            with path.open(encoding="utf-8") as fh:
+                doc = yaml.safe_load(fh) or {}
+            fcc = doc.get("five_component_coverage") or {}
+            for ck, _ in OVERLAY_COMPONENTS:
+                val = fcc.get(ck, "none")
+                if val not in OVERLAY_LEVELS:
+                    val = "none"
+                coverage[ck] = val
+        out[pid] = coverage
+    return out
+
+
+def _build_overlay() -> str:
+    data = _overlay_data()
+
+    W, H = 1200, 720
+    PAD = 36
+    HEADER_BOTTOM = 96
+    COL_HEADER_Y = HEADER_BOTTOM + 28
+    GRID_TOP = COL_HEADER_Y + 28
+    LEGEND_TOP = H - 130
+    FOOTER_Y = H - 16
+    LABEL_COL_W = 188
+    GRID_LEFT = PAD + LABEL_COL_W
+    GRID_RIGHT = W - PAD
+    GRID_W = GRID_RIGHT - GRID_LEFT
+    GRID_BOTTOM = LEGEND_TOP - 24
+    GRID_H = GRID_BOTTOM - GRID_TOP
+    n_cols = len(OVERLAY_PROJECTS)
+    n_rows = len(OVERLAY_COMPONENTS)
+    cell_w = GRID_W / n_cols
+    cell_h = GRID_H / n_rows
+    cell_gap = 8
+
+    parts: list[str] = []
+    parts.append('<?xml version="1.0" encoding="UTF-8"?>')
+    parts.append(
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
+        'role="img" aria-labelledby="ovTitle ovDesc">'
+    )
+    parts.append(
+        '<title id="ovTitle">Five-component coverage — which OSS governance '
+        'harnesses cover which Harmless Harnesses components</title>'
+    )
+    parts.append(
+        '<desc id="ovDesc">A 5-row by 6-column matrix mapping the five Harmless '
+        'Harnesses components (policy router, source authority, prompt composer, '
+        'output contract, audit-log FSM) to six representative open-source '
+        'governance projects (guardrails-ai, nemo-guardrails, presidio, '
+        'granite-guardian, rebuff, harmless-harnesses). Each cell is one of '
+        'native, aligned, partial, or none — colour-coded and labelled.</desc>'
+    )
+    parts.append('<style>')
+    parts.append(
+        '.body { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; }'
+    )
+    parts.append('.h1 { font-size: 26px; font-weight: 700; fill: #1f3a5f; }')
+    parts.append('.h2 { font-size: 13px; font-weight: 400; fill: #4a5d75; }')
+    parts.append(
+        '.col-header { font-size: 14px; font-weight: 600; fill: #1f3a5f; '
+        'text-anchor: middle; }'
+    )
+    parts.append(
+        '.col-sub { font-size: 10px; font-weight: 400; fill: #6b7a8c; '
+        'text-anchor: middle; font-style: italic; }'
+    )
+    parts.append(
+        '.row-label { font-size: 14px; font-weight: 600; fill: #1f3a5f; '
+        'text-anchor: end; }'
+    )
+    parts.append(
+        '.cell-label { font-size: 13px; font-weight: 700; text-anchor: middle; }'
+    )
+    parts.append(
+        '.legend-blurb { font-size: 12px; font-weight: 500; fill: #1f3a5f; }'
+    )
+    parts.append(
+        '.footer { font-size: 11px; fill: #6b7a8c; text-anchor: middle; }'
+    )
+    parts.append('</style>')
+
+    parts.append(f'<rect width="{W}" height="{H}" fill="#ffffff"/>')
+
+    # Header block
+    parts.append(
+        f'<text x="{PAD}" y="42" class="body h1">Five-component coverage</text>'
+    )
+    parts.append(
+        f'<text x="{PAD}" y="68" class="body h2">'
+        'Which open-source governance harnesses cover which Harmless Harnesses '
+        'components. Capability axis only — not a ranking.</text>'
+    )
+    parts.append(
+        f'<text x="{PAD}" y="86" class="body h2">'
+        'Cells are auto-generated from '
+        '<tspan font-family="ui-monospace, SFMono-Regular, Menlo, monospace" '
+        'fill="#1f3a5f">registry/governance/*.yaml</tspan> '
+        '· five_component_coverage fields.</text>'
+    )
+
+    # Column headers
+    for ci, pid in enumerate(OVERLAY_PROJECTS):
+        cx = GRID_LEFT + ci * cell_w + cell_w / 2
+        parts.append(
+            f'<text x="{cx:.1f}" y="{COL_HEADER_Y}" class="body col-header">'
+            f'{_xml_escape(pid)}</text>'
+        )
+        if pid == "harmless-harnesses":
+            parts.append(
+                f'<text x="{cx:.1f}" y="{COL_HEADER_Y + 14}" class="body col-sub">'
+                'reference impl — COI noted</text>'
+            )
+
+    # Grid cells + row labels
+    for ri, (ckey, clabel) in enumerate(OVERLAY_COMPONENTS):
+        row_centre_y = GRID_TOP + ri * cell_h + cell_h / 2
+        parts.append(
+            f'<text x="{GRID_LEFT - 16:.1f}" y="{row_centre_y + 5:.1f}" '
+            f'class="body row-label">{_xml_escape(clabel)}</text>'
+        )
+        for ci, pid in enumerate(OVERLAY_PROJECTS):
+            cx = GRID_LEFT + ci * cell_w + cell_gap / 2
+            cy = GRID_TOP + ri * cell_h + cell_gap / 2
+            cw = cell_w - cell_gap
+            ch = cell_h - cell_gap
+            level = data[pid].get(ckey, "none")
+            fill = OVERLAY_FILL[level]
+            text_fill = OVERLAY_TEXT[level]
+            parts.append(
+                f'<rect x="{cx:.1f}" y="{cy:.1f}" width="{cw:.1f}" '
+                f'height="{ch:.1f}" rx="10" fill="{fill}"/>'
+            )
+            parts.append(
+                f'<text x="{cx + cw / 2:.1f}" y="{cy + ch / 2 + 5:.1f}" '
+                f'class="body cell-label" fill="{text_fill}">{level}</text>'
+            )
+
+    # Legend — 2x2 grid beneath the data grid; each cell = chip + blurb.
+    # Avoid using .row-label class (its CSS text-anchor:end clips left-aligned
+    # text) — set anchor with `style=` so it beats the class selector.
+    parts.append(
+        f'<text x="{PAD}" y="{LEGEND_TOP + 16}" class="body" '
+        'style="font-size:14px;font-weight:600;fill:#1f3a5f;text-anchor:start">'
+        'Coverage legend</text>'
+    )
+    col_w = (W - 2 * PAD) / 2
+    row_h = 36
+    chip_w, chip_h = 76, 26
+    for i, level in enumerate(OVERLAY_LEVELS):
+        col = i % 2
+        row = i // 2
+        cx = PAD + col * col_w
+        cy = LEGEND_TOP + 40 + row * row_h
+        fill = OVERLAY_FILL[level]
+        text_fill = OVERLAY_TEXT[level]
+        parts.append(
+            f'<rect x="{cx:.1f}" y="{cy - 18}" width="{chip_w}" '
+            f'height="{chip_h}" rx="6" fill="{fill}"/>'
+        )
+        parts.append(
+            f'<text x="{cx + chip_w / 2:.1f}" y="{cy - 1}" '
+            f'class="body cell-label" fill="{text_fill}">{level}</text>'
+        )
+        parts.append(
+            f'<text x="{cx + chip_w + 12:.1f}" y="{cy - 1}" '
+            f'class="body legend-blurb">{_xml_escape(OVERLAY_BLURB[level])}</text>'
+        )
+
+    parts.append(
+        f'<text x="{W / 2:.1f}" y="{FOOTER_Y}" class="body footer">'
+        'CC BY-SA 4.0 — open-harness-atlas · '
+        'auto-generated from registry/governance/*.yaml five_component_coverage'
+        '</text>'
+    )
+
+    parts.append('</svg>\n')
+    return "\n".join(parts)
+
+
 def _empty_svg(message: str) -> str:
     return (
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -447,6 +677,8 @@ def main(argv: list[str] | None = None) -> int:
                         help="Do not rebuild model-agnostic-spectrum.svg.")
     parser.add_argument("--skip-hero", action="store_true",
                         help="Do not rebuild hero.svg.")
+    parser.add_argument("--skip-overlay", action="store_true",
+                        help="Do not rebuild five-component-overlay.svg.")
     args = parser.parse_args(argv)
 
     VISUALS_DIR.mkdir(parents=True, exist_ok=True)
@@ -473,6 +705,17 @@ def main(argv: list[str] | None = None) -> int:
         else:
             HERO_FILE.write_text(rendered, encoding="utf-8")
             print(f"wrote {HERO_FILE.relative_to(REPO_ROOT)}")
+
+    if not args.skip_overlay:
+        rendered = _build_overlay()
+        if args.check:
+            existing = OVERLAY_FILE.read_text(encoding="utf-8") if OVERLAY_FILE.exists() else ""
+            if existing != rendered:
+                sys.stderr.write(f"DRIFT: {OVERLAY_FILE.relative_to(REPO_ROOT)}\n")
+                drift = True
+        else:
+            OVERLAY_FILE.write_text(rendered, encoding="utf-8")
+            print(f"wrote {OVERLAY_FILE.relative_to(REPO_ROOT)}")
 
     return 1 if drift else 0
 
