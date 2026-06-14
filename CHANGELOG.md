@@ -30,6 +30,21 @@ follows [SemVer](https://semver.org/).
 
 ### Fixed
 
+- **Hand-authored visuals that drifted from data and looked dated**: the
+  README's lower-half static SVGs (`visuals/taxonomy.svg`, the bubble
+  diagram, and `visuals/five-component-overlay.svg`, the heatmap)
+  predated the Phase 7 design language and one had factually drifted
+  from the YAML (guardrails-ai.policy_router rendered "partial" while
+  `registry/governance/guardrails-ai.yaml` says "none"). The taxonomy
+  bubble is now strictly redundant with `hero.svg` (which already shows
+  all six categories with landmarks, counts, and tier mix) so it has
+  been deleted from the repo and removed from both README and
+  `docs/taxonomy.md` (replaced with a pointer to the hero). The
+  five-component overlay has been re-implemented as `_build_overlay()`
+  in `scripts/build_visuals.py` — clean 1200×720 layout, 2×2 legend
+  (no clipped labels), brighter "aligned" colour for readable cell
+  text, regenerated from `registry/governance/*.yaml` on every build
+  and drift-checked via `build_visuals.py --check`.
 - **Git author attribution**: rewrote every commit on `main` to
   `99622824+Benjamin-KY@users.noreply.github.com`. Prior commits used
   `benke@users.noreply.github.com` which GitHub mistakenly routed to an
