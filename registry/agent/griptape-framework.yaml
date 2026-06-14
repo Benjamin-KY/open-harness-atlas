@@ -7,7 +7,7 @@ license: Apache-2.0
 primary_language: Python
 tagline: 'Modular Python framework for genAI apps: Agents, Pipelines, Workflows; rich driver ecosystem for LLMs, vector stores, web scraping, observability'
 description: |
-  Griptape is Griptape AI (Foundry)'s modular Python framework for genAI apps: Agents, Pipelines, Workflows; rich driver ecosystem for LLMs, vector stores, web scraping, observability. Production-grade with full type annotations (pyright); 20+ built-in tools; Griptape Nodes desktop visual builder; Codecov tested; active release cadence 2026..
+  Griptape is Griptape AI (Foundry)'s modular Python framework for genAI apps: Agents, Pipelines, Workflows; rich driver ecosystem for LLMs, vector stores, web scraping, observability. Fully type-annotated (pyright); 20+ built-in tools; Griptape Nodes desktop visual builder; Codecov tested; active release cadence 2026..
 
   In the atlas: Griptape is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
 maturity: ga

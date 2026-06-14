@@ -5,9 +5,9 @@ subcategory: llm-judge
 repo_url: https://github.com/nshportun/BestTester
 license: Apache-2.0
 primary_language: TypeScript
-tagline: Production-grade Playwright + TypeScript QA framework with AI-powered testing, LLM-as-Judge evaluation, MCP server, 7 CLI agents, security fuzzing, CI/CD pipelines, Jira sync, and Slack reporting —...
+tagline: Playwright + TypeScript QA framework with LLM-as-Judge evaluation, MCP server, 7 CLI agents, security fuzzing, CI/CD pipelines, Jira sync, and Slack reporting
 description: |-
-  Best Tester — Production-grade Playwright + TypeScript QA framework with AI-powered testing, LLM-as-Judge evaluation, MCP server, 7 CLI agents, security fuzzing, CI/CD pipelines, Jira sync, and Slack reporting — zero-config, plug-and-play. Upstream maintainer: nshportun.
+  Best Tester — Playwright + TypeScript QA framework with AI-powered testing, LLM-as-Judge evaluation, MCP server, 7 CLI agents, security fuzzing, CI/CD pipelines, Jira sync, and Slack reporting. Upstream maintainer: nshportun.
 
   In the atlas: this is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
 maturity: beta

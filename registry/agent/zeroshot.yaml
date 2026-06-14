@@ -8,7 +8,7 @@ license: MIT
 primary_language: JavaScript
 tagline: Your autonomous engineering team in a CLI.
 description: |-
-  Zeroshot — Your autonomous engineering team in a CLI. Point Zeroshot at an issue, walk away, and return to production-grade code. Supports Claude Code, OpenAI Codex, OpenCode, and Gemini CLI. Upstream maintainer: covibes.
+  Zeroshot — Your autonomous engineering team in a CLI. Point Zeroshot at an issue, walk away, and return to merge-ready code. Supports Claude Code, OpenAI Codex, OpenCode, and Gemini CLI. Upstream maintainer: covibes.
 
   In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
 maturity: ga

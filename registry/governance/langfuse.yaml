@@ -7,7 +7,7 @@ license: MIT
 primary_language: TypeScript
 tagline: 'Self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards'
 description: |
-  Langfuse is Langfuse GmbH's self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards. Production-grade self-hostable audit-log store (ClickHouse) for regulated industries needing data residency.
+  Langfuse is Langfuse GmbH's self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards. Self-hostable audit-log store (ClickHouse) targeted at regulated industries needing data residency.
 
   In the atlas: Langfuse is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
 maturity: ga

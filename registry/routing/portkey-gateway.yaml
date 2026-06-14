@@ -6,7 +6,7 @@ repo_url: https://github.com/Portkey-AI/gateway
 homepage: https://portkey.ai/features/ai-gateway
 license: MIT
 primary_language: TypeScript
-tagline: Production-grade AI gateway — load balancing, fallbacks, retries, caching, and observability across 250+ models.
+tagline: AI gateway — load balancing, fallbacks, retries, caching, and observability across 250+ models.
 description: |
   Portkey AI Gateway is a Node.js / TypeScript open-source gateway that
   fronts 250+ LLM providers with a single OpenAI-compatible interface.

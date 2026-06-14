@@ -5,9 +5,9 @@ subcategory: llm-firewall
 repo_url: https://github.com/protectai/llm-guard
 license: MIT
 primary_language: Python
-tagline: 'Production-grade input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets'
+tagline: 'Input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets'
 description: |
-  LLM Guard is Protect AI's production-grade input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets. Modular scanner pipeline usable as Python lib or REST API; 30+ scanners.
+  LLM Guard is Protect AI's input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets. Modular scanner pipeline usable as Python lib or REST API; 30+ scanners.
 
   In the atlas: LLM Guard is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
 maturity: ga
