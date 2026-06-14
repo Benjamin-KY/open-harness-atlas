@@ -90,7 +90,7 @@ def test_summary_posture_facet_is_present(payload):
     facet = payload["meta"].get("deployment_posture")
     assert facet is not None, "meta.deployment_posture missing"
     by_key = dict(facet)
-    assert VALID_POSTURES <= set(by_key), (
+    assert set(by_key) >= VALID_POSTURES, (
         f"meta.deployment_posture missing keys: {VALID_POSTURES - set(by_key)}"
     )
     # The facet must aggregate to the registry total (no entries lost).
