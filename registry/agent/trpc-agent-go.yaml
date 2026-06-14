@@ -22,6 +22,5 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - 9router
 - ag-ui
-- agency-agents-zh
 - langgraph
 - web-ui

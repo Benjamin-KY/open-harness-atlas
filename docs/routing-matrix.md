@@ -16,7 +16,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Apisix](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 3/5 | landmark | 16.7k | — | apache |
 | [Aqbot](https://github.com/AQBot-Desktop/AQBot) | AGPL-3.0-only | TypeScript | ga | — | 3/5 | frontier | 635 | — | AQBot-Desktop |
 | [Aqueduct](https://github.com/TU-Wien-dataLAB/aqueduct) | BSD-3-Clause | Python | beta | — | 3/5 | frontier | 23 | — | TU-Wien-dataLAB |
-| [Atidraw](https://github.com/atinux/atidraw) | MIT | Vue | ga | — | 3/5 | emerging | 211 | — | atinux |
 | [BentoML](https://github.com/bentoml/BentoML) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 8.7k | — | BentoML / bentoml.com |
 | [Bitrouter](https://github.com/bitrouter/bitrouter) | Apache-2.0 | Rust | beta | — | 3/5 | emerging | 179 | — | bitrouter |
 | [Burst GPT](https://github.com/HPMLL/BurstGPT) | CC-BY-4.0 | Python | ga | — | 3/5 | emerging | 269 | — | HPMLL |

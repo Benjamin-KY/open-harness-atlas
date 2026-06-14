@@ -23,8 +23,15 @@ five_component_coverage:
   output_contract: none
   audit_log_fsm: none
 sovereignty_notes: |
-  AgentOps AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
-harness_paradigm_alignment: aligned
+  AgentOps AI (US-incorporated company); OSS core is MIT and fully self-hostable.
+  Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped
+  configurations that favour a specific tier. Curator note (2026-06-14): tokencost is a
+  utility library — a token-counting and pricing-table lookup — not a spine component in
+  its own right. It's consumed by policy_router (cost-budget routing) and audit_log_fsm
+  (cost columns in usage logs), but doesn't implement either. Five-component coverage
+  remains all `none` and alignment downgraded `aligned` → `partial` to honour the contract
+  that `aligned` requires at least one `partial` (or stronger) spine component.
+harness_paradigm_alignment: partial
 adjacent_to:
   - agentops
   - helicone

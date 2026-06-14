@@ -22,7 +22,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Awesome Foundry Nextgen](https://github.com/corticalstack/awesome-foundry-nextgen) | MIT | Jupyter Notebook | partial | none | none | none | none | 3/5 |
 | [BAML](https://github.com/BoundaryML/baml) | Apache-2.0 | Rust | none | none | partial | native | none | 4/5 |
 | [Banned Words](https://github.com/readme-SVG/Banned-words) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
-| [Bifrost](https://github.com/maximhq/bifrost) | Apache-2.0 | Go | partial | none | none | none | none | 3/5 |
+| [Bifrost](https://github.com/maximhq/bifrost) | Apache-2.0 | Go | partial | none | none | none | none | 4/5 |
 | [Brigade](https://github.com/escoffier-labs/brigade) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [Circle Guard Bench](https://github.com/whitecircle/circle-guard-bench) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
 | [Circuit Breakers](https://github.com/GraySwanAI/circuit-breakers) | MIT | Python | partial | none | none | partial | partial | 4/5 |
@@ -73,7 +73,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AllenAI Open-Instruct](https://github.com/allenai/open-instruct) | Apache-2.0 | Python | none | none | native | native | partial | 5/5 |
 | [Openclaw Middleware Suite](https://github.com/Sapience-AI/openclaw-middleware-suite) | Apache-2.0 | TypeScript | partial | none | none | none | none | 3/5 |
 | [OpenLIT](https://github.com/openlit/openlit) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
-| [OpenLLMetry](https://github.com/traceloop/openllmetry) | Apache-2.0 | Python | none | none | none | none | none | 4/5 |
+| [OpenLLMetry](https://github.com/traceloop/openllmetry) | Apache-2.0 | Python | none | none | none | none | partial | 4/5 |
 | [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) | Apache-2.0 | Python | partial | none | native | native | partial | 5/5 |
 | [Opik (by Comet)](https://github.com/comet-ml/opik) | Apache-2.0 | Python | none | none | none | partial | native | 4/5 |
 | [Ouro Loop](https://github.com/VictorVVedtion/ouro-loop) | MIT | Python | partial | none | none | none | none | 3/5 |
@@ -91,11 +91,9 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Rail Score Sdk](https://github.com/Responsible-AI-Labs/rail-score-sdk) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [Rebuff](https://github.com/protectai/rebuff) | Apache-2.0 | Python | partial | none | none | partial | partial | 3/5 |
 | [Responsible AI Toolbox](https://github.com/microsoft/responsible-ai-toolbox) | MIT | TypeScript | none | none | none | none | none | 3/5 |
-| [Responsible AI Workshop](https://github.com/microsoft/responsible-ai-workshop) | CC-BY-4.0 | Jupyter Notebook | none | none | none | none | none | 3/5 |
 | [Rstructor](https://github.com/clifton/rstructor) | MIT | Rust | none | none | none | partial | none | 3/5 |
 | [Safe Zone](https://github.com/thyrisAI/safe-zone) | Apache-2.0 | Go | partial | none | none | none | none | 3/5 |
 | [SafeDecoding](https://github.com/uw-nsl/SafeDecoding) | MIT | Python | partial | none | none | partial | partial | 4/5 |
-| [SECA](https://github.com/Buyun-Liang/SECA) | MIT | Python | none | none | none | none | none | 3/5 |
 | [Sentinel AI](https://github.com/MaxwellCalkin/sentinel-ai) | Apache-2.0 | Python | partial | none | none | none | none | 3/5 |
 | [Shekel](https://github.com/arieradle/shekel) | MIT | Python | partial | none | none | none | none | 3/5 |
 | [ShieldLM](https://github.com/thu-coai/ShieldLM) | MIT | Python | partial | none | none | partial | none | 4/5 |
@@ -105,7 +103,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Supra Wall](https://github.com/wiserautomation/SupraWall) | Apache-2.0 | TypeScript | partial | none | none | none | none | 3/5 |
 | [Swing Skills](https://github.com/TheStack-ai/swing-skills) | MIT | Multiple | none | none | none | none | none | 3/5 |
 | [TokenCost](https://github.com/AgentOps-AI/tokencost) | MIT | Python | none | none | none | none | none | 4/5 |
-| [Trident](https://github.com/StyrbjornKall/TRIDENT) | MIT | Jupyter Notebook | none | none | none | none | none | 3/5 |
 | [TrustLLM](https://github.com/HowieHwong/TrustLLM) | Apache-2.0 | Python | none | none | none | none | partial | 4/5 |
 | [Trust Loop Guard](https://github.com/ducnguyen67201/TrustLoopGuard) | Apache-2.0 | HTML | partial | none | none | none | none | 3/5 |
 | [TypeChat](https://github.com/microsoft/TypeChat) | MIT | TypeScript | none | none | partial | native | none | 4/5 |

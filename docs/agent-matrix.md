@@ -11,9 +11,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | MIT | Python | beta | US | 5/5 | established | 4.2k | — | SylphAI, Inc. |
 | [Ag Ui](https://github.com/ag-ui-protocol/ag-ui) | MIT | Python | ga | — | 3/5 | established | 14.2k | — | ag-ui-protocol |
 | [AG2](https://github.com/ag2ai/ag2) | Apache-2.0 | Python | beta | US | 4/5 | established | 4.7k | — | ag2ai community |
-| [Agency Agents Zh](https://github.com/jnMetaCode/agency-agents-zh) | MIT | Shell | ga | — | 3/5 | emerging | 14.8k | — | jnMetaCode |
 | [Agency Swarm](https://github.com/VRSEN/agency-swarm) | MIT | Python | ga | UA | 4/5 | established | 4.4k | — | VRSEN |
-| [Agent Framework](https://github.com/microsoft/agent-framework) | MIT | Python | ga | — | 3/5 | established | 11.3k | — | microsoft |
 | [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) | MIT | Python | ga | — | 3/5 | emerging | 4.3k | — | microsoft |
 | [Agent Reach](https://github.com/Panniantong/Agent-Reach) | MIT | Python | ga | — | 3/5 | established | 27.5k | — | Panniantong |
 | [Agent S](https://github.com/simular-ai/Agent-S) | Apache-2.0 | Python | ga | — | 3/5 | established | 11.8k | — | simular-ai |
@@ -37,7 +35,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub) | MIT | Jupyter Notebook | ga | — | 3/5 | landmark | 35.8k | — | patchy631 |
 | [Aia W](https://github.com/NitroRCr/AIaW) | BSD-3-Clause | TypeScript | ga | — | 3/5 | established | 1.8k | — | NitroRCr |
 | [Aichat](https://github.com/sigoden/aichat) | Apache-2.0 | Rust | ga | — | 4/5 | established | 10.1k | — | sigoden |
-| [AIGC Interview Book](https://github.com/WeThinkIn/AIGC-Interview-Book) | GPL-3.0-only | Multiple | ga | — | 3/5 | established | 3.9k | — | WeThinkIn |
 | [Aion Ui](https://github.com/iOfficeAI/AionUi) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 28.2k | — | iOfficeAI |
 | [Agents (AIWaves)](https://github.com/aiwaves-cn/agents) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 5.9k | — | AIWaves / Zhejiang Univ |
 | [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 15.6k | — | mukul975 |
@@ -55,7 +52,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AutoGen](https://github.com/microsoft/autogen) | MIT | Python | ga | US | 4/5 | landmark | 58.9k | — | Microsoft Research |
 | [Autonomous Agents](https://github.com/tmgthb/Autonomous-Agents) | MIT | Multiple | ga | — | 3/5 | established | 1.3k | — | tmgthb |
 | [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) | MIT | Multiple | ga | — | 3/5 | established | 25.2k | — | VoltAgent |
-| [Awesome Agentic AI Zh](https://github.com/WenyuChiou/awesome-agentic-ai-zh) | MIT | Python | ga | — | 3/5 | frontier | 2.7k | — | WenyuChiou |
 | [Awesome MCP ZH](https://github.com/yzfly/Awesome-MCP-ZH) | MIT | Multiple | ga | — | 3/5 | established | 7.3k | — | yzfly |
 | [BabyAGI](https://github.com/yoheinakajima/babyagi) | MIT | Python | alpha | US | 4/5 | established | 22.3k | — | yoheinakajima |
 | [Babysitter](https://github.com/a5c-ai/babysitter) | MIT | JavaScript | ga | — | 3/5 | emerging | 1.3k | — | a5c-ai |
@@ -108,7 +104,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Fast Agent](https://github.com/evalstate/fast-agent) | Apache-2.0 | Python | ga | — | 3/5 | established | 3.8k | — | evalstate |
 | [FastAgency](https://github.com/ag2ai/fastagency) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 540 | — | ag2ai community |
 | [Figma Context MCP](https://github.com/GLips/Figma-Context-MCP) | MIT | TypeScript | ga | — | 3/5 | established | 15.1k | — | GLips |
-| [Firecrawl MCP Server](https://github.com/firecrawl/firecrawl-mcp-server) | MIT | JavaScript | ga | — | 3/5 | established | 6.6k | — | firecrawl |
+| [Firecrawl MCP Server](https://github.com/firecrawl/firecrawl-mcp-server) | MIT | JavaScript | ga | — | 3/5 | established | 6.6k | — | Firecrawl |
 | [Flowise](https://github.com/FlowiseAI/Flowise) | Apache-2.0 | TypeScript | ga | US | 5/5 | landmark | 53.5k | — | FlowiseAI |
 | [Forge](https://github.com/antoinezambelli/forge) | MIT | Python | ga | — | 3/5 | emerging | 2.1k | — | antoinezambelli |
 | [Gemini Cli](https://github.com/google-gemini/gemini-cli) | Apache-2.0 | TypeScript | ga | — | 3/5 | landmark | 105.3k | — | google-gemini |
@@ -147,7 +143,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Klavis](https://github.com/Klavis-AI/klavis) | Apache-2.0 | Python | ga | — | 3/5 | established | 5.7k | — | Klavis-AI |
 | [Kubeshark](https://github.com/kubeshark/kubeshark) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 12.0k | — | kubeshark |
 | [Lamda](https://github.com/firerpa/lamda) | MIT | Python | ga | — | 3/5 | established | 7.8k | — | firerpa |
-| [Langchain](https://github.com/langchain-ai/langchain) | MIT | Python | ga | — | 3/5 | landmark | 139.2k | — | langchain-ai |
+| [Langchain](https://github.com/langchain-ai/langchain) | MIT | Python | ga | US | 4/5 | landmark | 139.2k | — | LangChain Inc |
 | [Langflow](https://github.com/langflow-ai/langflow) | MIT | Python | ga | US | 4/5 | landmark | 149.6k | — | DataStax |
 | [LangGraph](https://github.com/langchain-ai/langgraph) | MIT | Python | ga | US | 4/5 | landmark | 34.7k | — | LangChain Inc. |
 | [Langroid](https://github.com/langroid/langroid) | MIT | Python | ga | — | 3/5 | established | 4.0k | — | langroid |

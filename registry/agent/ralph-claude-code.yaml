@@ -21,6 +21,5 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - ai-agents-from-scratch
 - aichat
-- aigc-interview-book
 - aionui
 - langgraph

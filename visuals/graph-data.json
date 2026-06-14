@@ -1,24 +1,24 @@
 {
   "meta": {
-    "n_nodes": 824,
-    "n_edges": 3374,
-    "avg_degree": 8.19,
+    "n_nodes": 815,
+    "n_edges": 3316,
+    "avg_degree": 8.14,
     "density": 0.01,
     "categories": [
       {
         "key": "governance",
         "color": "#1f3a5f",
-        "count": 109
+        "count": 106
       },
       {
         "key": "agent",
         "color": "#d68910",
-        "count": 251
+        "count": 247
       },
       {
         "key": "eval",
         "color": "#28a745",
-        "count": 212
+        "count": 210
       },
       {
         "key": "redteam",
@@ -28,12 +28,12 @@
       {
         "key": "routing",
         "color": "#3498db",
-        "count": 95
+        "count": 94
       },
       {
         "key": "education",
         "color": "#7d3c98",
-        "count": 52
+        "count": 53
       }
     ],
     "tiers": [
@@ -53,21 +53,21 @@
       },
       {
         "key": "established",
-        "count": 180,
+        "count": 178,
         "opacity": 1.0,
         "radius_mult": 1.0,
         "outline": "solid"
       },
       {
         "key": "emerging",
-        "count": 124,
+        "count": 122,
         "opacity": 0.7,
         "radius_mult": 0.85,
         "outline": "solid"
       },
       {
         "key": "frontier",
-        "count": 388,
+        "count": 383,
         "opacity": 0.4,
         "radius_mult": 0.7,
         "outline": "dashed"
@@ -85,25 +85,25 @@
         "id": "langgraph",
         "name": "LangGraph",
         "category": "agent",
-        "degree": 190
+        "degree": 186
       },
       {
         "id": "lm-evaluation-harness",
         "name": "lm-evaluation-harness",
         "category": "eval",
-        "degree": 150
+        "degree": 148
       },
       {
         "id": "litellm",
         "name": "LiteLLM",
         "category": "routing",
-        "degree": 79
+        "degree": 78
       },
       {
         "id": "guardrails-ai",
         "name": "Guardrails AI",
         "category": "governance",
-        "degree": 68
+        "degree": 66
       },
       {
         "id": "pyrit",
@@ -157,7 +157,7 @@
     "licenses": [
       [
         "MIT",
-        463
+        455
       ],
       [
         "Apache-2.0",
@@ -165,7 +165,7 @@
       ],
       [
         "GPL-3.0-only",
-        14
+        13
       ],
       [
         "AGPL-3.0-only",
@@ -219,11 +219,11 @@
     "maturity": [
       [
         "ga",
-        428
+        423
       ],
       [
         "beta",
-        382
+        378
       ],
       [
         "alpha",
@@ -233,11 +233,11 @@
     "countries": [
       [
         "Unknown",
-        503
+        491
       ],
       [
         "US",
-        212
+        214
       ],
       [
         "CN",
@@ -265,7 +265,7 @@
       ],
       [
         "IN",
-        3
+        4
       ],
       [
         "CA",
@@ -331,7 +331,7 @@
     "languages": [
       [
         "Python",
-        514
+        510
       ],
       [
         "TypeScript",
@@ -343,7 +343,7 @@
       ],
       [
         "Jupyter Notebook",
-        36
+        35
       ],
       [
         "Rust",
@@ -351,7 +351,7 @@
       ],
       [
         "Multiple",
-        23
+        22
       ],
       [
         "JavaScript",
@@ -359,14 +359,14 @@
       ],
       [
         "HTML",
-        13
-      ],
-      [
-        "Shell",
-        8
+        12
       ],
       [
         "Java",
+        7
+      ],
+      [
+        "Shell",
         7
       ],
       [
@@ -390,10 +390,6 @@
         2
       ],
       [
-        "Vue",
-        2
-      ],
-      [
         "Swift",
         2
       ],
@@ -411,6 +407,10 @@
       ],
       [
         "Ruby",
+        1
+      ],
+      [
+        "Vue",
         1
       ],
       [
@@ -453,15 +453,15 @@
       ],
       [
         3,
-        463
+        453
       ],
       [
         4,
-        255
+        257
       ],
       [
         5,
-        102
+        101
       ]
     ]
   },
@@ -474,7 +474,7 @@
       "color": "#d68910",
       "url": "https://github.com/decolua/9router",
       "tagline": "Unlimited FREE AI coding.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "JavaScript",
@@ -639,40 +639,6 @@
       ]
     },
     {
-      "id": "agency-agents-zh",
-      "name": "Agency Agents Zh",
-      "category": "agent",
-      "subcategory": "agent-framework",
-      "color": "#d68910",
-      "url": "https://github.com/jnMetaCode/agency-agents-zh",
-      "tagline": "211 \u4e2a\u5373\u63d2\u5373\u7528\u7684 AI \u4e13\u5bb6\u89d2\u8272 \u2014 \u652f\u6301 Hermes Agent/Claude Code/Cursor/Copilot \u7b49 16 \u79cd\u5de5\u5177\uff0c\u8986\u76d6\u5de5\u7a0b/\u8bbe\u8ba1/\u8425\u9500/\u91d1\u878d\u7b49 18 \u4e2a\u90e8\u95e8\u3002\u542b 46 \u4e2a\u4e2d\u56fd\u5e02\u573a\u539f\u521b\u667a\u80fd\u4f53\uff08\u5c0f\u7ea2\u4e66/\u6296\u97f3/\u5fae\u4fe1/\u98de\u4e66/\u9489\u9489\u7b49\uff09",
-      "degree": 8,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Shell",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "institution",
-      "maintainer_name": "jnMetaCode",
-      "alignment": "partial",
-      "tier": "emerging",
-      "tier_opacity": 0.7,
-      "tier_radius_mult": 0.85,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 14812,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 1,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "build-rag-agent",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "agency-swarm",
       "name": "Agency Swarm",
       "category": "agent",
@@ -707,42 +673,6 @@
       ]
     },
     {
-      "id": "agent-framework",
-      "name": "Agent Framework",
-      "category": "agent",
-      "subcategory": "agent-framework",
-      "color": "#d68910",
-      "url": "https://github.com/microsoft/agent-framework",
-      "tagline": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
-      "degree": 8,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Python",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "institution",
-      "maintainer_name": "microsoft",
-      "alignment": "partial",
-      "tier": "established",
-      "tier_opacity": 1.0,
-      "tier_radius_mult": 1.0,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 11318,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": -1,
-      "spark": [
-        11318
-      ],
-      "use_cases": [
-        {
-          "id": "build-rag-agent",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "agent-governance-toolkit",
       "name": "Agent Governance Toolkit",
       "category": "agent",
@@ -750,7 +680,7 @@
       "color": "#d68910",
       "url": "https://github.com/microsoft/agent-governance-toolkit",
       "tagline": "AI Agent Governance Toolkit \u2014 Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -1398,7 +1328,7 @@
       "color": "#d68910",
       "url": "https://github.com/pguso/ai-agents-from-scratch",
       "tagline": "Demystify AI agents by building them yourself.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "JavaScript",
@@ -1504,7 +1434,7 @@
       "color": "#d68910",
       "url": "https://github.com/sigoden/aichat",
       "tagline": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
-      "degree": 8,
+      "degree": 7,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Rust",
@@ -1531,40 +1461,6 @@
       ]
     },
     {
-      "id": "aigc-interview-book",
-      "name": "AIGC Interview Book",
-      "category": "agent",
-      "subcategory": "agent-framework",
-      "color": "#d68910",
-      "url": "https://github.com/WeThinkIn/AIGC-Interview-Book",
-      "tagline": "\u3010\u4e09\u5e74\u9762\u8bd5\u4e94\u5e74\u6a21\u62df\u3011AIGC/LLM/AI Agent\u7b97\u6cd5\u5de5\u7a0b\u5e08\u9762\u8bd5\u79d8\u7c4d\u3002\u6db5\u76d6AIGC\u3001LLM\u5927\u6a21\u578b\u3001AI Agent\u3001\u4f20\u7edf\u6df1\u5ea6\u5b66\u4e60\u3001\u81ea\u52a8\u9a7e\u9a76\u3001\u673a\u5668\u5b66\u4e60\u3001\u8ba1\u7b97\u673a\u89c6\u89c9\u3001\u81ea\u7136\u8bed\u8a00\u5904\u7406\u3001\u5f3a\u5316\u5b66\u4e60\u3001\u5927\u6570\u636e\u6316\u6398\u3001\u5177\u8eab\u667a\u80fd\u3001\u5143\u5b87\u5b99\u3001AGI\u7b49AI\u884c\u4e1a\u9762\u8bd5\u7b14\u8bd5\u5e72\u8d27\u7ecf\u9a8c\u4e0e\u6838\u5fc3\u77e5\u8bc6\u3002",
-      "degree": 8,
-      "mas": 3,
-      "license": "GPL-3.0-only",
-      "language": "Multiple",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "WeThinkIn",
-      "alignment": "partial",
-      "tier": "established",
-      "tier_opacity": 1.0,
-      "tier_radius_mult": 1.0,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 3924,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 0,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "build-rag-agent",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "aionui",
       "name": "Aion Ui",
       "category": "agent",
@@ -1572,7 +1468,7 @@
       "color": "#d68910",
       "url": "https://github.com/iOfficeAI/AionUi",
       "tagline": "Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, OpenCode, Gemini CLI and 20+ more CLI | Customize your assistants | Star if you like it!",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "TypeScript",
@@ -1640,7 +1536,7 @@
       "color": "#d68910",
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
       "tagline": "754 structured cybersecurity skills for AI agents \u00b7 Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF \u00b7 agentskills.io standard \u00b7 Works with Claude Code, GitHub...",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -1674,7 +1570,7 @@
       "color": "#d68910",
       "url": "https://github.com/sickn33/antigravity-awesome-skills",
       "tagline": "Installable GitHub library of 1,500+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -1708,7 +1604,7 @@
       "color": "#d68910",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
       "tagline": "Stop renting your intelligence.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "JavaScript",
@@ -1776,7 +1672,7 @@
       "color": "#d68910",
       "url": "https://github.com/ArcReel/ArcReel",
       "tagline": "AI Agent \u9a71\u52a8\u7684\u5f00\u6e90\u89c6\u9891\u751f\u6210\u5de5\u4f5c\u53f0 \u2014 \u5c0f\u8bf4\u2192\u89d2\u8272/\u573a\u666f/\u9053\u5177\u8bbe\u8ba1\u2192\u5267\u672c\u2192\u5206\u955c\u56fe\u2192\u89c6\u9891\uff0c\u8de8\u955c\u5934\u89d2\u8272\u4e0e\u573a\u666f\u4e00\u81f4 | Open-source AI video workspace powered by AI Agents, Nano Banana 2 & Veo 3.1 / Grok / Seedance / OpenAI",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "AGPL-3.0-only",
       "language": "Python",
@@ -2136,40 +2032,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 1,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "build-rag-agent",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "awesome-agentic-ai-zh",
-      "name": "Awesome Agentic AI Zh",
-      "category": "agent",
-      "subcategory": "agent-framework",
-      "color": "#d68910",
-      "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-      "tagline": "A trilingual (\u7e41\u4e2d / English / \u7b80\u4e2d) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples.",
-      "degree": 8,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Python",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "WenyuChiou",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 2673,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -3962,8 +3824,8 @@
       "language": "JavaScript",
       "maturity": "ga",
       "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "firecrawl",
+      "maintainer_type": "company",
+      "maintainer_name": "Firecrawl",
       "alignment": "partial",
       "tier": "established",
       "tier_opacity": 1.0,
@@ -4772,7 +4634,7 @@
       "color": "#d68910",
       "url": "https://github.com/HolmesGPT/holmesgpt",
       "tagline": "SRE Agent - CNCF Sandbox Project",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -4806,7 +4668,7 @@
       "color": "#d68910",
       "url": "https://github.com/Windy3f3f3f3f/how-claude-code-works",
       "tagline": "Deep dive into Claude Code internals \u2014 architecture, agent loop, context engineering, and more.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Multiple",
@@ -4910,7 +4772,7 @@
       "color": "#d68910",
       "url": "https://github.com/Intelligent-Internet/ii-agent",
       "tagline": "II-Agent: a new open-source framework to build and deploy intelligent agents",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -4944,7 +4806,7 @@
       "color": "#d68910",
       "url": "https://github.com/InsForge/InsForge",
       "tagline": "The all-in-one, open-source backend platform for agentic coding.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "TypeScript",
@@ -5283,15 +5145,15 @@
       "subcategory": "agent-framework",
       "color": "#d68910",
       "url": "https://github.com/langchain-ai/langchain",
-      "tagline": "The agent engineering platform.",
+      "tagline": "Provider-agnostic Python/JS framework for chaining LLM calls, tools, retrievers, and agent loops; the de-facto reference implementation for the harness-as-application-layer pattern.",
       "degree": 9,
-      "mas": 3,
+      "mas": 4,
       "license": "MIT",
       "language": "Python",
       "maturity": "ga",
-      "country": "",
+      "country": "US",
       "maintainer_type": "company",
-      "maintainer_name": "langchain-ai",
+      "maintainer_name": "LangChain Inc",
       "alignment": "partial",
       "tier": "landmark",
       "tier_opacity": 1.0,
@@ -5352,7 +5214,7 @@
       "color": "#d68910",
       "url": "https://github.com/langchain-ai/langgraph",
       "tagline": "Stateful, controllable agents as explicit graphs of nodes and edges \u2014 checkpointing and time-travel built in.",
-      "degree": 190,
+      "degree": 186,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -6068,7 +5930,7 @@
       "color": "#d68910",
       "url": "https://github.com/microsoft/agent-framework",
       "tagline": "Multi-language successor to Semantic Kernel for multi-agent orchestration",
-      "degree": 6,
+      "degree": 9,
       "mas": 4,
       "license": "MIT",
       "language": "C#",
@@ -7022,7 +6884,7 @@
       "color": "#d68910",
       "url": "https://github.com/OthmanAdi/planning-with-files",
       "tagline": "Persistent file-based planning for AI coding agents and long-running agentic tasks.",
-      "degree": 11,
+      "degree": 10,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -7226,7 +7088,7 @@
       "color": "#d68910",
       "url": "https://github.com/frankbria/ralph-claude-code",
       "tagline": "Autonomous AI development loop for Claude Code with intelligent exit detection",
-      "degree": 11,
+      "degree": 10,
       "mas": 3,
       "license": "MIT",
       "language": "Shell",
@@ -7672,7 +7534,7 @@
       "color": "#d68910",
       "url": "https://github.com/SmythOS/sre",
       "tagline": "The SmythOS Runtime Environment (SRE) is an open-source, cloud-native runtime for agentic AI.",
-      "degree": 10,
+      "degree": 9,
       "mas": 3,
       "license": "MIT",
       "language": "TypeScript",
@@ -8254,7 +8116,7 @@
       "color": "#d68910",
       "url": "https://github.com/trpc-group/trpc-agent-go",
       "tagline": "A Go framework for building production agent systems with graph workflows, tools, memory, A2A, AG-UI, MCP, evaluation, and observability.",
-      "degree": 12,
+      "degree": 11,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Go",
@@ -8356,7 +8218,7 @@
       "color": "#d68910",
       "url": "https://github.com/neuml/txtai",
       "tagline": "All-in-one AI framework for semantic search, LLM orchestration and language model workflows",
-      "degree": 12,
+      "degree": 11,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -8562,7 +8424,7 @@
       "color": "#d68910",
       "url": "https://github.com/BloopAI/vibe-kanban",
       "tagline": "Get 10X more out of Claude Code, Codex or any coding agent",
-      "degree": 12,
+      "degree": 11,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Rust",
@@ -8596,7 +8458,7 @@
       "color": "#d68910",
       "url": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
       "tagline": "Vibe-Skills is an all-in-one AI skills package.",
-      "degree": 12,
+      "degree": 10,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -8630,7 +8492,7 @@
       "color": "#d68910",
       "url": "https://github.com/HKUDS/Vibe-Trading",
       "tagline": "\"Vibe-Trading: Your Personal Trading Agent\"",
-      "degree": 12,
+      "degree": 11,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -8664,7 +8526,7 @@
       "color": "#d68910",
       "url": "https://github.com/VoltAgent/voltagent",
       "tagline": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework",
-      "degree": 11,
+      "degree": 10,
       "mas": 3,
       "license": "MIT",
       "language": "TypeScript",
@@ -10094,7 +9956,7 @@
       "color": "#7d3c98",
       "url": "https://github.com/microsoft/ai-agents-for-beginners",
       "tagline": "Microsoft's 11-lesson free curriculum on building AI agents \u2014 covers Autogen, Semantic Kernel, and agent design patterns.",
-      "degree": 5,
+      "degree": 6,
       "mas": 4,
       "license": "MIT",
       "language": "Jupyter Notebook",
@@ -10266,7 +10128,7 @@
       "color": "#7d3c98",
       "url": "https://github.com/microsoft/AI-For-Beginners",
       "tagline": "12-week, 24-lesson AI survey: symbolic AI, neural nets, NLP, CV, ethics, Azure AI",
-      "degree": 4,
+      "degree": 5,
       "mas": 5,
       "license": "MIT",
       "language": "Jupyter Notebook",
@@ -10338,8 +10200,8 @@
       "color": "#7d3c98",
       "url": "https://github.com/microsoft/generative-ai-for-beginners",
       "tagline": "21-lesson structured curriculum on building GenAI apps with Python + Azure OpenAI",
-      "degree": 9,
-      "mas": 5,
+      "degree": 10,
+      "mas": 3,
       "license": "MIT",
       "language": "Jupyter Notebook",
       "maturity": "ga",
@@ -10675,6 +10537,42 @@
         {
           "id": "learn-the-stack",
           "level": "featured"
+        }
+      ]
+    },
+    {
+      "id": "responsible-ai-workshop",
+      "name": "Responsible AI Workshop",
+      "category": "education",
+      "subcategory": "responsible-ai-course",
+      "color": "#7d3c98",
+      "url": "https://github.com/microsoft/responsible-ai-workshop",
+      "tagline": "Tutorials and walkthroughs for putting Responsible AI into practice \u2014 fairness, interpretability, error analysis, counterfactuals.",
+      "degree": 4,
+      "mas": 3,
+      "license": "CC-BY-4.0",
+      "language": "Jupyter Notebook",
+      "maturity": "beta",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Microsoft",
+      "alignment": "partial",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
+      "data_missing": false,
+      "stars": 49,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": 471,
+      "spark": [
+        49
+      ],
+      "use_cases": [
+        {
+          "id": "learn-the-stack",
+          "level": "auto"
         }
       ]
     },
@@ -11060,7 +10958,7 @@
       "color": "#28a745",
       "url": "https://github.com/alepot55/agentrial",
       "tagline": "Statistical evaluation framework for AI agents",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -11128,7 +11026,7 @@
       "color": "#28a745",
       "url": "https://github.com/Cre4T3Tiv3/ai-agents-reality-check",
       "tagline": "Benchmarking the gap between AI agent hype and architecture.",
-      "degree": 7,
+      "degree": 6,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -11230,7 +11128,7 @@
       "color": "#28a745",
       "url": "https://github.com/mozilla-ai/any-agent",
       "tagline": "A single interface to use and evaluate different agent frameworks",
-      "degree": 7,
+      "degree": 6,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -12150,7 +12048,7 @@
       "color": "#28a745",
       "url": "https://github.com/JY0xLU/coordbench",
       "tagline": "Cross-lingual tacit coordination benchmark for LLMs",
-      "degree": 7,
+      "degree": 6,
       "mas": 3,
       "license": "MIT",
       "language": "HTML",
@@ -12422,7 +12320,7 @@
       "color": "#28a745",
       "url": "https://github.com/dokimos-dev/dokimos",
       "tagline": "LLM and agent evaluation for Java & Kotlin.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Java",
@@ -12490,7 +12388,7 @@
       "color": "#28a745",
       "url": "https://github.com/BennettSchwartz/ERR-EVAL",
       "tagline": "Benchmark for evaluating AI epistemic reliability - testing how well LLMs handle uncertainty, avoid hallucinations, and acknowledge what they don't know.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -13034,7 +12932,7 @@
       "color": "#28a745",
       "url": "https://github.com/Basaltlabs-app/Gauntlet",
       "tagline": "Community-driven behavioral reliability benchmark for LLMs.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -13068,7 +12966,7 @@
       "color": "#28a745",
       "url": "https://github.com/hyeonsangjeon/gdpval-realworks",
       "tagline": "Benchmark LLMs on real professional tasks, not academic puzzles.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -13684,7 +13582,7 @@
       "color": "#28a745",
       "url": "https://github.com/NavigicAI/keel",
       "tagline": "Public research and tools for evaluating trustworthy personal AI agents.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Multiple",
@@ -13958,7 +13856,7 @@
       "color": "#28a745",
       "url": "https://github.com/OpenGenerativeAI/llm-colosseum",
       "tagline": "Benchmark LLMs by fighting in Street Fighter 3!",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Jupyter Notebook",
@@ -13992,7 +13890,7 @@
       "color": "#28a745",
       "url": "https://github.com/julienmerconsulting/llm-determinism-bench",
       "tagline": "Cross-vendor LLM benchmark - 93 deterministic prompts, 5 models from Anthropic & OpenAI, zero LLM-as-judge, full artifacts published.",
-      "degree": 7,
+      "degree": 6,
       "mas": 3,
       "license": "MIT",
       "language": "HTML",
@@ -14332,7 +14230,7 @@
       "color": "#28a745",
       "url": "https://github.com/EleutherAI/lm-evaluation-harness",
       "tagline": "De facto academic standard for few-shot LLM benchmark evaluation across 200+ tasks.",
-      "degree": 150,
+      "degree": 148,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -14536,7 +14434,7 @@
       "color": "#28a745",
       "url": "https://github.com/slogsdon/mac-mini-llm-roster",
       "tagline": "Speed benchmarks for local LLMs on a 32 GB Apple Silicon Mac Mini: tokens-per-second, wall-clock, and quality across Qwen3, phi4-reasoning, lfm2, gpt-oss, mistral-nemo, and others \u2014 served via Olla...",
-      "degree": 8,
+      "degree": 7,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -14878,7 +14776,7 @@
       "color": "#28a745",
       "url": "https://github.com/MetriLLM/metrillm",
       "tagline": "Benchmark local LLM models: speed, quality, and hardware fitness scoring.",
-      "degree": 9,
+      "degree": 8,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "TypeScript",
@@ -15116,7 +15014,7 @@
       "color": "#28a745",
       "url": "https://github.com/mnemebrain/mnemebrain-benchmark",
       "tagline": "MnemeBrain Benchmark Suite (BMB): 48 tasks evaluating belief dynamics in AI memory systems \u2014 contradiction detection, revision, provenance, and temporal reasoning.",
-      "degree": 9,
+      "degree": 8,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -15388,7 +15286,7 @@
       "color": "#28a745",
       "url": "https://github.com/NoesisVision/nasde-toolkit",
       "tagline": "CLI for benchmarks & evals of AI coding agents \u2014 on tasks you already understand, using your Claude / Codex / Gemini individual subscriptions or API keys.",
-      "degree": 9,
+      "degree": 8,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -15456,7 +15354,7 @@
       "color": "#28a745",
       "url": "https://github.com/Ella-Afonso/NeuroGuard",
       "tagline": "A model-organism benchmark for misalignment and oversight failures in biomedical AI research agents.",
-      "degree": 10,
+      "degree": 9,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -15626,7 +15524,7 @@
       "color": "#28a745",
       "url": "https://github.com/generalaimodels/OpenAgentBench",
       "tagline": "Research-grade evaluation & verification platform for LLM agents, RAG pipelines, and tool-using workflows \u2014 grading tool-choice optimality, state-transition correctness, memory hygiene, privilege s...",
-      "degree": 10,
+      "degree": 9,
       "mas": 3,
       "license": "GPL-3.0-only",
       "language": "Python",
@@ -15866,7 +15764,7 @@
       "color": "#28a745",
       "url": "https://github.com/GalenChen320/Otter",
       "tagline": "An agent evaluation framework with native multi-turn feedback iteration.",
-      "degree": 11,
+      "degree": 10,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -16020,40 +15918,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 485,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "evaluate-llm",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "patent-creator",
-      "name": "Patent Creator",
-      "category": "eval",
-      "subcategory": "agent-eval",
-      "color": "#28a745",
-      "url": "https://github.com/HappyThis/patent_creator",
-      "tagline": "\u6280\u672f\u5185\u6838\u5148\u884c\u3001benchmark \u9a71\u52a8\u7684\u4e13\u5229\u4ea4\u5e95\u4e66 AI Agent \u5de5\u4f5c\u53f0",
-      "degree": 10,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Python",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "HappyThis",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 3,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -16826,7 +16690,7 @@
       "color": "#28a745",
       "url": "https://github.com/1337hero/scaffold-bench",
       "tagline": "Local LLM BenchMarking",
-      "degree": 11,
+      "degree": 10,
       "mas": 3,
       "license": "MIT",
       "language": "TypeScript",
@@ -17098,7 +16962,7 @@
       "color": "#28a745",
       "url": "https://github.com/kemalefee8/sral-framework",
       "tagline": "\ufe0f Evaluate agentic AI architectures with the SRAL framework, focusing on state management to enhance reasoning, action, and learning efficiency.",
-      "degree": 12,
+      "degree": 11,
       "mas": 3,
       "license": "MIT",
       "language": "Multiple",
@@ -17873,40 +17737,6 @@
       ]
     },
     {
-      "id": "weird-ai-test-museum",
-      "name": "Weird AI Test Museum",
-      "category": "eval",
-      "subcategory": "benchmark",
-      "color": "#28a745",
-      "url": "https://github.com/eudk/weird-ai-test-museum",
-      "tagline": "A fun, unofficial museum of memorable AI tests, strange edge cases, and research benchmarks.",
-      "degree": 12,
-      "mas": 3,
-      "license": "MIT",
-      "language": "HTML",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "eudk",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 1,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 8,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "evaluate-llm",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "wildbench",
       "name": "WildBench",
       "category": "eval",
@@ -18597,15 +18427,15 @@
       "subcategory": "ai-gateway",
       "color": "#1f3a5f",
       "url": "https://github.com/maximhq/bifrost",
-      "tagline": "Fastest enterprise AI gateway () with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 \u00b5s overhead at 5k RPS.",
+      "tagline": "Fastest enterprise AI gateway with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 \u00b5s overhead at 5k RPS.",
       "degree": 4,
-      "mas": 3,
+      "mas": 4,
       "license": "Apache-2.0",
       "language": "Go",
       "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "maximhq",
+      "country": "IN",
+      "maintainer_type": "company",
+      "maintainer_name": "Maxim AI",
       "alignment": "partial",
       "tier": "established",
       "tier_opacity": 1.0,
@@ -19248,7 +19078,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/Virtue-Research/guard-eval-harness",
       "tagline": "Evaluate any AI guardrail on 80+ safety benchmarks \u2014 jailbreaks, toxicity, prompt injection \u2014 with one command.",
-      "degree": 4,
+      "degree": 3,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -19282,7 +19112,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/guardrails-ai/guardrails",
       "tagline": "Pydantic-style validator chains that wrap LLM outputs in enforceable contracts.",
-      "degree": 68,
+      "degree": 66,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -19832,7 +19662,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/poloclub/llm-landscape",
       "tagline": "NeurIPS'24 - LLM Safety Landscape",
-      "degree": 4,
+      "degree": 3,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -20138,7 +19968,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/YutoTerashima/multilingual-llm-safety-bench",
       "tagline": "English, Japanese, and Chinese LLM safety mini-benchmark.",
-      "degree": 4,
+      "degree": 3,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -20967,42 +20797,6 @@
       ]
     },
     {
-      "id": "responsible-ai-workshop",
-      "name": "Responsible AI Workshop",
-      "category": "governance",
-      "subcategory": "fairness",
-      "color": "#1f3a5f",
-      "url": "https://github.com/microsoft/responsible-ai-workshop",
-      "tagline": "Responsible AI Workshop: a series of tutorials & walkthroughs to illustrate how put responsible AI into practice",
-      "degree": 1,
-      "mas": 3,
-      "license": "CC-BY-4.0",
-      "language": "Jupyter Notebook",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "institution",
-      "maintainer_name": "microsoft",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 49,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 471,
-      "spark": [
-        49
-      ],
-      "use_cases": [
-        {
-          "id": "govern-llm-policy",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "rstructor",
       "name": "Rstructor",
       "category": "governance",
@@ -21096,40 +20890,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 694,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "govern-llm-policy",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "seca",
-      "name": "SECA",
-      "category": "governance",
-      "subcategory": "safety-layer",
-      "color": "#1f3a5f",
-      "url": "https://github.com/Buyun-Liang/SECA",
-      "tagline": "[NeurIPS 2025] SECA: Semantically Equivalent and Coherent Attacks for Eliciting LLM Hallucinations",
-      "degree": 4,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Python",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "Buyun-Liang",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 70,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 185,
       "spark": [],
       "use_cases": [
         {
@@ -21426,7 +21186,7 @@
       "country": "US",
       "maintainer_type": "company",
       "maintainer_name": "AgentOps AI",
-      "alignment": "aligned",
+      "alignment": "partial",
       "tier": "frontier",
       "tier_opacity": 0.4,
       "tier_radius_mult": 0.7,
@@ -21436,40 +21196,6 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 281,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "govern-llm-policy",
-          "level": "auto"
-        }
-      ]
-    },
-    {
-      "id": "trident",
-      "name": "Trident",
-      "category": "governance",
-      "subcategory": "toxicity-detection",
-      "color": "#1f3a5f",
-      "url": "https://github.com/StyrbjornKall/TRIDENT",
-      "tagline": "A collection of transformer-based models and developmental scripts presented in the publication \"Transformers enable accurate prediction of acute and chronic chemical toxicity in aquatic organisms\".",
-      "degree": 1,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Jupyter Notebook",
-      "maturity": "beta",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "StyrbjornKall",
-      "alignment": "partial",
-      "tier": "frontier",
-      "tier_opacity": 0.4,
-      "tier_radius_mult": 0.7,
-      "tier_outline": "dashed",
-      "data_missing": false,
-      "stars": 18,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 253,
       "spark": [],
       "use_cases": [
         {
@@ -25480,7 +25206,7 @@
       "color": "#3498db",
       "url": "https://github.com/zxcloli666/AI-Worker-Proxy",
       "tagline": "OpenAI-compatible AI proxy: Anthropic Claude, Google Gemini, GPT-5, Cloudflare AI.",
-      "degree": 8,
+      "degree": 7,
       "mas": 4,
       "license": "MIT",
       "language": "TypeScript",
@@ -25715,40 +25441,6 @@
       ]
     },
     {
-      "id": "atidraw",
-      "name": "Atidraw",
-      "category": "routing",
-      "subcategory": "ai-gateway",
-      "color": "#3498db",
-      "url": "https://github.com/atinux/atidraw",
-      "tagline": "Share your drawings with the world.",
-      "degree": 6,
-      "mas": 3,
-      "license": "MIT",
-      "language": "Vue",
-      "maturity": "ga",
-      "country": "",
-      "maintainer_type": "community",
-      "maintainer_name": "atinux",
-      "alignment": "partial",
-      "tier": "emerging",
-      "tier_opacity": 0.7,
-      "tier_radius_mult": 0.85,
-      "tier_outline": "solid",
-      "data_missing": false,
-      "stars": 211,
-      "velocity_4w": null,
-      "velocity_12w": null,
-      "days_since_commit": 176,
-      "spark": [],
-      "use_cases": [
-        {
-          "id": "serve-inference",
-          "level": "auto"
-        }
-      ]
-    },
-    {
       "id": "bentoml",
       "name": "BentoML",
       "category": "routing",
@@ -25928,7 +25620,7 @@
       "color": "#3498db",
       "url": "https://github.com/coaidev/coai",
       "tagline": "Next Gen Multi-tenant AI One-Stop Solution.",
-      "degree": 8,
+      "degree": 7,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "TypeScript",
@@ -26596,7 +26288,7 @@
       "color": "#3498db",
       "url": "https://github.com/BerriAI/litellm",
       "tagline": "Unified SDK and proxy that normalises 100+ LLM APIs into the OpenAI format.",
-      "degree": 79,
+      "degree": 78,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -27432,7 +27124,7 @@
       "color": "#3498db",
       "url": "https://github.com/KochC/opencode-llm-proxy",
       "tagline": "Local AI gateway for OpenCode \u2014 use any model via OpenAI, Anthropic, or Gemini API",
-      "degree": 10,
+      "degree": 9,
       "mas": 3,
       "license": "MIT",
       "language": "JavaScript",
@@ -27950,7 +27642,7 @@
       "color": "#3498db",
       "url": "https://github.com/Inebrio/Routerly",
       "tagline": "Self-hosted LLM gateway that routes requests across AI providers (OpenAI, Anthropic, Gemini, Mistral, Ollama) using intelligent multi-policy scoring \u2014 including an LLM-native routing policy.",
-      "degree": 12,
+      "degree": 11,
       "mas": 4,
       "license": "AGPL-3.0-only",
       "language": "TypeScript",
@@ -28222,7 +27914,7 @@
       "color": "#3498db",
       "url": "https://github.com/peva3/SmarterRouter",
       "tagline": "SmarterRouter: An intelligent LLM gateway and VRAM-aware router for Ollama, llama.cpp, and OpenAI.",
-      "degree": 10,
+      "degree": 9,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -28666,11 +28358,7 @@
     },
     {
       "source": "9router",
-      "target": "agency-agents-zh"
-    },
-    {
-      "source": "9router",
-      "target": "agent-framework"
+      "target": "microsoft-agent-framework"
     },
     {
       "source": "9router",
@@ -28781,34 +28469,6 @@
       "target": "swarm-openai"
     },
     {
-      "source": "agency-agents-zh",
-      "target": "ai-agents-from-scratch"
-    },
-    {
-      "source": "agency-agents-zh",
-      "target": "aichat"
-    },
-    {
-      "source": "agency-agents-zh",
-      "target": "aigc-interview-book"
-    },
-    {
-      "source": "agency-agents-zh",
-      "target": "aionui"
-    },
-    {
-      "source": "agency-agents-zh",
-      "target": "langgraph"
-    },
-    {
-      "source": "agency-agents-zh",
-      "target": "planning-with-files"
-    },
-    {
-      "source": "agency-agents-zh",
-      "target": "trpc-agent-go"
-    },
-    {
       "source": "agency-swarm",
       "target": "autogen"
     },
@@ -28817,44 +28477,12 @@
       "target": "takt"
     },
     {
-      "source": "agent-framework",
-      "target": "anthropic-cybersecurity-skills"
-    },
-    {
-      "source": "agent-framework",
-      "target": "antigravity-awesome-skills"
-    },
-    {
-      "source": "agent-framework",
-      "target": "anything-llm"
-    },
-    {
-      "source": "agent-framework",
-      "target": "arcreel"
-    },
-    {
-      "source": "agent-framework",
-      "target": "langgraph"
-    },
-    {
-      "source": "agent-framework",
-      "target": "planning-with-files"
-    },
-    {
-      "source": "agent-framework",
-      "target": "txtai"
-    },
-    {
       "source": "agent-governance-toolkit",
       "target": "areal"
     },
     {
       "source": "agent-governance-toolkit",
       "target": "awesome-agent-skills"
-    },
-    {
-      "source": "agent-governance-toolkit",
-      "target": "awesome-agentic-ai-zh"
     },
     {
       "source": "agent-governance-toolkit",
@@ -29413,34 +29041,6 @@
       "target": "vibe-kanban"
     },
     {
-      "source": "aigc-interview-book",
-      "target": "holmesgpt"
-    },
-    {
-      "source": "aigc-interview-book",
-      "target": "how-claude-code-works"
-    },
-    {
-      "source": "aigc-interview-book",
-      "target": "ii-agent"
-    },
-    {
-      "source": "aigc-interview-book",
-      "target": "insforge"
-    },
-    {
-      "source": "aigc-interview-book",
-      "target": "langgraph"
-    },
-    {
-      "source": "aigc-interview-book",
-      "target": "ralph-claude-code"
-    },
-    {
-      "source": "aigc-interview-book",
-      "target": "vibe-skills"
-    },
-    {
       "source": "aionui",
       "target": "intentkit"
     },
@@ -29959,34 +29559,6 @@
     {
       "source": "awesome-agent-skills",
       "target": "vibe-trading"
-    },
-    {
-      "source": "awesome-agentic-ai-zh",
-      "target": "langgraph"
-    },
-    {
-      "source": "awesome-agentic-ai-zh",
-      "target": "txtai"
-    },
-    {
-      "source": "awesome-agentic-ai-zh",
-      "target": "vibe-kanban"
-    },
-    {
-      "source": "awesome-agentic-ai-zh",
-      "target": "vibe-skills"
-    },
-    {
-      "source": "awesome-agentic-ai-zh",
-      "target": "vibe-trading"
-    },
-    {
-      "source": "awesome-agentic-ai-zh",
-      "target": "sre"
-    },
-    {
-      "source": "awesome-agentic-ai-zh",
-      "target": "voltagent"
     },
     {
       "source": "awesome-mcp-zh",
@@ -32413,6 +31985,14 @@
       "target": "semantic-kernel"
     },
     {
+      "source": "microsoft-agent-framework",
+      "target": "planning-with-files"
+    },
+    {
+      "source": "microsoft-agent-framework",
+      "target": "txtai"
+    },
+    {
       "source": "mini-swe-agent",
       "target": "bigcode-evaluation-harness"
     },
@@ -33441,6 +33021,10 @@
       "target": "ms-ml-for-beginners"
     },
     {
+      "source": "microsoft-ai-agents-for-beginners",
+      "target": "responsible-ai-workshop"
+    },
+    {
       "source": "mini-llm",
       "target": "harmless-harnesses"
     },
@@ -33489,6 +33073,10 @@
       "target": "ms-ml-for-beginners"
     },
     {
+      "source": "ms-ai-for-beginners",
+      "target": "responsible-ai-workshop"
+    },
+    {
       "source": "ms-data-science-for-beginners",
       "target": "ms-generative-ai-for-beginners"
     },
@@ -33503,6 +33091,10 @@
     {
       "source": "ms-generative-ai-for-beginners",
       "target": "stanford-cs336"
+    },
+    {
+      "source": "ms-generative-ai-for-beginners",
+      "target": "responsible-ai-workshop"
     },
     {
       "source": "ms-phi-cookbook",
@@ -33523,6 +33115,10 @@
     {
       "source": "pytorch-transformer-from-scratch",
       "target": "transformer-pytorch-scratch"
+    },
+    {
+      "source": "responsible-ai-workshop",
+      "target": "guardrails-ai"
     },
     {
       "source": "shannon-b1",
@@ -33786,10 +33382,6 @@
     },
     {
       "source": "agentrial",
-      "target": "patent-creator"
-    },
-    {
-      "source": "agentrial",
       "target": "statebind-guard"
     },
     {
@@ -33842,10 +33434,6 @@
     },
     {
       "source": "ai-agents-reality-check",
-      "target": "patent-creator"
-    },
-    {
-      "source": "ai-agents-reality-check",
       "target": "statebind-guard"
     },
     {
@@ -33895,10 +33483,6 @@
     {
       "source": "any-agent",
       "target": "trellm"
-    },
-    {
-      "source": "any-agent",
-      "target": "patent-creator"
     },
     {
       "source": "apps",
@@ -34638,10 +34222,6 @@
     },
     {
       "source": "coordbench",
-      "target": "weird-ai-test-museum"
-    },
-    {
-      "source": "coordbench",
       "target": "precisionmembench"
     },
     {
@@ -34834,10 +34414,6 @@
     },
     {
       "source": "dokimos",
-      "target": "patent-creator"
-    },
-    {
-      "source": "dokimos",
       "target": "sral-framework"
     },
     {
@@ -34891,10 +34467,6 @@
     {
       "source": "err-eval",
       "target": "lm-evaluation-harness"
-    },
-    {
-      "source": "err-eval",
-      "target": "weird-ai-test-museum"
     },
     {
       "source": "eval-ai-library",
@@ -35245,10 +34817,6 @@
       "target": "memorylens"
     },
     {
-      "source": "gauntlet",
-      "target": "weird-ai-test-museum"
-    },
-    {
       "source": "gdpval-realworks",
       "target": "lm-evaluation-harness"
     },
@@ -35267,10 +34835,6 @@
     {
       "source": "gdpval-realworks",
       "target": "neuroguard"
-    },
-    {
-      "source": "gdpval-realworks",
-      "target": "weird-ai-test-museum"
     },
     {
       "source": "gpqa",
@@ -35646,10 +35210,6 @@
     },
     {
       "source": "keel",
-      "target": "patent-creator"
-    },
-    {
-      "source": "keel",
       "target": "sral-framework"
     },
     {
@@ -35785,10 +35345,6 @@
       "target": "precisionmembench"
     },
     {
-      "source": "llm-colosseum",
-      "target": "weird-ai-test-museum"
-    },
-    {
       "source": "llm-determinism-bench",
       "target": "lm-evaluation-harness"
     },
@@ -35803,10 +35359,6 @@
     {
       "source": "llm-determinism-bench",
       "target": "tau2-bench"
-    },
-    {
-      "source": "llm-determinism-bench",
-      "target": "weird-ai-test-museum"
     },
     {
       "source": "llm-eval-ci",
@@ -36130,10 +35682,6 @@
     },
     {
       "source": "lm-evaluation-harness",
-      "target": "patent-creator"
-    },
-    {
-      "source": "lm-evaluation-harness",
       "target": "play-bench"
     },
     {
@@ -36266,10 +35814,6 @@
     },
     {
       "source": "lm-evaluation-harness",
-      "target": "weird-ai-test-museum"
-    },
-    {
-      "source": "lm-evaluation-harness",
       "target": "zpokenclaw"
     },
     {
@@ -36351,10 +35895,6 @@
     {
       "source": "mac-mini-llm-roster",
       "target": "tau2-bench"
-    },
-    {
-      "source": "mac-mini-llm-roster",
-      "target": "weird-ai-test-museum"
     },
     {
       "source": "makerbench-hwe",
@@ -36485,10 +36025,6 @@
       "target": "tau2-bench"
     },
     {
-      "source": "metrillm",
-      "target": "weird-ai-test-museum"
-    },
-    {
       "source": "mind2web",
       "target": "mle-bench"
     },
@@ -36603,10 +36139,6 @@
     {
       "source": "mmmu",
       "target": "vlmeval-kit"
-    },
-    {
-      "source": "mnemebrain-benchmark",
-      "target": "patent-creator"
     },
     {
       "source": "mnemebrain-benchmark",
@@ -36725,10 +36257,6 @@
       "target": "pandaprobe"
     },
     {
-      "source": "nasde-toolkit",
-      "target": "patent-creator"
-    },
-    {
       "source": "needle-in-haystack",
       "target": "promptbench"
     },
@@ -36747,10 +36275,6 @@
     {
       "source": "neuroguard",
       "target": "tau2-bench"
-    },
-    {
-      "source": "neuroguard",
-      "target": "weird-ai-test-museum"
     },
     {
       "source": "nexa-gauge",
@@ -36815,10 +36339,6 @@
     {
       "source": "openagentbench",
       "target": "pandaprobe"
-    },
-    {
-      "source": "openagentbench",
-      "target": "patent-creator"
     },
     {
       "source": "openagentbench",
@@ -36897,10 +36417,6 @@
       "target": "tau2-bench"
     },
     {
-      "source": "otter",
-      "target": "weird-ai-test-museum"
-    },
-    {
       "source": "pairjudge",
       "target": "proofrag"
     },
@@ -36943,10 +36459,6 @@
     {
       "source": "parea-sdk-py",
       "target": "valor"
-    },
-    {
-      "source": "patent-creator",
-      "target": "sral-framework"
     },
     {
       "source": "prometheus-eval",
@@ -37171,10 +36683,6 @@
     {
       "source": "scaffold-bench",
       "target": "tau2-bench"
-    },
-    {
-      "source": "scaffold-bench",
-      "target": "weird-ai-test-museum"
     },
     {
       "source": "scicode",
@@ -38177,10 +37685,6 @@
       "target": "multilingual-llm-safety-bench"
     },
     {
-      "source": "guard-eval-harness",
-      "target": "seca"
-    },
-    {
       "source": "guardrails-ai",
       "target": "huggingface-trl"
     },
@@ -38294,19 +37798,11 @@
     },
     {
       "source": "guardrails-ai",
-      "target": "responsible-ai-workshop"
-    },
-    {
-      "source": "guardrails-ai",
       "target": "rstructor"
     },
     {
       "source": "guardrails-ai",
       "target": "safe-zone"
-    },
-    {
-      "source": "guardrails-ai",
-      "target": "seca"
     },
     {
       "source": "guardrails-ai",
@@ -38331,10 +37827,6 @@
     {
       "source": "guardrails-ai",
       "target": "swing-skills"
-    },
-    {
-      "source": "guardrails-ai",
-      "target": "trident"
     },
     {
       "source": "guardrails-ai",
@@ -38673,10 +38165,6 @@
       "target": "multilingual-llm-safety-bench"
     },
     {
-      "source": "llm-landscape",
-      "target": "seca"
-    },
-    {
       "source": "lm-format-enforcer",
       "target": "lmql"
     },
@@ -38783,10 +38271,6 @@
     {
       "source": "moderator",
       "target": "rail-score-js"
-    },
-    {
-      "source": "multilingual-llm-safety-bench",
-      "target": "seca"
     },
     {
       "source": "nemo-guardrails",
@@ -40762,10 +40246,6 @@
     },
     {
       "source": "ai-worker-proxy",
-      "target": "atidraw"
-    },
-    {
-      "source": "ai-worker-proxy",
       "target": "coai"
     },
     {
@@ -40919,26 +40399,6 @@
     {
       "source": "aqueduct",
       "target": "yukiko"
-    },
-    {
-      "source": "atidraw",
-      "target": "coai"
-    },
-    {
-      "source": "atidraw",
-      "target": "litellm"
-    },
-    {
-      "source": "atidraw",
-      "target": "opencode-llm-proxy"
-    },
-    {
-      "source": "atidraw",
-      "target": "routerly"
-    },
-    {
-      "source": "atidraw",
-      "target": "smarterrouter"
     },
     {
       "source": "bentoml",
@@ -42346,7 +41806,6 @@
           "pandalm",
           "pandaprobe",
           "parea-sdk-py",
-          "patent-creator",
           "play-bench",
           "precisionmembench",
           "prometheus-eval",
@@ -42397,7 +41856,6 @@
           "vietnamese-secretary-llm",
           "vlmeval-kit",
           "webarena",
-          "weird-ai-test-museum",
           "wildbench",
           "workarena",
           "zeroeval",
@@ -42624,10 +42082,8 @@
           "adalflow",
           "ag-ui",
           "ag2",
-          "agency-agents-zh",
           "agency-swarm",
           "agent",
-          "agent-framework",
           "agent-governance-toolkit",
           "agent-reach",
           "agent-s",
@@ -42649,7 +42105,6 @@
           "ai-engineering-hub",
           "aiaw",
           "aichat",
-          "aigc-interview-book",
           "aionui",
           "aiwaves-agents",
           "anthropic-cybersecurity-skills",
@@ -42666,7 +42121,6 @@
           "auto-claude-code-research-in-sleep",
           "autonomous-agents",
           "awesome-agent-skills",
-          "awesome-agentic-ai-zh",
           "awesome-mcp-zh",
           "babyagi",
           "babysitter",
@@ -42914,7 +42368,6 @@
           "apisix",
           "aqbot",
           "aqueduct",
-          "atidraw",
           "bitrouter",
           "burstgpt",
           "claude-code-usage-bar",
@@ -43144,11 +42597,9 @@
           "rail-score-sdk",
           "rebuff",
           "responsible-ai-toolbox",
-          "responsible-ai-workshop",
           "rstructor",
           "safe-zone",
           "safedecoding",
-          "seca",
           "sentinel-ai",
           "shekel",
           "shieldlm",
@@ -43158,7 +42609,6 @@
           "suprawall",
           "swing-skills",
           "tokencost",
-          "trident",
           "trustllm",
           "trustloopguard",
           "typechat",
@@ -43251,6 +42701,7 @@
           "norvig-pytudes",
           "pytorch-transformer-from-scratch",
           "pytorch-tutorials",
+          "responsible-ai-workshop",
           "shannon-b1",
           "stanford-cs336",
           "transformer-pytorch-scratch",

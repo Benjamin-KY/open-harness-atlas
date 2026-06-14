@@ -15,14 +15,20 @@ maintainer:
   type: company
   name: Microsoft
 origin_country: US
-model_agnostic_score: 5
+model_agnostic_score: 3
 education_resources:
   - title: Generative AI for Beginners — source repository
     url: https://github.com/microsoft/generative-ai-for-beginners
     type: course
     free: true
 sovereignty_notes: |
-  Microsoft (US-incorporated company); OSS core is MIT and content is openly published; code (where present) is self-hostable. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+  Microsoft (US-incorporated company); content and code are MIT-licensed and the entire
+  curriculum is openly published, forkable, and self-hostable. Model-agnostic 3 (corrected
+  2026-06-14, was 5): the curriculum is structurally Azure-OpenAI-first — most lessons
+  walk through `azure-openai`-namespaced endpoints, deployment names, and the AI Studio
+  UI; the "use a different provider" path is shown but not the default. Honest reading is
+  "multi-provider including at least one local-weights option" rather than a clean swap-
+  target curriculum. Kept catalogued because the lesson-architecture is reusable.
 harness_paradigm_alignment: partial
 adjacent_to:
   - hf-nlp-course

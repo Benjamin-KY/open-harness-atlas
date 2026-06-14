@@ -159,7 +159,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [PandaLM](https://github.com/WeOpenML/PandaLM) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 924 | — | WeOpenML (Peking U / Westlake U) |
 | [Pandaprobe](https://github.com/chirpz-ai/pandaprobe) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 318 | — | chirpz-ai |
 | [Parea Sdk Py](https://github.com/parea-ai/parea-sdk-py) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 82 | — | parea-ai |
-| [Patent Creator](https://github.com/HappyThis/patent_creator) | MIT | Python | beta | — | 3/5 | frontier | 3 | — | HappyThis |
 | [Play Bench](https://github.com/playsaurus-inc/play-bench) | MIT | Blade | beta | — | 3/5 | frontier | 2 | — | playsaurus-inc |
 | [Precision Mem Bench](https://github.com/tenurehq/precisionMemBench) | MIT | TypeScript | beta | — | 3/5 | frontier | 9 | — | tenurehq |
 | [Prometheus-Eval](https://github.com/prometheus-eval/prometheus-eval) | Apache-2.0 | Python | ga | KR | 4/5 | frontier | 1.1k | — | KAIST / Unbabel (multilingual fork) |
@@ -213,7 +212,6 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Vietnamese Secretary LLM](https://github.com/khoa-na/vietnamese-secretary-llm) | MIT | Python | beta | — | 4/5 | frontier | 0 | — | khoa-na |
 | [VLMEvalKit](https://github.com/open-compass/VLMEvalKit) | Apache-2.0 | Python | ga | CN | 4/5 | established | 4.2k | — | OpenCompass / Shanghai AI Lab |
 | [WebArena](https://github.com/web-arena-x/webarena) | MIT | Python | ga | US | 4/5 | frontier | 1.5k | — | CMU |
-| [Weird AI Test Museum](https://github.com/eudk/weird-ai-test-museum) | MIT | HTML | beta | — | 3/5 | frontier | 1 | — | eudk |
 | [WildBench](https://github.com/allenai/WildBench) | Apache-2.0 | Python | ga | US | 4/5 | frontier | 254 | — | Allen Institute for AI (AI2) |
 | [WorkArena](https://github.com/ServiceNow/WorkArena) | Apache-2.0 | Python | ga | CA | 4/5 | emerging | 252 | — | ServiceNow Research |
 | [ZeroEval](https://github.com/WildEval/ZeroEval) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 271 | — | Allen AI / WildEval |

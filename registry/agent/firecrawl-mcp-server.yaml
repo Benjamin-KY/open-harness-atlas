@@ -13,11 +13,19 @@ description: |-
   In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
 maturity: ga
 maintainer:
-  type: community
-  name: firecrawl
+  type: company
+  name: Firecrawl
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: firecrawl (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+sovereignty_notes: |-
+  Firecrawl Inc (US-incorporated commercial company); the MCP server itself is MIT-licensed,
+  but the default code path calls Firecrawl's commercial cloud API (api.firecrawl.dev) which
+  requires an API key and is not OSS. A self-hostable Firecrawl backend exists
+  (github.com/firecrawl/firecrawl, AGPLv3) and the MCP server accepts a custom base URL, so
+  full self-sovereignty is possible but requires standing up the OSS Firecrawl service
+  separately. Model-agnostic 3 — multi-provider via the MCP-client side; the scraping tier
+  itself is provider-agnostic. Curator note (2026-06-14): catalogued because of the OSS
+  self-host path; defaults bias toward the commercial cloud API.
 harness_paradigm_alignment: partial
 adjacent_to:
 - langgraph

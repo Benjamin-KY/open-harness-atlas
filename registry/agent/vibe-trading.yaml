@@ -17,7 +17,16 @@ maintainer:
   name: HKUDS
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: HKUDS (community-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+sovereignty_notes: |-
+  HKUDS (Hong Kong University Data Science group, academic-affiliated open source);
+  OSS core is MIT and self-hostable. Model-agnostic 3 — multi-provider including at least
+  one local-weights option. Curator note (2026-06-14): Vibe-Trading is a domain-specific
+  trading-agent application built on top of conventional agent-framework primitives
+  rather than a reusable framework in its own right. Catalogued under agent because the
+  prompt + tool-routing layer is open and the project demonstrates a credible
+  reference implementation of the harness pattern in a non-trivial domain (financial
+  trading), but readers seeking general-purpose agent infrastructure should look at the
+  adjacent framework entries (langgraph, awesome-agent-skills) rather than this app.
 harness_paradigm_alignment: partial
 adjacent_to:
 - anything-llm

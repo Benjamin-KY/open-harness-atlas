@@ -21,6 +21,5 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - apisix
 - aqbot
-- atidraw
 - coai
 - litellm

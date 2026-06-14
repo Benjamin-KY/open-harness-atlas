@@ -21,9 +21,14 @@ five_component_coverage:
   source_authority: none
   prompt_composer: none
   output_contract: none
-  audit_log_fsm: none
+  audit_log_fsm: partial
 sovereignty_notes: |
-  Traceloop (IL-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+  Traceloop (IL-incorporated company); OSS core is Apache-2.0 and fully self-hostable.
+  Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped
+  configurations that favour a specific tier. Curator note (2026-06-14): raised
+  audit_log_fsm from `none` to `partial` because openllmetry's whole purpose is emitting
+  OTel-shaped audit spans for every LLM call — it produces the audit trail even though it
+  doesn't define the replay FSM itself. The other four spine components remain `none`.
 harness_paradigm_alignment: aligned
 adjacent_to:
   - agentops

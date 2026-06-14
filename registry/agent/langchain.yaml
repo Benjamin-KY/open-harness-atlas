@@ -6,18 +6,31 @@ repo_url: https://github.com/langchain-ai/langchain
 homepage: https://docs.langchain.com/langchain/
 license: MIT
 primary_language: Python
-tagline: The agent engineering platform.
+tagline: Provider-agnostic Python/JS framework for chaining LLM calls, tools, retrievers, and agent loops; the de-facto reference implementation for the harness-as-application-layer pattern.
 description: |-
-  Langchain — The agent engineering platform. Upstream maintainer: langchain-ai.
+  LangChain is a provider-agnostic framework (Python + JavaScript packages) that ships
+  abstractions for LLM calls, prompt templates, chat models, embeddings, retrievers,
+  document loaders, tools, output parsers, and agent loops. It includes adapters for
+  100+ providers (OpenAI / Anthropic / Bedrock / Vertex / Ollama / vLLM / HuggingFace / etc.)
+  and is intentionally swap-routable across them.
 
-  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
+  In the atlas: this is an agent-orchestration entry. The harness paradigm reads agent
+  frameworks as the policy + tool-routing layer that sits between intent and the model
+  tier, and LangChain is the most-imitated reference for that layer.
 maturity: ga
 maintainer:
   type: company
-  name: langchain-ai
-origin_country: null
-model_agnostic_score: 3
-sovereignty_notes: langchain-ai (company-maintained); OSS core is MIT License and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
+  name: LangChain Inc
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |-
+  LangChain Inc (US-incorporated commercial company); the OSS core (langchain-core,
+  langchain, langchain-community) is MIT-licensed and fully self-hostable. The hosted
+  LangSmith observability product is separately commercial — but the catalogue scope is
+  the OSS framework, which does not require LangSmith. Model-agnostic 4 — adapters exist
+  for every major provider tier including local-weights (Ollama, vLLM, llama.cpp, HF
+  Transformers) but a handful of community packages and tutorials default to OpenAI, so
+  not a clean 5.
 harness_paradigm_alignment: partial
 notes_for_maintainers: |-
   Restored in v0.2.0 under the GOVERNANCE.md §8 "feature surface, not
@@ -25,8 +38,11 @@ notes_for_maintainers: |-
   favour of catalogu­ing only LangChain-family specialised tools
   (langgraph, langfuse, langflow, etc.); the v0.2.0 policy treats
   langchain core as in-scope because the agent-framework features in
-  the current release qualify under §1. First-pass auto-curated entry
-  — refine with primary-source review on next curation pass.
+  the current release qualify under §1. Curator-reviewed
+  2026-06-14: maintainer.type confirmed company; tagline and
+  description rewritten neutrally; model_agnostic_score corrected
+  3 → 4 (multi-provider including local-weights, not just "at least
+  one local-weights option"); origin_country confirmed US.
 adjacent_to:
 - langgraph
 - oh-my-claudecode

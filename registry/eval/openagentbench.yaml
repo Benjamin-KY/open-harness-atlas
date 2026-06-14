@@ -21,6 +21,5 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - lm-evaluation-harness
 - pandaprobe
-- patent-creator
 - sral-framework
 - statebind-guard

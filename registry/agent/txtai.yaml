@@ -20,7 +20,7 @@ model_agnostic_score: 3
 sovereignty_notes: neuml (community-maintained); OSS core is Apache License 2.0 and self-hostable per the upstream README. Model-agnostic 3 — multi-provider including at least one local-weights option, per the catalogued rubric default for projects that ship at least one provider abstraction. Sovereignty score is a conservative auto-curated default — refine on first manual review of the README.
 harness_paradigm_alignment: partial
 adjacent_to:
-- agent-framework
+- microsoft-agent-framework
 - agent-governance-toolkit
 - agent-reach
 - agent-s

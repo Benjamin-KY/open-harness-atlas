@@ -87,14 +87,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "agency-agents-zh": {
-    "days_since_commit": 1,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 14812,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "agency-swarm": {
     "days_since_commit": 1,
     "history_days": null,
@@ -140,14 +132,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 0,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "agent-framework": {
-    "days_since_commit": -1,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 11318,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -559,14 +543,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "aigc-interview-book": {
-    "days_since_commit": 0,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 3924,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "aigoat": {
     "days_since_commit": 50,
     "history_days": null,
@@ -839,14 +815,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "atidraw": {
-    "days_since_commit": 176,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 211,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "atmosphere": {
     "days_since_commit": 0,
     "history_days": null,
@@ -940,14 +908,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 25246,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "awesome-agentic-ai-zh": {
-    "days_since_commit": -1,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 2673,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4775,14 +4735,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "patent-creator": {
-    "days_since_commit": 0,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 3,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "pdf-prompt-injection-toolkit": {
     "days_since_commit": 79,
     "history_days": null,
@@ -5503,14 +5455,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "seca": {
-    "days_since_commit": 185,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 70,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "seci": {
     "days_since_commit": 17,
     "history_days": null,
@@ -6087,14 +6031,6 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
-  "trident": {
-    "days_since_commit": 253,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 18,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
   "trpc-agent-go": {
     "days_since_commit": 1,
     "history_days": null,
@@ -6412,14 +6348,6 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1096,
-    "stars_per_week_12w": null,
-    "stars_per_week_4w": null
-  },
-  "weird-ai-test-museum": {
-    "days_since_commit": 8,
-    "history_days": null,
-    "snapshot_count": 1,
-    "stars": 1,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
