@@ -32,6 +32,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Agno](https://github.com/agno-agi/agno) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 40.7k | — | Agno AGI (ex-phidata) |
 | [Aia W](https://github.com/NitroRCr/AIaW) | BSD-3-Clause | TypeScript | ga | — | 3/5 | established | 1.8k | — | NitroRCr |
 | [Aichat](https://github.com/sigoden/aichat) | Apache-2.0 | Rust | ga | — | 4/5 | established | 10.1k | — | sigoden |
+| [Aider](https://github.com/Aider-AI/aider) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | Aider-AI |
 | [Aion Ui](https://github.com/iOfficeAI/AionUi) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 28.2k | — | iOfficeAI |
 | [Agents (AIWaves)](https://github.com/aiwaves-cn/agents) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 5.9k | — | AIWaves / Zhejiang Univ |
 | [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 15.6k | — | mukul975 |
@@ -66,6 +67,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Cli](https://github.com/googleworkspace/cli) | Apache-2.0 | Rust | ga | US | 3/5 | established | 27.0k | — | googleworkspace |
 | [Cline](https://github.com/cline/cline) | Apache-2.0 | TypeScript | ga | US | 4/5 | — | — | — | Cline Bot, Inc. |
 | [Code Review Graph](https://github.com/tirth8205/code-review-graph) | MIT | Python | ga | — | 3/5 | emerging | 18.5k | — | tirth8205 |
+| [Continue](https://github.com/continuedev/continue) | Apache-2.0 | TypeScript | ga | US | 5/5 | — | — | — | Continue |
 | [CopilotKit](https://github.com/CopilotKit/CopilotKit) | MIT | TypeScript | ga | US | 4/5 | landmark | 35.0k | — | CopilotKit Inc. |
 | [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | frontier | 723 | — | Human-Agent-Society |
 | [Core](https://github.com/cheshire-cat-ai/core) | GPL-3.0-only | Python | ga | IT | 4/5 | established | 3.0k | — | cheshire-cat-ai |
@@ -85,8 +87,10 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Deep Tutor](https://github.com/HKUDS/DeepTutor) | Apache-2.0 | Python | ga | — | 3/5 | established | 24.7k | — | HKUDS |
 | [DeerFlow](https://github.com/bytedance/deer-flow) | MIT | Python | ga | CN | 4/5 | landmark | 71.1k | — | ByteDance |
 | [Design Extract](https://github.com/Manavarya09/design-extract) | MIT | JavaScript | ga | — | 3/5 | frontier | 3.2k | — | Manavarya09 |
+| [Devika](https://github.com/stitionai/devika) | MIT | Python | beta | — | 4/5 | — | — | — | stitionai |
 | [Dive](https://github.com/OpenAgentPlatform/Dive) | MIT | TypeScript | ga | TW | 4/5 | established | 1.8k | — | OpenAgentPlatform |
 | [DSPy](https://github.com/stanfordnlp/dspy) | MIT | Python | ga | US | 4/5 | landmark | 35.0k | — | Stanford NLP |
+| [E2B](https://github.com/e2b-dev/E2B) | Apache-2.0 | Python | ga | CZ | 5/5 | — | — | — | E2B |
 | [ECC](https://github.com/affaan-m/ECC) | MIT | JavaScript | ga | — | 3/5 | landmark | 214.9k | — | affaan-m |
 | [Edict](https://github.com/cft0808/edict) | MIT | Python | ga | — | 3/5 | emerging | 16.1k | — | cft0808 |
 | [Eidolon](https://github.com/eidolon-ai/eidolon) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 491 | — | Eidolon AI |
@@ -186,6 +190,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Plandex](https://github.com/plandex-ai/plandex) | MIT | Go | ga | — | 3/5 | frontier | 15.5k | — | plandex-ai |
 | [Planning With Files](https://github.com/OthmanAdi/planning-with-files) | MIT | Python | ga | — | 4/5 | established | 23.2k | — | OthmanAdi |
 | [PraisonAI](https://github.com/MervinPraison/PraisonAI) | MIT | Python | ga | MY | 5/5 | landmark | 8.1k | — | MervinPraison |
+| [Privategpt](https://github.com/zylon-ai/private-gpt) | Apache-2.0 | Python | ga | ES | 5/5 | — | — | — | Zylon |
 | [Py Xiaozhi](https://github.com/huangjunsen0406/py-xiaozhi) | MIT | Python | ga | CN | 3/5 | established | 3.4k | — | huangjunsen0406 |
 | [Pydantic AI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | — | 4/5 | established | 17.7k | — | pydantic |
 | [PydanticAI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | GB | 4/5 | established | 17.7k | — | Pydantic Services Inc. |

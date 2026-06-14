@@ -71,11 +71,15 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - agentops
 - aisuite
+- atopos31-llmio
 - fastchat
 - helicone
+- inference-benchmarker
+- jundot-omlx
 - llama-cpp
 - lmdeploy
 - mlflow-ai-gateway
+- mlx-omni-server
 - new-api
 - ollama
 - one-api
@@ -83,6 +87,11 @@ adjacent_to:
 - routellm
 - sglang
 - simonw-llm
+- smg
+- swiftlm
 - tokencost
+- traceloop-hub
 - vllm
+- gpustack
+- text-embeddings-inference
 deployment_posture: local-only

@@ -6,7 +6,8 @@ repo_url: https://github.com/NVIDIA/NeMo-Guardrails
 homepage: https://docs.nvidia.com/nemo/guardrails/latest/index.html
 license: Apache-2.0
 primary_language: Python
-tagline: Programmable rails between user input, model, and external systems via the Colang DSL.
+tagline: Programmable rails between user input, model, and external systems via the
+  Colang DSL.
 description: 'NeMo Guardrails sits between a user, an LLM, and external tools as a
 
   policy-driven dialogue manager. It uses **Colang**, a small declarative
@@ -58,7 +59,8 @@ education_resources:
   url: https://docs.nvidia.com/nemo/guardrails/latest/getting-started/index.html
   type: tutorial
   free: true
-sovereignty_notes: 'NVIDIA-maintained, Apache-2.0, fully self-hostable as a Python package.
+sovereignty_notes: 'NVIDIA-maintained, Apache-2.0, fully self-hostable as a Python
+  package.
 
   Multi-provider via the `models:` config: OpenAI, Anthropic, Azure
 
@@ -80,5 +82,6 @@ adjacent_to:
 - llm-guard
 - presidio
 - rebuff
+- seojoonkim-prompt-guard
 - vigil-llm
 deployment_posture: local-first

@@ -13,6 +13,7 @@ agency-swarm
 agent
 agent-arena
 agent-attack
+agent-audit
 agent-eval-arena
 agent-eval-harness
 agent-governance-toolkit
@@ -63,11 +64,13 @@ ai-security-labs
 ai-worker-proxy
 aiaw
 aichat
+aider
 aigoat
 aionui
 aisuite
 aiwaves-agents
 alpaca-eval
+anamorpher
 anthropic-cybersecurity-skills
 anthropic-prompt-eng-tutorial
 anthropics-courses
@@ -77,6 +80,7 @@ any-agent
 anything-llm
 apache-apisix
 apfel
+api-relay-audit
 apisix
 apps
 appworld
@@ -96,6 +100,7 @@ astrbot
 astron-agent
 atmosphere
 atomic-agents
+atopos31-llmio
 augustus
 auto-claude-code-research-in-sleep
 autodan
@@ -105,6 +110,7 @@ autogen
 automated-adversial-testing-framework
 autonomous-agents
 autoprompt-calibration
+autorag
 awesome-agent-skills
 awesome-foundry-nextgen
 awesome-llm-knowledge-systems
@@ -134,6 +140,7 @@ browser-use
 browsergym
 buildwithclaude
 camel
+camel-prompt-injection
 capbencher
 casdoor
 cc-plugin-eval
@@ -167,6 +174,7 @@ code-review-graph
 completely
 constrained-diffusion
 content-moderation-deep-learning
+continue
 continuous-eval
 contribarena
 coordbench
@@ -180,6 +188,7 @@ critical-thinking
 crucible
 crucible-bslm
 cruxeval
+cryptex-oss
 csghub-lite
 cua
 cursor-talk-to-figma-mcp
@@ -207,12 +216,14 @@ defender
 design-extract
 detect-pretrain-mink
 detoxify
+devika
 dive
 do-not-answer
 dokimos
 dspy
 dt-evals
 dvai
+e2b
 earl
 easyedit-knowledge-attacks
 easyjailbreak
@@ -236,6 +247,7 @@ evalbot
 evalplus
 everos
 every-eval-ever
+evidently
 exo
 factscore
 fara
@@ -281,6 +293,7 @@ gpqa
 gpt-researcher
 gptfuzz
 gptme
+gpustack
 granite-guardian
 griptape-framework
 groundcheck
@@ -331,6 +344,8 @@ ida-pro-mcp
 idun-agent-platform
 ii-agent
 imperio
+inference-benchmarker
+inferrs
 insforge
 inspect-ai
 instructor
@@ -353,6 +368,7 @@ judgeit-llm-as-a-judge
 judgelm
 judgeval
 julep
+jundot-omlx
 juryeval
 kaibanjs
 karpathy-mingpt
@@ -360,6 +376,7 @@ karpathy-nanogpt
 karpathy-nn-zero-to-hero
 keel
 kgateway
+kieranklaassen-leva
 klavis
 kong
 labmlai-annotated-dl
@@ -421,6 +438,7 @@ llmbar
 llmbench
 llmcompiler-parallel
 llmio
+llmmap
 lm-evaluation-harness
 lm-format-enforcer
 lm-proxy
@@ -435,6 +453,7 @@ long-form-factuality
 longbench
 lorax
 lotti
+luckypipewrench-pipelock
 lumen
 mac-llm-bench
 mac-mini-llm-roster
@@ -479,6 +498,7 @@ mlabonne-llm-course
 mlc-llm
 mle-bench
 mlflow-ai-gateway
+mlx-omni-server
 mm-plan
 mmlu-pro
 mmmu
@@ -535,6 +555,7 @@ open-instruct
 open-interpreter
 open-next-router
 open-prompt-injection
+open-rag-eval
 open-swe
 openagent
 openagentbench
@@ -593,10 +614,12 @@ plexiglass
 portkey-gateway
 powerinfer
 powerserve
+praetorian-inc-augustus
 praisonai
 precisionmembench
 presidio
 principles-of-ai-llms
+privategpt
 prometheus-eval
 prompt-guard
 prompt-hacker-collections
@@ -652,6 +675,7 @@ repoagentbench
 research-sweeper
 responsible-ai-toolbox
 responsible-ai-workshop
+reverseclabs-spikee
 rewardbench
 rewardharness
 rivet
@@ -666,14 +690,17 @@ safe-zone
 safedecoding
 safetybench
 salad-bench
+sandlock
 scaffold-bench
 scicode
 scienceqa
 seci
+secureagentics-adrian
 securemcp
 self-healing-rag
 semantic-kernel
 sentinel-ai
+seojoonkim-prompt-guard
 serena
 serverlessllm
 sglang
@@ -688,6 +715,7 @@ simple-evals
 skill-lab
 skill-optimizer
 smarterrouter
+smg
 smolagents
 smooth-llm
 sob
@@ -706,12 +734,14 @@ storm
 strands
 strong-reject
 structured-outputs
+superagent
 superagi
 suprawall
 swarm-openai
 swarms
 swe-agent
 swe-bench
+swiftlm
 swing-skills
 swt-bench
 symphony
@@ -725,6 +755,7 @@ taskweaver
 tau2-bench
 tensor-trust
 tensorrt-llm
+text-embeddings-inference
 text-generation-webui
 textattack
 textgrad
@@ -736,6 +767,7 @@ tonic-validate
 toolbench
 toolbench-tool-learning
 toolemu
+traceloop-hub
 transformer-pytorch-scratch
 trellm
 tribe

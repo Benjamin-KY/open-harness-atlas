@@ -1,0 +1,42 @@
+id: aider
+name: "Aider"
+
+category: agent
+subcategory: code-agent
+
+repo_url: https://github.com/Aider-AI/aider
+homepage: https://aider.chat/
+license: Apache-2.0
+primary_language: Python
+
+tagline: "AI pair programming in the terminal — Git-aware coding agent."
+
+description: |
+  Aider is a terminal-based AI pair-programming agent. Operates directly on the user's git working tree: reads diffs, edits files, runs tests, commits changes with co-author trailers. Provider-agnostic via litellm.
+
+  In the atlas: peer to `cline`, `open-swe`, `swe-agent`, `mini-swe-agent` on the code-agent shelf. Differentiator is the no-IDE-no-server posture — runs as a single CLI process and treats git as the persistent state.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Aider-AI
+
+origin_country: US
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  Apache-2.0; CLI tool; no telemetry. Talks to whatever LLM provider the user configures via litellm — works with OpenAI, Anthropic, local Ollama / llama.cpp, Bedrock, Azure OpenAI, etc. Source code never leaves the host unless the operator chose a managed provider.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - cline
+  - open-swe
+  - swe-agent
+  - mini-swe-agent
+  - openhands

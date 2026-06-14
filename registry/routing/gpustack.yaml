@@ -1,0 +1,42 @@
+id: gpustack
+name: "Gpustack"
+
+category: routing
+subcategory: gpu-cluster-manager
+
+repo_url: https://github.com/gpustack/gpustack
+homepage: https://gpustack.ai
+license: Apache-2.0
+primary_language: Python
+
+tagline: "Open-source GPU cluster manager that orchestrates inference engines (vLLM, llama.cpp, MLX)."
+
+description: |
+  GPUStack is an open-source GPU cluster manager and model gateway. Discovers available accelerators across a heterogeneous fleet (NVIDIA, AMD, Apple Silicon), schedules model loads, and exposes a unified OpenAI-compatible endpoint.
+
+  In the atlas: the missing cluster-orchestration layer below the gateway entries (`litellm`, `portkey-gateway`, `smg`). Peer to `kubernetes` add-ons like KServe, but lighter-weight and ML-native.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: GPUStack
+
+origin_country: CN
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  Apache-2.0; self-hosted control plane. Manages the operator's own GPUs (on-prem, cloud VMs, or a mixed fleet). The exposed API is OpenAI-compatible so any client can swap to a self-hosted endpoint without code changes.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - vllm
+  - llama-cpp
+  - litellm
+  - portkey-gateway
+  - ollama

@@ -17,6 +17,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Apisix](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | US | 4/5 | landmark | 16.7k | — | apache |
 | [Aqbot](https://github.com/AQBot-Desktop/AQBot) | AGPL-3.0-only | TypeScript | ga | — | 4/5 | frontier | 635 | — | AQBot-Desktop |
 | [Aqueduct](https://github.com/TU-Wien-dataLAB/aqueduct) | BSD-3-Clause | Python | beta | AT | 4/5 | frontier | 23 | — | TU-Wien-dataLAB |
+| [Atopos31 Llmio](https://github.com/atopos31/llmio) | MIT | TypeScript | beta | CN | 5/5 | — | — | — | atopos31 |
 | [BentoML](https://github.com/bentoml/BentoML) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 8.7k | — | BentoML / bentoml.com |
 | [Bitrouter](https://github.com/bitrouter/bitrouter) | Apache-2.0 | Rust | beta | — | 4/5 | emerging | 179 | — | bitrouter |
 | [Cc Switch](https://github.com/farion1231/cc-switch) | MIT | Rust | ga | — | 3/5 | landmark | 100.0k | — | farion1231 |
@@ -32,12 +33,16 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Freellmpool](https://github.com/0xzr/freellmpool) | MIT | Python | beta | — | 4/5 | frontier | 8 | — | 0xzr |
 | [Goinfer](https://github.com/lynxai-team/goinfer) | MIT | Go | beta | — | 4/5 | frontier | 10 | — | lynxai-team |
 | [Go Model](https://github.com/ENTERPILOT/GoModel) | MIT | Go | ga | — | 4/5 | emerging | 938 | — | ENTERPILOT |
+| [Gpustack](https://github.com/gpustack/gpustack) | Apache-2.0 | Python | ga | CN | 5/5 | — | — | — | GPUStack |
 | [Grps Trtllm](https://github.com/NetEase-Media/grps_trtllm) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 160 | — | NetEase-Media |
 | [Helicone](https://github.com/Helicone/helicone) | Apache-2.0 | TypeScript | ga | US | 4/5 | landmark | 5.8k | — | Helicone Inc. |
 | [Higress](https://github.com/higress-group/higress) | Apache-2.0 | Go | ga | CN | 5/5 | landmark | 8.6k | — | higress-group |
 | [Hugging Face Text Generation Inference](https://github.com/huggingface/text-generation-inference) | Apache-2.0 | Python | ga | US | 4/5 | canonical | 10.9k | — | Hugging Face |
+| [Inference Benchmarker](https://github.com/huggingface/inference-benchmarker) | Apache-2.0 | Rust | ga | US | 5/5 | — | — | — | Hugging Face |
+| [Inferrs](https://github.com/ericcurtin/inferrs) | Apache-2.0 | Rust | alpha | — | 4/5 | — | — | — | ericcurtin |
 | [Izwi](https://github.com/izwi-ai/izwi) | MIT | Rust | ga | — | 4/5 | emerging | 339 | — | izwi-ai |
 | [Jan](https://github.com/janhq/jan) | Apache-2.0 | TypeScript | beta | VN | 5/5 | landmark | 43.0k | — | Menlo Research (janhq) |
+| [Jundot Omlx](https://github.com/jundot/omlx) | Apache-2.0 | Python | beta | — | 5/5 | — | — | — | jundot |
 | [kgateway](https://github.com/kgateway-dev/kgateway) | Apache-2.0 | Go | ga | US | 4/5 | landmark | 5.6k | — | kgateway-dev (ex-Solo.io) |
 | [Kong](https://github.com/Kong/kong) | Apache-2.0 | Lua | ga | US | 4/5 | landmark | 43.6k | — | Kong Inc. |
 | [LiteLLM](https://github.com/BerriAI/litellm) | MIT | Python | ga | US | 5/5 | landmark | 50.3k | — | BerriAI |
@@ -53,6 +58,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Lorax](https://github.com/predibase/lorax) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.8k | — | predibase |
 | [MLC-LLM](https://github.com/mlc-ai/mlc-llm) | Apache-2.0 | Python | beta | US | 4/5 | established | 22.8k | — | MLC-AI (Tianqi Chen) |
 | [MLflow AI Gateway](https://github.com/mlflow/mlflow) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 26.5k | — | Databricks / Linux Foundation |
+| [Mlx Omni Server](https://github.com/madroidmaq/mlx-omni-server) | MIT | Python | beta | CN | 5/5 | — | — | — | madroidmaq |
 | [Model Flux](https://github.com/dabao-yi/model-flux) | MIT | TypeScript | beta | — | 4/5 | frontier | 22 | — | dabao-yi |
 | [Nadir Claw](https://github.com/NadirRouter/NadirClaw) | MIT | Python | ga | — | 4/5 | emerging | 528 | — | NadirRouter |
 | [New API](https://github.com/QuantumNous/new-api) | AGPL-3.0 | Go | beta | CN | 5/5 | landmark | 38.7k | — | QuantumNous / Calcium-Ion |
@@ -86,11 +92,15 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Sie](https://github.com/superlinked/sie) | Apache-2.0 | Python | ga | — | 3/5 | established | 2.0k | — | superlinked |
 | [LLM (CLI)](https://github.com/simonw/llm) | Apache-2.0 | Python | ga | GB | 5/5 | landmark | 12.0k | — | Simon Willison |
 | [Smarter Router](https://github.com/peva3/SmarterRouter) | MIT | Python | beta | — | 4/5 | emerging | 137 | — | peva3 |
+| [Smg](https://github.com/lightseekorg/smg) | Apache-2.0 | Rust | beta | — | 5/5 | — | — | — | lightseekorg |
 | [Spiceai](https://github.com/spiceai/spiceai) | Apache-2.0 | Rust | ga | — | 3/5 | established | 3.0k | — | spiceai |
+| [Swiftlm](https://github.com/SharpAI/SwiftLM) | MIT | Swift | beta | — | 5/5 | — | — | — | SharpAI |
 | [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Apache-2.0 | Python | ga | US | 2/5 | landmark | 13.9k | — | NVIDIA Corporation |
+| [Text Embeddings Inference](https://github.com/huggingface/text-embeddings-inference) | Apache-2.0 | Rust | ga | US | 5/5 | — | — | — | Hugging Face |
 | [text-generation-webui](https://github.com/oobabooga/textgen) | AGPL-3.0 | Python | ga | US | 5/5 | landmark | 47.3k | — | oobabooga |
 | [Tiny Vllm](https://github.com/jmaczan/tiny-vllm) | Apache-2.0 | C++ | ga | — | 4/5 | emerging | 793 | — | jmaczan |
 | [Tokligence Gateway](https://github.com/tokligence/tokligence-gateway) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 19 | — | tokligence |
+| [Traceloop Hub](https://github.com/traceloop/hub) | Apache-2.0 | Rust | beta | US | 5/5 | — | — | — | Traceloop |
 | [Vllm Qwen](https://github.com/hec-ovi/vllm-qwen) | Unlicense | Python | beta | — | 4/5 | frontier | 14 | — | hec-ovi |
 | [vLLM](https://github.com/vllm-project/vllm) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 82.8k | — | vllm-project (Berkeley) |
 | [WebLLM](https://github.com/mlc-ai/web-llm) | Apache-2.0 | TypeScript | beta | US | 5/5 | landmark | 18.2k | — | MLC-AI |

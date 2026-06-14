@@ -63,16 +63,25 @@ sovereignty_notes: 'NVIDIA (US-incorporated company); Apache-2.0; runs entirely
   '
 harness_paradigm_alignment: aligned
 adjacent_to:
+- agent-audit
+- anamorpher
+- api-relay-audit
 - art-toolkit
+- camel-prompt-injection
+- cryptex-oss
 - deepsec
 - easyjailbreak
 - llm-guard
+- llmmap
+- luckypipewrench-pipelock
 - modelscan
 - pentestagent
 - plexiglass
+- praetorian-inc-augustus
 - promptfoo
 - promptmap
 - purple-llama
 - pyrit
 - rebuff
+- reverseclabs-spikee
 deployment_posture: local-first

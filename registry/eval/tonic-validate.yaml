@@ -6,10 +6,14 @@ repo_url: https://github.com/TonicAI/tonic_validate
 license: MIT
 primary_language: Python
 tagline: RAG evaluation SDK with reference-free metrics and CI/CD pipeline integrations
-description: 'Tonic Validate is Tonic AI''s rAG evaluation SDK with reference-free metrics and CI/CD pipeline integrations. Reference-free scoring (no ground-truth required); GitHub Actions integration.
+description: 'Tonic Validate is Tonic AI''s rAG evaluation SDK with reference-free
+  metrics and CI/CD pipeline integrations. Reference-free scoring (no ground-truth
+  required); GitHub Actions integration.
 
 
-  In the atlas: Tonic Validate is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+  In the atlas: Tonic Validate is an evaluation harness. Evaluation is the feedback
+  loop that keeps every other harness honest — if you cannot measure the behaviour
+  of the swap target, the swap is not really safe.
 
   '
 maturity: beta
@@ -18,7 +22,9 @@ maintainer:
   name: Tonic AI
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: 'Tonic AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Tonic AI (US-incorporated company); OSS core is MIT and fully
+  self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with
+  some defaults or shipped configurations that favour a specific tier.
 
   '
 harness_paradigm_alignment: aligned
@@ -26,6 +32,8 @@ adjacent_to:
 - ares
 - continuous-eval
 - factscore
+- open-rag-eval
 - ragas
 - trulens
+- autorag
 deployment_posture: local-first

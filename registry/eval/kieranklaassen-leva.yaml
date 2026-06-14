@@ -1,0 +1,39 @@
+id: kieranklaassen-leva
+name: "Kieranklaassen Leva"
+
+category: eval
+subcategory: ruby-llm-eval
+
+repo_url: https://github.com/kieranklaassen/leva
+license: MIT
+primary_language: Ruby
+
+tagline: "Production-data LLM evaluation framework for Ruby on Rails apps."
+
+description: |
+  Leva (kieranklaassen) is an LLM evaluation framework designed for Ruby on Rails applications, focused on evaluating production data (not synthetic test sets). Integrates with ActiveRecord and Rails background-job infrastructure.
+
+  In the atlas: fills the Ruby-ecosystem gap in eval. Peer to `langfuse` and `langwatch` on the production-traces side; differentiator is Rails-native.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: kieranklaassen
+
+origin_country: null
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  MIT licence; Ruby gem; runs inside the host Rails app. Evaluation judge is whatever LLM the app already uses. Provider-agnostic.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - langfuse
+  - langwatch
+  - ragas

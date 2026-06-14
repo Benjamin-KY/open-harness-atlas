@@ -1,0 +1,39 @@
+id: inferrs
+name: "Inferrs"
+
+category: routing
+subcategory: inference-server
+
+repo_url: https://github.com/ericcurtin/inferrs
+license: Apache-2.0
+primary_language: Rust
+
+tagline: "TurboQuant inference server."
+
+description: |
+  Inferrs is an inference server using TurboQuant quantisation for fast on-device or single-GPU serving. Focuses on small-footprint deployment of quantised models with OpenAI-compatible endpoints.
+
+  In the atlas: a lighter-weight alternative to `vllm` / `tgi` when serving a small number of quantised models on modest hardware.
+
+maturity: alpha
+
+maintainer:
+  type: individual
+  name: ericcurtin
+
+origin_country: null
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apache-2.0; self-hosted. Quantisation-first design keeps the deployment local on consumer/single-GPU hardware. No managed-provider dependency.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - vllm
+  - llama-cpp
+  - ollama

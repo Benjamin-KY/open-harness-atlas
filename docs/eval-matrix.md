@@ -23,6 +23,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Arena-Hard-Auto](https://github.com/lmarena/arena-hard-auto) | Apache-2.0 | Python | ga | US | 4/5 | frontier | 1.0k | — | LM Arena / UC Berkeley |
 | [ARES](https://github.com/stanford-futuredata/ARES) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 715 | — | Stanford FutureData |
 | [Arguslm](https://github.com/bluet/arguslm) | Apache-2.0 | Python | beta | — | 4/5 | frontier | 1 | — | bluet |
+| [Autorag](https://github.com/Marker-Inc-Korea/AutoRAG) | Apache-2.0 | Python | ga | KR | 5/5 | — | — | — | Marker Inc |
 | [BEIR (Benchmarking-IR)](https://github.com/beir-cellar/beir) | Apache-2.0 | Python | ga | — | 4/5 | frontier | 2.2k | — | BEIR Community (Nandan Thakur et al.) |
 | [Benchclaw](https://github.com/Agnuxo1/benchclaw) | MIT | HTML | beta | — | 4/5 | frontier | 5 | — | Agnuxo1 |
 | [Benchjack](https://github.com/benchjack/benchjack) | Apache-2.0 | Python | beta | — | 2/5 | frontier | 39 | — | benchjack |
@@ -87,6 +88,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Judgeval](https://github.com/JudgmentLabs/judgeval) | Apache-2.0 | Python | ga | — | 3/5 | established | 1.0k | — | JudgmentLabs |
 | [Juryeval](https://github.com/liodon-ai/juryeval) | MIT | Python | beta | — | 2/5 | frontier | 1 | — | liodon-ai |
 | [Keel](https://github.com/NavigicAI/keel) | Apache-2.0 | Multiple | beta | — | 3/5 | frontier | 1 | — | NavigicAI |
+| [Kieranklaassen Leva](https://github.com/kieranklaassen/leva) | MIT | Ruby | beta | — | 5/5 | — | — | — | kieranklaassen |
 | [Langeval](https://github.com/solana8800/langeval) | Apache-2.0 | TypeScript | beta | — | 3/5 | frontier | 24 | — | solana8800 |
 | [LegalBench](https://github.com/HazyResearch/legalbench) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 594 | — | Stanford HazyResearch |
 | [Leva](https://github.com/kieranklaassen/leva) | MIT | Ruby | beta | — | 3/5 | emerging | 140 | — | kieranklaassen |
@@ -142,6 +144,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Oh My Knowledge](https://github.com/lizhiyao/oh-my-knowledge) | MIT | TypeScript | beta | — | 3/5 | frontier | 11 | — | lizhiyao |
 | [Ollive AI Assistant](https://github.com/VIVPM/ollive-ai-assistant) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | VIVPM |
 | [OLMES](https://github.com/allenai/olmes) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 379 | — | Allen AI (AI2) |
+| [Open Rag Eval](https://github.com/vectara/open-rag-eval) | Apache-2.0 | Python | beta | US | 5/5 | — | — | — | Vectara |
 | [Open Agent Bench](https://github.com/generalaimodels/OpenAgentBench) | GPL-3.0-only | Python | beta | — | 3/5 | frontier | 1 | — | generalaimodels |
 | [OpenAI Evals](https://github.com/openai/evals) | MIT | Python | ga | US | 3/5 | established | 18.7k | — | OpenAI |
 | [OpenAI Preparedness Evaluations](https://github.com/openai/preparedness) | MIT | Python | beta | US | 4/5 | established | 1.2k | — | OpenAI, OpCo, LLC |

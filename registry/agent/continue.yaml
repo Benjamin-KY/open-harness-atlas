@@ -1,0 +1,41 @@
+id: continue
+name: "Continue"
+
+category: agent
+subcategory: code-agent
+
+repo_url: https://github.com/continuedev/continue
+homepage: https://docs.continue.dev
+license: Apache-2.0
+primary_language: TypeScript
+
+tagline: "Open-source code AI assistant for VS Code / JetBrains — bring-your-own model."
+
+description: |
+  Continue is an open-source IDE extension (VS Code + JetBrains) that turns any LLM into a code assistant. Chat, autocomplete, edit-in-place, and agent-mode actions, all configurable to the user's choice of model.
+
+  In the atlas: the OSS BYO-model alternative to GitHub Copilot / Cursor. Peer to `aider`, `cline`; differentiator is the deep IDE integration and the config-driven multi-provider setup.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Continue
+
+origin_country: US
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  Apache-2.0; runs locally as an IDE extension. Model provider is fully operator-controlled — supports OpenAI, Anthropic, Bedrock, Azure, Ollama, vLLM, LM Studio, llama.cpp, etc. The IDE extension itself does not phone home (telemetry is opt-in and documented).
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - aider
+  - cline
+  - open-swe
+  - openhands

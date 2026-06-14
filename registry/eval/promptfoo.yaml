@@ -6,7 +6,8 @@ repo_url: https://github.com/promptfoo/promptfoo
 homepage: https://www.promptfoo.dev/
 license: MIT
 primary_language: TypeScript
-tagline: Declarative test-driven evaluation of LLM applications with side-by-side prompt and model comparisons.
+tagline: Declarative test-driven evaluation of LLM applications with side-by-side
+  prompt and model comparisons.
 description: 'promptfoo is an MIT-licensed CLI and library for declarative,
 
   test-driven LLM evaluation. A YAML config defines prompts, providers
@@ -44,7 +45,8 @@ education_resources:
   url: https://www.promptfoo.dev/docs/intro/
   type: docs
   free: true
-sovereignty_notes: 'US-incorporated company; OSS CLI + viewer are MIT-licensed and run
+sovereignty_notes: 'US-incorporated company; OSS CLI + viewer are MIT-licensed and
+  run
 
   entirely locally; no telemetry by default. Provider config is a
 
@@ -62,9 +64,11 @@ adjacent_to:
 - garak
 - inspect-ai
 - langwatch
+- llmmap
 - mlflow-ai-gateway
 - openai-evals
 - promptimize
 - prompttools
 - ragas
+- reverseclabs-spikee
 deployment_posture: local-first

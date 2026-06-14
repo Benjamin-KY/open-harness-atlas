@@ -1,0 +1,41 @@
+id: mlx-omni-server
+name: "Mlx Omni Server"
+
+category: routing
+subcategory: local-inference-server
+
+repo_url: https://github.com/madroidmaq/mlx-omni-server
+homepage: https://deepwiki.com/madroidmaq/mlx-omni-server/1-overview
+license: MIT
+primary_language: Python
+
+tagline: "Apple-MLX local inference server exposing an OpenAI-compatible API across modalities."
+
+description: |
+  MLX Omni Server is a local inference server built on Apple's MLX framework. Supports text, image, and audio models, with OpenAI-compatible REST endpoints (chat, embeddings, images, audio).
+
+  In the atlas: complements `omlx` (raw-throughput LLM server) and `swiftlm` (Swift-native) as another local-only MLX option. Useful when a project wants the same OpenAI-shape endpoint on an Apple machine for development that production hits in the cloud.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: madroidmaq
+
+origin_country: CN
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apple Silicon only. MIT licence; self-hosted; no telemetry. Inference stays on-device; the server only speaks to its own MLX runtime. Provider-portable because client code targets the standard OpenAI shape.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-only
+
+adjacent_to:
+  - jundot-omlx
+  - swiftlm
+  - ollama
+  - litellm

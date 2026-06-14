@@ -1,0 +1,40 @@
+id: agent-audit
+name: "Agent Audit"
+
+category: redteam
+subcategory: static-agent-security
+
+repo_url: https://github.com/HeadyZhang/agent-audit
+homepage: https://headyzhang.github.io/agent-audit/
+license: MIT
+primary_language: Python
+
+tagline: "Static security scanner for LLM agents — prompt injection, MCP config auditing, taint analysis."
+
+description: |
+  Agent-audit is a static-analysis tool for LLM-agent codebases. Detects prompt-injection sinks via taint analysis, audits MCP server configurations for unsafe patterns, flags missing input validation. 51 rules out of the box.
+
+  In the atlas: novel — static-analysis-for-agents niche. Complements runtime defences (`pipelock`, `adrian`) by catching issues before deployment. Closest peer is `semgrep` rules for LLM/agent patterns.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: HeadyZhang
+
+origin_country: CN
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apache-2.0; CLI tool that runs locally against the operator's source tree. No code leaves the host; results are local JSON / SARIF. Provider-agnostic — analyses the agent code, not the model.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - agent-security-scanner-mcp
+  - luckypipewrench-pipelock
+  - garak

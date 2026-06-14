@@ -6,7 +6,8 @@ repo_url: https://github.com/ethz-spylab/agentdojo
 homepage: https://agentdojo.spylab.ai/
 license: MIT
 primary_language: Python
-tagline: Dynamic environment to evaluate prompt-injection attacks and defences against tool-using LLM agents.
+tagline: Dynamic environment to evaluate prompt-injection attacks and defences against
+  tool-using LLM agents.
 description: 'AgentDojo is ETH Zürich SPY Lab''s MIT-licensed dynamic environment
 
   for evaluating attacks and defences against tool-using LLM agents.
@@ -63,7 +64,9 @@ harness_paradigm_alignment: aligned
 adjacent_to:
 - agent-attack
 - agentic-radar
+- anamorpher
 - bipia
+- cryptex-oss
 - mimir
 - open-prompt-injection
 - pint-benchmark
@@ -71,5 +74,7 @@ adjacent_to:
 - ps-fuzz
 - pyrit
 - r-judge
+- sandlock
 - toolemu
+- e2b
 deployment_posture: local-first

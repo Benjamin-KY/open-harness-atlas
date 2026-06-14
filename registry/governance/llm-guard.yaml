@@ -5,11 +5,16 @@ subcategory: llm-firewall
 repo_url: https://github.com/protectai/llm-guard
 license: MIT
 primary_language: Python
-tagline: 'Input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets'
-description: 'LLM Guard is Protect AI''s input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets. Modular scanner pipeline usable as Python lib or REST API; 30+ scanners.
+tagline: 'Input/output security toolkit: 15 prompt + 20 output scanners covering PI,
+  anonymisation, toxicity, secrets'
+description: 'LLM Guard is Protect AI''s input/output security toolkit: 15 prompt
+  + 20 output scanners covering PI, anonymisation, toxicity, secrets. Modular scanner
+  pipeline usable as Python lib or REST API; 30+ scanners.
 
 
-  In the atlas: LLM Guard is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+  In the atlas: LLM Guard is a governance-layer entry. Where it lands on the five-component
+  spine (policy router / source authority / prompt composer / output contract / audit-log
+  FSM) is captured in `five_component_coverage` below.
 
   '
 maturity: ga
@@ -24,7 +29,9 @@ five_component_coverage:
   prompt_composer: none
   output_contract: partial
   audit_log_fsm: partial
-sovereignty_notes: 'Protect AI (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Protect AI (US-incorporated company); OSS core is MIT and fully
+  self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with
+  some defaults or shipped configurations that favour a specific tier.
 
   '
 harness_paradigm_alignment: aligned
@@ -37,8 +44,10 @@ adjacent_to:
 - nemo-guardrails
 - presidio
 - promptmap
+- superagent
 - rebuff
 - safedecoding
+- seojoonkim-prompt-guard
 - shieldlm
 - smooth-llm
 - vigil-llm

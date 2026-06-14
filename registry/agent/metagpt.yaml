@@ -51,4 +51,5 @@ adjacent_to:
 - swarm-openai
 - voyager
 - xagent
+- devika
 deployment_posture: local-first

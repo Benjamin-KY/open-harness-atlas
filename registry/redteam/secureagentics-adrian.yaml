@@ -1,0 +1,41 @@
+id: secureagentics-adrian
+name: "Secureagentics Adrian"
+
+category: redteam
+subcategory: runtime-agent-defence
+
+repo_url: https://github.com/secureagentics/Adrian
+homepage: https://app.adrian.secureagentics.ai/
+license: Apache-2.0
+primary_language: Python
+
+tagline: "Runtime security monitoring and control for AI agents — catches malicious tool use, prompt injection, exfiltration."
+
+description: |
+  Adrian is a runtime guard that sits inside an agent loop and intercepts tool calls before they execute. Detects malicious tool use, suspected prompt-injection-derived actions, and data-exfiltration patterns; can block, log, or escalate.
+
+  In the atlas: peer to `pipelock`, `agent-security-scanner-mcp`. Implements the runtime half of the `audit-log-fsm-escalation` pattern; pairs naturally with `langfuse` / `arize-phoenix` for the observability half.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: Secureagentics
+
+origin_country: null
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apache-2.0; self-hosted runtime; no managed-service dependency. Sits between the agent and its tools, so the LLM provider is unconstrained.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - luckypipewrench-pipelock
+  - agent-security-scanner-mcp
+  - ai-infra-guard
+  - superagent

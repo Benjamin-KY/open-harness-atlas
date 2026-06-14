@@ -1,0 +1,40 @@
+id: swiftlm
+name: "Swiftlm"
+
+category: routing
+subcategory: local-inference-server
+
+repo_url: https://github.com/SharpAI/SwiftLM
+license: MIT
+primary_language: Swift
+
+tagline: "Native MLX-Swift LLM inference server for Apple Silicon — OpenAI + Anthropic API compatible."
+
+description: |
+  SwiftLM is a Swift-native (no Python) LLM inference server for Apple Silicon, built on MLX-Swift. Exposes both OpenAI and Anthropic-shape HTTP APIs and supports SSD streaming for large models that exceed RAM.
+
+  In the atlas: the dual-API surface makes it interesting in routing patterns where downstream clients are split between the OpenAI and Anthropic SDKs — both can hit one local server.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: SharpAI
+
+origin_country: null
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Swift / MLX — Apple Silicon only. No Python runtime to manage. MIT licence. Both OpenAI and Anthropic API surfaces make this a useful drop-in target when migrating off a managed provider.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-only
+
+adjacent_to:
+  - jundot-omlx
+  - mlx-omni-server
+  - ollama
+  - litellm

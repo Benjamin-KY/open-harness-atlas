@@ -1,0 +1,38 @@
+id: sandlock
+name: "Sandlock"
+
+category: redteam
+subcategory: agent-sandbox
+
+repo_url: https://github.com/multikernel/sandlock
+license: Apache-2.0
+primary_language: Rust
+
+tagline: "Process-based Linux sandbox for AI-agent tool execution — no container, no VM, no privilege."
+
+description: |
+  Sandlock is a lightweight process-based sandbox for untrusted agent tool execution on Linux. Uses seccomp, namespaces, and cgroups directly — no container runtime, no VM, no root required.
+
+  In the atlas: the sandbox primitive that the `audit-log-fsm-escalation` pattern's tool layer needs. Complements `e2b` (cloud sandbox), `daytona` (managed dev container) by offering a local-only option.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: multikernel
+
+origin_country: null
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apache-2.0; Linux-only; runs entirely as an unprivileged user-space process. No managed-service component. The agent and the sandbox are co-located, so no agent input ever leaves the host through the sandbox itself.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-only
+
+adjacent_to:
+  - agentdojo
+  - e2b

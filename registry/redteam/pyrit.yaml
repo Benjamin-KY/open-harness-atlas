@@ -64,11 +64,17 @@ sovereignty_notes: 'Microsoft (US-incorporated company); MIT-licensed; runs enti
   '
 harness_paradigm_alignment: aligned
 adjacent_to:
+- anamorpher
 - art-toolkit
+- camel-prompt-injection
+- cryptex-oss
 - easyjailbreak
 - garak
+- llmmap
 - pentestagent
 - plexiglass
+- praetorian-inc-augustus
 - promptfoo
 - promptmap
+- reverseclabs-spikee
 deployment_posture: local-first

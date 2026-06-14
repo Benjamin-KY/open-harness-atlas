@@ -25,4 +25,5 @@ adjacent_to:
 - open-design
 - openbrowser
 - opencli
+- privategpt
 deployment_posture: local-first

@@ -32,6 +32,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Detoxify](https://github.com/unitaryai/detoxify) | Apache-2.0 | Python | partial | none | none | partial | none | 5/5 |
 | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer) | Apache-2.0 | Python | partial | none | none | partial | none | 4/5 |
 | [Earl](https://github.com/mathematic-inc/earl) | Apache-2.0 | Rust | partial | none | none | none | none | 3/5 |
+| [Evidently](https://github.com/evidentlyai/evidently) | Apache-2.0 | Jupyter Notebook | none | none | none | partial | native | 5/5 |
 | [Fls Jaime](https://github.com/firstlinesoftware/fls-jaime) | Apache-2.0 | Python | partial | none | none | none | none | 2/5 |
 | [Frai](https://github.com/sebuzdugan/frai) | MIT | JavaScript | none | none | none | none | none | 3/5 |
 | [funcchain](https://github.com/shroominic/funcchain) | MIT | Python | none | none | partial | native | none | 4/5 |

@@ -1,0 +1,40 @@
+id: atopos31-llmio
+name: "Atopos31 Llmio"
+
+category: routing
+subcategory: llm-gateway
+
+repo_url: https://github.com/atopos31/llmio
+license: MIT
+primary_language: TypeScript
+
+tagline: "Unified LLM gateway with weighted load balancing, observability, and cost tracking."
+
+description: |
+  LLMIO is a Go-based LLM gateway focused on weighted load balancing across providers, per-key cost tracking, and OpenTelemetry-based observability. Single binary deployment.
+
+  In the atlas: peer to `litellm`, `portkey` in the gateway role; differentiator is the weighted-routing primitives and the single-binary Go deployment story.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: atopos31
+
+origin_country: CN
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  MIT licence; single Go binary; self-hosted. Gateway itself does not phone home; emitter is OpenTelemetry which the operator points at their own collector.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - litellm
+  - portkey-gateway
+  - smg
+  - traceloop-hub

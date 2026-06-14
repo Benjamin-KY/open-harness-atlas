@@ -1,0 +1,39 @@
+id: seojoonkim-prompt-guard
+name: "Seojoonkim Prompt Guard"
+
+category: redteam
+subcategory: prompt-injection-defence
+
+repo_url: https://github.com/seojoonkim/prompt-guard
+license: MIT
+primary_language: Python
+
+tagline: "Multi-language prompt-injection defence with severity scoring."
+
+description: |
+  Prompt-guard (seojoonkim) is a runtime prompt-injection defence for AI agents. Multi-language detection, severity scoring, and a small declarative ruleset for tenant-specific policy.
+
+  In the atlas: peer to `llm-guard`, `nemo-guardrails`, `pipelock`. Differentiator is the multi-language emphasis (non-English injection payloads) and severity-scoring primitive that is easy to wire into an escalation policy.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: seojoonkim
+
+origin_country: null
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  MIT licence; runs locally as middleware. No managed-service dependency. Provider-agnostic. Multi-language detection is particularly relevant for non-English deployments.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - llm-guard
+  - nemo-guardrails
+  - luckypipewrench-pipelock

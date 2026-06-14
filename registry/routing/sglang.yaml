@@ -5,11 +5,15 @@ subcategory: local-inference-server
 repo_url: https://github.com/sgl-project/sglang
 license: Apache-2.0
 primary_language: Python
-tagline: High-performance inference+serving framework with RadixAttention, OpenAI-compat server, structured output
-description: 'SGLang is sgl-project''s high-performance inference+serving framework with RadixAttention, OpenAI-compat server, structured output. RadixAttention for 5x KV-cache reuse; fastest DeepSeek/Llama throughput.
+tagline: High-performance inference+serving framework with RadixAttention, OpenAI-compat
+  server, structured output
+description: 'SGLang is sgl-project''s high-performance inference+serving framework
+  with RadixAttention, OpenAI-compat server, structured output. RadixAttention for
+  5x KV-cache reuse; fastest DeepSeek/Llama throughput.
 
 
-  In the atlas: SGLang is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+  In the atlas: SGLang is a routing-layer entry — it makes the model tier swappable
+  so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
 
   '
 maturity: ga
@@ -18,7 +22,10 @@ maintainer:
   name: sgl-project
 origin_country: US
 model_agnostic_score: 5
-sovereignty_notes: 'sgl-project (community-maintained, US); OSS core is Apache-2.0 and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'sgl-project (community-maintained, US); OSS core is Apache-2.0
+  and self-hostable as a Python package or container; OpenAI-compatible local backends
+  are first-class. Model-agnostic 5 — provider is a swap target and the same code
+  path runs against every supported backend.
 
   '
 harness_paradigm_alignment: partial
@@ -26,6 +33,7 @@ adjacent_to:
 - bentoml
 - deepspeed-mii
 - huggingface-tgi
+- inference-benchmarker
 - litellm
 - llama-cpp
 - lmdeploy

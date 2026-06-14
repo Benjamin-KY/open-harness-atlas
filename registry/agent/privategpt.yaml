@@ -1,0 +1,38 @@
+id: privategpt
+name: "Privategpt"
+
+category: agent
+subcategory: private-rag-agent
+
+repo_url: https://github.com/zylon-ai/private-gpt
+homepage: https://www.zylon.ai/private-gpt
+license: Apache-2.0
+primary_language: Python
+
+tagline: "Privacy-preserving RAG over local documents — no data leaves the host."
+
+description: |
+  PrivateGPT is a fully local RAG stack: document loaders, embedding store (Qdrant), local LLM inference (Llama, Mistral, etc.), API + UI — all running on the operator's own hardware. 100% no-egress by default.
+
+  In the atlas: the canonical reference for the `local-possible-spine` pattern. Peer to `localgpt`, `anythingllm`, `khoj` on the local-first-RAG shelf.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Zylon
+
+origin_country: ES
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  Apache-2.0; designed from day one for air-gapped / fully-local operation. Default config makes ZERO outbound calls — the embedding model, the vector store (Qdrant), and the LLM all run on the host. Optionally swappable to a managed provider, but that defeats the point.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-only
+
+adjacent_to:
+  - anything-llm

@@ -33,5 +33,7 @@ harness_paradigm_alignment: partial
 adjacent_to:
 - deepsec
 - lm-evaluation-harness
+- luckypipewrench-pipelock
 - pentestagent
+- secureagentics-adrian
 deployment_posture: local-first

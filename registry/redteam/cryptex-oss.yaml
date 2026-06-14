@@ -1,0 +1,41 @@
+id: cryptex-oss
+name: Cryptex Oss
+category: redteam
+subcategory: red-team-toolkit
+repo_url: https://github.com/m4xx101/cryptex-oss
+license: MIT
+primary_language: TypeScript
+tagline: 'Open-source LLM red-teaming toolkit: 162 transforms, 36 mutators, 25 tool
+  surfaces.'
+description: 'Cryptex-OSS is a red-teaming toolkit that bundles 162 input transforms,
+  36 mutators, and 25 tool-surface probes into a single CLI. Designed for offline
+  corpus generation and reproducible adversarial campaigns.
+
+
+  In the atlas: peer to `garak`, `pyrit`, `inspect_evals` with strong overlap on the
+  transform/mutator dimension; differentiator is the breadth of tool-surface probes
+  (useful for MCP-era agents).
+
+  '
+maturity: beta
+maintainer:
+  type: individual
+  name: m4xx101
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: 'Added 2026-06-14 via the second recency-biased discovery sweep
+  (non-agent categories: routing / redteam / eval).
+
+  MIT licence; runs entirely locally; the 162 transforms and 36 mutators are deterministic
+  functions, no external calls. Target LLM is whatever the operator points it at.
+
+  '
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- agentdojo
+- garak
+- harmbench
+- praetorian-inc-augustus
+- pyrit
+- reverseclabs-spikee

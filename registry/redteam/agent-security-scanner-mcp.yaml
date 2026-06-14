@@ -32,11 +32,17 @@ sovereignty_notes: Sinewave AI (commercial company; ProofLayer brand, 110 stars,
   detection, prompt-injection blocking and vulnerability scanning.
 harness_paradigm_alignment: partial
 adjacent_to:
+- agent-audit
+- api-relay-audit
+- camel-prompt-injection
 - deepsec
+- luckypipewrench-pipelock
 - pentestagent
 - pipelock
 - prompt-guard
 - pyrit
 - redairange
+- secureagentics-adrian
 - securemcp
+- superagent
 deployment_posture: local-first

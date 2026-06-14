@@ -1,0 +1,40 @@
+id: api-relay-audit
+name: "Api Relay Audit"
+
+category: redteam
+subcategory: relay-audit
+
+repo_url: https://github.com/toby-bridges/api-relay-audit
+homepage: https://toby-bridges.github.io/api-relay-audit/
+license: AGPL-3.0
+primary_language: Python
+
+tagline: "Local security audit for AI API relays and LLM proxies — detects prompt injection, model substitution, telemetry leaks."
+
+description: |
+  API-relay-audit inspects LLM proxies / API relays for common security issues: silent model substitution, prompt-injection passthrough, unexpected telemetry, weak auth, and CORS / TLS misconfigurations.
+
+  In the atlas: novel niche. Complements `pipelock` (runtime defence) by auditing the relay or gateway itself — useful before adopting any of the routing-category entries in a sovereignty-sensitive environment.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: toby-bridges
+
+origin_country: null
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  MIT licence; CLI tool that runs entirely locally against an operator-supplied relay endpoint. Output is a JSON / HTML report; no data leaves the host. Especially valuable when validating that a third-party LLM gateway behaves as advertised.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-only
+
+adjacent_to:
+  - luckypipewrench-pipelock
+  - garak
+  - agent-security-scanner-mcp

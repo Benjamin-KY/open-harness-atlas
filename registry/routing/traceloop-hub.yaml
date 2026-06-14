@@ -1,0 +1,56 @@
+id: traceloop-hub
+name: Traceloop Hub
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/traceloop/hub
+homepage: https://www.traceloop.com/docs/hub
+license: Apache-2.0
+primary_language: Rust
+tagline: High-scale LLM gateway in Rust with built-in OpenTelemetry observability.
+description: 'Traceloop Hub is a Rust LLM gateway built by the Traceloop
+
+  team (also behind OpenLLMetry). Multi-provider routing,
+
+  first-class OTel instrumentation, designed for high-RPS
+
+  production traffic.
+
+
+  In the atlas: complements `openllmetry` (the SDK) with the
+
+  gateway-side counterpart. Peer to `litellm`, `portkey`,
+
+  `smg` in the gateway role; differentiator is the deep OTel
+
+  integration and the Rust performance profile.
+
+  '
+maturity: beta
+maintainer:
+  type: company
+  name: Traceloop
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: 'Added 2026-06-14 via the second recency-biased discovery sweep
+
+  (non-agent categories: routing / redteam / eval).
+
+  Apache-2.0; self-hosted. The companion `openllmetry` SDK is
+
+  vendor-neutral OTel — observability data goes wherever the
+
+  operator routes it (Honeycomb, Tempo, Jaeger, Grafana, your
+
+  in-tenancy collector). Gateway routes to any OpenAI-shape
+
+  provider.
+
+  '
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- atopos31-llmio
+- litellm
+- openllmetry
+- portkey-gateway
+- smg

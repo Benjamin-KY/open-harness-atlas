@@ -1,0 +1,42 @@
+id: jundot-omlx
+name: "Jundot Omlx"
+
+category: routing
+subcategory: local-inference-server
+
+repo_url: https://github.com/jundot/omlx
+homepage: https://omlx.ai
+license: Apache-2.0
+primary_language: Python
+
+tagline: "MLX-based LLM inference server with continuous batching and SSD caching for Apple Silicon."
+
+description: |
+  OMLX is an inference server tuned for Apple Silicon (M1-M4): continuous batching, paged attention, SSD-backed KV cache, OpenAI-compatible HTTP API. Brings vLLM-style throughput to Mac hardware without requiring an NVIDIA GPU.
+
+  In the atlas: a local-only alternative to `vllm` / `tgi` / `llama-cpp-server` for Apple Silicon workstations and edge deployments. Pairs naturally with `litellm`, `openrouter`, `portkey` as the upstream provider in a routing pattern.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: jundot
+
+origin_country: null
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apple Silicon only (MLX framework). Apache-2.0 with no telemetry. Serves an OpenAI-compatible API so anything that speaks OpenAI can swap to a Mac-hosted endpoint with one config change. No outbound network calls from the server itself; all inference is local. Provider-agnostic in the downstream sense: the server IS the provider.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-only
+
+adjacent_to:
+  - vllm
+  - llama-cpp
+  - litellm
+  - mlx-omni-server
+  - swiftlm

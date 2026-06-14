@@ -6,7 +6,8 @@ repo_url: https://github.com/explodinggradients/ragas
 homepage: https://docs.ragas.io/
 license: Apache-2.0
 primary_language: Python
-tagline: Reference-free and reference-based evaluation framework for retrieval-augmented generation pipelines.
+tagline: Reference-free and reference-based evaluation framework for retrieval-augmented
+  generation pipelines.
 description: 'Ragas is an Apache-2.0 evaluation framework focused on retrieval-
 
   augmented generation. It provides faithfulness, answer-relevancy,
@@ -65,11 +66,14 @@ adjacent_to:
 - continuous-eval
 - deepeval
 - factscore
+- kieranklaassen-leva
 - langfuse
 - mteb
+- open-rag-eval
 - opik
 - promptfoo
 - ragchecker
 - tonic-validate
 - trulens
+- autorag
 deployment_posture: local-first

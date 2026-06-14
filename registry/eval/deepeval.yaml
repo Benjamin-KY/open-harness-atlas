@@ -6,7 +6,8 @@ repo_url: https://github.com/confident-ai/deepeval
 homepage: https://www.deepeval.com/
 license: Apache-2.0
 primary_language: Python
-tagline: Pytest-style LLM evaluation framework with 30+ metrics for RAG, agents, and chatbots.
+tagline: Pytest-style LLM evaluation framework with 30+ metrics for RAG, agents, and
+  chatbots.
 description: 'DeepEval is an Apache-2.0 LLM evaluation framework that exposes
 
   evaluation as a pytest-style API: each test case asserts against
@@ -65,6 +66,7 @@ harness_paradigm_alignment: aligned
 adjacent_to:
 - arize-phoenix
 - inspect-ai
+- open-rag-eval
 - openai-evals
 - opik
 - promptfoo

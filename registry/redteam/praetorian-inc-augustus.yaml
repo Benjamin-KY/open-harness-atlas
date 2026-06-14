@@ -1,0 +1,40 @@
+id: praetorian-inc-augustus
+name: "Praetorian Inc Augustus"
+
+category: redteam
+subcategory: llm-security-framework
+
+repo_url: https://github.com/praetorian-inc/augustus
+license: Apache-2.0
+primary_language: Go
+
+tagline: "LLM security testing framework from Praetorian — prompt injection, jailbreaks, adversarial attacks."
+
+description: |
+  Augustus is Praetorian's LLM security testing framework, covering prompt injection, jailbreaks, and adversarial attacks. Built for security teams running pre-deployment and continuous testing of LLM-integrated applications.
+
+  In the atlas: peer to `garak`, `pyrit`, `cryptex-oss`; the differentiator is provenance — a credentialed security firm (Praetorian) maintains the corpus.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: Praetorian
+
+origin_country: US
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apache-2.0; runs locally. Target LLM is operator-supplied. Praetorian uses this internally on engagements; the OSS release is the same engine with the proprietary playbook redacted.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - garak
+  - pyrit
+  - cryptex-oss
+  - harmbench

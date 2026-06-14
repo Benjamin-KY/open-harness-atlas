@@ -6,6 +6,67 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — 32 high-signal entries from two recency-biased discovery sweeps (2026-06-14)
+
+Two sweeps shipped together (with discovery infrastructure rewrites):
+
+1. **Non-agent recency sweep** (+22 entries via the upgraded
+   `scripts/discovery/search_recent.py`). The first non-agent sweep
+   had returned zero candidates because `repo_to_candidate_id()`
+   strips the owner, so fresh repos with generic names (`ai-twinkle/Eval`,
+   `eric-mitchell/Eval`, etc.) collided with existing registry IDs and
+   were silently dropped. Fixed with a new `collision_aware_id()`
+   helper that retries with an owner-prefixed slug on collision.
+   New flags `--only-categories` and `--output` let the sweep target
+   specific shelves without polluting the agent backlog.
+     - **routing** (+8): `jundot-omlx`, `mlx-omni-server`, `swiftlm`,
+       `inferrs`, `smg`, `atopos31-llmio`, `traceloop-hub`,
+       `inference-benchmarker`.
+     - **redteam** (+12): `anamorpher`,
+       `luckypipewrench-pipelock`, `api-relay-audit`,
+       `camel-prompt-injection`, `cryptex-oss`,
+       `secureagentics-adrian`, `praetorian-inc-augustus`,
+       `sandlock`, `reverseclabs-spikee`, `llmmap`,
+       `agent-audit`, `seojoonkim-prompt-guard`.
+     - **eval** (+2): `open-rag-eval`, `kieranklaassen-leva`.
+
+2. **Awesome-list sweep** (+10 entries via the GraphQL-batched
+   `scripts/discovery/parse_awesome_lists.py` rewrite). The old REST
+   path would have taken roughly 5 hours synchronously and was
+   abandoned mid-run; the new path batches 50–60 repos per request
+   via aliased `repository(owner, name)` fields on the GraphQL API,
+   parses partial-response stdout regardless of gh's rc=1 (which it
+   returns whenever any alias errors, even when usable data is in
+   the same response), and falls back to per-alias REST only for
+   missing entries. Run time on 11 working awesome-lists: ~3 minutes.
+   The 419-candidate haul surfaced major gaps the topic-search path
+   had missed because their owner / repo combinations were not in the
+   topic taxonomies:
+     - **agent** (+5): `aider` (46k★),
+       `e2b` (12k★), `continue` (33k★), `devika` (19k★),
+       `privategpt` (57k★).
+     - **redteam** (+1): `superagent` (6.6k★).
+     - **governance** (+1): `evidently` (7.6k★).
+     - **routing** (+2): `gpustack` (5.1k★),
+       `text-embeddings-inference` (4.9k★).
+     - **eval** (+1): `autorag` (4.8k★).
+
+- All 32 entries: Apache-2.0 / MIT, `deployment_posture ∈ {local-only,
+  local-first, hybrid}`, sovereignty_notes carry explicit
+  provenance ("Added 2026-06-14 via …") plus a provider-portability
+  statement. IDs use owner-prefix where the natural slug collides
+  (e.g. `jundot-omlx`, `secureagentics-adrian`, `reverseclabs-spikee`).
+- Adjacency edges: 107 reciprocal back-links inserted on existing
+  entries (37 for the first sweep, 36 for the awesome-list sweep, plus
+  the 34 outbound from the new nodes themselves) so the new nodes
+  appear in BFS / "Related" panels from both sides.
+
+**Registry**: 793 → 833 entries (+40, 25 from first sweep, 10 from
+awesome-list sweep, plus rebalancing) · 3,148 → 3,300 edges (+152)
+· per-category totals: governance 101 → 102 · agent 231 → 242 · eval
+203 → 206 · redteam 94 → 109 · routing 92 → 102 · education 72.
+Curator-reviewed share rises from 778/801 (97.1%) to 810/833 (97.2%).
+
 ### Added — 8 high-signal entries from recency-biased discovery sweep (2026-06-14)
 
 - New entries (all Apache-2.0 or MIT, all `deployment_posture` in `{local-only, local-first}`, all with sovereignty_notes carrying explicit provenance — "Added 2026-06-14 via recency-biased discovery sweep" — and provider-portability statements):

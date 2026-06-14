@@ -1,0 +1,45 @@
+id: luckypipewrench-pipelock
+name: Luckypipewrench Pipelock
+category: redteam
+subcategory: mcp-firewall
+repo_url: https://github.com/luckyPipewrench/pipelock
+homepage: https://pipelab.org
+license: Apache-2.0
+primary_language: Go
+tagline: Open-source AI-agent firewall for MCP security and agent egress.
+description: 'Pipelock is a firewall/proxy that sits in front of MCP servers and AI-agent
+  egress paths, scanning mediated HTTP, MCP, A2A, and arbitrary tool calls for prompt-injection
+  payloads, secret leakage, and policy violations.
+
+
+  In the atlas: peer to `agent-security-scanner-mcp`, `ai-infra-guard`, `securemcp`
+  on the runtime-defence side. Closest match to the gateway-of-tools concept from
+  the `audit-log-fsm-escalation` pattern.
+
+  '
+maturity: beta
+maintainer:
+  type: individual
+  name: luckyPipewrench
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: 'Added 2026-06-14 via the second recency-biased discovery sweep
+  (non-agent categories: routing / redteam / eval).
+
+  Apache-2.0; runs as a local proxy. All inspection is in-process; the firewall does
+  not call out to any managed service. Provider-agnostic on both sides: any MCP client
+  / any MCP server / any LLM provider.
+
+  '
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- agent-audit
+- agent-security-scanner-mcp
+- ai-infra-guard
+- api-relay-audit
+- camel-prompt-injection
+- garak
+- secureagentics-adrian
+- seojoonkim-prompt-guard
+- superagent

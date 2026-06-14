@@ -1,0 +1,41 @@
+id: camel-prompt-injection
+name: "Camel Prompt Injection"
+
+category: redteam
+subcategory: prompt-injection-defence
+
+repo_url: https://github.com/google-research/camel-prompt-injection
+homepage: https://arxiv.org/abs/2503.18813
+license: Apache-2.0
+primary_language: Jupyter Notebook
+
+tagline: "Reference code for 'Defeating Prompt Injections by Design' (Google Research)."
+
+description: |
+  Camel is the reference implementation for the Google Research paper 'Defeating Prompt Injections by Design'. Demonstrates an architectural defence where the agent executes in a typed action space that is provably immune to text-only prompt injection.
+
+  In the atlas: the design-by-construction counterpart to the runtime defences in `pipelock` and `agent-security-scanner-mcp`. Important reference for the `audit-log-fsm-escalation` and `sovereignty-preserving-routing` patterns.
+
+maturity: alpha
+
+maintainer:
+  type: company
+  name: Google Research
+
+origin_country: US
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apache-2.0; research-grade code that runs locally. Demonstration repo, not production middleware — read it for the architecture pattern rather than as a drop-in tool. Provider-agnostic at the model layer.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - pyrit
+  - garak
+  - luckypipewrench-pipelock
+  - agent-security-scanner-mcp

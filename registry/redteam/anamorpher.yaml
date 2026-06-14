@@ -1,0 +1,41 @@
+id: anamorpher
+name: "Anamorpher"
+
+category: redteam
+subcategory: multimodal-attack
+
+repo_url: https://github.com/trailofbits/anamorpher
+license: Apache-2.0
+primary_language: Python
+
+tagline: "Image-scaling attacks for multi-modal prompt injection (Trail of Bits research)."
+
+description: |
+  Anamorpher implements the image-scaling attack pattern: craft an image such that, when downsampled to the model's input resolution, it reveals a hidden adversarial prompt. Released as research-grade reproducible code by Trail of Bits.
+
+  In the atlas: fills a real gap on the multimodal red-team side. Complements `pyrit`, `garak`, `llm-attacks` on the text side; closest neighbour is the multimodal section of `agentdojo` and the image-attack corner of `harmbench`.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Trail of Bits
+
+origin_country: US
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  MIT licence; runs locally; attack-corpus generation is fully offline. Target model can be any vision-language model the tester points the tool at (OpenAI, Anthropic, local Llama-vision, etc.). No telemetry.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - pyrit
+  - garak
+  - harmbench
+  - agentdojo
+  - llm-attacks

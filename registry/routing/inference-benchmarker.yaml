@@ -1,0 +1,40 @@
+id: inference-benchmarker
+name: "Inference Benchmarker"
+
+category: routing
+subcategory: inference-benchmark
+
+repo_url: https://github.com/huggingface/inference-benchmarker
+license: Apache-2.0
+primary_language: Rust
+
+tagline: "Hugging Face inference server benchmarking tool — measure throughput across vLLM / TGI / providers."
+
+description: |
+  Hugging Face's inference-benchmarker measures throughput, latency percentiles, and time-to-first-token across OpenAI-compatible inference servers. Built to compare vLLM, TGI, sglang, hosted providers under identical load.
+
+  In the atlas: the missing benchmarking peer to all the routing entries. Use to validate the model-agnostic claim of any stack — same prompts, different backends, head-to-head numbers.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Hugging Face
+
+origin_country: US
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apache-2.0. Benchmarking tool is fully local; the SUT (server under test) is whatever the operator chooses. Useful evidence-tool when a sovereignty migration needs to be justified ('here are the numbers showing vLLM on-prem matches the managed provider').
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - vllm
+  - huggingface-tgi
+  - sglang
+  - litellm

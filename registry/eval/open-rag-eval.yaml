@@ -1,0 +1,42 @@
+id: open-rag-eval
+name: "Open Rag Eval"
+
+category: eval
+subcategory: rag-eval
+
+repo_url: https://github.com/vectara/open-rag-eval
+homepage: https://github.com/vectara/open-rag-eval
+license: Apache-2.0
+primary_language: Python
+
+tagline: "RAG evaluation without the need for 'golden answers' (Vectara)."
+
+description: |
+  Open-RAG-Eval is Vectara's open-source RAG evaluation framework. Reference-free metrics for faithfulness, answer relevance, and context precision — designed to score RAG systems without a labelled gold-standard set.
+
+  In the atlas: peer to `ragas`, `trulens`, `tonic-validate`, `deepeval` on the RAG-eval shelf; differentiator is the reference-free orientation, useful when production traffic is unlabelled.
+
+maturity: beta
+
+maintainer:
+  type: company
+  name: Vectara
+
+origin_country: US
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  Apache-2.0; Python library; runs locally against operator-supplied RAG endpoints and judge LLM. Judge model can be local (Llama, Mistral) or managed — operator's choice.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - ragas
+  - trulens
+  - tonic-validate
+  - deepeval
+  - autorag

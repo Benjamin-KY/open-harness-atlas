@@ -5,11 +5,16 @@ subcategory: rag-eval
 repo_url: https://github.com/truera/trulens
 license: Apache-2.0
 primary_language: Python
-tagline: LLM app + RAG evaluation via the RAG Triad (context relevance, groundedness, answer relevance)
-description: 'TruLens is Snowflake (ex-TruEra)''s lLM app + RAG evaluation via the RAG Triad (context relevance, groundedness, answer relevance). Feedback-function paradigm; deep LangChain/LlamaIndex integration; OTEL traces.
+tagline: LLM app + RAG evaluation via the RAG Triad (context relevance, groundedness,
+  answer relevance)
+description: 'TruLens is Snowflake (ex-TruEra)''s lLM app + RAG evaluation via the
+  RAG Triad (context relevance, groundedness, answer relevance). Feedback-function
+  paradigm; deep LangChain/LlamaIndex integration; OTEL traces.
 
 
-  In the atlas: TruLens is an evaluation harness. Evaluation is the feedback loop that keeps every other harness honest — if you cannot measure the behaviour of the swap target, the swap is not really safe.
+  In the atlas: TruLens is an evaluation harness. Evaluation is the feedback loop
+  that keeps every other harness honest — if you cannot measure the behaviour of the
+  swap target, the swap is not really safe.
 
   '
 maturity: ga
@@ -18,7 +23,9 @@ maintainer:
   name: Snowflake (ex-TruEra)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: 'Snowflake (ex-TruEra) (US-incorporated company); OSS core is Apache-2.0 and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Snowflake (ex-TruEra) (US-incorporated company); OSS core is Apache-2.0
+  and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted
+  but with some defaults or shipped configurations that favour a specific tier.
 
   '
 harness_paradigm_alignment: aligned
@@ -33,9 +40,11 @@ adjacent_to:
 - langkit
 - langtrace
 - langwatch
+- open-rag-eval
 - openlit
 - openllmetry
 - opik
 - ragas
 - tonic-validate
+- autorag
 deployment_posture: local-first

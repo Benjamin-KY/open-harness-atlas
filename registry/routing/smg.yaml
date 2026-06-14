@@ -1,0 +1,41 @@
+id: smg
+name: Smg
+category: routing
+subcategory: llm-gateway
+repo_url: https://github.com/lightseekorg/smg
+homepage: https://lightseek.org/smg
+license: Apache-2.0
+primary_language: Rust
+tagline: Engine-agnostic LLM gateway in Rust with multi-provider routing.
+description: 'SMG is a Rust-implemented LLM gateway with full OpenAI and Anthropic
+  API compatibility on its public surface, while supporting vLLM, TensorRT-LLM, and
+  llama.cpp on the back end. Designed for low-overhead routing in production.
+
+
+  In the atlas: peer to `litellm`, `portkey`, `traceloop-hub` in the gateway role.
+  The Rust implementation matters where Python overhead is unacceptable (high-RPS
+  edge gateways).
+
+  '
+maturity: beta
+maintainer:
+  type: individual
+  name: lightseekorg
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: 'Added 2026-06-14 via the second recency-biased discovery sweep
+  (non-agent categories: routing / redteam / eval).
+
+  Apache-2.0; self-hosted. Rust binary — no Python runtime; easier to ship into hardened
+  environments. Routes to whatever back-end the operator chooses; gateway itself has
+  no vendor lock-in.
+
+  '
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- atopos31-llmio
+- litellm
+- portkey-gateway
+- traceloop-hub
+- vllm

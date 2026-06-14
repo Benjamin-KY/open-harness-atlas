@@ -1,0 +1,41 @@
+id: devika
+name: "Devika"
+
+category: agent
+subcategory: autonomous-agent
+
+repo_url: https://github.com/stitionai/devika
+homepage: https://winfunc.com
+license: MIT
+primary_language: Python
+
+tagline: "Open-source agentic software engineer — plans, codes, executes whole engineering tasks."
+
+description: |
+  Devika is an autonomous software-engineering agent that decomposes a high-level objective into a plan, writes code, browses for documentation, and iterates against test feedback. Web UI plus an LLM-agnostic back end.
+
+  In the atlas: peer to `openhands`, `swe-agent`, `gpt-engineer`, `metagpt`. Differentiator is the interactive UI and explicit planning trace.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: stitionai
+
+origin_country: null
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  MIT licence; self-hosted (Python + a small web UI). Configurable across Claude, GPT-4, Ollama, Mistral, etc. Browser actions go through Playwright on the host; no managed-service dependency.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - openhands
+  - swe-agent
+  - metagpt
+  - cline

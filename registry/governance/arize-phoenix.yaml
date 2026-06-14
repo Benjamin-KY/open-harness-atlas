@@ -41,4 +41,5 @@ adjacent_to:
 - opik
 - ragas
 - trulens
+- evidently
 deployment_posture: local-first

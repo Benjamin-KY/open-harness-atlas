@@ -1,0 +1,40 @@
+id: llmmap
+name: "Llmmap"
+
+category: redteam
+subcategory: prompt-injection-testing
+
+repo_url: https://github.com/Hellsender01/LLMMap
+license: MIT
+primary_language: Python
+
+tagline: "Automated prompt-injection testing framework with dual-LLM architecture."
+
+description: |
+  LLMMap is an automated prompt-injection testing framework that uses a dual-LLM architecture: one LLM generates candidate injections, a separate LLM judges responses for compromise. Inspired by the nmap workflow for traditional vuln scanning.
+
+  In the atlas: peer to `garak`, `promptfoo` on the CI-style scanning side. Dual-LLM judge architecture is the interesting bit — same pattern as `aigis` and modern eval frameworks.
+
+maturity: beta
+
+maintainer:
+  type: individual
+  name: Hellsender01
+
+origin_country: null
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the second recency-biased discovery sweep (non-agent categories: routing / redteam / eval).
+  MIT licence; runs locally. The 'attacker' LLM and 'judge' LLM are both operator-selected — can be the same model, different providers, or local-only (Llama, etc.).
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - garak
+  - promptfoo
+  - pyrit
+  - reverseclabs-spikee

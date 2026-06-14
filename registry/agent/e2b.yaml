@@ -1,0 +1,41 @@
+id: e2b
+name: "E2B"
+
+category: agent
+subcategory: agent-sandbox
+
+repo_url: https://github.com/e2b-dev/E2B
+homepage: https://e2b.dev/docs
+license: Apache-2.0
+primary_language: Python
+
+tagline: "Open-source sandbox runtime for AI-agent code execution."
+
+description: |
+  E2B is a sandbox runtime for AI agents that need to execute LLM-generated code safely. Provides Firecracker / Cloud Hypervisor microVMs with per-session isolation, filesystem snapshots, and language-runtime templates (Python, Node, custom).
+
+  In the atlas: the cloud / managed-microVM counterpart to `sandlock` (local process sandbox) and `daytona`. Critical primitive for the `audit-log-fsm-escalation` pattern's tool layer.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: E2B
+
+origin_country: CZ
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  Apache-2.0; can be run either as the managed E2B cloud (api.e2b.dev) OR self-hosted via the open-source runtime on the operator's own hardware. The self-host path keeps all code-execution traffic in-tenancy. Posture noted as `hybrid` to reflect both deployment modes.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: hybrid
+
+adjacent_to:
+  - sandlock
+  - agentdojo
+  - openhands
+  - swe-agent

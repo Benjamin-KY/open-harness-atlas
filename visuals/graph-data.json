@@ -1,34 +1,34 @@
 {
   "meta": {
-    "n_nodes": 801,
-    "n_edges": 3186,
-    "avg_degree": 7.96,
-    "density": 0.0099,
+    "n_nodes": 833,
+    "n_edges": 3300,
+    "avg_degree": 7.92,
+    "density": 0.0095,
     "categories": [
       {
         "key": "governance",
         "color": "#1f3a5f",
-        "count": 101
+        "count": 102
       },
       {
         "key": "agent",
         "color": "#d68910",
-        "count": 237
+        "count": 242
       },
       {
         "key": "eval",
         "color": "#28a745",
-        "count": 203
+        "count": 206
       },
       {
         "key": "redteam",
         "color": "#c0392b",
-        "count": 96
+        "count": 109
       },
       {
         "key": "routing",
         "color": "#3498db",
-        "count": 92
+        "count": 102
       },
       {
         "key": "education",
@@ -74,7 +74,7 @@
       },
       {
         "key": "unknown",
-        "count": 8,
+        "count": 40,
         "opacity": 0.4,
         "radius_mult": 0.7,
         "outline": "dotted"
@@ -97,7 +97,13 @@
         "id": "litellm",
         "name": "LiteLLM",
         "category": "routing",
-        "degree": 74
+        "degree": 83
+      },
+      {
+        "id": "pyrit",
+        "name": "PyRIT (Python Risk Identification Tool)",
+        "category": "redteam",
+        "degree": 69
       },
       {
         "id": "guardrails-ai",
@@ -106,32 +112,32 @@
         "degree": 65
       },
       {
-        "id": "pyrit",
-        "name": "PyRIT (Python Risk Identification Tool)",
-        "category": "redteam",
-        "degree": 63
-      },
-      {
         "id": "autogen",
         "name": "AutoGen",
         "category": "agent",
         "degree": 27
       },
       {
+        "id": "openhands",
+        "name": "OpenHands",
+        "category": "agent",
+        "degree": 24
+      },
+      {
+        "id": "garak",
+        "name": "garak",
+        "category": "redteam",
+        "degree": 24
+      },
+      {
         "id": "metagpt",
         "name": "MetaGPT",
         "category": "agent",
-        "degree": 21
+        "degree": 22
       },
       {
         "id": "crewai",
         "name": "CrewAI",
-        "category": "agent",
-        "degree": 20
-      },
-      {
-        "id": "openhands",
-        "name": "OpenHands",
         "category": "agent",
         "degree": 20
       },
@@ -146,22 +152,16 @@
         "name": "ToolBench",
         "category": "eval",
         "degree": 19
-      },
-      {
-        "id": "browsergym",
-        "name": "BrowserGym",
-        "category": "eval",
-        "degree": 18
       }
     ],
     "licenses": [
       [
         "MIT",
-        453
+        463
       ],
       [
         "Apache-2.0",
-        310
+        331
       ],
       [
         "GPL-3.0-only",
@@ -176,11 +176,11 @@
         4
       ],
       [
-        "GPL-3.0",
-        3
+        "AGPL-3.0",
+        4
       ],
       [
-        "AGPL-3.0",
+        "GPL-3.0",
         3
       ],
       [
@@ -219,29 +219,29 @@
     "maturity": [
       [
         "ga",
-        414
+        425
       ],
       [
         "beta",
-        373
+        392
       ],
       [
         "alpha",
-        14
+        16
       ]
     ],
     "countries": [
       [
         "Unknown",
-        392
+        406
       ],
       [
         "US",
-        250
+        260
       ],
       [
         "CN",
-        71
+        75
       ],
       [
         "FR",
@@ -261,7 +261,7 @@
       ],
       [
         "KR",
-        5
+        6
       ],
       [
         "HK",
@@ -284,6 +284,10 @@
         4
       ],
       [
+        "ES",
+        3
+      ],
+      [
         "AT",
         3
       ],
@@ -300,15 +304,15 @@
         2
       ],
       [
-        "ES",
-        2
-      ],
-      [
         "UA",
         1
       ],
       [
         "TW",
+        1
+      ],
+      [
+        "CZ",
         1
       ],
       [
@@ -332,6 +336,10 @@
         1
       ],
       [
+        "SE",
+        1
+      ],
+      [
         "VN",
         1
       ],
@@ -347,23 +355,23 @@
     "languages": [
       [
         "Python",
-        499
+        515
       ],
       [
         "TypeScript",
-        103
+        107
       ],
       [
         "Go",
-        36
+        38
       ],
       [
         "Jupyter Notebook",
-        35
+        37
       ],
       [
         "Rust",
-        27
+        33
       ],
       [
         "JavaScript",
@@ -402,6 +410,10 @@
         3
       ],
       [
+        "Swift",
+        3
+      ],
+      [
         "Elixir",
         2
       ],
@@ -410,7 +422,7 @@
         2
       ],
       [
-        "Swift",
+        "Ruby",
         2
       ],
       [
@@ -419,10 +431,6 @@
       ],
       [
         "Dart",
-        1
-      ],
-      [
-        "Ruby",
         1
       ],
       [
@@ -473,21 +481,21 @@
       ],
       [
         4,
-        335
+        349
       ],
       [
         5,
-        110
+        128
       ]
     ],
     "deployment_posture": [
       [
         "local-first",
-        580
+        605
       ],
       [
         "local-only",
-        134
+        140
       ],
       [
         "cloud-first",
@@ -495,7 +503,7 @@
       ],
       [
         "hybrid",
-        30
+        31
       ],
       [
         "api-only",
@@ -1419,6 +1427,41 @@
       ]
     },
     {
+      "id": "aider",
+      "name": "Aider",
+      "category": "agent",
+      "subcategory": "code-agent",
+      "color": "#d68910",
+      "url": "https://github.com/Aider-AI/aider",
+      "tagline": "AI pair programming in the terminal \u2014 Git-aware coding agent.",
+      "degree": 6,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Aider-AI",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "build-rag-agent",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "aionui",
       "name": "Aion Ui",
       "category": "agent",
@@ -1531,7 +1574,7 @@
       "color": "#d68910",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
       "tagline": "Stop renting your intelligence.",
-      "degree": 7,
+      "degree": 8,
       "mas": 3,
       "license": "MIT",
       "language": "JavaScript",
@@ -2548,7 +2591,7 @@
       "color": "#d68910",
       "url": "https://github.com/cline/cline",
       "tagline": "Open-source autonomous coding agent shipped as an SDK, IDE extension, and CLI.",
-      "degree": 7,
+      "degree": 10,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "TypeScript",
@@ -2602,6 +2645,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 3,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "build-rag-agent",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "continue",
+      "name": "Continue",
+      "category": "agent",
+      "subcategory": "code-agent",
+      "color": "#d68910",
+      "url": "https://github.com/continuedev/continue",
+      "tagline": "Open-source code AI assistant for VS Code / JetBrains \u2014 bring-your-own model.",
+      "degree": 4,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Continue",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -3276,6 +3354,41 @@
       ]
     },
     {
+      "id": "devika",
+      "name": "Devika",
+      "category": "agent",
+      "subcategory": "autonomous-agent",
+      "color": "#d68910",
+      "url": "https://github.com/stitionai/devika",
+      "tagline": "Open-source agentic software engineer \u2014 plans, codes, executes whole engineering tasks.",
+      "degree": 4,
+      "mas": 4,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "stitionai",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "build-rag-agent",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "dive",
       "name": "Dive",
       "category": "agent",
@@ -3342,6 +3455,41 @@
         {
           "id": "build-rag-agent",
           "level": "featured"
+        }
+      ]
+    },
+    {
+      "id": "e2b",
+      "name": "E2B",
+      "category": "agent",
+      "subcategory": "agent-sandbox",
+      "color": "#d68910",
+      "url": "https://github.com/e2b-dev/E2B",
+      "tagline": "Open-source sandbox runtime for AI-agent code execution.",
+      "degree": 4,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "CZ",
+      "maintainer_type": "company",
+      "maintainer_name": "E2B",
+      "alignment": "aligned",
+      "deployment_posture": "hybrid",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "build-rag-agent",
+          "level": "auto"
         }
       ]
     },
@@ -5737,7 +5885,7 @@
       "color": "#d68910",
       "url": "https://github.com/FoundationAgents/MetaGPT",
       "tagline": "Simulates a software company with role-playing LLM agents (PM, Dev, QA) for code generation",
-      "degree": 21,
+      "degree": 22,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -5809,7 +5957,7 @@
       "color": "#d68910",
       "url": "https://github.com/SWE-agent/mini-swe-agent",
       "tagline": "Minimal bash-only SWE agent, 100x simpler than SWE-agent; SOTA on DeepSWE-verified leaderboard",
-      "degree": 11,
+      "degree": 12,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -6264,7 +6412,7 @@
       "color": "#d68910",
       "url": "https://github.com/langchain-ai/open-swe",
       "tagline": "LangChain's open-source asynchronous coding-agent framework.",
-      "degree": 5,
+      "degree": 7,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -6544,7 +6692,7 @@
       "color": "#d68910",
       "url": "https://github.com/OpenHands/OpenHands",
       "tagline": "Full-stack SWE agent (GUI + CLI + SDK) that uses sandboxed runtime to read/write entire repos",
-      "degree": 20,
+      "degree": 24,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -6808,6 +6956,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 0,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "build-rag-agent",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "privategpt",
+      "name": "Privategpt",
+      "category": "agent",
+      "subcategory": "private-rag-agent",
+      "color": "#d68910",
+      "url": "https://github.com/zylon-ai/private-gpt",
+      "tagline": "Privacy-preserving RAG over local documents \u2014 no data leaves the host.",
+      "degree": 1,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "ES",
+      "maintainer_type": "company",
+      "maintainer_name": "Zylon",
+      "alignment": "aligned",
+      "deployment_posture": "local-only",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -7598,7 +7781,7 @@
       "color": "#d68910",
       "url": "https://github.com/SWE-agent/SWE-agent",
       "tagline": "GitHub-issue->PR agent with configurable Agent-Computer Interface (ACI) and tool filtering",
-      "degree": 9,
+      "degree": 12,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -11959,6 +12142,41 @@
       ]
     },
     {
+      "id": "autorag",
+      "name": "Autorag",
+      "category": "eval",
+      "subcategory": "rag-eval",
+      "color": "#28a745",
+      "url": "https://github.com/Marker-Inc-Korea/AutoRAG",
+      "tagline": "Open-source AutoML-style framework for finding the best RAG pipeline.",
+      "degree": 4,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "KR",
+      "maintainer_type": "company",
+      "maintainer_name": "Marker Inc",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "evaluate-llm",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "beir",
       "name": "BEIR (Benchmarking-IR)",
       "category": "eval",
@@ -12841,7 +13059,7 @@
       "color": "#28a745",
       "url": "https://github.com/confident-ai/deepeval",
       "tagline": "Pytest-style LLM evaluation framework with 30+ metrics for RAG, agents, and chatbots.",
-      "degree": 8,
+      "degree": 9,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -14194,6 +14412,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 12,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "evaluate-llm",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "kieranklaassen-leva",
+      "name": "Kieranklaassen Leva",
+      "category": "eval",
+      "subcategory": "ruby-llm-eval",
+      "color": "#28a745",
+      "url": "https://github.com/kieranklaassen/leva",
+      "tagline": "Production-data LLM evaluation framework for Ruby on Rails apps.",
+      "degree": 3,
+      "mas": 5,
+      "license": "MIT",
+      "language": "Ruby",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "kieranklaassen",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -16132,6 +16385,41 @@
       ]
     },
     {
+      "id": "open-rag-eval",
+      "name": "Open Rag Eval",
+      "category": "eval",
+      "subcategory": "rag-eval",
+      "color": "#28a745",
+      "url": "https://github.com/vectara/open-rag-eval",
+      "tagline": "RAG evaluation without the need for 'golden answers' (Vectara).",
+      "degree": 5,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Vectara",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "evaluate-llm",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "openagentbench",
       "name": "Open Agent Bench",
       "category": "eval",
@@ -16703,7 +16991,7 @@
       "color": "#28a745",
       "url": "https://github.com/promptfoo/promptfoo",
       "tagline": "Declarative test-driven evaluation of LLM applications with side-by-side prompt and model comparisons.",
-      "degree": 11,
+      "degree": 13,
       "mas": 5,
       "license": "MIT",
       "language": "TypeScript",
@@ -17024,7 +17312,7 @@
       "color": "#28a745",
       "url": "https://github.com/explodinggradients/ragas",
       "tagline": "Reference-free and reference-based evaluation framework for retrieval-augmented generation pipelines.",
-      "degree": 14,
+      "degree": 17,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -17864,7 +18152,7 @@
       "color": "#28a745",
       "url": "https://github.com/TonicAI/tonic_validate",
       "tagline": "RAG evaluation SDK with reference-free metrics and CI/CD pipeline integrations",
-      "degree": 5,
+      "degree": 7,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -18004,7 +18292,7 @@
       "color": "#28a745",
       "url": "https://github.com/truera/trulens",
       "tagline": "LLM app + RAG evaluation via the RAG Triad (context relevance, groundedness, answer relevance)",
-      "degree": 15,
+      "degree": 17,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -18844,7 +19132,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/Arize-AI/phoenix",
       "tagline": "LLM observability and evaluation platform with OTEL-based trace capture, safety/hallucination evals",
-      "degree": 12,
+      "degree": 13,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -19392,6 +19680,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 94,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "govern-llm-policy",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "evidently",
+      "name": "Evidently",
+      "category": "governance",
+      "subcategory": "llm-observability",
+      "color": "#1f3a5f",
+      "url": "https://github.com/evidentlyai/evidently",
+      "tagline": "Open-source ML + LLM observability framework \u2014 evaluate, test, monitor.",
+      "degree": 4,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Jupyter Notebook",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Evidently AI",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -20009,7 +20332,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/langfuse/langfuse",
       "tagline": "Self-hostable LLM engineering platform providing structured audit-log traces, dataset-level safety evals, cost+quality dashboards",
-      "degree": 11,
+      "degree": 13,
       "mas": 4,
       "license": "MIT",
       "language": "TypeScript",
@@ -20118,7 +20441,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/langwatch/langwatch",
       "tagline": "LLM evaluation and AI agent testing platform with regression testing, simulations, and production monitoring",
-      "degree": 11,
+      "degree": 13,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "TypeScript",
@@ -20153,7 +20476,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/protectai/llm-guard",
       "tagline": "Input/output security toolkit: 15 prompt + 20 output scanners covering PI, anonymisation, toxicity, secrets",
-      "degree": 14,
+      "degree": 16,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -20573,7 +20896,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/NVIDIA/NeMo-Guardrails",
       "tagline": "Programmable rails between user input, model, and external systems via the Colang DSL.",
-      "degree": 8,
+      "degree": 9,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -20750,7 +21073,7 @@
       "color": "#1f3a5f",
       "url": "https://github.com/traceloop/openllmetry",
       "tagline": "OpenTelemetry-native SDK instrumenting every LLM provider call with standardized traces and spans",
-      "degree": 10,
+      "degree": 12,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -22163,6 +22486,41 @@
       ]
     },
     {
+      "id": "agent-audit",
+      "name": "Agent Audit",
+      "category": "redteam",
+      "subcategory": "static-agent-security",
+      "color": "#c0392b",
+      "url": "https://github.com/HeadyZhang/agent-audit",
+      "tagline": "Static security scanner for LLM agents \u2014 prompt injection, MCP config auditing, taint analysis.",
+      "degree": 3,
+      "mas": 4,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "CN",
+      "maintainer_type": "individual",
+      "maintainer_name": "HeadyZhang",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "agent-security-scanner-mcp",
       "name": "Agent Security Scanner MCP",
       "category": "redteam",
@@ -22170,7 +22528,7 @@
       "color": "#c0392b",
       "url": "https://github.com/sinewaveai/agent-security-scanner-mcp",
       "tagline": "Security scanner MCP server for AI coding agents.",
-      "degree": 8,
+      "degree": 14,
       "mas": 4,
       "license": "MIT",
       "language": "JavaScript",
@@ -22240,7 +22598,7 @@
       "color": "#c0392b",
       "url": "https://github.com/ethz-spylab/agentdojo",
       "tagline": "Dynamic environment to evaluate prompt-injection attacks and defences against tool-using LLM agents.",
-      "degree": 11,
+      "degree": 15,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -22310,7 +22668,7 @@
       "color": "#c0392b",
       "url": "https://github.com/Tencent/AI-Infra-Guard",
       "tagline": "A full-stack AI Red Teaming platform securing AI ecosystems via OpenClaw Security Scan, Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.",
-      "degree": 3,
+      "degree": 5,
       "mas": 3,
       "license": "Apache-2.0",
       "language": "Python",
@@ -22445,6 +22803,41 @@
       ]
     },
     {
+      "id": "anamorpher",
+      "name": "Anamorpher",
+      "category": "redteam",
+      "subcategory": "multimodal-attack",
+      "color": "#c0392b",
+      "url": "https://github.com/trailofbits/anamorpher",
+      "tagline": "Image-scaling attacks for multi-modal prompt injection (Trail of Bits research).",
+      "degree": 5,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Trail of Bits",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "anvil",
       "name": "Anvil",
       "category": "redteam",
@@ -22471,6 +22864,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 34,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "api-relay-audit",
+      "name": "Api Relay Audit",
+      "category": "redteam",
+      "subcategory": "relay-audit",
+      "color": "#c0392b",
+      "url": "https://github.com/toby-bridges/api-relay-audit",
+      "tagline": "Local security audit for AI API relays and LLM proxies \u2014 detects prompt injection, model substitution, telemetry leaks.",
+      "degree": 3,
+      "mas": 4,
+      "license": "AGPL-3.0",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "toby-bridges",
+      "alignment": "aligned",
+      "deployment_posture": "local-only",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -22727,6 +23155,41 @@
       ]
     },
     {
+      "id": "camel-prompt-injection",
+      "name": "Camel Prompt Injection",
+      "category": "redteam",
+      "subcategory": "prompt-injection-defence",
+      "color": "#c0392b",
+      "url": "https://github.com/google-research/camel-prompt-injection",
+      "tagline": "Reference code for 'Defeating Prompt Injections by Design' (Google Research).",
+      "degree": 4,
+      "mas": 4,
+      "license": "Apache-2.0",
+      "language": "Jupyter Notebook",
+      "maturity": "alpha",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Google Research",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "chatgpt-jailbreak-pro",
       "name": "Chat GPT Jailbreak Pro",
       "category": "redteam",
@@ -22858,6 +23321,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 77,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "cryptex-oss",
+      "name": "Cryptex Oss",
+      "category": "redteam",
+      "subcategory": "red-team-toolkit",
+      "color": "#c0392b",
+      "url": "https://github.com/m4xx101/cryptex-oss",
+      "tagline": "Open-source LLM red-teaming toolkit: 162 transforms, 36 mutators, 25 tool surfaces.",
+      "degree": 6,
+      "mas": 4,
+      "license": "MIT",
+      "language": "TypeScript",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "m4xx101",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -23084,7 +23582,7 @@
       "color": "#c0392b",
       "url": "https://github.com/NVIDIA/garak",
       "tagline": "LLM vulnerability scanner \u2014 nmap for language models.",
-      "degree": 15,
+      "degree": 24,
       "mas": 5,
       "license": "Apache-2.0",
       "language": "Python",
@@ -23224,7 +23722,7 @@
       "color": "#c0392b",
       "url": "https://github.com/centerforaisafety/HarmBench",
       "tagline": "Standardized evaluation framework benchmarking 18 automated red-teaming methods against 33 target LLMs/defenses",
-      "degree": 12,
+      "degree": 15,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -23539,7 +24037,7 @@
       "color": "#c0392b",
       "url": "https://github.com/AI-Security-Research-Group/LLM-Attacks",
       "tagline": "Comprehensive taxonomy of AI security vulnerabilities, LLM adversarial attacks, prompt injection techniques, and machine learning security research.",
-      "degree": 8,
+      "degree": 9,
       "mas": 3,
       "license": "GPL-3.0-only",
       "language": "Multiple",
@@ -23768,6 +24266,76 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 75,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "llmmap",
+      "name": "Llmmap",
+      "category": "redteam",
+      "subcategory": "prompt-injection-testing",
+      "color": "#c0392b",
+      "url": "https://github.com/Hellsender01/LLMMap",
+      "tagline": "Automated prompt-injection testing framework with dual-LLM architecture.",
+      "degree": 4,
+      "mas": 4,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "Hellsender01",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "luckypipewrench-pipelock",
+      "name": "Luckypipewrench Pipelock",
+      "category": "redteam",
+      "subcategory": "mcp-firewall",
+      "color": "#c0392b",
+      "url": "https://github.com/luckyPipewrench/pipelock",
+      "tagline": "Open-source AI-agent firewall for MCP security and agent egress.",
+      "degree": 9,
+      "mas": 4,
+      "license": "Apache-2.0",
+      "language": "Go",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "luckyPipewrench",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -24374,6 +24942,41 @@
       ]
     },
     {
+      "id": "praetorian-inc-augustus",
+      "name": "Praetorian Inc Augustus",
+      "category": "redteam",
+      "subcategory": "llm-security-framework",
+      "color": "#c0392b",
+      "url": "https://github.com/praetorian-inc/augustus",
+      "tagline": "LLM security testing framework from Praetorian \u2014 prompt injection, jailbreaks, adversarial attacks.",
+      "degree": 4,
+      "mas": 4,
+      "license": "Apache-2.0",
+      "language": "Go",
+      "maturity": "beta",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Praetorian",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "prompt-hacker-collections",
       "name": "Prompt Hacker Collections",
       "category": "redteam",
@@ -24556,7 +25159,7 @@
       "color": "#c0392b",
       "url": "https://github.com/Azure/PyRIT",
       "tagline": "Microsoft AI Red Team's framework for automated risk identification across generative AI systems.",
-      "degree": 63,
+      "degree": 69,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -24901,6 +25504,41 @@
       ]
     },
     {
+      "id": "reverseclabs-spikee",
+      "name": "Reverseclabs Spikee",
+      "category": "redteam",
+      "subcategory": "prompt-injection-eval",
+      "color": "#c0392b",
+      "url": "https://github.com/ReversecLabs/spikee",
+      "tagline": "Simple Prompt Injection Kit for Evaluation and Exploitation (ReversecLabs).",
+      "degree": 5,
+      "mas": 4,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "company",
+      "maintainer_name": "ReversecLabs",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "safetybench",
       "name": "SafetyBench",
       "category": "redteam",
@@ -24973,6 +25611,76 @@
       ]
     },
     {
+      "id": "sandlock",
+      "name": "Sandlock",
+      "category": "redteam",
+      "subcategory": "agent-sandbox",
+      "color": "#c0392b",
+      "url": "https://github.com/multikernel/sandlock",
+      "tagline": "Process-based Linux sandbox for AI-agent tool execution \u2014 no container, no VM, no privilege.",
+      "degree": 2,
+      "mas": 4,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "multikernel",
+      "alignment": "aligned",
+      "deployment_posture": "local-only",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "secureagentics-adrian",
+      "name": "Secureagentics Adrian",
+      "category": "redteam",
+      "subcategory": "runtime-agent-defence",
+      "color": "#c0392b",
+      "url": "https://github.com/secureagentics/Adrian",
+      "tagline": "Runtime security monitoring and control for AI agents \u2014 catches malicious tool use, prompt injection, exfiltration.",
+      "degree": 4,
+      "mas": 4,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "company",
+      "maintainer_name": "Secureagentics",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "securemcp",
       "name": "Secure MCP",
       "category": "redteam",
@@ -24999,6 +25707,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 371,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "seojoonkim-prompt-guard",
+      "name": "Seojoonkim Prompt Guard",
+      "category": "redteam",
+      "subcategory": "prompt-injection-defence",
+      "color": "#c0392b",
+      "url": "https://github.com/seojoonkim/prompt-guard",
+      "tagline": "Multi-language prompt-injection defence with severity scoring.",
+      "degree": 3,
+      "mas": 4,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "seojoonkim",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -25148,6 +25891,41 @@
         {
           "id": "redteam-ai-system",
           "level": "recommended"
+        }
+      ]
+    },
+    {
+      "id": "superagent",
+      "name": "Superagent",
+      "category": "redteam",
+      "subcategory": "agent-firewall",
+      "color": "#c0392b",
+      "url": "https://github.com/superagent-ai/superagent",
+      "tagline": "Open-source agent firewall \u2014 protects AI apps against prompt injection and data leaks.",
+      "degree": 4,
+      "mas": 4,
+      "license": "MIT",
+      "language": "TypeScript",
+      "maturity": "ga",
+      "country": "SE",
+      "maintainer_type": "company",
+      "maintainer_name": "Superagent",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "redteam-ai-system",
+          "level": "auto"
         }
       ]
     },
@@ -25821,6 +26599,41 @@
       ]
     },
     {
+      "id": "atopos31-llmio",
+      "name": "Atopos31 Llmio",
+      "category": "routing",
+      "subcategory": "llm-gateway",
+      "color": "#3498db",
+      "url": "https://github.com/atopos31/llmio",
+      "tagline": "Unified LLM gateway with weighted load balancing, observability, and cost tracking.",
+      "degree": 4,
+      "mas": 5,
+      "license": "MIT",
+      "language": "TypeScript",
+      "maturity": "beta",
+      "country": "CN",
+      "maintainer_type": "individual",
+      "maintainer_name": "atopos31",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "bentoml",
       "name": "BentoML",
       "category": "routing",
@@ -26348,6 +27161,41 @@
       ]
     },
     {
+      "id": "gpustack",
+      "name": "Gpustack",
+      "category": "routing",
+      "subcategory": "gpu-cluster-manager",
+      "color": "#3498db",
+      "url": "https://github.com/gpustack/gpustack",
+      "tagline": "Open-source GPU cluster manager that orchestrates inference engines (vLLM, llama.cpp, MLX).",
+      "degree": 5,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "CN",
+      "maintainer_type": "company",
+      "maintainer_name": "GPUStack",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "grps-trtllm",
       "name": "Grps Trtllm",
       "category": "routing",
@@ -26472,7 +27320,7 @@
       "color": "#3498db",
       "url": "https://github.com/huggingface/text-generation-inference",
       "tagline": "Production-grade LLM-serving runtime in Rust + Python \u2014 the inference engine behind Hugging Face's Inference Endpoints, with continuous batching, paged attention, and quantisation.",
-      "degree": 4,
+      "degree": 6,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -26498,6 +27346,76 @@
         {
           "id": "serve-inference",
           "level": "recommended"
+        }
+      ]
+    },
+    {
+      "id": "inference-benchmarker",
+      "name": "Inference Benchmarker",
+      "category": "routing",
+      "subcategory": "inference-benchmark",
+      "color": "#3498db",
+      "url": "https://github.com/huggingface/inference-benchmarker",
+      "tagline": "Hugging Face inference server benchmarking tool \u2014 measure throughput across vLLM / TGI / providers.",
+      "degree": 4,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Hugging Face",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "inferrs",
+      "name": "Inferrs",
+      "category": "routing",
+      "subcategory": "inference-server",
+      "color": "#3498db",
+      "url": "https://github.com/ericcurtin/inferrs",
+      "tagline": "TurboQuant inference server.",
+      "degree": 3,
+      "mas": 4,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "maturity": "alpha",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "ericcurtin",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
         }
       ]
     },
@@ -26568,6 +27486,41 @@
         {
           "id": "serve-inference",
           "level": "recommended"
+        }
+      ]
+    },
+    {
+      "id": "jundot-omlx",
+      "name": "Jundot Omlx",
+      "category": "routing",
+      "subcategory": "local-inference-server",
+      "color": "#3498db",
+      "url": "https://github.com/jundot/omlx",
+      "tagline": "MLX-based LLM inference server with continuous batching and SSD caching for Apple Silicon.",
+      "degree": 5,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "jundot",
+      "alignment": "aligned",
+      "deployment_posture": "local-only",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
         }
       ]
     },
@@ -26657,7 +27610,7 @@
       "color": "#3498db",
       "url": "https://github.com/BerriAI/litellm",
       "tagline": "Unified SDK and proxy that normalises 100+ LLM APIs into the OpenAI format.",
-      "degree": 74,
+      "degree": 83,
       "mas": 5,
       "license": "MIT",
       "language": "Python",
@@ -26700,7 +27653,7 @@
       "color": "#3498db",
       "url": "https://github.com/ggml-org/llama.cpp",
       "tagline": "Pure C/C++ LLM inference with llama-server OpenAI-compat HTTP endpoint; runs on any hardware",
-      "degree": 10,
+      "degree": 13,
       "mas": 5,
       "license": "MIT",
       "language": "C++",
@@ -27117,6 +28070,41 @@
       ]
     },
     {
+      "id": "mlx-omni-server",
+      "name": "Mlx Omni Server",
+      "category": "routing",
+      "subcategory": "local-inference-server",
+      "color": "#3498db",
+      "url": "https://github.com/madroidmaq/mlx-omni-server",
+      "tagline": "Apple-MLX local inference server exposing an OpenAI-compatible API across modalities.",
+      "degree": 4,
+      "mas": 5,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "CN",
+      "maintainer_type": "individual",
+      "maintainer_name": "madroidmaq",
+      "alignment": "aligned",
+      "deployment_posture": "local-only",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "model-flux",
       "name": "Model Flux",
       "category": "routing",
@@ -27268,7 +28256,7 @@
       "color": "#3498db",
       "url": "https://github.com/ollama/ollama",
       "tagline": "One-command local server running any GGUF/safetensor model with native OpenAI-compat API",
-      "degree": 10,
+      "degree": 14,
       "mas": 5,
       "license": "MIT",
       "language": "Go",
@@ -27727,7 +28715,7 @@
       "color": "#3498db",
       "url": "https://github.com/Portkey-AI/gateway",
       "tagline": "AI gateway \u2014 load balancing, fallbacks, retries, caching, and observability across 250+ models.",
-      "degree": 10,
+      "degree": 14,
       "mas": 5,
       "license": "MIT",
       "language": "TypeScript",
@@ -28120,7 +29108,7 @@
       "color": "#3498db",
       "url": "https://github.com/sgl-project/sglang",
       "tagline": "High-performance inference+serving framework with RadixAttention, OpenAI-compat server, structured output",
-      "degree": 12,
+      "degree": 13,
       "mas": 5,
       "license": "Apache-2.0",
       "language": "Python",
@@ -28288,6 +29276,41 @@
       ]
     },
     {
+      "id": "smg",
+      "name": "Smg",
+      "category": "routing",
+      "subcategory": "llm-gateway",
+      "color": "#3498db",
+      "url": "https://github.com/lightseekorg/smg",
+      "tagline": "Engine-agnostic LLM gateway in Rust with multi-provider routing.",
+      "degree": 5,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "individual",
+      "maintainer_name": "lightseekorg",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "spiceai",
       "name": "Spiceai",
       "category": "routing",
@@ -28314,6 +29337,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": -1,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "swiftlm",
+      "name": "Swiftlm",
+      "category": "routing",
+      "subcategory": "local-inference-server",
+      "color": "#3498db",
+      "url": "https://github.com/SharpAI/SwiftLM",
+      "tagline": "Native MLX-Swift LLM inference server for Apple Silicon \u2014 OpenAI + Anthropic API compatible.",
+      "degree": 4,
+      "mas": 5,
+      "license": "MIT",
+      "language": "Swift",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "company",
+      "maintainer_name": "SharpAI",
+      "alignment": "aligned",
+      "deployment_posture": "local-only",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -28356,6 +29414,41 @@
         {
           "id": "serve-inference",
           "level": "recommended"
+        }
+      ]
+    },
+    {
+      "id": "text-embeddings-inference",
+      "name": "Text Embeddings Inference",
+      "category": "routing",
+      "subcategory": "embedding-server",
+      "color": "#3498db",
+      "url": "https://github.com/huggingface/text-embeddings-inference",
+      "tagline": "Hugging Face's blazing-fast inference server for text-embedding models.",
+      "degree": 3,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Hugging Face",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
         }
       ]
     },
@@ -28465,6 +29558,41 @@
       ]
     },
     {
+      "id": "traceloop-hub",
+      "name": "Traceloop Hub",
+      "category": "routing",
+      "subcategory": "llm-gateway",
+      "color": "#3498db",
+      "url": "https://github.com/traceloop/hub",
+      "tagline": "High-scale LLM gateway in Rust with built-in OpenTelemetry observability.",
+      "degree": 5,
+      "mas": 5,
+      "license": "Apache-2.0",
+      "language": "Rust",
+      "maturity": "beta",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Traceloop",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "vllm-qwen",
       "name": "Vllm Qwen",
       "category": "routing",
@@ -28507,7 +29635,7 @@
       "color": "#3498db",
       "url": "https://github.com/vllm-project/vllm",
       "tagline": "High-throughput memory-efficient LLM inference engine with PagedAttention and OpenAI-compat server",
-      "degree": 12,
+      "degree": 18,
       "mas": 5,
       "license": "Apache-2.0",
       "language": "Python",
@@ -29312,6 +30440,30 @@
       "target": "vibe-kanban"
     },
     {
+      "source": "aider",
+      "target": "cline"
+    },
+    {
+      "source": "aider",
+      "target": "open-swe"
+    },
+    {
+      "source": "aider",
+      "target": "swe-agent"
+    },
+    {
+      "source": "aider",
+      "target": "mini-swe-agent"
+    },
+    {
+      "source": "aider",
+      "target": "openhands"
+    },
+    {
+      "source": "aider",
+      "target": "continue"
+    },
+    {
       "source": "aionui",
       "target": "intentkit"
     },
@@ -29398,6 +30550,10 @@
     {
       "source": "anything-llm",
       "target": "opencli"
+    },
+    {
+      "source": "anything-llm",
+      "target": "privategpt"
     },
     {
       "source": "anything-llm",
@@ -30228,6 +31384,14 @@
       "target": "symphony"
     },
     {
+      "source": "cline",
+      "target": "continue"
+    },
+    {
+      "source": "cline",
+      "target": "devika"
+    },
+    {
       "source": "code-review-graph",
       "target": "langgraph"
     },
@@ -30242,6 +31406,14 @@
     {
       "source": "code-review-graph",
       "target": "cc-switch"
+    },
+    {
+      "source": "continue",
+      "target": "open-swe"
+    },
+    {
+      "source": "continue",
+      "target": "openhands"
     },
     {
       "source": "copilotkit",
@@ -30640,6 +31812,18 @@
       "target": "serena"
     },
     {
+      "source": "devika",
+      "target": "openhands"
+    },
+    {
+      "source": "devika",
+      "target": "swe-agent"
+    },
+    {
+      "source": "devika",
+      "target": "metagpt"
+    },
+    {
       "source": "dive",
       "target": "klavis"
     },
@@ -30666,6 +31850,22 @@
     {
       "source": "dspy",
       "target": "taskweaver"
+    },
+    {
+      "source": "e2b",
+      "target": "sandlock"
+    },
+    {
+      "source": "e2b",
+      "target": "agentdojo"
+    },
+    {
+      "source": "e2b",
+      "target": "openhands"
+    },
+    {
+      "source": "e2b",
+      "target": "swe-agent"
     },
     {
       "source": "ecc",
@@ -34144,6 +35344,22 @@
       "target": "seci"
     },
     {
+      "source": "autorag",
+      "target": "ragas"
+    },
+    {
+      "source": "autorag",
+      "target": "open-rag-eval"
+    },
+    {
+      "source": "autorag",
+      "target": "tonic-validate"
+    },
+    {
+      "source": "autorag",
+      "target": "trulens"
+    },
+    {
       "source": "beir",
       "target": "mteb"
     },
@@ -34798,6 +36014,10 @@
     {
       "source": "deepeval",
       "target": "inspect-ai"
+    },
+    {
+      "source": "deepeval",
+      "target": "open-rag-eval"
     },
     {
       "source": "deepeval",
@@ -35566,6 +36786,18 @@
     {
       "source": "keel",
       "target": "sral-framework"
+    },
+    {
+      "source": "kieranklaassen-leva",
+      "target": "langfuse"
+    },
+    {
+      "source": "kieranklaassen-leva",
+      "target": "langwatch"
+    },
+    {
+      "source": "kieranklaassen-leva",
+      "target": "ragas"
     },
     {
       "source": "langeval",
@@ -36672,6 +37904,18 @@
       "target": "unitxt"
     },
     {
+      "source": "open-rag-eval",
+      "target": "ragas"
+    },
+    {
+      "source": "open-rag-eval",
+      "target": "trulens"
+    },
+    {
+      "source": "open-rag-eval",
+      "target": "tonic-validate"
+    },
+    {
       "source": "openagentbench",
       "target": "pandaprobe"
     },
@@ -36829,6 +38073,10 @@
     },
     {
       "source": "promptfoo",
+      "target": "llmmap"
+    },
+    {
+      "source": "promptfoo",
       "target": "mlflow-ai-gateway"
     },
     {
@@ -36842,6 +38090,10 @@
     {
       "source": "promptfoo",
       "target": "ragas"
+    },
+    {
+      "source": "promptfoo",
+      "target": "reverseclabs-spikee"
     },
     {
       "source": "promptfoo",
@@ -37452,6 +38704,10 @@
       "target": "opik"
     },
     {
+      "source": "arize-phoenix",
+      "target": "evidently"
+    },
+    {
       "source": "armorer",
       "target": "guardrails-ai"
     },
@@ -37778,6 +39034,18 @@
     {
       "source": "earl",
       "target": "ai-red-teaming-playground-labs"
+    },
+    {
+      "source": "evidently",
+      "target": "langfuse"
+    },
+    {
+      "source": "evidently",
+      "target": "openllmetry"
+    },
+    {
+      "source": "evidently",
+      "target": "langwatch"
     },
     {
       "source": "fls-jaime",
@@ -38349,11 +39617,19 @@
     },
     {
       "source": "llm-guard",
+      "target": "superagent"
+    },
+    {
+      "source": "llm-guard",
       "target": "rebuff"
     },
     {
       "source": "llm-guard",
       "target": "safedecoding"
+    },
+    {
+      "source": "llm-guard",
+      "target": "seojoonkim-prompt-guard"
     },
     {
       "source": "llm-guard",
@@ -38489,6 +39765,10 @@
     },
     {
       "source": "nemo-guardrails",
+      "target": "seojoonkim-prompt-guard"
+    },
+    {
+      "source": "nemo-guardrails",
       "target": "vigil-llm"
     },
     {
@@ -38542,6 +39822,10 @@
     {
       "source": "openllmetry",
       "target": "opik"
+    },
+    {
+      "source": "openllmetry",
+      "target": "traceloop-hub"
     },
     {
       "source": "opik",
@@ -38940,8 +40224,32 @@
       "target": "toolemu"
     },
     {
+      "source": "agent-audit",
+      "target": "agent-security-scanner-mcp"
+    },
+    {
+      "source": "agent-audit",
+      "target": "luckypipewrench-pipelock"
+    },
+    {
+      "source": "agent-audit",
+      "target": "garak"
+    },
+    {
+      "source": "agent-security-scanner-mcp",
+      "target": "api-relay-audit"
+    },
+    {
+      "source": "agent-security-scanner-mcp",
+      "target": "camel-prompt-injection"
+    },
+    {
       "source": "agent-security-scanner-mcp",
       "target": "deepsec"
+    },
+    {
+      "source": "agent-security-scanner-mcp",
+      "target": "luckypipewrench-pipelock"
     },
     {
       "source": "agent-security-scanner-mcp",
@@ -38961,7 +40269,15 @@
     },
     {
       "source": "agent-security-scanner-mcp",
+      "target": "secureagentics-adrian"
+    },
+    {
+      "source": "agent-security-scanner-mcp",
       "target": "securemcp"
+    },
+    {
+      "source": "agent-security-scanner-mcp",
+      "target": "superagent"
     },
     {
       "source": "agent-semantic-resistance",
@@ -38989,7 +40305,15 @@
     },
     {
       "source": "agentdojo",
+      "target": "anamorpher"
+    },
+    {
+      "source": "agentdojo",
       "target": "bipia"
+    },
+    {
+      "source": "agentdojo",
+      "target": "cryptex-oss"
     },
     {
       "source": "agentdojo",
@@ -39021,6 +40345,10 @@
     },
     {
       "source": "agentdojo",
+      "target": "sandlock"
+    },
+    {
+      "source": "agentdojo",
       "target": "toolemu"
     },
     {
@@ -39053,7 +40381,15 @@
     },
     {
       "source": "ai-infra-guard",
+      "target": "luckypipewrench-pipelock"
+    },
+    {
+      "source": "ai-infra-guard",
       "target": "pentestagent"
+    },
+    {
+      "source": "ai-infra-guard",
+      "target": "secureagentics-adrian"
     },
     {
       "source": "ai-red-teaming-playground-labs",
@@ -39124,6 +40460,22 @@
       "target": "www-project-llm-verification-standard"
     },
     {
+      "source": "anamorpher",
+      "target": "pyrit"
+    },
+    {
+      "source": "anamorpher",
+      "target": "garak"
+    },
+    {
+      "source": "anamorpher",
+      "target": "harmbench"
+    },
+    {
+      "source": "anamorpher",
+      "target": "llm-attacks"
+    },
+    {
       "source": "anvil",
       "target": "automated-adversial-testing-framework"
     },
@@ -39138,6 +40490,14 @@
     {
       "source": "anvil",
       "target": "yaramint"
+    },
+    {
+      "source": "api-relay-audit",
+      "target": "luckypipewrench-pipelock"
+    },
+    {
+      "source": "api-relay-audit",
+      "target": "garak"
     },
     {
       "source": "augustus",
@@ -39332,6 +40692,18 @@
       "target": "toolemu"
     },
     {
+      "source": "camel-prompt-injection",
+      "target": "pyrit"
+    },
+    {
+      "source": "camel-prompt-injection",
+      "target": "garak"
+    },
+    {
+      "source": "camel-prompt-injection",
+      "target": "luckypipewrench-pipelock"
+    },
+    {
       "source": "chatgpt-jailbreak-pro",
       "target": "hacxgpt-jailbreak-prompts"
     },
@@ -39398,6 +40770,26 @@
     {
       "source": "cloak-cli",
       "target": "rejection-cascade"
+    },
+    {
+      "source": "cryptex-oss",
+      "target": "garak"
+    },
+    {
+      "source": "cryptex-oss",
+      "target": "harmbench"
+    },
+    {
+      "source": "cryptex-oss",
+      "target": "praetorian-inc-augustus"
+    },
+    {
+      "source": "cryptex-oss",
+      "target": "pyrit"
+    },
+    {
+      "source": "cryptex-oss",
+      "target": "reverseclabs-spikee"
     },
     {
       "source": "deep-inception",
@@ -39513,6 +40905,14 @@
     },
     {
       "source": "garak",
+      "target": "llmmap"
+    },
+    {
+      "source": "garak",
+      "target": "luckypipewrench-pipelock"
+    },
+    {
+      "source": "garak",
       "target": "modelscan"
     },
     {
@@ -39525,6 +40925,10 @@
     },
     {
       "source": "garak",
+      "target": "praetorian-inc-augustus"
+    },
+    {
+      "source": "garak",
       "target": "promptmap"
     },
     {
@@ -39534,6 +40938,10 @@
     {
       "source": "garak",
       "target": "pyrit"
+    },
+    {
+      "source": "garak",
+      "target": "reverseclabs-spikee"
     },
     {
       "source": "garak",
@@ -39598,6 +41006,10 @@
     {
       "source": "harmbench",
       "target": "openattack"
+    },
+    {
+      "source": "harmbench",
+      "target": "praetorian-inc-augustus"
     },
     {
       "source": "harmbench",
@@ -39788,6 +41200,26 @@
       "target": "yaramint"
     },
     {
+      "source": "llmmap",
+      "target": "pyrit"
+    },
+    {
+      "source": "llmmap",
+      "target": "reverseclabs-spikee"
+    },
+    {
+      "source": "luckypipewrench-pipelock",
+      "target": "secureagentics-adrian"
+    },
+    {
+      "source": "luckypipewrench-pipelock",
+      "target": "seojoonkim-prompt-guard"
+    },
+    {
+      "source": "luckypipewrench-pipelock",
+      "target": "superagent"
+    },
+    {
       "source": "medusa",
       "target": "pipelock"
     },
@@ -39968,6 +41400,10 @@
       "target": "pyrit"
     },
     {
+      "source": "praetorian-inc-augustus",
+      "target": "pyrit"
+    },
+    {
       "source": "prompt-hacker-collections",
       "target": "pyrit"
     },
@@ -39986,6 +41422,10 @@
     {
       "source": "ps-fuzz",
       "target": "toolemu"
+    },
+    {
+      "source": "pyrit",
+      "target": "reverseclabs-spikee"
     },
     {
       "source": "pyrit",
@@ -40098,6 +41538,10 @@
     {
       "source": "salad-bench",
       "target": "strong-reject"
+    },
+    {
+      "source": "secureagentics-adrian",
+      "target": "superagent"
     },
     {
       "source": "sorry-bench",
@@ -40358,6 +41802,22 @@
     {
       "source": "aqueduct",
       "target": "yukiko"
+    },
+    {
+      "source": "atopos31-llmio",
+      "target": "litellm"
+    },
+    {
+      "source": "atopos31-llmio",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "atopos31-llmio",
+      "target": "smg"
+    },
+    {
+      "source": "atopos31-llmio",
+      "target": "traceloop-hub"
     },
     {
       "source": "bentoml",
@@ -40648,6 +42108,26 @@
       "target": "nyro"
     },
     {
+      "source": "gpustack",
+      "target": "vllm"
+    },
+    {
+      "source": "gpustack",
+      "target": "llama-cpp"
+    },
+    {
+      "source": "gpustack",
+      "target": "litellm"
+    },
+    {
+      "source": "gpustack",
+      "target": "portkey-gateway"
+    },
+    {
+      "source": "gpustack",
+      "target": "ollama"
+    },
+    {
       "source": "helicone",
       "target": "litellm"
     },
@@ -40697,6 +42177,10 @@
     },
     {
       "source": "huggingface-tgi",
+      "target": "inference-benchmarker"
+    },
+    {
+      "source": "huggingface-tgi",
       "target": "sglang"
     },
     {
@@ -40706,6 +42190,34 @@
     {
       "source": "huggingface-tgi",
       "target": "vllm"
+    },
+    {
+      "source": "huggingface-tgi",
+      "target": "text-embeddings-inference"
+    },
+    {
+      "source": "inference-benchmarker",
+      "target": "vllm"
+    },
+    {
+      "source": "inference-benchmarker",
+      "target": "sglang"
+    },
+    {
+      "source": "inference-benchmarker",
+      "target": "litellm"
+    },
+    {
+      "source": "inferrs",
+      "target": "vllm"
+    },
+    {
+      "source": "inferrs",
+      "target": "llama-cpp"
+    },
+    {
+      "source": "inferrs",
+      "target": "ollama"
     },
     {
       "source": "izwi",
@@ -40732,6 +42244,26 @@
       "target": "text-generation-webui"
     },
     {
+      "source": "jundot-omlx",
+      "target": "vllm"
+    },
+    {
+      "source": "jundot-omlx",
+      "target": "llama-cpp"
+    },
+    {
+      "source": "jundot-omlx",
+      "target": "litellm"
+    },
+    {
+      "source": "jundot-omlx",
+      "target": "mlx-omni-server"
+    },
+    {
+      "source": "jundot-omlx",
+      "target": "swiftlm"
+    },
+    {
       "source": "kgateway",
       "target": "kong"
     },
@@ -40754,6 +42286,10 @@
     {
       "source": "litellm",
       "target": "mlflow-ai-gateway"
+    },
+    {
+      "source": "litellm",
+      "target": "mlx-omni-server"
     },
     {
       "source": "litellm",
@@ -40785,7 +42321,23 @@
     },
     {
       "source": "litellm",
+      "target": "smg"
+    },
+    {
+      "source": "litellm",
+      "target": "swiftlm"
+    },
+    {
+      "source": "litellm",
+      "target": "traceloop-hub"
+    },
+    {
+      "source": "litellm",
       "target": "vllm"
+    },
+    {
+      "source": "litellm",
+      "target": "text-embeddings-inference"
     },
     {
       "source": "litellm",
@@ -41136,6 +42688,14 @@
       "target": "simonw-llm"
     },
     {
+      "source": "mlx-omni-server",
+      "target": "swiftlm"
+    },
+    {
+      "source": "mlx-omni-server",
+      "target": "ollama"
+    },
+    {
       "source": "model-flux",
       "target": "nadirclaw"
     },
@@ -41198,6 +42758,10 @@
     {
       "source": "ollama",
       "target": "sglang"
+    },
+    {
+      "source": "ollama",
+      "target": "swiftlm"
     },
     {
       "source": "ollama",
@@ -41344,6 +42908,14 @@
       "target": "simonw-llm"
     },
     {
+      "source": "portkey-gateway",
+      "target": "smg"
+    },
+    {
+      "source": "portkey-gateway",
+      "target": "traceloop-hub"
+    },
+    {
       "source": "powerinfer",
       "target": "sie"
     },
@@ -41424,6 +42996,14 @@
       "target": "xllm"
     },
     {
+      "source": "smg",
+      "target": "traceloop-hub"
+    },
+    {
+      "source": "smg",
+      "target": "vllm"
+    },
+    {
       "source": "spiceai",
       "target": "tiny-vllm"
     },
@@ -41437,6 +43017,10 @@
     },
     {
       "source": "tensorrt-llm",
+      "target": "vllm"
+    },
+    {
+      "source": "text-embeddings-inference",
       "target": "vllm"
     },
     {
@@ -41516,6 +43100,7 @@
           "arena-hard-auto",
           "ares",
           "arguslm",
+          "autorag",
           "beir",
           "benchclaw",
           "benchjack",
@@ -41579,6 +43164,7 @@
           "judgeval",
           "juryeval",
           "keel",
+          "kieranklaassen-leva",
           "langeval",
           "legalbench",
           "leva",
@@ -41630,6 +43216,7 @@
           "oh-my-knowledge",
           "ollive-ai-assistant",
           "olmes",
+          "open-rag-eval",
           "openagentbench",
           "openai-evals",
           "openclaw-llm-bench",
@@ -41735,6 +43322,7 @@
           "adversarial-robustness-toolbox",
           "aeromind-paper",
           "agent-attack",
+          "agent-audit",
           "agent-security-scanner-mcp",
           "agent-semantic-resistance",
           "agentic-radar",
@@ -41742,7 +43330,9 @@
           "ai-red-teaming-playground-labs",
           "ai-seclists",
           "aigoat",
+          "anamorpher",
           "anvil",
+          "api-relay-audit",
           "augustus",
           "autodan",
           "autodan-turbo",
@@ -41750,10 +43340,12 @@
           "autoprompt-calibration",
           "backdoor-llm",
           "bipia",
+          "camel-prompt-injection",
           "chatgpt-jailbreak-pro",
           "cipherchat",
           "cleverhans",
           "cloak-cli",
+          "cryptex-oss",
           "deep-inception",
           "deepsec",
           "detect-pretrain-mink",
@@ -41777,6 +43369,8 @@
           "llm-jailbreaks",
           "llm-prompt-injection-tester",
           "llm-watermark-robustness",
+          "llmmap",
+          "luckypipewrench-pipelock",
           "medusa",
           "memory-poisoning-persistence",
           "mimir",
@@ -41794,6 +43388,7 @@
           "pint-benchmark",
           "pipelock",
           "plexiglass",
+          "praetorian-inc-augustus",
           "prompt-hacker-collections",
           "promptinject",
           "promptmap",
@@ -41808,12 +43403,17 @@
           "redforge-ai",
           "rejection-cascade",
           "renellm",
+          "reverseclabs-spikee",
           "safetybench",
           "salad-bench",
+          "sandlock",
+          "secureagentics-adrian",
           "securemcp",
+          "seojoonkim-prompt-guard",
           "sorry-bench",
           "spikee",
           "stealix",
+          "superagent",
           "tap-jailbreak",
           "tensor-trust",
           "textattack",
@@ -41925,6 +43525,7 @@
           "agixt",
           "aiaw",
           "aichat",
+          "aider",
           "aionui",
           "aiwaves-agents",
           "anthropic-cybersecurity-skills",
@@ -41957,6 +43558,7 @@
           "cli",
           "cline",
           "code-review-graph",
+          "continue",
           "copilotkit",
           "coral",
           "core",
@@ -41975,7 +43577,9 @@
           "deeptutor",
           "deer-flow",
           "design-extract",
+          "devika",
           "dive",
+          "e2b",
           "ecc",
           "edict",
           "eidolon",
@@ -42071,6 +43675,7 @@
           "plandex",
           "planning-with-files",
           "praisonai",
+          "privategpt",
           "py-xiaozhi",
           "pydantic-ai",
           "pydanticai",
@@ -42182,6 +43787,7 @@
           "apisix",
           "aqbot",
           "aqueduct",
+          "atopos31-llmio",
           "bitrouter",
           "cc-switch",
           "clawrouter",
@@ -42196,10 +43802,14 @@
           "freellmpool",
           "goinfer",
           "gomodel",
+          "gpustack",
           "grps-trtllm",
           "helicone",
           "higress",
+          "inference-benchmarker",
+          "inferrs",
           "izwi",
+          "jundot-omlx",
           "kgateway",
           "kong",
           "litellm",
@@ -42212,6 +43822,7 @@
           "lorax",
           "mlc-llm",
           "mlflow-ai-gateway",
+          "mlx-omni-server",
           "model-flux",
           "nadirclaw",
           "new-api",
@@ -42243,10 +43854,14 @@
           "sie",
           "simonw-llm",
           "smarterrouter",
+          "smg",
           "spiceai",
+          "swiftlm",
+          "text-embeddings-inference",
           "text-generation-webui",
           "tiny-vllm",
           "tokligence-gateway",
+          "traceloop-hub",
           "vllm-qwen",
           "web-llm",
           "windsurfapi",
@@ -42356,6 +43971,7 @@
           "detoxify",
           "do-not-answer",
           "earl",
+          "evidently",
           "fls-jaime",
           "frai",
           "funcchain",

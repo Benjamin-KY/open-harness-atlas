@@ -1,77 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
 <title id="title">Deployment posture across the open-harness-atlas registry</title>
-<desc id="desc">A stacked horizontal bar chart per category showing how 801 open-source harnesses split across five deployment postures (local-only, local-first, hybrid, cloud-first, api-only). Local-only is air-gappable; local-first means docker compose up works out of the box; hybrid requires both local and cloud at runtime by design; cloud-first means SaaS is the primary path; api-only means no local path exists.</desc>
+<desc id="desc">A stacked horizontal bar chart per category showing how 833 open-source harnesses split across five deployment postures (local-only, local-first, hybrid, cloud-first, api-only). Local-only is air-gappable; local-first means docker compose up works out of the box; hybrid requires both local and cloud at runtime by design; cloud-first means SaaS is the primary path; api-only means no local path exists.</desc>
 <style>.body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}.title{font-size:20px;font-weight:700;fill:#1f3a5f;}.sub{font-size:12px;font-weight:400;fill:#4a5d75;}.h2{font-size:14px;font-weight:600;fill:#1f3a5f;}.cat-label{font-size:13px;font-weight:600;fill:#1f3a5f;text-anchor:end;}.cat-count{font-size:11px;fill:#6b7a8c;text-anchor:start;}.seg-label{font-size:11px;font-weight:700;fill:#ffffff;text-anchor:middle;dominant-baseline:central;}.seg-label-dark{font-size:11px;font-weight:700;fill:#1f3a5f;text-anchor:middle;dominant-baseline:central;}.legend-text{font-size:12px;fill:#1f3a5f;}.legend-hint{font-size:10px;fill:#6b7a8c;}.footer{font-size:10px;fill:#6b7a8c;text-anchor:middle;}</style>
 <rect width="1200" height="720" fill="#ffffff"/>
 <text x="40" y="38" class="body title">Deployment posture</text>
-<text x="40" y="58" class="body sub">Where does it run? 801 open-source harnesses split across five postures. Heuristic + 3-model ensemble curation (claude-sonnet-4.5 + claude-opus-4.7-xhigh + gpt-5.4).</text>
+<text x="40" y="58" class="body sub">Where does it run? 833 open-source harnesses split across five postures. Heuristic + 3-model ensemble curation (claude-sonnet-4.5 + claude-opus-4.7-xhigh + gpt-5.4).</text>
 <text x="40" y="114" class="body h2">All entries</text>
-<text x="40" y="132" class="body cat-count" text-anchor="start">801 total</text>
-<rect x="200.00" y="100" width="160.60" height="42" fill="#1f8a70" />
-<text x="280.30" y="121.00" class="body seg-label">134</text>
-<rect x="360.60" y="100" width="695.13" height="42" fill="#86b8b1" />
-<text x="708.16" y="121.00" class="body seg-label-dark">580</text>
-<rect x="1055.73" y="100" width="35.96" height="42" fill="#c9b08c" />
-<text x="1073.71" y="121.00" class="body seg-label-dark">30</text>
-<rect x="1091.69" y="100" width="44.34" height="42" fill="#9cb8dd" />
-<text x="1113.86" y="121.00" class="body seg-label-dark">37</text>
-<rect x="1136.03" y="100" width="23.97" height="42" fill="#5b7fc7" />
+<text x="40" y="132" class="body cat-count" text-anchor="start">833 total</text>
+<rect x="200.00" y="100" width="161.34" height="42" fill="#1f8a70" />
+<text x="280.67" y="121.00" class="body seg-label">140</text>
+<rect x="361.34" y="100" width="697.24" height="42" fill="#86b8b1" />
+<text x="709.96" y="121.00" class="body seg-label-dark">605</text>
+<rect x="1058.58" y="100" width="35.73" height="42" fill="#c9b08c" />
+<text x="1076.45" y="121.00" class="body seg-label-dark">31</text>
+<rect x="1094.31" y="100" width="42.64" height="42" fill="#9cb8dd" />
+<text x="1115.63" y="121.00" class="body seg-label-dark">37</text>
+<rect x="1136.95" y="100" width="23.05" height="42" fill="#5b7fc7" />
 <text x="190" y="218" class="body cat-label">governance</text>
-<text x="190" y="236" class="body cat-count" text-anchor="end">(n=101)</text>
-<rect x="200.00" y="200" width="114.06" height="36" fill="#1f8a70" />
-<text x="257.03" y="218.00" class="body seg-label">12</text>
-<rect x="314.06" y="200" width="731.88" height="36" fill="#86b8b1" />
-<text x="680.00" y="218.00" class="body seg-label-dark">77</text>
-<rect x="1045.94" y="200" width="57.03" height="36" fill="#c9b08c" />
-<text x="1074.46" y="218.00" class="body seg-label-dark">6</text>
-<rect x="1102.97" y="200" width="28.51" height="36" fill="#9cb8dd" />
-<text x="1117.23" y="218.00" class="body seg-label-dark">3</text>
-<rect x="1131.49" y="200" width="28.51" height="36" fill="#5b7fc7" />
-<text x="1145.74" y="218.00" class="body seg-label">3</text>
+<text x="190" y="236" class="body cat-count" text-anchor="end">(n=102)</text>
+<rect x="200.00" y="200" width="112.94" height="36" fill="#1f8a70" />
+<text x="256.47" y="218.00" class="body seg-label">12</text>
+<rect x="312.94" y="200" width="734.12" height="36" fill="#86b8b1" />
+<text x="680.00" y="218.00" class="body seg-label-dark">78</text>
+<rect x="1047.06" y="200" width="56.47" height="36" fill="#c9b08c" />
+<text x="1075.29" y="218.00" class="body seg-label-dark">6</text>
+<rect x="1103.53" y="200" width="28.24" height="36" fill="#9cb8dd" />
+<text x="1117.65" y="218.00" class="body seg-label-dark">3</text>
+<rect x="1131.76" y="200" width="28.24" height="36" fill="#5b7fc7" />
+<text x="1145.88" y="218.00" class="body seg-label">3</text>
 <text x="190" y="292" class="body cat-label">agent</text>
-<text x="190" y="310" class="body cat-count" text-anchor="end">(n=237)</text>
-<rect x="200.00" y="274" width="40.51" height="36" fill="#1f8a70" />
-<text x="220.25" y="292.00" class="body seg-label">10</text>
-<rect x="240.51" y="274" width="830.38" height="36" fill="#86b8b1" />
-<text x="655.70" y="292.00" class="body seg-label-dark">205</text>
-<rect x="1070.89" y="274" width="32.41" height="36" fill="#c9b08c" />
-<text x="1087.09" y="292.00" class="body seg-label-dark">8</text>
-<rect x="1103.29" y="274" width="24.30" height="36" fill="#9cb8dd" />
-<rect x="1127.59" y="274" width="32.41" height="36" fill="#5b7fc7" />
-<text x="1143.80" y="292.00" class="body seg-label">8</text>
+<text x="190" y="310" class="body cat-count" text-anchor="end">(n=242)</text>
+<rect x="200.00" y="274" width="43.64" height="36" fill="#1f8a70" />
+<text x="221.82" y="292.00" class="body seg-label">11</text>
+<rect x="243.64" y="274" width="825.12" height="36" fill="#86b8b1" />
+<text x="656.20" y="292.00" class="body seg-label-dark">208</text>
+<rect x="1068.76" y="274" width="35.70" height="36" fill="#c9b08c" />
+<text x="1086.61" y="292.00" class="body seg-label-dark">9</text>
+<rect x="1104.46" y="274" width="23.80" height="36" fill="#9cb8dd" />
+<rect x="1128.26" y="274" width="31.74" height="36" fill="#5b7fc7" />
+<text x="1144.13" y="292.00" class="body seg-label">8</text>
 <text x="190" y="366" class="body cat-label">eval</text>
-<text x="190" y="384" class="body cat-count" text-anchor="end">(n=203)</text>
-<rect x="200.00" y="348" width="80.39" height="36" fill="#1f8a70" />
-<text x="240.20" y="366.00" class="body seg-label">17</text>
-<rect x="280.39" y="348" width="723.55" height="36" fill="#86b8b1" />
-<text x="642.17" y="366.00" class="body seg-label-dark">153</text>
-<rect x="1003.94" y="348" width="56.75" height="36" fill="#c9b08c" />
-<text x="1032.32" y="366.00" class="body seg-label-dark">12</text>
-<rect x="1060.69" y="348" width="75.67" height="36" fill="#9cb8dd" />
-<text x="1098.52" y="366.00" class="body seg-label-dark">16</text>
-<rect x="1136.35" y="348" width="23.65" height="36" fill="#5b7fc7" />
+<text x="190" y="384" class="body cat-count" text-anchor="end">(n=206)</text>
+<rect x="200.00" y="348" width="79.22" height="36" fill="#1f8a70" />
+<text x="239.61" y="366.00" class="body seg-label">17</text>
+<rect x="279.22" y="348" width="726.99" height="36" fill="#86b8b1" />
+<text x="642.72" y="366.00" class="body seg-label-dark">156</text>
+<rect x="1006.21" y="348" width="55.92" height="36" fill="#c9b08c" />
+<text x="1034.17" y="366.00" class="body seg-label-dark">12</text>
+<rect x="1062.14" y="348" width="74.56" height="36" fill="#9cb8dd" />
+<text x="1099.42" y="366.00" class="body seg-label-dark">16</text>
+<rect x="1136.70" y="348" width="23.30" height="36" fill="#5b7fc7" />
 <text x="190" y="440" class="body cat-label">redteam</text>
-<text x="190" y="458" class="body cat-count" text-anchor="end">(n=96)</text>
-<rect x="200.00" y="422" width="210.00" height="36" fill="#1f8a70" />
-<text x="305.00" y="440.00" class="body seg-label">21</text>
-<rect x="410.00" y="422" width="650.00" height="36" fill="#86b8b1" />
-<text x="735.00" y="440.00" class="body seg-label-dark">65</text>
-<rect x="1060.00" y="422" width="30.00" height="36" fill="#c9b08c" />
-<text x="1075.00" y="440.00" class="body seg-label-dark">3</text>
-<rect x="1090.00" y="422" width="40.00" height="36" fill="#9cb8dd" />
-<text x="1110.00" y="440.00" class="body seg-label-dark">4</text>
-<rect x="1130.00" y="422" width="30.00" height="36" fill="#5b7fc7" />
-<text x="1145.00" y="440.00" class="body seg-label">3</text>
+<text x="190" y="458" class="body cat-count" text-anchor="end">(n=109)</text>
+<rect x="200.00" y="422" width="202.57" height="36" fill="#1f8a70" />
+<text x="301.28" y="440.00" class="body seg-label">23</text>
+<rect x="402.57" y="422" width="669.36" height="36" fill="#86b8b1" />
+<text x="737.25" y="440.00" class="body seg-label-dark">76</text>
+<rect x="1071.93" y="422" width="26.42" height="36" fill="#c9b08c" />
+<rect x="1098.35" y="422" width="35.23" height="36" fill="#9cb8dd" />
+<text x="1115.96" y="440.00" class="body seg-label-dark">4</text>
+<rect x="1133.58" y="422" width="26.42" height="36" fill="#5b7fc7" />
 <text x="190" y="514" class="body cat-label">routing</text>
-<text x="190" y="532" class="body cat-count" text-anchor="end">(n=92)</text>
-<rect x="200.00" y="496" width="20.87" height="36" fill="#1f8a70" />
-<rect x="220.87" y="496" width="834.78" height="36" fill="#86b8b1" />
-<text x="638.26" y="514.00" class="body seg-label-dark">80</text>
-<rect x="1055.65" y="496" width="10.43" height="36" fill="#c9b08c" />
-<rect x="1066.09" y="496" width="83.48" height="36" fill="#9cb8dd" />
-<text x="1107.83" y="514.00" class="body seg-label-dark">8</text>
-<rect x="1149.57" y="496" width="10.43" height="36" fill="#5b7fc7" />
+<text x="190" y="532" class="body cat-count" text-anchor="end">(n=102)</text>
+<rect x="200.00" y="496" width="47.06" height="36" fill="#1f8a70" />
+<text x="223.53" y="514.00" class="body seg-label">5</text>
+<rect x="247.06" y="496" width="818.82" height="36" fill="#86b8b1" />
+<text x="656.47" y="514.00" class="body seg-label-dark">87</text>
+<rect x="1065.88" y="496" width="9.41" height="36" fill="#c9b08c" />
+<rect x="1075.29" y="496" width="75.29" height="36" fill="#9cb8dd" />
+<text x="1112.94" y="514.00" class="body seg-label-dark">8</text>
+<rect x="1150.59" y="496" width="9.41" height="36" fill="#5b7fc7" />
 <text x="190" y="588" class="body cat-label">education</text>
 <text x="190" y="606" class="body cat-count" text-anchor="end">(n=72)</text>
 <rect x="200.00" y="570" width="960.00" height="36" fill="#1f8a70" />

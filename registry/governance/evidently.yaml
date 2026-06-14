@@ -1,0 +1,48 @@
+id: evidently
+name: "Evidently"
+
+category: governance
+subcategory: llm-observability
+
+repo_url: https://github.com/evidentlyai/evidently
+homepage: https://discord.gg/xZjKRaNp8b
+license: Apache-2.0
+primary_language: Jupyter Notebook
+
+tagline: "Open-source ML + LLM observability framework — evaluate, test, monitor."
+
+description: |
+  Evidently is an open-source observability framework for ML and LLM systems. 100+ pre-built metrics, drift detection, prompt-eval tests, dashboards, and a Python SDK that drops into existing pipelines.
+
+  In the atlas: peer to `langfuse`, `arize-phoenix`, `openllmetry`, `langwatch` on the observability shelf. Differentiator is the dual ML + LLM coverage (useful in mixed-stack environments).
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Evidently AI
+
+origin_country: US
+
+model_agnostic_score: 5
+
+five_component_coverage:
+  policy_router: none
+  source_authority: none
+  prompt_composer: none
+  output_contract: partial
+  audit_log_fsm: native
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  Apache-2.0; self-hosted Python library + optional self-hosted UI service. No managed-service dependency. Observability data goes wherever the operator routes it. Vendor-neutral metrics; works with any LLM provider.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - langfuse
+  - arize-phoenix
+  - openllmetry
+  - langwatch

@@ -1,0 +1,39 @@
+id: reverseclabs-spikee
+name: Reverseclabs Spikee
+category: redteam
+subcategory: prompt-injection-eval
+repo_url: https://github.com/ReversecLabs/spikee
+homepage: https://spikee.ai
+license: Apache-2.0
+primary_language: Python
+tagline: Simple Prompt Injection Kit for Evaluation and Exploitation (ReversecLabs).
+description: 'Spikee is a focused prompt-injection evaluation and exploitation kit.
+  Small CLI, opinionated payload catalogue, designed for fast iteration during application
+  red-team.
+
+
+  In the atlas: peer to `promptfoo` (eval-side), `garak` (scanner). Differentiator
+  is the offensive emphasis — kit is shaped for an actual red-team engagement, not
+  for passive CI scanning.
+
+  '
+maturity: beta
+maintainer:
+  type: company
+  name: ReversecLabs
+origin_country: null
+model_agnostic_score: 4
+sovereignty_notes: 'Added 2026-06-14 via the second recency-biased discovery sweep
+  (non-agent categories: routing / redteam / eval).
+
+  Apache-2.0; CLI tool; runs locally. Targets any HTTP-served LLM endpoint, so provider-agnostic.
+
+  '
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- cryptex-oss
+- garak
+- llmmap
+- promptfoo
+- pyrit

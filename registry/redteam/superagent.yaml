@@ -1,0 +1,41 @@
+id: superagent
+name: "Superagent"
+
+category: redteam
+subcategory: agent-firewall
+
+repo_url: https://github.com/superagent-ai/superagent
+homepage: https://superagent.sh
+license: MIT
+primary_language: TypeScript
+
+tagline: "Open-source agent firewall — protects AI apps against prompt injection and data leaks."
+
+description: |
+  Superagent is an agent-side firewall that intercepts LLM inputs and outputs to detect and block prompt injection, secret leakage, PII exfiltration, and policy-violating tool calls. Pluggable detectors + declarative policy.
+
+  In the atlas: peer to `luckypipewrench-pipelock`, `agent-security-scanner-mcp`, `secureagentics-adrian`, `llm-guard` on the runtime-defence shelf. Companion to the `audit-log-fsm-escalation` and `multi-tenant-policy-isolation` patterns.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Superagent
+
+origin_country: SE
+
+model_agnostic_score: 4
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  MIT licence; self-hostable middleware. Sits in-process with the agent, so the upstream LLM provider is unconstrained. Detection runs entirely locally; no data leaves the firewall for inspection.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - luckypipewrench-pipelock
+  - agent-security-scanner-mcp
+  - secureagentics-adrian
+  - llm-guard

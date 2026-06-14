@@ -5,11 +5,15 @@ subcategory: local-inference-server
 repo_url: https://github.com/ggml-org/llama.cpp
 license: MIT
 primary_language: C++
-tagline: Pure C/C++ LLM inference with llama-server OpenAI-compat HTTP endpoint; runs on any hardware
-description: 'llama.cpp is ggml-org (Georgi Gerganov)''s pure C/C++ LLM inference with llama-server OpenAI-compat HTTP endpoint; runs on any hardware. Zero-dependency C/C++; 1.5-8 bit quantization; CUDA/Metal/Vulkan/SYCL/RISC-V.
+tagline: Pure C/C++ LLM inference with llama-server OpenAI-compat HTTP endpoint; runs
+  on any hardware
+description: 'llama.cpp is ggml-org (Georgi Gerganov)''s pure C/C++ LLM inference
+  with llama-server OpenAI-compat HTTP endpoint; runs on any hardware. Zero-dependency
+  C/C++; 1.5-8 bit quantization; CUDA/Metal/Vulkan/SYCL/RISC-V.
 
 
-  In the atlas: llama.cpp is a routing-layer entry — it makes the model tier swappable so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
+  In the atlas: llama.cpp is a routing-layer entry — it makes the model tier swappable
+  so any governance / agent / eval / redteam stack above it stays sovereign-by-construction.
 
   '
 maturity: ga
@@ -18,12 +22,17 @@ maintainer:
   name: ggml-org (Georgi Gerganov)
 origin_country: BG
 model_agnostic_score: 5
-sovereignty_notes: 'ggml-org (Georgi Gerganov) (community-maintained, BG); OSS core is MIT and self-hostable as a Python package or container; OpenAI-compatible local backends are first-class. Model-agnostic 5 — provider is a swap target and the same code path runs against every supported backend.
+sovereignty_notes: 'ggml-org (Georgi Gerganov) (community-maintained, BG); OSS core
+  is MIT and self-hostable as a Python package or container; OpenAI-compatible local
+  backends are first-class. Model-agnostic 5 — provider is a swap target and the same
+  code path runs against every supported backend.
 
   '
 harness_paradigm_alignment: partial
 adjacent_to:
+- inferrs
 - jan
+- jundot-omlx
 - litellm
 - lmdeploy
 - localai
@@ -33,4 +42,5 @@ adjacent_to:
 - tensorrt-llm
 - text-generation-webui
 - vllm
+- gpustack
 deployment_posture: local-first

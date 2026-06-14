@@ -41,4 +41,5 @@ adjacent_to:
 - swe-agent
 - swe-bench
 - symphony
+- aider
 deployment_posture: local-first

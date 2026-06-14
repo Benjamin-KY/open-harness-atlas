@@ -5,11 +5,18 @@ subcategory: tracing
 repo_url: https://github.com/traceloop/openllmetry
 license: Apache-2.0
 primary_language: Python
-tagline: OpenTelemetry-native SDK instrumenting every LLM provider call with standardized traces and spans
-description: 'OpenLLMetry is Traceloop''s openTelemetry-native SDK instrumenting every LLM provider call with standardized traces and spans. Emits standard OTel spans (now part of OpenTelemetry semantic conventions); feeds any existing observability backend (Datadog, Honeycomb, Jaeger) unlike langfuse''s proprietary ingestion or langkit''s whylogs format..
+tagline: OpenTelemetry-native SDK instrumenting every LLM provider call with standardized
+  traces and spans
+description: 'OpenLLMetry is Traceloop''s openTelemetry-native SDK instrumenting every
+  LLM provider call with standardized traces and spans. Emits standard OTel spans
+  (now part of OpenTelemetry semantic conventions); feeds any existing observability
+  backend (Datadog, Honeycomb, Jaeger) unlike langfuse''s proprietary ingestion or
+  langkit''s whylogs format..
 
 
-  In the atlas: OpenLLMetry is a governance-layer entry. Where it lands on the five-component spine (policy router / source authority / prompt composer / output contract / audit-log FSM) is captured in `five_component_coverage` below.
+  In the atlas: OpenLLMetry is a governance-layer entry. Where it lands on the five-component
+  spine (policy router / source authority / prompt composer / output contract / audit-log
+  FSM) is captured in `five_component_coverage` below.
 
   '
 maturity: ga
@@ -24,15 +31,18 @@ five_component_coverage:
   prompt_composer: none
   output_contract: none
   audit_log_fsm: partial
-sovereignty_notes: 'Traceloop (IL-incorporated company); OSS core is Apache-2.0 and fully self-hostable.
+sovereignty_notes: 'Traceloop (IL-incorporated company); OSS core is Apache-2.0 and
+  fully self-hostable.
 
-  Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped
+  Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or
+  shipped
 
   configurations that favour a specific tier. Curator note (2026-06-14): raised
 
   audit_log_fsm from `none` to `partial` because openllmetry''s whole purpose is emitting
 
-  OTel-shaped audit spans for every LLM call — it produces the audit trail even though it
+  OTel-shaped audit spans for every LLM call — it produces the audit trail even though
+  it
 
   doesn''t define the replay FSM itself. The other four spine components remain `none`.
 
@@ -48,5 +58,7 @@ adjacent_to:
 - langwatch
 - openlit
 - opik
+- traceloop-hub
 - trulens
+- evidently
 deployment_posture: local-first

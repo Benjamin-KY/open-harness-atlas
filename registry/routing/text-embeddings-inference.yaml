@@ -1,0 +1,40 @@
+id: text-embeddings-inference
+name: "Text Embeddings Inference"
+
+category: routing
+subcategory: embedding-server
+
+repo_url: https://github.com/huggingface/text-embeddings-inference
+homepage: https://huggingface.co/docs/text-embeddings-inference/quick_tour
+license: Apache-2.0
+primary_language: Rust
+
+tagline: "Hugging Face's blazing-fast inference server for text-embedding models."
+
+description: |
+  Text-Embeddings-Inference (TEI) is Hugging Face's specialised inference server for embedding and reranking models. Rust core, dynamic batching, OpenAI-compatible embeddings endpoint, supports BGE / E5 / GTE / Jina families and many more.
+
+  In the atlas: the embedding-side counterpart to `vllm` and `tgi` for the LLM side. Peer to `infinity` (another fast embedding server). Critical for any local-first RAG stack.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Hugging Face
+
+origin_country: US
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  Apache-2.0; self-hosted Rust binary. No telemetry; no managed-service dependency. Embedding models run on operator hardware, so document contents and queries stay local. OpenAI-compatible API surface enables drop-in replacement of managed embedding providers.
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - vllm
+  - huggingface-tgi
+  - litellm

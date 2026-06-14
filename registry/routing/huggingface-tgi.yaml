@@ -6,7 +6,9 @@ repo_url: https://github.com/huggingface/text-generation-inference
 homepage: https://huggingface.co/docs/text-generation-inference/
 license: Apache-2.0
 primary_language: Python
-tagline: Production-grade LLM-serving runtime in Rust + Python — the inference engine behind Hugging Face's Inference Endpoints, with continuous batching, paged attention, and quantisation.
+tagline: Production-grade LLM-serving runtime in Rust + Python — the inference engine
+  behind Hugging Face's Inference Endpoints, with continuous batching, paged attention,
+  and quantisation.
 description: 'Text Generation Inference (TGI) is Hugging Face''s production
 
   inference runtime for large language models: a Rust HTTP / gRPC
@@ -77,9 +79,11 @@ sovereignty_notes: 'Hugging Face is US-incorporated (NYC); TGI is Apache-2.0 OSS
 harness_paradigm_alignment: partial
 adjacent_to:
 - bentoml
+- inference-benchmarker
 - sglang
 - tensorrt-llm
 - vllm
+- text-embeddings-inference
 notes_for_maintainers: 'As of metadata refresh, the upstream repo is GitHub-archived
 
   but still in widespread production use. Watch for the

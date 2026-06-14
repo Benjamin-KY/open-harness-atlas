@@ -9,6 +9,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) | MIT | Python | ga | — | 3/5 | frontier | 6.0k | — | Trusted-AI |
 | [Aero Mind Paper](https://github.com/3odat/AeroMind-Paper) | MIT | TeX | beta | — | 3/5 | frontier | 0 | — | 3odat |
 | [Agent-Attack (Multimodal)](https://github.com/ChenWu98/agent-attack) | MIT | Python | beta | US | 5/5 | frontier | 137 | — | Chen Henry Wu et al. (CMU) |
+| [Agent Audit](https://github.com/HeadyZhang/agent-audit) | MIT | Python | beta | CN | 4/5 | — | — | — | HeadyZhang |
 | [Agent Security Scanner MCP](https://github.com/sinewaveai/agent-security-scanner-mcp) | MIT | JavaScript | beta | — | 4/5 | emerging | 110 | — | sinewaveai |
 | [Agent Semantic Resistance](https://github.com/rexcoleman/agent-semantic-resistance) | MIT | Python | beta | — | 0/5 | frontier | 0 | — | rexcoleman |
 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | MIT | Python | ga | CH | 5/5 | emerging | 619 | — | ETH Zürich SPY Lab |
@@ -17,7 +18,9 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AI Red Teaming Playground Labs](https://github.com/microsoft/AI-Red-Teaming-Playground-Labs) | MIT | TypeScript | ga | US | 3/5 | established | 2.0k | — | microsoft |
 | [AI Seclists](https://github.com/AUTHENSOR/ai-seclists) | MIT | HTML | beta | — | 3/5 | frontier | 0 | — | AUTHENSOR |
 | [Aigoat](https://github.com/AISecurityConsortium/AIGoat) | Apache-2.0 | JavaScript | beta | — | 3/5 | frontier | 61 | — | AISecurityConsortium |
+| [Anamorpher](https://github.com/trailofbits/anamorpher) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | Trail of Bits |
 | [Anvil](https://github.com/Ganglet/Anvil) | MIT | Python | beta | — | 1/5 | frontier | 0 | — | Ganglet |
+| [Api Relay Audit](https://github.com/toby-bridges/api-relay-audit) | AGPL-3.0 | Python | beta | — | 4/5 | — | — | — | toby-bridges |
 | [Augustus](https://github.com/praetorian-inc/augustus) | Apache-2.0 | Go | ga | — | 4/5 | emerging | 238 | — | praetorian-inc |
 | [AutoDAN-Turbo](https://github.com/SaFo-Lab/AutoDAN-Turbo) | MIT | Python | beta | US | 4/5 | frontier | 371 | — | SaFo-Lab / Chaowei Xiao (UW-Madison) |
 | [AutoDAN](https://github.com/SheltonLiu-N/AutoDAN) | MIT | Python | ga | US | 4/5 | frontier | 445 | — | Xiaogeng Liu et al. (UW-Madison) |
@@ -25,10 +28,12 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AutoPrompt (Intent-based Prompt Calibration)](https://github.com/Eladlev/AutoPrompt) | Apache-2.0 | Python | beta | IL | 5/5 | frontier | 3.0k | — | Elad Levi et al. |
 | [BackdoorLLM](https://github.com/bboylyg/BackdoorLLM) | MIT | Python | beta | CN | 4/5 | emerging | 308 | — | Yige Li et al. (NeurIPS 2025 paper) |
 | [BIPIA](https://github.com/microsoft/BIPIA) | MIT | Python | beta | US | 4/5 | frontier | 135 | — | Microsoft Research |
+| [Camel Prompt Injection](https://github.com/google-research/camel-prompt-injection) | Apache-2.0 | Jupyter Notebook | alpha | US | 4/5 | — | — | — | Google Research |
 | [Chat GPT Jailbreak Pro](https://github.com/Batlez/ChatGPT-Jailbreak-Pro) | MIT | JavaScript | beta | — | 0/5 | frontier | 179 | — | Batlez |
 | [CipherChat](https://github.com/RobustNLP/CipherChat) | MIT | Python | beta | CN | 4/5 | frontier | 628 | — | Youliang Yuan et al. (CUHK/Tencent AI Lab) |
 | [CleverHans](https://github.com/cleverhans-lab/cleverhans) | MIT | Python | ga | US | 4/5 | frontier | 6.4k | — | Google Brain / OpenAI / Penn State (original); community since |
 | [Cloak Cli](https://github.com/stabgan/cloak-cli) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | stabgan |
+| [Cryptex Oss](https://github.com/m4xx101/cryptex-oss) | MIT | TypeScript | beta | — | 4/5 | — | — | — | m4xx101 |
 | [DeepInception](https://github.com/tmlr-group/DeepInception) | MIT | Python | beta | CN | 4/5 | frontier | 175 | — | TMLR Group (multiple authors, PKU/Tsinghua) |
 | [Deepsec](https://github.com/vercel-labs/deepsec) | Apache-2.0 | TypeScript | beta | US | 4/5 | — | — | — | Vercel |
 | [Detecting Pretraining Data / Min-K% Prob](https://github.com/swj0419/detect-pretrain-code) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 242 | — | Weijia Shi et al. (UW / Princeton / Google) |
@@ -55,6 +60,8 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [LLM Jailbreaks](https://github.com/langgptai/LLM-Jailbreaks) | Apache-2.0 | Multiple | ga | — | 3/5 | frontier | 661 | — | langgptai |
 | [LLM Prompt Injection Tester](https://github.com/Azcerate/llm-prompt-injection-tester) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | Azcerate |
 | [LLM Watermark Robustness](https://github.com/rexcoleman/llm-watermark-robustness) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | rexcoleman |
+| [Llmmap](https://github.com/Hellsender01/LLMMap) | MIT | Python | beta | — | 4/5 | — | — | — | Hellsender01 |
+| [Luckypipewrench Pipelock](https://github.com/luckyPipewrench/pipelock) | Apache-2.0 | Go | beta | — | 4/5 | — | — | — | luckyPipewrench |
 | [Medusa](https://github.com/Pantheon-Security/medusa) | AGPL-3.0-only | Python | ga | — | 3/5 | emerging | 598 | — | Pantheon-Security |
 | [Memory Poisoning Persistence](https://github.com/rexcoleman/memory-poisoning-persistence) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | rexcoleman |
 | [MIMIR](https://github.com/iamgroot42/mimir) | MIT | Python | beta | US | 4/5 | frontier | 190 | — | Anshuman Suri et al. (UVA/UW) |
@@ -72,6 +79,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [PINT Benchmark](https://github.com/lakeraai/pint-benchmark) | MIT | Python | beta | CH | 4/5 | emerging | 189 | — | Lakera AI |
 | [Pipelock](https://github.com/luckyPipewrench/pipelock) | Apache-2.0 | Go | ga | — | 3/5 | emerging | 717 | — | luckyPipewrench |
 | [Plexiglass](https://github.com/safellama/plexiglass) | MIT | Python | alpha | US | 4/5 | emerging | 153 | — | SafeLLama |
+| [Praetorian Inc Augustus](https://github.com/praetorian-inc/augustus) | Apache-2.0 | Go | beta | US | 4/5 | — | — | — | Praetorian |
 | [Prompt Hacker Collections](https://github.com/yunwei37/prompt-hacker-collections) | MIT | Multiple | ga | — | 4/5 | frontier | 329 | — | yunwei37 |
 | [PromptInject](https://github.com/agencyenterprise/PromptInject) | MIT | Python | alpha | US | 4/5 | emerging | 498 | — | AgencyEnterprise |
 | [promptmap](https://github.com/utkusen/promptmap) | GPL-3.0 | Python | beta | TR | 4/5 | frontier | 1.2k | — | Utku Sen |
@@ -87,13 +95,18 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Redforge AI](https://github.com/Aimer-zero/redforge-ai) | MIT | Python | beta | CN | 3/5 | frontier | 81 | — | Aimer-zero |
 | [Rejection Cascade](https://github.com/moscovium-mc/rejection-cascade) | MIT | JavaScript | beta | — | 0/5 | frontier | 2 | — | moscovium-mc |
 | [ReNeLLM](https://github.com/NJUNLP/ReNeLLM) | MIT | Python | beta | CN | 5/5 | frontier | 160 | — | NLP Lab, Nanjing University |
+| [Reverseclabs Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 4/5 | — | — | — | ReversecLabs |
 | [SafetyBench](https://github.com/thu-coai/SafetyBench) | MIT | Python | ga | CN | 4/5 | frontier | 290 | — | COAI Lab, Tsinghua University |
 | [SALAD-Bench](https://github.com/OpenSafetyLab/SALAD-BENCH) | Apache-2.0 | Python | ga | CN | 5/5 | frontier | 176 | — | OpenSafetyLab (Shanghai AI Lab) |
+| [Sandlock](https://github.com/multikernel/sandlock) | Apache-2.0 | Rust | beta | — | 4/5 | — | — | — | multikernel |
+| [Secureagentics Adrian](https://github.com/secureagentics/Adrian) | Apache-2.0 | Python | beta | — | 4/5 | — | — | — | Secureagentics |
 | [Secure MCP](https://github.com/makalin/SecureMCP) | MIT | Go | beta | — | 3/5 | frontier | 140 | — | makalin |
+| [Seojoonkim Prompt Guard](https://github.com/seojoonkim/prompt-guard) | MIT | Python | beta | — | 4/5 | — | — | — | seojoonkim |
 | [SORRY-Bench](https://github.com/SORRY-Bench/sorry-bench) | MIT | Python | ga | US | 5/5 | frontier | 83 | — | SORRY-Bench paper authors (UC Berkeley / Princeton / others) |
 | [Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 196 | — | ReversecLabs |
 | [Stealix](https://github.com/boschresearch/stealix) | AGPL-3.0-only | Python | beta | DE | 3/5 | frontier | 3 | — | boschresearch |
 | [StrongREJECT](https://github.com/dsbowen/strong_reject) | MIT | Python | beta | US | 5/5 | frontier | 140 | — | UC Berkeley (Dan Bowen et al.) |
+| [Superagent](https://github.com/superagent-ai/superagent) | MIT | TypeScript | ga | SE | 4/5 | — | — | — | Superagent |
 | [TAP - Tree of Attacks with Pruning](https://github.com/RICommunity/TAP) | MIT | Python | beta | US | 4/5 | frontier | 237 | — | Robust Intelligence Community |
 | [Tensor Trust](https://github.com/HumanCompatibleAI/tensor-trust) | BSD-2-Clause | Python | beta | US | 3/5 | frontier | 70 | — | HumanCompatibleAI |
 | [TextAttack](https://github.com/QData/TextAttack) | MIT | Python | ga | US | 5/5 | established | 3.4k | — | QData Lab (University of Virginia) |

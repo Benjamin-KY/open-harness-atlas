@@ -1,0 +1,41 @@
+id: autorag
+name: "Autorag"
+
+category: eval
+subcategory: rag-eval
+
+repo_url: https://github.com/Marker-Inc-Korea/AutoRAG
+homepage: https://marker-inc-korea.github.io/AutoRAG/
+license: Apache-2.0
+primary_language: Python
+
+tagline: "Open-source AutoML-style framework for finding the best RAG pipeline."
+
+description: |
+  AutoRAG is an automated RAG-pipeline optimisation framework. Treats RAG as a search problem: enumerate retriever / chunker / re-ranker / prompt-strategy combinations, evaluate against the user's QA set, report the best pipeline.
+
+  In the atlas: peer to `ragas`, `open-rag-eval`, `tonic-validate`, `trulens`. Differentiator is the search-and-optimise framing — produces a recommended pipeline, not just metrics.
+
+maturity: ga
+
+maintainer:
+  type: company
+  name: Marker Inc
+
+origin_country: KR
+
+model_agnostic_score: 5
+
+sovereignty_notes: |
+  Added 2026-06-14 via the awesome-list discovery sweep (GraphQL-batched parser; >= 2-list endorsement).
+  Apache-2.0; Python library; runs locally against the operator's documents + QA set. Judge LLM is operator-supplied (any OpenAI-compatible endpoint, including local Llama / Mistral).
+
+harness_paradigm_alignment: aligned
+
+deployment_posture: local-first
+
+adjacent_to:
+  - ragas
+  - open-rag-eval
+  - tonic-validate
+  - trulens
