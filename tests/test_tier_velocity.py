@@ -67,9 +67,29 @@ def _iso(days_ago: int) -> str:
         # Brand-new low-star → frontier.
         ({"stars": 12, "created_at": _iso(30), "last_commit_at": _iso(5),
           "archived": False}, "frontier"),
-        # Archived projects can never reach landmark.
+        # Archived projects can never reach landmark — but archived + ≥5k stars
+        # earns the ``canonical`` tier (post-launch 2026-06-14 follow-up; previously
+        # collapsed into ``frontier`` and rendered as dim long-tail).
         ({"stars": 50_000, "created_at": _iso(2_000), "last_commit_at": _iso(5),
+          "archived": True}, "canonical"),
+        # Archived but <5k stars stays in frontier — canonical is a positive
+        # signal, not a generic "archived" bucket.
+        ({"stars": 1_200, "created_at": _iso(1_000), "last_commit_at": _iso(60),
           "archived": True}, "frontier"),
+        # Archived + exactly 5k stars (canonical floor) still earns canonical.
+        ({"stars": 5_000, "created_at": _iso(900), "last_commit_at": _iso(30),
+          "archived": True}, "canonical"),
+        # Relaxed-recency established path: ≥20k stars + last commit ≤365d
+        # rescues foundational projects that don't push weekly
+        # (anthropics/courses at 212d, microsoft/JARVIS at 319d) from the
+        # otherwise-strict 180d gate. Without this rule they fall to frontier.
+        ({"stars": 22_000, "created_at": _iso(800), "last_commit_at": _iso(300),
+          "archived": False}, "established"),
+        # The relaxed path must NOT catch sub-20k projects — a 10k-star project
+        # at 300d stale stays in frontier (not enough star signal to override
+        # the recency requirement).
+        ({"stars": 10_000, "created_at": _iso(800), "last_commit_at": _iso(300),
+          "archived": False}, "frontier"),
         # 1.5yr old (548d) + 5k stars + active commit must NOT be landmark
         # (Phase 5 floor is 730d — guards against accidental relaxation).
         ({"stars": 6_000, "created_at": _iso(548), "last_commit_at": _iso(10),

@@ -12,12 +12,11 @@
 <text x="50.0" y="176.0" class="tile-blurb">Output-contract · citation · refusal · audit</text>
 <text x="380.7" y="164.0" class="tile-count" text-anchor="end">107</text>
 <text x="380.7" y="180.0" class="tile-count-label" text-anchor="end">entries</text>
-<rect x="50.0" y="196.0" width="34.0" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="84.0" y="196.0" width="43.3" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="127.3" y="196.0" width="34.0" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="161.3" y="196.0" width="204.0" height="8" rx="2" fill="#c8d3e0"/>
-<rect x="365.2" y="196.0" width="15.5" height="8" rx="2" fill="#e8ecf0"/>
-<text x="50.0" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">11</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">14</tspan> established · <tspan fill="#8aa6c8" font-weight="700">11</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">66</tspan> frontier</text>
+<rect x="50.0" y="196.0" width="43.3" height="8" rx="2" fill="#1f3a5f"/>
+<rect x="93.3" y="196.0" width="46.4" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="139.6" y="196.0" width="34.0" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="173.6" y="196.0" width="207.1" height="8" rx="2" fill="#c8d3e0"/>
+<text x="50.0" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">14</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">15</tspan> established · <tspan fill="#8aa6c8" font-weight="700">11</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">67</tspan> frontier</text>
 <text x="50.0" y="256.0" class="featured">› Langfuse</text>
 <text x="50.0" y="272.0" class="featured">› Guidance</text>
 <text x="50.0" y="288.0" class="featured">› Outlines</text>
@@ -27,12 +26,11 @@
 <text x="434.7" y="176.0" class="tile-blurb">Tool-using multi-turn agent runtimes</text>
 <text x="765.3" y="164.0" class="tile-count" text-anchor="end">251</text>
 <text x="765.3" y="180.0" class="tile-count-label" text-anchor="end">entries</text>
-<rect x="434.7" y="196.0" width="76.4" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="511.1" y="196.0" width="122.5" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="633.6" y="196.0" width="73.8" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="707.4" y="196.0" width="40.8" height="8" rx="2" fill="#c8d3e0"/>
-<rect x="748.2" y="196.0" width="17.1" height="8" rx="2" fill="#e8ecf0"/>
-<text x="434.6666666666667" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">58</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">93</tspan> established · <tspan fill="#8aa6c8" font-weight="700">56</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">31</tspan> frontier</text>
+<rect x="434.7" y="196.0" width="81.7" height="8" rx="2" fill="#1f3a5f"/>
+<rect x="516.3" y="196.0" width="144.9" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="661.3" y="196.0" width="63.2" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="724.5" y="196.0" width="38.2" height="8" rx="2" fill="#c8d3e0"/>
+<text x="434.6666666666667" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">62</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">110</tspan> established · <tspan fill="#8aa6c8" font-weight="700">48</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">29</tspan> frontier</text>
 <text x="434.7" y="256.0" class="featured">› LangChain</text>
 <text x="434.7" y="272.0" class="featured">› Langflow</text>
 <text x="434.7" y="288.0" class="featured">› AutoGen</text>
@@ -43,11 +41,10 @@
 <text x="1150.0" y="164.0" class="tile-count" text-anchor="end">210</text>
 <text x="1150.0" y="180.0" class="tile-count-label" text-anchor="end">entries</text>
 <rect x="819.3" y="196.0" width="7.9" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="827.2" y="196.0" width="34.6" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="861.8" y="196.0" width="28.3" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="890.2" y="196.0" width="250.4" height="8" rx="2" fill="#c8d3e0"/>
-<rect x="1140.6" y="196.0" width="9.4" height="8" rx="2" fill="#e8ecf0"/>
-<text x="819.3333333333334" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">5</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">22</tspan> established · <tspan fill="#8aa6c8" font-weight="700">18</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">159</tspan> frontier</text>
+<rect x="827.2" y="196.0" width="39.4" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="866.6" y="196.0" width="28.3" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="894.9" y="196.0" width="255.1" height="8" rx="2" fill="#c8d3e0"/>
+<text x="819.3333333333334" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">5</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">25</tspan> established · <tspan fill="#8aa6c8" font-weight="700">18</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">162</tspan> frontier</text>
 <text x="819.3" y="256.0" class="featured">› lm-evaluation-harness</text>
 <text x="819.3" y="272.0" class="featured">› promptfoo</text>
 <text x="819.3" y="288.0" class="featured">› DeepEval</text>
@@ -58,11 +55,10 @@
 <text x="380.7" y="376.0" class="tile-count" text-anchor="end">102</text>
 <text x="380.7" y="392.0" class="tile-count-label" text-anchor="end">entries</text>
 <rect x="50.0" y="408.0" width="6.5" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="56.5" y="408.0" width="13.0" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="69.5" y="408.0" width="61.6" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="131.0" y="408.0" width="236.7" height="8" rx="2" fill="#c8d3e0"/>
-<rect x="367.7" y="408.0" width="13.0" height="8" rx="2" fill="#e8ecf0"/>
-<text x="50.0" y="432.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">2</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">4</tspan> established · <tspan fill="#8aa6c8" font-weight="700">19</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">73</tspan> frontier</text>
+<rect x="56.5" y="408.0" width="16.2" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="72.7" y="408.0" width="61.6" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="134.3" y="408.0" width="246.4" height="8" rx="2" fill="#c8d3e0"/>
+<text x="50.0" y="432.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">2</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">5</tspan> established · <tspan fill="#8aa6c8" font-weight="700">19</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">76</tspan> frontier</text>
 <text x="50.0" y="468.0" class="featured">› garak</text>
 <text x="50.0" y="484.0" class="featured">› Giskard</text>
 <text x="50.0" y="500.0" class="featured">› PyRIT</text>
@@ -72,12 +68,11 @@
 <text x="434.7" y="388.0" class="tile-blurb">Gateways · inference runtimes · swappable backends</text>
 <text x="765.3" y="376.0" class="tile-count" text-anchor="end">95</text>
 <text x="765.3" y="392.0" class="tile-count-label" text-anchor="end">entries</text>
-<rect x="434.7" y="408.0" width="90.5" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="525.2" y="408.0" width="38.3" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="563.5" y="408.0" width="83.5" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="647.0" y="408.0" width="107.9" height="8" rx="2" fill="#c8d3e0"/>
-<rect x="754.9" y="408.0" width="10.4" height="8" rx="2" fill="#e8ecf0"/>
-<text x="434.6666666666667" y="432.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">26</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">11</tspan> established · <tspan fill="#8aa6c8" font-weight="700">24</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">31</tspan> frontier</text>
+<rect x="434.7" y="408.0" width="97.5" height="8" rx="2" fill="#1f3a5f"/>
+<rect x="532.1" y="408.0" width="38.3" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="570.4" y="408.0" width="83.5" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="654.0" y="408.0" width="107.9" height="8" rx="2" fill="#c8d3e0"/>
+<text x="434.6666666666667" y="432.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">28</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">11</tspan> established · <tspan fill="#8aa6c8" font-weight="700">24</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">31</tspan> frontier</text>
 <text x="434.7" y="468.0" class="featured">› vLLM</text>
 <text x="434.7" y="484.0" class="featured">› Ollama</text>
 <text x="434.7" y="500.0" class="featured">› LiteLLM</text>
@@ -87,12 +82,11 @@
 <text x="819.3" y="388.0" class="tile-blurb">Courses · tutorials · cookbooks at zero cost</text>
 <text x="1150.0" y="376.0" class="tile-count" text-anchor="end">51</text>
 <text x="1150.0" y="392.0" class="tile-count-label" text-anchor="end">entries</text>
-<rect x="819.3" y="408.0" width="71.3" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="890.7" y="408.0" width="64.8" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="955.5" y="408.0" width="19.5" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="974.9" y="408.0" width="129.7" height="8" rx="2" fill="#c8d3e0"/>
-<rect x="1104.6" y="408.0" width="45.4" height="8" rx="2" fill="#e8ecf0"/>
-<text x="819.3333333333334" y="432.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">11</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">10</tspan> established · <tspan fill="#8aa6c8" font-weight="700">3</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">20</tspan> frontier</text>
+<rect x="819.3" y="408.0" width="103.7" height="8" rx="2" fill="#1f3a5f"/>
+<rect x="923.1" y="408.0" width="77.8" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="1000.9" y="408.0" width="19.5" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="1020.3" y="408.0" width="129.7" height="8" rx="2" fill="#c8d3e0"/>
+<text x="819.3333333333334" y="432.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">16</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">12</tspan> established · <tspan fill="#8aa6c8" font-weight="700">3</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">20</tspan> frontier</text>
 <text x="819.3" y="468.0" class="featured">› OpenAI Cookbook</text>
 <text x="819.3" y="484.0" class="featured">› Prompt Engineering Guide</text>
 <text x="819.3" y="500.0" class="featured">› LLM Course</text>

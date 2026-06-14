@@ -1,0 +1,14 @@
+{
+  "created_at": "2023-08-18T11:43:45Z",
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-04-15T11:59:09Z",
+      "latest_release": "python-v0.7.5",
+      "license_spdx": "CC-BY-4.0",
+      "refreshed_at": "2026-06-14T07:15:31Z",
+      "stars": 58936
+    }
+  ]
+}

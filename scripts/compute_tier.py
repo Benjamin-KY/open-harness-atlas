@@ -13,7 +13,16 @@ Tier            Heuristic                                    Visual encoding (vi
 ==============  ===========================================  ============================
 ``landmark``    ≥30k stars **OR** ≥2 yr age AND ≥5k stars    Full opacity · larger radius
                 AND last-commit ≤30 d                         · solid outline
+``canonical``   ``archived: true`` AND ≥5k stars             Full opacity · slightly larger
+                                                              · solid outline · distinct
+                                                              purple swatch — signals
+                                                              "reference impl / feature-
+                                                              complete" rather than dim
+                                                              long-tail
 ``established`` ≥1k stars · ≥1 yr age · last-commit ≤180 d   Full opacity · normal radius
+                **OR** ≥20k stars · last-commit ≤365 d
+                (relaxed-recency path for foundational
+                projects with a slow cadence)
 ``emerging``    ≥100 stars · ≥3 mo age · last-commit ≤180 d  70% opacity · normal radius
 ``frontier``    everything else that passes inclusion        40% opacity · dashed outline
                 criteria                                      · smaller radius
@@ -34,6 +43,13 @@ adoption signal.
 The 2-year age requirement (Phase 5 calibration; previously 3-year)
 relaxes just enough to admit LLM-era harnesses (autogen, langgraph,
 crewai) without admitting fast-rising single-year hype projects.
+
+The ``canonical`` tier (post-launch 2026-06-14 follow-up) catches the
+"archived household-name reference implementation" cohort — without it,
+projects like ``huggingface/text-generation-inference`` (10k★, archived)
+or ``microsoft/TaskWeaver`` (6k★, archived) collapsed into ``frontier``
+and rendered as dim long-tail nodes despite being the canonical
+reference points reviewers would expect to see.
 
 Usage
 -----
@@ -67,6 +83,7 @@ METADATA_DIR = REGISTRY_DIR / "_metadata"
 TIERS_PATH = METADATA_DIR / "_tiers.json"
 
 TIER_LANDMARK = "landmark"
+TIER_CANONICAL = "canonical"
 TIER_ESTABLISHED = "established"
 TIER_EMERGING = "emerging"
 TIER_FRONTIER = "frontier"
@@ -115,12 +132,21 @@ def _classify(meta: dict[str, Any]) -> str:
     created_at = meta.get("created_at")
     archived = meta.get("archived", False)
 
-    if archived:
-        # Archived projects can still be referenced but don't earn an active tier.
-        return TIER_FRONTIER
-
     age_days, days_since_commit = _age_days(created_at, last_commit_at)
     have_age = age_days is not None
+
+    # Canonical: archived AND ≥5k stars — historically significant reference
+    # implementations whose maintainers signalled "this is done" or moved on
+    # (eg huggingface/text-generation-inference, microsoft/TaskWeaver). Without
+    # this tier these projects fell into ``frontier`` and rendered as dim
+    # long-tail nodes despite being household names.
+    if archived and isinstance(stars, int) and stars >= 5_000:
+        return TIER_CANONICAL
+
+    if archived:
+        # Other archived projects can still be referenced but don't earn an
+        # active tier — they drop to frontier and visibly read as "low signal".
+        return TIER_FRONTIER
 
     # Landmark: very high stars OR (mature + active + popular).
     # Threshold tuned against the actual catalogue (804 entries):
@@ -157,6 +183,18 @@ def _classify(meta: dict[str, Any]) -> str:
             (stars >= 1_000 and have_age and age_days >= 365)
             or (stars >= 3_000 and not have_age)
         )
+    ):
+        return TIER_ESTABLISHED
+
+    # Established (relaxed-recency path): ≥20k stars projects with a slow
+    # commit cadence (>180d but ≤365d) — catches foundational works whose
+    # maintainers don't push weekly (anthropics/courses, microsoft/JARVIS)
+    # but which are unambiguously "established" by any reasonable reader.
+    if (
+        isinstance(stars, int)
+        and stars >= 20_000
+        and days_since_commit is not None
+        and days_since_commit <= 365
     ):
         return TIER_ESTABLISHED
 
@@ -243,7 +281,8 @@ def main(argv: list[str] | None = None) -> int:
         total = sum(dist.values())
         print("Tier distribution")
         print("-----------------")
-        for tier in (TIER_LANDMARK, TIER_ESTABLISHED, TIER_EMERGING, TIER_FRONTIER, TIER_UNKNOWN):
+        for tier in (TIER_LANDMARK, TIER_CANONICAL, TIER_ESTABLISHED,
+                     TIER_EMERGING, TIER_FRONTIER, TIER_UNKNOWN):
             count = dist.get(tier, 0)
             pct = 100.0 * count / total if total else 0.0
             print(f"  {tier:13s} {count:4d}  ({pct:5.1f}%)")

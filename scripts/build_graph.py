@@ -39,12 +39,13 @@ CAT_COLOR = {
     "education":  "#7d3c98",
 }
 CAT_ORDER = ["governance", "agent", "eval", "redteam", "routing", "education"]
-TIER_ORDER = ["landmark", "established", "emerging", "frontier", "unknown"]
+TIER_ORDER = ["landmark", "canonical", "established", "emerging", "frontier", "unknown"]
 
 # Per-tier visual encoding for the interactive (3D + 2D) viewers.
 # The static SVG keeps a simpler encoding to stay legible at A4 print size.
 TIER_OPACITY = {
     "landmark":    1.00,
+    "canonical":   0.95,
     "established": 1.00,
     "emerging":    0.70,
     "frontier":    0.40,
@@ -52,6 +53,7 @@ TIER_OPACITY = {
 }
 TIER_RADIUS_MULTIPLIER = {
     "landmark":    1.30,
+    "canonical":   1.10,
     "established": 1.00,
     "emerging":    0.85,
     "frontier":    0.70,
@@ -64,6 +66,7 @@ TIER_RADIUS_MULTIPLIER = {
 # overlays a faint ring on `data_missing` nodes (set below in the payload).
 TIER_OUTLINE = {
     "landmark":    "solid",
+    "canonical":   "solid",
     "established": "solid",
     "emerging":    "solid",
     "frontier":    "dashed",

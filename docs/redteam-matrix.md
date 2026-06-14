@@ -14,7 +14,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Agent Semantic Resistance](https://github.com/rexcoleman/agent-semantic-resistance) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | rexcoleman |
 | [AgentDojo](https://github.com/ethz-spylab/agentdojo) | MIT | Python | ga | CH | 5/5 | emerging | 619 | — | ETH Zürich SPY Lab |
 | [Agentic Radar](https://github.com/splx-ai/agentic-radar) | Apache-2.0 | Python | beta | SI | 5/5 | frontier | 979 | — | SPLX AI |
-| [AI Red Teaming Playground Labs](https://github.com/microsoft/AI-Red-Teaming-Playground-Labs) | MIT | TypeScript | ga | — | 3/5 | — | — | — | microsoft |
+| [AI Red Teaming Playground Labs](https://github.com/microsoft/AI-Red-Teaming-Playground-Labs) | MIT | TypeScript | ga | — | 3/5 | established | 2.0k | — | microsoft |
 | [AI Seclists](https://github.com/AUTHENSOR/ai-seclists) | MIT | HTML | beta | — | 3/5 | frontier | 0 | — | AUTHENSOR |
 | [AI Security Lab](https://github.com/clolomagico123/ai-security-lab) | MIT | Multiple | beta | — | 3/5 | frontier | 4 | — | clolomagico123 |
 | [AI Security LABS](https://github.com/alekhakumarswain/AI-SECURITY-LABS) | MIT | HTML | beta | — | 3/5 | frontier | 0 | — | alekhakumarswain |
@@ -27,7 +27,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Automated Adversial Testing Framework](https://github.com/A-Kuo/Automated-Adversial-Testing-Framework) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | A-Kuo |
 | [AutoPrompt (Intent-based Prompt Calibration)](https://github.com/Eladlev/AutoPrompt) | Apache-2.0 | Python | beta | IL | 5/5 | frontier | 3.0k | — | Elad Levi et al. |
 | [BackdoorLLM](https://github.com/bboylyg/BackdoorLLM) | MIT | Python | beta | CN | 4/5 | emerging | 308 | — | Yige Li et al. (NeurIPS 2025 paper) |
-| [BIPIA](https://github.com/microsoft/BIPIA) | MIT | Python | beta | US | 4/5 | — | — | — | Microsoft Research |
+| [BIPIA](https://github.com/microsoft/BIPIA) | MIT | Python | beta | US | 4/5 | frontier | 135 | — | Microsoft Research |
 | [Chat GPT Jailbreak Pro](https://github.com/Batlez/ChatGPT-Jailbreak-Pro) | MIT | JavaScript | beta | — | 3/5 | frontier | 179 | — | Batlez |
 | [CipherChat](https://github.com/RobustNLP/CipherChat) | MIT | Python | beta | CN | 4/5 | frontier | 628 | — | Youliang Yuan et al. (CUHK/Tencent AI Lab) |
 | [CleverHans](https://github.com/cleverhans-lab/cleverhans) | MIT | Python | ga | US | 4/5 | frontier | 6.4k | — | Google Brain / OpenAI / Penn State (original); community since |
@@ -85,7 +85,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [promptmap](https://github.com/utkusen/promptmap) | GPL-3.0 | Python | beta | TR | 4/5 | frontier | 1.2k | — | Utku Sen |
 | [Prompt Fuzzer (ps-fuzz)](https://github.com/prompt-security/ps-fuzz) | MIT | Python | beta | IL | 4/5 | emerging | 686 | — | Prompt Security |
 | [PurpleLlama / CyberSecEval](https://github.com/meta-llama/PurpleLlama) | MIT | Python | ga | US | 4/5 | established | 4.2k | — | Meta AI |
-| [PyRIT (Python Risk Identification Tool)](https://github.com/Azure/PyRIT) | MIT | Python | ga | US | 5/5 | — | — | — | Microsoft (AI Red Team) |
+| [PyRIT (Python Risk Identification Tool)](https://github.com/Azure/PyRIT) | MIT | Python | ga | US | 5/5 | frontier | 63 | — | Microsoft (AI Red Team) |
 | [R-Judge](https://github.com/Lordog/R-Judge) | MIT | Python | beta | CN | 4/5 | emerging | 105 | — | SJTU / Tongxin Yuan et al. |
 | [RAG Security Scanner](https://github.com/olegnazarov/rag-security-scanner) | MIT | Python | beta | — | 3/5 | frontier | 70 | — | olegnazarov |
 | [Raguard](https://github.com/Carlos-Projects/RAGuard) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | Carlos-Projects |
@@ -99,7 +99,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Secure MCP](https://github.com/makalin/SecureMCP) | MIT | Go | beta | — | 3/5 | frontier | 140 | — | makalin |
 | [Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 196 | — | ReversecLabs |
 | [Stealix](https://github.com/boschresearch/stealix) | AGPL-3.0-only | Python | beta | — | 3/5 | frontier | 3 | — | boschresearch |
-| [StrongREJECT](https://github.com/dsbowen/strong_reject) | MIT | Python | beta | US | 5/5 | — | — | — | UC Berkeley (Dan Bowen et al.) |
+| [StrongREJECT](https://github.com/dsbowen/strong_reject) | MIT | Python | beta | US | 5/5 | frontier | 140 | — | UC Berkeley (Dan Bowen et al.) |
 | [TAP - Tree of Attacks with Pruning](https://github.com/RICommunity/TAP) | MIT | Python | beta | US | 4/5 | frontier | 237 | — | Robust Intelligence Community |
 | [Tensor Trust](https://github.com/HumanCompatibleAI/tensor-trust) | BSD-2-Clause | Python | beta | — | 3/5 | frontier | 70 | — | HumanCompatibleAI |
 | [TextAttack](https://github.com/QData/TextAttack) | MIT | Python | ga | US | 5/5 | established | 3.4k | — | QData Lab (University of Virginia) |

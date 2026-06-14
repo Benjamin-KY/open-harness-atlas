@@ -23,6 +23,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "adalflow": {
+    "days_since_commit": 15,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 4168,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "adarubrics": {
     "days_since_commit": 6,
     "history_days": null,
@@ -132,6 +140,22 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 0,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "agent-framework": {
+    "days_since_commit": -1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 11318,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "agent-governance-toolkit": {
+    "days_since_commit": -1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 4272,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -471,6 +495,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "ai-red-teaming-playground-labs": {
+    "days_since_commit": 120,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 1973,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "ai-seclists": {
     "days_since_commit": 1,
     "history_days": null,
@@ -591,6 +623,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "anthropics-courses": {
+    "days_since_commit": 212,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 21835,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "antigravity-awesome-skills": {
     "days_since_commit": 0,
     "history_days": null,
@@ -676,6 +716,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 23,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "arc-agi": {
+    "days_since_commit": 435,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 4782,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -855,6 +903,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "autogen": {
+    "days_since_commit": 59,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 58936,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "automated-adversial-testing-framework": {
     "days_since_commit": 64,
     "history_days": null,
@@ -999,6 +1055,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "bentoml": {
+    "days_since_commit": 10,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 8672,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "besttester": {
     "days_since_commit": 53,
     "history_days": null,
@@ -1044,6 +1108,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 507,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "bipia": {
+    "days_since_commit": 789,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 135,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -1927,6 +1999,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "fara": {
+    "days_since_commit": 15,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 5471,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "fast-agent": {
     "days_since_commit": 0,
     "history_days": null,
@@ -2599,6 +2679,30 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "huggingface-tgi": {
+    "days_since_commit": 84,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 10862,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "huggingface-trl": {
+    "days_since_commit": 0,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 18633,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "hugginggpt-jarvis": {
+    "days_since_commit": 319,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 24850,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "humaneval": {
     "days_since_commit": 512,
     "history_days": null,
@@ -3111,6 +3215,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "livebench": {
+    "days_since_commit": 1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 1196,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "livecodebench": {
     "days_since_commit": 332,
     "history_days": null,
@@ -3591,6 +3703,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "mcp-for-beginners": {
+    "days_since_commit": 1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 16526,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "mcp-server": {
     "days_since_commit": 0,
     "history_days": null,
@@ -3687,11 +3807,35 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "metr-task-standard": {
+    "days_since_commit": 495,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 181,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "metrillm": {
     "days_since_commit": 11,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 5,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "microsoft-agent-framework": {
+    "days_since_commit": -1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 11318,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "microsoft-ai-agents-for-beginners": {
+    "days_since_commit": 19,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 67176,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -3892,6 +4036,46 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 331,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "ms-ai-for-beginners": {
+    "days_since_commit": 2,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 48123,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "ms-data-science-for-beginners": {
+    "days_since_commit": 3,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 35622,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "ms-generative-ai-for-beginners": {
+    "days_since_commit": 2,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 111940,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "ms-ml-for-beginners": {
+    "days_since_commit": 4,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 86812,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "ms-phi-cookbook": {
+    "days_since_commit": 4,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 3750,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4252,6 +4436,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 18688,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "openai-preparedness": {
+    "days_since_commit": 53,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 1220,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4655,6 +4847,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "presidio": {
+    "days_since_commit": 6,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 8598,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "principles-of-ai-llms": {
     "days_since_commit": 364,
     "history_days": null,
@@ -4684,6 +4884,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 329,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "promptbench": {
+    "days_since_commit": 113,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 2808,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4732,6 +4940,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 3038,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "prompty": {
+    "days_since_commit": 0,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 1217,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4796,6 +5012,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 17744,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "pyrit": {
+    "days_since_commit": 80,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 63,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -4991,6 +5215,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "rd-agent-microsoft": {
+    "days_since_commit": 8,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 13431,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "rebuff": {
     "days_since_commit": 675,
     "history_days": null,
@@ -5060,6 +5292,22 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 0,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "responsible-ai-toolbox": {
+    "days_since_commit": 45,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 1782,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "responsible-ai-workshop": {
+    "days_since_commit": 471,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 49,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -5228,6 +5476,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 1,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "semantic-kernel": {
+    "days_since_commit": 1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 28115,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -5479,6 +5735,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "strong-reject": {
+    "days_since_commit": 341,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 140,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "structured-outputs": {
     "days_since_commit": 172,
     "history_days": null,
@@ -5599,6 +5863,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "taskweaver": {
+    "days_since_commit": 82,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 6165,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "tau2-bench": {
     "days_since_commit": 2,
     "history_days": null,
@@ -5615,6 +5887,14 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "tensorrt-llm": {
+    "days_since_commit": -1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 13865,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "text-generation-webui": {
     "days_since_commit": 11,
     "history_days": null,
@@ -5628,6 +5908,14 @@
     "history_days": null,
     "snapshot_count": 1,
     "stars": 3433,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "textgrad": {
+    "days_since_commit": 323,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 3606,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
@@ -5823,11 +6111,27 @@
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },
+  "typechat": {
+    "days_since_commit": 10,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 8665,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
   "typescript-sdk": {
     "days_since_commit": 31,
     "history_days": null,
     "snapshot_count": 1,
     "stars": 6,
+    "stars_per_week_12w": null,
+    "stars_per_week_4w": null
+  },
+  "ufo": {
+    "days_since_commit": 1,
+    "history_days": null,
+    "snapshot_count": 1,
+    "stars": 8989,
     "stars_per_week_12w": null,
     "stars_per_week_4w": null
   },

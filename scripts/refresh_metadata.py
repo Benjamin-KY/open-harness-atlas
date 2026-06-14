@@ -81,25 +81,45 @@ SNAPSHOT_FIELDS = (
 
 
 def _gh_request(path: str, token: str | None) -> dict[str, Any] | None:
-    """GET ``{GH_API}{path}`` and return parsed JSON or ``None`` on error."""
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "User-Agent": USER_AGENT,
-        "X-GitHub-Api-Version": "2022-11-28",
-    }
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-    req = Request(f"{GH_API}{path}", headers=headers)
-    try:
-        with urlopen(req, timeout=20) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except HTTPError as exc:
-        # 404 = repo moved / renamed; 403 = rate-limited or token-restricted.
-        sys.stderr.write(f"  ! GET {path} -> HTTP {exc.code}\n")
-        return None
-    except (URLError, TimeoutError, OSError) as exc:
-        sys.stderr.write(f"  ! GET {path} -> {type(exc).__name__}: {exc}\n")
-        return None
+    """GET ``{GH_API}{path}`` and return parsed JSON or ``None`` on error.
+
+    Falls back to an anonymous request if a token-authenticated request
+    returns HTTP 403. This handles the common case where the local token
+    has not been SAML-SSO authorised for an org (microsoft, Azure, etc) —
+    the public REST endpoints still work anonymously, just at a lower
+    rate limit. Without this fallback every SAML-protected org becomes
+    invisible to the refresh.
+    """
+
+    def _do(use_token: bool) -> tuple[dict[str, Any] | None, int | None]:
+        headers = {
+            "Accept": "application/vnd.github+json",
+            "User-Agent": USER_AGENT,
+            "X-GitHub-Api-Version": "2022-11-28",
+        }
+        if use_token and token:
+            headers["Authorization"] = f"Bearer {token}"
+        req = Request(f"{GH_API}{path}", headers=headers)
+        try:
+            with urlopen(req, timeout=20) as resp:
+                return json.loads(resp.read().decode("utf-8")), resp.status
+        except HTTPError as exc:
+            return None, exc.code
+        except (URLError, TimeoutError, OSError) as exc:
+            sys.stderr.write(f"  ! GET {path} -> {type(exc).__name__}: {exc}\n")
+            return None, None
+
+    data, status = _do(use_token=True)
+    if data is not None:
+        return data
+    if status == 403 and token:
+        # Probable SAML-SSO block — retry without the token.
+        data, status = _do(use_token=False)
+        if data is not None:
+            return data
+    if status is not None:
+        sys.stderr.write(f"  ! GET {path} -> HTTP {status}\n")
+    return None
 
 
 def _parse_repo_url(repo_url: str) -> tuple[str, str] | None:

@@ -17,7 +17,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Aqbot](https://github.com/AQBot-Desktop/AQBot) | AGPL-3.0-only | TypeScript | ga | — | 3/5 | frontier | 635 | — | AQBot-Desktop |
 | [Aqueduct](https://github.com/TU-Wien-dataLAB/aqueduct) | BSD-3-Clause | Python | beta | — | 3/5 | frontier | 23 | — | TU-Wien-dataLAB |
 | [Atidraw](https://github.com/atinux/atidraw) | MIT | Vue | ga | — | 3/5 | emerging | 211 | — | atinux |
-| [BentoML](https://github.com/bentoml/BentoML) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | BentoML / bentoml.com |
+| [BentoML](https://github.com/bentoml/BentoML) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 8.7k | — | BentoML / bentoml.com |
 | [Bitrouter](https://github.com/bitrouter/bitrouter) | Apache-2.0 | Rust | beta | — | 3/5 | emerging | 179 | — | bitrouter |
 | [Burst GPT](https://github.com/HPMLL/BurstGPT) | CC-BY-4.0 | Python | ga | — | 3/5 | emerging | 269 | — | HPMLL |
 | [Claude Code Usage Bar](https://github.com/leeguooooo/claude-code-usage-bar) | MIT | Python | ga | — | 3/5 | emerging | 270 | — | leeguooooo |
@@ -36,7 +36,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Go Model](https://github.com/ENTERPILOT/GoModel) | MIT | Go | ga | — | 4/5 | emerging | 938 | — | ENTERPILOT |
 | [Helicone](https://github.com/Helicone/helicone) | Apache-2.0 | TypeScript | ga | US | 4/5 | landmark | 5.8k | — | Helicone Inc. |
 | [Higress](https://github.com/higress-group/higress) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 8.6k | — | higress-group |
-| [Hugging Face Text Generation Inference](https://github.com/huggingface/text-generation-inference) | Apache-2.0 | Python | ga | US | 4/5 | — | — | — | Hugging Face |
+| [Hugging Face Text Generation Inference](https://github.com/huggingface/text-generation-inference) | Apache-2.0 | Python | ga | US | 4/5 | canonical | 10.9k | — | Hugging Face |
 | [Izwi](https://github.com/izwi-ai/izwi) | MIT | Rust | ga | — | 4/5 | emerging | 339 | — | izwi-ai |
 | [Jan](https://github.com/janhq/jan) | Apache-2.0 | TypeScript | beta | VN | 5/5 | landmark | 43.0k | — | Menlo Research (janhq) |
 | [kgateway](https://github.com/kgateway-dev/kgateway) | Apache-2.0 | Go | ga | US | 4/5 | landmark | 5.6k | — | kgateway-dev (ex-Solo.io) |
@@ -90,7 +90,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [LLM (CLI)](https://github.com/simonw/llm) | Apache-2.0 | Python | ga | GB | 5/5 | landmark | 12.0k | — | Simon Willison |
 | [Smarter Router](https://github.com/peva3/SmarterRouter) | MIT | Python | beta | — | 4/5 | emerging | 137 | — | peva3 |
 | [Spiceai](https://github.com/spiceai/spiceai) | Apache-2.0 | Rust | ga | — | 3/5 | established | 3.0k | — | spiceai |
-| [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Apache-2.0 | Python | ga | US | 2/5 | — | — | — | NVIDIA Corporation |
+| [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Apache-2.0 | Python | ga | US | 2/5 | landmark | 13.9k | — | NVIDIA Corporation |
 | [text-generation-webui](https://github.com/oobabooga/textgen) | AGPL-3.0 | Python | ga | US | 5/5 | landmark | 47.3k | — | oobabooga |
 | [Tiny Vllm](https://github.com/jmaczan/tiny-vllm) | Apache-2.0 | C++ | ga | — | 4/5 | emerging | 793 | — | jmaczan |
 | [Tokligence Gateway](https://github.com/tokligence/tokligence-gateway) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 19 | — | tokligence |
