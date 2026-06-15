@@ -171,7 +171,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Ragali Q](https://github.com/dariero/RagaliQ) | MIT | Python | beta | — | 0/5 | frontier | 1 | — | dariero |
 | [Ragas Evaluation Harness](https://github.com/sunilp303/ragas-evaluation-harness) | MIT | Python | beta | — | 4/5 | frontier | 1 | — | sunilp303 |
 | [Ragas](https://github.com/explodinggradients/ragas) | Apache-2.0 | Python | ga | IN | 4/5 | established | 14.4k | — | Exploding Gradients |
-| [RAGChecker](https://github.com/amazon-science/RAGChecker) | Apache-2.0 | Python | beta | US | 4/5 | frontier | 1.1k | — | Amazon AWS AI |
+| [RAGChecker](https://github.com/amazon-science/RAGChecker) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 1.1k | — | Amazon AWS AI |
 | [Ragrank](https://github.com/izam-mohammed/ragrank) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 47 | — | izam-mohammed |
 | [Refuse Bench](https://github.com/gimocimo/RefuseBench) | MIT | Python | beta | — | 3/5 | frontier | 2 | — | gimocimo |
 | [Repoagentbench](https://github.com/HumphreySun98/repoagentbench) | MIT | Python | beta | — | 3/5 | frontier | 32 | — | HumphreySun98 |

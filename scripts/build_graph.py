@@ -10,6 +10,7 @@ Outputs:
 """
 import json
 from collections import defaultdict
+from datetime import UTC, datetime
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -33,6 +34,16 @@ USE_CASES_PATH = REPO / "companion" / "use_cases.yaml"
 SUPPLY_CHAINS_PATH = REPO / "companion" / "supply_chains.yaml"
 # Per-node sparkline data: how many recent star counts to emit per node.
 SPARK_MAX_POINTS = 12
+
+# A sidecar whose most-recent refreshed_at is older than this is treated
+# as `data_missing` even if a tier was successfully computed from the
+# stale data — the tier reflects pre-staleness reality but downstream
+# adoption signals can no longer be trusted. 60 days is roughly 2x the
+# refresh-metadata weekly cadence, so this only fires when the refresh
+# job has been skipping an entry for multiple cycles (rate-limit, SAML
+# block, repo gone). The viewer renders these as dotted-outlined +
+# faded to flag them for curator follow-up.
+SIDECAR_STALE_DAYS = 60
 
 # BRAND palette (mirrors harmless-harnesses + scripts/build_visuals.py).
 CAT_COLOR = {
@@ -203,6 +214,63 @@ def load_spark(entry_id: str) -> list[int]:
         if isinstance(stars, int):
             pts.append(stars)
     return pts
+
+
+def _sidecar_latest_refresh(entry_id: str, metadata_dir: Path | None = None) -> datetime | None:
+    """Return the most-recent ``refreshed_at`` from a sidecar, or ``None``.
+
+    Handles both the snapshot shape (``snapshots`` array, current) and
+    the legacy flat shape (top-level ``refreshed_at``, pre-Phase-4 entries
+    that haven't been re-refreshed since the refactor). Returns ``None``
+    if the sidecar is missing, unparseable, or has no usable timestamp.
+    """
+    base = metadata_dir or METADATA_DIR
+    sidecar_path = base / f"{entry_id}.json"
+    if not sidecar_path.exists():
+        return None
+    try:
+        sidecar = json.loads(sidecar_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    if not isinstance(sidecar, dict):
+        return None
+    ts: str | None = None
+    snapshots = sidecar.get("snapshots")
+    if isinstance(snapshots, list) and snapshots:
+        ts = snapshots[-1].get("refreshed_at") if isinstance(snapshots[-1], dict) else None
+    if ts is None:
+        ts = sidecar.get("refreshed_at")
+    if not isinstance(ts, str):
+        return None
+    try:
+        return datetime.strptime(ts.replace("Z", "+0000"), "%Y-%m-%dT%H:%M:%S%z")
+    except ValueError:
+        try:
+            return datetime.fromisoformat(ts.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+
+
+def is_sidecar_stale(
+    entry_id: str,
+    *,
+    stale_days: int = SIDECAR_STALE_DAYS,
+    now: datetime | None = None,
+    metadata_dir: Path | None = None,
+) -> bool:
+    """``True`` when the sidecar's latest refresh is older than ``stale_days``.
+
+    A missing sidecar / unparseable JSON / no timestamp returns ``False``
+    here — that case is already covered by the tier-unknown path of
+    ``data_missing``. We only want this helper to fire for the
+    *stale-but-present* case so the two conditions are independently
+    distinguishable in tests and downstream tooling.
+    """
+    latest = _sidecar_latest_refresh(entry_id, metadata_dir=metadata_dir)
+    if latest is None:
+        return False
+    reference = now or datetime.now(UTC)
+    return (reference - latest).days > stale_days
 
 
 def load_entries() -> list[dict]:
@@ -392,6 +460,33 @@ def main() -> int:
         mas_counts[G.nodes[n].get("mas", 3)] += 1
         posture_counts[G.nodes[n].get("deployment_posture") or "unknown"] += 1
 
+    # data_missing: union of two operational signals — unknown tier
+    # (sidecar fetch failed / SSO-blocked / not yet refreshed) and
+    # stale sidecar (refresh job has skipped this entry for > the
+    # SIDECAR_STALE_DAYS window). Both warrant the same visual cue:
+    # the data underlying the tier classification can't be trusted to
+    # be current. Once flagged, tier_outline drops to "dotted" and
+    # tier_opacity clamps to 0.40 so the entry visibly recedes — a
+    # "needs attention" signal for the curator without removing it
+    # from the catalogue.
+    now_utc = datetime.now(UTC)
+    data_missing_map = {
+        n: (tiers.get(n, "unknown") == "unknown") or is_sidecar_stale(n, now=now_utc)
+        for n in G.nodes
+    }
+    tier_for = {n: tiers.get(n, "unknown") for n in G.nodes}
+
+    def _node_outline(n: str) -> str:
+        if data_missing_map[n]:
+            return "dotted"
+        return TIER_OUTLINE[tier_for[n]]
+
+    def _node_opacity(n: str) -> float:
+        base = TIER_OPACITY[tier_for[n]]
+        if data_missing_map[n]:
+            return min(0.40, base)
+        return base
+
     payload = {
         "meta": {
             "n_nodes": G.number_of_nodes(),
@@ -407,7 +502,7 @@ def main() -> int:
             "tiers": [
                 {
                     "key": t,
-                    "count": sum(1 for n in G.nodes if tiers.get(n, "unknown") == t),
+                    "count": sum(1 for n in G.nodes if tier_for[n] == t),
                     "opacity": TIER_OPACITY[t],
                     "radius_mult": TIER_RADIUS_MULTIPLIER[t],
                     "outline": TIER_OUTLINE[t],
@@ -449,17 +544,18 @@ def main() -> int:
                 "maintainer_name": G.nodes[n].get("maintainer_name", ""),
                 "alignment": G.nodes[n].get("harness_alignment", ""),
                 "deployment_posture": G.nodes[n].get("deployment_posture", ""),
-                "tier": tiers.get(n, "unknown"),
-                "tier_opacity": TIER_OPACITY[tiers.get(n, "unknown")],
-                "tier_radius_mult": TIER_RADIUS_MULTIPLIER[tiers.get(n, "unknown")],
-                "tier_outline": TIER_OUTLINE[tiers.get(n, "unknown")],
-                # data_missing distinguishes "metadata fetch failed / SSO-blocked"
-                # (operational issue — likely fixable) from "frontier" (entry is
-                # genuinely new / low-signal). Critical for projects like
-                # microsoft/autogen (40k+ stars) that fall into `unknown` only
-                # because their sidecar fetch failed; without this flag the
-                # viewer would render them identically to a 10-star hobby repo.
-                "data_missing": tiers.get(n, "unknown") == "unknown",
+                "tier": tier_for[n],
+                "tier_opacity": _node_opacity(n),
+                "tier_radius_mult": TIER_RADIUS_MULTIPLIER[tier_for[n]],
+                "tier_outline": _node_outline(n),
+                # data_missing — see comment above the data_missing_map
+                # declaration. Set when either the tier couldn't be
+                # computed (unknown) or the sidecar exists but its most
+                # recent refresh is older than SIDECAR_STALE_DAYS. The
+                # viewer surfaces this as a dotted outline + clamped
+                # opacity regardless of underlying tier; downstream
+                # tooling can also key off this field directly.
+                "data_missing": data_missing_map[n],
                 "stars": (velocity.get(n) or {}).get("stars"),
                 "velocity_4w": (velocity.get(n) or {}).get("stars_per_week_4w"),
                 "velocity_12w": (velocity.get(n) or {}).get("stars_per_week_12w"),

@@ -27,12 +27,12 @@
 <text x="434.7" y="176.0" class="tile-blurb">Tool-using multi-turn agent runtimes</text>
 <text x="765.3" y="164.0" class="tile-count" text-anchor="end">242</text>
 <text x="765.3" y="180.0" class="tile-count-label" text-anchor="end">entries</text>
-<rect x="434.7" y="196.0" width="72.4" height="8" rx="2" fill="#1f3a5f"/>
-<rect x="507.1" y="196.0" width="138.0" height="8" rx="2" fill="#4a6fa5"/>
-<rect x="645.1" y="196.0" width="62.9" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="707.9" y="196.0" width="15.0" height="8" rx="2" fill="#c8d3e0"/>
+<rect x="434.7" y="196.0" width="71.1" height="8" rx="2" fill="#1f3a5f"/>
+<rect x="505.7" y="196.0" width="139.4" height="8" rx="2" fill="#4a6fa5"/>
+<rect x="645.1" y="196.0" width="64.2" height="8" rx="2" fill="#8aa6c8"/>
+<rect x="709.3" y="196.0" width="13.7" height="8" rx="2" fill="#c8d3e0"/>
 <rect x="723.0" y="196.0" width="15.0" height="8" rx="2" fill="#e8ecf0"/>
-<text x="434.6666666666667" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">53</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">101</tspan> established · <tspan fill="#8aa6c8" font-weight="700">46</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">11</tspan> frontier</text>
+<text x="434.6666666666667" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">52</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">102</tspan> established · <tspan fill="#8aa6c8" font-weight="700">47</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">10</tspan> frontier</text>
 <text x="434.7" y="256.0" class="featured">› LangChain</text>
 <text x="434.7" y="272.0" class="featured">› Langflow</text>
 <text x="434.7" y="288.0" class="featured">› AutoGen</text>
@@ -45,9 +45,9 @@
 <rect x="819.3" y="196.0" width="8.0" height="8" rx="2" fill="#1f3a5f"/>
 <rect x="827.4" y="196.0" width="41.7" height="8" rx="2" fill="#4a6fa5"/>
 <rect x="869.1" y="196.0" width="48.2" height="8" rx="2" fill="#8aa6c8"/>
-<rect x="917.2" y="196.0" width="200.6" height="8" rx="2" fill="#c8d3e0"/>
-<rect x="1117.9" y="196.0" width="4.8" height="8" rx="2" fill="#e8ecf0"/>
-<text x="819.3333333333334" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">5</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">26</tspan> established · <tspan fill="#8aa6c8" font-weight="700">30</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">125</tspan> frontier</text>
+<rect x="917.2" y="196.0" width="199.0" height="8" rx="2" fill="#c8d3e0"/>
+<rect x="1116.3" y="196.0" width="4.8" height="8" rx="2" fill="#e8ecf0"/>
+<text x="819.3333333333334" y="220.0" class="tile-blurb"><tspan fill="#1f3a5f" font-weight="700">5</tspan> landmark · <tspan fill="#4a6fa5" font-weight="700">26</tspan> established · <tspan fill="#8aa6c8" font-weight="700">30</tspan> emerging · <tspan fill="#c8d3e0" font-weight="700">124</tspan> frontier</text>
 <text x="819.3" y="256.0" class="featured">› lm-evaluation-harness</text>
 <text x="819.3" y="272.0" class="featured">› promptfoo</text>
 <text x="819.3" y="288.0" class="featured">› DeepEval</text>
