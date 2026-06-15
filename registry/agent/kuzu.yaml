@@ -1,0 +1,27 @@
+id: kuzu
+name: Kuzu
+category: agent
+subcategory: graph-store
+repo_url: https://github.com/kuzudb/kuzu
+homepage: https://kuzudb.com/
+license: MIT
+primary_language: C++
+tagline: "Embedded property graph database — Cypher support, vector and full-text search built in. Single-file local store for GraphRAG-style retrieval."
+description: |
+  Kuzu is an embedded property-graph database written in C++. Implements OpenCypher for graph queries with first-class vector and full-text indexes alongside graph traversal. Designed for use as an in-process store the way SQLite is used for relational data — single file on disk, embedded into the application process, no network service. The repository was archived in October 2025; active development continues under successor projects but this reference impl remains widely deployed.
+
+  In the atlas: kuzu is catalogued under agent / graph-store as the embedded counterpart to neo4j-graphrag-python (which depends on a Neo4j server). Critical for GraphRAG-style retrieval stacks (graphrag, lightrag) that need a local-first graph + vector store without a separate database process.
+maturity: ga
+maintainer:
+  type: community
+  name: KuzuDB (archived)
+origin_country: CA
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; embedded library (no daemon). Data lives entirely inside the operator's process and on local disk. No network surface. No call-home. Archived in October 2025; catalogued as a reference implementation of the embedded-graph-store pattern.
+harness_paradigm_alignment: partial
+deployment_posture: local-only
+adjacent_to:
+- graphrag
+- lightrag

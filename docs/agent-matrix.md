@@ -39,6 +39,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Anything LLM](https://github.com/Mintplex-Labs/anything-llm) | MIT | JavaScript | ga | US | 3/5 | landmark | 61.5k | — | Mintplex-Labs |
 | [Archestra](https://github.com/archestra-ai/archestra) | AGPL-3.0-only | TypeScript | ga | — | 4/5 | emerging | 3.8k | — | archestra-ai |
 | [Arc Reel](https://github.com/ArcReel/ArcReel) | AGPL-3.0-only | Python | ga | CN | 3/5 | emerging | 2.6k | — | ArcReel |
+| [arXiv MCP Server](https://github.com/blazickjp/arxiv-mcp-server) | Apache-2.0 | Python | ga | — | 5/5 | — | — | — | blazickjp |
 | [Asset Ops Bench](https://github.com/IBM/AssetOpsBench) | Apache-2.0 | Python | ga | US | 3/5 | established | 1.8k | — | IBM |
 | [Astr Bot](https://github.com/AstrBotDevs/AstrBot) | AGPL-3.0-only | Python | ga | — | 3/5 | landmark | 34.6k | — | AstrBotDevs |
 | [Astron Agent](https://github.com/iflytek/astron-agent) | Apache-2.0 | Java | ga | CN | 3/5 | emerging | 8.6k | — | iflytek |
@@ -49,6 +50,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [BabyAGI](https://github.com/yoheinakajima/babyagi) | MIT | Python | alpha | US | 4/5 | established | 22.3k | — | yoheinakajima |
 | [Babysitter](https://github.com/a5c-ai/babysitter) | MIT | JavaScript | ga | — | 4/5 | emerging | 1.3k | — | a5c-ai |
 | [BeeAI Framework](https://github.com/i-am-bee/beeai-framework) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.3k | — | IBM / Linux Foundation |
+| [BISHENG](https://github.com/dataelement/bisheng) | Apache-2.0 | TypeScript | ga | CN | 5/5 | — | — | — | DataElement |
 | [BMTools](https://github.com/OpenBMB/BMTools) | Apache-2.0 | Python | beta | CN | 4/5 | dormant | 2.8k | — | OpenBMB (Tsinghua / THUNLP) |
 | [Bot Sharp](https://github.com/SciSharp/BotSharp) | Apache-2.0 | C# | ga | — | 3/5 | established | 3.1k | — | SciSharp |
 | [Browser Use](https://github.com/browser-use/browser-use) | MIT | Python | beta | CH | 4/5 | landmark | 98.7k | — | Browser Use AG |
@@ -67,6 +69,8 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Cli](https://github.com/googleworkspace/cli) | Apache-2.0 | Rust | ga | US | 3/5 | established | 27.0k | — | googleworkspace |
 | [Cline](https://github.com/cline/cline) | Apache-2.0 | TypeScript | ga | US | 4/5 | — | — | — | Cline Bot, Inc. |
 | [Code Review Graph](https://github.com/tirth8205/code-review-graph) | MIT | Python | ga | — | 3/5 | emerging | 18.5k | — | tirth8205 |
+| [Cognita (archived)](https://github.com/truefoundry/cognita) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | TrueFoundry (archived) |
+| [Composio](https://github.com/ComposioHQ/composio) | MIT | TypeScript | ga | US | 5/5 | — | — | — | Composio |
 | [Continue](https://github.com/continuedev/continue) | Apache-2.0 | TypeScript | ga | US | 5/5 | — | — | — | Continue |
 | [CopilotKit](https://github.com/CopilotKit/CopilotKit) | MIT | TypeScript | ga | US | 4/5 | landmark | 35.0k | — | CopilotKit Inc. |
 | [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 723 | — | Human-Agent-Society |
@@ -79,6 +83,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Dagu](https://github.com/dagucloud/dagu) | GPL-3.0-only | Go | ga | — | 3/5 | established | 3.5k | — | dagucloud |
 | [DB-GPT](https://github.com/eosphoros-ai/DB-GPT) | MIT | Python | ga | CN | 4/5 | landmark | 19.0k | — | Eosphoros AI |
 | [Deep Research](https://github.com/u14app/deep-research) | MIT | JavaScript | ga | — | 4/5 | established | 4.6k | — | u14app |
+| [Deep Searcher](https://github.com/zilliztech/deep-searcher) | Apache-2.0 | Python | beta | US | 5/5 | — | — | — | Zilliz |
 | [Deepchat](https://github.com/ThinkInAIXYZ/deepchat) | Apache-2.0 | TypeScript | ga | — | 4/5 | established | 6.0k | — | ThinkInAIXYZ |
 | [Deep Code](https://github.com/HKUDS/DeepCode) | MIT | Python | ga | HK | 3/5 | established | 15.8k | — | HKUDS |
 | [Deep Research](https://github.com/Alibaba-NLP/DeepResearch) | Apache-2.0 | Python | ga | CN | 3/5 | established | 19.4k | — | Alibaba-NLP |
@@ -89,6 +94,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Design Extract](https://github.com/Manavarya09/design-extract) | MIT | JavaScript | ga | — | 3/5 | frontier | 3.2k | — | Manavarya09 |
 | [Devika](https://github.com/stitionai/devika) | MIT | Python | beta | — | 4/5 | — | — | — | stitionai |
 | [Dive](https://github.com/OpenAgentPlatform/Dive) | MIT | TypeScript | ga | TW | 4/5 | established | 1.8k | — | OpenAgentPlatform |
+| [DocsGPT](https://github.com/arc53/DocsGPT) | MIT | Python | ga | GB | 5/5 | — | — | — | Arc53 |
 | [DSPy](https://github.com/stanfordnlp/dspy) | MIT | Python | ga | US | 4/5 | landmark | 35.0k | — | Stanford NLP |
 | [E2B](https://github.com/e2b-dev/E2B) | Apache-2.0 | Python | ga | CZ | 5/5 | — | — | — | E2B |
 | [ECC](https://github.com/affaan-m/ECC) | MIT | JavaScript | ga | — | 3/5 | landmark | 214.9k | — | affaan-m |
@@ -117,6 +123,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Gorilla LLM](https://github.com/gorilla-llm/gorilla) | Apache-2.0 | Python | ga | US | 4/5 | dormant | 3 | — | Shishir G. Patil et al. (UC Berkeley Sky Computing) |
 | [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | MIT | Python | ga | IL | 4/5 | landmark | 27.7k | — | assafelovic |
 | [Gptme](https://github.com/gptme/gptme) | MIT | Python | ga | — | 4/5 | established | 4.3k | — | gptme |
+| [Microsoft GraphRAG](https://github.com/microsoft/graphrag) | MIT | Python | ga | US | 4/5 | — | — | — | Microsoft Research |
 | [Griptape](https://github.com/griptape-ai/griptape) | Apache-2.0 | Python | ga | US | 4/5 | established | 2.5k | — | Griptape AI (Foundry) |
 | [Harness Sdk](https://github.com/strands-agents/harness-sdk) | Apache-2.0 | Python | ga | US | 4/5 | established | 6.1k | — | strands-agents |
 | [Haystack](https://github.com/deepset-ai/haystack) | Apache-2.0 | Python | ga | DE | 4/5 | landmark | 25.6k | — | deepset |
@@ -138,7 +145,9 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Jido](https://github.com/agentjido/jido) | Apache-2.0 | Elixir | ga | — | 3/5 | established | 1.7k | — | agentjido |
 | [Julep](https://github.com/julep-ai/julep) | Apache-2.0 | Python | beta | IN | 4/5 | established | 6.6k | — | Julep AI |
 | [Kaiban JS](https://github.com/kaiban-ai/KaibanJS) | MIT | TypeScript | ga | — | 3/5 | established | 1.5k | — | kaiban-ai |
+| [Khoj](https://github.com/khoj-ai/khoj) | AGPL-3.0 | Python | ga | US | 5/5 | — | — | — | Khoj AI |
 | [Klavis](https://github.com/Klavis-AI/klavis) | Apache-2.0 | Python | ga | — | 3/5 | established | 5.7k | — | Klavis-AI |
+| [Kuzu](https://github.com/kuzudb/kuzu) | MIT | C++ | ga | CA | 5/5 | — | — | — | KuzuDB (archived) |
 | [Lamda](https://github.com/firerpa/lamda) | MIT | Python | ga | — | 3/5 | established | 7.8k | — | firerpa |
 | [Langchain](https://github.com/langchain-ai/langchain) | MIT | Python | ga | US | 4/5 | landmark | 139.2k | — | LangChain Inc |
 | [Langflow](https://github.com/langflow-ai/langflow) | MIT | Python | ga | US | 4/5 | landmark | 149.6k | — | DataStax |
@@ -148,22 +157,27 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Letta](https://github.com/letta-ai/letta) | Apache-2.0 | Python | ga | US | 4/5 | established | 23.3k | — | Letta AI |
 | [Libre Chat](https://github.com/danny-avila/LibreChat) | MIT | TypeScript | ga | — | 4/5 | landmark | 39.1k | — | danny-avila |
 | [Light Agent](https://github.com/wanxingai/LightAgent) | Apache-2.0 | Python | ga | CN | 4/5 | established | 1.1k | — | wanxingai |
+| [LightRAG](https://github.com/HKUDS/LightRAG) | MIT | Python | beta | HK | 5/5 | — | — | — | HKU Data Intelligence Lab |
 | [Linkedin MCP Server](https://github.com/stickerdaniel/linkedin-mcp-server) | Apache-2.0 | Python | ga | — | 3/5 | established | 2.3k | — | stickerdaniel |
 | [LlamaIndex Agents](https://github.com/run-llama/llama_index) | MIT | Python | ga | US | 4/5 | landmark | 50.1k | — | LlamaIndex (Run-LLaMA Inc.) |
 | [LLMCompiler](https://github.com/SqueezeAILab/LLMCompiler) | MIT | Python | beta | US | 4/5 | dormant | 1.9k | — | Sehoon Kim et al. (UC Berkeley SqueezeAI Lab) |
 | [Lotti](https://github.com/matthiasn/lotti) | GPL-3.0-only | Dart | ga | — | 3/5 | established | 1.1k | — | matthiasn |
 | [Mai Bot](https://github.com/Mai-with-u/MaiBot) | GPL-3.0-only | Python | ga | — | 3/5 | established | 5.1k | — | Mai-with-u |
+| [Markdownify MCP](https://github.com/zcaceres/markdownify-mcp) | MIT | TypeScript | ga | — | 5/5 | — | — | — | Zach Caceres |
 | [Mastra](https://github.com/mastra-ai/mastra) | Apache-2.0 | TypeScript | beta | US | 4/5 | established | 25.0k | — | Mastra AI |
 | [MCP Agent](https://github.com/lastmile-ai/mcp-agent) | Apache-2.0 | Python | ga | US | 3/5 | established | 8.4k | — | lastmile-ai |
 | [MCP Context Forge](https://github.com/IBM/mcp-context-forge) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.9k | — | IBM |
+| [MCP Playwright](https://github.com/executeautomation/mcp-playwright) | MIT | TypeScript | ga | — | 5/5 | — | — | — | ExecuteAutomation |
 | [MCP Use](https://github.com/mcp-use/mcp-use) | MIT | TypeScript | ga | — | 3/5 | established | 10.1k | — | mcp-use |
 | [Mcphub.nvim](https://github.com/ravitemer/mcphub.nvim) | MIT | Lua | ga | — | 3/5 | established | 1.8k | — | ravitemer |
 | [Mem0 (formerly Embedchain)](https://github.com/mem0ai/mem0) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 58.5k | — | Mem0 AI (YC S24) |
 | [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | MIT | Python | ga | CN | 4/5 | landmark | 68.8k | — | FoundationAgents (ex-DeepWisdom) |
 | [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | MIT | C# | beta | US | 4/5 | established | 11.3k | — | Microsoft |
+| [Microsoft MCP Catalog](https://github.com/microsoft/mcp) | MIT | C# | ga | US | 4/5 | — | — | — | Microsoft |
 | [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | MIT | Python | ga | US | 4/5 | emerging | 5.1k | — | Princeton + Stanford |
 | [Mirascope](https://github.com/Mirascope/mirascope) | MIT | Python | ga | US | 4/5 | established | 1.5k | — | Mirascope Inc. |
 | [Moai Adk](https://github.com/modu-ai/moai-adk) | Apache-2.0 | Go | ga | KR | 0/5 | emerging | 1.1k | — | modu-ai |
+| [Mobile MCP](https://github.com/mobile-next/mobile-mcp) | Apache-2.0 | TypeScript | beta | — | 5/5 | — | — | — | Mobile Next |
 | [N8n MCP](https://github.com/czlonkowski/n8n-mcp) | MIT | TypeScript | ga | — | 3/5 | established | 21.7k | — | czlonkowski |
 | [Nanobot](https://github.com/HKUDS/nanobot) | MIT | Python | ga | HK | 3/5 | landmark | 44.2k | — | HKUDS |
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | Apache-2.0 | TypeScript | ga | — | 3/5 | canonical | 13.3k | — | nanobrowser |
@@ -179,9 +193,11 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Openagent](https://github.com/the-open-agent/openagent) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 5.2k | — | the-open-agent |
 | [OpenAgents (openagents-org)](https://github.com/openagents-org/openagents) | Apache-2.0 | Python | beta | — | 4/5 | established | 3.8k | — | openagents-org community |
 | [OpenAgents (xlang)](https://github.com/xlang-ai/OpenAgents) | Apache-2.0 | Python | beta | HK | 4/5 | dormant | 4.8k | — | XLang Lab / HKU |
+| [OpenAI Agents (JavaScript)](https://github.com/openai/openai-agents-js) | MIT | TypeScript | ga | US | 3/5 | — | — | — | OpenAI |
 | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Apache-2.0 | Python | ga | US | 3/5 | established | 27.1k | — | OpenAI |
 | [Openbrowser](https://github.com/ntegrals/openbrowser) | MIT | TypeScript | ga | — | 2/5 | established | 9.5k | — | ntegrals |
 | [Open CLI](https://github.com/jackwener/OpenCLI) | Apache-2.0 | JavaScript | ga | — | 3/5 | established | 24.3k | — | jackwener |
+| [OpenCode (archived)](https://github.com/opencode-ai/opencode) | MIT | Go | ga | — | 5/5 | — | — | — | opencode-ai (archived) |
 | [Openfang](https://github.com/RightNow-AI/openfang) | Apache-2.0 | Rust | ga | — | 3/5 | emerging | 17.8k | — | RightNow-AI |
 | [OpenHands](https://github.com/OpenHands/OpenHands) | MIT | Python | ga | US | 4/5 | landmark | 76.9k | — | All Hands AI |
 | [Openinterpreter](https://github.com/openinterpreter/openinterpreter) | Apache-2.0 | Python | ga | — | 4/5 | landmark | 63.9k | — | openinterpreter |
@@ -195,7 +211,10 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Py Xiaozhi](https://github.com/huangjunsen0406/py-xiaozhi) | MIT | Python | ga | CN | 3/5 | established | 3.4k | — | huangjunsen0406 |
 | [Pydantic AI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | — | 4/5 | established | 17.7k | — | pydantic |
 | [PydanticAI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | GB | 4/5 | established | 17.7k | — | Pydantic Services Inc. |
+| [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent) | Apache-2.0 | Python | ga | CN | 2/5 | — | — | — | Alibaba Qwen Team |
+| [R2R (Reason-to-Retrieve)](https://github.com/SciPhi-AI/R2R) | MIT | Python | ga | US | 5/5 | — | — | — | SciPhi AI |
 | [Raga AI Catalyst](https://github.com/raga-ai-hub/RagaAI-Catalyst) | Apache-2.0 | Python | ga | — | 3/5 | established | 16.2k | — | raga-ai-hub |
+| [RAGFlow](https://github.com/infiniflow/ragflow) | Apache-2.0 | Python | ga | CN | 5/5 | — | — | — | InfiniFlow |
 | [Ralph Claude Code](https://github.com/frankbria/ralph-claude-code) | MIT | Shell | ga | — | 0/5 | emerging | 9.3k | — | frankbria |
 | [RD-Agent (Research & Development Agent)](https://github.com/microsoft/RD-Agent) | MIT | Python | beta | US | 4/5 | landmark | 13.4k | — | Microsoft Research |
 | [Rivet](https://github.com/Ironclad/rivet) | MIT | TypeScript | ga | US | 4/5 | established | 4.6k | — | Ironclad Inc. |
@@ -233,9 +252,11 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Unity MCP](https://github.com/CoplayDev/unity-mcp) | MIT | C# | ga | US | 3/5 | established | 10.6k | — | CoplayDev |
 | [Upsonic](https://github.com/upsonic/upsonic) | MIT | Python | beta | TR | 4/5 | landmark | 7.9k | — | Upsonic community |
 | [Valuecell](https://github.com/ValueCell-ai/valuecell) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 10.8k | — | ValueCell-ai |
+| [Verba](https://github.com/weaviate/Verba) | BSD-3-Clause | Python | ga | NL | 4/5 | — | — | — | Weaviate |
 | [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) | Apache-2.0 | Rust | ga | — | 4/5 | established | 27.0k | — | BloopAI |
 | [Vibe Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 2.3k | — | foryourhealth111-pixel |
 | [Vibe Trading](https://github.com/HKUDS/Vibe-Trading) | MIT | Python | ga | — | 3/5 | frontier | 12.1k | — | HKUDS |
+| [Vocode (core)](https://github.com/vocodedev/vocode-core) | MIT | Python | ga | US | 5/5 | — | — | — | Vocode |
 | [Voltagent](https://github.com/VoltAgent/voltagent) | MIT | TypeScript | ga | — | 3/5 | established | 9.6k | — | VoltAgent |
 | [Voyager](https://github.com/MineDojo/Voyager) | MIT | Python | beta | US | 4/5 | canonical | 7.0k | — | CMU + NVIDIA research |
 | [Wanwu](https://github.com/UnicomAI/wanwu) | Apache-2.0 | Go | ga | CN | 3/5 | established | 2.5k | — | UnicomAI |

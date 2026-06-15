@@ -1,0 +1,27 @@
+id: markdownify-mcp
+name: Markdownify MCP
+category: agent
+subcategory: mcp-server
+repo_url: https://github.com/zcaceres/markdownify-mcp
+license: MIT
+primary_language: TypeScript
+tagline: "Model Context Protocol server for converting almost anything to Markdown — PDF, DOCX, HTML, audio transcription, image OCR — for agent ingestion."
+description: |
+  Markdownify MCP is an MCP server that converts a wide range of source formats (PDF, DOCX, HTML, audio transcription, image OCR) into clean Markdown for agent ingestion. Solves the common harness problem where a tool-using agent needs to consume document attachments in a uniform LLM-friendly format without each agent re-implementing format-specific parsing.
+
+  In the atlas: markdownify-mcp sits with mcp-playwright, mobile-mcp, arxiv-mcp-server, and microsoft-mcp on the agent / mcp-server shelf. The content-normalisation tool surface is its own niche — it is to document ingestion what mcp-playwright is to browser automation.
+maturity: ga
+maintainer:
+  type: individual
+  name: Zach Caceres
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; npm-installable. All conversion happens locally (uses local libraries for PDF / DOCX / OCR / audio transcription). No call-home; no SaaS dependency.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- mcp-playwright
+- mobile-mcp
+- arxiv-mcp-server

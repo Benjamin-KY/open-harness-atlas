@@ -1,0 +1,27 @@
+id: mobile-mcp
+name: Mobile MCP
+category: agent
+subcategory: mcp-server
+repo_url: https://github.com/mobile-next/mobile-mcp
+license: Apache-2.0
+primary_language: TypeScript
+tagline: "Model Context Protocol server for mobile automation — drive iOS, Android, simulators, emulators, and real devices from any MCP-aware agent."
+description: |
+  Mobile MCP is an MCP server that exposes mobile-device automation surfaces (iOS, Android, simulators, emulators, real devices via USB / cloud) as MCP tools. Lets an agent tap, swipe, type, screenshot, and inspect a mobile UI exactly the way a human tester would, through a single uniform tool interface that doesn't require the agent to speak XCUITest or UIAutomator.
+
+  In the atlas: mobile-mcp sits on the same agent / mcp-server shelf as mcp-playwright (browser side), arxiv-mcp-server (knowledge side), and markdownify-mcp (content side). Recognising the mobile-automation tool surface as a first-class harness piece matters because the operator's compliance / test workflows often live on mobile devices where the agent's only sensible tool affordance is the device UI itself.
+maturity: beta
+maintainer:
+  type: company
+  name: Mobile Next
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; npm-installable; runs locally. Talks to local iOS Simulator, Android emulators, or attached real devices — no cloud dependency. No call-home.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- mcp-playwright
+- arxiv-mcp-server
+- markdownify-mcp

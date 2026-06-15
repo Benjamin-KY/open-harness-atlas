@@ -1,0 +1,30 @@
+id: r2r
+name: R2R (Reason-to-Retrieve)
+category: agent
+subcategory: rag-platform
+repo_url: https://github.com/SciPhi-AI/R2R
+homepage: https://r2r-docs.sciphi.ai/
+license: MIT
+primary_language: Python
+tagline: "Production-grade agentic RAG with a RESTful API — multi-modal ingestion, hybrid retrieval, GraphRAG, and operator dashboards in one stack."
+description: |
+  R2R (Reason-to-Retrieve) is SciPhi's open-source agentic-RAG platform. Bundles multi-modal ingestion, hybrid (vector + full-text + graph) retrieval, GraphRAG-style entity extraction, evaluation harnesses, and operator-facing dashboards behind a single RESTful API. Designed for the case where the operator wants to deploy an end-to-end retrieval service rather than wire RAG primitives together themselves.
+
+  In the atlas: R2R is catalogued on the RAG-platform shelf with RAGFlow, Verba, Cognita, DocsGPT. Differentiator is the explicit reason-then-retrieve loop semantics — retrieval is wrapped in an agentic planning step rather than being a single-shot lookup.
+maturity: ga
+maintainer:
+  type: company
+  name: SciPhi AI
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; self-hosted Docker stack. Multi-provider on LLM and embedding sides. Vector / graph backends pluggable. Hosted SciPhi service is optional and separate.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- ragflow
+- verba
+- cognita
+- docsgpt
+- graphrag

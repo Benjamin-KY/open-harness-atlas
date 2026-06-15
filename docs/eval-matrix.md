@@ -61,6 +61,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Evalbench](https://github.com/GoogleCloudPlatform/evalbench) | Apache-2.0 | Python | beta | US | 2/5 | frontier | 48 | — | GoogleCloudPlatform |
 | [Evalbot](https://github.com/prat3ik/evalbot) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 0 | — | prat3ik |
 | [EvalPlus](https://github.com/evalplus/evalplus) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 1.8k | — | UIUC / HKU |
+| [EvalScope](https://github.com/modelscope/evalscope) | Apache-2.0 | Python | ga | CN | 5/5 | — | — | — | Alibaba ModelScope |
 | [Every Eval Ever](https://github.com/evaleval/every_eval_ever) | MIT | Python | beta | — | 3/5 | frontier | 76 | — | evaleval |
 | [FActScore](https://github.com/shmsw25/FActScore) | MIT | Python | ga | US | 4/5 | frontier | 442 | — | UW / Meta AI |
 | [Fieldtest](https://github.com/gmitt98/fieldtest) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | gmitt98 |

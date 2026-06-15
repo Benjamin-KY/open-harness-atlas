@@ -1,0 +1,28 @@
+id: openai-agents-js
+name: OpenAI Agents (JavaScript)
+category: agent
+subcategory: agent-framework
+repo_url: https://github.com/openai/openai-agents-js
+homepage: https://openai.github.io/openai-agents-js/
+license: MIT
+primary_language: TypeScript
+tagline: "Lightweight multi-agent and voice-agent framework — the official TypeScript counterpart to openai-agents-python."
+description: |
+  OpenAI Agents JS is the official TypeScript / JavaScript framework for building multi-agent workflows and voice agents on top of the OpenAI APIs. Mirrors the Python library's primitives (Agent, Runner, Tool, Handoff, Guardrail) and adds Node-flavoured ergonomics. Designed for parity with openai-agents-python so the same architectural patterns work on both runtimes.
+
+  In the atlas: openai-agents-js sits on the same agent-framework shelf as openai-agents-python, Claude Agent SDK, Strands Agents, and LangChain. The JS variant matters because front-end-heavy agent surfaces (web chat UI, VS Code extensions, Electron apps) need a same-runtime framework rather than a Python-FFI bridge.
+maturity: ga
+maintainer:
+  type: company
+  name: OpenAI
+origin_country: US
+model_agnostic_score: 3
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; npm-installable. Like the Python sibling, ships OpenAI-first defaults but the abstractions accept any OpenAI-compatible endpoint, including local Ollama, vLLM, and self-hosted serving. MAS=3 because the framework leans on OpenAI-specific Responses-API features (built-in tools, structured outputs in their native shape) that require shims when targeting non-OpenAI providers.
+harness_paradigm_alignment: aligned
+deployment_posture: hybrid
+adjacent_to:
+- openai-agents-sdk
+- claude-agent-sdk
+- langchain

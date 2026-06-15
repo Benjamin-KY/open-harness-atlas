@@ -1,0 +1,27 @@
+id: lightrag
+name: LightRAG
+category: agent
+subcategory: rag-library
+repo_url: https://github.com/HKUDS/LightRAG
+license: MIT
+primary_language: Python
+tagline: "Simple and fast graph-augmented retrieval — the EMNLP 2025 GraphRAG-style retrieval library from the HKU Data Intelligence Lab."
+description: |
+  LightRAG is a research-grade retrieval-augmented generation library that constructs an entity-relation knowledge graph from a corpus and uses dual-level retrieval (low-level entity match plus high-level community / topic match) at query time. The accompanying EMNLP 2025 paper documents consistent retrieval-quality gains over flat RAG baselines at lower index cost than Microsoft's GraphRAG.
+
+  In the atlas: LightRAG is a peer to graphrag, R2R, and Verba on the structured-retrieval shelf. Differentiator is the lighter index construction — operators who found GraphRAG's prompt-heavy entity-extraction cost prohibitive use LightRAG as the smaller-budget alternative with similar graph-augmented retrieval semantics.
+maturity: beta
+maintainer:
+  type: institution
+  name: HKU Data Intelligence Lab
+origin_country: HK
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; Python library; runs entirely locally. LLM and embedding model are operator-supplied — works with any OpenAI-compatible endpoint including local Ollama / vLLM. No call-home. The reference impl ships with multiple LLM and embedding adapters so the operator can swap providers without code changes.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- graphrag
+- llama-index-agents
+- r2r

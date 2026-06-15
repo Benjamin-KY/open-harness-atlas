@@ -1,0 +1,30 @@
+id: ragflow
+name: RAGFlow
+category: agent
+subcategory: rag-platform
+repo_url: https://github.com/infiniflow/ragflow
+homepage: https://ragflow.io
+license: Apache-2.0
+primary_language: Python
+tagline: "End-to-end RAG engine with deep document understanding, fused with agent capabilities for production knowledge work."
+description: |
+  RAGFlow is an open-source retrieval-augmented generation engine that combines deep document understanding (layout-aware parsing of PDFs, slides, tables, scans) with a full indexing / retrieval / answer-generation pipeline and a browser-based operator UI. The 2025 line added agentic extensions so retrieval can be wrapped in tool-calling loops rather than only used as a single-shot retriever.
+
+  In the atlas: RAGFlow is catalogued under agent / rag-platform alongside other end-to-end RAG products like Verba, Cognita, and R2R — distinct from RAG *libraries* (LlamaIndex, Haystack) by virtue of shipping the operator UI and document parsing as part of the deliverable, not as a separate integration the operator has to wire up.
+maturity: ga
+maintainer:
+  type: company
+  name: InfiniFlow
+origin_country: CN
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; self-hosted via Docker / Kubernetes. LLM and embedding backends are operator-configurable (OpenAI / Anthropic / Tongyi / Moonshot / DeepSeek / Ollama / vLLM / any OpenAI-compatible endpoint). No call-home in normal operation. The hosted ragflow.io is a separate optional service — the OSS deliverable is everything an operator needs to run the full stack on their own hardware.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- llama-index-agents
+- verba
+- cognita
+- r2r
+- graphrag

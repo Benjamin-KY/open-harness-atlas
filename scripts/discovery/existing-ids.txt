@@ -53,6 +53,7 @@ agno
 ai-agents-from-scratch
 ai-agents-reality-check
 ai-api
+ai-dynamo
 ai-engineer-roadmap
 ai-engineering-hub
 ai-gateway
@@ -97,6 +98,7 @@ arguslm
 arize-phoenix
 armorer
 art-toolkit
+arxiv-mcp-server
 assetopsbench
 astrbot
 astron-agent
@@ -134,6 +136,7 @@ big-bench
 bigcode-evaluation-harness
 bigcodebench
 bipia
+bisheng
 bitrouter
 bmtools-tool-platform
 botsharp
@@ -173,7 +176,9 @@ cloak-cli
 cmb
 coai
 code-review-graph
+cognita
 completely
+composio
 constrained-diffusion
 content-moderation-deep-learning
 continue
@@ -201,6 +206,7 @@ datafog-python
 db-gpt
 deep-inception
 deep-research
+deep-searcher
 deepbrief-lab
 deepchat
 deepcode
@@ -221,6 +227,7 @@ detoxify
 devika
 dive
 do-not-answer
+docsgpt
 dokimos
 dspy
 dt-evals
@@ -247,6 +254,7 @@ eval-resume
 evalbench
 evalbot
 evalplus
+evalscope
 everos
 every-eval-ever
 evidently
@@ -298,6 +306,7 @@ gptfuzz
 gptme
 gpustack
 granite-guardian
+graphrag
 griptape-framework
 groundcheck
 grps-trtllm
@@ -380,9 +389,11 @@ karpathy-nn-zero-to-hero
 keel
 keras-hub
 kgateway
+khoj
 kieranklaassen-leva
 klavis
 kong
+kuzu
 labmlai-annotated-dl
 lamda
 lanekeep
@@ -406,6 +417,7 @@ leva
 librechat
 lightagent
 lighteval
+lightrag
 linkedin-mcp-server
 litellm
 litmus
@@ -464,6 +476,7 @@ mac-mini-llm-roster
 magentic
 maibot
 makerbench-hwe
+markdownify-mcp
 marvin
 mastra
 mateval
@@ -472,6 +485,7 @@ mathbench
 mcp-agent
 mcp-context-forge
 mcp-for-beginners
+mcp-playwright
 mcp-server
 mcp-use
 mcphub-nvim
@@ -488,6 +502,7 @@ metr-task-standard
 metrillm
 microsoft-agent-framework
 microsoft-ai-agents-for-beginners
+microsoft-mcp
 mimir
 mind2web
 mindtrial
@@ -508,6 +523,7 @@ mmlu-pro
 mmmu
 mnemebrain-benchmark
 moai-adk
+mobile-mcp
 model-flux
 modelbench
 modelscan
@@ -566,6 +582,7 @@ openagent
 openagentbench
 openagents-org
 openagents-xlang
+openai-agents-js
 openai-agents-sdk
 openai-cookbook
 openai-evals
@@ -576,6 +593,7 @@ openclaw-llm-bench
 openclaw-middleware-suite
 openclaw-skills-security
 opencli
+opencode
 opencode-llm-proxy
 opencode-models-discovery
 opencompass
@@ -650,8 +668,10 @@ pytorch-transformer-from-scratch
 pytorch-tutorials
 qa-metrics
 quantum-free-router
+qwen-agent
 qwen-gate
 r-judge
+r2r
 rag-benchmarking
 rag-eval-pack
 rag-security-scanner
@@ -660,6 +680,7 @@ ragaliq
 ragas
 ragas-evaluation-harness
 ragchecker
+ragflow
 ragrank
 raguard
 rail-score-js
@@ -772,6 +793,7 @@ tonic-validate
 toolbench
 toolbench-tool-learning
 toolemu
+tracecat
 traceloop-hub
 transformer-pytorch-scratch
 trellm
@@ -795,6 +817,7 @@ unity-mcp
 upsonic
 uqlm
 valuecell
+verba
 verdict
 vero-eval
 vibe-kanban
@@ -806,6 +829,7 @@ vigil-llm
 vllm
 vllm-qwen
 vlmeval-kit
+vocode-core
 voltagent
 voyager
 wandb-edu

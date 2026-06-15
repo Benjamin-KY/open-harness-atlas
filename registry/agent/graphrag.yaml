@@ -1,0 +1,28 @@
+id: graphrag
+name: Microsoft GraphRAG
+category: agent
+subcategory: rag-library
+repo_url: https://github.com/microsoft/graphrag
+homepage: https://microsoft.github.io/graphrag/
+license: MIT
+primary_language: Python
+tagline: "Modular graph-based retrieval-augmented generation — the original GraphRAG reference implementation from Microsoft Research."
+description: |
+  Microsoft GraphRAG is the reference implementation of the graph-augmented RAG approach: extract entities and relationships from a corpus into a knowledge graph, run community detection over the graph, generate community summaries, and combine entity-level retrieval with community-level summarisation at query time. The result is a retrieval surface that handles 'global' questions (where the answer requires synthesising across the whole corpus) that flat vector RAG struggles with.
+
+  In the atlas: graphrag is the originating point on the graph-augmented retrieval shelf — peers include lightrag (lighter index construction) and r2r (production-grade agentic RAG). Microsoft also ships a hosted variant; this entry catalogues the self-hostable OSS reference.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft Research
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; Python library; runs locally. The original cost-intensive prompt-heavy entity extraction can be a deployment consideration — operators with budget constraints typically use lightrag for similar semantics at lower indexing cost. LLM is operator-supplied; default OpenAI integrations are easily swapped for any OpenAI-compatible endpoint. Repository is currently SAML-blocked for non-Microsoft GitHub OAuth tokens, so the refresh-metadata bot can't update its sidecar from this fork's CI; expected — the catalogue treats microsoft/* as gracefully-degraded data_missing entries (see HANDOVER gotcha #2).
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- lightrag
+- llama-index-agents
+- r2r

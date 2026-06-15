@@ -1,0 +1,29 @@
+id: opencode
+name: OpenCode (archived)
+category: agent
+subcategory: code-agent
+repo_url: https://github.com/opencode-ai/opencode
+license: MIT
+primary_language: Go
+tagline: "Terminal-native AI coding agent in Go — archived September 2025 reference implementation of the CLI-coding-agent pattern."
+description: |
+  OpenCode is a terminal-native AI coding agent built in Go. Operates directly on the local filesystem and git working tree, supports multi-provider LLM backends, and includes a TUI for interactive sessions. The repository was archived in September 2025 but remains a useful historical reference for the CLI-coding-agent pattern — community continuations exist under multiple forks.
+
+  In the atlas: opencode is catalogued on the code-agent shelf alongside aider, cline, open-swe, swe-agent, mini-swe-agent. Distinguishing detail is the Go implementation (vs Python-dominated alternatives) which makes the binary easier to ship into restricted environments that can't run a full Python interpreter.
+maturity: ga
+maintainer:
+  type: community
+  name: opencode-ai (archived)
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; single Go binary; runs locally. Provider-agnostic at the LLM layer (OpenAI / Anthropic / Ollama / any configurable endpoint). Catalogued despite the archive status because it is referenced from active forks and remains a useful reference implementation. data_missing may fire on this entry once the sidecar's last-seen exceeds the 60-day staleness threshold — that is the intended behaviour for archived repositories.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- aider
+- cline
+- open-swe
+- swe-agent
+- mini-swe-agent

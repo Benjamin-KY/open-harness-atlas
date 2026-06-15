@@ -1,0 +1,29 @@
+id: verba
+name: Verba
+category: agent
+subcategory: rag-platform
+repo_url: https://github.com/weaviate/Verba
+homepage: https://verba.weaviate.io/
+license: BSD-3-Clause
+primary_language: Python
+tagline: "Weaviate's open-source RAG chatbot — turnkey document ingestion, vector retrieval, and chat UI built around the Weaviate vector store."
+description: |
+  Verba is Weaviate's open-source RAG chatbot — a turnkey deployment combining document ingestion, vector retrieval via Weaviate, and a chat UI for end-user Q&A over the operator's corpus. Designed as a reference application showcasing Weaviate features rather than a fully provider-neutral framework, but the LLM and embedding layers are pluggable.
+
+  In the atlas: Verba is the Weaviate-flavoured counterpart to RAGFlow, R2R, Cognita, and DocsGPT on the RAG-platform shelf. Operators already running Weaviate as their vector store use it as a fast path to a deployable Q&A surface; operators standing up a fresh stack typically reach for RAGFlow or R2R instead.
+maturity: ga
+maintainer:
+  type: company
+  name: Weaviate
+origin_country: NL
+model_agnostic_score: 4
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  BSD-3-Clause; self-hostable Docker stack. Vector store is Weaviate (self-hostable or hosted). LLM and embedding providers are operator-pluggable (OpenAI, Cohere, Ollama, HF, etc.). The hosted Weaviate cloud is optional — the OSS Weaviate runs locally and Verba on top of it gives a fully self-hosted stack.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- ragflow
+- r2r
+- cognita
+- docsgpt

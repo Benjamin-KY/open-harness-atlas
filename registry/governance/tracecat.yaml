@@ -1,0 +1,32 @@
+id: tracecat
+name: Tracecat
+category: governance
+subcategory: security-automation
+repo_url: https://github.com/TracecatHQ/tracecat
+homepage: https://tracecat.com/
+license: AGPL-3.0
+primary_language: Python
+tagline: "Open-source security automation platform for human teams and AI agents — workflow engine, case management, and policy enforcement on the same surface."
+description: |
+  Tracecat is a security-automation platform — workflow engine, case-management surface, and policy-enforcement layer — designed from the start to be operated by both human SOC analysts and AI agents on the same primitives. Workflows are versioned, role-scoped, and reviewable; agent actions get the same audit trail as human actions.
+
+  In the atlas: Tracecat is catalogued under governance / security-automation as the open-source counterpart to SOAR products like Tines and Torq. Inclusion in the harness atlas is because the agent-friendly workflow surface is exactly the §5 audit-log-FSM substrate that operator-grade agent deployments need.
+maturity: ga
+maintainer:
+  type: company
+  name: Tracecat
+origin_country: US
+model_agnostic_score: 5
+five_component_coverage:
+  policy_router: native
+  source_authority: native
+  prompt_composer: partial
+  output_contract: partial
+  audit_log_fsm: native
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  AGPL-3.0; self-hostable Docker / Kubernetes stack. AGPL carries the standard network-use copyleft trigger, which is intentional — operators forking and offering modified Tracecat as a service must publish their changes. Multi-provider on the LLM side; multi-cloud on the deployment side. The hosted variant is optional and separate.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- langgraph

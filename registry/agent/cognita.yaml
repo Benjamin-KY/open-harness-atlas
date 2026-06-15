@@ -1,0 +1,29 @@
+id: cognita
+name: Cognita (archived)
+category: agent
+subcategory: rag-platform
+repo_url: https://github.com/truefoundry/cognita
+homepage: https://docs.truefoundry.com/cognita
+license: Apache-2.0
+primary_language: Python
+tagline: "Modular open-source RAG framework for production — archived 2026-03 reference implementation of the layered-RAG-platform pattern."
+description: |
+  Cognita is a modular RAG framework intended for production deployments. Separates the indexing, retrieval, and answer-generation layers behind versioned APIs so each can be swapped independently. Ships with reference UIs for document upload, evaluation, and operator-facing chat. Repository was archived 2026-03 after TrueFoundry refocused on its hosted platform; OSS reference remains useful.
+
+  In the atlas: Cognita is catalogued alongside RAGFlow, Verba, DocsGPT, and R2R on the RAG-platform shelf. Even though archived, it is referenced from active forks and discussed in the production-RAG literature as a clean example of the layered-API pattern, so it stays in the catalogue as a reference implementation rather than a live-maintained product.
+maturity: ga
+maintainer:
+  type: company
+  name: TrueFoundry (archived)
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; self-hosted Docker / Kubernetes stack. Multi-provider on LLM and embedding sides. Archived, so will trigger data_missing once sidecar staleness exceeds 60 days — intended behaviour. Catalogued under the new archived-but-historically-significant pattern, similar to huggingface-tgi.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- ragflow
+- verba
+- docsgpt
+- r2r

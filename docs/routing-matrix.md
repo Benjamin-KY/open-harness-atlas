@@ -10,6 +10,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [A3m Router](https://github.com/Das-rebel/a3m-router) | MIT | TypeScript | beta | — | 4/5 | frontier | 10 | — | Das-rebel |
 | [Agentgate AI](https://github.com/dengmengmian/agentgate-ai) | MIT | Rust | beta | — | 4/5 | frontier | 21 | — | dengmengmian |
 | [AI API](https://github.com/timcsy/ai-api) | MIT | Python | beta | — | 4/5 | frontier | 15 | — | timcsy |
+| [AI Dynamo](https://github.com/ai-dynamo/dynamo) | Apache-2.0 | Rust | beta | US | 5/5 | — | — | — | NVIDIA / ai-dynamo |
 | [AI Worker Proxy](https://github.com/zxcloli666/AI-Worker-Proxy) | MIT | TypeScript | beta | — | 4/5 | frontier | 62 | — | zxcloli666 |
 | [aisuite](https://github.com/andrewyng/aisuite) | MIT | Python | beta | US | 4/5 | established | 14.1k | — | Andrew Ng (and contributors) |
 | [Apache APISIX](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 5/5 | landmark | 16.7k | — | Apache Software Foundation |

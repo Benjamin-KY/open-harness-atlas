@@ -1,0 +1,27 @@
+id: microsoft-mcp
+name: Microsoft MCP Catalog
+category: agent
+subcategory: mcp-server
+repo_url: https://github.com/microsoft/mcp
+license: MIT
+primary_language: C#
+tagline: "Catalog of official Microsoft Model Context Protocol server implementations — data access and tool integration for Azure, Dynamics, Graph, and more."
+description: |
+  Microsoft MCP is the official catalogue and source-of-truth repository for Microsoft-maintained MCP server implementations: Azure resource access, Microsoft Graph, Dynamics 365, Microsoft 365 / SharePoint, and the rest of the Microsoft data surface. Each server lives in a subdirectory with its own README, build, and deployment instructions.
+
+  In the atlas: microsoft-mcp is the Microsoft counterpart to the openai-agents tool catalogue and the named MCP servers (mcp-playwright, mobile-mcp, arxiv-mcp-server). Distinct from single-tool MCP servers because the deliverable is a curated set rather than one service — useful for operators standing up Microsoft-stack agents.
+maturity: ga
+maintainer:
+  type: company
+  name: Microsoft
+origin_country: US
+model_agnostic_score: 4
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; per-server deployment shape (most are .NET / Node binaries). Authentication is operator-controlled (typically Entra ID / Azure AD scoped tokens). No call-home beyond the Microsoft endpoints each specific server is purpose-built to talk to. SAML-blocked for non-Microsoft GitHub OAuth tokens — refresh-metadata cannot update sidecar from this fork's CI; gracefully degraded to data_missing (see HANDOVER gotcha #2).
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- mcp-playwright
+- mobile-mcp
+- arxiv-mcp-server

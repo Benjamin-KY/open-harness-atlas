@@ -100,6 +100,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Supra Wall](https://github.com/wiserautomation/SupraWall) | Apache-2.0 | TypeScript | partial | none | none | partial | partial | 3/5 |
 | [Swing Skills](https://github.com/TheStack-ai/swing-skills) | MIT | Multiple | none | none | partial | none | none | 3/5 |
 | [TokenCost](https://github.com/AgentOps-AI/tokencost) | MIT | Python | none | none | none | none | none | 4/5 |
+| [Tracecat](https://github.com/TracecatHQ/tracecat) | AGPL-3.0 | Python | native | native | partial | partial | native | 5/5 |
 | [TrustLLM](https://github.com/HowieHwong/TrustLLM) | Apache-2.0 | Python | none | none | none | none | partial | 4/5 |
 | [Trust Loop Guard](https://github.com/ducnguyen67201/TrustLoopGuard) | Apache-2.0 | HTML | partial | none | none | none | none | 3/5 |
 | [TypeChat](https://github.com/microsoft/TypeChat) | MIT | TypeScript | none | none | partial | native | none | 4/5 |

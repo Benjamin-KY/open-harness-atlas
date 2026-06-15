@@ -1,0 +1,27 @@
+id: composio
+name: Composio
+category: agent
+subcategory: tool-router
+repo_url: https://github.com/ComposioHQ/composio
+homepage: https://composio.dev/
+license: MIT
+primary_language: TypeScript
+tagline: "Open-source toolset, authentication, and tool-call router for AI agents — 100+ pre-built integrations behind a single agent-friendly API."
+description: |
+  Composio is a tool-router and integration layer for AI agents. Ships 100+ pre-built integrations (GitHub, Slack, Gmail, Notion, Linear, Salesforce, and so on) with managed OAuth, scoped token issuance, and a uniform tool-call schema that any agent framework can consume. Designed to solve the per-integration auth-and-rate-limit boilerplate that otherwise dominates agent-tool implementation.
+
+  In the atlas: Composio is catalogued under agent / tool-router alongside MCP servers (which expose individual tool surfaces) and direct-integration approaches. Differentiator is the unified-auth layer — operators who would otherwise need to wire up dozens of per-provider OAuth flows get a single config surface.
+maturity: ga
+maintainer:
+  type: company
+  name: Composio
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; can be self-hosted or used as a managed Composio service. Self-hosted mode runs the auth broker locally with the operator's own OAuth credentials per integration — no Composio.dev dependency in that posture. Hybrid posture because the easy path is the hosted broker, but the OSS deliverable is fully sufficient for a local-only deployment.
+harness_paradigm_alignment: aligned
+deployment_posture: hybrid
+adjacent_to:
+- mcp-playwright
+- langchain

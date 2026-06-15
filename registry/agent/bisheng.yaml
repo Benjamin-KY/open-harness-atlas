@@ -1,0 +1,27 @@
+id: bisheng
+name: BISHENG
+category: agent
+subcategory: agent-platform
+repo_url: https://github.com/dataelement/bisheng
+homepage: https://bisheng.dataelem.com/
+license: Apache-2.0
+primary_language: TypeScript
+tagline: "Open LLMops platform for enterprise AI applications — visual workflow builder, agent runtime, knowledge base, and deployment management."
+description: |
+  BISHENG is an end-to-end LLMops platform that bundles a visual workflow / agent builder, RAG knowledge bases, model router, evaluation surface, and deployment / monitoring panels behind a single self-hostable application. Designed for enterprise teams that need both the no-code surface for business users and the operator-grade governance controls (versioning, role-based access, audit logs) for deployment.
+
+  In the atlas: BISHENG is catalogued under agent / agent-platform alongside Dify and Flowise — distinct from agent *frameworks* (LangChain, LlamaIndex) by being a full deployable platform with UI and admin surface, not a library.
+maturity: ga
+maintainer:
+  type: company
+  name: DataElement
+origin_country: CN
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; self-hosted Docker / Kubernetes deployment. Multi-provider on LLM side (OpenAI / Tongyi / Moonshot / DeepSeek / Ollama / vLLM / any OpenAI-compatible endpoint). No call-home in normal operation; hosted variant is separate and optional.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- flowise
+- langchain

@@ -1,0 +1,29 @@
+id: evalscope
+name: EvalScope
+category: eval
+subcategory: eval-framework
+repo_url: https://github.com/modelscope/evalscope
+homepage: https://evalscope.readthedocs.io/
+license: Apache-2.0
+primary_language: Python
+tagline: "Customisable LLM / VLM / AIGC evaluation framework — performance benchmarks, RAG eval, and arena-style judging in a single CLI."
+description: |
+  EvalScope is Alibaba ModelScope's open-source LLM evaluation framework. Bundles standard benchmark runners (MMLU, GSM8K, HumanEval, C-Eval, CMMLU, the multilingual and Chinese-language benchmarks ModelScope ships), RAG-specific evaluation, vision-language eval, and arena-style pairwise-judge evaluation behind a single CLI and Python API. Designed to be the operator's one-stop eval harness across modalities.
+
+  In the atlas: EvalScope is catalogued on the eval-framework shelf alongside lm-evaluation-harness, OpenCompass, deepeval, and inspect_ai. Distinct from single-benchmark runners because the deliverable is harness + adapter + reporter for many benchmarks rather than the benchmark itself.
+maturity: ga
+maintainer:
+  type: company
+  name: Alibaba ModelScope
+origin_country: CN
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; runs locally. Model adapters cover ModelScope hub models, OpenAI, vLLM, Ollama, and any OpenAI-compatible endpoint. No call-home. Benchmarks are pulled from public datasets at first run and cached locally.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- lm-evaluation-harness
+- opencompass
+- deepeval
+- inspect-ai

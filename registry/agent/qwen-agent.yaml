@@ -1,0 +1,27 @@
+id: qwen-agent
+name: Qwen-Agent
+category: agent
+subcategory: model-family-agent
+repo_url: https://github.com/QwenLM/Qwen-Agent
+license: Apache-2.0
+primary_language: Python
+tagline: "Agent framework built on the Qwen model family — function calling, MCP, code interpreter, RAG, browser automation."
+description: |
+  Qwen-Agent is the official agent framework around Alibaba's Qwen series of open-weight language models. Ships function-calling, an MCP client, a code interpreter, RAG primitives, browser-automation tools, and a small set of demo agents (QwenChat-style assistant, browser agent, code agent). Designed to take advantage of Qwen-specific instruction-following and tool-use training rather than be a fully provider-agnostic framework.
+
+  In the atlas: Qwen-Agent is the Qwen-family counterpart to Hugging Face's `transformers` agents, OpenAI's openai-agents-python, and Anthropic's claude-agent-sdk — model-family-flavoured frameworks that prioritise the upstream's own model behaviour over cross-provider portability.
+maturity: ga
+maintainer:
+  type: company
+  name: Alibaba Qwen Team
+origin_country: CN
+model_agnostic_score: 2
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; runs locally against Qwen weights (operator-downloaded). Can call out to DashScope or any OpenAI-compatible endpoint, but is optimised for and best with Qwen models. MAS=2 because the framework leans on Qwen-specific tool-use formatting — works elsewhere but is not the obvious choice for non-Qwen deployments.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- openai-agents-sdk
+- smolagents
+- langchain

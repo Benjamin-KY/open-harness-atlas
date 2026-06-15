@@ -1,0 +1,29 @@
+id: docsgpt
+name: DocsGPT
+category: agent
+subcategory: rag-platform
+repo_url: https://github.com/arc53/DocsGPT
+homepage: https://docsgpt.cloud/
+license: MIT
+primary_language: Python
+tagline: "Private AI platform for documentation, agents, and enterprise search — built-in agent builder, deep research, and document analysis."
+description: |
+  DocsGPT is a self-hostable AI platform for documentation Q&A, deep-research, and document-analysis workflows. Ships an agent-builder UI, browser-based deep-research surface, and a hosted-or-local model layer. Originally a documentation-focused chatbot, the 2024-2026 line expanded into an agent platform with tool calling and multi-step research loops.
+
+  In the atlas: DocsGPT is catalogued alongside other end-to-end RAG / agent platforms (RAGFlow, Verba, Cognita, R2R, khoj). Differentiator is the explicit agent-builder UI for non-developer operators — closer to a tool than a framework.
+maturity: ga
+maintainer:
+  type: company
+  name: Arc53
+origin_country: GB
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; self-hostable Docker stack. Multi-provider on the LLM side (OpenAI, Anthropic, local Ollama / llama.cpp, HF Inference Endpoints, custom). The hosted docsgpt.cloud is optional; the OSS bundle is a complete deployable platform with no call-home in normal operation.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- ragflow
+- verba
+- khoj
+- r2r

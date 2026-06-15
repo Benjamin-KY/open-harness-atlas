@@ -1,0 +1,27 @@
+id: arxiv-mcp-server
+name: arXiv MCP Server
+category: agent
+subcategory: mcp-server
+repo_url: https://github.com/blazickjp/arxiv-mcp-server
+license: Apache-2.0
+primary_language: Python
+tagline: "Model Context Protocol server for arXiv — let agents search, download, and read academic papers via MCP tool calls."
+description: |
+  arxiv-mcp-server is an MCP server exposing arXiv search and paper retrieval as MCP tools. Any MCP-aware agent can query arXiv, download PDFs, and consume the extracted text without needing a custom arXiv integration. Useful for research-assistant agents and literature-review workflows where the agent needs structured access to a scholarly corpus.
+
+  In the atlas: arxiv-mcp-server is catalogued on the agent / mcp-server shelf alongside mcp-playwright (browser), mobile-mcp (mobile), markdownify-mcp (content), and the Microsoft MCP catalogue. The named-MCP-server entries collectively document the tool-provisioning layer of the agentic stack.
+maturity: ga
+maintainer:
+  type: individual
+  name: blazickjp
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; pip-installable; runs locally. Only network surface is arxiv.org for paper retrieval. No call-home.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- mcp-playwright
+- mobile-mcp
+- markdownify-mcp

@@ -1,0 +1,27 @@
+id: vocode-core
+name: Vocode (core)
+category: agent
+subcategory: voice-agent
+repo_url: https://github.com/vocodedev/vocode-core
+homepage: https://vocode.dev/
+license: MIT
+primary_language: Python
+tagline: "Open-source voice-based LLM agent framework — modular ASR / TTS / turn-taking primitives for real-time phone and browser voice agents."
+description: |
+  Vocode Core is the open-source framework for building voice-first LLM agents. Provides modular ASR (Deepgram, Whisper, AssemblyAI), TTS (ElevenLabs, OpenAI TTS, Azure TTS, Coqui), turn-taking and endpointing, and telephony integrations (Twilio, Vonage). Ships reference agents for inbound call handling, outbound calling, and browser-based voice UI.
+
+  In the atlas: Vocode is catalogued under agent / voice-agent alongside LiveKit Agents and Pipecat. Distinct from the broader agent-framework shelf because the differentiator is the voice loop primitives (ASR + TTS + barge-in + turn-taking) which a text-only framework like LangChain does not provide.
+maturity: ga
+maintainer:
+  type: company
+  name: Vocode
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; self-hostable Python service. Each pluggable primitive (ASR, TTS, LLM, telephony) is provider-configurable so the operator can run fully on-prem if they pair a local Whisper / TTS / OpenAI-compatible LLM endpoint. Hosted Vocode is optional and separate from the OSS core.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- agenticseek
+- row-bot

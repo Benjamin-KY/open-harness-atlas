@@ -1,0 +1,29 @@
+id: ai-dynamo
+name: AI Dynamo
+category: routing
+subcategory: inference-engine
+repo_url: https://github.com/ai-dynamo/dynamo
+homepage: https://docs.nvidia.com/dynamo/
+license: Apache-2.0
+primary_language: Rust
+tagline: "NVIDIA's high-performance inference framework for distributed LLM serving — Rust core, disaggregated prefill / decode, KV-cache routing."
+description: |
+  AI Dynamo is NVIDIA's open-source inference framework for high-throughput distributed LLM serving. Written in Rust, introduces disaggregated prefill / decode stages, KV-cache-aware request routing across replicas, and dynamic GPU resource allocation. Designed for the multi-node large-model serving regime where vLLM's single-node optimisations leave performance on the table.
+
+  In the atlas: AI Dynamo is catalogued under routing / inference-engine alongside vLLM, SGLang, TensorRT-LLM, and TGI. Differentiator is the explicit cluster-scale design — Dynamo is what NVIDIA built for the case where the operator wants to serve a frontier-scale model across many GPUs without paying the latency cost of naive tensor-parallelism.
+maturity: beta
+maintainer:
+  type: company
+  name: NVIDIA / ai-dynamo
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; self-hosted Rust binary. Runs on operator's GPUs (typically NVIDIA, hence the maintainer's optimisation focus). OpenAI-compatible HTTP surface keeps client code portable. No call-home in normal operation; no NVIDIA-cloud dependency in the OSS deliverable.
+harness_paradigm_alignment: partial
+deployment_posture: local-first
+adjacent_to:
+- vllm
+- sglang
+- tensorrt-llm
+- huggingface-tgi

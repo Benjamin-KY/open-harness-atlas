@@ -1,0 +1,27 @@
+id: khoj
+name: Khoj
+category: agent
+subcategory: personal-assistant
+repo_url: https://github.com/khoj-ai/khoj
+homepage: https://khoj.dev/
+license: AGPL-3.0
+primary_language: Python
+tagline: "Self-hostable AI second brain — get answers from the web or local documents, build custom agents, schedule automations."
+description: |
+  Khoj is a self-hostable personal-assistant platform combining web search, local-document Q&A, agent building, and scheduled automations behind a chat UI. Operators run it on their own hardware and connect it to their own notes, files, mail, and calendars. The deliverable is a deployable application, not a framework.
+
+  In the atlas: Khoj is catalogued on the agent / personal-assistant shelf alongside DocsGPT and the open second-brain projects. AGPL-3.0 carries the standard network-use copyleft trigger so anyone offering Khoj as a hosted service must publish their modifications.
+maturity: ga
+maintainer:
+  type: company
+  name: Khoj AI
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  AGPL-3.0; self-hostable Docker / Kubernetes deployment. Multi-provider on LLM side (OpenAI / Anthropic / Ollama / vLLM / any OpenAI-compatible endpoint). No call-home in normal operation. Hosted khoj.dev is optional and separate.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- docsgpt
+- deep-searcher

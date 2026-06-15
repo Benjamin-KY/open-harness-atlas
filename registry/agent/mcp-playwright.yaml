@@ -1,0 +1,27 @@
+id: mcp-playwright
+name: MCP Playwright
+category: agent
+subcategory: mcp-server
+repo_url: https://github.com/executeautomation/mcp-playwright
+license: MIT
+primary_language: TypeScript
+tagline: "Playwright Model Context Protocol server — browser and API automation as MCP tools for Claude Desktop, Cline, Cursor, and other MCP clients."
+description: |
+  MCP Playwright is a Model Context Protocol server that exposes Playwright's browser and API automation as MCP tools. Any MCP-aware agent (Claude Desktop, Cline, Cursor, openai-agents, Continue) can use the server to drive browsers, fill forms, scrape DOM, and make authenticated API calls without needing a Playwright integration of its own.
+
+  In the atlas: mcp-playwright is catalogued under agent / mcp-server alongside other named MCP servers (mobile-mcp, arxiv-mcp-server, markdownify-mcp, microsoft/mcp). The MCP-server subcategory exists specifically to recognise the tool-provisioning layer of the agentic stack — distinct from agent frameworks (which consume tools) and from raw Playwright (which is a browser library).
+maturity: ga
+maintainer:
+  type: individual
+  name: ExecuteAutomation
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  MIT; npm-installable MCP server; runs locally on the operator's machine. Browser-side automation is fully local; the only network surface is whatever target sites the agent instructs it to visit. No call-home.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- mobile-mcp
+- arxiv-mcp-server
+- markdownify-mcp

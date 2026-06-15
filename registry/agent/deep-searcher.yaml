@@ -1,0 +1,27 @@
+id: deep-searcher
+name: Deep Searcher
+category: agent
+subcategory: deep-research
+repo_url: https://github.com/zilliztech/deep-searcher
+license: Apache-2.0
+primary_language: Python
+tagline: "Open-source deep-research alternative — reasoning-and-search agent for private data, written in Python and built around Milvus / Zilliz vector search."
+description: |
+  Deep Searcher is Zilliz's open-source counterpart to OpenAI's and Google's deep-research surfaces: an iterative reasoning-and-search loop that decomposes a question into sub-queries, retrieves from a vector index over the operator's private corpus, and composes a multi-paragraph synthesised answer with citations. Built around Milvus / Zilliz vector search but accepts other backends.
+
+  In the atlas: Deep Searcher is catalogued under agent / deep-research alongside MiroThinker and the closed deep-research products. Critical for operators who can't send queries or retrieved context to a hosted deep-research service for confidentiality or sovereignty reasons.
+maturity: beta
+maintainer:
+  type: company
+  name: Zilliz
+origin_country: US
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 via the v0.4.0 fresh-discovery sweep (8 gh-search topic queries, OSI-license filter, anti-laziness cross-reference against the existing 838 yaml files for both simple-id and owner-disambiguator collisions).
+  Apache-2.0; Python library / service. Vector backend is operator-pluggable (Milvus / Zilliz Cloud / Qdrant / Weaviate / Chroma). LLM is operator-pluggable (OpenAI / Anthropic / Ollama / vLLM / any OpenAI-compatible endpoint). No call-home in normal operation.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- r2r
+- ragflow
+- khoj
