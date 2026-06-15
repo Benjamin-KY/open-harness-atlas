@@ -11,18 +11,18 @@ routing — and free education resources.*
 [![License: Apache 2.0](https://img.shields.io/badge/code-Apache--2.0-blue?style=flat-square)](LICENSE)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-d68910?style=flat-square)](LICENSE-DOCS)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue?style=flat-square)](pyproject.toml)
-[![Entries: 833](https://img.shields.io/badge/entries-833-1f3a5f?style=flat-square)](docs/)
+[![Entries: 860](https://img.shields.io/badge/entries-860-1f3a5f?style=flat-square)](docs/)
 [![OSI-licensed](https://img.shields.io/badge/license_filter-OSI_only-28a745?style=flat-square)](GOVERNANCE.md)
 
 ---
 
-![open-harness-atlas — 833 OSS harnesses across six categories](visuals/hero.svg)
+![open-harness-atlas — 860 OSS harnesses across six categories](visuals/hero.svg)
 
 ## The graph
 
 > 🌐 **[Open the 3D interactive knowledge graph →](https://benjamin-ky.github.io/open-harness-atlas/)**
 >
-> 833 nodes · 3,300 adjacency edges · WebGL 3D view (drag to orbit, scroll to
+> 860 nodes · 3,371 adjacency edges · WebGL 3D view (drag to orbit, scroll to
 > zoom), live search, faceted filters, BFS path finder, curated tours,
 > particle-flow edges, dark canvas, deep-linkable. Prefer the classic 2D
 > layout? **[Open the 2D viewer →](https://benjamin-ky.github.io/open-harness-atlas/2d.html)**
@@ -44,17 +44,17 @@ routing — and free education resources.*
 > `companion/use_cases.yaml` + `companion/supply_chains.yaml`, and are
 > re-deployed on every push to `main`.
 
-[![Live 3D viewer — open-harness-atlas at 833 nodes, 3,300 edges](visuals/viewer-3d/preview.png)](https://benjamin-ky.github.io/open-harness-atlas/)
+[![Live 3D viewer — open-harness-atlas at 860 nodes, 3,371 edges](visuals/viewer-3d/preview.png)](https://benjamin-ky.github.io/open-harness-atlas/)
 
 *The live 3D viewer (click to open). Orange = agent · green = eval · blue = governance · slate-blue = routing · red = red-team · purple = education. Right rail: eight entry-point lenses, quick filters, search, faceted filters. Drag to orbit, scroll to zoom.*
 
-![open-harness-atlas — 833-node, 3,300-edge knowledge graph (force-directed static layout)](visuals/graph.svg)
+![open-harness-atlas — 860-node, 3,371-edge knowledge graph (force-directed static layout)](visuals/graph.svg)
 
 *Force-directed static layout (for context / link previews). Node colour = category. Node size = degree (how many neighbours the entry has in the graph). Edge = explicit `adjacent_to` declaration. Clusters are not hand-drawn — they fall out of the data.*
 
 ---
 
-> ⚠ **Pre-release (v0.1.0-dev).** Registry holds **833 entries** across
+> ⚠ **Pre-release (v0.1.0-dev).** Registry holds **860 entries** across
 > six categories (governance 102 · agent 242 · eval 206 · redteam 109 ·
 > routing 102 · education 72) — the v0.2.0 expansion added 491 entries
 > via the systematic GitHub-topic-discovery harness in
@@ -68,7 +68,7 @@ routing — and free education resources.*
 > (NeurIPS / ICML / ACL / USENIX 2024–2026). All entries are
 > OSI-licensed per `GOVERNANCE.md` §1.1.
 >
-> **Honest curation disclosure.** **810 of 833 entries (97%) have been
+> **Honest curation disclosure.** **837 of 860 entries (97.3%) have been
 > reviewed** — 367 by hand against `GOVERNANCE.md` §8, plus 403 via a
 > three-model ensemble pass (Claude Sonnet 4.6 + Claude Opus 4.7 +
 > GPT‑5.4 each independently reviewing the same entry, with consensus
@@ -148,13 +148,13 @@ comparable.
 
 | Category | What's catalogued | Entries |
 |---|---|---|
-| 🛡  **Governance harnesses** | Output-contract / citation / refusal / audit / observability-with-eval-features | 102 |
-| 🤖 **Agent frameworks** | Tool-using multi-turn agent runtimes | 242 |
-| 📏 **Eval harnesses** | Behaviour measurement runners | 206 |
+| 🛡  **Governance harnesses** | Output-contract / citation / refusal / audit / observability-with-eval-features | 103 |
+| 🤖 **Agent frameworks** | Tool-using multi-turn agent runtimes | 264 |
+| 📏 **Eval harnesses** | Behaviour measurement runners | 207 |
 | 🎯 **Red-team / safety harnesses** | Adversarial probes & attack-class coverage | 109 |
-| 🔀 **Routing / model-agnostic infra** | Provider gateways & swappable backends | 102 |
-| 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | 72 |
-| | **Total** | **833** |
+| 🔀 **Routing / model-agnostic infra** | Provider gateways & swappable backends | 104 |
+| 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | 73 |
+| | **Total** | **860** |
 
 Counts auto-validated on every push by `tests/test_registry.py`. Visual
 adoption tiers (Landmark · Established · Emerging · Frontier — derived
@@ -169,8 +169,8 @@ methodology.
 
 **Deployment posture** — every entry now declares one of five postures so
 the catalogue can answer "if I install this today, can I run it locally?"
-in one click. Current distribution: 605 local-first (73%) · 140 local-only
-(17%) · 37 cloud-first (4%) · 31 hybrid (4%) · 20 api-only (2%) — 93.2%
+in one click. Current distribution: 629 local-first (73.1%) · 141 local-only
+(16.4%) · 37 cloud-first (4.3%) · 33 hybrid (3.8%) · 20 api-only (2.3%) — 93.4%
 of the catalogue is realistically self-hostable.
 Classified by heuristic + 3-model ensemble (claude-sonnet-4.5 +
 claude-opus-4.7-xhigh + gpt-5.4); see

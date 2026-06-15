@@ -15,18 +15,18 @@ unblock newsletter; CLI + API unblock ecosystem reuse.
 
 ## Where we are (baseline, 2026-06-14)
 
-- **833 entries** across six categories: governance 102 · agent 242
-  · eval 206 · redteam 109 · routing 102 · education 72.
-- **3,300 adjacency edges** rendered in both a primary 3D WebGL viewer
+- **860 entries** across six categories: governance 103 · agent 264
+  · eval 207 · redteam 109 · routing 104 · education 73.
+- **3,371 adjacency edges** rendered in both a primary 3D WebGL viewer
   and a preserved 2D classic viewer.
-- **93.2% self-hostable** by deployment_posture
+- **93.4% self-hostable** by deployment_posture
   (`local-only`/`local-first`/`hybrid`), classified by heuristic +
   three-model ensemble (claude-sonnet-4.5 + claude-opus-4.7-xhigh +
   gpt-5.4).
-- **97.2% curator-reviewed** (367 by hand, 403 via three-model
-  ensemble pass, 40 hand-curated via the two 2026-06-14 recency-biased
-  discovery sweeps). 23 entries explicitly tracked in
-  [`docs/CURATION_BACKLOG.md`](CURATION_BACKLOG.md).
+- **97.3% curator-reviewed** (367 by hand, 403 via three-model
+  ensemble pass, 67 hand-curated via the three 2026-06-14 / 2026-06-15
+  recency-biased + fresh-discovery sweeps). 23 entries explicitly tracked
+  in [`docs/CURATION_BACKLOG.md`](CURATION_BACKLOG.md).
 - **Patterns layer**: seven named design patterns in
   [`docs/patterns/`](patterns/), one worked example
   ([`worked-example-model-agnostic-stack.md`](worked-example-model-agnostic-stack.md)),

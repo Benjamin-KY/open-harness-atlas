@@ -6,6 +6,109 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — v0.4.0 Polish & Coverage (2026-06-15)
+
+The v0.4.0 ship across six batches (A · tier intelligence v2; B ·
+`data_missing` visual encoding; D · CSP + SRI on viewer CDN scripts;
+E · atomic-write helper across source-of-truth writers; F · spectrum
+SVG redesigned as a six-row strip with shared MAS axis; C · 27 new
+entries from a combination of named-missing curation and a fresh
+gh-search topic sweep). Headline counts after the batch lands:
+
+- Registry: 833 → 860 entries (+27)
+- Adjacency edges: 3,300 → 3,371 (+71)
+- Category totals: governance 102 → 103 · agent 242 → 264 · eval
+  206 → 207 · redteam 109 (unchanged) · routing 102 → 104 · education
+  72 → 73.
+- Curator-reviewed share: 810 / 833 (97.2%) → 837 / 860 (97.3%).
+
+**Batch A — Tier intelligence v2** (commit `2f828c0`): added the
+`canonical` and `dormant` tiers on top of the existing landmark /
+established / emerging / frontier ladder. `canonical` surfaces the
+reference implementations the field treats as baselines even when
+they're no longer the headline ship (e.g. `huggingface-tgi`). `dormant`
+surfaces entries with no commits in the trailing 18 months so the
+graph doesn't visually promote stale projects. Effect: eval frontier
+share fell from 74.8% to 60.7% as 24 reference implementations
+graduated to canonical.
+
+**Batch B — `data_missing` visual encoding** (commit `c77be50`):
+entries whose sidecars are stale (no metadata refresh in the trailing
+21 days) or whose tier is `unknown` now render with a dotted outline
+at 0.40 opacity instead of being silently dropped. This gives the
+catalogue an honest "we don't know yet" signal for fresh adds and for
+the microsoft/* repos that the curator-account auth can't reach for
+metadata refresh (SAML-blocked organisation access).
+
+**Batch D — CSP + SRI on viewer CDN scripts** (commit `2a59692`):
+both `viewer-3d/index.html` and the 2D `viewer.html` now ship a
+locked-down Content-Security-Policy header and SRI hashes pinned to
+the exact CDN script tag. Pytest invariants in
+`tests/test_viewer_security.py` block any future CDN-script edit
+that drops or weakens the hash.
+
+**Batch E — Atomic writes** (commit `15003c3`): all
+source-of-truth writers (`compute_tier`, `compute_velocity`,
+`compute_deployment_posture`, `build_matrices`, `build_graph`,
+`refresh_metadata`) now route through a shared
+`scripts/_atomic.atomic_write_text` helper that writes to a sibling
+`.tmp` then `os.replace()`-s, so a crash mid-write never leaves a
+half-written `_tiers.json` or matrix file on disk.
+
+**Batch F — Spectrum SVG redesigned** (commit `de9eafb`): the model-
+agnostic-spectrum visual moved from a single packed histogram to a
+six-row strip (one per category) with a shared bottom MAS axis,
+per-row independent y-scale (so shape of distribution is comparable
+across categories that differ by an order of magnitude in size), and
+a 4 px minimum bar height floor on non-zero bars so a `count=1` next
+to a `count=49` peak still shows a visible nub. Canvas grew from
+720 px to 920 px tall to give each row 56 px plot height.
+
+**Batch C — Coverage expansion** (commits `963cdcf`, `42c7eaa`):
+shipped in two passes. The first pass (`963cdcf`) added three
+genuinely-missing entries surfaced when verifying upstream repo
+redirects (`gemma-cookbook`, `keras-hub`, `ogx`) and re-pointed
+`openai-preparedness` to the redirected `openai/frontier-evals`.
+Transparency note on this pass: the prior-session "23 named missing
+entries" agent finding was substantially stale — 20 of those 23 had
+already shipped during intervening commits under disambiguator-
+prefixed IDs (`huggingface-trl`, `hf-smol-course`, `openai-
+preparedness`, etc.), so the named-missing pass was honest about
+shipping three rather than padding from a stale shortlist. The
+second pass (`42c7eaa`) ran 10 `gh search repos` topic queries
+across agent-framework, agent-orchestration, rag-framework,
+llm-eval, voice-agent, code-agent, deep-research, mcp-server,
+vector-db, and a frontier-eval pass; filtered 186 unique candidates
+to 137 OSI-licensed via `license.key`; hand-curated 25; one was
+already in the registry; 24 new yaml files written by the one-shot
+generator `scripts/discovery/generate_v4_fresh_2026_06_15.py`. All
+adds carry author-voice sovereignty_notes with explicit provenance
+("Added 2026-06-15 via the v0.4.0 fresh-discovery sweep …") and a
+provider-portability statement.
+
+**Adds in detail (27)**:
+
+- *agent* (+22): `ogx` (named-missing), `ragflow`, `lightrag`,
+  `graphrag`, `docsgpt`, `qwen-agent`, `opencode`, `bisheng`,
+  `mcp-playwright`, `mobile-mcp`, `cognita`, `kuzu`, `microsoft-mcp`,
+  `openai-agents-js`, `vocode-core`, `deep-searcher`, `r2r`, `verba`,
+  `arxiv-mcp-server`, `markdownify-mcp`, `khoj`, `composio`.
+- *routing* (+2): `keras-hub` (named-missing), `ai-dynamo`
+  (LICENSE-file confirms Apache-2.0; GitHub API returned
+  NOASSERTION).
+- *education* (+1): `gemma-cookbook` (named-missing).
+- *eval* (+1): `evalscope`. Also retargeted `openai-preparedness`
+  `repo_url` to track GitHub's redirect → `openai/frontier-evals`.
+- *governance* (+1): `tracecat`, with `five_component_coverage`
+  populated (policy_router=native, source_authority=native,
+  prompt_composer=partial, output_contract=partial,
+  audit_log_fsm=native).
+
+**Gates green at ship time**: `validate_registry` (860 entries,
+schema clean), pytest (94 passed), `ruff check` (clean), all
+`--check` gates (`compute_tier`, `build_matrices`, `build_visuals`).
+CI on `main`: validate + pages both green.
+
 ### Added — Public six-month roadmap (2026-06-14)
 
 - New `docs/ROADMAP.md` — public commitment covering Jun 15 →
