@@ -34,7 +34,7 @@ The Atlas was built in response to the **closed-garden trend** — managed-only 
 
 ## Distribution
 
-Current registry (860 entries, 2026-06-15 v0.4.0):
+Current registry (860 entries, 2026-06-15 v0.4.3):
 
 | Posture | Count | % |
 |---|---:|---:|

@@ -28,6 +28,13 @@ routing — and free education resources.*
 > layout? **[Open the 2D viewer →](https://benjamin-ky.github.io/open-harness-atlas/2d.html)**
 > (mini-map, compare mode, cluster layout, PNG export).
 >
+> Both viewers ship WCAG 2.2 AA-grade accessibility (visible focus
+> indicators · skip-links · `prefers-reduced-motion` gating · seeded
+> deterministic layout · per-pill ink contrast picker · ≥ 24 px touch
+> targets · share-link state serialisation for all 10 filter facets).
+> See [`CHANGELOG.md`](CHANGELOG.md) v0.4.2 / v0.4.3 for the
+> six-persona UX/UI swarm review that drove these.
+>
 > **🎯 Entry points** ("I need a harness for…") — eight curated lenses
 > (evaluate an LLM, red-team an AI system, monitor production agents, build a
 > RAG agent, serve inference, route across providers, govern LLM policy,
@@ -54,7 +61,7 @@ routing — and free education resources.*
 
 ---
 
-> 🚀 **v0.4.0 (2026-06-15).** Registry holds **860 entries** across
+> 🚀 **v0.4.0 → v0.4.3 (all shipped 2026-06-15).** Registry holds **860 entries** across
 > six categories (governance 103 · agent 264 · eval 207 · redteam 109 ·
 > routing 104 · education 73) — the v0.2.0 expansion added 491 entries
 > via the systematic GitHub-topic-discovery harness in
@@ -123,8 +130,9 @@ why "jurisdiction-neutral" is a design commitment, not a slogan).
 ## How harnesses are the foundation for model-agnostic workloads
 
 A **harness** is the structural scaffolding *around* the model that
-makes the model itself swappable. In the [Harmless Harnesses][hh] spec,
-a harness has five components, each enforcing one invariant:
+makes the model itself swappable. In the [Harmless Harnesses][hh] spec
+*(sibling repo currently private; public release planned)*, a harness has
+five components, each enforcing one invariant:
 
 | # | Component | Invariant |
 |---|---|---|
@@ -161,10 +169,14 @@ comparable.
 | 🎓 **Free education** | Courses · tutorials · cookbooks at zero cost | 73 |
 | | **Total** | **860** |
 
-Counts auto-validated on every push by `tests/test_registry.py`. Visual
-adoption tiers (Landmark · Established · Emerging · Frontier — derived
-from stars + age + commit recency) overlay the graph so newer entries are
-visible without sitting visually equal to landmark projects.
+Counts auto-validated on every push by `tests/test_registry.py`. **Visual
+adoption tiers** — five adoption-ordinal tiers (**Landmark · Canonical ·
+Established · Emerging · Frontier** — derived from stars + age + commit
+recency) overlay the graph so newer entries are visible without sitting
+visually equal to landmark projects. Two **operational tiers** (**Dormant**
+for non-archived but quiet-stable projects, **Unknown** when metadata is
+unavailable) render in a separate "Operational" section of the viewer
+tier-legend so they aren't conflated with the adoption-ordinal axis.
 **Uptake velocity** (stars-per-week over a trailing 4-week window) is
 tracked per entry in the scheduled metadata refresh and ranked in
 [`docs/rising.md`](docs/rising.md); detail panels in both viewers show
@@ -307,6 +319,12 @@ runs on a separate weekly schedule.
 | **Voice** | Field guide. Neutral. Citation-heavy. | Pedagogical. Practitioner. | Research. IMRAD. Primary-source-grounded. |
 | **Updates** | Continuous (weekly metadata refresh) | Tagged releases | Tagged releases |
 | **You exit here to…** | The course (to learn how to build) · the research repo (for primary evidence) | The atlas (to find an OSS implementation) | The atlas (for adjacent tooling) |
+
+*Both [Harmless Harnesses][hh] and [sa-sovereign-llm-harness][sa] are
+currently private; public releases are planned. The atlas is
+self-contained — see
+[`docs/the-harness-paradigm-summary.md`](docs/the-harness-paradigm-summary.md)
+for the paradigm context that motivates the catalogue.*
 
 Strict separation of concerns — no duplication. Cross-links land at
 v1.0.0.

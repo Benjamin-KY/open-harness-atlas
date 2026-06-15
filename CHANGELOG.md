@@ -6,7 +6,67 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
-## [v0.4.3] — 2026-06-15
+## [v0.4.4] — 2026-06-15
+
+Top-level documentation audit caught after v0.4.3 ship. The v0.4.2 +
+v0.4.3 hotfixes updated CHANGELOG.md and BRAND.md but did not touch
+the user-facing README.md, the roadmap status, or the conflict-of-
+interest disclosure — all of which carried stale version stamps and,
+critically, three publicly-broken links to sibling repositories that
+are still private. No code, registry, or viewer change.
+
+### Fixed — v0.4.4 documentation accuracy + broken-link audit
+
+- **README.md headline stamp stale at v0.4.0** — bumped to "v0.4.0 →
+  v0.4.3 (all shipped 2026-06-15)" to reflect the same-day rollout
+  chain. The 860 / 3,371 registry counts are unchanged.
+- **README.md tier list missing `canonical` + `dormant` + `unknown`** —
+  the "Visual adoption tiers" sentence enumerated only four tiers
+  (Landmark · Established · Emerging · Frontier), missing both the
+  `canonical` ordinal tier introduced in v0.4.0 Phase 6 and the two
+  operational tiers (`dormant`, `unknown`) added at the same time and
+  now visually separated by v0.4.3's CV-8 fix. Rewrote the sentence
+  to enumerate all five adoption-ordinal tiers plus the two
+  operational tiers, and to point at the viewer tier-legend's
+  "OPERATIONAL" sub-header.
+- **README.md links to private sibling repos rendered with no privacy
+  annotation** — the `[hh]` reference (`Benjamin-KY/Harmless-Harnesses`,
+  still private) and the `[sa]` reference
+  (`Benjamin-KY/sa-sovereign-llm-harness`, still private) appeared
+  three times each in README.md (line 126 "Harmless Harnesses spec",
+  comparison table at line 304, comparison table at line 304's third
+  column) with no annotation that public visitors will hit 404.
+  v0.4.1 added the "*sibling repo currently private; public release
+  planned*" annotation to CHARTER.md and BRAND.md but missed README.md.
+  Added inline annotation next to the "spec" mention and a footnote
+  paragraph beneath the comparison table pointing at
+  `docs/the-harness-paradigm-summary.md` as the self-contained paradigm
+  context.
+- **README.md viewer description did not mention v0.4.2 / v0.4.3 a11y
+  improvements** — added a short paragraph after the "Open the 2D
+  viewer" link listing the WCAG 2.2 AA accessibility surface (focus
+  indicators · skip-links · reduce-motion · seeded layout · per-pill
+  ink picker · ≥ 24 px touch targets · share-link state) and pointing
+  at CHANGELOG v0.4.2 / v0.4.3.
+- **`docs/ROADMAP.md` v0.4.0 section had no shipped-status amendment**
+  — added a "**SHIPPED 2026-06-15 as v0.4.0 → v0.4.3**" status block
+  enumerating each same-day hotfix (v0.4.1 entry corrections + privacy
+  annotations · v0.4.2 + v0.4.3 viewer BLOCKERs). The Jun 15 → Jul 14
+  date range still applies; the work just landed on day 1.
+- **`docs/deployment-posture.md` registry stamp stale at v0.4.0** —
+  bumped to v0.4.3 (counts unchanged, still 629/141/37/33/20).
+- **`GOVERNANCE.md` conflict-of-interest disclosure had bare links to
+  the two private sibling repos** — same broken-link pattern as
+  README.md, added the same "*both sibling repos currently private*"
+  annotation alongside a pointer to the self-contained summary.
+
+### Verification
+
+- 94 / 94 pytest still passes (docs-only change; no code touched)
+- Doc render preserved: ROADMAP.md `## Monthly ships` h3 anchors
+  unchanged (existing `#v04-0` anchor still resolves to the renamed
+  section)
+- No registry or visuals change; no live-site marker check needed
 
 Second viewer hotfix in 24h. Closes the remaining cross-validated UX-swarm
 BLOCKERs (CV-5 touch targets, CV-8 tier-legend ordering, B-B share-link state

@@ -61,7 +61,20 @@ Six credibility-risk surfaces drive the roadmap:
 
 ## Monthly ships
 
-### v0.4.0 — Polish & Coverage (Jun 15 → Jul 14)
+### v0.4.0 — Polish & Coverage (Jun 15 → Jul 14) — **SHIPPED 2026-06-15 as v0.4.0 → v0.4.3**
+
+> **Status (2026-06-15).** v0.4.0 (tier intelligence v2 · 23 named
+> coverage adds · spectrum redesign) shipped on day 1. Three same-day
+> hotfixes followed: **v0.4.1** (6 entry-level factual corrections +
+> cross-repo link privacy annotations + citation surfaces), **v0.4.2**
+> (8 cross-validated viewer BLOCKERs from a 6-persona UX/UI swarm —
+> focus-visible · reduce-motion · ARIA · fetch error handler · 100dvh ·
+> seeded RNG · noscript fallback), **v0.4.3** (remaining cross-validated
+> BLOCKERs — per-pill ink luminance · ≥ 24 px touch targets · tier-legend
+> ordinal sort + Operational separator · share-link state serialisation +
+> retraction of v0.4.2 governance-pill contrast measurement error).
+> Exit criteria met. Velocity work + per-entry pages now shift to
+> v0.5.0 ahead of schedule.
 
 **Headline.** Tier intelligence v2 + Coverage Expansion one-shot.
 

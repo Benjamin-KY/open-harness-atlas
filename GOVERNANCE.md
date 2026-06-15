@@ -123,7 +123,10 @@ way:
 The current author maintains two projects that are also catalogued:
 [`harmless-harnesses`](https://github.com/Benjamin-KY/Harmless-Harnesses)
 and
-[`sa-sovereign-llm-harness`](https://github.com/Benjamin-KY/sa-sovereign-llm-harness).
+[`sa-sovereign-llm-harness`](https://github.com/Benjamin-KY/sa-sovereign-llm-harness)
+*(both sibling repos currently private; public releases planned —
+the atlas remains self-contained without them, see
+[`docs/the-harness-paradigm-summary.md`](docs/the-harness-paradigm-summary.md))*.
 To manage this:
 
 - Both entries follow the same schema and scoring rubric as every other
