@@ -111,14 +111,28 @@ api-only are valid sovereignty postures, the panel only surfaces the dimension.
 | api-only     | `#5b7fc7` | Hosted-only, no local execution               |
 | unknown      | `#5d6470` | Posture not yet classified                    |
 
-**Pill text colour** — coloured pills in the selection panel use
-`var(--brand-deep)` (dark navy `#0d1f33`) for body text, not white. White
-text on the lighter pill hues (eval ~`#4dd07a`, governance ~`#6f8cb8`)
-fails WCAG AA contrast for normal text; dark ink passes for 5 of 6
-category pills + all 6 tier pills. The governance pill at `#6f8cb8` with
-dark ink sits at ~3.3:1 — **above** AA-large-text threshold (3:1) but
-**below** AA-normal-text threshold (4.5:1) and is flagged for palette
-recolouring in v0.5.0.
+**Pill text colour** — coloured pills in the selection panel use a
+per-pill ink picker, not a blanket colour. A JS helper `pickPillInk(bg)`
+in both viewers computes the WCAG-relative-luminance of the background
+hex and returns `var(--brand-deep)` (dark navy `#0d1f33`) when bg
+luminance ≥ 0.208 and `#fff` otherwise — the crossover point where
+`contrast(brand-deep, bg) == contrast(white, bg)`. With this rule 16 of
+18 viewer-rendered pills measure ≥ 4.5:1 AA-normal against their chosen
+ink; the remaining 2 (posture `local-only` `#1f8a70` at 4.26:1 with
+white, posture `api-only` `#5b7fc7` at 4.21:1 with brand-deep) are
+mid-tone enough that no ink choice clears 4.5:1 — palette recolouring
+for those two is a v0.5.0 task. Net result vs v0.4.2 is no pill is
+worse off and four (tier `dormant`, tier `unknown`, posture `unknown`,
+posture `local-only`) are strictly better.
+
+> **Historical note** — `BRAND.md` v0.4.2 stated the governance pill
+> `#6f8cb8` with dark ink sat at "~3.3:1" and needed v0.5.0 palette
+> work. That was a measurement error (luminance was computed against
+> `#000`, not `var(--brand-deep)`). The corrected measurement is
+> **4.85:1** — passes AA-normal. v0.4.3 retracts the caveat and replaces
+> the v0.4.2 blanket dark-ink rule (which had silently regressed four
+> dark-bg pills to ~2.79–3.91:1) with the `pickPillInk()` approach
+> above.
 
 ---
 

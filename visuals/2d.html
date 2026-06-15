@@ -288,10 +288,13 @@
   input[type=range] { flex: 1; accent-color: var(--brand-deep); }
 
   /* legend */
+  /* v0.4.3 WCAG 2.5.8: 5px*2 padding + 13px line ≈ 23px — bumped padding
+     to give a comfortable 28px hit area on click-to-toggle legend rows. */
   .legend-item {
-    display: flex; align-items: center; gap: 8px; padding: 5px 6px;
+    display: flex; align-items: center; gap: 8px; padding: 7px 8px;
     cursor: pointer; user-select: none; font-size: 13px;
     border-radius: 5px; transition: background var(--t-fast);
+    min-height: 28px;
   }
   .legend-item:hover { background: var(--brand-bg); }
   .legend-item .swatch {
@@ -331,15 +334,18 @@
     line-height: 1.2;
   }
   .node-detail-pills { display: flex; gap: 4px; flex-wrap: wrap; margin: 4px 0; }
-  /* v0.4.2 WCAG 1.4.3 fix: white text on category colours measured 1.6–3.0:1
-     (pills are 10px bold, NOT large text → 4.5:1 required). Switched to dark ink
-     on existing CVD-distinct palette. Most categories ≥5:1 with dark ink.
-     Known limit: governance pill (#6f8cb8 cool-blue) reaches ~3.3:1 with either ink
-     colour — full AA requires palette consolidation in v0.5.0 per CV-7. */
+  /* v0.4.3 WCAG 1.4.3 fix (revising v0.4.2): pill ink is now per-pill,
+     emitted inline via pickPillInk(bg) which picks white vs brand-deep by
+     WCAG-AA luminance threshold (L_bg=0.208). The CSS `color` here is the
+     fallback for outline / non-coloured pills. v0.4.2's hard-coded dark
+     ink would render dark-on-dark on the 4 dark-bg pills (tier:dormant,
+     tier:unknown via fallback, posture:unknown, posture:local-only) at
+     ~2.8:1 — that regression is fixed. */
   .pill {
     font-size: 10px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.05em; padding: 2px 8px; border-radius: 999px;
-    color: var(--brand-deep); line-height: 1.5;
+    letter-spacing: 0.05em; padding: 4px 8px; border-radius: 999px;
+    color: var(--brand-deep); line-height: 1.5; min-height: 18px;
+    display: inline-flex; align-items: center;
   }
   .pill.outline {
     background: transparent; border: 1px solid var(--brand-line);
@@ -399,10 +405,12 @@
     color: var(--brand-deep);
   }
   .path-result { font-size: 12.5px; line-height: 1.5; margin-top: 6px; }
+  /* v0.4.3 WCAG 2.5.8: clickable path waypoint — bumped to 24px hit area. */
   .path-result .crumb {
-    display: inline-block; padding: 2px 6px; margin: 2px 0;
+    display: inline-flex; align-items: center; padding: 4px 8px; margin: 2px 0;
     background: var(--brand-bg); border: 1px solid var(--brand-line);
     border-radius: 4px; color: var(--brand-deep); cursor: pointer;
+    min-height: 24px;
   }
   .path-result .arrow { margin: 0 2px; color: var(--brand-mute); }
 
@@ -458,9 +466,10 @@
 
   /* Quick-filter chips */
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  /* v0.4.3 WCAG 2.5.8: bumped chip min-height to 24px for touch hit area. */
   .chip {
     display: inline-flex; align-items: center; gap: 6px;
-    padding: 4px 10px; border-radius: 999px;
+    padding: 4px 10px; border-radius: 999px; min-height: 24px;
     border: 1px solid var(--brand-line); background: var(--brand-panel);
     color: var(--brand-deep);
     font-size: 11.5px; font-weight: 600; cursor: pointer;
@@ -521,9 +530,11 @@
   .chain-step .step-alt code { font-size: 9.5px; padding: 0 3px; border-radius: 3px; background: var(--brand-panel); cursor: pointer; }
 
   .uc-pills { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+  /* v0.4.3 WCAG 2.5.8: bumped from 1px*2 padding (~13px height) to 24px. */
   .uc-pill {
     display: inline-flex; align-items: center; gap: 3px;
-    padding: 1px 7px; border-radius: 999px; font-size: 10.5px;
+    padding: 4px 8px; border-radius: 999px; font-size: 10.5px;
+    min-height: 24px;
     cursor: pointer; user-select: none;
     border: 1px solid var(--brand-line); background: var(--brand-bg); color: var(--brand-deep);
   }
@@ -1428,6 +1439,20 @@ document.addEventListener('DOMContentLoaded', async () => {
       ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
 
+  // pickPillInk(bg) — WCAG-AA luminance-aware text-ink picker. See
+  // visuals/index.html for full rationale. Threshold L_bg=0.208 splits
+  // dark-ink-wins (light bg) from white-ink-wins (dark bg).
+  function pickPillInk(bg) {
+    const h = (bg||'').replace('#','');
+    if (h.length < 6) return 'var(--brand-deep)';
+    const r = parseInt(h.slice(0,2),16)/255;
+    const g = parseInt(h.slice(2,4),16)/255;
+    const b = parseInt(h.slice(4,6),16)/255;
+    const lin = c => c<=0.03928 ? c/12.92 : Math.pow((c+0.055)/1.055, 2.4);
+    const L = 0.2126*lin(r) + 0.7152*lin(g) + 0.0722*lin(b);
+    return L > 0.208 ? 'var(--brand-deep)' : '#fff';
+  }
+
   // ----- Sparkline (uptake / star history) — inline SVG, no deps -----
   function sparklineSvg(values, opts = {}) {
     if (!Array.isArray(values) || values.length < 2) return '';
@@ -1492,9 +1517,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     detail.innerHTML = `
       <div class="node-detail-title">${escapeHtml(node.name)}</div>
       <div class="node-detail-pills">
-        <span class="pill" style="background:${node.color}">${escapeHtml(node.category)}</span>
-        ${node.tier && node.tier !== 'unknown' ? `<span class="pill" style="background:${TIER_COLOR_MAP[node.tier]||'#888'}" title="Adoption tier — computed from stars, age, commit recency">${escapeHtml(node.tier)}</span>` : ''}
-        ${node.deployment_posture ? `<span class="pill" style="background:${POSTURE_COLOR_MAP[node.deployment_posture]||'#888'}" title="${escapeHtml(POSTURE_HINT[node.deployment_posture]||'')}">${escapeHtml(POSTURE_LABEL[node.deployment_posture]||node.deployment_posture)}</span>` : ''}
+        <span class="pill" style="background:${node.color};color:${pickPillInk(node.color)}">${escapeHtml(node.category)}</span>
+        ${node.tier && node.tier !== 'unknown' ? `<span class="pill" style="background:${TIER_COLOR_MAP[node.tier]||'#888'};color:${pickPillInk(TIER_COLOR_MAP[node.tier]||'#888')}" title="Adoption tier — computed from stars, age, commit recency">${escapeHtml(node.tier)}</span>` : ''}
+        ${node.deployment_posture ? `<span class="pill" style="background:${POSTURE_COLOR_MAP[node.deployment_posture]||'#888'};color:${pickPillInk(POSTURE_COLOR_MAP[node.deployment_posture]||'#888')}" title="${escapeHtml(POSTURE_HINT[node.deployment_posture]||'')}">${escapeHtml(POSTURE_LABEL[node.deployment_posture]||node.deployment_posture)}</span>` : ''}
         ${node.maturity ? `<span class="pill outline">${escapeHtml(node.maturity)}</span>` : ''}
         ${node.license  ? `<span class="pill outline">${escapeHtml(node.license)}</span>` : ''}
       </div>
@@ -1665,11 +1690,28 @@ document.addEventListener('DOMContentLoaded', async () => {
   // ============================================================
   // 9b. Tier legend (visual caveat for newer / less-adopted entries)
   // ============================================================
+  // v0.4.3 CV-8 fix: see visuals/index.html for full rationale. Sort by
+  // ordinal adoption order, then insert "Operational" sub-header before
+  // dormant/unknown so the categorical break reads cleanly.
+  const TIER_ORDER = ['landmark','canonical','established','emerging','frontier','dormant','unknown'];
+  const TIER_OPERATIONAL = new Set(['dormant','unknown']);
   const tierLegend = $('tier-legend');
-  const tierMeta = (data.meta.tiers || []).filter(t => t.count > 0);
+  const tierMeta = (data.meta.tiers || [])
+    .filter(t => t.count > 0)
+    .sort((a,b) => (TIER_ORDER.indexOf(a.key) - TIER_ORDER.indexOf(b.key)));
   let tierShown = 0;
+  let lastWasAdoption = false;
   tierMeta.forEach(t => {
     tierShown += t.count;
+    const isOperational = TIER_OPERATIONAL.has(t.key);
+    if (lastWasAdoption && isOperational) {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'border-top:1px dashed var(--brand-line);margin:6px 0 4px;padding-top:4px;font-size:10.5px;color:var(--brand-mute);text-transform:uppercase;letter-spacing:0.04em;';
+      sep.textContent = 'Operational';
+      sep.setAttribute('aria-hidden','true');
+      tierLegend.appendChild(sep);
+    }
+    if (!isOperational) lastWasAdoption = true;
     const row = document.createElement('div');
     row.className = 'legend-item';
     row.setAttribute('role', 'button');
@@ -1903,7 +1945,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   $('btn-share').onclick = async () => {
-    const url = location.href;
+    const url = buildShareHash();
     try { await navigator.clipboard.writeText(url); flashHUD('Link copied: ' + url.replace(location.origin,'')); }
     catch { prompt('Copy this URL:', url); }
   };
@@ -1942,10 +1984,66 @@ document.addEventListener('DOMContentLoaded', async () => {
   // ============================================================
   // 16. URL hash deep-linking
   // ============================================================
+  // v0.4.3 B-B fix: hash now carries full filterState (q/mas/mat/cty/
+  // lic/lang/offc/offt/offp/lens) in addition to existing
+  // node/path/lens/chain. buildShareHash() is the single emission point
+  // (used by the share button); applyHash() restores filters + DOM
+  // controls + legend off-classes before applyFilters().
+  function buildShareHash() {
+    const p = new URLSearchParams();
+    if (filterState.q)       p.set('q', filterState.q);
+    if (filterState.mas)     p.set('mas', String(filterState.mas));
+    if (filterState.mat)     p.set('mat', filterState.mat);
+    if (filterState.cty)     p.set('cty', filterState.cty);
+    if (filterState.lic)     p.set('lic', filterState.lic);
+    if (filterState.lang)    p.set('lang', filterState.lang);
+    if (filterState.offCats.size)     p.set('offc', [...filterState.offCats].join(','));
+    if (filterState.offTiers.size)    p.set('offt', [...filterState.offTiers].join(','));
+    if (filterState.offPostures.size) p.set('offp', [...filterState.offPostures].join(','));
+    if (filterState.useCase) p.set('lens', filterState.useCase);
+    const existing = new URLSearchParams((location.hash||'').replace(/^#/,''));
+    ['node','path','chain'].forEach(k => { if (existing.has(k) && !p.has(k)) p.set(k, existing.get(k)); });
+    const str = p.toString();
+    return `${location.origin}${location.pathname}${str ? '#'+str : ''}`;
+  }
+
+  function restoreFiltersFromParams(params) {
+    let changed = false;
+    if (params.has('q'))    { filterState.q   = params.get('q');   const s=$('search');    if(s) s.value = filterState.q; changed = true; }
+    if (params.has('mas'))  { filterState.mas = +params.get('mas')||0; const r=$('mas-range'); if(r) r.value = filterState.mas; const lbl=$('mas-val'); if(lbl) lbl.textContent = filterState.mas; changed = true; }
+    if (params.has('mat'))  { filterState.mat  = params.get('mat');  const s=$('mat-sel');  if(s) s.value = filterState.mat; changed = true; }
+    if (params.has('cty'))  { filterState.cty  = params.get('cty');  const s=$('cty-sel');  if(s) s.value = filterState.cty; changed = true; }
+    if (params.has('lic'))  { filterState.lic  = params.get('lic');  const s=$('lic-sel');  if(s) s.value = filterState.lic; changed = true; }
+    if (params.has('lang')) { filterState.lang = params.get('lang'); const s=$('lang-sel'); if(s) s.value = filterState.lang; changed = true; }
+    if (params.has('offc')) {
+      filterState.offCats = new Set(params.get('offc').split(',').filter(Boolean));
+      document.querySelectorAll('#legend .legend-item').forEach(el => {
+        const k = el.dataset.category; if (k) el.classList.toggle('off', filterState.offCats.has(k));
+      });
+      changed = true;
+    }
+    if (params.has('offt')) {
+      filterState.offTiers = new Set(params.get('offt').split(',').filter(Boolean));
+      document.querySelectorAll('#tier-legend .legend-item').forEach(el => {
+        const k = el.dataset.tier; if (k) el.classList.toggle('off', filterState.offTiers.has(k));
+      });
+      changed = true;
+    }
+    if (params.has('offp')) {
+      filterState.offPostures = new Set(params.get('offp').split(',').filter(Boolean));
+      document.querySelectorAll('#posture-legend .legend-item').forEach(el => {
+        const k = el.dataset.posture; if (k) el.classList.toggle('off', filterState.offPostures.has(k));
+      });
+      changed = true;
+    }
+    if (changed) applyFilters();
+  }
+
   function applyHash() {
     const h = location.hash.replace(/^#/, '');
     if (!h) return;
     const params = new URLSearchParams(h);
+    restoreFiltersFromParams(params);
     if (params.has('node')) {
       const n = byId.get(params.get('node'));
       if (n) {

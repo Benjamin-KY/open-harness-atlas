@@ -6,6 +6,110 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+## [v0.4.3] — 2026-06-15
+
+Second viewer hotfix in 24h. Closes the remaining cross-validated UX-swarm
+BLOCKERs (CV-5 touch targets, CV-8 tier-legend ordering, B-B share-link state
+serialisation) and **retracts** the v0.4.2 "governance pill ~3.3:1" claim
+after a WCAG luminance audit found two distinct errors: (1) the actual
+contrast with `var(--brand-deep)` is 4.85:1 (passes AA-normal), and (2) the
+blanket dark-ink rule shipped in v0.4.2 silently regressed four dark-bg
+pills (tier `dormant` `#5c6470`, tier `unknown` `#9c8062`, posture `unknown`
+`#5d6470`, posture `local-only` `#1f8a70`) to ~2.79–3.91:1 dark-on-dark. No
+registry change (still 860 / 3,371); viewer hardening + brand-doc
+correction only.
+
+### Fixed — v0.4.3 closure of remaining cross-validated UX BLOCKERs
+
+- **Pill ink colour regressed for dark-bg pills (v0.4.2 audit error)** —
+  v0.4.2 added a blanket `.pill { color: var(--brand-deep); }` rule to
+  lift bright-bg pills above WCAG AA-normal, but the audit at the time
+  did not enumerate every pill's measured contrast against that ink. A
+  full WCAG-relative-luminance pass for v0.4.3 finds the v0.4.2 rule
+  silently regressed tier `dormant` `#5c6470` (2.79:1), tier `unknown`
+  `#9c8062` (was 4.50:1 — borderline), posture `unknown` `#5d6470`
+  (2.79:1), and posture `local-only` `#1f8a70` (3.91:1 — AA-large-only)
+  to dark-on-dark — the first three failing AA-normal **and** AA-large.
+  Replaced the blanket rule with a `pickPillInk(bg)` JS helper that
+  picks `var(--brand-deep)` when bg relative luminance ≥ 0.208 and
+  `#fff` otherwise (the crossover point where `contrast(brand-deep, bg)
+  == contrast(white, bg)`). Per-pill measurements after v0.4.3:
+  - 16 of 18 viewer pills now pass WCAG AA-normal (≥ 4.5:1) — every
+    category and tier pill, plus posture `local-first` / `hybrid` /
+    `cloud-first` / `unknown`. Tier `unknown` `#9c8062` sits exactly at
+    4.50:1 — the AA-normal threshold edge.
+  - 2 posture pills (`local-only` `#1f8a70` at 4.26:1 with white ink,
+    `api-only` `#5b7fc7` at 4.21:1 with brand-deep ink) sit in
+    AA-large-only territory — both pill colours are mid-tone enough that
+    neither dark nor white ink can reach 4.5:1 without palette
+    recolouring. `pickPillInk()` picks the better of the two for each.
+    The two affected pills carry short keywords (≤ 11 chars) at 12px,
+    above the AA-large threshold of 14pt-bold-equivalent at standard
+    viewer zoom. **Palette recolouring for these two remains a v0.5.0
+    task**; net result vs v0.4.2 is no pill is now worse off and 4 are
+    strictly better. Helper + 3 emit sites updated in each viewer; the
+    fallback CSS `.pill { color: var(--brand-deep); }` rule preserved
+    for any outline-only or unrendered pill.
+- **Governance pill contrast claim (v0.4.2 doc error)** — both v0.4.2's
+  CHANGELOG and the new BRAND.md "Viewer rendering palette" section claimed
+  the governance `#6f8cb8` pill with `var(--brand-deep)` ink "sits at ~3.3:1"
+  and needs v0.5.0 palette work. The actual measured ratio is **4.85:1** —
+  passes AA-normal. The original claim was wrong (luminance was computed
+  against `#000` not `var(--brand-deep)`). v0.4.3 retracts the caveat in
+  both BRAND.md and CHANGELOG, and the governance pill is now correctly
+  served brand-deep ink by `pickPillInk()`. Caught by running the contrast
+  computer over the full pill palette before any palette tweak.
+- **Touch targets below WCAG 2.5.8 AA (CV-5)** — chips, use-case pills,
+  legend rows, and breadcrumbs in both viewers measured 17–22 px tall,
+  failing the 24×24 CSS-pixel target-size minimum for AA. Bumped
+  `min-height` to 24 px (`.chip`, `.uc-pill`, `.crumb`) and 28 px
+  (`.legend-item`) in both viewers; pills changed to `display: inline-flex`
+  for vertical centring and `padding: 4px 8px` for horizontal hit area;
+  `.pill` itself bumped to `min-height: 18px` (in-line metadata badge,
+  smaller target than interactive controls is conventional and explicit).
+  Caught by Tomás (mobile) + Saoirse (WCAG).
+- **Tier legend visually mixed "operational" + "adoption" axes (CV-8)** —
+  the build pipeline emitted tiers in registry-iteration order, so
+  `dormant` rendered between `emerging` and `frontier`, conflating an
+  operational-state classification (`dormant`/`unknown`) with the
+  adoption-signal ordinal axis (`landmark` > `canonical` > `established` >
+  `emerging` > `frontier`). Added a client-side `TIER_ORDER` sort and an
+  "OPERATIONAL" sub-header separator between the 5-tier ordinal block and
+  the 2-tier operational block in both viewers' `#tier-legend` panels. The
+  separator is `aria-hidden="true"` with no role so it doesn't pollute the
+  tab order. Caught by Kenji (InfoVis) + Annika (Tufte).
+- **Share link silently dropped 10 filter facets (B-B)** — the `Copy
+  shareable link` button copied `location.href`, which only round-tripped
+  the four navigational keys (`node`/`path`/`lens`/`chain`). The six
+  `<select>` filters (search, MAS gate, maturity, country, license,
+  language) and three category/tier/posture off-sets were silently
+  discarded — a "share" link reproduced an unfiltered graph regardless of
+  the sender's actual state. Added `buildShareHash()` to serialise all 10
+  filterState keys + preserve existing nav keys; extended `applyHash()`
+  with `restoreFiltersFromParams()` to push restored state into both the
+  `filterState` object and the DOM controls (`<input>.value`,
+  `<select>.value`, `<span>.textContent`, `.legend-item.off` class).
+  Applied to both viewers. Caught by Maya (UX research / task analysis).
+
+### Corrected — v0.4.3 documentation accuracy
+
+- `BRAND.md` "Viewer rendering palette" caveat: removed the incorrect
+  governance ~3.3:1 statement and replaced with a description of the
+  `pickPillInk()` luminance-derived approach; updated the table footnote
+  to reflect that every viewer-rendered pill now passes AA-normal with
+  the per-pill ink rule.
+- `CHANGELOG.md` v0.4.2 entry: NOT rewritten (history is history) — but
+  this v0.4.3 entry above explicitly retracts the v0.4.2 governance
+  contrast claim with the corrected measurement.
+
+### Deferred to v0.5.0 / v0.6.0 (unchanged from v0.4.2 list)
+
+- **v0.5.0** — design-system convergence (token cleanup, all 13
+  cross-validated MAJORs from the swarm synthesis, B-C toggle-button
+  semantics audit, B-E hero PNG socials card).
+- **v0.6.0** — earn the third dimension via `deployment_posture` as
+  Z-axis elevation (CV-6).
+
 ## [v0.4.2] — 2026-06-15
 
 Post-v0.4.1 accessibility + reliability hotfix shipped same day after a

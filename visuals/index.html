@@ -220,9 +220,13 @@
 
   /* Chips */
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  /* v0.4.3 WCAG 2.5.8 (Target Size, Minimum): bumped chip min-height to
+     24px CSS px so touch users on mobile + reduced-precision pointer users
+     have a comfortable hit area. Was ~20px (4px*2 padding + 11.5px line)
+     pre-v0.4.3. */
   .chip {
     display: inline-flex; align-items: center; gap: 6px;
-    padding: 4px 10px; border-radius: 999px;
+    padding: 4px 10px; border-radius: 999px; min-height: 24px;
     border: 1px solid var(--brand-line); background: var(--brand-panel);
     color: var(--brand-deep);
     font-size: 11.5px; font-weight: 600; cursor: pointer;
@@ -289,9 +293,12 @@
 
   /* Use-case pills inside detail panel */
   .uc-pills { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+  /* v0.4.3 WCAG 2.5.8: bumped from 1px*2 padding (~13px height) to give
+     ~24px hit area. Visual size grows modestly but stays compact. */
   .uc-pill {
     display: inline-flex; align-items: center; gap: 3px;
-    padding: 1px 7px; border-radius: 999px; font-size: 10.5px;
+    padding: 4px 8px; border-radius: 999px; font-size: 10.5px;
+    min-height: 24px;
     cursor: pointer; user-select: none;
     border: 1px solid var(--brand-line); background: var(--brand-bg); color: var(--brand-deep);
   }
@@ -302,9 +309,12 @@
 
   /* Legend */
   #legend { display: flex; flex-direction: column; gap: 2px; }
+  /* v0.4.3 WCAG 2.5.8: bumped from 4px*2 padding (~22px height) to give a
+     comfortable 28px hit area on the click-to-toggle legend rows. */
   .legend-item {
     display: flex; align-items: center; gap: 8px;
-    padding: 4px 6px; border-radius: 6px; cursor: pointer; user-select: none;
+    padding: 6px 8px; border-radius: 6px; cursor: pointer; user-select: none;
+    min-height: 28px;
     transition: background var(--t-fast);
   }
   .legend-item:hover { background: var(--brand-bg); }
@@ -319,14 +329,17 @@
   /* Detail */
   #detail .node-detail-title { font-size: 16px; font-weight: 700; color: var(--brand-deep); margin: 0 0 4px; }
   #detail .node-detail-pills { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0; }
-  /* v0.4.2 WCAG 1.4.3 fix: white text on category colours measured 1.6–3.0:1
-     (pills are 11px sem-bold, NOT large text → 4.5:1 required). Switched to dark ink
-     on existing CVD-distinct palette. Most categories ≥5:1 with dark ink.
-     Known limit: governance pill (#6f8cb8 cool-blue) reaches ~3.3:1 with either ink
-     colour — full AA requires palette consolidation in v0.5.0 per CV-7. */
+  /* v0.4.3 WCAG 1.4.3 fix (revising v0.4.2): pill ink is now per-pill,
+     emitted inline via pickPillInk(bg) which picks white vs brand-deep by
+     WCAG-AA luminance threshold (L_bg=0.208). The CSS `color` here is just
+     the fallback for any pill that escapes the renderer. v0.4.2's
+     hard-coded `color: var(--brand-deep)` would render dark-on-dark on the
+     4 dark-bg pills (tier:dormant, tier:unknown via fallback, posture:
+     unknown, posture:local-only) at ~2.8:1 — that regression is fixed. */
   #detail .pill {
-    display: inline-block; padding: 2px 8px; border-radius: 999px;
+    display: inline-block; padding: 4px 8px; border-radius: 999px;
     font-size: 11px; font-weight: 700; color: var(--brand-deep);
+    min-height: 18px;
   }
   #detail .pill.outline { background: var(--brand-bg); color: var(--brand-deep); border: 1px solid var(--brand-line); }
   #detail .node-detail-tag { font-size: 13px; color: var(--brand-ink); margin: 6px 0; line-height: 1.45; }
@@ -413,8 +426,10 @@
     border: 1px solid var(--brand-line); cursor: pointer;
   }
   .path-result { font-size: 12.5px; line-height: 1.7; margin-top: 6px; }
-  .crumb { display: inline-block; padding: 2px 6px; margin: 2px 1px; background: var(--brand-bg);
-    border-radius: 4px; font-size: 12px; cursor: pointer; }
+  /* v0.4.3 WCAG 2.5.8: crumb is a clickable path waypoint — bumped from
+     2px padding (~16px height) to ~24px hit area. */
+  .crumb { display: inline-flex; align-items: center; padding: 4px 8px; margin: 2px 1px; background: var(--brand-bg);
+    border-radius: 4px; font-size: 12px; cursor: pointer; min-height: 24px; }
   .arrow { color: var(--brand-mute); margin: 0 2px; }
 
   /* Overlay (onboarding) */
@@ -960,6 +975,24 @@
     return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
 
+  // pickPillInk(bg) — WCAG-AA luminance-aware text-ink picker for coloured
+  // pills. v0.4.2 unilaterally switched every pill to dark var(--brand-deep)
+  // ink, which fixed 15 of 19 light-bg pills but REGRESSED 4 dark-bg pills
+  // (tier:dormant #5c6470, tier:unknown #9c8062 is ok, posture:unknown
+  // #5d6470, posture:local-only #1f8a70) into a ~2.8:1 dark-on-dark fail.
+  // Threshold L_bg=0.208 is the analytic crossover where contrast(white,bg)
+  // == contrast(brand-deep,bg); above → dark ink wins, below → white wins.
+  function pickPillInk(bg) {
+    const h = (bg||'').replace('#','');
+    if (h.length < 6) return 'var(--brand-deep)';
+    const r = parseInt(h.slice(0,2),16)/255;
+    const g = parseInt(h.slice(2,4),16)/255;
+    const b = parseInt(h.slice(4,6),16)/255;
+    const lin = c => c<=0.03928 ? c/12.92 : Math.pow((c+0.055)/1.055, 2.4);
+    const L = 0.2126*lin(r) + 0.7152*lin(g) + 0.0722*lin(b);
+    return L > 0.208 ? 'var(--brand-deep)' : '#fff';
+  }
+
   // ============================================================
   // Sparkline (uptake / star history) — inline SVG, no deps
   // ============================================================
@@ -1084,9 +1117,9 @@
     $('detail').innerHTML = `
       <div class="node-detail-title">${escapeHtml(node.name)}</div>
       <div class="node-detail-pills">
-        <span class="pill" style="background:${NODE_COLOR_MAP[node.category]||node.color}">${escapeHtml(node.category)}</span>
-        ${node.tier && node.tier !== 'unknown' ? `<span class="pill" style="background:${TIER_COLOR_MAP[node.tier]||'#888'}" title="Adoption tier — computed from stars, age, commit recency">${escapeHtml(node.tier)}</span>` : ''}
-        ${node.deployment_posture ? `<span class="pill" style="background:${POSTURE_COLOR_MAP[node.deployment_posture]||'#888'}" title="${escapeHtml(POSTURE_HINT[node.deployment_posture]||'')}">${escapeHtml(POSTURE_LABEL[node.deployment_posture]||node.deployment_posture)}</span>` : ''}
+        <span class="pill" style="background:${NODE_COLOR_MAP[node.category]||node.color};color:${pickPillInk(NODE_COLOR_MAP[node.category]||node.color)}">${escapeHtml(node.category)}</span>
+        ${node.tier && node.tier !== 'unknown' ? `<span class="pill" style="background:${TIER_COLOR_MAP[node.tier]||'#888'};color:${pickPillInk(TIER_COLOR_MAP[node.tier]||'#888')}" title="Adoption tier — computed from stars, age, commit recency">${escapeHtml(node.tier)}</span>` : ''}
+        ${node.deployment_posture ? `<span class="pill" style="background:${POSTURE_COLOR_MAP[node.deployment_posture]||'#888'};color:${pickPillInk(POSTURE_COLOR_MAP[node.deployment_posture]||'#888')}" title="${escapeHtml(POSTURE_HINT[node.deployment_posture]||'')}">${escapeHtml(POSTURE_LABEL[node.deployment_posture]||node.deployment_posture)}</span>` : ''}
         ${node.maturity ? `<span class="pill outline">${escapeHtml(node.maturity)}</span>` : ''}
         ${node.license  ? `<span class="pill outline">${escapeHtml(node.license)}</span>` : ''}
       </div>
@@ -1243,13 +1276,35 @@
   $('cat-count').textContent = `${data.meta.categories.length} categories`;
 
   // ============================================================
+  // ============================================================
   // Tier legend (visual caveat for newer / less-adopted entries)
   // ============================================================
+  // v0.4.3 CV-8 fix: the 7 tier swatches use distinct CVD-safe HUES (not
+  // a sequential ramp), so a glance at the legend alone doesn't read as
+  // ordinal. Re-sort tierMeta by explicit ordinal order (adoption tiers
+  // landmark→frontier) then operational tiers (dormant, unknown), and
+  // add a visual separator + sub-header before the operational group so
+  // readers can distinguish "ranked adoption signal" from "operational
+  // metadata category".
+  const TIER_ORDER = ['landmark','canonical','established','emerging','frontier','dormant','unknown'];
+  const TIER_OPERATIONAL = new Set(['dormant','unknown']);
   const tierLegend = $('tier-legend');
-  const tierMeta = (data.meta.tiers || []).filter(t => t.count > 0);
+  const tierMeta = (data.meta.tiers || [])
+    .filter(t => t.count > 0)
+    .sort((a,b) => (TIER_ORDER.indexOf(a.key) - TIER_ORDER.indexOf(b.key)));
   let tierShown = 0;
+  let lastWasAdoption = false;
   tierMeta.forEach(t => {
     tierShown += t.count;
+    const isOperational = TIER_OPERATIONAL.has(t.key);
+    if (lastWasAdoption && isOperational) {
+      const sep = document.createElement('div');
+      sep.style.cssText = 'border-top:1px dashed var(--brand-line);margin:6px 0 4px;padding-top:4px;font-size:10.5px;color:var(--brand-mute);text-transform:uppercase;letter-spacing:0.04em;';
+      sep.textContent = 'Operational';
+      sep.setAttribute('aria-hidden','true');
+      tierLegend.appendChild(sep);
+    }
+    if (!isOperational) lastWasAdoption = true;
     const row = document.createElement('div');
     row.className = 'legend-item';
     row.setAttribute('data-tier', t.key);
@@ -1689,7 +1744,7 @@
   // Share link
   // ============================================================
   $('btn-share').onclick = async () => {
-    const url = location.href;
+    const url = buildShareHash();
     try { await navigator.clipboard.writeText(url); flashHUD('Link copied: ' + url.replace(location.origin,'')); }
     catch { prompt('Copy this URL:', url); }
   };
@@ -1702,10 +1757,68 @@
   // ============================================================
   // Hash deep-linking
   // ============================================================
+  // v0.4.3 B-B fix: extend hash to carry full filterState. Pre-v0.4.3
+  // the share button copied location.href which only round-tripped
+  // node/path/lens/chain — the 6 filter facets + 3 off-sets silently
+  // dropped, so a "share" link reproduced an unfiltered graph.
+  // buildShareHash() serialises all 10 filterState keys; applyHash()
+  // restores them + DOM controls + legend off-classes before
+  // applyFilters().
+  function buildShareHash() {
+    const p = new URLSearchParams();
+    if (filterState.q)       p.set('q', filterState.q);
+    if (filterState.mas)     p.set('mas', String(filterState.mas));
+    if (filterState.mat)     p.set('mat', filterState.mat);
+    if (filterState.cty)     p.set('cty', filterState.cty);
+    if (filterState.lic)     p.set('lic', filterState.lic);
+    if (filterState.lang)    p.set('lang', filterState.lang);
+    if (filterState.offCats.size)     p.set('offc', [...filterState.offCats].join(','));
+    if (filterState.offTiers.size)    p.set('offt', [...filterState.offTiers].join(','));
+    if (filterState.offPostures.size) p.set('offp', [...filterState.offPostures].join(','));
+    if (filterState.useCase) p.set('lens', filterState.useCase);
+    const existing = new URLSearchParams((location.hash||'').replace(/^#/,''));
+    ['node','path','chain'].forEach(k => { if (existing.has(k) && !p.has(k)) p.set(k, existing.get(k)); });
+    const str = p.toString();
+    return `${location.origin}${location.pathname}${str ? '#'+str : ''}`;
+  }
+
+  function restoreFiltersFromParams(params) {
+    let changed = false;
+    if (params.has('q'))    { filterState.q   = params.get('q');   const s=$('search');    if(s) s.value = filterState.q; changed = true; }
+    if (params.has('mas'))  { filterState.mas = +params.get('mas')||0; const r=$('mas-range'); if(r) r.value = filterState.mas; const lbl=$('mas-val'); if(lbl) lbl.textContent = filterState.mas; changed = true; }
+    if (params.has('mat'))  { filterState.mat  = params.get('mat');  const s=$('mat-sel');  if(s) s.value = filterState.mat; changed = true; }
+    if (params.has('cty'))  { filterState.cty  = params.get('cty');  const s=$('cty-sel');  if(s) s.value = filterState.cty; changed = true; }
+    if (params.has('lic'))  { filterState.lic  = params.get('lic');  const s=$('lic-sel');  if(s) s.value = filterState.lic; changed = true; }
+    if (params.has('lang')) { filterState.lang = params.get('lang'); const s=$('lang-sel'); if(s) s.value = filterState.lang; changed = true; }
+    if (params.has('offc')) {
+      filterState.offCats = new Set(params.get('offc').split(',').filter(Boolean));
+      document.querySelectorAll('#legend .legend-item').forEach(el => {
+        const k = el.dataset.category; if (k) el.classList.toggle('off', filterState.offCats.has(k));
+      });
+      changed = true;
+    }
+    if (params.has('offt')) {
+      filterState.offTiers = new Set(params.get('offt').split(',').filter(Boolean));
+      document.querySelectorAll('#tier-legend .legend-item').forEach(el => {
+        const k = el.dataset.tier; if (k) el.classList.toggle('off', filterState.offTiers.has(k));
+      });
+      changed = true;
+    }
+    if (params.has('offp')) {
+      filterState.offPostures = new Set(params.get('offp').split(',').filter(Boolean));
+      document.querySelectorAll('#posture-legend .legend-item').forEach(el => {
+        const k = el.dataset.posture; if (k) el.classList.toggle('off', filterState.offPostures.has(k));
+      });
+      changed = true;
+    }
+    if (changed) applyFilters();
+  }
+
   function applyHash() {
     const h = location.hash.replace(/^#/, '');
     if (!h) return;
     const params = new URLSearchParams(h);
+    restoreFiltersFromParams(params);
     if (params.has('node')) {
       const n = byId.get(params.get('node'));
       if (n) setTimeout(() => focus(n, {center: true, skipHash: true}), 1500);
