@@ -85,7 +85,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [promptmap](https://github.com/utkusen/promptmap) | GPL-3.0 | Python | beta | TR | 4/5 | emerging | 1.2k | — | Utku Sen |
 | [Prompt Fuzzer (ps-fuzz)](https://github.com/prompt-security/ps-fuzz) | MIT | Python | beta | IL | 4/5 | emerging | 686 | — | Prompt Security |
 | [PurpleLlama / CyberSecEval](https://github.com/meta-llama/PurpleLlama) | MIT | Python | ga | US | 4/5 | established | 4.2k | — | Meta AI |
-| [PyRIT (Python Risk Identification Tool)](https://github.com/Azure/PyRIT) | MIT | Python | ga | US | 5/5 | frontier | 63 | — | Microsoft (AI Red Team) |
+| [PyRIT (Python Risk Identification Tool)](https://github.com/microsoft/PyRIT) | MIT | Python | ga | US | 5/5 | frontier | 63 | — | Microsoft (AI Red Team) |
 | [R-Judge](https://github.com/Lordog/R-Judge) | MIT | Python | beta | CN | 4/5 | emerging | 105 | — | SJTU / Tongxin Yuan et al. |
 | [RAG Security Scanner](https://github.com/olegnazarov/rag-security-scanner) | MIT | Python | beta | — | 3/5 | frontier | 70 | — | olegnazarov |
 | [Raguard](https://github.com/Carlos-Projects/RAGuard) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | Carlos-Projects |

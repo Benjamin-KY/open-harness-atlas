@@ -18,7 +18,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [AgentBench](https://github.com/THUDM/AgentBench) | Apache-2.0 | Python | beta | CN | 4/5 | established | 3.5k | — | THUDM (Tsinghua KEG Group) |
 | [AgentFlow](https://github.com/lupantech/agentflow) | MIT | Python | alpha | US | 4/5 | emerging | 1.9k | — | Stanford research |
 | [AgentForge](https://github.com/DataBassGit/AgentForge) | GPL-3.0 | Python | alpha | US | 4/5 | emerging | 817 | — | DataBassGit |
-| [AgentGPT](https://github.com/reworkd/AgentGPT) | MIT | TypeScript | beta | US | 4/5 | canonical | 36.2k | — | Reworkd |
+| [AgentGPT](https://github.com/reworkd/AgentGPT) | GPL-3.0 | TypeScript | beta | US | 4/5 | canonical | 36.2k | — | Reworkd (archived) |
 | [Agentica](https://github.com/wrtnlabs/agentica) | MIT | TypeScript | ga | KR | 3/5 | established | 1.0k | — | wrtnlabs |
 | [Agentic Seek](https://github.com/Fosowl/agenticSeek) | GPL-3.0-only | Python | ga | — | 3/5 | established | 26.5k | — | Fosowl |
 | [AgentLab](https://github.com/ServiceNow/AgentLab) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 589 | — | ServiceNow Research |
@@ -149,7 +149,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Klavis](https://github.com/Klavis-AI/klavis) | Apache-2.0 | Python | ga | — | 3/5 | established | 5.7k | — | Klavis-AI |
 | [Kuzu](https://github.com/kuzudb/kuzu) | MIT | C++ | ga | CA | 5/5 | — | — | — | KuzuDB (archived) |
 | [Lamda](https://github.com/firerpa/lamda) | MIT | Python | ga | — | 3/5 | established | 7.8k | — | firerpa |
-| [Langchain](https://github.com/langchain-ai/langchain) | MIT | Python | ga | US | 4/5 | landmark | 139.2k | — | LangChain Inc |
+| [LangChain](https://github.com/langchain-ai/langchain) | MIT | Python | ga | US | 4/5 | landmark | 139.2k | — | LangChain Inc |
 | [Langflow](https://github.com/langflow-ai/langflow) | MIT | Python | ga | US | 4/5 | landmark | 149.6k | — | DataStax |
 | [LangGraph](https://github.com/langchain-ai/langgraph) | MIT | Python | ga | US | 4/5 | landmark | 34.7k | — | LangChain Inc. |
 | [Langroid](https://github.com/langroid/langroid) | MIT | Python | ga | — | 4/5 | established | 4.0k | — | langroid |
