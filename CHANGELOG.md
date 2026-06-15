@@ -6,6 +6,17 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+## [v0.4.0] — 2026-06-15
+
+First tagged release. Open-harness-atlas ships as a public, OSI-licensed
+catalogue of 860 OSS LLM harnesses across six categories (governance,
+agent, eval, redteam, routing, education) with adjacency edges, tier
+intelligence, deployment-posture classification, a model-agnostic-score
+spectrum, a 3D WebGL viewer, a 2D classic viewer, and a quality-gate
+pipeline that fails CI on schema / matrix / visual drift. The work that
+ships under this tag is everything accumulated since the v0.1.0-dev
+seed — see the dated subsections below for the audit trail.
+
 ### Added — v0.4.0 Polish & Coverage (2026-06-15)
 
 The v0.4.0 ship across six batches (A · tier intelligence v2; B ·

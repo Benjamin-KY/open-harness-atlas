@@ -54,9 +54,9 @@ routing — and free education resources.*
 
 ---
 
-> ⚠ **Pre-release (v0.1.0-dev).** Registry holds **860 entries** across
-> six categories (governance 102 · agent 242 · eval 206 · redteam 109 ·
-> routing 102 · education 72) — the v0.2.0 expansion added 491 entries
+> 🚀 **v0.4.0 (2026-06-15).** Registry holds **860 entries** across
+> six categories (governance 103 · agent 264 · eval 207 · redteam 109 ·
+> routing 104 · education 73) — the v0.2.0 expansion added 491 entries
 > via the systematic GitHub-topic-discovery harness in
 > [`scripts/discovery/`](scripts/discovery/) (deterministic, reproducible,
 > no from-memory shortlists). The v0.1.0 seed (313 entries) was curated
@@ -74,12 +74,17 @@ routing — and free education resources.*
 > GPT‑5.4 each independently reviewing the same entry, with consensus
 > ≥ 2/3 required to apply any field change, category move, or removal;
 > 21 entries with three-way dissent are deferred to human review), plus
-> 40 entries hand-curated through the two 2026-06-14 recency-biased
-> discovery sweeps (22 owner-prefixed picks from `search_recent.py` and
-> 10 owner-prefixed picks from the GraphQL-batched `parse_awesome_lists.py`
-> rewrite — the two scripts together closed coverage gaps such as
-> `aider`, `e2b`, `continue`, `devika`, `mem0`, `letta`, `superagent`,
-> `evidently`, `gpustack`, `text-embeddings-inference`).
+> 67 entries hand-curated through three discovery passes (two 2026-06-14
+> recency-biased sweeps — 22 owner-prefixed picks from `search_recent.py`
+> and 10 from the GraphQL-batched `parse_awesome_lists.py` rewrite — and
+> a third 2026-06-15 fresh-discovery pass via 10 `gh search repos` topic
+> queries that hand-curated 24 OSI-licensed adds out of 137 candidates,
+> plus 3 named-missing surfaces from upstream repo redirects). Together
+> these closed coverage gaps such as `aider`, `e2b`, `continue`, `devika`,
+> `mem0`, `letta`, `superagent`, `evidently`, `gpustack`,
+> `text-embeddings-inference`, `ragflow`, `lightrag`, `graphrag`,
+> `qwen-agent`, `composio`, `vocode-core`, `ai-dynamo`, `tracecat`, and
+> `gemma-cookbook`.
 > The merge audit trail (per-entry, per-reviewer rationale + confidence)
 > is preserved in the session report. The remaining **23 entries are
 > tracked publicly in [`docs/CURATION_BACKLOG.md`](docs/CURATION_BACKLOG.md)**.
