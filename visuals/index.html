@@ -30,7 +30,9 @@
     --brand-panel:   #ffffff;
     --brand-canvas:  #0a1322;  /* always-dark 3D canvas for depth */
     --brand-shadow:  0 1px 2px rgba(13,31,51,0.04), 0 4px 12px rgba(13,31,51,0.08);
-    --focus-ring:    #d68910;
+    --focus-ring:    #d68910;          /* legacy alias; see --brand-accent */
+    --brand-accent:  #d68910;          /* v0.4.2: real semantic name for orange */
+    --focus-outline: #d68910;          /* v0.4.2: explicit focus indicator colour */
     --good:          #28a745;
     --warn:          #c0392b;
     --radius:        10px;
@@ -48,9 +50,35 @@
     --brand-shadow:  0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.35);
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  /* v0.4.2 WCAG 2.4.7+2.4.11 fix: visible focus on every keyboard-reachable control.
+     Was: only input/select had a focus rule (border-only, ~1.3:1 contrast — failed 1.4.11).
+     Now: every :focus-visible element gets a 2px outline in brand-accent + 2px offset. */
+  *:focus-visible {
+    outline: 2px solid var(--focus-outline);
+    outline-offset: 2px;
+    border-radius: inherit;
+  }
+  /* Don't double-up the outline when a button has its own filled state. */
+  .icon-btn:focus-visible,
+  .chip:focus-visible,
+  .uc-pill:focus-visible,
+  .lens-card:focus-visible {
+    outline-offset: 1px;
+  }
+  /* v0.4.2: visually-hidden helper for ARIA-only content (skip links, SR-only labels). */
+  .vh {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  .vh-focusable:focus, .vh-focusable:focus-visible {
+    position: static; width: auto; height: auto; padding: 8px 14px; margin: 4px;
+    overflow: visible; clip: auto; white-space: normal;
+    background: var(--brand-deep); color: var(--brand-panel);
+    border-radius: var(--radius); font-weight: 700;
+  }
   * { box-sizing: border-box; }
   html, body {
-    margin: 0; padding: 0; height: 100%; overflow: hidden;
+    margin: 0; padding: 0; height: 100dvh; overflow: hidden;
     font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background: var(--brand-bg); color: var(--brand-ink);
     -webkit-font-smoothing: antialiased;
@@ -109,7 +137,8 @@
 
   #app {
     display: grid; grid-template-columns: 1fr 340px;
-    height: calc(100vh - 55px); position: relative;
+    /* v0.4.2: 100dvh handles mobile-Safari/Chrome address-bar collapse */
+    height: calc(100dvh - 55px); position: relative;
   }
   @media (max-width: 900px) {
     #app { grid-template-columns: 1fr; grid-template-rows: 1fr auto; }
@@ -290,9 +319,14 @@
   /* Detail */
   #detail .node-detail-title { font-size: 16px; font-weight: 700; color: var(--brand-deep); margin: 0 0 4px; }
   #detail .node-detail-pills { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0; }
+  /* v0.4.2 WCAG 1.4.3 fix: white text on category colours measured 1.6–3.0:1
+     (pills are 11px sem-bold, NOT large text → 4.5:1 required). Switched to dark ink
+     on existing CVD-distinct palette. Most categories ≥5:1 with dark ink.
+     Known limit: governance pill (#6f8cb8 cool-blue) reaches ~3.3:1 with either ink
+     colour — full AA requires palette consolidation in v0.5.0 per CV-7. */
   #detail .pill {
     display: inline-block; padding: 2px 8px; border-radius: 999px;
-    font-size: 11px; font-weight: 600; color: #fff;
+    font-size: 11px; font-weight: 700; color: var(--brand-deep);
   }
   #detail .pill.outline { background: var(--brand-bg); color: var(--brand-deep); border: 1px solid var(--brand-line); }
   #detail .node-detail-tag { font-size: 13px; color: var(--brand-ink); margin: 6px 0; line-height: 1.45; }
@@ -415,6 +449,21 @@
 </head>
 <body>
 
+<noscript>
+  <div style="padding:30px;max-width:680px;margin:30px auto;background:#fff;border:1px solid #d8e1eb;border-radius:10px;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#0d1f33">
+    <h2 style="margin:0 0 8px;color:#1f3a5f">JavaScript required for this viewer</h2>
+    <p style="margin:0 0 10px;line-height:1.5">The interactive 3D viewer needs JavaScript. You can still browse the atlas without it:</p>
+    <ul style="margin:0;padding-left:20px;line-height:1.7">
+      <li><a href="https://github.com/Benjamin-KY/open-harness-atlas#registry" style="color:#1f3a5f">The complete registry on GitHub</a> — 860 OSS LLM and agent harnesses with structured per-entry YAML</li>
+      <li><a href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/visuals/graph-data.json" style="color:#1f3a5f">Raw <code>graph-data.json</code></a> — nodes, edges, tier/posture/category for each entry</li>
+      <li><a href="2d.html" style="color:#1f3a5f">2D viewer</a> — same data, also requires JavaScript but lighter weight</li>
+    </ul>
+  </div>
+</noscript>
+
+<a class="vh vh-focusable" href="#side">Skip to filters and selection panel</a>
+<a class="vh vh-focusable" href="2d.html">Skip to accessible 2D viewer (recommended for screen-reader and keyboard users — the 3D canvas is decorative)</a>
+
 <header>
   <div class="title">
     <h1>open-harness-atlas <span class="badge3d">3D</span></h1>
@@ -440,7 +489,10 @@
 
 <div id="app">
   <div id="graph-wrap">
-    <div id="graph-3d"></div>
+    <!-- v0.4.2 a11y: WebGL canvas is opaque to assistive tech. Honest aria-label
+         + visible-on-focus skip-link to the 2D viewer (above). -->
+    <div id="graph-3d" role="img"
+         aria-label="Interactive 3D WebGL knowledge graph of 860 OSS LLM and agent harnesses. Visual content not exposed to screen readers — use the 2D viewer link in the header for accessible navigation."></div>
 
     <div class="hud hud-bottom-left" id="hud-stats"><span id="hud-line">—</span></div>
     <div class="hud hud-top-right" id="hud-actions">
@@ -627,7 +679,71 @@
 <script>
 (async () => {
   const $ = (id) => document.getElementById(id);
-  const data = await (await fetch('graph-data.json')).json();
+
+  // ============================================================
+  // v0.4.2 a11y + reliability shims (must run BEFORE any d3/three init)
+  // ============================================================
+
+  // 1. Seeded RNG — replace Math.random with mulberry32 so force-layout
+  //    initial positions are deterministic across reloads. Without this,
+  //    a shared `?focus=langgraph` link rendered a different cluster
+  //    arrangement on every load and the recipient couldn't recognise
+  //    the picture the author saw. Seed is bumped per major visual release.
+  (function seedRandom() {
+    const SEED = 0x0480A2; // open-harness-atlas v0.4.2
+    let a = SEED >>> 0;
+    Math.random = function mulberry32() {
+      a = (a + 0x6D2B79F5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  })();
+
+  // 2. Reduce-motion preference: gates JS-driven animation (cameraPosition,
+  //    autoRotate, particles). The pre-existing CSS rule only kills CSS
+  //    animations, leaving WebGL motion unaddressed for vestibular users.
+  const reduceMotion = window.matchMedia
+    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    : false;
+  const flyDur = (ms) => (reduceMotion ? 0 : ms);
+
+  // 3. Safe fetch with explicit error UI — was previously an unwrapped await
+  //    that left a permanent black canvas + "Loading 3D engine…" on any
+  //    network failure, indistinguishable from a slow successful load.
+  function escAttr(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function showFetchError(err) {
+    const wrap = document.getElementById('graph-wrap');
+    const sub = document.getElementById('header-sub');
+    if (sub) sub.textContent = 'Failed to load graph data.';
+    if (!wrap) return;
+    wrap.innerHTML = `
+      <div role="alert" aria-live="assertive" style="
+        position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+        padding:30px;background:var(--brand-canvas,#0a1322);color:#f4f7fb;font-size:14px;line-height:1.55">
+        <div style="max-width:460px;background:rgba(13,22,35,0.85);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:24px 28px">
+          <h2 style="margin:0 0 10px;font-size:18px;font-weight:700">Couldn't load the atlas</h2>
+          <p style="margin:0 0 14px"><code style="background:rgba(255,255,255,0.08);padding:2px 6px;border-radius:4px;font-size:12px">${escAttr(err && err.message ? err.message : 'network error')}</code></p>
+          <p style="margin:0 0 16px;opacity:0.85">The graph data couldn't be fetched. This is usually a network hiccup — try again, or browse the source data on GitHub.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button type="button" onclick="location.reload()" style="padding:8px 14px;font:inherit;background:#f0b35a;color:#0a1322;border:none;border-radius:7px;font-weight:700;cursor:pointer">Retry</button>
+            <a href="2d.html" style="padding:8px 14px;background:transparent;color:#f4f7fb;border:1px solid rgba(255,255,255,0.25);border-radius:7px;text-decoration:none;font-weight:600">Try 2D viewer</a>
+            <a href="https://github.com/Benjamin-KY/open-harness-atlas#registry" style="padding:8px 14px;background:transparent;color:#f4f7fb;border:1px solid rgba(255,255,255,0.25);border-radius:7px;text-decoration:none;font-weight:600">Browse on GitHub</a>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  let data;
+  try {
+    const res = await fetch('graph-data.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' loading graph-data.json');
+    data = await res.json();
+  } catch (e) {
+    console.error('[oha] graph-data.json fetch failed:', e);
+    showFetchError(e);
+    return;
+  }
 
   // Reformat data for 3d-force-graph
   const gData = {
@@ -761,7 +877,9 @@
     return '#' + ((r << 16) | (g << 8) | b2).toString(16).padStart(6, '0');
   }
 
-  let particlesOn = true;
+  // v0.4.2 a11y: particles default to OFF when the user prefers reduced motion;
+  // the toggle button state is synced below so aria-pressed matches reality.
+  let particlesOn = !reduceMotion;
   let autoSpin = false;
   let focused = null;
   let pathHighlight = null;  // Set of ids for nodes on highlighted path
@@ -899,12 +1017,16 @@
   const controls = G.controls();
   $('btn-spin').onclick = () => {
     autoSpin = !autoSpin;
-    controls.autoRotate = autoSpin;
+    // v0.4.2 a11y: never start auto-rotation if user prefers reduced motion;
+    // the toggle still flips state so layout-internal logic stays consistent.
+    controls.autoRotate = autoSpin && !reduceMotion;
     controls.autoRotateSpeed = 0.6;
     $('btn-spin').setAttribute('aria-pressed', autoSpin);
   };
 
   // Particles toggle
+  // v0.4.2 a11y: sync the initial aria-pressed state with reduceMotion-aware default.
+  $('btn-particles').setAttribute('aria-pressed', particlesOn);
   $('btn-particles').onclick = () => {
     particlesOn = !particlesOn;
     $('btn-particles').setAttribute('aria-pressed', particlesOn);
@@ -913,7 +1035,7 @@
 
   // Re-center
   $('btn-recenter').onclick = () => {
-    G.cameraPosition({x: 0, y: 0, z: 360}, {x:0,y:0,z:0}, 800);
+    G.cameraPosition({x: 0, y: 0, z: 360}, {x:0,y:0,z:0}, flyDur(800));
   };
 
   // ============================================================
@@ -930,7 +1052,7 @@
         x: (node.x || 0) * distRatio,
         y: (node.y || 0) * distRatio,
         z: (node.z || 0) * distRatio
-      }, node, 900);
+      }, node, flyDur(900));
     }
     if (!opts.skipHash) location.hash = `node=${encodeURIComponent(node.id)}`;
   }
@@ -1328,7 +1450,7 @@
     // Fly to centroid of path
     const xs = path.map(id => byId.get(id).x||0), ys = path.map(id => byId.get(id).y||0), zs = path.map(id => byId.get(id).z||0);
     const cx = xs.reduce((a,b)=>a+b,0)/xs.length, cy = ys.reduce((a,b)=>a+b,0)/ys.length, cz = zs.reduce((a,b)=>a+b,0)/zs.length;
-    G.cameraPosition({x: cx*2.5, y: cy*2.5, z: cz*2.5 + 200}, {x:cx,y:cy,z:cz}, 1100);
+    G.cameraPosition({x: cx*2.5, y: cy*2.5, z: cz*2.5 + 200}, {x:cx,y:cy,z:cz}, flyDur(1100));
     if (!opts.skipHash) location.hash = `path=${encodeURIComponent(fromId)},${encodeURIComponent(toId)}`;
   }
   $('pf-find').onclick = () => { const f = $('pf-from').value.trim(), t = $('pf-to').value.trim(); if (f && t) runPath(f, t); };
@@ -1435,7 +1557,7 @@
       const cx = present.reduce((a,n) => a + (n.x||0), 0) / present.length;
       const cy = present.reduce((a,n) => a + (n.y||0), 0) / present.length;
       const cz = present.reduce((a,n) => a + (n.z||0), 0) / present.length;
-      G.cameraPosition({x: cx*2.2, y: cy*2.2, z: cz*2.2 + 240}, {x:cx,y:cy,z:cz}, 1100);
+      G.cameraPosition({x: cx*2.2, y: cy*2.2, z: cz*2.2 + 240}, {x:cx,y:cy,z:cz}, flyDur(1100));
     }, 80);
 
     if (!opts.skipHash) {

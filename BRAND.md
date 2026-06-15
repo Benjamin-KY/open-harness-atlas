@@ -57,6 +57,71 @@ scalable). Raster previews are optional and live under
 
 ---
 
+## Viewer rendering palette (interactive graph)
+
+The static-SVG palette above is the **brand contract** for figures shipped
+alongside prose (READMEs, docs, the harmless-harnesses course). It assumes a
+white background and high-contrast print/PDF rendering.
+
+The interactive 2D + 3D graph viewers (`visuals/index.html`,
+`visuals/2d.html`) ship a **distinct rendering palette** tuned for dark
+canvas backgrounds + WCAG large-text contrast on coloured pills. The viewer
+JS is the **single source of truth** for these values — this table is
+regenerated from `NODE_COLOR_MAP` / `TIER_COLOR_MAP` / `POSTURE_COLOR_MAP`
+in `visuals/index.html` (lines 794-870). If a swatch below disagrees with
+the viewer JS, the JS is correct and this table is stale.
+
+**Category palette** — bound to the registry `category` field. CVD-safe;
+each hue is visually distinct under deuteranopia + protanopia simulation.
+
+| Category    | Hex       | Used for                                       |
+|-------------|-----------|------------------------------------------------|
+| governance  | `#6f8cb8` | Governance harnesses (Tier-A/B/C/D wrappers)   |
+| agent       | `#f0a634` | Agent frameworks, model-tier scaffolding       |
+| eval        | `#4dd07a` | Evaluation suites, benchmarks, scorecards      |
+| redteam     | `#e57063` | Red-team toolkits, adversarial probes          |
+| routing     | `#5fb6f0` | Model-routing layers, request brokers          |
+| education   | `#b478d4` | Free education resources (courses, textbooks)  |
+
+**Tier palette** — bound to the computed `tier` field. Distinct hues
+(not a sequential ramp) plus stroke-pattern differentiation in the graph
+node outline (solid / dashed / dotted) so each tier remains
+distinguishable under achromatopsia / monochrome rendering.
+
+| Tier         | Hex       | Meaning                                       |
+|--------------|-----------|-----------------------------------------------|
+| landmark     | `#f0b35a` | ≥30k★, or ≥2yr at 5k+★ with active commits   |
+| canonical    | `#b08acc` | Reference implementation — archived ≥5k★, or non-archived ≥5k★ + 1yr+ + idle >180d |
+| established  | `#5fb6f0` | ≥1k★ + 1yr+ + active                          |
+| emerging     | `#6fb59a` | ≥100★ + 3mo+ + active                         |
+| dormant      | `#5c6470` | >18mo since last commit, not iconic           |
+| frontier     | `#7e8a9c` | Passes inclusion, no independent adoption yet |
+| unknown      | `#9c8062` | Metadata fetch failed (operational, not signal-low) |
+
+**Deployment-posture palette** — neutral perceptual gradient (warm teal at
+local end, cool blue at cloud end). **Not** a good/bad ramp: cloud-first +
+api-only are valid sovereignty postures, the panel only surfaces the dimension.
+
+| Posture      | Hex       | Meaning                                       |
+|--------------|-----------|-----------------------------------------------|
+| local-only   | `#1f8a70` | No outbound calls, fully offline-capable      |
+| local-first  | `#86b8b1` | Local default, cloud opt-in                   |
+| hybrid       | `#c9b08c` | Mixed local + cloud paths                     |
+| cloud-first  | `#9cb8dd` | Cloud default, local opt-in                   |
+| api-only     | `#5b7fc7` | Hosted-only, no local execution               |
+| unknown      | `#5d6470` | Posture not yet classified                    |
+
+**Pill text colour** — coloured pills in the selection panel use
+`var(--brand-deep)` (dark navy `#0d1f33`) for body text, not white. White
+text on the lighter pill hues (eval ~`#4dd07a`, governance ~`#6f8cb8`)
+fails WCAG AA contrast for normal text; dark ink passes for 5 of 6
+category pills + all 6 tier pills. The governance pill at `#6f8cb8` with
+dark ink sits at ~3.3:1 — **above** AA-large-text threshold (3:1) but
+**below** AA-normal-text threshold (4.5:1) and is flagged for palette
+recolouring in v0.5.0.
+
+---
+
 ## Typography
 
 | Use                                | Font                                                       |

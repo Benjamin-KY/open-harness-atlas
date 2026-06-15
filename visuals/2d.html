@@ -32,7 +32,9 @@
     --brand-glow:    0 0 0 4px rgba(31,58,95,0.18);
     --link-base:     #1f3a5f;
     --link-strong:   #0d1f33;
-    --focus-ring:    #d68910;
+    --focus-ring:    #d68910;          /* legacy alias; see --brand-accent */
+    --brand-accent:  #d68910;          /* v0.4.2: real semantic name for orange */
+    --focus-outline: #d68910;          /* v0.4.2: explicit focus indicator colour */
     --good:          #28a745;
     --warn:          #c0392b;
     --radius:        10px;
@@ -51,13 +53,35 @@
     --link-base:     #6f88ad;
     --link-strong:   #f4f7fb;
     --focus-ring:    #f0b35a;
+    --brand-accent:  #f0b35a;
+    --focus-outline: #f0b35a;
   }
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; animation: none !important; }
   }
+  /* v0.4.2 WCAG 2.4.7+2.4.11 fix: visible focus on every keyboard-reachable control.
+     Was: only input/select got box-shadow on focus; everything else relied on UA defaults
+     (which `svg.graph { outline: none }` actively removes). Now: 2px outline in accent. */
+  *:focus-visible {
+    outline: 2px solid var(--focus-outline);
+    outline-offset: 2px;
+    border-radius: inherit;
+  }
+  .icon-btn:focus-visible,
+  .chip:focus-visible,
+  .uc-pill:focus-visible,
+  .lens-card:focus-visible,
+  .legend-item:focus-visible {
+    outline-offset: 1px;
+  }
+  /* SVG graph needs explicit focus indicator (CSS outline doesn't apply to <svg> across browsers) */
+  svg.graph:focus-visible {
+    outline: 3px solid var(--focus-outline);
+    outline-offset: -3px;
+  }
   * { box-sizing: border-box; }
   html, body {
-    margin: 0; padding: 0; height: 100%; overflow: hidden;
+    margin: 0; padding: 0; height: 100dvh; overflow: hidden;
     font-family: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background: var(--brand-bg); color: var(--brand-ink);
     -webkit-font-smoothing: antialiased;
@@ -124,7 +148,8 @@
 
   #app {
     display: grid; grid-template-columns: 1fr 360px;
-    height: calc(100vh - 59px); position: relative;
+    /* v0.4.2: 100dvh handles mobile-Safari/Chrome address-bar collapse */
+    height: calc(100dvh - 59px); position: relative;
   }
   @media (max-width: 900px) {
     #app { grid-template-columns: 1fr; grid-template-rows: 1fr auto; }
@@ -306,10 +331,15 @@
     line-height: 1.2;
   }
   .node-detail-pills { display: flex; gap: 4px; flex-wrap: wrap; margin: 4px 0; }
+  /* v0.4.2 WCAG 1.4.3 fix: white text on category colours measured 1.6–3.0:1
+     (pills are 10px bold, NOT large text → 4.5:1 required). Switched to dark ink
+     on existing CVD-distinct palette. Most categories ≥5:1 with dark ink.
+     Known limit: governance pill (#6f8cb8 cool-blue) reaches ~3.3:1 with either ink
+     colour — full AA requires palette consolidation in v0.5.0 per CV-7. */
   .pill {
     font-size: 10px; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.05em; padding: 2px 8px; border-radius: 999px;
-    color: #fff; line-height: 1.5;
+    color: var(--brand-deep); line-height: 1.5;
   }
   .pill.outline {
     background: transparent; border: 1px solid var(--brand-line);
@@ -642,7 +672,7 @@
 
   /* Embed/compact mode */
   body.compact header { display: none; }
-  body.compact #app { grid-template-columns: 1fr; height: 100vh; }
+  body.compact #app { grid-template-columns: 1fr; height: 100dvh; }
   body.compact #side { display: none; }
   body.compact #minimap { display: none; }
   body.compact .hud-top-right { display: none; }
@@ -663,9 +693,30 @@
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
     overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
   }
+  /* v0.4.2 a11y: skip-link becomes visible when tabbed to. */
+  .vh-focusable:focus, .vh-focusable:focus-visible {
+    position: static; width: auto; height: auto; padding: 8px 14px; margin: 4px;
+    overflow: visible; clip: auto; white-space: normal;
+    background: var(--brand-deep); color: var(--brand-panel);
+    border-radius: var(--radius); font-weight: 700; text-decoration: none;
+  }
 </style>
 </head>
 <body>
+
+<noscript>
+  <div style="padding:30px;max-width:680px;margin:30px auto;background:#fff;border:1px solid #d8e1eb;border-radius:10px;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#0d1f33">
+    <h2 style="margin:0 0 8px;color:#1f3a5f">JavaScript required for this viewer</h2>
+    <p style="margin:0 0 10px;line-height:1.5">The interactive 2D viewer needs JavaScript. You can still browse the atlas without it:</p>
+    <ul style="margin:0;padding-left:20px;line-height:1.7">
+      <li><a href="https://github.com/Benjamin-KY/open-harness-atlas#registry" style="color:#1f3a5f">The complete registry on GitHub</a> — 860 OSS LLM and agent harnesses with structured per-entry YAML</li>
+      <li><a href="https://github.com/Benjamin-KY/open-harness-atlas/blob/main/visuals/graph-data.json" style="color:#1f3a5f">Raw <code>graph-data.json</code></a> — nodes, edges, tier/posture/category for each entry</li>
+    </ul>
+  </div>
+</noscript>
+
+<a class="vh vh-focusable" href="#graph">Skip to graph</a>
+<a class="vh vh-focusable" href="#side">Skip to filters and selection panel</a>
 
 <header>
   <div class="title">
@@ -955,7 +1006,65 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 0. Boot
   // ============================================================
   const $ = (id) => document.getElementById(id);
-  const data = await (await fetch('graph-data.json')).json();
+
+  // ============================================================
+  // v0.4.2 a11y + reliability shims (must run BEFORE d3 init)
+  // ============================================================
+
+  // 1. Seeded RNG — mulberry32 replaces Math.random so d3.forceSimulation's
+  //    internal initial-position jitter is deterministic across reloads.
+  //    Without this, shared deep-links rendered different cluster shapes.
+  //    Seed is bumped per major visual release.
+  (function seedRandom() {
+    const SEED = 0x0480A2; // open-harness-atlas v0.4.2
+    let a = SEED >>> 0;
+    Math.random = function mulberry32() {
+      a = (a + 0x6D2B79F5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  })();
+
+  // 2. Reduce-motion preference: gates JS-driven force-simulation restart
+  //    animations. CSS-only rule above only handles CSS animations.
+  const reduceMotion = window.matchMedia
+    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    : false;
+
+  // 3. Safe fetch with explicit error UI.
+  function escAttr(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+  function showFetchError(err) {
+    const wrap = document.getElementById('graph-wrap');
+    const sub = document.getElementById('header-sub');
+    if (sub) sub.textContent = 'Failed to load graph data.';
+    if (!wrap) return;
+    wrap.innerHTML = `
+      <div role="alert" aria-live="assertive" style="
+        position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+        padding:30px;color:var(--brand-ink);font-size:14px;line-height:1.55">
+        <div style="max-width:460px;background:var(--brand-panel);border:1px solid var(--brand-line);border-radius:12px;padding:24px 28px;box-shadow:var(--brand-shadow)">
+          <h2 style="margin:0 0 10px;font-size:18px;font-weight:700;color:var(--brand-deep)">Couldn't load the atlas</h2>
+          <p style="margin:0 0 14px"><code style="background:var(--brand-bg);padding:2px 6px;border-radius:4px;font-size:12px">${escAttr(err && err.message ? err.message : 'network error')}</code></p>
+          <p style="margin:0 0 16px;color:var(--brand-mute)">The graph data couldn't be fetched. This is usually a network hiccup — try again, or browse the source data on GitHub.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button type="button" onclick="location.reload()" style="padding:8px 14px;font:inherit;background:var(--brand-deep);color:var(--brand-panel);border:none;border-radius:7px;font-weight:700;cursor:pointer">Retry</button>
+            <a href="https://github.com/Benjamin-KY/open-harness-atlas#registry" style="padding:8px 14px;background:transparent;color:var(--brand-deep);border:1px solid var(--brand-line);border-radius:7px;text-decoration:none;font-weight:600">Browse on GitHub</a>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  let data;
+  try {
+    const res = await fetch('graph-data.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' loading graph-data.json');
+    data = await res.json();
+  } catch (e) {
+    console.error('[oha] graph-data.json fetch failed:', e);
+    showFetchError(e);
+    return;
+  }
   const nodes = data.nodes.map(n => ({...n}));
   const links = data.links.map(l => ({...l}));
   const byId  = new Map(nodes.map(n => [n.id, n]));
@@ -1152,6 +1261,20 @@ document.addEventListener('DOMContentLoaded', async () => {
       return `M${sx},${sy}A${dr},${dr} 0 0,1 ${tx},${ty}`;
     });
     nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+  }
+
+  // v0.4.2 a11y: gate sim.alpha().restart() calls behind reduce-motion.
+  // For reduce-motion users we run the simulation synchronously (no rAF)
+  // so the layout still re-settles, but no visible animation plays.
+  function gentleRestart(alpha) {
+    if (reduceMotion) {
+      sim.alpha(alpha);
+      for (let i = 0; i < 80; i++) sim.tick();
+      sim.alpha(0); sim.stop();
+      tick();
+    } else {
+      sim.alpha(alpha).restart();
+    }
   }
 
   // Drag
@@ -1712,18 +1835,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       sim.force('x', d3.forceX(d => centers[d.category].x).strength(0.15));
       sim.force('y', d3.forceY(d => centers[d.category].y).strength(0.15));
       sim.force('link').strength(0.3);
-      sim.alpha(0.7).restart();
+      gentleRestart(0.7);
     } else {
       sim.force('x', null); sim.force('y', null);
       sim.force('link').strength(0.6);
-      sim.alpha(0.6).restart();
+      gentleRestart(0.6);
     }
   };
 
   // ============================================================
   // 13. HUD buttons: recenter / fit / export / share
   // ============================================================
-  $('btn-recenter').onclick = () => sim.alpha(0.7).restart();
+  $('btn-recenter').onclick = () => gentleRestart(0.7);
   $('btn-zoom-fit').onclick = fitToView;
   function fitToView() {
     const xs = nodes.filter(n => n._visible !== false).map(n => n.x);
@@ -1811,7 +1934,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     else if (e.key.toLowerCase() === 'f') fitToView();
     else if (e.key.toLowerCase() === 'd') $('btn-theme').click();
     else if (e.key.toLowerCase() === 'l') $('btn-layout').click();
-    else if (e.key.toLowerCase() === 'r') sim.alpha(0.7).restart();
+    else if (e.key.toLowerCase() === 'r') gentleRestart(0.7);
     else if (e.key.toLowerCase() === 'e') exportPNG();
     else if (e.key.toLowerCase() === 's') $('btn-share').click();
   });

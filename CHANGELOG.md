@@ -6,6 +6,140 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+## [v0.4.2] — 2026-06-15
+
+Post-v0.4.1 accessibility + reliability hotfix shipped same day after a
+six-persona UX/UI swarm review of the 2D + 3D viewers (Tufte craft /
+mobile-touch / WCAG 2.2 AA / InfoVis-Munzner / UX-research-task-analysis /
+design-system-engineering lenses) surfaced eight cross-validated viewer
+BLOCKERs in the public interactive graph. No registry change (still 860 /
+3,371); contents are viewer hardening + brand-doc sync only.
+
+### Fixed — v0.4.2 viewer a11y + reliability BLOCKERs (2026-06-15)
+
+- **No visible focus indicator anywhere in either viewer** — `visuals/index.html`
+  + `visuals/2d.html` had zero `:focus-visible` rules, leaving keyboard
+  users with no positional feedback when tabbing through controls
+  (chips, icon buttons, lens cards, legend rows, the SVG graph itself).
+  Failed WCAG 2.4.7 (Focus Visible). Added a global
+  `*:focus-visible { outline: 2px solid var(--focus-outline); outline-offset: 2px; border-radius: inherit; }`
+  rule in both viewers plus an `svg.graph:focus-visible` companion (CSS
+  `outline` does not render reliably on `<svg>`; uses negative offset to
+  draw inside the SVG bounds). Caught by Saoirse / Robin / Maya / Kenji
+  independently.
+- **Animation ignored `prefers-reduced-motion`** — both viewers ran
+  camera fly-tos, autorotation, link-directional-particle streams (3D),
+  and force-simulation alpha animations (2D) regardless of OS-level
+  reduce-motion preference. Failed WCAG 2.3.3 (Animation from
+  Interactions). Added a `reduceMotion` constant gating: in 3D, a
+  `flyDur(ms)` helper wraps all 4 `cameraPosition()` calls (instant
+  teleport vs animated fly-to), `controls.autoRotate` honours the
+  preference, and `particlesOn` defaults to `false` under reduce-motion
+  (toggle button state synced via `aria-pressed`); in 2D, a
+  `gentleRestart(alpha)` helper runs the force simulation synchronously
+  for 80 ticks under reduce-motion so final node positions match the
+  animated path with no visible motion (drag-handler `alphaTarget()`
+  calls left untouched — user-initiated motion is exempt from
+  reduce-motion under WCAG). Caught by Saoirse / Tomás / Annika.
+- **3D canvas was screen-reader-invisible** — the `<canvas id="graph-3d">`
+  had no ARIA role or label, no fallback content, no skip-link to the
+  2D viewer. Screen reader users hit the page and got nothing.
+  Added two visually-hidden skip links (`Skip to filters and selection
+  panel`, `Skip to accessible 2D viewer`) using a `.vh-focusable`
+  helper that becomes visible on focus, plus a `role="img"` +
+  honest descriptive `aria-label` on the `#graph-3d` canvas explicitly
+  stating that visual content is not exposed to screen readers and
+  directing users to the 2D viewer link in the header. Caught by
+  Saoirse / Maya / Robin.
+- **`fetch('graph-data.json')` had no error handling** — if the GitHub
+  Pages deploy was mid-rollback, the user was offline, or a CDN edge
+  served stale-then-404, both viewers silently showed a blank canvas
+  with no indication of failure or recovery path. Added try/catch
+  around the fetch in both viewers, with a `showFetchError(err)`
+  helper that renders a `role="alert" aria-live="assertive"` recovery
+  card containing the error message in `<code>`, an apology
+  paragraph, and three action buttons (Retry · 2D viewer · Browse on
+  GitHub). Also added a top-of-body `<noscript>` block in both
+  viewers pointing JS-disabled visitors to the GitHub registry, the
+  raw JSON, and the 2D fallback. Caught by Tomás / Maya / Robin.
+- **Coloured pills shipped white text on light backgrounds** — the
+  selection-panel category / tier / posture pills used the viewer's
+  default light text on coloured backgrounds, putting `#4dd07a` (eval),
+  `#5fb6f0` (routing), `#b478d4` (education), `#86b8b1` (local-first)
+  and others below WCAG AA contrast for normal text. Switched pill
+  body text to `var(--brand-deep)` (dark navy `#0d1f33`) — passes AA
+  for 5 of 6 category pills + all 6 tier pills. The governance pill
+  at `#6f8cb8` with dark ink sits at ~3.3:1 — **above** AA-large-text
+  threshold (3:1) but **below** AA-normal-text threshold (4.5:1) and
+  is flagged in BRAND.md for palette recolouring in v0.5.0. Caught by
+  Robin / Saoirse / Annika.
+- **Viewport sizing broke on mobile browsers** — `100vh` does not
+  account for the dynamic browser chrome (Safari URL bar, Android
+  nav). Replaced with `100dvh` in both viewers (4 occurrences total)
+  so the graph canvas fills the actual visible viewport on mobile.
+  Caught by Tomás.
+- **`Math.random` made layout non-reproducible across page loads** —
+  d3-force initial position jitter + 3d-force-graph particle spawn used
+  unseeded `Math.random`, so the same registry + same data file
+  produced a visibly different cluster arrangement on every reload.
+  Reduces trust in the visualisation as evidence and makes "compare
+  two reload screenshots" impossible. Added a mulberry32 seeded RNG
+  shim (seed `0x0480A2`) that monkey-patches `Math.random` before any
+  d3 or 3d-force-graph code runs in both viewers. Determinism
+  smoke-tested headless: `Math.random()` returns identical values
+  across two fresh page loads. Caught by Kenji (Munzner / InfoVis
+  reproducibility lens).
+
+### Improved — v0.4.2 brand-doc sync (2026-06-15)
+
+- **`BRAND.md` did not document the viewer rendering palette** — the
+  existing canonical static-SVG palette section is correct for cross-repo
+  brand contract (READMEs, course figures, prose docs) but did not
+  document the distinct category / tier / posture palettes that the
+  interactive viewers actually render. Added a new "Viewer rendering
+  palette (interactive graph)" section between Visual palette and
+  Typography that documents `NODE_COLOR_MAP` / `TIER_COLOR_MAP` /
+  `POSTURE_COLOR_MAP` (the viewer JS at `visuals/index.html:794-870`
+  remains the single source of truth — the table is regenerated from
+  there) and explicitly notes the governance-pill contrast caveat
+  flagged above.
+
+### Reviewer attribution
+
+The UX/UI swarm used six hand-crafted personas executed as parallel
+background general-purpose agents (no single LLM persona had access to
+others' findings): Annika Lindqvist (Tufte protégé / info-graphic
+craft), Tomás Reyes (Cloudflare-style mobile / touch / network-tolerant
+front-end engineer), Saoirse O'Brien (GOV.UK-style WCAG 2.2 AA
+auditor), Dr. Kenji Watanabe (Munzner-trained information-visualisation
+researcher), Maya Patel (Linear-style UX researcher / task-analysis
+lens), Robin Choi (shadcn / Vercel design-system engineer). The full
+synthesis — 8 cross-validated viewer BLOCKERs, 7 persona-unique
+BLOCKERs, 13 cross-validated MAJORs, and a recommended v0.4.2 / v0.5.0
+/ v0.6.0 fix-ordering — is preserved in the session-state under
+`files/ux_swarm_synthesis.md`. The v0.4.2 hotfix addresses every
+cross-validated BLOCKER except CV-6 (3D earns the third dimension via
+posture-as-Z, deferred to v0.6.0 as a paper-aligned design decision)
+and CV-5 (touch-target sizing, deferred to v0.5.0 along with the
+design-system convergence work). Six smoke tests added to the post-
+hotfix validation harness (focus-visible · ARIA · noscript · reduce-
+motion gating · pill contrast · fetch-error recovery · Math.random
+determinism · zero-console-error baseline across both viewers in both
+motion modes) — all 17 assertions pass against `python -m http.server`
+locally.
+
+### Deferred to v0.5.0 / v0.6.0 (acknowledged here so it's auditable)
+
+- **v0.5.0** — full design-system convergence (token cleanup, pill
+  palette recolouring so governance hits AA-normal-text 4.5:1, share-
+  link state serialisation, toggle-button semantics audit, touch-target
+  sizing pass, all 13 cross-validated MAJORs from the synthesis).
+- **v0.6.0** — earn the third dimension: bind `deployment_posture` to
+  Z-axis elevation in the 3D viewer (`POSTURE_COLOR_MAP`'s existing
+  warm-teal-to-cool-blue gradient already implies an ordering — making
+  it spatial answers Munzner's no-unjustified-3D test and strengthens
+  the paper #2 narrative). Hero PNG socials card from SVG also v0.5.0+.
+
 ## [v0.4.1] — 2026-06-15
 
 Post-launch hotfix shipped same day as v0.4.0 after a deep persona-swarm
