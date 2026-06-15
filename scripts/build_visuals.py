@@ -141,15 +141,20 @@ def _iter_yaml(category: str) -> Iterable[dict]:
 
 
 def _build_spectrum() -> str:
-    """SVG distribution chart: macro stacked histogram + per-category small-multiples.
+    """SVG distribution chart: macro stacked histogram + per-category row strip.
 
     Reports the registry's distribution across model_agnostic_score (0..5).
     Top panel = combined stacked histogram, bars at each score, segments
-    coloured by category. Bottom panel = a 2x3 grid of per-category mini
-    histograms so the reader can compare each category's posture.
+    coloured by category. Bottom panel = 6 horizontal rows (one per
+    category) sharing a MAS x-axis at the bottom — lets the eye move
+    down the same x-position to compare across categories (e.g. "do
+    governance and eval both peak at MAS 3?").
 
-    Replaces the old vertical-line-of-816-bars layout which was readable
-    only as a wall of colour, not as a distribution.
+    Replaces, in two iterations, the original vertical-line-of-816-bars
+    layout (Phase 4 → tiled 2x3 grid → Phase 6 v0.4.0 row strip per
+    spec). Each row is independently y-scaled so the reader compares
+    SHAPE across the MAS axis, not absolute counts (those are surfaced
+    via the per-row "peak N" annotation and the macro top panel).
     """
     import collections
 
@@ -169,7 +174,7 @@ def _build_spectrum() -> str:
     grand_total = sum(total_by_score.values())
     macro_max = max(total_by_score.values()) if total_by_score else 1
 
-    W, H = 1200, 720
+    W, H = 1200, 920
     parts: list[str] = []
     parts.append(
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -283,73 +288,104 @@ def _build_spectrum() -> str:
 
     parts.append(
         '<text x="40" y="380" class="body h2">Per-category distribution '
-        '<tspan class="sub">(each chart\'s y-axis is independently scaled '
-        '\u2014 read shape, not height)</tspan></text>'
+        '<tspan class="sub">(each row\'s bar heights are independently scaled '
+        '\u2014 read shape, not magnitude. Aligned x-axis lets you compare '
+        'which categories cluster at the same model_agnostic_score.)</tspan></text>'
     )
 
-    grid_cols = 3
-    cell_w = 360
-    cell_h = 130
-    cell_gap_x = 20
-    cell_gap_y = 30
-    grid_left = 40
-    grid_top = 400
-    mini_bar_w = 36
-    mini_plot_h = 76
-    mini_plot_top_pad = 28
+    # Six rows of horizontal small-multiples, one per category, sharing a
+    # bottom MAS axis. This is the form spec for v0.4.0: rows let the eye
+    # move down the same x-position to compare across categories (e.g.
+    # "do governance and eval both peak at MAS 3?"). The earlier 2x3
+    # tiled grid answered the per-category shape question but forced eye
+    # saccades for cross-category comparisons at the same MAS score.
+    rows_top = 400
+    rows_left = 40
+    rows_right = 1160
+    row_count = len(CATEGORY_ORDER)
+    # Leave ~70px below the last row for the shared MAS axis + footer.
+    avail_h = (H - 100) - rows_top
+    row_stride = avail_h / row_count
+    row_plot_h = row_stride - 14  # gap between rows
+    label_col_w = 130
+    count_col_w = 80
+    plot_left = rows_left + label_col_w
+    plot_right = rows_right - count_col_w
+    plot_w = plot_right - plot_left
+    bar_slot = plot_w / 6
+    bar_w = min(bar_slot - 12, 100)
+    bar_label_h = 14  # reserve top of plot for the per-bar count label
 
     for idx, cat in enumerate(CATEGORY_ORDER):
-        row = idx // grid_cols
-        col = idx % grid_cols
-        cx = grid_left + col * (cell_w + cell_gap_x)
-        cy = grid_top + row * (cell_h + cell_gap_y)
+        row_top = rows_top + idx * row_stride
+        row_bot = row_top + row_plot_h
+        row_mid = (row_top + row_bot) / 2
 
         cat_total = total_by_cat[cat]
         cat_max = max((counts.get((cat, s), 0) for s in SCORES), default=1) or 1
 
         parts.append(
-            f'<rect x="{cx}" y="{cy}" width="{cell_w}" height="{cell_h}" rx="6" '
-            f'fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>'
+            f'<rect x="{rows_left}" y="{row_top:.1f}" width="{rows_right - rows_left}" '
+            f'height="{row_plot_h:.1f}" rx="6" fill="#f7f9fc" stroke="#e6e9ee" stroke-width="1"/>'
         )
         parts.append(
-            f'<rect x="{cx}" y="{cy}" width="6" height="{cell_h}" rx="3" '
-            f'fill="{CATEGORY_COLOUR[cat]}"/>'
+            f'<rect x="{rows_left}" y="{row_top:.1f}" width="6" height="{row_plot_h:.1f}" '
+            f'rx="3" fill="{CATEGORY_COLOUR[cat]}"/>'
         )
         parts.append(
-            f'<text x="{cx + 16}" y="{cy + 18}" class="body mini-title">{cat}</text>'
+            f'<text x="{rows_left + 16}" y="{row_mid - 4:.1f}" class="body mini-title">{cat}</text>'
         )
         parts.append(
-            f'<text x="{cx + cell_w - 12}" y="{cy + 18}" class="body mini-count" '
-            f'text-anchor="end">{cat_total} entries</text>'
+            f'<text x="{rows_left + 16}" y="{row_mid + 12:.1f}" class="body mini-count">'
+            f'{cat_total} entries</text>'
         )
 
-        mini_left = cx + 24
-        mini_right = cx + cell_w - 16
-        mini_plot_w = mini_right - mini_left
-        mini_slot = mini_plot_w / 6
-        mini_bottom = cy + mini_plot_top_pad + mini_plot_h
+        baseline = row_bot - 6
+        # Bars are plotted in (row_plot_h - bar_label_h - 12) of vertical
+        # space so the per-bar count label has room above the tallest bar.
+        max_bar_h = row_plot_h - bar_label_h - 12
+        # Floor on non-zero bars so counts like 1-3 don't render as
+        # sub-pixel slivers next to a row with peak 49. The floor reads
+        # honestly because zero-count slots use a separate slate
+        # baseline line (see else branch below) — readers can tell "1"
+        # apart from "0" without needing to read the label.
+        min_bar_h = 4.0
 
         for s in SCORES:
             n = counts.get((cat, s), 0)
-            bx = mini_left + s * mini_slot + (mini_slot - mini_bar_w) / 2
+            bx = plot_left + s * bar_slot + (bar_slot - bar_w) / 2
             if n > 0:
-                bh = (n / cat_max) * mini_plot_h
+                bh = max((n / cat_max) * max_bar_h, min_bar_h)
                 parts.append(
-                    f'<rect x="{bx:.1f}" y="{mini_bottom - bh:.2f}" width="{mini_bar_w}" '
+                    f'<rect x="{bx:.1f}" y="{baseline - bh:.2f}" width="{bar_w:.1f}" '
                     f'height="{bh:.2f}" rx="2" fill="{CATEGORY_COLOUR[cat]}" opacity="0.85"/>'
                 )
                 parts.append(
-                    f'<text x="{bx + mini_bar_w / 2:.1f}" y="{mini_bottom - bh - 4:.1f}" '
+                    f'<text x="{bx + bar_w / 2:.1f}" y="{baseline - bh - 4:.1f}" '
                     f'class="body mini-bar-label">{n}</text>'
                 )
             else:
                 parts.append(
-                    f'<line x1="{bx:.1f}" y1="{mini_bottom - 1}" x2="{bx + mini_bar_w:.1f}" '
-                    f'y2="{mini_bottom - 1}" stroke="#cfd6df" stroke-width="2"/>'
+                    f'<line x1="{bx:.1f}" y1="{baseline - 1:.2f}" x2="{bx + bar_w:.1f}" '
+                    f'y2="{baseline - 1:.2f}" stroke="#cfd6df" stroke-width="2"/>'
+                )
+
+        parts.append(
+            f'<text x="{rows_right - 12}" y="{row_mid + 4:.1f}" class="body mini-count" '
+            f'text-anchor="end">peak {cat_max}</text>'
+        )
+
+        # Bottom-of-grid shared MAS axis (drawn under the last row only).
+        if idx == row_count - 1:
+            axis_y = row_bot + 14
+            for s in SCORES:
+                ax = plot_left + s * bar_slot + bar_slot / 2
+                parts.append(
+                    f'<text x="{ax:.1f}" y="{axis_y:.1f}" class="body mini-axis">{s}</text>'
                 )
             parts.append(
-                f'<text x="{bx + mini_bar_w / 2:.1f}" y="{mini_bottom + 12:.1f}" '
-                f'class="body mini-axis">{s}</text>'
+                f'<text x="{(plot_left + plot_right) / 2:.1f}" y="{axis_y + 12:.1f}" '
+                f'class="body axis" text-anchor="middle">model_agnostic_score</text>'
             )
 
     parts.append(
