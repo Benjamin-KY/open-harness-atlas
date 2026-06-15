@@ -99,13 +99,15 @@ distributed in the repo.
 
 ## Indigenous-data-governance positioning
 
-The atlas adopts the same positionality as `harmless-harnesses`. See
+The atlas adopts the same positionality as `harmless-harnesses` *(sibling
+repo currently private; public release planned alongside v1.7+)*. See
 [`CHARTER.md`](CHARTER.md) §"Indigenous-data-governance framing" for the
 motivating context. The canonical positionality statement (Tynan 2023,
 CARE Principles, Maiam nayri Wingara, IEEE 2890-2025) lives in
 `sa-sovereign-llm-harness/docs/the-harness-paradigm.md` §"Indigenous
-communities" and is referenced from CHARTER.md by link — *not* duplicated
-here, to avoid drift.
+communities" *(sibling repo currently private)*; a self-contained
+version that motivates the atlas without requiring sibling-repo access
+lives in [`docs/the-harness-paradigm-summary.md`](docs/the-harness-paradigm-summary.md).
 
 Per the author's standing as an Indigenous Australian scholar and author of
 *The Harness Paradigm*, structural-critique framing is published without

@@ -71,7 +71,7 @@ Start from the live filter:
 | Telemetry (self-hosted)      | `langfuse` (self-host mode)    | `arize-phoenix`, `openllmetry`                          |
 | RLHF / fine-tune (optional)  | `huggingface-trl`              | `openrlhf`, `open-instruct`                             |
 
-> **The atlas is 92.8% local-possible** — 736/793 entries have
+> **The atlas is 93.4% local-possible** — 803/860 entries have
 > `deployment_posture ∈ {local-only, local-first, hybrid}`. You're
 > not picking from a niche slice; you're picking from the majority.
 

@@ -6,6 +6,122 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+## [v0.4.1] — 2026-06-15
+
+Post-launch hotfix shipped same day as v0.4.0 after a deep persona-swarm
+review (procurement / security / IDSov / OSS-maintainer / academic-peer /
+comms lenses) surfaced live-site metadata drift, citation-surface stale
+metadata, broken cross-repo links, six per-entry factual errors at
+landmark tier, and one wrong-repo legal-doc copy-paste. No registry-count
+change (still 860 entries / 3,371 edges); contents are corrections, not
+additions.
+
+### Fixed — v0.4.1 BLOCKERs from the deep review (2026-06-15)
+
+- **Viewer + docs stale counts** — `visuals/index.html`, `visuals/2d.html`,
+  `docs/CURATION_BACKLOG.md`, `docs/deployment-posture.md`,
+  `docs/patterns/local-possible-spine.md`, `docs/patterns/README.md`
+  reported 793 entries / 3,148 edges (the pre-v0.3 numbers) instead of
+  the v0.4.0 actuals 860 / 3,371. Every social-card preview, SEO snippet,
+  and `/docs/` page on the live site showed the wrong headline number
+  from v0.4.0 launch until this hotfix. Five of the six review personas
+  caught this independently. Updated CURATION_BACKLOG to 837 reviewed /
+  23 backlog; deployment-posture to 629/141/33/37/20 actuals; local-possible
+  to 803/860 (93.4%); patterns README to 860.
+- **Citation surfaces stale** — `CITATION.cff` was `version: 0.1.0-dev`
+  / `date-released: 2026-06-13`; `pyproject.toml` was `version =
+  "0.1.0-dev"`. Anyone hitting the GitHub "Cite this repository" sidebar
+  or `pip install` introspection saw pre-release metadata after v0.4.0
+  ship. Bumped both to 0.4.0 / 2026-06-15.
+- **CHARTER + BRAND cross-repo links 404 publicly** — links to
+  `sa-sovereign-llm-harness/docs/the-harness-paradigm.md` and
+  `harmless-harnesses/course/00_foundation/F0_the_paradigm/` returned
+  HTTP 404 for public visitors (sibling repos currently private with
+  public release planned). Added explicit "*sibling repo currently
+  private; public release planned*" annotations next to every such
+  link in CHARTER.md and BRAND.md. Created
+  [`docs/the-harness-paradigm-summary.md`](docs/the-harness-paradigm-summary.md)
+  as a self-contained version of the paradigm essay so public readers
+  can use the atlas without requiring sibling-repo access. The
+  canonical sibling-repo links remain in place pending those repos
+  becoming public.
+- **Per-entry factual errors at landmark tier (6 entries)** caught by
+  Yuki (OSS-maintainer-persona) sample + cross-verified against
+  `gh api /repos/...`:
+  - `registry/redteam/pyrit.yaml` — `repo_url` pointed at archived
+    `Azure/PyRIT`; canonical is `microsoft/PyRIT`. Repointed
+    `repo_url` and `homepage` (docs URL).
+  - `registry/agent/agentgpt.yaml` — declared `license: MIT` but
+    upstream is `GPL-3.0`; also archived October 2025. Corrected
+    license; documented archival in description + sovereignty_notes;
+    `maintainer.name` annotated `(archived)`. Maturity left as `beta`
+    pending a v0.5.0 schema-field addition for `maintenance_status` /
+    `archived` (the schema's `maturity` enum is `[alpha, beta, ga,
+    production]` and has no slot for archived projects).
+  - `registry/governance/nemo-guardrails.yaml` — `repo_url` was old
+    `NVIDIA/NeMo-Guardrails`; upstream canonical is now
+    `NVIDIA-NeMo/Guardrails`. Repointed.
+  - `registry/agent/langchain.yaml` — display `name: Langchain`
+    (upstream brand is `LangChain`). Fixed.
+  - `registry/education/hugging-face-agents-course.yaml` —
+    `primary_language: Jupyter Notebook` (upstream reports MDX).
+    Fixed.
+  - `registry/routing/litellm.yaml` — `deployment_posture: local-only`
+    overstated; litellm is fundamentally a router/gateway to 100+
+    hosted providers and offers hosted-proxy modes. Corrected to
+    `local-first` (still runs entirely locally for local-only routes,
+    but is not a no-network tool by default).
+- **`LICENSE-DOCS` was copy-paste from `harmless-harnesses`** — referenced
+  paths that don't exist in this repo (`course/`, `COURSE_OUTLINE.md`,
+  `PREREQUISITES.md`, `SETUP.md`, `INSTRUCTOR_GUIDE.md`,
+  `REFERENCES.md`, `src/`, `solutions/`). Rewrote to reference the
+  actual top-level docs (`README.md`, `CHARTER.md`, `BRAND.md`,
+  `GOVERNANCE.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `CITATION.cff`),
+  `docs/`, `visuals/`, `scripts/`, `tests/`. Updated suggested
+  attribution string to name `open-harness-atlas` (not `Harmless
+  Harnesses`).
+
+### Reviewer attribution
+
+The deep review used six hand-crafted personas executed as parallel
+background agents (no single LLM persona had access to others'
+findings): Maeve Donnelly (UK regulated-sector platform engineer,
+procurement lens); Dr. Lara Petersen (Trail-of-Bits-style security
+auditor); Marama Te Whata (Māori IDSov scholar); Yuki Tanaka
+(catalogued-project OSS-maintainer); Dr. Lukas Sandoval (FAccT /
+NeurIPS-style peer reviewer with paradigm-reification lens); Theo
+Larsen (Maggie Appleton-archetype comms / launch-craft writer). The
+full synthesis with severity bucketing, action recommendations, and
+defer-to-v0.5.0 items is preserved in the session-state under
+`files/v040_synthesis.md`. The v0.4.1 hotfix addresses every BLOCKER;
+the 14 MAJOR-class findings are queued for v0.5.0; 21 MINOR-class
+findings are queued for v0.5.x.
+
+### Deferred to v0.5.0 (acknowledged here so it's auditable)
+
+- Validator rule enforcing `license` ∈ OSI allowlist by category (caught
+  the live `registry/redteam/www-project-llm-verification-standard.yaml`
+  CC-BY-SA-4.0 violation — fix held back so the validator addition
+  itself can be the gate that prevents recurrence).
+- Schema field for `maintenance_status` / `archived` (the agentgpt
+  patch above documents the absence; fix is a v0.5.0 schema bump).
+- IDSov schema operationalisation (`idsov_status`,
+  `community_consent_notes`, `cultural_data_risk` optional fields);
+  Indigenous-data-governance issue template; `origin_country` rename
+  audit for Indigenous-Country-term ambiguity.
+- Per-entry review ledger committed as structured CSV/JSON (replacing
+  the current "session report" reference).
+- Per-entry standalone page + JSON API (`/entry/<id>`).
+- Deployment-posture single source of truth (YAML vs sidecar — 203
+  mismatch).
+- `kuzu` §8 reclassification (graph-DB-as-agent decision).
+- CSP `'unsafe-inline'` hardening refactor (multi-day; not v0.5.0
+  blocker).
+- `hero.png` PNG OG card + full OG meta (`og:url`, `og:type`,
+  `twitter:image`, JSON-LD).
+- Adjacency manual clean-up for top-N landmarks
+  (`langchain` / `autogen` / `bisheng`).
+
 ## [v0.4.0] — 2026-06-15
 
 First tagged release. Open-harness-atlas ships as a public, OSI-licensed

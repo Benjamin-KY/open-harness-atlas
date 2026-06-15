@@ -34,15 +34,15 @@ The Atlas was built in response to the **closed-garden trend** — managed-only 
 
 ## Distribution
 
-Current registry (793 entries, 2026-06-14 post-ensemble):
+Current registry (860 entries, 2026-06-15 v0.4.0):
 
 | Posture | Count | % |
 |---|---:|---:|
-| `local-first` | ~485 | ~61% |
-| `local-only` | ~120 | ~15% |
-| `hybrid` | ~70 | ~9% |
-| `cloud-first` | ~80 | ~10% |
-| `api-only` | ~40 | ~5% |
+| `local-first` | 629 | 73% |
+| `local-only` | 141 | 16% |
+| `cloud-first` | 37 | 4% |
+| `hybrid` | 33 | 4% |
+| `api-only` | 20 | 2% |
 
 Exact counts vary as the registry grows; the live values are in `visuals/graph-data.json` under `meta.deployment_posture`.
 

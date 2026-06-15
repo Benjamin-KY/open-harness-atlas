@@ -3,10 +3,10 @@ name: AgentGPT
 category: agent
 subcategory: planning
 repo_url: https://github.com/reworkd/AgentGPT
-license: MIT
+license: GPL-3.0
 primary_language: TypeScript
-tagline: Browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution
-description: 'AgentGPT is Reworkd''s browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution. First prominent browser-based AutoGPT-style runner; NextJS + FastAPI backend.
+tagline: Browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution (upstream archived October 2025)
+description: 'AgentGPT is Reworkd''s browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution. First prominent browser-based AutoGPT-style runner; NextJS + FastAPI backend. **Upstream repository archived October 2025** — kept in the atlas as a historical reference implementation of the browser-AutoGPT pattern.
 
 
   In the atlas: AgentGPT is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy + tool-routing layer that sits between intent and the model tier.
@@ -15,10 +15,10 @@ description: 'AgentGPT is Reworkd''s browser-accessible no-code autonomous agent
 maturity: beta
 maintainer:
   type: company
-  name: Reworkd
+  name: Reworkd (archived)
 origin_country: US
 model_agnostic_score: 4
-sovereignty_notes: 'Reworkd (US-incorporated company); OSS core is MIT and fully self-hostable. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
+sovereignty_notes: 'Reworkd (US-incorporated company); OSS core is GPL-3.0 (corrected 2026-06-15: previously catalogued as MIT — upstream is GPL-3.0) and fully self-hostable. Upstream repository was archived in October 2025; included as a reference implementation of the browser-AutoGPT pattern, not a recommended adoption target. Model-agnostic 4 — the substrate is provider-abstracted but with some defaults or shipped configurations that favour a specific tier.
 
   '
 harness_paradigm_alignment: aligned

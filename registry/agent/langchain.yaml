@@ -1,5 +1,5 @@
 id: langchain
-name: Langchain
+name: LangChain
 category: agent
 subcategory: agent-framework
 repo_url: https://github.com/langchain-ai/langchain

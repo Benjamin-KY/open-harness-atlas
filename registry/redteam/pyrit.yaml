@@ -2,8 +2,8 @@ id: pyrit
 name: PyRIT (Python Risk Identification Tool)
 category: redteam
 subcategory: ai-red-team-framework
-repo_url: https://github.com/Azure/PyRIT
-homepage: https://azure.github.io/PyRIT/
+repo_url: https://github.com/microsoft/PyRIT
+homepage: https://microsoft.github.io/PyRIT/
 license: MIT
 primary_language: Python
 tagline: Microsoft AI Red Team's framework for automated risk identification across
@@ -44,7 +44,7 @@ origin_country: US
 model_agnostic_score: 5
 education_resources:
 - title: PyRIT — Documentation
-  url: https://azure.github.io/PyRIT/
+  url: https://microsoft.github.io/PyRIT/
   type: docs
   free: true
 - title: PyRIT — Paper

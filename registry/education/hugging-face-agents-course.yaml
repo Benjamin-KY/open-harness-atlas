@@ -5,7 +5,7 @@ subcategory: practitioner-guides
 repo_url: https://github.com/huggingface/agents-course
 homepage: https://huggingface.co/learn/agents-course/
 license: Apache-2.0
-primary_language: Jupyter Notebook
+primary_language: MDX
 tagline: Hugging Face's free course on building agents — from foundations through smolagents, LangGraph, and LlamaIndex.
 description: 'Hugging Face Agents Course is the Hugging Face team''s Apache-2.0
 

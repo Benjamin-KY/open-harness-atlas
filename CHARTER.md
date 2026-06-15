@@ -79,8 +79,8 @@ scholar and author of *The Harness Paradigm*. The Indigenous data
 sovereignty (IDSov) framing motivating this atlas is the same as the one
 documented in:
 
-- [`sa-sovereign-llm-harness/docs/the-harness-paradigm.md`](https://github.com/Benjamin-KY/sa-sovereign-llm-harness/blob/main/docs/the-harness-paradigm.md) §"Indigenous communities"
-- [`harmless-harnesses/course/00_foundation/F0_the_paradigm/`](https://github.com/Benjamin-KY/Harmless-Harnesses/blob/main/course/00_foundation/F0_the_paradigm/README.md) §6
+- [`sa-sovereign-llm-harness/docs/the-harness-paradigm.md`](https://github.com/Benjamin-KY/sa-sovereign-llm-harness/blob/main/docs/the-harness-paradigm.md) §"Indigenous communities" *(sibling repo currently private; public release planned alongside Harmless Harnesses v2.0 — see `docs/the-harness-paradigm-summary.md` in this repo for the self-contained version that motivates the atlas)*
+- [`harmless-harnesses/course/00_foundation/F0_the_paradigm/`](https://github.com/Benjamin-KY/Harmless-Harnesses/blob/main/course/00_foundation/F0_the_paradigm/README.md) §6 *(sibling repo currently private; F0 module ships at harmless-harnesses v1.7+)*
 - The CARE Principles for Indigenous Data Governance ([Tynan 2023](https://datasciencejournal.codata.org/articles/10.5334/dsj-2023-019); Maiam nayri Wingara)
 - IEEE 2890-2025 *Recommended Practice for Provenance of Indigenous Peoples' Data*
 
@@ -170,8 +170,13 @@ If you have 30 minutes: read the charter, then
 [`docs/agent-matrix.md`](docs/agent-matrix.md).
 
 If you have 2 hours: read everything above plus *The Harness Paradigm*
-in `sa-sovereign-llm-harness/docs/the-harness-paradigm.md`, then the
-Foundation track of `harmless-harnesses` (F0 → F1 → F2 → F3).
+— the self-contained motivating context lives in
+[`docs/the-harness-paradigm-summary.md`](docs/the-harness-paradigm-summary.md);
+the full canonical doc lives in
+`sa-sovereign-llm-harness/docs/the-harness-paradigm.md` *(sibling repo
+currently private; public release planned)*. Then the Foundation track
+of `harmless-harnesses` (F0 → F1 → F2 → F3) *(sibling repo currently
+private; ships at harmless-harnesses v1.7+)*.
 
 If you came here from the Fable / Mythos news cycle: jump straight to
 [`docs/fable-mythos-pattern-fire.md`](docs/fable-mythos-pattern-fire.md)

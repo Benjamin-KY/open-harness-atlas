@@ -164,7 +164,7 @@
     "licenses": [
       [
         "MIT",
-        476
+        475
       ],
       [
         "Apache-2.0",
@@ -188,7 +188,7 @@
       ],
       [
         "GPL-3.0",
-        3
+        4
       ],
       [
         "BSD-2-Clause",
@@ -374,7 +374,7 @@
       ],
       [
         "Jupyter Notebook",
-        38
+        37
       ],
       [
         "Rust",
@@ -406,7 +406,7 @@
       ],
       [
         "MDX",
-        5
+        6
       ],
       [
         "C#",
@@ -498,11 +498,11 @@
     "deployment_posture": [
       [
         "local-first",
-        629
+        630
       ],
       [
         "local-only",
-        141
+        140
       ],
       [
         "cloud-first",
@@ -950,15 +950,15 @@
       "subcategory": "planning",
       "color": "#d68910",
       "url": "https://github.com/reworkd/AgentGPT",
-      "tagline": "Browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution",
+      "tagline": "Browser-accessible no-code autonomous agent runner with visual goal decomposition and task execution (upstream archived October 2025)",
       "degree": 4,
       "mas": 4,
-      "license": "MIT",
+      "license": "GPL-3.0",
       "language": "TypeScript",
       "maturity": "beta",
       "country": "US",
       "maintainer_type": "company",
-      "maintainer_name": "Reworkd",
+      "maintainer_name": "Reworkd (archived)",
       "alignment": "aligned",
       "deployment_posture": "local-first",
       "tier": "canonical",
@@ -5536,7 +5536,7 @@
     },
     {
       "id": "langchain",
-      "name": "Langchain",
+      "name": "LangChain",
       "category": "agent",
       "subcategory": "agent-framework",
       "color": "#d68910",
@@ -10984,7 +10984,7 @@
       "degree": 9,
       "mas": 5,
       "license": "Apache-2.0",
-      "language": "Jupyter Notebook",
+      "language": "MDX",
       "maturity": "ga",
       "country": "FR",
       "maintainer_type": "company",
@@ -21741,7 +21741,7 @@
       "category": "governance",
       "subcategory": "programmable-rails",
       "color": "#1f3a5f",
-      "url": "https://github.com/NVIDIA/NeMo-Guardrails",
+      "url": "https://github.com/NVIDIA-NeMo/Guardrails",
       "tagline": "Programmable rails between user input, model, and external systems via the Colang DSL.",
       "degree": 9,
       "mas": 4,
@@ -26039,7 +26039,7 @@
       "category": "redteam",
       "subcategory": "ai-red-team-framework",
       "color": "#c0392b",
-      "url": "https://github.com/Azure/PyRIT",
+      "url": "https://github.com/microsoft/PyRIT",
       "tagline": "Microsoft AI Red Team's framework for automated risk identification across generative AI systems.",
       "degree": 69,
       "mas": 5,
@@ -28571,7 +28571,7 @@
       "maintainer_type": "company",
       "maintainer_name": "BerriAI",
       "alignment": "partial",
-      "deployment_posture": "local-only",
+      "deployment_posture": "local-first",
       "tier": "landmark",
       "tier_opacity": 1.0,
       "tier_radius_mult": 1.3,

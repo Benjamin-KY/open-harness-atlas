@@ -7,7 +7,7 @@ to wire to what — using the registry as the parts bin.
 
 ## Why patterns
 
-The atlas tells you which 793 entries exist. The patterns tell you which
+The atlas tells you which 860 entries exist. The patterns tell you which
 4–7 of them to wire together for a given workload. A pattern is short,
 opinionated, and biased toward **model-agnostic, deployment-aware**
 choices: every step lists realistic alternatives so you can drop in the

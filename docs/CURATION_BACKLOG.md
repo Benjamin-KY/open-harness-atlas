@@ -14,8 +14,8 @@ against the source repository and rewritten the auto-curated defaults.
 | Status | Count |
 |---|---|
 | Backlog (auto-ingested, pending review) | 23 |
-| Curator-reviewed | 770 |
-| Total catalogue | 793 |
+| Curator-reviewed | 837 |
+| Total catalogue | 860 |
 
 Honest disclosure: the integrity gap this file tracks is real. Trust the
 explicitly curator-reviewed entries first; treat the backlog as best-effort

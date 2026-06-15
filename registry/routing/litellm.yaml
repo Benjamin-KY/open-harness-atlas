@@ -94,4 +94,4 @@ adjacent_to:
 - vllm
 - gpustack
 - text-embeddings-inference
-deployment_posture: local-only
+deployment_posture: local-first

@@ -2,7 +2,7 @@ id: nemo-guardrails
 name: NeMo Guardrails
 category: governance
 subcategory: programmable-rails
-repo_url: https://github.com/NVIDIA/NeMo-Guardrails
+repo_url: https://github.com/NVIDIA-NeMo/Guardrails
 homepage: https://docs.nvidia.com/nemo/guardrails/latest/index.html
 license: Apache-2.0
 primary_language: Python
