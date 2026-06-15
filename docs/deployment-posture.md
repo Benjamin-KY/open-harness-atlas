@@ -38,8 +38,8 @@ Current registry (860 entries, 2026-06-15 v0.4.0):
 
 | Posture | Count | % |
 |---|---:|---:|
-| `local-first` | 629 | 73% |
-| `local-only` | 141 | 16% |
+| `local-first` | 630 | 73% |
+| `local-only` | 140 | 16% |
 | `cloud-first` | 37 | 4% |
 | `hybrid` | 33 | 4% |
 | `api-only` | 20 | 2% |

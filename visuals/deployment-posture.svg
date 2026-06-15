@@ -8,10 +8,10 @@
 <text x="40" y="58" class="body sub">Where does it run? 860 open-source harnesses split across five postures. Heuristic + 3-model ensemble curation (claude-sonnet-4.5 + claude-opus-4.7-xhigh + gpt-5.4).</text>
 <text x="40" y="114" class="body h2">All entries</text>
 <text x="40" y="132" class="body cat-count" text-anchor="start">860 total</text>
-<rect x="200.00" y="100" width="157.40" height="42" fill="#1f8a70" />
-<text x="278.70" y="121.00" class="body seg-label">141</text>
-<rect x="357.40" y="100" width="702.14" height="42" fill="#86b8b1" />
-<text x="708.47" y="121.00" class="body seg-label-dark">629</text>
+<rect x="200.00" y="100" width="156.28" height="42" fill="#1f8a70" />
+<text x="278.14" y="121.00" class="body seg-label">140</text>
+<rect x="356.28" y="100" width="703.26" height="42" fill="#86b8b1" />
+<text x="707.91" y="121.00" class="body seg-label-dark">630</text>
 <rect x="1059.53" y="100" width="36.84" height="42" fill="#c9b08c" />
 <text x="1077.95" y="121.00" class="body seg-label-dark">33</text>
 <rect x="1096.37" y="100" width="41.30" height="42" fill="#9cb8dd" />
@@ -61,10 +61,10 @@
 <rect x="1133.58" y="422" width="26.42" height="36" fill="#5b7fc7" />
 <text x="190" y="514" class="body cat-label">routing</text>
 <text x="190" y="532" class="body cat-count" text-anchor="end">(n=104)</text>
-<rect x="200.00" y="496" width="46.15" height="36" fill="#1f8a70" />
-<text x="223.08" y="514.00" class="body seg-label">5</text>
-<rect x="246.15" y="496" width="821.54" height="36" fill="#86b8b1" />
-<text x="656.92" y="514.00" class="body seg-label-dark">89</text>
+<rect x="200.00" y="496" width="36.92" height="36" fill="#1f8a70" />
+<text x="218.46" y="514.00" class="body seg-label">4</text>
+<rect x="236.92" y="496" width="830.77" height="36" fill="#86b8b1" />
+<text x="652.31" y="514.00" class="body seg-label-dark">90</text>
 <rect x="1067.69" y="496" width="9.23" height="36" fill="#c9b08c" />
 <rect x="1076.92" y="496" width="73.85" height="36" fill="#9cb8dd" />
 <text x="1113.85" y="514.00" class="body seg-label-dark">8</text>
