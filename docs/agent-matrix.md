@@ -169,6 +169,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | Apache-2.0 | TypeScript | ga | — | 3/5 | canonical | 13.3k | — | nanobrowser |
 | [Neo](https://github.com/neomjs/neo) | MIT | JavaScript | ga | — | 3/5 | established | 3.2k | — | neomjs |
 | [Nexent](https://github.com/ModelEngine-Group/nexent) | MIT | Python | ga | — | 3/5 | established | 5.0k | — | ModelEngine-Group |
+| [OGX (formerly Llama Stack)](https://github.com/ogx-ai/ogx) | MIT | Python | beta | — | 5/5 | — | — | — | OGX-AI (community fork) |
 | [Oh My Claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | MIT | TypeScript | ga | — | 0/5 | landmark | 36.3k | — | Yeachan-Heo |
 | [Oh My Pi](https://github.com/can1357/oh-my-pi) | MIT | TypeScript | ga | — | 3/5 | emerging | 12.3k | — | can1357 |
 | [Open Cowork](https://github.com/OpenCoworkAI/open-cowork) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.6k | — | OpenCoworkAI |

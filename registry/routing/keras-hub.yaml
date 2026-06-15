@@ -1,0 +1,56 @@
+id: keras-hub
+name: KerasHub
+category: routing
+subcategory: model-zoo
+repo_url: https://github.com/keras-team/keras-hub
+homepage: https://keras.io/keras_hub/
+license: Apache-2.0
+primary_language: Python
+tagline: Pre-trained model hub for Keras 3 — load and fine-tune Gemma, Llama, Mistral, BERT and friends across JAX, TensorFlow and PyTorch backends.
+description: |
+  KerasHub is the official model-zoo and pre-trained-checkpoint
+  loader for Keras 3. It provides a uniform Python API for
+  downloading and instantiating popular open-weight language
+  models (Gemma, Llama-2/3, Mistral, Falcon, BERT variants,
+  DistilBERT, GPT-2, T5, and many more) along with a small set
+  of high-level pipeline classes for classification, masked
+  language modelling, and text generation. Because Keras 3 runs
+  on JAX, TensorFlow or PyTorch backends, the same KerasHub
+  weights and pipeline code can target whichever runtime the
+  operator prefers.
+
+  In the atlas: keras-hub is catalogued under routing / model-zoo
+  alongside other open-weight distribution surfaces — it is the
+  upstream loader path many operators use when they would
+  otherwise reach for raw `transformers` or framework-specific
+  checkpoints. Distinct from inference servers like vLLM or TGI
+  (which serve a model) and provider routers like LiteLLM (which
+  proxy across hosted APIs); KerasHub is the
+  load-pretrained-weights-into-a-process layer.
+maturity: ga
+maintainer:
+  type: company
+  name: Keras / Google
+origin_country: US
+model_agnostic_score: 3
+sovereignty_notes: |
+  Added 2026-06-15 after a curation re-sweep surfaced KerasHub
+  as a named-missing pre-trained-loader surface. Verified via
+  `gh api repos/keras-team/keras-hub` — Apache-2.0, 983 stars,
+  last push 2026-06-13, not a fork.
+
+  Apache-2.0; Python library; runs locally. Weights stream from
+  Kaggle Hub or Hugging Face Hub on first load and are then
+  cached on disk — once cached, no network dependency. Backend
+  selection (JAX / TF / PyTorch) is operator-controlled. No
+  call-home in normal use. Sovereignty caveat: the model
+  catalogue is hosted on Kaggle and HF by default, so the first
+  download is a Google / HF dependency the operator should be
+  aware of and can mirror internally if needed.
+harness_paradigm_alignment: partial
+deployment_posture: local-first
+adjacent_to:
+- vllm
+- huggingface-tgi
+- ollama
+- llama-cpp

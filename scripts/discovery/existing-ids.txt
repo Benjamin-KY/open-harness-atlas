@@ -1,4 +1,6 @@
 9router
+_TEMPLATE
+_schema
 a3m-router
 adala-data-agents
 adalflow
@@ -276,6 +278,7 @@ gauntlet
 gcp-generative-ai
 gdpval-realworks
 gemini-cli
+gemma-cookbook
 genai-llm-bootcamp-2026
 genai-security-literature-review
 generative-agents-stanford
@@ -375,6 +378,7 @@ karpathy-mingpt
 karpathy-nanogpt
 karpathy-nn-zero-to-hero
 keel
+keras-hub
 kgateway
 kieranklaassen-leva
 klavis
@@ -539,6 +543,7 @@ nlp-with-transformers-notebooks
 node-llama-cpp
 norvig-pytudes
 nyro
+ogx
 oh-my-claudecode
 oh-my-knowledge
 oh-my-pi

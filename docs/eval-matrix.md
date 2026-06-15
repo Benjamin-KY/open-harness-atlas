@@ -147,7 +147,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Open Rag Eval](https://github.com/vectara/open-rag-eval) | Apache-2.0 | Python | beta | US | 5/5 | — | — | — | Vectara |
 | [Open Agent Bench](https://github.com/generalaimodels/OpenAgentBench) | GPL-3.0-only | Python | beta | — | 3/5 | frontier | 1 | — | generalaimodels |
 | [OpenAI Evals](https://github.com/openai/evals) | MIT | Python | ga | US | 3/5 | established | 18.7k | — | OpenAI |
-| [OpenAI Preparedness Evaluations](https://github.com/openai/preparedness) | MIT | Python | beta | US | 4/5 | established | 1.2k | — | OpenAI, OpCo, LLC |
+| [OpenAI Preparedness Evaluations](https://github.com/openai/frontier-evals) | MIT | Python | beta | US | 4/5 | established | 1.2k | — | OpenAI, OpCo, LLC |
 | [Openclaw LLM Bench](https://github.com/arthursoares/openclaw-llm-bench) | MIT | Python | beta | — | 4/5 | frontier | 2 | — | arthursoares |
 | [OpenCompass](https://github.com/open-compass/opencompass) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 7.1k | — | Shanghai AI Lab |
 | [Oss Llmops Stack](https://github.com/langfuse/oss-llmops-stack) | MIT | Multiple | beta | DE | 4/5 | frontier | 140 | — | langfuse |

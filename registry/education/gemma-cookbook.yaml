@@ -1,0 +1,65 @@
+id: gemma-cookbook
+name: Gemma Cookbook
+category: education
+subcategory: cookbook
+repo_url: https://github.com/google-gemma/cookbook
+homepage: https://ai.google.dev/gemma
+license: Apache-2.0
+primary_language: Jupyter Notebook
+tagline: Google's official cookbook of notebooks and worked examples for the Gemma open-weight model family — fine-tuning, RAG, agents, deployment.
+description: |
+  The Gemma Cookbook is Google's official open repository of
+  recipes for working with the Gemma family of open-weight
+  language models. Content is structured as runnable Jupyter
+  notebooks covering single-turn prompting, instruction
+  fine-tuning, RAG over local corpora, simple agentic loops,
+  on-device deployment via MediaPipe / TFLite, and integration
+  with the wider open ecosystem (Hugging Face, Ollama, llama.cpp,
+  vLLM). Notebooks are versioned alongside the model releases so
+  the worked examples track the latest checkpoint behaviour.
+
+  In the atlas: gemma-cookbook is the Gemma-side counterpart to
+  the openai-cookbook and google-gemini/cookbook entries — first-
+  party tutorial content for a specific model family rather than
+  a generic harness. Catalogued under education / cookbook
+  because the deliverable is reproducible recipes, not a
+  framework. Notable because Gemma is genuinely open-weight, so
+  every notebook in here is something the operator can re-run
+  fully offline with the weights they downloaded themselves.
+maturity: ga
+maintainer:
+  type: company
+  name: Google DeepMind
+origin_country: US
+model_agnostic_score: 2
+education_resources:
+- title: Gemma Cookbook — official notebooks
+  url: https://github.com/google-gemma/cookbook
+  type: course
+  free: true
+- title: Gemma model family — Google AI for Developers
+  url: https://ai.google.dev/gemma
+  type: docs
+  free: true
+sovereignty_notes: |
+  Added 2026-06-15 after the prior `google-gemini/gemma-cookbook`
+  repo was archived and redirected to `google-gemma/cookbook`.
+  Verified via `gh api repos/google-gemma/cookbook` —
+  Apache-2.0, 3,680 stars, last push 2026-06-14, not a fork.
+
+  Cookbook content is Apache-2.0; runs locally against weights
+  the operator has downloaded. Gemma weights themselves are
+  released under the Gemma Terms of Use (custom, not OSI but
+  permissive for commercial use). Provider-portability is
+  inherent — once weights are local, no Google-side endpoint or
+  authentication is involved. Notebooks intentionally target
+  multiple downstream runtimes (vanilla Transformers, Ollama,
+  llama.cpp, MediaPipe) so the operator chooses the deployment
+  shape that matches their sovereignty posture.
+harness_paradigm_alignment: partial
+deployment_posture: local-first
+adjacent_to:
+- openai-cookbook
+- ollama
+- llama-cpp
+- vllm

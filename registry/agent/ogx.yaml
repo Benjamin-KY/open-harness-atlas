@@ -1,0 +1,56 @@
+id: ogx
+name: OGX (formerly Llama Stack)
+category: agent
+subcategory: agent-stack
+repo_url: https://github.com/ogx-ai/ogx
+homepage: https://ogx-ai.github.io/
+license: MIT
+primary_language: Python
+tagline: Open GenAI Stack — composable agent runtime, tool registry, RAG and safety layers behind a single API surface. Forked and rebranded from Meta's llama-stack.
+description: |
+  OGX is the community continuation of Meta's `llama-stack`
+  project, rebranded as the "Open GenAI Stack" after Meta
+  transferred the public repository to an independent
+  organisation. It packages the same six surface APIs Llama Stack
+  originally specified — inference, agents, memory / RAG, safety,
+  tools, and telemetry — behind a single OpenAPI-described
+  surface so application code can be written against the stack
+  once and deployed across local-only, on-prem cluster, and
+  managed-cloud backends.
+
+  In the atlas: ogx is the agent-stack subcategory analogue to
+  langchain (orchestration-first) and llama-index (retrieval-
+  first) — its differentiator is the explicit multi-API contract
+  with safety and telemetry as first-class surface, designed for
+  operators who want a single stable interface they can swap
+  inference / memory / safety implementations behind. The
+  original `meta-llama/llama-stack` URL now redirects here.
+maturity: beta
+maintainer:
+  type: community
+  name: OGX-AI (community fork)
+origin_country: null
+model_agnostic_score: 5
+sovereignty_notes: |
+  Added 2026-06-15 after `meta-llama/llama-stack` repo transfer to
+  `ogx-ai/ogx`. Verified via `gh api repos/meta-llama/llama-stack`
+  which now returns full_name `ogx-ai/ogx` — MIT, 8,408 stars,
+  last push 2026-06-14, not a fork. Catalogued under the new
+  upstream identity rather than the legacy one.
+
+  MIT-licensed; community-maintained outside Meta after the
+  transfer. The stack is provider-pluggable on every axis —
+  inference can point at Ollama, vLLM, TGI, OpenAI, Bedrock,
+  Azure OpenAI, or any OpenAI-compatible endpoint; memory at any
+  vector store the operator runs; safety at Llama Guard, custom
+  classifiers, or operator-supplied policies. Self-hosting is the
+  default deployment shape; managed hosting is not a required
+  dependency.
+harness_paradigm_alignment: aligned
+deployment_posture: local-first
+adjacent_to:
+- langchain
+- llama-index-agents
+- autogen
+- crewai
+- purple-llama

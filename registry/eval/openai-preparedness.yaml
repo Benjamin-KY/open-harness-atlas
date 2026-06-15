@@ -2,7 +2,7 @@ id: openai-preparedness
 name: OpenAI Preparedness Evaluations
 category: eval
 subcategory: frontier-risk-evaluation
-repo_url: https://github.com/openai/preparedness
+repo_url: https://github.com/openai/frontier-evals
 homepage: https://openai.com/safety/preparedness/
 license: MIT
 primary_language: Python

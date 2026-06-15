@@ -43,6 +43,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Izwi](https://github.com/izwi-ai/izwi) | MIT | Rust | ga | — | 4/5 | emerging | 339 | — | izwi-ai |
 | [Jan](https://github.com/janhq/jan) | Apache-2.0 | TypeScript | beta | VN | 5/5 | landmark | 43.0k | — | Menlo Research (janhq) |
 | [Jundot Omlx](https://github.com/jundot/omlx) | Apache-2.0 | Python | beta | — | 5/5 | — | — | — | jundot |
+| [KerasHub](https://github.com/keras-team/keras-hub) | Apache-2.0 | Python | ga | US | 3/5 | — | — | — | Keras / Google |
 | [kgateway](https://github.com/kgateway-dev/kgateway) | Apache-2.0 | Go | ga | US | 4/5 | landmark | 5.6k | — | kgateway-dev (ex-Solo.io) |
 | [Kong](https://github.com/Kong/kong) | Apache-2.0 | Lua | ga | US | 4/5 | landmark | 43.6k | — | Kong Inc. |
 | [LiteLLM](https://github.com/BerriAI/litellm) | MIT | Python | ga | US | 5/5 | landmark | 50.3k | — | BerriAI |

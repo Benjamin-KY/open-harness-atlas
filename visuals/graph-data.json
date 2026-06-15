@@ -1,8 +1,8 @@
 {
   "meta": {
-    "n_nodes": 833,
-    "n_edges": 3300,
-    "avg_degree": 7.92,
+    "n_nodes": 836,
+    "n_edges": 3313,
+    "avg_degree": 7.93,
     "density": 0.0095,
     "categories": [
       {
@@ -13,7 +13,7 @@
       {
         "key": "agent",
         "color": "#d68910",
-        "count": 242
+        "count": 243
       },
       {
         "key": "eval",
@@ -28,12 +28,12 @@
       {
         "key": "routing",
         "color": "#3498db",
-        "count": 102
+        "count": 103
       },
       {
         "key": "education",
         "color": "#7d3c98",
-        "count": 72
+        "count": 73
       }
     ],
     "tiers": [
@@ -81,7 +81,7 @@
       },
       {
         "key": "unknown",
-        "count": 40,
+        "count": 43,
         "opacity": 0.4,
         "radius_mult": 0.7,
         "outline": "dotted"
@@ -122,7 +122,7 @@
         "id": "autogen",
         "name": "AutoGen",
         "category": "agent",
-        "degree": 27
+        "degree": 28
       },
       {
         "id": "openhands",
@@ -146,7 +146,7 @@
         "id": "crewai",
         "name": "CrewAI",
         "category": "agent",
-        "degree": 20
+        "degree": 21
       },
       {
         "id": "helicone",
@@ -155,20 +155,20 @@
         "degree": 20
       },
       {
-        "id": "toolbench",
-        "name": "ToolBench",
-        "category": "eval",
-        "degree": 19
+        "id": "vllm",
+        "name": "vLLM",
+        "category": "routing",
+        "degree": 20
       }
     ],
     "licenses": [
       [
         "MIT",
-        463
+        464
       ],
       [
         "Apache-2.0",
-        331
+        333
       ],
       [
         "GPL-3.0-only",
@@ -226,11 +226,11 @@
     "maturity": [
       [
         "ga",
-        425
+        427
       ],
       [
         "beta",
-        392
+        393
       ],
       [
         "alpha",
@@ -240,11 +240,11 @@
     "countries": [
       [
         "Unknown",
-        406
+        407
       ],
       [
         "US",
-        260
+        262
       ],
       [
         "CN",
@@ -362,7 +362,7 @@
     "languages": [
       [
         "Python",
-        515
+        517
       ],
       [
         "TypeScript",
@@ -374,7 +374,7 @@
       ],
       [
         "Jupyter Notebook",
-        37
+        38
       ],
       [
         "Rust",
@@ -480,11 +480,11 @@
       ],
       [
         2,
-        23
+        24
       ],
       [
         3,
-        307
+        308
       ],
       [
         4,
@@ -492,13 +492,13 @@
       ],
       [
         5,
-        128
+        129
       ]
     ],
     "deployment_posture": [
       [
         "local-first",
-        605
+        608
       ],
       [
         "local-only",
@@ -1896,7 +1896,7 @@
       "color": "#d68910",
       "url": "https://github.com/microsoft/autogen",
       "tagline": "Microsoft Research's multi-agent conversation framework \u2014 agents talk to each other to solve tasks.",
-      "degree": 27,
+      "degree": 28,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -2878,7 +2878,7 @@
       "color": "#d68910",
       "url": "https://github.com/crewAIInc/crewAI",
       "tagline": "Role-based multi-agent orchestration \u2014 Agents with goals and roles execute Tasks within a Crew.",
-      "degree": 20,
+      "degree": 21,
       "mas": 3,
       "license": "MIT",
       "language": "Python",
@@ -5227,7 +5227,7 @@
       "color": "#d68910",
       "url": "https://github.com/langchain-ai/langchain",
       "tagline": "Provider-agnostic Python/JS framework for chaining LLM calls, tools, retrievers, and agent loops; the de-facto reference implementation for the harness-as-application-layer pattern.",
-      "degree": 10,
+      "degree": 11,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -5542,7 +5542,7 @@
       "color": "#d68910",
       "url": "https://github.com/run-llama/llama_index",
       "tagline": "LlamaIndex's agent layer \u2014 ReAct / OpenAIAgent / FunctionCallingAgent over a RAG-native data substrate.",
-      "degree": 9,
+      "degree": 10,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -6228,6 +6228,41 @@
       "velocity_4w": null,
       "velocity_12w": null,
       "days_since_commit": 1,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "build-rag-agent",
+          "level": "auto"
+        }
+      ]
+    },
+    {
+      "id": "ogx",
+      "name": "OGX (formerly Llama Stack)",
+      "category": "agent",
+      "subcategory": "agent-stack",
+      "color": "#d68910",
+      "url": "https://github.com/ogx-ai/ogx",
+      "tagline": "Open GenAI Stack \u2014 composable agent runtime, tool registry, RAG and safety layers behind a single API surface. Forked and rebranded from Meta's llama-stack.",
+      "degree": 5,
+      "mas": 5,
+      "license": "MIT",
+      "language": "Python",
+      "maturity": "beta",
+      "country": "",
+      "maintainer_type": "community",
+      "maintainer_name": "OGX-AI (community fork)",
+      "alignment": "aligned",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
       "spark": [],
       "use_cases": [
         {
@@ -9784,6 +9819,41 @@
       ]
     },
     {
+      "id": "gemma-cookbook",
+      "name": "Gemma Cookbook",
+      "category": "education",
+      "subcategory": "cookbook",
+      "color": "#7d3c98",
+      "url": "https://github.com/google-gemma/cookbook",
+      "tagline": "Google's official cookbook of notebooks and worked examples for the Gemma open-weight model family \u2014 fine-tuning, RAG, agents, deployment.",
+      "degree": 4,
+      "mas": 2,
+      "license": "Apache-2.0",
+      "language": "Jupyter Notebook",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Google DeepMind",
+      "alignment": "partial",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "learn-the-stack",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "genai-llm-bootcamp-2026",
       "name": "Genai LLM Bootcamp 2026",
       "category": "education",
@@ -11207,7 +11277,7 @@
       "color": "#7d3c98",
       "url": "https://github.com/openai/openai-cookbook",
       "tagline": "Practical recipes and example notebooks for building with the OpenAI API.",
-      "degree": 6,
+      "degree": 7,
       "mas": 3,
       "license": "MIT",
       "language": "Jupyter Notebook",
@@ -16502,7 +16572,7 @@
       "category": "eval",
       "subcategory": "frontier-risk-evaluation",
       "color": "#28a745",
-      "url": "https://github.com/openai/preparedness",
+      "url": "https://github.com/openai/frontier-evals",
       "tagline": "OpenAI's open-source releases supporting the Preparedness Framework \u2014 frontier-risk evaluation methodology (cybersecurity, biosecurity, autonomy).",
       "degree": 1,
       "mas": 4,
@@ -25131,7 +25201,7 @@
       "color": "#c0392b",
       "url": "https://github.com/meta-llama/PurpleLlama",
       "tagline": "Umbrella eval suite: CyberSecEval v1-v3 (insecure code, cyberattack uplift, visual PI, spear-phishing), LlamaGuard, PromptGuard",
-      "degree": 5,
+      "degree": 6,
       "mas": 4,
       "license": "MIT",
       "language": "Python",
@@ -27327,7 +27397,7 @@
       "color": "#3498db",
       "url": "https://github.com/huggingface/text-generation-inference",
       "tagline": "Production-grade LLM-serving runtime in Rust + Python \u2014 the inference engine behind Hugging Face's Inference Endpoints, with continuous batching, paged attention, and quantisation.",
-      "degree": 6,
+      "degree": 7,
       "mas": 4,
       "license": "Apache-2.0",
       "language": "Python",
@@ -27532,6 +27602,41 @@
       ]
     },
     {
+      "id": "keras-hub",
+      "name": "KerasHub",
+      "category": "routing",
+      "subcategory": "model-zoo",
+      "color": "#3498db",
+      "url": "https://github.com/keras-team/keras-hub",
+      "tagline": "Pre-trained model hub for Keras 3 \u2014 load and fine-tune Gemma, Llama, Mistral, BERT and friends across JAX, TensorFlow and PyTorch backends.",
+      "degree": 4,
+      "mas": 3,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "maturity": "ga",
+      "country": "US",
+      "maintainer_type": "company",
+      "maintainer_name": "Keras / Google",
+      "alignment": "partial",
+      "deployment_posture": "local-first",
+      "tier": "unknown",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dotted",
+      "data_missing": true,
+      "stars": null,
+      "velocity_4w": null,
+      "velocity_12w": null,
+      "days_since_commit": null,
+      "spark": [],
+      "use_cases": [
+        {
+          "id": "serve-inference",
+          "level": "auto"
+        }
+      ]
+    },
+    {
       "id": "kgateway",
       "name": "kgateway",
       "category": "routing",
@@ -27660,7 +27765,7 @@
       "color": "#3498db",
       "url": "https://github.com/ggml-org/llama.cpp",
       "tagline": "Pure C/C++ LLM inference with llama-server OpenAI-compat HTTP endpoint; runs on any hardware",
-      "degree": 13,
+      "degree": 15,
       "mas": 5,
       "license": "MIT",
       "language": "C++",
@@ -28263,7 +28368,7 @@
       "color": "#3498db",
       "url": "https://github.com/ollama/ollama",
       "tagline": "One-command local server running any GGUF/safetensor model with native OpenAI-compat API",
-      "degree": 14,
+      "degree": 16,
       "mas": 5,
       "license": "MIT",
       "language": "Go",
@@ -29642,7 +29747,7 @@
       "color": "#3498db",
       "url": "https://github.com/vllm-project/vllm",
       "tagline": "High-throughput memory-efficient LLM inference engine with PagedAttention and OpenAI-compat server",
-      "degree": 18,
+      "degree": 20,
       "mas": 5,
       "license": "Apache-2.0",
       "language": "Python",
@@ -30887,6 +30992,10 @@
       "target": "toolbench-tool-learning"
     },
     {
+      "source": "autogen",
+      "target": "ogx"
+    },
+    {
       "source": "babyagi",
       "target": "crewai"
     },
@@ -31597,6 +31706,10 @@
     {
       "source": "crewai",
       "target": "swarm-openai"
+    },
+    {
+      "source": "crewai",
+      "target": "ogx"
     },
     {
       "source": "cua",
@@ -32755,6 +32868,10 @@
       "target": "openbrowser"
     },
     {
+      "source": "langchain",
+      "target": "ogx"
+    },
+    {
       "source": "langflow",
       "target": "rivet"
     },
@@ -33200,6 +33317,10 @@
     },
     {
       "source": "llama-index-agents",
+      "target": "ogx"
+    },
+    {
+      "source": "llama-index-agents",
       "target": "hugging-face-agents-course"
     },
     {
@@ -33513,6 +33634,10 @@
     {
       "source": "nexent",
       "target": "zeroshot"
+    },
+    {
+      "source": "ogx",
+      "target": "purple-llama"
     },
     {
       "source": "oh-my-claudecode",
@@ -34385,6 +34510,22 @@
     {
       "source": "gcp-generative-ai",
       "target": "openai-cookbook"
+    },
+    {
+      "source": "gemma-cookbook",
+      "target": "openai-cookbook"
+    },
+    {
+      "source": "gemma-cookbook",
+      "target": "ollama"
+    },
+    {
+      "source": "gemma-cookbook",
+      "target": "llama-cpp"
+    },
+    {
+      "source": "gemma-cookbook",
+      "target": "vllm"
     },
     {
       "source": "genai-llm-bootcamp-2026",
@@ -42203,6 +42344,10 @@
       "target": "text-embeddings-inference"
     },
     {
+      "source": "huggingface-tgi",
+      "target": "keras-hub"
+    },
+    {
       "source": "inference-benchmarker",
       "target": "vllm"
     },
@@ -42269,6 +42414,18 @@
     {
       "source": "jundot-omlx",
       "target": "swiftlm"
+    },
+    {
+      "source": "keras-hub",
+      "target": "vllm"
+    },
+    {
+      "source": "keras-hub",
+      "target": "ollama"
+    },
+    {
+      "source": "keras-hub",
+      "target": "llama-cpp"
     },
     {
       "source": "kgateway",
@@ -43661,6 +43818,7 @@
           "nanobrowser",
           "neo",
           "nexent",
+          "ogx",
           "oh-my-claudecode",
           "oh-my-pi",
           "open-cowork",
@@ -43817,6 +43975,7 @@
           "inferrs",
           "izwi",
           "jundot-omlx",
+          "keras-hub",
           "kgateway",
           "kong",
           "litellm",
@@ -44109,6 +44268,7 @@
           "enterprise-mcp-course",
           "fast-ai-course22",
           "gcp-generative-ai",
+          "gemma-cookbook",
           "genai-llm-bootcamp-2026",
           "genai-security-literature-review",
           "hands-on-llms",
