@@ -7,7 +7,8 @@ no committed SVG can silently drift from the catalogue. This module owns:
   six category tiles with tier-stacked bars + featured landmark names).
 * ``hero.png`` — 1200x630 raster of the same card for use as the
   ``og:image`` (social platforms reject SVG Open Graph images). Rendered
-  with matplotlib; dimension-gated (not byte-gated) in ``--check``.
+  with matplotlib; gitignored and regenerated at deploy (like ``graph.png``)
+  because matplotlib PNG bytes are not cross-platform deterministic.
 * ``five-component-overlay.svg`` — six-project x five-component coverage
   grid, sourced from the ``five_component_coverage`` field of each
   reference governance YAML.
@@ -428,24 +429,6 @@ def _category_data() -> dict[str, dict]:
     return out
 
 
-def _png_dimensions(path: Path) -> tuple[int, int] | None:
-    """Return ``(width, height)`` of a PNG by reading its IHDR header.
-
-    Header-only parse via stdlib ``struct`` — no image library needed, so the
-    ``--check`` dimension gate stays dependency-free (matplotlib is only
-    needed to *render* the PNG, not to validate it).
-    """
-    try:
-        head = path.read_bytes()[:24]
-    except OSError:
-        return None
-    if len(head) < 24 or head[:8] != b"\x89PNG\r\n\x1a\n":
-        return None
-    import struct
-    width, height = struct.unpack(">II", head[16:24])
-    return int(width), int(height)
-
-
 def _build_hero_png(out_path: Path) -> bool:
     """Render the 1200x630 social-card PNG used as ``og:image``.
 
@@ -454,9 +437,11 @@ def _build_hero_png(out_path: Path) -> bool:
     with matplotlib (a ``visuals``-extra dependency) from the same
     per-category counts as ``hero.svg``. Returns ``False`` (with a warning)
     if matplotlib is unavailable, so a base-install ``build_visuals`` run
-    still succeeds for the SVG outputs. NOT byte-compared in ``--check``:
-    matplotlib PNG bytes are not deterministic across platforms / font
-    stacks, so the 1200x630 dimension contract is gated instead.
+    still succeeds for the SVG outputs. The PNG is gitignored and
+    regenerated at deploy (``pages.yml`` / ``release.yml``): matplotlib PNG
+    bytes are not deterministic across platforms, so committing it would
+    fail the release working-tree drift gate (the same reason ``graph.png``
+    is ignored). The 1200x630 contract is covered by ``tests/test_hero_card``.
     """
     try:
         import matplotlib
@@ -1147,16 +1132,6 @@ def main(argv: list[str] | None = None) -> int:
             existing = HERO_FILE.read_text(encoding="utf-8") if HERO_FILE.exists() else ""
             if existing != rendered:
                 sys.stderr.write(f"DRIFT: {HERO_FILE.relative_to(REPO_ROOT)}\n")
-                drift = True
-            # hero.png (og:image card): gate the 1200x630 dimension contract
-            # only. matplotlib PNG bytes are not cross-platform deterministic,
-            # so byte-comparing would re-introduce the drift-on-rebuild class
-            # we deliberately avoid.
-            if _png_dimensions(HERO_PNG_FILE) != (1200, 630):
-                sys.stderr.write(
-                    f"DRIFT: {HERO_PNG_FILE.relative_to(REPO_ROOT)} "
-                    "missing or not 1200x630\n"
-                )
                 drift = True
         else:
             HERO_FILE.write_text(rendered, encoding="utf-8")

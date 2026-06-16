@@ -48,14 +48,12 @@ tmp/
 companion/app/
 
 # Rendered visuals are checked in (canonical SVGs); PDFs / raster exports are
-# not — except (a) the README viewer screenshot and (b) hero.png, the social
-# (og:image) card. Pages serves hero.png directly (the deploy does not rebuild
-# visuals) and build_visuals --check gates its 1200x630 dimensions, so it must
-# be committed.
+# not. hero.png (the og:image social card) and graph.png are non-deterministic
+# matplotlib rasters regenerated at deploy time (pages.yml / release.yml), so
+# they stay ignored — only the viewer screenshot (preview.png) is committed.
 visuals/**/*.pdf
 visuals/**/*.png
 !visuals/**/preview.png
-!visuals/hero.png
 
 # Node / docs tooling (if added later)
 node_modules/

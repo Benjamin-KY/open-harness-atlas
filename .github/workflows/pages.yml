@@ -54,6 +54,9 @@ jobs:
       - name: Rebuild graph payload (graph-data.json + graph.svg + graph.png)
         run: python scripts/build_graph.py
 
+      - name: Rebuild hero.png (og:image social card — gitignored raster)
+        run: python scripts/build_visuals.py --skip-spectrum --skip-overlay --skip-posture
+
       - name: Assemble site
         run: |
           mkdir -p _site _site/docs

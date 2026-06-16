@@ -28,13 +28,13 @@ blank/broken card. The UX swarm flagged this as B-E.
   SVGs.
 - Both viewers now point `og:image` + `twitter:image` at `hero.png`, with
   `og:image:type`/`width`/`height`/`alt`, `og:type`, and `og:url` added.
-- `build_visuals --check` gates the **1200×630 dimension contract** (not the
-  bytes — matplotlib PNGs aren't cross-platform deterministic, so a
-  byte-gate would re-introduce the drift-on-rebuild class we just removed).
-- `hero.png` is committed (gitignore exception, like `preview.png`) because
-  Pages serves it directly and does not rebuild visuals at deploy.
-- 5 new tests pin the contract (PNG exists + 1200×630; both viewers use the
-  PNG, not the SVG; dimensions declared in meta).
+- `hero.png` is gitignored and regenerated at deploy (`pages.yml` /
+  `release.yml`), like `graph.png` — matplotlib PNG bytes aren't
+  cross-platform deterministic, so committing it would fail the release
+  working-tree drift gate.
+- The 1200×630 contract is covered by `tests/test_hero_card.py` (renders
+  the card to a tmp dir and asserts dimensions; plus the viewers reference
+  the PNG, not the SVG, with dimensions declared in meta).
 
 ### Fixed — tier + velocity `--check` gates no longer rot day-by-day (CI time-bomb)
 

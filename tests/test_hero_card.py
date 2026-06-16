@@ -19,7 +19,6 @@ import pytest
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 VISUALS = REPO_ROOT / "visuals"
-HERO_PNG = VISUALS / "hero.png"
 VIEWERS = [VISUALS / "index.html", VISUALS / "2d.html"]
 
 
@@ -31,11 +30,20 @@ def _png_dimensions(path: Path) -> tuple[int, int] | None:
     return int(width), int(height)
 
 
-def test_hero_png_exists_and_is_1200x630():
-    """The OG card must exist and be exactly 1200x630 (the universal
-    large-summary-card size). Gated identically in build_visuals --check."""
-    assert HERO_PNG.exists(), "visuals/hero.png missing — run build_visuals.py"
-    assert _png_dimensions(HERO_PNG) == (1200, 630)
+def test_hero_png_renders_at_1200x630(tmp_path):
+    """The OG-card renderer must emit a 1200x630 PNG (the universal
+    large-summary-card size). Rendered into a tmp dir so the test does not
+    depend on a committed binary — hero.png is gitignored and regenerated at
+    deploy (like graph.png), because matplotlib PNG bytes are not
+    cross-platform deterministic."""
+    import importlib
+    import sys
+    sys.path.insert(0, str(REPO_ROOT / "scripts"))
+    build_visuals = importlib.import_module("build_visuals")
+    out = tmp_path / "hero.png"
+    if not build_visuals._build_hero_png(out):
+        pytest.skip("matplotlib not installed — cannot render hero.png")
+    assert _png_dimensions(out) == (1200, 630)
 
 
 @pytest.mark.parametrize("viewer", VIEWERS, ids=lambda p: p.name)
