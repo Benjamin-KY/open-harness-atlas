@@ -64,8 +64,11 @@ jobs:
           cp visuals/graph.png _site/graph.png
           cp visuals/model-agnostic-spectrum.svg _site/model-agnostic-spectrum.svg
           cp visuals/five-component-overlay.svg _site/five-component-overlay.svg
-          # Social-card / OpenGraph asset (referenced by visuals/index.html + 2d.html).
+          # Social-card / OpenGraph assets. hero.png is the og:image
+          # (social platforms reject SVG OG images); hero.svg is kept for the
+          # in-repo README banner and as a crisp vector fallback.
           cp visuals/hero.svg _site/hero.svg
+          cp visuals/hero.png _site/hero.png
           # Live-viewer screenshot used by the README. Copy under the same
           # subpath so absolute URLs resolve in both GitHub and Pages.
           mkdir -p _site/viewer-3d

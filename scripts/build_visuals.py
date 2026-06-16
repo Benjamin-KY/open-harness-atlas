@@ -5,6 +5,9 @@ no committed SVG can silently drift from the catalogue. This module owns:
 
 * ``hero.svg`` — 1200x630 LinkedIn-social-card banner (header counts +
   six category tiles with tier-stacked bars + featured landmark names).
+* ``hero.png`` — 1200x630 raster of the same card for use as the
+  ``og:image`` (social platforms reject SVG Open Graph images). Rendered
+  with matplotlib; dimension-gated (not byte-gated) in ``--check``.
 * ``five-component-overlay.svg`` — six-project x five-component coverage
   grid, sourced from the ``five_component_coverage`` field of each
   reference governance YAML.
@@ -44,6 +47,7 @@ CATEGORY_COLOUR = {
 }
 SPECTRUM_FILE = VISUALS_DIR / "model-agnostic-spectrum.svg"
 HERO_FILE = VISUALS_DIR / "hero.svg"
+HERO_PNG_FILE = VISUALS_DIR / "hero.png"
 OVERLAY_FILE = VISUALS_DIR / "five-component-overlay.svg"
 POSTURE_FILE = VISUALS_DIR / "deployment-posture.svg"
 
@@ -422,6 +426,97 @@ def _category_data() -> dict[str, dict]:
             tier_counts[tier] = tier_counts.get(tier, 0) + 1
         out[cat] = {"total": len(entries), "tiers": tier_counts}
     return out
+
+
+def _png_dimensions(path: Path) -> tuple[int, int] | None:
+    """Return ``(width, height)`` of a PNG by reading its IHDR header.
+
+    Header-only parse via stdlib ``struct`` — no image library needed, so the
+    ``--check`` dimension gate stays dependency-free (matplotlib is only
+    needed to *render* the PNG, not to validate it).
+    """
+    try:
+        head = path.read_bytes()[:24]
+    except OSError:
+        return None
+    if len(head) < 24 or head[:8] != b"\x89PNG\r\n\x1a\n":
+        return None
+    import struct
+    width, height = struct.unpack(">II", head[16:24])
+    return int(width), int(height)
+
+
+def _build_hero_png(out_path: Path) -> bool:
+    """Render the 1200x630 social-card PNG used as ``og:image``.
+
+    Social platforms (LinkedIn, X/Twitter, Slack, Facebook, Bluesky, …)
+    reject SVG Open Graph images, so the share card must be raster. Rendered
+    with matplotlib (a ``visuals``-extra dependency) from the same
+    per-category counts as ``hero.svg``. Returns ``False`` (with a warning)
+    if matplotlib is unavailable, so a base-install ``build_visuals`` run
+    still succeeds for the SVG outputs. NOT byte-compared in ``--check``:
+    matplotlib PNG bytes are not deterministic across platforms / font
+    stacks, so the 1200x630 dimension contract is gated instead.
+    """
+    try:
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        from matplotlib.patches import FancyBboxPatch
+    except ImportError:
+        sys.stderr.write(
+            "warning: matplotlib not installed — skipping hero.png "
+            "(install the 'visuals' extra to regenerate the OG card)\n"
+        )
+        return False
+
+    data = _category_data()
+    grand_total = sum(d["total"] for d in data.values())
+
+    W, H = 1200, 630
+    BRAND = "#1f3a5f"
+    FONT = "DejaVu Sans"  # matplotlib-bundled → no system-font dependency
+
+    fig = plt.figure(figsize=(W / 100, H / 100), dpi=100)
+    ax = fig.add_axes((0, 0, 1, 1))
+    ax.set_xlim(0, W)
+    ax.set_ylim(0, H)
+    ax.axis("off")
+    ax.add_patch(plt.Rectangle((0, 0), W, H, facecolor="#ffffff", edgecolor="none"))
+    ax.add_patch(plt.Rectangle((0, 0), W, 10, facecolor=BRAND, edgecolor="none"))
+
+    ax.text(64, H - 80, "open-harness-atlas", fontsize=50, fontweight="bold",
+            color=BRAND, family=FONT, va="center")
+    ax.text(66, H - 140, f"{grand_total} open-source LLM & agent harnesses",
+            fontsize=25, color="#33485f", family=FONT, va="center")
+    ax.text(66, H - 176, "curated across six categories — multidimensional, not a list",
+            fontsize=16, color="#627182", family=FONT, va="center")
+
+    PAD, GAP, COLS = 64, 24, 3
+    CHIP_W = (W - 2 * PAD - (COLS - 1) * GAP) / COLS
+    CHIP_H = 108
+    grid_top = H - 214
+    for i, cat in enumerate(CATEGORY_ORDER):
+        r, c = divmod(i, COLS)
+        x = PAD + c * (CHIP_W + GAP)
+        y = grid_top - r * (CHIP_H + GAP) - CHIP_H
+        ax.add_patch(FancyBboxPatch(
+            (x, y), CHIP_W, CHIP_H,
+            boxstyle="round,pad=0,rounding_size=12",
+            linewidth=0, facecolor=CATEGORY_COLOUR[cat], mutation_aspect=1))
+        ax.text(x + 22, y + CHIP_H - 30, cat, fontsize=19, fontweight="bold",
+                color="#ffffff", family=FONT, va="center")
+        ax.text(x + CHIP_W - 22, y + CHIP_H / 2 - 5, str(data[cat]["total"]),
+                fontsize=34, fontweight="bold", color="#ffffff", family=FONT,
+                va="center", ha="right")
+
+    ax.text(64, 36, "benjamin-ky.github.io/open-harness-atlas",
+            fontsize=16, color=BRAND, family=FONT, va="center")
+
+    fig.savefig(out_path, format="png", dpi=100,
+                metadata={"Software": "open-harness-atlas/build_visuals"})
+    plt.close(fig)
+    return True
 
 
 def _build_hero() -> str:
@@ -1053,9 +1148,21 @@ def main(argv: list[str] | None = None) -> int:
             if existing != rendered:
                 sys.stderr.write(f"DRIFT: {HERO_FILE.relative_to(REPO_ROOT)}\n")
                 drift = True
+            # hero.png (og:image card): gate the 1200x630 dimension contract
+            # only. matplotlib PNG bytes are not cross-platform deterministic,
+            # so byte-comparing would re-introduce the drift-on-rebuild class
+            # we deliberately avoid.
+            if _png_dimensions(HERO_PNG_FILE) != (1200, 630):
+                sys.stderr.write(
+                    f"DRIFT: {HERO_PNG_FILE.relative_to(REPO_ROOT)} "
+                    "missing or not 1200x630\n"
+                )
+                drift = True
         else:
             HERO_FILE.write_text(rendered, encoding="utf-8")
             print(f"wrote {HERO_FILE.relative_to(REPO_ROOT)}")
+            if _build_hero_png(HERO_PNG_FILE):
+                print(f"wrote {HERO_PNG_FILE.relative_to(REPO_ROOT)}")
 
     if not args.skip_overlay:
         rendered = _build_overlay()

@@ -6,6 +6,28 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Added — `hero.png` social card so shared links render an image (B-E)
+
+The viewers set `og:image` to `hero.svg`, but every major social platform
+(LinkedIn, X/Twitter, Slack, Facebook, Bluesky, Mastodon) **rejects SVG
+Open Graph images** — so every shared link to the live site rendered with a
+blank/broken card. The UX swarm flagged this as B-E.
+
+- `build_visuals.py` now renders **`hero.png`** — a 1200×630 raster social
+  card (matplotlib, from the same per-category counts as `hero.svg`):
+  project title, total harness count, and the six category chips with
+  counts. Lazy/guarded matplotlib import so a base install still builds the
+  SVGs.
+- Both viewers now point `og:image` + `twitter:image` at `hero.png`, with
+  `og:image:type`/`width`/`height`/`alt`, `og:type`, and `og:url` added.
+- `build_visuals --check` gates the **1200×630 dimension contract** (not the
+  bytes — matplotlib PNGs aren't cross-platform deterministic, so a
+  byte-gate would re-introduce the drift-on-rebuild class we just removed).
+- `hero.png` is committed (gitignore exception, like `preview.png`) because
+  Pages serves it directly and does not rebuild visuals at deploy.
+- 5 new tests pin the contract (PNG exists + 1200×630; both viewers use the
+  PNG, not the SVG; dimensions declared in meta).
+
 ### Fixed — tier + velocity `--check` gates no longer rot day-by-day (CI time-bomb)
 
 `compute_tier.py` and `compute_velocity.py` computed age / recency /
