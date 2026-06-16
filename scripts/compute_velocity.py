@@ -69,7 +69,7 @@ RISING_PATH = REPO_ROOT / "docs" / "rising.md"
 
 
 def _now() -> datetime:
-    """Pinned to UTC midnight — see ``compute_tier.py:_now`` for rationale."""
+    """Wall-clock UTC midnight — fallback only; see ``compute_tier.py:_now``."""
     return datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
 
 
@@ -139,7 +139,15 @@ def _entry_velocity(sidecar: dict[str, Any]) -> dict[str, Any]:
     snapshots = _snapshots(sidecar)
     latest = snapshots[-1] if snapshots else {}
     last_commit = _parse_iso(latest.get("last_commit_at"))
-    days_since_commit = (NOW - last_commit).days if last_commit else None
+    # As-of the entry's own latest snapshot date, not wall-clock. days_since_commit
+    # is otherwise the one field that drifts +1 per day for EVERY entry, breaking
+    # the --check gate daily even with no data change. Pinning it to refreshed_at
+    # makes _velocity.json a pure function of the committed sidecars (the
+    # stars_per_week / history_days fields already are). See
+    # compute_tier._reference_date for the full rationale.
+    ref = _parse_iso(latest.get("refreshed_at"))
+    ref = ref.replace(hour=0, minute=0, second=0, microsecond=0) if ref else NOW
+    days_since_commit = (ref - last_commit).days if last_commit else None
 
     history_days: int | None = None
     if len(snapshots) >= 2:

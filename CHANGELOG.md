@@ -6,6 +6,36 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+### Fixed — tier + velocity `--check` gates no longer rot day-by-day (CI time-bomb)
+
+`compute_tier.py` and `compute_velocity.py` computed age / recency /
+`days_since_commit` against **wall-clock now**, but the committed
+`_tiers.json` / `_velocity.json` are snapshots. So the `--check` drift
+gates (and the `test_compute_tier_check_is_deterministic_across_invocations`
+test) failed whenever enough wall-clock time passed to cross a threshold —
+breaking `validate` CI on *any* push with **zero code or data changes**.
+Today (2026-06-16) it surfaced when `tambo` crossed the 730-day landmark
+floor overnight (`established → landmark`); velocity was worse, drifting
+`days_since_commit` by +1 for *every* entry *every* day.
+
+The reference date is now pinned to each entry's own metadata-snapshot date
+(`refreshed_at`) instead of wall-clock, with a wall-clock fallback only when
+`refreshed_at` is absent (legacy sidecars, unit metas). Tiers and velocity
+are now pure functions of the committed sidecars: they change only when a
+metadata refresh changes the underlying data — and the weekly refresh job
+regenerates both in the same drift branch, so the snapshot and the gate
+never diverge. Two regression tests lock this in
+(`test_classify_uses_refreshed_at_not_wallclock`,
+`test_velocity_days_since_commit_uses_refreshed_at`).
+
+Net data effect: 3 entries re-tier to their correct as-of-snapshot values
+(`coral` emerging→frontier, `letta` established→landmark, `ragchecker`
+dormant→frontier — all within ±1 day of a threshold) and every entry's
+`days_since_commit` is recomputed against its refresh date. Tier
+distribution stays healthy (landmark 14.3%, within the documented
+~10–15% target). Matrices, graph payload, and hero banner regenerated to
+match.
+
 ### Fixed — weekly `refresh-metadata` workflow stopped failing on every run
 
 The scheduled `refresh-metadata` job (Mondays, 06:17 UTC) failed at its

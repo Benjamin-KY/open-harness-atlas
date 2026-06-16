@@ -183,6 +183,45 @@ def test_now_pinned_to_utc_midnight(compute_tier):
     assert (now.hour, now.minute, now.second, now.microsecond) == (0, 0, 0, 0)
 
 
+def test_classify_uses_refreshed_at_not_wallclock(compute_tier):
+    """A tier must be a pure function of the sidecar's own ``refreshed_at``,
+    never wall-clock.
+
+    Regression for the daily-CI-breakage time-bomb: ``tambo`` (≈11k stars,
+    created 2024-06-15) sat one day under the 730-day landmark floor. With a
+    wall-clock reference it flipped ``established → landmark`` overnight,
+    drifting ``_tiers.json`` from the committed snapshot and failing
+    ``--check`` on the next push with zero data change. Pinned to
+    ``refreshed_at`` the tier is stable until the data itself is refreshed.
+    """
+    # 729 days between created_at and refreshed_at → just under the landmark
+    # floor → established, no matter what day this test runs.
+    meta = {
+        "stars": 11_000,
+        "created_at": "2024-06-15T00:00:00Z",
+        "last_commit_at": "2026-06-13T00:00:00Z",
+        "refreshed_at": "2026-06-14T00:00:00Z",
+        "archived": False,
+    }
+    assert compute_tier._classify(meta) == "established"
+    # Same entry, data refreshed two days later → now 731 days old, crossing
+    # the floor. The tier changes only because the *data* (refreshed_at)
+    # changed — never because wall-clock time passed.
+    assert compute_tier._classify({**meta, "refreshed_at": "2026-06-16T00:00:00Z"}) == "landmark"
+
+
+def test_classify_falls_back_to_wallclock_without_refreshed_at(compute_tier):
+    """Truth-table metas carry no ``refreshed_at``; the classifier must still
+    work off the wall-clock fallback so the existing parametrised cases hold."""
+    meta = {
+        "stars": 35_000,
+        "created_at": _iso(60),
+        "last_commit_at": _iso(120),
+        "archived": False,
+    }
+    assert compute_tier._classify(meta) == "landmark"
+
+
 def test_compute_tier_check_is_deterministic_across_invocations():
     """Two consecutive ``--check`` runs must agree even when separated by
     enough wall-clock time to span integer-day boundaries within seconds."""
@@ -212,6 +251,33 @@ def compute_velocity():
 
 def test_stars_per_week_returns_none_on_single_snapshot(compute_velocity):
     assert compute_velocity._stars_per_week([{"stars": 100}], window_days=28) is None
+
+
+def test_velocity_days_since_commit_uses_refreshed_at(compute_velocity):
+    """``days_since_commit`` must be measured from the snapshot's
+    ``refreshed_at``, not wall-clock.
+
+    Regression for the velocity time-bomb: this field is the one velocity
+    stat that drifted +1 per day for *every* entry, so ``_velocity.json``
+    diverged from its committed copy daily and broke ``--check`` even with
+    no data change. Pinned to ``refreshed_at`` the value is fixed by the
+    data: 2026-06-14 refreshed minus 2026-06-04 last commit = 10 days,
+    whenever the test runs.
+    """
+    flat = {
+        "refreshed_at": "2026-06-14T00:00:00Z",
+        "last_commit_at": "2026-06-04T00:00:00Z",
+        "stars": 1234,
+    }
+    assert compute_velocity._entry_velocity(flat)["days_since_commit"] == 10
+    snapshotted = {
+        "created_at": "2020-01-01T00:00:00Z",
+        "snapshots": [
+            {"refreshed_at": "2026-06-14T00:00:00Z",
+             "last_commit_at": "2026-06-04T00:00:00Z", "stars": 1234},
+        ],
+    }
+    assert compute_velocity._entry_velocity(snapshotted)["days_since_commit"] == 10
 
 
 def test_rising_table_excludes_negative_velocity(compute_velocity):

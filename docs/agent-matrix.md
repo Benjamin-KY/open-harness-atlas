@@ -73,7 +73,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [Composio](https://github.com/ComposioHQ/composio) | MIT | TypeScript | ga | US | 5/5 | — | — | — | Composio |
 | [Continue](https://github.com/continuedev/continue) | Apache-2.0 | TypeScript | ga | US | 5/5 | — | — | — | Continue |
 | [CopilotKit](https://github.com/CopilotKit/CopilotKit) | MIT | TypeScript | ga | US | 4/5 | landmark | 35.0k | — | CopilotKit Inc. |
-| [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 723 | — | Human-Agent-Society |
+| [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | frontier | 723 | — | Human-Agent-Society |
 | [Core](https://github.com/cheshire-cat-ai/core) | GPL-3.0-only | Python | ga | IT | 4/5 | established | 3.0k | — | cheshire-cat-ai |
 | [Cow Agent](https://github.com/zhayujie/CowAgent) | MIT | Python | ga | — | 3/5 | landmark | 45.3k | — | zhayujie |
 | [Coze Loop](https://github.com/coze-dev/coze-loop) | Apache-2.0 | Go | ga | CN | 2/5 | emerging | 5.5k | — | coze-dev |
@@ -154,7 +154,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 | [LangGraph](https://github.com/langchain-ai/langgraph) | MIT | Python | ga | US | 4/5 | landmark | 34.7k | — | LangChain Inc. |
 | [Langroid](https://github.com/langroid/langroid) | MIT | Python | ga | — | 4/5 | established | 4.0k | — | langroid |
 | [Lean Ctx](https://github.com/yvgude/lean-ctx) | Apache-2.0 | Rust | ga | — | 4/5 | frontier | 2.7k | — | yvgude |
-| [Letta](https://github.com/letta-ai/letta) | Apache-2.0 | Python | ga | US | 4/5 | established | 23.3k | — | Letta AI |
+| [Letta](https://github.com/letta-ai/letta) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 23.3k | — | Letta AI |
 | [Libre Chat](https://github.com/danny-avila/LibreChat) | MIT | TypeScript | ga | — | 4/5 | landmark | 39.1k | — | danny-avila |
 | [Light Agent](https://github.com/wanxingai/LightAgent) | Apache-2.0 | Python | ga | CN | 4/5 | established | 1.1k | — | wanxingai |
 | [LightRAG](https://github.com/HKUDS/LightRAG) | MIT | Python | beta | HK | 5/5 | — | — | — | HKU Data Intelligence Lab |

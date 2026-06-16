@@ -39,7 +39,7 @@
     "tiers": [
       {
         "key": "landmark",
-        "count": 122,
+        "count": 123,
         "opacity": 1.0,
         "radius_mult": 1.3,
         "outline": "solid"
@@ -53,28 +53,28 @@
       },
       {
         "key": "established",
-        "count": 178,
+        "count": 177,
         "opacity": 1.0,
         "radius_mult": 1.0,
         "outline": "solid"
       },
       {
         "key": "emerging",
-        "count": 142,
+        "count": 141,
         "opacity": 0.7,
         "radius_mult": 0.85,
         "outline": "solid"
       },
       {
         "key": "dormant",
-        "count": 47,
+        "count": 46,
         "opacity": 0.5,
         "radius_mult": 0.8,
         "outline": "solid"
       },
       {
         "key": "frontier",
-        "count": 280,
+        "count": 282,
         "opacity": 0.4,
         "radius_mult": 0.7,
         "outline": "dashed"
@@ -545,7 +545,7 @@
       "stars": 1603,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -580,7 +580,7 @@
       "stars": 4168,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [
         4168
       ],
@@ -617,7 +617,7 @@
       "stars": 14249,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -652,7 +652,7 @@
       "stars": 4671,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -687,7 +687,7 @@
       "stars": 4445,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -722,7 +722,7 @@
       "stars": 4272,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [
         4272
       ],
@@ -759,7 +759,7 @@
       "stars": 27481,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -794,7 +794,7 @@
       "stars": 11843,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 32,
+      "days_since_commit": 31,
       "spark": [],
       "use_cases": [
         {
@@ -829,7 +829,7 @@
       "stars": 1599,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -864,7 +864,7 @@
       "stars": 3492,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 126,
+      "days_since_commit": 125,
       "spark": [],
       "use_cases": [
         {
@@ -899,7 +899,7 @@
       "stars": 1914,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 126,
+      "days_since_commit": 125,
       "spark": [],
       "use_cases": [
         {
@@ -934,7 +934,7 @@
       "stars": 817,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -969,7 +969,7 @@
       "stars": 36192,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 411,
+      "days_since_commit": 410,
       "spark": [],
       "use_cases": [
         {
@@ -1004,7 +1004,7 @@
       "stars": 1028,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 20,
+      "days_since_commit": 19,
       "spark": [],
       "use_cases": [
         {
@@ -1039,7 +1039,7 @@
       "stars": 26515,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -1074,7 +1074,7 @@
       "stars": 589,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 89,
+      "days_since_commit": 88,
       "spark": [],
       "use_cases": [
         {
@@ -1109,7 +1109,7 @@
       "stars": 644,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -1144,7 +1144,7 @@
       "stars": 36705,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -1179,7 +1179,7 @@
       "stars": 26777,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -1214,7 +1214,7 @@
       "stars": 954,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 939,
+      "days_since_commit": 938,
       "spark": [],
       "use_cases": [
         {
@@ -1249,7 +1249,7 @@
       "stars": 5055,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 643,
+      "days_since_commit": 642,
       "spark": [],
       "use_cases": [
         {
@@ -1284,7 +1284,7 @@
       "stars": 1928,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -1319,7 +1319,7 @@
       "stars": 3197,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -1354,7 +1354,7 @@
       "stars": 40672,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -1389,7 +1389,7 @@
       "stars": 1816,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 27,
+      "days_since_commit": 26,
       "spark": [],
       "use_cases": [
         {
@@ -1424,7 +1424,7 @@
       "stars": 10136,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 111,
+      "days_since_commit": 110,
       "spark": [],
       "use_cases": [
         {
@@ -1494,7 +1494,7 @@
       "stars": 28197,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -1529,7 +1529,7 @@
       "stars": 5932,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 626,
+      "days_since_commit": 625,
       "spark": [],
       "use_cases": [
         {
@@ -1564,7 +1564,7 @@
       "stars": 15614,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 13,
+      "days_since_commit": 12,
       "spark": [],
       "use_cases": [
         {
@@ -1599,7 +1599,7 @@
       "stars": 61541,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -1634,7 +1634,7 @@
       "stars": 3830,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -1669,7 +1669,7 @@
       "stars": 2584,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -1739,7 +1739,7 @@
       "stars": 1770,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -1774,7 +1774,7 @@
       "stars": 34595,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -1809,7 +1809,7 @@
       "stars": 8556,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -1844,7 +1844,7 @@
       "stars": 3779,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -1879,7 +1879,7 @@
       "stars": 5978,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -1914,7 +1914,7 @@
       "stars": 12026,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -1949,7 +1949,7 @@
       "stars": 58936,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 60,
+      "days_since_commit": 59,
       "spark": [
         58936
       ],
@@ -1986,7 +1986,7 @@
       "stars": 22305,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 134,
+      "days_since_commit": 133,
       "spark": [],
       "use_cases": [
         {
@@ -2021,7 +2021,7 @@
       "stars": 1325,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -2056,7 +2056,7 @@
       "stars": 3292,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -2126,7 +2126,7 @@
       "stars": 2772,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 922,
+      "days_since_commit": 921,
       "spark": [],
       "use_cases": [
         {
@@ -2161,7 +2161,7 @@
       "stars": 3070,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -2196,7 +2196,7 @@
       "stars": 98695,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -2231,7 +2231,7 @@
       "stars": 3063,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -2266,7 +2266,7 @@
       "stars": 17178,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -2301,7 +2301,7 @@
       "stars": 13769,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -2336,7 +2336,7 @@
       "stars": 33389,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 18,
+      "days_since_commit": 17,
       "spark": [],
       "use_cases": [
         {
@@ -2371,7 +2371,7 @@
       "stars": 924,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 542,
+      "days_since_commit": 541,
       "spark": [],
       "use_cases": [
         {
@@ -2406,7 +2406,7 @@
       "stars": 47281,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -2476,7 +2476,7 @@
       "stars": 7293,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -2511,7 +2511,7 @@
       "stars": 21564,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 24,
+      "days_since_commit": 23,
       "spark": [],
       "use_cases": [
         {
@@ -2546,7 +2546,7 @@
       "stars": 11838,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -2581,7 +2581,7 @@
       "stars": 82146,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -2616,7 +2616,7 @@
       "stars": 7416,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -2651,7 +2651,7 @@
       "stars": 27041,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -2721,7 +2721,7 @@
       "stars": 18471,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -2861,7 +2861,7 @@
       "stars": 35010,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -2888,15 +2888,15 @@
       "maintainer_name": "Human-Agent-Society",
       "alignment": "partial",
       "deployment_posture": "local-first",
-      "tier": "emerging",
-      "tier_opacity": 0.7,
-      "tier_radius_mult": 0.85,
-      "tier_outline": "solid",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
       "data_missing": false,
       "stars": 723,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -2931,7 +2931,7 @@
       "stars": 3042,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 92,
+      "days_since_commit": 91,
       "spark": [],
       "use_cases": [
         {
@@ -2966,7 +2966,7 @@
       "stars": 45282,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3001,7 +3001,7 @@
       "stars": 5519,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3036,7 +3036,7 @@
       "stars": 53482,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -3071,7 +3071,7 @@
       "stars": 17899,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3106,7 +3106,7 @@
       "stars": 6832,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 46,
+      "days_since_commit": 45,
       "spark": [],
       "use_cases": [
         {
@@ -3141,7 +3141,7 @@
       "stars": 3480,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3176,7 +3176,7 @@
       "stars": 18979,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -3211,7 +3211,7 @@
       "stars": 4609,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 53,
+      "days_since_commit": 52,
       "spark": [],
       "use_cases": [
         {
@@ -3281,7 +3281,7 @@
       "stars": 6005,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -3316,7 +3316,7 @@
       "stars": 15821,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 27,
+      "days_since_commit": 26,
       "spark": [],
       "use_cases": [
         {
@@ -3351,7 +3351,7 @@
       "stars": 19386,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 107,
+      "days_since_commit": 106,
       "spark": [],
       "use_cases": [
         {
@@ -3421,7 +3421,7 @@
       "stars": 21787,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3456,7 +3456,7 @@
       "stars": 24742,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3491,7 +3491,7 @@
       "stars": 71121,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3526,7 +3526,7 @@
       "stars": 3195,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3596,7 +3596,7 @@
       "stars": 1791,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 74,
+      "days_since_commit": 73,
       "spark": [],
       "use_cases": [
         {
@@ -3666,7 +3666,7 @@
       "stars": 35011,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -3736,7 +3736,7 @@
       "stars": 214928,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -3771,7 +3771,7 @@
       "stars": 16056,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 10,
+      "days_since_commit": 9,
       "spark": [],
       "use_cases": [
         {
@@ -3806,7 +3806,7 @@
       "stars": 491,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 25,
+      "days_since_commit": 24,
       "spark": [],
       "use_cases": [
         {
@@ -3841,7 +3841,7 @@
       "stars": 4929,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 103,
+      "days_since_commit": 102,
       "spark": [],
       "use_cases": [
         {
@@ -3876,7 +3876,7 @@
       "stars": 18578,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -3911,7 +3911,7 @@
       "stars": 3663,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -3946,7 +3946,7 @@
       "stars": 7394,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -3981,7 +3981,7 @@
       "stars": 5471,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [
         5471
       ],
@@ -4018,7 +4018,7 @@
       "stars": 3823,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -4053,7 +4053,7 @@
       "stars": 540,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 111,
+      "days_since_commit": 110,
       "spark": [],
       "use_cases": [
         {
@@ -4088,7 +4088,7 @@
       "stars": 15097,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 18,
+      "days_since_commit": 17,
       "spark": [],
       "use_cases": [
         {
@@ -4123,7 +4123,7 @@
       "stars": 1159,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -4158,7 +4158,7 @@
       "stars": 105,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -4193,7 +4193,7 @@
       "stars": 6562,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [],
       "use_cases": [
         {
@@ -4228,7 +4228,7 @@
       "stars": 53549,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -4263,7 +4263,7 @@
       "stars": 2060,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -4298,7 +4298,7 @@
       "stars": 105251,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -4333,7 +4333,7 @@
       "stars": 21533,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 678,
+      "days_since_commit": 677,
       "spark": [],
       "use_cases": [
         {
@@ -4368,7 +4368,7 @@
       "stars": 12844,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -4403,7 +4403,7 @@
       "stars": 2419,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -4438,7 +4438,7 @@
       "stars": 20097,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -4473,7 +4473,7 @@
       "stars": 2668,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -4508,7 +4508,7 @@
       "stars": 49235,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -4543,7 +4543,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 562,
+      "days_since_commit": 561,
       "spark": [],
       "use_cases": [
         {
@@ -4578,7 +4578,7 @@
       "stars": 27684,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 17,
+      "days_since_commit": 16,
       "spark": [],
       "use_cases": [
         {
@@ -4613,7 +4613,7 @@
       "stars": 4330,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -4683,7 +4683,7 @@
       "stars": 2541,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -4718,7 +4718,7 @@
       "stars": 6122,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -4753,7 +4753,7 @@
       "stars": 25560,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -4788,7 +4788,7 @@
       "stars": 26266,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -4823,7 +4823,7 @@
       "stars": 1226,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -4858,7 +4858,7 @@
       "stars": 192794,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -4893,7 +4893,7 @@
       "stars": 14371,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -4928,7 +4928,7 @@
       "stars": 9554,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 48,
+      "days_since_commit": 47,
       "spark": [],
       "use_cases": [
         {
@@ -4963,7 +4963,7 @@
       "stars": 16276,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -4998,7 +4998,7 @@
       "stars": 10529,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [],
       "use_cases": [
         {
@@ -5033,7 +5033,7 @@
       "stars": 2621,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -5068,7 +5068,7 @@
       "stars": 24850,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 320,
+      "days_since_commit": 319,
       "spark": [
         24850
       ],
@@ -5105,7 +5105,7 @@
       "stars": 9353,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 8,
+      "days_since_commit": 7,
       "spark": [],
       "use_cases": [
         {
@@ -5140,7 +5140,7 @@
       "stars": 3349,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 62,
+      "days_since_commit": 61,
       "spark": [],
       "use_cases": [
         {
@@ -5175,7 +5175,7 @@
       "stars": 11734,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -5210,7 +5210,7 @@
       "stars": 6502,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 13,
+      "days_since_commit": 12,
       "spark": [],
       "use_cases": [
         {
@@ -5245,7 +5245,7 @@
       "stars": 1041,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 164,
+      "days_since_commit": 163,
       "spark": [],
       "use_cases": [
         {
@@ -5280,7 +5280,7 @@
       "stars": 7045,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -5315,7 +5315,7 @@
       "stars": 1740,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -5350,7 +5350,7 @@
       "stars": 6609,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 93,
+      "days_since_commit": 92,
       "spark": [],
       "use_cases": [
         {
@@ -5385,7 +5385,7 @@
       "stars": 1454,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 30,
+      "days_since_commit": 29,
       "spark": [],
       "use_cases": [
         {
@@ -5455,7 +5455,7 @@
       "stars": 5749,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 13,
+      "days_since_commit": 12,
       "spark": [],
       "use_cases": [
         {
@@ -5525,7 +5525,7 @@
       "stars": 7830,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 82,
+      "days_since_commit": 81,
       "spark": [],
       "use_cases": [
         {
@@ -5560,7 +5560,7 @@
       "stars": 139215,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -5595,7 +5595,7 @@
       "stars": 149630,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -5630,7 +5630,7 @@
       "stars": 34662,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -5665,7 +5665,7 @@
       "stars": 4039,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -5700,7 +5700,7 @@
       "stars": 2686,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -5727,15 +5727,15 @@
       "maintainer_name": "Letta AI",
       "alignment": "aligned",
       "deployment_posture": "local-first",
-      "tier": "established",
+      "tier": "landmark",
       "tier_opacity": 1.0,
-      "tier_radius_mult": 1.0,
+      "tier_radius_mult": 1.3,
       "tier_outline": "solid",
       "data_missing": false,
       "stars": 23311,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 31,
+      "days_since_commit": 30,
       "spark": [],
       "use_cases": [
         {
@@ -5770,7 +5770,7 @@
       "stars": 39064,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -5805,7 +5805,7 @@
       "stars": 1135,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 9,
+      "days_since_commit": 8,
       "spark": [],
       "use_cases": [
         {
@@ -5875,7 +5875,7 @@
       "stars": 2340,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -5910,7 +5910,7 @@
       "stars": 50111,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -5945,7 +5945,7 @@
       "stars": 1855,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 704,
+      "days_since_commit": 703,
       "spark": [],
       "use_cases": [
         {
@@ -5980,7 +5980,7 @@
       "stars": 1126,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -6015,7 +6015,7 @@
       "stars": 5138,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6085,7 +6085,7 @@
       "stars": 25029,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -6120,7 +6120,7 @@
       "stars": 8372,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 140,
+      "days_since_commit": 139,
       "spark": [],
       "use_cases": [
         {
@@ -6155,7 +6155,7 @@
       "stars": 3881,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6225,7 +6225,7 @@
       "stars": 10099,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6260,7 +6260,7 @@
       "stars": 1779,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 147,
+      "days_since_commit": 146,
       "spark": [],
       "use_cases": [
         {
@@ -6295,7 +6295,7 @@
       "stars": 58495,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6330,7 +6330,7 @@
       "stars": 68773,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 144,
+      "days_since_commit": 143,
       "spark": [],
       "use_cases": [
         {
@@ -6365,7 +6365,7 @@
       "stars": 11318,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [
         11318
       ],
@@ -6437,7 +6437,7 @@
       "stars": 5135,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6472,7 +6472,7 @@
       "stars": 1494,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6507,7 +6507,7 @@
       "stars": 1065,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6577,7 +6577,7 @@
       "stars": 21730,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6612,7 +6612,7 @@
       "stars": 44164,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -6647,7 +6647,7 @@
       "stars": 13285,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 202,
+      "days_since_commit": 201,
       "spark": [],
       "use_cases": [
         {
@@ -6682,7 +6682,7 @@
       "stars": 3203,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -6717,7 +6717,7 @@
       "stars": 5050,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -6787,7 +6787,7 @@
       "stars": 36344,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -6822,7 +6822,7 @@
       "stars": 12258,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -6857,7 +6857,7 @@
       "stars": 1615,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -6892,7 +6892,7 @@
       "stars": 64380,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -6927,7 +6927,7 @@
       "stars": 63940,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -6997,7 +6997,7 @@
       "stars": 5234,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -7032,7 +7032,7 @@
       "stars": 3774,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -7067,7 +7067,7 @@
       "stars": 4840,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 573,
+      "days_since_commit": 572,
       "spark": [],
       "use_cases": [
         {
@@ -7137,7 +7137,7 @@
       "stars": 27130,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -7172,7 +7172,7 @@
       "stars": 9470,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 73,
+      "days_since_commit": 72,
       "spark": [],
       "use_cases": [
         {
@@ -7207,7 +7207,7 @@
       "stars": 24272,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -7277,7 +7277,7 @@
       "stars": 17818,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 31,
+      "days_since_commit": 30,
       "spark": [],
       "use_cases": [
         {
@@ -7312,7 +7312,7 @@
       "stars": 76904,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -7347,7 +7347,7 @@
       "stars": 63940,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -7382,7 +7382,7 @@
       "stars": 56541,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 123,
+      "days_since_commit": 122,
       "spark": [],
       "use_cases": [
         {
@@ -7417,7 +7417,7 @@
       "stars": 4563,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -7452,7 +7452,7 @@
       "stars": 18536,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -7487,7 +7487,7 @@
       "stars": 15451,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 254,
+      "days_since_commit": 253,
       "spark": [],
       "use_cases": [
         {
@@ -7522,7 +7522,7 @@
       "stars": 23239,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -7557,7 +7557,7 @@
       "stars": 8125,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -7627,7 +7627,7 @@
       "stars": 3360,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -7662,7 +7662,7 @@
       "stars": 17744,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -7697,7 +7697,7 @@
       "stars": 17744,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -7802,7 +7802,7 @@
       "stars": 16162,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 123,
+      "days_since_commit": 122,
       "spark": [],
       "use_cases": [
         {
@@ -7872,7 +7872,7 @@
       "stars": 9319,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -7907,7 +7907,7 @@
       "stars": 13431,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 9,
+      "days_since_commit": 8,
       "spark": [
         13431
       ],
@@ -7944,7 +7944,7 @@
       "stars": 4604,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -7979,7 +7979,7 @@
       "stars": 1274,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -8014,7 +8014,7 @@
       "stars": 59323,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -8049,7 +8049,7 @@
       "stars": 28115,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [
         28115
       ],
@@ -8086,7 +8086,7 @@
       "stars": 25325,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -8121,7 +8121,7 @@
       "stars": 28760,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -8156,7 +8156,7 @@
       "stars": 27841,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [],
       "use_cases": [
         {
@@ -8191,7 +8191,7 @@
       "stars": 4889,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -8226,7 +8226,7 @@
       "stars": 10000,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -8261,7 +8261,7 @@
       "stars": 2807,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -8296,7 +8296,7 @@
       "stars": 1278,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 72,
+      "days_since_commit": 71,
       "spark": [],
       "use_cases": [
         {
@@ -8331,7 +8331,7 @@
       "stars": 28361,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 257,
+      "days_since_commit": 256,
       "spark": [],
       "use_cases": [
         {
@@ -8366,7 +8366,7 @@
       "stars": 6122,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -8401,7 +8401,7 @@
       "stars": 17568,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 508,
+      "days_since_commit": 507,
       "spark": [],
       "use_cases": [
         {
@@ -8436,7 +8436,7 @@
       "stars": 21623,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 60,
+      "days_since_commit": 59,
       "spark": [],
       "use_cases": [
         {
@@ -8471,7 +8471,7 @@
       "stars": 6842,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -8506,7 +8506,7 @@
       "stars": 19500,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -8576,7 +8576,7 @@
       "stars": 2421,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -8611,7 +8611,7 @@
       "stars": 1131,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -8646,7 +8646,7 @@
       "stars": 11157,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -8681,7 +8681,7 @@
       "stars": 1763,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 566,
+      "days_since_commit": 565,
       "spark": [],
       "use_cases": [
         {
@@ -8716,7 +8716,7 @@
       "stars": 6165,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 83,
+      "days_since_commit": 82,
       "spark": [
         6165
       ],
@@ -8753,7 +8753,7 @@
       "stars": 3606,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 324,
+      "days_since_commit": 323,
       "spark": [
         3606
       ],
@@ -8790,7 +8790,7 @@
       "stars": 5665,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 389,
+      "days_since_commit": 388,
       "spark": [],
       "use_cases": [
         {
@@ -8825,7 +8825,7 @@
       "stars": 1078,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 230,
+      "days_since_commit": 229,
       "spark": [],
       "use_cases": [
         {
@@ -8860,7 +8860,7 @@
       "stars": 1350,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -8895,7 +8895,7 @@
       "stars": 3061,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -8930,7 +8930,7 @@
       "stars": 1148,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 31,
+      "days_since_commit": 30,
       "spark": [],
       "use_cases": [
         {
@@ -8965,7 +8965,7 @@
       "stars": 12653,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -9000,7 +9000,7 @@
       "stars": 8989,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [
         8989
       ],
@@ -9037,7 +9037,7 @@
       "stars": 36371,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 27,
+      "days_since_commit": 26,
       "spark": [],
       "use_cases": [
         {
@@ -9072,7 +9072,7 @@
       "stars": 10635,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -9107,7 +9107,7 @@
       "stars": 7880,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -9142,7 +9142,7 @@
       "stars": 10801,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 97,
+      "days_since_commit": 96,
       "spark": [],
       "use_cases": [
         {
@@ -9212,7 +9212,7 @@
       "stars": 26986,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 51,
+      "days_since_commit": 50,
       "spark": [],
       "use_cases": [
         {
@@ -9247,7 +9247,7 @@
       "stars": 2285,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 26,
+      "days_since_commit": 25,
       "spark": [],
       "use_cases": [
         {
@@ -9282,7 +9282,7 @@
       "stars": 12052,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -9352,7 +9352,7 @@
       "stars": 9587,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -9387,7 +9387,7 @@
       "stars": 6977,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 802,
+      "days_since_commit": 801,
       "spark": [],
       "use_cases": [
         {
@@ -9422,7 +9422,7 @@
       "stars": 2531,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -9457,7 +9457,7 @@
       "stars": 16061,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 30,
+      "days_since_commit": 29,
       "spark": [],
       "use_cases": [
         {
@@ -9492,7 +9492,7 @@
       "stars": 1096,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 832,
+      "days_since_commit": 831,
       "spark": [],
       "use_cases": [
         {
@@ -9562,7 +9562,7 @@
       "stars": 8531,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 671,
+      "days_since_commit": 670,
       "spark": [],
       "use_cases": [
         {
@@ -9597,7 +9597,7 @@
       "stars": 5898,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -9632,7 +9632,7 @@
       "stars": 27297,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -9667,7 +9667,7 @@
       "stars": 18,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 35,
+      "days_since_commit": 34,
       "spark": [],
       "use_cases": [
         {
@@ -9702,7 +9702,7 @@
       "stars": 31901,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -9737,7 +9737,7 @@
       "stars": 1506,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -9772,7 +9772,7 @@
       "stars": 1271,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -9807,7 +9807,7 @@
       "stars": 4265,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 14,
+      "days_since_commit": 13,
       "spark": [],
       "use_cases": [
         {
@@ -9842,7 +9842,7 @@
       "stars": 19,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 56,
+      "days_since_commit": 55,
       "spark": [],
       "use_cases": [
         {
@@ -9877,7 +9877,7 @@
       "stars": 35765,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -9912,7 +9912,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 42,
+      "days_since_commit": 41,
       "spark": [],
       "use_cases": [
         {
@@ -9947,7 +9947,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 26,
+      "days_since_commit": 25,
       "spark": [],
       "use_cases": [
         {
@@ -9982,7 +9982,7 @@
       "stars": 36331,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 105,
+      "days_since_commit": 104,
       "spark": [],
       "use_cases": [
         {
@@ -10017,7 +10017,7 @@
       "stars": 21835,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 213,
+      "days_since_commit": 212,
       "spark": [
         21835
       ],
@@ -10054,7 +10054,7 @@
       "stars": 40634,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -10089,7 +10089,7 @@
       "stars": 1312,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -10124,7 +10124,7 @@
       "stars": 25246,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -10159,7 +10159,7 @@
       "stars": 22,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -10194,7 +10194,7 @@
       "stars": 80,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [],
       "use_cases": [
         {
@@ -10229,7 +10229,7 @@
       "stars": 7278,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -10264,7 +10264,7 @@
       "stars": 2157,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -10299,7 +10299,7 @@
       "stars": 57635,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -10334,7 +10334,7 @@
       "stars": 401,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 109,
+      "days_since_commit": 108,
       "spark": [],
       "use_cases": [
         {
@@ -10369,7 +10369,7 @@
       "stars": 75591,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 95,
+      "days_since_commit": 94,
       "spark": [],
       "use_cases": [
         {
@@ -10404,7 +10404,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 20,
+      "days_since_commit": 19,
       "spark": [],
       "use_cases": [
         {
@@ -10439,7 +10439,7 @@
       "stars": 1485,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1367,
+      "days_since_commit": 1366,
       "spark": [],
       "use_cases": [
         {
@@ -10474,7 +10474,7 @@
       "stars": 266,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 69,
+      "days_since_commit": 68,
       "spark": [],
       "use_cases": [
         {
@@ -10509,7 +10509,7 @@
       "stars": 522,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 777,
+      "days_since_commit": 776,
       "spark": [],
       "use_cases": [
         {
@@ -10544,7 +10544,7 @@
       "stars": 17022,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -10614,7 +10614,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 67,
+      "days_since_commit": 66,
       "spark": [],
       "use_cases": [
         {
@@ -10649,7 +10649,7 @@
       "stars": 5,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -10684,7 +10684,7 @@
       "stars": 26977,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 51,
+      "days_since_commit": 50,
       "spark": [],
       "use_cases": [
         {
@@ -10719,7 +10719,7 @@
       "stars": 13440,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 26,
+      "days_since_commit": 25,
       "spark": [],
       "use_cases": [
         {
@@ -10754,7 +10754,7 @@
       "stars": 7313,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 798,
+      "days_since_commit": 797,
       "spark": [],
       "use_cases": [
         {
@@ -10789,7 +10789,7 @@
       "stars": 500,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -10824,7 +10824,7 @@
       "stars": 4919,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -10859,7 +10859,7 @@
       "stars": 4331,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -10894,7 +10894,7 @@
       "stars": 3966,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 17,
+      "days_since_commit": 16,
       "spark": [],
       "use_cases": [
         {
@@ -10929,7 +10929,7 @@
       "stars": 6658,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -10964,7 +10964,7 @@
       "stars": 2638,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 40,
+      "days_since_commit": 39,
       "spark": [],
       "use_cases": [
         {
@@ -10999,7 +10999,7 @@
       "stars": 29332,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 9,
+      "days_since_commit": 8,
       "spark": [],
       "use_cases": [
         {
@@ -11034,7 +11034,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 63,
+      "days_since_commit": 62,
       "spark": [],
       "use_cases": [
         {
@@ -11069,7 +11069,7 @@
       "stars": 24532,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 668,
+      "days_since_commit": 667,
       "spark": [],
       "use_cases": [
         {
@@ -11104,7 +11104,7 @@
       "stars": 59579,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 214,
+      "days_since_commit": 213,
       "spark": [],
       "use_cases": [
         {
@@ -11139,7 +11139,7 @@
       "stars": 23114,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 665,
+      "days_since_commit": 664,
       "spark": [],
       "use_cases": [
         {
@@ -11174,7 +11174,7 @@
       "stars": 66923,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 143,
+      "days_since_commit": 142,
       "spark": [],
       "use_cases": [
         {
@@ -11209,7 +11209,7 @@
       "stars": 18,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 82,
+      "days_since_commit": 81,
       "spark": [],
       "use_cases": [
         {
@@ -11244,7 +11244,7 @@
       "stars": 66394,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -11279,7 +11279,7 @@
       "stars": 151,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 31,
+      "days_since_commit": 30,
       "spark": [],
       "use_cases": [
         {
@@ -11314,7 +11314,7 @@
       "stars": 4707,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 516,
+      "days_since_commit": 515,
       "spark": [],
       "use_cases": [
         {
@@ -11349,7 +11349,7 @@
       "stars": 1806,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 17,
+      "days_since_commit": 16,
       "spark": [],
       "use_cases": [
         {
@@ -11384,7 +11384,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -11419,7 +11419,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -11454,7 +11454,7 @@
       "stars": 70,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -11489,7 +11489,7 @@
       "stars": 16526,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [
         16526
       ],
@@ -11526,7 +11526,7 @@
       "stars": 67176,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 20,
+      "days_since_commit": 19,
       "spark": [
         67176
       ],
@@ -11563,7 +11563,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -11598,7 +11598,7 @@
       "stars": 2267,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -11633,7 +11633,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 240,
+      "days_since_commit": 239,
       "spark": [],
       "use_cases": [
         {
@@ -11668,7 +11668,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 84,
+      "days_since_commit": 83,
       "spark": [],
       "use_cases": [
         {
@@ -11703,7 +11703,7 @@
       "stars": 80103,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 129,
+      "days_since_commit": 128,
       "spark": [],
       "use_cases": [
         {
@@ -11738,7 +11738,7 @@
       "stars": 48123,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [
         48123
       ],
@@ -11775,7 +11775,7 @@
       "stars": 35622,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [
         35622
       ],
@@ -11812,7 +11812,7 @@
       "stars": 111940,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [
         111940
       ],
@@ -11849,7 +11849,7 @@
       "stars": 86812,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [
         86812
       ],
@@ -11886,7 +11886,7 @@
       "stars": 3750,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [
         3750
       ],
@@ -11923,7 +11923,7 @@
       "stars": 55003,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 40,
+      "days_since_commit": 39,
       "spark": [
         55003
       ],
@@ -11960,7 +11960,7 @@
       "stars": 4774,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [],
       "use_cases": [
         {
@@ -11995,7 +11995,7 @@
       "stars": 24339,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -12030,7 +12030,7 @@
       "stars": 74145,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -12065,7 +12065,7 @@
       "stars": 46,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 365,
+      "days_since_commit": 364,
       "spark": [],
       "use_cases": [
         {
@@ -12100,7 +12100,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 218,
+      "days_since_commit": 217,
       "spark": [],
       "use_cases": [
         {
@@ -12135,7 +12135,7 @@
       "stars": 9192,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -12170,7 +12170,7 @@
       "stars": 97112,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -12205,7 +12205,7 @@
       "stars": 49,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 472,
+      "days_since_commit": 471,
       "spark": [
         49
       ],
@@ -12242,7 +12242,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 65,
+      "days_since_commit": 64,
       "spark": [],
       "use_cases": [
         {
@@ -12277,7 +12277,7 @@
       "stars": 89,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 75,
+      "days_since_commit": 74,
       "spark": [],
       "use_cases": [
         {
@@ -12312,7 +12312,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 389,
+      "days_since_commit": 388,
       "spark": [],
       "use_cases": [
         {
@@ -12347,7 +12347,7 @@
       "stars": 680,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 25,
+      "days_since_commit": 24,
       "spark": [],
       "use_cases": [
         {
@@ -12382,7 +12382,7 @@
       "stars": 220,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -12417,7 +12417,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -12452,7 +12452,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -12487,7 +12487,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [],
       "use_cases": [
         {
@@ -12522,7 +12522,7 @@
       "stars": 3492,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 126,
+      "days_since_commit": 125,
       "spark": [],
       "use_cases": [
         {
@@ -12557,7 +12557,7 @@
       "stars": 17,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 13,
+      "days_since_commit": 12,
       "spark": [],
       "use_cases": [
         {
@@ -12592,7 +12592,7 @@
       "stars": 17,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 128,
+      "days_since_commit": 127,
       "spark": [],
       "use_cases": [
         {
@@ -12627,7 +12627,7 @@
       "stars": 67,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 439,
+      "days_since_commit": 438,
       "spark": [],
       "use_cases": [
         {
@@ -12662,7 +12662,7 @@
       "stars": 59,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 73,
+      "days_since_commit": 72,
       "spark": [],
       "use_cases": [
         {
@@ -12697,7 +12697,7 @@
       "stars": 1994,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 309,
+      "days_since_commit": 308,
       "spark": [],
       "use_cases": [
         {
@@ -12732,7 +12732,7 @@
       "stars": 1174,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -12767,7 +12767,7 @@
       "stars": 533,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 725,
+      "days_since_commit": 724,
       "spark": [],
       "use_cases": [
         {
@@ -12802,7 +12802,7 @@
       "stars": 441,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 117,
+      "days_since_commit": 116,
       "spark": [],
       "use_cases": [
         {
@@ -12837,7 +12837,7 @@
       "stars": 4782,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 436,
+      "days_since_commit": 435,
       "spark": [
         4782
       ],
@@ -12874,7 +12874,7 @@
       "stars": 1032,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 358,
+      "days_since_commit": 357,
       "spark": [],
       "use_cases": [
         {
@@ -12909,7 +12909,7 @@
       "stars": 715,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 443,
+      "days_since_commit": 442,
       "spark": [],
       "use_cases": [
         {
@@ -12944,7 +12944,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -13014,7 +13014,7 @@
       "stars": 2213,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 241,
+      "days_since_commit": 240,
       "spark": [],
       "use_cases": [
         {
@@ -13049,7 +13049,7 @@
       "stars": 5,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 9,
+      "days_since_commit": 8,
       "spark": [],
       "use_cases": [
         {
@@ -13084,7 +13084,7 @@
       "stars": 39,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 20,
+      "days_since_commit": 19,
       "spark": [],
       "use_cases": [
         {
@@ -13119,7 +13119,7 @@
       "stars": 16,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 54,
+      "days_since_commit": 53,
       "spark": [],
       "use_cases": [
         {
@@ -13154,7 +13154,7 @@
       "stars": 12901,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 62,
+      "days_since_commit": 61,
       "spark": [],
       "use_cases": [
         {
@@ -13189,7 +13189,7 @@
       "stars": 3247,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 695,
+      "days_since_commit": 694,
       "spark": [],
       "use_cases": [
         {
@@ -13224,7 +13224,7 @@
       "stars": 1048,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 327,
+      "days_since_commit": 326,
       "spark": [],
       "use_cases": [
         {
@@ -13259,7 +13259,7 @@
       "stars": 507,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 162,
+      "days_since_commit": 161,
       "spark": [],
       "use_cases": [
         {
@@ -13294,7 +13294,7 @@
       "stars": 1248,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 89,
+      "days_since_commit": 88,
       "spark": [],
       "use_cases": [
         {
@@ -13329,7 +13329,7 @@
       "stars": 8,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [],
       "use_cases": [
         {
@@ -13364,7 +13364,7 @@
       "stars": 20,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [],
       "use_cases": [
         {
@@ -13399,7 +13399,7 @@
       "stars": 335,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 603,
+      "days_since_commit": 602,
       "spark": [],
       "use_cases": [
         {
@@ -13434,7 +13434,7 @@
       "stars": 70,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 99,
+      "days_since_commit": 98,
       "spark": [],
       "use_cases": [
         {
@@ -13469,7 +13469,7 @@
       "stars": 151,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 598,
+      "days_since_commit": 597,
       "spark": [],
       "use_cases": [
         {
@@ -13504,7 +13504,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -13539,7 +13539,7 @@
       "stars": 243,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 444,
+      "days_since_commit": 443,
       "spark": [],
       "use_cases": [
         {
@@ -13574,7 +13574,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -13609,7 +13609,7 @@
       "stars": 516,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 508,
+      "days_since_commit": 507,
       "spark": [],
       "use_cases": [
         {
@@ -13644,7 +13644,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [],
       "use_cases": [
         {
@@ -13679,7 +13679,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 18,
+      "days_since_commit": 17,
       "spark": [],
       "use_cases": [
         {
@@ -13714,7 +13714,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -13749,7 +13749,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 13,
+      "days_since_commit": 12,
       "spark": [],
       "use_cases": [
         {
@@ -13784,7 +13784,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 35,
+      "days_since_commit": 34,
       "spark": [],
       "use_cases": [
         {
@@ -13819,7 +13819,7 @@
       "stars": 170,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 611,
+      "days_since_commit": 610,
       "spark": [],
       "use_cases": [
         {
@@ -13854,7 +13854,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [],
       "use_cases": [
         {
@@ -13889,7 +13889,7 @@
       "stars": 16141,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -13924,7 +13924,7 @@
       "stars": 39,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -13959,7 +13959,7 @@
       "stars": 25,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -13994,7 +13994,7 @@
       "stars": 10,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 84,
+      "days_since_commit": 83,
       "spark": [],
       "use_cases": [
         {
@@ -14029,7 +14029,7 @@
       "stars": 40,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 23,
+      "days_since_commit": 22,
       "spark": [],
       "use_cases": [
         {
@@ -14064,7 +14064,7 @@
       "stars": 186,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 395,
+      "days_since_commit": 394,
       "spark": [],
       "use_cases": [
         {
@@ -14099,7 +14099,7 @@
       "stars": 27,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 24,
+      "days_since_commit": 23,
       "spark": [],
       "use_cases": [
         {
@@ -14134,7 +14134,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 10,
+      "days_since_commit": 9,
       "spark": [],
       "use_cases": [
         {
@@ -14169,7 +14169,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -14204,7 +14204,7 @@
       "stars": 48,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -14239,7 +14239,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -14274,7 +14274,7 @@
       "stars": 1761,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 255,
+      "days_since_commit": 254,
       "spark": [],
       "use_cases": [
         {
@@ -14344,7 +14344,7 @@
       "stars": 76,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -14379,7 +14379,7 @@
       "stars": 442,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 427,
+      "days_since_commit": 426,
       "spark": [],
       "use_cases": [
         {
@@ -14414,7 +14414,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 29,
+      "days_since_commit": 28,
       "spark": [],
       "use_cases": [
         {
@@ -14449,7 +14449,7 @@
       "stars": 867,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 467,
+      "days_since_commit": 466,
       "spark": [],
       "use_cases": [
         {
@@ -14484,7 +14484,7 @@
       "stars": 218,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 903,
+      "days_since_commit": 902,
       "spark": [],
       "use_cases": [
         {
@@ -14519,7 +14519,7 @@
       "stars": 86,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 593,
+      "days_since_commit": 592,
       "spark": [],
       "use_cases": [
         {
@@ -14554,7 +14554,7 @@
       "stars": 5,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 41,
+      "days_since_commit": 40,
       "spark": [],
       "use_cases": [
         {
@@ -14589,7 +14589,7 @@
       "stars": 14,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -14624,7 +14624,7 @@
       "stars": 510,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 622,
+      "days_since_commit": 621,
       "spark": [],
       "use_cases": [
         {
@@ -14659,7 +14659,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 13,
+      "days_since_commit": 12,
       "spark": [],
       "use_cases": [
         {
@@ -14694,7 +14694,7 @@
       "stars": 11,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -14729,7 +14729,7 @@
       "stars": 10,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 211,
+      "days_since_commit": 210,
       "spark": [],
       "use_cases": [
         {
@@ -14764,7 +14764,7 @@
       "stars": 3278,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 34,
+      "days_since_commit": 33,
       "spark": [
         3278
       ],
@@ -14801,7 +14801,7 @@
       "stars": 2823,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 9,
+      "days_since_commit": 8,
       "spark": [],
       "use_cases": [
         {
@@ -14836,7 +14836,7 @@
       "stars": 217,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 58,
+      "days_since_commit": 57,
       "spark": [
         217
       ],
@@ -14873,7 +14873,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 18,
+      "days_since_commit": 17,
       "spark": [],
       "use_cases": [
         {
@@ -14908,7 +14908,7 @@
       "stars": 2457,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -14943,7 +14943,7 @@
       "stars": 4,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -14978,7 +14978,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [],
       "use_cases": [
         {
@@ -15013,7 +15013,7 @@
       "stars": 3259,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 513,
+      "days_since_commit": 512,
       "spark": [],
       "use_cases": [
         {
@@ -15048,7 +15048,7 @@
       "stars": 2199,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -15083,7 +15083,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -15118,7 +15118,7 @@
       "stars": 35,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 248,
+      "days_since_commit": 247,
       "spark": [],
       "use_cases": [
         {
@@ -15153,7 +15153,7 @@
       "stars": 435,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 488,
+      "days_since_commit": 487,
       "spark": [],
       "use_cases": [
         {
@@ -15188,7 +15188,7 @@
       "stars": 1036,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -15223,7 +15223,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -15258,7 +15258,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 13,
+      "days_since_commit": 12,
       "spark": [],
       "use_cases": [
         {
@@ -15328,7 +15328,7 @@
       "stars": 24,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 109,
+      "days_since_commit": 108,
       "spark": [],
       "use_cases": [
         {
@@ -15363,7 +15363,7 @@
       "stars": 594,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 76,
+      "days_since_commit": 75,
       "spark": [],
       "use_cases": [
         {
@@ -15398,7 +15398,7 @@
       "stars": 140,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [],
       "use_cases": [
         {
@@ -15433,7 +15433,7 @@
       "stars": 2446,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [],
       "use_cases": [
         {
@@ -15468,7 +15468,7 @@
       "stars": 50,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 77,
+      "days_since_commit": 76,
       "spark": [],
       "use_cases": [
         {
@@ -15503,7 +15503,7 @@
       "stars": 1196,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [
         1196
       ],
@@ -15540,7 +15540,7 @@
       "stars": 884,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 333,
+      "days_since_commit": 332,
       "spark": [],
       "use_cases": [
         {
@@ -15575,7 +15575,7 @@
       "stars": 1483,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 450,
+      "days_since_commit": 449,
       "spark": [],
       "use_cases": [
         {
@@ -15610,7 +15610,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -15645,7 +15645,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -15680,7 +15680,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [],
       "use_cases": [
         {
@@ -15715,7 +15715,7 @@
       "stars": 69,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 106,
+      "days_since_commit": 105,
       "spark": [],
       "use_cases": [
         {
@@ -15750,7 +15750,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 86,
+      "days_since_commit": 85,
       "spark": [],
       "use_cases": [
         {
@@ -15785,7 +15785,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 8,
+      "days_since_commit": 7,
       "spark": [],
       "use_cases": [
         {
@@ -15820,7 +15820,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -15855,7 +15855,7 @@
       "stars": 138,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 706,
+      "days_since_commit": 705,
       "spark": [],
       "use_cases": [
         {
@@ -15890,7 +15890,7 @@
       "stars": 45,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 91,
+      "days_since_commit": 90,
       "spark": [],
       "use_cases": [
         {
@@ -15925,7 +15925,7 @@
       "stars": 12944,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -15960,7 +15960,7 @@
       "stars": 197,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -15995,7 +15995,7 @@
       "stars": 4224,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -16030,7 +16030,7 @@
       "stars": 688,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -16065,7 +16065,7 @@
       "stars": 1191,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 515,
+      "days_since_commit": 514,
       "spark": [],
       "use_cases": [
         {
@@ -16100,7 +16100,7 @@
       "stars": 32,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 53,
+      "days_since_commit": 52,
       "spark": [],
       "use_cases": [
         {
@@ -16135,7 +16135,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 17,
+      "days_since_commit": 16,
       "spark": [],
       "use_cases": [
         {
@@ -16170,7 +16170,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -16205,7 +16205,7 @@
       "stars": 28,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 382,
+      "days_since_commit": 381,
       "spark": [],
       "use_cases": [
         {
@@ -16240,7 +16240,7 @@
       "stars": 1365,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 281,
+      "days_since_commit": 280,
       "spark": [],
       "use_cases": [
         {
@@ -16275,7 +16275,7 @@
       "stars": 115,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 388,
+      "days_since_commit": 387,
       "spark": [],
       "use_cases": [
         {
@@ -16310,7 +16310,7 @@
       "stars": 7,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -16345,7 +16345,7 @@
       "stars": 384,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1291,
+      "days_since_commit": 1290,
       "spark": [],
       "use_cases": [
         {
@@ -16380,7 +16380,7 @@
       "stars": 7,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -16415,7 +16415,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [],
       "use_cases": [
         {
@@ -16450,7 +16450,7 @@
       "stars": 181,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 496,
+      "days_since_commit": 495,
       "spark": [
         181
       ],
@@ -16487,7 +16487,7 @@
       "stars": 5,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -16522,7 +16522,7 @@
       "stars": 1002,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 221,
+      "days_since_commit": 220,
       "spark": [],
       "use_cases": [
         {
@@ -16557,7 +16557,7 @@
       "stars": 13,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [],
       "use_cases": [
         {
@@ -16592,7 +16592,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -16627,7 +16627,7 @@
       "stars": 1581,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 51,
+      "days_since_commit": 50,
       "spark": [],
       "use_cases": [
         {
@@ -16662,7 +16662,7 @@
       "stars": 388,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 88,
+      "days_since_commit": 87,
       "spark": [],
       "use_cases": [
         {
@@ -16697,7 +16697,7 @@
       "stars": 576,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 122,
+      "days_since_commit": 121,
       "spark": [],
       "use_cases": [
         {
@@ -16732,7 +16732,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 93,
+      "days_since_commit": 92,
       "spark": [],
       "use_cases": [
         {
@@ -16767,7 +16767,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -16802,7 +16802,7 @@
       "stars": 331,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -16837,7 +16837,7 @@
       "stars": 39472,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 44,
+      "days_since_commit": 43,
       "spark": [],
       "use_cases": [
         {
@@ -16872,7 +16872,7 @@
       "stars": 3302,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -16907,7 +16907,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -16942,7 +16942,7 @@
       "stars": 56,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 673,
+      "days_since_commit": 672,
       "spark": [],
       "use_cases": [
         {
@@ -16977,7 +16977,7 @@
       "stars": 229,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 97,
+      "days_since_commit": 96,
       "spark": [],
       "use_cases": [
         {
@@ -17012,7 +17012,7 @@
       "stars": 10,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -17047,7 +17047,7 @@
       "stars": 2313,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -17082,7 +17082,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [],
       "use_cases": [
         {
@@ -17117,7 +17117,7 @@
       "stars": 38,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -17152,7 +17152,7 @@
       "stars": 11,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -17187,7 +17187,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -17222,7 +17222,7 @@
       "stars": 379,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 82,
+      "days_since_commit": 81,
       "spark": [],
       "use_cases": [
         {
@@ -17292,7 +17292,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 83,
+      "days_since_commit": 82,
       "spark": [],
       "use_cases": [
         {
@@ -17327,7 +17327,7 @@
       "stars": 18688,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 61,
+      "days_since_commit": 60,
       "spark": [],
       "use_cases": [
         {
@@ -17362,7 +17362,7 @@
       "stars": 1220,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 54,
+      "days_since_commit": 53,
       "spark": [
         1220
       ],
@@ -17399,7 +17399,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 64,
+      "days_since_commit": 63,
       "spark": [],
       "use_cases": [
         {
@@ -17434,7 +17434,7 @@
       "stars": 7082,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -17469,7 +17469,7 @@
       "stars": 140,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 484,
+      "days_since_commit": 483,
       "spark": [],
       "use_cases": [
         {
@@ -17504,7 +17504,7 @@
       "stars": 2932,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -17539,7 +17539,7 @@
       "stars": 10,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 46,
+      "days_since_commit": 45,
       "spark": [],
       "use_cases": [
         {
@@ -17574,7 +17574,7 @@
       "stars": 169,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -17609,7 +17609,7 @@
       "stars": 924,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 753,
+      "days_since_commit": 752,
       "spark": [],
       "use_cases": [
         {
@@ -17644,7 +17644,7 @@
       "stars": 318,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -17679,7 +17679,7 @@
       "stars": 82,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 486,
+      "days_since_commit": 485,
       "spark": [],
       "use_cases": [
         {
@@ -17714,7 +17714,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [],
       "use_cases": [
         {
@@ -17749,7 +17749,7 @@
       "stars": 9,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -17784,7 +17784,7 @@
       "stars": 1091,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 415,
+      "days_since_commit": 414,
       "spark": [],
       "use_cases": [
         {
@@ -17819,7 +17819,7 @@
       "stars": 2808,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 114,
+      "days_since_commit": 113,
       "spark": [
         2808
       ],
@@ -17856,7 +17856,7 @@
       "stars": 22172,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -17895,7 +17895,7 @@
       "stars": 1217,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [
         1217
       ],
@@ -17932,7 +17932,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -17967,7 +17967,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -18002,7 +18002,7 @@
       "stars": 61,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 331,
+      "days_since_commit": 330,
       "spark": [],
       "use_cases": [
         {
@@ -18037,7 +18037,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -18072,7 +18072,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -18107,7 +18107,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -18142,7 +18142,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -18177,7 +18177,7 @@
       "stars": 14355,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 110,
+      "days_since_commit": 109,
       "spark": [],
       "use_cases": [
         {
@@ -18204,15 +18204,15 @@
       "maintainer_name": "Amazon AWS AI",
       "alignment": "aligned",
       "deployment_posture": "local-first",
-      "tier": "dormant",
-      "tier_opacity": 0.5,
-      "tier_radius_mult": 0.8,
-      "tier_outline": "solid",
+      "tier": "frontier",
+      "tier_opacity": 0.4,
+      "tier_radius_mult": 0.7,
+      "tier_outline": "dashed",
       "data_missing": false,
       "stars": 1094,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 548,
+      "days_since_commit": 547,
       "spark": [],
       "use_cases": [
         {
@@ -18247,7 +18247,7 @@
       "stars": 47,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 54,
+      "days_since_commit": 53,
       "spark": [],
       "use_cases": [
         {
@@ -18282,7 +18282,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -18317,7 +18317,7 @@
       "stars": 32,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 45,
+      "days_since_commit": 44,
       "spark": [],
       "use_cases": [
         {
@@ -18352,7 +18352,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -18387,7 +18387,7 @@
       "stars": 721,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 118,
+      "days_since_commit": 117,
       "spark": [],
       "use_cases": [
         {
@@ -18422,7 +18422,7 @@
       "stars": 13,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 27,
+      "days_since_commit": 26,
       "spark": [],
       "use_cases": [
         {
@@ -18457,7 +18457,7 @@
       "stars": 4,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -18492,7 +18492,7 @@
       "stars": 205,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -18527,7 +18527,7 @@
       "stars": 737,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 633,
+      "days_since_commit": 632,
       "spark": [],
       "use_cases": [
         {
@@ -18562,7 +18562,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 18,
+      "days_since_commit": 17,
       "spark": [],
       "use_cases": [
         {
@@ -18597,7 +18597,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [],
       "use_cases": [
         {
@@ -18632,7 +18632,7 @@
       "stars": 4521,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 53,
+      "days_since_commit": 52,
       "spark": [],
       "use_cases": [
         {
@@ -18667,7 +18667,7 @@
       "stars": 52,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 54,
+      "days_since_commit": 53,
       "spark": [],
       "use_cases": [
         {
@@ -18702,7 +18702,7 @@
       "stars": 65,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 17,
+      "days_since_commit": 16,
       "spark": [],
       "use_cases": [
         {
@@ -18737,7 +18737,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -18772,7 +18772,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 13,
+      "days_since_commit": 12,
       "spark": [],
       "use_cases": [
         {
@@ -18807,7 +18807,7 @@
       "stars": 28,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 173,
+      "days_since_commit": 172,
       "spark": [],
       "use_cases": [
         {
@@ -18842,7 +18842,7 @@
       "stars": 5159,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 74,
+      "days_since_commit": 73,
       "spark": [],
       "use_cases": [
         {
@@ -18877,7 +18877,7 @@
       "stars": 83,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 47,
+      "days_since_commit": 46,
       "spark": [],
       "use_cases": [
         {
@@ -18912,7 +18912,7 @@
       "stars": 310,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 802,
+      "days_since_commit": 801,
       "spark": [],
       "use_cases": [
         {
@@ -18947,7 +18947,7 @@
       "stars": 1349,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -18982,7 +18982,7 @@
       "stars": 728,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 209,
+      "days_since_commit": 208,
       "spark": [],
       "use_cases": [
         {
@@ -19017,7 +19017,7 @@
       "stars": 326,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 339,
+      "days_since_commit": 338,
       "spark": [],
       "use_cases": [
         {
@@ -19052,7 +19052,7 @@
       "stars": 5665,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 389,
+      "days_since_commit": 388,
       "spark": [],
       "use_cases": [
         {
@@ -19087,7 +19087,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -19122,7 +19122,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [],
       "use_cases": [
         {
@@ -19157,7 +19157,7 @@
       "stars": 3378,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -19192,7 +19192,7 @@
       "stars": 926,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 514,
+      "days_since_commit": 513,
       "spark": [],
       "use_cases": [
         {
@@ -19227,7 +19227,7 @@
       "stars": 44,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 111,
+      "days_since_commit": 110,
       "spark": [],
       "use_cases": [
         {
@@ -19262,7 +19262,7 @@
       "stars": 258,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 592,
+      "days_since_commit": 591,
       "spark": [],
       "use_cases": [
         {
@@ -19297,7 +19297,7 @@
       "stars": 214,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 18,
+      "days_since_commit": 17,
       "spark": [],
       "use_cases": [
         {
@@ -19332,7 +19332,7 @@
       "stars": 343,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 221,
+      "days_since_commit": 220,
       "spark": [],
       "use_cases": [
         {
@@ -19367,7 +19367,7 @@
       "stars": 32,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 110,
+      "days_since_commit": 109,
       "spark": [],
       "use_cases": [
         {
@@ -19402,7 +19402,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 14,
+      "days_since_commit": 13,
       "spark": [],
       "use_cases": [
         {
@@ -19437,7 +19437,7 @@
       "stars": 4219,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -19472,7 +19472,7 @@
       "stars": 1510,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 200,
+      "days_since_commit": 199,
       "spark": [],
       "use_cases": [
         {
@@ -19507,7 +19507,7 @@
       "stars": 254,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 588,
+      "days_since_commit": 587,
       "spark": [],
       "use_cases": [
         {
@@ -19542,7 +19542,7 @@
       "stars": 252,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 50,
+      "days_since_commit": 49,
       "spark": [],
       "use_cases": [
         {
@@ -19577,7 +19577,7 @@
       "stars": 271,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 426,
+      "days_since_commit": 425,
       "spark": [],
       "use_cases": [
         {
@@ -19612,7 +19612,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 10,
+      "days_since_commit": 9,
       "spark": [],
       "use_cases": [
         {
@@ -19647,7 +19647,7 @@
       "stars": 274,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -19682,7 +19682,7 @@
       "stars": 40,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -19717,7 +19717,7 @@
       "stars": 66,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -19752,7 +19752,7 @@
       "stars": 4202,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -19787,7 +19787,7 @@
       "stars": 42,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 252,
+      "days_since_commit": 251,
       "spark": [],
       "use_cases": [
         {
@@ -19822,7 +19822,7 @@
       "stars": 24,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -19857,7 +19857,7 @@
       "stars": 5631,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 87,
+      "days_since_commit": 86,
       "spark": [],
       "use_cases": [
         {
@@ -19892,7 +19892,7 @@
       "stars": 130,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -19927,7 +19927,7 @@
       "stars": 38,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 29,
+      "days_since_commit": 28,
       "spark": [],
       "use_cases": [
         {
@@ -19962,7 +19962,7 @@
       "stars": 26,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -19997,7 +19997,7 @@
       "stars": 10126,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -20036,7 +20036,7 @@
       "stars": 56,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -20071,7 +20071,7 @@
       "stars": 6038,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 184,
+      "days_since_commit": 183,
       "spark": [],
       "use_cases": [
         {
@@ -20106,7 +20106,7 @@
       "stars": 67,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 150,
+      "days_since_commit": 149,
       "spark": [],
       "use_cases": [
         {
@@ -20141,7 +20141,7 @@
       "stars": 8364,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -20176,7 +20176,7 @@
       "stars": 5736,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -20211,7 +20211,7 @@
       "stars": 28,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -20246,7 +20246,7 @@
       "stars": 263,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 628,
+      "days_since_commit": 627,
       "spark": [],
       "use_cases": [
         {
@@ -20281,7 +20281,7 @@
       "stars": 38,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -20316,7 +20316,7 @@
       "stars": 52,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 179,
+      "days_since_commit": 178,
       "spark": [],
       "use_cases": [
         {
@@ -20351,7 +20351,7 @@
       "stars": 62,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -20386,7 +20386,7 @@
       "stars": 62,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -20421,7 +20421,7 @@
       "stars": 106,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -20456,7 +20456,7 @@
       "stars": 1253,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 69,
+      "days_since_commit": 68,
       "spark": [],
       "use_cases": [
         {
@@ -20491,7 +20491,7 @@
       "stars": 329,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 737,
+      "days_since_commit": 736,
       "spark": [],
       "use_cases": [
         {
@@ -20526,7 +20526,7 @@
       "stars": 113,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 95,
+      "days_since_commit": 94,
       "spark": [],
       "use_cases": [
         {
@@ -20596,7 +20596,7 @@
       "stars": 14,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 52,
+      "days_since_commit": 51,
       "spark": [],
       "use_cases": [
         {
@@ -20631,7 +20631,7 @@
       "stars": 51,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 50,
+      "days_since_commit": 49,
       "spark": [],
       "use_cases": [
         {
@@ -20666,7 +20666,7 @@
       "stars": 341,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 572,
+      "days_since_commit": 571,
       "spark": [],
       "use_cases": [
         {
@@ -20701,7 +20701,7 @@
       "stars": 12058,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 20,
+      "days_since_commit": 19,
       "spark": [],
       "use_cases": [
         {
@@ -20740,7 +20740,7 @@
       "stars": 667,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 85,
+      "days_since_commit": 84,
       "spark": [],
       "use_cases": [
         {
@@ -20775,7 +20775,7 @@
       "stars": 154,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 40,
+      "days_since_commit": 39,
       "spark": [],
       "use_cases": [
         {
@@ -20810,7 +20810,7 @@
       "stars": 7000,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -20845,7 +20845,7 @@
       "stars": 21497,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 24,
+      "days_since_commit": 23,
       "spark": [],
       "use_cases": [
         {
@@ -20880,7 +20880,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -20915,7 +20915,7 @@
       "stars": 16,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -20950,7 +20950,7 @@
       "stars": 18633,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [
         18633
       ],
@@ -20987,7 +20987,7 @@
       "stars": 186,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -21022,7 +21022,7 @@
       "stars": 13159,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -21057,7 +21057,7 @@
       "stars": 32,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 69,
+      "days_since_commit": 68,
       "spark": [],
       "use_cases": [
         {
@@ -21092,7 +21092,7 @@
       "stars": 4926,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 841,
+      "days_since_commit": 840,
       "spark": [],
       "use_cases": [
         {
@@ -21127,7 +21127,7 @@
       "stars": 56,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 290,
+      "days_since_commit": 289,
       "spark": [],
       "use_cases": [
         {
@@ -21162,7 +21162,7 @@
       "stars": 18,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -21197,7 +21197,7 @@
       "stars": 29026,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -21236,7 +21236,7 @@
       "stars": 990,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 569,
+      "days_since_commit": 568,
       "spark": [],
       "use_cases": [
         {
@@ -21271,7 +21271,7 @@
       "stars": 1205,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 209,
+      "days_since_commit": 208,
       "spark": [],
       "use_cases": [
         {
@@ -21306,7 +21306,7 @@
       "stars": 3300,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -21341,7 +21341,7 @@
       "stars": 3068,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 181,
+      "days_since_commit": 180,
       "spark": [],
       "use_cases": [
         {
@@ -21376,7 +21376,7 @@
       "stars": 40,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 236,
+      "days_since_commit": 235,
       "spark": [],
       "use_cases": [
         {
@@ -21411,7 +21411,7 @@
       "stars": 2019,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 71,
+      "days_since_commit": 70,
       "spark": [],
       "use_cases": [
         {
@@ -21446,7 +21446,7 @@
       "stars": 4184,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 388,
+      "days_since_commit": 387,
       "spark": [],
       "use_cases": [
         {
@@ -21481,7 +21481,7 @@
       "stars": 118,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 64,
+      "days_since_commit": 63,
       "spark": [],
       "use_cases": [
         {
@@ -21516,7 +21516,7 @@
       "stars": 2411,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 95,
+      "days_since_commit": 94,
       "spark": [],
       "use_cases": [
         {
@@ -21551,7 +21551,7 @@
       "stars": 6168,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 33,
+      "days_since_commit": 32,
       "spark": [],
       "use_cases": [
         {
@@ -21586,7 +21586,7 @@
       "stars": 607,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -21621,7 +21621,7 @@
       "stars": 3304,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -21656,7 +21656,7 @@
       "stars": 127,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -21691,7 +21691,7 @@
       "stars": 33,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -21726,7 +21726,7 @@
       "stars": 19,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 43,
+      "days_since_commit": 42,
       "spark": [],
       "use_cases": [
         {
@@ -21761,7 +21761,7 @@
       "stars": 6422,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -21796,7 +21796,7 @@
       "stars": 2098,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -21831,7 +21831,7 @@
       "stars": 3752,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [
         3752
       ],
@@ -21868,7 +21868,7 @@
       "stars": 10,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 10,
+      "days_since_commit": 9,
       "spark": [],
       "use_cases": [
         {
@@ -21903,7 +21903,7 @@
       "stars": 2523,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -21938,7 +21938,7 @@
       "stars": 7197,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -21977,7 +21977,7 @@
       "stars": 9633,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [
         9633
       ],
@@ -22014,7 +22014,7 @@
       "stars": 19616,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -22053,7 +22053,7 @@
       "stars": 17,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 90,
+      "days_since_commit": 89,
       "spark": [],
       "use_cases": [
         {
@@ -22088,7 +22088,7 @@
       "stars": 13955,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 27,
+      "days_since_commit": 26,
       "spark": [],
       "use_cases": [
         {
@@ -22123,7 +22123,7 @@
       "stars": 60,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 31,
+      "days_since_commit": 30,
       "spark": [],
       "use_cases": [
         {
@@ -22158,7 +22158,7 @@
       "stars": 295,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -22193,7 +22193,7 @@
       "stars": 8598,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [
         8598
       ],
@@ -22230,7 +22230,7 @@
       "stars": 165,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 53,
+      "days_since_commit": 52,
       "spark": [],
       "use_cases": [
         {
@@ -22265,7 +22265,7 @@
       "stars": 495,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 20,
+      "days_since_commit": 19,
       "spark": [],
       "use_cases": [
         {
@@ -22300,7 +22300,7 @@
       "stars": 67,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 14,
+      "days_since_commit": 13,
       "spark": [],
       "use_cases": [
         {
@@ -22335,7 +22335,7 @@
       "stars": 3038,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 123,
+      "days_since_commit": 122,
       "spark": [],
       "use_cases": [
         {
@@ -22370,7 +22370,7 @@
       "stars": 72,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 7,
+      "days_since_commit": 6,
       "spark": [],
       "use_cases": [
         {
@@ -22405,7 +22405,7 @@
       "stars": 42,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 61,
+      "days_since_commit": 60,
       "spark": [],
       "use_cases": [
         {
@@ -22440,7 +22440,7 @@
       "stars": 10,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -22475,7 +22475,7 @@
       "stars": 14,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -22510,7 +22510,7 @@
       "stars": 1500,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 676,
+      "days_since_commit": 675,
       "spark": [],
       "use_cases": [
         {
@@ -22549,7 +22549,7 @@
       "stars": 1782,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 46,
+      "days_since_commit": 45,
       "spark": [
         1782
       ],
@@ -22586,7 +22586,7 @@
       "stars": 28,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -22621,7 +22621,7 @@
       "stars": 26,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 52,
+      "days_since_commit": 51,
       "spark": [],
       "use_cases": [
         {
@@ -22656,7 +22656,7 @@
       "stars": 153,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 695,
+      "days_since_commit": 694,
       "spark": [],
       "use_cases": [
         {
@@ -22691,7 +22691,7 @@
       "stars": 19,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 97,
+      "days_since_commit": 96,
       "spark": [],
       "use_cases": [
         {
@@ -22726,7 +22726,7 @@
       "stars": 16,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -22761,7 +22761,7 @@
       "stars": 231,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 623,
+      "days_since_commit": 622,
       "spark": [],
       "use_cases": [
         {
@@ -22796,7 +22796,7 @@
       "stars": 134,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 944,
+      "days_since_commit": 943,
       "spark": [],
       "use_cases": [
         {
@@ -22831,7 +22831,7 @@
       "stars": 25,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -22866,7 +22866,7 @@
       "stars": 22,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 33,
+      "days_since_commit": 32,
       "spark": [],
       "use_cases": [
         {
@@ -22901,7 +22901,7 @@
       "stars": 36,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 45,
+      "days_since_commit": 44,
       "spark": [],
       "use_cases": [
         {
@@ -22936,7 +22936,7 @@
       "stars": 1984,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 282,
+      "days_since_commit": 281,
       "spark": [],
       "use_cases": [
         {
@@ -23006,7 +23006,7 @@
       "stars": 627,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 355,
+      "days_since_commit": 354,
       "spark": [],
       "use_cases": [
         {
@@ -23041,7 +23041,7 @@
       "stars": 15,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -23076,7 +23076,7 @@
       "stars": 8665,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [
         8665
       ],
@@ -23113,7 +23113,7 @@
       "stars": 1166,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -23148,7 +23148,7 @@
       "stars": 24,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -23183,7 +23183,7 @@
       "stars": 481,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 865,
+      "days_since_commit": 864,
       "spark": [],
       "use_cases": [
         {
@@ -23218,7 +23218,7 @@
       "stars": 125,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 559,
+      "days_since_commit": 558,
       "spark": [],
       "use_cases": [
         {
@@ -23253,7 +23253,7 @@
       "stars": 1739,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -23288,7 +23288,7 @@
       "stars": 6038,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 184,
+      "days_since_commit": 183,
       "spark": [],
       "use_cases": [
         {
@@ -23323,7 +23323,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 83,
+      "days_since_commit": 82,
       "spark": [],
       "use_cases": [
         {
@@ -23358,7 +23358,7 @@
       "stars": 137,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 480,
+      "days_since_commit": 479,
       "spark": [],
       "use_cases": [
         {
@@ -23428,7 +23428,7 @@
       "stars": 110,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -23463,7 +23463,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 62,
+      "days_since_commit": 61,
       "spark": [],
       "use_cases": [
         {
@@ -23498,7 +23498,7 @@
       "stars": 619,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -23533,7 +23533,7 @@
       "stars": 979,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 199,
+      "days_since_commit": 198,
       "spark": [],
       "use_cases": [
         {
@@ -23568,7 +23568,7 @@
       "stars": 3886,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -23603,7 +23603,7 @@
       "stars": 1973,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 121,
+      "days_since_commit": 120,
       "spark": [
         1973
       ],
@@ -23640,7 +23640,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -23675,7 +23675,7 @@
       "stars": 61,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 51,
+      "days_since_commit": 50,
       "spark": [],
       "use_cases": [
         {
@@ -23745,7 +23745,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 35,
+      "days_since_commit": 34,
       "spark": [],
       "use_cases": [
         {
@@ -23815,7 +23815,7 @@
       "stars": 238,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -23850,7 +23850,7 @@
       "stars": 371,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 249,
+      "days_since_commit": 248,
       "spark": [],
       "use_cases": [
         {
@@ -23885,7 +23885,7 @@
       "stars": 445,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 508,
+      "days_since_commit": 507,
       "spark": [],
       "use_cases": [
         {
@@ -23920,7 +23920,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 65,
+      "days_since_commit": 64,
       "spark": [],
       "use_cases": [
         {
@@ -23955,7 +23955,7 @@
       "stars": 2983,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 194,
+      "days_since_commit": 193,
       "spark": [],
       "use_cases": [
         {
@@ -23990,7 +23990,7 @@
       "stars": 308,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 93,
+      "days_since_commit": 92,
       "spark": [],
       "use_cases": [
         {
@@ -24025,7 +24025,7 @@
       "stars": 135,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 790,
+      "days_since_commit": 789,
       "spark": [
         135
       ],
@@ -24097,7 +24097,7 @@
       "stars": 179,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 349,
+      "days_since_commit": 348,
       "spark": [],
       "use_cases": [
         {
@@ -24132,7 +24132,7 @@
       "stars": 628,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 248,
+      "days_since_commit": 247,
       "spark": [],
       "use_cases": [
         {
@@ -24167,7 +24167,7 @@
       "stars": 6443,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 795,
+      "days_since_commit": 794,
       "spark": [],
       "use_cases": [
         {
@@ -24202,7 +24202,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 78,
+      "days_since_commit": 77,
       "spark": [],
       "use_cases": [
         {
@@ -24272,7 +24272,7 @@
       "stars": 175,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 845,
+      "days_since_commit": 844,
       "spark": [],
       "use_cases": [
         {
@@ -24342,7 +24342,7 @@
       "stars": 242,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 954,
+      "days_since_commit": 953,
       "spark": [],
       "use_cases": [
         {
@@ -24377,7 +24377,7 @@
       "stars": 5,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 17,
+      "days_since_commit": 16,
       "spark": [],
       "use_cases": [
         {
@@ -24412,7 +24412,7 @@
       "stars": 2846,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -24447,7 +24447,7 @@
       "stars": 865,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 76,
+      "days_since_commit": 75,
       "spark": [],
       "use_cases": [
         {
@@ -24482,7 +24482,7 @@
       "stars": 8097,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -24517,7 +24517,7 @@
       "stars": 5429,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -24552,7 +24552,7 @@
       "stars": 588,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 107,
+      "days_since_commit": 106,
       "spark": [],
       "use_cases": [
         {
@@ -24587,7 +24587,7 @@
       "stars": 188,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 91,
+      "days_since_commit": 90,
       "spark": [],
       "use_cases": [
         {
@@ -24622,7 +24622,7 @@
       "stars": 981,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 667,
+      "days_since_commit": 666,
       "spark": [],
       "use_cases": [
         {
@@ -24657,7 +24657,7 @@
       "stars": 39,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -24692,7 +24692,7 @@
       "stars": 44,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 481,
+      "days_since_commit": 480,
       "spark": [],
       "use_cases": [
         {
@@ -24727,7 +24727,7 @@
       "stars": 27,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 587,
+      "days_since_commit": 586,
       "spark": [],
       "use_cases": [
         {
@@ -24762,7 +24762,7 @@
       "stars": 3708,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 537,
+      "days_since_commit": 536,
       "spark": [],
       "use_cases": [
         {
@@ -24797,7 +24797,7 @@
       "stars": 3708,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 537,
+      "days_since_commit": 536,
       "spark": [],
       "use_cases": [
         {
@@ -24832,7 +24832,7 @@
       "stars": 610,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 436,
+      "days_since_commit": 435,
       "spark": [],
       "use_cases": [
         {
@@ -24867,7 +24867,7 @@
       "stars": 387,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 507,
+      "days_since_commit": 506,
       "spark": [],
       "use_cases": [
         {
@@ -24902,7 +24902,7 @@
       "stars": 4705,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 681,
+      "days_since_commit": 680,
       "spark": [],
       "use_cases": [
         {
@@ -24937,7 +24937,7 @@
       "stars": 17,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 268,
+      "days_since_commit": 267,
       "spark": [],
       "use_cases": [
         {
@@ -24972,7 +24972,7 @@
       "stars": 207,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 252,
+      "days_since_commit": 251,
       "spark": [],
       "use_cases": [
         {
@@ -25007,7 +25007,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -25042,7 +25042,7 @@
       "stars": 61,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 276,
+      "days_since_commit": 275,
       "spark": [],
       "use_cases": [
         {
@@ -25077,7 +25077,7 @@
       "stars": 661,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 427,
+      "days_since_commit": 426,
       "spark": [],
       "use_cases": [
         {
@@ -25112,7 +25112,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -25147,7 +25147,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 76,
+      "days_since_commit": 75,
       "spark": [],
       "use_cases": [
         {
@@ -25252,7 +25252,7 @@
       "stars": 598,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -25287,7 +25287,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 44,
+      "days_since_commit": 43,
       "spark": [],
       "use_cases": [
         {
@@ -25322,7 +25322,7 @@
       "stars": 190,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 333,
+      "days_since_commit": 332,
       "spark": [],
       "use_cases": [
         {
@@ -25357,7 +25357,7 @@
       "stars": 89,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 60,
+      "days_since_commit": 59,
       "spark": [],
       "use_cases": [
         {
@@ -25392,7 +25392,7 @@
       "stars": 723,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 116,
+      "days_since_commit": 115,
       "spark": [],
       "use_cases": [
         {
@@ -25427,7 +25427,7 @@
       "stars": 336,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 397,
+      "days_since_commit": 396,
       "spark": [],
       "use_cases": [
         {
@@ -25462,7 +25462,7 @@
       "stars": 458,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 228,
+      "days_since_commit": 227,
       "spark": [],
       "use_cases": [
         {
@@ -25497,7 +25497,7 @@
       "stars": 777,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1060,
+      "days_since_commit": 1059,
       "spark": [],
       "use_cases": [
         {
@@ -25532,7 +25532,7 @@
       "stars": 63,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 96,
+      "days_since_commit": 95,
       "spark": [],
       "use_cases": [
         {
@@ -25567,7 +25567,7 @@
       "stars": 28,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 467,
+      "days_since_commit": 466,
       "spark": [
         28
       ],
@@ -25604,7 +25604,7 @@
       "stars": 741,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 347,
+      "days_since_commit": 346,
       "spark": [],
       "use_cases": [
         {
@@ -25639,7 +25639,7 @@
       "stars": 43,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [],
       "use_cases": [
         {
@@ -25674,7 +25674,7 @@
       "stars": 53,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 80,
+      "days_since_commit": 79,
       "spark": [],
       "use_cases": [
         {
@@ -25744,7 +25744,7 @@
       "stars": 189,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 59,
+      "days_since_commit": 58,
       "spark": [],
       "use_cases": [
         {
@@ -25779,7 +25779,7 @@
       "stars": 717,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -25814,7 +25814,7 @@
       "stars": 153,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 130,
+      "days_since_commit": 129,
       "spark": [],
       "use_cases": [
         {
@@ -25884,7 +25884,7 @@
       "stars": 329,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 474,
+      "days_since_commit": 473,
       "spark": [],
       "use_cases": [
         {
@@ -25919,7 +25919,7 @@
       "stars": 498,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 48,
+      "days_since_commit": 47,
       "spark": [],
       "use_cases": [
         {
@@ -25954,7 +25954,7 @@
       "stars": 1207,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 195,
+      "days_since_commit": 194,
       "spark": [],
       "use_cases": [
         {
@@ -25989,7 +25989,7 @@
       "stars": 686,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 118,
+      "days_since_commit": 117,
       "spark": [],
       "use_cases": [
         {
@@ -26024,7 +26024,7 @@
       "stars": 4223,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -26059,7 +26059,7 @@
       "stars": 63,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 81,
+      "days_since_commit": 80,
       "spark": [
         63
       ],
@@ -26096,7 +26096,7 @@
       "stars": 105,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 154,
+      "days_since_commit": 153,
       "spark": [],
       "use_cases": [
         {
@@ -26131,7 +26131,7 @@
       "stars": 70,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 273,
+      "days_since_commit": 272,
       "spark": [],
       "use_cases": [
         {
@@ -26166,7 +26166,7 @@
       "stars": 0,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 14,
+      "days_since_commit": 13,
       "spark": [],
       "use_cases": [
         {
@@ -26201,7 +26201,7 @@
       "stars": 98,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 752,
+      "days_since_commit": 751,
       "spark": [],
       "use_cases": [
         {
@@ -26236,7 +26236,7 @@
       "stars": 129,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 458,
+      "days_since_commit": 457,
       "spark": [],
       "use_cases": [
         {
@@ -26271,7 +26271,7 @@
       "stars": 1982,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 8,
+      "days_since_commit": 7,
       "spark": [],
       "use_cases": [
         {
@@ -26306,7 +26306,7 @@
       "stars": 81,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -26341,7 +26341,7 @@
       "stars": 2,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 59,
+      "days_since_commit": 58,
       "spark": [],
       "use_cases": [
         {
@@ -26376,7 +26376,7 @@
       "stars": 160,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 285,
+      "days_since_commit": 284,
       "spark": [],
       "use_cases": [
         {
@@ -26446,7 +26446,7 @@
       "stars": 290,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 321,
+      "days_since_commit": 320,
       "spark": [],
       "use_cases": [
         {
@@ -26481,7 +26481,7 @@
       "stars": 176,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 463,
+      "days_since_commit": 462,
       "spark": [
         176
       ],
@@ -26588,7 +26588,7 @@
       "stars": 140,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 372,
+      "days_since_commit": 371,
       "spark": [],
       "use_cases": [
         {
@@ -26658,7 +26658,7 @@
       "stars": 83,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 470,
+      "days_since_commit": 469,
       "spark": [
         83
       ],
@@ -26695,7 +26695,7 @@
       "stars": 196,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -26730,7 +26730,7 @@
       "stars": 3,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 199,
+      "days_since_commit": 198,
       "spark": [],
       "use_cases": [
         {
@@ -26765,7 +26765,7 @@
       "stars": 140,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 342,
+      "days_since_commit": 341,
       "spark": [
         140
       ],
@@ -26837,7 +26837,7 @@
       "stars": 237,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 551,
+      "days_since_commit": 550,
       "spark": [],
       "use_cases": [
         {
@@ -26872,7 +26872,7 @@
       "stars": 70,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 503,
+      "days_since_commit": 502,
       "spark": [],
       "use_cases": [
         {
@@ -26907,7 +26907,7 @@
       "stars": 3433,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 58,
+      "days_since_commit": 57,
       "spark": [],
       "use_cases": [
         {
@@ -26942,7 +26942,7 @@
       "stars": 208,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 814,
+      "days_since_commit": 813,
       "spark": [],
       "use_cases": [
         {
@@ -26977,7 +26977,7 @@
       "stars": 175,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 381,
+      "days_since_commit": 380,
       "spark": [],
       "use_cases": [
         {
@@ -27012,7 +27012,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 51,
+      "days_since_commit": 50,
       "spark": [],
       "use_cases": [
         {
@@ -27047,7 +27047,7 @@
       "stars": 56,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 34,
+      "days_since_commit": 33,
       "spark": [],
       "use_cases": [
         {
@@ -27082,7 +27082,7 @@
       "stars": 1,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 23,
+      "days_since_commit": 22,
       "spark": [],
       "use_cases": [
         {
@@ -27117,7 +27117,7 @@
       "stars": 17443,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27152,7 +27152,7 @@
       "stars": 10,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27187,7 +27187,7 @@
       "stars": 21,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27222,7 +27222,7 @@
       "stars": 15,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27292,7 +27292,7 @@
       "stars": 62,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 19,
+      "days_since_commit": 18,
       "spark": [],
       "use_cases": [
         {
@@ -27327,7 +27327,7 @@
       "stars": 14131,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27362,7 +27362,7 @@
       "stars": 16724,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -27401,7 +27401,7 @@
       "stars": 5774,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [],
       "use_cases": [
         {
@@ -27436,7 +27436,7 @@
       "stars": 16724,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -27471,7 +27471,7 @@
       "stars": 635,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27506,7 +27506,7 @@
       "stars": 23,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -27576,7 +27576,7 @@
       "stars": 8672,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 11,
+      "days_since_commit": 10,
       "spark": [
         8672
       ],
@@ -27613,7 +27613,7 @@
       "stars": 179,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27648,7 +27648,7 @@
       "stars": 100050,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -27683,7 +27683,7 @@
       "stars": 6567,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -27718,7 +27718,7 @@
       "stars": 9197,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 94,
+      "days_since_commit": 93,
       "spark": [],
       "use_cases": [
         {
@@ -27753,7 +27753,7 @@
       "stars": 29,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27788,7 +27788,7 @@
       "stars": 2105,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 349,
+      "days_since_commit": 348,
       "spark": [],
       "use_cases": [
         {
@@ -27823,7 +27823,7 @@
       "stars": 89,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -27858,7 +27858,7 @@
       "stars": 1748,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -27893,7 +27893,7 @@
       "stars": 45347,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -27928,7 +27928,7 @@
       "stars": 39472,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 44,
+      "days_since_commit": 43,
       "spark": [],
       "use_cases": [
         {
@@ -27963,7 +27963,7 @@
       "stars": 43,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -27998,7 +27998,7 @@
       "stars": 8,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -28033,7 +28033,7 @@
       "stars": 10,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 47,
+      "days_since_commit": 46,
       "spark": [],
       "use_cases": [
         {
@@ -28068,7 +28068,7 @@
       "stars": 938,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -28138,7 +28138,7 @@
       "stars": 160,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 188,
+      "days_since_commit": 187,
       "spark": [],
       "use_cases": [
         {
@@ -28173,7 +28173,7 @@
       "stars": 5809,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -28216,7 +28216,7 @@
       "stars": 8642,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -28255,7 +28255,7 @@
       "stars": 10862,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 85,
+      "days_since_commit": 84,
       "spark": [
         10862
       ],
@@ -28362,7 +28362,7 @@
       "stars": 339,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -28397,7 +28397,7 @@
       "stars": 42997,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -28502,7 +28502,7 @@
       "stars": 5559,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -28541,7 +28541,7 @@
       "stars": 43586,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -28580,7 +28580,7 @@
       "stars": 50279,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -28623,7 +28623,7 @@
       "stars": 116416,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -28658,7 +28658,7 @@
       "stars": 11,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -28693,7 +28693,7 @@
       "stars": 225,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -28728,7 +28728,7 @@
       "stars": 28,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 8,
+      "days_since_commit": 7,
       "spark": [],
       "use_cases": [
         {
@@ -28763,7 +28763,7 @@
       "stars": 311,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 16,
+      "days_since_commit": 15,
       "spark": [],
       "use_cases": [
         {
@@ -28798,7 +28798,7 @@
       "stars": 135,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -28833,7 +28833,7 @@
       "stars": 7896,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -28868,7 +28868,7 @@
       "stars": 16,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 28,
+      "days_since_commit": 27,
       "spark": [],
       "use_cases": [
         {
@@ -28903,7 +28903,7 @@
       "stars": 46837,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -28938,7 +28938,7 @@
       "stars": 3795,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 17,
+      "days_since_commit": 16,
       "spark": [],
       "use_cases": [
         {
@@ -28973,7 +28973,7 @@
       "stars": 22793,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 34,
+      "days_since_commit": 33,
       "spark": [],
       "use_cases": [
         {
@@ -29008,7 +29008,7 @@
       "stars": 26501,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -29082,7 +29082,7 @@
       "stars": 22,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 4,
+      "days_since_commit": 3,
       "spark": [],
       "use_cases": [
         {
@@ -29117,7 +29117,7 @@
       "stars": 528,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -29152,7 +29152,7 @@
       "stars": 38662,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -29191,7 +29191,7 @@
       "stars": 162,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -29226,7 +29226,7 @@
       "stars": 174072,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -29261,7 +29261,7 @@
       "stars": 466,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -29296,7 +29296,7 @@
       "stars": 16560,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -29331,7 +29331,7 @@
       "stars": 6125,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -29366,7 +29366,7 @@
       "stars": 34911,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 156,
+      "days_since_commit": 155,
       "spark": [],
       "use_cases": [
         {
@@ -29405,7 +29405,7 @@
       "stars": 25,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -29440,7 +29440,7 @@
       "stars": 28,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 79,
+      "days_since_commit": 78,
       "spark": [],
       "use_cases": [
         {
@@ -29475,7 +29475,7 @@
       "stars": 41,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -29510,7 +29510,7 @@
       "stars": 385,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -29545,7 +29545,7 @@
       "stars": 12355,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 6,
+      "days_since_commit": 5,
       "spark": [],
       "use_cases": [
         {
@@ -29580,7 +29580,7 @@
       "stars": 18,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -29615,7 +29615,7 @@
       "stars": 1313,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 9,
+      "days_since_commit": 8,
       "spark": [],
       "use_cases": [
         {
@@ -29650,7 +29650,7 @@
       "stars": 6587,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -29685,7 +29685,7 @@
       "stars": 12058,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 20,
+      "days_since_commit": 19,
       "spark": [],
       "use_cases": [
         {
@@ -29728,7 +29728,7 @@
       "stars": 9554,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 34,
+      "days_since_commit": 33,
       "spark": [],
       "use_cases": [
         {
@@ -29763,7 +29763,7 @@
       "stars": 155,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 311,
+      "days_since_commit": 310,
       "spark": [],
       "use_cases": [
         {
@@ -29798,7 +29798,7 @@
       "stars": 28,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -29833,7 +29833,7 @@
       "stars": 40,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -29868,7 +29868,7 @@
       "stars": 2889,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 2,
+      "days_since_commit": 1,
       "spark": [],
       "use_cases": [
         {
@@ -29903,7 +29903,7 @@
       "stars": 14,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -29938,7 +29938,7 @@
       "stars": 5016,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 673,
+      "days_since_commit": 672,
       "spark": [],
       "use_cases": [
         {
@@ -29973,7 +29973,7 @@
       "stars": 57,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -30008,7 +30008,7 @@
       "stars": 1221,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -30043,7 +30043,7 @@
       "stars": 684,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 41,
+      "days_since_commit": 40,
       "spark": [],
       "use_cases": [
         {
@@ -30078,7 +30078,7 @@
       "stars": 28971,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -30113,7 +30113,7 @@
       "stars": 5417,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -30148,7 +30148,7 @@
       "stars": 2044,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -30183,7 +30183,7 @@
       "stars": 12040,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 3,
+      "days_since_commit": 2,
       "spark": [],
       "use_cases": [
         {
@@ -30218,7 +30218,7 @@
       "stars": 137,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 35,
+      "days_since_commit": 34,
       "spark": [],
       "use_cases": [
         {
@@ -30288,7 +30288,7 @@
       "stars": 2957,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -30358,7 +30358,7 @@
       "stars": 13865,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [
         13865
       ],
@@ -30430,7 +30430,7 @@
       "stars": 47303,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 12,
+      "days_since_commit": 11,
       "spark": [],
       "use_cases": [
         {
@@ -30465,7 +30465,7 @@
       "stars": 793,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 61,
+      "days_since_commit": 60,
       "spark": [],
       "use_cases": [
         {
@@ -30500,7 +30500,7 @@
       "stars": 19,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 111,
+      "days_since_commit": 110,
       "spark": [],
       "use_cases": [
         {
@@ -30570,7 +30570,7 @@
       "stars": 14,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 49,
+      "days_since_commit": 48,
       "spark": [],
       "use_cases": [
         {
@@ -30605,7 +30605,7 @@
       "stars": 82783,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 0,
+      "days_since_commit": -1,
       "spark": [],
       "use_cases": [
         {
@@ -30640,7 +30640,7 @@
       "stars": 18186,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 5,
+      "days_since_commit": 4,
       "spark": [],
       "use_cases": [
         {
@@ -30675,7 +30675,7 @@
       "stars": 2809,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -30710,7 +30710,7 @@
       "stars": 9349,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -30745,7 +30745,7 @@
       "stars": 1328,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {
@@ -30780,7 +30780,7 @@
       "stars": 21,
       "velocity_4w": null,
       "velocity_12w": null,
-      "days_since_commit": 1,
+      "days_since_commit": 0,
       "spark": [],
       "use_cases": [
         {

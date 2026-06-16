@@ -129,18 +129,37 @@ TIER_UNKNOWN = "unknown"
 
 
 def _now() -> datetime:
-    """Return the reference timestamp for tier classification.
+    """Wall-clock UTC midnight — used only as a *fallback* reference date.
 
-    Pinned to UTC midnight of the current day so two consecutive process
-    invocations (e.g. ``compute_tier.py`` then ``compute_tier.py --check``
-    in CI) yield identical results. Without this, repos crossing an
-    integer-day boundary between the two runs would flip ``days_since_commit``
-    and trigger a spurious drift detection.
+    The primary reference for age/recency is each entry's own
+    ``refreshed_at`` (see :func:`_reference_date`). This wall-clock value is
+    used only when a sidecar has no ``refreshed_at`` (legacy data, or the
+    truth-table unit metas). Pinned to midnight so two consecutive process
+    invocations in the same day agree.
     """
     return datetime.now(UTC).replace(hour=0, minute=0, second=0, microsecond=0)
 
 
 NOW = _now()
+
+
+def _reference_date(meta: dict[str, Any]) -> datetime:
+    """As-of date for age/recency: the entry's own metadata-snapshot date.
+
+    Pinned to the data (``refreshed_at``), not wall-clock, so a tier is a
+    pure function of the committed sidecar and changes *only* when a
+    metadata refresh changes the underlying data. Without this, an entry
+    sitting near an age/recency threshold (e.g. ``tambo`` at the 730-day
+    landmark floor) flips tier as wall-clock time advances — drifting
+    ``_tiers.json`` away from the committed snapshot and breaking the
+    ``compute_tier.py --check`` gate on *any* push, with zero code or data
+    changes. Falls back to wall-clock UTC midnight only when ``refreshed_at``
+    is absent (truth-table unit metas, or sidecars predating the field).
+    """
+    ref = _parse_iso(meta.get("refreshed_at"))
+    if ref is not None:
+        return ref.replace(hour=0, minute=0, second=0, microsecond=0)
+    return NOW
 
 
 def _parse_iso(ts: str | None) -> datetime | None:
@@ -155,12 +174,14 @@ def _parse_iso(ts: str | None) -> datetime | None:
             return None
 
 
-def _age_days(created_at: str | None, last_commit_at: str | None) -> tuple[int | None, int | None]:
-    """Return (age_days_since_first_seen, days_since_last_commit)."""
+def _age_days(
+    ref: datetime, created_at: str | None, last_commit_at: str | None
+) -> tuple[int | None, int | None]:
+    """Return (age_days_since_first_seen, days_since_last_commit) as of ``ref``."""
     created = _parse_iso(created_at)
     last = _parse_iso(last_commit_at)
-    age = (NOW - created).days if created else None
-    recency = (NOW - last).days if last else None
+    age = (ref - created).days if created else None
+    recency = (ref - last).days if last else None
     return age, recency
 
 
@@ -170,7 +191,8 @@ def _classify(meta: dict[str, Any]) -> str:
     created_at = meta.get("created_at")
     archived = meta.get("archived", False)
 
-    age_days, days_since_commit = _age_days(created_at, last_commit_at)
+    ref = _reference_date(meta)
+    age_days, days_since_commit = _age_days(ref, created_at, last_commit_at)
     have_age = age_days is not None
 
     # Canonical (1): archived AND ≥5k stars — historically significant reference
@@ -361,6 +383,7 @@ def compute_all() -> dict[str, str]:
                 "last_commit_at": latest.get("last_commit_at"),
                 "created_at": sidecar.get("created_at") or latest.get("created_at"),
                 "archived": latest.get("archived", False),
+                "refreshed_at": latest.get("refreshed_at"),
             }
         else:
             meta = {
@@ -368,6 +391,7 @@ def compute_all() -> dict[str, str]:
                 "last_commit_at": sidecar.get("last_commit_at"),
                 "created_at": sidecar.get("created_at"),
                 "archived": sidecar.get("archived", False),
+                "refreshed_at": sidecar.get("refreshed_at"),
             }
         out[entry_id] = _classify(meta)
     return out
