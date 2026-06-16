@@ -6,6 +6,14 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
+## [v0.4.5] — 2026-06-16
+
+Three fixes that were already live on Pages, now tagged so the released
+version stops trailing what's deployed. Shared links finally render an
+image (the `og:image` was a rejected SVG), and two CI gates that had been
+failing silently — the weekly metadata-refresh job and the date-sensitive
+tier/velocity drift checks — are green again.
+
 ### Added — `hero.png` social card so shared links render an image (B-E)
 
 The viewers set `og:image` to `hero.svg`, but every major social platform
