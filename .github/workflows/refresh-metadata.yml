@@ -6,7 +6,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   refresh:
@@ -40,18 +39,42 @@ jobs:
       - name: Validate registry after refresh
         run: python scripts/validate_registry.py
 
-      - name: Open PR on drift
-        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: bot/refresh-metadata
-          commit-message: "chore(metadata): weekly sidecar refresh"
-          title: "chore(metadata): weekly sidecar refresh"
-          labels: bot,metadata-refresh
-          body: |
-            Automated weekly refresh of `registry/_metadata/*.json`.
+      # The default GITHUB_TOKEN cannot *open* a pull request unless the repo
+      # setting "Allow GitHub Actions to create and approve pull requests" is
+      # enabled — and that same toggle also lets Actions *approve* PRs, which
+      # we deliberately do not want (it weakens the review boundary). Rather
+      # than loosen that boundary, we push the drift to a dedicated bot branch
+      # and surface a ready-to-click compare link in the run summary. A human
+      # still opens and merges the PR, preserving review of any unexpected
+      # archived/SPDX changes. This path needs only `contents: write`.
+      - name: Push drift to bot branch
+        id: drift
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No metadata drift since last refresh — nothing to push."
+            echo "drift=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "drift=true" >> "$GITHUB_OUTPUT"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B bot/refresh-metadata
+          git add -A
+          git commit -m "chore(metadata): weekly sidecar refresh"
+          git push --force origin bot/refresh-metadata
 
-            This PR only updates the auto-managed sidecar files. Hand-curated
-            YAML under `registry/<category>/<id>.yaml` is never modified by
-            this job. Review for unexpected `archived: true` flags or SPDX
-            mismatches against the entry's declared `license`.
+      - name: Summarise drift in run output
+        if: steps.drift.outputs.drift == 'true'
+        run: |
+          {
+            echo "## Weekly metadata refresh — drift detected"
+            echo ""
+            echo "The auto-managed \`registry/_metadata/*.json\` sidecars changed."
+            echo "They have been pushed to branch \`bot/refresh-metadata\`."
+            echo ""
+            echo "**Open the review PR:**"
+            echo "<https://github.com/${{ github.repository }}/compare/main...bot/refresh-metadata?expand=1>"
+            echo ""
+            echo "Only sidecar JSON is touched — hand-curated YAML is never modified."
+            echo "Review for unexpected \`archived: true\` flags or SPDX mismatches."
+          } >> "$GITHUB_STEP_SUMMARY"

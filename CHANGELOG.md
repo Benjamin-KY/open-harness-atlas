@@ -6,7 +6,29 @@ follows [SemVer](https://semver.org/).
 
 ## [Unreleased]
 
-## [v0.4.4] — 2026-06-15
+### Fixed — weekly `refresh-metadata` workflow stopped failing on every run
+
+The scheduled `refresh-metadata` job (Mondays, 06:17 UTC) failed at its
+final step on **every** run with *"GitHub Actions is not permitted to
+create or approve pull requests."* — leaving a persistent red ✗ on the
+public Actions tab since the first scheduled run. The
+`peter-evans/create-pull-request` action requires the repository setting
+**Allow GitHub Actions to create and approve pull requests**, which is
+off. That toggle is coarse: enabling it would also let Actions *approve*
+pull requests, weakening the human-review boundary the bot PR exists to
+preserve.
+
+Rather than loosen that CI/CD security boundary, the workflow now pushes
+any sidecar drift to the `bot/refresh-metadata` branch and prints a
+ready-to-click compare link in the run summary; a human still opens and
+merges the review PR. The unused `pull-requests: write` permission is
+dropped, so the job runs with `contents: write` only (least privilege).
+Hand-curated YAML is still never touched — only `registry/_metadata/*.json`
+sidecars. To restore fully-automated PR opening, enable that one repo
+setting and re-add a `create-pull-request` step; the push-branch path is
+the safer default.
+
+
 
 Top-level documentation audit caught after v0.4.3 ship. The v0.4.2 +
 v0.4.3 hotfixes updated CHANGELOG.md and BRAND.md but did not touch
