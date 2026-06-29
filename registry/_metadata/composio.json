@@ -1,0 +1,14 @@
+{
+  "created_at": "2024-02-23T13:58:27Z",
+  "default_branch": "next",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-29T11:09:56Z",
+      "latest_release": "@composio/slim@0.13.1",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-29T11:25:50Z",
+      "stars": 29003
+    }
+  ]
+}

@@ -8,7 +8,31 @@ Updated by the scheduled metadata refresh; requires ≥2 weekly snapshots per en
 
 | Rank | Entry | Category | Stars | Stars / week (4w) | Stars / week (12w) | Last commit |
 |---:|---|---|---:|---:|---:|---|
-| — | _Not enough snapshot history yet._ | | | | | |
+| 1 | [Headroom](https://github.com/chopratejas/headroom) | agent | 53.5k | +12363.7 | +12363.7 | -1 d ago |
+| 2 | [Agent Reach](https://github.com/Panniantong/Agent-Reach) | agent | 45.2k | +8041.6 | +8041.6 | -1 d ago |
+| 3 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | agent | 205.4k | +5726.2 | +5726.2 | -1 d ago |
+| 4 | [Cc Switch](https://github.com/farion1231/cc-switch) | routing | 110.4k | +4716.2 | +4716.2 | 0 d ago |
+| 5 | [ECC](https://github.com/affaan-m/ECC) | agent | 223.3k | +3793.3 | +3793.3 | -1 d ago |
+| 6 | [Open Design](https://github.com/nexu-io/open-design) | agent | 72.7k | +3776.6 | +3776.6 | -1 d ago |
+| 7 | [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | agent | 22.9k | +3303.8 | +3303.8 | 2 d ago |
+| 8 | [DeerFlow](https://github.com/bytedance/deer-flow) | agent | 75.4k | +1940.5 | +1940.5 | -1 d ago |
+| 9 | [PyRIT (Python Risk Identification Tool)](https://github.com/microsoft/PyRIT) | redteam | 4.0k | +1829.5 | +1829.5 | -1 d ago |
+| 10 | [Claude Code Best Practice](https://github.com/shanraisshan/claude-code-best-practice) | education | 61.5k | +1766.1 | +1766.1 | -1 d ago |
+| 11 | [Deep Seek Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | agent | 25.3k | +1601.9 | +1601.9 | -1 d ago |
+| 12 | [Claude Mem](https://github.com/thedotmack/claude-mem) | agent | 85.0k | +1293.7 | +1293.7 | 0 d ago |
+| 13 | [Oh My Pi](https://github.com/can1357/oh-my-pi) | agent | 15.1k | +1283.2 | +1283.2 | -1 d ago |
+| 14 | [Vibe Trading](https://github.com/HKUDS/Vibe-Trading) | agent | 14.8k | +1234.2 | +1234.2 | -1 d ago |
+| 15 | [Ruflo](https://github.com/ruvnet/ruflo) | agent | 62.0k | +1211.0 | +1211.0 | -1 d ago |
+| 16 | [Browser Use](https://github.com/browser-use/browser-use) | agent | 101.3k | +1183.7 | +1183.7 | -1 d ago |
+| 17 | [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code) | education | 68.9k | +1160.3 | +1160.3 | 2 d ago |
+| 18 | [Ever OS](https://github.com/EverMind-AI/EverOS) | agent | 9.7k | +1057.3 | +1057.3 | 0 d ago |
+| 19 | [llama.cpp](https://github.com/ggml-org/llama.cpp) | routing | 118.6k | +974.2 | +974.2 | -1 d ago |
+| 20 | [Cli](https://github.com/googleworkspace/cli) | agent | 29.1k | +944.1 | +944.1 | 0 d ago |
+| 21 | [Page Agent](https://github.com/alibaba/page-agent) | agent | 20.6k | +921.4 | +921.4 | 3 d ago |
+| 22 | [vLLM](https://github.com/vllm-project/vllm) | routing | 84.8k | +906.5 | +906.5 | -1 d ago |
+| 23 | [New API](https://github.com/QuantumNous/new-api) | routing | 40.5k | +829.6 | +829.6 | -1 d ago |
+| 24 | [OpenHands](https://github.com/OpenHands/OpenHands) | agent | 78.7k | +798.2 | +798.2 | -1 d ago |
+| 25 | [LiteLLM](https://github.com/BerriAI/litellm) | routing | 52.0k | +771.0 | +771.0 | -1 d ago |
 
 _Re-run `python scripts/compute_velocity.py --rising` after refreshing sidecars to update this table._
 

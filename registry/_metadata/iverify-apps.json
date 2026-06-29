@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2021-12-13T21:52:57Z",
   "default_branch": "main",
-  "last_commit_at": "2026-04-06T20:56:29Z",
-  "latest_release": "v2.0",
-  "license_spdx": "AGPL-3.0",
-  "refreshed_at": "2026-06-14T02:01:55Z",
-  "stars": 32
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-04-06T20:56:29Z",
+      "latest_release": "v2.0",
+      "license_spdx": "AGPL-3.0",
+      "refreshed_at": "2026-06-14T02:01:55Z",
+      "stars": 32
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-04-06T20:56:29Z",
+      "latest_release": "v2.0",
+      "license_spdx": "AGPL-3.0",
+      "refreshed_at": "2026-06-29T11:36:21Z",
+      "stars": 32
+    }
+  ]
 }

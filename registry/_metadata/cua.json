@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2025-01-31T15:02:49Z",
   "default_branch": "main",
-  "last_commit_at": "2026-06-13T03:10:17Z",
-  "latest_release": "computer-server-v0.3.40",
-  "license_spdx": "MIT",
-  "refreshed_at": "2026-06-14T01:51:01Z",
-  "stars": 17899
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-13T03:10:17Z",
+      "latest_release": "computer-server-v0.3.40",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-14T01:51:01Z",
+      "stars": 17899
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-29T08:11:15Z",
+      "latest_release": "cloud-v0.1.1",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-29T11:26:00Z",
+      "stars": 19183
+    }
+  ]
 }

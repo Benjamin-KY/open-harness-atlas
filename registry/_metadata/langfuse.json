@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2023-05-18T17:47:09Z",
   "default_branch": "main",
-  "last_commit_at": "2026-06-13T21:33:32Z",
-  "latest_release": "v3.185.0",
-  "license_spdx": "NOASSERTION",
-  "refreshed_at": "2026-06-14T02:02:01Z",
-  "stars": 29026
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-13T21:33:32Z",
+      "latest_release": "v3.185.0",
+      "license_spdx": "NOASSERTION",
+      "refreshed_at": "2026-06-14T02:02:01Z",
+      "stars": 29026
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-29T11:31:02Z",
+      "latest_release": "v3.201.1",
+      "license_spdx": "NOASSERTION",
+      "refreshed_at": "2026-06-29T11:36:26Z",
+      "stars": 30026
+    }
+  ]
 }

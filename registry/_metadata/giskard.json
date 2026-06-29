@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2022-03-06T21:45:37Z",
   "default_branch": "main",
-  "last_commit_at": "2026-06-13T01:57:12Z",
-  "latest_release": "giskard-scan/v1.0.0b2",
-  "license_spdx": "Apache-2.0",
-  "refreshed_at": "2026-06-14T02:04:16Z",
-  "stars": 5429
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-13T01:57:12Z",
+      "latest_release": "giskard-scan/v1.0.0b2",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-14T02:04:16Z",
+      "stars": 5429
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-29T11:00:02Z",
+      "latest_release": "giskard-scan/v1.0.0b2",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-29T11:38:19Z",
+      "stars": 5475
+    }
+  ]
 }

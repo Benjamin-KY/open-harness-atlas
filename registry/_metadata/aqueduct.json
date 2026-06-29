@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2025-03-31T12:47:09Z",
   "default_branch": "main",
-  "last_commit_at": "2026-06-12T15:12:12Z",
-  "latest_release": "v0.1.16",
-  "license_spdx": "BSD-3-Clause",
-  "refreshed_at": "2026-06-14T02:06:00Z",
-  "stars": 23
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-12T15:12:12Z",
+      "latest_release": "v0.1.16",
+      "license_spdx": "BSD-3-Clause",
+      "refreshed_at": "2026-06-14T02:06:00Z",
+      "stars": 23
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-25T12:28:27Z",
+      "latest_release": "v0.1.16",
+      "license_spdx": "BSD-3-Clause",
+      "refreshed_at": "2026-06-29T11:40:02Z",
+      "stars": 24
+    }
+  ]
 }

@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2023-06-19T04:08:31Z",
   "default_branch": "main",
-  "last_commit_at": "2026-06-13T15:26:24Z",
-  "latest_release": "v1.60.1",
-  "license_spdx": "MIT",
-  "refreshed_at": "2026-06-14T01:50:54Z",
-  "stars": 35010
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-13T15:26:24Z",
+      "latest_release": "v1.60.1",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-14T01:50:54Z",
+      "stars": 35010
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-29T10:58:37Z",
+      "latest_release": "bot-teams/v0.1.0",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-29T11:25:52Z",
+      "stars": 35628
+    }
+  ]
 }

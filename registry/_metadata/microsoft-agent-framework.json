@@ -9,6 +9,14 @@
       "license_spdx": "MIT",
       "refreshed_at": "2026-06-14T07:15:41Z",
       "stars": 11318
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-29T10:38:52Z",
+      "latest_release": "dotnet-1.11.1",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-29T11:27:53Z",
+      "stars": 11747
     }
   ]
 }

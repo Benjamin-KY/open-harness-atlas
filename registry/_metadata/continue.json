@@ -1,0 +1,14 @@
+{
+  "created_at": "2023-05-24T03:39:39Z",
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-29T09:42:06Z",
+      "latest_release": "v2.0.0-vscode",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-29T11:25:51Z",
+      "stars": 34572
+    }
+  ]
+}

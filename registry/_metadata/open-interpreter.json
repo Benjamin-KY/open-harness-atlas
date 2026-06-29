@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2023-07-14T07:10:44Z",
-  "default_branch": "oix",
-  "last_commit_at": "2026-06-10T16:53:55Z",
-  "latest_release": null,
-  "license_spdx": "Apache-2.0",
-  "refreshed_at": "2026-06-14T01:53:28Z",
-  "stars": 63940
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-10T16:53:55Z",
+      "latest_release": null,
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-14T01:53:28Z",
+      "stars": 63940
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-20T01:29:50Z",
+      "latest_release": "rust-v0.0.17",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-29T11:28:13Z",
+      "stars": 64168
+    }
+  ]
 }

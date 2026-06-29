@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2026-02-06T16:34:04Z",
   "default_branch": "main",
-  "last_commit_at": "2026-06-13T22:21:22Z",
-  "latest_release": "v0.2.1",
-  "license_spdx": "MIT",
-  "refreshed_at": "2026-06-14T02:01:11Z",
-  "stars": 56
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-13T22:21:22Z",
+      "latest_release": "v0.2.1",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-14T02:01:11Z",
+      "stars": 56
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-26T23:07:27Z",
+      "latest_release": "v0.2.1",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-29T11:35:46Z",
+      "stars": 58
+    }
+  ]
 }

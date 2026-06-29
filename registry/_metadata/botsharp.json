@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2017-12-17T13:51:22Z",
   "default_branch": "master",
-  "last_commit_at": "2026-06-12T04:01:58Z",
-  "latest_release": "r5.2-image-composition",
-  "license_spdx": "Apache-2.0",
-  "refreshed_at": "2026-06-14T01:50:30Z",
-  "stars": 3070
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-12T04:01:58Z",
+      "latest_release": "r5.2-image-composition",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-14T01:50:30Z",
+      "stars": 3070
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-26T01:40:21Z",
+      "latest_release": "r5.2-image-composition",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-29T11:25:28Z",
+      "stars": 3082
+    }
+  ]
 }

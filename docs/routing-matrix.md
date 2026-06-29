@@ -6,110 +6,110 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Lang | Maturity | Origin | Model-agnostic | Tier | Stars | ★/wk (4w) | Maintainer |
 |---|---|---|---|---|---|---|---:|---:|---|
-| [9router](https://github.com/decolua/9router) | MIT | JavaScript | ga | — | 4/5 | emerging | 17.4k | — | decolua |
-| [A3m Router](https://github.com/Das-rebel/a3m-router) | MIT | TypeScript | beta | — | 4/5 | frontier | 10 | — | Das-rebel |
-| [Agentgate AI](https://github.com/dengmengmian/agentgate-ai) | MIT | Rust | beta | — | 4/5 | frontier | 21 | — | dengmengmian |
-| [AI API](https://github.com/timcsy/ai-api) | MIT | Python | beta | — | 4/5 | frontier | 15 | — | timcsy |
-| [AI Dynamo](https://github.com/ai-dynamo/dynamo) | Apache-2.0 | Rust | beta | US | 5/5 | — | — | — | NVIDIA / ai-dynamo |
-| [AI Worker Proxy](https://github.com/zxcloli666/AI-Worker-Proxy) | MIT | TypeScript | beta | — | 4/5 | frontier | 62 | — | zxcloli666 |
-| [aisuite](https://github.com/andrewyng/aisuite) | MIT | Python | beta | US | 4/5 | established | 14.1k | — | Andrew Ng (and contributors) |
-| [Apache APISIX](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 5/5 | landmark | 16.7k | — | Apache Software Foundation |
-| [apfel](https://github.com/Arthur-Ficial/apfel) | MIT | Swift | alpha | US | 5/5 | frontier | 5.8k | — | Arthur-Ficial |
-| [Apisix](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | US | 4/5 | landmark | 16.7k | — | apache |
-| [Aqbot](https://github.com/AQBot-Desktop/AQBot) | AGPL-3.0-only | TypeScript | ga | — | 4/5 | frontier | 635 | — | AQBot-Desktop |
-| [Aqueduct](https://github.com/TU-Wien-dataLAB/aqueduct) | BSD-3-Clause | Python | beta | AT | 4/5 | frontier | 23 | — | TU-Wien-dataLAB |
-| [Atopos31 Llmio](https://github.com/atopos31/llmio) | MIT | TypeScript | beta | CN | 5/5 | — | — | — | atopos31 |
-| [BentoML](https://github.com/bentoml/BentoML) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 8.7k | — | BentoML / bentoml.com |
-| [Bitrouter](https://github.com/bitrouter/bitrouter) | Apache-2.0 | Rust | beta | — | 4/5 | emerging | 179 | — | bitrouter |
-| [Cc Switch](https://github.com/farion1231/cc-switch) | MIT | Rust | ga | — | 3/5 | landmark | 100.0k | — | farion1231 |
-| [Claw Router](https://github.com/BlockRunAI/ClawRouter) | MIT | TypeScript | ga | — | 3/5 | emerging | 6.6k | — | BlockRunAI |
-| [Coai](https://github.com/coaidev/coai) | Apache-2.0 | TypeScript | ga | — | 4/5 | established | 9.2k | — | coaidev |
-| [Csghub Lite](https://github.com/OpenCSGs/csghub-lite) | Apache-2.0 | Go | beta | CN | 4/5 | frontier | 29 | — | OpenCSGs |
-| [DeepSpeed-MII](https://github.com/deepspeedai/DeepSpeed-MII) | Apache-2.0 | Python | beta | US | 4/5 | established | 2.1k | — | Microsoft DeepSpeed team |
-| [Edgee](https://github.com/edgee-ai/edgee) | Apache-2.0 | Rust | beta | — | 3/5 | frontier | 89 | — | edgee-ai |
-| [Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway) | Apache-2.0 | Go | beta | — | 4/5 | established | 1.7k | — | Envoy Project (CNCF Sandbox) |
-| [exo](https://github.com/exo-explore/exo) | Apache-2.0 | Python | beta | US | 5/5 | landmark | 45.3k | — | exo-explore |
-| [FastChat](https://github.com/lm-sys/FastChat) | Apache-2.0 | Python | beta | US | 5/5 | landmark | 39.5k | — | lm-sys (LMSYS / UC Berkeley) |
-| [Flock](https://github.com/hadihonarvar/flock) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 43 | — | hadihonarvar |
-| [Freellmpool](https://github.com/0xzr/freellmpool) | MIT | Python | beta | — | 4/5 | frontier | 8 | — | 0xzr |
-| [Goinfer](https://github.com/lynxai-team/goinfer) | MIT | Go | beta | — | 4/5 | frontier | 10 | — | lynxai-team |
-| [Go Model](https://github.com/ENTERPILOT/GoModel) | MIT | Go | ga | — | 4/5 | emerging | 938 | — | ENTERPILOT |
-| [Gpustack](https://github.com/gpustack/gpustack) | Apache-2.0 | Python | ga | CN | 5/5 | — | — | — | GPUStack |
-| [Grps Trtllm](https://github.com/NetEase-Media/grps_trtllm) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 160 | — | NetEase-Media |
-| [Helicone](https://github.com/Helicone/helicone) | Apache-2.0 | TypeScript | ga | US | 4/5 | landmark | 5.8k | — | Helicone Inc. |
-| [Higress](https://github.com/higress-group/higress) | Apache-2.0 | Go | ga | CN | 5/5 | landmark | 8.6k | — | higress-group |
-| [Hugging Face Text Generation Inference](https://github.com/huggingface/text-generation-inference) | Apache-2.0 | Python | ga | US | 4/5 | canonical | 10.9k | — | Hugging Face |
-| [Inference Benchmarker](https://github.com/huggingface/inference-benchmarker) | Apache-2.0 | Rust | ga | US | 5/5 | — | — | — | Hugging Face |
-| [Inferrs](https://github.com/ericcurtin/inferrs) | Apache-2.0 | Rust | alpha | — | 4/5 | — | — | — | ericcurtin |
-| [Izwi](https://github.com/izwi-ai/izwi) | MIT | Rust | ga | — | 4/5 | emerging | 339 | — | izwi-ai |
-| [Jan](https://github.com/janhq/jan) | Apache-2.0 | TypeScript | beta | VN | 5/5 | landmark | 43.0k | — | Menlo Research (janhq) |
-| [Jundot Omlx](https://github.com/jundot/omlx) | Apache-2.0 | Python | beta | — | 5/5 | — | — | — | jundot |
-| [KerasHub](https://github.com/keras-team/keras-hub) | Apache-2.0 | Python | ga | US | 3/5 | — | — | — | Keras / Google |
-| [kgateway](https://github.com/kgateway-dev/kgateway) | Apache-2.0 | Go | ga | US | 4/5 | landmark | 5.6k | — | kgateway-dev (ex-Solo.io) |
-| [Kong](https://github.com/Kong/kong) | Apache-2.0 | Lua | ga | US | 4/5 | landmark | 43.6k | — | Kong Inc. |
-| [LiteLLM](https://github.com/BerriAI/litellm) | MIT | Python | ga | US | 5/5 | landmark | 50.3k | — | BerriAI |
-| [llama.cpp](https://github.com/ggml-org/llama.cpp) | MIT | C++ | ga | BG | 5/5 | landmark | 116.4k | — | ggml-org (Georgi Gerganov) |
-| [LLM Router](https://github.com/radlab-dev-group/llm-router) | Apache-2.0 | Python | beta | PL | 4/5 | frontier | 11 | — | radlab-dev-group |
-| [LLM Server](https://github.com/raketenkater/llm-server) | MIT | Go | ga | — | 4/5 | emerging | 225 | — | raketenkater |
-| [Llmapi Gateway](https://github.com/fabiojbg/LLMApiGateway) | MIT | Python | beta | — | 4/5 | frontier | 28 | — | fabiojbg |
-| [Llmio](https://github.com/atopos31/llmio) | MIT | TypeScript | ga | CN | 4/5 | emerging | 311 | — | atopos31 |
-| [Lm Proxy](https://github.com/Nayjest/lm-proxy) | MIT | Python | beta | — | 4/5 | emerging | 135 | — | Nayjest |
-| [LMDeploy](https://github.com/InternLM/lmdeploy) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 7.9k | — | Shanghai AI Lab (InternLM) |
-| [Local AI Toolkit](https://github.com/wa91h/local-ai-toolkit) | MIT | Go Template | beta | — | 3/5 | frontier | 16 | — | wa91h |
-| [LocalAI](https://github.com/mudler/LocalAI) | MIT | Go | ga | IT | 5/5 | landmark | 46.8k | — | mudler (Ettore Di Giacinto) |
-| [Lorax](https://github.com/predibase/lorax) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.8k | — | predibase |
-| [MLC-LLM](https://github.com/mlc-ai/mlc-llm) | Apache-2.0 | Python | beta | US | 4/5 | established | 22.8k | — | MLC-AI (Tianqi Chen) |
-| [MLflow AI Gateway](https://github.com/mlflow/mlflow) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 26.5k | — | Databricks / Linux Foundation |
-| [Mlx Omni Server](https://github.com/madroidmaq/mlx-omni-server) | MIT | Python | beta | CN | 5/5 | — | — | — | madroidmaq |
-| [Model Flux](https://github.com/dabao-yi/model-flux) | MIT | TypeScript | beta | — | 4/5 | frontier | 22 | — | dabao-yi |
-| [Nadir Claw](https://github.com/NadirRouter/NadirClaw) | MIT | Python | ga | — | 4/5 | emerging | 528 | — | NadirRouter |
-| [New API](https://github.com/QuantumNous/new-api) | AGPL-3.0 | Go | beta | CN | 5/5 | landmark | 38.7k | — | QuantumNous / Calcium-Ion |
-| [Nyro](https://github.com/nyroway/nyro) | Apache-2.0 | Rust | beta | — | 4/5 | emerging | 162 | — | nyroway |
-| [Ollama](https://github.com/ollama/ollama) | MIT | Go | ga | US | 5/5 | landmark | 174.1k | — | ollama |
-| [Ome](https://github.com/ome-projects/ome) | Apache-2.0 | Go | ga | — | 4/5 | emerging | 466 | — | ome-projects |
-| [Omlx](https://github.com/jundot/omlx) | Apache-2.0 | Python | ga | — | 4/5 | emerging | 16.6k | — | jundot |
-| [Omni Route](https://github.com/diegosouzapw/OmniRoute) | MIT | TypeScript | ga | — | 5/5 | emerging | 6.1k | — | diegosouzapw |
-| [One API](https://github.com/songquanpeng/one-api) | MIT | Go | beta | CN | 5/5 | landmark | 34.9k | — | Song Jinlang |
-| [Open Next Router](https://github.com/r9s-ai/open-next-router) | MIT | Go | beta | — | 4/5 | frontier | 25 | — | r9s-ai |
-| [Opencode LLM Proxy](https://github.com/KochC/opencode-llm-proxy) | MIT | JavaScript | beta | — | 4/5 | frontier | 28 | — | KochC |
-| [Opencode Models Discovery](https://github.com/yuhp/opencode-models-discovery) | MIT | TypeScript | beta | — | 4/5 | frontier | 41 | — | yuhp |
-| [Openinfer](https://github.com/openinfer-project/openinfer) | Apache-2.0 | Rust | ga | — | 3/5 | emerging | 385 | — | openinfer-project |
-| [OpenLLM](https://github.com/bentoml/OpenLLM) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 12.4k | — | BentoML |
-| [Otoroshi LLM Extension](https://github.com/cloud-apim/otoroshi-llm-extension) | Apache-2.0 | Scala | beta | FR | 4/5 | frontier | 18 | — | cloud-apim |
-| [Parallax](https://github.com/GradientHQ/parallax) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 1.3k | — | GradientHQ |
-| [Plano](https://github.com/katanemo/plano) | Apache-2.0 | Rust | beta | US | 4/5 | established | 6.6k | — | katanemo |
-| [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) | MIT | TypeScript | ga | US | 5/5 | landmark | 12.1k | — | Portkey AI |
-| [Power Infer](https://github.com/Tiiny-AI/PowerInfer) | MIT | C++ | ga | CN | 3/5 | established | 9.6k | — | Tiiny-AI |
-| [Power Serve](https://github.com/powerserve-project/PowerServe) | Apache-2.0 | C++ | beta | — | 3/5 | frontier | 155 | — | powerserve-project |
-| [Quantum Free Router](https://github.com/spacepirate15/quantum-free-router) | MIT | Shell | beta | — | 4/5 | frontier | 28 | — | spacepirate15 |
-| [Qwen Gate](https://github.com/youssefvdel/qwen-gate) | MIT | TypeScript | beta | — | 0/5 | frontier | 40 | — | youssefvdel |
-| [RamaLama](https://github.com/containers/ramalama) | MIT | Python | beta | US | 4/5 | established | 2.9k | — | Red Hat / containers org |
-| [Routectl](https://github.com/meepolabs/routectl) | MIT | Rust | beta | — | 4/5 | frontier | 14 | — | meepolabs |
-| [RouteLLM](https://github.com/lm-sys/RouteLLM) | Apache-2.0 | Python | beta | US | 5/5 | canonical | 5.0k | — | LMSYS Org |
-| [Routerly](https://github.com/Inebrio/Routerly) | AGPL-3.0-only | TypeScript | beta | — | 4/5 | frontier | 57 | — | Inebrio |
-| [Rtp LLM](https://github.com/alibaba/rtp-llm) | Apache-2.0 | Cuda | ga | CN | 3/5 | established | 1.2k | — | alibaba |
-| [Serverless LLM](https://github.com/ServerlessLLM/ServerlessLLM) | Apache-2.0 | Python | ga | GB | 3/5 | emerging | 684 | — | ServerlessLLM |
-| [SGLang](https://github.com/sgl-project/sglang) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 29.0k | — | sgl-project |
-| [Shimmy](https://github.com/Michael-A-Kuykendall/shimmy) | Apache-2.0 | Rust | alpha | US | 5/5 | emerging | 5.4k | — | Michael Kuykendall |
-| [Sie](https://github.com/superlinked/sie) | Apache-2.0 | Python | ga | — | 3/5 | established | 2.0k | — | superlinked |
-| [LLM (CLI)](https://github.com/simonw/llm) | Apache-2.0 | Python | ga | GB | 5/5 | landmark | 12.0k | — | Simon Willison |
-| [Smarter Router](https://github.com/peva3/SmarterRouter) | MIT | Python | beta | — | 4/5 | emerging | 137 | — | peva3 |
-| [Smg](https://github.com/lightseekorg/smg) | Apache-2.0 | Rust | beta | — | 5/5 | — | — | — | lightseekorg |
-| [Spiceai](https://github.com/spiceai/spiceai) | Apache-2.0 | Rust | ga | — | 3/5 | established | 3.0k | — | spiceai |
-| [Swiftlm](https://github.com/SharpAI/SwiftLM) | MIT | Swift | beta | — | 5/5 | — | — | — | SharpAI |
-| [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Apache-2.0 | Python | ga | US | 2/5 | landmark | 13.9k | — | NVIDIA Corporation |
-| [Text Embeddings Inference](https://github.com/huggingface/text-embeddings-inference) | Apache-2.0 | Rust | ga | US | 5/5 | — | — | — | Hugging Face |
-| [text-generation-webui](https://github.com/oobabooga/textgen) | AGPL-3.0 | Python | ga | US | 5/5 | landmark | 47.3k | — | oobabooga |
-| [Tiny Vllm](https://github.com/jmaczan/tiny-vllm) | Apache-2.0 | C++ | ga | — | 4/5 | emerging | 793 | — | jmaczan |
-| [Tokligence Gateway](https://github.com/tokligence/tokligence-gateway) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 19 | — | tokligence |
-| [Traceloop Hub](https://github.com/traceloop/hub) | Apache-2.0 | Rust | beta | US | 5/5 | — | — | — | Traceloop |
-| [Vllm Qwen](https://github.com/hec-ovi/vllm-qwen) | Unlicense | Python | beta | — | 4/5 | frontier | 14 | — | hec-ovi |
-| [vLLM](https://github.com/vllm-project/vllm) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 82.8k | — | vllm-project (Berkeley) |
-| [WebLLM](https://github.com/mlc-ai/web-llm) | Apache-2.0 | TypeScript | beta | US | 5/5 | landmark | 18.2k | — | MLC-AI |
-| [Windsurf API](https://github.com/dwgx/WindsurfAPI) | MIT | JavaScript | ga | — | 4/5 | frontier | 2.8k | — | dwgx |
-| [Xinference](https://github.com/xorbitsai/inference) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 9.3k | — | Xorbits AI |
-| [Xllm](https://github.com/jd-opensource/xllm) | Apache-2.0 | C++ | ga | CN | 3/5 | emerging | 1.3k | — | jd-opensource |
-| [Yu Ki Ko](https://github.com/dwgx/YuKiKo) | MIT | Python | beta | — | 3/5 | frontier | 21 | — | dwgx |
+| [9router](https://github.com/decolua/9router) | MIT | JavaScript | ga | — | 4/5 | emerging | 18.8k | +611.9 | decolua |
+| [A3m Router](https://github.com/Das-rebel/a3m-router) | MIT | TypeScript | beta | — | 4/5 | frontier | 10 | +0.0 | Das-rebel |
+| [Agentgate AI](https://github.com/dengmengmian/agentgate-ai) | MIT | Rust | beta | — | 4/5 | frontier | 22 | +0.5 | dengmengmian |
+| [AI API](https://github.com/timcsy/ai-api) | MIT | Python | beta | — | 4/5 | frontier | 15 | +0.0 | timcsy |
+| [AI Dynamo](https://github.com/ai-dynamo/dynamo) | Apache-2.0 | Rust | beta | US | 5/5 | established | 7.4k | — | NVIDIA / ai-dynamo |
+| [AI Worker Proxy](https://github.com/zxcloli666/AI-Worker-Proxy) | MIT | TypeScript | beta | — | 4/5 | frontier | 64 | +0.9 | zxcloli666 |
+| [aisuite](https://github.com/andrewyng/aisuite) | MIT | Python | beta | US | 4/5 | established | 14.9k | +334.6 | Andrew Ng (and contributors) |
+| [Apache APISIX](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | — | 5/5 | landmark | 16.8k | +29.6 | Apache Software Foundation |
+| [apfel](https://github.com/Arthur-Ficial/apfel) | MIT | Swift | alpha | US | 5/5 | emerging | 5.9k | +50.5 | Arthur-Ficial |
+| [Apisix](https://github.com/apache/apisix) | Apache-2.0 | Lua | ga | US | 4/5 | landmark | 16.8k | +29.6 | apache |
+| [Aqbot](https://github.com/AQBot-Desktop/AQBot) | AGPL-3.0-only | TypeScript | ga | — | 4/5 | emerging | 691 | +25.5 | AQBot-Desktop |
+| [Aqueduct](https://github.com/TU-Wien-dataLAB/aqueduct) | BSD-3-Clause | Python | beta | AT | 4/5 | frontier | 24 | +0.5 | TU-Wien-dataLAB |
+| [Atopos31 Llmio](https://github.com/atopos31/llmio) | MIT | TypeScript | beta | CN | 5/5 | emerging | 313 | — | atopos31 |
+| [BentoML](https://github.com/bentoml/BentoML) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 8.7k | +10.6 | BentoML / bentoml.com |
+| [Bitrouter](https://github.com/bitrouter/bitrouter) | Apache-2.0 | Rust | beta | — | 4/5 | emerging | 188 | +4.1 | bitrouter |
+| [Cc Switch](https://github.com/farion1231/cc-switch) | MIT | Rust | ga | — | 3/5 | landmark | 110.4k | +4716.2 | farion1231 |
+| [Claw Router](https://github.com/BlockRunAI/ClawRouter) | MIT | TypeScript | ga | — | 3/5 | emerging | 6.6k | +19.1 | BlockRunAI |
+| [Coai](https://github.com/coaidev/coai) | Apache-2.0 | TypeScript | ga | — | 4/5 | established | 9.2k | +12.3 | coaidev |
+| [Csghub Lite](https://github.com/OpenCSGs/csghub-lite) | Apache-2.0 | Go | beta | CN | 4/5 | frontier | 31 | +0.9 | OpenCSGs |
+| [DeepSpeed-MII](https://github.com/deepspeedai/DeepSpeed-MII) | Apache-2.0 | Python | beta | US | 4/5 | established | 2.1k | +0.9 | Microsoft DeepSpeed team |
+| [Edgee](https://github.com/edgee-ai/edgee) | Apache-2.0 | Rust | beta | — | 3/5 | frontier | 95 | +2.7 | edgee-ai |
+| [Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway) | Apache-2.0 | Go | beta | — | 4/5 | established | 1.8k | +20.0 | Envoy Project (CNCF Sandbox) |
+| [exo](https://github.com/exo-explore/exo) | Apache-2.0 | Python | beta | US | 5/5 | landmark | 45.7k | +182.7 | exo-explore |
+| [FastChat](https://github.com/lm-sys/FastChat) | Apache-2.0 | Python | beta | US | 5/5 | landmark | 39.5k | +7.7 | lm-sys (LMSYS / UC Berkeley) |
+| [Flock](https://github.com/hadihonarvar/flock) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 55 | +5.5 | hadihonarvar |
+| [Freellmpool](https://github.com/0xzr/freellmpool) | MIT | Python | beta | — | 4/5 | frontier | 28 | +9.1 | 0xzr |
+| [Goinfer](https://github.com/lynxai-team/goinfer) | MIT | Go | beta | — | 4/5 | frontier | 11 | +0.5 | lynxai-team |
+| [Go Model](https://github.com/ENTERPILOT/GoModel) | MIT | Go | ga | — | 4/5 | emerging | 973 | +15.9 | ENTERPILOT |
+| [Gpustack](https://github.com/gpustack/gpustack) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 5.2k | — | GPUStack |
+| [Grps Trtllm](https://github.com/NetEase-Media/grps_trtllm) | Apache-2.0 | Python | beta | CN | 4/5 | frontier | 160 | +0.0 | NetEase-Media |
+| [Helicone](https://github.com/Helicone/helicone) | Apache-2.0 | TypeScript | ga | US | 4/5 | landmark | 5.9k | +30.0 | Helicone Inc. |
+| [Higress](https://github.com/higress-group/higress) | Apache-2.0 | Go | ga | CN | 5/5 | landmark | 8.7k | +43.6 | higress-group |
+| [Hugging Face Text Generation Inference](https://github.com/huggingface/text-generation-inference) | Apache-2.0 | Python | ga | US | 4/5 | canonical | 10.9k | +0.5 | Hugging Face |
+| [Inference Benchmarker](https://github.com/huggingface/inference-benchmarker) | Apache-2.0 | Rust | ga | US | 5/5 | emerging | 160 | — | Hugging Face |
+| [Inferrs](https://github.com/ericcurtin/inferrs) | Apache-2.0 | Rust | alpha | — | 4/5 | emerging | 458 | — | ericcurtin |
+| [Izwi](https://github.com/izwi-ai/izwi) | MIT | Rust | ga | — | 4/5 | emerging | 342 | +1.4 | izwi-ai |
+| [Jan](https://github.com/janhq/jan) | Apache-2.0 | TypeScript | beta | VN | 5/5 | landmark | 43.3k | +135.0 | Menlo Research (janhq) |
+| [Jundot Omlx](https://github.com/jundot/omlx) | Apache-2.0 | Python | beta | — | 5/5 | emerging | 17.2k | — | jundot |
+| [KerasHub](https://github.com/keras-team/keras-hub) | Apache-2.0 | Python | ga | US | 3/5 | emerging | 985 | — | Keras / Google |
+| [kgateway](https://github.com/kgateway-dev/kgateway) | Apache-2.0 | Go | ga | US | 4/5 | landmark | 5.6k | +11.4 | kgateway-dev (ex-Solo.io) |
+| [Kong](https://github.com/Kong/kong) | Apache-2.0 | Lua | ga | US | 4/5 | landmark | 43.7k | +49.1 | Kong Inc. |
+| [LiteLLM](https://github.com/BerriAI/litellm) | MIT | Python | ga | US | 5/5 | landmark | 52.0k | +771.0 | BerriAI |
+| [llama.cpp](https://github.com/ggml-org/llama.cpp) | MIT | C++ | ga | BG | 5/5 | landmark | 118.6k | +974.2 | ggml-org (Georgi Gerganov) |
+| [LLM Router](https://github.com/radlab-dev-group/llm-router) | Apache-2.0 | Python | beta | PL | 4/5 | frontier | 11 | +0.0 | radlab-dev-group |
+| [LLM Server](https://github.com/raketenkater/llm-server) | MIT | Go | ga | — | 4/5 | emerging | 237 | +5.5 | raketenkater |
+| [Llmapi Gateway](https://github.com/fabiojbg/LLMApiGateway) | MIT | Python | beta | — | 4/5 | frontier | 28 | +0.0 | fabiojbg |
+| [Llmio](https://github.com/atopos31/llmio) | MIT | TypeScript | ga | CN | 4/5 | emerging | 313 | +0.9 | atopos31 |
+| [Lm Proxy](https://github.com/Nayjest/lm-proxy) | MIT | Python | beta | — | 4/5 | emerging | 135 | +0.0 | Nayjest |
+| [LMDeploy](https://github.com/InternLM/lmdeploy) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 7.9k | +14.6 | Shanghai AI Lab (InternLM) |
+| [Local AI Toolkit](https://github.com/wa91h/local-ai-toolkit) | MIT | Go Template | beta | — | 3/5 | frontier | 16 | +0.0 | wa91h |
+| [LocalAI](https://github.com/mudler/LocalAI) | MIT | Go | ga | IT | 5/5 | landmark | 47.2k | +174.6 | mudler (Ettore Di Giacinto) |
+| [Lorax](https://github.com/predibase/lorax) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.8k | +2.3 | predibase |
+| [MLC-LLM](https://github.com/mlc-ai/mlc-llm) | Apache-2.0 | Python | beta | US | 4/5 | landmark | 22.9k | +39.5 | MLC-AI (Tianqi Chen) |
+| [MLflow AI Gateway](https://github.com/mlflow/mlflow) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 26.8k | +121.8 | Databricks / Linux Foundation |
+| [Mlx Omni Server](https://github.com/madroidmaq/mlx-omni-server) | MIT | Python | beta | CN | 5/5 | emerging | 730 | — | madroidmaq |
+| [Model Flux](https://github.com/dabao-yi/model-flux) | MIT | TypeScript | beta | — | 4/5 | frontier | 23 | +0.5 | dabao-yi |
+| [Nadir Claw](https://github.com/NadirRouter/NadirClaw) | MIT | Python | ga | — | 4/5 | emerging | 551 | +10.5 | NadirRouter |
+| [New API](https://github.com/QuantumNous/new-api) | AGPL-3.0 | Go | beta | CN | 5/5 | landmark | 40.5k | +829.6 | QuantumNous / Calcium-Ion |
+| [Nyro](https://github.com/nyroway/nyro) | Apache-2.0 | Rust | beta | — | 4/5 | emerging | 172 | +4.5 | nyroway |
+| [Ollama](https://github.com/ollama/ollama) | MIT | Go | ga | US | 5/5 | landmark | 175.1k | +475.9 | ollama |
+| [Ome](https://github.com/ome-projects/ome) | Apache-2.0 | Go | ga | — | 4/5 | emerging | 472 | +2.7 | ome-projects |
+| [Omlx](https://github.com/jundot/omlx) | Apache-2.0 | Python | ga | — | 4/5 | emerging | 17.2k | +307.3 | jundot |
+| [Omni Route](https://github.com/diegosouzapw/OmniRoute) | MIT | TypeScript | ga | — | 5/5 | emerging | 7.7k | +722.3 | diegosouzapw |
+| [One API](https://github.com/songquanpeng/one-api) | MIT | Go | beta | CN | 5/5 | landmark | 35.3k | +194.1 | Song Jinlang |
+| [Open Next Router](https://github.com/r9s-ai/open-next-router) | MIT | Go | beta | — | 4/5 | frontier | 25 | +0.0 | r9s-ai |
+| [Opencode LLM Proxy](https://github.com/KochC/opencode-llm-proxy) | MIT | JavaScript | beta | — | 4/5 | frontier | 33 | +2.3 | KochC |
+| [Opencode Models Discovery](https://github.com/yuhp/opencode-models-discovery) | MIT | TypeScript | beta | — | 4/5 | frontier | 56 | +6.8 | yuhp |
+| [Openinfer](https://github.com/openinfer-project/openinfer) | Apache-2.0 | Rust | ga | — | 3/5 | emerging | 489 | +47.3 | openinfer-project |
+| [OpenLLM](https://github.com/bentoml/OpenLLM) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 12.4k | +10.5 | BentoML |
+| [Otoroshi LLM Extension](https://github.com/cloud-apim/otoroshi-llm-extension) | Apache-2.0 | Scala | beta | FR | 4/5 | frontier | 18 | +0.0 | cloud-apim |
+| [Parallax](https://github.com/GradientHQ/parallax) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 1.3k | +7.3 | GradientHQ |
+| [Plano](https://github.com/katanemo/plano) | Apache-2.0 | Rust | beta | US | 4/5 | established | 6.6k | +7.7 | katanemo |
+| [Portkey AI Gateway](https://github.com/Portkey-AI/gateway) | MIT | TypeScript | ga | US | 5/5 | established | 12.2k | +80.5 | Portkey AI |
+| [Power Infer](https://github.com/Tiiny-AI/PowerInfer) | MIT | C++ | ga | CN | 3/5 | established | 9.6k | +20.5 | Tiiny-AI |
+| [Power Serve](https://github.com/powerserve-project/PowerServe) | Apache-2.0 | C++ | beta | — | 3/5 | frontier | 155 | +0.0 | powerserve-project |
+| [Quantum Free Router](https://github.com/spacepirate15/quantum-free-router) | MIT | Shell | beta | — | 4/5 | frontier | 39 | +5.0 | spacepirate15 |
+| [Qwen Gate](https://github.com/youssefvdel/qwen-gate) | MIT | TypeScript | beta | — | 0/5 | frontier | 81 | +18.6 | youssefvdel |
+| [RamaLama](https://github.com/containers/ramalama) | MIT | Python | beta | US | 4/5 | established | 2.9k | +15.9 | Red Hat / containers org |
+| [Routectl](https://github.com/meepolabs/routectl) | MIT | Rust | beta | — | 4/5 | frontier | 14 | +0.0 | meepolabs |
+| [RouteLLM](https://github.com/lm-sys/RouteLLM) | Apache-2.0 | Python | beta | US | 5/5 | canonical | 5.1k | +38.6 | LMSYS Org |
+| [Routerly](https://github.com/Inebrio/Routerly) | AGPL-3.0-only | TypeScript | beta | — | 4/5 | frontier | 62 | +2.3 | Inebrio |
+| [Rtp LLM](https://github.com/alibaba/rtp-llm) | Apache-2.0 | Cuda | ga | CN | 3/5 | established | 1.2k | +9.1 | alibaba |
+| [Serverless LLM](https://github.com/ServerlessLLM/ServerlessLLM) | Apache-2.0 | Python | ga | GB | 3/5 | emerging | 687 | +1.4 | ServerlessLLM |
+| [SGLang](https://github.com/sgl-project/sglang) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 29.8k | +369.6 | sgl-project |
+| [Shimmy](https://github.com/Michael-A-Kuykendall/shimmy) | Apache-2.0 | Rust | alpha | US | 5/5 | emerging | 5.6k | +60.9 | Michael Kuykendall |
+| [Sie](https://github.com/superlinked/sie) | Apache-2.0 | Python | ga | — | 3/5 | established | 2.1k | +20.0 | superlinked |
+| [LLM (CLI)](https://github.com/simonw/llm) | Apache-2.0 | Python | ga | GB | 5/5 | landmark | 12.1k | +34.5 | Simon Willison |
+| [Smarter Router](https://github.com/peva3/SmarterRouter) | MIT | Python | beta | — | 4/5 | emerging | 138 | +0.5 | peva3 |
+| [Smg](https://github.com/lightseekorg/smg) | Apache-2.0 | Rust | beta | — | 5/5 | emerging | 366 | — | lightseekorg |
+| [Spiceai](https://github.com/spiceai/spiceai) | Apache-2.0 | Rust | ga | — | 3/5 | established | 3.0k | +20.0 | spiceai |
+| [Swiftlm](https://github.com/SharpAI/SwiftLM) | MIT | Swift | beta | — | 5/5 | emerging | 700 | — | SharpAI |
+| [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | Apache-2.0 | Python | ga | US | 2/5 | landmark | 14.0k | +59.5 | NVIDIA Corporation |
+| [Text Embeddings Inference](https://github.com/huggingface/text-embeddings-inference) | Apache-2.0 | Rust | ga | US | 5/5 | established | 4.9k | — | Hugging Face |
+| [text-generation-webui](https://github.com/oobabooga/textgen) | AGPL-3.0 | Python | ga | US | 5/5 | landmark | 47.4k | +37.7 | oobabooga |
+| [Tiny Vllm](https://github.com/jmaczan/tiny-vllm) | Apache-2.0 | C++ | ga | — | 4/5 | emerging | 820 | +12.3 | jmaczan |
+| [Tokligence Gateway](https://github.com/tokligence/tokligence-gateway) | Apache-2.0 | Go | beta | — | 4/5 | frontier | 19 | +0.0 | tokligence |
+| [Traceloop Hub](https://github.com/traceloop/hub) | Apache-2.0 | Rust | beta | US | 5/5 | emerging | 218 | — | Traceloop |
+| [Vllm Qwen](https://github.com/hec-ovi/vllm-qwen) | Unlicense | Python | beta | — | 4/5 | frontier | 14 | +0.0 | hec-ovi |
+| [vLLM](https://github.com/vllm-project/vllm) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 84.8k | +906.5 | vllm-project (Berkeley) |
+| [WebLLM](https://github.com/mlc-ai/web-llm) | Apache-2.0 | TypeScript | beta | US | 5/5 | landmark | 18.3k | +43.6 | MLC-AI |
+| [Windsurf API](https://github.com/dwgx/WindsurfAPI) | MIT | JavaScript | ga | — | 4/5 | frontier | 2.9k | +22.7 | dwgx |
+| [Xinference](https://github.com/xorbitsai/inference) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 9.4k | +20.0 | Xorbits AI |
+| [Xllm](https://github.com/jd-opensource/xllm) | Apache-2.0 | C++ | ga | CN | 3/5 | emerging | 1.4k | +19.6 | jd-opensource |
+| [Yu Ki Ko](https://github.com/dwgx/YuKiKo) | MIT | Python | beta | — | 3/5 | frontier | 21 | +0.0 | dwgx |
 
 _Tier and ★/wk (4-week star velocity) are computed from `registry/_metadata/_tiers.json` + `_velocity.json`; see `scripts/compute_tier.py` and `scripts/compute_velocity.py` for methodology. Generated from `registry/routing/*.yaml`. Run `python scripts/build_matrices.py` to refresh._
 

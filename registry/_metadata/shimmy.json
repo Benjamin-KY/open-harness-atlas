@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2025-08-28T22:55:46Z",
   "default_branch": "main",
-  "last_commit_at": "2026-06-11T21:27:13Z",
-  "latest_release": "v2.1.1",
-  "license_spdx": "Apache-2.0",
-  "refreshed_at": "2026-06-14T02:07:38Z",
-  "stars": 5417
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-11T21:27:13Z",
+      "latest_release": "v2.1.1",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-14T02:07:38Z",
+      "stars": 5417
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-17T15:40:58Z",
+      "latest_release": "v2.1.1",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-06-29T11:41:31Z",
+      "stars": 5551
+    }
+  ]
 }

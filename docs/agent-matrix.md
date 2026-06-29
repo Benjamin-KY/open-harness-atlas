@@ -6,270 +6,270 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Lang | Maturity | Origin | Model-agnostic | Tier | Stars | ★/wk (4w) | Maintainer |
 |---|---|---|---|---|---|---|---:|---:|---|
-| [Adala — Autonomous Data (Labeling) Agents](https://github.com/HumanSignal/Adala) | Apache-2.0 | Python | beta | US | 4/5 | established | 1.6k | — | HumanSignal (Label Studio makers) |
-| [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | MIT | Python | beta | US | 5/5 | established | 4.2k | — | SylphAI, Inc. |
-| [Ag Ui](https://github.com/ag-ui-protocol/ag-ui) | MIT | Python | ga | US | 3/5 | established | 14.2k | — | ag-ui-protocol |
-| [AG2](https://github.com/ag2ai/ag2) | Apache-2.0 | Python | beta | US | 4/5 | established | 4.7k | — | ag2ai community |
-| [Agency Swarm](https://github.com/VRSEN/agency-swarm) | MIT | Python | ga | UA | 4/5 | established | 4.4k | — | VRSEN |
-| [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) | MIT | Python | ga | — | 3/5 | emerging | 4.3k | — | microsoft |
-| [Agent Reach](https://github.com/Panniantong/Agent-Reach) | MIT | Python | ga | — | 3/5 | established | 27.5k | — | Panniantong |
-| [Agent S](https://github.com/simular-ai/Agent-S) | Apache-2.0 | Python | ga | — | 3/5 | established | 11.8k | — | simular-ai |
-| [Agent](https://github.com/stakpak/agent) | Apache-2.0 | Rust | ga | — | 3/5 | established | 1.6k | — | stakpak |
-| [AgentBench](https://github.com/THUDM/AgentBench) | Apache-2.0 | Python | beta | CN | 4/5 | established | 3.5k | — | THUDM (Tsinghua KEG Group) |
-| [AgentFlow](https://github.com/lupantech/agentflow) | MIT | Python | alpha | US | 4/5 | emerging | 1.9k | — | Stanford research |
-| [AgentForge](https://github.com/DataBassGit/AgentForge) | GPL-3.0 | Python | alpha | US | 4/5 | emerging | 817 | — | DataBassGit |
-| [AgentGPT](https://github.com/reworkd/AgentGPT) | GPL-3.0 | TypeScript | beta | US | 4/5 | canonical | 36.2k | — | Reworkd (archived) |
-| [Agentica](https://github.com/wrtnlabs/agentica) | MIT | TypeScript | ga | KR | 3/5 | established | 1.0k | — | wrtnlabs |
-| [Agentic Seek](https://github.com/Fosowl/agenticSeek) | GPL-3.0-only | Python | ga | — | 3/5 | established | 26.5k | — | Fosowl |
-| [AgentLab](https://github.com/ServiceNow/AgentLab) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 589 | — | ServiceNow Research |
-| [AgentLite](https://github.com/SalesforceAIResearch/AgentLite) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 644 | — | Salesforce AI Research |
-| [Agents](https://github.com/wshobson/agents) | MIT | Python | ga | — | 4/5 | landmark | 36.7k | — | wshobson |
-| [AgentScope](https://github.com/agentscope-ai/agentscope) | Apache-2.0 | Python | ga | CN | 4/5 | landmark | 26.8k | — | Alibaba DAMO |
-| [AgentSims](https://github.com/py499372727/AgentSims) | MIT | Python | beta | CN | 4/5 | dormant | 954 | — | Haoran et al. (arXiv 2308.04026) |
-| [AgentVerse](https://github.com/OpenBMB/AgentVerse) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 5.1k | — | Tsinghua / OpenBMB |
-| [Agi](https://github.com/hyperspaceai/agi) | MIT | Multiple | ga | — | 3/5 | emerging | 1.9k | — | hyperspaceai |
-| [AGiXT](https://github.com/Josh-XT/AGiXT) | MIT | Python | beta | US | 5/5 | established | 3.2k | — | Josh-XT |
-| [Agno](https://github.com/agno-agi/agno) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 40.7k | — | Agno AGI (ex-phidata) |
-| [Aia W](https://github.com/NitroRCr/AIaW) | BSD-3-Clause | TypeScript | ga | — | 3/5 | established | 1.8k | — | NitroRCr |
-| [Aichat](https://github.com/sigoden/aichat) | Apache-2.0 | Rust | ga | — | 4/5 | established | 10.1k | — | sigoden |
-| [Aider](https://github.com/Aider-AI/aider) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | Aider-AI |
-| [Aion Ui](https://github.com/iOfficeAI/AionUi) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 28.2k | — | iOfficeAI |
-| [Agents (AIWaves)](https://github.com/aiwaves-cn/agents) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 5.9k | — | AIWaves / Zhejiang Univ |
-| [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 15.6k | — | mukul975 |
-| [Anything LLM](https://github.com/Mintplex-Labs/anything-llm) | MIT | JavaScript | ga | US | 3/5 | landmark | 61.5k | — | Mintplex-Labs |
-| [Archestra](https://github.com/archestra-ai/archestra) | AGPL-3.0-only | TypeScript | ga | — | 4/5 | emerging | 3.8k | — | archestra-ai |
-| [Arc Reel](https://github.com/ArcReel/ArcReel) | AGPL-3.0-only | Python | ga | CN | 3/5 | emerging | 2.6k | — | ArcReel |
-| [arXiv MCP Server](https://github.com/blazickjp/arxiv-mcp-server) | Apache-2.0 | Python | ga | — | 5/5 | — | — | — | blazickjp |
-| [Asset Ops Bench](https://github.com/IBM/AssetOpsBench) | Apache-2.0 | Python | ga | US | 3/5 | established | 1.8k | — | IBM |
-| [Astr Bot](https://github.com/AstrBotDevs/AstrBot) | AGPL-3.0-only | Python | ga | — | 3/5 | landmark | 34.6k | — | AstrBotDevs |
-| [Astron Agent](https://github.com/iflytek/astron-agent) | Apache-2.0 | Java | ga | CN | 3/5 | emerging | 8.6k | — | iflytek |
-| [Atmosphere](https://github.com/Atmosphere/atmosphere) | Apache-2.0 | Java | ga | — | 4/5 | established | 3.8k | — | Atmosphere |
-| [Atomic Agents](https://github.com/Eigenwise/atomic-agents) | MIT | Python | beta | US | 4/5 | landmark | 6.0k | — | Eigenwise |
-| [Auto Claude Code Research In Sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | MIT | Python | ga | — | 4/5 | emerging | 12.0k | — | wanshuiyin |
-| [AutoGen](https://github.com/microsoft/autogen) | MIT | Python | ga | US | 4/5 | landmark | 58.9k | — | Microsoft Research |
-| [BabyAGI](https://github.com/yoheinakajima/babyagi) | MIT | Python | alpha | US | 4/5 | established | 22.3k | — | yoheinakajima |
-| [Babysitter](https://github.com/a5c-ai/babysitter) | MIT | JavaScript | ga | — | 4/5 | emerging | 1.3k | — | a5c-ai |
-| [BeeAI Framework](https://github.com/i-am-bee/beeai-framework) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.3k | — | IBM / Linux Foundation |
-| [BISHENG](https://github.com/dataelement/bisheng) | Apache-2.0 | TypeScript | ga | CN | 5/5 | — | — | — | DataElement |
-| [BMTools](https://github.com/OpenBMB/BMTools) | Apache-2.0 | Python | beta | CN | 4/5 | dormant | 2.8k | — | OpenBMB (Tsinghua / THUNLP) |
-| [Bot Sharp](https://github.com/SciSharp/BotSharp) | Apache-2.0 | C# | ga | — | 3/5 | established | 3.1k | — | SciSharp |
-| [Browser Use](https://github.com/browser-use/browser-use) | MIT | Python | beta | CH | 4/5 | landmark | 98.7k | — | Browser Use AG |
-| [Buildwithclaude](https://github.com/davepoon/buildwithclaude) | MIT | TypeScript | ga | — | 0/5 | emerging | 3.1k | — | davepoon |
-| [CAMEL](https://github.com/camel-ai/camel) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 17.2k | — | CAMEL-AI community |
-| [Casdoor](https://github.com/casdoor/casdoor) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 13.8k | — | casdoor |
-| [ChatDev](https://github.com/OpenBMB/ChatDev) | Apache-2.0 | Python | ga | CN | 4/5 | landmark | 33.4k | — | Tsinghua / OpenBMB |
-| [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) | MIT | Python | beta | CH | 4/5 | frontier | 924 | — | Andres M. Bran et al. (White Lab / EPFL) |
-| [Cherry Studio](https://github.com/CherryHQ/cherry-studio) | AGPL-3.0-only | TypeScript | ga | CN | 4/5 | landmark | 47.3k | — | CherryHQ |
-| [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | TypeScript | ga | US | 5/5 | — | — | — | Google (Chrome DevTools) |
-| [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) | MIT | Python | ga | US | 1/5 | established | 7.3k | — | Anthropic |
-| [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | MIT | Shell | ga | — | 0/5 | established | 21.6k | — | Donchitos |
-| [Claude Context](https://github.com/zilliztech/claude-context) | MIT | TypeScript | ga | — | 3/5 | established | 11.8k | — | zilliztech |
-| [Claude Mem](https://github.com/thedotmack/claude-mem) | Apache-2.0 | JavaScript | ga | — | 3/5 | landmark | 82.1k | — | thedotmack |
-| [Claw X](https://github.com/ValueCell-ai/ClawX) | MIT | TypeScript | ga | CN | 3/5 | emerging | 7.4k | — | ValueCell-ai |
-| [Cli](https://github.com/googleworkspace/cli) | Apache-2.0 | Rust | ga | US | 3/5 | established | 27.0k | — | googleworkspace |
-| [Cline](https://github.com/cline/cline) | Apache-2.0 | TypeScript | ga | US | 4/5 | — | — | — | Cline Bot, Inc. |
-| [Code Review Graph](https://github.com/tirth8205/code-review-graph) | MIT | Python | ga | — | 3/5 | emerging | 18.5k | — | tirth8205 |
-| [Cognita (archived)](https://github.com/truefoundry/cognita) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | TrueFoundry (archived) |
-| [Composio](https://github.com/ComposioHQ/composio) | MIT | TypeScript | ga | US | 5/5 | — | — | — | Composio |
-| [Continue](https://github.com/continuedev/continue) | Apache-2.0 | TypeScript | ga | US | 5/5 | — | — | — | Continue |
-| [CopilotKit](https://github.com/CopilotKit/CopilotKit) | MIT | TypeScript | ga | US | 4/5 | landmark | 35.0k | — | CopilotKit Inc. |
-| [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | frontier | 723 | — | Human-Agent-Society |
-| [Core](https://github.com/cheshire-cat-ai/core) | GPL-3.0-only | Python | ga | IT | 4/5 | established | 3.0k | — | cheshire-cat-ai |
-| [Cow Agent](https://github.com/zhayujie/CowAgent) | MIT | Python | ga | — | 3/5 | landmark | 45.3k | — | zhayujie |
-| [Coze Loop](https://github.com/coze-dev/coze-loop) | Apache-2.0 | Go | ga | CN | 2/5 | emerging | 5.5k | — | coze-dev |
-| [CrewAI](https://github.com/crewAIInc/crewAI) | MIT | Python | ga | US | 3/5 | landmark | 53.5k | — | CrewAI Inc. |
-| [Cua](https://github.com/trycua/cua) | MIT | HTML | ga | US | 4/5 | established | 17.9k | — | trycua |
-| [Cursor Talk To Figma MCP](https://github.com/grab/cursor-talk-to-figma-mcp) | MIT | JavaScript | ga | SG | 3/5 | established | 6.8k | — | grab |
-| [Dagu](https://github.com/dagucloud/dagu) | GPL-3.0-only | Go | ga | — | 3/5 | established | 3.5k | — | dagucloud |
-| [DB-GPT](https://github.com/eosphoros-ai/DB-GPT) | MIT | Python | ga | CN | 4/5 | landmark | 19.0k | — | Eosphoros AI |
-| [Deep Research](https://github.com/u14app/deep-research) | MIT | JavaScript | ga | — | 4/5 | established | 4.6k | — | u14app |
-| [Deep Searcher](https://github.com/zilliztech/deep-searcher) | Apache-2.0 | Python | beta | US | 5/5 | — | — | — | Zilliz |
-| [Deepchat](https://github.com/ThinkInAIXYZ/deepchat) | Apache-2.0 | TypeScript | ga | — | 4/5 | established | 6.0k | — | ThinkInAIXYZ |
-| [Deep Code](https://github.com/HKUDS/DeepCode) | MIT | Python | ga | HK | 3/5 | established | 15.8k | — | HKUDS |
-| [Deep Research](https://github.com/Alibaba-NLP/DeepResearch) | Apache-2.0 | Python | ga | CN | 3/5 | established | 19.4k | — | Alibaba-NLP |
-| [DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) | MIT | Python | beta | CN | 4/5 | — | — | — | Skywork AI |
-| [Deep Seek Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | MIT | Go | ga | — | 3/5 | established | 21.8k | — | esengine |
-| [Deep Tutor](https://github.com/HKUDS/DeepTutor) | Apache-2.0 | Python | ga | — | 3/5 | established | 24.7k | — | HKUDS |
-| [DeerFlow](https://github.com/bytedance/deer-flow) | MIT | Python | ga | CN | 4/5 | landmark | 71.1k | — | ByteDance |
+| [Adala — Autonomous Data (Labeling) Agents](https://github.com/HumanSignal/Adala) | Apache-2.0 | Python | beta | US | 4/5 | established | 1.6k | +0.9 | HumanSignal (Label Studio makers) |
+| [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | MIT | Python | beta | US | 5/5 | established | 4.2k | +1.9 | SylphAI, Inc. |
+| [Ag Ui](https://github.com/ag-ui-protocol/ag-ui) | MIT | Python | ga | US | 3/5 | established | 14.5k | +96.8 | ag-ui-protocol |
+| [AG2](https://github.com/ag2ai/ag2) | Apache-2.0 | Python | beta | US | 4/5 | established | 4.7k | +21.4 | ag2ai community |
+| [Agency Swarm](https://github.com/VRSEN/agency-swarm) | MIT | Python | ga | UA | 4/5 | established | 4.5k | +8.2 | VRSEN |
+| [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) | MIT | Python | ga | — | 3/5 | emerging | 4.5k | +125.0 | microsoft |
+| [Agent Reach](https://github.com/Panniantong/Agent-Reach) | MIT | Python | ga | — | 3/5 | landmark | 45.2k | +8041.6 | Panniantong |
+| [Agent S](https://github.com/simular-ai/Agent-S) | Apache-2.0 | Python | ga | — | 3/5 | established | 11.9k | +44.1 | simular-ai |
+| [Agent](https://github.com/stakpak/agent) | Apache-2.0 | Rust | ga | — | 3/5 | established | 1.6k | +18.6 | stakpak |
+| [AgentBench](https://github.com/THUDM/AgentBench) | Apache-2.0 | Python | beta | CN | 4/5 | established | 3.5k | +17.3 | THUDM (Tsinghua KEG Group) |
+| [AgentFlow](https://github.com/lupantech/agentflow) | MIT | Python | alpha | US | 4/5 | emerging | 1.9k | +11.8 | Stanford research |
+| [AgentForge](https://github.com/DataBassGit/AgentForge) | GPL-3.0 | Python | alpha | US | 4/5 | emerging | 821 | +1.8 | DataBassGit |
+| [AgentGPT](https://github.com/reworkd/AgentGPT) | GPL-3.0 | TypeScript | beta | US | 4/5 | canonical | 36.2k | +18.6 | Reworkd (archived) |
+| [Agentica](https://github.com/wrtnlabs/agentica) | MIT | TypeScript | ga | KR | 3/5 | established | 1.0k | +1.4 | wrtnlabs |
+| [Agentic Seek](https://github.com/Fosowl/agenticSeek) | GPL-3.0-only | Python | ga | — | 3/5 | established | 26.6k | +25.9 | Fosowl |
+| [AgentLab](https://github.com/ServiceNow/AgentLab) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 595 | +2.7 | ServiceNow Research |
+| [AgentLite](https://github.com/SalesforceAIResearch/AgentLite) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 646 | +0.9 | Salesforce AI Research |
+| [Agents](https://github.com/wshobson/agents) | MIT | Python | ga | — | 4/5 | landmark | 37.3k | +278.6 | wshobson |
+| [AgentScope](https://github.com/agentscope-ai/agentscope) | Apache-2.0 | Python | ga | CN | 4/5 | landmark | 27.3k | +234.1 | Alibaba DAMO |
+| [AgentSims](https://github.com/py499372727/AgentSims) | MIT | Python | beta | CN | 4/5 | dormant | 958 | +1.8 | Haoran et al. (arXiv 2308.04026) |
+| [AgentVerse](https://github.com/OpenBMB/AgentVerse) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 5.1k | +8.2 | Tsinghua / OpenBMB |
+| [Agi](https://github.com/hyperspaceai/agi) | MIT | Multiple | ga | — | 3/5 | emerging | 2.0k | +13.2 | hyperspaceai |
+| [AGiXT](https://github.com/Josh-XT/AGiXT) | MIT | Python | beta | US | 5/5 | established | 3.2k | +0.9 | Josh-XT |
+| [Agno](https://github.com/agno-agi/agno) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 40.9k | +99.5 | Agno AGI (ex-phidata) |
+| [Aia W](https://github.com/NitroRCr/AIaW) | BSD-3-Clause | TypeScript | ga | — | 3/5 | established | 1.8k | +3.6 | NitroRCr |
+| [Aichat](https://github.com/sigoden/aichat) | Apache-2.0 | Rust | ga | — | 4/5 | established | 10.2k | +24.1 | sigoden |
+| [Aider](https://github.com/Aider-AI/aider) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 46.8k | — | Aider-AI |
+| [Aion Ui](https://github.com/iOfficeAI/AionUi) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 29.0k | +383.6 | iOfficeAI |
+| [Agents (AIWaves)](https://github.com/aiwaves-cn/agents) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 5.9k | +2.3 | AIWaves / Zhejiang Univ |
+| [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | Apache-2.0 | Python | ga | — | 3/5 | established | 22.9k | +3303.8 | mukul975 |
+| [Anything LLM](https://github.com/Mintplex-Labs/anything-llm) | MIT | JavaScript | ga | US | 3/5 | landmark | 62.3k | +333.6 | Mintplex-Labs |
+| [Archestra](https://github.com/archestra-ai/archestra) | AGPL-3.0-only | TypeScript | ga | — | 4/5 | emerging | 3.9k | +28.6 | archestra-ai |
+| [Arc Reel](https://github.com/ArcReel/ArcReel) | AGPL-3.0-only | Python | ga | CN | 3/5 | emerging | 3.0k | +197.3 | ArcReel |
+| [arXiv MCP Server](https://github.com/blazickjp/arxiv-mcp-server) | Apache-2.0 | Python | ga | — | 5/5 | established | 2.9k | — | blazickjp |
+| [Asset Ops Bench](https://github.com/IBM/AssetOpsBench) | Apache-2.0 | Python | ga | US | 3/5 | established | 1.9k | +75.0 | IBM |
+| [Astr Bot](https://github.com/AstrBotDevs/AstrBot) | AGPL-3.0-only | Python | ga | — | 3/5 | landmark | 35.5k | +431.4 | AstrBotDevs |
+| [Astron Agent](https://github.com/iflytek/astron-agent) | Apache-2.0 | Java | ga | CN | 3/5 | emerging | 8.6k | +12.7 | iflytek |
+| [Atmosphere](https://github.com/Atmosphere/atmosphere) | Apache-2.0 | Java | ga | — | 4/5 | established | 3.8k | +1.4 | Atmosphere |
+| [Atomic Agents](https://github.com/Eigenwise/atomic-agents) | MIT | Python | beta | US | 4/5 | landmark | 6.0k | +15.0 | Eigenwise |
+| [Auto Claude Code Research In Sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | MIT | Python | ga | — | 4/5 | emerging | 12.8k | +339.6 | wanshuiyin |
+| [AutoGen](https://github.com/microsoft/autogen) | MIT | Python | ga | US | 4/5 | landmark | 59.3k | +189.6 | Microsoft Research |
+| [BabyAGI](https://github.com/yoheinakajima/babyagi) | MIT | Python | alpha | US | 4/5 | established | 22.3k | +4.5 | yoheinakajima |
+| [Babysitter](https://github.com/a5c-ai/babysitter) | MIT | JavaScript | ga | — | 4/5 | emerging | 1.4k | +54.1 | a5c-ai |
+| [BeeAI Framework](https://github.com/i-am-bee/beeai-framework) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.3k | +7.3 | IBM / Linux Foundation |
+| [BISHENG](https://github.com/dataelement/bisheng) | Apache-2.0 | TypeScript | ga | CN | 5/5 | landmark | 11.5k | — | DataElement |
+| [BMTools](https://github.com/OpenBMB/BMTools) | Apache-2.0 | Python | beta | CN | 4/5 | dormant | 2.8k | -0.5 | OpenBMB (Tsinghua / THUNLP) |
+| [Bot Sharp](https://github.com/SciSharp/BotSharp) | Apache-2.0 | C# | ga | — | 3/5 | established | 3.1k | +5.5 | SciSharp |
+| [Browser Use](https://github.com/browser-use/browser-use) | MIT | Python | beta | CH | 4/5 | landmark | 101.3k | +1183.7 | Browser Use AG |
+| [Buildwithclaude](https://github.com/davepoon/buildwithclaude) | MIT | TypeScript | ga | — | 0/5 | emerging | 3.1k | +28.2 | davepoon |
+| [CAMEL](https://github.com/camel-ai/camel) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 17.3k | +54.5 | CAMEL-AI community |
+| [Casdoor](https://github.com/casdoor/casdoor) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 13.8k | +36.4 | casdoor |
+| [ChatDev](https://github.com/OpenBMB/ChatDev) | Apache-2.0 | Python | ga | CN | 4/5 | landmark | 33.6k | +99.5 | Tsinghua / OpenBMB |
+| [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) | MIT | Python | beta | CH | 4/5 | dormant | 931 | +3.2 | Andres M. Bran et al. (White Lab / EPFL) |
+| [Cherry Studio](https://github.com/CherryHQ/cherry-studio) | AGPL-3.0-only | TypeScript | ga | CN | 4/5 | landmark | 48.0k | +307.3 | CherryHQ |
+| [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp) | Apache-2.0 | TypeScript | ga | US | 5/5 | landmark | 44.7k | — | Google (Chrome DevTools) |
+| [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) | MIT | Python | ga | US | 1/5 | established | 7.5k | +75.0 | Anthropic |
+| [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | MIT | Shell | ga | — | 0/5 | established | 22.4k | +394.1 | Donchitos |
+| [Claude Context](https://github.com/zilliztech/claude-context) | MIT | TypeScript | ga | — | 3/5 | established | 12.0k | +71.8 | zilliztech |
+| [Claude Mem](https://github.com/thedotmack/claude-mem) | Apache-2.0 | JavaScript | ga | — | 3/5 | landmark | 85.0k | +1293.7 | thedotmack |
+| [Claw X](https://github.com/ValueCell-ai/ClawX) | MIT | TypeScript | ga | CN | 3/5 | emerging | 7.5k | +19.1 | ValueCell-ai |
+| [Cli](https://github.com/googleworkspace/cli) | Apache-2.0 | Rust | ga | US | 3/5 | established | 29.1k | +944.1 | googleworkspace |
+| [Cline](https://github.com/cline/cline) | Apache-2.0 | TypeScript | ga | US | 4/5 | landmark | 64.0k | — | Cline Bot, Inc. |
+| [Code Review Graph](https://github.com/tirth8205/code-review-graph) | MIT | Python | ga | — | 3/5 | emerging | 19.0k | +235.0 | tirth8205 |
+| [Cognita (archived)](https://github.com/truefoundry/cognita) | Apache-2.0 | Python | ga | US | 5/5 | frontier | 4.4k | — | TrueFoundry (archived) |
+| [Composio](https://github.com/ComposioHQ/composio) | MIT | TypeScript | ga | US | 5/5 | landmark | 29.0k | — | Composio |
+| [Continue](https://github.com/continuedev/continue) | Apache-2.0 | TypeScript | ga | US | 5/5 | landmark | 34.6k | — | Continue |
+| [CopilotKit](https://github.com/CopilotKit/CopilotKit) | MIT | TypeScript | ga | US | 4/5 | landmark | 35.6k | +280.9 | CopilotKit Inc. |
+| [CORAL](https://github.com/Human-Agent-Society/CORAL) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 763 | +18.2 | Human-Agent-Society |
+| [Core](https://github.com/cheshire-cat-ai/core) | GPL-3.0-only | Python | ga | IT | 4/5 | established | 3.1k | +9.1 | cheshire-cat-ai |
+| [Cow Agent](https://github.com/zhayujie/CowAgent) | MIT | Python | ga | — | 3/5 | landmark | 45.7k | +177.3 | zhayujie |
+| [Coze Loop](https://github.com/coze-dev/coze-loop) | Apache-2.0 | Go | ga | CN | 2/5 | established | 5.6k | +19.1 | coze-dev |
+| [CrewAI](https://github.com/crewAIInc/crewAI) | MIT | Python | ga | US | 3/5 | landmark | 54.5k | +484.1 | CrewAI Inc. |
+| [Cua](https://github.com/trycua/cua) | MIT | HTML | ga | US | 4/5 | established | 19.2k | +583.7 | trycua |
+| [Cursor Talk To Figma MCP](https://github.com/grab/cursor-talk-to-figma-mcp) | MIT | JavaScript | ga | SG | 3/5 | established | 6.9k | +14.6 | grab |
+| [Dagu](https://github.com/dagucloud/dagu) | GPL-3.0-only | Go | ga | — | 3/5 | established | 3.5k | +20.5 | dagucloud |
+| [DB-GPT](https://github.com/eosphoros-ai/DB-GPT) | MIT | Python | ga | CN | 4/5 | landmark | 19.2k | +108.6 | Eosphoros AI |
+| [Deep Research](https://github.com/u14app/deep-research) | MIT | JavaScript | ga | — | 4/5 | established | 4.6k | +9.6 | u14app |
+| [Deep Searcher](https://github.com/zilliztech/deep-searcher) | Apache-2.0 | Python | beta | US | 5/5 | canonical | 7.9k | — | Zilliz |
+| [Deepchat](https://github.com/ThinkInAIXYZ/deepchat) | Apache-2.0 | TypeScript | ga | — | 4/5 | established | 6.1k | +30.0 | ThinkInAIXYZ |
+| [Deep Code](https://github.com/HKUDS/DeepCode) | MIT | Python | ga | HK | 3/5 | established | 15.9k | +20.5 | HKUDS |
+| [Deep Research](https://github.com/Alibaba-NLP/DeepResearch) | Apache-2.0 | Python | ga | CN | 3/5 | established | 19.6k | +84.1 | Alibaba-NLP |
+| [DeepResearchAgent](https://github.com/SkyworkAI/DeepResearchAgent) | MIT | Python | beta | CN | 4/5 | established | 3.5k | — | Skywork AI |
+| [Deep Seek Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | MIT | Go | ga | — | 3/5 | established | 25.3k | +1601.9 | esengine |
+| [Deep Tutor](https://github.com/HKUDS/DeepTutor) | Apache-2.0 | Python | ga | — | 3/5 | established | 25.1k | +164.1 | HKUDS |
+| [DeerFlow](https://github.com/bytedance/deer-flow) | MIT | Python | ga | CN | 4/5 | landmark | 75.4k | +1940.5 | ByteDance |
 | [Design Extract](https://github.com/Manavarya09/design-extract) | MIT | JavaScript | ga | — | 3/5 | frontier | 3.2k | — | Manavarya09 |
-| [Devika](https://github.com/stitionai/devika) | MIT | Python | beta | — | 4/5 | — | — | — | stitionai |
-| [Dive](https://github.com/OpenAgentPlatform/Dive) | MIT | TypeScript | ga | TW | 4/5 | established | 1.8k | — | OpenAgentPlatform |
-| [DocsGPT](https://github.com/arc53/DocsGPT) | MIT | Python | ga | GB | 5/5 | — | — | — | Arc53 |
-| [DSPy](https://github.com/stanfordnlp/dspy) | MIT | Python | ga | US | 4/5 | landmark | 35.0k | — | Stanford NLP |
-| [E2B](https://github.com/e2b-dev/E2B) | Apache-2.0 | Python | ga | CZ | 5/5 | — | — | — | E2B |
-| [ECC](https://github.com/affaan-m/ECC) | MIT | JavaScript | ga | — | 3/5 | landmark | 214.9k | — | affaan-m |
-| [Edict](https://github.com/cft0808/edict) | MIT | Python | ga | — | 3/5 | emerging | 16.1k | — | cft0808 |
-| [Eidolon](https://github.com/eidolon-ai/eidolon) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 491 | — | Eidolon AI |
-| [Eko](https://github.com/FellouAI/eko) | MIT | TypeScript | ga | — | 3/5 | established | 4.9k | — | FellouAI |
-| [Eliza](https://github.com/elizaOS/eliza) | MIT | TypeScript | ga | — | 4/5 | established | 18.6k | — | elizaOS |
-| [Embabel Agent](https://github.com/embabel/embabel-agent) | Apache-2.0 | Kotlin | ga | — | 3/5 | established | 3.7k | — | embabel |
-| [Ever OS](https://github.com/EverMind-AI/EverOS) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 7.4k | — | EverMind-AI |
-| [Fara](https://github.com/microsoft/fara) | MIT | Python | ga | US | 3/5 | emerging | 5.5k | — | microsoft |
-| [Fast Agent](https://github.com/evalstate/fast-agent) | Apache-2.0 | Python | ga | — | 4/5 | established | 3.8k | — | evalstate |
-| [FastAgency](https://github.com/ag2ai/fastagency) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 540 | — | ag2ai community |
-| [Figma Context MCP](https://github.com/GLips/Figma-Context-MCP) | MIT | TypeScript | ga | — | 3/5 | established | 15.1k | — | GLips |
-| [Fin Sight AI](https://github.com/juanjuandog/FinSight-AI) | MIT | Java | ga | — | 3/5 | frontier | 1.2k | — | juanjuandog |
-| [Fireagent](https://github.com/buptlg/fireagent) | MIT | Python | beta | — | 3/5 | frontier | 105 | — | buptlg |
-| [Firecrawl MCP Server](https://github.com/firecrawl/firecrawl-mcp-server) | MIT | JavaScript | ga | — | 3/5 | established | 6.6k | — | Firecrawl |
-| [Flowise](https://github.com/FlowiseAI/Flowise) | Apache-2.0 | TypeScript | ga | US | 5/5 | landmark | 53.5k | — | FlowiseAI |
-| [Forge](https://github.com/antoinezambelli/forge) | MIT | Python | ga | — | 3/5 | emerging | 2.1k | — | antoinezambelli |
-| [Gemini Cli](https://github.com/google-gemini/gemini-cli) | Apache-2.0 | TypeScript | ga | US | 0/5 | landmark | 105.3k | — | google-gemini |
-| [Generative Agents (Stanford)](https://github.com/joonspk-research/generative_agents) | Apache-2.0 | Python | beta | US | 4/5 | canonical | 21.5k | — | Joon Sung Park et al. (Stanford) |
-| [Generic Agent](https://github.com/lsdefine/GenericAgent) | MIT | Python | ga | — | 3/5 | emerging | 12.8k | — | lsdefine |
-| [Ghidra MCP](https://github.com/bethington/ghidra-mcp) | Apache-2.0 | Java | ga | — | 3/5 | emerging | 2.4k | — | bethington |
-| [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) | Apache-2.0 | Python | beta | US | 2/5 | established | 20.1k | — | Google |
-| [Google Workspace MCP](https://github.com/taylorwilsdon/google_workspace_mcp) | MIT | Python | ga | — | 4/5 | established | 2.7k | — | taylorwilsdon |
-| [Goose](https://github.com/aaif-goose/goose) | Apache-2.0 | Rust | ga | US | 4/5 | landmark | 49.2k | — | aaif-goose |
-| [Gorilla LLM](https://github.com/gorilla-llm/gorilla) | Apache-2.0 | Python | ga | US | 4/5 | dormant | 3 | — | Shishir G. Patil et al. (UC Berkeley Sky Computing) |
-| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | MIT | Python | ga | IL | 4/5 | landmark | 27.7k | — | assafelovic |
-| [Gptme](https://github.com/gptme/gptme) | MIT | Python | ga | — | 4/5 | established | 4.3k | — | gptme |
-| [Microsoft GraphRAG](https://github.com/microsoft/graphrag) | MIT | Python | ga | US | 4/5 | — | — | — | Microsoft Research |
-| [Griptape](https://github.com/griptape-ai/griptape) | Apache-2.0 | Python | ga | US | 4/5 | established | 2.5k | — | Griptape AI (Foundry) |
-| [Harness Sdk](https://github.com/strands-agents/harness-sdk) | Apache-2.0 | Python | ga | US | 4/5 | established | 6.1k | — | strands-agents |
-| [Haystack](https://github.com/deepset-ai/haystack) | Apache-2.0 | Python | ga | DE | 4/5 | landmark | 25.6k | — | deepset |
-| [Headroom](https://github.com/chopratejas/headroom) | Apache-2.0 | Python | ga | — | 3/5 | established | 26.3k | — | chopratejas |
-| [Helmor](https://github.com/dohooo/helmor) | Apache-2.0 | TypeScript | ga | — | 3/5 | frontier | 1.2k | — | dohooo |
-| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | MIT | Python | ga | US | 3/5 | landmark | 192.8k | — | NousResearch |
-| [Hermes Webui](https://github.com/nesquena/hermes-webui) | MIT | Python | ga | — | 3/5 | frontier | 14.4k | — | nesquena |
-| [Hexstrike AI](https://github.com/0x4m4/hexstrike-ai) | MIT | Python | ga | — | 3/5 | emerging | 9.6k | — | 0x4m4 |
-| [Hindsight](https://github.com/vectorize-io/hindsight) | MIT | Python | ga | — | 3/5 | emerging | 16.3k | — | vectorize-io |
-| [Hive](https://github.com/aden-hive/hive) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 10.5k | — | aden-hive |
-| [Holmesgpt](https://github.com/HolmesGPT/holmesgpt) | Apache-2.0 | Python | ga | — | 4/5 | established | 2.6k | — | HolmesGPT |
-| [HuggingGPT / JARVIS](https://github.com/microsoft/JARVIS) | MIT | Python | beta | CN | 5/5 | canonical | 24.9k | — | Microsoft Research Asia |
-| [Ida Pro MCP](https://github.com/mrexodia/ida-pro-mcp) | MIT | Python | ga | — | 3/5 | established | 9.4k | — | mrexodia |
-| [Ii Agent](https://github.com/Intelligent-Internet/ii-agent) | Apache-2.0 | Python | ga | — | 3/5 | established | 3.3k | — | Intelligent-Internet |
-| [Ins Forge](https://github.com/InsForge/InsForge) | Apache-2.0 | TypeScript | ga | — | 3/5 | emerging | 11.7k | — | InsForge |
-| [Intentkit](https://github.com/crestalnetwork/intentkit) | MIT | Python | ga | — | 3/5 | established | 6.5k | — | crestalnetwork |
-| [iX — Autonomous GPT-4 Agent Platform](https://github.com/kreneskyp/ix) | MIT | Python | beta | US | 4/5 | established | 1.0k | — | Peter Krenesky |
-| [Jcode](https://github.com/1jehuang/jcode) | MIT | Rust | ga | — | 3/5 | emerging | 7.0k | — | 1jehuang |
-| [Jido](https://github.com/agentjido/jido) | Apache-2.0 | Elixir | ga | — | 3/5 | established | 1.7k | — | agentjido |
-| [Julep](https://github.com/julep-ai/julep) | Apache-2.0 | Python | beta | IN | 4/5 | established | 6.6k | — | Julep AI |
-| [Kaiban JS](https://github.com/kaiban-ai/KaibanJS) | MIT | TypeScript | ga | — | 3/5 | established | 1.5k | — | kaiban-ai |
-| [Khoj](https://github.com/khoj-ai/khoj) | AGPL-3.0 | Python | ga | US | 5/5 | — | — | — | Khoj AI |
-| [Klavis](https://github.com/Klavis-AI/klavis) | Apache-2.0 | Python | ga | — | 3/5 | established | 5.7k | — | Klavis-AI |
-| [Kuzu](https://github.com/kuzudb/kuzu) | MIT | C++ | ga | CA | 5/5 | — | — | — | KuzuDB (archived) |
-| [Lamda](https://github.com/firerpa/lamda) | MIT | Python | ga | — | 3/5 | established | 7.8k | — | firerpa |
-| [LangChain](https://github.com/langchain-ai/langchain) | MIT | Python | ga | US | 4/5 | landmark | 139.2k | — | LangChain Inc |
-| [Langflow](https://github.com/langflow-ai/langflow) | MIT | Python | ga | US | 4/5 | landmark | 149.6k | — | DataStax |
-| [LangGraph](https://github.com/langchain-ai/langgraph) | MIT | Python | ga | US | 4/5 | landmark | 34.7k | — | LangChain Inc. |
-| [Langroid](https://github.com/langroid/langroid) | MIT | Python | ga | — | 4/5 | established | 4.0k | — | langroid |
-| [Lean Ctx](https://github.com/yvgude/lean-ctx) | Apache-2.0 | Rust | ga | — | 4/5 | frontier | 2.7k | — | yvgude |
-| [Letta](https://github.com/letta-ai/letta) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 23.3k | — | Letta AI |
-| [Libre Chat](https://github.com/danny-avila/LibreChat) | MIT | TypeScript | ga | — | 4/5 | landmark | 39.1k | — | danny-avila |
-| [Light Agent](https://github.com/wanxingai/LightAgent) | Apache-2.0 | Python | ga | CN | 4/5 | established | 1.1k | — | wanxingai |
-| [LightRAG](https://github.com/HKUDS/LightRAG) | MIT | Python | beta | HK | 5/5 | — | — | — | HKU Data Intelligence Lab |
-| [Linkedin MCP Server](https://github.com/stickerdaniel/linkedin-mcp-server) | Apache-2.0 | Python | ga | — | 3/5 | established | 2.3k | — | stickerdaniel |
-| [LlamaIndex Agents](https://github.com/run-llama/llama_index) | MIT | Python | ga | US | 4/5 | landmark | 50.1k | — | LlamaIndex (Run-LLaMA Inc.) |
-| [LLMCompiler](https://github.com/SqueezeAILab/LLMCompiler) | MIT | Python | beta | US | 4/5 | dormant | 1.9k | — | Sehoon Kim et al. (UC Berkeley SqueezeAI Lab) |
-| [Lotti](https://github.com/matthiasn/lotti) | GPL-3.0-only | Dart | ga | — | 3/5 | established | 1.1k | — | matthiasn |
-| [Mai Bot](https://github.com/Mai-with-u/MaiBot) | GPL-3.0-only | Python | ga | — | 3/5 | established | 5.1k | — | Mai-with-u |
-| [Markdownify MCP](https://github.com/zcaceres/markdownify-mcp) | MIT | TypeScript | ga | — | 5/5 | — | — | — | Zach Caceres |
-| [Mastra](https://github.com/mastra-ai/mastra) | Apache-2.0 | TypeScript | beta | US | 4/5 | established | 25.0k | — | Mastra AI |
-| [MCP Agent](https://github.com/lastmile-ai/mcp-agent) | Apache-2.0 | Python | ga | US | 3/5 | established | 8.4k | — | lastmile-ai |
-| [MCP Context Forge](https://github.com/IBM/mcp-context-forge) | Apache-2.0 | Python | ga | US | 4/5 | established | 3.9k | — | IBM |
-| [MCP Playwright](https://github.com/executeautomation/mcp-playwright) | MIT | TypeScript | ga | — | 5/5 | — | — | — | ExecuteAutomation |
-| [MCP Use](https://github.com/mcp-use/mcp-use) | MIT | TypeScript | ga | — | 3/5 | established | 10.1k | — | mcp-use |
-| [Mcphub.nvim](https://github.com/ravitemer/mcphub.nvim) | MIT | Lua | ga | — | 3/5 | established | 1.8k | — | ravitemer |
-| [Mem0 (formerly Embedchain)](https://github.com/mem0ai/mem0) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 58.5k | — | Mem0 AI (YC S24) |
-| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | MIT | Python | ga | CN | 4/5 | landmark | 68.8k | — | FoundationAgents (ex-DeepWisdom) |
-| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | MIT | C# | beta | US | 4/5 | established | 11.3k | — | Microsoft |
-| [Microsoft MCP Catalog](https://github.com/microsoft/mcp) | MIT | C# | ga | US | 4/5 | — | — | — | Microsoft |
-| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | MIT | Python | ga | US | 4/5 | emerging | 5.1k | — | Princeton + Stanford |
-| [Mirascope](https://github.com/Mirascope/mirascope) | MIT | Python | ga | US | 4/5 | established | 1.5k | — | Mirascope Inc. |
-| [Moai Adk](https://github.com/modu-ai/moai-adk) | Apache-2.0 | Go | ga | KR | 0/5 | emerging | 1.1k | — | modu-ai |
-| [Mobile MCP](https://github.com/mobile-next/mobile-mcp) | Apache-2.0 | TypeScript | beta | — | 5/5 | — | — | — | Mobile Next |
-| [N8n MCP](https://github.com/czlonkowski/n8n-mcp) | MIT | TypeScript | ga | — | 3/5 | established | 21.7k | — | czlonkowski |
-| [Nanobot](https://github.com/HKUDS/nanobot) | MIT | Python | ga | HK | 3/5 | landmark | 44.2k | — | HKUDS |
-| [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | Apache-2.0 | TypeScript | ga | — | 3/5 | canonical | 13.3k | — | nanobrowser |
-| [Neo](https://github.com/neomjs/neo) | MIT | JavaScript | ga | — | 3/5 | established | 3.2k | — | neomjs |
-| [Nexent](https://github.com/ModelEngine-Group/nexent) | MIT | Python | ga | — | 3/5 | established | 5.0k | — | ModelEngine-Group |
-| [OGX (formerly Llama Stack)](https://github.com/ogx-ai/ogx) | MIT | Python | beta | — | 5/5 | — | — | — | OGX-AI (community fork) |
-| [Oh My Claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | MIT | TypeScript | ga | — | 0/5 | landmark | 36.3k | — | Yeachan-Heo |
-| [Oh My Pi](https://github.com/can1357/oh-my-pi) | MIT | TypeScript | ga | — | 3/5 | emerging | 12.3k | — | can1357 |
-| [Open Cowork](https://github.com/OpenCoworkAI/open-cowork) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.6k | — | OpenCoworkAI |
-| [Open Design](https://github.com/nexu-io/open-design) | Apache-2.0 | TypeScript | beta | — | 4/5 | landmark | 64.4k | — | nexu-io |
-| [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | Apache-2.0 | Rust | beta | US | 4/5 | landmark | 63.9k | — | Open Interpreter Inc. |
-| [Open SWE](https://github.com/langchain-ai/open-swe) | MIT | Python | beta | US | 4/5 | — | — | — | LangChain Inc. |
-| [Openagent](https://github.com/the-open-agent/openagent) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 5.2k | — | the-open-agent |
-| [OpenAgents (openagents-org)](https://github.com/openagents-org/openagents) | Apache-2.0 | Python | beta | — | 4/5 | established | 3.8k | — | openagents-org community |
-| [OpenAgents (xlang)](https://github.com/xlang-ai/OpenAgents) | Apache-2.0 | Python | beta | HK | 4/5 | dormant | 4.8k | — | XLang Lab / HKU |
-| [OpenAI Agents (JavaScript)](https://github.com/openai/openai-agents-js) | MIT | TypeScript | ga | US | 3/5 | — | — | — | OpenAI |
-| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Apache-2.0 | Python | ga | US | 3/5 | established | 27.1k | — | OpenAI |
-| [Openbrowser](https://github.com/ntegrals/openbrowser) | MIT | TypeScript | ga | — | 2/5 | established | 9.5k | — | ntegrals |
-| [Open CLI](https://github.com/jackwener/OpenCLI) | Apache-2.0 | JavaScript | ga | — | 3/5 | established | 24.3k | — | jackwener |
-| [OpenCode (archived)](https://github.com/opencode-ai/opencode) | MIT | Go | ga | — | 5/5 | — | — | — | opencode-ai (archived) |
-| [Openfang](https://github.com/RightNow-AI/openfang) | Apache-2.0 | Rust | ga | — | 3/5 | emerging | 17.8k | — | RightNow-AI |
-| [OpenHands](https://github.com/OpenHands/OpenHands) | MIT | Python | ga | US | 4/5 | landmark | 76.9k | — | All Hands AI |
-| [Openinterpreter](https://github.com/openinterpreter/openinterpreter) | Apache-2.0 | Python | ga | — | 4/5 | landmark | 63.9k | — | openinterpreter |
-| [OpenManus](https://github.com/FoundationAgents/OpenManus) | MIT | Python | beta | CN | 4/5 | landmark | 56.5k | — | FoundationAgents community |
-| [Ouroboros](https://github.com/Q00/ouroboros) | MIT | Python | ga | — | 5/5 | emerging | 4.6k | — | Q00 |
-| [Page Agent](https://github.com/alibaba/page-agent) | MIT | TypeScript | ga | CN | 4/5 | emerging | 18.5k | — | alibaba |
-| [Plandex](https://github.com/plandex-ai/plandex) | MIT | Go | ga | — | 3/5 | canonical | 15.5k | — | plandex-ai |
-| [Planning With Files](https://github.com/OthmanAdi/planning-with-files) | MIT | Python | ga | — | 4/5 | established | 23.2k | — | OthmanAdi |
-| [PraisonAI](https://github.com/MervinPraison/PraisonAI) | MIT | Python | ga | MY | 5/5 | landmark | 8.1k | — | MervinPraison |
-| [Privategpt](https://github.com/zylon-ai/private-gpt) | Apache-2.0 | Python | ga | ES | 5/5 | — | — | — | Zylon |
-| [Py Xiaozhi](https://github.com/huangjunsen0406/py-xiaozhi) | MIT | Python | ga | CN | 3/5 | established | 3.4k | — | huangjunsen0406 |
-| [Pydantic AI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | — | 4/5 | established | 17.7k | — | pydantic |
-| [PydanticAI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | GB | 4/5 | established | 17.7k | — | Pydantic Services Inc. |
-| [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent) | Apache-2.0 | Python | ga | CN | 2/5 | — | — | — | Alibaba Qwen Team |
-| [R2R (Reason-to-Retrieve)](https://github.com/SciPhi-AI/R2R) | MIT | Python | ga | US | 5/5 | — | — | — | SciPhi AI |
-| [Raga AI Catalyst](https://github.com/raga-ai-hub/RagaAI-Catalyst) | Apache-2.0 | Python | ga | — | 3/5 | established | 16.2k | — | raga-ai-hub |
-| [RAGFlow](https://github.com/infiniflow/ragflow) | Apache-2.0 | Python | ga | CN | 5/5 | — | — | — | InfiniFlow |
-| [Ralph Claude Code](https://github.com/frankbria/ralph-claude-code) | MIT | Shell | ga | — | 0/5 | emerging | 9.3k | — | frankbria |
-| [RD-Agent (Research & Development Agent)](https://github.com/microsoft/RD-Agent) | MIT | Python | beta | US | 4/5 | landmark | 13.4k | — | Microsoft Research |
-| [Rivet](https://github.com/Ironclad/rivet) | MIT | TypeScript | ga | US | 4/5 | established | 4.6k | — | Ironclad Inc. |
-| [Row Bot](https://github.com/siddsachar/row-bot) | Apache-2.0 | Python | ga | — | 4/5 | emerging | 1.3k | — | siddsachar |
-| [Ruflo](https://github.com/ruvnet/ruflo) | MIT | TypeScript | ga | — | 3/5 | landmark | 59.3k | — | ruvnet |
-| [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | MIT | Python | ga | US | 4/5 | landmark | 28.1k | — | Microsoft |
-| [Serena](https://github.com/oraios/serena) | MIT | Python | ga | — | 4/5 | established | 25.3k | — | oraios |
-| [Sim](https://github.com/simstudioai/sim) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 28.8k | — | simstudioai |
-| [smolagents](https://github.com/huggingface/smolagents) | Apache-2.0 | Python | beta | US | 4/5 | established | 27.8k | — | Hugging Face |
-| [Solace Agent Mesh](https://github.com/SolaceLabs/solace-agent-mesh) | Apache-2.0 | Python | ga | — | 4/5 | established | 4.9k | — | SolaceLabs |
-| [Spring AI Alibaba](https://github.com/alibaba/spring-ai-alibaba) | Apache-2.0 | Java | ga | CN | 3/5 | established | 10.0k | — | alibaba |
-| [Squad](https://github.com/bradygaster/squad) | MIT | TypeScript | ga | — | 0/5 | emerging | 2.8k | — | bradygaster |
-| [Sre](https://github.com/SmythOS/sre) | MIT | TypeScript | ga | US | 3/5 | established | 1.3k | — | SmythOS |
-| [STORM](https://github.com/stanford-oval/storm) | MIT | Python | ga | US | 4/5 | canonical | 28.4k | — | Stanford OVAL |
-| [Strands Agents](https://github.com/strands-agents/sdk-python) | Apache-2.0 | Python | beta | US | 3/5 | established | 6.1k | — | Amazon Web Services |
-| [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) | MIT | Python | beta | IN | 4/5 | canonical | 17.6k | — | TransformerOptimus |
-| [Swarm (OpenAI)](https://github.com/openai/swarm) | MIT | Python | beta | US | 4/5 | established | 21.6k | — | OpenAI |
-| [Swarms](https://github.com/kyegomez/swarms) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 6.8k | — | kyegomez |
-| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | MIT | Python | ga | US | 4/5 | landmark | 19.5k | — | Princeton + Stanford |
-| [Symphony](https://github.com/openai/symphony) | Apache-2.0 | Elixir | beta | US | 3/5 | — | — | — | OpenAI |
-| [Tabularis](https://github.com/TabularisDB/tabularis) | Apache-2.0 | TypeScript | ga | — | 3/5 | emerging | 2.4k | — | TabularisDB |
-| [Takt](https://github.com/nrslib/takt) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.1k | — | nrslib |
-| [Tambo](https://github.com/tambo-ai/tambo) | MIT | TypeScript | beta | US | 4/5 | established | 11.2k | — | Tambo AI |
-| [Tarsier](https://github.com/reworkd/tarsier) | MIT | Python | beta | US | 4/5 | dormant | 1.8k | — | Reworkd AI |
-| [TaskWeaver](https://github.com/microsoft/TaskWeaver) | MIT | Python | beta | US | 4/5 | canonical | 6.2k | — | Microsoft Research |
-| [TextGrad](https://github.com/zou-group/textgrad) | MIT | Python | beta | US | 4/5 | established | 3.6k | — | Stanford ZouLab / James Zou Group |
-| [ToolBench / ToolLLM](https://github.com/OpenBMB/ToolBench) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 5.7k | — | OpenBMB / Tsinghua KEG |
-| [Tribe](https://github.com/StreetLamb/tribe) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.1k | — | StreetLamb |
-| [Trpc Agent Go](https://github.com/trpc-group/trpc-agent-go) | Apache-2.0 | Go | ga | CN | 3/5 | established | 1.4k | — | trpc-group |
-| [Turi X CUA](https://github.com/TurixAI/TuriX-CUA) | MIT | Python | ga | — | 3/5 | emerging | 3.1k | — | TurixAI |
-| [Tuui](https://github.com/AI-QL/tuui) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 1.1k | — | AI-QL |
-| [Txtai](https://github.com/neuml/txtai) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 12.7k | — | neuml |
-| [UFO/UFO3 Galaxy](https://github.com/microsoft/UFO) | MIT | Python | ga | US | 4/5 | landmark | 9.0k | — | Microsoft Research |
-| [UI TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | Apache-2.0 | TypeScript | ga | CN | 3/5 | landmark | 36.4k | — | bytedance |
-| [Unity MCP](https://github.com/CoplayDev/unity-mcp) | MIT | C# | ga | US | 3/5 | established | 10.6k | — | CoplayDev |
-| [Upsonic](https://github.com/upsonic/upsonic) | MIT | Python | beta | TR | 4/5 | landmark | 7.9k | — | Upsonic community |
-| [Valuecell](https://github.com/ValueCell-ai/valuecell) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 10.8k | — | ValueCell-ai |
-| [Verba](https://github.com/weaviate/Verba) | BSD-3-Clause | Python | ga | NL | 4/5 | — | — | — | Weaviate |
-| [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) | Apache-2.0 | Rust | ga | — | 4/5 | established | 27.0k | — | BloopAI |
-| [Vibe Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 2.3k | — | foryourhealth111-pixel |
-| [Vibe Trading](https://github.com/HKUDS/Vibe-Trading) | MIT | Python | ga | — | 3/5 | frontier | 12.1k | — | HKUDS |
-| [Vocode (core)](https://github.com/vocodedev/vocode-core) | MIT | Python | ga | US | 5/5 | — | — | — | Vocode |
-| [Voltagent](https://github.com/VoltAgent/voltagent) | MIT | TypeScript | ga | — | 3/5 | established | 9.6k | — | VoltAgent |
-| [Voyager](https://github.com/MineDojo/Voyager) | MIT | Python | beta | US | 4/5 | canonical | 7.0k | — | CMU + NVIDIA research |
-| [Wanwu](https://github.com/UnicomAI/wanwu) | Apache-2.0 | Go | ga | CN | 3/5 | established | 2.5k | — | UnicomAI |
-| [Web Ui](https://github.com/browser-use/web-ui) | MIT | Python | ga | — | 3/5 | established | 16.1k | — | browser-use |
-| [WebVoyager](https://github.com/MinorJerry/WebVoyager) | Apache-2.0 | Python | beta | CN | 4/5 | dormant | 1.1k | — | Hongliang He et al. (Zhejiang University / Tencent) |
-| [Webwright](https://github.com/microsoft/Webwright) | MIT | Python | beta | US | 4/5 | — | — | — | Microsoft Research |
-| [XAgent](https://github.com/OpenBMB/XAgent) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 8.5k | — | Tsinghua / OpenBMB |
-| [Xcode Build MCP](https://github.com/getsentry/XcodeBuildMCP) | MIT | TypeScript | ga | — | 3/5 | established | 5.9k | — | getsentry |
-| [Xiaozhi Esp32](https://github.com/78/xiaozhi-esp32) | MIT | C++ | ga | — | 3/5 | established | 27.3k | — | 78 |
-| [Yaicli](https://github.com/belingud/yaicli) | Apache-2.0 | Python | beta | — | 4/5 | frontier | 18 | — | belingud |
-| [Zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | Apache-2.0 | Rust | ga | — | 4/5 | landmark | 31.9k | — | zeroclaw-labs |
-| [Zeroshot](https://github.com/covibes/zeroshot) | MIT | JavaScript | ga | — | 3/5 | emerging | 1.5k | — | covibes |
-| [Zerostack](https://github.com/gi-dellav/zerostack) | GPL-3.0-only | Rust | ga | — | 4/5 | frontier | 1.3k | — | gi-dellav |
+| [Devika](https://github.com/stitionai/devika) | MIT | Python | beta | — | 4/5 | canonical | 19.5k | — | stitionai |
+| [Dive](https://github.com/OpenAgentPlatform/Dive) | MIT | TypeScript | ga | TW | 4/5 | established | 1.8k | +1.4 | OpenAgentPlatform |
+| [DocsGPT](https://github.com/arc53/DocsGPT) | MIT | Python | ga | GB | 5/5 | landmark | 18.0k | — | Arc53 |
+| [DSPy](https://github.com/stanfordnlp/dspy) | MIT | Python | ga | US | 4/5 | landmark | 35.6k | +269.6 | Stanford NLP |
+| [E2B](https://github.com/e2b-dev/E2B) | Apache-2.0 | Python | ga | CZ | 5/5 | landmark | 12.8k | — | E2B |
+| [ECC](https://github.com/affaan-m/ECC) | MIT | JavaScript | ga | — | 3/5 | landmark | 223.3k | +3793.3 | affaan-m |
+| [Edict](https://github.com/cft0808/edict) | MIT | Python | ga | — | 3/5 | emerging | 16.1k | +32.7 | cft0808 |
+| [Eidolon](https://github.com/eidolon-ai/eidolon) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 493 | +0.9 | Eidolon AI |
+| [Eko](https://github.com/FellouAI/eko) | MIT | TypeScript | ga | — | 3/5 | established | 4.9k | +3.2 | FellouAI |
+| [Eliza](https://github.com/elizaOS/eliza) | MIT | TypeScript | ga | — | 4/5 | established | 18.6k | +32.7 | elizaOS |
+| [Embabel Agent](https://github.com/embabel/embabel-agent) | Apache-2.0 | Kotlin | ga | — | 3/5 | established | 3.7k | +25.0 | embabel |
+| [Ever OS](https://github.com/EverMind-AI/EverOS) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 9.7k | +1057.3 | EverMind-AI |
+| [Fara](https://github.com/microsoft/fara) | MIT | Python | ga | US | 3/5 | emerging | 5.9k | +218.2 | microsoft |
+| [Fast Agent](https://github.com/evalstate/fast-agent) | Apache-2.0 | Python | ga | — | 4/5 | established | 3.8k | +9.6 | evalstate |
+| [FastAgency](https://github.com/ag2ai/fastagency) | Apache-2.0 | Python | beta | US | 4/5 | emerging | 541 | +0.5 | ag2ai community |
+| [Figma Context MCP](https://github.com/GLips/Figma-Context-MCP) | MIT | TypeScript | ga | — | 3/5 | established | 15.3k | +70.0 | GLips |
+| [Fin Sight AI](https://github.com/juanjuandog/FinSight-AI) | MIT | Java | ga | — | 3/5 | frontier | 1.1k | -21.8 | juanjuandog |
+| [Fireagent](https://github.com/buptlg/fireagent) | MIT | Python | beta | — | 3/5 | frontier | 76 | -13.2 | buptlg |
+| [Firecrawl MCP Server](https://github.com/firecrawl/firecrawl-mcp-server) | MIT | JavaScript | ga | — | 3/5 | established | 6.7k | +79.5 | Firecrawl |
+| [Flowise](https://github.com/FlowiseAI/Flowise) | Apache-2.0 | TypeScript | ga | US | 5/5 | landmark | 54.1k | +252.3 | FlowiseAI |
+| [Forge](https://github.com/antoinezambelli/forge) | MIT | Python | ga | — | 3/5 | emerging | 2.1k | +36.8 | antoinezambelli |
+| [Gemini Cli](https://github.com/google-gemini/gemini-cli) | Apache-2.0 | TypeScript | ga | US | 0/5 | landmark | 105.6k | +180.5 | google-gemini |
+| [Generative Agents (Stanford)](https://github.com/joonspk-research/generative_agents) | Apache-2.0 | Python | beta | US | 4/5 | canonical | 21.7k | +61.8 | Joon Sung Park et al. (Stanford) |
+| [Generic Agent](https://github.com/lsdefine/GenericAgent) | MIT | Python | ga | — | 3/5 | emerging | 13.2k | +143.6 | lsdefine |
+| [Ghidra MCP](https://github.com/bethington/ghidra-mcp) | Apache-2.0 | Java | ga | — | 3/5 | emerging | 2.6k | +98.2 | bethington |
+| [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) | Apache-2.0 | Python | beta | US | 2/5 | established | 20.3k | +107.3 | Google |
+| [Google Workspace MCP](https://github.com/taylorwilsdon/google_workspace_mcp) | MIT | Python | ga | — | 4/5 | established | 2.8k | +42.3 | taylorwilsdon |
+| [Goose](https://github.com/aaif-goose/goose) | Apache-2.0 | Rust | ga | US | 4/5 | landmark | 50.4k | +526.8 | aaif-goose |
+| [Gorilla LLM](https://github.com/gorilla-llm/gorilla) | Apache-2.0 | Python | ga | US | 4/5 | dormant | 3 | +0.0 | Shishir G. Patil et al. (UC Berkeley Sky Computing) |
+| [GPT Researcher](https://github.com/assafelovic/gpt-researcher) | MIT | Python | ga | IL | 4/5 | landmark | 28.0k | +124.5 | assafelovic |
+| [Gptme](https://github.com/gptme/gptme) | MIT | Python | ga | — | 4/5 | established | 4.3k | +5.9 | gptme |
+| [Microsoft GraphRAG](https://github.com/microsoft/graphrag) | MIT | Python | ga | US | 4/5 | landmark | 34.1k | — | Microsoft Research |
+| [Griptape](https://github.com/griptape-ai/griptape) | Apache-2.0 | Python | ga | US | 4/5 | established | 2.5k | +3.2 | Griptape AI (Foundry) |
+| [Harness Sdk](https://github.com/strands-agents/harness-sdk) | Apache-2.0 | Python | ga | US | 4/5 | established | 6.3k | +94.5 | strands-agents |
+| [Haystack](https://github.com/deepset-ai/haystack) | Apache-2.0 | Python | ga | DE | 4/5 | landmark | 25.8k | +96.8 | deepset |
+| [Headroom](https://github.com/chopratejas/headroom) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 53.5k | +12363.7 | chopratejas |
+| [Helmor](https://github.com/dohooo/helmor) | Apache-2.0 | TypeScript | ga | — | 3/5 | frontier | 1.3k | +12.3 | dohooo |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) | MIT | Python | ga | US | 3/5 | landmark | 205.4k | +5726.2 | NousResearch |
+| [Hermes Webui](https://github.com/nesquena/hermes-webui) | MIT | Python | ga | — | 3/5 | emerging | 15.2k | +357.3 | nesquena |
+| [Hexstrike AI](https://github.com/0x4m4/hexstrike-ai) | MIT | Python | ga | — | 3/5 | emerging | 10.0k | +207.7 | 0x4m4 |
+| [Hindsight](https://github.com/vectorize-io/hindsight) | MIT | Python | ga | — | 3/5 | emerging | 17.8k | +671.9 | vectorize-io |
+| [Hive](https://github.com/aden-hive/hive) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 10.6k | +37.7 | aden-hive |
+| [Holmesgpt](https://github.com/HolmesGPT/holmesgpt) | Apache-2.0 | Python | ga | — | 4/5 | established | 2.7k | +58.2 | HolmesGPT |
+| [HuggingGPT / JARVIS](https://github.com/microsoft/JARVIS) | MIT | Python | beta | CN | 5/5 | canonical | 25.0k | +64.6 | Microsoft Research Asia |
+| [Ida Pro MCP](https://github.com/mrexodia/ida-pro-mcp) | MIT | Python | ga | — | 3/5 | established | 9.8k | +180.9 | mrexodia |
+| [Ii Agent](https://github.com/Intelligent-Internet/ii-agent) | Apache-2.0 | Python | ga | — | 3/5 | established | 3.4k | +1.4 | Intelligent-Internet |
+| [Ins Forge](https://github.com/InsForge/InsForge) | Apache-2.0 | TypeScript | ga | — | 3/5 | emerging | 12.0k | +124.5 | InsForge |
+| [Intentkit](https://github.com/crestalnetwork/intentkit) | MIT | Python | ga | — | 3/5 | established | 6.5k | +1.8 | crestalnetwork |
+| [iX — Autonomous GPT-4 Agent Platform](https://github.com/kreneskyp/ix) | MIT | Python | beta | US | 4/5 | established | 1.0k | +0.9 | Peter Krenesky |
+| [Jcode](https://github.com/1jehuang/jcode) | MIT | Rust | ga | — | 3/5 | emerging | 7.9k | +378.6 | 1jehuang |
+| [Jido](https://github.com/agentjido/jido) | Apache-2.0 | Elixir | ga | — | 3/5 | established | 1.8k | +5.0 | agentjido |
+| [Julep](https://github.com/julep-ai/julep) | Apache-2.0 | Python | beta | IN | 4/5 | established | 6.6k | -1.8 | Julep AI |
+| [Kaiban JS](https://github.com/kaiban-ai/KaibanJS) | MIT | TypeScript | ga | — | 3/5 | established | 1.5k | +3.6 | kaiban-ai |
+| [Khoj](https://github.com/khoj-ai/khoj) | AGPL-3.0 | Python | ga | US | 5/5 | landmark | 35.4k | — | Khoj AI |
+| [Klavis](https://github.com/Klavis-AI/klavis) | Apache-2.0 | Python | ga | — | 3/5 | established | 5.8k | +6.4 | Klavis-AI |
+| [Kuzu](https://github.com/kuzudb/kuzu) | MIT | C++ | ga | CA | 5/5 | frontier | 4.0k | — | KuzuDB (archived) |
+| [Lamda](https://github.com/firerpa/lamda) | MIT | Python | ga | — | 3/5 | landmark | 7.8k | +6.8 | firerpa |
+| [LangChain](https://github.com/langchain-ai/langchain) | MIT | Python | ga | US | 4/5 | landmark | 140.5k | +574.6 | LangChain Inc |
+| [Langflow](https://github.com/langflow-ai/langflow) | MIT | Python | ga | US | 4/5 | landmark | 150.2k | +255.0 | DataStax |
+| [LangGraph](https://github.com/langchain-ai/langgraph) | MIT | Python | ga | US | 4/5 | landmark | 36.0k | +615.0 | LangChain Inc. |
+| [Langroid](https://github.com/langroid/langroid) | MIT | Python | ga | — | 4/5 | established | 4.0k | +4.5 | langroid |
+| [Lean Ctx](https://github.com/yvgude/lean-ctx) | Apache-2.0 | Rust | ga | — | 4/5 | emerging | 3.0k | +143.2 | yvgude |
+| [Letta](https://github.com/letta-ai/letta) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 23.6k | +116.8 | Letta AI |
+| [Libre Chat](https://github.com/danny-avila/LibreChat) | MIT | TypeScript | ga | — | 4/5 | landmark | 40.0k | +412.8 | danny-avila |
+| [Light Agent](https://github.com/wanxingai/LightAgent) | Apache-2.0 | Python | ga | CN | 4/5 | established | 1.2k | +11.8 | wanxingai |
+| [LightRAG](https://github.com/HKUDS/LightRAG) | MIT | Python | beta | HK | 5/5 | landmark | 37.1k | — | HKU Data Intelligence Lab |
+| [Linkedin MCP Server](https://github.com/stickerdaniel/linkedin-mcp-server) | Apache-2.0 | Python | ga | — | 3/5 | established | 2.6k | +97.3 | stickerdaniel |
+| [LlamaIndex Agents](https://github.com/run-llama/llama_index) | MIT | Python | ga | US | 4/5 | landmark | 50.5k | +173.2 | LlamaIndex (Run-LLaMA Inc.) |
+| [LLMCompiler](https://github.com/SqueezeAILab/LLMCompiler) | MIT | Python | beta | US | 4/5 | dormant | 1.9k | +2.3 | Sehoon Kim et al. (UC Berkeley SqueezeAI Lab) |
+| [Lotti](https://github.com/matthiasn/lotti) | GPL-3.0-only | Dart | ga | — | 3/5 | established | 1.1k | +3.6 | matthiasn |
+| [Mai Bot](https://github.com/Mai-with-u/MaiBot) | GPL-3.0-only | Python | ga | — | 3/5 | established | 5.2k | +42.7 | Mai-with-u |
+| [Markdownify MCP](https://github.com/zcaceres/markdownify-mcp) | MIT | TypeScript | ga | — | 5/5 | established | 2.8k | — | Zach Caceres |
+| [Mastra](https://github.com/mastra-ai/mastra) | Apache-2.0 | TypeScript | beta | US | 4/5 | established | 25.6k | +240.5 | Mastra AI |
+| [MCP Agent](https://github.com/lastmile-ai/mcp-agent) | Apache-2.0 | Python | ga | US | 3/5 | established | 8.4k | +10.5 | lastmile-ai |
+| [MCP Context Forge](https://github.com/IBM/mcp-context-forge) | Apache-2.0 | Python | ga | US | 4/5 | established | 4.0k | +42.7 | IBM |
+| [MCP Playwright](https://github.com/executeautomation/mcp-playwright) | MIT | TypeScript | ga | — | 5/5 | canonical | 5.6k | — | ExecuteAutomation |
+| [MCP Use](https://github.com/mcp-use/mcp-use) | MIT | TypeScript | ga | — | 3/5 | established | 10.2k | +30.5 | mcp-use |
+| [Mcphub.nvim](https://github.com/ravitemer/mcphub.nvim) | MIT | Lua | ga | — | 3/5 | established | 1.8k | +0.5 | ravitemer |
+| [Mem0 (formerly Embedchain)](https://github.com/mem0ai/mem0) | Apache-2.0 | Python | ga | US | 4/5 | landmark | 59.7k | +537.3 | Mem0 AI (YC S24) |
+| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | MIT | Python | ga | CN | 4/5 | landmark | 69.1k | +150.5 | FoundationAgents (ex-DeepWisdom) |
+| [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) | MIT | C# | beta | US | 4/5 | established | 11.7k | +197.9 | Microsoft |
+| [Microsoft MCP Catalog](https://github.com/microsoft/mcp) | MIT | C# | ga | US | 4/5 | established | 3.4k | — | Microsoft |
+| [mini-SWE-agent](https://github.com/SWE-agent/mini-swe-agent) | MIT | Python | ga | US | 4/5 | established | 5.5k | +154.1 | Princeton + Stanford |
+| [Mirascope](https://github.com/Mirascope/mirascope) | MIT | Python | ga | US | 4/5 | established | 1.5k | +6.8 | Mirascope Inc. |
+| [Moai Adk](https://github.com/modu-ai/moai-adk) | Apache-2.0 | Go | ga | KR | 0/5 | emerging | 1.1k | +17.7 | modu-ai |
+| [Mobile MCP](https://github.com/mobile-next/mobile-mcp) | Apache-2.0 | TypeScript | beta | — | 5/5 | established | 5.3k | — | Mobile Next |
+| [N8n MCP](https://github.com/czlonkowski/n8n-mcp) | MIT | TypeScript | ga | — | 3/5 | established | 22.0k | +135.0 | czlonkowski |
+| [Nanobot](https://github.com/HKUDS/nanobot) | MIT | Python | ga | HK | 3/5 | landmark | 44.9k | +312.3 | HKUDS |
+| [Nanobrowser](https://github.com/nanobrowser/nanobrowser) | Apache-2.0 | TypeScript | ga | — | 3/5 | canonical | 13.4k | +41.8 | nanobrowser |
+| [Neo](https://github.com/neomjs/neo) | MIT | JavaScript | ga | — | 3/5 | established | 3.2k | +7.3 | neomjs |
+| [Nexent](https://github.com/ModelEngine-Group/nexent) | MIT | Python | ga | — | 3/5 | established | 5.4k | +145.5 | ModelEngine-Group |
+| [OGX (formerly Llama Stack)](https://github.com/ogx-ai/ogx) | MIT | Python | beta | — | 5/5 | landmark | 8.4k | — | OGX-AI (community fork) |
+| [Oh My Claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | MIT | TypeScript | ga | — | 0/5 | landmark | 37.1k | +363.2 | Yeachan-Heo |
+| [Oh My Pi](https://github.com/can1357/oh-my-pi) | MIT | TypeScript | ga | — | 3/5 | emerging | 15.1k | +1283.2 | can1357 |
+| [Open Cowork](https://github.com/OpenCoworkAI/open-cowork) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.7k | +53.2 | OpenCoworkAI |
+| [Open Design](https://github.com/nexu-io/open-design) | Apache-2.0 | TypeScript | beta | — | 4/5 | landmark | 72.7k | +3776.6 | nexu-io |
+| [Open Interpreter](https://github.com/openinterpreter/openinterpreter) | Apache-2.0 | Rust | beta | US | 4/5 | landmark | 64.2k | +103.6 | Open Interpreter Inc. |
+| [Open SWE](https://github.com/langchain-ai/open-swe) | MIT | Python | beta | US | 4/5 | established | 10.1k | — | LangChain Inc. |
+| [Openagent](https://github.com/the-open-agent/openagent) | Apache-2.0 | Go | ga | — | 3/5 | landmark | 5.3k | +35.9 | the-open-agent |
+| [OpenAgents (openagents-org)](https://github.com/openagents-org/openagents) | Apache-2.0 | Python | beta | — | 4/5 | established | 3.8k | +20.5 | openagents-org community |
+| [OpenAgents (xlang)](https://github.com/xlang-ai/OpenAgents) | Apache-2.0 | Python | beta | HK | 4/5 | dormant | 4.8k | +1.8 | XLang Lab / HKU |
+| [OpenAI Agents (JavaScript)](https://github.com/openai/openai-agents-js) | MIT | TypeScript | ga | US | 3/5 | established | 3.3k | — | OpenAI |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Apache-2.0 | Python | ga | US | 3/5 | established | 27.5k | +169.6 | OpenAI |
+| [Openbrowser](https://github.com/ntegrals/openbrowser) | MIT | TypeScript | ga | — | 2/5 | established | 9.5k | +3.6 | ntegrals |
+| [Open CLI](https://github.com/jackwener/OpenCLI) | Apache-2.0 | JavaScript | ga | — | 3/5 | established | 25.6k | +597.3 | jackwener |
+| [OpenCode (archived)](https://github.com/opencode-ai/opencode) | MIT | Go | ga | — | 5/5 | canonical | 13.1k | — | opencode-ai (archived) |
+| [Openfang](https://github.com/RightNow-AI/openfang) | Apache-2.0 | Rust | ga | — | 3/5 | emerging | 17.9k | +57.7 | RightNow-AI |
+| [OpenHands](https://github.com/OpenHands/OpenHands) | MIT | Python | ga | US | 4/5 | landmark | 78.7k | +798.2 | All Hands AI |
+| [Openinterpreter](https://github.com/openinterpreter/openinterpreter) | Apache-2.0 | Python | ga | — | 4/5 | landmark | 64.2k | +103.6 | openinterpreter |
+| [OpenManus](https://github.com/FoundationAgents/OpenManus) | MIT | Python | beta | CN | 4/5 | landmark | 56.7k | +68.6 | FoundationAgents community |
+| [Ouroboros](https://github.com/Q00/ouroboros) | MIT | Python | ga | — | 5/5 | emerging | 4.7k | +81.4 | Q00 |
+| [Page Agent](https://github.com/alibaba/page-agent) | MIT | TypeScript | ga | CN | 4/5 | established | 20.6k | +921.4 | alibaba |
+| [Plandex](https://github.com/plandex-ai/plandex) | MIT | Go | ga | — | 3/5 | canonical | 15.5k | +15.9 | plandex-ai |
+| [Planning With Files](https://github.com/OthmanAdi/planning-with-files) | MIT | Python | ga | — | 4/5 | established | 24.1k | +394.1 | OthmanAdi |
+| [PraisonAI](https://github.com/MervinPraison/PraisonAI) | MIT | Python | ga | MY | 5/5 | landmark | 8.3k | +87.3 | MervinPraison |
+| [Privategpt](https://github.com/zylon-ai/private-gpt) | Apache-2.0 | Python | ga | ES | 5/5 | landmark | 57.3k | — | Zylon |
+| [Py Xiaozhi](https://github.com/huangjunsen0406/py-xiaozhi) | MIT | Python | ga | CN | 3/5 | established | 3.4k | +9.6 | huangjunsen0406 |
+| [Pydantic AI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | — | 4/5 | landmark | 18.1k | +145.5 | pydantic |
+| [PydanticAI](https://github.com/pydantic/pydantic-ai) | MIT | Python | ga | GB | 4/5 | landmark | 18.1k | +145.5 | Pydantic Services Inc. |
+| [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent) | Apache-2.0 | Python | ga | CN | 2/5 | established | 16.6k | — | Alibaba Qwen Team |
+| [R2R (Reason-to-Retrieve)](https://github.com/SciPhi-AI/R2R) | MIT | Python | ga | US | 5/5 | canonical | 7.9k | — | SciPhi AI |
+| [Raga AI Catalyst](https://github.com/raga-ai-hub/RagaAI-Catalyst) | Apache-2.0 | Python | ga | — | 3/5 | established | 16.1k | -5.9 | raga-ai-hub |
+| [RAGFlow](https://github.com/infiniflow/ragflow) | Apache-2.0 | Python | ga | CN | 5/5 | landmark | 83.8k | — | InfiniFlow |
+| [Ralph Claude Code](https://github.com/frankbria/ralph-claude-code) | MIT | Shell | ga | — | 0/5 | emerging | 9.5k | +75.5 | frankbria |
+| [RD-Agent (Research & Development Agent)](https://github.com/microsoft/RD-Agent) | MIT | Python | beta | US | 4/5 | landmark | 13.7k | +123.6 | Microsoft Research |
+| [Rivet](https://github.com/Ironclad/rivet) | MIT | TypeScript | ga | US | 4/5 | established | 4.6k | +8.6 | Ironclad Inc. |
+| [Row Bot](https://github.com/siddsachar/row-bot) | Apache-2.0 | Python | ga | — | 4/5 | emerging | 1.3k | +18.6 | siddsachar |
+| [Ruflo](https://github.com/ruvnet/ruflo) | MIT | TypeScript | ga | — | 3/5 | landmark | 62.0k | +1211.0 | ruvnet |
+| [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | MIT | Python | ga | US | 4/5 | landmark | 28.2k | +46.6 | Microsoft |
+| [Serena](https://github.com/oraios/serena) | MIT | Python | ga | — | 4/5 | established | 25.9k | +256.8 | oraios |
+| [Sim](https://github.com/simstudioai/sim) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 28.9k | +60.9 | simstudioai |
+| [smolagents](https://github.com/huggingface/smolagents) | Apache-2.0 | Python | beta | US | 4/5 | established | 28.1k | +108.2 | Hugging Face |
+| [Solace Agent Mesh](https://github.com/SolaceLabs/solace-agent-mesh) | Apache-2.0 | Python | ga | — | 4/5 | established | 5.0k | +35.5 | SolaceLabs |
+| [Spring AI Alibaba](https://github.com/alibaba/spring-ai-alibaba) | Apache-2.0 | Java | ga | CN | 3/5 | established | 10.2k | +71.4 | alibaba |
+| [Squad](https://github.com/bradygaster/squad) | MIT | TypeScript | ga | — | 0/5 | emerging | 2.9k | +32.7 | bradygaster |
+| [Sre](https://github.com/SmythOS/sre) | MIT | TypeScript | ga | US | 3/5 | established | 1.3k | +1.8 | SmythOS |
+| [STORM](https://github.com/stanford-oval/storm) | MIT | Python | ga | US | 4/5 | canonical | 29.6k | +557.3 | Stanford OVAL |
+| [Strands Agents](https://github.com/strands-agents/sdk-python) | Apache-2.0 | Python | beta | US | 3/5 | established | 6.3k | +94.5 | Amazon Web Services |
+| [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) | MIT | Python | beta | IN | 4/5 | canonical | 17.6k | +12.3 | TransformerOptimus |
+| [Swarm (OpenAI)](https://github.com/openai/swarm) | MIT | Python | beta | US | 4/5 | established | 21.7k | +56.4 | OpenAI |
+| [Swarms](https://github.com/kyegomez/swarms) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 6.9k | +25.0 | kyegomez |
+| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | MIT | Python | ga | US | 4/5 | landmark | 19.7k | +73.2 | Princeton + Stanford |
+| [Symphony](https://github.com/openai/symphony) | Apache-2.0 | Elixir | beta | US | 3/5 | established | 25.7k | — | OpenAI |
+| [Tabularis](https://github.com/TabularisDB/tabularis) | Apache-2.0 | TypeScript | ga | — | 3/5 | emerging | 3.5k | +471.4 | TabularisDB |
+| [Takt](https://github.com/nrslib/takt) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.2k | +29.1 | nrslib |
+| [Tambo](https://github.com/tambo-ai/tambo) | MIT | TypeScript | beta | US | 4/5 | landmark | 11.2k | -1.4 | Tambo AI |
+| [Tarsier](https://github.com/reworkd/tarsier) | MIT | Python | beta | US | 4/5 | dormant | 1.8k | +0.0 | Reworkd AI |
+| [TaskWeaver](https://github.com/microsoft/TaskWeaver) | MIT | Python | beta | US | 4/5 | canonical | 6.2k | +2.8 | Microsoft Research |
+| [TextGrad](https://github.com/zou-group/textgrad) | MIT | Python | beta | US | 4/5 | established | 3.6k | +12.4 | Stanford ZouLab / James Zou Group |
+| [ToolBench / ToolLLM](https://github.com/OpenBMB/ToolBench) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 5.7k | +5.5 | OpenBMB / Tsinghua KEG |
+| [Tribe](https://github.com/StreetLamb/tribe) | MIT | TypeScript | ga | — | 3/5 | emerging | 1.1k | +1.4 | StreetLamb |
+| [Trpc Agent Go](https://github.com/trpc-group/trpc-agent-go) | Apache-2.0 | Go | ga | CN | 3/5 | established | 1.4k | +34.5 | trpc-group |
+| [Turi X CUA](https://github.com/TurixAI/TuriX-CUA) | MIT | Python | ga | — | 3/5 | emerging | 3.1k | +12.3 | TurixAI |
+| [Tuui](https://github.com/AI-QL/tuui) | Apache-2.0 | TypeScript | ga | — | 3/5 | established | 1.2k | +1.8 | AI-QL |
+| [Txtai](https://github.com/neuml/txtai) | Apache-2.0 | Python | ga | — | 3/5 | landmark | 12.7k | +14.1 | neuml |
+| [UFO/UFO3 Galaxy](https://github.com/microsoft/UFO) | MIT | Python | ga | US | 4/5 | landmark | 9.2k | +80.7 | Microsoft Research |
+| [UI TARS Desktop](https://github.com/bytedance/UI-TARS-desktop) | Apache-2.0 | TypeScript | ga | CN | 3/5 | landmark | 37.4k | +461.8 | bytedance |
+| [Unity MCP](https://github.com/CoplayDev/unity-mcp) | MIT | C# | ga | US | 3/5 | established | 11.1k | +232.7 | CoplayDev |
+| [Upsonic](https://github.com/upsonic/upsonic) | MIT | Python | beta | TR | 4/5 | landmark | 7.9k | +10.5 | Upsonic community |
+| [Valuecell](https://github.com/ValueCell-ai/valuecell) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 10.9k | +32.3 | ValueCell-ai |
+| [Verba](https://github.com/weaviate/Verba) | BSD-3-Clause | Python | ga | NL | 4/5 | canonical | 7.7k | — | Weaviate |
+| [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) | Apache-2.0 | Rust | ga | — | 4/5 | established | 27.2k | +100.5 | BloopAI |
+| [Vibe Skills](https://github.com/foryourhealth111-pixel/Vibe-Skills) | Apache-2.0 | Python | ga | — | 3/5 | emerging | 2.4k | +29.6 | foryourhealth111-pixel |
+| [Vibe Trading](https://github.com/HKUDS/Vibe-Trading) | MIT | Python | ga | — | 3/5 | frontier | 14.8k | +1234.2 | HKUDS |
+| [Vocode (core)](https://github.com/vocodedev/vocode-core) | MIT | Python | ga | US | 5/5 | dormant | 3.8k | — | Vocode |
+| [Voltagent](https://github.com/VoltAgent/voltagent) | MIT | TypeScript | ga | — | 3/5 | established | 9.8k | +117.3 | VoltAgent |
+| [Voyager](https://github.com/MineDojo/Voyager) | MIT | Python | beta | US | 4/5 | canonical | 7.0k | +17.3 | CMU + NVIDIA research |
+| [Wanwu](https://github.com/UnicomAI/wanwu) | Apache-2.0 | Go | ga | CN | 3/5 | established | 2.5k | +7.3 | UnicomAI |
+| [Web Ui](https://github.com/browser-use/web-ui) | MIT | Python | ga | — | 3/5 | established | 16.1k | +36.8 | browser-use |
+| [WebVoyager](https://github.com/MinorJerry/WebVoyager) | Apache-2.0 | Python | beta | CN | 4/5 | dormant | 1.1k | +0.0 | Hongliang He et al. (Zhejiang University / Tencent) |
+| [Webwright](https://github.com/microsoft/Webwright) | MIT | Python | beta | US | 4/5 | frontier | 5.7k | — | Microsoft Research |
+| [XAgent](https://github.com/OpenBMB/XAgent) | Apache-2.0 | Python | beta | CN | 4/5 | canonical | 8.5k | -2.3 | Tsinghua / OpenBMB |
+| [Xcode Build MCP](https://github.com/getsentry/XcodeBuildMCP) | MIT | TypeScript | ga | — | 3/5 | established | 6.0k | +45.0 | getsentry |
+| [Xiaozhi Esp32](https://github.com/78/xiaozhi-esp32) | MIT | C++ | ga | — | 3/5 | established | 27.7k | +185.9 | 78 |
+| [Yaicli](https://github.com/belingud/yaicli) | Apache-2.0 | Python | beta | — | 4/5 | frontier | 18 | +0.0 | belingud |
+| [Zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | Apache-2.0 | Rust | ga | — | 4/5 | landmark | 32.1k | +86.8 | zeroclaw-labs |
+| [Zeroshot](https://github.com/covibes/zeroshot) | MIT | JavaScript | ga | — | 3/5 | emerging | 1.6k | +35.9 | covibes |
+| [Zerostack](https://github.com/gi-dellav/zerostack) | GPL-3.0-only | Rust | ga | — | 4/5 | frontier | 1.4k | +46.8 | gi-dellav |
 
 _Tier and ★/wk (4-week star velocity) are computed from `registry/_metadata/_tiers.json` + `_velocity.json`; see `scripts/compute_tier.py` and `scripts/compute_velocity.py` for methodology. Generated from `registry/agent/*.yaml`. Run `python scripts/build_matrices.py` to refresh._
 

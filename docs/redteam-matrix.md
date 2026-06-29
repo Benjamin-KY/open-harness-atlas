@@ -6,115 +6,115 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 
 | Entry | License | Lang | Maturity | Origin | Model-agnostic | Tier | Stars | ★/wk (4w) | Maintainer |
 |---|---|---|---|---|---|---|---:|---:|---|
-| [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) | MIT | Python | ga | — | 3/5 | canonical | 6.0k | — | Trusted-AI |
-| [Aero Mind Paper](https://github.com/3odat/AeroMind-Paper) | MIT | TeX | beta | — | 3/5 | frontier | 0 | — | 3odat |
-| [Agent-Attack (Multimodal)](https://github.com/ChenWu98/agent-attack) | MIT | Python | beta | US | 5/5 | frontier | 137 | — | Chen Henry Wu et al. (CMU) |
-| [Agent Audit](https://github.com/HeadyZhang/agent-audit) | MIT | Python | beta | CN | 4/5 | — | — | — | HeadyZhang |
-| [Agent Security Scanner MCP](https://github.com/sinewaveai/agent-security-scanner-mcp) | MIT | JavaScript | beta | — | 4/5 | emerging | 110 | — | sinewaveai |
-| [Agent Semantic Resistance](https://github.com/rexcoleman/agent-semantic-resistance) | MIT | Python | beta | — | 0/5 | frontier | 0 | — | rexcoleman |
-| [AgentDojo](https://github.com/ethz-spylab/agentdojo) | MIT | Python | ga | CH | 5/5 | emerging | 619 | — | ETH Zürich SPY Lab |
-| [Agentic Radar](https://github.com/splx-ai/agentic-radar) | Apache-2.0 | Python | beta | SI | 5/5 | emerging | 979 | — | SPLX AI |
-| [AI Infra Guard](https://github.com/Tencent/AI-Infra-Guard) | Apache-2.0 | Python | ga | CN | 3/5 | established | 3.9k | — | Tencent |
-| [AI Red Teaming Playground Labs](https://github.com/microsoft/AI-Red-Teaming-Playground-Labs) | MIT | TypeScript | ga | US | 3/5 | established | 2.0k | — | microsoft |
-| [AI Seclists](https://github.com/AUTHENSOR/ai-seclists) | MIT | HTML | beta | — | 3/5 | frontier | 0 | — | AUTHENSOR |
-| [Aigoat](https://github.com/AISecurityConsortium/AIGoat) | Apache-2.0 | JavaScript | beta | — | 3/5 | frontier | 61 | — | AISecurityConsortium |
-| [Anamorpher](https://github.com/trailofbits/anamorpher) | Apache-2.0 | Python | ga | US | 5/5 | — | — | — | Trail of Bits |
-| [Anvil](https://github.com/Ganglet/Anvil) | MIT | Python | beta | — | 1/5 | frontier | 0 | — | Ganglet |
-| [Api Relay Audit](https://github.com/toby-bridges/api-relay-audit) | AGPL-3.0 | Python | beta | — | 4/5 | — | — | — | toby-bridges |
-| [Augustus](https://github.com/praetorian-inc/augustus) | Apache-2.0 | Go | ga | — | 4/5 | emerging | 238 | — | praetorian-inc |
-| [AutoDAN-Turbo](https://github.com/SaFo-Lab/AutoDAN-Turbo) | MIT | Python | beta | US | 4/5 | emerging | 371 | — | SaFo-Lab / Chaowei Xiao (UW-Madison) |
-| [AutoDAN](https://github.com/SheltonLiu-N/AutoDAN) | MIT | Python | ga | US | 4/5 | frontier | 445 | — | Xiaogeng Liu et al. (UW-Madison) |
-| [Automated Adversial Testing Framework](https://github.com/A-Kuo/Automated-Adversial-Testing-Framework) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | A-Kuo |
-| [AutoPrompt (Intent-based Prompt Calibration)](https://github.com/Eladlev/AutoPrompt) | Apache-2.0 | Python | beta | IL | 5/5 | established | 3.0k | — | Elad Levi et al. |
-| [BackdoorLLM](https://github.com/bboylyg/BackdoorLLM) | MIT | Python | beta | CN | 4/5 | emerging | 308 | — | Yige Li et al. (NeurIPS 2025 paper) |
-| [BIPIA](https://github.com/microsoft/BIPIA) | MIT | Python | beta | US | 4/5 | dormant | 135 | — | Microsoft Research |
-| [Camel Prompt Injection](https://github.com/google-research/camel-prompt-injection) | Apache-2.0 | Jupyter Notebook | alpha | US | 4/5 | — | — | — | Google Research |
-| [Chat GPT Jailbreak Pro](https://github.com/Batlez/ChatGPT-Jailbreak-Pro) | MIT | JavaScript | beta | — | 0/5 | frontier | 179 | — | Batlez |
-| [CipherChat](https://github.com/RobustNLP/CipherChat) | MIT | Python | beta | CN | 4/5 | emerging | 628 | — | Youliang Yuan et al. (CUHK/Tencent AI Lab) |
-| [CleverHans](https://github.com/cleverhans-lab/cleverhans) | MIT | Python | ga | US | 4/5 | canonical | 6.4k | — | Google Brain / OpenAI / Penn State (original); community since |
-| [Cloak Cli](https://github.com/stabgan/cloak-cli) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | stabgan |
-| [Cryptex Oss](https://github.com/m4xx101/cryptex-oss) | MIT | TypeScript | beta | — | 4/5 | — | — | — | m4xx101 |
-| [DeepInception](https://github.com/tmlr-group/DeepInception) | MIT | Python | beta | CN | 4/5 | dormant | 175 | — | TMLR Group (multiple authors, PKU/Tsinghua) |
-| [Deepsec](https://github.com/vercel-labs/deepsec) | Apache-2.0 | TypeScript | beta | US | 4/5 | — | — | — | Vercel |
-| [Detecting Pretraining Data / Min-K% Prob](https://github.com/swj0419/detect-pretrain-code) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 242 | — | Weijia Shi et al. (UW / Princeton / Google) |
-| [Dvai](https://github.com/bb1nfosec/dvai) | MIT | TypeScript | beta | — | 1/5 | frontier | 5 | — | bb1nfosec |
-| [EasyEdit (Knowledge Editing / Poisoning Framework)](https://github.com/zjunlp/EasyEdit) | MIT | Python | ga | CN | 5/5 | established | 2.8k | — | zjunlp (Zhejiang University NLP Lab) |
-| [EasyJailbreak](https://github.com/EasyJailbreak/EasyJailbreak) | GPL-3.0 | Python | beta | CN | 5/5 | emerging | 865 | — | DAMO Academy / Alibaba |
-| [garak](https://github.com/NVIDIA/garak) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 8.1k | — | NVIDIA |
-| [Giskard](https://github.com/Giskard-AI/giskard-oss) | Apache-2.0 | Python | ga | FR | 4/5 | landmark | 5.4k | — | Giskard AI |
-| [GPTFuzz](https://github.com/sherdencooper/GPTFuzz) | MIT | Python | ga | US | 4/5 | emerging | 588 | — | Jiahao Yu et al. (Northwestern) |
-| [Hacx GPT Jailbreak Prompts](https://github.com/BlackTechX011/HacxGPT-Jailbreak-prompts) | MIT | Multiple | beta | — | 3/5 | emerging | 188 | — | BlackTechX011 |
-| [HarmBench](https://github.com/centerforaisafety/HarmBench) | MIT | Python | ga | US | 5/5 | dormant | 981 | — | Center for AI Safety |
-| [Hermes Katana](https://github.com/claudlos/hermes-katana) | MIT | Python | beta | — | 3/5 | frontier | 39 | — | claudlos |
-| [Imperio](https://github.com/HKU-TASR/Imperio) | MIT | Python | beta | HK | 3/5 | frontier | 44 | — | HKU-TASR |
-| [jailbreak-evaluation](https://github.com/controllability/jailbreak-evaluation) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 27 | — | PurSec Lab, Purdue University |
-| [JailbreakHub (In-The-Wild Jailbreaks)](https://github.com/verazuo/jailbreak_llms) | MIT | Python | beta | DE | 5/5 | frontier | 3.7k | — | Xinyue Shen et al. (CISPA / ACM CCS 2024) |
-| [Jailbreak Llms](https://github.com/verazuo/jailbreak_llms) | MIT | Jupyter Notebook | ga | — | 3/5 | frontier | 3.7k | — | verazuo |
-| [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) | MIT | Python | ga | US | 4/5 | frontier | 610 | — | Academic consortium (ETH, CMU, UPenn) |
-| [LLM Adaptive Attacks](https://github.com/tml-epfl/llm-adaptive-attacks) | MIT | Python | beta | CH | 4/5 | frontier | 387 | — | Andriushchenko, Croce, Flammarion (EPFL) |
-| [LLM Attacks (GCG)](https://github.com/llm-attacks/llm-attacks) | MIT | Python | ga | US | 4/5 | dormant | 4.7k | — | Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google) |
-| [LLM Attacks](https://github.com/AI-Security-Research-Group/LLM-Attacks) | GPL-3.0-only | Multiple | beta | — | 3/5 | frontier | 17 | — | AI-Security-Research-Group |
-| [LLM Backdoor](https://github.com/sshh12/llm_backdoor) | MIT | Python | alpha | — | 3/5 | emerging | 207 | — | sshh12 |
-| [LLM Jailbreak Taxonomy](https://github.com/zakky8/llm-jailbreak-taxonomy) | MIT | Jupyter Notebook | beta | — | 2/5 | frontier | 3 | — | zakky8 |
-| [LLM Jailbreaking Defense Library](https://github.com/YihanWang617/llm-jailbreaking-defense) | MIT | Python | beta | US | 5/5 | frontier | 61 | — | Yihan Wang, Zhouxing Shi, Andrew Bai (UCLA / UCSD) |
-| [LLM Jailbreaks](https://github.com/langgptai/LLM-Jailbreaks) | Apache-2.0 | Multiple | ga | — | 3/5 | frontier | 661 | — | langgptai |
-| [LLM Prompt Injection Tester](https://github.com/Azcerate/llm-prompt-injection-tester) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | Azcerate |
-| [LLM Watermark Robustness](https://github.com/rexcoleman/llm-watermark-robustness) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | rexcoleman |
-| [Llmmap](https://github.com/Hellsender01/LLMMap) | MIT | Python | beta | — | 4/5 | — | — | — | Hellsender01 |
-| [Luckypipewrench Pipelock](https://github.com/luckyPipewrench/pipelock) | Apache-2.0 | Go | beta | — | 4/5 | — | — | — | luckyPipewrench |
-| [Medusa](https://github.com/Pantheon-Security/medusa) | AGPL-3.0-only | Python | ga | — | 3/5 | emerging | 598 | — | Pantheon-Security |
-| [Memory Poisoning Persistence](https://github.com/rexcoleman/memory-poisoning-persistence) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | rexcoleman |
-| [MIMIR](https://github.com/iamgroot42/mimir) | MIT | Python | beta | US | 4/5 | frontier | 190 | — | Anshuman Suri et al. (UVA/UW) |
-| [MM Plan](https://github.com/yunbeizhang/MM-Plan) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 89 | — | yunbeizhang |
-| [ModelScan](https://github.com/protectai/modelscan) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 723 | — | Protect AI |
-| [nanoGCG](https://github.com/GraySwanAI/nanoGCG) | MIT | Python | ga | US | 4/5 | frontier | 336 | — | GraySwanAI |
-| [Open-Prompt-Injection](https://github.com/liu00222/Open-Prompt-Injection) | MIT | Python | ga | US | 4/5 | emerging | 458 | — | Yupei Liu et al. (Duke/Neil Gong Lab) |
-| [OpenAttack](https://github.com/thunlp/OpenAttack) | MIT | Python | beta | CN | 5/5 | dormant | 777 | — | THUNLP (Tsinghua NLP Lab) |
-| [Openclaw Skills Security](https://github.com/UseAI-pro/openclaw-skills-security) | MIT | Python | beta | — | 4/5 | frontier | 63 | — | UseAI-pro |
-| [OR-Bench](https://github.com/justincui03/or-bench) | Apache-2.0 | Python | ga | US | 5/5 | frontier | 28 | — | OR-Bench paper authors (UC Berkeley) |
-| [PAIR / JailbreakingLLMs](https://github.com/patrickrchao/JailbreakingLLMs) | MIT | Python | ga | US | 4/5 | emerging | 741 | — | Chao et al. (UPenn/CMU) |
-| [Parry Guard](https://github.com/vaporif/parry-guard) | MIT | Rust | beta | — | 3/5 | frontier | 43 | — | vaporif |
-| [PDF Prompt Injection Toolkit](https://github.com/zhihuiyuze/PDF-Prompt-Injection-Toolkit) | MIT | Python | beta | — | 3/5 | frontier | 53 | — | zhihuiyuze |
-| [PentestAgent](https://github.com/GH05TCREW/pentestagent) | MIT | Python | beta | — | 4/5 | — | — | — | GH05TCREW |
-| [PINT Benchmark](https://github.com/lakeraai/pint-benchmark) | MIT | Python | beta | CH | 4/5 | emerging | 189 | — | Lakera AI |
-| [Pipelock](https://github.com/luckyPipewrench/pipelock) | Apache-2.0 | Go | ga | — | 3/5 | emerging | 717 | — | luckyPipewrench |
-| [Plexiglass](https://github.com/safellama/plexiglass) | MIT | Python | alpha | US | 4/5 | emerging | 153 | — | SafeLLama |
-| [Praetorian Inc Augustus](https://github.com/praetorian-inc/augustus) | Apache-2.0 | Go | beta | US | 4/5 | — | — | — | Praetorian |
-| [Prompt Hacker Collections](https://github.com/yunwei37/prompt-hacker-collections) | MIT | Multiple | ga | — | 4/5 | frontier | 329 | — | yunwei37 |
-| [PromptInject](https://github.com/agencyenterprise/PromptInject) | MIT | Python | alpha | US | 4/5 | emerging | 498 | — | AgencyEnterprise |
-| [promptmap](https://github.com/utkusen/promptmap) | GPL-3.0 | Python | beta | TR | 4/5 | emerging | 1.2k | — | Utku Sen |
-| [Prompt Fuzzer (ps-fuzz)](https://github.com/prompt-security/ps-fuzz) | MIT | Python | beta | IL | 4/5 | emerging | 686 | — | Prompt Security |
-| [PurpleLlama / CyberSecEval](https://github.com/meta-llama/PurpleLlama) | MIT | Python | ga | US | 4/5 | established | 4.2k | — | Meta AI |
-| [PyRIT (Python Risk Identification Tool)](https://github.com/microsoft/PyRIT) | MIT | Python | ga | US | 5/5 | frontier | 63 | — | Microsoft (AI Red Team) |
-| [R-Judge](https://github.com/Lordog/R-Judge) | MIT | Python | beta | CN | 4/5 | emerging | 105 | — | SJTU / Tongxin Yuan et al. |
-| [RAG Security Scanner](https://github.com/olegnazarov/rag-security-scanner) | MIT | Python | beta | — | 3/5 | frontier | 70 | — | olegnazarov |
-| [Raguard](https://github.com/Carlos-Projects/RAGuard) | MIT | Python | beta | — | 3/5 | frontier | 0 | — | Carlos-Projects |
-| [RAIN](https://github.com/SafeAILab/RAIN) | BSD-2-Clause | Python | beta | CN | 5/5 | dormant | 98 | — | SafeAI Lab (Yuhui Li et al., PKU/Microsoft Research) |
-| [Red AI Range](https://github.com/ErdemOzgen/RedAiRange) | MIT | Jupyter Notebook | beta | — | 3/5 | frontier | 129 | — | ErdemOzgen |
-| [Redamon](https://github.com/samugit83/redamon) | MIT | Python | ga | — | 3/5 | emerging | 2.0k | — | samugit83 |
-| [Redforge AI](https://github.com/Aimer-zero/redforge-ai) | MIT | Python | beta | CN | 3/5 | frontier | 81 | — | Aimer-zero |
-| [Rejection Cascade](https://github.com/moscovium-mc/rejection-cascade) | MIT | JavaScript | beta | — | 0/5 | frontier | 2 | — | moscovium-mc |
-| [ReNeLLM](https://github.com/NJUNLP/ReNeLLM) | MIT | Python | beta | CN | 5/5 | frontier | 160 | — | NLP Lab, Nanjing University |
-| [Reverseclabs Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 4/5 | — | — | — | ReversecLabs |
-| [SafetyBench](https://github.com/thu-coai/SafetyBench) | MIT | Python | ga | CN | 4/5 | emerging | 290 | — | COAI Lab, Tsinghua University |
-| [SALAD-Bench](https://github.com/OpenSafetyLab/SALAD-BENCH) | Apache-2.0 | Python | ga | CN | 5/5 | frontier | 176 | — | OpenSafetyLab (Shanghai AI Lab) |
-| [Sandlock](https://github.com/multikernel/sandlock) | Apache-2.0 | Rust | beta | — | 4/5 | — | — | — | multikernel |
-| [Secureagentics Adrian](https://github.com/secureagentics/Adrian) | Apache-2.0 | Python | beta | — | 4/5 | — | — | — | Secureagentics |
-| [Secure MCP](https://github.com/makalin/SecureMCP) | MIT | Go | beta | — | 3/5 | frontier | 140 | — | makalin |
-| [Seojoonkim Prompt Guard](https://github.com/seojoonkim/prompt-guard) | MIT | Python | beta | — | 4/5 | — | — | — | seojoonkim |
-| [SORRY-Bench](https://github.com/SORRY-Bench/sorry-bench) | MIT | Python | ga | US | 5/5 | frontier | 83 | — | SORRY-Bench paper authors (UC Berkeley / Princeton / others) |
-| [Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 196 | — | ReversecLabs |
-| [Stealix](https://github.com/boschresearch/stealix) | AGPL-3.0-only | Python | beta | DE | 3/5 | frontier | 3 | — | boschresearch |
-| [StrongREJECT](https://github.com/dsbowen/strong_reject) | MIT | Python | beta | US | 5/5 | frontier | 140 | — | UC Berkeley (Dan Bowen et al.) |
-| [Superagent](https://github.com/superagent-ai/superagent) | MIT | TypeScript | ga | SE | 4/5 | — | — | — | Superagent |
-| [TAP - Tree of Attacks with Pruning](https://github.com/RICommunity/TAP) | MIT | Python | beta | US | 4/5 | dormant | 237 | — | Robust Intelligence Community |
-| [Tensor Trust](https://github.com/HumanCompatibleAI/tensor-trust) | BSD-2-Clause | Python | beta | US | 3/5 | frontier | 70 | — | HumanCompatibleAI |
-| [TextAttack](https://github.com/QData/TextAttack) | MIT | Python | ga | US | 5/5 | established | 3.4k | — | QData Lab (University of Virginia) |
-| [ToolEmu](https://github.com/ryoungj/ToolEmu) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 208 | — | NYU / Independent research (ICLR 2024) |
-| [WMDP - Weapons of Mass Destruction Proxy](https://github.com/centerforaisafety/wmdp) | MIT | Python | ga | US | 4/5 | frontier | 175 | — | Center for AI Safety |
-| [Wraith Challenges](https://github.com/gh0stshe11/wraith-challenges) | MIT | Python | beta | — | 3/5 | frontier | 1 | — | gh0stshe11 |
-| [Www Project LLM Verification Standard](https://github.com/OWASP/www-project-llm-verification-standard) | CC-BY-SA-4.0 | Multiple | beta | — | 3/5 | frontier | 56 | — | OWASP |
-| [Yaramint](https://github.com/deconvolute-labs/yaramint) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 1 | — | deconvolute-labs |
+| [Adversarial Robustness Toolbox](https://github.com/Trusted-AI/adversarial-robustness-toolbox) | MIT | Python | ga | — | 3/5 | canonical | 6.1k | +14.1 | Trusted-AI |
+| [Aero Mind Paper](https://github.com/3odat/AeroMind-Paper) | MIT | TeX | beta | — | 3/5 | frontier | 0 | +0.0 | 3odat |
+| [Agent-Attack (Multimodal)](https://github.com/ChenWu98/agent-attack) | MIT | Python | beta | US | 5/5 | frontier | 139 | +0.9 | Chen Henry Wu et al. (CMU) |
+| [Agent Audit](https://github.com/HeadyZhang/agent-audit) | MIT | Python | beta | CN | 4/5 | emerging | 191 | — | HeadyZhang |
+| [Agent Security Scanner MCP](https://github.com/sinewaveai/agent-security-scanner-mcp) | MIT | JavaScript | beta | — | 4/5 | emerging | 112 | +0.9 | sinewaveai |
+| [Agent Semantic Resistance](https://github.com/rexcoleman/agent-semantic-resistance) | MIT | Python | beta | — | 0/5 | frontier | 0 | +0.0 | rexcoleman |
+| [AgentDojo](https://github.com/ethz-spylab/agentdojo) | MIT | Python | ga | CH | 5/5 | emerging | 638 | +8.6 | ETH Zürich SPY Lab |
+| [Agentic Radar](https://github.com/splx-ai/agentic-radar) | Apache-2.0 | Python | beta | SI | 5/5 | emerging | 985 | +2.7 | SPLX AI |
+| [AI Infra Guard](https://github.com/Tencent/AI-Infra-Guard) | Apache-2.0 | Python | ga | CN | 3/5 | established | 4.0k | +54.1 | Tencent |
+| [AI Red Teaming Playground Labs](https://github.com/microsoft/AI-Red-Teaming-Playground-Labs) | MIT | TypeScript | ga | US | 3/5 | established | 2.0k | +7.4 | microsoft |
+| [AI Seclists](https://github.com/AUTHENSOR/ai-seclists) | MIT | HTML | beta | — | 3/5 | frontier | 1 | +0.5 | AUTHENSOR |
+| [Aigoat](https://github.com/AISecurityConsortium/AIGoat) | Apache-2.0 | JavaScript | beta | — | 3/5 | frontier | 67 | +2.7 | AISecurityConsortium |
+| [Anamorpher](https://github.com/trailofbits/anamorpher) | Apache-2.0 | Python | ga | US | 5/5 | emerging | 1.1k | — | Trail of Bits |
+| [Anvil](https://github.com/Ganglet/Anvil) | MIT | Python | beta | — | 1/5 | frontier | 0 | +0.0 | Ganglet |
+| [Api Relay Audit](https://github.com/toby-bridges/api-relay-audit) | AGPL-3.0 | Python | beta | — | 4/5 | emerging | 727 | — | toby-bridges |
+| [Augustus](https://github.com/praetorian-inc/augustus) | Apache-2.0 | Go | ga | — | 4/5 | emerging | 247 | +4.1 | praetorian-inc |
+| [AutoDAN-Turbo](https://github.com/SaFo-Lab/AutoDAN-Turbo) | MIT | Python | beta | US | 4/5 | emerging | 371 | +0.0 | SaFo-Lab / Chaowei Xiao (UW-Madison) |
+| [AutoDAN](https://github.com/SheltonLiu-N/AutoDAN) | MIT | Python | ga | US | 4/5 | frontier | 446 | +0.5 | Xiaogeng Liu et al. (UW-Madison) |
+| [Automated Adversial Testing Framework](https://github.com/A-Kuo/Automated-Adversial-Testing-Framework) | MIT | Python | beta | — | 3/5 | frontier | 1 | +0.0 | A-Kuo |
+| [AutoPrompt (Intent-based Prompt Calibration)](https://github.com/Eladlev/AutoPrompt) | Apache-2.0 | Python | beta | IL | 5/5 | established | 3.0k | +1.4 | Elad Levi et al. |
+| [BackdoorLLM](https://github.com/bboylyg/BackdoorLLM) | MIT | Python | beta | CN | 4/5 | emerging | 312 | +1.8 | Yige Li et al. (NeurIPS 2025 paper) |
+| [BIPIA](https://github.com/microsoft/BIPIA) | MIT | Python | beta | US | 4/5 | dormant | 141 | +2.8 | Microsoft Research |
+| [Camel Prompt Injection](https://github.com/google-research/camel-prompt-injection) | Apache-2.0 | Jupyter Notebook | alpha | US | 4/5 | frontier | 345 | — | Google Research |
+| [Chat GPT Jailbreak Pro](https://github.com/Batlez/ChatGPT-Jailbreak-Pro) | MIT | JavaScript | beta | — | 0/5 | frontier | 181 | +0.9 | Batlez |
+| [CipherChat](https://github.com/RobustNLP/CipherChat) | MIT | Python | beta | CN | 4/5 | emerging | 627 | -0.5 | Youliang Yuan et al. (CUHK/Tencent AI Lab) |
+| [CleverHans](https://github.com/cleverhans-lab/cleverhans) | MIT | Python | ga | US | 4/5 | canonical | 6.4k | +0.5 | Google Brain / OpenAI / Penn State (original); community since |
+| [Cloak Cli](https://github.com/stabgan/cloak-cli) | MIT | Python | beta | — | 3/5 | frontier | 0 | +0.0 | stabgan |
+| [Cryptex Oss](https://github.com/m4xx101/cryptex-oss) | MIT | TypeScript | beta | — | 4/5 | frontier | 332 | — | m4xx101 |
+| [DeepInception](https://github.com/tmlr-group/DeepInception) | MIT | Python | beta | CN | 4/5 | dormant | 175 | +0.0 | TMLR Group (multiple authors, PKU/Tsinghua) |
+| [Deepsec](https://github.com/vercel-labs/deepsec) | Apache-2.0 | TypeScript | beta | US | 4/5 | frontier | 4.7k | — | Vercel |
+| [Detecting Pretraining Data / Min-K% Prob](https://github.com/swj0419/detect-pretrain-code) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 243 | +0.5 | Weijia Shi et al. (UW / Princeton / Google) |
+| [Dvai](https://github.com/bb1nfosec/dvai) | MIT | TypeScript | beta | — | 1/5 | frontier | 5 | +0.0 | bb1nfosec |
+| [EasyEdit (Knowledge Editing / Poisoning Framework)](https://github.com/zjunlp/EasyEdit) | MIT | Python | ga | CN | 5/5 | established | 2.9k | +6.8 | zjunlp (Zhejiang University NLP Lab) |
+| [EasyJailbreak](https://github.com/EasyJailbreak/EasyJailbreak) | GPL-3.0 | Python | beta | CN | 5/5 | emerging | 870 | +2.3 | DAMO Academy / Alibaba |
+| [garak](https://github.com/NVIDIA/garak) | Apache-2.0 | Python | ga | US | 5/5 | landmark | 8.3k | +74.1 | NVIDIA |
+| [Giskard](https://github.com/Giskard-AI/giskard-oss) | Apache-2.0 | Python | ga | FR | 4/5 | landmark | 5.5k | +20.9 | Giskard AI |
+| [GPTFuzz](https://github.com/sherdencooper/GPTFuzz) | MIT | Python | ga | US | 4/5 | emerging | 589 | +0.5 | Jiahao Yu et al. (Northwestern) |
+| [Hacx GPT Jailbreak Prompts](https://github.com/BlackTechX011/HacxGPT-Jailbreak-prompts) | MIT | Multiple | beta | — | 3/5 | emerging | 193 | +2.3 | BlackTechX011 |
+| [HarmBench](https://github.com/centerforaisafety/HarmBench) | MIT | Python | ga | US | 5/5 | dormant | 993 | +5.5 | Center for AI Safety |
+| [Hermes Katana](https://github.com/claudlos/hermes-katana) | MIT | Python | beta | — | 3/5 | frontier | 43 | +1.8 | claudlos |
+| [Imperio](https://github.com/HKU-TASR/Imperio) | MIT | Python | beta | HK | 3/5 | frontier | 44 | +0.0 | HKU-TASR |
+| [jailbreak-evaluation](https://github.com/controllability/jailbreak-evaluation) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 27 | +0.0 | PurSec Lab, Purdue University |
+| [JailbreakHub (In-The-Wild Jailbreaks)](https://github.com/verazuo/jailbreak_llms) | MIT | Python | beta | DE | 5/5 | dormant | 3.7k | +7.7 | Xinyue Shen et al. (CISPA / ACM CCS 2024) |
+| [Jailbreak Llms](https://github.com/verazuo/jailbreak_llms) | MIT | Jupyter Notebook | ga | — | 3/5 | dormant | 3.7k | +7.7 | verazuo |
+| [JailbreakBench](https://github.com/JailbreakBench/jailbreakbench) | MIT | Python | ga | US | 4/5 | frontier | 618 | +3.6 | Academic consortium (ETH, CMU, UPenn) |
+| [LLM Adaptive Attacks](https://github.com/tml-epfl/llm-adaptive-attacks) | MIT | Python | beta | CH | 4/5 | frontier | 388 | +0.5 | Andriushchenko, Croce, Flammarion (EPFL) |
+| [LLM Attacks (GCG)](https://github.com/llm-attacks/llm-attacks) | MIT | Python | ga | US | 4/5 | dormant | 4.7k | +5.0 | Zou, Wang, Carlini, Kolter, Fredrikson (CMU/Google) |
+| [LLM Attacks](https://github.com/AI-Security-Research-Group/LLM-Attacks) | GPL-3.0-only | Multiple | beta | — | 3/5 | frontier | 17 | +0.0 | AI-Security-Research-Group |
+| [LLM Backdoor](https://github.com/sshh12/llm_backdoor) | MIT | Python | alpha | — | 3/5 | emerging | 207 | +0.0 | sshh12 |
+| [LLM Jailbreak Taxonomy](https://github.com/zakky8/llm-jailbreak-taxonomy) | MIT | Jupyter Notebook | beta | — | 2/5 | frontier | 4 | +0.5 | zakky8 |
+| [LLM Jailbreaking Defense Library](https://github.com/YihanWang617/llm-jailbreaking-defense) | MIT | Python | beta | US | 5/5 | frontier | 61 | +0.0 | Yihan Wang, Zhouxing Shi, Andrew Bai (UCLA / UCSD) |
+| [LLM Jailbreaks](https://github.com/langgptai/LLM-Jailbreaks) | Apache-2.0 | Multiple | ga | — | 3/5 | frontier | 684 | +10.5 | langgptai |
+| [LLM Prompt Injection Tester](https://github.com/Azcerate/llm-prompt-injection-tester) | MIT | Python | beta | — | 3/5 | frontier | 0 | +0.0 | Azcerate |
+| [LLM Watermark Robustness](https://github.com/rexcoleman/llm-watermark-robustness) | MIT | Python | beta | — | 3/5 | frontier | 0 | +0.0 | rexcoleman |
+| [Llmmap](https://github.com/Hellsender01/LLMMap) | MIT | Python | beta | — | 4/5 | emerging | 198 | — | Hellsender01 |
+| [Luckypipewrench Pipelock](https://github.com/luckyPipewrench/pipelock) | Apache-2.0 | Go | beta | — | 4/5 | emerging | 738 | — | luckyPipewrench |
+| [Medusa](https://github.com/Pantheon-Security/medusa) | AGPL-3.0-only | Python | ga | — | 3/5 | emerging | 619 | +9.6 | Pantheon-Security |
+| [Memory Poisoning Persistence](https://github.com/rexcoleman/memory-poisoning-persistence) | MIT | Python | beta | — | 3/5 | frontier | 0 | +0.0 | rexcoleman |
+| [MIMIR](https://github.com/iamgroot42/mimir) | MIT | Python | beta | US | 4/5 | frontier | 191 | +0.5 | Anshuman Suri et al. (UVA/UW) |
+| [MM Plan](https://github.com/yunbeizhang/MM-Plan) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 89 | +0.0 | yunbeizhang |
+| [ModelScan](https://github.com/protectai/modelscan) | Apache-2.0 | Python | ga | US | 4/5 | emerging | 727 | +1.8 | Protect AI |
+| [nanoGCG](https://github.com/GraySwanAI/nanoGCG) | MIT | Python | ga | US | 4/5 | frontier | 340 | +1.8 | GraySwanAI |
+| [Open-Prompt-Injection](https://github.com/liu00222/Open-Prompt-Injection) | MIT | Python | ga | US | 4/5 | emerging | 463 | +2.3 | Yupei Liu et al. (Duke/Neil Gong Lab) |
+| [OpenAttack](https://github.com/thunlp/OpenAttack) | MIT | Python | beta | CN | 5/5 | dormant | 779 | +0.9 | THUNLP (Tsinghua NLP Lab) |
+| [Openclaw Skills Security](https://github.com/UseAI-pro/openclaw-skills-security) | MIT | Python | beta | — | 4/5 | frontier | 64 | +0.5 | UseAI-pro |
+| [OR-Bench](https://github.com/justincui03/or-bench) | Apache-2.0 | Python | ga | US | 5/5 | frontier | 28 | +0.0 | OR-Bench paper authors (UC Berkeley) |
+| [PAIR / JailbreakingLLMs](https://github.com/patrickrchao/JailbreakingLLMs) | MIT | Python | ga | US | 4/5 | emerging | 749 | +3.6 | Chao et al. (UPenn/CMU) |
+| [Parry Guard](https://github.com/vaporif/parry-guard) | MIT | Rust | beta | — | 3/5 | frontier | 44 | +0.5 | vaporif |
+| [PDF Prompt Injection Toolkit](https://github.com/zhihuiyuze/PDF-Prompt-Injection-Toolkit) | MIT | Python | beta | — | 3/5 | frontier | 57 | +1.8 | zhihuiyuze |
+| [PentestAgent](https://github.com/GH05TCREW/pentestagent) | MIT | Python | beta | — | 4/5 | established | 2.7k | — | GH05TCREW |
+| [PINT Benchmark](https://github.com/lakeraai/pint-benchmark) | MIT | Python | beta | CH | 4/5 | emerging | 191 | +0.9 | Lakera AI |
+| [Pipelock](https://github.com/luckyPipewrench/pipelock) | Apache-2.0 | Go | ga | — | 3/5 | emerging | 738 | +9.6 | luckyPipewrench |
+| [Plexiglass](https://github.com/safellama/plexiglass) | MIT | Python | alpha | US | 4/5 | emerging | 153 | +0.0 | SafeLLama |
+| [Praetorian Inc Augustus](https://github.com/praetorian-inc/augustus) | Apache-2.0 | Go | beta | US | 4/5 | emerging | 247 | — | Praetorian |
+| [Prompt Hacker Collections](https://github.com/yunwei37/prompt-hacker-collections) | MIT | Multiple | ga | — | 4/5 | frontier | 335 | +2.7 | yunwei37 |
+| [PromptInject](https://github.com/agencyenterprise/PromptInject) | MIT | Python | alpha | US | 4/5 | emerging | 501 | +1.4 | AgencyEnterprise |
+| [promptmap](https://github.com/utkusen/promptmap) | GPL-3.0 | Python | beta | TR | 4/5 | emerging | 1.2k | +0.9 | Utku Sen |
+| [Prompt Fuzzer (ps-fuzz)](https://github.com/prompt-security/ps-fuzz) | MIT | Python | beta | IL | 4/5 | emerging | 687 | +0.5 | Prompt Security |
+| [PurpleLlama / CyberSecEval](https://github.com/meta-llama/PurpleLlama) | MIT | Python | ga | US | 4/5 | established | 4.2k | +10.0 | Meta AI |
+| [PyRIT (Python Risk Identification Tool)](https://github.com/microsoft/PyRIT) | MIT | Python | ga | US | 5/5 | established | 4.0k | +1829.5 | Microsoft (AI Red Team) |
+| [R-Judge](https://github.com/Lordog/R-Judge) | MIT | Python | beta | CN | 4/5 | emerging | 105 | +0.0 | SJTU / Tongxin Yuan et al. |
+| [RAG Security Scanner](https://github.com/olegnazarov/rag-security-scanner) | MIT | Python | beta | — | 3/5 | frontier | 71 | +0.5 | olegnazarov |
+| [Raguard](https://github.com/Carlos-Projects/RAGuard) | MIT | Python | beta | — | 3/5 | frontier | 0 | +0.0 | Carlos-Projects |
+| [RAIN](https://github.com/SafeAILab/RAIN) | BSD-2-Clause | Python | beta | CN | 5/5 | dormant | 99 | +0.5 | SafeAI Lab (Yuhui Li et al., PKU/Microsoft Research) |
+| [Red AI Range](https://github.com/ErdemOzgen/RedAiRange) | MIT | Jupyter Notebook | beta | — | 3/5 | frontier | 131 | +0.9 | ErdemOzgen |
+| [Redamon](https://github.com/samugit83/redamon) | MIT | Python | ga | — | 3/5 | emerging | 2.0k | +28.6 | samugit83 |
+| [Redforge AI](https://github.com/Aimer-zero/redforge-ai) | MIT | Python | beta | CN | 3/5 | frontier | 83 | +0.9 | Aimer-zero |
+| [Rejection Cascade](https://github.com/moscovium-mc/rejection-cascade) | MIT | JavaScript | beta | — | 0/5 | frontier | 2 | +0.0 | moscovium-mc |
+| [ReNeLLM](https://github.com/NJUNLP/ReNeLLM) | MIT | Python | beta | CN | 5/5 | frontier | 162 | +0.9 | NLP Lab, Nanjing University |
+| [Reverseclabs Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 4/5 | emerging | 211 | — | ReversecLabs |
+| [SafetyBench](https://github.com/thu-coai/SafetyBench) | MIT | Python | ga | CN | 4/5 | emerging | 291 | +0.5 | COAI Lab, Tsinghua University |
+| [SALAD-Bench](https://github.com/OpenSafetyLab/SALAD-BENCH) | Apache-2.0 | Python | ga | CN | 5/5 | frontier | 176 | +0.0 | OpenSafetyLab (Shanghai AI Lab) |
+| [Sandlock](https://github.com/multikernel/sandlock) | Apache-2.0 | Rust | beta | — | 4/5 | emerging | 252 | — | multikernel |
+| [Secureagentics Adrian](https://github.com/secureagentics/Adrian) | Apache-2.0 | Python | beta | — | 4/5 | frontier | 332 | — | Secureagentics |
+| [Secure MCP](https://github.com/makalin/SecureMCP) | MIT | Go | beta | — | 3/5 | frontier | 140 | +0.0 | makalin |
+| [Seojoonkim Prompt Guard](https://github.com/seojoonkim/prompt-guard) | MIT | Python | beta | — | 4/5 | emerging | 166 | — | seojoonkim |
+| [SORRY-Bench](https://github.com/SORRY-Bench/sorry-bench) | MIT | Python | ga | US | 5/5 | frontier | 83 | +0.0 | SORRY-Bench paper authors (UC Berkeley / Princeton / others) |
+| [Spikee](https://github.com/ReversecLabs/spikee) | Apache-2.0 | Python | beta | — | 3/5 | emerging | 211 | +6.8 | ReversecLabs |
+| [Stealix](https://github.com/boschresearch/stealix) | AGPL-3.0-only | Python | beta | DE | 3/5 | frontier | 3 | +0.0 | boschresearch |
+| [StrongREJECT](https://github.com/dsbowen/strong_reject) | MIT | Python | beta | US | 5/5 | frontier | 143 | +1.4 | UC Berkeley (Dan Bowen et al.) |
+| [Superagent](https://github.com/superagent-ai/superagent) | MIT | TypeScript | ga | SE | 4/5 | established | 6.7k | — | Superagent |
+| [TAP - Tree of Attacks with Pruning](https://github.com/RICommunity/TAP) | MIT | Python | beta | US | 4/5 | dormant | 238 | +0.5 | Robust Intelligence Community |
+| [Tensor Trust](https://github.com/HumanCompatibleAI/tensor-trust) | BSD-2-Clause | Python | beta | US | 3/5 | frontier | 71 | +0.5 | HumanCompatibleAI |
+| [TextAttack](https://github.com/QData/TextAttack) | MIT | Python | ga | US | 5/5 | established | 3.4k | +1.8 | QData Lab (University of Virginia) |
+| [ToolEmu](https://github.com/ryoungj/ToolEmu) | Apache-2.0 | Python | beta | US | 4/5 | dormant | 210 | +0.9 | NYU / Independent research (ICLR 2024) |
+| [WMDP - Weapons of Mass Destruction Proxy](https://github.com/centerforaisafety/wmdp) | MIT | Python | ga | US | 4/5 | frontier | 175 | +0.0 | Center for AI Safety |
+| [Wraith Challenges](https://github.com/gh0stshe11/wraith-challenges) | MIT | Python | beta | — | 3/5 | frontier | 1 | +0.0 | gh0stshe11 |
+| [Www Project LLM Verification Standard](https://github.com/OWASP/www-project-llm-verification-standard) | CC-BY-SA-4.0 | Multiple | beta | — | 3/5 | frontier | 57 | +0.5 | OWASP |
+| [Yaramint](https://github.com/deconvolute-labs/yaramint) | Apache-2.0 | Python | beta | — | 3/5 | frontier | 1 | +0.0 | deconvolute-labs |
 
 _Tier and ★/wk (4-week star velocity) are computed from `registry/_metadata/_tiers.json` + `_velocity.json`; see `scripts/compute_tier.py` and `scripts/compute_velocity.py` for methodology. Generated from `registry/redteam/*.yaml`. Run `python scripts/build_matrices.py` to refresh._
 

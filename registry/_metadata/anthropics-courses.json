@@ -9,6 +9,14 @@
       "license_spdx": "NOASSERTION",
       "refreshed_at": "2026-06-14T07:12:17Z",
       "stars": 21835
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2025-11-13T20:40:51Z",
+      "latest_release": null,
+      "license_spdx": "NOASSERTION",
+      "refreshed_at": "2026-06-29T11:30:02Z",
+      "stars": 22023
     }
   ]
 }
