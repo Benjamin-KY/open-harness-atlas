@@ -1,0 +1,30 @@
+id: aeon
+name: Aeon
+category: agent
+subcategory: autonomous-scheduled
+repo_url: https://github.com/aeonfun/aeon
+homepage: https://aeon.fun/
+license: MIT
+primary_language: Shell
+tagline: Self-hostable autonomous agent framework that runs Markdown-defined skills on a schedule in GitHub Actions, dispatching each run through a pluggable adapter across six model harnesses.
+description: |
+  Aeon is an autonomous agent framework that runs unattended on GitHub Actions. Behaviour is defined as Markdown "skills" with least-privilege secret contracts; a scheduler dispatches them on cron, and every surface (scheduler, inbound messages, MCP server) routes through a single harness-adapter (run-harness) that abstracts the model tier across six harnesses: Claude Code, Grok, Codex, an OpenRouter/gateway path, and two further CLI backends. State is git-committed Markdown plus an optional GitHub-Issue ledger, so a fork carries its own durable memory with no external database.
+
+  In the atlas: Aeon is an agent-orchestration entry. The harness paradigm reads agent frameworks as the policy and tool-routing layer between intent and the model tier; Aeon's distinguishing trait is that this layer is itself a pluggable multi-harness dispatcher rather than being bound to one provider CLI. It complements provider gateways (it can front an OpenRouter/gateway backend) and unattended Claude Code loops. It is not a model, an eval harness, or a hosted service. There is no SaaS; you self-host by forking the repository.
+maturity: ga
+maintainer:
+  type: company
+  name: Aeon Inc.
+origin_country: VG
+model_agnostic_score: 4
+sovereignty_notes: |
+  Aeon Inc. (British Virgin Islands). Fully self-hostable: you fork the repo and run it in your own GitHub Actions, with no proprietary backend or telemetry. Model-agnostic 4: the run path is provider-abstracted through a six-harness adapter and can target an OpenRouter/gateway backend, but the shipped fleet defaults to a specific Claude tier, so it favours one provider out of the box rather than being fully tier-neutral.
+harness_paradigm_alignment: aligned
+deployment_posture: hybrid
+adjacent_to:
+  - claude-agent-sdk
+  - ralph-claude-code
+  - auto-claude-code-research-in-sleep
+  - litellm
+  - openhands
+  - aider

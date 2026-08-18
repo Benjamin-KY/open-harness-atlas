@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
 <title id="title">Deployment posture across the open-harness-atlas registry</title>
-<desc id="desc">A stacked horizontal bar chart per category showing how 860 open-source harnesses split across five deployment postures (local-only, local-first, hybrid, cloud-first, api-only). Local-only is air-gappable; local-first means docker compose up works out of the box; hybrid requires both local and cloud at runtime by design; cloud-first means SaaS is the primary path; api-only means no local path exists.</desc>
+<desc id="desc">A stacked horizontal bar chart per category showing how 861 open-source harnesses split across five deployment postures (local-only, local-first, hybrid, cloud-first, api-only). Local-only is air-gappable; local-first means docker compose up works out of the box; hybrid requires both local and cloud at runtime by design; cloud-first means SaaS is the primary path; api-only means no local path exists.</desc>
 <style>.body{font-family:"Inter","Helvetica Neue",Arial,sans-serif;}.title{font-size:20px;font-weight:700;fill:#1f3a5f;}.sub{font-size:12px;font-weight:400;fill:#4a5d75;}.h2{font-size:14px;font-weight:600;fill:#1f3a5f;}.cat-label{font-size:13px;font-weight:600;fill:#1f3a5f;text-anchor:end;}.cat-count{font-size:11px;fill:#6b7a8c;text-anchor:start;}.seg-label{font-size:11px;font-weight:700;fill:#ffffff;text-anchor:middle;dominant-baseline:central;}.seg-label-dark{font-size:11px;font-weight:700;fill:#1f3a5f;text-anchor:middle;dominant-baseline:central;}.legend-text{font-size:12px;fill:#1f3a5f;}.legend-hint{font-size:10px;fill:#6b7a8c;}.footer{font-size:10px;fill:#6b7a8c;text-anchor:middle;}</style>
 <rect width="1200" height="720" fill="#ffffff"/>
 <text x="40" y="38" class="body title">Deployment posture</text>
-<text x="40" y="58" class="body sub">Where does it run? 860 open-source harnesses split across five postures. Heuristic + 3-model ensemble curation (claude-sonnet-4.5 + claude-opus-4.7-xhigh + gpt-5.4).</text>
+<text x="40" y="58" class="body sub">Where does it run? 861 open-source harnesses split across five postures. Heuristic + 3-model ensemble curation (claude-sonnet-4.5 + claude-opus-4.7-xhigh + gpt-5.4).</text>
 <text x="40" y="114" class="body h2">All entries</text>
-<text x="40" y="132" class="body cat-count" text-anchor="start">860 total</text>
-<rect x="200.00" y="100" width="156.28" height="42" fill="#1f8a70" />
-<text x="278.14" y="121.00" class="body seg-label">140</text>
-<rect x="356.28" y="100" width="703.26" height="42" fill="#86b8b1" />
-<text x="707.91" y="121.00" class="body seg-label-dark">630</text>
-<rect x="1059.53" y="100" width="36.84" height="42" fill="#c9b08c" />
-<text x="1077.95" y="121.00" class="body seg-label-dark">33</text>
-<rect x="1096.37" y="100" width="41.30" height="42" fill="#9cb8dd" />
-<text x="1117.02" y="121.00" class="body seg-label-dark">37</text>
-<rect x="1137.67" y="100" width="22.33" height="42" fill="#5b7fc7" />
+<text x="40" y="132" class="body cat-count" text-anchor="start">861 total</text>
+<rect x="200.00" y="100" width="156.10" height="42" fill="#1f8a70" />
+<text x="278.05" y="121.00" class="body seg-label">140</text>
+<rect x="356.10" y="100" width="702.44" height="42" fill="#86b8b1" />
+<text x="707.32" y="121.00" class="body seg-label-dark">630</text>
+<rect x="1058.54" y="100" width="37.91" height="42" fill="#c9b08c" />
+<text x="1077.49" y="121.00" class="body seg-label-dark">34</text>
+<rect x="1096.45" y="100" width="41.25" height="42" fill="#9cb8dd" />
+<text x="1117.07" y="121.00" class="body seg-label-dark">37</text>
+<rect x="1137.70" y="100" width="22.30" height="42" fill="#5b7fc7" />
 <text x="190" y="218" class="body cat-label">governance</text>
 <text x="190" y="236" class="body cat-count" text-anchor="end">(n=103)</text>
 <rect x="200.00" y="200" width="111.84" height="36" fill="#1f8a70" />
@@ -28,16 +28,16 @@
 <rect x="1104.08" y="200" width="27.96" height="36" fill="#9cb8dd" />
 <rect x="1132.04" y="200" width="27.96" height="36" fill="#5b7fc7" />
 <text x="190" y="292" class="body cat-label">agent</text>
-<text x="190" y="310" class="body cat-count" text-anchor="end">(n=264)</text>
-<rect x="200.00" y="274" width="43.64" height="36" fill="#1f8a70" />
-<text x="221.82" y="292.00" class="body seg-label">12</text>
-<rect x="243.64" y="274" width="825.45" height="36" fill="#86b8b1" />
-<text x="656.36" y="292.00" class="body seg-label-dark">227</text>
-<rect x="1069.09" y="274" width="40.00" height="36" fill="#c9b08c" />
-<text x="1089.09" y="292.00" class="body seg-label-dark">11</text>
-<rect x="1109.09" y="274" width="21.82" height="36" fill="#9cb8dd" />
-<rect x="1130.91" y="274" width="29.09" height="36" fill="#5b7fc7" />
-<text x="1145.45" y="292.00" class="body seg-label">8</text>
+<text x="190" y="310" class="body cat-count" text-anchor="end">(n=265)</text>
+<rect x="200.00" y="274" width="43.47" height="36" fill="#1f8a70" />
+<text x="221.74" y="292.00" class="body seg-label">12</text>
+<rect x="243.47" y="274" width="822.34" height="36" fill="#86b8b1" />
+<text x="654.64" y="292.00" class="body seg-label-dark">227</text>
+<rect x="1065.81" y="274" width="43.47" height="36" fill="#c9b08c" />
+<text x="1087.55" y="292.00" class="body seg-label-dark">12</text>
+<rect x="1109.28" y="274" width="21.74" height="36" fill="#9cb8dd" />
+<rect x="1131.02" y="274" width="28.98" height="36" fill="#5b7fc7" />
+<text x="1145.51" y="292.00" class="body seg-label">8</text>
 <text x="190" y="366" class="body cat-label">eval</text>
 <text x="190" y="384" class="body cat-count" text-anchor="end">(n=207)</text>
 <rect x="200.00" y="348" width="78.84" height="36" fill="#1f8a70" />
