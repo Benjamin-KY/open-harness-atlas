@@ -8,6 +8,7 @@ This matrix shows capability axes per entry; it is **not** a ranking or leaderbo
 |---|---|---|---|---|---|---|---:|---:|---|
 | [Adala — Autonomous Data (Labeling) Agents](https://github.com/HumanSignal/Adala) | Apache-2.0 | Python | beta | US | 4/5 | established | 1.6k | — | HumanSignal (Label Studio makers) |
 | [AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | MIT | Python | beta | US | 5/5 | established | 4.2k | — | SylphAI, Inc. |
+| [Aeon](https://github.com/aeonfun/aeon) | MIT | Shell | ga | VG | 4/5 | — | — | — | Aeon Inc. |
 | [Ag Ui](https://github.com/ag-ui-protocol/ag-ui) | MIT | Python | ga | US | 3/5 | established | 14.2k | — | ag-ui-protocol |
 | [AG2](https://github.com/ag2ai/ag2) | Apache-2.0 | Python | beta | US | 4/5 | established | 4.7k | — | ag2ai community |
 | [Agency Swarm](https://github.com/VRSEN/agency-swarm) | MIT | Python | ga | UA | 4/5 | established | 4.4k | — | VRSEN |
