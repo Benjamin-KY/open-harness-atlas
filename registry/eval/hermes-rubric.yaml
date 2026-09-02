@@ -3,8 +3,8 @@ name: Hermes Rubric
 category: eval
 subcategory: llm-judge
 repo_url: https://github.com/hermes-labs-ai/hermes-rubric
-homepage: https://hermes-labs.ai
-license: MIT
+homepage: https://hermes-labs.ai/hermes-rubric
+license: Apache-2.0
 primary_language: Python
 tagline: 'Evidence-first structured scoring for AI artifacts: synthesize a rubric, collect citations, score only against quoted evidence, hedge on thin evidence.'
 description: 'Hermes Rubric — Evidence-first structured scoring for AI artifacts: synthesize a rubric, collect citations, score only against quoted evidence, hedge on thin evidence. Every dimension ties to a file:line or quote, with reproducibility receipts. For papers, PRs, prompts, and emails where a defensible LLM-backed score beats a headline number. 7 backends. Upstream maintainer: hermes-labs-ai.
@@ -17,7 +17,7 @@ maintainer:
   name: hermes-labs-ai
 origin_country: null
 model_agnostic_score: 3
-sovereignty_notes: hermes-labs-ai (company-style Organization on GitHub, hermes-labs.ai); MIT Python CLI/library distributed on PyPI that replaces unaudited LLM scoring with rubric-synthesis + evidence-citation + hedge-on-thin-evidence + reproducibility receipts (re-runs land within ±1). Model-agnostic 3 — seven backends including a 'claude-cli' option, so works against multiple providers including locally hosted endpoints. Good fit for the eval feedback-loop slot in the harness paradigm.
+sovereignty_notes: hermes-labs-ai (company-style Organization on GitHub, hermes-labs.ai); Apache-2.0 Python CLI/library distributed on PyPI that replaces unaudited LLM scoring with rubric-synthesis + evidence-citation + hedge-on-thin-evidence + reproducibility receipts. Model-agnostic 3 — seven backends including a 'claude-cli' option, so works against multiple providers including locally hosted endpoints. Good fit for the eval feedback-loop slot in the harness paradigm.
 harness_paradigm_alignment: partial
 adjacent_to:
 - juryeval
