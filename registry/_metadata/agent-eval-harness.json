@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2026-04-19T14:15:43Z",
   "default_branch": "main",
-  "last_commit_at": "2026-06-09T06:10:37Z",
-  "latest_release": "@reaatech/agent-eval-harness-cli@0.1.1",
-  "license_spdx": "MIT",
-  "refreshed_at": "2026-06-14T01:56:20Z",
-  "stars": 0
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-09T06:10:37Z",
+      "latest_release": "@reaatech/agent-eval-harness-cli@0.1.1",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-14T01:56:20Z",
+      "stars": 0
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-09-21T16:06:58Z",
+      "latest_release": "@reaatech/agent-eval-harness-judge@0.2.0",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-09-28T14:03:50Z",
+      "stars": 0
+    }
+  ]
 }

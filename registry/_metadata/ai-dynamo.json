@@ -1,0 +1,14 @@
+{
+  "created_at": "2025-03-03T18:40:07Z",
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-09-28T14:07:01Z",
+      "latest_release": "v1.5.0",
+      "license_spdx": "NOASSERTION",
+      "refreshed_at": "2026-09-28T14:11:54Z",
+      "stars": 8171
+    }
+  ]
+}
