@@ -1,10 +1,22 @@
 {
-  "archived": false,
   "created_at": "2022-10-17T02:58:36Z",
   "default_branch": "master",
-  "last_commit_at": "2026-06-13T09:04:53Z",
-  "latest_release": "langchain-core==1.4.7",
-  "license_spdx": "MIT",
-  "refreshed_at": "2026-06-14T01:52:30Z",
-  "stars": 139215
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-06-13T09:04:53Z",
+      "latest_release": "langchain-core==1.4.7",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-06-14T01:52:30Z",
+      "stars": 139215
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-10-12T15:14:26Z",
+      "latest_release": "langchain-core==1.6.10",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-10-12T15:30:14Z",
+      "stars": 147690
+    }
+  ]
 }

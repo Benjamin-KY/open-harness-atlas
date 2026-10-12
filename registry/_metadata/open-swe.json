@@ -1,0 +1,14 @@
+{
+  "created_at": "2025-05-21T21:44:24Z",
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-10-12T15:21:31Z",
+      "latest_release": "desktop-v0.3.4",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-10-12T15:30:52Z",
+      "stars": 11005
+    }
+  ]
+}

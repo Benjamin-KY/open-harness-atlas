@@ -1,0 +1,14 @@
+{
+  "created_at": "2025-04-09T04:12:30Z",
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-10-12T14:48:57Z",
+      "latest_release": "Template.Mcp.Server-0.0.12-alpha.6940222",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-10-12T15:30:38Z",
+      "stars": 3763
+    }
+  ]
+}
