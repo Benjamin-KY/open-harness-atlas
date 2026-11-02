@@ -1,0 +1,14 @@
+{
+  "created_at": "2025-04-09T04:12:30Z",
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-11-02T14:53:05Z",
+      "latest_release": "Fabric.Mcp.Server-1.7.0",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-11-02T15:59:07Z",
+      "stars": 3824
+    }
+  ]
+}

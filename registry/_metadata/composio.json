@@ -1,0 +1,14 @@
+{
+  "created_at": "2024-02-23T13:58:27Z",
+  "default_branch": "next",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-11-02T13:42:02Z",
+      "latest_release": "@composio/cli@0.6.0",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-11-02T15:57:14Z",
+      "stars": 30878
+    }
+  ]
+}
