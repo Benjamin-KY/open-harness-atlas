@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-03-21T06:48:49Z",
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-11-07T01:28:26Z",
+      "latest_release": "b911",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-11-09T16:39:52Z",
+      "stars": 797
+    }
+  ]
+}
