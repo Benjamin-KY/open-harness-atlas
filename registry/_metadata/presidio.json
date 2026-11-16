@@ -9,6 +9,14 @@
       "license_spdx": "MIT",
       "refreshed_at": "2026-06-14T07:16:13Z",
       "stars": 8598
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-11-14T13:31:58Z",
+      "latest_release": "2.2.366",
+      "license_spdx": "MIT",
+      "refreshed_at": "2026-11-16T15:59:07Z",
+      "stars": 11903
     }
   ]
 }

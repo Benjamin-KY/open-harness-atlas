@@ -9,6 +9,14 @@
       "license_spdx": "CC-BY-4.0",
       "refreshed_at": "2026-06-14T07:15:31Z",
       "stars": 58936
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-11-12T10:19:36Z",
+      "latest_release": "python-v0.7.5",
+      "license_spdx": "CC-BY-4.0",
+      "refreshed_at": "2026-11-16T15:49:37Z",
+      "stars": 61873
     }
   ]
 }

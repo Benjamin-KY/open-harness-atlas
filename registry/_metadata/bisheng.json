@@ -1,0 +1,14 @@
+{
+  "created_at": "2023-08-28T10:00:24Z",
+  "default_branch": "main",
+  "snapshots": [
+    {
+      "archived": false,
+      "last_commit_at": "2026-11-16T14:21:57Z",
+      "latest_release": "v3.0.1",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-11-16T15:49:41Z",
+      "stars": 12331
+    }
+  ]
+}
