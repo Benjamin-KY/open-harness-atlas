@@ -9,6 +9,14 @@
       "license_spdx": "Apache-2.0",
       "refreshed_at": "2026-06-14T07:12:31Z",
       "stars": 18633
+    },
+    {
+      "archived": false,
+      "last_commit_at": "2026-11-23T17:21:02Z",
+      "latest_release": "v1.18.2",
+      "license_spdx": "Apache-2.0",
+      "refreshed_at": "2026-11-23T18:21:41Z",
+      "stars": 19800
     }
   ]
 }
